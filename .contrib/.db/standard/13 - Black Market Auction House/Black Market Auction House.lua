@@ -41,73 +41,76 @@ local BLACK_MARKET_AUCTION_HOUSE = createHeader({
 assignRootCategoryHeader(80, ROOTS.BlackMarket, BLACK_MARKET_AUCTION_HOUSE, {symselector=SymSelector.BMAH});
 root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline = { ADDED_5_0_4 }},{
 	n(ARMOR, {
-		header(HEADERS.NPC, 72057, bubbleDownSelf({ timeline = { ADDED_8_2_5 }, }, {	-- Ordos
-			-- Head
-			i(105804),	-- Aladya's Spiritfire Greathelm
-			i(105810),	-- Buc-Zakai Burning Hood
-			i(105806),	-- Circlet of the Panser
-			i(105809),	-- Crest of Burning Deeds
-			i(105808),	-- Damien's Ice-Vein Mask
-			i(105805),	-- Dominik's Casque of Raging Flame
-			i(105807),	-- Magdalena's Murderous Crown
-			i(105811),	-- Olivia's Graceful Gaze
-			i(105803),	-- Stickney's Grey-Shade Hood
-			-- Neck
-			i(105766),	-- Anafielle's Spiked Choker
-			i(105765),	-- Bladeforger Necklace
-			i(105763),	-- Penate's Perilous Pendant
-			i(105764),	-- Rising New Moon Talisman
-			i(105762),	-- Smoldering Eye
-			-- Shoulder
-			i(105795),	-- Bo He Me's Deathwind Mantle
-			i(105800),	-- Firearrow Shoulderpads
-			i(105798),	-- Flame Healer's Shoulderguards
-			i(105799),	-- Fleshsmoke Chain Shoulders
-			i(105796),	-- Rossi's Rosin-Soaked Shoulderplates
-			i(105797),	-- Shay-Nii's Popping Shoulderpads
-			i(105801),	-- Spaulders of Dominating Dreams
-			i(105794),	-- Starry Spaulders of Durability
-			i(105802),	-- Yaungol Deathcult Shoulderguards
-			-- Chest
-			i(105774),	-- Catia's Flowing Robes
-			i(105771),	-- Chestguard of Pyrrhic Immolation
-			i(105775),	-- Gleaming Eye Spellplate
-			i(105767),	-- Hoodrych's Bloodied Chestplate
-			i(105772),	-- Moonhee's Mean Vest
-			i(105769),	-- Omegal's Crushing Carapace
-			i(105768),	-- Pamela's Muuscat Wrap
-			i(105773),	-- Ulmaas' Robes of Crushing Magma
-			i(105770),	-- Zoo-Per's Superior Chestguard
-			-- Wrists
-			i(105789),	-- Bjam's Blasting Bracers
-			i(105792),	-- Bowflight Wristguard
-			i(105793),	-- Bracers of Simmering Fury
-			i(105791),	-- Bracers of Unquestioning Belief
-			i(105787),	-- Burnseal Bracers
-			i(105790),	-- Firetotem Bracers
-			i(105786),	-- Ordosian Cultist's Bracers
-			i(105788),	-- Paululum's Doodled Wraps
-			i(105785),	-- Vanguard's Burly Bracers
-			-- Waist
-			i(105782),	-- Belt of Glowing Embers
-			i(105776),	-- Belt of the Burning Soul
-			i(105784),	-- Binkenstein's Burnished Belt
-			i(105778),	-- Derevka's Gleaming Girdle
-			i(105783),	-- Greatbelt of the Crendor
-			i(105779),	-- Light Kindler Waistguard
-			i(105777),	-- Remnar's Ruinous Girdle
-			i(105781),	-- Venruki's Venerable Sash
-			i(105780),	-- Windflame Girdle
-			-- Legs
-			i(105758),	-- Arielle's Ancient Legwraps
-			i(105754),	-- Desirae's Dashing Leggings
-			i(105760),	-- Hamlet's Wind-Whipped Leggings
-			i(105759),	-- Magmaplates of Jian Wu Xi Feng
-			i(105755),	-- Moshne's Keen Kilt
-			i(105761),	-- Partik's Purified Legplates
-			i(105756),	-- Poxleitner's Leggings of Lights
-			i(105757),	-- Shipley's Shady Silks
-		})),
+		header(HEADERS.NPC, 72057, {	-- Ordos
+			timeline = { ADDED_8_2_5 },
+			groups = {
+				-- Head
+				i(105804),	-- Aladya's Spiritfire Greathelm
+				i(105810),	-- Buc-Zakai Burning Hood
+				i(105806),	-- Circlet of the Panser
+				i(105809),	-- Crest of Burning Deeds
+				i(105808),	-- Damien's Ice-Vein Mask
+				i(105805),	-- Dominik's Casque of Raging Flame
+				i(105807),	-- Magdalena's Murderous Crown
+				i(105811),	-- Olivia's Graceful Gaze
+				i(105803),	-- Stickney's Grey-Shade Hood
+				-- Neck
+				i(105766),	-- Anafielle's Spiked Choker
+				i(105765),	-- Bladeforger Necklace
+				i(105763),	-- Penate's Perilous Pendant
+				i(105764),	-- Rising New Moon Talisman
+				i(105762),	-- Smoldering Eye
+				-- Shoulder
+				i(105795),	-- Bo He Me's Deathwind Mantle
+				i(105800),	-- Firearrow Shoulderpads
+				i(105798),	-- Flame Healer's Shoulderguards
+				i(105799),	-- Fleshsmoke Chain Shoulders
+				i(105796),	-- Rossi's Rosin-Soaked Shoulderplates
+				i(105797),	-- Shay-Nii's Popping Shoulderpads
+				i(105801),	-- Spaulders of Dominating Dreams
+				i(105794),	-- Starry Spaulders of Durability
+				i(105802),	-- Yaungol Deathcult Shoulderguards
+				-- Chest
+				i(105774),	-- Catia's Flowing Robes
+				i(105771),	-- Chestguard of Pyrrhic Immolation
+				i(105775),	-- Gleaming Eye Spellplate
+				i(105767),	-- Hoodrych's Bloodied Chestplate
+				i(105772),	-- Moonhee's Mean Vest
+				i(105769),	-- Omegal's Crushing Carapace
+				i(105768),	-- Pamela's Muuscat Wrap
+				i(105773),	-- Ulmaas' Robes of Crushing Magma
+				i(105770),	-- Zoo-Per's Superior Chestguard
+				-- Wrists
+				i(105789),	-- Bjam's Blasting Bracers
+				i(105792),	-- Bowflight Wristguard
+				i(105793),	-- Bracers of Simmering Fury
+				i(105791),	-- Bracers of Unquestioning Belief
+				i(105787),	-- Burnseal Bracers
+				i(105790),	-- Firetotem Bracers
+				i(105786),	-- Ordosian Cultist's Bracers
+				i(105788),	-- Paululum's Doodled Wraps
+				i(105785),	-- Vanguard's Burly Bracers
+				-- Waist
+				i(105782),	-- Belt of Glowing Embers
+				i(105776),	-- Belt of the Burning Soul
+				i(105784),	-- Binkenstein's Burnished Belt
+				i(105778),	-- Derevka's Gleaming Girdle
+				i(105783),	-- Greatbelt of the Crendor
+				i(105779),	-- Light Kindler Waistguard
+				i(105777),	-- Remnar's Ruinous Girdle
+				i(105781),	-- Venruki's Venerable Sash
+				i(105780),	-- Windflame Girdle
+				-- Legs
+				i(105758),	-- Arielle's Ancient Legwraps
+				i(105754),	-- Desirae's Dashing Leggings
+				i(105760),	-- Hamlet's Wind-Whipped Leggings
+				i(105759),	-- Magmaplates of Jian Wu Xi Feng
+				i(105755),	-- Moshne's Keen Kilt
+				i(105761),	-- Partik's Purified Legplates
+				i(105756),	-- Poxleitner's Leggings of Lights
+				i(105757),	-- Shipley's Shady Silks
+			},
+		}),
 	}),
 	n(ARMOR, bubbleDown({
 		-- #if BEFORE 6.0.2

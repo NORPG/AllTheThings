@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.MID, {
-	header(HEADERS.Achievement, 62189, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {	-- Mind-Seeker
+	header(HEADERS.Achievement, 62189, {	-- Mind-Seeker
 		description = "Swim out to the coordinates then further out south just until fatigue kicks in, then retreat.\nSwim down until fatigue kicks in again then mad dash towards the glowing orb by the skeleton.\n\nYou will want the Vash'jir seahorse and water breathing to make it in time.",
 		coord = { 15.0, 90.0, VASHJIR_ABYSSAL_DEPTHS },
+		timeline = { ADDED_12_0_0 },
 		groups = {	-- Everything here is in a mapless place.
 			n(256536, {	-- Anakron <Mind-Seeker>
 				description = "Around the room are displays tracking various 'secret' activities you may or may not have completed. If you've completed enough (17+), speak to Anakron to become a Mind Seeker.",
@@ -30,5 +31,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.MID, {
 				},
 			}),
 		},
-	})),
+	}),
 }));

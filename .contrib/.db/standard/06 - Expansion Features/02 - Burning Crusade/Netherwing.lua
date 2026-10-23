@@ -10,9 +10,10 @@ ExportDB.OnTooltipDB.ForNetherwing = [[~function(t, tooltipInfo)
 end]];
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE_NETHERWING, {
-	header(HEADERS.Faction, FACTION_NETHERWING, bubbleDownSelf({ timeline = { ADDED_2_1_0 } }, {
+	header(HEADERS.Faction, FACTION_NETHERWING, {
 		description = "The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",
 		icon = 132250,
+		timeline = { ADDED_2_1_0 },
 		maps = { SHADOWMOON_VALLEY },
 		lvl = lvlsquish(70, 70, 25),
 		groups = {
@@ -600,5 +601,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 				}),
 			}),
 		},
-	})),
+	}),
 })));

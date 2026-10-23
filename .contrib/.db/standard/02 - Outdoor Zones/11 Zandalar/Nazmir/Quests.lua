@@ -1057,8 +1057,9 @@ maproot(ZANDALAR, NAZMIR, {
 				},
 				coord = { 51.7, 33.2, NAZMIR },
 				groups = {
-					n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({races = ALLIANCE_ONLY},{
+					n(FACTION_HEADER_ALLIANCE, {
 						description = "Alliance rewards are only earned when completing this on a Horde character, not as Alliance.",
+						races = ALLIANCE_ONLY,
 						groups = {
 							i(155473),	-- Banisher Cinch
 							i(155481),	-- Crone-Seeker's Chain
@@ -1066,16 +1067,19 @@ maproot(ZANDALAR, NAZMIR, {
 							i(155465),	-- Wickerwoven Cord
 							i(155462),	-- Wickerwoven Legwraps
 						},
-					})),
+					}),
 					n(FACTION_HEADER_HORDE, bubbleDownSelf({races = HORDE_ONLY},{
-						i(158957),	-- Death-Pledged Greaves
-						i(158966),	-- Death-Pledged Links
-						i(158956),	-- Loa Speaker's Pants
-						i(158965),	-- Loa Speaker's Sash
-						i(158955),	-- Nazmani Warplate Legguards
-						i(158964),	-- Nazmani Warplate Waistplate
-						i(158958),	-- Ritual Flayer's Trousers
-						i(158967),	-- Ritual Flayer's Waistband
+						races = HORDE_ONLY,
+						groups = {
+							i(158957),	-- Death-Pledged Greaves
+							i(158966),	-- Death-Pledged Links
+							i(158956),	-- Loa Speaker's Pants
+							i(158965),	-- Loa Speaker's Sash
+							i(158955),	-- Nazmani Warplate Legguards
+							i(158964),	-- Nazmani Warplate Waistplate
+							i(158958),	-- Ritual Flayer's Trousers
+							i(158967),	-- Ritual Flayer's Waistband
+						},
 					})),
 				},
 			}),

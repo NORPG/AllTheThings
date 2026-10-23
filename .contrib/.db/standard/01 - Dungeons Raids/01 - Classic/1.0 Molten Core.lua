@@ -1124,247 +1124,250 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- Tier 2 "Core Forged", added with BWL.
 					-- CRIEVE NOTE: Whatever hell the developer that created this at Blizzard came crawling out of should be sent back, please for the love of god, don't do this with Tier 3 as well.
-					n(227819, applyclassicphase(SOD_PHASE_FIVE, bubbleDownSelf({ timeline = { ADDED_1_15_4 }, }, {	-- Duke Hydraxis
-						cl(DRUID, {
-							-- DPS (Agility)
-							tokencost(231257, i(232099)),	-- Stormrage Cowl
-							tokencost(231259, i(232097)),	-- Stormrage Shoulderpads
-							tokencost(231254, i(232102)),	-- Stormrage Vest
-							tokencost(231261, i(232095)),	-- Stormrage Wraps
-							tokencost(231256, i(232100)),	-- Stormrage Grips
-							tokencost(231260, i(232096)),	-- Stormrage Sash
-							tokencost(231258, i(232098)),	-- Stormrage Trousers
-							tokencost(231255, i(232101)),	-- Stormrage Stompers
+					applyclassicphase(SOD_PHASE_FIVE, n(227819, {	-- Duke Hydraxis
+						timeline = { ADDED_1_15_4 },
+						groups = {
+							cl(DRUID, {
+								-- DPS (Agility)
+								tokencost(231257, i(232099)),	-- Stormrage Cowl
+								tokencost(231259, i(232097)),	-- Stormrage Shoulderpads
+								tokencost(231254, i(232102)),	-- Stormrage Vest
+								tokencost(231261, i(232095)),	-- Stormrage Wraps
+								tokencost(231256, i(232100)),	-- Stormrage Grips
+								tokencost(231260, i(232096)),	-- Stormrage Sash
+								tokencost(231258, i(232098)),	-- Stormrage Trousers
+								tokencost(231255, i(232101)),	-- Stormrage Stompers
 
-							-- DPS (Intellect)
-							tokencost(231249, i(232083)),	-- Stormrage Antlers
-							tokencost(231251, i(232081)),	-- Stormrage Mantle
-							tokencost(231246, i(232086)),	-- Stormrage Leathers
-							tokencost(231253, i(232079)),	-- Stormrage Bindings
-							tokencost(231248, i(232084)),	-- Stormrage Mitts
-							tokencost(231252, i(232080)),	-- Stormrage Cord
-							tokencost(231250, i(232082)),	-- Stormrage Kilt
-							tokencost(231247, i(232085)),	-- Stormrage Sandals
+								-- DPS (Intellect)
+								tokencost(231249, i(232083)),	-- Stormrage Antlers
+								tokencost(231251, i(232081)),	-- Stormrage Mantle
+								tokencost(231246, i(232086)),	-- Stormrage Leathers
+								tokencost(231253, i(232079)),	-- Stormrage Bindings
+								tokencost(231248, i(232084)),	-- Stormrage Mitts
+								tokencost(231252, i(232080)),	-- Stormrage Cord
+								tokencost(231250, i(232082)),	-- Stormrage Kilt
+								tokencost(231247, i(232085)),	-- Stormrage Sandals
 
-							-- Healer
-							tokencost(231233, i(232091)),	-- Stormrage Cover
-							tokencost(231235, i(232089)),	-- Stormrage Pauldrons
-							tokencost(231230, i(232094)),	-- Stormrage Chestguard
-							tokencost(231237, i(232087)),	-- Stormrage Bracers
-							tokencost(231232, i(232092)),	-- Stormrage Handguards
-							tokencost(231236, i(232088)),	-- Stormrage Belt
-							tokencost(231234, i(232090)),	-- Stormrage Legguards
-							tokencost(231231, i(232093)),	-- Stormrage Boots
+								-- Healer
+								tokencost(231233, i(232091)),	-- Stormrage Cover
+								tokencost(231235, i(232089)),	-- Stormrage Pauldrons
+								tokencost(231230, i(232094)),	-- Stormrage Chestguard
+								tokencost(231237, i(232087)),	-- Stormrage Bracers
+								tokencost(231232, i(232092)),	-- Stormrage Handguards
+								tokencost(231236, i(232088)),	-- Stormrage Belt
+								tokencost(231234, i(232090)),	-- Stormrage Legguards
+								tokencost(231231, i(232093)),	-- Stormrage Boots
 
-							-- Tank
-							tokencost(231241, i(232107)),	-- Stormrage Headdress
-							tokencost(231243, i(232105)),	-- Stormrage Spaulders
-							tokencost(231238, i(232110)),	-- Stormrage Armor
-							tokencost(231245, i(232103)),	-- Stormrage Wristguards
-							tokencost(231240, i(232108)),	-- Stormrage Gauntlets
-							tokencost(231244, i(232104)),	-- Stormrage Waistguard
-							tokencost(231242, i(232106)),	-- Stormrage Leggings
-							tokencost(231239, i(232109)),	-- Stormrage Treads
-						}),
-						cl(HUNTER, {
-							-- Melee
-							tokencost(231068, i(232115)),	-- Dragonstalker's Skullcap
-							tokencost(231066, i(232113)),	-- Dragonstalker's Pauldrons
-							tokencost(231071, i(232118)),	-- Dragonstalker's Armor
-							tokencost(231063, i(232111)),	-- Dragonstalker's Vambraces
-							tokencost(231069, i(232116)),	-- Dragonstalker's Grips
-							tokencost(231065, i(232112)),	-- Dragonstalker's Girdle
-							tokencost(231067, i(232114)),	-- Dragonstalker's Pants
-							tokencost(231070, i(232117)),	-- Dragonstalker's Sabatons
+								-- Tank
+								tokencost(231241, i(232107)),	-- Stormrage Headdress
+								tokencost(231243, i(232105)),	-- Stormrage Spaulders
+								tokencost(231238, i(232110)),	-- Stormrage Armor
+								tokencost(231245, i(232103)),	-- Stormrage Wristguards
+								tokencost(231240, i(232108)),	-- Stormrage Gauntlets
+								tokencost(231244, i(232104)),	-- Stormrage Waistguard
+								tokencost(231242, i(232106)),	-- Stormrage Leggings
+								tokencost(231239, i(232109)),	-- Stormrage Treads
+							}),
+							cl(HUNTER, {
+								-- Melee
+								tokencost(231068, i(232115)),	-- Dragonstalker's Skullcap
+								tokencost(231066, i(232113)),	-- Dragonstalker's Pauldrons
+								tokencost(231071, i(232118)),	-- Dragonstalker's Armor
+								tokencost(231063, i(232111)),	-- Dragonstalker's Vambraces
+								tokencost(231069, i(232116)),	-- Dragonstalker's Grips
+								tokencost(231065, i(232112)),	-- Dragonstalker's Girdle
+								tokencost(231067, i(232114)),	-- Dragonstalker's Pants
+								tokencost(231070, i(232117)),	-- Dragonstalker's Sabatons
 
-							-- Ranged
-							tokencost(231059, i(232123)),	-- Dragonstalker's Helm
-							tokencost(231057, i(232121)),	-- Dragonstalker's Spaulders
-							tokencost(231062, i(232126)),	-- Dragonstalker's Breastplate
-							tokencost(231055, i(232119)),	-- Dragonstalker's Bracers
-							tokencost(231060, i(232124)),	-- Dragonstalker's Gauntlets
-							tokencost(231056, i(232120)),	-- Dragonstalker's Belt
-							tokencost(231058, i(232122)),	-- Dragonstalker's Legguards
-							tokencost(231061, i(232125)),	-- Dragonstalker's Greaves
-						}),
-						cl(MAGE, {
-							-- DPS
-							tokencost(231103, i(232131)),	-- Netherwind Crown
-							tokencost(231106, i(232129)),	-- Netherwind Mantle
-							tokencost(231105, i(232134)),	-- Netherwind Robes
-							tokencost(231107, i(232127)),	-- Netherwind Bindings
-							tokencost(231102, i(232132)),	-- Netherwind Gloves
-							tokencost(231100, i(232128)),	-- Netherwind Belt
-							tokencost(231104, i(232130)),	-- Netherwind Pants
-							tokencost(231101, i(232133)),	-- Netherwind Boots
+								-- Ranged
+								tokencost(231059, i(232123)),	-- Dragonstalker's Helm
+								tokencost(231057, i(232121)),	-- Dragonstalker's Spaulders
+								tokencost(231062, i(232126)),	-- Dragonstalker's Breastplate
+								tokencost(231055, i(232119)),	-- Dragonstalker's Bracers
+								tokencost(231060, i(232124)),	-- Dragonstalker's Gauntlets
+								tokencost(231056, i(232120)),	-- Dragonstalker's Belt
+								tokencost(231058, i(232122)),	-- Dragonstalker's Legguards
+								tokencost(231061, i(232125)),	-- Dragonstalker's Greaves
+							}),
+							cl(MAGE, {
+								-- DPS
+								tokencost(231103, i(232131)),	-- Netherwind Crown
+								tokencost(231106, i(232129)),	-- Netherwind Mantle
+								tokencost(231105, i(232134)),	-- Netherwind Robes
+								tokencost(231107, i(232127)),	-- Netherwind Bindings
+								tokencost(231102, i(232132)),	-- Netherwind Gloves
+								tokencost(231100, i(232128)),	-- Netherwind Belt
+								tokencost(231104, i(232130)),	-- Netherwind Pants
+								tokencost(231101, i(232133)),	-- Netherwind Boots
 
-							-- Healer
-							tokencost(231111, i(232139)),	-- Netherwind Mask
-							tokencost(231114, i(232137)),	-- Netherwind Shoulders
-							tokencost(231113, i(232142)),	-- Netherwind Vestments
-							tokencost(231115, i(232135)),	-- Netherwind Wraps
-							tokencost(231110, i(232140)),	-- Netherwind Mitts
-							tokencost(231108, i(232136)),	-- Netherwind Sash
-							tokencost(231112, i(232138)),	-- Netherwind Leggings
-							tokencost(231109, i(232141)),	-- Netherwind Slippers
-						}),
-						cl(PALADIN, {
-							-- DPS
-							tokencost(231178, i(232147)),	-- Judgement Crown
-							tokencost(231176, i(232145)),	-- Judgement Spaulders
-							tokencost(231181, i(232150)),	-- Judgement Breastplate
-							tokencost(231174, i(232143)),	-- Judgement Bindings
-							tokencost(231179, i(232148)),	-- Judgement Gauntlets
-							tokencost(231175, i(232144)),	-- Judgement Belt
-							tokencost(231177, i(232146)),	-- Judgement Legplates
-							tokencost(231180, i(232149)),	-- Judgement Sabatons
+								-- Healer
+								tokencost(231111, i(232139)),	-- Netherwind Mask
+								tokencost(231114, i(232137)),	-- Netherwind Shoulders
+								tokencost(231113, i(232142)),	-- Netherwind Vestments
+								tokencost(231115, i(232135)),	-- Netherwind Wraps
+								tokencost(231110, i(232140)),	-- Netherwind Mitts
+								tokencost(231108, i(232136)),	-- Netherwind Sash
+								tokencost(231112, i(232138)),	-- Netherwind Leggings
+								tokencost(231109, i(232141)),	-- Netherwind Slippers
+							}),
+							cl(PALADIN, {
+								-- DPS
+								tokencost(231178, i(232147)),	-- Judgement Crown
+								tokencost(231176, i(232145)),	-- Judgement Spaulders
+								tokencost(231181, i(232150)),	-- Judgement Breastplate
+								tokencost(231174, i(232143)),	-- Judgement Bindings
+								tokencost(231179, i(232148)),	-- Judgement Gauntlets
+								tokencost(231175, i(232144)),	-- Judgement Belt
+								tokencost(231177, i(232146)),	-- Judgement Legplates
+								tokencost(231180, i(232149)),	-- Judgement Sabatons
 
-							-- Healer
-							tokencost(231194, i(232155)),	-- Judgement Helm
-							tokencost(231192, i(232153)),	-- Judgement Mantle
-							tokencost(231197, i(232158)),	-- Judgement Cuirass
-							tokencost(231190, i(232151)),	-- Judgement Bracers
-							tokencost(231195, i(232156)),	-- Judgement Gloves
-							tokencost(231191, i(232152)),	-- Judgement Girdle
-							tokencost(231193, i(232154)),	-- Judgement Plate Skirt
-							tokencost(231196, i(232157)),	-- Judgement Treads
+								-- Healer
+								tokencost(231194, i(232155)),	-- Judgement Helm
+								tokencost(231192, i(232153)),	-- Judgement Mantle
+								tokencost(231197, i(232158)),	-- Judgement Cuirass
+								tokencost(231190, i(232151)),	-- Judgement Bracers
+								tokencost(231195, i(232156)),	-- Judgement Gloves
+								tokencost(231191, i(232152)),	-- Judgement Girdle
+								tokencost(231193, i(232154)),	-- Judgement Plate Skirt
+								tokencost(231196, i(232157)),	-- Judgement Treads
 
-							-- Tank
-							tokencost(231186, i(232163)),	-- Judgement Great Helm
-							tokencost(231184, i(232161)),	-- Judgement Pauldrons
-							tokencost(231187, i(232166)),	-- Judgement Chestguard
-							tokencost(231182, i(232159)),	-- Judgement Vambraces
-							tokencost(231188, i(232164)),	-- Judgement Handguards
-							tokencost(231183, i(232160)),	-- Judgement Waistguard
-							tokencost(231185, i(232162)),	-- Judgement Legguards
-							tokencost(231189, i(232165)),	-- Judgement Greaves
-						}),
-						cl(PRIEST, {
-							-- DPS
-							tokencost(231167, i(232171)),	-- Crown of Transcendence
-							tokencost(231170, i(232169)),	-- Mantle of Transcendence
-							tokencost(231169, i(232174)),	-- Garb of Transcendence
-							tokencost(231172, i(232167)),	-- Bracers of Transcendence
-							tokencost(231166, i(232172)),	-- Gloves of Transcendence
-							tokencost(231171, i(232168)),	-- Cord of Transcendence
-							tokencost(231168, i(232170)),	-- Pants of Transcendence
-							tokencost(231165, i(232173)),	-- Treads of Transcendence
+								-- Tank
+								tokencost(231186, i(232163)),	-- Judgement Great Helm
+								tokencost(231184, i(232161)),	-- Judgement Pauldrons
+								tokencost(231187, i(232166)),	-- Judgement Chestguard
+								tokencost(231182, i(232159)),	-- Judgement Vambraces
+								tokencost(231188, i(232164)),	-- Judgement Handguards
+								tokencost(231183, i(232160)),	-- Judgement Waistguard
+								tokencost(231185, i(232162)),	-- Judgement Legguards
+								tokencost(231189, i(232165)),	-- Judgement Greaves
+							}),
+							cl(PRIEST, {
+								-- DPS
+								tokencost(231167, i(232171)),	-- Crown of Transcendence
+								tokencost(231170, i(232169)),	-- Mantle of Transcendence
+								tokencost(231169, i(232174)),	-- Garb of Transcendence
+								tokencost(231172, i(232167)),	-- Bracers of Transcendence
+								tokencost(231166, i(232172)),	-- Gloves of Transcendence
+								tokencost(231171, i(232168)),	-- Cord of Transcendence
+								tokencost(231168, i(232170)),	-- Pants of Transcendence
+								tokencost(231165, i(232173)),	-- Treads of Transcendence
 
-							-- Healer
-							tokencost(231157, i(232179)),	-- Halo of Transcendence
-							tokencost(231160, i(232177)),	-- Pauldrons of Transcendence
-							tokencost(231159, i(232182)),	-- Robes of Transcendence
-							tokencost(231162, i(232175)),	-- Bindings of Transcendence
-							tokencost(231156, i(232180)),	-- Handguards of Transcendence
-							tokencost(231161, i(232176)),	-- Belt of Transcendence
-							tokencost(231158, i(232178)),	-- Leggings of Transcendence
-							tokencost(231155, i(232181)),	-- Boots of Transcendence
-						}),
-						cl(ROGUE, {
-							-- DPS
-							tokencost(231043, i(232187)),	-- Bloodfang Hood
-							tokencost(231039, i(232185)),	-- Bloodfang Spaulders
-							tokencost(231040, i(232190)),	-- Bloodfang Chestpiece
-							tokencost(231046, i(232183)),	-- Bloodfang Bracers
-							tokencost(231042, i(232188)),	-- Bloodfang Gloves
-							tokencost(231045, i(232184)),	-- Bloodfang Belt
-							tokencost(231044, i(232186)),	-- Bloodfang Pants
-							tokencost(231041, i(232189)),	-- Bloodfang Boots
+								-- Healer
+								tokencost(231157, i(232179)),	-- Halo of Transcendence
+								tokencost(231160, i(232177)),	-- Pauldrons of Transcendence
+								tokencost(231159, i(232182)),	-- Robes of Transcendence
+								tokencost(231162, i(232175)),	-- Bindings of Transcendence
+								tokencost(231156, i(232180)),	-- Handguards of Transcendence
+								tokencost(231161, i(232176)),	-- Belt of Transcendence
+								tokencost(231158, i(232178)),	-- Leggings of Transcendence
+								tokencost(231155, i(232181)),	-- Boots of Transcendence
+							}),
+							cl(ROGUE, {
+								-- DPS
+								tokencost(231043, i(232187)),	-- Bloodfang Hood
+								tokencost(231039, i(232185)),	-- Bloodfang Spaulders
+								tokencost(231040, i(232190)),	-- Bloodfang Chestpiece
+								tokencost(231046, i(232183)),	-- Bloodfang Bracers
+								tokencost(231042, i(232188)),	-- Bloodfang Gloves
+								tokencost(231045, i(232184)),	-- Bloodfang Belt
+								tokencost(231044, i(232186)),	-- Bloodfang Pants
+								tokencost(231041, i(232189)),	-- Bloodfang Boots
 
-							-- Tank
-							tokencost(231051, i(232195)),	-- Bloodfang Cowl
-							tokencost(231047, i(232193)),	-- Bloodfang Shoulderpads
-							tokencost(231048, i(232198)),	-- Bloodfang Chestguard
-							tokencost(231054, i(232191)),	-- Bloodfang Wristguards
-							tokencost(231050, i(232196)),	-- Bloodfang Handguards
-							tokencost(231053, i(232192)),	-- Bloodfang Waistguard
-							tokencost(231052, i(232194)),	-- Bloodfang Legguards
-							tokencost(231049, i(232197)),	-- Bloodfang Footpads
-						}),
-						cl(SHAMAN, {
-							-- DPS (Agility)
-							tokencost(231227, i(232219)),	-- Crown of Ten Storms
-							tokencost(231225, i(232217)),	-- Spaulders of Ten Storms
-							tokencost(231229, i(232222)),	-- Armor of Ten Storms
-							tokencost(231223, i(232215)),	-- Vambraces of Ten Storms
-							tokencost(231222, i(232220)),	-- Grips of Ten Storms
-							tokencost(231224, i(232216)),	-- Girdle of Ten Storms
-							tokencost(231226, i(232218)),	-- Leggings of Ten Storms
-							tokencost(231228, i(232221)),	-- Treads of Ten Storms
+								-- Tank
+								tokencost(231051, i(232195)),	-- Bloodfang Cowl
+								tokencost(231047, i(232193)),	-- Bloodfang Shoulderpads
+								tokencost(231048, i(232198)),	-- Bloodfang Chestguard
+								tokencost(231054, i(232191)),	-- Bloodfang Wristguards
+								tokencost(231050, i(232196)),	-- Bloodfang Handguards
+								tokencost(231053, i(232192)),	-- Bloodfang Waistguard
+								tokencost(231052, i(232194)),	-- Bloodfang Legguards
+								tokencost(231049, i(232197)),	-- Bloodfang Footpads
+							}),
+							cl(SHAMAN, {
+								-- DPS (Agility)
+								tokencost(231227, i(232219)),	-- Crown of Ten Storms
+								tokencost(231225, i(232217)),	-- Spaulders of Ten Storms
+								tokencost(231229, i(232222)),	-- Armor of Ten Storms
+								tokencost(231223, i(232215)),	-- Vambraces of Ten Storms
+								tokencost(231222, i(232220)),	-- Grips of Ten Storms
+								tokencost(231224, i(232216)),	-- Girdle of Ten Storms
+								tokencost(231226, i(232218)),	-- Leggings of Ten Storms
+								tokencost(231228, i(232221)),	-- Treads of Ten Storms
 
-							-- DPS (Intellect)
-							tokencost(231219, i(232203)),	-- Headdress of Ten Storms
-							tokencost(231217, i(232201)),	-- Mantle of Ten Storms
-							tokencost(231221, i(232206)),	-- Embrace of Ten Storms
-							tokencost(231215, i(232199)),	-- Bindings of Ten Storms
-							tokencost(231214, i(232204)),	-- Gloves of Ten Storms
-							tokencost(231216, i(232200)),	-- Cord of Ten Storms
-							tokencost(231218, i(232202)),	-- Kilt of Ten Storms
-							tokencost(231220, i(232205)),	-- Boots of Ten Storms
+								-- DPS (Intellect)
+								tokencost(231219, i(232203)),	-- Headdress of Ten Storms
+								tokencost(231217, i(232201)),	-- Mantle of Ten Storms
+								tokencost(231221, i(232206)),	-- Embrace of Ten Storms
+								tokencost(231215, i(232199)),	-- Bindings of Ten Storms
+								tokencost(231214, i(232204)),	-- Gloves of Ten Storms
+								tokencost(231216, i(232200)),	-- Cord of Ten Storms
+								tokencost(231218, i(232202)),	-- Kilt of Ten Storms
+								tokencost(231220, i(232205)),	-- Boots of Ten Storms
 
-							-- Healer
-							tokencost(231203, i(232211)),	-- Helmet of Ten Storms
-							tokencost(231201, i(232209)),	-- Epaulets of Ten Storms
-							tokencost(231205, i(232214)),	-- Breastplate of Ten Storms
-							tokencost(231199, i(232207)),	-- Bracers of Ten Storms
-							tokencost(231198, i(232212)),	-- Gauntlets of Ten Storms
-							tokencost(231200, i(232208)),	-- Belt of Ten Storms
-							tokencost(231202, i(232210)),	-- Legplates of Ten Storms
-							tokencost(231204, i(232213)),	-- Greaves of Ten Storms
+								-- Healer
+								tokencost(231203, i(232211)),	-- Helmet of Ten Storms
+								tokencost(231201, i(232209)),	-- Epaulets of Ten Storms
+								tokencost(231205, i(232214)),	-- Breastplate of Ten Storms
+								tokencost(231199, i(232207)),	-- Bracers of Ten Storms
+								tokencost(231198, i(232212)),	-- Gauntlets of Ten Storms
+								tokencost(231200, i(232208)),	-- Belt of Ten Storms
+								tokencost(231202, i(232210)),	-- Legplates of Ten Storms
+								tokencost(231204, i(232213)),	-- Greaves of Ten Storms
 
-							-- Tank
-							tokencost(231211, i(232227)),	-- Faceguard of Ten Storms
-							tokencost(231209, i(232225)),	-- Pauldrons of Ten Storms
-							tokencost(231213, i(232230)),	-- Chestguard of Ten Storms
-							tokencost(231207, i(232223)),	-- Wristguards of Ten Storms
-							tokencost(231206, i(232228)),	-- Handguards of Ten Storms
-							tokencost(231208, i(232224)),	-- Waistguard of Ten Storms
-							tokencost(231210, i(232226)),	-- Legguards of Ten Storms
-							tokencost(231212, i(232229)),	-- Sabatons of Ten Storms
-						}),
-						cl(WARLOCK, {
-							-- DPS
-							tokencost(231074, i(232235)),	-- Nemesis Skullcap
-							tokencost(231077, i(232233)),	-- Nemesis Spaulders
-							tokencost(231076, i(232238)),	-- Nemesis Robes
-							tokencost(231079, i(232231)),	-- Nemesis Bracers
-							tokencost(231073, i(232236)),	-- Nemesis Gloves
-							tokencost(231078, i(232232)),	-- Nemesis Belt
-							tokencost(231075, i(232234)),	-- Nemesis Leggings
-							tokencost(231072, i(232237)),	-- Nemesis Boots
+								-- Tank
+								tokencost(231211, i(232227)),	-- Faceguard of Ten Storms
+								tokencost(231209, i(232225)),	-- Pauldrons of Ten Storms
+								tokencost(231213, i(232230)),	-- Chestguard of Ten Storms
+								tokencost(231207, i(232223)),	-- Wristguards of Ten Storms
+								tokencost(231206, i(232228)),	-- Handguards of Ten Storms
+								tokencost(231208, i(232224)),	-- Waistguard of Ten Storms
+								tokencost(231210, i(232226)),	-- Legguards of Ten Storms
+								tokencost(231212, i(232229)),	-- Sabatons of Ten Storms
+							}),
+							cl(WARLOCK, {
+								-- DPS
+								tokencost(231074, i(232235)),	-- Nemesis Skullcap
+								tokencost(231077, i(232233)),	-- Nemesis Spaulders
+								tokencost(231076, i(232238)),	-- Nemesis Robes
+								tokencost(231079, i(232231)),	-- Nemesis Bracers
+								tokencost(231073, i(232236)),	-- Nemesis Gloves
+								tokencost(231078, i(232232)),	-- Nemesis Belt
+								tokencost(231075, i(232234)),	-- Nemesis Leggings
+								tokencost(231072, i(232237)),	-- Nemesis Boots
 
-							-- Tank
-							tokencost(231092, i(232243)),	-- Nemesis Cowl
-							tokencost(231096, i(232241)),	-- Nemesis Shoulderpads
-							tokencost(231095, i(232246)),	-- Nemesis Garb
-							tokencost(231098, i(232239)),	-- Nemesis Wraps
-							tokencost(231091, i(232244)),	-- Nemesis Handguards
-							tokencost(231097, i(232240)),	-- Nemesis Cord
-							tokencost(231093, i(232242)),	-- Nemesis Pants
-							tokencost(231090, i(232245)),	-- Nemesis Treads
-						}),
-						cl(WARRIOR, {
-							-- DPS
-							tokencost(231035, i(232251)),	-- Helm of Wrath
-							tokencost(231033, i(232249)),	-- Shoulders of Wrath
-							tokencost(231038, i(232254)),	-- Breastplate of Wrath
-							tokencost(231031, i(232247)),	-- Bracers of Wrath
-							tokencost(231036, i(232252)),	-- Gauntlets of Wrath
-							tokencost(231032, i(232248)),	-- Belt of Wrath
-							tokencost(231034, i(232250)),	-- Legplates of Wrath
-							tokencost(231037, i(232253)),	-- Greaves of Wrath
+								-- Tank
+								tokencost(231092, i(232243)),	-- Nemesis Cowl
+								tokencost(231096, i(232241)),	-- Nemesis Shoulderpads
+								tokencost(231095, i(232246)),	-- Nemesis Garb
+								tokencost(231098, i(232239)),	-- Nemesis Wraps
+								tokencost(231091, i(232244)),	-- Nemesis Handguards
+								tokencost(231097, i(232240)),	-- Nemesis Cord
+								tokencost(231093, i(232242)),	-- Nemesis Pants
+								tokencost(231090, i(232245)),	-- Nemesis Treads
+							}),
+							cl(WARRIOR, {
+								-- DPS
+								tokencost(231035, i(232251)),	-- Helm of Wrath
+								tokencost(231033, i(232249)),	-- Shoulders of Wrath
+								tokencost(231038, i(232254)),	-- Breastplate of Wrath
+								tokencost(231031, i(232247)),	-- Bracers of Wrath
+								tokencost(231036, i(232252)),	-- Gauntlets of Wrath
+								tokencost(231032, i(232248)),	-- Belt of Wrath
+								tokencost(231034, i(232250)),	-- Legplates of Wrath
+								tokencost(231037, i(232253)),	-- Greaves of Wrath
 
-							-- Tank
-							tokencost(231027, i(232259)),	-- Faceguard of Wrath
-							tokencost(231025, i(232257)),	-- Pauldrons of Wrath
-							tokencost(231030, i(232262)),	-- Chestguard of Wrath
-							tokencost(231023, i(232255)),	-- Wristguards of Wrath
-							tokencost(231028, i(232260)),	-- Handguards of Wrath
-							tokencost(231024, i(232256)),	-- Waistguard of Wrath
-							tokencost(231026, i(232258)),	-- Legguards of Wrath
-							tokencost(231029, i(232261)),	-- Sabatons of Wrath
-						}),
-					}))),
+								-- Tank
+								tokencost(231027, i(232259)),	-- Faceguard of Wrath
+								tokencost(231025, i(232257)),	-- Pauldrons of Wrath
+								tokencost(231030, i(232262)),	-- Chestguard of Wrath
+								tokencost(231023, i(232255)),	-- Wristguards of Wrath
+								tokencost(231028, i(232260)),	-- Handguards of Wrath
+								tokencost(231024, i(232256)),	-- Waistguard of Wrath
+								tokencost(231026, i(232258)),	-- Legguards of Wrath
+								tokencost(231029, i(232261)),	-- Sabatons of Wrath
+							}),
+						},
+					})),
 					n(228429, {	-- Lucifron
 						i(17329),	-- Hand of Lucifron
 						i(227533),	-- Incandescent Gloves

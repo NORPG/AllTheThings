@@ -526,1220 +526,1235 @@ maproot(KHAZ_ALGAR, KARESH, {
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 41970.04, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {	-- Chapter 4: Shadows En Garde
-				q(84896, {	-- The Next Dimension
-					sourceQuests = { 84910 },	-- The Tabiqa
-					qg = 230786,	-- Soul-Scribe
-					coord = { 74.4, 30.4, KARESH },
-				}),
-				q(84897, {	-- The Calm Before We Storm
-					sourceQuests = { 84896 },	-- The Next Dimension
-					qg = 230818,	-- Soul-Scribe
-					coord = { 60.2, 29.2, KARESH },
-				}),
-				------ Stay awhile and listen ------
-				-- hqt(???, {	-- Stay awhile and listen: Alleria Windrunner - no questID
-				-- 	name = "Stay awhile and listen: Alleria Windrunner",
-				-- 	description = "Dialogue becomes available after you accept 'The Calm Before We Storm' (84897).",
-				-- 	sourceQuests = { 84896 },	-- The Next Dimension
-				-- 	qg = 230817,	-- Alleria Windrunner
-				-- 	coord = { 60.7, 27.9, KARESH },
-				-- }),
-				--
-				q(84899, {	-- Shadowguard Diffusion
-					sourceQuests = { 84897 },	-- The Calm Before We Storm
-					qg = 230817,	-- Alleria Windrunner
-					coord = { 60.7, 27.9, KARESH },
-					groups = { i(238390) },	-- Soulbreaker's Sigil
-				}),
-				q(84898, {	-- The Sands of K'aresh
-					sourceQuests = { 84897 },	-- The Calm Before We Storm
-					qg = 231443,	-- Soul-Scribe
-					coord = { 60.7, 28.0, KARESH },
-					groups = {
-						i(237136),	-- Wastes Scanner (PQI!)
-						--
-						o(502375, {	-- Sand Pile
-							coord = { 59.1, 28.5, KARESH },
-							groups = { i(233192) },	-- Shadowguard Weapon (QI!)
-						}),
-						o(502376, {	-- Sand Pile
-							coord = { 58.7, 29.5, KARESH },
-							groups = { i(233193) },	-- Shadowguard Weapon (QI!)
-						}),
-						o(502377, {	-- Sand Pile
-							coord = { 58.3, 26.3, KARESH },
-							groups = { i(233194) },	-- Shadowguard Weapon (QI!)
-						}),
-					},
-				}),
-				q(84900, {	-- Like a Knife Through Aether
-					sourceQuests = {
-						84899,	-- Shadowguard Diffusion
-						84898,	-- The Sands of K'aresh
-					},
-					qg = 231445,	-- Xal'atath
-					coord = { 55.1, 30.4, KARESH },
-					groups = { i(233333) },	-- Forgecaster Wraps (QI!)
-				}),
-				q(84902, {	-- Adverse Instantiation
-					sourceQuests = { 84900 },	-- Like a Knife Through Aether
-					qg = 231487,	-- Locus-Walker
-					coord = { 48.6, 26.7, KARESH },
-				}),
-				q(84904, {	-- And We Will Answer
-					sourceQuests = { 84900 },	-- Like a Knife Through Aether
-					qg = 231486,	-- Soul-Scribe
-					coord = { 48.6, 26.8, KARESH },
-					groups = { i(233334) },	-- Beacon of the Wastes (PQI!)
-				}),
-				q(84903, {	-- Until the Sands Bleed Void
-					sourceQuests = { 84900 },	-- Like a Knife Through Aether
-					qg = 231488,	-- Alleria Windrunner
-					coord = { 48.6, 26.6, KARESH },
-					groups = {
-						i(237934),	-- Locket of the Final Purge
-						i(237935),	-- Void-Reckoning Necklace
-					},
-				}),
-				q(84905, {	-- To Walk Among Shadow
-					sourceQuests = {
-						84902,	-- Adverse Instantiation
-						84904,	-- And We Will Answer
-						84903,	-- Until the Sands Bleed Void
-					},
-					qg = 231492,	-- Locus-Walker
-					coord = { 48.2, 19.4, KARESH },
-				}),
-				q(84906, {	-- Nexus Regicide
-					sourceQuests = { 84905 },	-- To Walk Among Shadow
-					qg = 231505,	-- Alleria Windrunner
-					coord = { 48.2, 19.1, KARESH },
-					groups = {
-						i(237936),	-- Fallen Prince's Crown
-						i(237938),	-- Fallen Prince's Headplate
-						i(237937),	-- Fallen Prince's Helm
-						i(237939),	-- Fallen Prince's Mask
-					},
-				}),
-				q(85037, {	-- That's a Wrap
-					sourceQuests = { 84906 },	-- Nexus Regicide
-					qg = 231520,	-- Xal'atath
-					coord = { 44.2, 18.5, KARESH },
-				}),
-				------ Stay awhile and listen ------
-				hqt(90614, {	-- Stay awhile and listen: Locus-Walker
-					name = "Stay awhile and listen: Locus-Walker",
-					description = "Dialogue becomes available after you accept 'That's a Wrap' (85037).",
-					sourceQuests = { 84906 },	-- Nexus Regicide
-					qg = 231524,	-- Locus-Walker
-					coord = { 42.9, 21.6, KARESH },
-				}),
-			})),
-			header(HEADERS.AchCriteria, 41970.05, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {	-- Chapter 5: The Light of K'aresh
-				q(86820, {	-- Manaforge Omega: Dimensius Looms
-					sourceQuests = { 85037 },	-- That's a Wrap
-					qg = 231522,	-- Alleria Windrunner
-					coord = { 42.9, 21.5, KARESH },
-					groups = {
-						i(260582, {	-- Cartel Collector's Cage (DECOR!)
-							timeline = { ADDED_11_2_7 },
-						}),
-						i(231769),	-- Enchanted Runed Ethereal Crest
-						i(236954),	-- Void-Touched Valorstone
-					},
-				}),
-				q(86456, {	-- An Elegy for a Silent World
-					sourceQuests = { 85037 },	-- That's a Wrap
-					qs = 234273,	-- A Dimmed Crystal (QS!)
-				}),
-				------ Stay awhile and listen ------
-				hqt(90753, {	-- Stay awhile and listen: Alleria Windrunner
-					name = "Stay awhile and listen: Alleria Windrunner",
-					description = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
-					sourceQuest = 86456,	-- An Elegy for a Silent World
-					qg = 243653,	-- Alleria Windrunner
-					coord = { 75.4, 33.7, KARESH },
-				}),
-				q(86457, {	-- A Lullaby of Hope
-					sourceQuest = 86456,	-- An Elegy for a Silent World
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86458, {	-- A Song for Our Future
-					sourceQuest = 86457,	-- A Lullaby of Hope
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					maps = { 2449 },	-- Eco-Dome Al'dani
-					groups = { campsite(119) },	-- The Fate of the Devoured (CS!)
-				}),
-				------ Stay awhile and listen ------
-				hqt(90708, {	-- Stay awhile and listen: Ve'nari
-					name = "Stay awhile and listen: Ve'nari",
-					sourceQuest = 86458,	-- A Song for Our Future
-					qg = 235155,	-- Ve'nari
-					maps = { 2449 },	-- Eco-Dome Al'dani
-				}),
-			})),
+			header(HEADERS.AchCriteria, 41970.04, {	-- Chapter 4: Shadows En Garde
+				timeline = { ADDED_11_2_0_SEASONSTART },
+				groups = {
+					q(84896, {	-- The Next Dimension
+						sourceQuests = { 84910 },	-- The Tabiqa
+						qg = 230786,	-- Soul-Scribe
+						coord = { 74.4, 30.4, KARESH },
+					}),
+					q(84897, {	-- The Calm Before We Storm
+						sourceQuests = { 84896 },	-- The Next Dimension
+						qg = 230818,	-- Soul-Scribe
+						coord = { 60.2, 29.2, KARESH },
+					}),
+					------ Stay awhile and listen ------
+					-- hqt(???, {	-- Stay awhile and listen: Alleria Windrunner - no questID
+					-- 	name = "Stay awhile and listen: Alleria Windrunner",
+					-- 	description = "Dialogue becomes available after you accept 'The Calm Before We Storm' (84897).",
+					-- 	sourceQuests = { 84896 },	-- The Next Dimension
+					-- 	qg = 230817,	-- Alleria Windrunner
+					-- 	coord = { 60.7, 27.9, KARESH },
+					-- }),
+					--
+					q(84899, {	-- Shadowguard Diffusion
+						sourceQuests = { 84897 },	-- The Calm Before We Storm
+						qg = 230817,	-- Alleria Windrunner
+						coord = { 60.7, 27.9, KARESH },
+						groups = { i(238390) },	-- Soulbreaker's Sigil
+					}),
+					q(84898, {	-- The Sands of K'aresh
+						sourceQuests = { 84897 },	-- The Calm Before We Storm
+						qg = 231443,	-- Soul-Scribe
+						coord = { 60.7, 28.0, KARESH },
+						groups = {
+							i(237136),	-- Wastes Scanner (PQI!)
+							--
+							o(502375, {	-- Sand Pile
+								coord = { 59.1, 28.5, KARESH },
+								groups = { i(233192) },	-- Shadowguard Weapon (QI!)
+							}),
+							o(502376, {	-- Sand Pile
+								coord = { 58.7, 29.5, KARESH },
+								groups = { i(233193) },	-- Shadowguard Weapon (QI!)
+							}),
+							o(502377, {	-- Sand Pile
+								coord = { 58.3, 26.3, KARESH },
+								groups = { i(233194) },	-- Shadowguard Weapon (QI!)
+							}),
+						},
+					}),
+					q(84900, {	-- Like a Knife Through Aether
+						sourceQuests = {
+							84899,	-- Shadowguard Diffusion
+							84898,	-- The Sands of K'aresh
+						},
+						qg = 231445,	-- Xal'atath
+						coord = { 55.1, 30.4, KARESH },
+						groups = { i(233333) },	-- Forgecaster Wraps (QI!)
+					}),
+					q(84902, {	-- Adverse Instantiation
+						sourceQuests = { 84900 },	-- Like a Knife Through Aether
+						qg = 231487,	-- Locus-Walker
+						coord = { 48.6, 26.7, KARESH },
+					}),
+					q(84904, {	-- And We Will Answer
+						sourceQuests = { 84900 },	-- Like a Knife Through Aether
+						qg = 231486,	-- Soul-Scribe
+						coord = { 48.6, 26.8, KARESH },
+						groups = { i(233334) },	-- Beacon of the Wastes (PQI!)
+					}),
+					q(84903, {	-- Until the Sands Bleed Void
+						sourceQuests = { 84900 },	-- Like a Knife Through Aether
+						qg = 231488,	-- Alleria Windrunner
+						coord = { 48.6, 26.6, KARESH },
+						groups = {
+							i(237934),	-- Locket of the Final Purge
+							i(237935),	-- Void-Reckoning Necklace
+						},
+					}),
+					q(84905, {	-- To Walk Among Shadow
+						sourceQuests = {
+							84902,	-- Adverse Instantiation
+							84904,	-- And We Will Answer
+							84903,	-- Until the Sands Bleed Void
+						},
+						qg = 231492,	-- Locus-Walker
+						coord = { 48.2, 19.4, KARESH },
+					}),
+					q(84906, {	-- Nexus Regicide
+						sourceQuests = { 84905 },	-- To Walk Among Shadow
+						qg = 231505,	-- Alleria Windrunner
+						coord = { 48.2, 19.1, KARESH },
+						groups = {
+							i(237936),	-- Fallen Prince's Crown
+							i(237938),	-- Fallen Prince's Headplate
+							i(237937),	-- Fallen Prince's Helm
+							i(237939),	-- Fallen Prince's Mask
+						},
+					}),
+					q(85037, {	-- That's a Wrap
+						sourceQuests = { 84906 },	-- Nexus Regicide
+						qg = 231520,	-- Xal'atath
+						coord = { 44.2, 18.5, KARESH },
+					}),
+					------ Stay awhile and listen ------
+					hqt(90614, {	-- Stay awhile and listen: Locus-Walker
+						name = "Stay awhile and listen: Locus-Walker",
+						description = "Dialogue becomes available after you accept 'That's a Wrap' (85037).",
+						sourceQuests = { 84906 },	-- Nexus Regicide
+						qg = 231524,	-- Locus-Walker
+						coord = { 42.9, 21.6, KARESH },
+					}),
+				},
+			}),
+			header(HEADERS.AchCriteria, 41970.05, {	-- Chapter 5: The Light of K'aresh
+				timeline = { ADDED_11_2_0_SEASONSTART },
+				groups = {
+					q(86820, {	-- Manaforge Omega: Dimensius Looms
+						sourceQuests = { 85037 },	-- That's a Wrap
+						qg = 231522,	-- Alleria Windrunner
+						coord = { 42.9, 21.5, KARESH },
+						groups = {
+							i(260582, {	-- Cartel Collector's Cage (DECOR!)
+								timeline = { ADDED_11_2_7 },
+							}),
+							i(231769),	-- Enchanted Runed Ethereal Crest
+							i(236954),	-- Void-Touched Valorstone
+						},
+					}),
+					q(86456, {	-- An Elegy for a Silent World
+						sourceQuests = { 85037 },	-- That's a Wrap
+						qs = 234273,	-- A Dimmed Crystal (QS!)
+					}),
+					------ Stay awhile and listen ------
+					hqt(90753, {	-- Stay awhile and listen: Alleria Windrunner
+						name = "Stay awhile and listen: Alleria Windrunner",
+						description = "Dialogue becomes available after you accept 'An Elegy for a Silent World' (86456).",
+						sourceQuest = 86456,	-- An Elegy for a Silent World
+						qg = 243653,	-- Alleria Windrunner
+						coord = { 75.4, 33.7, KARESH },
+					}),
+					q(86457, {	-- A Lullaby of Hope
+						sourceQuest = 86456,	-- An Elegy for a Silent World
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86458, {	-- A Song for Our Future
+						sourceQuest = 86457,	-- A Lullaby of Hope
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						maps = { 2449 },	-- Eco-Dome Al'dani
+						groups = { campsite(119) },	-- The Fate of the Devoured (CS!)
+					}),
+					------ Stay awhile and listen ------
+					hqt(90708, {	-- Stay awhile and listen: Ve'nari
+						name = "Stay awhile and listen: Ve'nari",
+						sourceQuest = 86458,	-- A Song for Our Future
+						qg = 235155,	-- Ve'nari
+						maps = { 2449 },	-- Eco-Dome Al'dani
+					}),
+				},
+			}),
 			n(REWARDS, {
 				currency(3278),	-- Ethereal Strands
 			}),
 		}),
-		header(HEADERS.Achievement, 41808, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {	-- Otherworldly Ecologist
-			q(87290, {	-- The Oasis
-				sourceQuests = { 85037 },	-- That's a Wrap
-				qg = 238212,	-- Om'talad
-				coord = { 39.4, 24.2, KARESH_TAZAVESH },
-			}),
-			q(87337, {	-- Custodian Duties
-				sourceQuests = { 87290 },	-- The Oasis
-				qg = 238209,	-- Cartel Om Custodian
-				coord = { 75.9, 34.3, KARESH },
-				groups = {
-					o(516700, {	-- Oasis Animal Leavings
-						i(236416),	-- Oasis Animal Leavings (QI!)
+		header(HEADERS.Achievement, 41808, {	-- Otherworldly Ecologist
+			timeline = { ADDED_11_2_0_SEASONSTART },
+			groups = {
+				q(87290, {	-- The Oasis
+					sourceQuests = { 85037 },	-- That's a Wrap
+					qg = 238212,	-- Om'talad
+					coord = { 39.4, 24.2, KARESH_TAZAVESH },
+				}),
+				q(87337, {	-- Custodian Duties
+					sourceQuests = { 87290 },	-- The Oasis
+					qg = 238209,	-- Cartel Om Custodian
+					coord = { 75.9, 34.3, KARESH },
+					groups = {
+						o(516700, {	-- Oasis Animal Leavings
+							i(236416),	-- Oasis Animal Leavings (QI!)
+						}),
+					},
+				}),
+				q(87338, {	-- Day One Orientation
+					sourceQuests = { 87337 },	-- Custodian Duties
+					qg = 231820,	-- Ve'nari
+					coord = { 75.9, 34.2, KARESH },
+				}),
+				q(87339, {	-- Ongoing Activities
+					sourceQuests = { 87337 },	-- Custodian Duties
+					qg = 231820,	-- Ve'nari
+					coord = { 75.9, 34.2, KARESH },
+					groups = {
+						o(516792, {	-- Watering Jug
+							coord = { 73.0, 33.0, KARESH },
+							groups = { i(236641) },	-- Watering Jug (QI!)
+						}),
+					},
+				}),
+				q(87340, {	-- Junk Mail
+					sourceQuests = {
+						87338,	-- Day One Orientation
+						87339,	-- Ongoing Activities
+					},
+					qg = 231820,	-- Ve'nari
+					coord = { 75.9, 34.2, KARESH },
+				}),
+				-- Following headers are placed in order of completion
+				header(HEADERS.AchCriteria, 41808.01, {	-- The Bees Knees
+					q(85075, {	-- To Stormsong
+						sourceQuests = { 87340 },	-- Junk Mail
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(230030) },	-- Cartel Ve Communicator (PQI!)
 					}),
-				},
-			}),
-			q(87338, {	-- Day One Orientation
-				sourceQuests = { 87337 },	-- Custodian Duties
-				qg = 231820,	-- Ve'nari
-				coord = { 75.9, 34.2, KARESH },
-			}),
-			q(87339, {	-- Ongoing Activities
-				sourceQuests = { 87337 },	-- Custodian Duties
-				qg = 231820,	-- Ve'nari
-				coord = { 75.9, 34.2, KARESH },
-				groups = {
-					o(516792, {	-- Watering Jug
-						coord = { 73.0, 33.0, KARESH },
-						groups = { i(236641) },	-- Watering Jug (QI!)
+					q(85076, {	-- Don't Bee Crazy
+						sourceQuests = { 85075 },	-- To Stormsong
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.4, 69.9, STORMSONG_VALLEY },
 					}),
-				},
-			}),
-			q(87340, {	-- Junk Mail
-				sourceQuests = {
-					87338,	-- Day One Orientation
-					87339,	-- Ongoing Activities
-				},
-				qg = 231820,	-- Ve'nari
-				coord = { 75.9, 34.2, KARESH },
-			}),
-			-- Following headers are placed in order of completion
-			header(HEADERS.AchCriteria, 41808.01, {	-- The Bees Knees
-				q(85075, {	-- To Stormsong
-					sourceQuests = { 87340 },	-- Junk Mail
+					q(85077, {	-- Sticky Fingers
+						sourceQuests = { 85075 },	-- To Stormsong
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.4, 69.9, STORMSONG_VALLEY },
+						groups = { i(230053) },	-- Honey Globule (QI!)
+					}),
+					q(85078, {	-- Bee in the Bonnet
+						sourceQuests = {
+							85076,	-- Don't Bee Crazy
+							85077,	-- Sticky Fingers
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.4, 69.9, STORMSONG_VALLEY },
+					}),
+					q(85079, {	-- Such a Sleebee-head
+						sourceQuests = {
+							85076,	-- Don't Bee Crazy
+							85077,	-- Sticky Fingers
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.4, 69.9, STORMSONG_VALLEY },
+						groups = {
+							o(475164, {	-- Ve'nari's Package
+								coord = { 72.5, 69.8, STORMSONG_VALLEY },
+								groups = { i(230210) },	-- Tranquilizing Dart (PQI!)
+							}),
+						},
+					}),
+					q(85080, {	-- An Un-Bee-lievable Solution
+						sourceQuests = {
+							85078,	-- Bee in the Bonnet
+							85079,	-- Such a Sleebee-head
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.6, 65.8, STORMSONG_VALLEY },
+						groups = {
+							o(475213, {	-- Ve'nari's Package
+								coord = { 72.7, 65.8, STORMSONG_VALLEY },
+								groups = { i(229424) },	-- Anima Vacuum (PQI!)
+							}),
+						},
+					}),
+					q(85081, {	-- Beehemian Rhapsody
+						sourceQuests = {
+							85078,	-- Bee in the Bonnet
+							85079,	-- Such a Sleebee-head
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.6, 65.8, STORMSONG_VALLEY },
+						groups = {
+							o(475207, {	-- Honey Pot
+								coord = { 72.6, 66.0, STORMSONG_VALLEY },
+								groups = { i(230549) },	-- Queen Bee in a Jar (QI!)
+							}),
+						},
+					}),
+					q(85082, {	-- To K'aresh
+						sourceQuests = {
+							85080,	-- An Un-Bee-lievable Solution
+							85081,	-- Beehemian Rhapsody
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 72.6, 65.8, STORMSONG_VALLEY },
+					}),
+					q(85249, {	-- A Bee Test
+						sourceQuests = { 85082 },	-- To K'aresh
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(85084, {	-- Bee Strong
+						sourceQuests = { 85249 },	-- A Bee Test
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 48.4, 61.2, KARESH },
+						groups = {
+							o(475250, {	-- Honey Pot
+								coord = { 48.4, 61.2, KARESH },
+								groups = { i(230732) },	-- Honey (PQI!)
+							}),
+						},
+					}),
+					q(85083, {	-- Photogra-Bee
+						sourceQuests = { 85249 },	-- A Bee Test
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 48.4, 61.2, KARESH },
+						groups = { i(230729) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(85257, {	-- Primus Buzzness
+						sourceQuests = {
+							85084,	-- Bee Strong
+							85083,	-- Photogra-Bee
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 48.4, 61.2, KARESH },
+					}),
+					q(85255, {	-- Tranquila-Bee
+						sourceQuests = { 85257 },	-- Primus Buzzness
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 49.0, 57.2, KARESH },
+						groups = { i(230210) },	-- Tranquilizing Dart (PQI!)
+					}),
+					q(85256, {	-- Botany, Finally
+						sourceQuests = { 85257 },	-- Primus Buzzness
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 49.0, 57.2, KARESH },
+						groups = {
+							o_repeated({
+								i(230809),	-- K'aresh Flora Cutting (QI!)
+								o(475321),	-- Crystalbloom
+								o(475324),	-- Firebud
+								o(475317),	-- K'aresh Bellflower
+								o(475314),	-- Pricklebloom
+							}),
+						},
+					}),
+					q(89348, {	-- Let There Bee Love
+						sourceQuests = {
+							85255,	-- Tranquila-Bee
+							85256,	-- Botany, Finally
+						},
+						qg = 231919,	-- Botanist Alaenra
+						coord = { 49.0, 57.2, KARESH },
+					}),
+					q(85258, {	-- Oh Honey Honey
+						sourceQuests = { 89348 },	-- Let There Bee Love
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						groups = {
+							o_repeated({	-- Honeycomb
+								coords = {
+									{ 75.3, 29.0, KARESH },
+									{ 76.1, 29.4, KARESH },
+									{ 76.3, 30.4, KARESH },
+								},
+								groups = {
+									i(230907),	-- Honeycomb (QI!)
+									o(475391),	-- Honeycomb
+									o(475392),	-- Honeycomb
+									o(475393),	-- Honeycomb
+								},
+							}),
+						},
+					}),
+					------ Stay awhile and listen ------
+					hqt(89305, {	-- Stay awhile and listen: Botanist Alaenra
+						name = "Stay awhile and listen: Botanist Alaenra",
+						description = "Dialogue becomes available after you accept 'Oh Honey Honey' (85258).",
+						sourceQuests = { 89348 },	-- Let There Bee Love
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+					}),
+					--
+					q(85259, {	-- Waggle Dance
+						sourceQuests = { 85258 },	-- Oh Honey Honey
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+					}),
+					q(85260, {	-- Hiving a Hard Day
+						sourceQuests = { 85259 },	-- Waggle Dance
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+					}),
+					q(85261, {	-- Bee Roll
+						sourceQuests = { 85260 },	-- Hiving a Hard Day
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						groups = { i(231163) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(85262, {	-- The Royal Procession
+						sourceQuests = { 85261 },	-- Bee Roll
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.06, {	-- Nesingwary Necessities
+					q(86352, {	-- Hunting for a Good Author
+						sourceQuests = { 85262 },	-- The Royal Procession
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86353, {	-- Protecting the Young
+						sourceQuests = { 86352 },	-- Hunting for a Good Author
+						qg = 234745,	-- Hemet Nesingwary
+						coord = { 18.8, 39.9, THE_AZURE_SPAN },
+					}),
+					q(86354, {	-- A Percussive Antidote
+						sourceQuests = { 86352 },	-- Hunting for a Good Author
+						qg = 234745,	-- Hemet Nesingwary
+						coord = { 18.8, 39.9, THE_AZURE_SPAN },
+					}),
+					q(84822, {	-- To Iskaara
+						sourceQuests = {
+							86353,	-- Protecting the Young
+							86354,	-- A Percussive Antidote
+						},
+						qg = 234745,	-- Hemet Nesingwary
+						coord = { 18.8, 39.9, THE_AZURE_SPAN },
+					}),
+					q(86356, {	-- Sustainable Harvesting
+						sourceQuests = { 84822 },	-- To Iskaara
+						qg = 235290,	-- Hemet Nesingwary
+						coord = { 13.6, 49.1, THE_AZURE_SPAN },
+						groups = {
+							o(504181, {	-- Fallen Log
+								i(234452),	-- Chopped Wood (QI!)
+							}),
+						},
+					}),
+					q(86355, {	-- Using the Whole Animal
+						sourceQuests = { 84822 },	-- To Iskaara
+						qg = 235290,	-- Hemet Nesingwary
+						coord = { 13.6, 49.1, THE_AZURE_SPAN },
+						groups = {
+							i(234457),	-- Butcher's Knife (PQI!)
+							--
+							i(234036),	-- Bruffalon Meat (QI!)
+						},
+					}),
+					q(86357, {	-- Time for Noms
+						sourceQuests = {
+							86356,	-- Sustainable Harvesting
+							86355,	-- Using the Whole Animal
+						},
+						qg = 235290,	-- Hemet Nesingwary
+						coord = { 13.6, 49.1, THE_AZURE_SPAN },
+						groups = {
+							o(504191, {	-- Pile of Meat
+								coord = { 14.8, 48.3, THE_AZURE_SPAN },
+							}),
+						},
+					}),
+					q(86358, {	-- Any Old Excuse
+						sourceQuests = {
+							86356,	-- Sustainable Harvesting
+							86355,	-- Using the Whole Animal
+						},
+						qg = 235290,	-- Hemet Nesingwary
+						coord = { 13.6, 49.1, THE_AZURE_SPAN },
+					}),
+					q(86359, {	-- Return to K'aresh
+						sourceQuests = {
+							86357,	-- Time for Noms
+							86358,	-- Any Old Excuse
+						},
+						qg = 235290,	-- Hemet Nesingwary
+						coord = { 13.6, 49.1, THE_AZURE_SPAN },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.02, {	-- Roaming Free
+					q(86182, {	-- Ghost Buster
+						sourceQuests = { 86359 },	-- Return to K'aresh
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(229395) },	-- Slateback Essence (QI!)
+					}),
+					------ Stay awhile and listen ------
+					hqt(89330, {	-- Stay awhile and listen: Hemet Nesingwary
+						name = "Stay awhile and listen: Hemet Nesingwary",
+						description = "Dialogue becomes available after you accept 'Ghost Buster' (86182).",
+						sourceQuests = { 86359 },	-- Return to K'aresh
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+					--
+					q(86183, {	-- The Power of Gods
+						sourceQuests = { 86182 },	-- Ghost Buster
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86184, {	-- Diminishing Returns
+						sourceQuests = { 86183 },	-- The Power of Gods
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(232432) },	-- Condenser Disc (PQI!)
+					}),
+					q(86185, {	-- Running Free
+						sourceQuests = { 86184 },	-- Diminishing Returns
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+					q(86186, {	-- The Super Sniffer
+						sourceQuests = { 86185 },	-- Running Free
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86187, {	-- The Smallest Possible Effort
+						sourceQuests = { 86186 },	-- The Super Sniffer
+						qg = 234272,	-- Rhubarn
+						coord = { 77.6, 61.8, AZJ_KAHET },
+						groups = {
+							i(232992, {	-- Large Bug Bits (QI!)
+								i(232990),	-- Bug Bits (QI!)
+							}),
+						},
+					}),
+					q(86188, {	-- More-shrooms
+						sourceQuests = { 86186 },	-- The Super Sniffer
+						qg = 234272,	-- Rhubarn
+						coord = { 77.6, 61.8, AZJ_KAHET },
+						groups = {
+							o(500744, {	-- Rak-ush Mushroom
+								i(233010),	-- Rak-ush Mushroom (QI!)
+							}),
+						},
+					}),
+					q(86189, {	-- Fungal Invasion
+						sourceQuests = {
+							86187,	-- The Smallest Possible Effort
+							86188,	-- More-shrooms
+						},
+						qg = 234272,	-- Rhubarn
+						coord = { 77.6, 61.8, AZJ_KAHET },
+					}),
+					q(86190, {	-- One Mushroom to Rule Them All
+						sourceQuests = {
+							86187,	-- The Smallest Possible Effort
+							86188,	-- More-shrooms
+						},
+						qg = 234272,	-- Rhubarn
+						coord = { 77.6, 61.8, AZJ_KAHET },
+						groups = {
+							o(500779, {	-- Voshshroom
+								coord = { 54.1, 16.5, AZJ_KAHET },
+								groups = {
+									i(233011),	-- Voshshroom (QI!)
+								},
+							}),
+						},
+					}),
+					q(86191, {	-- Smell Ya Later
+						sourceQuests = {
+							86189,	-- Fungal Invasion
+							86190,	-- One Mushroom to Rule Them All
+						},
+						qg = 234272,	-- Rhubarn
+						coord = { 77.6, 61.8, AZJ_KAHET },
+					}),
+					q(86194, {	-- The Scent of Love
+						sourceQuests = { 86191 },	-- Smell Ya Later
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						groups = { i(233195) },	-- Pheromone Disperser (PQI!)
+					}),
+					q(86192, {	-- On a Bed of Bones They Lie
+						sourceQuests = { 86194 },	-- The Scent of Love
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						groups = {
+							i(233016),	-- Creature Bones (QI!)
+							o(502399, {	-- Pile of Bones
+								coord = { 73.1, 32.5, KARESH },
+							}),
+						},
+					}),
+					q(86195, {	-- Slateback Soccer
+						sourceQuests = { 86192 },	-- On a Bed of Bones They Lie
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(229420) },	-- Anima Orb (PQI!)
+					}),
+					------ Stay awhile and listen ------
+					hqt(89292, {	-- Stay awhile and listen: Rhubarn
+						name = "Stay awhile and listen: Rhubarn",
+						description = "Dialogue becomes available after you accept 'Slateback Soccer' (86195).",
+						sourceQuests = { 86192 },	-- On a Bed of Bones They Lie
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+					}),
+					--
+				}),
+				header(HEADERS.AchCriteria, 41808.03, {	-- Fox-strut
+					q(86348, {	-- Fox Bane
+						sourceQuests = { 86195 },	-- Slateback Soccer
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(237896) },	-- Thorntail Essence (QI!)
+					}),
+					q(86350, {	-- Eau de Foxy
+						sourceQuests = { 86348 },	-- Fox Bane
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						groups = { i(233487) },	-- Pheromone Disperser (PQI!)
+					}),
+					q(86362, {	-- What Does the Fox Dream?
+						sourceQuests = { 86350 },	-- Eau de Foxy
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(233552) },	-- Tranquilizing Dart (PQI!)
+					}),
+					q(86351, {	-- Strike a Pose
+						sourceQuests = { 86362 },	-- What Does the Fox Dream?
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(233488) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(86360, {	-- Fantastic Ms. Fox
+						sourceQuests = { 86351 },	-- Strike a Pose
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+					q(86361, {	-- Are You Kitting Me?
+						sourceQuests = { 86360 },	-- Fantastic Ms. Fox
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(229420) },	-- Anima Orb (PQI!)
+					}),
+					q(86392, {	-- Foxy Footwork
+						sourceQuests = { 86361 },	-- Are You Kitting Me?
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.04, {	-- Lil' Lapbugs
+					q(86349, {	-- Lapbug Essence Hunter
+						sourceQuests = { 86195 },	-- Slateback Soccer
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(229393) },	-- Lapbug Essence (QI!)
+					}),
+					q(87292, {	-- Rooting for Trouble
+						sourceQuests = { 86349 },	-- Lapbug Essence Hunter
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+					}),
+					q(87291, {	-- Salad Bar
+						sourceQuests = {
+							87292,	-- Rooting for Trouble
+							86351,	-- Strike a Pose
+						},
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						groups = {
+							o_repeated({
+								i(235914),	-- Chopped Oasis Plants (QI!)
+								o(516304),	-- Lustrous Conker
+								o(516302),	-- Pricklebloom
+							}),
+							-- Exo Note: Objective 2 is "Plant Platter placed". They don't trigger reports (currently?) so I don't know which is which.
+							-- Plant Platter ObjectID: 516306, 523779, 523780. Coords: 73.0, 31.5 / 72.0, 33.5 / 72.9, 34.4
+						},
+					}),
+					q(87293, {	-- Shameless Hawking
+						sourceQuests = { 87291 },	-- Salad Bar
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(87294, {	-- A Truth Universally Acknowledged
+						sourceQuests = { 87293 },	-- Shameless Hawking
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(236406) },	-- Appropriated S.E.L.F.I.E. Camera (PQI!)
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.05, {	-- Rays of Sunshine
+					q(86587, {	-- To Maldraxxus
+						sourceQuests = {
+							86392,	-- Foxy Footwork
+							87294,	-- A Truth Universally Acknowledged
+						},
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86589, {	-- A Plague a Day Keeps the Doctor Away
+						sourceQuests = { 86587 },	-- To Maldraxxus
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+						groups = {
+							o(505258, {	-- Pestilential Necroray
+								i(234815),	-- Plague Sample (QI!)
+							}),
+						},
+					}),
+					q(86590, {	-- I Don't Even Work Here
+						sourceQuests = { 86587 },	-- To Maldraxxus
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+						groups = { i(234944) },	-- Rancor Essence (QI!)
+					}),
+					q(86588, {	-- Ritualistic Murder
+						sourceQuests = { 86587 },	-- To Maldraxxus
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+					}),
+					q(86591, {	-- A Poor Imitation
+						sourceQuests = {
+							86589,	-- A Plague a Day Keeps the Doctor Away
+							86590,	-- I Don't Even Work Here
+							86588,	-- Ritualistic Murder
+						},
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+					}),
+					q(86592, {	-- Get Your Jabs
+						sourceQuests = { 86591 },	-- A Poor Imitation
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+					}),
+					q(86593, {	-- To the Oasis
+						sourceQuests = { 86592 },	-- Get Your Jabs
+						qg = 235860,	-- Plague Deviser Marileth
+						coord = { 69.0, 48.5, MALDRAXXUS },
+					}),
+					q(86782, {	-- Atrium Hospital
+						sourceQuests = { 86593 },	-- To the Oasis
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(86594, {	-- A Cultured Palette
+						sourceQuests = { 86782 },	-- Atrium Hospital
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+						groups = {
+							o(507176, {	-- Crate of Food
+								coord = { 48.5, 61.3, KARESH },
+								groups = { i(235370) },	-- Crate of Food (QI!)
+							}),
+							o(507178, {	-- Bowl of Succulents
+								coord = { 47.6, 61.6, KARESH },
+							}),
+							o(507220, {	-- Chopped Plants
+								coord = { 48.5, 62.5, KARESH },
+							}),
+							o(507219, {	-- Slab of Meat
+								coord = { 48.0, 63.3, KARESH },
+							}),
+						},
+					}),
+					q(86595, {	-- Custodial Duties
+						sourceQuests = { 86782 },	-- Atrium Hospital
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+						groups = { i(235384) },	-- Anima Vacuum (PQI!)
+					}),
+					q(86783, {	-- Rays of Sunshine
+						sourceQuests = {
+							86594,	-- A Cultured Palette
+							86595,	-- Custodial Duties
+						},
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+					}),
+					q(86602, {	-- Medical Checkup
+						sourceQuests = { 86783 },	-- Rays of Sunshine
+						qg = 236890,	-- Hemet Nesingwary
+						coord = { 49.0, 57.0, KARESH },
+						groups = {
+							i(235410),	-- Lapbug Molting (QI!)
+							i(235408),	-- Slateback Fur (QI!)
+							i(235409),	-- Thorntail Fur (QI!)
+						},
+					}),
+					q(86601, {	-- Triple Twenty
+						sourceQuests = { 86783 },	-- Rays of Sunshine
+						qg = 236890,	-- Hemet Nesingwary
+						coord = { 49.0, 57.0, KARESH },
+						groups = { i(235411) },	-- Tagging Dart (PQI!)
+					}),
+					q(86603, {	-- Ray-ket Ball
+						sourceQuests = {
+							86602,	-- Medical Checkup
+							86601,	-- Triple Twenty
+						},
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(229420) },	-- Anima Orb (PQI!)
+					}),
+					q(86604, {	-- Dubious Intent
+						sourceQuests = { 86603 },	-- Ray-ket Ball
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = {
+							i(235500),	-- Tranquilizing Dart (PQI!)
+							i(235501),	-- Necroray Gunk (QI!)
+						},
+					}),
+					q(86605, {	-- Booster Shots
+						sourceQuests = { 86604 },	-- Dubious Intent
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(235851) },	-- Lasso (PQI!)
+					}),
+					q(86606, {	-- The Golden Ooze
+						sourceQuests = { 86605 },	-- Booster Shots
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(235384) },	-- Anima Vacuum (PQI!)
+					}),
+					q(86607, {	-- The Freedom of Ray-cing
+						sourceQuests = { 86606 },	-- The Golden Ooze
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.07, {	-- Hard K'arroc
+					q(87408, {	-- Being Spiritual
+						sourceQuests = { 86607 },	-- The Freedom of Ray-cing
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = { i(229396) },	-- Flyer Essence (QI!)
+					}),
+					q(87409, {	-- From Death, Life
+						sourceQuests = { 87408 },	-- Being Spiritual
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+					}),
+					q(87410, {	-- Percussive Negotiation
+						sourceQuests = { 87409 },	-- From Death, Life
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						groups = { i(237010) },	-- Void Shielding Part (QI!)
+					}),
+					q(87411, {	-- Making Stuff to Look Tough
+						sourceQuests = { 87410 },	-- Percussive Negotiation
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						groups = {
+							o(517446, {	-- Void Shield
+								coord = { 79.9, 32.4, KARESH },
+								groups = { i(237021) },	-- Void Shield (QI!)
+							}),
+						},
+					}),
+					q(87412, {	-- K'arrocing Photos
+						sourceQuests = { 87411 },	-- Making Stuff to Look Tough
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(237012) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(87413, {	-- Bird Bath
+						sourceQuests = { 87412 },	-- K'arrocing Photos
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						groups = { i(237013) },	-- Anima Vacuum (PQI!)
+					}),
+					q(87414, {	-- Medical Maneuvers
+						sourceQuests = { 87413 },	-- Bird Bath
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						groups = { i(237030) },	-- Condenser Disc (PQI!)
+					}),
+					q(87415, {	-- The Skies of K'aresh
+						sourceQuests = { 87414 },	-- Medical Maneuvers
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41808.08, {	-- A Slither of Snakes
+					q(88655, {	-- Outbound for Outland
+						sourceQuests = { 87415 },	-- The Skies of K'aresh
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+					q(88656, {	-- Comfort Stones
+						sourceQuests = { 88655 },	-- Outbound for Outland
+						qg = 18180,	-- Hemet Nesingwary
+						coord = { 71.5, 40.8, NAGRAND },
+						groups = { i(237572) },	-- Smooth Stone (QI!)
+					}),
+					q(88658, {	-- Sneks and Things
+						sourceQuests = { 88655 },	-- Outbound for Outland
+						qg = 18180,	-- Hemet Nesingwary
+						coord = { 71.5, 40.8, NAGRAND },
+						groups = {
+							o(523415, {	-- Fragrant Dreaming Glory
+								i(237604),	-- Fragrant Dreaming Glory (QI!)
+							}),
+							o(523414, {	-- Snake Nest
+								i(237601),	-- Nagrand Snake (QI!)
+							}),
+						},
+					}),
+					q(88657, {	-- Zangarmoss
+						sourceQuests = {
+							88656,	-- Comfort Stones
+							88658,	-- Sneks and Things
+						},
+						qg = 18180,	-- Hemet Nesingwary
+						coord = { 71.5, 40.8, NAGRAND },
+						groups = {
+							o(523494, {	-- Marsh Moss
+								i(237757),	-- Marsh Moss (QI!)
+							}),
+						},
+					}),
+					q(88660, {	-- Snakes on a Plane
+						sourceQuests = { 88657 },	-- Zangarmoss
+						qg = 18180,	-- Hemet Nesingwary
+						coord = { 71.5, 40.8, NAGRAND },
+					}),
+					q(88661, {	-- To the Atrium
+						sourceQuests = { 88660 },	-- Snakes on a Plane
+						qg = 18180,	-- Hemet Nesingwary
+						coord = { 71.5, 40.8, NAGRAND },
+					}),
+					q(88662, {	-- What's in a Name?
+						sourceQuests = { 88661 },	-- To the Atrium
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+					}),
+					q(88663, {	-- Scales and Measures
+						sourceQuests = { 88662 },	-- What's in a Name?
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+					}),
+					q(88664, {	-- Nagrandification
+						sourceQuests = { 88662 },	-- What's in a Name?
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+					}),
+					q(88665, {	-- Follow Your Tongue
+						sourceQuests = {
+							88663,	-- Scales and Measures
+							88664,	-- Nagrandification
+						},
+						qg = 236846,	-- Hemet Nesingwary
+						coord = { 48.5, 61.1, KARESH },
+					}),
+					q(88666, {	-- Mossy Beds
+						sourceQuests = { 88665 },	-- Follow Your Tongue
+						qg = 236890,	-- Hemet Nesingwary
+						coord = { 49.0, 57.0, KARESH },
+						groups = { o(523689) },	-- Mossy Snake Bed
+					}),
+					q(88667, {	-- Water Snakes
+						sourceQuests = { 88665 },	-- Follow Your Tongue
+						qg = 236890,	-- Hemet Nesingwary
+						coord = { 49.0, 57.0, KARESH },
+						groups = { i(237898) },	-- Hemet's Waterin' Can (PQI!)
+					}),
+					q(88668, {	-- Ophidian Portation
+						sourceQuests = {
+							88666,	-- Mossy Beds
+							88667,	-- Water Snakes
+						},
+						qg = 236890,	-- Hemet Nesingwary
+						coord = { 49.0, 57.0, KARESH },
+					}),
+					q(88669, {	-- Nesting Time
+						sourceQuests = { 88668 },	-- Ophidian Portation
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						groups = {
+							o(523827, {	-- Comfy Snake Bed
+								coord = { 74.5, 31.2, KARESH },
+							}),
+							o(523828, {	-- Extra Cushiony Moss
+								coord = { 74.5, 31.2, KARESH },
+							}),
+						},
+					}),
+					q(88670, {	-- Soothing Serpents
+						sourceQuests = { 88668 },	-- Ophidian Portation
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						groups = { i(238216) },	-- Hemet's Soothin' Flute (PQI!)
+					}),
+					q(88671, {	-- Eggstra Eggs
+						sourceQuests = {
+							88669,	-- Nesting Time
+							88670,	-- Soothing Serpents
+						},
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						groups = {
+							o(524223, {	-- K'arroc Egg
+								i(238242),	-- K'arroc Egg (QI!)
+							}),
+						},
+					}),
+					q(88672, {	-- Snakelets!
+						sourceQuests = { 88671 },	-- Eggstra Eggs
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+					}),
+				}),
+				q(88974, {	-- Eco-Stability
+					sourceQuests = { 88672 },	-- Snakelets!
 					qg = 231820,	-- Ve'nari
 					coord = { 75.9, 34.2, KARESH },
-					groups = { i(230030) },	-- Cartel Ve Communicator (PQI!)
 				}),
-				q(85076, {	-- Don't Bee Crazy
-					sourceQuests = { 85075 },	-- To Stormsong
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.4, 69.9, STORMSONG_VALLEY },
-				}),
-				q(85077, {	-- Sticky Fingers
-					sourceQuests = { 85075 },	-- To Stormsong
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.4, 69.9, STORMSONG_VALLEY },
-					groups = { i(230053) },	-- Honey Globule (QI!)
-				}),
-				q(85078, {	-- Bee in the Bonnet
-					sourceQuests = {
-						85076,	-- Don't Bee Crazy
-						85077,	-- Sticky Fingers
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.4, 69.9, STORMSONG_VALLEY },
-				}),
-				q(85079, {	-- Such a Sleebee-head
-					sourceQuests = {
-						85076,	-- Don't Bee Crazy
-						85077,	-- Sticky Fingers
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.4, 69.9, STORMSONG_VALLEY },
-					groups = {
-						o(475164, {	-- Ve'nari's Package
-							coord = { 72.5, 69.8, STORMSONG_VALLEY },
-							groups = { i(230210) },	-- Tranquilizing Dart (PQI!)
-						}),
-					},
-				}),
-				q(85080, {	-- An Un-Bee-lievable Solution
-					sourceQuests = {
-						85078,	-- Bee in the Bonnet
-						85079,	-- Such a Sleebee-head
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.6, 65.8, STORMSONG_VALLEY },
-					groups = {
-						o(475213, {	-- Ve'nari's Package
-							coord = { 72.7, 65.8, STORMSONG_VALLEY },
-							groups = { i(229424) },	-- Anima Vacuum (PQI!)
-						}),
-					},
-				}),
-				q(85081, {	-- Beehemian Rhapsody
-					sourceQuests = {
-						85078,	-- Bee in the Bonnet
-						85079,	-- Such a Sleebee-head
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.6, 65.8, STORMSONG_VALLEY },
-					groups = {
-						o(475207, {	-- Honey Pot
-							coord = { 72.6, 66.0, STORMSONG_VALLEY },
-							groups = { i(230549) },	-- Queen Bee in a Jar (QI!)
-						}),
-					},
-				}),
-				q(85082, {	-- To K'aresh
-					sourceQuests = {
-						85080,	-- An Un-Bee-lievable Solution
-						85081,	-- Beehemian Rhapsody
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 72.6, 65.8, STORMSONG_VALLEY },
-				}),
-				q(85249, {	-- A Bee Test
-					sourceQuests = { 85082 },	-- To K'aresh
+			},
+		}),
+		header(HEADERS.Achievement, 41811, {	-- Ecological Stability
+			timeline = { ADDED_11_2_0_SEASONSTART },
+			groups = {
+				-- Ecological Stability Trackers (Criteria will nest in these)
+				hqt(84744, name(HEADERS.AchCriteria, 41811.07, {isDaily=true})),	-- A Slither of Snakes
+				hqt(84742, name(HEADERS.AchCriteria, 41811.03, {isDaily=true})),	-- Fox-strut
+				hqt(86793, name(HEADERS.AchCriteria, 41811.06, {isDaily=true})),	-- Hard K'arroc
+				hqt(84745, name(HEADERS.AchCriteria, 41811.01, {isDaily=true})),	-- Honey Bees
+				hqt(85520, name(HEADERS.AchCriteria, 41811.04, {isDaily=true})),	-- Lil' Lapbugs
+				hqt(89306, name(HEADERS.AchCriteria, 41811.05, {isDaily=true})),	-- Rays of Sunshine
+				hqt(84992, name(HEADERS.AchCriteria, 41811.02, {isDaily=true})),	-- Slatebacks
+				q(88976, {	-- The Hope of K'aresh
+					sourceAchievement = 41811,	-- Ecological Stability
 					qg = 231820,	-- Ve'nari
 					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(85084, {	-- Bee Strong
-					sourceQuests = { 85249 },	-- A Bee Test
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 48.4, 61.2, KARESH },
-					groups = {
-						o(475250, {	-- Honey Pot
-							coord = { 48.4, 61.2, KARESH },
-							groups = { i(230732) },	-- Honey (PQI!)
-						}),
-					},
-				}),
-				q(85083, {	-- Photogra-Bee
-					sourceQuests = { 85249 },	-- A Bee Test
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 48.4, 61.2, KARESH },
-					groups = { i(230729) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(85257, {	-- Primus Buzzness
-					sourceQuests = {
-						85084,	-- Bee Strong
-						85083,	-- Photogra-Bee
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 48.4, 61.2, KARESH },
-				}),
-				q(85255, {	-- Tranquila-Bee
-					sourceQuests = { 85257 },	-- Primus Buzzness
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 49.0, 57.2, KARESH },
-					groups = { i(230210) },	-- Tranquilizing Dart (PQI!)
-				}),
-				q(85256, {	-- Botany, Finally
-					sourceQuests = { 85257 },	-- Primus Buzzness
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 49.0, 57.2, KARESH },
-					groups = {
-						o_repeated({
-							i(230809),	-- K'aresh Flora Cutting (QI!)
-							o(475321),	-- Crystalbloom
-							o(475324),	-- Firebud
-							o(475317),	-- K'aresh Bellflower
-							o(475314),	-- Pricklebloom
-						}),
-					},
-				}),
-				q(89348, {	-- Let There Bee Love
-					sourceQuests = {
-						85255,	-- Tranquila-Bee
-						85256,	-- Botany, Finally
-					},
-					qg = 231919,	-- Botanist Alaenra
-					coord = { 49.0, 57.2, KARESH },
-				}),
-				q(85258, {	-- Oh Honey Honey
-					sourceQuests = { 89348 },	-- Let There Bee Love
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					groups = {
-						o_repeated({	-- Honeycomb
-							coords = {
-								{ 75.3, 29.0, KARESH },
-								{ 76.1, 29.4, KARESH },
-								{ 76.3, 30.4, KARESH },
-							},
-							groups = {
-								i(230907),	-- Honeycomb (QI!)
-								o(475391),	-- Honeycomb
-								o(475392),	-- Honeycomb
-								o(475393),	-- Honeycomb
-							},
-						}),
-					},
-				}),
-				------ Stay awhile and listen ------
-				hqt(89305, {	-- Stay awhile and listen: Botanist Alaenra
-					name = "Stay awhile and listen: Botanist Alaenra",
-					description = "Dialogue becomes available after you accept 'Oh Honey Honey' (85258).",
-					sourceQuests = { 89348 },	-- Let There Bee Love
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-				}),
-				--
-				q(85259, {	-- Waggle Dance
-					sourceQuests = { 85258 },	-- Oh Honey Honey
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-				}),
-				q(85260, {	-- Hiving a Hard Day
-					sourceQuests = { 85259 },	-- Waggle Dance
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-				}),
-				q(85261, {	-- Bee Roll
-					sourceQuests = { 85260 },	-- Hiving a Hard Day
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					groups = { i(231163) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(85262, {	-- The Royal Procession
-					sourceQuests = { 85261 },	-- Bee Roll
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.06, {	-- Nesingwary Necessities
-				q(86352, {	-- Hunting for a Good Author
-					sourceQuests = { 85262 },	-- The Royal Procession
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86353, {	-- Protecting the Young
-					sourceQuests = { 86352 },	-- Hunting for a Good Author
-					qg = 234745,	-- Hemet Nesingwary
-					coord = { 18.8, 39.9, THE_AZURE_SPAN },
-				}),
-				q(86354, {	-- A Percussive Antidote
-					sourceQuests = { 86352 },	-- Hunting for a Good Author
-					qg = 234745,	-- Hemet Nesingwary
-					coord = { 18.8, 39.9, THE_AZURE_SPAN },
-				}),
-				q(84822, {	-- To Iskaara
-					sourceQuests = {
-						86353,	-- Protecting the Young
-						86354,	-- A Percussive Antidote
-					},
-					qg = 234745,	-- Hemet Nesingwary
-					coord = { 18.8, 39.9, THE_AZURE_SPAN },
-				}),
-				q(86356, {	-- Sustainable Harvesting
-					sourceQuests = { 84822 },	-- To Iskaara
-					qg = 235290,	-- Hemet Nesingwary
-					coord = { 13.6, 49.1, THE_AZURE_SPAN },
-					groups = {
-						o(504181, {	-- Fallen Log
-							i(234452),	-- Chopped Wood (QI!)
-						}),
-					},
-				}),
-				q(86355, {	-- Using the Whole Animal
-					sourceQuests = { 84822 },	-- To Iskaara
-					qg = 235290,	-- Hemet Nesingwary
-					coord = { 13.6, 49.1, THE_AZURE_SPAN },
-					groups = {
-						i(234457),	-- Butcher's Knife (PQI!)
-						--
-						i(234036),	-- Bruffalon Meat (QI!)
-					},
-				}),
-				q(86357, {	-- Time for Noms
-					sourceQuests = {
-						86356,	-- Sustainable Harvesting
-						86355,	-- Using the Whole Animal
-					},
-					qg = 235290,	-- Hemet Nesingwary
-					coord = { 13.6, 49.1, THE_AZURE_SPAN },
-					groups = {
-						o(504191, {	-- Pile of Meat
-							coord = { 14.8, 48.3, THE_AZURE_SPAN },
-						}),
-					},
-				}),
-				q(86358, {	-- Any Old Excuse
-					sourceQuests = {
-						86356,	-- Sustainable Harvesting
-						86355,	-- Using the Whole Animal
-					},
-					qg = 235290,	-- Hemet Nesingwary
-					coord = { 13.6, 49.1, THE_AZURE_SPAN },
-				}),
-				q(86359, {	-- Return to K'aresh
-					sourceQuests = {
-						86357,	-- Time for Noms
-						86358,	-- Any Old Excuse
-					},
-					qg = 235290,	-- Hemet Nesingwary
-					coord = { 13.6, 49.1, THE_AZURE_SPAN },
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.02, {	-- Roaming Free
-				q(86182, {	-- Ghost Buster
-					sourceQuests = { 86359 },	-- Return to K'aresh
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(229395) },	-- Slateback Essence (QI!)
-				}),
-				------ Stay awhile and listen ------
-				hqt(89330, {	-- Stay awhile and listen: Hemet Nesingwary
-					name = "Stay awhile and listen: Hemet Nesingwary",
-					description = "Dialogue becomes available after you accept 'Ghost Buster' (86182).",
-					sourceQuests = { 86359 },	-- Return to K'aresh
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-				--
-				q(86183, {	-- The Power of Gods
-					sourceQuests = { 86182 },	-- Ghost Buster
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86184, {	-- Diminishing Returns
-					sourceQuests = { 86183 },	-- The Power of Gods
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(232432) },	-- Condenser Disc (PQI!)
-				}),
-				q(86185, {	-- Running Free
-					sourceQuests = { 86184 },	-- Diminishing Returns
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-				q(86186, {	-- The Super Sniffer
-					sourceQuests = { 86185 },	-- Running Free
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86187, {	-- The Smallest Possible Effort
-					sourceQuests = { 86186 },	-- The Super Sniffer
-					qg = 234272,	-- Rhubarn
-					coord = { 77.6, 61.8, AZJ_KAHET },
-					groups = {
-						i(232992, {	-- Large Bug Bits (QI!)
-							i(232990),	-- Bug Bits (QI!)
-						}),
-					},
-				}),
-				q(86188, {	-- More-shrooms
-					sourceQuests = { 86186 },	-- The Super Sniffer
-					qg = 234272,	-- Rhubarn
-					coord = { 77.6, 61.8, AZJ_KAHET },
-					groups = {
-						o(500744, {	-- Rak-ush Mushroom
-							i(233010),	-- Rak-ush Mushroom (QI!)
-						}),
-					},
-				}),
-				q(86189, {	-- Fungal Invasion
-					sourceQuests = {
-						86187,	-- The Smallest Possible Effort
-						86188,	-- More-shrooms
-					},
-					qg = 234272,	-- Rhubarn
-					coord = { 77.6, 61.8, AZJ_KAHET },
-				}),
-				q(86190, {	-- One Mushroom to Rule Them All
-					sourceQuests = {
-						86187,	-- The Smallest Possible Effort
-						86188,	-- More-shrooms
-					},
-					qg = 234272,	-- Rhubarn
-					coord = { 77.6, 61.8, AZJ_KAHET },
-					groups = {
-						o(500779, {	-- Voshshroom
-							coord = { 54.1, 16.5, AZJ_KAHET },
-							groups = {
-								i(233011),	-- Voshshroom (QI!)
-							},
-						}),
-					},
-				}),
-				q(86191, {	-- Smell Ya Later
-					sourceQuests = {
-						86189,	-- Fungal Invasion
-						86190,	-- One Mushroom to Rule Them All
-					},
-					qg = 234272,	-- Rhubarn
-					coord = { 77.6, 61.8, AZJ_KAHET },
-				}),
-				q(86194, {	-- The Scent of Love
-					sourceQuests = { 86191 },	-- Smell Ya Later
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					groups = { i(233195) },	-- Pheromone Disperser (PQI!)
-				}),
-				q(86192, {	-- On a Bed of Bones They Lie
-					sourceQuests = { 86194 },	-- The Scent of Love
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					groups = {
-						i(233016),	-- Creature Bones (QI!)
-						o(502399, {	-- Pile of Bones
-							coord = { 73.1, 32.5, KARESH },
-						}),
-					},
-				}),
-				q(86195, {	-- Slateback Soccer
-					sourceQuests = { 86192 },	-- On a Bed of Bones They Lie
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(229420) },	-- Anima Orb (PQI!)
-				}),
-				------ Stay awhile and listen ------
-				hqt(89292, {	-- Stay awhile and listen: Rhubarn
-					name = "Stay awhile and listen: Rhubarn",
-					description = "Dialogue becomes available after you accept 'Slateback Soccer' (86195).",
-					sourceQuests = { 86192 },	-- On a Bed of Bones They Lie
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-				}),
-				--
-			}),
-			header(HEADERS.AchCriteria, 41808.03, {	-- Fox-strut
-				q(86348, {	-- Fox Bane
-					sourceQuests = { 86195 },	-- Slateback Soccer
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(237896) },	-- Thorntail Essence (QI!)
-				}),
-				q(86350, {	-- Eau de Foxy
-					sourceQuests = { 86348 },	-- Fox Bane
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					groups = { i(233487) },	-- Pheromone Disperser (PQI!)
-				}),
-				q(86362, {	-- What Does the Fox Dream?
-					sourceQuests = { 86350 },	-- Eau de Foxy
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(233552) },	-- Tranquilizing Dart (PQI!)
-				}),
-				q(86351, {	-- Strike a Pose
-					sourceQuests = { 86362 },	-- What Does the Fox Dream?
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(233488) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(86360, {	-- Fantastic Ms. Fox
-					sourceQuests = { 86351 },	-- Strike a Pose
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-				q(86361, {	-- Are You Kitting Me?
-					sourceQuests = { 86360 },	-- Fantastic Ms. Fox
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(229420) },	-- Anima Orb (PQI!)
-				}),
-				q(86392, {	-- Foxy Footwork
-					sourceQuests = { 86361 },	-- Are You Kitting Me?
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.04, {	-- Lil' Lapbugs
-				q(86349, {	-- Lapbug Essence Hunter
-					sourceQuests = { 86195 },	-- Slateback Soccer
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(229393) },	-- Lapbug Essence (QI!)
-				}),
-				q(87292, {	-- Rooting for Trouble
-					sourceQuests = { 86349 },	-- Lapbug Essence Hunter
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-				}),
-				q(87291, {	-- Salad Bar
-					sourceQuests = {
-						87292,	-- Rooting for Trouble
-						86351,	-- Strike a Pose
-					},
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					groups = {
-						o_repeated({
-							i(235914),	-- Chopped Oasis Plants (QI!)
-							o(516304),	-- Lustrous Conker
-							o(516302),	-- Pricklebloom
-						}),
-						-- Exo Note: Objective 2 is "Plant Platter placed". They don't trigger reports (currently?) so I don't know which is which.
-						-- Plant Platter ObjectID: 516306, 523779, 523780. Coords: 73.0, 31.5 / 72.0, 33.5 / 72.9, 34.4
-					},
-				}),
-				q(87293, {	-- Shameless Hawking
-					sourceQuests = { 87291 },	-- Salad Bar
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(87294, {	-- A Truth Universally Acknowledged
-					sourceQuests = { 87293 },	-- Shameless Hawking
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(236406) },	-- Appropriated S.E.L.F.I.E. Camera (PQI!)
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.05, {	-- Rays of Sunshine
-				q(86587, {	-- To Maldraxxus
-					sourceQuests = {
-						86392,	-- Foxy Footwork
-						87294,	-- A Truth Universally Acknowledged
-					},
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86589, {	-- A Plague a Day Keeps the Doctor Away
-					sourceQuests = { 86587 },	-- To Maldraxxus
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-					groups = {
-						o(505258, {	-- Pestilential Necroray
-							i(234815),	-- Plague Sample (QI!)
-						}),
-					},
-				}),
-				q(86590, {	-- I Don't Even Work Here
-					sourceQuests = { 86587 },	-- To Maldraxxus
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-					groups = { i(234944) },	-- Rancor Essence (QI!)
-				}),
-				q(86588, {	-- Ritualistic Murder
-					sourceQuests = { 86587 },	-- To Maldraxxus
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-				}),
-				q(86591, {	-- A Poor Imitation
-					sourceQuests = {
-						86589,	-- A Plague a Day Keeps the Doctor Away
-						86590,	-- I Don't Even Work Here
-						86588,	-- Ritualistic Murder
-					},
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-				}),
-				q(86592, {	-- Get Your Jabs
-					sourceQuests = { 86591 },	-- A Poor Imitation
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-				}),
-				q(86593, {	-- To the Oasis
-					sourceQuests = { 86592 },	-- Get Your Jabs
-					qg = 235860,	-- Plague Deviser Marileth
-					coord = { 69.0, 48.5, MALDRAXXUS },
-				}),
-				q(86782, {	-- Atrium Hospital
-					sourceQuests = { 86593 },	-- To the Oasis
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(86594, {	-- A Cultured Palette
-					sourceQuests = { 86782 },	-- Atrium Hospital
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-					groups = {
-						o(507176, {	-- Crate of Food
-							coord = { 48.5, 61.3, KARESH },
-							groups = { i(235370) },	-- Crate of Food (QI!)
-						}),
-						o(507178, {	-- Bowl of Succulents
-							coord = { 47.6, 61.6, KARESH },
-						}),
-						o(507220, {	-- Chopped Plants
-							coord = { 48.5, 62.5, KARESH },
-						}),
-						o(507219, {	-- Slab of Meat
-							coord = { 48.0, 63.3, KARESH },
-						}),
-					},
-				}),
-				q(86595, {	-- Custodial Duties
-					sourceQuests = { 86782 },	-- Atrium Hospital
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-					groups = { i(235384) },	-- Anima Vacuum (PQI!)
-				}),
-				q(86783, {	-- Rays of Sunshine
-					sourceQuests = {
-						86594,	-- A Cultured Palette
-						86595,	-- Custodial Duties
-					},
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-				}),
-				q(86602, {	-- Medical Checkup
-					sourceQuests = { 86783 },	-- Rays of Sunshine
-					qg = 236890,	-- Hemet Nesingwary
-					coord = { 49.0, 57.0, KARESH },
-					groups = {
-						i(235410),	-- Lapbug Molting (QI!)
-						i(235408),	-- Slateback Fur (QI!)
-						i(235409),	-- Thorntail Fur (QI!)
-					},
-				}),
-				q(86601, {	-- Triple Twenty
-					sourceQuests = { 86783 },	-- Rays of Sunshine
-					qg = 236890,	-- Hemet Nesingwary
-					coord = { 49.0, 57.0, KARESH },
-					groups = { i(235411) },	-- Tagging Dart (PQI!)
-				}),
-				q(86603, {	-- Ray-ket Ball
-					sourceQuests = {
-						86602,	-- Medical Checkup
-						86601,	-- Triple Twenty
-					},
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(229420) },	-- Anima Orb (PQI!)
-				}),
-				q(86604, {	-- Dubious Intent
-					sourceQuests = { 86603 },	-- Ray-ket Ball
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = {
-						i(235500),	-- Tranquilizing Dart (PQI!)
-						i(235501),	-- Necroray Gunk (QI!)
-					},
-				}),
-				q(86605, {	-- Booster Shots
-					sourceQuests = { 86604 },	-- Dubious Intent
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(235851) },	-- Lasso (PQI!)
-				}),
-				q(86606, {	-- The Golden Ooze
-					sourceQuests = { 86605 },	-- Booster Shots
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(235384) },	-- Anima Vacuum (PQI!)
-				}),
-				q(86607, {	-- The Freedom of Ray-cing
-					sourceQuests = { 86606 },	-- The Golden Ooze
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.07, {	-- Hard K'arroc
-				q(87408, {	-- Being Spiritual
-					sourceQuests = { 86607 },	-- The Freedom of Ray-cing
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = { i(229396) },	-- Flyer Essence (QI!)
-				}),
-				q(87409, {	-- From Death, Life
-					sourceQuests = { 87408 },	-- Being Spiritual
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-				}),
-				q(87410, {	-- Percussive Negotiation
-					sourceQuests = { 87409 },	-- From Death, Life
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					groups = { i(237010) },	-- Void Shielding Part (QI!)
-				}),
-				q(87411, {	-- Making Stuff to Look Tough
-					sourceQuests = { 87410 },	-- Percussive Negotiation
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					groups = {
-						o(517446, {	-- Void Shield
-							coord = { 79.9, 32.4, KARESH },
-							groups = { i(237021) },	-- Void Shield (QI!)
-						}),
-					},
-				}),
-				q(87412, {	-- K'arrocing Photos
-					sourceQuests = { 87411 },	-- Making Stuff to Look Tough
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(237012) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(87413, {	-- Bird Bath
-					sourceQuests = { 87412 },	-- K'arrocing Photos
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					groups = { i(237013) },	-- Anima Vacuum (PQI!)
-				}),
-				q(87414, {	-- Medical Maneuvers
-					sourceQuests = { 87413 },	-- Bird Bath
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					groups = { i(237030) },	-- Condenser Disc (PQI!)
-				}),
-				q(87415, {	-- The Skies of K'aresh
-					sourceQuests = { 87414 },	-- Medical Maneuvers
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41808.08, {	-- A Slither of Snakes
-				q(88655, {	-- Outbound for Outland
-					sourceQuests = { 87415 },	-- The Skies of K'aresh
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-				q(88656, {	-- Comfort Stones
-					sourceQuests = { 88655 },	-- Outbound for Outland
-					qg = 18180,	-- Hemet Nesingwary
-					coord = { 71.5, 40.8, NAGRAND },
-					groups = { i(237572) },	-- Smooth Stone (QI!)
-				}),
-				q(88658, {	-- Sneks and Things
-					sourceQuests = { 88655 },	-- Outbound for Outland
-					qg = 18180,	-- Hemet Nesingwary
-					coord = { 71.5, 40.8, NAGRAND },
-					groups = {
-						o(523415, {	-- Fragrant Dreaming Glory
-							i(237604),	-- Fragrant Dreaming Glory (QI!)
-						}),
-						o(523414, {	-- Snake Nest
-							i(237601),	-- Nagrand Snake (QI!)
-						}),
-					},
-				}),
-				q(88657, {	-- Zangarmoss
-					sourceQuests = {
-						88656,	-- Comfort Stones
-						88658,	-- Sneks and Things
-					},
-					qg = 18180,	-- Hemet Nesingwary
-					coord = { 71.5, 40.8, NAGRAND },
-					groups = {
-						o(523494, {	-- Marsh Moss
-							i(237757),	-- Marsh Moss (QI!)
-						}),
-					},
-				}),
-				q(88660, {	-- Snakes on a Plane
-					sourceQuests = { 88657 },	-- Zangarmoss
-					qg = 18180,	-- Hemet Nesingwary
-					coord = { 71.5, 40.8, NAGRAND },
-				}),
-				q(88661, {	-- To the Atrium
-					sourceQuests = { 88660 },	-- Snakes on a Plane
-					qg = 18180,	-- Hemet Nesingwary
-					coord = { 71.5, 40.8, NAGRAND },
-				}),
-				q(88662, {	-- What's in a Name?
-					sourceQuests = { 88661 },	-- To the Atrium
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-				}),
-				q(88663, {	-- Scales and Measures
-					sourceQuests = { 88662 },	-- What's in a Name?
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-				}),
-				q(88664, {	-- Nagrandification
-					sourceQuests = { 88662 },	-- What's in a Name?
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-				}),
-				q(88665, {	-- Follow Your Tongue
-					sourceQuests = {
-						88663,	-- Scales and Measures
-						88664,	-- Nagrandification
-					},
-					qg = 236846,	-- Hemet Nesingwary
-					coord = { 48.5, 61.1, KARESH },
-				}),
-				q(88666, {	-- Mossy Beds
-					sourceQuests = { 88665 },	-- Follow Your Tongue
-					qg = 236890,	-- Hemet Nesingwary
-					coord = { 49.0, 57.0, KARESH },
-					groups = { o(523689) },	-- Mossy Snake Bed
-				}),
-				q(88667, {	-- Water Snakes
-					sourceQuests = { 88665 },	-- Follow Your Tongue
-					qg = 236890,	-- Hemet Nesingwary
-					coord = { 49.0, 57.0, KARESH },
-					groups = { i(237898) },	-- Hemet's Waterin' Can (PQI!)
-				}),
-				q(88668, {	-- Ophidian Portation
-					sourceQuests = {
-						88666,	-- Mossy Beds
-						88667,	-- Water Snakes
-					},
-					qg = 236890,	-- Hemet Nesingwary
-					coord = { 49.0, 57.0, KARESH },
-				}),
-				q(88669, {	-- Nesting Time
-					sourceQuests = { 88668 },	-- Ophidian Portation
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					groups = {
-						o(523827, {	-- Comfy Snake Bed
-							coord = { 74.5, 31.2, KARESH },
-						}),
-						o(523828, {	-- Extra Cushiony Moss
-							coord = { 74.5, 31.2, KARESH },
-						}),
-					},
-				}),
-				q(88670, {	-- Soothing Serpents
-					sourceQuests = { 88668 },	-- Ophidian Portation
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					groups = { i(238216) },	-- Hemet's Soothin' Flute (PQI!)
-				}),
-				q(88671, {	-- Eggstra Eggs
-					sourceQuests = {
-						88669,	-- Nesting Time
-						88670,	-- Soothing Serpents
-					},
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					groups = {
-						o(524223, {	-- K'arroc Egg
-							i(238242),	-- K'arroc Egg (QI!)
-						}),
-					},
-				}),
-				q(88672, {	-- Snakelets!
-					sourceQuests = { 88671 },	-- Eggstra Eggs
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-				}),
-			}),
-			q(88974, {	-- Eco-Stability
-				sourceQuests = { 88672 },	-- Snakelets!
-				qg = 231820,	-- Ve'nari
-				coord = { 75.9, 34.2, KARESH },
-			}),
-		})),
-		header(HEADERS.Achievement, 41811, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {	-- Ecological Stability
-			-- Ecological Stability Trackers (Criteria will nest in these)
-			hqt(84744, name(HEADERS.AchCriteria, 41811.07, {isDaily=true})),	-- A Slither of Snakes
-			hqt(84742, name(HEADERS.AchCriteria, 41811.03, {isDaily=true})),	-- Fox-strut
-			hqt(86793, name(HEADERS.AchCriteria, 41811.06, {isDaily=true})),	-- Hard K'arroc
-			hqt(84745, name(HEADERS.AchCriteria, 41811.01, {isDaily=true})),	-- Honey Bees
-			hqt(85520, name(HEADERS.AchCriteria, 41811.04, {isDaily=true})),	-- Lil' Lapbugs
-			hqt(89306, name(HEADERS.AchCriteria, 41811.05, {isDaily=true})),	-- Rays of Sunshine
-			hqt(84992, name(HEADERS.AchCriteria, 41811.02, {isDaily=true})),	-- Slatebacks
-			q(88976, {	-- The Hope of K'aresh
-				sourceAchievement = 41811,	-- Ecological Stability
-				qg = 231820,	-- Ve'nari
-				coord = { 75.9, 34.2, KARESH },
-				groups = { i(242713) },	-- Resplendent K'arroc (MOUNT!)
-			}),
-		})),
-		header(HEADERS.Achievement, 41809, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART } }, {	-- Ecological Variety (Weekly Quests)
-			header(HEADERS.AchCriteria, 41809.01, {	-- Honey Bees
-				q(90545, {	-- A Reel Problem
-					description = "Requires Fishing profession.",
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(241352) },	-- Hydrobite (QI!)
-				}),
-				q(85459, {	-- Anima Reclamation Program
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(229412) },	-- Devourer Anima (QI!)
-				}),
-				q(89209, {	-- Bu-zzz
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-				}),
-				q(85461, {	-- Food Run
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(231508) },	-- Stolen Food Shipment (QI!)
-				}),
-				q(89195, {	-- Funny Buzzness
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-					groups = { i(238904) },	-- Anima Vacuum (PQI!)
-				}),
-				q(89194, {	-- Shake your Bee-hind
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-				}),
-				q(89210, {	-- Photography is the Bee's Knees
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-					groups = { i(238903) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.02, {	-- Slatebacks
-				q(85462, {	-- A Challenge for Dominance
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-				}),
-				q(85481, {	-- Ridge Racer
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-				}),
-				q(85710, {	-- Sizing Them Up
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238905) },	-- Condenser Disc (PQI!)
-				}),
-				q(88980, {	-- Who You Gonna Call?
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(229395) },	-- Slateback Essence (QI!)
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.03, {	-- Fox-strut
-				q(89240, {	-- Dream-Dream-Dream-Dream-Dreameringeding!
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238912) },	-- Tranquilizing Dart (PQI!)
-				}),
-				q(89057, {	-- Pee-Yew de Foxy
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					isWeekly = true,
-					groups = { i(238911) },	-- Pheromone Disperser (PQI!)
-				}),
-				q(89212, {	-- Royal Photographer
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238906) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(85465, {	-- Play Ball
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238907) },	-- Anima Orb (QI!)
-				}),
-				q(85721, {	-- Killer Instinct
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					isWeekly = true,
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.04, {	-- Lil' Lapbugs
-				q(89221, {	-- Leafing Things on the Ground
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-					groups = {
-						o_repeated({
-							i(235914),	-- Chopped Oasis Plants (QI!)
-							o(516304),	-- Lustrous Conker
-							o(516302),	-- Pricklebloom
-						}),
-						-- Exo Note: Objective 2 is "Plant Platter placed". They don't trigger reports (currently?) so I don't know which is which.
-						-- Plant Platter ObjectID: 516306, 523779, 523780. Coords: 73.0, 31.5 / 72.0, 33.5 / 72.9, 34.4
-					},
-				}),
-				q(89297, {	-- Not as Cute When They Are Bigger and Angrier
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(229393) },	-- Lapbug Essence (QI!)
-				}),
-				q(85470, {	-- Root Redux
-					qg = 232385,	-- Botanist Alaenra
-					coord = { 75.8, 33.9, KARESH },
-					isWeekly = true,
-				}),
-				q(89254, {	-- Shutterbug
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238933) },	-- Appropriated S.E.L.F.I.E. Camera (PQI!)
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.05, {	-- Rays of Sunshine
-				q(89242, {	-- I Want a Golden Ooze!
-					qg = 231820,	-- Ve'nari
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238916) },	-- Anima Vacuum (PQI!)
-				}),
-				q(89065, {	-- Ray-cing for the Future
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					isWeekly = true,
-				}),
-				q(89056, {	-- Ray-ket Ball, Redux
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238915) },	-- Anima Orb (PQI!)
-				}),
-				q(89197, {	-- Ray Ranching
-					qg =  230736,	-- Om'talad
-					coord = { 75.9, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238910) },	-- Lasso (QI!)
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.06, {	-- Hard K'arroc
-				q(89198, {	-- Dry Cleaning
-					qg = 234316,	-- Rhubarn
-					coord = { 75.9, 34.6, KARESH },
-					isWeekly = true,
-					groups = { i(238909) },	-- Anima Vacuum (PQI!)
-				}),
-				q(89213, {	-- Flights of Fancy
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238908) },	-- Appropriated Azerothian Camera (PQI!)
-				}),
-				q(89238, {	-- Follow-up Appointment
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-					groups = { i(238913) },	-- Condenser Disc (PQI!)
-				}),
-				q(86342, {	-- Soaring over K'aresh
-					qg = 230736,	-- Om'talad
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-				}),
-				q(89192, {	-- A Hard Day's Work
-					qg = 231820,	-- Ve'nari
-					coord = { 75.8, 34.2, KARESH },
-					isWeekly = true,
-				}),
-			}),
-			header(HEADERS.AchCriteria, 41809.07, {	-- A Slither of Snakes
-				q(88659, {	-- More Cozy Beds
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					isWeekly = true,
-				}),
-				q(88981, {	-- Nesting Upkeep
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					isWeekly = true,
-				}),
-				q(88975, {	-- Spooked Slitherin' Snakes
-					qg = 235353,	-- Hemet Nesingwary
-					coord = { 75.8, 34.0, KARESH },
-					isWeekly = true,
-					groups = { i(238914) },	-- Hemet's Soothin' Flute (QI!)
-				}),
-			}),
-		})),
+					groups = { i(242713) },	-- Resplendent K'arroc (MOUNT!)
+				}),
+			},
+		}),
+		header(HEADERS.Achievement, 41809, {	-- Ecological Variety (Weekly Quests)
+			timeline = { ADDED_11_2_0_SEASONSTART },
+			groups = {
+				header(HEADERS.AchCriteria, 41809.01, {	-- Honey Bees
+					q(90545, {	-- A Reel Problem
+						description = "Requires Fishing profession.",
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(241352) },	-- Hydrobite (QI!)
+					}),
+					q(85459, {	-- Anima Reclamation Program
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(229412) },	-- Devourer Anima (QI!)
+					}),
+					q(89209, {	-- Bu-zzz
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+					}),
+					q(85461, {	-- Food Run
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(231508) },	-- Stolen Food Shipment (QI!)
+					}),
+					q(89195, {	-- Funny Buzzness
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+						groups = { i(238904) },	-- Anima Vacuum (PQI!)
+					}),
+					q(89194, {	-- Shake your Bee-hind
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+					}),
+					q(89210, {	-- Photography is the Bee's Knees
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+						groups = { i(238903) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.02, {	-- Slatebacks
+					q(85462, {	-- A Challenge for Dominance
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+					}),
+					q(85481, {	-- Ridge Racer
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+					}),
+					q(85710, {	-- Sizing Them Up
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238905) },	-- Condenser Disc (PQI!)
+					}),
+					q(88980, {	-- Who You Gonna Call?
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(229395) },	-- Slateback Essence (QI!)
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.03, {	-- Fox-strut
+					q(89240, {	-- Dream-Dream-Dream-Dream-Dreameringeding!
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238912) },	-- Tranquilizing Dart (PQI!)
+					}),
+					q(89057, {	-- Pee-Yew de Foxy
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						isWeekly = true,
+						groups = { i(238911) },	-- Pheromone Disperser (PQI!)
+					}),
+					q(89212, {	-- Royal Photographer
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238906) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(85465, {	-- Play Ball
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238907) },	-- Anima Orb (QI!)
+					}),
+					q(85721, {	-- Killer Instinct
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						isWeekly = true,
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.04, {	-- Lil' Lapbugs
+					q(89221, {	-- Leafing Things on the Ground
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+						groups = {
+							o_repeated({
+								i(235914),	-- Chopped Oasis Plants (QI!)
+								o(516304),	-- Lustrous Conker
+								o(516302),	-- Pricklebloom
+							}),
+							-- Exo Note: Objective 2 is "Plant Platter placed". They don't trigger reports (currently?) so I don't know which is which.
+							-- Plant Platter ObjectID: 516306, 523779, 523780. Coords: 73.0, 31.5 / 72.0, 33.5 / 72.9, 34.4
+						},
+					}),
+					q(89297, {	-- Not as Cute When They Are Bigger and Angrier
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(229393) },	-- Lapbug Essence (QI!)
+					}),
+					q(85470, {	-- Root Redux
+						qg = 232385,	-- Botanist Alaenra
+						coord = { 75.8, 33.9, KARESH },
+						isWeekly = true,
+					}),
+					q(89254, {	-- Shutterbug
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238933) },	-- Appropriated S.E.L.F.I.E. Camera (PQI!)
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.05, {	-- Rays of Sunshine
+					q(89242, {	-- I Want a Golden Ooze!
+						qg = 231820,	-- Ve'nari
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238916) },	-- Anima Vacuum (PQI!)
+					}),
+					q(89065, {	-- Ray-cing for the Future
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						isWeekly = true,
+					}),
+					q(89056, {	-- Ray-ket Ball, Redux
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238915) },	-- Anima Orb (PQI!)
+					}),
+					q(89197, {	-- Ray Ranching
+						qg =  230736,	-- Om'talad
+						coord = { 75.9, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238910) },	-- Lasso (QI!)
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.06, {	-- Hard K'arroc
+					q(89198, {	-- Dry Cleaning
+						qg = 234316,	-- Rhubarn
+						coord = { 75.9, 34.6, KARESH },
+						isWeekly = true,
+						groups = { i(238909) },	-- Anima Vacuum (PQI!)
+					}),
+					q(89213, {	-- Flights of Fancy
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238908) },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(89238, {	-- Follow-up Appointment
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+						groups = { i(238913) },	-- Condenser Disc (PQI!)
+					}),
+					q(86342, {	-- Soaring over K'aresh
+						qg = 230736,	-- Om'talad
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+					}),
+					q(89192, {	-- A Hard Day's Work
+						qg = 231820,	-- Ve'nari
+						coord = { 75.8, 34.2, KARESH },
+						isWeekly = true,
+					}),
+				}),
+				header(HEADERS.AchCriteria, 41809.07, {	-- A Slither of Snakes
+					q(88659, {	-- More Cozy Beds
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						isWeekly = true,
+					}),
+					q(88981, {	-- Nesting Upkeep
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						isWeekly = true,
+					}),
+					q(88975, {	-- Spooked Slitherin' Snakes
+						qg = 235353,	-- Hemet Nesingwary
+						coord = { 75.8, 34.0, KARESH },
+						isWeekly = true,
+						groups = { i(238914) },	-- Hemet's Soothin' Flute (QI!)
+					}),
+				}),
+			},
+		}),
 		header(HEADERS.Achievement, 42731, {	-- Become a Hero. Become a Phasediver!
 			q(90938, {	-- A Skip Through the Void
 				description = "It may be possible to acquire this quest (if it is already locked) by doing the following steps (guessed from personal experience)\n1. Log out/in without the Reshii Wraps equipped.\n2. Zone to K'aresh\n3. Equip Reshii Wraps\n4. Enter Untethered Space\nAt this point the quest was active in my log when previously it was not. However it never showed in chat that it was 'accepted' at a certain point, so I'm unsure of when specifically it became available. -- Runaway",

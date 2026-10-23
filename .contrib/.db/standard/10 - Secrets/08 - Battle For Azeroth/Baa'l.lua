@@ -3,10 +3,11 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
-	header(HEADERS.Spell, 277461, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {	-- Baa'l
+	header(HEADERS.Spell, 277461, {	-- Baa'l
 		description = "***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",
 		modelScale = 1.1,
 		displayID = 80456,
+		timeline = { ADDED_8_0_1_LAUNCH },
 		groups = {
 			o(293849, {	-- Step 1: Conspicious Note
 				description = "|cFFFFFFFFStep 1:|r Head to Nazmir. The note is high up on the side of the temple in the middle of the zone. If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",
@@ -146,5 +147,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				groups = { i(162578) },	-- Baa'ls Darksign (PET!)
 			}),
 		},
-	})),
+	}),
 }));

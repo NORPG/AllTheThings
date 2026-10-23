@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
-	header(HEADERS.NPC, 111573, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {	-- Kosumoth the Hungering
+	header(HEADERS.NPC, 111573, {	-- Kosumoth the Hungering
 		description = "***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",
 		displayID = 71850,
+		timeline = { ADDED_7_0_3_LAUNCH },
 		groups = {
 			n(TREASURES, {
 				n(102695, {	-- Drak'thul
@@ -122,14 +123,17 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 				}),
 			}),
 		},
-	})),
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
-	header(HEADERS.NPC, 111573, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {	-- Kosumoth the Hungering
-		q(43725),	-- Flag 2 triggers on repeated dialogue from Drak'thul during Step 2.
-		q(43727),	-- Flag 3 triggers on repeated dialogue from Drak'thul during Step 2.
-		q(43728),	-- Flag 4 triggers on repeated dialogue from Drak'thul during Step 2.
-		q(91076, { timeline = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }),	-- Obtain final orb within Legion Remix, unlocks Fathom Dweller at Infinite Bazaar
-	})),
+	header(HEADERS.NPC, 111573, {	-- Kosumoth the Hungering
+		timeline = { ADDED_7_0_3_LAUNCH },
+		groups = {
+			q(43725),	-- Flag 2 triggers on repeated dialogue from Drak'thul during Step 2.
+			q(43727),	-- Flag 3 triggers on repeated dialogue from Drak'thul during Step 2.
+			q(43728),	-- Flag 4 triggers on repeated dialogue from Drak'thul during Step 2.
+			q(91076, { timeline = { ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END } }),	-- Obtain final orb within Legion Remix, unlocks Fathom Dweller at Infinite Bazaar
+		},
+	}),
 }));

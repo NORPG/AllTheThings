@@ -300,171 +300,174 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 				}),
 				}),
 			}),
-			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
-				n(ACHIEVEMENTS, {
-					ach(18779, {	-- Forbidden Reach Challenge: Bronze
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							18040,	-- Aerie Chasm Cruise Challenge: Bronze
-							18043,	-- Aerie Chasm Cruise Reverse Challenge: Bronze
-							18052,	-- Caldera Coaster Challenge: Bronze
-							18055,	-- Caldera Coaster Reverse Challenge: Bronze
-							18058,	-- Forbidden Reach Rush Challenge: Bronze
-							18061,	-- Forbidden Reach Rush Reverse Challenge: Bronze
-							18034,	-- Morqut Ascent Challenge: Bronze
-							18037,	-- Morqut Ascent Reverse Challenge: Bronze
-							18046,	-- Southern Reach Route Challenge: Bronze
-							18049,	-- Southern Reach Route Reverse Challenge: Bronze
-							18028,	-- Stormsunder Crater Circuit Challenge: Bronze
-							18031,	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
-						}},
+			header(HEADERS.Achievement, 18792, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					n(ACHIEVEMENTS, {
+						ach(18779, {	-- Forbidden Reach Challenge: Bronze
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								18040,	-- Aerie Chasm Cruise Challenge: Bronze
+								18043,	-- Aerie Chasm Cruise Reverse Challenge: Bronze
+								18052,	-- Caldera Coaster Challenge: Bronze
+								18055,	-- Caldera Coaster Reverse Challenge: Bronze
+								18058,	-- Forbidden Reach Rush Challenge: Bronze
+								18061,	-- Forbidden Reach Rush Reverse Challenge: Bronze
+								18034,	-- Morqut Ascent Challenge: Bronze
+								18037,	-- Morqut Ascent Reverse Challenge: Bronze
+								18046,	-- Southern Reach Route Challenge: Bronze
+								18049,	-- Southern Reach Route Reverse Challenge: Bronze
+								18028,	-- Stormsunder Crater Circuit Challenge: Bronze
+								18031,	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
+							}},
+						}),
+						ach(18780, {	-- Forbidden Reach Challenge: Silver
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								18041,	-- Aerie Chasm Cruise Challenge: Silver
+								18044,	-- Aerie Chasm Cruise Reverse Challenge: Silver
+								18053,	-- Caldera Coaster Challenge: Silver
+								18056,	-- Caldera Coaster Reverse Challenge: Silver
+								18059,	-- Forbidden Reach Rush Challenge: Silver
+								18062,	-- Forbidden Reach Rush Reverse Challenge: Silver
+								18035,	-- Morqut Ascent Challenge: Silver
+								18038,	-- Morqut Ascent Reverse Challenge: Silver
+								18047,	-- Southern Reach Route Challenge: Silver
+								18050,	-- Southern Reach Route Reverse Challenge: Silver
+								18029,	-- Stormsunder Crater Circuit Challenge: Silver
+								18032,	-- Stormsunder Crater Circuit Reverse Challenge: Silver
+							}},
+						}),
+						ach(18781, {	-- Forbidden Reach Challenge: Gold
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								18042,	-- Aerie Chasm Cruise Challenge: Gold
+								18045,	-- Aerie Chasm Cruise Reverse Challenge: Gold
+								18054,	-- Caldera Coaster Challenge: Gold
+								18057,	-- Caldera Coaster Reverse Challenge: Gold
+								18060,	-- Forbidden Reach Rush Challenge: Gold
+								18063,	-- Forbidden Reach Rush Reverse Challenge: Gold
+								18036,	-- Morqut Ascent Challenge: Gold
+								18039,	-- Morqut Ascent Reverse Challenge: Gold
+								18048,	-- Southern Reach Route Challenge: Gold
+								18051,	-- Southern Reach Route Reverse Challenge: Gold
+								18030,	-- Stormsunder Crater Circuit Challenge: Gold
+								18033,	-- Stormsunder Crater Circuit Reverse Challenge: Gold
+							}},
+						}),
 					}),
-					ach(18780, {	-- Forbidden Reach Challenge: Silver
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							18041,	-- Aerie Chasm Cruise Challenge: Silver
-							18044,	-- Aerie Chasm Cruise Reverse Challenge: Silver
-							18053,	-- Caldera Coaster Challenge: Silver
-							18056,	-- Caldera Coaster Reverse Challenge: Silver
-							18059,	-- Forbidden Reach Rush Challenge: Silver
-							18062,	-- Forbidden Reach Rush Reverse Challenge: Silver
-							18035,	-- Morqut Ascent Challenge: Silver
-							18038,	-- Morqut Ascent Reverse Challenge: Silver
-							18047,	-- Southern Reach Route Challenge: Silver
-							18050,	-- Southern Reach Route Reverse Challenge: Silver
-							18029,	-- Stormsunder Crater Circuit Challenge: Silver
-							18032,	-- Stormsunder Crater Circuit Reverse Challenge: Silver
-						}},
+					n(QUESTS, {
+						dragonridingrace(75958, {	-- Aerie Chasm Cruise - Challenge
+							provider = { "n", 200236 },	-- Bronze Timekeeper
+							coord = { 63.3, 51.8, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18040),	-- Aerie Chasm Cruise Challenge: Bronze
+								ach(18041),	-- Aerie Chasm Cruise Challenge: Silver
+								ach(18042),	-- Aerie Chasm Cruise Challenge: Gold
+							},
+						}),
+						dragonridingrace(75959, {	-- Aerie Chasm Cruise - Reverse Challenge
+							provider = { "n", 200236 },	-- Bronze Timekeeper
+							coord = { 63.3, 51.8, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18043),	-- Aerie Chasm Cruise Reverse Challenge: Bronze
+								ach(18044),	-- Aerie Chasm Cruise Reverse Challenge: Silver
+								ach(18045),	-- Aerie Chasm Cruise Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75962, {	-- Caldera Coaster - Challenge
+							provider = { "n", 200316 },	-- Bronze Timekeeper
+							coord = { 41.3, 14.7, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18052),	-- Caldera Coaster Challenge: Bronze
+								ach(18053),	-- Caldera Coaster Challenge: Silver
+								ach(18054),	-- Caldera Coaster Challenge: Gold
+							},
+						}),
+						dragonridingrace(75963, {	-- Caldera Coaster - Reverse Challenge
+							provider = { "n", 200316 },	-- Bronze Timekeeper
+							coord = { 41.3, 14.7, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18055),	-- Caldera Coaster Reverse Challenge: Bronze
+								ach(18056),	-- Caldera Coaster Reverse Challenge: Silver
+								ach(18057),	-- Caldera Coaster Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75964, {	-- Forbidden Reach Rush - Challenge
+							provider = { "n", 200417 },	-- Bronze Timekeeper
+							coord = { 49.4, 59.8, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18058),	-- Forbidden Reach Rush Challenge: Bronze
+								ach(18059),	-- Forbidden Reach Rush Challenge: Silver
+								ach(18060),	-- Forbidden Reach Rush Challenge: Gold
+							},
+						}),
+						dragonridingrace(75965, {	-- Forbidden Reach Rush - Reverse Challenge
+							provider = { "n", 200417 },	-- Bronze Timekeeper
+							coord = { 49.4, 59.8, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18061),	-- Forbidden Reach Rush Reverse Challenge: Bronze
+								ach(18062),	-- Forbidden Reach Rush Reverse Challenge: Silver
+								ach(18063),	-- Forbidden Reach Rush Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75956, {	-- Morqut Ascent - Challenge
+							provider = { "n", 200212 },	-- Bronze Timekeeper
+							coord = { 31.4, 65.9, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18034),	-- Morqut Ascent Challenge: Bronze
+								ach(18035),	-- Morqut Ascent Challenge: Silver
+								ach(18036),	-- Morqut Ascent Challenge: Gold
+							},
+						}),
+						dragonridingrace(75957, {	-- Morqut Ascent - Reverse Challenge
+							provider = { "n", 200212 },	-- Bronze Timekeeper
+							coord = { 31.4, 65.9, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18037),	-- Morqut Ascent Reverse Challenge: Bronze
+								ach(18038),	-- Morqut Ascent Reverse Challenge: Silver
+								ach(18039),	-- Morqut Ascent Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75960, {	-- Southern Reach Route - Challenge
+							provider = { "n", 200247 },	-- Bronze Timekeeper
+							coord = { 63.6, 84.3, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18046),	-- Southern Reach Route Challenge: Bronze
+								ach(18047),	-- Southern Reach Route Challenge: Silver
+								ach(18048),	-- Southern Reach Route Challenge: Gold
+							},
+						}),
+						dragonridingrace(75961, {	-- Southern Reach Route - Reverse Challenge
+							provider = { "n", 200247 },	-- Bronze Timekeeper
+							coord = { 63.6, 84.3, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18049),	-- Southern Reach Route Reverse Challenge: Bronze
+								ach(18050),	-- Southern Reach Route Reverse Challenge: Silver
+								ach(18051),	-- Southern Reach Route Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75954, {	-- Stormsunder Crater Circuit - Challenge
+							provider = { "n", 200183 },	-- Bronze Timekeeper
+							coord = { 76.3, 65.7, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18028),	-- Stormsunder Crater Circuit Challenge: Bronze
+								ach(18029),	-- Stormsunder Crater Circuit Challenge: Silver
+								ach(18030),	-- Stormsunder Crater Circuit Challenge: Gold
+							},
+						}),
+						dragonridingrace(75955, {	-- Stormsunder Crater Circuit - Reverse Challenge
+							provider = { "n", 200183 },	-- Bronze Timekeeper
+							coord = { 76.3, 65.7, THE_FORBIDDEN_REACH },
+							groups = {
+								ach(18031),	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
+								ach(18032),	-- Stormsunder Crater Circuit Reverse Challenge: Silver
+								ach(18033),	-- Stormsunder Crater Circuit Reverse Challenge: Gold
+							},
+						}),
 					}),
-					ach(18781, {	-- Forbidden Reach Challenge: Gold
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							18042,	-- Aerie Chasm Cruise Challenge: Gold
-							18045,	-- Aerie Chasm Cruise Reverse Challenge: Gold
-							18054,	-- Caldera Coaster Challenge: Gold
-							18057,	-- Caldera Coaster Reverse Challenge: Gold
-							18060,	-- Forbidden Reach Rush Challenge: Gold
-							18063,	-- Forbidden Reach Rush Reverse Challenge: Gold
-							18036,	-- Morqut Ascent Challenge: Gold
-							18039,	-- Morqut Ascent Reverse Challenge: Gold
-							18048,	-- Southern Reach Route Challenge: Gold
-							18051,	-- Southern Reach Route Reverse Challenge: Gold
-							18030,	-- Stormsunder Crater Circuit Challenge: Gold
-							18033,	-- Stormsunder Crater Circuit Reverse Challenge: Gold
-						}},
-					}),
-				}),
-				n(QUESTS, {
-					dragonridingrace(75958, {	-- Aerie Chasm Cruise - Challenge
-						provider = { "n", 200236 },	-- Bronze Timekeeper
-						coord = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18040),	-- Aerie Chasm Cruise Challenge: Bronze
-							ach(18041),	-- Aerie Chasm Cruise Challenge: Silver
-							ach(18042),	-- Aerie Chasm Cruise Challenge: Gold
-						},
-					}),
-					dragonridingrace(75959, {	-- Aerie Chasm Cruise - Reverse Challenge
-						provider = { "n", 200236 },	-- Bronze Timekeeper
-						coord = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18043),	-- Aerie Chasm Cruise Reverse Challenge: Bronze
-							ach(18044),	-- Aerie Chasm Cruise Reverse Challenge: Silver
-							ach(18045),	-- Aerie Chasm Cruise Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75962, {	-- Caldera Coaster - Challenge
-						provider = { "n", 200316 },	-- Bronze Timekeeper
-						coord = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18052),	-- Caldera Coaster Challenge: Bronze
-							ach(18053),	-- Caldera Coaster Challenge: Silver
-							ach(18054),	-- Caldera Coaster Challenge: Gold
-						},
-					}),
-					dragonridingrace(75963, {	-- Caldera Coaster - Reverse Challenge
-						provider = { "n", 200316 },	-- Bronze Timekeeper
-						coord = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18055),	-- Caldera Coaster Reverse Challenge: Bronze
-							ach(18056),	-- Caldera Coaster Reverse Challenge: Silver
-							ach(18057),	-- Caldera Coaster Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75964, {	-- Forbidden Reach Rush - Challenge
-						provider = { "n", 200417 },	-- Bronze Timekeeper
-						coord = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18058),	-- Forbidden Reach Rush Challenge: Bronze
-							ach(18059),	-- Forbidden Reach Rush Challenge: Silver
-							ach(18060),	-- Forbidden Reach Rush Challenge: Gold
-						},
-					}),
-					dragonridingrace(75965, {	-- Forbidden Reach Rush - Reverse Challenge
-						provider = { "n", 200417 },	-- Bronze Timekeeper
-						coord = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18061),	-- Forbidden Reach Rush Reverse Challenge: Bronze
-							ach(18062),	-- Forbidden Reach Rush Reverse Challenge: Silver
-							ach(18063),	-- Forbidden Reach Rush Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75956, {	-- Morqut Ascent - Challenge
-						provider = { "n", 200212 },	-- Bronze Timekeeper
-						coord = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18034),	-- Morqut Ascent Challenge: Bronze
-							ach(18035),	-- Morqut Ascent Challenge: Silver
-							ach(18036),	-- Morqut Ascent Challenge: Gold
-						},
-					}),
-					dragonridingrace(75957, {	-- Morqut Ascent - Reverse Challenge
-						provider = { "n", 200212 },	-- Bronze Timekeeper
-						coord = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18037),	-- Morqut Ascent Reverse Challenge: Bronze
-							ach(18038),	-- Morqut Ascent Reverse Challenge: Silver
-							ach(18039),	-- Morqut Ascent Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75960, {	-- Southern Reach Route - Challenge
-						provider = { "n", 200247 },	-- Bronze Timekeeper
-						coord = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18046),	-- Southern Reach Route Challenge: Bronze
-							ach(18047),	-- Southern Reach Route Challenge: Silver
-							ach(18048),	-- Southern Reach Route Challenge: Gold
-						},
-					}),
-					dragonridingrace(75961, {	-- Southern Reach Route - Reverse Challenge
-						provider = { "n", 200247 },	-- Bronze Timekeeper
-						coord = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18049),	-- Southern Reach Route Reverse Challenge: Bronze
-							ach(18050),	-- Southern Reach Route Reverse Challenge: Silver
-							ach(18051),	-- Southern Reach Route Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75954, {	-- Stormsunder Crater Circuit - Challenge
-						provider = { "n", 200183 },	-- Bronze Timekeeper
-						coord = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18028),	-- Stormsunder Crater Circuit Challenge: Bronze
-							ach(18029),	-- Stormsunder Crater Circuit Challenge: Silver
-							ach(18030),	-- Stormsunder Crater Circuit Challenge: Gold
-						},
-					}),
-					dragonridingrace(75955, {	-- Stormsunder Crater Circuit - Reverse Challenge
-						provider = { "n", 200183 },	-- Bronze Timekeeper
-						coord = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-						groups = {
-							ach(18031),	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
-							ach(18032),	-- Stormsunder Crater Circuit Reverse Challenge: Silver
-							ach(18033),	-- Stormsunder Crater Circuit Reverse Challenge: Gold
-						},
-					}),
-				}),
-			})),
+				},
+			}),
 			ach(19478, {	-- Now THIS is Dragon Racing!
 				-- Meta Achievement
 				timeline = { ADDED_10_2_6 },

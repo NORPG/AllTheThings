@@ -391,181 +391,187 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								provider = { "i", 268807 },	-- Torn Twilight Missive (QS!)
 							}),
 						}),
-						header(HEADERS.Achievement, 62606, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- The Sunstrider Omnium
-							q(96223, {	-- The Magister's Call
-								qg = 265903,	-- Magister's Missive
-								coords = {
-									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 40.2, 72.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 47.6, 80.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 47.9, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 50.9, 73.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-								},
-							}),
-							q(96224, {	-- The Magisters' Conundrum
-								sourceQuest = 96223,	-- The Magister's Call
-								qg = 264063,	-- Magister Umbric
-								races = ALLIANCE_ONLY,
-								coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-							}),
-							q(96225, {	-- The Magisters' Conundrum
-								sourceQuest = 96223,	-- The Magister's Call
-								qg = 264064,	-- Grand Magister Rommath
-								races = HORDE_ONLY,
-								coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-							}),
-							q(96227, {	-- Lycaneum Chaos
-								sourceQuests = {
-									96224,	-- The Magisters' Conundrum [A]
-									96225,	-- The Magisters' Conundrum [H]
-								},
-								qg = 264066,	-- Grand Magister Rommath
-								coord = { 63.2, 16.5, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-							q(96226, {	-- Omnium Anomalies
-								sourceQuests = {
-									96224,	-- The Magisters' Conundrum [A]
-									96225,	-- The Magisters' Conundrum [H]
-								},
-								qg = 264065,	-- Magister Umbric
-								coord = { 61.8, 15.0, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-							q(96228, {	-- The Shadowed Spire
-								sourceQuests = {
-									96227,	-- Lycaneum Chaos
-									96226,	-- Omnium Anomalies
-								},
-								qg = 264065,	-- Magister Umbric
-								coord = { 61.6, 14.9, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-							q(96230, {	-- Unravelling the Wards
-								sourceQuests = {
-									96227,	-- Lycaneum Chaos
-									96226,	-- Omnium Anomalies
-								},
-								qg = 264066,	-- Grand Magister Rommath
-								coords = {
-									{ 63.6, 14.0, 2649 },	-- The Lycaneum, Magister's Terrace
-									{ 63.6, 16.3, 2649 },	-- The Lycaneum, Magister's Terrace
-								},
-							}),
-							q(96231, {	-- Unravelling the Wards
-								sourceQuest = 96230,	-- Unravelling the Wards
-								qg = 264945,	-- Grand Magister Rommath
-								coord = { 58.9, 57.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-								groups = { i(274261) },	-- Grand Magister's Key-Cipher (QI!)
-							}),
-							q(96229, {	-- The Void Reveals
-								sourceQuest = 96228,	-- The Shadowed Spire
-								qg = 264067,	-- Magister Umbric
-								coord = { 62.6, 63.1, MAP.MIDNIGHT.EVERSONG_WOODS },
-								groups = { i(274036) },	-- Void Magicule (QI!)
-							}),
-							q(96232, {	-- Return to the Omnium
-								sourceQuests = {
-									96229,	-- The Void Reveals
-									96231,	-- Unravelling the Wards
-								},
-								qgs = {
-									264787,	-- Magister Umbric
-									269814,	-- Magister Umbric
-								},
-								altQuests = { 96238 },	-- Return to the Omnium
-								coord = { 62.5, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
-							}),
-							q(96238, {	-- Return to the Omnium
-								sourceQuests = {
-									96229,	-- The Void Reveals
-									96231,	-- Unravelling the Wards
-								},
-								qg = 264944,	-- Grand Magister Rommath
-								altQuests = { 96232 },	-- Return to the Omnium
-								coord = { 59.0, 59.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-							}),
-							q(96233, {	-- The Omnium Reawakens
-								sourceQuests = {
-									96227,	-- Lycaneum Chaos
-									96226,	-- Omnium Anomalies
-								},
-								qg = 264066,	-- Grand Magister Rommath
-								coord = { 63.4, 16.4, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-						})),
-						header(HEADERS.Achievement, 63325, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- Omnium Folio Studies
-							q(96410, {	-- Seeking Knowledge: The Omnium Folio
-								sourceQuest = 96233,	-- The Omnium Reawakens
-								qg = 264069,	-- Magister Umbric
-								coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-							q(96831, {	-- Magister's Summons
-								sourceQuest = 96410,	-- Seeking Knowledge: The Omnium Folio
-								description = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
-								qg = 265903,	-- Magister's Missive
-								coords = {
-									{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 47.8, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-									{ 50.8, 73.4, MAP.MIDNIGHT.SILVERMOON_CITY },
-								},
-								isBreadcrumb = true,
-								isWeekly = true,	-- Unflags at first relog. This is a breadcrumb for all the 'Seeking Knowledge Week X of 5' quests.	-- Exo
-							}),
-							q(96441, {	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
-								sourceQuests = {
-									96831,	-- Magister's Summons
-									96410,	-- Seeking Knowledge: The Omnium Folio
-								},
-								qg = 264069,	-- Magister Umbric
-								coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
-								qi = 274576,	-- Ritualized Arcana (QI!)
-							}),
-							------ Stay awhile and listen ------
-							hqt(97139, {	-- Stay awhile and listen: Grand Magister Rommath
-								name = "Stay awhile and listen: Grand Magister Rommath",
-								description = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
-								sourceQuest = 96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
-								qg = 264070,	-- Grand Magister Rommath
-								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-							}),
-							--
-							q(96442, {	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
-								sourceQuests = {
-									96831,	-- Magister's Summons
-									96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
-								},
-								qg = 264070,	-- Grand Magister Rommath
-								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-								qi = 274577,	-- Dark-Ley Coalescence (QI!)
-							}),
-							q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
-								sourceQuests = {
-									96831,	-- Magister's Summons
-									96442,	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
-								},
-								qg = 264070,	-- Grand Magister Rommath
-								coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
-								qis = {
-									274583,	-- Primessence of Arcane (QI!)
-									274585,	-- Primessence of Death (QI!)
-									274580,	-- Primessence of Fel (QI!)
-									274582,	-- Primessence of Life (QI!)
-									274584,	-- Primessence of Light (QI!)
-									274581,	-- Primessence of Shadow (QI!)
-								},
-							}),
-							q(96444, {	-- Seeking Knowledge Week 5 of 5: Off-World Magic
-								sourceQuests = {
-									96831,	-- Magister's Summons
-									96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
-								},
-								qg = 264069,	-- Magister Umbric
-								coord = { 60.5, 11.4, 2649 },	-- The Lycaneum, Magister's Terrace
-								qis = {
-									274640,	-- Arcfluxion Hydrospore (QI!)
-									274620,	-- Singularian Cryocore (QI!)
-								},
-							}),
-						})),
+						header(HEADERS.Achievement, 62606, {	-- The Sunstrider Omnium
+							timeline = { ADDED_12_0_7 },
+							groups = {
+								q(96223, {	-- The Magister's Call
+									qg = 265903,	-- Magister's Missive
+									coords = {
+										{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 40.2, 72.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 47.6, 80.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 47.9, 51.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 50.9, 73.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+									},
+								}),
+								q(96224, {	-- The Magisters' Conundrum
+									sourceQuest = 96223,	-- The Magister's Call
+									qg = 264063,	-- Magister Umbric
+									races = ALLIANCE_ONLY,
+									coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								}),
+								q(96225, {	-- The Magisters' Conundrum
+									sourceQuest = 96223,	-- The Magister's Call
+									qg = 264064,	-- Grand Magister Rommath
+									races = HORDE_ONLY,
+									coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+								}),
+								q(96227, {	-- Lycaneum Chaos
+									sourceQuests = {
+										96224,	-- The Magisters' Conundrum [A]
+										96225,	-- The Magisters' Conundrum [H]
+									},
+									qg = 264066,	-- Grand Magister Rommath
+									coord = { 63.2, 16.5, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+								q(96226, {	-- Omnium Anomalies
+									sourceQuests = {
+										96224,	-- The Magisters' Conundrum [A]
+										96225,	-- The Magisters' Conundrum [H]
+									},
+									qg = 264065,	-- Magister Umbric
+									coord = { 61.8, 15.0, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+								q(96228, {	-- The Shadowed Spire
+									sourceQuests = {
+										96227,	-- Lycaneum Chaos
+										96226,	-- Omnium Anomalies
+									},
+									qg = 264065,	-- Magister Umbric
+									coord = { 61.6, 14.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+								q(96230, {	-- Unravelling the Wards
+									sourceQuests = {
+										96227,	-- Lycaneum Chaos
+										96226,	-- Omnium Anomalies
+									},
+									qg = 264066,	-- Grand Magister Rommath
+									coords = {
+										{ 63.6, 14.0, 2649 },	-- The Lycaneum, Magister's Terrace
+										{ 63.6, 16.3, 2649 },	-- The Lycaneum, Magister's Terrace
+									},
+								}),
+								q(96231, {	-- Unravelling the Wards
+									sourceQuest = 96230,	-- Unravelling the Wards
+									qg = 264945,	-- Grand Magister Rommath
+									coord = { 58.9, 57.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+									groups = { i(274261) },	-- Grand Magister's Key-Cipher (QI!)
+								}),
+								q(96229, {	-- The Void Reveals
+									sourceQuest = 96228,	-- The Shadowed Spire
+									qg = 264067,	-- Magister Umbric
+									coord = { 62.6, 63.1, MAP.MIDNIGHT.EVERSONG_WOODS },
+									groups = { i(274036) },	-- Void Magicule (QI!)
+								}),
+								q(96232, {	-- Return to the Omnium
+									sourceQuests = {
+										96229,	-- The Void Reveals
+										96231,	-- Unravelling the Wards
+									},
+									qgs = {
+										264787,	-- Magister Umbric
+										269814,	-- Magister Umbric
+									},
+									altQuests = { 96238 },	-- Return to the Omnium
+									coord = { 62.5, 62.6, MAP.MIDNIGHT.EVERSONG_WOODS },
+								}),
+								q(96238, {	-- Return to the Omnium
+									sourceQuests = {
+										96229,	-- The Void Reveals
+										96231,	-- Unravelling the Wards
+									},
+									qg = 264944,	-- Grand Magister Rommath
+									altQuests = { 96232 },	-- Return to the Omnium
+									coord = { 59.0, 59.3, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+								}),
+								q(96233, {	-- The Omnium Reawakens
+									sourceQuests = {
+										96227,	-- Lycaneum Chaos
+										96226,	-- Omnium Anomalies
+									},
+									qg = 264066,	-- Grand Magister Rommath
+									coord = { 63.4, 16.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+							},
+						}),
+						header(HEADERS.Achievement, 63325, {	-- Omnium Folio Studies
+							timeline = { ADDED_12_0_7 },
+							groups = {
+								q(96410, {	-- Seeking Knowledge: The Omnium Folio
+									sourceQuest = 96233,	-- The Omnium Reawakens
+									qg = 264069,	-- Magister Umbric
+									coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+								q(96831, {	-- Magister's Summons
+									sourceQuest = 96410,	-- Seeking Knowledge: The Omnium Folio
+									description = "You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",	-- Or will it pop-up on first log-in when eligible?
+									qg = 265903,	-- Magister's Missive
+									coords = {
+										{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 47.8, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 50.8, 73.4, MAP.MIDNIGHT.SILVERMOON_CITY },
+									},
+									isBreadcrumb = true,
+									isWeekly = true,	-- Unflags at first relog. This is a breadcrumb for all the 'Seeking Knowledge Week X of 5' quests.	-- Exo
+								}),
+								q(96441, {	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
+									sourceQuests = {
+										96831,	-- Magister's Summons
+										96410,	-- Seeking Knowledge: The Omnium Folio
+									},
+									qg = 264069,	-- Magister Umbric
+									coord = { 60.4, 10.4, 2649 },	-- The Lycaneum, Magister's Terrace
+									qi = 274576,	-- Ritualized Arcana (QI!)
+								}),
+								------ Stay awhile and listen ------
+								hqt(97139, {	-- Stay awhile and listen: Grand Magister Rommath
+									name = "Stay awhile and listen: Grand Magister Rommath",
+									description = "Dialogue becomes available after completing 'Seeking Knowledge Week 2 of 5: Ritualized Arcana' (96441).",
+									sourceQuest = 96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
+									qg = 264070,	-- Grand Magister Rommath
+									coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+								}),
+								--
+								q(96442, {	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
+									sourceQuests = {
+										96831,	-- Magister's Summons
+										96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
+									},
+									qg = 264070,	-- Grand Magister Rommath
+									coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+									qi = 274577,	-- Dark-Ley Coalescence (QI!)
+								}),
+								q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
+									sourceQuests = {
+										96831,	-- Magister's Summons
+										96442,	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
+									},
+									qg = 264070,	-- Grand Magister Rommath
+									coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
+									qis = {
+										274583,	-- Primessence of Arcane (QI!)
+										274585,	-- Primessence of Death (QI!)
+										274580,	-- Primessence of Fel (QI!)
+										274582,	-- Primessence of Life (QI!)
+										274584,	-- Primessence of Light (QI!)
+										274581,	-- Primessence of Shadow (QI!)
+									},
+								}),
+								q(96444, {	-- Seeking Knowledge Week 5 of 5: Off-World Magic
+									sourceQuests = {
+										96831,	-- Magister's Summons
+										96443,	-- Seeking Knowledge Week 4 of 5: Magical Primessence
+									},
+									qg = 264069,	-- Magister Umbric
+									coord = { 60.5, 11.4, 2649 },	-- The Lycaneum, Magister's Terrace
+									qis = {
+										274640,	-- Arcfluxion Hydrospore (QI!)
+										274620,	-- Singularian Cryocore (QI!)
+									},
+								}),
+							},
+						}),
 					}),
 				},
 			}),

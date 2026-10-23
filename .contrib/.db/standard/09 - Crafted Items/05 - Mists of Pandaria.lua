@@ -233,7 +233,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(BLACKSMITHING, {
 		n(DISCOVERY, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR,
-			header(HEADERS.Spell, 143255, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Balanced Trillium Ingot
+			header(HEADERS.Spell, 143255, {	-- Balanced Trillium Ingot
+				timeline = { ADDED_5_4_0 },
 				cost = ClassicCost({{ "i", 72095, 1 }}),	-- 1x Trillium Bar
 				groups = sharedData({
 					provider = { "s", 143255 },	-- Balanced Trillium Ingot
@@ -280,9 +281,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(142958),	-- Protector's Trillium Legguards
 					r(142967),	-- Protector's Trillium Waistguard
 				}),
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,
-			header(HEADERS.Spell, 138646, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Lightning Steel Ingot
+			header(HEADERS.Spell, 138646, {	-- Lightning Steel Ingot
+				timeline = { ADDED_5_2_0 },
 				cost = ClassicCost({{ "i", 72096, 10 }}),	-- 10x Ghost Iron Bar
 				groups = sharedData({
 					provider = { "s", 138646 },	-- Lightning Steel Ingot
@@ -326,7 +328,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(137768),	-- Haunted Steel Treads
 					r(137770),	-- Haunted Steel Warboots
 				}),
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,
 			r(138890, {	-- Blazeguard, Reborn
 				provider = { "s", 138888 },	-- Fireguard, Reborn
@@ -1410,7 +1412,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(LEATHERWORKING, {
 		n(DISCOVERY, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR,
-			header(HEADERS.Spell, 142976, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Hardened Magnificent Hide
+			header(HEADERS.Spell, 142976, {	-- Hardened Magnificent Hide
+				timeline = { ADDED_5_4_0 },
 				cost = ClassicCost({{ "i", 72163, 2 }}),	-- 2x Magnificent Hide
 				groups = sharedData({
 					provider = { "s", 142976 },	-- Hardened Magnificent Hide
@@ -1498,9 +1501,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(142965),	-- Snow Lily Belt
 					r(142956),	-- Snow Lily Britches
 				}),
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,
-			header(HEADERS.Spell, 140040, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Magnificence of Leather
+			header(HEADERS.Spell, 140040, {	-- Magnificence of Leather
+				timeline = { ADDED_5_2_0 },
 				cost = ClassicCost({{ "i", 72120, 20 }}),	-- 20x Mist-Touched Leather
 				groups = sharedData({
 					provider = { "s", 140040 },	-- Magnificence of Leather
@@ -1553,9 +1557,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(138593),	-- Spirit Keeper Footguards
 					r(138594),	-- Spirit Keeper Helm
 				}),
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,
-			header(HEADERS.Spell, 140041, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Magnificence of Scales
+			header(HEADERS.Spell, 140041, {	-- Magnificence of Scales
+				timeline = { ADDED_5_2_0 },
 				cost = ClassicCost({{ "i", 79101, 20 }}),	-- 20x Prismatic Scale
 				groups = sharedData({
 					provider = { "s", 140041 },	-- Magnificence of Scales
@@ -1598,7 +1603,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(138591),	-- Dreadrunner Sabatons
 					r(140185),	-- Magnificent Hide Pack
 				}),
-			}))),
+			})),
 		}),
 		n(ARMOR, {
 			n(BACK, {
@@ -1903,7 +1908,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(TAILORING, {
 		n(DISCOVERY, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR,
-			header(HEADERS.Spell, 143011, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Celestial Cloth
+			header(HEADERS.Spell, 143011, {	-- Celestial Cloth
+				timeline = { ADDED_5_4_0 },
 				cost = ClassicCost({{ "i", 82441, 10 }}),	-- 10x Bolt of Windwool Cloth
 				groups = sharedData({
 					provider = { "s", 143011 },	-- Celestial Cloth
@@ -1949,9 +1955,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(142960),	-- White Cloud Belt
 					r(142951),	-- White Cloud Leggings
 				}),
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING,
-			header(HEADERS.Spell, 125557, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Imperial Silk
+			header(HEADERS.Spell, 125557, {	-- Imperial Silk
+				timeline = { ADDED_5_2_0 },
 				cost = ClassicCost({{ "i", 82441, 8 }}),	-- 8x Bolt of Windwool Cloth
 				groups = sharedData({
 					provider = { "s", 125557 },	-- Imperial Silk
@@ -1997,7 +2004,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 					r(138599),	-- Falling Blossom Sandals
 					r(138597),	-- Falling Blossom Treads
 				}),
-			}))),
+			})),
 		}),
 		n(ARMOR, {
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(98612, {timeline = {ADDED_5_4_0}})),	-- Belt of the Night Sky

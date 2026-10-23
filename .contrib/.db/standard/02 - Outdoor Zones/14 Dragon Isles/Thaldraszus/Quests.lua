@@ -1002,104 +1002,107 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					coord = { 42.4, 78.9, THALDRASZUS },
 				}),
 			}),
-			header(HEADERS.Achievement, 17734, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Active Listening Skills
-				q(72411, {	-- Cause Without a Rebel
-					-- sourceQuests = {  },	--
-					provider = { "n", 189842 },	-- Captain Drine
-					coord = { 56.5, 40.1, VALDRAKKEN },
-				}),
-				q(72412, {	-- Explosive Interruption
-					sourceQuests = { 72411 },	-- Cause Without a Rebel
-					provider = { "n", 200754 },	-- Captain Drine
-					coord = { 55.5, 33.8, VALDRAKKEN },
-				}),
-				q(72413, {	-- Irreconcilable Differences
-					sourceQuests = { 72412 },	-- Explosive Interruption
-					provider = { "n", 199397 },	-- Investigator Erima
-					coord = { 46.4, 50.8, VALDRAKKEN },
-					groups = {
-						i(204407),	-- Rebel Detonator (QI!)
-					},
-				}),
-				q(72414, {	-- Know Prisoners!
-					sourceQuests = { 72412 },	-- Explosive Interruption
-					provider = { "n", 199396 },	-- Maldra Flametongue
-					coord = { 46.3, 50.7, VALDRAKKEN },
-					groups = {
-						i(202855),	-- Maldra's Ring of Elemental Binding
-					},
-				}),
-				q(72415, {	-- Rebel Rousing Writings
-					sourceQuests = { 72412 },	-- Explosive Interruption
-					provider = { "n", 199396 },	-- Maldra Flametongue
-					coord = { 46.3, 50.7, VALDRAKKEN },
-					groups = {
-						i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
-						i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
-						i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
-						i(202698),	-- The Dragonkin Voice 4: Might & Right
-						i(202701),	-- The Dragonkin Voice 5: The Rebel Code
-					},
-				}),
-				q(72416, {	-- Temporary Accommodations
-					sourceQuests = {
-						72413,	-- Irreconcilable Differences
-						72414,	-- Know Prisoners!
-						72415,	-- Rebel Rousing Writings
-					},
-					provider = { "n", 199396 },	-- Maldra Flametongue
-					coord = { 46.3, 50.7, THALDRASZUS },
-				}),
-				q(72417, {	-- Persistent Dissidents
-					sourceQuests = { 72416 },	-- Temporary Accommodations
-					provider = { "n", 199382 },	-- Alexstrasza the Life-Binder
-					coord = { 38.8, 52.5, THALDRASZUS },
-				}),
-				q(72418, {	-- Solicited Opinions
-					sourceQuests = { 72417 },	-- Persistent Dissidents
-					provider = { "n", 201211 },	-- Alexstrasza the Life-Binder
-					coord = { 38.8, 52.5, THALDRASZUS },
-				}),
-				q(72419, {	-- Cleaning up the Cliffraff
-					sourceQuests = { 72418 },	-- Solicited Opinions
-					provider = { "n", 200788 },	-- Captain Drime
-					coord = { 38.8, 52.6, THALDRASZUS },
-				}),
-				q(72422, {	-- Stop the Presses
-					sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
-					provider = { "n", 199391 },	-- Maldra Flametongue
-					coord = { 46.4, 55.9, THALDRASZUS },
-					groups = {
-						i(203390),	-- Maldra's Ring of Elemental Binding
-					},
-				}),
-				q(72421, {	-- The Quill to Power
-					sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
-					provider = { "n", 199391 },	-- Maldra Flametongue
-					coord = { 46.4, 55.9, THALDRASZUS },
-				}),
-				q(72420, {	-- Wreckonciliation
-					sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
-					provider = { "n", 199301 },	-- Investigator Erima
-					coord = { 46.4, 55.9, THALDRASZUS },
-					groups = {
-						i(203383),	-- Notes on Dragonkin Equality
-					},
-				}),
-				q(75230, {	-- Reconcilable Dissidents
-					sourceQuests = {
-						72422,	-- Stop the Presses
-						72421,	-- The Quill to Power
-						72420,	-- Wreckonciliation
-					},
-					provider = { "n", 200839 },	-- Alexstrasza the Life-Binder
-					coord = { 76.8, 33.5, VALDRAKKEN },
-					groups = {
-						ach(17734),	-- Active Listening Skills
-						title(498),	-- <Name> the Reconciler
-					},
-				}),
-			})),
+			header(HEADERS.Achievement, 17734, {	-- Active Listening Skills
+				timeline = { ADDED_10_1_0 },
+				groups = {
+					q(72411, {	-- Cause Without a Rebel
+						-- sourceQuests = {  },	--
+						provider = { "n", 189842 },	-- Captain Drine
+						coord = { 56.5, 40.1, VALDRAKKEN },
+					}),
+					q(72412, {	-- Explosive Interruption
+						sourceQuests = { 72411 },	-- Cause Without a Rebel
+						provider = { "n", 200754 },	-- Captain Drine
+						coord = { 55.5, 33.8, VALDRAKKEN },
+					}),
+					q(72413, {	-- Irreconcilable Differences
+						sourceQuests = { 72412 },	-- Explosive Interruption
+						provider = { "n", 199397 },	-- Investigator Erima
+						coord = { 46.4, 50.8, VALDRAKKEN },
+						groups = {
+							i(204407),	-- Rebel Detonator (QI!)
+						},
+					}),
+					q(72414, {	-- Know Prisoners!
+						sourceQuests = { 72412 },	-- Explosive Interruption
+						provider = { "n", 199396 },	-- Maldra Flametongue
+						coord = { 46.3, 50.7, VALDRAKKEN },
+						groups = {
+							i(202855),	-- Maldra's Ring of Elemental Binding
+						},
+					}),
+					q(72415, {	-- Rebel Rousing Writings
+						sourceQuests = { 72412 },	-- Explosive Interruption
+						provider = { "n", 199396 },	-- Maldra Flametongue
+						coord = { 46.3, 50.7, VALDRAKKEN },
+						groups = {
+							i(202702),	-- The Dragonkin Voice 1: A Dragonkin's Worth
+							i(202699),	-- The Dragonkin Voice 2: 100 Centuries Abandoned
+							i(202700),	-- The Dragonkin Voice 3: 100 Centuries Independent
+							i(202698),	-- The Dragonkin Voice 4: Might & Right
+							i(202701),	-- The Dragonkin Voice 5: The Rebel Code
+						},
+					}),
+					q(72416, {	-- Temporary Accommodations
+						sourceQuests = {
+							72413,	-- Irreconcilable Differences
+							72414,	-- Know Prisoners!
+							72415,	-- Rebel Rousing Writings
+						},
+						provider = { "n", 199396 },	-- Maldra Flametongue
+						coord = { 46.3, 50.7, THALDRASZUS },
+					}),
+					q(72417, {	-- Persistent Dissidents
+						sourceQuests = { 72416 },	-- Temporary Accommodations
+						provider = { "n", 199382 },	-- Alexstrasza the Life-Binder
+						coord = { 38.8, 52.5, THALDRASZUS },
+					}),
+					q(72418, {	-- Solicited Opinions
+						sourceQuests = { 72417 },	-- Persistent Dissidents
+						provider = { "n", 201211 },	-- Alexstrasza the Life-Binder
+						coord = { 38.8, 52.5, THALDRASZUS },
+					}),
+					q(72419, {	-- Cleaning up the Cliffraff
+						sourceQuests = { 72418 },	-- Solicited Opinions
+						provider = { "n", 200788 },	-- Captain Drime
+						coord = { 38.8, 52.6, THALDRASZUS },
+					}),
+					q(72422, {	-- Stop the Presses
+						sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
+						provider = { "n", 199391 },	-- Maldra Flametongue
+						coord = { 46.4, 55.9, THALDRASZUS },
+						groups = {
+							i(203390),	-- Maldra's Ring of Elemental Binding
+						},
+					}),
+					q(72421, {	-- The Quill to Power
+						sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
+						provider = { "n", 199391 },	-- Maldra Flametongue
+						coord = { 46.4, 55.9, THALDRASZUS },
+					}),
+					q(72420, {	-- Wreckonciliation
+						sourceQuests = { 72419 },	-- Cleaning up the Cliffraff
+						provider = { "n", 199301 },	-- Investigator Erima
+						coord = { 46.4, 55.9, THALDRASZUS },
+						groups = {
+							i(203383),	-- Notes on Dragonkin Equality
+						},
+					}),
+					q(75230, {	-- Reconcilable Dissidents
+						sourceQuests = {
+							72422,	-- Stop the Presses
+							72421,	-- The Quill to Power
+							72420,	-- Wreckonciliation
+						},
+						provider = { "n", 200839 },	-- Alexstrasza the Life-Binder
+						coord = { 76.8, 33.5, VALDRAKKEN },
+						groups = {
+							ach(17734),	-- Active Listening Skills
+							title(498),	-- <Name> the Reconciler
+						},
+					}),
+				},
+			}),
 			header(HEADERS.Quest, 70377, {	-- Derelict Fashion
 				q(70377, {	-- Derelict Fashion
 					description = "Drops from Mudgatu.",
@@ -1146,8 +1149,9 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					coord = { 57.1, 64.6, THALDRASZUS },
 				}),
 			}),
-			header(HEADERS.Quest, 76423, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- No Limits
+			header(HEADERS.Quest, 76423, {	-- No Limits
 				icon = 5205847,
+				timeline = { ADDED_10_1_7 },
 				groups = {
 					q(76423, {	-- No Limits
 						qgs = {
@@ -1200,7 +1204,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						},
 					}),
 				},
-			})),
+			}),
 			------ Miscellaneous ------
 			q(67093, {	-- An Anomalous Shrine
 				sourceQuests = { 65962 },	-- The Never-Final Countdown

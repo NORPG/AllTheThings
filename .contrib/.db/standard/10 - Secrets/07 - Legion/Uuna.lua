@@ -3,11 +3,12 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
-	header(HEADERS.Spell, 254763, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Uuna
+	header(HEADERS.Spell, 254763, {	-- Uuna
 		lore = "Uuna was found bound to an Ur'zul, and was released into the Shadowlands, where she wandered in the utter darkness.",
 		description = "This secret is a prerequisite for Baa'l. It requires having collected |cff0070d0Uuna's Doll|r, which drops from |cff883325The Many-Faced Devourer|r, a Rare Elite in Antoran Wastes.",
 		modelScale = 1.1,
 		displayID = 76829,
+		timeline = { ADDED_7_3_0 },
 		groups = {
 			hqt(50098, {	-- Steps 1-4: A New Friend
 				name = "Steps 1-4: A New Friend",
@@ -164,5 +165,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 				}),
 			}),
 		},
-	})),
+	}),
 }));

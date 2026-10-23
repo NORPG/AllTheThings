@@ -3,10 +3,11 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
-	header(HEADERS.Spell, 247402, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Lucid Nightmare
+	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
 		description = "***Quest tracking enabled is required to see all the steps.***",
 		modelScale = .8,
 		displayID = 78092,
+		timeline = { ADDED_7_3_0 },
 		groups = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				model = 1661948,
@@ -83,11 +84,14 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 				groups = { i(151623) },	-- Lucid Nightmare (MOUNT!)
 			}),
 		},
-	})),
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
-	header(HEADERS.Spell, 247402, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Lucid Nightmare
-		q(47866),	-- Triggers after Step 8 of Lucid Nightmare secret hunt
-	})),
+	header(HEADERS.Spell, 247402, {	-- Lucid Nightmare
+		timeline = { ADDED_7_3_0 },
+		groups = {
+			q(47866),	-- Triggers after Step 8 of Lucid Nightmare secret hunt
+		},
+	}),
 }));

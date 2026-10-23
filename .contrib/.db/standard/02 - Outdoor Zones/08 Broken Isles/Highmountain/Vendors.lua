@@ -265,42 +265,45 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				}),
 			}),
 		}),
-		header(HEADERS.Faction, FACTION_TALONS_VENGENCE, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
-			hqt(45029, {	-- Talon's Vengeance - Intro Complete
-				description = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengeance faction.",
-				qg = 97925,	-- Aviana
-				coord = { 32.2, 66.8, HIGHMOUNTAIN },
-			}),
-			n(115887, {	-- Trinket
-				coord = { 32.4, 66.8, HIGHMOUNTAIN },
-				sourceQuest = 45029,	-- Talon's Vengeance - Intro Complete
-				groups = pvp(bubbleDownClassicRep(FACTION_TALONS_VENGENCE, {
-					{		-- Neutral
-						i(142366),	-- Regurgitated Leaf
-						i(142361, {	-- Ivory Talon
-							title(346, {	-- <Name>, Talon's Vengeance
-								collectible = false,
+		header(HEADERS.Faction, FACTION_TALONS_VENGENCE, {
+			timeline = { ADDED_7_1_0 },
+			groups = {
+				hqt(45029, {	-- Talon's Vengeance - Intro Complete
+					description = "Talk to Aviana while mounted on any Falcosaur Mount to unlock the Talon's Vengeance faction.",
+					qg = 97925,	-- Aviana
+					coord = { 32.2, 66.8, HIGHMOUNTAIN },
+				}),
+				n(115887, {	-- Trinket
+					coord = { 32.4, 66.8, HIGHMOUNTAIN },
+					sourceQuest = 45029,	-- Talon's Vengeance - Intro Complete
+					groups = pvp(bubbleDownClassicRep(FACTION_TALONS_VENGENCE, {
+						{		-- Neutral
+							i(142366),	-- Regurgitated Leaf
+							i(142361, {	-- Ivory Talon
+								title(346, {	-- <Name>, Talon's Vengeance
+									collectible = false,
+								}),
+								i(142363),	-- Mark of Prey
 							}),
-							i(142363),	-- Mark of Prey
-						}),
-					}, {	-- Friendly
-						i(142364),	-- Bag of Twigs
-					}, {	-- Honored
-						i(142367, {	-- Ivory Feather
-							i(142363),	-- Mark of Prey
-						}),
-					}, {	-- Revered
-						i(142368, {	-- Cracked Falcosaur Beak
-							cost = 10000000,	-- 1,000g
-						}),
-					}, {	-- Exalted
-						i(142369, {	-- Ivory Hawkstrider (MOUNT!)
-							minReputation = { FACTION_TALONS_VENGENCE, EXALTED },
-							cost = 100000000,	-- 10,000g
-						}),
-					},
-				})),
-			}),
-		})),
+						}, {	-- Friendly
+							i(142364),	-- Bag of Twigs
+						}, {	-- Honored
+							i(142367, {	-- Ivory Feather
+								i(142363),	-- Mark of Prey
+							}),
+						}, {	-- Revered
+							i(142368, {	-- Cracked Falcosaur Beak
+								cost = 10000000,	-- 1,000g
+							}),
+						}, {	-- Exalted
+							i(142369, {	-- Ivory Hawkstrider (MOUNT!)
+								minReputation = { FACTION_TALONS_VENGENCE, EXALTED },
+								cost = 100000000,	-- 10,000g
+							}),
+						},
+					})),
+				}),
+			},
+		}),
 	}),
 });

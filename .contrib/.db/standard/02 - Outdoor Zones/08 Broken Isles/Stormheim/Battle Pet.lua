@@ -44,9 +44,10 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				description = "Found in Tideskorn Harbor.",
 				coord = { 55.8, 43.0, STORMHEIM },
 			}),
-			header(HEADERS.NPC, 115785, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {	-- Direbeak Hatchling
+			header(HEADERS.NPC, 115785, {	-- Direbeak Hatchling
 				description = "1. Buy Pungent Vrykul Gamalost from Riala the Hearthwatcher in Valdisdall.\n2. Kill Direbeak Matriarch\n3. /target Orphaned Direbeak\n4. Feed Orphaned Direbeak Pungent Vrykul Gamalost.\n5. Enjoy your new Direbeak Hatchling! Do one quest each day for a mount!|r\n",
 				crs = { 115742 },	-- Orphaned Direbeak
+				timeline = { ADDED_7_1_0 },
 				groups = {
 					pet(1975),	-- Direbeak Hatchling (PET!)
 					q(44977, {	-- Allies in Stormheim
@@ -125,7 +126,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 						provider = { "n", 115785 },	-- Direbeak Hatchling
 					}),
 				},
-			})),
+			}),
 		},
 	})),
 });

@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.SL, {
-	header(HEADERS.Spell, 329900, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {	-- Glimr
+	header(HEADERS.Spell, 329900, {	-- Glimr
 		displayID = 96259,
 		modelScale = .8,
+		timeline = { ADDED_9_0_1 },
 		groups = {
 			q(60605, {	-- Glimmerfin Scale
 				provider = { "o", 352909 },	-- Glimmerfin Scale
@@ -76,5 +77,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, {
 				},
 			}),
 		},
-	})),
+	}),
 }));

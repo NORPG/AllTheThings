@@ -2963,10 +2963,11 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(32773, bubbleDownSelf({ races = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
+				n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 					coord = { 59.6, 63.8, HOWLING_FJORD },
+					races = ALLIANCE_ONLY,
 					sym = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-				})),
+				}),
 				n(24330, {	-- Orson Locke <Sharp Blades>
 					coord = { 53.8, 66.8, HOWLING_FJORD },
 					races = HORDE_ONLY,
@@ -2979,10 +2980,11 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 					},
 				}),
-				n(32774, bubbleDownSelf({ races = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
+				n(32774, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 					coord = { 79.6, 30.6, HOWLING_FJORD },
+					races = HORDE_ONLY,
 					sym = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
-				})),
+				}),
 				n(24028, {	-- Talu Frosthoof <Bowyer>
 					coord = { 48.2, 11.0, HOWLING_FJORD },
 					races = HORDE_ONLY,

@@ -299,8 +299,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							}),
 						},
 					}),
-					header(HEADERS.Quest, 72440, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Silver Mettle
+					header(HEADERS.Quest, 72440, {	-- Silver Mettle
 						icon = 4638415,
+						timeline = { ADDED_10_1_0 },
 						groups = {
 							q(72440, {	-- Silver Mettle
 								sourceQuests = { 67084 },	-- The Silver Purpose
@@ -340,9 +341,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								},
 							}),
 						},
-					})),
-					header(HEADERS.Quest, 75632, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- A Dislocated Disc
+					}),
+					header(HEADERS.Quest, 75632, {	-- A Dislocated Disc
 						icon = 5172995,
+						timeline = { ADDED_10_1_7 },
 						groups = {
 							q(75632, {	-- A Dislocated Disc
 								sourceQuests = { 72444 },	-- A Sliver of Silver
@@ -427,9 +429,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								},
 							}),
 						},
-					})),
-					header(HEADERS.Quest, 77339, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {	-- Data Recovery
+					}),
+					header(HEADERS.Quest, 77339, {	-- Data Recovery
 						icon = 5245774,
+						timeline = { ADDED_10_2_0 },
 						groups = {
 							q(77339, {	-- Data Recovery
 								sourceQuests = { 75638 },	-- Dislocated Disc Located
@@ -495,7 +498,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								},
 							}),
 						},
-					})),
+					}),
 					q(72688, {	-- Renown Supplies
 						provider = { "n", 193015 },	-- Unatos
 						coord = { 58.1, 35.2, VALDRAKKEN },

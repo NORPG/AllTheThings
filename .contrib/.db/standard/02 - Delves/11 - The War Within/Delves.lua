@@ -2897,60 +2897,63 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			coord = { 47.6, 43.6, DORNOGAL },
 			groups = {	-- To avoid having the NPC itself say "This has been removed from the game", I'm gonna timeline individual headers	- Exo
 				-- After being kidnapped by Nullaeus (Lorewise), Sir Finley stopped selling stuff and all his (TWW Season 3) stock was moved to Reno Jackson.
-				header(HEADERS.Item, 219391, bubbleDownSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {	-- Delver's Dirigible
-					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
-						timeline = { ADDED_11_1_0_SEASONSTART },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
-						cost = { { "c", UNDERCOIN, 1000 } },
-					}),
-					i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
-						timeline = { ADDED_11_2_0 },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235684, {	-- Delver's Dirigible Schematic: Glider (MM!)
-						timeline = { ADDED_11_1_0_SEASONSTART },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
-						timeline = { ADDED_11_2_0 },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
-						timeline = { ADDED_11_2_0 },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
-						cost = { { "c", UNDERCOIN, 3000 } },
-					}),
-					i(235687, {	-- Delver's Dirigible Schematic: Spoiler (MM!)
-						timeline = { ADDED_11_1_0_SEASONSTART },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
-						timeline = { ADDED_11_2_0 },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
-						timeline = { ADDED_11_1_0_SEASONSTART },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235686, {	-- Delver's Dirigible Schematic: White Paint (MM!)
-						timeline = { ADDED_11_1_0_SEASONSTART },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-					i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
-						timeline = { ADDED_11_2_0 },
-						cost = { { "c", UNDERCOIN, 2500 } },
-					}),
-				})),
+				header(HEADERS.Item, 219391, {	-- Delver's Dirigible
+					timeline = { REMOVED_12_0_1_SEASONSTART },
+					groups = {
+						i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
+							timeline = { ADDED_11_1_0_SEASONSTART },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
+							cost = { { "c", UNDERCOIN, 1000 } },
+						}),
+						i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
+							timeline = { ADDED_11_2_0 },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235684, {	-- Delver's Dirigible Schematic: Glider (MM!)
+							timeline = { ADDED_11_1_0_SEASONSTART },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
+							timeline = { ADDED_11_2_0 },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
+							timeline = { ADDED_11_2_0 },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
+							cost = { { "c", UNDERCOIN, 3000 } },
+						}),
+						i(235687, {	-- Delver's Dirigible Schematic: Spoiler (MM!)
+							timeline = { ADDED_11_1_0_SEASONSTART },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
+							timeline = { ADDED_11_2_0 },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
+							timeline = { ADDED_11_1_0_SEASONSTART },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235686, {	-- Delver's Dirigible Schematic: White Paint (MM!)
+							timeline = { ADDED_11_1_0_SEASONSTART },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+						i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
+							timeline = { ADDED_11_2_0 },
+							cost = { { "c", UNDERCOIN, 2500 } },
+						}),
+					},
+				}),
 				filter(MOUNTS, bubbleDownSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(246237, {	-- OC91 Chariot (MOUNT!)
 						timeline = { ADDED_11_2_0_SEASONSTART },

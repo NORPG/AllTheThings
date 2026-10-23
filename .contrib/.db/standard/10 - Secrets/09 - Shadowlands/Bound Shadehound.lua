@@ -3,10 +3,11 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.SL, {
-	header(HEADERS.Spell, 344577, bubbleDownSelf({ timeline = { ADDED_9_0_5 } }, {	-- Bound Shadehound
+	header(HEADERS.Spell, 344577, {	-- Bound Shadehound
 		description = "Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.\n\nPurchase a |cFF0070ddStygia Dowser|r from Ve'nari for 1,500 Stygia.Throughout the secret, harvest every Stygia Nexus you find, as you will eventually need 200 |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r.",
 		modelScale = 1.1,
 		displayID = 92632,
+		timeline = { ADDED_9_0_5 },
 		maps = { THE_MAW },
 		cost = {{ "i", 184870, 1 }},	-- 1x Stygia Dowser
 		groups = {
@@ -110,5 +111,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, {
 				},
 			}),
 		},
-	})),
+	}),
 }));

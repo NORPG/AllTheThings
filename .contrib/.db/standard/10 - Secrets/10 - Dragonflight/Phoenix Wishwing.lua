@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
-	header(HEADERS.Item, 193373, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {	-- Phoenix Wishwing
+	header(HEADERS.Item, 193373, {	-- Phoenix Wishwing
 		description = "Below is a detailed explanation on how to obtain the Phoenix Wishwing pet.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		displayID = 106643,
+		timeline = { ADDED_10_0_7 },
 		groups = {
 			o(13000040, {	-- Step 1: Phoenix Ash Talisman
 				description = "|cFFFFFFFFStep 1:|r Obtain the Phoenix Ash Talisman from Zektar in Spires of Arak.",
@@ -45,5 +46,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				groups = { i(193373) },	-- Phoenix Wishwing
 			}),
 		},
-	})),
+	}),
 }));

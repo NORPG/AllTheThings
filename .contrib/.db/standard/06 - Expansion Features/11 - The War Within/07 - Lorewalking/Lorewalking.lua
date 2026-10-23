@@ -184,56 +184,62 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 				}),
-				header(HEADERS.Achievement, 63712, bubbleDownSelf({ timeline = { ADDED_12_1_7 } }, {	-- Lorewalking: Jaina
-					q(95421, {	-- Lorewalking: A Bright Young Mage
-						provider = { "n", 230246 },	-- Li Li Stormstout
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-						maps = { 2716 },	-- Hyjal Summit
-						isRepeatable = true,
-					}),
-					q(95422, {	-- Lorewalking: Tides of War
-						sourceQuest = 95421,	-- Lorewalking: A Bright Young Mage
-						provider = { "n", 261067 },	-- Li Li Stormstout
-						maps = {
-							2716,	-- Hyjal Summit
-							2717,	-- Theramore Isle
-							2718,	-- Ruins of Theramore
-						},
-						isRepeatable = true,
-					}),
-					q(95423, {	-- Lorewalking: Daughter of the Sea
-						sourceQuest = 95422,	-- Lorewalking: Tides of War
-						provider = { "n", 261067 },	-- Li Li Stormstout
-						coord = { 30.2, 49.3, 501 },	-- Dalaran
-						isRepeatable = true,
-					}),
-				})),
-				header(HEADERS.Achievement, 61467, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Lorewalking: The Elves of Quel'thalas
-					q(85252, {	-- Lorewalking: Children of the Blood
-						provider = { "n", 230246 },	-- Lorewalker Cho
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-						},
-						isRepeatable = true,
-					}),
-					q(85254, {	-- Lorewalking: Children of the Void
-						sourceQuests = { 85252 },	-- Lorewalking: Children of the Blood
-						provider = { "n", 234616 },	-- Lorewalker Cho
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-						},
-						isRepeatable = true,
-					}),
-				})),
+				header(HEADERS.Achievement, 63712, {	-- Lorewalking: Jaina
+					timeline = { ADDED_12_1_7 },
+					groups = {
+						q(95421, {	-- Lorewalking: A Bright Young Mage
+							provider = { "n", 230246 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							maps = { 2716 },	-- Hyjal Summit
+							isRepeatable = true,
+						}),
+						q(95422, {	-- Lorewalking: Tides of War
+							sourceQuest = 95421,	-- Lorewalking: A Bright Young Mage
+							provider = { "n", 261067 },	-- Li Li Stormstout
+							maps = {
+								2716,	-- Hyjal Summit
+								2717,	-- Theramore Isle
+								2718,	-- Ruins of Theramore
+							},
+							isRepeatable = true,
+						}),
+						q(95423, {	-- Lorewalking: Daughter of the Sea
+							sourceQuest = 95422,	-- Lorewalking: Tides of War
+							provider = { "n", 261067 },	-- Li Li Stormstout
+							coord = { 30.2, 49.3, 501 },	-- Dalaran
+							isRepeatable = true,
+						}),
+					},
+				}),
+				header(HEADERS.Achievement, 61467, {	-- Lorewalking: The Elves of Quel'thalas
+					timeline = { ADDED_11_2_7 },
+					groups = {
+						q(85252, {	-- Lorewalking: Children of the Blood
+							provider = { "n", 230246 },	-- Lorewalker Cho
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(85254, {	-- Lorewalking: Children of the Void
+							sourceQuests = { 85252 },	-- Lorewalking: Children of the Blood
+							provider = { "n", 234616 },	-- Lorewalker Cho
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+							},
+							isRepeatable = true,
+						}),
+					},
+				}),
 				header(HEADERS.Achievement, 42189, {	-- Lorewalking: The Lich King
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
 						provider = { "n", 230246 },	-- Lorewalker Cho
@@ -277,144 +283,153 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 					}),
 				}),
-				header(HEADERS.Achievement, 61442, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- Lorewalking: The Loa
-					q(92826, {	-- Lorewalking: The Loa of Kings
-						qg = 253727,	-- Li Li Stormstout
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-						isRepeatable = true,
-					}),
-					q(92829, {	-- Lorewalking: Death of the Drakkari Loa
-						qg = 253727,	-- Li Li Stormstout
-						coord = { 42.7, 37.7, ZULDAZAR },
-						isRepeatable = true,
-					}),
-					q(92831, {	-- Lorewalking: The Blood Loa
-						qg = 253727,	-- Li Li Stormstout
-						coord = { 60.2, 57.7, ZULDRAK },
-						isRepeatable = true,
-					}),
-					q(92832, {	-- Lorewalking: The Hash'ey
-						qg = 253727,	-- Li Li Stormstout
-						maps = { 1679 },	-- Zul'Gurub, De Other Side
-						isRepeatable = true,
-						groups = { i(275346) },	-- Lorewalker's Notes: The Loa
-					}),
-				})),
-				header(HEADERS.Achievement, 63691, bubbleDownSelf({ timeline = { ADDED_12_1_7 } }, {	-- Lorewalking: Thrall
-					q(92652, {	-- Lorewalking: Warchief, Shaman, Hero
-						provider = { "n", 230246 },	-- Li Li Stormstout
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-						isRepeatable = true,
-					}),
-					q(92673, {	-- Lorewalking: In Pride's Wake
-						sourceQuest = 92652,	-- Lorewalking: Warchief, Shaman, Hero
-						provider = { "n", 252907 },	-- Li Li Stormstout
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-						isRepeatable = true,
-					}),
-					q(92675, {	-- Lorewalking: The Weight of Doubt
-						sourceQuest = 92673,	-- Lorewalking: In Pride's Wake
-						provider = { "n", 252907 },	-- Li Li Stormstout
-						coords = {
-							{ 49.5, 31.6, DORNOGAL },
-							{ 54.5, 57.2, ORGRIMMAR },
-							{ 64.2, 16.1, STORMWIND_CITY },
-							{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-						},
-						isRepeatable = true,
-					}),
-					q(92676, {	-- Lorewalking: In Another's Footsteps
-						sourceQuest = 92675,	-- Lorewalking: The Weight of Doubt
-						provider = { "n", 252907 },	-- Li Li Stormstout
-						coord = { 33.3, 36.0, MULGORE },
-						isRepeatable = true,
-					}),
-					q(92677, {	-- Lorewalking: Paths Ever Onward
-						sourceQuest = 92676,	-- Lorewalking: In Another's Footsteps
-						provider = { "n", 252907 },	-- Li Li Stormstout
-						coord = { 60.2, 27.4, KORTHIA },
-						isRepeatable = true,
-					}),
-				})),
-				header(HEADERS.Quest, 93929, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- The War Within Recap
-					q(93929, {	-- The War Within Recap
-						lvl = 71,
-						isBreadcrumb = true,
-					}),
-					q(91843, {	-- Recap: The Harbinger
-						qg = 248956,	-- Tome of History
-						coords = {
-							{ 49.5, 31.9, DORNOGAL },
-							{ 46.4, 60.2, VALDRAKKEN },
-						},
-						isRepeatable = true,
-					}),
-					q(91864, {	-- Recap: Fractured Visions
-						sourceQuest = 91843,	-- Recap: The Harbinger
-						qg = 248948,	-- Tome of History
-						coords = {
-							{ 49.5, 31.9, DORNOGAL },
-							{ 46.4, 60.2, VALDRAKKEN },
-						},
-						isRepeatable = true,
-						groups = {
-							i(254323, {	-- Worldsoul Satchel
-								description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
-							}),
-						},
-					}),
-					q(91868, {	-- Recap: Shadowy Pursuits
-						sourceQuest = 91864,	-- Recap: Fractured Visions
-						qg = 248948,	-- Tome of History
-						coords = {
-							{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
-							{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
-							{ 46.4, 60.2, VALDRAKKEN },
-						},
-						isRepeatable = true,
-						groups = {
-							i(254324, {	-- Worldsoul Satchel
-								description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
-							}),
-						},
-					}),
-					q(91871, {	-- Recap: The Dark Heart
-						sourceQuest = 91868,	-- Recap: Shadowy Pursuits
-						qg = 248948,	-- Tome of History
-						coords = {
-							{ 49.5, 31.9, DORNOGAL },
-							{ 46.4, 60.2, VALDRAKKEN },
-						},
-						isRepeatable = true,
-						groups = {
-							i(254325, {	-- Worldsoul Satchel
-								description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
-							}),
-						},
-					}),
-					q(93979, {	-- Lingering Memories
-						description = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
-						sourceQuest = 84967,	-- The Shadowguard Shattered
-						qg = 231128,	-- Locus-Walker
-						coord = { 37.7, 74.8, KARESH_TAZAVESH },
-						isRepeatable = true,
-					}),
-				})),
+				header(HEADERS.Achievement, 61442, {	-- Lorewalking: The Loa
+					timeline = { ADDED_12_0_7 },
+					groups = {
+						q(92826, {	-- Lorewalking: The Loa of Kings
+							qg = 253727,	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(92829, {	-- Lorewalking: Death of the Drakkari Loa
+							qg = 253727,	-- Li Li Stormstout
+							coord = { 42.7, 37.7, ZULDAZAR },
+							isRepeatable = true,
+						}),
+						q(92831, {	-- Lorewalking: The Blood Loa
+							qg = 253727,	-- Li Li Stormstout
+							coord = { 60.2, 57.7, ZULDRAK },
+							isRepeatable = true,
+						}),
+						q(92832, {	-- Lorewalking: The Hash'ey
+							qg = 253727,	-- Li Li Stormstout
+							maps = { 1679 },	-- Zul'Gurub, De Other Side
+							isRepeatable = true,
+							groups = { i(275346) },	-- Lorewalker's Notes: The Loa
+						}),
+					},
+				}),
+				header(HEADERS.Achievement, 63691, {	-- Lorewalking: Thrall
+					timeline = { ADDED_12_1_7 },
+					groups = {
+						q(92652, {	-- Lorewalking: Warchief, Shaman, Hero
+							provider = { "n", 230246 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(92673, {	-- Lorewalking: In Pride's Wake
+							sourceQuest = 92652,	-- Lorewalking: Warchief, Shaman, Hero
+							provider = { "n", 252907 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(92675, {	-- Lorewalking: The Weight of Doubt
+							sourceQuest = 92673,	-- Lorewalking: In Pride's Wake
+							provider = { "n", 252907 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(92676, {	-- Lorewalking: In Another's Footsteps
+							sourceQuest = 92675,	-- Lorewalking: The Weight of Doubt
+							provider = { "n", 252907 },	-- Li Li Stormstout
+							coord = { 33.3, 36.0, MULGORE },
+							isRepeatable = true,
+						}),
+						q(92677, {	-- Lorewalking: Paths Ever Onward
+							sourceQuest = 92676,	-- Lorewalking: In Another's Footsteps
+							provider = { "n", 252907 },	-- Li Li Stormstout
+							coord = { 60.2, 27.4, KORTHIA },
+							isRepeatable = true,
+						}),
+					},
+				}),
+				header(HEADERS.Quest, 93929, {	-- The War Within Recap
+					timeline = { ADDED_11_2_7 },
+					groups = {
+						q(93929, {	-- The War Within Recap
+							lvl = 71,
+							isBreadcrumb = true,
+						}),
+						q(91843, {	-- Recap: The Harbinger
+							qg = 248956,	-- Tome of History
+							coords = {
+								{ 49.5, 31.9, DORNOGAL },
+								{ 46.4, 60.2, VALDRAKKEN },
+							},
+							isRepeatable = true,
+						}),
+						q(91864, {	-- Recap: Fractured Visions
+							sourceQuest = 91843,	-- Recap: The Harbinger
+							qg = 248948,	-- Tome of History
+							coords = {
+								{ 49.5, 31.9, DORNOGAL },
+								{ 46.4, 60.2, VALDRAKKEN },
+							},
+							isRepeatable = true,
+							groups = {
+								i(254323, {	-- Worldsoul Satchel
+									description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+								}),
+							},
+						}),
+						q(91868, {	-- Recap: Shadowy Pursuits
+							sourceQuest = 91864,	-- Recap: Fractured Visions
+							qg = 248948,	-- Tome of History
+							coords = {
+								{ 43.0, 34.1, THE_RINGING_DEEPS },	-- If you were to continue the Recap right away
+								{ 49.5, 31.9, DORNOGAL },	-- If you were to abandon the Recap and come back later
+								{ 46.4, 60.2, VALDRAKKEN },
+							},
+							isRepeatable = true,
+							groups = {
+								i(254324, {	-- Worldsoul Satchel
+									description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+								}),
+							},
+						}),
+						q(91871, {	-- Recap: The Dark Heart
+							sourceQuest = 91868,	-- Recap: Shadowy Pursuits
+							qg = 248948,	-- Tome of History
+							coords = {
+								{ 49.5, 31.9, DORNOGAL },
+								{ 46.4, 60.2, VALDRAKKEN },
+							},
+							isRepeatable = true,
+							groups = {
+								i(254325, {	-- Worldsoul Satchel
+									description = "Contains Equipment rewarded from various Quests available throughout Khaz Algar.",
+								}),
+							},
+						}),
+						q(93979, {	-- Lingering Memories
+							description = "'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",
+							sourceQuest = 84967,	-- The Shadowguard Shattered
+							qg = 231128,	-- Locus-Walker
+							coord = { 37.7, 74.8, KARESH_TAZAVESH },
+							isRepeatable = true,
+						}),
+					},
+				}),
 			}),
 		},
 	}),

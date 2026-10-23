@@ -32,18 +32,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 		i(235691, {timeline = { ADDED_11_2_0 } }),	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 		i(224979),	-- Delver's Dirigible Schematic: Zeppelin (MM!)
 	}),
-	header(HEADERS.Item, 229974, bubbleDownSelf({ timeline = { ADDED_11_1_0 } }, {	-- Delver's Gob-Trotter
-		i(230219),	-- Delver's Gob-Trotter Schematic: Balloon (MM!)
-		i(230217),	-- Delver's Gob-Trotter Schematic: Flamethrower (MM!)
-		i(230220),	-- Delver's Gob-Trotter Schematic: Green (MM!)
-		i(230216),	-- Delver's Gob-Trotter Schematic: Harpoon (MM!)
-		i(230218),	-- Delver's Gob-Trotter Schematic: Pipes (MM!)
-	})),
-	header(HEADERS.Item, 238051, bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {	-- Delver's Mana-Skimmer
-		i(238178),	-- Delver's Mana-Skimmer Schematic: Canister (MM!)
-		i(238177),	-- Delver's Mana-Skimmer Schematic: Emitter (MM!)
-		i(238181),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (MM!)
-		i(238179),	-- Delver's Mana-Skimmer Schematic: Quad Glider (MM!)
-		i(238180),	-- Delver's Mana-Skimmer Schematic: Void Paint (MM!)
-	})),
+	header(HEADERS.Item, 229974, {	-- Delver's Gob-Trotter
+		timeline = { ADDED_11_1_0 },
+		groups = {
+			i(230219),	-- Delver's Gob-Trotter Schematic: Balloon (MM!)
+			i(230217),	-- Delver's Gob-Trotter Schematic: Flamethrower (MM!)
+			i(230220),	-- Delver's Gob-Trotter Schematic: Green (MM!)
+			i(230216),	-- Delver's Gob-Trotter Schematic: Harpoon (MM!)
+			i(230218),	-- Delver's Gob-Trotter Schematic: Pipes (MM!)
+		},
+	}),
+	header(HEADERS.Item, 238051, {	-- Delver's Mana-Skimmer
+		timeline = { ADDED_11_2_0 },
+		groups = {
+			i(238178),	-- Delver's Mana-Skimmer Schematic: Canister (MM!)
+			i(238177),	-- Delver's Mana-Skimmer Schematic: Emitter (MM!)
+			i(238181),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters (MM!)
+			i(238179),	-- Delver's Mana-Skimmer Schematic: Quad Glider (MM!)
+			i(238180),	-- Delver's Mana-Skimmer Schematic: Void Paint (MM!)
+		},
+	}),
 }));

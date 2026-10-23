@@ -55,7 +55,8 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 			},
 		}),
 		-- #endif
-		n(ALCAZ_ISLAND, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
+		n(ALCAZ_ISLAND, {
+			timeline = { ADDED_7_1_0 },
 			lvl = lvlsquish(110, 45, 45),
 			groups = {
 				n(15552, {	-- Dr. Weavil
@@ -76,7 +77,7 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					i(142263),	-- Machine Fluid
 				}),
 			},
-		})),
+		}),
 		n(ACHIEVEMENTS, {
 			ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 				timeline = { ADDED_4_0_3 },

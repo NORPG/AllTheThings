@@ -106,12 +106,13 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 				}),
 			},
 		}),
-		header(HEADERS.Spell, 247814, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Astral Glory [Rank 3]
+		header(HEADERS.Spell, 247814, {	-- Astral Glory [Rank 3]
 			providers = {
 				{ "o", 272782 },	-- Astral Glory
 				{ "o", 273052 },	-- Fel-Encrusted Herb
 				{ "o", 273053 },	-- Fel-Encrusted Herb Cluster
 			},
+			timeline = { ADDED_7_3_0 },
 			maps = {
 				ANTORAN_WASTES,
 				KROKUUN,
@@ -139,7 +140,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 					},
 				}),
 			},
-		})),
+		}),
 		header(HEADERS.Spell, 193297, {	-- Dreamleaf [Rank 3]
 			providers = {
 				{ "o", 244776 },	-- Dreamleaf
@@ -860,8 +861,9 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 				}),
 			},
 		}),
-		header(HEADERS.Spell, 298144, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Zin'anthid [Rank 3]
+		header(HEADERS.Spell, 298144, {	-- Zin'anthid [Rank 3]
 			provider = { "o", 326598 },	-- Zin'anthid
+			timeline = { ADDED_8_2_0 },
 			maps = { NAZJATAR },
 			groups = {
 				q(56098, {	-- Defensive in Death [A]
@@ -879,7 +881,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 					},
 				}),
 			},
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {

@@ -2103,8 +2103,9 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					})),
 				},
 			}),
-			header(HEADERS.Quest, 76592, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- A Single Wing
+			header(HEADERS.Quest, 76592, {	-- A Single Wing
 				icon = 4616673,
+				timeline = { ADDED_10_1_7 },
 				groups = {
 					q(76592, {	-- A Single Wing
 						provider = { "n", 207790 },	-- Scalecommander Emberthal
@@ -2151,7 +2152,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 						coord = { 74.8, 55.0, THE_AZURE_SPAN },
 					}),
 				},
-			})),
+			}),
 			header(HEADERS.Item, 198474, {	-- Artist's Easel
 				q(70166, {	-- The Joy of Painting
 					sourceQuests = { 66026 },	-- Urgent Action Required

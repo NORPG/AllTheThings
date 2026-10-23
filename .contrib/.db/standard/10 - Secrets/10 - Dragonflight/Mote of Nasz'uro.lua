@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
-	header(HEADERS.Item, 206040, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- Mote of Nasz'uro
+	header(HEADERS.Item, 206040, {	-- Mote of Nasz'uro
 		description = "You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",
 		displayID = 112636,
+		timeline = { ADDED_10_1_0 },
 		groups = {
 			n(REWARDS, {
 				maps = { 
@@ -38,5 +39,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				n(205876, { questID = 76187, coord = { 63.9, 44.8, THE_WAKING_SHORES }, }),
 			})),
 		},
-	})),
+	}),
 }));

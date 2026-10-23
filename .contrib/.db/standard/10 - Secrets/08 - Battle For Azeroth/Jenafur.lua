@@ -3,9 +3,10 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
-	header(HEADERS.Spell, 311289, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {	-- Jenafur
+	header(HEADERS.Spell, 311289, {	-- Jenafur
 		description = "***Debug Mode is required to see all the steps.***\n",
 		displayID = 81387,
+		timeline = { ADDED_8_2_5 },
 		groups = {
 			hqt(58076, {	-- Step 1: Speak to Amara
 				name = "|cFFFFFFFFStep 1:|r Speak to Amara",
@@ -69,5 +70,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				},
 			}),
 		},
-	})),
+	}),
 }));

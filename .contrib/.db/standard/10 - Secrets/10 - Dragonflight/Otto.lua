@@ -3,10 +3,11 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
-	header(HEADERS.Spell, 376873, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {	-- Otto
+	header(HEADERS.Spell, 376873, {	-- Otto
 		description = "***Debug Mode must be enabled to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",
 		modelScale = .8,
 		displayID = 102074,
+		timeline = { ADDED_10_0_2_LAUNCH },
 		cost = { { "i", 202042, 1 } },	-- 1x Aquatic Shades (TOY!)
 		groups = {
 			hqt(72676, {	-- Step 1: Dance, Dance 'Til You're Dead
@@ -77,5 +78,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				},
 			}),
 		},
-	})),
+	}),
 }));

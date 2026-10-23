@@ -3,8 +3,9 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.MID, {
-	header(HEADERS.Item, 246723, bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {	-- Unfazed Diver
+	header(HEADERS.Item, 246723, {	-- Unfazed Diver
 		level = 90,
+		timeline = { ADDED_12_0_7 },
 		groups = {
 			o(656056, {	-- Bill of Lading
 				description = "In Untethered Space on the floor to the left of the counter.",
@@ -30,5 +31,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.MID, {
 				groups = { i(246723) },	-- Unfazed Diver (PET!)
 			}),
 		},
-	})),
+	}),
 }));

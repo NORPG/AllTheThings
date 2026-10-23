@@ -1422,9 +1422,10 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			coord = { 23.0, 40.6, LEGION_DALARAN },
 			timeline = { ADDED_7_2_0, REMOVED_8_0_1 },
 		}),
-		header(HEADERS.Quest, 64237, bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {	-- Gurgl and the Bandit
+		header(HEADERS.Quest, 64237, {	-- Gurgl and the Bandit
 			displayID = 100676,
 			modelScale = 1.5,
+			timeline = { ADDED_9_1_5 },
 			groups = {
 				q(64167,{	-- Pets Detective
 					provider = { "n", 96479 },	-- Breanni
@@ -1467,7 +1468,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					groups = { i(186553) },	-- Gurgl (PET!)
 				}),
 			},
-		})),
+		}),
 	}),
 });
 

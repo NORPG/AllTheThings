@@ -46,10 +46,11 @@ maproot(SHADOWLANDS, THE_MAW, {
 					crs = { 173195 },	-- Undying Soulbinder
 				}),
 			}),
-			header(HEADERS.Quest, 64305, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast
+			header(HEADERS.Quest, 64305, {	-- The Tormentors of Torghast
 				description = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
 				icon = 3257863,
 				questID = 63854,
+				timeline = { ADDED_9_1_0 },
 				isWeekly = true,
 				groups = {
 					ach(15054, {	-- Minions of the Cold Dark
@@ -260,7 +261,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 						},
 					}),
 				},
-			})),
+			}),
 			header(HEADERS.Spell, 347208, {
 				icon = 3257863,
 				description = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",

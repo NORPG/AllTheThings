@@ -23,11 +23,12 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18839),	-- Broken Isles Mining Techniques (automated)
 		})),
-		header(HEADERS.Spell, 247850, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Empyrium Deposit [Rank 3]
+		header(HEADERS.Spell, 247850, {	-- Empyrium Deposit [Rank 3]
 			providers = {
 				{ "o", 272768 },	-- Empyrium Deposit
 				{ "o", 272778 },	-- Rich Empyrium Deposit
 			},
+			timeline = { ADDED_7_3_0 },
 			maps = {
 				ANTORAN_WASTES,
 				KROKUUN,
@@ -55,9 +56,10 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 					},
 				}),
 			},
-		})),
-		header(HEADERS.Spell, 247853, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Empyrium Seam [Rank 3]
+		}),
+		header(HEADERS.Spell, 247853, {	-- Empyrium Seam [Rank 3]
 			provider = { "o", 272780 },	-- Empyrium Seam
+			timeline = { ADDED_7_3_0 },
 			maps = {
 				ANTORAN_WASTES,
 				KROKUUN,
@@ -85,7 +87,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 					},
 				}),
 			},
-		})),
+		}),
 		header(HEADERS.Spell, 184494, {	-- Felslate Deposit [Rank 3]
 			providers = {
 				{ "o", 241743 },	-- Felslate Deposit
@@ -624,11 +626,12 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				}),
 			},
 		}),
-		header(HEADERS.Spell, 296147, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Osmenite Deposit [Rank 3]
+		header(HEADERS.Spell, 296147, {	-- Osmenite Deposit [Rank 3]
 			providers = {
 				{ "o", 325875 },	-- Osmenite Deposit
 				{ "o", 325873 },	-- Rich Osmenite Deposit
 			},
+			timeline = { ADDED_8_2_0 },
 			maps = { NAZJATAR },
 			groups = {
 				q(56103, {	-- Ounces of Osmenite [A]
@@ -646,9 +649,10 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 					},
 				}),
 			},
-		})),
-		header(HEADERS.Spell, 296143, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Osmenite Seam [Rank 3]
+		}),
+		header(HEADERS.Spell, 296143, {	-- Osmenite Seam [Rank 3]
 			provider = { "o", 325874 },	-- Osmenite Seam
+			timeline = { ADDED_8_2_0 },
 			maps = { NAZJATAR },
 			groups = {
 				q(56126, {	-- Seams to be a Problem [A]
@@ -666,7 +670,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 					},
 				}),
 			},
-		})),
+		}),
 		header(HEADERS.Spell, 253341, {	-- Platinum Deposit [Rank 3]
 			providers = {
 				{ "o", 276618 },	-- Platinum Deposit

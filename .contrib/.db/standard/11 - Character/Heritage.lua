@@ -353,8 +353,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_11_0_2 }, races = { EARTHEN_ALLIANCE, EARTHEN_HORDE } }, {
+		header(HEADERS.Race, EARTHEN_ALLIANCE, bubbleDownSelf({ races = { EARTHEN_ALLIANCE, EARTHEN_HORDE } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Earthen|r.",
+			timeline = { ADDED_11_0_2 },
 			groups = {
 				q(82771, {	-- Heritage of the Earthen
 					provider = { "n", 224790 },	-- Dawn <The Awakened>
@@ -582,8 +583,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH }, races = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
+		header(HEADERS.Race, HARANIR_ALLIANCE, bubbleDownSelf({ races = { HARANIR_ALLIANCE, HARANIR_HORDE } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Haranir|r.",
+			timeline = { ADDED_12_0_1_LAUNCH },
 			groups = {
 				q(94464, {	-- Heritage of the Haranir
 					description = "Pops up when you hit level 50.",

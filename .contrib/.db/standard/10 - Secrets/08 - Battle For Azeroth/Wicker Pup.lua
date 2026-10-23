@@ -3,10 +3,11 @@
 -------------------------------------------
 
 root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
-	header(HEADERS.Spell, 279213, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {	-- Wicker Pup
+	header(HEADERS.Spell, 279213, {	-- Wicker Pup
 		description = "You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.",
 		modelScale = .8,
 		displayID = 86805,
+		timeline = { ADDED_8_0_1_LAUNCH },
 		groups = {
 			n(REWARDS, {
 				maps = { 
@@ -51,5 +52,5 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				groups = { i(163789) },	-- Bundle of Wicker Stick
 			}),
 		},
-	})),
+	}),
 }));

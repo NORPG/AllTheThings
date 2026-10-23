@@ -13,69 +13,71 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 		header(HEADERS.Achievement, 61052, bubbleDownSelf({	-- Dust 'Em Off
 			qg = 251259,	-- Mothkeeper Wew'tam
 			coord = { 49.3, 54.3, MAP.MIDNIGHT.HARANDAR },
-			timeline = { ADDED_12_0_7 },
 		}, {
-			-- Ordered by the Unlock progression
-			q(96498, {	-- Grovewarden's Kris
-				description = "Unlocks after you have captured 10 Moths.",
-				lockCriteria = { 1, "sourceID", 301686 },
-				groups = { i(257155) },	-- Grovewarden's Kris (COSMETIC!)
-			}),
-			q(96499, {	-- Grovewarden's Dagger
-				description = "Unlocks after you have captured 20 Moths.",
-				lockCriteria = { 1, "sourceID", 302663 },
-				groups = { i(263283) },	-- Grovewarden's Dagger (COSMETIC!)
-			}),
-			q(96500, {	-- Firm Haranir Pillow
-				description = "Unlocks after you have captured 30 Moths.",
-				lockCriteria = { 1, "decorID", 15478 },
-				groups = { i(264243) },	-- Firm Haranir Pillow (DECOR!)
-			}),
-			q(96501, {	-- Grovewarden's Rapier
-				description = "Unlocks after you have captured 40 Moths.",
-				lockCriteria = { 1, "sourceID", 301690 },
-				groups = { i(257158) },	-- Grovewarden's Rapier (COSMETIC!)
-			}),
-			q(96502, {	-- Vivid Chloroceros
-				description = "Unlocks after you have captured 50 Moths.",
-				lockCriteria = { 1, "spellID", 1270675 },
-				groups = { i(263580) },	-- Vivid Chloroceros (MOUNT!)
-			}),
-			q(96504, {	-- Warm Haranir Blanket
-				description = "Unlocks after you have captured 60 Moths.",
-				lockCriteria = { 1, "decorID", 15480 },
-				groups = { i(264245) },	-- Warm Haranir Blanket (DECOR!)
-			}),
-			q(96505, {	-- Grovewarden's Buckler
-				description = "Unlocks after you have captured 70 Moths.",
-				lockCriteria = { 1, "sourceID", 301688 },
-				groups = { i(257159) },	-- Grovewarden's Buckler (COSMETIC!)
-			}),
-			q(96506, {	-- Grovewarden's Staff
-				description = "Unlocks after you have captured 80 Moths.",
-				lockCriteria = { 1, "sourceID", 302664 },
-				groups = { i(263284) },	-- Grovewarden's Staff (COSMETIC!)
-			}),
-			q(96507, {	-- Haranir Reclined Bed
-				description = "Unlocks after you have captured 90 Moths.",
-				lockCriteria = { 1, "decorID", 14824 },
-				groups = { i(263038) },	-- Haranir Reclined Bed (DECOR!)
-			}),
-			q(96508, {	-- Grovewarden's Halberd
-				description = "Unlocks after you have captured 100 Moths.",
-				lockCriteria = { 1, "sourceID", 301687 },
-				groups = { i(257161) },	-- Grovewarden's Halberd (COSMETIC!)
-			}),
-			q(96509, {	-- Grovewarden's Greatsword
-				description = "Unlocks after you have captured 110 Moths.",
-				lockCriteria = { 1, "sourceID", 302665 },
-				groups = { i(263285) },	-- Grovewarden's Greatsword (COSMETIC!)
-			}),
-			q(96510, {	-- Elder Glowmite
-				description = "Unlocks after you have captured 120 Moths.",
-				lockCriteria = { 1, "spellID", 447173 },
-				groups = { i(222988) },	-- Elder Glowmite (MOUNT!)
-			}),
+			timeline = { ADDED_12_0_7 },
+			groups = {
+				-- Ordered by the Unlock progression
+				q(96498, {	-- Grovewarden's Kris
+					description = "Unlocks after you have captured 10 Moths.",
+					lockCriteria = { 1, "sourceID", 301686 },
+					groups = { i(257155) },	-- Grovewarden's Kris (COSMETIC!)
+				}),
+				q(96499, {	-- Grovewarden's Dagger
+					description = "Unlocks after you have captured 20 Moths.",
+					lockCriteria = { 1, "sourceID", 302663 },
+					groups = { i(263283) },	-- Grovewarden's Dagger (COSMETIC!)
+				}),
+				q(96500, {	-- Firm Haranir Pillow
+					description = "Unlocks after you have captured 30 Moths.",
+					lockCriteria = { 1, "decorID", 15478 },
+					groups = { i(264243) },	-- Firm Haranir Pillow (DECOR!)
+				}),
+				q(96501, {	-- Grovewarden's Rapier
+					description = "Unlocks after you have captured 40 Moths.",
+					lockCriteria = { 1, "sourceID", 301690 },
+					groups = { i(257158) },	-- Grovewarden's Rapier (COSMETIC!)
+				}),
+				q(96502, {	-- Vivid Chloroceros
+					description = "Unlocks after you have captured 50 Moths.",
+					lockCriteria = { 1, "spellID", 1270675 },
+					groups = { i(263580) },	-- Vivid Chloroceros (MOUNT!)
+				}),
+				q(96504, {	-- Warm Haranir Blanket
+					description = "Unlocks after you have captured 60 Moths.",
+					lockCriteria = { 1, "decorID", 15480 },
+					groups = { i(264245) },	-- Warm Haranir Blanket (DECOR!)
+				}),
+				q(96505, {	-- Grovewarden's Buckler
+					description = "Unlocks after you have captured 70 Moths.",
+					lockCriteria = { 1, "sourceID", 301688 },
+					groups = { i(257159) },	-- Grovewarden's Buckler (COSMETIC!)
+				}),
+				q(96506, {	-- Grovewarden's Staff
+					description = "Unlocks after you have captured 80 Moths.",
+					lockCriteria = { 1, "sourceID", 302664 },
+					groups = { i(263284) },	-- Grovewarden's Staff (COSMETIC!)
+				}),
+				q(96507, {	-- Haranir Reclined Bed
+					description = "Unlocks after you have captured 90 Moths.",
+					lockCriteria = { 1, "decorID", 14824 },
+					groups = { i(263038) },	-- Haranir Reclined Bed (DECOR!)
+				}),
+				q(96508, {	-- Grovewarden's Halberd
+					description = "Unlocks after you have captured 100 Moths.",
+					lockCriteria = { 1, "sourceID", 301687 },
+					groups = { i(257161) },	-- Grovewarden's Halberd (COSMETIC!)
+				}),
+				q(96509, {	-- Grovewarden's Greatsword
+					description = "Unlocks after you have captured 110 Moths.",
+					lockCriteria = { 1, "sourceID", 302665 },
+					groups = { i(263285) },	-- Grovewarden's Greatsword (COSMETIC!)
+				}),
+				q(96510, {	-- Elder Glowmite
+					description = "Unlocks after you have captured 120 Moths.",
+					lockCriteria = { 1, "spellID", 447173 },
+					groups = { i(222988) },	-- Elder Glowmite (MOUNT!)
+				}),
+			},
 		})),
 		header(HEADERS.Achievement, 41804, {	-- One Does Not Simply Walk Into Harandar
 			header(HEADERS.AchCriteria, 41804.01, {	-- Of Caves and Cradles

@@ -6860,17 +6860,16 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					17192,	-- Reinforced Targe
 				}},
 			}),
-			n(87501, bubbleDownSelf({	-- Paulie
-				races = ALLIANCE_ONLY,
-			},{
+			n(87501, {	-- Paulie
 				coord = { 73.0, 59.5, STORMWIND_CITY },
 				timeline = { ADDED_6_0_2 },
+				races = ALLIANCE_ONLY,
 				groups = {
 					i(116789, {	-- Champion's Treadblade (MOUNT!)
 						cost = 1000000000,	-- 100,000g
 					}),
 				},
-			})),
+			}),
 			n(167429, {	-- Quartermaster Richter
 				description = "Only sells items once the achievement |cffebae34Exile's Reach|r [14222] is completed.",
 				coord = { 79.5, 69.0, STORMWIND_CITY },

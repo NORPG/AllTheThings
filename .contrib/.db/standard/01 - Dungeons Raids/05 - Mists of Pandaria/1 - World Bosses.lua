@@ -1052,8 +1052,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(89317),	-- Claw of Anger
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {	-- Celestial Challenge
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, {	-- Celestial Challenge
 				questID = 33117,
+				timeline = { ADDED_5_4_0 },
 				maps = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},
@@ -1447,7 +1448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(105822),	-- Zoid's Molten Gauntlets
 					}),
 				},
-			}))),
+			})),
 		}),
 	}),
 }));

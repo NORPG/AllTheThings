@@ -656,85 +656,88 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40900.06, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {	-- Chapter 6: Homecoming
-				q(86204, {	-- Liberation of Undermine: The House Loses
-					sourceQuest = 85780,	-- Right Where We Want Him
-					provider = { "n", 233482 },	-- Monte Gazlowe
-					coord = { 43.6, 51.1, UNDERMINE },
-					groups = {
-						i(230936),	-- Enchanted Runed Undermine Crest
-						i(236954),	-- Void-Touched Valorstone
-					},
-				}),
-				q(87321, {	-- Things Left Undone
-					sourceQuest = 86204,	-- Liberation of Undermine: The House Loses
-					provider = { "n", 238006 },	-- Marin Noggenfogger
-					coord = { 27.4, 71.0, UNDERMINE },
-				}),
-				q(85190, {	-- Settled Dust
-					sourceQuest = 87321,	-- Things Left Undone
-					provider = { "n", 232822 },	-- Monte Gazlowe
-					coord = { 42.6, 51.6, UNDERMINE },
-				}),
-				q(85191, {	-- Cut After Cut
-					sourceQuest = 85190,	-- Settled Dust
-					provider = { "n", 234783 },	-- Master Mathias Shaw
-					coord = { 30.0, 86.1, WESTFALL },
-					groups = {
-						o(503303, {	-- Old Copy of "Undermine Weekly"
-							coord = { 30.5, 85.8, WESTFALL },
-							groups = { i(233657) },	-- Old Copy of "Undermine Weekly" (QI!)
-						}),
-						o(503302, {	-- Unused Fishing Gear
-							coord = { 29.8, 85.5, WESTFALL },
-							groups = { i(233656) },	-- Pristine Fishing Gear (QI!)
-						}),
-						o(503301, {
-							coord = { 30.1, 86.4, WESTFALL },
-							groups = { i(233655) },	-- Well-Worn Throwing Knives (QI!)
-						}),
-					},
-				}),
-				q(85192, {	-- Coming Home
-					sourceQuest = 85191,	-- Cut After Cut
-					provider = { "n", 234783 },	-- Master Mathias Shaw
-					coord = { 30.0, 86.1, WESTFALL },
-				}),
-				q(87297, {	-- Cashing the Check
-					sourceQuest = 85192,	-- Coming Home
-					provider = { "n", 234801 },	-- Monte Gazlowe
-					coord = { 39.1, 23.3, UNDERMINE },
-					groups = {
-						i(243321, {	-- Cartel Head's Schmancy Desk (DECOR!)
-							timeline = { ADDED_11_2_7 },
-						}),
-					},
-				}),
-				------ Stay awhile and listen ------
-				hqt(87351, {	-- Stay awhile and listen: Monte Gazlowe <Bilgewater Trade-Prince>
-					name = "Stay awhile and listen: Monte Gazlowe",
-					sourceQuest = 87297,	-- Cashing the Check
-					provider = { "n", 238002 },	-- Monte Gazlowe <Bilgewater Trade-Prince>
-					coord = { 43.5, 51.0, UNDERMINE },
-				}),
-				hqt(87375, {	-- Stay awhile and listen: Grimla Fizzlecrank <Venture Co.>
-					name = "Stay awhile and listen: Grimla Fizzlecrank",
-					sourceQuest = 87297,	-- Cashing the Check
-					provider = { "n", 238004 },	-- Grimla Fizzlecrank <Venture Co.>
-					coord = { 43.5, 51.1, UNDERMINE },
-				}),
-				o(508377, {	-- Renzik's Lockbox
-					description = "You do not need to have done the Undermine campaign on that character to see this chest.",
-					sourceQuest = 85190,	-- Settled Dust
-					coord = { 30.7, 86.1, WESTFALL },
-					questID = 86904,
-					classes = ROGUE,
-					groups = {
-						i(235629),	-- Renzik's Journal
-						i(237267),	-- Spare Uncrowned Vest
-					},
-				}),
-			})),
+			header(HEADERS.AchCriteria, 40900.06, {	-- Chapter 6: Homecoming
+				timeline = { ADDED_11_1_0_SEASONSTART },
+				groups = {
+					q(86204, {	-- Liberation of Undermine: The House Loses
+						sourceQuest = 85780,	-- Right Where We Want Him
+						provider = { "n", 233482 },	-- Monte Gazlowe
+						coord = { 43.6, 51.1, UNDERMINE },
+						groups = {
+							i(230936),	-- Enchanted Runed Undermine Crest
+							i(236954),	-- Void-Touched Valorstone
+						},
+					}),
+					q(87321, {	-- Things Left Undone
+						sourceQuest = 86204,	-- Liberation of Undermine: The House Loses
+						provider = { "n", 238006 },	-- Marin Noggenfogger
+						coord = { 27.4, 71.0, UNDERMINE },
+					}),
+					q(85190, {	-- Settled Dust
+						sourceQuest = 87321,	-- Things Left Undone
+						provider = { "n", 232822 },	-- Monte Gazlowe
+						coord = { 42.6, 51.6, UNDERMINE },
+					}),
+					q(85191, {	-- Cut After Cut
+						sourceQuest = 85190,	-- Settled Dust
+						provider = { "n", 234783 },	-- Master Mathias Shaw
+						coord = { 30.0, 86.1, WESTFALL },
+						groups = {
+							o(503303, {	-- Old Copy of "Undermine Weekly"
+								coord = { 30.5, 85.8, WESTFALL },
+								groups = { i(233657) },	-- Old Copy of "Undermine Weekly" (QI!)
+							}),
+							o(503302, {	-- Unused Fishing Gear
+								coord = { 29.8, 85.5, WESTFALL },
+								groups = { i(233656) },	-- Pristine Fishing Gear (QI!)
+							}),
+							o(503301, {
+								coord = { 30.1, 86.4, WESTFALL },
+								groups = { i(233655) },	-- Well-Worn Throwing Knives (QI!)
+							}),
+						},
+					}),
+					q(85192, {	-- Coming Home
+						sourceQuest = 85191,	-- Cut After Cut
+						provider = { "n", 234783 },	-- Master Mathias Shaw
+						coord = { 30.0, 86.1, WESTFALL },
+					}),
+					q(87297, {	-- Cashing the Check
+						sourceQuest = 85192,	-- Coming Home
+						provider = { "n", 234801 },	-- Monte Gazlowe
+						coord = { 39.1, 23.3, UNDERMINE },
+						groups = {
+							i(243321, {	-- Cartel Head's Schmancy Desk (DECOR!)
+								timeline = { ADDED_11_2_7 },
+							}),
+						},
+					}),
+					------ Stay awhile and listen ------
+					hqt(87351, {	-- Stay awhile and listen: Monte Gazlowe <Bilgewater Trade-Prince>
+						name = "Stay awhile and listen: Monte Gazlowe",
+						sourceQuest = 87297,	-- Cashing the Check
+						provider = { "n", 238002 },	-- Monte Gazlowe <Bilgewater Trade-Prince>
+						coord = { 43.5, 51.0, UNDERMINE },
+					}),
+					hqt(87375, {	-- Stay awhile and listen: Grimla Fizzlecrank <Venture Co.>
+						name = "Stay awhile and listen: Grimla Fizzlecrank",
+						sourceQuest = 87297,	-- Cashing the Check
+						provider = { "n", 238004 },	-- Grimla Fizzlecrank <Venture Co.>
+						coord = { 43.5, 51.1, UNDERMINE },
+					}),
+					o(508377, {	-- Renzik's Lockbox
+						description = "You do not need to have done the Undermine campaign on that character to see this chest.",
+						sourceQuest = 85190,	-- Settled Dust
+						coord = { 30.7, 86.1, WESTFALL },
+						questID = 86904,
+						classes = ROGUE,
+						groups = {
+							i(235629),	-- Renzik's Journal
+							i(237267),	-- Spare Uncrowned Vest
+						},
+					}),
+				},
+			}),
 		}),
 		header(HEADERS.AchCriteria, 40894.01, {	-- The Highst
 			q(84214, {	-- The Job

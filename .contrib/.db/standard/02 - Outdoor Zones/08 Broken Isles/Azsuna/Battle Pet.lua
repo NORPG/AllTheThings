@@ -53,9 +53,10 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				coord = { 20.0, 21.8, AZSUNA },
 				timeline = { ADDED_7_1_0 },
 			}),
-			header(HEADERS.NPC, 115787, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {	-- Bloodgazer Hatchling
+			header(HEADERS.NPC, 115787, {	-- Bloodgazer Hatchling
 				description = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
 				crs = { 115741 },	-- Orphaned Bloodgazer
+				timeline = { ADDED_7_1_0 },
 				groups = {
 					pet(1977),	-- Bloodgazer Hatchling (PET!)
 					q(44998, {	-- Allies in Azsuna
@@ -134,7 +135,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 						provider = { "n", 115787 },	-- Bloodgazer Hatchling
 					}),
 				},
-			})),
+			}),
 		},
 	})),
 });

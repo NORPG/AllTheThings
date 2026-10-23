@@ -459,8 +459,9 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 							133841,	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
 							133861,	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
 					}}}, {
-						header(HEADERS.Item, 151653, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Broken Isles Recipe Scrap
+						header(HEADERS.Item, 151653, {	-- Broken Isles Recipe Scrap
 							description = "Use 10 of Broken Isles Recipe Scrap to create an unlearned recipe.",
+							timeline = { ADDED_7_3_0 },
 							groups = sharedData({
 								cost = { { "i", 151653, 10 } },	-- 10x Broken Isles Recipe Scrap
 							}, {
@@ -507,7 +508,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 								i(133841),	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
 								i(133861),	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
 							}),
-						})),
+						}),
 						i(146757, {	-- Prepared Ingredients
 							description = "Use 10 of these to create food or unlearned recipes. It appears as though you can only get Rank 2+ recipes from this item.",
 						}),

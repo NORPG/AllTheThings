@@ -32,47 +32,56 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				}),
 			}),
 		})),
-		header(HEADERS.Spell, 247842, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Fiendish Leather [Rank 1]
-			q(48040, {	-- Tainted Scraps
-				provider = { "i", 151866 },	-- Tainted Scraps
-				maps = {
-					ANTORAN_WASTES,
-					KROKUUN,
-					EREDATH,
-				},
-				groups = {
-					r(247842),	-- Fiendish Leather [Rank 1]
-				},
-			}),
-		})),
-		header(HEADERS.Spell, 247843, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Fiendish Leather [Rank 2]
-			q(48041, {	-- A Larger Cut
-				sourceQuest = 48040,	-- Tainted Scraps
-				provider = { "i", 151867 },	-- Spoiled Fiendish Leather
-				maps = {
-					ANTORAN_WASTES,
-					KROKUUN,
-					EREDATH,
-				},
-				groups = {
-					r(247843),	-- Fiendish Leather [Rank 2]
-				},
-			}),
-		})),
-		header(HEADERS.Spell, 247844, bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {	-- Fiendish Leather [Rank 3]
-			q(48042, {	-- Order of Operations
-				sourceQuest = 48041,	-- A Larger Cut
-				provider = { "i", 151868 },	-- Corrupted Tooth
-				maps = {
-					ANTORAN_WASTES,
-					KROKUUN,
-					EREDATH,
-				},
-				groups = {
-					r(247844),	-- Fiendish Leather [Rank 3]
-				},
-			}),
-		})),
+		header(HEADERS.Spell, 247842, {	-- Fiendish Leather [Rank 1]
+			timeline = { ADDED_7_3_0 },
+			groups = {
+				q(48040, {	-- Tainted Scraps
+					provider = { "i", 151866 },	-- Tainted Scraps
+					maps = {
+						ANTORAN_WASTES,
+						KROKUUN,
+						EREDATH,
+					},
+					groups = {
+						r(247842),	-- Fiendish Leather [Rank 1]
+					},
+				}),
+			},
+		}),
+		header(HEADERS.Spell, 247843, {	-- Fiendish Leather [Rank 2]
+			timeline = { ADDED_7_3_0 },
+			groups = {
+				q(48041, {	-- A Larger Cut
+					sourceQuest = 48040,	-- Tainted Scraps
+					provider = { "i", 151867 },	-- Spoiled Fiendish Leather
+					maps = {
+						ANTORAN_WASTES,
+						KROKUUN,
+						EREDATH,
+					},
+					groups = {
+						r(247843),	-- Fiendish Leather [Rank 2]
+					},
+				}),
+			},
+		}),
+		header(HEADERS.Spell, 247844, {	-- Fiendish Leather [Rank 3]
+			timeline = { ADDED_7_3_0 },
+			groups = {
+				q(48042, {	-- Order of Operations
+					sourceQuest = 48041,	-- A Larger Cut
+					provider = { "i", 151868 },	-- Corrupted Tooth
+					maps = {
+						ANTORAN_WASTES,
+						KROKUUN,
+						EREDATH,
+					},
+					groups = {
+						r(247844),	-- Fiendish Leather [Rank 3]
+					},
+				}),
+			},
+		}),
 		header(HEADERS.Spell, 194161, {	-- Stonehide Leather [Rank 1]
 			q(40131, {	-- Stonehide Leather Sample
 				provider = { "i", 129860 },	-- Stonehide Leather Sample
@@ -389,38 +398,44 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				},
 			}),
 		}),
-		header(HEADERS.Spell, 302016, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Cragscale [Rank 3]
-			q(56565, {	-- Hanging by a Thread [A]
-				provider = { "i", 169767 },	-- Deteriorating Cragscales
-				races = ALLIANCE_ONLY,
-				groups = {
-					r(302016),	-- Cragscale [Rank 3]
-				},
-			}),
-			q(56566, {	-- Hanging by a Thread [H]
-				provider = { "i", 169779 },	-- Deteriorating Cragscales
-				races = HORDE_ONLY,
-				groups = {
-					r(302016),	-- Cragscale [Rank 3]
-				},
-			}),
-		})),
-		header(HEADERS.Spell, 302011, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {	-- Dredged Leather [Rank 3]
-			q(56562, {	-- The Problem with Shrinkage [A]
-				provider = { "i", 169775 },	-- Shriveled Leather Hide
-				races = ALLIANCE_ONLY,
-				groups = {
-					r(302011),	-- Dredged Leather [Rank 3]
-				},
-			}),
-			q(56563, {	-- The Problem with Shrinkage [H]
-				provider = { "i", 169772 },	-- Shriveled Leather Hide
-				races = HORDE_ONLY,
-				groups = {
-					r(302011),	-- Dredged Leather [Rank 3]
-				},
-			}),
-		})),
+		header(HEADERS.Spell, 302016, {	-- Cragscale [Rank 3]
+			timeline = { ADDED_8_2_0 },
+			groups = {
+				q(56565, {	-- Hanging by a Thread [A]
+					provider = { "i", 169767 },	-- Deteriorating Cragscales
+					races = ALLIANCE_ONLY,
+					groups = {
+						r(302016),	-- Cragscale [Rank 3]
+					},
+				}),
+				q(56566, {	-- Hanging by a Thread [H]
+					provider = { "i", 169779 },	-- Deteriorating Cragscales
+					races = HORDE_ONLY,
+					groups = {
+						r(302016),	-- Cragscale [Rank 3]
+					},
+				}),
+			},
+		}),
+		header(HEADERS.Spell, 302011, {	-- Dredged Leather [Rank 3]
+			timeline = { ADDED_8_2_0 },
+			groups = {
+				q(56562, {	-- The Problem with Shrinkage [A]
+					provider = { "i", 169775 },	-- Shriveled Leather Hide
+					races = ALLIANCE_ONLY,
+					groups = {
+						r(302011),	-- Dredged Leather [Rank 3]
+					},
+				}),
+				q(56563, {	-- The Problem with Shrinkage [H]
+					provider = { "i", 169772 },	-- Shriveled Leather Hide
+					races = HORDE_ONLY,
+					groups = {
+						r(302011),	-- Dredged Leather [Rank 3]
+					},
+				}),
+			},
+		}),
 		header(HEADERS.Spell, 257147, {	-- Leather Gathering [Rank 2]
 			q(52223, {	-- Brinepinch
 				description = "Requires 50 Kul Tiran Skinning.",

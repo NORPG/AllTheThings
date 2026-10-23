@@ -47,9 +47,10 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				description = "Found in the snowy area of Highmountain by Frosthoof Watch.",
 			}),
 			pet(1763),	-- Spiketail Beaver (PET!)
-			header(HEADERS.NPC, 115784, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {	-- Snowfeather Hatchling
+			header(HEADERS.NPC, 115784, {	-- Snowfeather Hatchling
 				description = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",
 				crs = { 115737 },	-- Orphaned Snowfeather
+				timeline = { ADDED_7_1_0 },
 				groups = {
 					pet(1974),	-- Snowfeather Hatchling (PET!)
 					q(44953, {	-- Allies in Highmountain
@@ -128,7 +129,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 						provider = { "n", 115784 },	-- Snowfeather Hatchling
 					}),
 				},
-			})),
+			}),
 		},
 	})),
 });

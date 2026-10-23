@@ -1676,7 +1676,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 	}),
 	prof(HERBALISM, {
 		n(DISCOVERY, {
-			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ timeline = { ADDED_10_2_0 }, }, {
+			header(HEADERS.Map, EMERALD_DREAM, {
+				timeline = { ADDED_10_2_0 },
 				groups = sharedData({
 					maps = { EMERALD_DREAM }
 				},{
@@ -1686,8 +1687,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 					r_withQuest(421227, 77825),	-- Overgrown Writhebark
 					r_withQuest(422293, 78007),	-- Overload Overgrown Herb
 				}),
-			})),
-			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ timeline = { ADDED_10_1_0 }, }, {
+			}),
+			header(HEADERS.Map, ZARALEK_CAVERN, {
+				timeline = { ADDED_10_1_0 },
 				groups = sharedData({
 					maps = { ZARALEK_CAVERN }
 				},{
@@ -1697,7 +1699,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 					r_withQuest(405127, 75144),	-- Lambent Writhebark
 					r_withQuest(405134, 75138),	-- Overload Lambent Herb
 				}),
-			})),
+			}),
 			r_withQuest(391444, 71972),	-- Bubble Poppy
 			r_withQuest(391507, 71990),	-- Decayed Bubble Poppy
 			r_withQuest(391492, 71988),	-- Decayed Hochenblume

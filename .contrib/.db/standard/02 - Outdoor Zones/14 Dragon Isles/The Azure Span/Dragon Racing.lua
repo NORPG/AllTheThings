@@ -192,264 +192,270 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					}),
 				}),
 			}),
-			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
-				n(ACHIEVEMENTS, {
-					ach(18757, {	-- Azure Span Challenge: Bronze
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17985,	-- Archive Ambit Challenge: Bronze
-							17988,	-- Archive Ambit Reverse Challenge: Bronze
-							17979,	-- Frostland Flyover Challenge: Bronze
-							17982,	-- Frostland Flyover Reverse Challenge: Bronze
-							17971,	-- Iskaara Tour Challenge: Bronze
-							17974,	-- Iskaara Tour Reverse Challenge: Bronze
-							17959,	-- The Azure Span Slalom Challenge: Bronze
-							17962,	-- The Azure Span Slalom Reverse Challenge: Bronze
-							17953,	-- The Azure Span Sprint Challenge: Bronze
-							17956,	-- The Azure Span Sprint Reverse Challenge: Bronze
-							17965,	-- The Vakthros Ascent Challenge: Bronze
-							17968,	-- The Vakthros Ascent Reverse Challenge: Bronze
-						}},
+			header(HEADERS.Achievement, 18792, {	-- Dragonriding Challenge: Dragon Isles: Gold
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					n(ACHIEVEMENTS, {
+						ach(18757, {	-- Azure Span Challenge: Bronze
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17985,	-- Archive Ambit Challenge: Bronze
+								17988,	-- Archive Ambit Reverse Challenge: Bronze
+								17979,	-- Frostland Flyover Challenge: Bronze
+								17982,	-- Frostland Flyover Reverse Challenge: Bronze
+								17971,	-- Iskaara Tour Challenge: Bronze
+								17974,	-- Iskaara Tour Reverse Challenge: Bronze
+								17959,	-- The Azure Span Slalom Challenge: Bronze
+								17962,	-- The Azure Span Slalom Reverse Challenge: Bronze
+								17953,	-- The Azure Span Sprint Challenge: Bronze
+								17956,	-- The Azure Span Sprint Reverse Challenge: Bronze
+								17965,	-- The Vakthros Ascent Challenge: Bronze
+								17968,	-- The Vakthros Ascent Reverse Challenge: Bronze
+							}},
+						}),
+						ach(18758, {	-- Azure Span Challenge: Silver
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17986,	-- Archive Ambit Challenge: Silver
+								17989,	-- Archive Ambit Reverse Challenge: Silver
+								17980,	-- Frostland Flyover Challenge: Silver
+								17983,	-- Frostland Flyover Reverse Challenge: Silver
+								17972,	-- Iskaara Tour Challenge: Silver
+								17975,	-- Iskaara Tour Reverse Challenge: Silver
+								17960,	-- The Azure Span Slalom Challenge: Silver
+								17963,	-- The Azure Span Slalom Reverse Challenge: Silver
+								17954,	-- The Azure Span Sprint Challenge: Silver
+								17957,	-- The Azure Span Sprint Reverse Challenge: Silver
+								17966,	-- The Vakthros Ascent Challenge: Silver
+								17969,	-- The Vakthros Ascent Reverse Challenge: Silver
+							}},
+						}),
+						ach(18759, {	-- Azure Span Challenge: Gold
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17987,	-- Archive Ambit Challenge: Gold
+								17990,	-- Archive Ambit Reverse Challenge: Gold
+								17981,	-- Frostland Flyover Challenge: Gold
+								17984,	-- Frostland Flyover Reverse Challenge: Gold
+								17973,	-- Iskaara Tour Challenge: Gold
+								17976,	-- Iskaara Tour Reverse Challenge: Gold
+								17961,	-- The Azure Span Slalom Challenge: Gold
+								17964,	-- The Azure Span Slalom Reverse Challenge: Gold
+								17955,	-- The Azure Span Sprint Challenge: Gold
+								17958,	-- The Azure Span Sprint Reverse Challenge: Gold
+								17967,	-- The Vakthros Ascent Challenge: Gold
+								17970,	-- The Vakthros Ascent Reverse Challenge: Gold
+							}},
+						}),
 					}),
-					ach(18758, {	-- Azure Span Challenge: Silver
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17986,	-- Archive Ambit Challenge: Silver
-							17989,	-- Archive Ambit Reverse Challenge: Silver
-							17980,	-- Frostland Flyover Challenge: Silver
-							17983,	-- Frostland Flyover Reverse Challenge: Silver
-							17972,	-- Iskaara Tour Challenge: Silver
-							17975,	-- Iskaara Tour Reverse Challenge: Silver
-							17960,	-- The Azure Span Slalom Challenge: Silver
-							17963,	-- The Azure Span Slalom Reverse Challenge: Silver
-							17954,	-- The Azure Span Sprint Challenge: Silver
-							17957,	-- The Azure Span Sprint Reverse Challenge: Silver
-							17966,	-- The Vakthros Ascent Challenge: Silver
-							17969,	-- The Vakthros Ascent Reverse Challenge: Silver
-						}},
+					n(QUESTS, {
+						dragonridingrace(75816, {	-- Archive Ambit - Challenge
+							provider = { "n", 193027 },	-- Bronze Timekeeper
+							coord = { 42.3, 56.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17985),	-- Archive Ambit Challenge: Bronze
+								ach(17986),	-- Archive Ambit Challenge: Silver
+								ach(17987),	-- Archive Ambit Challenge: Gold
+							},
+						}),
+						dragonridingrace(75817, {	-- Archive Ambit - Reverse Challenge
+							provider = { "n", 193027 },	-- Bronze Timekeeper
+							coord = { 42.3, 56.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17988),	-- Archive Ambit Reverse Challenge: Bronze
+								ach(17989),	-- Archive Ambit Reverse Challenge: Silver
+								ach(17990),	-- Archive Ambit Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75807, {	-- Azure Span Slalom - Challenge
+							provider = { "n", 191947 },	-- Bronze Timekeeper
+							coord = { 20.9, 22.6, THE_AZURE_SPAN },
+							groups = {
+								ach(17959),	-- The Azure Span Slalom Challenge: Bronze
+								ach(17960),	-- The Azure Span Slalom Challenge: Silver
+								ach(17961),	-- The Azure Span Slalom Challenge: Gold
+							},
+						}),
+						dragonridingrace(75808, {	-- Azure Span Slalom - Reverse Challenge
+							provider = { "n", 191947 },	-- Bronze Timekeeper
+							coord = { 20.9, 22.6, THE_AZURE_SPAN },
+							groups = {
+								ach(17962),	-- The Azure Span Slalom Reverse Challenge: Bronze
+								ach(17963),	-- The Azure Span Slalom Reverse Challenge: Silver
+								ach(17964),	-- The Azure Span Slalom Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75805, {	-- Azure Span Sprint - Challenge
+							provider = { "n", 191572 },	-- Bronze Timekeeper
+							coord = { 47.9, 40.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17953),	-- The Azure Span Sprint Challenge: Bronze
+								ach(17954),	-- The Azure Span Sprint Challenge: Silver
+								ach(17955),	-- The Azure Span Sprint Challenge: Gold
+							},
+						}),
+						dragonridingrace(75806, {	-- Azure Span Sprint - Reverse Challenge
+							provider = { "n", 191572 },	-- Bronze Timekeeper
+							coord = { 47.9, 40.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17956),	-- The Azure Span Sprint Reverse Challenge: Bronze
+								ach(17957),	-- The Azure Span Sprint Reverse Challenge: Silver
+								ach(17958),	-- The Azure Span Sprint Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75813, {	-- Frostland Flyover - Challenge
+							provider = { "n", 192945 },	-- Bronze Timekeeper
+							coord = { 48.5, 35.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17979),	-- Frostland Flyover Challenge: Bronze
+								ach(17980),	-- Frostland Flyover Challenge: Silver
+								ach(17981),	-- Frostland Flyover Challenge: Gold
+							},
+						}),
+						dragonridingrace(75815, {	-- Frostland Flyover - Reverse Challenge
+							provider = { "n", 192945 },	-- Bronze Timekeeper
+							coord = { 48.5, 35.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17982),	-- Frostland Flyover Reverse Challenge: Bronze
+								ach(17983),	-- Frostland Flyover Reverse Challenge: Silver
+								ach(17984),	-- Frostland Flyover Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75811, {	-- Iskaara Tour - Challenge
+							provider = { "n", 192886 },	-- Bronze Timekeeper
+							coord = { 16.6, 49.4, THE_AZURE_SPAN },
+							groups = {
+								ach(17971),	-- Iskaara Tour Challenge: Bronze
+								ach(17972),	-- Iskaara Tour Challenge: Silver
+								ach(17973),	-- Iskaara Tour Challenge: Gold
+							},
+						}),
+						dragonridingrace(75812, {	-- Iskaara Tour - Reverse Challenge
+							provider = { "n", 192886 },	-- Bronze Timekeeper
+							coord = { 16.6, 49.4, THE_AZURE_SPAN },
+							groups = {
+								ach(17974),	-- Iskaara Tour Reverse Challenge: Bronze
+								ach(17975),	-- Iskaara Tour Reverse Challenge: Silver
+								ach(17976),	-- Iskaara Tour Reverse Challenge: Gold
+							},
+						}),
+						dragonridingrace(75809, {	-- Vakthros Ascent - Challenge
+							provider = { "n", 192115 },	-- Bronze Timekeeper
+							coord = { 71.3, 24.7, THE_AZURE_SPAN },
+							groups = {
+								ach(17965),	-- The Vakthros Ascent Challenge: Bronze
+								ach(17966),	-- The Vakthros Ascent Challenge: Silver
+								ach(17967),	-- The Vakthros Ascent Challenge: Gold
+							},
+						}),
+						dragonridingrace(75810, {	-- Vakthros Ascent - Reverse Challenge
+							provider = { "n", 192115 },	-- Bronze Timekeeper
+							coord = { 71.3, 24.7, THE_AZURE_SPAN },
+							groups = {
+								ach(17968),	-- The Vakthros Ascent Reverse Challenge: Bronze
+								ach(17969),	-- The Vakthros Ascent Reverse Challenge: Silver
+								ach(17970),	-- The Vakthros Ascent Reverse Challenge: Gold
+							},
+						}),
 					}),
-					ach(18759, {	-- Azure Span Challenge: Gold
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17987,	-- Archive Ambit Challenge: Gold
-							17990,	-- Archive Ambit Reverse Challenge: Gold
-							17981,	-- Frostland Flyover Challenge: Gold
-							17984,	-- Frostland Flyover Reverse Challenge: Gold
-							17973,	-- Iskaara Tour Challenge: Gold
-							17976,	-- Iskaara Tour Reverse Challenge: Gold
-							17961,	-- The Azure Span Slalom Challenge: Gold
-							17964,	-- The Azure Span Slalom Reverse Challenge: Gold
-							17955,	-- The Azure Span Sprint Challenge: Gold
-							17958,	-- The Azure Span Sprint Reverse Challenge: Gold
-							17967,	-- The Vakthros Ascent Challenge: Gold
-							17970,	-- The Vakthros Ascent Reverse Challenge: Gold
-						}},
+				},
+			}),
+			header(HEADERS.Achievement, 17332, {	-- Reverse Racer: Gold
+				timeline = { ADDED_10_0_5 },
+				groups = {
+					n(ACHIEVEMENTS, {
+						ach(17201, {	-- Azure Span Reverse: Bronze
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17174,	-- Archive Ambit Reverse: Bronze
+								17171,	-- Frostland Flyover Reverse: Bronze
+								17168,	-- Iskaara Tour Reverse: Bronze
+								17162,	-- The Azure Span Slalom Reverse: Bronze
+								17159,	-- The Azure Span Sprint Reverse: Bronze
+								17165,	-- The Vakthros Ascent Reverse: Bronze
+							}},
+						}),
+						ach(17202, {	-- Azure Span Reverse: Silver
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17175,	-- Archive Ambit Reverse: Silver
+								17172,	-- Frostland Flyover Reverse: Silver
+								17169,	-- Iskaara Tour Reverse: Silver
+								17163,	-- The Azure Span Slalom Reverse: Silver
+								17160,	-- The Azure Span Sprint Reverse: Silver
+								17166,	-- The Vakthros Ascent Reverse: Silver
+							}},
+						}),
+						ach(17203, {	-- Azure Span Reverse: Gold
+							-- Meta Achievement
+							sym = {{"meta_achievement",
+								17176,	-- Archive Ambit Reverse: Gold
+								17173,	-- Frostland Flyover Reverse: Gold
+								17170,	-- Iskaara Tour Reverse: Gold
+								17164,	-- The Azure Span Slalom Reverse: Gold
+								17161,	-- The Azure Span Sprint Reverse: Gold
+								17167,	-- The Vakthros Ascent Reverse: Gold
+							}},
+						}),
 					}),
-				}),
-				n(QUESTS, {
-					dragonridingrace(75816, {	-- Archive Ambit - Challenge
-						provider = { "n", 193027 },	-- Bronze Timekeeper
-						coord = { 42.3, 56.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17985),	-- Archive Ambit Challenge: Bronze
-							ach(17986),	-- Archive Ambit Challenge: Silver
-							ach(17987),	-- Archive Ambit Challenge: Gold
-						},
+					n(QUESTS, {
+						dragonridingrace(72797, {	-- Archive Ambit - Reverse
+							provider = { "n", 193027 },	-- Bronze Timekeeper
+							coord = { 42.3, 56.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17174),	-- Archive Ambit Reverse: Bronze
+								ach(17175),	-- Archive Ambit Reverse: Silver
+								ach(17176),	-- Archive Ambit Reverse: Gold
+							},
+						}),
+						dragonridingrace(72799, {	-- Azure Span Slalom - Reverse
+							provider = { "n", 191947 },	-- Bronze Timekeeper
+							coord = { 20.9, 22.6, THE_AZURE_SPAN },
+							groups = {
+								ach(17162),	-- The Azure Span Slalom Reverse: Bronze
+								ach(17163),	-- The Azure Span Slalom Reverse: Silver
+								ach(17164),	-- The Azure Span Slalom Reverse: Gold
+							},
+						}),
+						dragonridingrace(72796, {	-- Azure Span Sprint - Reverse
+							provider = { "n", 191572 },	-- Bronze Timekeeper
+							coord = { 47.9, 40.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17159),	-- The Azure Span Sprint Reverse: Bronze
+								ach(17160),	-- The Azure Span Sprint Reverse: Silver
+								ach(17161),	-- The Azure Span Sprint Reverse: Gold
+							},
+						}),
+						dragonridingrace(72795, {	-- Frostland Flyover - Reverse
+							provider = { "n", 192945 },	-- Bronze Timekeeper
+							coord = { 48.5, 35.8, THE_AZURE_SPAN },
+							groups = {
+								ach(17171),	-- Frostland Flyover Reverse: Bronze
+								ach(17172),	-- Frostland Flyover Reverse: Silver
+								ach(17173),	-- Frostland Flyover Reverse: Gold
+							},
+						}),
+						dragonridingrace(72800, {	-- Iskaara Tour - Reverse
+							provider = { "n", 192886 },	-- Bronze Timekeeper
+							coord = { 16.6, 49.4, THE_AZURE_SPAN },
+							groups = {
+								ach(17168),	-- Iskaara Tour Reverse: Bronze
+								ach(17169),	-- Iskaara Tour Reverse: Silver
+								ach(17170),	-- Iskaara Tour Reverse: Gold
+							},
+						}),
+						dragonridingrace(72794, {	-- Vakthros Ascent - Reverse
+							provider = { "n", 192115 },	-- Bronze Timekeeper
+							coord = { 71.3, 24.7, THE_AZURE_SPAN },
+							groups = {
+								ach(17165),	-- The Vakthros Ascent Reverse: Bronze
+								ach(17166),	-- The Vakthros Ascent Reverse: Silver
+								ach(17167),	-- The Vakthros Ascent Reverse: Gold
+							},
+						}),
 					}),
-					dragonridingrace(75817, {	-- Archive Ambit - Reverse Challenge
-						provider = { "n", 193027 },	-- Bronze Timekeeper
-						coord = { 42.3, 56.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17988),	-- Archive Ambit Reverse Challenge: Bronze
-							ach(17989),	-- Archive Ambit Reverse Challenge: Silver
-							ach(17990),	-- Archive Ambit Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75807, {	-- Azure Span Slalom - Challenge
-						provider = { "n", 191947 },	-- Bronze Timekeeper
-						coord = { 20.9, 22.6, THE_AZURE_SPAN },
-						groups = {
-							ach(17959),	-- The Azure Span Slalom Challenge: Bronze
-							ach(17960),	-- The Azure Span Slalom Challenge: Silver
-							ach(17961),	-- The Azure Span Slalom Challenge: Gold
-						},
-					}),
-					dragonridingrace(75808, {	-- Azure Span Slalom - Reverse Challenge
-						provider = { "n", 191947 },	-- Bronze Timekeeper
-						coord = { 20.9, 22.6, THE_AZURE_SPAN },
-						groups = {
-							ach(17962),	-- The Azure Span Slalom Reverse Challenge: Bronze
-							ach(17963),	-- The Azure Span Slalom Reverse Challenge: Silver
-							ach(17964),	-- The Azure Span Slalom Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75805, {	-- Azure Span Sprint - Challenge
-						provider = { "n", 191572 },	-- Bronze Timekeeper
-						coord = { 47.9, 40.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17953),	-- The Azure Span Sprint Challenge: Bronze
-							ach(17954),	-- The Azure Span Sprint Challenge: Silver
-							ach(17955),	-- The Azure Span Sprint Challenge: Gold
-						},
-					}),
-					dragonridingrace(75806, {	-- Azure Span Sprint - Reverse Challenge
-						provider = { "n", 191572 },	-- Bronze Timekeeper
-						coord = { 47.9, 40.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17956),	-- The Azure Span Sprint Reverse Challenge: Bronze
-							ach(17957),	-- The Azure Span Sprint Reverse Challenge: Silver
-							ach(17958),	-- The Azure Span Sprint Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75813, {	-- Frostland Flyover - Challenge
-						provider = { "n", 192945 },	-- Bronze Timekeeper
-						coord = { 48.5, 35.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17979),	-- Frostland Flyover Challenge: Bronze
-							ach(17980),	-- Frostland Flyover Challenge: Silver
-							ach(17981),	-- Frostland Flyover Challenge: Gold
-						},
-					}),
-					dragonridingrace(75815, {	-- Frostland Flyover - Reverse Challenge
-						provider = { "n", 192945 },	-- Bronze Timekeeper
-						coord = { 48.5, 35.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17982),	-- Frostland Flyover Reverse Challenge: Bronze
-							ach(17983),	-- Frostland Flyover Reverse Challenge: Silver
-							ach(17984),	-- Frostland Flyover Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75811, {	-- Iskaara Tour - Challenge
-						provider = { "n", 192886 },	-- Bronze Timekeeper
-						coord = { 16.6, 49.4, THE_AZURE_SPAN },
-						groups = {
-							ach(17971),	-- Iskaara Tour Challenge: Bronze
-							ach(17972),	-- Iskaara Tour Challenge: Silver
-							ach(17973),	-- Iskaara Tour Challenge: Gold
-						},
-					}),
-					dragonridingrace(75812, {	-- Iskaara Tour - Reverse Challenge
-						provider = { "n", 192886 },	-- Bronze Timekeeper
-						coord = { 16.6, 49.4, THE_AZURE_SPAN },
-						groups = {
-							ach(17974),	-- Iskaara Tour Reverse Challenge: Bronze
-							ach(17975),	-- Iskaara Tour Reverse Challenge: Silver
-							ach(17976),	-- Iskaara Tour Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(75809, {	-- Vakthros Ascent - Challenge
-						provider = { "n", 192115 },	-- Bronze Timekeeper
-						coord = { 71.3, 24.7, THE_AZURE_SPAN },
-						groups = {
-							ach(17965),	-- The Vakthros Ascent Challenge: Bronze
-							ach(17966),	-- The Vakthros Ascent Challenge: Silver
-							ach(17967),	-- The Vakthros Ascent Challenge: Gold
-						},
-					}),
-					dragonridingrace(75810, {	-- Vakthros Ascent - Reverse Challenge
-						provider = { "n", 192115 },	-- Bronze Timekeeper
-						coord = { 71.3, 24.7, THE_AZURE_SPAN },
-						groups = {
-							ach(17968),	-- The Vakthros Ascent Reverse Challenge: Bronze
-							ach(17969),	-- The Vakthros Ascent Reverse Challenge: Silver
-							ach(17970),	-- The Vakthros Ascent Reverse Challenge: Gold
-						},
-					}),
-				}),
-			})),
-			header(HEADERS.Achievement, 17332, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Reverse Racer: Gold
-				n(ACHIEVEMENTS, {
-					ach(17201, {	-- Azure Span Reverse: Bronze
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17174,	-- Archive Ambit Reverse: Bronze
-							17171,	-- Frostland Flyover Reverse: Bronze
-							17168,	-- Iskaara Tour Reverse: Bronze
-							17162,	-- The Azure Span Slalom Reverse: Bronze
-							17159,	-- The Azure Span Sprint Reverse: Bronze
-							17165,	-- The Vakthros Ascent Reverse: Bronze
-						}},
-					}),
-					ach(17202, {	-- Azure Span Reverse: Silver
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17175,	-- Archive Ambit Reverse: Silver
-							17172,	-- Frostland Flyover Reverse: Silver
-							17169,	-- Iskaara Tour Reverse: Silver
-							17163,	-- The Azure Span Slalom Reverse: Silver
-							17160,	-- The Azure Span Sprint Reverse: Silver
-							17166,	-- The Vakthros Ascent Reverse: Silver
-						}},
-					}),
-					ach(17203, {	-- Azure Span Reverse: Gold
-						-- Meta Achievement
-						sym = {{"meta_achievement",
-							17176,	-- Archive Ambit Reverse: Gold
-							17173,	-- Frostland Flyover Reverse: Gold
-							17170,	-- Iskaara Tour Reverse: Gold
-							17164,	-- The Azure Span Slalom Reverse: Gold
-							17161,	-- The Azure Span Sprint Reverse: Gold
-							17167,	-- The Vakthros Ascent Reverse: Gold
-						}},
-					}),
-				}),
-				n(QUESTS, {
-					dragonridingrace(72797, {	-- Archive Ambit - Reverse
-						provider = { "n", 193027 },	-- Bronze Timekeeper
-						coord = { 42.3, 56.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17174),	-- Archive Ambit Reverse: Bronze
-							ach(17175),	-- Archive Ambit Reverse: Silver
-							ach(17176),	-- Archive Ambit Reverse: Gold
-						},
-					}),
-					dragonridingrace(72799, {	-- Azure Span Slalom - Reverse
-						provider = { "n", 191947 },	-- Bronze Timekeeper
-						coord = { 20.9, 22.6, THE_AZURE_SPAN },
-						groups = {
-							ach(17162),	-- The Azure Span Slalom Reverse: Bronze
-							ach(17163),	-- The Azure Span Slalom Reverse: Silver
-							ach(17164),	-- The Azure Span Slalom Reverse: Gold
-						},
-					}),
-					dragonridingrace(72796, {	-- Azure Span Sprint - Reverse
-						provider = { "n", 191572 },	-- Bronze Timekeeper
-						coord = { 47.9, 40.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17159),	-- The Azure Span Sprint Reverse: Bronze
-							ach(17160),	-- The Azure Span Sprint Reverse: Silver
-							ach(17161),	-- The Azure Span Sprint Reverse: Gold
-						},
-					}),
-					dragonridingrace(72795, {	-- Frostland Flyover - Reverse
-						provider = { "n", 192945 },	-- Bronze Timekeeper
-						coord = { 48.5, 35.8, THE_AZURE_SPAN },
-						groups = {
-							ach(17171),	-- Frostland Flyover Reverse: Bronze
-							ach(17172),	-- Frostland Flyover Reverse: Silver
-							ach(17173),	-- Frostland Flyover Reverse: Gold
-						},
-					}),
-					dragonridingrace(72800, {	-- Iskaara Tour - Reverse
-						provider = { "n", 192886 },	-- Bronze Timekeeper
-						coord = { 16.6, 49.4, THE_AZURE_SPAN },
-						groups = {
-							ach(17168),	-- Iskaara Tour Reverse: Bronze
-							ach(17169),	-- Iskaara Tour Reverse: Silver
-							ach(17170),	-- Iskaara Tour Reverse: Gold
-						},
-					}),
-					dragonridingrace(72794, {	-- Vakthros Ascent - Reverse
-						provider = { "n", 192115 },	-- Bronze Timekeeper
-						coord = { 71.3, 24.7, THE_AZURE_SPAN },
-						groups = {
-							ach(17165),	-- The Vakthros Ascent Reverse: Bronze
-							ach(17166),	-- The Vakthros Ascent Reverse: Silver
-							ach(17167),	-- The Vakthros Ascent Reverse: Gold
-						},
-					}),
-				}),
-			})),
+				},
+			}),
 		})),
 	},
 });

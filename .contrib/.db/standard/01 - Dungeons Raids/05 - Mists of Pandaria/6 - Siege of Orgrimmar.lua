@@ -2780,10 +2780,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- #endif
 			d(CURRENT_HEROIC_PLUS_DIFFICULTIES, {		-- Normal+ (5.4.0+) / Heroic+ (6.0.2+)
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					ach(8679, bubbleDownSelf({races = ALLIANCE_ONLY}, {	-- Conqueror of Orgrimmar
+					a(ach(8679, {	-- Conqueror of Orgrimmar
 						title(211),	-- Conqueror of Orgrimmar
 					})),
-					ach(8680, bubbleDownSelf({races = HORDE_ONLY }, {	-- Liberator of Orgrimmar
+					h(ach(8680, {	-- Liberator of Orgrimmar
 						title(212),	-- Liberator of Orgrimmar
 					})),
 				})),

@@ -2,8 +2,9 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 
-root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {	-- Waist of Time
+root(ROOTS.Secrets, header(HEADERS.Item, 162690, {	-- Waist of Time
 	description = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
+	timeline = { ADDED_8_0_1_LAUNCH },
 	lvl = 110,
 	groups = {
 		hqt(52829, name(HEADERS.NPC, 141941, {	-- Summon Baa'l
@@ -252,4 +253,4 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDownSelf({ timeline = { A
 			},
 		}),
 	},
-})));
+}));

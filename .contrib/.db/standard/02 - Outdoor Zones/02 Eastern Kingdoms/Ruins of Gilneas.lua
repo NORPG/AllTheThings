@@ -205,193 +205,196 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 				races = HORDE_ONLY,
 			}),
 		}),
-		header(HEADERS.Achievement, 19719, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {	-- Reclamation of Gilneas
-			ach(19719, {	-- Reclamation of Gilneas
-				sourceQuests = {
-					78190,	-- What We Left Behind (A)
-					79137,	-- The Wall between Us (H)
-				},
-				groups = {
-					i(245520, {	-- Gilnean Celebration Keg (DECOR!)
-						timeline = { ADDED_11_2_7 },
-					}),
-				},
-			}),
-			q(78596, {	-- Summons to Lord Greymane
-				qg = 212899,	-- Greyguard Elite
-				coords = {
-					{ 59.0, 42.3, VALDRAKKEN },
-					{ 62.4, 71.9, STORMWIND_CITY },
-				},
-				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-			}),
-			q(78597, {	-- Clandestine Movements
-				qg = 212916,	-- Deathguard Elite
-				coords = {
-					{ 56.1, 39.4, VALDRAKKEN },
-					{ 52.2, 88.6, ORGRIMMAR },
-				},
-				races = HORDE_ONLY,
-				isBreadcrumb = true,
-			}),
-			q(78177, {	-- To Gilneas (A)
-				sourceQuest = 78596,	-- Summons to Lord Greymane
-				qg = 214538,	-- Genn Greymane
-				coord = { 35.7, 28.2, STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-			}),
-			q(78178, {	-- To Gilneas (H)
-				sourceQuest = 78597,	-- Clandestine Movements
-				qg = 210965,	-- Calia Menethil <The Pallid Lady>
-				coord = { 43.5, 73.2, SILVERPINE_FOREST },
-				races = HORDE_ONLY,
-			}),
-			q(78180, {	-- A Crusade of Red
-				sourceQuests = {
-					78177,	-- To Gilneas (A)
-					78178,	-- To Gilneas (H)
-				},
-				qg = 210905,	-- Princess Tess Greymane
-				coord = { 41.5, 36.1, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/10 Members of the Scarlet Crusade slain
-						providers = {
-							{ "n", 210969 },	-- Scarlet Purifier
-							{ "n", 210972 },	-- Scarlet Recruit
-							{ "n", 210970 },	-- Scarlet Gravedigger
-							{ "n", 210973 },	-- Scarlet Scout
-						},
-					}),
-				},
-			}),
-			q(78181, {	-- Aderic's Retort
-				sourceQuests = {
-					78177,	-- To Gilneas (A)
-					78178,	-- To Gilneas (H)
-				},
-				qg = 210904,	-- Genn Greymane
-				coord = { 41.5, 36.1, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/1 Consecrator Hennas slain
-						provider = { "n", 211231 },	-- Consecrator Hennas
-					}),
-				},
-			}),
-			q(78182, {	-- Knee-High
-				sourceQuests = {
-					78180,	-- A Crusade of Red
-					78181,	-- Aderic's Retort
-				},
-				qg = 212187,	-- Genn Greymane
-				coord = { 49.6, 56.9, RUINS_OF_GILNEAS },
-			}),
-			q(78183, {	-- Scarlet Blood
-				sourceQuest = 78182,	-- Knee-High
-				qg = 210964,	-- Lillian Voss
-				coord = { 57.0, 53.0, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/12 Scarlet forces slain
-						providers = {
-							{ "n", 211882 },	-- Scarlet Houndsmaster
-							{ "n", 211919 },	-- Scarlet Reserve
-							{ "n", 214580 },	-- Injured Scarlet Reserve
-							{ "n", 211884 },	-- Scarlet Technician
-							{ "n", 214577 },	-- Scarlet Acolyte
-						},
-					}),
-				},
-			}),
-			q(78184, {	-- Smokepowder and Mirrors
-				sourceQuests = 78182,	-- Knee-High
-				qg = 210905,	-- Princess Tess Greymane
-				coord = { 57.0, 53.0, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/8 Scarlet Explosives
-						providers = {
-							{ "i", 211248 },	-- Scarlet Explosives
-							{ "o", 410877 },	-- Scarlet Munitions
-						},
-						coord = { 55.7, 56.8, RUINS_OF_GILNEAS },
-					}),
-				},
-			}),
-			q(78185, {	-- Hounds of War
-				sourceQuests = {
-					78183,	-- Scarlet Blood
-					78184,	-- Smokepowder and Mirrors
-				},
-				qg = 210905,	-- Princess Tess Greymane
-				-- coord = { 57.0, 53.0, RUINS_OF_GILNEAS },	-- Spawns with you.
-			}),
-			q(78186, {	-- Crushing the Crusade
-				sourceQuest = 78185,	-- Hounds of War
-				qg = 210964,	-- Lillian Voss
-				coord = { 55.8, 58.3, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/12 Scarlet elite slain
-						providers = {
-							{ "n", 211935 },	-- Scarlet Champion
-							{ "n", 211936 },	-- Scarlet High Priest
-							{ "n", 211937 },	-- Scarlet Siegemaster
-						},
-					}),
-				},
-			}),
-			q(78187, {	-- Artillerist Arsonist
-				sourceQuest = 78185,	-- Hounds of War
-				qg = 213995,	-- Princess Tess Greymane
-				coord = { 55.8, 58.7, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/6 Explosives set
-						provider = { "o", 411762 },	-- Bomb Location
-					}),
-				},
-			}),
-			q(78188, {	-- Righteous Fire, Righteous Fury
-				sourceQuests = {
-					78186,	-- Crushing the Crusade
-					78187,	-- Artillerist Arsonist
-				},
-				qg = 210905,	-- Princess Tess Greymane
-				coord = { 59.4, 48.7, RUINS_OF_GILNEAS },
-				groups = {
-					objective(1, {	-- 0/1 Inquisitor Fairbell slain
-						provider = { "n", 211930 },	-- Inquisitor Fairbell
-					}),
-					objective(2, {	-- 0/1 Hallowed Monstrosity slain
-						provider = { "n", 211933 },	-- Hallowed Monstrosity
-					}),
-				},
-			}),
-			q(78189, {	-- Beginning a New Dawn
-				sourceQuest = 78188,	-- Righteous Fire, Righteous Fury
-				qg = 210904,	-- Genn Greymane
-				coord = { 58.7, 47.8, RUINS_OF_GILNEAS },
-				groups = {
-					i(211873),	-- Gilnean Prowler (MOUNT!)
-					-- Ensemble: Gilnean Noble's Suit
-					i(211791),	-- Gilnean Nobles Buckle
-					i(211795),	-- Gilnean Nobles Mantle
-					i(211790),	-- Gilnean Nobles Shoes
-					i(211793),	-- Gilnean Nobles Top Hat
-					i(211794),	-- Gilnean Nobles Trousers
-					i(211792),	-- Gilnean Nobles Vest
-				},
-			}),
-			q(79137, {	-- The Wall between Us
-				sourceQuest = 78189,	-- Beginning a New Dawn
-				qg = 210965,	-- Calia Menethil <The Pallid Lady>
-				coord = { 58.8, 48.4, RUINS_OF_GILNEAS },
-				races = HORDE_ONLY,
-			}),
-			q(78190, {	-- What We Left Behind
-				sourceQuest = 78189,	-- Beginning a New Dawn
-				qg = 210905,	-- Princess Tess Greymane
-				coord = { 58.8, 47.7, RUINS_OF_GILNEAS },
-				races = ALLIANCE_ONLY,
-			}),
-		})),
+		header(HEADERS.Achievement, 19719, {	-- Reclamation of Gilneas
+			timeline = { ADDED_10_2_5 },
+			groups = {
+				ach(19719, {	-- Reclamation of Gilneas
+					sourceQuests = {
+						78190,	-- What We Left Behind (A)
+						79137,	-- The Wall between Us (H)
+					},
+					groups = {
+						i(245520, {	-- Gilnean Celebration Keg (DECOR!)
+							timeline = { ADDED_11_2_7 },
+						}),
+					},
+				}),
+				q(78596, {	-- Summons to Lord Greymane
+					qg = 212899,	-- Greyguard Elite
+					coords = {
+						{ 59.0, 42.3, VALDRAKKEN },
+						{ 62.4, 71.9, STORMWIND_CITY },
+					},
+					races = ALLIANCE_ONLY,
+					isBreadcrumb = true,
+				}),
+				q(78597, {	-- Clandestine Movements
+					qg = 212916,	-- Deathguard Elite
+					coords = {
+						{ 56.1, 39.4, VALDRAKKEN },
+						{ 52.2, 88.6, ORGRIMMAR },
+					},
+					races = HORDE_ONLY,
+					isBreadcrumb = true,
+				}),
+				q(78177, {	-- To Gilneas (A)
+					sourceQuest = 78596,	-- Summons to Lord Greymane
+					qg = 214538,	-- Genn Greymane
+					coord = { 35.7, 28.2, STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+				}),
+				q(78178, {	-- To Gilneas (H)
+					sourceQuest = 78597,	-- Clandestine Movements
+					qg = 210965,	-- Calia Menethil <The Pallid Lady>
+					coord = { 43.5, 73.2, SILVERPINE_FOREST },
+					races = HORDE_ONLY,
+				}),
+				q(78180, {	-- A Crusade of Red
+					sourceQuests = {
+						78177,	-- To Gilneas (A)
+						78178,	-- To Gilneas (H)
+					},
+					qg = 210905,	-- Princess Tess Greymane
+					coord = { 41.5, 36.1, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/10 Members of the Scarlet Crusade slain
+							providers = {
+								{ "n", 210969 },	-- Scarlet Purifier
+								{ "n", 210972 },	-- Scarlet Recruit
+								{ "n", 210970 },	-- Scarlet Gravedigger
+								{ "n", 210973 },	-- Scarlet Scout
+							},
+						}),
+					},
+				}),
+				q(78181, {	-- Aderic's Retort
+					sourceQuests = {
+						78177,	-- To Gilneas (A)
+						78178,	-- To Gilneas (H)
+					},
+					qg = 210904,	-- Genn Greymane
+					coord = { 41.5, 36.1, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/1 Consecrator Hennas slain
+							provider = { "n", 211231 },	-- Consecrator Hennas
+						}),
+					},
+				}),
+				q(78182, {	-- Knee-High
+					sourceQuests = {
+						78180,	-- A Crusade of Red
+						78181,	-- Aderic's Retort
+					},
+					qg = 212187,	-- Genn Greymane
+					coord = { 49.6, 56.9, RUINS_OF_GILNEAS },
+				}),
+				q(78183, {	-- Scarlet Blood
+					sourceQuest = 78182,	-- Knee-High
+					qg = 210964,	-- Lillian Voss
+					coord = { 57.0, 53.0, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/12 Scarlet forces slain
+							providers = {
+								{ "n", 211882 },	-- Scarlet Houndsmaster
+								{ "n", 211919 },	-- Scarlet Reserve
+								{ "n", 214580 },	-- Injured Scarlet Reserve
+								{ "n", 211884 },	-- Scarlet Technician
+								{ "n", 214577 },	-- Scarlet Acolyte
+							},
+						}),
+					},
+				}),
+				q(78184, {	-- Smokepowder and Mirrors
+					sourceQuests = 78182,	-- Knee-High
+					qg = 210905,	-- Princess Tess Greymane
+					coord = { 57.0, 53.0, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/8 Scarlet Explosives
+							providers = {
+								{ "i", 211248 },	-- Scarlet Explosives
+								{ "o", 410877 },	-- Scarlet Munitions
+							},
+							coord = { 55.7, 56.8, RUINS_OF_GILNEAS },
+						}),
+					},
+				}),
+				q(78185, {	-- Hounds of War
+					sourceQuests = {
+						78183,	-- Scarlet Blood
+						78184,	-- Smokepowder and Mirrors
+					},
+					qg = 210905,	-- Princess Tess Greymane
+					-- coord = { 57.0, 53.0, RUINS_OF_GILNEAS },	-- Spawns with you.
+				}),
+				q(78186, {	-- Crushing the Crusade
+					sourceQuest = 78185,	-- Hounds of War
+					qg = 210964,	-- Lillian Voss
+					coord = { 55.8, 58.3, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/12 Scarlet elite slain
+							providers = {
+								{ "n", 211935 },	-- Scarlet Champion
+								{ "n", 211936 },	-- Scarlet High Priest
+								{ "n", 211937 },	-- Scarlet Siegemaster
+							},
+						}),
+					},
+				}),
+				q(78187, {	-- Artillerist Arsonist
+					sourceQuest = 78185,	-- Hounds of War
+					qg = 213995,	-- Princess Tess Greymane
+					coord = { 55.8, 58.7, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/6 Explosives set
+							provider = { "o", 411762 },	-- Bomb Location
+						}),
+					},
+				}),
+				q(78188, {	-- Righteous Fire, Righteous Fury
+					sourceQuests = {
+						78186,	-- Crushing the Crusade
+						78187,	-- Artillerist Arsonist
+					},
+					qg = 210905,	-- Princess Tess Greymane
+					coord = { 59.4, 48.7, RUINS_OF_GILNEAS },
+					groups = {
+						objective(1, {	-- 0/1 Inquisitor Fairbell slain
+							provider = { "n", 211930 },	-- Inquisitor Fairbell
+						}),
+						objective(2, {	-- 0/1 Hallowed Monstrosity slain
+							provider = { "n", 211933 },	-- Hallowed Monstrosity
+						}),
+					},
+				}),
+				q(78189, {	-- Beginning a New Dawn
+					sourceQuest = 78188,	-- Righteous Fire, Righteous Fury
+					qg = 210904,	-- Genn Greymane
+					coord = { 58.7, 47.8, RUINS_OF_GILNEAS },
+					groups = {
+						i(211873),	-- Gilnean Prowler (MOUNT!)
+						-- Ensemble: Gilnean Noble's Suit
+						i(211791),	-- Gilnean Nobles Buckle
+						i(211795),	-- Gilnean Nobles Mantle
+						i(211790),	-- Gilnean Nobles Shoes
+						i(211793),	-- Gilnean Nobles Top Hat
+						i(211794),	-- Gilnean Nobles Trousers
+						i(211792),	-- Gilnean Nobles Vest
+					},
+				}),
+				q(79137, {	-- The Wall between Us
+					sourceQuest = 78189,	-- Beginning a New Dawn
+					qg = 210965,	-- Calia Menethil <The Pallid Lady>
+					coord = { 58.8, 48.4, RUINS_OF_GILNEAS },
+					races = HORDE_ONLY,
+				}),
+				q(78190, {	-- What We Left Behind
+					sourceQuest = 78189,	-- Beginning a New Dawn
+					qg = 210905,	-- Princess Tess Greymane
+					coord = { 58.8, 47.7, RUINS_OF_GILNEAS },
+					races = ALLIANCE_ONLY,
+				}),
+			},
+		}),
 		prof(FISHING, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
 			i(67108),	-- Lord Godfrey's Old Spectacles
 		})),
