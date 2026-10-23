@@ -2839,7 +2839,9 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ timeline = timeline }, t)));
+	t = togroups(t);
+	t.timeline = timeline;
+	return petbattle(filter(BATTLE_PETS, t));
 end
 --- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
 ---@param timeline ATTTimelineEvent[] Patch events applied to the header and nested content; defaults to 5.0.4 in the one-argument form.
@@ -2854,7 +2856,9 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(n(PET_BATTLES, bubbleDownSelf({ timeline = timeline }, t)));
+	t = togroups(t);
+	t.timeline = timeline;
+	return petbattle(n(PET_BATTLES, t));
 end
 --- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
 ---@param skipRequirement boolean|nil Whether to omit the Rogue class restriction in the two-argument form.
