@@ -245,9 +245,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(162541),	-- Band of the Roving Scalawag
 						},
 					}),
-					e(2133, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_11_0_2, ADDED_12_0_1_LAUNCH } }, {	-- Sergeant Bainbridge [1st Encounter - Horde]
+					e(2133, {	-- Sergeant Bainbridge [1st Encounter - Horde]
 						-- This boss was removed in TWW season 1 and did not return when the season ended
 						-- This fight is Horde-only. We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
+						timeline = { ADDED_8_0_1_LAUNCH, REMOVED_11_0_2, ADDED_12_0_1_LAUNCH },
 						races = HORDE_ONLY,
 						crs = { 128649 },	-- Sergeant Bainbridge
 						groups = {
@@ -260,7 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(159278),	-- Slippers of Unwavering Faith
 							i(162542),	-- Seal of the City Watch
 						},
-					})),
+					}),
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						crs = { 129208 },	-- Dread Captain Lockwood
 						groups = {

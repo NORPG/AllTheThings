@@ -3,12 +3,13 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Dragon Soul
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(187, {	-- Dragon Soul
 		mapID = 409,	-- Wyrmrest Temple [Starting Area]
 		coords = {
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
+		timeline = { ADDED_4_3_0 },
 		maps = {
 			412,	-- Dragon Soul: Eye of Eternity
 			415,	-- Dragon Soul: The Maelstrom
@@ -929,5 +930,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}))),
+	})),
 }));

@@ -3,8 +3,9 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(73, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Blackwing Descent
+	applyclassicphase(CATA_PHASE_ONE, inst(73, {	-- Blackwing Descent
 		coord = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
+		timeline = { ADDED_4_0_3 },
 		maps = {
 			285,	-- Blackwing Descent (The Broken Hall)
 			286,	-- Blackwing Descent (Vault of the Shadowflame)
@@ -350,5 +351,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 		},
-	}))),
+	})),
 }));

@@ -45,11 +45,12 @@ local OPERA_OF_MALEDICTION = createHeader({
 });
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_SEVEN, inst(2875, bubbleDownSelf({timeline = { ADDED_1_15_6 }}, {	-- Karazhan Crypts
+	applyclassicphase(SOD_PHASE_SEVEN, inst(2875, {	-- Karazhan Crypts
 		description = "[TBC] \nThis is a new dungeon added in SoD Phase 7.\nThe current loot table is not accurate. If you get items not in the boss drop, please report it in Discord #classic-errors.\n\nNOTE: Kharon drop all rewards, please do not report any that are known to be dropped by other bosses but not by Kharon.",
 		zoneTextAreaID = 16074,	-- Karazhan Crypts
 		sourceQuest = 86970,
 		coord = { 39.8, 73.6, DEADWIND_PASS },
+		timeline = { ADDED_1_15_6 },
 		lvl = 58,
 		groups = {
 			n(QUESTS, {
@@ -318,6 +319,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 		},
-	}))),
+	})),
 }));
 -- #endif

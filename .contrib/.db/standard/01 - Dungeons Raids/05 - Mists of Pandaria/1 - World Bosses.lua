@@ -9,10 +9,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			isRaid = true,
 			isWeekly = true,
 		}, {
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, {	-- Nalak, The Storm Lord
 				crs = { 69099 },	-- Nalak, the Storm Lord
 				questID = 32518,
 				coord = { 60.0, 37.7, ISLE_OF_THUNDER },
+				timeline = { ADDED_5_2_0 },
 				maps = {	-- all Isle of Thunder maps
 					505,	-- Lightning Vein Mine
 					506,	-- The Swollen Vault
@@ -389,11 +390,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 				},
-			}))),
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(826, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Oondasta
+			})),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(826, {	-- Oondasta
 				questID = 32519,
 				coord = { 49.9, 56.8, ISLE_OF_GIANTS },
 				crs = { 69161 },	-- Oondasta
+				timeline = { ADDED_5_2_0 },
 				groups = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					ach(8138),	-- Oondasta Guild Run
@@ -484,16 +486,16 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 					}),
 				},
-			}))),
+			})),
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
 				-- #if AFTER WOD
 				u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,	-- Legendary Cloak Filter
 				-- #endif
-				timeline = { ADDED_5_4_0 },
 			}, {
 				sourceQuests = { 33104 },	-- A Pandaren Legend
 				questID = 33118,
 				coord = { 54.9, 17.3, TIMELESS_ISLE },
+				timeline = { ADDED_5_4_0 },
 				maps = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
 				},

@@ -102,17 +102,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			o(184465, bubbleDownSelf({
-				-- #if BEFORE MOP
-				timeline = { REMOVED_4_0_3, ADDED_5_0_4 },
-				isBounty = true,
-				-- #endif
-			}, {	-- Cache of the Legion
+			o(184465, {	-- Cache of the Legion
 				modelScale = 1.6,
 				-- #if BEFORE 4.3.0.14942
 				cost = { { "i", 30438, 1 } },	-- Cache of the Legion Key
 				-- #endif
 				-- #if BEFORE MOP
+				timeline = { REMOVED_4_0_3, ADDED_5_0_4 },
+				isBounty = true,
 				-- #if AFTER WRATH
 				sharedDescription = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
 				-- #endif
@@ -131,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						timeline = { ADDED_4_3_0 },
 					}),
 				},
-			})),
+			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(563, {	-- Mechano-Lord Capacitus
 					creatureID = 19219,

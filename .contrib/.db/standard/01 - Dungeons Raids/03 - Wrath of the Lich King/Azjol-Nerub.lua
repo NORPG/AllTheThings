@@ -415,7 +415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({  }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(272, {
 		timeline = { ADDED_6_0_2 },
 		groups = {
@@ -423,4 +423,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({  }, {
 			q(35498),	-- Azjol-Nerub Reward Quest - Heroic completion
 		},
 	}),
-})));
+}));

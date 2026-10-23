@@ -42,8 +42,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						31125,	-- Archavon the Stone Watcher
 					},
 				})),
-				applyclassicphase(WRATH_PHASE_THREE, e(1599, bubbleDownSelf({ timeline = { ADDED_3_2_0 } }, {	-- Koralon the Flame Watcher
+				applyclassicphase(WRATH_PHASE_THREE, e(1599, {	-- Koralon the Flame Watcher
 					creatureID = 35013,
+					timeline = { ADDED_3_2_0 },
 					groups = {
 						ach(3836),	-- Koralon the Flame Watcher (10 player)
 						i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -208,9 +209,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(42116),	-- Furious Gladiator's Band of Dominance
 						i(42117),	-- Furious Gladiator's Band of Triumph
 					},
-				}))),
-				applyclassicphase(WRATH_PHASE_TWO, e(1598, bubbleDownSelf({ timeline = { ADDED_3_1_0 } }, {	-- Emalon the Storm Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_TWO, e(1598, {	-- Emalon the Storm Watcher
 					creatureID = 33993,
+					timeline = { ADDED_3_1_0 },
 					groups = {
 						ach(3136),	-- Emalon the Storm Watcher (10 player)
 						i(42030),	-- Deadly Gladiator's Pendant of Ascendancy
@@ -330,9 +332,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(42114),	-- Deadly Gladiator's Band of Ascendancy
 						i(42115),	-- Deadly Gladiator's Band of Victory
 					},
-				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, e(1600, bubbleDownSelf({ timeline = { ADDED_3_3_2 } }, {	-- Toravon the Ice Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, e(1600, {	-- Toravon the Ice Watcher
 					creatureID = 38433,
+					timeline = { ADDED_3_3_2 },
 					groups = {
 						ach(4585),	-- Toravon the Ice Watcher (10 player)
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
@@ -453,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(42118),	-- Relentless Gladiator's Band of Ascendancy
 						i(42119),	-- Relentless Gladiator's Band of Victory
 					},
-				}))),
+				})),
 				e(1597, {	-- Archavon the Stone Watcher
 					creatureID = 31125,
 					groups = {
@@ -575,8 +578,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						31125,	-- Archavon the Stone Watcher
 					},
 				})),
-				applyclassicphase(WRATH_PHASE_THREE, e(1599, bubbleDownSelf({ timeline = { ADDED_3_2_0 } }, {	-- Koralon the Flame Watcher
+				applyclassicphase(WRATH_PHASE_THREE, e(1599, {	-- Koralon the Flame Watcher
 					creatureID = 35013,
+					timeline = { ADDED_3_2_0 },
 					groups = {
 						ach(3837),	-- Koralon the Flame Watcher (25 player)
 						i(42044),	-- Relentless Gladiator's Pendant of Ascendancy
@@ -747,9 +751,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(42118),	-- Relentless Gladiator's Band of Ascendancy
 						i(42119),	-- Relentless Gladiator's Band of Victory
 					},
-				}))),
-				applyclassicphase(WRATH_PHASE_TWO, e(1598, bubbleDownSelf({ timeline = { ADDED_3_1_0 } }, {	-- Emalon the Storm Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_TWO, e(1598, {	-- Emalon the Storm Watcher
 					creatureID = 33993,
+					timeline = { ADDED_3_1_0 },
 					groups = {
 						ach(3137),	-- Emalon the Storm Watcher (25 player)
 						i(42037),	-- Furious Gladiator's Pendant of Ascendancy
@@ -870,9 +875,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(42116),	-- Furious Gladiator's Band of Dominance
 						i(42117),	-- Furious Gladiator's Band of Triumph
 					},
-				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, e(1600, bubbleDownSelf({ timeline = { ADDED_3_3_2 } }, {	-- Toravon the Ice Watcher
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, e(1600, {	-- Toravon the Ice Watcher
 					creatureID = 38433,
+					timeline = { ADDED_3_3_2 },
 					groups = {
 						ach(4586),	-- Toravon the Ice Watcher (25 player)
 						i(51335),	-- Wrathful Gladiator's Pendant of Ascendancy
@@ -993,7 +999,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(51336),	-- Wrathful Gladiator's Band of Dominance
 						i(51358),	-- Wrathful Gladiator's Band of Triumph
 					},
-				}))),
+				})),
 				e(1597, {	-- Archavon the Stone Watcher
 					creatureID = 31125,
 					groups = {

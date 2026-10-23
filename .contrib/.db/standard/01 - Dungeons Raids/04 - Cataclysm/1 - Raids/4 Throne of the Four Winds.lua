@@ -3,11 +3,12 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(74, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Throne of the Four Winds
+	applyclassicphase(CATA_PHASE_ONE, inst(74, {	-- Throne of the Four Winds
 		mapID = 328,
 		coord = { 38.37, 80.63, ULDUM },	-- Throne of the Four Winds
 		sharedLockout = 1,
 		isRaid = true,
+		timeline = { ADDED_4_0_3 },
 		lvl = 85,
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -164,5 +165,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 		},
-	}))),
+	})),
 }));

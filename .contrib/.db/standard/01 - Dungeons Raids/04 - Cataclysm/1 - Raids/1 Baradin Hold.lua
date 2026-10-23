@@ -3,11 +3,12 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {	-- Baradin Hold
+	applyclassicphase(CATA_PHASE_ONE, inst(75, {	-- Baradin Hold
 		mapID = 282,
 		coord = { 46.1, 47.9, TOL_BARAD },
 		sharedLockout = 1,
 		isRaid = true,
+		timeline = { ADDED_4_0_3 },
 		lvl = 85,
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -165,8 +166,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
 				},
 			})),
-			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, e(339, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, e(339, {	-- Alizabal, Mistress of Hate
 				creatureID = 55869,
+				timeline = { ADDED_4_3_0 },
 				groups = {
 					ach(6108),	-- Alizabal
 					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
@@ -321,9 +323,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(i(73536)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Alliance)
 					h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
 				},
-			}))),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, e(140, bubbleDownSelf({ timeline = { ADDED_4_2_0 }, }, {	-- Occu'thar
+			})),
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, e(140, {	-- Occu'thar
 				creatureID = 52363,
+				timeline = { ADDED_4_2_0 },
 				groups = {
 					ach(6045),	-- Occu'thar
 					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
@@ -478,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(i(70392)),	-- Ruthless Gladiator's Medallion of Tenacity (Alliance)
 					h(i(70395)),	-- Ruthless Gladiator's Medallion of Tenacity (Horde)
 				},
-			}))),
+			})),
 		},
-	}))),
+	})),
 }));

@@ -916,7 +916,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({  }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	inst(1296, {	-- Liberation of Undermine
 		timeline = { ADDED_11_1_0_SEASONSTART },
 		groups = {
@@ -991,4 +991,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({  }, {
 		q(89458),	-- Mug'Zee
 		q(89459),	-- Chrome King Gallywix
 	})),
-})));
+}));

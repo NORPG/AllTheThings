@@ -4,7 +4,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_SIX, inst(2832, bubbleDownSelf({timeline = { ADDED_1_15_5 }}, {	-- Nightmare Grove
+	applyclassicphase(SOD_PHASE_SIX, inst(2832, {	-- Nightmare Grove
 		headerID = createHeader({
 			readable = "Nightmare Grove",
 			text = {
@@ -41,6 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			{ 94.2, 35.7, ASHENVALE },
 		},
 		isRaid = true,
+		timeline = { ADDED_1_15_5 },
 		lvl = 60,
 		groups = {
 			n(DRAGONS_OF_NIGHTMARE, bubbleDown({ timeline = { ADDED_1_11_0, REMOVED_1_15_5 } }, {
@@ -250,6 +251,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(234175),	-- Hibernation Crystal
 			}),
 		},
-	}))),
+	})),
 }));
 -- #endif

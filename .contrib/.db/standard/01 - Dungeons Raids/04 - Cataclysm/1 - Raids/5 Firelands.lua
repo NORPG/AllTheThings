@@ -79,8 +79,9 @@ local HEROIC_DIFFICULTY_ID = DIFFICULTY.LEGACY_RAID.MULTI.HEROIC;
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, inst(78, bubbleDownSelf({ timeline = { ADDED_4_2_0 }, }, {	-- Firelands
+	applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, inst(78, {	-- Firelands
 		coord = { 47.3, 78.1, MOUNT_HYJAL },
+		timeline = { ADDED_4_2_0 },
 		maps = { 367, 368, 369 },
 		isRaid = true,
 		lvl = 85,
@@ -1113,7 +1114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}))),
+	})),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, {
