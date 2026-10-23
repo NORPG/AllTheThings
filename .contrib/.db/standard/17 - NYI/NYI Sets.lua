@@ -1241,7 +1241,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), {
 			cl(DEATHKNIGHT, {
 				i(46232),	-- Darkruned Battleplate
 				i(46233),	-- Darkruned Chestguard
@@ -1358,10 +1358,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(46286),	-- Siegebreaker Pauldrons
 				i(46287),	-- Siegebreaker Shoulderplates
 			}),
-		})),
+		}),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), {
 			cl(DEATHKNIGHT, {
 				i(48880),	-- Koltira's Battleplate of Conquest
 				i(48881),	-- Koltira's Gauntlets of Conquest
@@ -1587,10 +1587,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(48878),	-- Wyrnn's Legguards
 				i(48879),	-- Wyrnn's Pauldrons
 			}),
-		})),
+		}),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, patch(3,0), bubbleDownSelf({ timeline = { CREATED_3_3_0 } }, {
+		expansion(EXPANSION.WRATH, patch(3,0), {
 			-- Icecrown Citadel
 			cl(DEATHKNIGHT, {
 				i(51682),	-- Scourgelord Shoulderplates
@@ -1707,11 +1707,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(51775),	-- Ymirjar Lord's Legguards
 				i(51776),	-- Ymirjar Lord's Pauldrons
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), {
 			n(SEASON_VICIOUS, {
 				cl(DEATHKNIGHT, {
 					i(64978),	-- Gladiator's Dreadplate Shoulders
@@ -1862,18 +1862,18 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(61029),	-- Vicious Gladiator's Emblem of Prowess
 				}),
 			}),
-		})),
+		}),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), {
 			cl(MAGE, {
 				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), {
 			n(DARKMOON_FAIRE_HEADER, {	-- Darkmoon Faire
 				-- Unused T0 Replica
 				cl(DRUID, {
@@ -2113,19 +2113,19 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(81707),	-- Ymirjar Lord's Legplates
 				i(81708),	-- Ymirjar Lord's Shoulderplates
 			}),
-		})),
+		}),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), {
 			n(SEASON_TYRANNICAL, {
 				cl(SHAMAN, {
 					i(91799),	-- Tyrannical Gladiator's Mail Leggings
 				}),
 			}),
-		})),
+		}),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, patch(2,0), {
 			-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
 			cl(DEATHKNIGHT, {
 				i(96941),	-- Breastplate of the All-Consuming Maw
@@ -2379,10 +2379,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(96366),	-- Legguards of the Last Mogu
 				i(96367),	-- Shoulderguards of the Last Mogu
 			}),
-		})),
+		}),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { CREATED_5_3_0 } }, {
+		expansion(EXPANSION.MOP, patch(3,0), {
 			n(SEASON_MALEVOLENT, {
 				cl(MAGE, {
 					i(97925),	-- Malevolent Gladiator's Silk Amice
@@ -2404,11 +2404,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(97520),	-- Malevolent Gladiator's Satin Robe
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DRUID, {
@@ -2436,10 +2436,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(114402),	-- Girdle of Grievous Storms
 				}),
 			}),
-		})),
+		}),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), {
 			garrisonBuilding(141, {
 				cl(DEATHKNIGHT, {
 					i(119485),	-- Heart-Lesion Chestguard
@@ -2681,10 +2681,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(119798),	-- Oathsworn Ring of Stoicism
 				}),
 			}),
-		})),
+		}),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { CREATED_6_2_0 } }, {
+		expansion(EXPANSION.WOD, patch(2,0), {
 			n(SEASON_PRIMAL, {
 				cl(DEATHKNIGHT, {
 					i(127049),	-- Gladiator's Dreadplate Chestpiece
@@ -2764,10 +2764,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(127114),	-- Gladiator's Plate Legguards
 				}),
 			}),
-		})),
+		}),
 
 		-- 6.2.2
-		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
+		expansion(EXPANSION.WOD, patch(2,2), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -2830,11 +2830,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			n(PARTY_SYNC, {
 				cl(DEATHKNIGHT, {
 					i(140714),	-- Bloodcaked Runeblade
@@ -3324,10 +3324,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(140740),	-- Protector's Barrier
 				}),
 			}),
-		})),
+		}),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ timeline = { CREATED_7_2_5 } }, {
+		expansion(EXPANSION.LEGION, patch(2,5), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -3756,10 +3756,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(150709),	-- Lacquered Carving
 				}),
 			}),
-		})),
+		}),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), {
 			n(NEW_CHARACTER, {
 				cl(DRUID, {
 					i(157669),	-- Wildshifter Headpiece
@@ -3802,11 +3802,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(157743),	-- Warsinger's Pauldrons
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEMONHUNTER, HAVOC, {
@@ -4057,7 +4057,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				}),
 			}),
-		})),
+		}),
 
 		-- 8.1.0
 		expansion(EXPANSION.BFA, patch(1,0), {
@@ -4089,7 +4089,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			n(WAR_EFFORT, {
 				n(WARFRONT_BATTLE_FOR_DARKSHORE, {
 					filter(CLOTH, {
@@ -4126,10 +4126,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				}),
 			}),
-		})),
+		}),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -4291,10 +4291,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(173644)	-- Streamtalker Gloves
 				}),
 			}),
-		})),
+		}),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), {
 			n(SEASON_CORRUPTED, {
 				filter(BACK_F, {
 					i(172655, {sourceID = 107001 }),	-- Corrupted Gladiator's Shawl
@@ -4341,11 +4341,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate [H]
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
@@ -5382,19 +5382,19 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(181000),	-- Dread Sentinel's Spaulders
 				i(181002),	-- Dread Sentinel's Vambraces
 			}),
-		})),
+		}),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), {
 			n(MAGE_TOWER, {
 				cl(MAGE, {	-- Regalia of the Arcane Tempest set
 					i(188643),	-- Raiment of the Arcane Tempest
 				}),
 			}),
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6896 }, {
 					cl(DEATHKNIGHT, {
@@ -6259,11 +6259,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					itemsource(146348),	-- Cosmic Gladiator's Plate Wristguards
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			cl(DRUID, {
 				i(198145, {sourceID = 181499 }),	-- Copy Bracers of the druid name PH
 				i(198145, {sourceID = 181500 }),	-- Copy Bracers of the druid name PH
@@ -6370,10 +6370,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(201057),	-- Dreamfire Sabatons
 				i(201082),	-- Dreamfire Wristguards
 			}),
-		})),
+		}),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), {
 			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					cl(DEATHKNIGHT, {
@@ -7403,10 +7403,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					cl(DEATHKNIGHT, {
@@ -8163,10 +8163,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-		})),
+		}),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), {
 			filter(CLOTH, {
 				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
 				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
@@ -8223,10 +8223,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(207953, {sourceID = 189037 }),	-- Mega Dungeon Infinite Plate Pauldrons
 				i(207891, {sourceID = 188975 }),	-- Mega Dungeon Infinite Plate Vambraces
 			}),
-		})),
+		}),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), {
 			n(DREAMSURGE, bubbleDown({ bonusID = 6895 }, {
 				filter(CLOTH, {
 					i(209408),	-- Dreambound Crown
@@ -8244,10 +8244,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(209385),	-- Dreambound Mantle
 				}),
 			})),
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			n(CLASS_TRIAL, {
 				cl(DEATHKNIGHT, {
 					i(213580),	-- Heart-Lesion Helm
@@ -9540,10 +9540,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-		})),
+		}),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6_SEASON_FOUR } }, {
+		expansion(EXPANSION.DF, patch(2,6), {
 			-- Same bonus IDs and item names as from Obsidian Aspectral Earthstone in season 2.
 			header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
@@ -11327,11 +11327,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				-- Extra Head Tierpieces
 				cl(DEATHKNIGHT, {
@@ -11529,10 +11529,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(228148, {sourceID = 224324 }),	-- Warsculptor's Barbute
 				}),
 			}),
-		})),
+		}),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), {
 			header(HEADERS.Item, 226224, {	-- Luminous Nerubian Catalyst Stone
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
@@ -13055,10 +13055,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			-- #endif
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			i(225021),	-- Dragonstalker's Eternal Belt
 			i(225020),	-- Dragonstalker's Eternal Bracers
 			i(225027),	-- Dragonstalker's Eternal Breastplate
@@ -13176,10 +13176,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			i(225163),	-- Pale Rider's Eternal Pauldrons
 			i(225167),	-- Pale Rider's Eternal Sabatons
 			i(225161),	-- Pale Rider's Eternal Vambraces
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			header(HEADERS.Item, 236852, {	-- Gallagio Highroller's Boomstone
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
@@ -14735,10 +14735,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			-- #endif
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			header(HEADERS.Item, 246737, {	-- K'areshi Voidstone
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
@@ -16286,10 +16286,10 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			-- #endif
-		})),
+		}),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), {
 			filter(LEATHER, {
 				i(239820),	-- Boots of the Hunting Dream
 				i(239814),	-- Cuffs of the Hunting Dream
@@ -16340,11 +16340,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(239750),	-- Blood Knight's Plate Sabatons
 				i(239741),	-- Blood Knight's Plate Shawl
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			header(HEADERS.Item, 265071, {	-- Gleaming Sunmote
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					cl(DEATHKNIGHT, {
@@ -17954,6 +17954,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					itemsource(296478),	-- Night Ender's Breastplate
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

@@ -6,7 +6,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					i(34139, {	-- Enchanted Crimson Wand
 						sourceID = 15755,
 					}),
@@ -20,23 +20,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 						sourceID = 170100,
 					}),
 					i(44451),	-- Runed Cobalt Rod
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.3.0
-				expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
+				expansion(EXPANSION.CATA, patch(3,0), {
 					i(72070),	-- Enchant Gloves - Assault
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					i(74251),	-- Greater Mysterious Essence
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
 					i(172430),	-- Enchanting - Modified Crafting Reagent 02
 					i(172431),	-- Enchanting - Modified Crafting Reagent 03
@@ -50,58 +50,58 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
 					i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
 					i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(191422),	-- Crystal Magical Lockpick
 					i(198483),	-- jrz 10.0 enchanting test [DNT]
 					i(198677),	-- jrz test vellum quality 1 [DNT]
 					i(198678),	-- jrz test vellum quality 2 [DNT]
 					i(198679),	-- jrz test vellum quality 3 [DNT]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.1.0
-				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+				expansion(EXPANSION.TWW, patch(1,0), {
 					i(230986),	-- Nascent Gilded Undermine Crest
 					i(230985),	-- Nascent Runed Undermine Crest
 					i(230987),	-- Nascent Weathered Undermine Crest
-				})),
+				}),
 
 				-- 11.1.5
-				expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+				expansion(EXPANSION.TWW, patch(1,5), {
 					i(238679),	-- Enchant Weapon - Echoing Void
 					i(239085),	-- Enchant Weapon - Gushing Wound
 					i(239079),	-- Enchant Weapon - Infinite Stars
 					i(238404),	-- Enchant Weapon - Twilight Devastation
 					i(239089),	-- Enchant Weapon - Twisted Appendage
 					i(239094),	-- Enchant Weapon - Void Ritual
-				})),
+				}),
 
 				-- 11.2.0
-				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+				expansion(EXPANSION.TWW, patch(2,0), {
 					i(231775),	-- Nascent Gilded Ethereal Crest
 					i(231776),	-- Nascent Runed Ethereal Crest
 					i(231774),	-- Nascent Weathered Ethereal Crest
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(268032),	-- Conjured Illusory Adornment - Blooming Light
 					i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
 					i(268034),	-- Conjured Illusory Adornment - Voidtouched
 					i(243434),	-- Enchant Shoulders - Nature's Embrace
 					i(243442),	-- Enchant Shoulders - Voidtouched
 					i(243448),	-- Illusory Adornment - Blooming Light
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(279361),	-- Keen Hex Mask
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -127,16 +127,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), {
 					-- With SpellID attached
 					i(22564),	-- Formula: Arcane Dust
 					-- Without SpellID attached
 					i(22546),	-- Formula: Enchant Chest - Exceptional Mana
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					r(44612),	-- Greater Blasting
 					r(60618),	-- Runed Cobalt Rod
 					r(44497),	-- Unknown
@@ -159,50 +159,50 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(36839),	-- Formula: 04 Enchanting Recipe Template (Epic)
 					i(37326),	-- Formula: Enchant Bracer - Major Versatility
 					i(37342),	-- Formula: Enchant Gloves - Greater Blasting
-				})),
+				}),
 
 				-- 3.1.0
-				expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
+				expansion(EXPANSION.WRATH, patch(1,0), {
 					r(62257),	-- Titanguard
-				})),
+				}),
 
 				-- 3.2.0
-				expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+				expansion(EXPANSION.WRATH, patch(2,0), {
 					i(37335),	-- Formula: Enchant Cloak - Superior Agility
-				})),
+				}),
 
 				-- 3.2.2
-				expansion(EXPANSION.WRATH, patch(2,2), bubbleDownSelf({ timeline = { CREATED_3_2_2 } }, {
+				expansion(EXPANSION.WRATH, patch(2,2), {
 					-- Without SpellID attached
 					i(37348),	-- Formula: Enchant Cloak - Haste
-				})),
+				}),
 
 				-- 3.3.3
-				expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ timeline = { CREATED_3_3_3 } }, {
+				expansion(EXPANSION.WRATH, patch(3,3), {
 					-- Without SpellID attached
 					i(37346),	-- Formula: Enchant Bracer - Expertise
 					i(37343),	-- Formula: Enchant Weapon - Exceptional Agility
 					i(37329),	-- Formula: Enchant Weapon - Exceptional Versatility
-				})),
+				}),
 
 				-- 3.3.5
-				expansion(EXPANSION.WRATH, patch(3,5), bubbleDownSelf({ timeline = { CREATED_3_3_5 } }, {
+				expansion(EXPANSION.WRATH, patch(3,5), {
 					-- Without SpellID attached
 					i(37341),	-- Formula: Enchant Boots - Superior Agility
 					i(37337),	-- Formula: Enchant Bracer - Greater Stats
 					i(37336),	-- Formula: Enchant Chest - Greater Dodge
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					-- Without SpellID attached
 					i(84582),	-- Formula: Enchant Weapon - Windsong
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					r(178241),	-- Temporal Crystal
 					r(158144),	-- Unknown
 					r(158882),	-- Unknown
@@ -213,16 +213,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(158905),	-- Unknown
 					r(158912),	-- Unknown
 					r(158919),	-- Unknown
-				})),
+				}),
 
 				-- 6.1.0
-				expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ timeline = { CREATED_6_1_0 } }, {
+				expansion(EXPANSION.WOD, patch(1,0), {
 					r(181870),	-- Illusion: Holy Infusion
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					-- Without SpellID attached
 					i(128566),	-- Formula: Binding of Critical Strike [Rank 1]
 					i(128567),	-- Formula: Binding of Haste [Rank 1]
@@ -242,26 +242,26 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(128564),	-- Formula: Word of Mastery [Rank 1]
 					i(128570),	-- Formula: Word of Strength [Rank 1]
 					i(128565),	-- Formula: Word of Versatility [Rank 1]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(269720),	-- Honorable Combatant's Salutary Scepter [Rank 1]
 					r(269721),	-- Honorable Combatant's Salutary Scepter [Rank 2]
 					r(269722),	-- Honorable Combatant's Salutary Scepter [Rank 3]
 					r(265107),	-- Talanji's Salutary Scepter [Rank 1]
 					r(265108),	-- Talanji's Salutary Scepter [Rank 2]
 					r(265109),	-- Talanji's Salutary Scepter [Rank 2]
-				})),
+				}),
 
 				-- 8.1.0
-				expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+				expansion(EXPANSION.BFA, patch(1,0), {
 					r(286666),	-- Breath to Expulsom
-				})),
+				}),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					-- Without SpellID attached
 					i(168450),	-- Formula: Enchant Ring - Accord of Critical Strike
 					i(168451),	-- Formula: Enchant Ring - Accord of Haste
@@ -273,17 +273,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(168588),	-- Formula: REUSE ME [MTMM]
 					i(168590),	-- Formula: REUSE ME [MTMM]
 					i(169537),	-- Formula: REUSE ME [MTMM] (DNT)
-				})),
+				}),
 
 				-- 8.3.0
-				expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
+				expansion(EXPANSION.BFA, patch(3,0), {
 					-- Without SpellID attached
 					i(177964),	-- Formula: Enchant Weapon - Force Multiplier
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(309628),	-- 9.0 Enchanting - Modified Crafting Reagent 01
 					r(309629),	-- 9.0 Enchanting - Modified Crafting Reagent 02
 					r(309630),	-- 9.0 Enchanting - Modified Crafting Reagent 03
@@ -297,42 +297,42 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(182666),	-- Formula: Enchanted Elethium Bar
 					i(183866),	-- Formula: Crafter's Mark III
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382580),	-- Opening
 					r(391200),	-- Wisp of Tyr
 					r(383736),	-- Unknown
 					-- With SpellID attached
 					i(198779),	-- Formula: Crystal Magical Lockpick (RECIPE!)
-				})),
+				}),
 
 				-- 10.2.6
-				expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
+				expansion(EXPANSION.DF, patch(2,6), {
 					-- Without SpellID attached
 					i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
 					i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest
 					i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.2
-				expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+				expansion(EXPANSION.TWW, patch(0,2), {
 					r(455488),	-- Glimmering Haste
-				})),
+				}),
 
 				-- 11.1.0
-				expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+				expansion(EXPANSION.TWW, patch(1,0), {
 					-- Without SpellID attached
 					i(230933),	-- Formula: Enchanted Gilded Undermine Crest
 					i(230932),	-- Formula: Enchanted Runed Undermine Crest
 					i(230931),	-- Formula: Enchanted Weathered Undermine Crest
-				})),
+				}),
 
 				-- 11.1.5
-				expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+				expansion(EXPANSION.TWW, patch(1,5), {
 					r(1227288),	-- Greater Rune of Gushing Wound
 					r(1227206),	-- Greater Rune of Infinite Stars
 					r(1225873),	-- Greater Rune of the Echoing Void
@@ -346,15 +346,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
 					i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
 					i(239096),	-- Formula: Enchant Weapon - Void Ritual
-				})),
+				}),
 
 				-- 11.2.0
-				expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+				expansion(EXPANSION.TWW, patch(2,0), {
 					-- Without SpellID attached
 					i(231770),	-- Formula: Enchanted Gilded Ethereal Crest
 					i(231771),	-- Formula: Enchanted Runed Ethereal Crest
 					i(231772),	-- Formula: Enchanted Weathered Ethereal Crest
-				})),
+				}),
 			}),
 		}),
 	}),

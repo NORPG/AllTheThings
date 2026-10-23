@@ -205,7 +205,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 2.0.3
-		expansion(EXPANSION.TBC, patch(0,3), bubbleDownSelf({ timeline = { CREATED_2_0_3 } }, {
+		expansion(EXPANSION.TBC, patch(0,3), {
 			filter(MAIL, {
 				i(38388),	-- Cap of the North
 				i(38389),	-- Comfy Raccoonskin Hat
@@ -215,16 +215,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(PLATE, {
 				i(27965),	-- TEST 130 Epic Paladin DPS Chest
 			}),
-		})),
+		}),
 
 		-- 2.3.0
-		expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ timeline = { CREATED_2_3_0 } }, {
+		expansion(EXPANSION.TBC, patch(3,0), {
 			filter(FINGER_F, {
 				i(33959),	-- Ring of Ghoulish Delight
 				i(33958),	-- The Horseman's Signet Ring
 				i(33957),	-- Witches Band
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.x.x
@@ -293,7 +293,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,1), {
 			filter(CLOTH, {
 				i(37210),	-- Seafarer Cinch
 				i(37225),	-- Sweltering Sandals
@@ -319,10 +319,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(41759),	-- Shackles of Perpetual Friendship
 				i(37510),	-- Wristguards of Edification
 			}),
-		})),
+		}),
 
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), {
 			filter(CLOTH, {
 				i(43878),	-- Mantle of Unholy Power
 				i(44743),	-- Cultist Acolyte's Hood
@@ -331,10 +331,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(44391),	-- Cast Steel Choker
 				i(44392),	-- Necklace of Permeation
 			}),
-		})),
+		}),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), {
 			filter(CLOTH, {
 				i(45629),	-- Shadoweave Belt
 			}),
@@ -342,26 +342,26 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(44869),	-- Frenzyheart Insignia of Fury
 				i(44870),	-- Oracle Talisman of Ablution
 			}),
-		})),
+		}),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), {
 			filter(CLOTH, {
 				i(47103),	-- Rotting Handwraps
 			}),
-		})),
+		}),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ timeline = { CREATED_3_3_0 } }, {
+		expansion(EXPANSION.WRATH, patch(3,3), {
 			filter(NECK_F, {
 				i(49312),	-- Purified Onyxia Blood Talisman
 				i(49314),	-- Sparkling Onyxia Tooth Pendant
 			}),
-		})),
+		}),
 
 		-- 3.4.2
 		-- #if ANYCLASSIC
-		expansion(EXPANSION.WRATH, patch(4,2), bubbleDownSelf({ timeline = { CREATED_3_4_2 } }, {
+		expansion(EXPANSION.WRATH, patch(4,2), {
 			filter(BACK_F, {
 				i(206707),	-- Fleece Cloak
 				i(206728),	-- Fleece Cloak
@@ -433,7 +433,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(206747),	-- Magnataur Pauldrons
 				i(206742),	-- Magnataur Sabatons
 			}),
-		})),
+		}),
 		-- #endif
 	}),
 	expansion(EXPANSION.CATA, {
@@ -511,14 +511,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 4.0.1
-		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+		expansion(EXPANSION.CATA, patch(0,1), {
 			filter(MAIL, {
 				i(44428),	-- Dark Frostscale Chestpiece
 			}),
-		})),
+		}),
 
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), {
 			cl(ROGUE, {
 				i(54692),	-- Armor of Thero-Shan
 				i(59600),	-- Phosphora Fedora
@@ -772,10 +772,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(69785),	-- Vicious Gladiator's Symbol of Tenacity
 				i(69785),	-- Vicious Gladiator's Symbol of Tenacity
 			}),
-		})),
+		}),
 
 		-- 4.2.0
-		expansion(EXPANSION.CATA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_4_2_0 } }, {
+		expansion(EXPANSION.CATA, patch(2,0), {
 			filter(LEATHER, {
 				i(71569),	-- Flamebinder Bracers
 				i(71394),	-- Flamebinding Girdle
@@ -798,10 +798,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(70414),	-- Ruthless Gladiator's Symbol of Meditation
 				i(70413),	-- Ruthless Gladiator's Symbol of Tenacity
 			}),
-		})),
+		}),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), {
 			-- #if ANYCLASSIC
 			filter(BACK_F, {
 				i(73315),	-- Ebonsoul Cloak of Battle
@@ -952,11 +952,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(73154),	-- Ebonsoul Stone of Battle
 			}),
 			-- #endif
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), {
 			filter(BACK_F, {
 				i(79790),	-- QA Combat Test Agility DPS Cloak 3
 				i(79791),	-- QA Combat Test Healer Cloak 2
@@ -1770,10 +1770,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(83633),	-- 5.0 QA PVP Test CC Break Trinket Spirit
 				i(83634),	-- 5.0 QA PVP Test CC Break Trinket Spirit
 			}),
-		})),
+		}),
 
 		-- 5.0.3
-		expansion(EXPANSION.MOP, patch(0,3), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,3), {
 			filter(CLOTH, {
 				i(89381),	-- Art Template Cloth Belt - Cloth_Reputation_C_01 - Black
 				i(89382),	-- Art Template Cloth Boot - Cloth_Reputation_C_01 - Black
@@ -1830,10 +1830,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(89764),	-- Art Template Cloth Shoulder - Cloth_PVPMage_E_01 - Red
 				i(89765),	-- Art Template Cloth Wrist - Cloth_PVPMage_E_01 - Red
 			}),
-		})),
+		}),
 
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,4), {
 			filter(CLOTH, {
 				i(90698),	-- Art Template Cloth - Robe_CharCreate_Warlock_B_01 Hand
 				i(90699),	-- Art Template Cloth - Robe_CharCreate_Warlock_B_01 Robe
@@ -1847,10 +1847,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(90848),	-- Art Template Cloth - CharCreate_Mage_B_01 - Shoulder
 				i(90849),	-- Art Template Cloth - CharCreate_Warlock_B_01 - Shoulder
 			}),
-		})),
+		}),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), {
 			filter(CLOTH, {
 				i(91944),	-- Art Template Cloth Belt - Cloth_PVPPriest_F_01 - Alliance
 				i(91945),	-- Art Template Cloth Boot - Cloth_PVPPriest_F_01 - Alliance
@@ -1987,10 +1987,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(91333),	-- Tyrannical Gladiator's Medallion of Meditation [A]
 				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation [H]
 			}),
-		})),
+		}),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, patch(2,0), {
 			filter(CLOTH, {
 				i(93782),	-- Art Template Cloth Belt - Cloth_RaidWarlock_M_01 - Purple
 				i(93783),	-- Art Template Cloth Boot - Cloth_RaidWarlock_M_01 - Purple
@@ -2085,10 +2085,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(97084),	-- Vaultwalker Sabatons
 			}),
 			-- #endif
-		})),
+		}),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { CREATED_5_3_0 } }, {
+		expansion(EXPANSION.MOP, patch(3,0), {
 			filter(BACK_F, {
 				i(97518),	-- Dreadful Gladiator's Drape of Prowess
 				i(97836),	-- Malevolent Gladiator's Drape of Prowess
@@ -2163,10 +2163,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
 			}),
-		})),
+		}),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+		expansion(EXPANSION.MOP, patch(4,0), {
 			filter(CLOTH, {
 				i(101408),	-- Art Template Cloth Belt - RaidMage_N_01 - Blue
 				i(101409),	-- Art Template Cloth Boot - RaidMage_N_01 - Blue
@@ -2313,7 +2313,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
 				i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.x.x
@@ -2348,7 +2348,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), {
 			filter(BACK_F, {
 				i(114421),	-- Arrowleaf Longcloak
 				i(114301),	-- Axebreak Darkcloak
@@ -2614,10 +2614,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(113018),	-- 7.0 QRP Template PH Str Trinket #1
 				i(113019),	-- 7.0 QRP Template PH Str Trinket #2
 			}),
-		})),
+		}),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), {
 			filter(CLOTH, {
 				i(116001),	-- Cord of Skulls
 			}),
@@ -2652,10 +2652,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(124872),	-- Wild Gladiator's Accolade of Victory
 				i(125349),	-- Wild Gladiator's Accolade of Victory
 			}),
-		})),
+		}),
 
 		-- 6.0.3
-		expansion(EXPANSION.WOD, patch(0,3), bubbleDownSelf({ timeline = { CREATED_6_0_3 } }, {
+		expansion(EXPANSION.WOD, patch(0,3), {
 			filter(CLOTH, {
 				-- Does Not Load In Game --
 				i(120318),	-- Sol-Shaper's Sandals
@@ -2664,7 +2664,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				-- Does Not Load In Game --
 				i(107337),	-- Practice Power Bracers
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.x.x
@@ -2675,7 +2675,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			cl(ROGUE, {
 				i(130327),	-- Artful Britches
 			}),
@@ -2732,10 +2732,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(133062),	-- Demon Trophy of Insanity
 				i(131803),	-- Spine of Barax
 			}),
-		})),
+		}),
 
 		-- 7.1.0
-		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ timeline = { CREATED_7_1_0 } }, {
+		expansion(EXPANSION.LEGION, patch(1,0), {
 			filter(BACK_F, {
 				i(134693),	-- Enveloping Cape
 				i(134699),	-- Enveloping Drape
@@ -2752,17 +2752,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(138093),	-- Iron Wrought Insignia of Victory
 				i(140027),	-- Ley Spark
 			}),
-		})),
+		}),
 
 		-- 7.1.5
-		expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ timeline = { CREATED_7_1_5 } }, {
+		expansion(EXPANSION.LEGION, patch(1,5), {
 			filter(FINGER_F, {
 				i(144455),	-- Rating Min Item Level Reward
 			}),
-		})),
+		}),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), {
 			filter(LEATHER, {
 				i(147036),	-- Fel-Stippled Legguards
 			}),
@@ -2779,10 +2779,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(TABARDS, {
 				i(147204),	-- Black Apron - TEST
 			}),
-		})),
+		}),
 
 		-- 7.2.5
-		expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ timeline = { CREATED_7_2_5 } }, {
+		expansion(EXPANSION.LEGION, patch(2,5), {
 			filter(BACK_F, {
 				i(150489),	-- Shroud of Forgiveness
 				i(150714),	-- Travel-Worn Shawl
@@ -2802,10 +2802,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(188241),	-- Stalker's Treads
 				i(188238),	-- Thief's Footpads
 			}),
-		})),
+		}),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+		expansion(EXPANSION.LEGION, patch(3,0), {
 			filter(CLOTH, {
 				i(153289),	-- Eredar Priestess' Tunic
 			}),
@@ -2824,10 +2824,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(151967),	-- Electrostatic Lasso
 				i(151961),	-- Legionsteel Flywheel
 			}),
-		})),
+		}),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), {
 			filter(BACK_F, {
 				i(157751),	-- Drape of New Beginnings
 			}),
@@ -2845,7 +2845,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(157746),	-- Graven Keepsake
 				i(157747),	-- Illuminated Charm
 			}),
-		})),
+		}),
 	}),
 
 	-- TODO: Sort this /Darkal
@@ -3817,7 +3817,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		}),
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			n(WORLD_BOSSES, {
 				filter(CLOTH, {
 					itemsource(145873),	-- Sorrowful Trousers
@@ -3884,7 +3884,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				itemsource(146706),	-- Prototype Guardian Grips
 				itemsource(146707),	-- Prototype Guardian Grips
 			}),
-		})),
+		}),
 		-- TODO:
 		--- 9.0.1 ---
 		i(178768),	-- Binds of the Unwitting Servant
@@ -3896,7 +3896,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			filter(BACK_F, {
 				i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
 				i(189061),	-- 10.0 End Game Template <Descriptor> Shawl
@@ -4311,10 +4311,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			n(WAIST, {
 				i(198681, {sourceID = 181765 }),	-- Luke Test Belt [DNT]
 			}),
-		})),
+		}),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), {
 			header(HEADERS.LFGDungeon, 2390, {	-- Vault of the Incarnates
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 451 }, {
 					filter(CLOTH, {
@@ -4386,18 +4386,18 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(192460),	--
 				i(194710),	--
 			}),
-		})),
+		}),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDown({ timeline = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), {
 			filter(TRINKET_F, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
 			}),
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDown({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			header(HEADERS.LFGDungeon, 2403, {	-- Aberrus, the Shadowed Crucible
 				filter(CLOAKS, {
 					i(204087, {sourceID = 185425 }),	-- 10.1 Cloak Test Item
@@ -4481,10 +4481,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					itemsource(186534),	-- Crown of the Twin Elders
 				}),
 			}),
-		})),
+		}),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), {
 			filter(FINGER_F, {
 				i(208988),	-- Band of the Petrified Pumpkin [Hallow's End]
 				i(208991),	-- Seal of Ghoulish Glee [Hallow's End]
@@ -4495,10 +4495,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(208986, {sourceID = 190168}),	-- The Horseman's Horrific Hood [Hallow's End]
 				i(209023, {sourceID = 190172}),	-- The Horseman's Horrific Hood [Hallow's End]
 			}),
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
@@ -4821,10 +4821,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(TRINKET_F, {
 				i(211132),	-- Omni Storm
 			}),
-		})),
+		}),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ timeline = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), {
 			filter(CLOAKS, {
 				i(210525),	-- Timerunner's Cloak
 			}),
@@ -4856,10 +4856,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(208556),	-- Flicker Blossom
 				i(208553),	-- Timerunner's Chalice
 			}),
-		})),
+		}),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			filter(CLOTH, {
 				i(225064),	-- Breezebinder's Shirt
 				i(220970),	-- Mindbender Shirt
@@ -4878,11 +4878,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(PLATE, {
 				i(219904),	-- Romuul's Controllable Shoulderplate
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			-- TODO: Sort this /Darkal
 			i(211620),	-- 11.0 Dungeon Template - Plate - Feet
 			i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
@@ -5412,20 +5412,20 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(225685),	-- Relic of Sentience
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
 			}),
-		})),
+		}),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), {
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				filter(MAIL, {
 					itemsource(225006),	-- Liquified Defector's Leggings
 					itemsource(225007),	-- Liquified Defector's Leggings
 				}),
 			}),
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			filter(CLOTH, {
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
@@ -5484,20 +5484,20 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(232269),	-- Creche-Guard's Girdle
 				i(232270),	-- Creche-Guard's Pauldrons
 			}),
-		})),
+		}),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), {
 			filter(BACK_F, {
 				i(231751),	-- Earthen Backpack
 			}),
 			filter(FINGER_F, {
 				i(228526),	-- Cyrce's Circlet
 			}),
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			filter(CLOTH, {
 				i(235720, {sourceID = 267067 }),	-- Guardian Serpent Cowl
 				i(235736, {sourceID = 267083 }),	-- Guardian Serpent Crown
@@ -5763,18 +5763,18 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				})),
 			}),
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			i(232352, {sourceID = 230225}),	-- Ashjra'kamas, Shroud of Resolve
 			i(232352, {sourceID = 230226}),	-- Ashjra'kamas, Shroud of Resolve
 			i(232352, {sourceID = 230227}),	-- Ashjra'kamas, Shroud of Resolve
 			i(238934),	-- Boots of the Darkwalker
-		})),
+		}),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), {
 			filter(CLOTH, {
 				i(239023, {modID = 2}),	-- Amice of the Returned
 				i(239023, {modID = 23}),	-- Amice of the Returned
@@ -5854,10 +5854,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(TRINKET_F, {
 				i(242743),	-- Durable Information Securing Container
 			}),
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			filter(LEATHER, {
 				i(241240),	-- Type II Bomber Jacket
 				i(241240, {modID = 23 }),	-- Type II Bomber Jacket
@@ -6147,10 +6147,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				})),
 			}),
-		})),
+		}),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), {
 			header(HEADERS.LFGDungeon, 2831, {	-- The Emerald Nightmare
 				d(DIFFICULTY.RAID.LFR, {
 					filter(MAIL, {
@@ -6339,16 +6339,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(235915),	-- Highmountain Hide Cap
 				itemsource(290211),	-- The First Satyr's Spaulders
 			}),
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			i(254332),	-- Garden Tender's Shawl
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			header(HEADERS.LFGDungeon, 3095, {	-- March on Quel'Danas
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
@@ -6698,7 +6698,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
-			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+			expansion(EXPANSION.WOD, {
 				itemsource(301480),	-- Legwraps of Swirling Light
 				itemsource(301483),	-- Rigid Scale Greatcloak
 				itemsource(301486),	-- Sharpeye Chestguard
@@ -6713,7 +6713,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				itemsource(301513),	-- Sharpeye Gleam
 				itemsource(301516),	-- Bloodfeather Chestguard
 				itemsource(301519),	-- Spaulders of Scorching Ray
-			})),
+			}),
 			filter(BACK_F, {
 				i(249566),	-- [PH] 12.0 Delves - Level-Up - Accessory - Cloth CLOAK - HC
 				i(249570),	-- [PH] 12.0 Delves - Level-Up - Accessory - Leather CLOAK - CM
@@ -6803,10 +6803,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(251886),	-- Unstable Mana-Locket
 				i(262754),	-- Void Pearl of Haste
 			}),
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			header(HEADERS.LFGDungeon, 3094, {	-- The Voidspire
 				filter(BACK_F, {
 					itemsource(307647),	-- Draconic Nullcape
@@ -6834,10 +6834,10 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			filter(TRINKET_F, {
 				i(268534),	-- Sanctum's Decree
 			}),
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			header(HEADERS.LFGDungeon, 3214, {	-- Sporefall
 				d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 					filter(CLOTH, {
@@ -6943,7 +6943,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			}),
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+			expansion(EXPANSION.WOD, sharedData({ timeline = { CREATED_12_0_5 } }, {
 				itemsource(64383),	-- Belt of Singing Hooves
 				itemsource(64882),	-- Bonebreaker Boots
 				itemsource(64389),	-- Chain of Natural Fury
@@ -7121,6 +7121,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(276791, {bonusID = 6896 }),	-- Tala'saan's Training Belt
 				i(276791, {bonusID = 6897 }),	-- Tala'saan's Training Belt
 			}),
-		})),
+		}),
 	}),
 }));

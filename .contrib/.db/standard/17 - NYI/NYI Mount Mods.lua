@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			-- With QuestID attached
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw (MM!)
 			i(192523),	-- Renewed Proto-Drake: Green Scales (MM!)
@@ -29,23 +29,23 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 			i(194834),	-- Windborne Velocidrake Manuscript: Windswept (MM!)
 			-- Only QuestID
 			q(69556),	-- Renewed Proto-Drake: Finned Back (MM!)
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			i(203319),	-- Winding Slitherdrake: Finned Cheek (MM!)
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor (MM!)
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor (MM!)
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales (MM!)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			i(232980),	-- Axel Sneakfoot (MM!)
 			i(232979),	-- Jaks Jabberjaw (MM!)
 			i(232978),	-- Louie Firehands (MM!)
@@ -54,7 +54,7 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 			i(235696),	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
 			-- #endif
 			i(235693),	-- Delver's Dirigible Schematic: Rocket (MM!)
-		})),
+		}),
 	}),
 }));
 -- #endif

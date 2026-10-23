@@ -4,7 +4,7 @@
 root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			-- Some of these need to be created using the itemsource shortcut for the correct tooltip.
 			cl(DEMONHUNTER, {
 				cl(DEMONHUNTER, HAVOC, {
@@ -211,11 +211,11 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(77818),	-- Odyn's Fury
 				}),
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), {
 			-- In Legion Remix, Blizzard duplicated all artifact weapons with new itemIDs and sourceIDs.
 			-- None of them (except for the base weapon) are obtainable during the Legion Remix event.
 			-- They need to be created using the itemsource shortcut for the correct tooltip.
@@ -1723,6 +1723,6 @@ root(ROOTS.NeverImplemented, n(ARTIFACTS, {
 					itemsource(287004),	-- Scaleshard
 				}),
 			}),
-		})),
+		}),
 	}),
 }));

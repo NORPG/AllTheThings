@@ -7,16 +7,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(174992),	-- Cypher of Extrication
 					i(170463),	-- Jailer's Tower Key
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(317751),	-- Adamantine Cypher
 					r(317802),	-- Critical Damage
 					r(317852),	-- Critical Healing
@@ -43,7 +43,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(335278),	-- The Maw - Travel Upgrade - NYI
 					r(335286),	-- The Maw - Torghast Unlock - NYI
 					r(317797),	-- Versatility
-				})),
+				}),
 			}),
 		}),
 	}),

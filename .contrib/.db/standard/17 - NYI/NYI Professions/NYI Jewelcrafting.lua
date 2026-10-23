@@ -6,7 +6,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.TBC, {
 				-- 2.0.5
-				expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ timeline = { CREATED_2_0_5 } }, {
+				expansion(EXPANSION.TBC, patch(0,5), {
 					i(21793),	-- Arcanite Sword Pendant
 					i(21780),	-- Blood Crown
 					i(20952),	-- Cut Agate
@@ -23,51 +23,51 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(21772),	-- Cut Sapphire
 					i(20822),	-- Cut Tigerseye
 					i(20956),	-- Silver Rose Pendant
-				})),
+				}),
 				-- 2.1.3
-				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ timeline = { CREATED_2_1_3 } }, {
+				expansion(EXPANSION.TBC, patch(1,3), {
 					i(25884),	-- Primal Stone Statue
-				})),
+				}),
 
 				-- 2.2.0
-				expansion(EXPANSION.TBC, patch(2,0), bubbleDownSelf({ timeline = { CREATED_2_2_0 } }, {
+				expansion(EXPANSION.TBC, patch(2,0), {
 					i(27774),	-- zzOLDMighty Blood Garnet
 					i(27811),	-- zzOLDMighty Blood Garnet
 
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					i(37430),	-- Solid Sky Sapphire
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					i(52107),	-- Resolute Hessonite
 					i(52150),	-- Perfect Resolute Hessonite
 					i(52092),	-- Mystic Alicite
 					i(52165),	-- Perfect Mystic Alicite
 					i(52488),	-- Jeweler's Sapphire Monocle
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), {
 					i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
 					i(93599),	-- Crafted Dreadful Gladiator's Slasher
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					i(159938),	-- Honorable Combatant's Staff of Alacrity
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(173120),	-- 9.x Cut Rare
 					i(173118),	-- 9.x Cut Rare
 					i(173119),	-- 9.x Cut Rare
@@ -79,39 +79,39 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(173165),	-- [DNT] REUSE ME
 					i(173166),	-- [DNT] REUSE ME
 					i(173167),	-- [DNT] REUSE ME
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(191629),	-- 10.0 Jewelcrafting Gem Template (DNT)
 					i(193034),	-- Ludicrously Luxurious Lucky Loop
 					i(194112),	-- Straddling Illimited Diamond
 					i(194113),	-- Straddling Illimited Diamond
 					i(194114),	-- Straddling Illimited Diamond
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(215139),	-- Copy Copy Elemental Lariat
 					i(215143),	-- Copy Copy Elemental Lariat
 					i(215146),	-- JC Gemcutting Toy
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(279376),	-- Opalescent Amani Peridot
 					i(279367),	-- Piercing Amani Lapis
 					i(279370),	-- Roaring Amani Garnet
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.TBC, {
 				-- 2.0.5
-				expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ timeline = { CREATED_2_0_5 } }, {
+				expansion(EXPANSION.TBC, patch(0,5), {
 					-- With SpellID attached
 					i(21958),	-- Design: Arcanite Sword Pendant
 					i(21959),	-- Design: Blood Crown
@@ -119,16 +119,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(21950),	-- Design: Cut Emerald - Deprecated
 					i(20972),	-- Design: Silver Rose Pendant
 
-				})),
+				}),
 
 				-- 2.1.3
-				expansion(EXPANSION.TBC, patch(1,3), bubbleDownSelf({ timeline = { CREATED_2_1_3 } }, {
+				expansion(EXPANSION.TBC, patch(1,3), {
 					-- With SpellID attached
 					i(25888),	-- Design: Primal Stone Statue
-				})),
+				}),
 
 				-- 2.4.0
-				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
+				expansion(EXPANSION.TBC, patch(4,0), {
 					-- Without SpellID attached
 					i(35533),	-- Design: Amulet of Flowing Life
 					i(35534),	-- Design: Hard Khorium Band
@@ -136,11 +136,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(35536),	-- Design: Loop of Forged Power
 					i(35537),	-- Design: Pendant of Sunfire
 					i(35538),	-- Design: Ring of Flowing Life
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					-- Without SpellID attached
 					i(41408),	-- ZZOLD Design: Austere Earthsiege Diamond
 					i(41412),	-- ZZOLD Design: Beaming Earthsiege Diamond
@@ -163,11 +163,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(41415),	-- ZZOLD Design: Tireless Skyflare Diamond
 					i(41410),	-- ZZOLD Design: Trenchant Earthsiege Diamond
 					i(41423),	-- ZZOLDDesign: Thundering Skyflare Diamond
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					r(73233),	-- Mystic Alicite
 					r(73259),	-- Resolute Hessonite
 					-- With SpellID attached
@@ -199,11 +199,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(41421),	-- ZZOLD Design: Enigmatic Skyflare Diamond
 					i(41422),	-- ZZOLD Design: Swift Skyflare Diamond
 					i(41423),	-- ZZOLDDesign: Thundering Skyflare Diamond
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					-- Without SpellID attached
 					i(116087),	-- Design: Glowing Blackrock Band
 					i(116081),	-- Design: Glowing Iron Band
@@ -216,29 +216,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(116083),	-- Design: Whispering Iron Band
 					i(116086),	-- Design: Whispering Iron Choker
 					i(120131),	-- Recipe: Secrets of Draenor Jewelcrafting
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					-- Without SpellID attached
 					i(137800),	-- Design: Dawnlight Band [Rank 1]
 					i(137799),	-- Design: Maelstrom Band [Rank 1]
 					i(141311),	-- Design: Mass Prospect Leystone
 					i(137798),	-- Design: Prophetic Band [Rank 1]
-				})),
+				}),
 
 				-- 7.3.0
-				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+				expansion(EXPANSION.LEGION, patch(3,0), {
 					i(151736),	-- Design: Deadly Deep Chemirine
 					i(151737),	-- Design: Quick Lightsphene
 					i(151738),	-- Design: Masterful Argulite
 					i(151739),	-- Design: Versatile Labradorite
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(269731),	-- Honorable Combatant's Staff of Alacrity [Rank 1]
 					r(256612),	-- Mass Prospect Monelite
 					r(256623),	-- Mass Prospect Platinum
@@ -246,10 +246,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- With SpellID attached
 					i(162383),	-- Design: Honorable Combatant's Staff of Alacrity [Rank 2]
 					i(162384),	-- Design: Honorable Combatant's Staff of Alacrity [Rank 3]
-				})),
+				}),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					r(301993),	-- Prospecting
 					r(301994),	-- Prospecting
 					r(302706),	-- Prospecting
@@ -258,11 +258,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(302710),	-- Prospecting
 					r(302711),	-- Prospecting
 					r(302712),	-- Prospecting
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(311931),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 01
 					r(311933),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 02
 					r(311934),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 03
@@ -271,11 +271,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(311937),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 06
 					r(311938),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 07
 					r(311939),	-- 9.0 Jewelcrafting - Modified Crafting Reagent 08
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382584),	-- Opening (RECIPE!)
 					r(391784),	-- Wisp of Tyr (RECIPE!)
 					-- With SpellID attached
@@ -332,29 +332,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194607),	-- Design: Zen Malygite (RECIPE!)
 					i(194597),	-- Design: Zen Mystic Sapphire (RECIPE!)
 					i(194615),	-- Design: Zen Neltharite (RECIPE!)
-				})),
+				}),
 
 				-- 10.0.7
-				expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), {
 					-- With SpellID attached
 					i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
-				})),
+				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					r(412557),	-- TEST CRUSHING (DNT) (RECIPE!)
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(435335),	-- Apply Socket (RECIPE!)
 					-- With SpellID attached
 					i(225431),	-- Design: Vicious Jeweler's Setting (RECIPE!)
 					-- Without SpellID attached
 					i(223083),	-- Design: Elemental Focusing Lens (RECIPE!)
 					i(223084),	-- Design: Prismatic Null Stone (RECIPE!)
-				})),
+				}),
 			}),
 		}),
 	}),

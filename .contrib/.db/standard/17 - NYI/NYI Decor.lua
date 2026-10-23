@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(DECOR, {
 	expansion(EXPANSION.TWW, {
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			i(238862),	-- [DNT] Cenarion Round Rug - do not use - new asset (DECOR!)
 			i(248941),	-- [DNT] Dreadscar Battle Planning Map - do not use - new asset (DECOR!)
 			i(247743),	-- [DNT] Hanging Paper Lanterns - do not use - duplicate (DECOR!)
@@ -232,11 +232,11 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(15742),	-- [DNT] [AUTOGEN] 12PH_Leg_7NE_Nightelf_Chair03.M2 \\ [DNT] 12PH_Leg_7NE_Nightelf_Chair03.M2 (DECOR!)
 			rawdecor(16091),	-- [DNT] 12PH_Leg_PA_innBench_01.M2 (DECOR!)
 			rawdecor(16221),	-- [DNT] 12PH_Leg_7NE_Druid_StoneRune01.M2 (DECOR!)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			i(264270),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Ritual_Tome_Bloodknight01_Open.m2 (DECOR!)
 			i(259217),	-- Ambient Aethercharged Crystal (DECOR!)
 			i(250869),	-- Crimson Crystal Core (DECOR!)
@@ -592,10 +592,10 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(19011),	-- [DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2 - duplicate do not use \\ [DNT] [AUTOGEN] 12PH_Leg_7SR_SteppingStone_B01.M2
 			rawdecor(19200),	-- [DNT] [AUTOGEN] 12BE_BloodElf_Navigation_SecretDoor03.M2
 			rawdecor(20172),	-- [DNT] [AUTOGEN] 12PH_Shop_Spring_CherryBlossom_HangingLight01.m2
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			i(259354),	-- Brown Paper Sack (DECOR!)
 			i(265031),	-- Consortium Translocation Portal (DECOR!)
 			i(253497),	-- Embroidered Sunfury Chair (DECOR!)
@@ -607,10 +607,10 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			--
 			rawdecor(20162),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril07.m2
 			rawdecor(20163),	-- [DNT] [AUTOGEN] 12SN_Snakeoid_Decor_Tendril08.m2
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			i(245301),	-- Algari Lettuce Plant (DECOR!)
 			i(271163),	-- Blazing Guardian's Rug (DECOR!)
 			i(271173),	-- Blazing Guardian's Table (DECOR!)
@@ -893,7 +893,7 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(21944),	-- [DNT] [AUTOGEN] 10XP_Generic_Decor_HeadMounted_Tiger01.m2
 			rawdecor(21947),	-- [DNT] [AUTOGEN] 12PH_Shop_VenthyrDecor_Organ01.M2
 			rawdecor(21948),	-- [DNT] [AUTOGEN] 12PH_Shop_VenthyrDecor_Throne01.M2
-		})),
+		}),
 	}),
 }));
 -- #endif

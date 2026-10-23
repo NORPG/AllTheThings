@@ -9,31 +9,31 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(ARMOR, {
 		expansion(EXPANSION.CATA, {
 			-- 4.0.3
-			expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { ADDED_4_0_3 } }, {
+			expansion(EXPANSION.CATA, patch(0,3), {
 				i(53363),	-- Circle of Suffering
 				i(53365),	-- Empowered Hands
 				i(53376),	-- Lockpicker's Glovelettes
 				i(57529),	-- Fur-Lined Slippers
 				i(57533),	-- Dwarven Iron Bracer
-			})),
+			}),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.2.0
-			expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
+			expansion(EXPANSION.WOD, patch(2,0), {
 				i(127103),	-- Gladiator's Plate Shoulders
-			})),
+			}),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+			expansion(EXPANSION.LEGION, patch(0,3), {
 				i(131203),	-- Chain Link Winter Bracers
 				i(131848),	-- Beast Tracker's Bracers
 				i(131854),	-- Rockbitten Gloves
-			})),
+			}),
 		}),
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
-			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), {
 
 				-- Drustvar items = Nazmir quest rewards
 				filter(CLOTH, {
@@ -244,56 +244,56 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(161235),	-- Rastari Chestplate
 					i(161254),	-- Rastari Pants
 				}),
-			})),
+			}),
 		}),
 	}),
 	f(MISC, {
 		expansion(EXPANSION.DF, {
 			-- 10.1.7
-			expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+			expansion(EXPANSION.DF, patch(1,7), {
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
-			})),
+			}),
 		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.2
-			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+			expansion(EXPANSION.TWW, patch(0,2), {
 				i(228580),	-- Brute Force Idol
-			})),
+			}),
 		}),
 	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
 			-- 10.2.0
-			expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			expansion(EXPANSION.DF, patch(2,0), {
 				i(207775),	-- Grotto Netherwing Drake: Teal Scales (MM!)
-			})),
+			}),
 		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.0
-			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_11_0_0 } }, {
+			expansion(EXPANSION.TWW, patch(0,0,1), {
 				i(223510),	-- Delver's Dirigible Schematic: Template (MM!)
-			})),
+			}),
 		}),
 	}),
 	n(FOLLOWERS, {
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
+			expansion(EXPANSION.SL, patch(0,1), {
 				follower(1208),	-- Nadjia the Mistblade
-			})),
+			}),
 		}),
 	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), {
 				i(118186),	-- Frostwolf Wisdom Stick
 				i(107644),	-- Napmaster's Sleep Mask
-			})),
+			}),
 		}),
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkaldd
 			-- 8.0.1
-			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), {
 				-- Drustvar items = Nazmir quest rewards
 				-- i(161296),	-- Autumnvale Hunting Rifle
 
@@ -366,7 +366,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(166887),	-- Pakura Priest Staff
 				i(158568),	-- Mojo-Drainer Staff
 				i(158580),	-- Loa-Claimer's Wariglaives
-			})),
+			}),
 		}),
 	}),
 	n(QUESTS, {	-- These are or were completable. Most of these are HQTs.
@@ -382,76 +382,76 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.MOP, {
 			-- 5.0.4
-			expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+			expansion(EXPANSION.MOP, patch(0,4), {
 				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
-			})),
+			}),
 
 			-- 5.3.0
-			expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {
+			expansion(EXPANSION.MOP, patch(3,0), {
 				q(32832),	-- Taran Zhu and Dezco Scene
-			})),
+			}),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), {
 				q(33957, {	-- A Gift for Raa'la
 					description = "Area: |cFFf09f26Frostfire Ridge|r",
 					lvl = 10,
 				}),
 				q(36903),	-- Ogre Waygate
-			})),
+			}),
 
 			-- 6.1.0
-			expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ timeline = { ADDED_6_1_0 } }, {
+			expansion(EXPANSION.WOD, patch(1,0), {
 				q(37805),	-- Goblin Looted
-			})),
+			}),
 
 			-- 6.2.0
-			expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
+			expansion(EXPANSION.WOD, patch(2,0), {
 				q(39497),	-- Ogre Waygate
-			})),
+			}),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+			expansion(EXPANSION.LEGION, patch(0,3), {
 				q(39842),	-- One Mage's Trash
 				q(39843),	-- The Muck Stops Here
 				q(42480),	-- Assn Rogue - Flavor Event 02 (Alliance)
 				q(42482, { name = "Assn Rogue - Flavor Event 03", }),	-- Assn Rogue - Flavor Event 03 [Obtained in Stormheim]
-			})),
+			}),
 
 			-- 7.1.0
-			expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
+			expansion(EXPANSION.LEGION, patch(1,0), {
 				q(45184),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest
 				q(45183),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest
 				q(45181),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
-			})),
+			}),
 
 			-- 7.3.0
-			expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { ADDED_7_3_0 } }, {
+			expansion(EXPANSION.LEGION, patch(3,0), {
 				q(49163),	--
-			})),
+			}),
 
 			-- 7.3.2
-			expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ timeline = { ADDED_7_3_2 } }, {
+			expansion(EXPANSION.LEGION, patch(3,2), {
 				q(49619),	-- completed Scour the Surface mission
 				q(49620),	-- completed some missions on the Legion Mission Board
 				q(49621),	--
-			})),
+			}),
 
 			-- 7.3.5
-			expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {
+			expansion(EXPANSION.LEGION, patch(3,5), {
 				q(47957),	--
 				q(47958),	--
 				q(48602),	--
 				q(48603),	--
 				q(49815),	--
 				q(50312),	--
-			})),
+			}),
 		}),
 		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), {
 				q(50668, {
 					description = "Area: |cFFf09f26Orgrimmar|r",
 					races = HORDE_ONLY,
@@ -461,10 +461,10 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(51692),	--
 				q(53550),	-- A Change in Leadership
 				q(53650),	--
-			})),
+			}),
 
 			-- 8.1.0
-			expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+			expansion(EXPANSION.BFA, patch(1,0), {
 				q(53723),	--
 				q(54215),	--
 				q(54216),	--
@@ -476,20 +476,20 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(54222),	--
 				q(54223),	--
 				q(54860),	--
-			})),
+			}),
 
 			-- 8.1.5
-			expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
+			expansion(EXPANSION.BFA, patch(1,5), {
 				q(55023, {	-- Bizmo's Brawlpub Awaits!
 					description = "Category: |cFFf09f26Brawler's Guild|r",
 					races = ALLIANCE_ONLY,
 					lvl = 60,
 				}),
 				q(55238),	--
-			})),
+			}),
 
 			-- 8.2.0
-			expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
+			expansion(EXPANSION.BFA, patch(2,0), {
 				q(55660, { name = "Time Trials", _drop = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
 				q(54966),	--
 				q(54967),	--
@@ -511,10 +511,10 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(56898),	-- In Nazjatar
 				q(57193),	--
 				q(57408),	--
-			})),
+			}),
 
 			-- 8.2.5
-			expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {
+			expansion(EXPANSION.BFA, patch(2,5), {
 				q(57550),	--
 				q(57640, {	-- Master Ryson's All Seeing Eye
 					description = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
@@ -522,19 +522,19 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					maps = 1537,	-- Alterac Valley
 					lvl = 10,
 				}),
-			})),
+			}),
 
 			-- 8.3.0
-			expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
+			expansion(EXPANSION.BFA, patch(3,0), {
 				q(58576),	--
 				q(59038),	--
 				q(59040),	--
 				q(55614),	-- Tracking Quest
-			})),
+			}),
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
+			expansion(EXPANSION.SL, patch(0,1), {
 				q(62684),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 				q(56067),	--
 				q(56068),	--
@@ -547,16 +547,16 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62687),	--
 				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 				q(60693),	-- After q(59781), in Maldraxxus
-			})),
+			}),
 
 			-- 9.0.2
-			expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { ADDED_9_0_2 } }, {
+			expansion(EXPANSION.SL, patch(0,2), {
 				q(57537),	-- Covering our Tracks
 				q(63219),	-- Happened after picking the skip when arriving in Stormwind after completing Exile's Reach
-			})),
+			}),
 
 			-- 9.1.0
-			expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+			expansion(EXPANSION.SL, patch(1,0), {
 				q(64110),	--
 				q(64115),	--
 				q(64116),	-- Obtained in The Maw
@@ -566,130 +566,130 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(64192),	--
 				q(64369),	--
 				q(64516),	--
-			})),
+			}),
 
 			-- 9.1.5
-			expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { ADDED_9_1_5 } }, {
+			expansion(EXPANSION.SL, patch(1,5), {
 				q(64975),	--
-			})),
+			}),
 		}),
 		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,0,1), {
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
 				q(71054),	--
-			})),
+			}),
 
 			-- 10.0.2
-			expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { ADDED_10_0_2 } }, {
+			expansion(EXPANSION.DF, patch(0,2), {
 				q(72379),	--
 				q(72370),	-- "riding the airship to the dragon isles for the intro quest."
 				q(74047),	--
 				q(74064),	--
-			})),
+			}),
 
 			-- 10.0.5
-			expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+			expansion(EXPANSION.DF, patch(0,5), {
 				q(74897),	-- L70 Human Hunter Achieved Duelist and Clock Mog 2023-03-15
 				-- q(76157),	--
-			})),
+			}),
 
 			-- 10.1.0
-			expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
+			expansion(EXPANSION.DF, patch(1,0), {
 				q(75443),	-- Flag Tracking Quest (spellID 431951)
 				q(75774),	-- completed researchers under fire?
-			})),
+			}),
 
 			-- 10.1.5
-			expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+			expansion(EXPANSION.DF, patch(1,5), {
 				q(76267),	--
-			})),
+			}),
 
 			-- 10.1.7
-			expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+			expansion(EXPANSION.DF, patch(1,7), {
 				q(78300),	--
-			})),
+			}),
 
 			-- 10.2.0
-			expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
+			expansion(EXPANSION.DF, patch(2,0), {
 				q(78253),	--
 				q(78737),	--
-			})),
+			}),
 
 			-- 10.2.5
-			expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
+			expansion(EXPANSION.DF, patch(2,5), {
 				q(78976),	--
 				q(79353),	--
-			})),
+			}),
 
 			-- 10.2.6
-			expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
+			expansion(EXPANSION.DF, patch(2,6), {
 				q(79988),	--
-			})),
+			}),
 
 			-- 10.2.7
-			expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {
+			expansion(EXPANSION.DF, patch(2,7), {
 				q(81957, {isYearly=true}),	-- Completed in Blackrock Depths
-			})),
+			}),
 
 		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.0
-			expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_11_0_0 } }, {
+			expansion(EXPANSION.TWW, patch(0,0,1), {
 				q(79187),	-- Looting "Blueprint Bundle" in Hallowfall, 2 Radiant Remnants
 				q(81466),	-- Obtained in Valdrakken
 				q(81696),	-- Report to the Trading Post (D)
 				q(83214),	-- Obtained in Hallowfall
 				q(83034),	-- Obtained in Hallowfall
-			})),
+			}),
 
 			-- 11.0.2
-			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+			expansion(EXPANSION.TWW, patch(0,2), {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
 				q(84584),	-- rappelling anchor in ringing deeps
-			})),
+			}),
 
 			-- 11.0.5
-			expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+			expansion(EXPANSION.TWW, patch(0,5), {
 				q(84611, {isRepeatable = true}),	-- bonus quest in Hallowfall after "Rise of the Colossals", Marked as repeatable because of Inaccurate Unflagged Quests report
-			})),
+			}),
 
 			-- 11.0.7
-			expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
+			expansion(EXPANSION.TWW, patch(0,7), {
 				q(86230),	-- Plunderstore related
 				q(86237),	-- Plunderstore related
 				q(86238),	-- Plunderstore related
 				q(86239),	-- Plunderstore related
-			})),
+			}),
 
 			-- 11.1.7
-			expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { ADDED_11_1_7 } }, {
+			expansion(EXPANSION.TWW, patch(1,7), {
 				q(87560),	-- Exile's Reach + Chromie Time related
 				q(91029),	--
-			})),
+			}),
 
 			-- 11.2.0
-			expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { ADDED_11_2_0 } }, {
+			expansion(EXPANSION.TWW, patch(2,0), {
 				q(92487),	-- opened a Pinnacle Cache
 				q(92813),	--
-			})),
+			}),
 
 			-- 11.2.5
-			expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { ADDED_11_2_5 } }, {
+			expansion(EXPANSION.TWW, patch(2,5), {
 				q(93516),	--
-			})),
+			}),
 
 			-- 11.2.7
-			expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+			expansion(EXPANSION.TWW, patch(2,7), {
 				q(84833),	-- Obtained in The Waking Shores
-			})),
+			}),
 		}),
 		expansion(EXPANSION.MID, {
 			-- 12.0.0
-			expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
+			expansion(EXPANSION.MID, patch(0,0,1), {
 				q(94747),	--
-			})),
+			}),
 		}),
 	}),
 }));

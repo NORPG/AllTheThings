@@ -7,16 +7,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.BFA, {
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					i(168221),	-- Encrypted Radio Receiver
 					i(137225),	-- Thunderfury, Blessed Blade of the Windseeker
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.BFA, {
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					r(296386),	-- Encrypted Radio Receiver
 					r(296388),	-- Disposable Radio
 					r(300465),	-- Pocket-Sized Computation Device
@@ -31,7 +31,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(300288),	-- TK42[DNT]
 					r(300289),	-- TK43[DNT]
 					r(300290),	-- TK44[DNT]
-				})),
+				}),
 			}),
 		}),
 	}),

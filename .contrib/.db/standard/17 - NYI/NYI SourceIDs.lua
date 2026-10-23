@@ -398,7 +398,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 	-- #endif
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			i(146954, {sourceID = 86054 }),	-- Unknown Name [NYI]
 			i(151026, {sourceID = 89243 }),	-- Unknown Name [NYI]
 			i(151334, {sourceID = 89383 }),	-- Unknown Name [NYI]
@@ -1044,10 +1044,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(164619, {sourceID = 100807 }),	-- Unknown Name [NYI]
 			i(164620, {sourceID = 100808 }),	-- Unknown Name [NYI]
 			i(164621, {sourceID = 100809 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			i(164722, {sourceID = 100887 }),	-- Unknown Name [NYI]
 			i(164723, {sourceID = 100888 }),	-- Unknown Name [NYI]
 			i(164724, {sourceID = 100889 }),	-- Unknown Name [NYI]
@@ -1506,10 +1506,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(166996, {sourceID = 103244 }),	-- Unknown Name [NYI]
 			i(166997, {sourceID = 103245 }),	-- Unknown Name [NYI]
 			i(166998, {sourceID = 103246 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), {
 			i(164720, {sourceID = 100886 }),	-- Unknown Name [NYI]
 			i(164920, {sourceID = 101170 }),	-- Unknown Name [NYI]
 			i(164945, {sourceID = 101177 }),	-- Unknown Name [NYI]
@@ -1529,10 +1529,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(168259, {sourceID = 104331 }),	-- Unknown Name [NYI]
 			i(104310, {sourceID = 104338 }),	-- Unknown Name [NYI]
 			i(168279, {sourceID = 104339 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			i(164728, {sourceID = 100892 }),	-- Unknown Name [NYI]
 			i(164729, {sourceID = 100893 }),	-- Unknown Name [NYI]
 			i(164730, {sourceID = 100894 }),	-- Unknown Name [NYI]
@@ -1653,20 +1653,20 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(170495, {sourceID = 105565 }),	-- Unknown Name [NYI]
 			i(170496, {sourceID = 105566 }),	-- Unknown Name [NYI]
 			i(170504, {sourceID = 105568 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ timeline = { CREATED_8_2_5 } }, {
+		expansion(EXPANSION.BFA, patch(2,5), {
 			i(171193, {sourceID = 105927 }),	-- Unknown Name [NYI]
 			i(171194, {sourceID = 105928 }),	-- Unknown Name [NYI]
 			i(171216, {sourceID = 105929 }),	-- Unknown Name [NYI]
 			i(172372, {sourceID = 106575 }),	-- Unknown Name [NYI]
 			i(172420, {sourceID = 106606 }),	-- Unknown Name [NYI]
 			i(171950, {sourceID = 106462 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), {
 			i(169863, {sourceID = 105257 }),	-- Unknown Name [NYI]
 			i(169938, {sourceID = 105314 }),	-- Unknown Name [NYI]
 			i(172071, {sourceID = 106486 }),	-- Unknown Name [NYI]
@@ -1680,11 +1680,11 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(174833, {sourceID = 108782 }),	-- Unknown Name [NYI]
 			i(174834, {sourceID = 108783 }),	-- Unknown Name [NYI]
 			i(174990, {sourceID = 108795 }),	-- Unknown Name [NYI]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			i(167224, {sourceID = 103342 }),	-- Unknown Name [NYI]
 			i(169776, {sourceID = 105229 }),	-- Unknown Name [NYI]
 			i(169777, {sourceID = 105230 }),	-- Unknown Name [NYI]
@@ -2518,10 +2518,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(184010, {sourceID = 115098 }),	-- Unknown Name [NYI]
 			i(184011, {sourceID = 115099 }),	-- Unknown Name [NYI]
 			i(184012, {sourceID = 115100 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), {
 			i(184319, {sourceID = 115629 }),	-- Unknown Name [NYI]
 			i(184364, {sourceID = 115654 }),	-- Unknown Name [NYI]
 			i(184366, {sourceID = 115656 }),	-- Unknown Name [NYI]
@@ -2530,10 +2530,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(184521, {sourceID = 115678 }),	-- Unknown Name [NYI]
 			i(184623, {sourceID = 115777 }),	-- Unknown Name [NYI]
 			i(184629, {sourceID = 115778 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { CREATED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), {
 			i(184846, {sourceID = 115895 }),	-- Unknown Name [NYI]
 			i(184847, {sourceID = 115896 }),	-- Unknown Name [NYI]
 			i(184848, {sourceID = 115897 }),	-- Unknown Name [NYI]
@@ -2553,10 +2553,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(184862, {sourceID = 115911 }),	-- Unknown Name [NYI]
 			i(185744, {sourceID = 116653 }),	-- Unknown Name [NYI]
 			i(185745, {sourceID = 116654 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			i(183938, {sourceID = 115042 }),	-- Unknown Name [NYI]
 			i(184570, {sourceID = 115748 }),	-- Unknown Name [NYI]
 			i(184571, {sourceID = 115749 }),	-- Unknown Name [NYI]
@@ -2769,15 +2769,15 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(187273, {sourceID = 146597 }),	-- Unknown Name [NYI]
 			i(187279, {sourceID = 146598 }),	-- Unknown Name [NYI]
 			i(187510, {sourceID = 146693 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), {
 			i(187857, {sourceID = 165374 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			i(185486, {sourceID = 116493 }),	-- Unknown Name [NYI]
 			i(185488, {sourceID = 116494 }),	-- Unknown Name [NYI]
 			i(185489, {sourceID = 116495 }),	-- Unknown Name [NYI]
@@ -3001,19 +3001,19 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(190123, {sourceID = 168270 }),	-- Unknown Name [NYI]
 			i(190185, {sourceID = 168310 }),	-- Unknown Name [NYI]
 			i(190393, {sourceID = 168503 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ timeline = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, patch(2,5), {
 			i(184919, {sourceID = 115924 }),	-- Unknown Name [NYI]
 			i(184920, {sourceID = 115925 }),	-- Unknown Name [NYI]
 			i(184921, {sourceID = 115926 }),	-- Unknown Name [NYI]
 			i(191425, {sourceID = 169659 }),	-- Unknown Name [NYI]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			i(187838, {sourceID = 165371 }),	-- Unknown Name [NYI]
 			i(187989, {sourceID = 165394 }),	-- Unknown Name [NYI]
 			i(187990, {sourceID = 165395 }),	-- Unknown Name [NYI]
@@ -3654,15 +3654,15 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(200730, {sourceID = 183034 }),	-- Unknown Name [NYI]
 			i(200731, {sourceID = 183035 }),	-- Unknown Name [NYI]
 			i(200732, {sourceID = 183036 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), {
 			i(202041, {sourceID = 184086 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), {
 			i(202153, {sourceID = 184146 }),	-- Unknown Name [NYI]
 			i(202154, {sourceID = 184147 }),	-- Unknown Name [NYI]
 			i(202155, {sourceID = 184149 }),	-- Unknown Name [NYI]
@@ -3673,19 +3673,19 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(202160, {sourceID = 184176 }),	-- Unknown Name [NYI]
 			i(202161, {sourceID = 184178 }),	-- Unknown Name [NYI]
 			i(202380, {sourceID = 184380 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), {
 			i(202285, {sourceID = 184337 }),	-- Unknown Name [NYI]
 			i(204272, {sourceID = 185489 }),	-- Unknown Name [NYI]
 			i(204309, {sourceID = 185513 }),	-- Unknown Name [NYI]
 			i(204083, {sourceID = 185422 }),	-- Unknown Name [NYI]
 			i(204482, {sourceID = 185609 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			i(202347, {sourceID = 184355 }),	-- Unknown Name [NYI]
 			i(202348, {sourceID = 184356 }),	-- Unknown Name [NYI]
 			i(202349, {sourceID = 184357 }),	-- Unknown Name [NYI]
@@ -3783,10 +3783,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(204640, {sourceID = 185701 }),	-- Unknown Name [NYI]
 			i(204641, {sourceID = 185702 }),	-- Unknown Name [NYI]
 			i(205687, {sourceID = 187207 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), {
 			i(205899, {sourceID = 187671 }),	-- Unknown Name [NYI]
 			i(206266, {sourceID = 187927 }),	-- Unknown Name [NYI]
 			i(206515, {sourceID = 188039 }),	-- Unknown Name [NYI]
@@ -3802,10 +3802,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(208156, {sourceID = 189593 }),	-- Unknown Name [NYI]
 			i(208444, {sourceID = 189751 }),	-- Unknown Name [NYI]
 			i(208548, {sourceID = 189832 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), {
 			i(208093, {sourceID = 189583 }),	-- Unknown Name [NYI]
 			i(208136, {sourceID = 189587 }),	-- Unknown Name [NYI]
 			i(208025, {sourceID = 189074 }),	-- Unknown Name [NYI]
@@ -3816,10 +3816,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(206597, {sourceID = 188051 }),	-- Unknown Name [NYI]
 			i(207089, {sourceID = 188667 }),	-- Unknown Name [NYI]
 			i(207090, {sourceID = 188668 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			i(206587, {sourceID = 188043 }),	-- Unknown Name [NYI]
 			i(208552, {sourceID = 189833 }),	-- Unknown Name [NYI]
 			i(209437, {sourceID = 190759 }),	-- Unknown Name [NYI]
@@ -3919,10 +3919,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(211079, {sourceID = 193977 }),	-- Unknown Name [NYI]
 			i(211079, {sourceID = 193978 }),	-- Unknown Name [NYI]
 			i(211871, {sourceID = 194439 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), {
 			i(212342, {sourceID = 194709 }),	-- Unknown Name [NYI]
 			i(212343, {sourceID = 194710 }),	-- Unknown Name [NYI]
 			i(212992, {sourceID = 195165 }),	-- Unknown Name [NYI]
@@ -3934,10 +3934,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(213273, {sourceID = 195224 }),	-- Unknown Name [NYI]
 			i(210191, {sourceID = 191960 }),	-- Unknown Name [NYI]
 			i(210192, {sourceID = 191961 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), {
 			i(187979, {sourceID = 165387 }),	-- Unknown Name [NYI]
 			i(187980, {sourceID = 165388 }),	-- Unknown Name [NYI]
 			i(187981, {sourceID = 165389 }),	-- Unknown Name [NYI]
@@ -3957,10 +3957,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(212609, {sourceID = 194928 }),	-- Unknown Name [NYI]
 			i(216656, {sourceID = 198600 }),	-- Unknown Name [NYI]
 			i(216709, {sourceID = 198619 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			i(212353, {sourceID = 194711 }),	-- Unknown Name [NYI]
 			i(212354, {sourceID = 194712 }),	-- Unknown Name [NYI]
 			i(212355, {sourceID = 194713 }),	-- Unknown Name [NYI]
@@ -3974,11 +3974,11 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(211178, {sourceID = 194012 }),	-- Unknown Name [NYI]
 			i(212697, {sourceID = 194961 }),	-- Unknown Name [NYI]
 			i(219521, {sourceID = 218394 }),	-- Unknown Name [NYI]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			i(208978, {sourceID = 190164 }),	-- Unknown Name [NYI]
 			i(210832, {sourceID = 193799 }),	-- Unknown Name [NYI]
 			i(210949, {sourceID = 193859 }),	-- Unknown Name [NYI]
@@ -4453,16 +4453,16 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(227292, {sourceID = 223761 }),	-- Unknown Name [NYI]
 			i(227295, {sourceID = 223764 }),	-- Unknown Name [NYI]
 			i(227296, {sourceID = 223765 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), {
 			i(228923, {sourceID = 224997 }),	-- Unknown Name [NYI]
 			i(229391, {sourceID = 226576 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			i(224191, {sourceID = 220288 }),	-- Unknown Name [NYI]
 			i(229912, {sourceID = 227744 }),	-- Unknown Name [NYI]
 			i(230213, {sourceID = 227931 }),	-- Unknown Name [NYI]
@@ -4472,10 +4472,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(231360, {sourceID = 229489 }),	-- Unknown Name [NYI]
 			i(232298, {sourceID = 230199 }),	-- Unknown Name [NYI]
 			i(232640, {sourceID = 230347 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), {
 			i(230988, {sourceID = 229226 }),	-- Unknown Name [NYI]
 			i(232518, {sourceID = 230294 }),	-- Unknown Name [NYI]
 			i(232649, {sourceID = 230351 }),	-- Unknown Name [NYI]
@@ -4483,10 +4483,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(233332, {sourceID = 230910 }),	-- Unknown Name [NYI]
 			i(235550, {sourceID = 267001 }),	-- Unknown Name [NYI]
 			i(235551, {sourceID = 267002 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			i(226833, {sourceID = 223319 }),	-- Unknown Name [NYI]
 			i(226839, {sourceID = 223325 }),	-- Unknown Name [NYI]
 			i(226844, {sourceID = 223330 }),	-- Unknown Name [NYI]
@@ -4620,10 +4620,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(238019, {sourceID = 287267 }),	-- Unknown Name [NYI]
 			i(238450, {sourceID = 287482 }),	-- Unknown Name [NYI]
 			i(242533, {sourceID = 290281 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			i(232792, {sourceID = 230417 }),	-- Unknown Name [NYI]
 			i(232793, {sourceID = 230418 }),	-- Unknown Name [NYI]
 			i(232794, {sourceID = 230419 }),	-- Unknown Name [NYI]
@@ -4730,10 +4730,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(229981, {sourceID = 227775 }),	-- Unknown Name [NYI]
 			i(229982, {sourceID = 227776 }),	-- Unknown Name [NYI]
 			i(229983, {sourceID = 227777 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), {
 			i(231758, {sourceID = 229796 }),	-- Unknown Name [NYI]
 			i(235392, {sourceID = 266798 }),	-- Unknown Name [NYI]
 			i(242980, {sourceID = 291747 }),	-- Unknown Name [NYI]
@@ -4775,10 +4775,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(244410, {sourceID = 292181 }),	-- Unknown Name [NYI]
 			i(244411, {sourceID = 292182 }),	-- Unknown Name [NYI]
 			i(245994, {sourceID = 292934 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			i(232993, {sourceID = 230453 }),	-- Unknown Name [NYI]
 			i(232994, {sourceID = 230454 }),	-- Unknown Name [NYI]
 			i(232995, {sourceID = 230455 }),	-- Unknown Name [NYI]
@@ -5042,10 +5042,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(251894, {sourceID = 298427 }),	-- Unknown Name [NYI]
 			i(251895, {sourceID = 298428 }),	-- Unknown Name [NYI]
 			i(251896, {sourceID = 298429 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), {
 			i(236927, {sourceID = 284981 }),	-- Unknown Name [NYI]
 			i(236928, {sourceID = 284982 }),	-- Unknown Name [NYI]
 			i(236929, {sourceID = 284983 }),	-- Unknown Name [NYI]
@@ -5554,10 +5554,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(249789, {sourceID = 296323 }),	-- Unknown Name [NYI]
 			i(253282, {sourceID = 298780 }),	-- Unknown Name [NYI]
 			i(254755, {sourceID = 299353 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			i(233067, {sourceID = 230711 }),	-- Unknown Name [NYI]
 			i(240847, {sourceID = 289394 }),	-- Unknown Name [NYI]
 			i(242548, {sourceID = 290289 }),	-- Unknown Name [NYI]
@@ -5582,11 +5582,11 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(252260, {sourceID = 298469 }),	-- Unknown Name [NYI]
 			i(252989, {sourceID = 298571 }),	-- Unknown Name [NYI]
 			i(257326, {sourceID = 301157 }),	-- Unknown Name [NYI]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			i(235231, {sourceID = 266736 }),	-- Unknown Name [NYI]
 			i(235232, {sourceID = 266737 }),	-- Unknown Name [NYI]
 			i(235233, {sourceID = 266738 }),	-- Unknown Name [NYI]
@@ -6577,10 +6577,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(267612, {sourceID = 304286 }),	-- Unknown Name [NYI]
 			i(268069, {sourceID = 304324 }),	-- Unknown Name [NYI]
 			i(268361, {sourceID = 304557 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			i(268634, {sourceID = 304617 }),	-- Unknown Name [NYI]
 			i(268635, {sourceID = 304618 }),	-- Unknown Name [NYI]
 			i(268636, {sourceID = 304619 }),	-- Unknown Name [NYI]
@@ -6597,10 +6597,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(248833, {sourceID = 295704 }),	-- Unknown Name [NYI]
 			i(248836, {sourceID = 295705 }),	-- Unknown Name [NYI]
 			i(248986, {sourceID = 295729 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			i(137629, {sourceID = 79380 }),	-- Unknown Name [NYI]
 			i(213406, {sourceID = 195303 }),	-- Unknown Name [NYI]
 			i(223557, {sourceID = 219978 }),	-- Unknown Name [NYI]
@@ -6738,10 +6738,10 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(267043, {sourceID = 304240 }),	-- Unknown Name [NYI]
 			i(272334, {sourceID = 307937 }),	-- Unknown Name [NYI]
 			i(272959, {sourceID = 308376 }),	-- Unknown Name [NYI]
-		})),
+		}),
 
 		-- 12.0.7
-		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ timeline = { CREATED_12_0_7 } }, {
+		expansion(EXPANSION.MID, patch(0,7), {
 			i(235606, {sourceID = 267032 }),	-- Unknown Name [NYI]
 			i(236851, {sourceID = 284950 }),	-- Unknown Name [NYI]
 			i(237327, {sourceID = 285194 }),	-- Unknown Name [NYI]
@@ -6819,6 +6819,6 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(276798, {sourceID = 309875 }),	-- Unknown Name [NYI]
 			i(276798, {sourceID = 309876 }),	-- Unknown Name [NYI]
 			i(276798, {sourceID = 309877 }),	-- Unknown Name [NYI]
-		})),
+		}),
 	}),
 }));

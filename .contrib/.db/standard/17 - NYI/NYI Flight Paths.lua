@@ -97,7 +97,7 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,1), {
 			fp(165),	-- Transport, Northrend 2
 			fp(175),	-- Transport, Howling Fjord
 			fp(176),	-- Quest - Howling Fjord Tauren Canoe (Start)
@@ -194,23 +194,23 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(328),	-- Transport, Icecrown Airship (A)
 			fp(329),	-- Transport, Icecrown Airship (H)
 			fp(330),	-- Transport, Icecrown (Target)
-		})),
+		}),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), {
 			fp(341),	-- Ulduar Raid - Interior - Insertion Point
 			fp(342),	-- Ulduar Raid - Iron Concourse
-		})),
+		}),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), {
 			fp(348),	-- Transport: Thunder Bluff <-> Org (Zep)
 			fp(352),	-- Isle of Conquest - Gunships
 			fp(353, {description = ""}),
-		})),
+		}),
 
 		-- 3.3.0
-		expansion(EXPANSION.WRATH, patch(3,0), bubbleDownSelf({ timeline = { CREATED_3_3_0 } }, {
+		expansion(EXPANSION.WRATH, patch(3,0), {
 			fp(357, {description = ""}),
 			fp(358),	-- Quest - Icecrown - North Sea Kraken Bombing - Start
 			fp(359),	-- Quest - Icecrown - North Sea Kraken Bombing - End
@@ -230,11 +230,11 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(438),	-- Durotar - ET - CC Prologue Troll Taxi Bat Start
 			fp(439),	-- Durotar - ET - CC Prologue Troll Recruit End
 			fp(440),	-- Durotar - ET - CC Prologue - Troll Battle End
-		})),
+		}),
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.1
-		expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+		expansion(EXPANSION.CATA, patch(0,1), {
 			fp(343),	-- Splintertree, Ashenvale
 			fp(344),	-- Quest - Splintertree  Post -> Zoramgar
 			fp(345),	-- Quest - Zoramgar, Ashenvale
@@ -272,24 +272,24 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(627),	-- Quest Path 2376: zzzThe Exodar -> Azure Watch, Azuremyst Isle
 			fp(628),	-- Quest Path 507: zzzBlood Watch, Bloodmyst Isle -> The Exodar
 			fp(629),	-- Quest Path 2375: zzzAzure Watch, Azuremyst Isle -> The Exodar
-		})),
+		}),
 
 		-- 4.1.0
-		expansion(EXPANSION.CATA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_4_1_0 } }, {
+		expansion(EXPANSION.CATA, patch(1,0), {
 			fp(682),	-- Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]
 			fp(728),	-- Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League
 			fp(757),	-- Quest Path 2695: PattyMac Taxi Path Speed Test
-		})),
+		}),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_4_3_0 } }, {
+		expansion(EXPANSION.CATA, patch(3,0), {
 			fp(906),	-- Dragon Soul Raid - Wyrmrest Temple Base
 			fp(907),	-- Dragon Soul Raid - East Sarlac
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,4), {
 			fp(888),	-- Quest Path 2837: Quest - Jade Forest: (DLA) - Dawnblossom to Jade Mines
 			fp(918),	-- Quest Path 2954: Quest - Valley of the Four Winds (Flyback: Chen A) PRK
 			fp(919),	-- Quest Path 2955: Quest - Valley of the Four Winds (Flyback: Chen B) PRK
@@ -328,18 +328,18 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1116),	-- Quest Path 3482: Quest - Kun-Lai Summit: JLR - Isle of Reckoning - Zouchin
 			fp(1130),	-- Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
 			fp(1131),	-- Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
-		})),
+		}),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+		expansion(EXPANSION.MOP, patch(4,0), {
 			fp(1284),	-- Quest Path 3877: Garrosh Raid - Siege Engineer - Pipe Transfer
 			fp(1291),	-- Quest Path 3885: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Up (RKS) [REUSEME]
 			fp(1292),	-- Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), {
 			fp(1350),	-- Shadowmoon Valley 6.0 - Observatory (JP3)
 			fp(1351),	-- Shadowmoon Valley 6.0 - Ironhorde POI (JP3)
 			fp(1385),	-- Arkaat Outpost, Shadowmoon Valley
@@ -376,18 +376,18 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1563),	-- Quest Path 4666: Ashran - Lane - Stormshield to Warspear
 			fp(1581),	-- Quest Path 4881: Lunarfall, Shadowmoon Valley -> Terokkar Pass, Spires of Arak
 			fp(1582),	-- Quest Path 4888: Frostwall Garrison, Frostfire Ridge -> Terokkar Pass, Spires of Arak
-		})),
+		}),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ timeline = { CREATED_6_1_0 } }, {
+		expansion(EXPANSION.WOD, patch(1,0), {
 			fp(1599),	-- Quest Path 4958: Garrison - 6.1 Chapter - H - Taxi to Iron Docks - JMC
 			fp(1601),	-- Quest Path 4960: Garrison - 6.1 Chapter - H - Taxi from Iron Docks to Garrison - JMC
 			fp(1605),	-- Quest Path 4965: Garrison - 6.1 Chapter - A - Taxi from Garrison to Iron Docks - JMC
 			fp(1606),	-- Quest Path 4966: Garrison - 6.1 Chapter - A - Taxi from Iron Docks to Garrison - JMC
-		})),
+		}),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { CREATED_6_2_0 } }, {
+		expansion(EXPANSION.WOD, patch(2,0), {
 			fp(1614),	-- Quest Path 4974: 6.2 Tanaan - Quest - H - From Vol'mar to Iron Front - JMC
 			fp(1625),	-- Quest Path 4987: 6.2 Tanaan - Lion's Watch - Taxi Path to Aktar's Post (LWB)
 			fp(1626),	-- Quest Path 4988: 6.2 Tanaan - Volmar - Taxi Path to Aktar's Post (LWB)
@@ -401,11 +401,11 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1729),	-- Quest Path 5283: Alliance Garrison (Tier 3) > Alliance Shipyard
 			fp(1730),	-- Quest Path 5284: Alliance Shipyard > Alliance Garrison (Tier 3)
 			fp(1731),	-- Alliance Shipyard Taxi
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,1), {
 			fp(1634),	-- Quest Path 5017: 7.0 Azsuna - Rift 01 - East Chasm -> West Chasm
 			fp(1635),	-- Quest Path 5018: 7.0 Azsuna - Rift 01 - West Chasm -> East Chasm
 			fp(1636),	-- Quest Path 5019: 7.0 Azsuna - Rift 02 - Tower -> Rock (ZTO)
@@ -448,15 +448,15 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1877),	-- Quest Path 5626: 7.0 Artifacts - Priest - Holy - Dalaran to Broken Shore Portal - LWB
 			fp(1878),	-- Quest Path 5627: 7.0 Artifacts - Priest - Holy - Quest NPC - Broken Shore - Fly Back - LWB
 			fp(1907),	-- Quest Path 6038: 7.0 - Death Knight - No Man's Land - Taxi Route - LWB
-		})),
+		}),
 
 		-- 7.1.0
-		expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ timeline = { CREATED_7_1_0 } }, {
+		expansion(EXPANSION.LEGION, patch(1,0), {
 			fp(1894),	-- Quest Path 6009: 7.1 Suramar -> Black Rook Hold ('We Need Weapons' ) - ZTO
-		})),
+		}),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), {
 			fp(1892),	-- Quest Path 6004: 7.2 Assault - Val'sharah - Black Rook - Base Camp to Ramparts - LWB
 			fp(1893),	-- Quest Path 6005: 7.2 Legion Invasion - Val'sharah - 03 - Taxi to Top - LWB
 			fp(1899),	-- Quest Path 6026: 7.2 OHC - Paladin - Light's Hope Chapel (Alliance) -> Broken Shore (1666) - JAP
@@ -474,10 +474,10 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1924),	-- Quest Path 6068: 7.2 Acherus: The Ebon Hold -> Illidari Camp, Broken Shore
 			fp(1927),	-- Quest Path 6072: 7.2 Order Hall - Rogue - Ch 5 - Temp To BS (JLW)
 			fp(1933),	-- Quest Path 6084: Acherus: The Ebon Hold -> Thorim's Peak, Stormheim
-		})),
+		}),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+		expansion(EXPANSION.LEGION, patch(3,0), {
 			fp(1934),	-- TEMPAREA1, Argus
 			fp(1935),	-- TEMPAREA2, Argus
 			fp(1947),	-- Quest Path 6175: 7.3 Argus - Isle 2 - Alleria Arc - Alleria Shadow Ball Taxi (JAK)
@@ -486,16 +486,16 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(1987),	-- [Hidden] Argus Vindicaar No Load Hub (Vindicaar No Load transition goes through here)
 			fp(2018),	-- Quest Path 6440: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - RRB
 			fp(2020),	-- Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB
-		})),
+		}),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = { CREATED_7_3_5 } }, {
+		expansion(EXPANSION.LEGION, patch(3,5), {
 			fp(2058),	-- Staghelm Point, Silithus
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			fp(1945),	-- Quest Path 6154: 8.0 Zuldazar - Quest - 'King Rastakhan' - ZTO
 			fp(1961),	-- Quest Path 6233: 8.0 Nazmir - Q: 47250 - Taxi to Jeb'watha ruins - LWB
 			fp(1962),	-- Quest Path 6234: 8.0 Nazmir - Q: 42750 - Flight from Jeb'watha -> Zul'jan - LWB
@@ -532,18 +532,18 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2172),	-- Disable Taxi Paths - Source - RRB
 			fp(2173),	-- Disable Taxi Paths - Destination - RRB
 			fp(2272),	-- Quest Path 6801: 8.0 Nazmir - Altar of Rot to Zul'jan Ruins - (STM)
-		})),
+		}),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			fp(2282),	-- Quest Path 6478: 8.0 Nazmir - Zuldazar to Talanji's Camp - (STM)
 			fp(2382),	-- Quest Path 7405: 8.1 War Campaign - A - Ch1 - South Shore -> Ramparts - KRB
 			fp(2383),	-- Quest Path 7496: 8.1 War Campaign - A - Ch1 - Ramparts -> South Shore  - KRB
 			fp(2384),	-- Quest Path 7497: 8.1 War Campaign - A - Ch1 - North Shore -> Ramparts - KRB
-		})),
+		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			fp(2392),	-- Quest Path 7569: 8.2 Nazjatar - Kal'methir - Boss Path
 			fp(2467),	-- test node
 			fp(2471),	-- test node
@@ -551,11 +551,11 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2473),	-- test node
 			fp(2474),	-- adams test node
 			fp(2475),	-- adams second test node
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			fp(2393),	-- TEMP, 9.0, Oribos, Bastion
 			fp(2394),	-- TEMP, 9.0, Oribos, Maldraxxus
 			fp(2396),	-- TEMP, 9.0, Oribos, Ardenweald
@@ -638,10 +638,10 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2676),	-- Quest Path 8426: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 02 - SBV
 			fp(2677),	-- Quest Path 8427: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 03 - SBV
 			fp(2678),	-- Quest Path 8428: 9.0 Bastion - Treasure - Out of Bounds Teleporter - 04 - SBV
-		})),
+		}),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ timeline = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), {
 			fp(2681),	-- Quest Path 8460: 9.0 Bastion - Cloudwalker Coffer - Zipline - To Memorial Shrine (MAH)
 			fp(2683),	-- Quest Path 8472: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Amphitheater -> Covenant Hall - GJC
 			fp(2684),	-- Quest Path 8473: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Amphitheater - GJC
@@ -649,37 +649,37 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2686),	-- Quest Path 8475: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Fate's Precipice - GJC
 			fp(2687),	-- Quest Path 8476: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Humility Terrace -> Sanctum - GJC
 			fp(2688),	-- Quest Path 8477: 9.0 Bastion - Covenant Hall - Flight to Sanctum - Sanctum -> Humility Terrace - GJC
-		})),
+		}),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { CREATED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), {
 			fp(2690),	-- Quest Path 8500: 9.0.5 Maw - Hidden Object - Shadehound Mount - Perdition Upper to Zovaals - LJS
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			fp(2691),	-- Quest Path 8507: 9.1 Campaign- Ch 06 - House of Rituals - Surface -> Exoramas - KRB
 			fp(2692),	-- Quest Path 8508: 9.1 Campaign- Ch 06 - House of Rituals - Exoramas -> Surface - KRB
 			fp(2695),	-- Quest Path 8530: 9.1 - Dungeon - Broker City - RP Throughline - Elevator Taxi Path
 			fp(2699),	-- Tazavesh Outdoor
-		})),
+		}),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), {
 			fp(2708),	-- Quest Path 8614: 9.0 Maw - Outdoor - Ve'nari -> Perdition Hold
 			fp(2709),	-- Quest Path 8615: 9.0 Maw - Outdoor - Ve'nari -> Desmotaeron
 			fp(2710),	-- Quest Path 8616: 9.0 Maw - Outdoor - Mawsworn Rifts - Desmotaeron -> Perdition Hold
 			fp(2711),	-- Quest Path 8617: 9.0 Maw - Outdoor - Mawsworn Rifts - Perdition Hold -> Desmotaeron
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			fp(2732),	-- [HIDDEN] - 9.2 Resonant Peaks - Teleport Network - Hidden Hub (Connects all Nodes to each other without unique paths) (MAH/JDA)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			fp(2693),	-- Seamless Proto, Revendreth
 			fp(2694),	-- Seamless Proto, Boralus
 			fp(2717),	-- Quest Path 8628: 10.0 - Pre-Prod - Krav'rel to Azure Archives - (STM)
@@ -708,28 +708,28 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2832),	-- Cobalt Assembly, The Azure Span
 			fp(2835),	-- [Hidden] 10.0 Travel Network - Destination Input
 			fp(2843),	-- [Hidden] 10.0 Travel Network - Destination Output
-		})),
+		}),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), {
 			fp(2856),	-- Quest Path 9315: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Up - EJC
 			fp(2857),	-- Quest Path 9316: 10.0.7 Forbidden Reach - War Creche - Taxi - Go Down - EJC
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			fp(2860),	-- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART)
-		})),
+		}),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), {
 			fp(2887),	-- Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)
 			fp(2892),	-- Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			fp(2894),	-- 11.0  - TEST - Dorn Batol, Khaz Algar - (LWB)
 			fp(2938),	-- The Swaying Span
 			fp(2955),	-- Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)
@@ -738,38 +738,38 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			-- #if BEFORE 11.2.7
 			fp(2972),	-- Jeff the Flightmaster
 			-- #endif
-		})),
+		}),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), {
 			fp(2987),	-- The Congealing Pool (One-way)
-		})),
+		}),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), {
 			fp(3005),	-- Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)
 			fp(3122),	-- Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			fp(3026),	-- Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
 			fp(3111),	-- Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			fp(3175),	-- Quest Path 11142: 11.2.7 Catch Up - TWW - Q2 - Dornegal to Freywold (KRB)
 			fp(3176),	-- Quest Path 11144: 11.2.7 Catch Up - TWW - Q2 - Meadery to Coreway (KRB)
 			fp(3177),	-- Quest Path 11146: 11.2.7 Catch Up - TWW - Q2 - Coreway to Ringing Deeps (KRB)
 			fp(3178),	-- Quest Path 11147: 11.2.7 Catch Up - TWW - Q3 - Weaver to City (KRB)
 			fp(3179),	-- Quest Path 11151: 11.2.7 Catch Up - TWW - Q3 - Priory to Foundation Hall (KRB)
 			fp(3204),	-- Quest Path 11298: 11.2.7 Catch Up -  TWW -  Q2 -  Cavern to Awakening Machine (KRB)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			fp(3212),	-- 12.0 Silvermoon Thalassian University Teleport Top
 			fp(3186),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Base
 			fp(3187),	-- 12.0 Silvermoon Sunwing Rookery Teleport Intro Top
@@ -807,10 +807,10 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(3231),	-- Quest Path 11381: 12.0 Z1 - Silvermoon City - Teleporters - Sunfury Spire - Going Down - SJC
 			fp(3102),	-- Thalassian University Teleport Base
 			fp(3103),	-- Thalassian University Teleport Top
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			fp(3234),	-- Quest Path 10393: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport to Top - Missile Teleport Curve Up (RRN)
 			fp(3235),	-- Quest Path 10398: 12.0 Z1 - Local Story 01 - Aspiring Academic Q03 - Teleport Down - Missle Teleport Curve Down (RRN)
 			fp(3232),	-- Quest Path 10760: 12.0 Z1 - Local Story 09 - How to Train Your Protegee Q2c - Teleport to Top - Missile Teleport Curve Up (RRN)
@@ -821,17 +821,17 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(3239),	-- Quest Path 11403: 12.0 Z1 - Eversong - Teleporters - Upper Rookery - Going Down - Force Taxi - SJC
 			fp(3240),	-- Quest Path 11404: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Up - Force Taxi - SJC
 			fp(3241),	-- Quest Path 11405: 12.0 Z1 - Eversong - Teleporters - Brightwing Estates - Going Down - Force Taxi - SJC
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			fp(3201),	-- Quest Path 11282: 12.0.5 Event - Prop Hunt - Teleporter - Upper > Lower
 			fp(3202),	-- Quest Path 11283: 12.0.5 Event - Prop Hunt - Teleporter - Lower > Upper
-		})),
+		}),
 
 		-- 12.1.0
-		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+		expansion(EXPANSION.MID, patch(1,0), {
 			fp(3284),	-- 12.1 Ulatek - Faction Feature - Temple - Traversal - Flight Master - Eastern Entrance (HCR)
-		})),
+		}),
 	}),
 }));

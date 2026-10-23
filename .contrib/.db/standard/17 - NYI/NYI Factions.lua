@@ -273,7 +273,7 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1
-		expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = {CREATED_3_0_2} }, {
+		expansion(EXPANSION.WRATH, patch(0,1), {
 			faction(1092),	-- Azjol-Nerub
 			faction(1108),	-- CoT Arthas
 			faction(1110),	-- CoT Scourge
@@ -324,15 +324,15 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1101),	-- Wrathgate Horde
 			faction(1099),	-- Wrathgate Scourge
 			faction(1072),	-- [DNT] AC Major Faction Child Renown Test
-		})),
+		}),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = {CREATED_3_1_0} }, {
+		expansion(EXPANSION.WRATH, patch(1,0), {
 			faction(1127),	-- Orgrimmar (Alex Test)
-		})),
+		}),
 
 		-- 3.3.5
-		expansion(EXPANSION.WRATH, patch(3,5), bubbleDownSelf({ timeline = {CREATED_3_3_5} }, {
+		expansion(EXPANSION.WRATH, patch(3,5), {
 			faction(1159),	-- CTF - Flag - Alliance 2
 			faction(1160),	-- CTF - Flag - Horde 2
 			faction(1145),	-- Hates Everything
@@ -340,11 +340,11 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1155),	-- Sunreavers Conversion
 			faction(1136),	-- Tranquillien Conversion
 			faction(1137),	-- Wintersaber Conversion
-		})),
+		}),
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = {CREATED_4_0_3} }, {
+		expansion(EXPANSION.CATA, patch(0,3), {
 			faction(1131),	-- Bear, Darkshore
 			faction(1138),	-- Cataclysm - New Neutral Reputation
 			faction(1129),	-- Furbolg, Blackwood
@@ -361,10 +361,10 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1166),	-- Test Faction 5
 			faction(1167),	-- Test Faction 5
 			faction(1128),	-- Twilight's Hammer
-		})),
+		}),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ timeline = {CREATED_4_3_0} }, {
+		expansion(EXPANSION.CATA, patch(3,0), {
 			faction(1240),	-- CoT Well of Eternity - Demon Balls
 			faction(1237),	-- CoT Well of Eternity - Demons
 			faction(1234),	-- CoT Well of Eternity - High Elves
@@ -375,11 +375,11 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1189),	-- K3
 			faction(1265),	-- Shen'dralar
 			faction(1179),	-- Slime
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = {CREATED_5_0_4} }, {
+		expansion(EXPANSION.MOP, patch(0,4), {
 			faction(1364),	-- Friendly, Force Reaction 2
 			faction(1366),	-- Friendly, Force Reaction 3
 			faction(1367),	-- Friendly, Force Reaction 4
@@ -399,35 +399,35 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1252),	-- Sha
 			faction(1351),	-- The Brewmasters
 			faction(1336),	-- The Mantid Swarm
-		})),
+		}),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = {CREATED_5_1_0} }, {
+		expansion(EXPANSION.MOP, patch(1,0), {
 			faction(1416),	-- Akama's Trust
-		})),
+		}),
 
 		-- 5.2.0
-		expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = {CREATED_5_2_0} }, {
+		expansion(EXPANSION.MOP, patch(2,0), {
 			faction(1433),	-- Monster, Enforced Neutral For Force Reaction
-		})),
+		}),
 
 		-- 5.3.0
-		expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ timeline = {CREATED_5_3_0} }, {
+		expansion(EXPANSION.MOP, patch(3,0), {
 			faction(1440),	-- Darkspear Rebellion
 			faction(1447),	-- Darkspear Trolls
 			faction(1443),	-- Kor'kron
-		})),
+		}),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = {CREATED_5_4_0} }, {
+		expansion(EXPANSION.MOP, patch(4,0), {
 			faction(1457),	-- Forelings
 			faction(1500),	-- Red Phantom
 			faction(1491),	-- The Timewalkers
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = {CREATED_6_0_2} }, {
+		expansion(EXPANSION.WOD, patch(0,1), {
 			faction(1514),	-- Adherents of Rukhmar
 			faction(1618),	-- Breaker
 			faction(1747),	-- Coliseum Treasure
@@ -454,20 +454,20 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1623),	-- The Iron Horde
 			faction(1509),	-- The Pale
 			faction(1665),	-- The Sargerei
-		})),
+		}),
 
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = {CREATED_6_0_2} }, {
+		expansion(EXPANSION.WOD, patch(0,2), {
 			faction(1760),	-- Highmaul Gladiators
 			faction(1756),	-- LVA_Looters
 			faction(1759),	-- LVA_Machines
 			faction(1758),	-- LVA_Naturalists
 			faction(1757),	-- LVA_Preservers
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
-		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ timeline = {CREATED_7_0_3} }, {
+		expansion(EXPANSION.LEGION, patch(0,1), {
 			faction(1861),	-- Arcane Thirst (Silgryn) DEPRECATED
 			faction(1786),	-- Burning Legion Invaders
 			faction(1905),	-- Dreamgrove Druid
@@ -484,17 +484,17 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(1953),	-- Nightmare
 			faction(1833),	-- Uncrowned
 			faction(1914),	-- Withered
-		})),
+		}),
 
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = {CREATED_7_0_3} }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			faction(1989),	-- Moon Guard
 			faction(1962),	-- Nightborne Civilian
 			faction(1984),	-- The First Responders
-		})),
+		}),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = {CREATED_7_2_0} }, {
+		expansion(EXPANSION.LEGION, patch(2,0), {
 			faction(2091),	-- Armies of Legionfall (Paragon)
 			faction(2063),	-- Arne Test - Paragon Reputation Stormwind
 			faction(2087),	-- Court of Farondis (Paragon)
@@ -505,26 +505,26 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2089),	-- The Nightfallen (Paragon)
 			faction(2090),	-- The Wardens (Paragon)
 			faction(2086),	-- Valarjar (Paragon)
-		})),
+		}),
 
 		-- 7.3.0
-		expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = {CREATED_7_3_0} }, {
+		expansion(EXPANSION.LEGION, patch(3,0), {
 			faction(2167),	-- Argussian Reach (Paragon)
 			faction(2166),	-- Army of the Light (Paragon)
 			faction(2180),	-- _JKL - test rep
-		})),
+		}),
 
 		-- 7.3.5
-		expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ timeline = {CREATED_7_3_5} }, {
+		expansion(EXPANSION.LEGION, patch(3,5), {
 			faction(2230),	-- PLAYER, Highmountain Tauren
 			faction(2232),	-- PLAYER, Lightforged Draenei
 			faction(2231),	-- PLAYER, Nightborne
 			faction(2229),	-- PLAYER, Void Elf
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = {CREATED_8_0_1} }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			faction(2218),	-- 8.0 Hidden Object - Red
 			faction(2220),	-- 8.0 Hidden Object - Withered - Blue
 			faction(2221),	-- 8.0 Hidden Object - Withered - Green
@@ -553,10 +553,10 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2185),	-- The Bilge Rats
 			faction(2258),	-- Wendigo
 			faction(2111),	-- Zandalari Dinosaurs
-		})),
+		}),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = {CREATED_8_1_0} }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			faction(2384),	-- 7th Legion (Paragon)
 			faction(2386),	-- Champions of Azeroth (Paragon)
 			faction(2383),	-- Order of Embers (Paragon)
@@ -567,29 +567,29 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2387),	-- Tortollan Seekers (Paragon)
 			faction(2382),	-- Voldunai (Paragon)
 			faction(2378),	-- Zandalari Empire (Paragon)
-		})),
+		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = {CREATED_8_2_0} }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			faction(2394),	-- Hermit Crabs
 			faction(2396),	-- Honeyback Drone
 			faction(2397),	-- Honeyback Hivemother
 			faction(2392),	-- Rustbolt Resistance (Paragon)
 			faction(2374),	-- The Unshackled (Paragon)
 			faction(2401),	-- Waveblade Ankoan (Paragon)
-		})),
+		}),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = {CREATED_8_3_0} }, {
+		expansion(EXPANSION.BFA, patch(3,0), {
 			faction(2419),	-- Nzoth
 			faction(2431),	-- Owen Test
 			faction(2416),	-- Rajani (Paragon)
 			faction(2418),	-- Uldum Accord (Paragon)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = {CREATED_9_0_1} }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			faction(2442),	-- Court of Harvesters (Paragon)
 			faction(2408),	-- Dark Kyrian
 			faction(2404),	-- House of Constructs
@@ -604,28 +604,28 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2444),	-- The Wild Hunt (Paragon)
 			faction(2437),	-- Torghast - Guard
 			faction(2438),	-- Torghast - Prisoner
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = {CREATED_9_1_0} }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			faction(2471),	-- Death's Advance (Paragon)
 			faction(2468),	-- Korthia
 			faction(2473),	-- The Archivists' Codex (Paragon)
 			faction(2474),	-- Ve'nari (Paragon)
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = {CREATED_9_2_0} }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			faction(2480),	-- Automa
 			faction(2481),	-- Automa (Paragon)
 			faction(2469),	-- Fractal Lore
 			faction(2479),	-- The Enlightened (Paragon)
 			faction(2502),	-- Zereth Mortis Lured Monsters
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			faction(2512),	-- Clan Aylaag
 			faction(2555),	-- Clan Kaighan
 			faction(2520),	-- Clan Nokhud
@@ -647,37 +647,37 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2519),	-- Reclaimers
 			faction(2552),	-- Valdrakken Accord (Paragon)
 			faction(2548),	-- Valdrakken Accord (Renown)
-		})),
+		}),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), {
 			faction(2557),	-- Hearthfire Fellowship
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			faction(2565),	-- Loamm Niffen (Paragon)
-		})),
+		}),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), {
 			faction(2576),	-- Druids of the Flame
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			faction(2575),	-- Dream Wardens (Paragon)
-		})),
+		}),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), {
 			faction(2616),	-- Keg Leg Thrasher
 			faction(2604),	-- Keg Leg's Crew (Paragon)
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			faction(2610),	-- Azj-Kaheti Nerubian (Always Hostile) (Hidden)
 			faction(2612),	-- Council of Dornogal (Paragon)
 			faction(2645),	-- Earthen
@@ -697,15 +697,15 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2648),	-- The Weaver (Paragon)
 			faction(2602),	-- Umbral Bazaar
 			faction(2579),	-- zzOldDelves: Season 1
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			faction(2682),	--
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			faction(2672),	-- Bilgewater Cartel (Paragon)
 			faction(2674),	-- Blackwater Cartel (Paragon)
 			faction(2697),	-- Chase's test faction (DNT)
@@ -719,32 +719,32 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2694),	-- UNUSED - Brann Bronzebeard (Season 2)
 			faction(2692),	-- Venture Company
 			faction(2670),	-- Venture Company (Paragon)
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			faction(2689),	-- Flame's Radiance (Paragon)
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			faction(2657),	-- 11.2 Ethereum
 			faction(2739),	-- Delves: Coffer Key Shards Conversion
 			faction(2659),	-- The K'aresh Trust (Paragon)
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			faction(2664),	-- Flynn Fairwind
 			faction(2665),	-- Lillistrasza
 			faction(2663),	-- Meerah
 			faction(2666),	-- Roasts and Boasts
 			faction(2662),	-- [PH] The Power of Friendship
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			faction(2705),	-- Amani Tribe (Paragon)
 			faction(2716),	-- Blood Knights (Paragon)
 			faction(2700),	-- DEPRECATED Fungarian Fighting Ring
@@ -762,19 +762,19 @@ root(ROOTS.NeverImplemented, n(FACTIONS, {
 			faction(2725),	-- The Singularity (Paragon)
 			faction(2709),	-- Vanguard of the Light
 			faction(2706),	-- Witherbark Tribe
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			faction(2793),	-- Ritual Sites (Paragon)
-		})),
+		}),
 
 		-- 12.1.0
-		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+		expansion(EXPANSION.MID, patch(1,0), {
 			faction(2775),	-- [DEPRECATED] Ofi the Sly
 			faction(2776),	-- [DEPRECATED] Untrustworthy Ghost
 			faction(2839),	-- Delves: Season 3
 			faction(2771),	-- Zul'jarra's Forces (Paragon)
-		})),
+		}),
 	}),
 }));

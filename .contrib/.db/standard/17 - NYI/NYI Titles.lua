@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, filter(TITLES, {
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), {
 			title(69),	-- Doctor <Name>
 			title(64),	-- Grand Master Alchemist <Name>
 			title(70),	-- Grand Master Angler <Name>
@@ -20,7 +20,7 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(76),	-- Grand Master Skinner <Name>
 			title(77),	-- Grand Master Tailor <Name>
 			title(66),	-- Iron Chef <Name>
-		})),
+		}),
 
 		-- 3.x.x
 		n(P3xx, {
@@ -40,48 +40,48 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			title(330),	-- Master Assassin <Name>
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			title(406),	-- Sparking <Name>
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			title(436),	-- <Name> the Avowed
 			i(183940),	-- Avowed Archivist's Tome
 			title(424),	-- Deathbringer <Name>
 			title(408),	-- Pilgrim <Name> the Mallet Bearer
-		})),
+		}),
 
 		-- 9.2.0
 		-- #if BEFORE 11.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			title(453),	-- <Name> the [PH] TBD Title
-		})),
+		}),
 		-- #endif
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			title(518),	-- <Name>, Honorary Historian
-		})),
+		}),
 
 		-- 10.2.7
 		-- #if BEFORE 11.0.0
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			title(539),	-- Mistrunner <Name>
-		})),
+		}),
 		-- #endif
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			title(625),	-- Aeroknight <Name>
 			title(624),	-- Ardent <Name>
 			title(621),	-- Field Sacredite <Name>
@@ -90,22 +90,22 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(619),	-- Recruit <Name>
 			title(620),	-- Reservist <Name>
 			title(623),	-- Stalwart <Name>
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			title(660),	-- [PH] <Name>
 			title(661),	-- [PH] <Name>
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			title(762),	-- Azeroth's Top Ten Youth <Name>
 			title(764),	-- Big Brother <Name>
 			title(763),	-- Model of the Era <Name>
 			title(761),	-- <Name>, World Apex
-		})),
+		}),
 	}),
 }));
 -- #endif

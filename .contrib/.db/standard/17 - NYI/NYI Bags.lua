@@ -28,32 +28,32 @@ root(ROOTS.NeverImplemented, filter(BAGS, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), {
 			i(92746),	-- Portable Refrigerator
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.2.2
-		expansion(EXPANSION.WOD, patch(2,2), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
+		expansion(EXPANSION.WOD, patch(2,2), {
 			i(130943),	-- Reusable Tote Bag
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			i(130156),	-- Crane Bag
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			i(166699),	-- Desert Rucksack
-		})),
+		}),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ timeline = { CREATED_8_3_0 } }, {
+		expansion(EXPANSION.BFA, patch(3,0), {
 			-- 8.3.0.32593
 			i(174969),	-- Alpaca Saddlebag
-		})),
+		}),
 	}),
 }));

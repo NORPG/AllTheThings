@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), {
 			follower(6),	-- Alliance:Horde:Orc Male \\ Horde:Human Male
 			follower(7),	-- Alliance:Horde:Abyssal \\ Horde:Rytama
 			follower(8),	-- Alliance:Horde:Abyssal \\ Horde:Genn Greymane
@@ -55,11 +55,11 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 			follower(220),	-- Ogre
 			follower(454),	-- Ogre
 			follower(475),	-- Alliance:Faal \\ Horde:Besandran Shatterfury
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
-		expansion(EXPANSION.LEGION, patch(0,1), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,1), {
 			follower(497),	-- Druid Champion 1
 			follower(585),	-- Alliance:Commander Lynore Windstryke \\ Horde:Nazgrel
 			follower(587),	-- Eitrigg
@@ -103,11 +103,11 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 			follower(944),	-- Ascendants
 			follower(946),	-- Celestial
 			follower(987),	-- Lady S'theno
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			follower(1074),	-- Alliance:Magister Umbric \\ Horde:Arcanist Valtrois
 			follower(1075),	-- Alliance:Recruit Alliance Troops \\ Horde:Recruit Horde Troops
 			follower(1188),	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
@@ -130,11 +130,11 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 			follower(1205),	-- Alliance:Shandris Feathermoon \\ Horde:Lilian Voss
 			follower(1206),	-- Alliance:Shandris Feathermoon \\ Horde:Lilian Voss
 			follower(1207),	-- Alliance:Shandris Feathermoon \\ Horde:Lilian Voss
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			follower(1211),	-- Eli the Brazen
 			follower(1212),	-- Anjali
 			follower(1224),	-- M'Phy
@@ -151,19 +151,19 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 			follower(1235),	-- R'Nat
 			follower(1236),	-- R'Fros
 			follower(1237),	-- R'Sha
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			follower(1340),	-- Ella
 			follower(1344),	-- Ben Howell
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			follower(1371),	-- Brann Bronzebeard
-		})),
+		}),
 	}),
 }));
 -- #endif

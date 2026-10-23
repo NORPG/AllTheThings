@@ -6,18 +6,18 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(MISC, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.2
-				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, patch(0,2), {
 					i(194041),	-- Driftbloom Sprout
 					i(194054),	-- Dredged Seedling
 					i(194081),	-- Mutated Root
 					i(194080),	-- Peculiar Bud
 					i(194055),	-- Primordial Soil
 					i(194061),	-- Suffocating Spores
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(238564),	-- Ancient Flower
 					i(238565),	-- Dornogal Gardening Scythe
 					i(238566),	-- Earthen Digging Fork
@@ -26,21 +26,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(238569),	-- Arathi Herb Pruner
 					i(238570),	-- Web-Entangled Lotus
 					i(238571),	-- Tunneler's Shovel
-				})),
+				}),
 			}),
 		}),
 		n(CRAFTABLES, {
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					i(108334),	-- Arthas' Tears Petal
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(217105),	-- Refine Khaz Algar Herbs
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -54,15 +54,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), {
 					r(32605),	-- Herb Gathering
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382582),	-- Opening
-				})),
+				}),
 			}),
 		}),
 	}),

@@ -12,60 +12,60 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			-- #endif
 			expansion(EXPANSION.MOP, {
 				-- 5.1.0
-				expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+				expansion(EXPANSION.MOP, patch(1,0), {
 					i(93197),	-- Glyph of Supernova
-				})),
+				}),
 
 				-- 5.2.0
-				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), {
 					i(93440),	-- Crafted Dreadful Gladiator's Endgame
 					i(93450),	-- Crafted Dreadful Gladiator's Reprieve
-				})),
+				}),
 
 				-- 5.4.0
-				expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+				expansion(EXPANSION.MOP, patch(4,0), {
 					i(104278),	-- Glyph of Chameleon
 					i(104274),	-- Glyph of Focused Fire
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					i(161937),	-- Honorable Combatant's Inked Vessel [A]
 					i(159941),	-- Honorable Combatant's Inked Vessel [H]
 					i(161935),	-- Inked Vessel of Robust Regeneration [A]
 					i(153644),	-- Inked Vessel of Robust Regeneration [H]
 					i(161933),	-- Manual of Reverse Wounding [A]
 					i(153642),	-- Manual of Reverse Wounding [H]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(172910),	-- Darkmoon Card of Repose
 					i(173052),	-- Deathbound Codex
 					i(173055),	-- Redeemer's Column
 					i(173429),	-- Redeemer's Spire
-				})),
+				}),
 
 				-- 9.2.0
-				expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+				expansion(EXPANSION.SL, patch(2,0), {
 					i(189721),	-- Glyph of the Sayaad
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(194843),	-- Explorer's Barding Manuscript
 					i(192464),	-- Darkmoon Deck: Ysera
 					i(191783),	-- Draconic Treatise on Blacksmithing
 					i(191078, {sourceID = 169602 }),	-- Gold Rolling Pin
 					i(194842),	-- Regal Barding Manuscript
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(222241),	-- Ace of Evolution
 					i(222223),	-- Ace of Shining
 					i(222214),	-- Ace of Symbiosis
@@ -391,21 +391,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(217980),	-- Versatile Cypher
 					i(217981),	-- Versatile Cypher
 					i(217982),	-- Versatile Cypher
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(245754),	-- Milling
 					i(245774),	-- Vantus Rune: 12.0 Raid
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(272191),	-- [PH] 12.1 Darkmoon Sigil
 					i(272192),	-- [PH] 12.1 Darkmoon Sigil
 					i(279369),	-- Chiseled Amani Tablet
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -416,19 +416,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			-- #endif
 			expansion(EXPANSION.MOP, {
 				-- 5.1.0
-				expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+				expansion(EXPANSION.MOP, patch(1,0), {
 					r(135535),	-- Glyph of Supernova
-				})),
+				}),
 
 				-- 5.4.0
-				expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+				expansion(EXPANSION.MOP, patch(4,0), {
 					i(104280),	-- Technique: Glyph of Focused Fire
 					i(104282),	-- Technique: Glyph of the Chameleon
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(269744),	-- Honorable Combatant's Inked Vessel [Rank 1]
 					r(256250),	-- Inked Vessel of Robust Regeneration [Rank 1]
 					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 2]
@@ -438,10 +438,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(162356),	-- Recipe: Honorable Combatant's Inked Vessel [Rank 2]
 					i(162357),	-- Recipe: Honorable Combatant's Inked Vessel [Rank 3]
 					i(162355),	-- Recipe: Inked Vessel of Robust Regeneration [Rank 3]
-				})),
+				}),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					r(299666),	-- Contract: Ankoan [Rank 2]
 					r(299667),	-- Contract: Ankoan [Rank 3]
 					r(299669),	-- Contract: Unshackled [Rank 2]
@@ -454,11 +454,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(302701),	-- Milling
 					r(302697),	-- Milling
 					r(302703),	-- Milling
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(343688),	-- Crafter's Mark III
 					r(343687),	-- Crafter's Mark IV
 					r(311407),	-- Deathbound Codex
@@ -466,11 +466,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(311690),	-- Redeemer's Spire
 					-- Without SpellID attached
 					i(183865),	-- [DNT][REUSE ME] Technique: Crafter's Mark III
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382583),	-- Opening
 					r(391783),	-- Wisp of Tyr
 					r(388458),	-- Unknown
@@ -539,11 +539,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198936),	-- Technique: Serene Ink (RECIPE!)
 					i(198956),	-- Technique: Vantus Rune: Vault of the Incarnates (RECIPE!)
 					i(198786),	-- Technique: Wrathion Darkmoon Deckbox (RECIPE!)
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(445068),	-- Inquisitor's Greenwood Bow
 					r(441318),	-- Miner's Rune of Decyphering
 					r(445069),	-- Vagabond's Alacrity
@@ -555,16 +555,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(223034),	-- Technique: Inscribed Rolling Pin
 					i(223032),	-- Technique: Lexicon of Mysteries
 					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
-				})),
+				}),
 
 				-- 11.0.7
-				expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
+				expansion(EXPANSION.TWW, patch(0,7), {
 					r(1213516),	-- Unknown
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					r(1230063),	-- Pigments of the Wind
 					-- With SpellID attached
 					i(258508),	-- Technique: Harandar Runestone
@@ -575,16 +575,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(258501),	-- Technique: Sin'dorei Homely Shelf
 					i(258497),	-- Technique: Technique: Thalassian Missive of Deftness
 					i(258507),	-- Technique: Wild Hanging Scroll
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					r(1290560),	--
 					r(1296508),	-- Empty Tortollan Rack
 					-- With SpellID attached
 					i(275322),	-- Technique: Ferocious Feline Trinket
 					i(275328),	-- Technique: Turquoise Amani Tapestry
-				})),
+				}),
 			}),
 		}),
 	}),
@@ -592,29 +592,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		expansion(EXPANSION.MOP, {
 			-- 5.0.1
-			expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = {CREATED_5_0_4} }, {
+			expansion(EXPANSION.MOP, patch(0,1), {
 				i(87829),	-- Technique: Incarnadine Ink
 				i(87830),	-- Technique: Tigersblood Tincture
-			})),
+			}),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.2.1
-			expansion(EXPANSION.WOD, patch(2,1), bubbleDownSelf({ timeline = {CREATED_6_2_2} }, {
+			expansion(EXPANSION.WOD, patch(2,1), {
 				i(129139),	-- Tome of Rapid Pathfinding
-			})),
+			}),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = {CREATED_7_0_3} }, {
+			expansion(EXPANSION.LEGION, patch(0,3), {
 				-- #if BEFORE 10.1.5
 				i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
 				-- #endif
 				i(141065),	-- Technique: Grimoire of the Terrorguard (Item never made it into the game)
 				i(141065),	-- Technique: Grimoire of the Terrorguard
-			})),
+			}),
 
 			-- 7.2.0
-			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = {CREATED_7_2_0} }, {
+			expansion(EXPANSION.LEGION, patch(2,0), {
 				i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146355),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146375),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
@@ -654,7 +654,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(146343),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 				i(146363),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 				i(146383),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
-			})),
+			}),
 		}),
 	}),
 }));

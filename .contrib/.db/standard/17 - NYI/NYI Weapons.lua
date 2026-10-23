@@ -461,9 +461,9 @@ root(ROOTS.NeverImplemented, {
 					i(189334),	-- 10.0 Zone Uncommon Template <Descriptor> Offhand
 					i(201249),	-- Dreamfire Imbued Drakehorn
 				}),
-				expansion(EXPANSION.DF, patch(0,7), bubbleDown({ timeline = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), {
 					i(203798, {sourceID = 185364 }),	-- Copy Jin'do's Bag of Whammies
-				})),
+				}),
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
@@ -540,9 +540,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, patch(1,0), bubbleDown({ timeline = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, patch(1,0), {
 					i(204638),	-- Sunder Wing
-				})),
+				}),
 			}),
 		}),
 		filter(ONE_HANDED_MACES, {
@@ -637,9 +637,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					i(208001),	-- Timewalker's Cudgel
-				})),
+				}),
 			}),
 		}),
 		filter(ONE_HANDED_SWORDS, {
@@ -721,16 +721,16 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					i(207044),	-- <DNT> Lo'Gosh Offhand Weapon
 					i(207045),	-- <DNT> Lo'Gosh Mainhand Weapon
-				})),
+				}),
 
 				-- 10.1.7
-				expansion(EXPANSION.DF, patch(1,7), bubbleDown({ timeline = { CREATED_10_1_7 } }, {
+				expansion(EXPANSION.DF, patch(1,7), {
 					i(208987, {sourceID = 190169}),	-- The Horseman's Sinister Slicer [Hallow's End]
 					i(209022, {sourceID = 190171}),	-- The Horseman's Sinister Slicer [Hallow's End]
-				})),
+				}),
 			}),
 		}),
 		filter(POLEARMS, {
@@ -1344,9 +1344,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					i(206931),	-- Truesilver Champion
-				})),
+				}),
 			}),
 		}),
 		filter(WANDS, {
@@ -1391,9 +1391,9 @@ root(ROOTS.NeverImplemented, {
 				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					i(207984),	-- Chroniton Wand
-				})),
+				}),
 			}),
 		}),
 		filter(WARGLAIVES, {
@@ -1769,26 +1769,26 @@ root(ROOTS.NeverImplemented, {
 	}),
 	n(WEAPONS, {
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDown({ timeline = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), {
 			i(208003),	-- 10.1.5 Time Rifts - Bronze Weapons - Capture Media
 			i(208002),	-- 10.1.5 Time Rifts - Infinite Weapons - Capture Media
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDown({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(211260),	-- Crimson Gladiator's Spear
-		})),
+		}),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDown({ timeline = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), {
 			i(211162),	-- Klaxxi Longsword
 			i(210533),	-- Timerunning Staff
-		})),
+		}),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDown({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			i(215699),	-- Grand Imperial Rifle
 			i(215566),	-- Jinyu Blade
 			i(215568),	-- Jinyu Dagger
@@ -1809,10 +1809,10 @@ root(ROOTS.NeverImplemented, {
 			i(216450),	-- Staff of the Monkey King
 			i(216453),	-- Stick of the Monkey King
 			i(215810),	-- Warspear of Xuen
-		})),
+		}),
 
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			-- Reported in Discord
 			i(225862),	-- Forged Gladiator's Greatstaff
 			-- Leave this for Darkal //Braghe
@@ -1932,15 +1932,15 @@ root(ROOTS.NeverImplemented, {
 			i(216905),	-- Brann Bronzebeard's Axe
 			-- Gun
 			i(216906),	-- Ol' Faithful
-		})),
+		}),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,02), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,02), {
 			i(222905),	-- Faerin's Shield
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			i(225667),	-- Ambassador Flamelash's Trident
 			i(231490),	-- Arbiter's Blade
 			i(232267),	-- Creche-Guard's Axe
@@ -1955,15 +1955,15 @@ root(ROOTS.NeverImplemented, {
 			i(225665),	-- Golem Lord Argelmach's Wrench
 			i(229414),	-- Moira Thaurissan's Hammer
 			i(226067),	-- Timely Tourist's Glaive
-		})),
+		}),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), {
 			i(232946),	-- Verus
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			i(230796),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (bow)
 			i(230797),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h axe)
 			i(230798),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h mace)
@@ -1990,15 +1990,15 @@ root(ROOTS.NeverImplemented, {
 			itemsource(187723),	-- Obsidian Gladiator's Staff
 			itemsource(187735),	-- Obsidian Gladiator's Talons
 			itemsource(187722),	-- Obsidian Gladiator's Warglaive
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			i(242318, {sourceID = 290177}),	-- Wooden Orgrimmar Shield
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
 			i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
 			i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
@@ -2027,18 +2027,16 @@ root(ROOTS.NeverImplemented, {
 			-- #if BEFORE MID
 			i(238008),	-- Wastelander's Folly
 			-- #endif
-		})),
+		}),
 
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.0
-			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
-				itemsource(301399),	-- Chakram-Breaker Greatsword
-				itemsource(301401),	-- Spire of the Furious Construct
-				itemsource(301404),	-- Beakbreaker Scimitar
-				itemsource(301407),	-- Viryx's Indomitable Bulwark
-				itemsource(301410),	-- Arcanic of the High Sage
-			})),
+			itemsource(301399),	-- Chakram-Breaker Greatsword
+			itemsource(301401),	-- Spire of the Furious Construct
+			itemsource(301404),	-- Beakbreaker Scimitar
+			itemsource(301407),	-- Viryx's Indomitable Bulwark
+			itemsource(301410),	-- Arcanic of the High Sage
 			i(246209),	-- 12.0 Monster - Arator - Sword1H - Sword_1H_Arator_D_01
 			i(259954),	-- [DNT] 12.0 Prey - Weapon - 1H Mace STR - A
 			i(249608),	-- [PH] 12.0 Delves - Level-Up - Weapon - 1H Axe INT
@@ -2080,18 +2078,16 @@ root(ROOTS.NeverImplemented, {
 			i(257239),	-- Voidbreaker's Knife
 			i(257236),	-- Voidbreaker's Runeaxe
 			i(260192),	-- Wildthorn Razorfang
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			-- Blizzard decided to make another copy of random WoD NYI sourceIDs again in 12.0.5
-			expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
-				itemsource(65277),	-- Blackhand Forgehammer
-				itemsource(65223),	-- Dagger of Enfeeblement
-				itemsource(65280),	-- Dagger of the Shattered Crucible
-				itemsource(62894),	-- The Black Hand
-			})),
-		})),
+			itemsource(65277),	-- Blackhand Forgehammer
+			itemsource(65223),	-- Dagger of Enfeeblement
+			itemsource(65280),	-- Dagger of the Shattered Crucible
+			itemsource(62894),	-- The Black Hand
+		}),
 	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.TBC, {
@@ -2126,18 +2122,18 @@ root(ROOTS.NeverImplemented, {
 			}),
 
 			-- 2.0.1
-			expansion(EXPANSION.TBC, patch(0,1), bubbleDown({ timeline = { CREATED_2_0_1 } }, {
+			expansion(EXPANSION.TBC, patch(0,1), {
 				-- #if BEFORE 4.0.1
 				i(30491),	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 				-- #endif
-			})),
+			}),
 
 			-- 2.4.2
-			expansion(EXPANSION.TBC, patch(4,2), bubbleDown({ timeline = { CREATED_2_4_2 } }, {
+			expansion(EXPANSION.TBC, patch(4,2), {
 				-- #if BEFORE 3.0.2
 				i(38579),	-- Venomous Tome
 				-- #endif
-			})),
+			}),
 		}),
 		expansion(EXPANSION.WRATH, {
 			n(SEASON_DEADLY, {
@@ -2158,11 +2154,11 @@ root(ROOTS.NeverImplemented, {
 			}),
 
 			-- 3.0.2
-			expansion(EXPANSION.WRATH, patch(0,2), bubbleDown({ timeline = { CREATED_3_0_2 } }, {
+			expansion(EXPANSION.WRATH, patch(0,2), {
 				-- #if BEFORE 6.2.0
 				i(44191),	-- Ice-Rimed Chopper
 				-- #endif
-			})),
+			}),
 		}),
 		expansion(EXPANSION.CATA, {
 			-- 4.x.x
@@ -2343,10 +2339,10 @@ root(ROOTS.NeverImplemented, {
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, patch(0,2), bubbleDown({ timeline = { CREATED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), {
 				i(120272),	-- High Warlord's Razor
 				i(120273),	-- High Warlord's Razor
-			})),
+			}),
 			n(SEASON_PRIMAL, {
 				i(180460),	-- Primal Combatant's Decapitator
 				i(111076),	-- Primal Gladiator's Staff (H), none elite

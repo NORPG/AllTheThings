@@ -29,7 +29,7 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDown({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			-- Zone: Tiragarde Sound
 			exploration(8846),	-- Tiragarde Redoubt
 			exploration(8917),	-- Wellington
@@ -54,10 +54,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(9770),	-- Ai'twen's Cave
 			exploration(10005),	-- Raimond's Laboratory
 
-		})),
+		}),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDown({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			-- Zone: Tiragarde Sound
 			exploration(10077),	-- Horde Airship
 			exploration(10262),	-- The Strider
@@ -68,20 +68,20 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			-- Zone: Stormsong Valley
 			exploration(10079),	-- Horde Airship
 			exploration(10265),	-- Shrine of the Storm (copy)
-		})),
+		}),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDown({ timeline = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), {
 			-- Zone: Tiragarde Sound
 			exploration(10426),	-- The Swift Vengeance
 
 			-- Zone: Stormsong Valley
 			exploration(10454),	-- Tiffin's Melody
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDown({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			-- Zone: Oribos
 			exploration(13612),	-- Felspinner Nest
 			exploration(13209),	-- Netherhollow
@@ -281,10 +281,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(11436),	-- [Vignette Space 1]
 			exploration(11437),	-- [Vignette Space 2]
 			exploration(11459),	-- MattTestTerrain2
-		})),
+		}),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, patch(0,2), bubbleDown({ timeline = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, patch(0,2), {
 			-- Zone: Torghast, Tower of the Damned
 			exploration(13547),	-- The Runecarver's Oubliette
 			map_exploration(13546),	-- Torghast, Tower of the Damned
@@ -304,20 +304,20 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- NYI?
 			exploration(13574),	-- PTH Test Area
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDown({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			-- Zone: Korthia
 			exploration(13656),	-- Cave of Secrets
 			exploration(13660),	-- Cavern of Contemplation
 			exploration(13671),	-- Chamber of the Sigil
 			exploration(13667),	-- Crest of Clarity
 			map_exploration(13570),	-- Korthia
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDown({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			-- Zone: Zereth Mortis
 			exploration(13707),	-- Site Ka'a
 			exploration(13890),	-- Terrestial Cache [Blizzard mistyped this name. It should be "Terrestrial"]
@@ -325,11 +325,11 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- NYI?
 			map_exploration(13409),	-- Progenitor Zone Area 1
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			-- Zone: The Waking Shores
 			exploration(14086),	-- Ashscale Halls
 			exploration(14087),	-- Ashscale HallsS
@@ -495,10 +495,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(13576),	-- Zone2lDoodadtest2
 			exploration(13635),	-- Zone4TyrholdTest
 			exploration(13790),	-- zsewell
-		})),
+		}),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), {
 			-- Zone: The Forbidden Reach
 			exploration(14545),	-- Stormsunder Overlook
 			map_exploration(14433),	-- The Forbidden Reach
@@ -528,10 +528,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(14599),	-- zzOLDTempest Coast
 			exploration(14532),	-- zzOLDThe Lost Atheneum
 			exploration(14533),	-- zzOLDThe Old Weyrn Grounds
-		})),
+		}),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), {
 			-- Zone: Zaralek Cavern
 			exploration(14725),	-- The Bone Gallery
 			map_exploration(14022),	-- Zaralek Cavern
@@ -568,10 +568,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(14709),	-- Shane Test Area
 			exploration(14657),	-- WB New Hires
 			exploration(14668),	-- ZZ_AlexandraDD
-		})),
+		}),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), {
 			-- Zone: Dragon Isles
 			map_exploration(14750),	-- Dragon Isles
 
@@ -611,10 +611,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			map_exploration(14845),	-- The Warlands
 			map_exploration(14842),	-- Ulderoth
 			map_exploration(14846),	-- Ulderoth
-		})),
+		}),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ timeline = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), {
 			-- Scenario: Reforging the Tyr's Guard
 			map_exploration(14970),	-- The Black
 
@@ -623,10 +623,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(14968),	-- Dev Map - Mechagon
 			exploration(14963),	-- Dev Map - Quest Training
 			exploration(14967),	-- Dev Map - Zereth Mortis
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			-- Emerald Dream
 			exploration(15053),	-- Aviana's Perch
 			map_exploration(14529),	-- Emerald Dream
@@ -659,10 +659,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			-- NYI?
 			exploration(14519),	-- 10Zone6-Devland
 			exploration(14038),	-- Env Art Land - Detail Doodad Test
-		})),
+		}),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), {
 			-- Unknown [Map 2666] Amirdrassil
 			map_exploration(14969),	-- Amirdrassil
 			exploration(14981),	-- Ancient Bough
@@ -692,10 +692,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(15011),	-- FX - Test Dungeon
 			exploration(14987),	-- James's Dynamic Mount Testground
 			exploration(15109),	-- Sound Room - Audio Smoketest
-		})),
+		}),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ timeline = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), {
 			-- Game Mode: Plunderstorm
 			exploration(14357),	-- Arathi Highlands
 			map_exploration(15058),	-- Arathi Highlands
@@ -734,17 +734,17 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(15066),	-- Thoradin's Wall
 			exploration(15061),	-- Valorcall Pass
 			exploration(15078),	-- Witherbark Village
-		})),
+		}),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			-- Zone: Suramar
 			exploration(15168),	-- Botanist's Terrace
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ timeline = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), {
 			-- Zone: Dornogal
 			-- Sub-zone:
 			map_exploration(15051),	-- Chamber of Heart
@@ -912,10 +912,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(14853),	-- Test Dungeon
 			exploration(14747),	-- Zone 4 Dev Land
 			map_exploration(15055),	-- zzoldPriory of the Sacred Flame
-		})),
+		}),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ timeline = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), {
 			-- Zone: The Forbidden Reach [Dracthyr starting zone for all classes]
 			map_exploration(15509),	-- The Forbidden Reach
 			exploration(15510),	-- The War Creche
@@ -945,19 +945,19 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- NYI?
 			map_exploration(15780),	-- Forbidden Reach - (11.0.5 Version) - Dracthyr for All
-		})),
+		}),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ timeline = { CREATED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), {
 			-- Zone: Siren Isle
 			exploration(15941),	-- Bilge Rat Corsair
 			exploration(15914),	-- Hozen's Paw
 			exploration(16101),	-- Pridetalon Hotsprings
 			map_exploration(16108),	-- The Great Sea
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			-- Zone: Undermine
 			exploration(15643),	-- Airship Supply Depot
 			exploration(15465),	-- Slam Central Station
@@ -1014,10 +1014,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- Warband Scene: Gallagio Grand Gallery
 			map_exploration(16078),	-- Warband_Plains
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			-- Revisited Horrific Visions
 			map_exploration(15946),	-- Vision of Orgrimmar
 			map_exploration(15942),	-- Vision of Stormwind
@@ -1028,10 +1028,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- NYI?
 			map_exploration(16077),	-- Dornogal Test
-		})),
+		}),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), {
 			-- Lorewalking Zone: Arathi Highlands
 			map_exploration(15716),	-- Arathi Highlands
 			exploration(15735),	-- Ar'gorok
@@ -1119,10 +1119,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 
 			-- NYI?
 			exploration(15794),	-- Marrin's Enclave [UNUSED]
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			-- Dungeon: Eco-Dome Al'dani
 			exploration(16422),	-- Al'dani Sands
 			exploration(16419),	-- Breached Dome
@@ -1144,10 +1144,10 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			-- NYI?
 			exploration(15334),	-- 11.2 - Karesh Test
 			exploration(15798),	-- Wastelander Ruins [PH] - UNUSED
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			-- NYI?
 			exploration(16541),	-- 12DUR_Oasis_TEST_MCarwen
 			exploration(15529),	-- Azshara_DemoArea
@@ -1158,16 +1158,16 @@ root(ROOTS.NeverImplemented, n(EXPLORATION, {
 			exploration(16107),	-- Elwynn 2 test
 			exploration(15542),	-- Housing NPC Prototype Neighborhood
 			exploration(15515),	-- Housing_Plots
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			-- Zone: Silvermoon City
 			exploration(16647),	-- Den of Indulgence
 			exploration(16087),	-- Farstrider Square
 			exploration(16627),	-- Sunwing Sundries
 			exploration(16665),	-- Umbral Atrium
-		})),
+		}),
 	}),
 }));

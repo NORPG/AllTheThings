@@ -12,15 +12,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.4.0
-				expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+				expansion(EXPANSION.MOP, patch(4,0), {
 					i(101729),	-- Grand Deluxe Noodle Cart Kit
 					i(101727),	-- Grand Noodle Cart Kit
 					i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					i(111435),	-- Clefhoof Pot Roast
 					i(111440),	-- Crispy Fried Scorpion
 					i(111432),	-- Deep Fried Riverbeast
@@ -30,42 +30,42 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(115302),	-- Seasoned Elekk Ribeye
 					i(111451),	-- Starflower Sandwich
 					i(115291),	-- Whole Pot-Roasted Elekk
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(172064),	-- zzOldArdenweald Zonewich
 					i(172065),	-- zzOldBastion Zonewich
 					i(172066),	-- zzOldMaldraxxus Zonewich
 					i(172060),	-- Quiethounds
 					i(172067),	-- zzOldRevendreth Zonewich
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(198396),	-- Ribbed Mollusk Meat
-				})),
+				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					i(206188),	-- Druidic Dreamsalad
 					i(206189),	-- Fine Taladorian Cheese Platter
 					i(206187),	-- Highly Spiced Haunch
 					i(206192),	-- Picante Pomfruit Cake
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
-				})),
+				}),
 
 				-- 10.2.0
-				expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+				expansion(EXPANSION.DF, patch(2,0), {
 					i(210495),	-- Slumbering Peacebloom Tea
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(220415),	-- Angler's Delight
 					i(222283),	-- Angler's Delight
 					i(220430),	-- Blessing Blossom Tea
@@ -274,11 +274,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222786),	-- zzold cooking recipe
 					i(222787),	-- zzold cooking recipe
 					i(220424),	-- zzOldFeast of the Divine Day
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(235919),	-- [PH] 12.0 Cooking - Test Food
 					i(242530),	-- [PH] Vegetarian Recipe
 					i(242531),	-- [PH] Vegetarian Recipe
@@ -287,7 +287,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(267000),	-- Hearty Flora Frenzy
 					i(266986),	-- Hearty Quel'dorei Medley
 					i(242751),	-- Hearty Rootland Surprise
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -303,17 +303,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					-- With SpellID attached
 					i(34126),	-- Recipe: Shoveltusk Soup
 					i(39692),	-- Recipe: Succulent Orca Stew
 					-- Without SpellID attached
 					i(39644),	-- Recipe: Kungaloosh
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.1
-				expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,1), {
 					-- Without SpellID attached
 					i(87247),	-- Recipe: Banquet of the Brew
 					i(87227),	-- Recipe: Banquet of the Grill
@@ -342,10 +342,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(74676),	-- Recipe: Twin Fish Platter
 					i(74667),	-- Recipe: Valley Stir Fry
 					i(74675),	-- Recipe: Wildfowl Roast
-				})),
+				}),
 
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					-- With SpellID attached
 					i(86550),	-- Apprentice Cookbook
 					i(86512),	-- Journeyman Cookbook
@@ -354,10 +354,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(86551),	-- Expert Cookbook
 					i(86554),	-- Grand Master Cookbook
 					i(86553),	-- Master Cookbook
-				})),
+				}),
 
 				-- 5.4.0
-				expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+				expansion(EXPANSION.MOP, patch(4,0), {
 					-- With SpellID attached
 					i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
 					i(101728),	-- Recipe: Grand Noodle Cart Kit
@@ -366,11 +366,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(101631),	-- Recipe: Noodle Cart Kit
 					i(101664),	-- Recipe: Deluxe Noodle Cart Kit
 					i(101663),	-- Recipe: Pandaren Treasure Noodle Cart Kit
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					r(160967),	-- Clefthoof Pot Roast
 					r(160976),	-- Crispy Fried Scorpion
 					r(160961),	-- Deep Fried Basilisk
@@ -380,29 +380,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(169699),	-- Seasoned Elekk Ribeye
 					r(160988),	-- Starflower Sandwich
 					r(169693),	-- Whole Pot-Roasted Elekk
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.2.0
-				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), {
 					-- Without SpellID attached
 					i(169457),	-- Recipe: Mecha-Bytes
 					i(170076),	-- Recipe: Unagi Skewer
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(308421),	-- Ardenweald Zonewich
 					r(308422),	-- Bastion Zonewich
 					r(308423),	-- Maldraxxus Zonewich
 					r(308416),	-- Quiethounds
 					r(308424),	-- Revendreth Zonewich
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					-- Without SpellID attached
 					i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
 					i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
@@ -426,10 +426,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198121),	-- Recipe: Thousandbone Tongueslicer (RECIPE!)
 					i(198092),	-- Recipe: Twice-Baked Potato (RECIPE!)
 					i(198107),	-- Recipe: Zesty Water (RECIPE!)
-				})),
+				}),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ timeline = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, patch(1,5), {
 					r(412533),	-- Druidic Dreamsalad (RECIPE!)
 					r(412534),	-- Fine Taladorian Cheese Platter (RECIPE!)
 					r(412531),	-- Highly Spiced Haunch (RECIPE!)
@@ -437,17 +437,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(412537),	-- Picante Pomfruit Cake (RECIPE!)
 					r(412536),	-- Roquefort-Stuffed Peppers (RECIPE!)
 					r(412535),	-- Venrik's Goat Milk (RECIPE!)
-				})),
+				}),
 
 				-- 10.2.0
-				expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+				expansion(EXPANSION.DF, patch(2,0), {
 					-- Without SpellID attached
 					i(210496),	-- Recipe: Slumbering Peacebloom Tea
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(445478),	-- Blessing Blossom Tea
 					r(445477),	-- Luminous Lemonade
 					r(445481),	-- Tasty Pocket Tart
@@ -455,28 +455,28 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(224419),	-- Recipe: Jester's Board (RECIPE!)
 					i(223959),	-- Recipe: Secret Sauce (RECIPE!)
-				})),
+				}),
 
 				-- 11.2.7
-				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+				expansion(EXPANSION.TWW, patch(2,7), {
 					r(1245945),	-- [DNT] TWW Cooking Decor Template
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					-- Without SpellID attached
 					i(251630),	-- Recipe: Amani Cornucopia
 					i(258490),	-- Recipe: Argentleaf Tea
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					r(1296257),	--
 					r(1296280),	--
 					r(1296426),	--
 					r(1296427),	--
-				})),
+				}),
 			}),
 		}),
 	}),

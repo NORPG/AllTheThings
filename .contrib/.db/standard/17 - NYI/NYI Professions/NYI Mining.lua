@@ -6,34 +6,34 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(PROFESSION_EQUIPMENT, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.7
-				expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), {
 					i(204677),	-- Ogre Mining Pick
-				})),
+				}),
 			}),
 		}),
 		filter(MISC, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.2
-				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, patch(0,2), {
 					i(194063),	-- Glowing Fragment
 					i(194064),	-- Intricate Geode
 					i(194078),	-- Perfect Draconium Scale
 					i(194079),	-- Pure Serevite Nugget
-				})),
+				}),
 
 				-- 10.0.7
-				expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ timeline = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), {
 					i(204632),	-- Tectonic Rock Fragment
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(210942),	-- Byproduct 01 - Light
 					i(210943),	-- Byproduct 02 - Dark
 					i(210940),	-- Null Stone
 					i(210941),	-- Null Stone
-				})),
+				}),
 			}),
 		}),
 		n(CRAFTABLES, {
@@ -58,23 +58,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), {
 					r(32606),	-- Mining
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					r(49253),	-- Unknown
 					r(49254),	-- Unknown
 					r(49255),	-- Unknown
 					r(49260),	-- Unknown
 					r(53417),	-- Unknown
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					-- Without SpellID attached
 					i(124475),	-- Mining Technique: Felslate Deposit
 					i(124476),	-- Mining Technique: Felslate Deposit
@@ -96,30 +96,30 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(124483),	-- Mining Technique: Living Seam
 					i(124484),	-- Mining Technique: Living Seam
 					i(124485),	-- Mining Technique: Living Seam
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(308153),	-- Elethium Ore
 					r(308130),	-- Laestrite Ore
 					r(308150),	-- Oxxein Ore
 					r(308151),	-- Phaedrum Ore
 					r(308152),	-- Sinvyr Ore
 					r(308131),	-- Solenium Ore
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382586),	-- Opening
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(423882),	-- Overload Test Deposit
-				})),
+				}),
 			}),
 		}),
 	}),

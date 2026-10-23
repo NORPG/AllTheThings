@@ -16,13 +16,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), {
 					i(23770),	-- Blue Smoke Flare
 					i(23820),	-- Critter Enlarger
 					i(23832),	-- Gnomish Tonk Controller
 					i(23831),	-- Goblin Tonk Controller
 					i(23840),	-- Remote Mail Terminal
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.x.x
@@ -33,21 +33,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					i(81143),	-- Avanced Deepdive Helmet
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					i(109168, {	-- Shrediron's Shredder
 						bonusID = 585,
 					}),
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					i(153591),	-- Belt Enchant: Holographic Horror Projector
 					i(159829),	-- Belt Enchant: Miniaturized Plasma Shield
 					i(153592),	-- Belt Enchant: Personal Space Amplifier
@@ -57,11 +57,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(153497),	-- Fro-Grow Grenade
 					i(153488),	-- Neurological Immobilization Bomb
 					i(153505),	-- Monelite Boomstick
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
 					i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
 					i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
@@ -87,11 +87,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172928),	-- Hydrodynamic Accelerators
 					i(172926),	-- Necrostatic Micro Capacitor
 					i(172922),	-- Re-Calibrated Proton Blaster
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(198836),	-- Arclight Vital Correctors
 					i(198250),	-- Convincingly Realistic Jumper Cables+
 					i(198251),	-- Convincingly Realistic Jumper Cables++
@@ -115,16 +115,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198286),	-- Tinker Removal Kit+
 					i(198287),	-- Tinker Removal Kit++
 					i(198288),	-- Tinker Removal Kit+++
-				})),
+				}),
 
 				-- 10.0.5
-				expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
+				expansion(EXPANSION.DF, patch(0,5), {
 					i(203382),	-- Peripheral Vision Projectors
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(225984),	-- Assorted Choking Hazards
 					i(225985),	-- Assorted Choking Hazards
 					i(225986),	-- Assorted Choking Hazards
@@ -160,23 +160,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(244788),	-- [PH] Test Fishing Rod A
 					i(244789),	-- [PH] Test Fishing Rod B
 					i(257733),	-- M0LL1, Atomic Anomaly
 					i(257734),	-- M0LL1, Atomic Anomaly
 					i(244705),	-- Mini-Medical Team
 					i(244706),	-- Mini-Medical Team
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(279366),	-- Aetherlume Field Lamp
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -193,7 +193,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), {
 					r(30573),	-- Gnomish Tonk Controller
 					r(30561),	-- Goblin Tonk Controller
 					-- With SpellID attached
@@ -201,59 +201,59 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(23882),	-- Schematic: Critter Enlarger
 					i(23812),	-- Schematic: Red Smoke Flare
 					i(23885),	-- Schematic: Remote Mail Terminal
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,1), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,1), {
 					r(49383),	-- Engineering
 					r(56273),	-- Wormhole: Gadgetzan
 					r(53280),	-- Unknown
-				})),
+				}),
 
 				-- 3.2.0
-				expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+				expansion(EXPANSION.WRATH, patch(2,0), {
 					r(67790),	-- Dimensional Folder: K3
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					r(84344),	-- Unknown
 					r(84407),	-- Unknown
 					r(84422),	-- Unknown
 					r(84423),	-- Unknown
 					r(84433),	-- Unknown
 					r(84434),	-- Unknown
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), {
 					-- Without SpellID attached
 					i(94894),	-- Schematic: Advanced Refrigeration Unit
 					i(97230),	-- Schematic: Jard's Peculiar Energy Source
 					i(94893),	-- Schematic: Pierre
 					i(94880),	-- Schematic: Sky Golem
-				})),
+				}),
 
 				-- 5.4.0
-				expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+				expansion(EXPANSION.MOP, patch(4,0), {
 					-- Without SpellID attached
 					i(100907),	-- Schematic: Rascal-Bot
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					r(161543),	-- Unknown
 					-- Without SpellID attached
 					i(120134),	-- Recipe: Secrets of Draenor Engineering
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					-- Without SpellID attached
 					i(137692),	-- Schematic: Blingtron's Circuit Design Tutorial
 					i(137697),	-- Schematic: Blink-Trigger Headgun [Rank 2]
@@ -262,24 +262,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(137700),	-- Schematic: Reinforced Headgun [Rank 2]
 					i(137725),	-- Schematic: Sonic Environment Enhancer
 					i(137698),	-- Schematic: Tactical Headgun [Rank 2]
-				})),
+				}),
 
 				-- 7.1.5
-				expansion(EXPANSION.LEGION, patch(1,5), bubbleDownSelf({ timeline = { CREATED_7_1_5 } }, {
+				expansion(EXPANSION.LEGION, patch(1,5), {
 					-- Without SpellID attached
 					i(144343),	-- Schematic: Rechargeable Reaves Battery
-				})),
+				}),
 
 				-- 7.3.0
-				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+				expansion(EXPANSION.LEGION, patch(3,0), {
 					-- Without SpellID attached
 					i(151714),	-- Schematic: Gravitational Reduction Slippers
 					i(151717),	-- Schematic: Wormhole Generator: Argus
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(269205),	-- Belt Enchant: Holographic Horror Projector
 					r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
 					r(269208),	-- Belt Enchant: Personal Space Amplifier
@@ -304,17 +304,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(162739),	-- Schematic: Fro-Grow Grenade [Rank 3] [H]
 					i(162336),	-- Schematic: Neurological Immobilization Bomb [Rank 3] [A]
 					i(162740),	-- Schematic: Neurological Immobilization Bomb [Rank 3] [H]
-				})),
+				}),
 
 				-- 8.1.5
-				expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { CREATED_8_1_5 } }, {
+				expansion(EXPANSION.BFA, patch(1,5), {
 					-- Without SpellID attached
 					i(165843),	-- Schematic: Mechantula
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(310488),	-- Disposable Ectoplasmic Specs
 					r(310480),	-- Faerie Glider Kit
 					r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
@@ -330,11 +330,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(310527),	-- Unknown
 					-- Without SpellID attached
 					i(183867),	-- [DNT][REUSE ME] Schematic: Crafter's Mark III
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(382581),	-- Opening
 					r(382352),	-- Perfectly Calibrated Lenses
 					r(382360),	-- Tinker Removal Kit
@@ -401,35 +401,35 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(199258),	-- Schematic: Tinker: Supercollide-O-Tron (RECIPE!)
 					i(199265),	-- Schematic: Wyrmhole Generator (RECIPE!)
 					i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(447347),	-- Explosive Mine
 					r(447346),	-- Gravity Mine
 					r(447359),	-- Overclocked Circuit Board
 					r(447345),	-- Stasis Mine
 					r(447348),	-- Tinker: Lightning Tether
 					r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-				})),
+				}),
 
 				-- 11.2.7
-				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+				expansion(EXPANSION.TWW, patch(2,7), {
 					r(1246464),	-- [DNT] TWW Engineering Decor Template
 					-- With SpellID attached
 					i(233203),	-- Schematic: Housing Crafting Test Recipe
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					r(1261938),	-- M0LL1, Atomic Anomaly
 					r(1229918),	-- Unknown
 					r(1229925),	-- Unknown
 					r(1229929),	-- Unknown
 					r(1229934),	-- Spark of Beginnings
-				})),
+				}),
 			}),
 		}),
 	}),

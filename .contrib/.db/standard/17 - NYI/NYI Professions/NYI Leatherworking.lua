@@ -13,14 +13,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					i(41264),	-- Deflecting Bracers
 					i(39710),	-- Verdant Tundra Belt
 					i(39709),	-- Verdant Tundra Boots
 					i(39711),	-- Verdant Tundra Bracers
 					i(39707),	-- Verdant Tundra Cap
 					i(39708),	-- Verdant Tundra Shoulderpads
-				})),
+				}),
 
 				-- 3.x.x
 				n(P3xx, {
@@ -29,7 +29,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					i(56501),	-- Razorshell Belt
 					i(56493),	-- Razorshell Boots
 					i(56487),	-- Razorshell Bracers
@@ -47,33 +47,33 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(56506),	-- Windbound Leggings
 					i(56500),	-- Windbound Shoulders
 
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					i(118049),	-- Small Football
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					i(130878),	-- Shaved Felhide
 					i(129963),	-- Stonehide Boot Base
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					i(161974),	-- Honorable Combatant's Cestus [A]
 					i(159895),	-- Honorable Combatant's Cestus [H]
 					i(161973),	-- Honorable Combatant's Striker [A]
 					i(159894),	-- Honorable Combatant's Striker [H]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
 					i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
 					i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
@@ -143,11 +143,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172290),	-- Wildskin Vest
 					i(172296),	-- Wildskin Waistguard
 					i(172338),	-- Loosened Belt
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(193232),	-- Deathchill Hide+
 					i(193233),	-- Deathchill Hide++
 					i(193234),	-- Deathchill Hide+++
@@ -156,22 +156,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(193241),	-- Drygrate Scales+++
 					i(193475),	-- Masterwork Riding Crop
 					i(193495),	-- Savage Bow
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(219895),	-- Deepfury Hide+
 					i(219896),	-- Deepfury Hide++
 					i(219897),	-- Deepfury Hide+++
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(279373),	-- Mounted Moby
 					i(279372),	-- Stretched Snakeskin Rack
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -200,14 +200,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			-- #endif
 			expansion(EXPANSION.TBC, {
 				-- 2.4.0
-				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
+				expansion(EXPANSION.TBC, patch(4,0), {
 					-- Without SpellID attached
 					i(35528),	-- Pattern: Swiftstrike Shoulders
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDown({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					r(55243),	-- Bracers of Deflection
 					r(53681),	-- Garok's Battle
 					r(53686),	-- Verdant Tundra Belt
@@ -221,11 +221,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(38599),	-- Pattern: Dark Arctic Chestpiece
 					i(38598),	-- Pattern: Dark Arctic Leggings
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					r(74493),	-- Savage Leather
 					r(78421),	-- Unknown
 					r(78422),	-- Unknown
@@ -271,17 +271,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(67025),	-- Pattern: Tsunami Leggings
 					i(67014),	-- Pattern: Tsunami Shoulders
 					i(67019),	-- Pattern: Twilight Leg Armor
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.WOD, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.WOD, patch(0,4), {
 					i(86286),	-- Pattern: Sha Leather
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					r(171713),	-- Burnished Leather
 					-- With SpellID attached
 					i(118097),	-- Pattern: Small Football
@@ -293,11 +293,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(116322),	-- Pattern: Traveling Helm
 					i(116324),	-- Pattern: Traveling Leggings
 					i(116323),	-- Pattern: Traveling Tunic
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					r(196388),	-- Tanned Fel Leather
 					r(196387),	-- Shaved Felhide
 					r(196425),	-- Stonehide Boot Base
@@ -323,11 +323,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(137872),	-- Pattern: Warhide Mask [Rank 2]
 					i(137871),	-- Pattern: Warhide Pants [Rank 2]
 					i(137870),	-- Pattern: Warhide Shoulderguard [Rank 2]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(269549),	-- Honorable Combatant's Cestus [Rank 1]
 					r(269546),	-- Honorable Combatant's Striker [Rank 1]
 					-- With SpellID attached
@@ -340,16 +340,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(162389),	-- Pattern: Hardened Tempest Leggings [Rank 3]
 					i(162400),	-- Pattern: Mistscale Boots [Rank 3]
 					i(162401),	-- Pattern: Mistscale Greaves [Rank 3]
-				})),
+				}),
 
 				-- 8.1.0
-				expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+				expansion(EXPANSION.BFA, patch(1,0), {
 					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(338261),	-- Almost Thing (RECIPE!)
 					r(309293),	-- Bonerivetted Armguards (RECIPE!)
 					r(309288),	-- Bonerivetted Gauntlets (RECIPE!)
@@ -416,11 +416,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(182669),	-- Pattern: Loosened Belt (RECIPE!)
 					-- Without SpellID attached
 					i(183869),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(375175),	-- Deathchill Hide (RECIPE!)
 					r(375177),	-- Drygrate Scales (RECIPE!)
 					r(375170),	-- Masterwork Riding Crop (RECIPE!)
@@ -430,27 +430,27 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(197984),	-- Pattern: Wisp of Tyr (RECIPE!)
 					-- Without SpellID attached
 					i(197985),	-- Pattern: Illustrious Insight / Essence of Tyr (RECIPE!)
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(444085),	-- Deepfury Hide (RECIPE!)
-				})),
+				}),
 
 				-- 11.2.7
-				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+				expansion(EXPANSION.TWW, patch(2,7), {
 					r(1269498),	-- Snowfall Tribe Scare-Totem
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					r(1237576),	-- Recraft Equipment
 					-- Without SpellID attached
 					i(256651),	-- Pattern: Blood Knight's Armor Kit
 					i(256648),	-- Pattern: Devouring Banding
-				})),
+				}),
 			}),
 		}),
 	}),

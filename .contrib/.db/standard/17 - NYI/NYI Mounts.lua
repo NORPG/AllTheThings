@@ -121,7 +121,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.0.1
-		expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ timeline = { CREATED_2_0_1 } }, {
+		expansion(EXPANSION.TBC, patch(0,1), {
 			mount(33630, {	-- Blue Mechanostrider (MOUNT!)
 				displayID = 6569.
 			}),
@@ -139,33 +139,33 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				timeline = { DELETED_4_2_2 },
 			}),
 			-- #endif
-		})),
+		}),
 
 		-- 2.0.5
-		expansion(EXPANSION.TBC, patch(0,5), bubbleDownSelf({ timeline = { CREATED_2_0_5 } }, {
+		expansion(EXPANSION.TBC, patch(0,5), {
 			-- With MountID Attached
 			i(25664, {	-- Old Crappy McWeakSauce [Item: Crappy's Bell] (MOUNT!)
 				displayID = 17701,
 			}),
-		})),
+		}),
 
 		-- 2.0.8
-		expansion(EXPANSION.TBC, patch(0,8), bubbleDownSelf({ timeline = { CREATED_2_0_8 } }, {
+		expansion(EXPANSION.TBC, patch(0,8), {
 			-- Without MountID Attached
 			i(29225, {	-- zzoldSwift Warstrider (MOUNT!)
 				displayID = 20359,
 			}),
-		})),
+		}),
 
 		-- 2.1.0
-		expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ timeline = { CREATED_2_1_0 } }, {
+		expansion(EXPANSION.TBC, patch(1,0), {
 			mount(40212, {	-- Dragonmaw Nether Drake (MOUNT!)
 				displayID = 16314,
 			}),
-		})),
+		}),
 
 		-- 2.1.2
-		expansion(EXPANSION.TBC, patch(1,2), bubbleDownSelf({ timeline = { CREATED_2_1_2 } }, {
+		expansion(EXPANSION.TBC, patch(1,2), {
 			mount(39949, {	-- Mount (Test Anim) (MOUNT!)
 				displayID = 2404,
 			}),
@@ -175,27 +175,27 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(39450, {	-- Tallstrider (MOUNT!)
 				displayID = 6477,
 			}),
-		})),
+		}),
 
 		-- #if ANYCLASSIC
 		-- 2.2.2
-		expansion(EXPANSION.TBC, patch(2,2), bubbleDownSelf({ timeline = { CREATED_2_2_2 } }, {
+		expansion(EXPANSION.TBC, patch(2,2), {
 			i(33176, {	-- Flying Broom (MOUNT!)
 				timeline = { DELETED_4_2_2 },
 			}),
-		})),
+		}),
 		-- #endif
 
 		-- 2.2.3
-		expansion(EXPANSION.TBC, patch(2,3), bubbleDownSelf({ timeline = { CREATED_2_2_3 } }, {
+		expansion(EXPANSION.TBC, patch(2,3), {
 			-- With MountID Attached
 			i(28482, {	-- Great Elite Elekk (MOUNT!)
 				displayID = 17906,
 			}),
-		})),
+		}),
 
 		-- 2.3.0
-		expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ timeline = { CREATED_2_3_0 } }, {
+		expansion(EXPANSION.TBC, patch(3,0), {
 			mount(42929, {	-- [DNT] Test Mount (MOUNT!)
 				displayID = 21268,
 			}),
@@ -203,25 +203,25 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(25596, {	-- Peep the Phoenix Mount (MOUNT!)
 				displayID = 17890,
 			}),
-		})),
+		}),
 
 		-- 2.4.0
-		expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
+		expansion(EXPANSION.TBC, patch(4,0), {
 			mount(47037, {	-- Swift War Elekk (MOUNT!)
 				displayID = 23928,
 			}),
-		})),
+		}),
 
 		-- 2.4.1
-		expansion(EXPANSION.TBC, patch(4,1), bubbleDownSelf({ timeline = { CREATED_2_4_1 } }, {
+		expansion(EXPANSION.TBC, patch(4,1), {
 			-- With MountID Attached
 			i(37827, {	-- Brewfest Riding Kodo (MOUNT!)
 				displayID = 24758,
 			}),
-		})),
+		}),
 
 		-- 2.4.3
-		expansion(EXPANSION.TBC, patch(4,3), bubbleDownSelf({ timeline = { CREATED_2_4_3 } }, {
+		expansion(EXPANSION.TBC, patch(4,3), {
 			mount(55164, {	-- Swift Spectral Gryphon (MOUNT!)
 				displayID = 26691,
 			}),
@@ -229,7 +229,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(37598, {	-- Swift Zhevra [Item: Swift Zhevra OLD] (MOUNT!)
 				displayID = 24693,
 			}),
-		})),
+		}),
 
 		-- 2.x.x
 		n(P2xx, {
@@ -251,7 +251,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), {
 			mount(55293, {	-- Amani War Bear (MOUNT!)
 				displayID = 22464,
 			}),
@@ -304,17 +304,17 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(44556, {	-- Swift Spellfire Carpet (MOUNT!)
 				displayID = 44556,
 			}),
-		})),
+		}),
 
 		-- 3.0.8
-		expansion(EXPANSION.WRATH, patch(0,8), bubbleDownSelf({ timeline = { CREATED_3_0_8 } }, {
+		expansion(EXPANSION.WRATH, patch(0,8), {
 			mount(61983, {	-- Dan's Test Mount (MOUNT!)
 				displayID = 27659,
 			}),
-		})),
+		}),
 
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, patch(1,0), bubbleDownSelf({ timeline = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, patch(1,0), {
 			mount(64992, {	-- Big Blizzard Bear [PH] (MOUNT!)
 				displayID = 27567,
 			}),
@@ -325,10 +325,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(46101, {	-- Blue Skeletal Warhorse (MOUNT!)
 				displayID = 10718,
 			}),
-		})),
+		}),
 
 		-- 3.2.0
-		expansion(EXPANSION.WRATH, patch(2,0), bubbleDownSelf({ timeline = { CREATED_3_2_0 } }, {
+		expansion(EXPANSION.WRATH, patch(2,0), {
 			mount(66907, {	-- Argent Warhorse (MOUNT!)
 				displayID = 28918,
 			}),
@@ -341,18 +341,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(66124, {	-- Magic Rooster (MOUNT!)
 				displayID = 29379,
 			}),
-		})),
+		}),
 
 		-- 3.3.3
-		expansion(EXPANSION.WRATH, patch(3,3), bubbleDownSelf({ timeline = { CREATED_3_3_3 } }, {
+		expansion(EXPANSION.WRATH, patch(3,3), {
 			mount(75387, {	-- Tiny Mooncloth Carpet (MOUNT!)
 				displayID = 31837,
 			}),
-		})),
+		}),
 
 		-- #if ANYCLASSIC
 		-- 3.4.0
-		expansion(EXPANSION.WRATH, patch(4,0), bubbleDownSelf({ timeline = { CREATED_3_4_0 } }, {
+		expansion(EXPANSION.WRATH, patch(4,0), {
 			mount(388516, {	-- Hao-Yue, River Foreseer (MOUNT!)
 				-- displayID = ,
 			}),
@@ -374,12 +374,12 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(198628, {	-- X-51 Nether-Rocket X-TREME (MOUNT!)
 				displayID = 23647,
 			}),
-		})),
+		}),
 		-- #endif
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ timeline = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), {
 			mount(68930, {	-- Brood of Onyxia (MOUNT!)
 				displayID = 30175,
 			}),
@@ -392,18 +392,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(57859, {	-- Twilight Phoenix [Item: Essence of the Underworld (DEPRECATED)] (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 4.3.2
-		expansion(EXPANSION.CATA, patch(3,2), bubbleDownSelf({ timeline = { CREATED_4_3_2 } }, {
+		expansion(EXPANSION.CATA, patch(3,2), {
 			mount(121805, {	-- RAF Mount III (MOUNT!)
 				displayID = 38260,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.4
-		expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,4), {
 			mount(128859, {	-- zzOldDepleted-Kyparium Rocket (MOUNT!)
 				-- displayID = ,
 			}),
@@ -431,26 +431,26 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(91016, {	-- Reins of the Great Red Dragon Turtle (MOUNT!)
 				displayID = 42352,
 			}),
-		})),
+		}),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ timeline = { CREATED_5_1_0 } }, {
+		expansion(EXPANSION.MOP, patch(1,0), {
 			mount(134854, {	-- Cloud Mount (MOUNT!)
 				displayID = 46799,
 			}),
-		})),
+		}),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ timeline = { CREATED_5_4_0 } }, {
+		expansion(EXPANSION.MOP, patch(4,0), {
 			-- With MountID Attached
 			i(104011, {	-- Stormcrow (MOUNT!)
 				displayID = 51323,
 			}),
-		})),
+		}),
 
 		-- #if ANYCLASSIC
 		-- 5.5.0
-		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ timeline = { CREATED_5_5_0 } }, {
+		expansion(EXPANSION.MOP, patch(5,0), {
 			mount(1224647, {	-- Meeksi Brewrobber (MOUNT!)
 				displayID = 124513,
 			}),
@@ -466,12 +466,12 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(1224646, {	-- Meeksi Wanderpaw (MOUNT!)
 				displayID = 124511,
 			}),
-		})),
+		}),
 		-- #endif
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.2
-		expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,2), {
 			mount(150926, {	-- Draenor Chimera (MOUNT!)
 				displayID = 52405,
 			}),
@@ -479,26 +479,26 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(116657, {	-- Ancient Leatherhide (MOUNT!)
 				displayID = 52373,
 			}),
-		})),
+		}),
 
 		-- 6.2.0
-		expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ timeline = { CREATED_6_2_0 } }, {
+		expansion(EXPANSION.WOD, patch(2,0), {
 			-- Without MountID Attached
 			i(128480, {	-- Bristling Hellboar (MOUNT!)
 				displayID = 64726,
 			}),
-		})),
+		}),
 
 		-- 6.2.1
-		expansion(EXPANSION.WOD, patch(2,1), bubbleDownSelf({ timeline = { CREATED_6_2_2 } }, {
+		expansion(EXPANSION.WOD, patch(2,1), {
 			mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
 				displayID = 65845,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), {
 			-- With MountID Attached
 			i(137615, {	-- Flarecore Infernal / Molten Flarecore (MOUNT!)
 				displayID = 70127,
@@ -510,10 +510,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(129744, {	-- Iron Warhorse (MOUNT!)
 				displayID = 48946,
 			}),
-		})),
+		}),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ timeline = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), {
 			mount(239363, {	-- Swift Spectral Hippogryph (MOUNT!)
 				displayID = 75637,
 			}),
@@ -530,11 +530,11 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				displayID = 84468,
 			}),
 			i(143493),	-- Shadowblade's Murderous Omen (MOUNT!) [Item Never Available]
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			mount(261963, {		-- Ebon Krolusk (MOUNT!)
 				displayID = 75600,
 			}),
@@ -570,18 +570,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(163188, {	-- Surf Jelly (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			-- Without MountID Attached
 			i(166417, {	-- Reins of the Onyx War Hyena (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			mount(301841, {	-- Kua'fon (MOUNT!)
 				displayID = 89375,
 			}),
@@ -601,11 +601,11 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(168673, {	-- Keys to the Silver Mono-Wheel (No mount in yet) (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), {
 			mount(312772, {	-- Gilded Prowler (MOUNT!)
 				displayID = 93771,
 			}),
@@ -632,17 +632,17 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(184035, {	-- Silessa's Harness (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ timeline = { CREATED_9_0_5 } }, {
+		expansion(EXPANSION.SL, patch(0,5), {
 			mount(347813, {	-- Fireplume Phoenix (MOUNT!)
 				displayID = 100428,
 			}),
-		})),
+		}),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ timeline = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), {
 			i(186491, {	-- Spring Wilderling (MOUNT!)
 				displayID = 101004,
 			}),
@@ -650,32 +650,32 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(187412, {	-- Shardhide Ka-Sha (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ timeline = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), {
 			mount(350529, {	-- NAK's Test Mount [DNT] (MOUNT!)
 				displayID = 102040,
 			}),
-		})),
+		}),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ timeline = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), {
 			mount(356802, {	-- Holy Lightstrider (MOUNT!)
 				displayID = 101577,
 			}),
-		})),
+		}),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ timeline = { CREATED_9_2_5 } }, {
+		expansion(EXPANSION.SL, patch(2,5), {
 			mount(367190, {	-- [DND] Test Mount JZB (MOUNT!)
 				displayID = 88719,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), {
 			mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
 				displayID = 102924,
 			}),
@@ -759,10 +759,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(192789, {	-- [PH] Mammoth V2 Gray (MOUNT!)
 				displayID = 100959,
 			}),
-		})),
+		}),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ timeline = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), {
 			mount(369480, {	-- Cerulean Marsh Hopper (MOUNT!)
 				displayID = 105766,
 			}),
@@ -770,10 +770,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(203226, {	-- Stormfused Salamanther (MOUNT!)
 				-- displayID =
 			}),
-		})),
+		}),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ timeline = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), {
 			-- With MountID Attached
 			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)
 				displayID = 111729,
@@ -795,10 +795,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(211086, {	-- Jeweled Jade Scarab (MOUNT!)
 				displayID = 114744,
 			}),
-		})),
+		}),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ timeline = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), {
 			i(212632, {	-- Starry Twilight Peafowl (MOUNT!)
 				-- displayID = ,
 			}),
@@ -806,10 +806,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(211486, {	-- Winding Slitherdrake (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ timeline = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), {
 			-- With MountID Attached
 			i(223470, {	-- [PH] Alliance Wolf Mount Red (MOUNT!)
 				displayID = 119662,
@@ -823,11 +823,11 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223284, {	-- Underlight Shorestalker (MOUNT!)
 				displayID = 119506,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), {
 			mount(405623, {	-- Armadillo Roller (MOUNT!)
 				displayID = 91633,
 			}),
@@ -949,10 +949,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223502, {	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed) (MOUNT!)
 				displayID = 119685,
 			}),
-		})),
+		}),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ timeline = { CREATED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), {
 			-- With MountID attached
 			i(232523, {	-- G-99 Breakneck
 				-- displayID = ,
@@ -966,10 +966,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
 				displayID = 126061,
 			}),
-		})),
+		}),
 
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ timeline = { CREATED_11_1_5 } }, {
+		expansion(EXPANSION.TWW, patch(1,5), {
 			-- With MountID attached
 			i(238902, {	-- Autumn Harvesthog (MOUNT!)
 				displayID = 127825,
@@ -983,10 +983,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(238901, {	-- Winter Harvesthog (MOUNT!)
 				displayID = 127824,
 			}),
-		})),
+		}),
 
 		-- 11.1.7
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ timeline = { CREATED_11_1_7 } }, {
+		expansion(EXPANSION.TWW, patch(1,7), {
 			-- With MountID attached
 			i(243593, {	-- Banshee's Chilling Charger (MOUNT!)
 				displayID = 129222,
@@ -1000,10 +1000,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(243592, {	-- Grandmaster's Smokey Board (MOUNT!)
 				displayID = 129385,
 			}),
-		})),
+		}),
 
 		-- 11.2.0
-		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ timeline = { CREATED_11_2_0 } }, {
+		expansion(EXPANSION.TWW, patch(2,0), {
 			-- With MountID attached
 			i(247791, {	-- Adorned Northeron Gryphon (MOUNT!)
 				displayID = 131427,
@@ -1020,10 +1020,10 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(247722, {	-- The Headless Horseman's Burning Charger (MOUNT!)
 				displayID = 131408,
 			}),
-		})),
+		}),
 
 		-- 11.2.5
-		expansion(EXPANSION.TWW, patch(2,5), bubbleDownSelf({ timeline = { CREATED_11_2_5 } }, {
+		expansion(EXPANSION.TWW, patch(2,5), {
 			mount(1254363),	-- (PH LEGION REMIX MOUNT)
 			-- With MountID attached
 			i(250106, {	-- Floestrider Crest-Horn
@@ -1060,18 +1060,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(250762, {	-- Felfueled Memento of the Abyss
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 11.2.7
-		expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+		expansion(EXPANSION.TWW, patch(2,7), {
 			i(258488, {	-- Skypaw Glimmerfur (MOUNT!)
 				displayID = 138435,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.MID, {
 		-- 12.0.0
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			mount(1252141, {	-- [DNT] Jellyfish (MOUNT!)
 				displayID = 136514,
 			}),
@@ -1113,21 +1113,21 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(253587, {	-- Scale of Aln'sharan (MOUNT!)
 				displayID = 137945,
 			}),
-		})),
+		}),
 
 		-- 12.0.1
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { CREATED_12_0_1 } }, {
+		expansion(EXPANSION.MID, patch(0,1), {
 			mount(1289395, {	-- Swift Spectral Dragonhawk (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 
 		-- 12.0.5
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { CREATED_12_0_5 } }, {
+		expansion(EXPANSION.MID, patch(0,5), {
 			-- With MountID attached
 			i(260421, {	-- Void-Corrupted Amani Warbear Kit (MOUNT!)
 				-- displayID = ,
 			}),
-		})),
+		}),
 	}),
 }));

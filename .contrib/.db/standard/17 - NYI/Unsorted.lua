@@ -4,7 +4,7 @@
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.MID, {
-		expansion(EXPANSION.MID, patch(1,5), bubbleDownSelf({ timeline = { ADDED_12_1_5 } }, {
+		expansion(EXPANSION.MID, patch(1,5), {
 			i(269766),	-- Harvested Ivy
 			i(270277),	-- Muzok's Rune-Key
 			i(270282),	-- Kazok's Rune-Key
@@ -152,8 +152,8 @@ root(ROOTS.Unsorted, {
 			i(285957),	-- Wood Haunter's Bell-Crook
 			i(285958),	-- Frost Revenant's Bell-Crook
 			i(285959),	-- Embered Bell-Crook
-		})),
-		expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
+		}),
+		expansion(EXPANSION.MID, patch(1,0), {
 			i(169391),	-- Bubble-Eyed Rolly
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
@@ -564,8 +564,8 @@ root(ROOTS.Unsorted, {
 				i(271504),	-- Searing Caldera of Calamity
 			}),
 			--]]
-		})),
-		expansion(EXPANSION.MID, patch(0,7), bubbleDownSelf({ timeline = { ADDED_12_0_7 } }, {
+		}),
+		expansion(EXPANSION.MID, patch(0,7), {
 			n(ARMOR, {
 				-- Misc
 				i(274780),	-- Fungal Spore Vapor [NYI]
@@ -676,8 +676,8 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(264368),	-- ??
 			}),
-		})),
-		expansion(EXPANSION.MID, patch(0,5), bubbleDownSelf({ timeline = { ADDED_12_0_5 } }, {
+		}),
+		expansion(EXPANSION.MID, patch(0,5), {
 			filter(COSMETIC, {
 				n(ARMOR, {
 					i(270280),	-- Crown of Azure Springflowers
@@ -798,14 +798,14 @@ root(ROOTS.Unsorted, {
 				i(259474),	-- Lost Amani Toy
 				i(259475),	-- Misplaced Loa Statue
 			}),
-		})),
-		expansion(EXPANSION.MID, patch(0,1), bubbleDownSelf({ timeline = { ADDED_12_0_1 } }, {
+		}),
+		expansion(EXPANSION.MID, patch(0,1), {
 			n(WEAPONS, {
 				-- These Exist but needs a source.
 				i(269972),	-- Arathi Miner's Pickaxe
 			}),
-		})),
-		expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
+		}),
+		expansion(EXPANSION.MID, patch(0,0,1), {
 			n(PVP, {
 				-- These will become obtainable at the start of TLT expansion
 				i(263208),	-- Ensemble: Galactic Aspirant's Cloth Armor
@@ -847,11 +847,11 @@ root(ROOTS.Unsorted, {
 				i(263396),	-- Ensemble: Elite Galactic Gladiator's Warrior Armor
 				i(263397),	-- Arsenal: Elite Galactic Gladiator's Weapons
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), {
 			n(ARMOR, {	-- Armor/Wep
 				i(154158),	-- Skeletal Composite Bow \\ Pearl-Handled Bow \\ Bow - Level-up (NEEDS NAME)
 				i(153398),	-- Sea Sapphire Band
@@ -2357,9 +2357,9 @@ root(ROOTS.Unsorted, {
 			i(159971),	-- Token of Ironside Blessing
 			-- Somehow has sourceID attached
 			i(162654),	-- REUSE ME (DNT)
-		})),
+		}),
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			i(164641),	-- Pile of Weapons
 			i(164735),	-- Fallen Defender's Blade
 			i(164745),	-- Pile of Weapons
@@ -2495,10 +2495,10 @@ root(ROOTS.Unsorted, {
 			i(166871),	-- Jeweled Pyrium Goblet
 			i(166876),	-- Scrimshaw Ivory Direhorn
 			i(166896),	-- Heritage of the Sin'dorei
-		})),
+		}),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), {
 			i(164638),	-- Challenge Card: Phillip Carter Tracey \\ Challenge Card: Philip Carter Tracey
 			i(164639),	-- Challenge Card: Farmer Xiang-Su
 			i(164640),	-- Challenge Card: Tidemistress Shellbreaker
@@ -2563,10 +2563,10 @@ root(ROOTS.Unsorted, {
 			i(168195),	-- Time Trial Keystone
 			i(168196),	-- Time Trial Keystone
 			i(168197),	-- Time Trial Keystone
-		})),
+		}),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), {
 			i(166666),	-- Twisted Kodo Runt Bone
 			i(166845),	-- Glinting Amethyst
 			i(166885),	-- Mark of Azshara
@@ -2806,6 +2806,6 @@ root(ROOTS.Unsorted, {
 			i(169977),	-- Crumbling Bark \\ Touch of the Everlasting Empty Item
 			i(169978),	-- Cracked Branch \\ Touch of the Everlasting Empty Item
 			i(169979),	-- Shriveled Roots \\ Touch of the Everlasting Empty Item
-		})),
+		}),
 	}),
 });

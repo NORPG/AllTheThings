@@ -21,15 +21,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					i(41741),	-- Cobalt Rod
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
 				-- #if BEFORE 10.2.7
 				-- All was added into MoP: Remix Ensembles
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					i(82918),	-- Lightsteel Belt
 					i(82917),	-- Lightsteel Boots
 					i(82913),	-- Lightsteel Breastplate
@@ -52,19 +52,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(80811),	-- Spiritguard Helm
 					i(82899),	-- Spiritguard Legplates
 					i(82896),	-- Spiritguard Shoulders
-				})),
+				}),
 				-- #endif
 
 				-- 5.2.0
-				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ timeline = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), {
 					i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 					i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 					i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					i(108422),	-- Blackrock Crucible
 					i(107968),	-- Draenic Steel Chestplate
 					i(107976),	-- Draenic Steel Chestplate
@@ -251,21 +251,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108217),	-- Peerless Draenic Steel Wristwraps
 					i(108225),	-- Peerless Draenic Steel Wristwraps
 					-- #endif
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					i(124434),	-- Handmade Leystone Helm
 					i(124432),	-- Leystone Dome
 					i(124431),	-- Leystone Faceguard
 					i(124435),	-- Leystone Neckplate
 					i(124006),	-- Leystone Slag
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					i(159854, {modID = 90, sourceID = 95903, name = "Honorable Combatant's Battleaxe", }),
 					i(159854, {modID = 91, sourceID = 95904, name = "Honorable Combatant's Battleaxe", }),
 					i(159854, {modID = 92, sourceID = 95905, name = "Honorable Combatant's Battleaxe", }),
@@ -398,11 +398,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					itemsource(98007, {name = "Stormsteel Spear", }),	-- i(161918),
 					itemsource(98008, {name = "Stormsteel Spear", }),	-- i(161918),
 					itemsource(98009, {name = "Stormsteel Spear", }),	-- i(161918),
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
 					i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
 					i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
@@ -488,11 +488,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(176892),	-- Solforged Smasher
 					i(176894),	-- Solforged Spear
 					i(176899),	-- Solforged Warglaive
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					i(191070),	-- Blacksmithing Gloves
 					i(191025),	-- Blacksmith Hammer - DO NOT USE
 					i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
@@ -505,27 +505,27 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(191885),	-- Draconium Repair Hammer
 					i(190520),	-- zzOldPauldrons of the Dragon
 					i(190521),	-- zzOldTraitorous Primal Gauntlets of the Dragon
-				})),
+				}),
 
 				-- 10.0.2
-				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ timeline = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, patch(0,2), {
 					i(191882),	-- Serevite Repair Hammer
 					i(191883),	-- Serevite Repair Hammer
-				})),
+				}),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ timeline = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, patch(1,0), {
 					i(205040),	-- Shadowed Belt Buckle
 					i(205041),	-- Shadowed Belt Buckle
 					i(205042),	-- Shadowed Belt Buckle
 					i(205047),	-- Shadowed Impact Buckler
 					i(205048),	-- Shadowed Impact Buckler
 					i(205049),	-- Shadowed Impact Buckler
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					i(220961),	-- Arathor Armor Patch
 					i(220962),	-- Arathor Armor Patch
 					i(220963),	-- Arathor Armor Patch
@@ -759,11 +759,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(218096),	-- <PVP Alloy>
 					i(218099),	-- <PVP Alloy>
 					i(218093),	-- <Vendor Reagent A>
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					i(238206),	-- [PH] Weightstone - Quality 1
 					itemsource(287161),	-- Blood-Tempered Basinet
 					itemsource(287163),	-- Blood-Tempered Bracers
@@ -782,13 +782,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					itemsource(287077),	-- Spellbreaker's March
 					itemsource(287085),	-- Spellbreaker's Resolve
 					itemsource(287078),	-- Spellbreaker's Shelter
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					i(273056),	-- Odious Alloy+
 					i(273057),	-- Odious Alloy++
-				})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
@@ -820,33 +820,33 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.1.0
-				expansion(EXPANSION.TBC, patch(1,0), bubbleDownSelf({ timeline = { CREATED_2_1_0 } }, {
+				expansion(EXPANSION.TBC, patch(1,0), {
 					-- Without SpellID attached
 					i(35529),	-- Plans: Dawnsteel Bracers
 					i(35530),	-- Plans: Dawnsteel Shoulders
 					i(35531),	-- Plans: Swiftsteel Bracers
 					i(35532),	-- Plans: Swiftsteel Shoulders
-				})),
+				}),
 
 				-- 2.4.0
-				expansion(EXPANSION.TBC, patch(4,0), bubbleDownSelf({ timeline = { CREATED_2_4_0 } }, {
+				expansion(EXPANSION.TBC, patch(4,0), {
 					-- Without SpellID attached
 					i(35553),	-- Plans: Hard Khorium Battlefists
 					i(35554),	-- Plans: Hard Khorium Battleplate
 					i(35555),	-- Plans: Sunblessed Breastplate
 					i(35556),	-- Plans: Sunblessed Gauntlets
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ timeline = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), {
 					r(55730),	-- Cobalt Rod
 					r(50465),	-- Socket One-Handed Weapon
-				})),
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, patch(0,1), {
 					r(85531),	-- Unknown
 					-- Without SpellID attached
 					i(66095),	-- Plans: Cold-Forged Shank
@@ -882,11 +882,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(66090),	-- Plans: Stormforged Helm
 					i(66089),	-- Plans: Stormforged Legguards
 					i(66093),	-- Plans: Stormforged Shield
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
-				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ timeline = { CREATED_5_0_4 } }, {
+				expansion(EXPANSION.MOP, patch(0,4), {
 					r(126867),	-- Unknown
 					r(126864),	-- Unknown
 					r(126866),	-- Unknown
@@ -940,11 +940,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(84229),	-- Plans: Spiritblade Decimator
 					i(84232),	-- Plans: Spiritguard Bracers
 					i(84237),	-- Plans: Spiritguard Shield
-				})),
+				}),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ timeline = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), {
 					r(153631),	-- Draenic Steel Bulwark
 					r(153605),	-- Draenic Steel Chestplate
 					r(153629),	-- Draenic Steel Dagger
@@ -991,11 +991,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(116726),	-- Plans: Smoldering Helm
 					i(116728),	-- Plans: Smoldering Greaves
 					i(120129),	-- Plans: Secrets of Draenor Blacksmithing
-				})),
+				}),
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ timeline = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), {
 					r(184345),	-- Handmade Leystone Helm
 					r(184342),	-- Leystone Dome
 					r(184341),	-- Leystone Faceguard
@@ -1014,18 +1014,18 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(123957),	-- Plans: Leystone Hoofplates
 					i(123901),	-- Plans: Leystone Pauldrons [Rank 1]
 					i(123900),	-- Plans: Leystone Waistguard [Rank 1]
-				})),
+				}),
 
 				-- 7.3.0
-				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ timeline = { CREATED_7_3_0 } }, {
+				expansion(EXPANSION.LEGION, patch(3,0), {
 					-- Without SpellID attached
 					i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 					i(151709),	-- Plans: Felslate Anchor
-				})),
+				}),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ timeline = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), {
 					r(253129),	-- 9.0 Blacksmithing - Modified Crafting Reagent 02
 					r(265939),	-- 9.0 Blacksmithing - Crafted Reagent 06
 					r(265938),	-- 9.0 Blacksmithing - Crafted Reagent 05
@@ -1043,11 +1043,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(253153),	-- REUSE ME \\ Stormsteel Greatsword
 					r(253154),	-- REUSE ME \\ Stormsteel Greatsword
 					r(253155),	-- REUSE ME \\ Stormsteel Greatsword
-				})),
+				}),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ timeline = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), {
 					r(307649),	-- 9.0 Blacksmithing - Crafted Reagent 03
 					r(307650),	-- 9.0 Blacksmithing - Crafted Reagent 04
 					r(280659),	-- 9.0 Blacksmithing - Crafted Reagent 07
@@ -1130,11 +1130,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- Without SpellID attached
 					i(183864),	-- [DNT][REUSE ME] Plans: Crafter's Mark III
 					i(182670),	-- Plans: Reinforced Girdle
-				})),
+				}),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr
@@ -1163,11 +1163,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194505),	-- Plans: Primal Weightstone
 					i(194504),	-- Plans: Primal Whetstone
 					i(194494),	-- Plans: Reinforced Plating
-				})),
+				}),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), {
 					r(450290),	-- Core Framework
 					r(450243),	-- Echoing Impact
 					-- With SpellID attached
@@ -1245,29 +1245,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
 					i(218100),	-- Plans: <Optional Reagnt A>
 					i(218101),	-- Plans: <PVP Alloy>
-				})),
+				}),
 
 				-- 11.2.7
-				expansion(EXPANSION.TWW, patch(2,7), bubbleDownSelf({ timeline = { CREATED_11_2_7 } }, {
+				expansion(EXPANSION.TWW, patch(2,7), {
 					r(1246473),	-- [DNT] TWW Blacksmithing Decor Template
-				})),
+				}),
 			}),
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
-				expansion(EXPANSION.MID, patch(0,0,1), bubbleDownSelf({ timeline = { CREATED_12_0_0 } }, {
+				expansion(EXPANSION.MID, patch(0,0,1), {
 					r(1230770),	-- [DNT] 12.0 Engineering Recipe Spell Template
 					-- With SpellID attached
 					i(265538),	-- Plans: Ornate Crafter's Tongs
 					-- Without SpellID attached
 					i(258520),	-- Plans: Farstrider's Strike
-				})),
+				}),
 
 				-- 12.1.0
-				expansion(EXPANSION.MID, patch(1,0), bubbleDownSelf({ timeline = { CREATED_12_1_0 } }, {
+				expansion(EXPANSION.MID, patch(1,0), {
 					r(1291682),	-- Odious Alloy
 					r(1288608),	--
 					r(1288712),	--
-				})),
+				}),
 			}),
 		}),
 	}),
