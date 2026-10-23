@@ -42,25 +42,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Ashwood Lumber
-			maps = {
-				MOUNT_HYJAL,
-				RUINS_OF_GILNEAS,
-				TWILIGHT_HIGHLANDS,
-				ULDUM,
-			},
-			groups = {
-				-- Objects
-				o(578160),	-- [Mount Hyjal]
-				o(573547),	-- [Ruins of Gilneas]
-				o(574611),	-- [Twilight Highlands]
-				o(586651),	-- [Uldum]
-				-- Drops
-				i(251764),	-- Ashwood Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Ashwood Lumber
+				maps = {
+					MOUNT_HYJAL,
+					RUINS_OF_GILNEAS,
+					TWILIGHT_HIGHLANDS,
+					ULDUM,
+				},
+				groups = {
+					-- Objects
+					o(578160),	-- [Mount Hyjal]
+					o(573547),	-- [Ruins of Gilneas]
+					o(574611),	-- [Twilight Highlands]
+					o(586651),	-- [Uldum]
+					-- Drops
+					i(251764),	-- Ashwood Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(65460),	-- Big Cauldron of Battle
@@ -445,18 +448,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(257404),	-- Pyrewood Glass Bottle (DECOR!)
 			i(257095),	-- Twilight Fire Canister (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-			i(138791, {	-- Tome of Illusions: Cataclysm
-				ill(4098),	-- Windwalk (ILLUSION!)
-				ill(4084),	-- Heartsong (ILLUSION!)
-				ill(5867),	-- Light of the Earth-Warder (ILLUSION!)
-			}),
-			i(138792, {	-- Tome of Illusions: Elemental Lords
-				ill(4067),	-- Avalanche (ILLUSION!)
-				ill(4099),	-- Landslide (ILLUSION!)
-				ill(4074),	-- Elemental Slayer (ILLUSION!)
-			}),
-		})),
+		filter(ILLUSIONS, {
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(138791, {	-- Tome of Illusions: Cataclysm
+					ill(4098),	-- Windwalk (ILLUSION!)
+					ill(4084),	-- Heartsong (ILLUSION!)
+					ill(5867),	-- Light of the Earth-Warder (ILLUSION!)
+				}),
+				i(138792, {	-- Tome of Illusions: Elemental Lords
+					ill(4067),	-- Avalanche (ILLUSION!)
+					ill(4099),	-- Landslide (ILLUSION!)
+					ill(4074),	-- Elemental Slayer (ILLUSION!)
+				}),
+			},
+		}),
 		filter(MISC, {
 			i(52723, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Runed Elementium Rod
 		}),

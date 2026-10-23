@@ -37,7 +37,7 @@ local mapped = function(id, t)
 	return o
 end
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 	n(DUNGEONS, {
 		mapped(ACHIEVEMENTS, {
 			ach(20005, {	-- Heroic: Pandaria Dungeons
@@ -427,4 +427,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ t
 			},
 		}),
 	}),
-}))));
+})));

@@ -10,7 +10,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 		ach(18851),	-- Skeletons in the Lockbox (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18765, {	-- Destined to be Legendary (automated)
 				timeline = { ADDED_10_1_7 },
 			}),
@@ -34,7 +34,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				provider = { "i", 207011 },	-- Warblades of the Hakkari, Reborn
 				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, sharedData({
 			lvl = 40,
 			timeline = { REMOVED_4_0_3 },
@@ -715,11 +715,12 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18771, {	-- Khaz'gorian Smithing Hammer
 				provider = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, {
 			q(54465, {	-- Blacksmithing Plans [A]
 				provider = { "n", 133536 },	-- Grix "Ironfists" Barlow

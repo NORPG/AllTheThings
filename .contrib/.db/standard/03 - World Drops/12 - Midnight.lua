@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
-	n(ARMOR, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
+	n(ARMOR, {
 		filter(BACK_F, {
 			i(266224),	-- Brittle Cape
 			i(266221),	-- Frayed Shroud
@@ -49,7 +49,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.MID, {
 			i(258864),	-- Brittle Waistguard
 			i(258870),	-- Brittle Warboots
 		}),
-	})),
+	}),
 	n(ARMOR, {
 		filter(BACK_F, {
 			i(266210),	-- Tarnished Dawnlit Commander's Cape

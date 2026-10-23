@@ -442,58 +442,61 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18840, {	-- Fourth War Mining Techniques
-				crit(61525, {	-- Monelite Deposit
-					sourceQuests = {
-						48761,	-- Spiderphobia
-						51964,	-- Insufferable Bloodsuckers
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61526, {	-- Storm Silver Deposit
-					sourceQuests = {
-						48768,	-- Brined Justice [A]
-						52015,	-- Brined Justice [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61527, {	-- Platinum Deposit
-					sourceQuests = {
-						52050,	-- A More Challenging Career
-						52055,	-- An Ore for an Eye
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61528, {	-- Monelite Seam
-					sourceQuests = {
-						48767,	-- Seams Familiar
-						51971,	-- An Exquisite Brooch
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61529, {	-- Storm Silver Seam
-					sourceQuests = {
-						51889,	-- The Wrath of Grapes [A]
-						52043,	-- The Wrath of Grapes [H]
-					},
-				}),
-				crit(61530, {	-- Osmenite Deposit
-					sourceQuests = {
-						56103,	-- Ounces of Osmenite [A]
-						56431,	-- Ounces of Osmenite [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61531, {	-- Osmenite Seam
-					sourceQuests = {
-						56126,	-- Seams to be a Problem [A]
-						56432,	-- Seams to be a Problem [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61525, {	-- Monelite Deposit
+						sourceQuests = {
+							48761,	-- Spiderphobia
+							51964,	-- Insufferable Bloodsuckers
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61526, {	-- Storm Silver Deposit
+						sourceQuests = {
+							48768,	-- Brined Justice [A]
+							52015,	-- Brined Justice [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61527, {	-- Platinum Deposit
+						sourceQuests = {
+							52050,	-- A More Challenging Career
+							52055,	-- An Ore for an Eye
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61528, {	-- Monelite Seam
+						sourceQuests = {
+							48767,	-- Seams Familiar
+							51971,	-- An Exquisite Brooch
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61529, {	-- Storm Silver Seam
+						sourceQuests = {
+							51889,	-- The Wrath of Grapes [A]
+							52043,	-- The Wrath of Grapes [H]
+						},
+					}),
+					crit(61530, {	-- Osmenite Deposit
+						sourceQuests = {
+							56103,	-- Ounces of Osmenite [A]
+							56431,	-- Ounces of Osmenite [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61531, {	-- Osmenite Seam
+						sourceQuests = {
+							56126,	-- Seams to be a Problem [A]
+							56432,	-- Seams to be a Problem [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+				},
 			}),
-		})),
+		}),
 		header(HEADERS.Spell, 253335, {	-- Monelite Deposit [Rank 3]
 			providers = {
 				{ "o", 276616 },	-- Monelite Deposit
@@ -903,7 +906,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
 			ach(18820, {	-- Geologist's Ledger: Dragon Isles
 				-- Meta Achievement
 				sym = {{"meta_achievement",

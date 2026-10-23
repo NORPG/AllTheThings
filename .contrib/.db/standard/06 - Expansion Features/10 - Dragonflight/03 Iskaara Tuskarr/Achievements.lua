@@ -7,9 +7,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 		faction(FACTION_ISKAARA_TUSKARR, {
 			icon = 4687629,
 		}),
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
+		n(ACHIEVEMENTS, {
 			ach(19482, {	-- Army of the Fed
 				-- Meta Achievement
+				timeline = { ADDED_10_2_6 },
 				sym = {{"meta_achievement",
 					16678,	-- Adventurer of The Azure Span
 					16444,	-- Leftovers' Revenge
@@ -40,6 +41,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				minReputation = { FACTION_ISKAARA_TUSKARR, 30 },	-- Iskaara Tuskarr Renown 30
 				timeline = { ADDED_11_0_7 },
 			}),
-		})),
+		}),
 	}),
 }));

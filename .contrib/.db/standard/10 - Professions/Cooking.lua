@@ -450,70 +450,73 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 				coord = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				cost = {{ "i", 87658, 1 }},	-- 1x Empty Raw Tiger Steak Container
 			}),
-			header(HEADERS.Spell, 145062, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
-				q(33018, {	-- Noodle Secrets Long Forgotten
-					sourceQuests = {
-						31471,	-- Agile as a Tiger
-						31477,	-- Endurance
-						31480,	-- Have a Drink
-						31467,	-- Strong as a Tiger
-						31474,	-- The Soup of Contemplation
-						31476,	-- The Spirit of Cooking
-					},
-					provider = { "o", 221376 },	-- Old Sign Fragment
-					coord = { 52.1, 46.5, TIMELESS_ISLE },
-				}),
-				q(33020, {	-- The Lost Secret of the Secret Ingredient
-					sourceQuests = { 33018 },	-- Noodle Secrets Long Forgotten
-					provider = { "n", 72426 },	-- Lin Chao-Wei
-					coord = { 41.2, 73.4, TIMELESS_ISLE },
-					maps = { 429, 430 },	-- Temple of the Jade Serpent
-				}),
-				q(33107, {	-- Bad Feeling, Worse Result
-					sourceQuests = { 33020 },	-- The Lost Secret of the Secret Ingredient
-					provider = { "o", 221413 },	-- Lin Family Scroll
-					coord = { 68.8, 58.4, 429 },	-- Temple of the Jade Serpent
-					maps = { 430 },	-- Temple of the Jade Serpent
-					modelScale = 2,
-				}),
-				q(33021, {	-- Secrets Lost, Forever?
-					sourceQuests = { 33107 },	-- Bad Feeling, Worse Result
-					provider = { "n", 64231 },	-- Sungshin Ironpaw
-					coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				}),
-				q(33022, {	-- Catch and Carry
-					sourceQuests = { 33021 },	-- Secrets Lost, Forever?
-					provider = { "n", 64231 },	-- Sungshin Ironpaw
-					coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-					groups = {
-						r(145038),	-- Noodle Cart Kit
-					},
-				}),
-				q(33024, {	-- Is That A Real Measurement?
-					sourceQuests = { 33022 },	-- Catch and Carry
-					provider = { "n", 64231 },	-- Sungshin Ironpaw
-					coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-					maps = { 439, 440, 441, 442 },	-- Stormstout Brewery
-					cost = {{ "i", 101661, 1 }},	-- 1x Noodle Cart Kit
-					groups = {
-						r(145061),	-- Deluxe Noodle Cart Kit
-					},
-				}),
-				q(33026, {	-- These Aren't Your Fatty Goatsteaks
-					sourceQuests = { 33024 },	-- Is That a Real Measurement?
-					provider = { "n", 64231 },	-- Sungshin Ironpaw
-					coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-					cost = {{ "i", 101661, 1 }},	-- 1x Deluxe Noodle Cart Kit
-				}),
-				q(33027, {	-- The Secret Ingredient Is...
-					sourceQuests = { 33026 },	-- These Aren't Your Fatty Goatsteaks
-					provider = { "n", 64231 },	-- Sungshin Ironpaw
-					coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-					groups = {
-						r(145062),	-- Pandaren Treasure Noodle Cart Kit
-					},
-				}),
-			}))),
+			header(HEADERS.Spell, 145062, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
+				timeline = { ADDED_5_4_0 },
+				groups = {
+					q(33018, {	-- Noodle Secrets Long Forgotten
+						sourceQuests = {
+							31471,	-- Agile as a Tiger
+							31477,	-- Endurance
+							31480,	-- Have a Drink
+							31467,	-- Strong as a Tiger
+							31474,	-- The Soup of Contemplation
+							31476,	-- The Spirit of Cooking
+						},
+						provider = { "o", 221376 },	-- Old Sign Fragment
+						coord = { 52.1, 46.5, TIMELESS_ISLE },
+					}),
+					q(33020, {	-- The Lost Secret of the Secret Ingredient
+						sourceQuests = { 33018 },	-- Noodle Secrets Long Forgotten
+						provider = { "n", 72426 },	-- Lin Chao-Wei
+						coord = { 41.2, 73.4, TIMELESS_ISLE },
+						maps = { 429, 430 },	-- Temple of the Jade Serpent
+					}),
+					q(33107, {	-- Bad Feeling, Worse Result
+						sourceQuests = { 33020 },	-- The Lost Secret of the Secret Ingredient
+						provider = { "o", 221413 },	-- Lin Family Scroll
+						coord = { 68.8, 58.4, 429 },	-- Temple of the Jade Serpent
+						maps = { 430 },	-- Temple of the Jade Serpent
+						modelScale = 2,
+					}),
+					q(33021, {	-- Secrets Lost, Forever?
+						sourceQuests = { 33107 },	-- Bad Feeling, Worse Result
+						provider = { "n", 64231 },	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					q(33022, {	-- Catch and Carry
+						sourceQuests = { 33021 },	-- Secrets Lost, Forever?
+						provider = { "n", 64231 },	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
+							r(145038),	-- Noodle Cart Kit
+						},
+					}),
+					q(33024, {	-- Is That A Real Measurement?
+						sourceQuests = { 33022 },	-- Catch and Carry
+						provider = { "n", 64231 },	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						maps = { 439, 440, 441, 442 },	-- Stormstout Brewery
+						cost = {{ "i", 101661, 1 }},	-- 1x Noodle Cart Kit
+						groups = {
+							r(145061),	-- Deluxe Noodle Cart Kit
+						},
+					}),
+					q(33026, {	-- These Aren't Your Fatty Goatsteaks
+						sourceQuests = { 33024 },	-- Is That a Real Measurement?
+						provider = { "n", 64231 },	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						cost = {{ "i", 101661, 1 }},	-- 1x Deluxe Noodle Cart Kit
+					}),
+					q(33027, {	-- The Secret Ingredient Is...
+						sourceQuests = { 33026 },	-- These Aren't Your Fatty Goatsteaks
+						provider = { "n", 64231 },	-- Sungshin Ironpaw
+						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
+						groups = {
+							r(145062),	-- Pandaren Treasure Noodle Cart Kit
+						},
+					}),
+				},
+			})),
 		}),
 	})),
 	expansion(EXPANSION.WOD, {

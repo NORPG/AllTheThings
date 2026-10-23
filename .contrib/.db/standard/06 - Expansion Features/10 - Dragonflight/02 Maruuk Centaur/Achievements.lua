@@ -7,9 +7,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 		faction(FACTION_MARUUK_CENTAUR, {
 			icon = 4687627,
 		}),
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
+		n(ACHIEVEMENTS, {
 			ach(19481, {	-- Centaur of Attention
 				-- Meta Achievement
+				timeline = { ADDED_10_2_6 },
 				sym = {{"meta_achievement",
 					16677,	-- Adventurer of the Ohn'ahran Plains
 					16540,	-- Hunt Master
@@ -40,6 +41,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				minReputation = { FACTION_MARUUK_CENTAUR, 25 },	-- Maruuk Centaur Renown 25
 				timeline = { ADDED_11_0_7 },
 			}),
-		})),
+		}),
 	}),
 }));

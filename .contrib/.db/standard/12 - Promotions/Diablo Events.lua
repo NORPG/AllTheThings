@@ -101,11 +101,11 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		timeline = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0 },
 		groups = {
 			-- Event durations: May 25 - June 13, 2023. July 1 - July 29, 2025
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0, } }, {
+			n(ACHIEVEMENTS, {
 				ach(18258, {	-- Little Lord of Lies
 					provider = { "i", 206018 },	-- Baa'lial Soulstone
 				}),
-			})),
+			}),
 			-- DF Version
 			n(205722, {	-- Demon Portal
 				-- #if BEFORE 11.0
@@ -256,7 +256,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 					}),
 				},
 			}),
-			n(QUESTS, bubbleDownSelf({ timeline = { ADDED_11_1_7, REMOVED_11_2_0, } }, {
+			n(QUESTS, {
 				q(91038, {	-- Hellhunters Wanted
 					provider = { "o", 547529 },	-- Scorched Poster
 					coords = {
@@ -264,8 +264,9 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 						{ 50.0, 63.1, DORNOGAL },
 						{ 60.5, 74.9, DORNOGAL },
 					},
+					timeline = { ADDED_11_1_7, REMOVED_11_2_0, },
 				}),
-			})),
+			}),
 			n(VENDORS, {
 				n(245378, {	-- Baranar <Hellhunter>
 					coord = { 52.9, 68.0, DORNOGAL },

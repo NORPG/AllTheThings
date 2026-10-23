@@ -15,7 +15,7 @@ local CLOAK_OF_INFINITE_BONUSIDS = function()
 	return cloaks;
 end
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 	n(REWARDS, {
 		i(211279, {	-- Cache of Infinite Treasure
 			i(210526),	-- Unraveling Tunic (QI!)
@@ -223,4 +223,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ t
 			i(220117),	-- Ward of Salvation
 		}),
 	}),
-}))));
+})));

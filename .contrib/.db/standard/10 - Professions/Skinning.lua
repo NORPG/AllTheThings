@@ -3,35 +3,38 @@
 -----------------------------------------------------
 root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING }, {
 	expansion(EXPANSION.LEGION, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18834, {	-- Broken Isles Skinning Techniques
-				crit(61485, {	-- Felhide
-					sourceQuests = { 40159 },	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
-				}),
-				crit(61486, {	-- Fiendish Leather
-					sourceQuests = { 48042 },	-- Order of Operations
-					provider = { "i", 151868 },	-- Corrupted Tooth
-				}),
-				crit(61487, {	-- Legion Butchery
-					provider = { "i", 139895 },	-- Skinning Technique: Legion Butchery
-				}),
-				crit(61488, {	-- Legion Gutting
-					provider = { "i", 139896 },	-- Skinning Technique: Legion Gutting
-				}),
-				crit(61489, {	-- Stonehide Leather
-					sourceQuests = { 40140 },	-- Ske'rit's Leather Handbook
-				}),
-				crit(61490, {	-- Stormscale
-					sourceQuests = { 40155 },	-- Ske'rit's Scale-Skinning Suggestions
-				}),
-				crit(61491, {	-- Unbroken Claw
-					provider = { "i", 139894 },	-- Skinning Technique: Unbroken Claw
-				}),
-				crit(61492, {	-- Unbroken Tooth
-					provider = { "i", 139893 },	-- Skinning Technique: Unbroken Tooth
-				}),
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61485, {	-- Felhide
+						sourceQuests = { 40159 },	-- The Emerald Nightmare: The Pestilential Hide of Nythendra
+					}),
+					crit(61486, {	-- Fiendish Leather
+						sourceQuests = { 48042 },	-- Order of Operations
+						provider = { "i", 151868 },	-- Corrupted Tooth
+					}),
+					crit(61487, {	-- Legion Butchery
+						provider = { "i", 139895 },	-- Skinning Technique: Legion Butchery
+					}),
+					crit(61488, {	-- Legion Gutting
+						provider = { "i", 139896 },	-- Skinning Technique: Legion Gutting
+					}),
+					crit(61489, {	-- Stonehide Leather
+						sourceQuests = { 40140 },	-- Ske'rit's Leather Handbook
+					}),
+					crit(61490, {	-- Stormscale
+						sourceQuests = { 40155 },	-- Ske'rit's Scale-Skinning Suggestions
+					}),
+					crit(61491, {	-- Unbroken Claw
+						provider = { "i", 139894 },	-- Skinning Technique: Unbroken Claw
+					}),
+					crit(61492, {	-- Unbroken Tooth
+						provider = { "i", 139893 },	-- Skinning Technique: Unbroken Tooth
+					}),
+				},
 			}),
-		})),
+		}),
 		header(HEADERS.Spell, 247842, {	-- Fiendish Leather [Rank 1]
 			timeline = { ADDED_7_3_0 },
 			groups = {
@@ -323,33 +326,36 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18835, {	-- Fourth War Skinning Techniques
-				crit(61493, {	-- Cragscale
-					sourceQuests = {
-						56565,	-- Hanging by a Thread [A]
-						56566 ,	-- Hanging by a Thread [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61494, {	-- Dredged Leather
-					sourceQuests = {
-						56562,	-- The Problem with Shrinkage [A]
-						56563 ,	-- The Problem with Shrinkage [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61495, {	-- Bone Gathering
-					sourceQuests = { 52228 },	-- Atal'Dazar: An Unbreakable Bone Needle
-				}),
-				crit(61496, {	-- Leather Gathering
-					sourceQuests = { 52224 },	-- Ivory Handled Dagger
-				}),
-				crit(61497, {	-- Scale Gathering
-					sourceQuests = { 52226 },	-- Turtle Soup
-				}),
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61493, {	-- Cragscale
+						sourceQuests = {
+							56565,	-- Hanging by a Thread [A]
+							56566 ,	-- Hanging by a Thread [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61494, {	-- Dredged Leather
+						sourceQuests = {
+							56562,	-- The Problem with Shrinkage [A]
+							56563 ,	-- The Problem with Shrinkage [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61495, {	-- Bone Gathering
+						sourceQuests = { 52228 },	-- Atal'Dazar: An Unbreakable Bone Needle
+					}),
+					crit(61496, {	-- Leather Gathering
+						sourceQuests = { 52224 },	-- Ivory Handled Dagger
+					}),
+					crit(61497, {	-- Scale Gathering
+						sourceQuests = { 52226 },	-- Turtle Soup
+					}),
+				},
 			}),
-		})),
+		}),
 		header(HEADERS.Spell, 257153, {	-- Bone Gathering [Rank 2]
 			q(52227, {	-- Bone Needle
 				description = "Requires 50 Kul Tiran Skinning.",
@@ -531,7 +537,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 		}),
 	}),
 	expansion(EXPANSION.DF, bubbleDownSelf({ requireSkill = SKINNING }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
 			ach(18831, sharedData({	-- Elusive Beasts of the Dragon Isles (15)
 				cost = {{"i",193906,1}},	-- Elusive Creature Bait
 			},{

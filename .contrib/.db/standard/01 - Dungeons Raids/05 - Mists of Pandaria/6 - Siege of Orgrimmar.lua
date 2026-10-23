@@ -1953,7 +1953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #endif
 			d(CURRENT_NORMAL_PLUS_DIFFICULTIES, {		-- Flexible+ (5.4.0+) / Normal+ (6.0.2+)
-				n(ZONE_DROPS, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
+				n(ZONE_DROPS, sharedData({ timeline = { ADDED_6_0_2 } }, {
 					i(113224),	-- Aeth's Swiftcinder Cloak
 					i(113231),	-- Brave Niunai's Cloak
 					i(113226),	-- Cape of the Alpha

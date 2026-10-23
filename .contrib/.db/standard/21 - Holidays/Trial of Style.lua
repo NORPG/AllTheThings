@@ -4,7 +4,8 @@
 
 local TRIAL_OF_STYLE_TOKEN = 151134;
 
-root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ timeline = { ADDED_7_2_5 } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, {
+	timeline = { ADDED_7_2_5 },
 	zoneTextAreaID = 8712,
 	groups = {
 		n(SCENARIO_COMPLETION, {
@@ -602,12 +603,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			}),
 		})),
 	},
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, {
-		q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
-		q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
-		q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
+		timeline = { ADDED_7_2_5 },
+		groups = {
+			q(53613),	-- Trial of Style: Using a Letter from an Admirer the 1st time
+			q(53614),	-- Trial of Style: Using a Letter from an Admirer the 2nd time
+			q(53615),	-- Trial of Style: Using a Letter from an Admirer the 3rd time
+		},
 	})),
 }));

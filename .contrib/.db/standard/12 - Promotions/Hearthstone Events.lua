@@ -107,10 +107,10 @@ root(ROOTS.Promotions, {
 				}),
 				ach(19724),	-- Hearthstone Card Collection
 			}),
-			n(MAILBOX, bubbleDown({ timeline = { REMOVED_10_2_6 } }, {
+			n(MAILBOX, sharedData({ timeline = { REMOVED_10_2_6 } }, {
 				i(212154),	-- Hearthstone Invitation Letter (QS!)
 			})),
-			n(QUESTS, bubbleDown({ timeline = { REMOVED_10_2_6 } }, {
+			n(QUESTS, sharedData({ timeline = { REMOVED_10_2_6 } }, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
 					provider = { "i", 212154 },	-- Hearthstone Invitation Letter (QS!)
 					groups = { i(212157) },	-- An Invitation

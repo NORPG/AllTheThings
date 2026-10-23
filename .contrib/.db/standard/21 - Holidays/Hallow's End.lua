@@ -4090,7 +4090,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(64546,	-- Visions of Sire Denathrius
 		bubbleDownSelf({
-			timeline = { ADDED_9_1_0 },
 			customCollect = "SL_COV_VEN",
 		},{
 			description = "Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",
@@ -4102,6 +4101,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
 			},
 			provider = { "n", 180458 },	-- Vision of Sire Denathrius
+			timeline = { ADDED_9_1_0 },
 			repeatable = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
 			maps = { 1644 },	-- The Ember Court
 			groups = { i(181442) },	-- Visions of Sire Denathrius (EC!)

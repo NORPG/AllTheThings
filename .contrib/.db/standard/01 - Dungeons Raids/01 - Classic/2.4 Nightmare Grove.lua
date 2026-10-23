@@ -44,9 +44,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		timeline = { ADDED_1_15_5 },
 		lvl = 60,
 		groups = {
-			n(DRAGONS_OF_NIGHTMARE, bubbleDown({ timeline = { ADDED_1_11_0, REMOVED_1_15_5 } }, {
+			n(DRAGONS_OF_NIGHTMARE, {
 				description = "The original version of the nightmare dragon loot in Classic Era.",
 				isRaid = true,
+				timeline = { ADDED_1_11_0, REMOVED_1_15_5 },
 				groups = {
 					n(QUESTS, {
 						q(8446, {	-- Shrouded in Nightmare
@@ -127,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 				},
-			})),
+			}),
 			n(QUESTS, {
 				q(86679, {	-- Shrouded in Nightmare
 					provider = { "i", 235049 },	-- Nightmare Engulfed Object

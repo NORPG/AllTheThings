@@ -395,10 +395,10 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 				}),
 			},
 		}),
-		prof(FISHING, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
+		prof(FISHING, sharedData({ timeline = { ADDED_10_2_5 } }, {
 			i(67108),	-- Lord Godfrey's Old Spectacles
 		})),
-		n(TREASURES, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
+		n(TREASURES, {
 			description = "Upon completing the quest chain, non-Worgen players can relog and the toy will appear in your Toy Box automatically. As a worgan you can loot the bouquet.",
 			sourceQuests = {
 				79137,	-- The Wall between Us
@@ -407,12 +407,13 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 			groups = {
 				o(421360, {	-- Memorial Bouquet
 					coord = { 48.8, 53.0, RUINS_OF_GILNEAS },
+					timeline = { ADDED_10_2_5 },
 					groups = {
 						i(211788),	-- Tess's Peacebloom (TOY!)
 					},
 				}),
 			},
-		})),
+		}),
 		n(VENDORS, {
 			n(211065, {	-- Marie Allen <General Goods Vendor>
 				coord = { 60.4, 92.3, RUINS_OF_GILNEAS },
@@ -470,9 +471,9 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 				}),
 			}),
 		}),
-		n(ZONE_DROPS, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
-			i(211939),	-- Worn Scarlet Cloak
-		})),
+		n(ZONE_DROPS, {
+			i(211939, { timeline = { ADDED_10_2_5 } }),	-- Worn Scarlet Cloak
+		}),
 	},
 });
 

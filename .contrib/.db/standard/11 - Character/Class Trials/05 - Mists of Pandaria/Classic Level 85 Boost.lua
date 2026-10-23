@@ -5,8 +5,9 @@
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 85 boosts became available in Classic shortly after the launch of Dragon Soul, with the Sha-Infused Epic Pack for MoP
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.MOP, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_4_4_2 } }, {
+	expansion(EXPANSION.MOP, bubbleDown({ u = REAL_MONEY }, {
 		header(HEADERS.Achievement, 4826, {
+			timeline = { ADDED_4_4_2 },
 			groups = {
 				cl(DEATHKNIGHT, {
 					i(92110),	-- Scourgeheart Blade
@@ -124,44 +125,47 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 					i(92144),	-- Enlightened Idol of Destruction
 					i(92143),	-- Enlightened Stone of Destruction
 				}),
-				cl(MONK, bubbleDownSelf({ timeline = { ADDED_5_5_0 } }, {
-					i(92372),	-- Waterdancer Spire
-					i(92373),	-- Waterdancer Staff
-					i(92405),	-- Waterdancer Sword
-					i(92389),	-- Waterdancer Helm
-					i(92388),	-- Waterdancer Hood
-					i(92394),	-- Waterdancer Amulet
-					i(92392),	-- Waterdancer Choker
-					i(92393),	-- Waterdancer Necklace
-					i(92396),	-- Waterdancer Pauldrons
-					i(92395),	-- Waterdancer Shoulders
-					i(92377),	-- Waterdancer Cloak of Rage
-					i(92376),	-- Waterdancer Cloak of Wisdom
-					i(92374),	-- Waterdancer Jerkin
-					i(92375),	-- Waterdancer Vest
-					i(92406),	-- Waterdancer Bindings
-					i(92407),	-- Waterdancer Cuffs
-					i(92386),	-- Waterdancer Gloves
-					i(92387),	-- Waterdancer Handguards
-					i(92404),	-- Waterdancer Cord
-					i(92403),	-- Waterdancer Waistband
-					i(92390),	-- Waterdancer Britches
-					i(92391),	-- Waterdancer Legguards
-					i(92378),	-- Waterdancer Boots
-					i(92379),	-- Waterdancer Footpads
-					i(92380),	-- Waterdancer Band of Onslaught
-					i(92381),	-- Waterdancer Ring of Onslaught
-					i(92384),	-- Waterdancer Band of Stoicism
-					i(92385),	-- Waterdancer Ring of Stoicism
-					i(92383),	-- Waterdancer Band of Wisdom
-					i(92382),	-- Waterdancer Ring of Wisdom
-					i(92399),	-- Waterdancer Defender Idol
-					i(92398),	-- Waterdancer Defender Stone
-					i(92401),	-- Waterdancer Idol of Rage
-					i(92400),	-- Waterdancer Stone of Rage
-					i(92397),	-- Waterdancer Idol of Wisdom
-					i(92402),	-- Waterdancer Stone of Wisdom
-				})),
+				cl(MONK, {
+					timeline = { ADDED_5_5_0 },
+					groups = {
+						i(92372),	-- Waterdancer Spire
+						i(92373),	-- Waterdancer Staff
+						i(92405),	-- Waterdancer Sword
+						i(92389),	-- Waterdancer Helm
+						i(92388),	-- Waterdancer Hood
+						i(92394),	-- Waterdancer Amulet
+						i(92392),	-- Waterdancer Choker
+						i(92393),	-- Waterdancer Necklace
+						i(92396),	-- Waterdancer Pauldrons
+						i(92395),	-- Waterdancer Shoulders
+						i(92377),	-- Waterdancer Cloak of Rage
+						i(92376),	-- Waterdancer Cloak of Wisdom
+						i(92374),	-- Waterdancer Jerkin
+						i(92375),	-- Waterdancer Vest
+						i(92406),	-- Waterdancer Bindings
+						i(92407),	-- Waterdancer Cuffs
+						i(92386),	-- Waterdancer Gloves
+						i(92387),	-- Waterdancer Handguards
+						i(92404),	-- Waterdancer Cord
+						i(92403),	-- Waterdancer Waistband
+						i(92390),	-- Waterdancer Britches
+						i(92391),	-- Waterdancer Legguards
+						i(92378),	-- Waterdancer Boots
+						i(92379),	-- Waterdancer Footpads
+						i(92380),	-- Waterdancer Band of Onslaught
+						i(92381),	-- Waterdancer Ring of Onslaught
+						i(92384),	-- Waterdancer Band of Stoicism
+						i(92385),	-- Waterdancer Ring of Stoicism
+						i(92383),	-- Waterdancer Band of Wisdom
+						i(92382),	-- Waterdancer Ring of Wisdom
+						i(92399),	-- Waterdancer Defender Idol
+						i(92398),	-- Waterdancer Defender Stone
+						i(92401),	-- Waterdancer Idol of Rage
+						i(92400),	-- Waterdancer Stone of Rage
+						i(92397),	-- Waterdancer Idol of Wisdom
+						i(92402),	-- Waterdancer Stone of Wisdom
+					},
+				}),
 				cl(PALADIN, {
 					i(92173),	-- Partisan Bulwark
 					i(92360),	-- Partisan Greatsword

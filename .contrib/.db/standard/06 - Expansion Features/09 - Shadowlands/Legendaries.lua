@@ -123,8 +123,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				timeline = { ADDED_9_2_0 },
 			}),
 		})),
-		cl(EVOKER, bubbleDownSelf({ classes = { EVOKER }, timeline = { ADDED_10_0_0 } }, {
-			i(199552),	-- Memory of Unity (EVOKER)
+		cl(EVOKER, bubbleDownSelf({ classes = { EVOKER } }, {
+			timeline = { ADDED_10_0_0 },
+			groups = {
+				i(199552),	-- Memory of Unity (EVOKER)
+			},
 		})),
 		cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 			i(183251),	-- Memory of a Craven Strategem

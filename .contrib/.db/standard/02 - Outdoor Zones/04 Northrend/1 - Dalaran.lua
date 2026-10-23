@@ -3022,8 +3022,9 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						emoc(28, i(45828)),	-- Windchill Binding
 					},
 				}),
-				n(32509, bubbleDown({ timeline = { REMOVED_6_1_0 } }, {	-- Brammold Deepmine <Antiques & Heirlooms>
+				n(32509, {	-- Brammold Deepmine <Antiques & Heirlooms>
 					coord = { 51.0, 53.6, NORTHREND_DALARAN },
+					timeline = { REMOVED_6_1_0 },
 					groups = {
 						i(93876, {			-- Awakened Pauldrons of Elements
 							timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
@@ -3147,7 +3148,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 						}),
 					},
-				})),
+				}),
 				n(28951, {	-- Breanni <Pet Supplies>
 					coord = { 58.7, 39.2, NORTHREND_DALARAN },
 					groups = {

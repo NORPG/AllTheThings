@@ -54,14 +54,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				-- Fashion
 				ach(19276, { timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }),	-- Verdant Vogue
 			})),
-			filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-				i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
-					races = ALLIANCE_ONLY,
-				}),
-				i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
-					races = HORDE_ONLY,
-				}),
-			})),
+			filter(MOUNTS, {
+				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				groups = {
+					i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
+						races = ALLIANCE_ONLY,
+					}),
+					i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
+						races = HORDE_ONLY,
+					}),
+				},
+			}),
 			n(PVP_WARMODE, {
 				n(197553, {	-- Fieldmaster Emberath
 					coord = { 43.1, 42.4, VALDRAKKEN },
@@ -155,527 +158,533 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					}),
 				}),
 			}),
-			n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
-				n(199601, {	-- Seltherex
-					coord = { 44.7, 37.0, VALDRAKKEN },
-					groups = sharedData({
-						cost = { { "i", MOH, 12 } },
-						timeline = { ADDED_11_0_5 },
-					}, {
-						iensemble(231150, {	-- Arsenal: Verdant Aspirant's Weapons
-							cost = { { "i", MOH, 80 } },
-						}),
-						iensemble(231120, {	-- Ensemble: Verdant Aspirant's Cloth Armor
-							classes = CLOTH_CLASSES,
-						}),
-						iensemble(231121, {	-- Ensemble: Verdant Aspirant's Leather Armor
-							classes = LEATHER_CLASSES
-						}),
-						iensemble(231122, {	-- Ensemble: Verdant Aspirant's Mail Armor
-							classes = MAIL_CLASSES,
-						}),
-						iensemble(231123, {	-- Ensemble: Verdant Aspirant's Plate Armor
-							classes = PLATE_CLASSES,
+			n(PVP_ASPIRANT, {
+				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 },
+				groups = {
+					n(199601, {	-- Seltherex
+						coord = { 44.7, 37.0, VALDRAKKEN },
+						groups = sharedData({
+							cost = { { "i", MOH, 12 } },
+							timeline = { ADDED_11_0_5 },
+						}, {
+							iensemble(231150, {	-- Arsenal: Verdant Aspirant's Weapons
+								cost = { { "i", MOH, 80 } },
+							}),
+							iensemble(231120, {	-- Ensemble: Verdant Aspirant's Cloth Armor
+								classes = CLOTH_CLASSES,
+							}),
+							iensemble(231121, {	-- Ensemble: Verdant Aspirant's Leather Armor
+								classes = LEATHER_CLASSES
+							}),
+							iensemble(231122, {	-- Ensemble: Verdant Aspirant's Mail Armor
+								classes = MAIL_CLASSES,
+							}),
+							iensemble(231123, {	-- Ensemble: Verdant Aspirant's Plate Armor
+								classes = PLATE_CLASSES,
+							}),
 						}),
 					}),
-				}),
-				n(199601, {	-- Seltherex
-					coord = { 44.7, 37.0, VALDRAKKEN },
-					groups = bubbleDownFiltered({
-						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-					},FILTERFUNC_itemID,{
-						filter(BACK_F, {
-							honor(525, i(209776)),	-- Verdant Aspirant's Cape
-							honor(525, i(209774)),	-- Verdant Aspirant's Cloak
-							honor(525, i(209775)),	-- Verdant Aspirant's Drape
-							honor(525, i(209777)),	-- Verdant Aspirant's Greatcloak
-						}),
-						filter(CLOTH, {
-							honor(700, i(209756)),	-- Verdant Aspirant's Silk Belt
-							honor(525, i(209759)),	-- Verdant Aspirant's Silk Bindings
-							honor(700, i(209723)),	-- Verdant Aspirant's Silk Cord
-							honor(875, i(209743)),	-- Verdant Aspirant's Silk Cover
-							honor(700, i(209736)),	-- Verdant Aspirant's Silk Footwraps
-							honor(700, i(209709)),	-- Verdant Aspirant's Silk Gloves
-							honor(700, i(209741)),	-- Verdant Aspirant's Silk Handwraps
-							honor(875, i(209711)),	-- Verdant Aspirant's Silk Hood
-							honor(875, i(209715)),	-- Verdant Aspirant's Silk Leggings
-							honor(875, i(209747)),	-- Verdant Aspirant's Silk Legwraps
-							honor(700, i(209720)),	-- Verdant Aspirant's Silk Mantle
-							honor(875, i(209699)),	-- Verdant Aspirant's Silk Robe
-							honor(700, i(209753)),	-- Verdant Aspirant's Silk Shawl
-							honor(700, i(209704)),	-- Verdant Aspirant's Silk Treads
-							honor(875, i(209731)),	-- Verdant Aspirant's Silk Vestments
-							honor(525, i(209726)),	-- Verdant Aspirant's Silk Wristwraps
-						}),
-						filter(FINGER_F, {
-							honor(525, i(209769)),	-- Verdant Aspirant's Band
-							honor(525, i(209768)),	-- Verdant Aspirant's Ring
-							honor(525, i(209770)),	-- Verdant Aspirant's Signet
-						}),
-						filter(LEATHER, {
-							honor(525, i(209762)),	-- Verdant Aspirant's Leather Armguards
-							honor(700, i(209725)),	-- Verdant Aspirant's Leather Belt
-							honor(700, i(209706)),	-- Verdant Aspirant's Leather Boots
-							honor(875, i(209717)),	-- Verdant Aspirant's Leather Breeches
-							honor(700, i(209758)),	-- Verdant Aspirant's Leather Cord
-							honor(700, i(209738)),	-- Verdant Aspirant's Leather Footpads
-							honor(700, i(209707)),	-- Verdant Aspirant's Leather Gloves
-							honor(700, i(209739)),	-- Verdant Aspirant's Leather Grips
-							honor(875, i(209713)),	-- Verdant Aspirant's Leather Helm
-							honor(875, i(209750)),	-- Verdant Aspirant's Leather Leggings
-							honor(700, i(209751)),	-- Verdant Aspirant's Leather Mantle
-							honor(875, i(209745)),	-- Verdant Aspirant's Leather Mask
-							honor(700, i(209718)),	-- Verdant Aspirant's Leather Spaulders
-							honor(875, i(209734)),	-- Verdant Aspirant's Leather Tunic
-							honor(875, i(209702)),	-- Verdant Aspirant's Leather Vest
-							honor(525, i(209729)),	-- Verdant Aspirant's Leather Wristwraps
-						}),
-						filter(MAIL, {
-							honor(700, i(209724)),	-- Verdant Aspirant's Chain Belt
-							honor(525, i(209761)),	-- Verdant Aspirant's Chain Bracer
-							honor(700, i(209757)),	-- Verdant Aspirant's Chain Clasp
-							honor(700, i(209710)),	-- Verdant Aspirant's Chain Gauntlets
-							honor(700, i(209742)),	-- Verdant Aspirant's Chain Handguards
-							honor(875, i(209744)),	-- Verdant Aspirant's Chain Headguard
-							honor(875, i(209712)),	-- Verdant Aspirant's Chain Helm
-							honor(875, i(209716)),	-- Verdant Aspirant's Chain Leggings
-							honor(700, i(209705)),	-- Verdant Aspirant's Chain Sabatons
-							honor(700, i(209754)),	-- Verdant Aspirant's Chain Shoulderguards
-							honor(700, i(209721)),	-- Verdant Aspirant's Chain Spaulders
-							honor(700, i(209737)),	-- Verdant Aspirant's Chain Stompers
-							honor(875, i(209733)),	-- Verdant Aspirant's Chain Tunic
-							honor(875, i(209701)),	-- Verdant Aspirant's Chain Vest
-							honor(875, i(209749)),	-- Verdant Aspirant's Chain Wargreaves
-							honor(525, i(209728)),	-- Verdant Aspirant's Chain Wristwraps
-						}),
-						filter(NECK_F, {
-							honor(525, i(209772)),	-- Verdant Aspirant's Choker
-							honor(525, i(209771)),	-- Verdant Aspirant's Necklace
-							honor(525, i(209773)),	-- Verdant Aspirant's Pendant
-						}),
-						filter(PLATE, {
-							honor(525, i(209760)),	-- Verdant Aspirant's Plate Armguards
-							honor(875, i(209732)),	-- Verdant Aspirant's Plate Armor
-							honor(875, i(209700)),	-- Verdant Aspirant's Plate Chestplate
-							honor(525, i(209727)),	-- Verdant Aspirant's Plate Cuffs
-							honor(700, i(209708)),	-- Verdant Aspirant's Plate Gauntlets
-							honor(700, i(209722)),	-- Verdant Aspirant's Plate Girdle
-							honor(700, i(209755)),	-- Verdant Aspirant's Plate Greatbelt
-							honor(700, i(209740)),	-- Verdant Aspirant's Plate Handguards
-							honor(875, i(209730)),	-- Verdant Aspirant's Plate Headguard
-							honor(875, i(209698)),	-- Verdant Aspirant's Plate Helm
-							honor(875, i(209714)),	-- Verdant Aspirant's Plate Legguards
-							honor(700, i(209752)),	-- Verdant Aspirant's Plate Pauldrons
-							honor(700, i(209719)),	-- Verdant Aspirant's Plate Shoulders
-							honor(700, i(209735)),	-- Verdant Aspirant's Plate Stompers
-							honor(700, i(209703)),	-- Verdant Aspirant's Plate Warboots
-							honor(875, i(209746)),	-- Verdant Aspirant's Plate Wargreaves
-						}),
-						filter(TRINKET_F, {
-							honor(700, i(209763)),	-- Verdant Aspirant's Badge of Ferocity
-							honor(700, i(209766)),	-- Verdant Aspirant's Emblem
-							honor(700, i(209765)),	-- Verdant Aspirant's Insignia of Alacrity
-							honor(525, i(209764)),	-- Verdant Aspirant's Medallion
-							honor(525, i(209767)),	-- Verdant Aspirant's Sigil of Adaptation
-						}),
-						n(WEAPONS, {
-							honor(875, i(210149)),	-- Verdant Aspirant's Battleaxe
-							honor(875, i(210166)),	-- Verdant Aspirant's Blade
-							honor(875, i(210150)),	-- Verdant Aspirant's Dagger
-							honor(1750, i(210154)),	-- Verdant Aspirant's Greatsword
-							honor(1750, i(210161)),	-- Verdant Aspirant's Halberd
-							honor(875, i(210162)),	-- Verdant Aspirant's Hammer
-							honor(1325, i(210163)),	-- Verdant Aspirant's Knife
-							honor(875, i(210151)),	-- Verdant Aspirant's Mace
-							honor(1750, i(210152)),	-- Verdant Aspirant's Polearm
-							honor(1750, i(210160)),	-- Verdant Aspirant's Recurve
-							honor(1325, i(210157)),	-- Verdant Aspirant's Scepter
-							honor(425, i(210158)),	-- Verdant Aspirant's Shield
-							honor(1750, i(210153)),	-- Verdant Aspirant's Staff
-							honor(875, i(210164)),	-- Verdant Aspirant's Sword
-							honor(425, i(210155)),	-- Verdant Aspirant's Torch
-							honor(1325, i(210317)),	-- Verdant Aspirant's Wand
-							honor(875, i(210156)),	-- Verdant Aspirant's Warglaive
+					n(199601, {	-- Seltherex
+						coord = { 44.7, 37.0, VALDRAKKEN },
+						groups = bubbleDownFiltered({
+							timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						},FILTERFUNC_itemID,{
+							filter(BACK_F, {
+								honor(525, i(209776)),	-- Verdant Aspirant's Cape
+								honor(525, i(209774)),	-- Verdant Aspirant's Cloak
+								honor(525, i(209775)),	-- Verdant Aspirant's Drape
+								honor(525, i(209777)),	-- Verdant Aspirant's Greatcloak
+							}),
+							filter(CLOTH, {
+								honor(700, i(209756)),	-- Verdant Aspirant's Silk Belt
+								honor(525, i(209759)),	-- Verdant Aspirant's Silk Bindings
+								honor(700, i(209723)),	-- Verdant Aspirant's Silk Cord
+								honor(875, i(209743)),	-- Verdant Aspirant's Silk Cover
+								honor(700, i(209736)),	-- Verdant Aspirant's Silk Footwraps
+								honor(700, i(209709)),	-- Verdant Aspirant's Silk Gloves
+								honor(700, i(209741)),	-- Verdant Aspirant's Silk Handwraps
+								honor(875, i(209711)),	-- Verdant Aspirant's Silk Hood
+								honor(875, i(209715)),	-- Verdant Aspirant's Silk Leggings
+								honor(875, i(209747)),	-- Verdant Aspirant's Silk Legwraps
+								honor(700, i(209720)),	-- Verdant Aspirant's Silk Mantle
+								honor(875, i(209699)),	-- Verdant Aspirant's Silk Robe
+								honor(700, i(209753)),	-- Verdant Aspirant's Silk Shawl
+								honor(700, i(209704)),	-- Verdant Aspirant's Silk Treads
+								honor(875, i(209731)),	-- Verdant Aspirant's Silk Vestments
+								honor(525, i(209726)),	-- Verdant Aspirant's Silk Wristwraps
+							}),
+							filter(FINGER_F, {
+								honor(525, i(209769)),	-- Verdant Aspirant's Band
+								honor(525, i(209768)),	-- Verdant Aspirant's Ring
+								honor(525, i(209770)),	-- Verdant Aspirant's Signet
+							}),
+							filter(LEATHER, {
+								honor(525, i(209762)),	-- Verdant Aspirant's Leather Armguards
+								honor(700, i(209725)),	-- Verdant Aspirant's Leather Belt
+								honor(700, i(209706)),	-- Verdant Aspirant's Leather Boots
+								honor(875, i(209717)),	-- Verdant Aspirant's Leather Breeches
+								honor(700, i(209758)),	-- Verdant Aspirant's Leather Cord
+								honor(700, i(209738)),	-- Verdant Aspirant's Leather Footpads
+								honor(700, i(209707)),	-- Verdant Aspirant's Leather Gloves
+								honor(700, i(209739)),	-- Verdant Aspirant's Leather Grips
+								honor(875, i(209713)),	-- Verdant Aspirant's Leather Helm
+								honor(875, i(209750)),	-- Verdant Aspirant's Leather Leggings
+								honor(700, i(209751)),	-- Verdant Aspirant's Leather Mantle
+								honor(875, i(209745)),	-- Verdant Aspirant's Leather Mask
+								honor(700, i(209718)),	-- Verdant Aspirant's Leather Spaulders
+								honor(875, i(209734)),	-- Verdant Aspirant's Leather Tunic
+								honor(875, i(209702)),	-- Verdant Aspirant's Leather Vest
+								honor(525, i(209729)),	-- Verdant Aspirant's Leather Wristwraps
+							}),
+							filter(MAIL, {
+								honor(700, i(209724)),	-- Verdant Aspirant's Chain Belt
+								honor(525, i(209761)),	-- Verdant Aspirant's Chain Bracer
+								honor(700, i(209757)),	-- Verdant Aspirant's Chain Clasp
+								honor(700, i(209710)),	-- Verdant Aspirant's Chain Gauntlets
+								honor(700, i(209742)),	-- Verdant Aspirant's Chain Handguards
+								honor(875, i(209744)),	-- Verdant Aspirant's Chain Headguard
+								honor(875, i(209712)),	-- Verdant Aspirant's Chain Helm
+								honor(875, i(209716)),	-- Verdant Aspirant's Chain Leggings
+								honor(700, i(209705)),	-- Verdant Aspirant's Chain Sabatons
+								honor(700, i(209754)),	-- Verdant Aspirant's Chain Shoulderguards
+								honor(700, i(209721)),	-- Verdant Aspirant's Chain Spaulders
+								honor(700, i(209737)),	-- Verdant Aspirant's Chain Stompers
+								honor(875, i(209733)),	-- Verdant Aspirant's Chain Tunic
+								honor(875, i(209701)),	-- Verdant Aspirant's Chain Vest
+								honor(875, i(209749)),	-- Verdant Aspirant's Chain Wargreaves
+								honor(525, i(209728)),	-- Verdant Aspirant's Chain Wristwraps
+							}),
+							filter(NECK_F, {
+								honor(525, i(209772)),	-- Verdant Aspirant's Choker
+								honor(525, i(209771)),	-- Verdant Aspirant's Necklace
+								honor(525, i(209773)),	-- Verdant Aspirant's Pendant
+							}),
+							filter(PLATE, {
+								honor(525, i(209760)),	-- Verdant Aspirant's Plate Armguards
+								honor(875, i(209732)),	-- Verdant Aspirant's Plate Armor
+								honor(875, i(209700)),	-- Verdant Aspirant's Plate Chestplate
+								honor(525, i(209727)),	-- Verdant Aspirant's Plate Cuffs
+								honor(700, i(209708)),	-- Verdant Aspirant's Plate Gauntlets
+								honor(700, i(209722)),	-- Verdant Aspirant's Plate Girdle
+								honor(700, i(209755)),	-- Verdant Aspirant's Plate Greatbelt
+								honor(700, i(209740)),	-- Verdant Aspirant's Plate Handguards
+								honor(875, i(209730)),	-- Verdant Aspirant's Plate Headguard
+								honor(875, i(209698)),	-- Verdant Aspirant's Plate Helm
+								honor(875, i(209714)),	-- Verdant Aspirant's Plate Legguards
+								honor(700, i(209752)),	-- Verdant Aspirant's Plate Pauldrons
+								honor(700, i(209719)),	-- Verdant Aspirant's Plate Shoulders
+								honor(700, i(209735)),	-- Verdant Aspirant's Plate Stompers
+								honor(700, i(209703)),	-- Verdant Aspirant's Plate Warboots
+								honor(875, i(209746)),	-- Verdant Aspirant's Plate Wargreaves
+							}),
+							filter(TRINKET_F, {
+								honor(700, i(209763)),	-- Verdant Aspirant's Badge of Ferocity
+								honor(700, i(209766)),	-- Verdant Aspirant's Emblem
+								honor(700, i(209765)),	-- Verdant Aspirant's Insignia of Alacrity
+								honor(525, i(209764)),	-- Verdant Aspirant's Medallion
+								honor(525, i(209767)),	-- Verdant Aspirant's Sigil of Adaptation
+							}),
+							n(WEAPONS, {
+								honor(875, i(210149)),	-- Verdant Aspirant's Battleaxe
+								honor(875, i(210166)),	-- Verdant Aspirant's Blade
+								honor(875, i(210150)),	-- Verdant Aspirant's Dagger
+								honor(1750, i(210154)),	-- Verdant Aspirant's Greatsword
+								honor(1750, i(210161)),	-- Verdant Aspirant's Halberd
+								honor(875, i(210162)),	-- Verdant Aspirant's Hammer
+								honor(1325, i(210163)),	-- Verdant Aspirant's Knife
+								honor(875, i(210151)),	-- Verdant Aspirant's Mace
+								honor(1750, i(210152)),	-- Verdant Aspirant's Polearm
+								honor(1750, i(210160)),	-- Verdant Aspirant's Recurve
+								honor(1325, i(210157)),	-- Verdant Aspirant's Scepter
+								honor(425, i(210158)),	-- Verdant Aspirant's Shield
+								honor(1750, i(210153)),	-- Verdant Aspirant's Staff
+								honor(875, i(210164)),	-- Verdant Aspirant's Sword
+								honor(425, i(210155)),	-- Verdant Aspirant's Torch
+								honor(1325, i(210317)),	-- Verdant Aspirant's Wand
+								honor(875, i(210156)),	-- Verdant Aspirant's Warglaive
+							}),
 						}),
 					}),
-				}),
-			})),
-			n(PVP_GLADIATOR, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
-				n(199599, {	-- Calderax
-					coord = { 44.3, 36.6, VALDRAKKEN },
-					ItemAppearanceModifierID = 159,
-					groups = sharedData({
-						cost = { { "i", MOH, 12 } },
-						timeline = { ADDED_11_0_5 },
-					}, {
-						iensemble(231151, {	-- Arsenal: Verdant Gladiator's Weapons
-							cost = { { "i", MOH, 80 } },
-						}),
-						iensemble(231124, {	-- Ensemble: Verdant Gladiator's Death Knight Armor
-							classes = { DEATHKNIGHT },
-						}),
-						iensemble(231125, {	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
-							classes = { DEMONHUNTER },
-						}),
-						iensemble(231126, {	-- Ensemble: Verdant Gladiator's Druid Armor
-							classes = { DRUID },
-						}),
-						iensemble(231127, {	-- Ensemble: Verdant Gladiator's Evoker Armor
-							classes = { EVOKER },
-						}),
-						iensemble(231128, {	-- Ensemble: Verdant Gladiator's Hunter Armor
-							classes = { HUNTER },
-						}),
-						iensemble(231129, {	-- Ensemble: Verdant Gladiator's Mage Armor
-							classes = { MAGE },
-						}),
-						iensemble(231130, {	-- Ensemble: Verdant Gladiator's Monk Armor
-							classes = { MONK },
-						}),
-						iensemble(231131, {	-- Ensemble: Verdant Gladiator's Paladin Armor
-							classes = { PALADIN },
-						}),
-						iensemble(231132, {	-- Ensemble: Verdant Gladiator's Priest Armor
-							classes = { PRIEST },
-						}),
-						iensemble(231133, {	-- Ensemble: Verdant Gladiator's Rogue Armor
-							classes = { ROGUE },
-						}),
-						iensemble(231134, {	-- Ensemble: Verdant Gladiator's Shaman Armor
-							classes = { SHAMAN },
-						}),
-						iensemble(231135, {	-- Ensemble: Verdant Gladiator's Warlock Armor
-							classes = { WARLOCK },
-						}),
-						iensemble(231136, {	-- Ensemble: Verdant Gladiator's Warrior Armor
-							classes = { WARRIOR },
+				},
+			}),
+			n(PVP_GLADIATOR, {
+				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 },
+				groups = {
+					n(199599, {	-- Calderax
+						coord = { 44.3, 36.6, VALDRAKKEN },
+						ItemAppearanceModifierID = 159,
+						groups = sharedData({
+							cost = { { "i", MOH, 12 } },
+							timeline = { ADDED_11_0_5 },
+						}, {
+							iensemble(231151, {	-- Arsenal: Verdant Gladiator's Weapons
+								cost = { { "i", MOH, 80 } },
+							}),
+							iensemble(231124, {	-- Ensemble: Verdant Gladiator's Death Knight Armor
+								classes = { DEATHKNIGHT },
+							}),
+							iensemble(231125, {	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
+								classes = { DEMONHUNTER },
+							}),
+							iensemble(231126, {	-- Ensemble: Verdant Gladiator's Druid Armor
+								classes = { DRUID },
+							}),
+							iensemble(231127, {	-- Ensemble: Verdant Gladiator's Evoker Armor
+								classes = { EVOKER },
+							}),
+							iensemble(231128, {	-- Ensemble: Verdant Gladiator's Hunter Armor
+								classes = { HUNTER },
+							}),
+							iensemble(231129, {	-- Ensemble: Verdant Gladiator's Mage Armor
+								classes = { MAGE },
+							}),
+							iensemble(231130, {	-- Ensemble: Verdant Gladiator's Monk Armor
+								classes = { MONK },
+							}),
+							iensemble(231131, {	-- Ensemble: Verdant Gladiator's Paladin Armor
+								classes = { PALADIN },
+							}),
+							iensemble(231132, {	-- Ensemble: Verdant Gladiator's Priest Armor
+								classes = { PRIEST },
+							}),
+							iensemble(231133, {	-- Ensemble: Verdant Gladiator's Rogue Armor
+								classes = { ROGUE },
+							}),
+							iensemble(231134, {	-- Ensemble: Verdant Gladiator's Shaman Armor
+								classes = { SHAMAN },
+							}),
+							iensemble(231135, {	-- Ensemble: Verdant Gladiator's Warlock Armor
+								classes = { WARLOCK },
+							}),
+							iensemble(231136, {	-- Ensemble: Verdant Gladiator's Warrior Armor
+								classes = { WARRIOR },
+							}),
 						}),
 					}),
-				}),
-				n(199599, {	-- Calderax
-					coord = { 44.3, 36.6, VALDRAKKEN },
-					ItemAppearanceModifierID = 159,
-					groups = bubbleDownFiltered({
-						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-					},FILTERFUNC_itemID,{
-						n(CLASSES, {
-							cl(DEATHKNIGHT, {
-								conquest(525, i(209275)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209276)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209277)),	-- Verdant Gladiator's Shawl
-								conquest(875, i(209259)),	-- Verdant Gladiator's Plate Chestguard
-								conquest(875, i(209260)),	-- Verdant Gladiator's Plate Chestplate
-								conquest(700, i(209263)),	-- Verdant Gladiator's Plate Gauntlets
-								conquest(700, i(209271)),	-- Verdant Gladiator's Plate Girdle
-								conquest(700, i(209272)),	-- Verdant Gladiator's Plate Greatbelt
-								conquest(700, i(209264)),	-- Verdant Gladiator's Plate Handguards
-								conquest(875, i(209265)),	-- Verdant Gladiator's Plate Helm
-								conquest(875, i(209266)),	-- Verdant Gladiator's Plate Helmet
-								conquest(875, i(209267)),	-- Verdant Gladiator's Plate Legguards
-								conquest(700, i(209270)),	-- Verdant Gladiator's Plate Pauldrons
-								conquest(700, i(209269)),	-- Verdant Gladiator's Plate Shoulders
-								conquest(700, i(209262)),	-- Verdant Gladiator's Plate Stompers
-								conquest(525, i(209274)),	-- Verdant Gladiator's Plate Vambraces
-								conquest(700, i(209261)),	-- Verdant Gladiator's Plate Warboots
-								conquest(875, i(209268)),	-- Verdant Gladiator's Plate Wargreaves
-								conquest(525, i(209273)),	-- Verdant Gladiator's Plate Wristguards
+					n(199599, {	-- Calderax
+						coord = { 44.3, 36.6, VALDRAKKEN },
+						ItemAppearanceModifierID = 159,
+						groups = bubbleDownFiltered({
+							timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						},FILTERFUNC_itemID,{
+							n(CLASSES, {
+								cl(DEATHKNIGHT, {
+									conquest(525, i(209275)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209276)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209277)),	-- Verdant Gladiator's Shawl
+									conquest(875, i(209259)),	-- Verdant Gladiator's Plate Chestguard
+									conquest(875, i(209260)),	-- Verdant Gladiator's Plate Chestplate
+									conquest(700, i(209263)),	-- Verdant Gladiator's Plate Gauntlets
+									conquest(700, i(209271)),	-- Verdant Gladiator's Plate Girdle
+									conquest(700, i(209272)),	-- Verdant Gladiator's Plate Greatbelt
+									conquest(700, i(209264)),	-- Verdant Gladiator's Plate Handguards
+									conquest(875, i(209265)),	-- Verdant Gladiator's Plate Helm
+									conquest(875, i(209266)),	-- Verdant Gladiator's Plate Helmet
+									conquest(875, i(209267)),	-- Verdant Gladiator's Plate Legguards
+									conquest(700, i(209270)),	-- Verdant Gladiator's Plate Pauldrons
+									conquest(700, i(209269)),	-- Verdant Gladiator's Plate Shoulders
+									conquest(700, i(209262)),	-- Verdant Gladiator's Plate Stompers
+									conquest(525, i(209274)),	-- Verdant Gladiator's Plate Vambraces
+									conquest(700, i(209261)),	-- Verdant Gladiator's Plate Warboots
+									conquest(875, i(209268)),	-- Verdant Gladiator's Plate Wargreaves
+									conquest(525, i(209273)),	-- Verdant Gladiator's Plate Wristguards
+								}),
+								cl(DEMONHUNTER, {
+									conquest(525, i(209161)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209162)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209163)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209157)),	-- Verdant Gladiator's Leather Belt
+									conquest(700, i(209147)),	-- Verdant Gladiator's Leather Boots
+									conquest(875, i(209153)),	-- Verdant Gladiator's Leather Breeches
+									conquest(700, i(209149)),	-- Verdant Gladiator's Leather Gloves
+									conquest(700, i(209150)),	-- Verdant Gladiator's Leather Grips
+									conquest(875, i(209151)),	-- Verdant Gladiator's Leather Helm
+									conquest(875, i(209146)),	-- Verdant Gladiator's Leather Jerkin
+									conquest(875, i(209154)),	-- Verdant Gladiator's Leather Legwraps
+									conquest(875, i(209152)),	-- Verdant Gladiator's Leather Mask
+									conquest(700, i(209156)),	-- Verdant Gladiator's Leather Shoulderpads
+									conquest(700, i(209155)),	-- Verdant Gladiator's Leather Spaulders
+									conquest(700, i(209158)),	-- Verdant Gladiator's Leather Strap
+									conquest(700, i(209148)),	-- Verdant Gladiator's Leather Treads
+									conquest(875, i(209145)),	-- Verdant Gladiator's Leather Vest
+									conquest(525, i(209160)),	-- Verdant Gladiator's Leather Wristguards
+									conquest(525, i(209159)),	-- Verdant Gladiator's Leather Wristwraps
+								}),
+								cl(DRUID, {
+									conquest(525, i(209142)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209143)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209144)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209138)),	-- Verdant Gladiator's Leather Belt
+									conquest(700, i(209128)),	-- Verdant Gladiator's Leather Boots
+									conquest(875, i(209134)),	-- Verdant Gladiator's Leather Breeches
+									conquest(700, i(209130)),	-- Verdant Gladiator's Leather Gloves
+									conquest(700, i(209131)),	-- Verdant Gladiator's Leather Grips
+									conquest(875, i(209132)),	-- Verdant Gladiator's Leather Helm
+									conquest(875, i(209127)),	-- Verdant Gladiator's Leather Jerkin
+									conquest(875, i(209135)),	-- Verdant Gladiator's Leather Legwraps
+									conquest(875, i(209133)),	-- Verdant Gladiator's Leather Mask
+									conquest(700, i(209137)),	-- Verdant Gladiator's Leather Shoulderpads
+									conquest(700, i(209136)),	-- Verdant Gladiator's Leather Spaulders
+									conquest(700, i(209139)),	-- Verdant Gladiator's Leather Strap
+									conquest(700, i(209129)),	-- Verdant Gladiator's Leather Treads
+									conquest(875, i(209126)),	-- Verdant Gladiator's Leather Vest
+									conquest(525, i(209141)),	-- Verdant Gladiator's Leather Wristguards
+									conquest(525, i(209140)),	-- Verdant Gladiator's Leather Wristwraps
+								}),
+								cl(EVOKER, {
+									conquest(525, i(209218)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209219)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209220)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209214)),	-- Verdant Gladiator's Chain Belt
+									conquest(700, i(209205)),	-- Verdant Gladiator's Chain Boots
+									conquest(525, i(209217)),	-- Verdant Gladiator's Chain Bracers
+									conquest(875, i(209211)),	-- Verdant Gladiator's Chain Breeches
+									conquest(875, i(209209)),	-- Verdant Gladiator's Chain Faceguard
+									conquest(700, i(209206)),	-- Verdant Gladiator's Chain Gauntlets
+									conquest(700, i(209215)),	-- Verdant Gladiator's Chain Girdle
+									conquest(700, i(209207)),	-- Verdant Gladiator's Chain Handguards
+									conquest(875, i(209208)),	-- Verdant Gladiator's Chain Helm
+									conquest(875, i(209210)),	-- Verdant Gladiator's Chain Leggings
+									conquest(700, i(209212)),	-- Verdant Gladiator's Chain Monnion
+									conquest(875, i(209202)),	-- Verdant Gladiator's Chain Robe
+									conquest(700, i(209204)),	-- Verdant Gladiator's Chain Sabatons
+									conquest(700, i(209213)),	-- Verdant Gladiator's Chain Shoulderguard
+									conquest(875, i(209203)),	-- Verdant Gladiator's Chain Vestments
+									conquest(525, i(209216)),	-- Verdant Gladiator's Chain Wristguards
+								}),
+								cl(HUNTER, {
+									conquest(525, i(209237)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209238)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209239)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209233)),	-- Verdant Gladiator's Chain Belt
+									conquest(700, i(209224)),	-- Verdant Gladiator's Chain Boots
+									conquest(525, i(209236)),	-- Verdant Gladiator's Chain Bracers
+									conquest(875, i(209230)),	-- Verdant Gladiator's Chain Breeches
+									conquest(875, i(209228)),	-- Verdant Gladiator's Chain Faceguard
+									conquest(700, i(209225)),	-- Verdant Gladiator's Chain Gauntlets
+									conquest(700, i(209234)),	-- Verdant Gladiator's Chain Girdle
+									conquest(700, i(209226)),	-- Verdant Gladiator's Chain Handguards
+									conquest(875, i(209227)),	-- Verdant Gladiator's Chain Helm
+									conquest(875, i(209229)),	-- Verdant Gladiator's Chain Leggings
+									conquest(700, i(209231)),	-- Verdant Gladiator's Chain Monnion
+									conquest(700, i(209223)),	-- Verdant Gladiator's Chain Sabatons
+									conquest(700, i(209232)),	-- Verdant Gladiator's Chain Shoulderguard
+									conquest(875, i(209222)),	-- Verdant Gladiator's Chain Tunic
+									conquest(875, i(209221)),	-- Verdant Gladiator's Chain Vest
+									conquest(525, i(209235)),	-- Verdant Gladiator's Chain Wristguards
+								}),
+								cl(MAGE, {
+									conquest(525, i(209085)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209086)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209087)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209080)),	-- Verdant Gladiator's Silk Amice
+									conquest(525, i(209084)),	-- Verdant Gladiator's Silk Armbands
+									conquest(700, i(209082)),	-- Verdant Gladiator's Silk Belt
+									conquest(875, i(209070)),	-- Verdant Gladiator's Silk Blouse
+									conquest(875, i(209076)),	-- Verdant Gladiator's Silk Cap
+									conquest(700, i(209081)),	-- Verdant Gladiator's Silk Cord
+									conquest(700, i(209073)),	-- Verdant Gladiator's Silk Gloves
+									conquest(700, i(209074)),	-- Verdant Gladiator's Silk Handwraps
+									conquest(875, i(209075)),	-- Verdant Gladiator's Silk Hat
+									conquest(875, i(209077)),	-- Verdant Gladiator's Silk Leggings
+									conquest(700, i(209079)),	-- Verdant Gladiator's Silk Mantle
+									conquest(700, i(209071)),	-- Verdant Gladiator's Silk Slippers
+									conquest(700, i(209072)),	-- Verdant Gladiator's Silk Treads
+									conquest(875, i(209078)),	-- Verdant Gladiator's Silk Trousers
+									conquest(875, i(209069)),	-- Verdant Gladiator's Silk Tunic
+									conquest(525, i(209083)),	-- Verdant Gladiator's Silk Wristwraps
+								}),
+								cl(MONK, {
+									conquest(525, i(209180)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209181)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209182)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209176)),	-- Verdant Gladiator's Leather Belt
+									conquest(700, i(209166)),	-- Verdant Gladiator's Leather Boots
+									conquest(875, i(209172)),	-- Verdant Gladiator's Leather Breeches
+									conquest(700, i(209168)),	-- Verdant Gladiator's Leather Gloves
+									conquest(700, i(209169)),	-- Verdant Gladiator's Leather Grips
+									conquest(875, i(209170)),	-- Verdant Gladiator's Leather Helm
+									conquest(875, i(209165)),	-- Verdant Gladiator's Leather Jerkin
+									conquest(875, i(209173)),	-- Verdant Gladiator's Leather Legwraps
+									conquest(875, i(209171)),	-- Verdant Gladiator's Leather Mask
+									conquest(700, i(209175)),	-- Verdant Gladiator's Leather Shoulderpads
+									conquest(700, i(209174)),	-- Verdant Gladiator's Leather Spaulders
+									conquest(700, i(209177)),	-- Verdant Gladiator's Leather Strap
+									conquest(700, i(209167)),	-- Verdant Gladiator's Leather Treads
+									conquest(875, i(209164)),	-- Verdant Gladiator's Leather Vest
+									conquest(525, i(209179)),	-- Verdant Gladiator's Leather Wristguards
+									conquest(525, i(209178)),	-- Verdant Gladiator's Leather Wristwraps
+								}),
+								cl(PALADIN, {
+									conquest(525, i(209294)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209295)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209296)),	-- Verdant Gladiator's Shawl
+									conquest(875, i(209278)),	-- Verdant Gladiator's Plate Chestguard
+									conquest(875, i(209279)),	-- Verdant Gladiator's Plate Chestplate
+									conquest(700, i(209282)),	-- Verdant Gladiator's Plate Gauntlets
+									conquest(700, i(209290)),	-- Verdant Gladiator's Plate Girdle
+									conquest(700, i(209291)),	-- Verdant Gladiator's Plate Greatbelt
+									conquest(700, i(209283)),	-- Verdant Gladiator's Plate Handguards
+									conquest(875, i(209284)),	-- Verdant Gladiator's Plate Helm
+									conquest(875, i(209285)),	-- Verdant Gladiator's Plate Helmet
+									conquest(875, i(209286)),	-- Verdant Gladiator's Plate Legguards
+									conquest(700, i(209289)),	-- Verdant Gladiator's Plate Pauldrons
+									conquest(700, i(209288)),	-- Verdant Gladiator's Plate Shoulders
+									conquest(700, i(209281)),	-- Verdant Gladiator's Plate Stompers
+									conquest(875, i(209287)),	-- Verdant Gladiator's Plate Tasses
+									conquest(525, i(209293)),	-- Verdant Gladiator's Plate Vambraces
+									conquest(700, i(209280)),	-- Verdant Gladiator's Plate Warboots
+									conquest(525, i(209292)),	-- Verdant Gladiator's Plate Wristguards
+								}),
+								cl(PRIEST, {
+									conquest(525, i(209104)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209105)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209106)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209099)),	-- Verdant Gladiator's Silk Amice
+									conquest(525, i(209103)),	-- Verdant Gladiator's Silk Armbands
+									conquest(700, i(209101)),	-- Verdant Gladiator's Silk Belt
+									conquest(875, i(209089)),	-- Verdant Gladiator's Silk Blouse
+									conquest(700, i(209100)),	-- Verdant Gladiator's Silk Cord
+									conquest(700, i(209092)),	-- Verdant Gladiator's Silk Gloves
+									conquest(875, i(209095)),	-- Verdant Gladiator's Silk Guise
+									conquest(700, i(209093)),	-- Verdant Gladiator's Silk Handwraps
+									conquest(875, i(209094)),	-- Verdant Gladiator's Silk Hood
+									conquest(875, i(209096)),	-- Verdant Gladiator's Silk Leggings
+									conquest(700, i(209098)),	-- Verdant Gladiator's Silk Mantle
+									conquest(700, i(209090)),	-- Verdant Gladiator's Silk Slippers
+									conquest(700, i(209091)),	-- Verdant Gladiator's Silk Treads
+									conquest(875, i(209097)),	-- Verdant Gladiator's Silk Trousers
+									conquest(875, i(209088)),	-- Verdant Gladiator's Silk Tunic
+									conquest(525, i(209102)),	-- Verdant Gladiator's Silk Wristwraps
+								}),
+								cl(ROGUE, {
+									conquest(525, i(209199)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209200)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209201)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209195)),	-- Verdant Gladiator's Leather Belt
+									conquest(700, i(209185)),	-- Verdant Gladiator's Leather Boots
+									conquest(875, i(209191)),	-- Verdant Gladiator's Leather Breeches
+									conquest(700, i(209187)),	-- Verdant Gladiator's Leather Gloves
+									conquest(700, i(209188)),	-- Verdant Gladiator's Leather Grips
+									conquest(875, i(209189)),	-- Verdant Gladiator's Leather Helm
+									conquest(875, i(209184)),	-- Verdant Gladiator's Leather Jerkin
+									conquest(875, i(209192)),	-- Verdant Gladiator's Leather Legwraps
+									conquest(875, i(209190)),	-- Verdant Gladiator's Leather Mask
+									conquest(700, i(209194)),	-- Verdant Gladiator's Leather Shoulderpads
+									conquest(700, i(209193)),	-- Verdant Gladiator's Leather Spaulders
+									conquest(700, i(209196)),	-- Verdant Gladiator's Leather Strap
+									conquest(700, i(209186)),	-- Verdant Gladiator's Leather Treads
+									conquest(875, i(209183)),	-- Verdant Gladiator's Leather Vest
+									conquest(525, i(209198)),	-- Verdant Gladiator's Leather Wristguards
+									conquest(525, i(209197)),	-- Verdant Gladiator's Leather Wristwraps
+								}),
+								cl(SHAMAN, {
+									conquest(525, i(209256)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209257)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209258)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209252)),	-- Verdant Gladiator's Chain Belt
+									conquest(700, i(209243)),	-- Verdant Gladiator's Chain Boots
+									conquest(525, i(209255)),	-- Verdant Gladiator's Chain Bracers
+									conquest(875, i(209249)),	-- Verdant Gladiator's Chain Breeches
+									conquest(875, i(209247)),	-- Verdant Gladiator's Chain Faceguard
+									conquest(700, i(209244)),	-- Verdant Gladiator's Chain Gauntlets
+									conquest(700, i(209253)),	-- Verdant Gladiator's Chain Girdle
+									conquest(700, i(209245)),	-- Verdant Gladiator's Chain Handguards
+									conquest(875, i(209246)),	-- Verdant Gladiator's Chain Helm
+									conquest(875, i(209248)),	-- Verdant Gladiator's Chain Leggings
+									conquest(700, i(209250)),	-- Verdant Gladiator's Chain Monnion
+									conquest(700, i(209242)),	-- Verdant Gladiator's Chain Sabatons
+									conquest(700, i(209251)),	-- Verdant Gladiator's Chain Shoulderguard
+									conquest(875, i(209241)),	-- Verdant Gladiator's Chain Tunic
+									conquest(875, i(209240)),	-- Verdant Gladiator's Chain Vest
+									conquest(525, i(209254)),	-- Verdant Gladiator's Chain Wristguards
+								}),
+								cl(WARLOCK, {
+									conquest(525, i(209123)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209124)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209125)),	-- Verdant Gladiator's Shawl
+									conquest(700, i(209118)),	-- Verdant Gladiator's Silk Amice
+									conquest(525, i(209122)),	-- Verdant Gladiator's Silk Armbands
+									conquest(700, i(209120)),	-- Verdant Gladiator's Silk Belt
+									conquest(700, i(209119)),	-- Verdant Gladiator's Silk Cord
+									conquest(700, i(209111)),	-- Verdant Gladiator's Silk Gloves
+									conquest(875, i(209114)),	-- Verdant Gladiator's Silk Guise
+									conquest(700, i(209112)),	-- Verdant Gladiator's Silk Handwraps
+									conquest(875, i(209113)),	-- Verdant Gladiator's Silk Hood
+									conquest(875, i(209115)),	-- Verdant Gladiator's Silk Leggings
+									conquest(700, i(209117)),	-- Verdant Gladiator's Silk Mantle
+									conquest(875, i(209107)),	-- Verdant Gladiator's Silk Robe
+									conquest(700, i(209109)),	-- Verdant Gladiator's Silk Slippers
+									conquest(700, i(209110)),	-- Verdant Gladiator's Silk Treads
+									conquest(875, i(209116)),	-- Verdant Gladiator's Silk Trousers
+									conquest(875, i(209108)),	-- Verdant Gladiator's Silk Vestments
+									conquest(525, i(209121)),	-- Verdant Gladiator's Silk Wristwraps
+								}),
+								cl(WARRIOR, {
+									conquest(525, i(209313)),	-- Verdant Gladiator's Cloak
+									conquest(525, i(209314)),	-- Verdant Gladiator's Drape
+									conquest(525, i(209315)),	-- Verdant Gladiator's Shawl
+									conquest(875, i(209297)),	-- Verdant Gladiator's Plate Chestguard
+									conquest(875, i(209298)),	-- Verdant Gladiator's Plate Chestplate
+									conquest(700, i(209301)),	-- Verdant Gladiator's Plate Gauntlets
+									conquest(700, i(209309)),	-- Verdant Gladiator's Plate Girdle
+									conquest(700, i(209310)),	-- Verdant Gladiator's Plate Greatbelt
+									conquest(700, i(209302)),	-- Verdant Gladiator's Plate Handguards
+									conquest(875, i(209303)),	-- Verdant Gladiator's Plate Helm
+									conquest(875, i(209304)),	-- Verdant Gladiator's Plate Helmet
+									conquest(875, i(209305)),	-- Verdant Gladiator's Plate Legguards
+									conquest(700, i(209308)),	-- Verdant Gladiator's Plate Pauldrons
+									conquest(700, i(209307)),	-- Verdant Gladiator's Plate Shoulders
+									conquest(700, i(209300)),	-- Verdant Gladiator's Plate Stompers
+									conquest(525, i(209312)),	-- Verdant Gladiator's Plate Vambraces
+									conquest(700, i(209299)),	-- Verdant Gladiator's Plate Warboots
+									conquest(875, i(209306)),	-- Verdant Gladiator's Plate Wargreaves
+									conquest(525, i(209311)),	-- Verdant Gladiator's Plate Wristguards
+								}),
 							}),
-							cl(DEMONHUNTER, {
-								conquest(525, i(209161)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209162)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209163)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209157)),	-- Verdant Gladiator's Leather Belt
-								conquest(700, i(209147)),	-- Verdant Gladiator's Leather Boots
-								conquest(875, i(209153)),	-- Verdant Gladiator's Leather Breeches
-								conquest(700, i(209149)),	-- Verdant Gladiator's Leather Gloves
-								conquest(700, i(209150)),	-- Verdant Gladiator's Leather Grips
-								conquest(875, i(209151)),	-- Verdant Gladiator's Leather Helm
-								conquest(875, i(209146)),	-- Verdant Gladiator's Leather Jerkin
-								conquest(875, i(209154)),	-- Verdant Gladiator's Leather Legwraps
-								conquest(875, i(209152)),	-- Verdant Gladiator's Leather Mask
-								conquest(700, i(209156)),	-- Verdant Gladiator's Leather Shoulderpads
-								conquest(700, i(209155)),	-- Verdant Gladiator's Leather Spaulders
-								conquest(700, i(209158)),	-- Verdant Gladiator's Leather Strap
-								conquest(700, i(209148)),	-- Verdant Gladiator's Leather Treads
-								conquest(875, i(209145)),	-- Verdant Gladiator's Leather Vest
-								conquest(525, i(209160)),	-- Verdant Gladiator's Leather Wristguards
-								conquest(525, i(209159)),	-- Verdant Gladiator's Leather Wristwraps
+							filter(FINGER_F, {
+								conquest(525, i(209338)),	-- Verdant Gladiator's Band
+								conquest(525, i(209337)),	-- Verdant Gladiator's Ring
+								conquest(525, i(209339)),	-- Verdant Gladiator's Signet
 							}),
-							cl(DRUID, {
-								conquest(525, i(209142)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209143)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209144)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209138)),	-- Verdant Gladiator's Leather Belt
-								conquest(700, i(209128)),	-- Verdant Gladiator's Leather Boots
-								conquest(875, i(209134)),	-- Verdant Gladiator's Leather Breeches
-								conquest(700, i(209130)),	-- Verdant Gladiator's Leather Gloves
-								conquest(700, i(209131)),	-- Verdant Gladiator's Leather Grips
-								conquest(875, i(209132)),	-- Verdant Gladiator's Leather Helm
-								conquest(875, i(209127)),	-- Verdant Gladiator's Leather Jerkin
-								conquest(875, i(209135)),	-- Verdant Gladiator's Leather Legwraps
-								conquest(875, i(209133)),	-- Verdant Gladiator's Leather Mask
-								conquest(700, i(209137)),	-- Verdant Gladiator's Leather Shoulderpads
-								conquest(700, i(209136)),	-- Verdant Gladiator's Leather Spaulders
-								conquest(700, i(209139)),	-- Verdant Gladiator's Leather Strap
-								conquest(700, i(209129)),	-- Verdant Gladiator's Leather Treads
-								conquest(875, i(209126)),	-- Verdant Gladiator's Leather Vest
-								conquest(525, i(209141)),	-- Verdant Gladiator's Leather Wristguards
-								conquest(525, i(209140)),	-- Verdant Gladiator's Leather Wristwraps
+							filter(NECK_F, {
+								conquest(525, i(209342)),	-- Verdant Gladiator's Amulet
+								conquest(525, i(209340)),	-- Verdant Gladiator's Necklace
+								conquest(525, i(209341)),	-- Verdant Gladiator's Pendant
 							}),
-							cl(EVOKER, {
-								conquest(525, i(209218)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209219)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209220)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209214)),	-- Verdant Gladiator's Chain Belt
-								conquest(700, i(209205)),	-- Verdant Gladiator's Chain Boots
-								conquest(525, i(209217)),	-- Verdant Gladiator's Chain Bracers
-								conquest(875, i(209211)),	-- Verdant Gladiator's Chain Breeches
-								conquest(875, i(209209)),	-- Verdant Gladiator's Chain Faceguard
-								conquest(700, i(209206)),	-- Verdant Gladiator's Chain Gauntlets
-								conquest(700, i(209215)),	-- Verdant Gladiator's Chain Girdle
-								conquest(700, i(209207)),	-- Verdant Gladiator's Chain Handguards
-								conquest(875, i(209208)),	-- Verdant Gladiator's Chain Helm
-								conquest(875, i(209210)),	-- Verdant Gladiator's Chain Leggings
-								conquest(700, i(209212)),	-- Verdant Gladiator's Chain Monnion
-								conquest(875, i(209202)),	-- Verdant Gladiator's Chain Robe
-								conquest(700, i(209204)),	-- Verdant Gladiator's Chain Sabatons
-								conquest(700, i(209213)),	-- Verdant Gladiator's Chain Shoulderguard
-								conquest(875, i(209203)),	-- Verdant Gladiator's Chain Vestments
-								conquest(525, i(209216)),	-- Verdant Gladiator's Chain Wristguards
+							filter(TRINKET_F, {
+								conquest(700, i(209343)),	-- Verdant Gladiator's Badge of Ferocity
+								conquest(700, i(209345)),	-- Verdant Gladiator's Emblem
+								conquest(700, i(209344)),	-- Verdant Gladiator's Insignia of Alacrity
+								conquest(525, i(209346)),	-- Verdant Gladiator's Medallion
+								conquest(525, i(209347)),	-- Verdant Gladiator's Sigil of Adaptation
 							}),
-							cl(HUNTER, {
-								conquest(525, i(209237)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209238)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209239)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209233)),	-- Verdant Gladiator's Chain Belt
-								conquest(700, i(209224)),	-- Verdant Gladiator's Chain Boots
-								conquest(525, i(209236)),	-- Verdant Gladiator's Chain Bracers
-								conquest(875, i(209230)),	-- Verdant Gladiator's Chain Breeches
-								conquest(875, i(209228)),	-- Verdant Gladiator's Chain Faceguard
-								conquest(700, i(209225)),	-- Verdant Gladiator's Chain Gauntlets
-								conquest(700, i(209234)),	-- Verdant Gladiator's Chain Girdle
-								conquest(700, i(209226)),	-- Verdant Gladiator's Chain Handguards
-								conquest(875, i(209227)),	-- Verdant Gladiator's Chain Helm
-								conquest(875, i(209229)),	-- Verdant Gladiator's Chain Leggings
-								conquest(700, i(209231)),	-- Verdant Gladiator's Chain Monnion
-								conquest(700, i(209223)),	-- Verdant Gladiator's Chain Sabatons
-								conquest(700, i(209232)),	-- Verdant Gladiator's Chain Shoulderguard
-								conquest(875, i(209222)),	-- Verdant Gladiator's Chain Tunic
-								conquest(875, i(209221)),	-- Verdant Gladiator's Chain Vest
-								conquest(525, i(209235)),	-- Verdant Gladiator's Chain Wristguards
+							n(WEAPONS, {
+								conquest(900, i(209544)),	-- Verdant Gladiator's Axe
+								conquest(1800, i(209554)),	-- Verdant Gladiator's Axestaff
+								conquest(1800, i(209547)),	-- Verdant Gladiator's Bow
+								conquest(450, i(209549)),	-- Verdant Gladiator's Bulwark
+								conquest(450, i(209542)),	-- Verdant Gladiator's Censer
+								conquest(900, i(209546)),	-- Verdant Gladiator's Claws
+								conquest(900, i(209536)),	-- Verdant Gladiator's Dagger
+								conquest(1800, i(209548)),	-- Verdant Gladiator's Greatstaff
+								conquest(1800, i(209550)),	-- Verdant Gladiator's Greatsword
+								conquest(1800, i(209551)),	-- Verdant Gladiator's Pulverizer
+								conquest(1800, i(209540)),	-- Verdant Gladiator's Rifle
+								conquest(1350, i(209541)),	-- Verdant Gladiator's Scepter
+								conquest(1800, i(209538)),	-- Verdant Gladiator's Scythe
+								conquest(450, i(209543)),	-- Verdant Gladiator's Shield
+								conquest(900, i(209553)),	-- Verdant Gladiator's Shotel
+								conquest(1350, i(209545)),	-- Verdant Gladiator's Sickle
+								conquest(900, i(209535)),	-- Verdant Gladiator's Splitter
+								conquest(1800, i(209539)),	-- Verdant Gladiator's Staff
+								conquest(900, i(209552)),	-- Verdant Gladiator's Sword
+								conquest(900, i(209537)),	-- Verdant Gladiator's Warglaive
 							}),
-							cl(MAGE, {
-								conquest(525, i(209085)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209086)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209087)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209080)),	-- Verdant Gladiator's Silk Amice
-								conquest(525, i(209084)),	-- Verdant Gladiator's Silk Armbands
-								conquest(700, i(209082)),	-- Verdant Gladiator's Silk Belt
-								conquest(875, i(209070)),	-- Verdant Gladiator's Silk Blouse
-								conquest(875, i(209076)),	-- Verdant Gladiator's Silk Cap
-								conquest(700, i(209081)),	-- Verdant Gladiator's Silk Cord
-								conquest(700, i(209073)),	-- Verdant Gladiator's Silk Gloves
-								conquest(700, i(209074)),	-- Verdant Gladiator's Silk Handwraps
-								conquest(875, i(209075)),	-- Verdant Gladiator's Silk Hat
-								conquest(875, i(209077)),	-- Verdant Gladiator's Silk Leggings
-								conquest(700, i(209079)),	-- Verdant Gladiator's Silk Mantle
-								conquest(700, i(209071)),	-- Verdant Gladiator's Silk Slippers
-								conquest(700, i(209072)),	-- Verdant Gladiator's Silk Treads
-								conquest(875, i(209078)),	-- Verdant Gladiator's Silk Trousers
-								conquest(875, i(209069)),	-- Verdant Gladiator's Silk Tunic
-								conquest(525, i(209083)),	-- Verdant Gladiator's Silk Wristwraps
-							}),
-							cl(MONK, {
-								conquest(525, i(209180)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209181)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209182)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209176)),	-- Verdant Gladiator's Leather Belt
-								conquest(700, i(209166)),	-- Verdant Gladiator's Leather Boots
-								conquest(875, i(209172)),	-- Verdant Gladiator's Leather Breeches
-								conquest(700, i(209168)),	-- Verdant Gladiator's Leather Gloves
-								conquest(700, i(209169)),	-- Verdant Gladiator's Leather Grips
-								conquest(875, i(209170)),	-- Verdant Gladiator's Leather Helm
-								conquest(875, i(209165)),	-- Verdant Gladiator's Leather Jerkin
-								conquest(875, i(209173)),	-- Verdant Gladiator's Leather Legwraps
-								conquest(875, i(209171)),	-- Verdant Gladiator's Leather Mask
-								conquest(700, i(209175)),	-- Verdant Gladiator's Leather Shoulderpads
-								conquest(700, i(209174)),	-- Verdant Gladiator's Leather Spaulders
-								conquest(700, i(209177)),	-- Verdant Gladiator's Leather Strap
-								conquest(700, i(209167)),	-- Verdant Gladiator's Leather Treads
-								conquest(875, i(209164)),	-- Verdant Gladiator's Leather Vest
-								conquest(525, i(209179)),	-- Verdant Gladiator's Leather Wristguards
-								conquest(525, i(209178)),	-- Verdant Gladiator's Leather Wristwraps
-							}),
-							cl(PALADIN, {
-								conquest(525, i(209294)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209295)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209296)),	-- Verdant Gladiator's Shawl
-								conquest(875, i(209278)),	-- Verdant Gladiator's Plate Chestguard
-								conquest(875, i(209279)),	-- Verdant Gladiator's Plate Chestplate
-								conquest(700, i(209282)),	-- Verdant Gladiator's Plate Gauntlets
-								conquest(700, i(209290)),	-- Verdant Gladiator's Plate Girdle
-								conquest(700, i(209291)),	-- Verdant Gladiator's Plate Greatbelt
-								conquest(700, i(209283)),	-- Verdant Gladiator's Plate Handguards
-								conquest(875, i(209284)),	-- Verdant Gladiator's Plate Helm
-								conquest(875, i(209285)),	-- Verdant Gladiator's Plate Helmet
-								conquest(875, i(209286)),	-- Verdant Gladiator's Plate Legguards
-								conquest(700, i(209289)),	-- Verdant Gladiator's Plate Pauldrons
-								conquest(700, i(209288)),	-- Verdant Gladiator's Plate Shoulders
-								conquest(700, i(209281)),	-- Verdant Gladiator's Plate Stompers
-								conquest(875, i(209287)),	-- Verdant Gladiator's Plate Tasses
-								conquest(525, i(209293)),	-- Verdant Gladiator's Plate Vambraces
-								conquest(700, i(209280)),	-- Verdant Gladiator's Plate Warboots
-								conquest(525, i(209292)),	-- Verdant Gladiator's Plate Wristguards
-							}),
-							cl(PRIEST, {
-								conquest(525, i(209104)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209105)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209106)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209099)),	-- Verdant Gladiator's Silk Amice
-								conquest(525, i(209103)),	-- Verdant Gladiator's Silk Armbands
-								conquest(700, i(209101)),	-- Verdant Gladiator's Silk Belt
-								conquest(875, i(209089)),	-- Verdant Gladiator's Silk Blouse
-								conquest(700, i(209100)),	-- Verdant Gladiator's Silk Cord
-								conquest(700, i(209092)),	-- Verdant Gladiator's Silk Gloves
-								conquest(875, i(209095)),	-- Verdant Gladiator's Silk Guise
-								conquest(700, i(209093)),	-- Verdant Gladiator's Silk Handwraps
-								conquest(875, i(209094)),	-- Verdant Gladiator's Silk Hood
-								conquest(875, i(209096)),	-- Verdant Gladiator's Silk Leggings
-								conquest(700, i(209098)),	-- Verdant Gladiator's Silk Mantle
-								conquest(700, i(209090)),	-- Verdant Gladiator's Silk Slippers
-								conquest(700, i(209091)),	-- Verdant Gladiator's Silk Treads
-								conquest(875, i(209097)),	-- Verdant Gladiator's Silk Trousers
-								conquest(875, i(209088)),	-- Verdant Gladiator's Silk Tunic
-								conquest(525, i(209102)),	-- Verdant Gladiator's Silk Wristwraps
-							}),
-							cl(ROGUE, {
-								conquest(525, i(209199)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209200)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209201)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209195)),	-- Verdant Gladiator's Leather Belt
-								conquest(700, i(209185)),	-- Verdant Gladiator's Leather Boots
-								conquest(875, i(209191)),	-- Verdant Gladiator's Leather Breeches
-								conquest(700, i(209187)),	-- Verdant Gladiator's Leather Gloves
-								conquest(700, i(209188)),	-- Verdant Gladiator's Leather Grips
-								conquest(875, i(209189)),	-- Verdant Gladiator's Leather Helm
-								conquest(875, i(209184)),	-- Verdant Gladiator's Leather Jerkin
-								conquest(875, i(209192)),	-- Verdant Gladiator's Leather Legwraps
-								conquest(875, i(209190)),	-- Verdant Gladiator's Leather Mask
-								conquest(700, i(209194)),	-- Verdant Gladiator's Leather Shoulderpads
-								conquest(700, i(209193)),	-- Verdant Gladiator's Leather Spaulders
-								conquest(700, i(209196)),	-- Verdant Gladiator's Leather Strap
-								conquest(700, i(209186)),	-- Verdant Gladiator's Leather Treads
-								conquest(875, i(209183)),	-- Verdant Gladiator's Leather Vest
-								conquest(525, i(209198)),	-- Verdant Gladiator's Leather Wristguards
-								conquest(525, i(209197)),	-- Verdant Gladiator's Leather Wristwraps
-							}),
-							cl(SHAMAN, {
-								conquest(525, i(209256)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209257)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209258)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209252)),	-- Verdant Gladiator's Chain Belt
-								conquest(700, i(209243)),	-- Verdant Gladiator's Chain Boots
-								conquest(525, i(209255)),	-- Verdant Gladiator's Chain Bracers
-								conquest(875, i(209249)),	-- Verdant Gladiator's Chain Breeches
-								conquest(875, i(209247)),	-- Verdant Gladiator's Chain Faceguard
-								conquest(700, i(209244)),	-- Verdant Gladiator's Chain Gauntlets
-								conquest(700, i(209253)),	-- Verdant Gladiator's Chain Girdle
-								conquest(700, i(209245)),	-- Verdant Gladiator's Chain Handguards
-								conquest(875, i(209246)),	-- Verdant Gladiator's Chain Helm
-								conquest(875, i(209248)),	-- Verdant Gladiator's Chain Leggings
-								conquest(700, i(209250)),	-- Verdant Gladiator's Chain Monnion
-								conquest(700, i(209242)),	-- Verdant Gladiator's Chain Sabatons
-								conquest(700, i(209251)),	-- Verdant Gladiator's Chain Shoulderguard
-								conquest(875, i(209241)),	-- Verdant Gladiator's Chain Tunic
-								conquest(875, i(209240)),	-- Verdant Gladiator's Chain Vest
-								conquest(525, i(209254)),	-- Verdant Gladiator's Chain Wristguards
-							}),
-							cl(WARLOCK, {
-								conquest(525, i(209123)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209124)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209125)),	-- Verdant Gladiator's Shawl
-								conquest(700, i(209118)),	-- Verdant Gladiator's Silk Amice
-								conquest(525, i(209122)),	-- Verdant Gladiator's Silk Armbands
-								conquest(700, i(209120)),	-- Verdant Gladiator's Silk Belt
-								conquest(700, i(209119)),	-- Verdant Gladiator's Silk Cord
-								conquest(700, i(209111)),	-- Verdant Gladiator's Silk Gloves
-								conquest(875, i(209114)),	-- Verdant Gladiator's Silk Guise
-								conquest(700, i(209112)),	-- Verdant Gladiator's Silk Handwraps
-								conquest(875, i(209113)),	-- Verdant Gladiator's Silk Hood
-								conquest(875, i(209115)),	-- Verdant Gladiator's Silk Leggings
-								conquest(700, i(209117)),	-- Verdant Gladiator's Silk Mantle
-								conquest(875, i(209107)),	-- Verdant Gladiator's Silk Robe
-								conquest(700, i(209109)),	-- Verdant Gladiator's Silk Slippers
-								conquest(700, i(209110)),	-- Verdant Gladiator's Silk Treads
-								conquest(875, i(209116)),	-- Verdant Gladiator's Silk Trousers
-								conquest(875, i(209108)),	-- Verdant Gladiator's Silk Vestments
-								conquest(525, i(209121)),	-- Verdant Gladiator's Silk Wristwraps
-							}),
-							cl(WARRIOR, {
-								conquest(525, i(209313)),	-- Verdant Gladiator's Cloak
-								conquest(525, i(209314)),	-- Verdant Gladiator's Drape
-								conquest(525, i(209315)),	-- Verdant Gladiator's Shawl
-								conquest(875, i(209297)),	-- Verdant Gladiator's Plate Chestguard
-								conquest(875, i(209298)),	-- Verdant Gladiator's Plate Chestplate
-								conquest(700, i(209301)),	-- Verdant Gladiator's Plate Gauntlets
-								conquest(700, i(209309)),	-- Verdant Gladiator's Plate Girdle
-								conquest(700, i(209310)),	-- Verdant Gladiator's Plate Greatbelt
-								conquest(700, i(209302)),	-- Verdant Gladiator's Plate Handguards
-								conquest(875, i(209303)),	-- Verdant Gladiator's Plate Helm
-								conquest(875, i(209304)),	-- Verdant Gladiator's Plate Helmet
-								conquest(875, i(209305)),	-- Verdant Gladiator's Plate Legguards
-								conquest(700, i(209308)),	-- Verdant Gladiator's Plate Pauldrons
-								conquest(700, i(209307)),	-- Verdant Gladiator's Plate Shoulders
-								conquest(700, i(209300)),	-- Verdant Gladiator's Plate Stompers
-								conquest(525, i(209312)),	-- Verdant Gladiator's Plate Vambraces
-								conquest(700, i(209299)),	-- Verdant Gladiator's Plate Warboots
-								conquest(875, i(209306)),	-- Verdant Gladiator's Plate Wargreaves
-								conquest(525, i(209311)),	-- Verdant Gladiator's Plate Wristguards
-							}),
-						}),
-						filter(FINGER_F, {
-							conquest(525, i(209338)),	-- Verdant Gladiator's Band
-							conquest(525, i(209337)),	-- Verdant Gladiator's Ring
-							conquest(525, i(209339)),	-- Verdant Gladiator's Signet
-						}),
-						filter(NECK_F, {
-							conquest(525, i(209342)),	-- Verdant Gladiator's Amulet
-							conquest(525, i(209340)),	-- Verdant Gladiator's Necklace
-							conquest(525, i(209341)),	-- Verdant Gladiator's Pendant
-						}),
-						filter(TRINKET_F, {
-							conquest(700, i(209343)),	-- Verdant Gladiator's Badge of Ferocity
-							conquest(700, i(209345)),	-- Verdant Gladiator's Emblem
-							conquest(700, i(209344)),	-- Verdant Gladiator's Insignia of Alacrity
-							conquest(525, i(209346)),	-- Verdant Gladiator's Medallion
-							conquest(525, i(209347)),	-- Verdant Gladiator's Sigil of Adaptation
-						}),
-						n(WEAPONS, {
-							conquest(900, i(209544)),	-- Verdant Gladiator's Axe
-							conquest(1800, i(209554)),	-- Verdant Gladiator's Axestaff
-							conquest(1800, i(209547)),	-- Verdant Gladiator's Bow
-							conquest(450, i(209549)),	-- Verdant Gladiator's Bulwark
-							conquest(450, i(209542)),	-- Verdant Gladiator's Censer
-							conquest(900, i(209546)),	-- Verdant Gladiator's Claws
-							conquest(900, i(209536)),	-- Verdant Gladiator's Dagger
-							conquest(1800, i(209548)),	-- Verdant Gladiator's Greatstaff
-							conquest(1800, i(209550)),	-- Verdant Gladiator's Greatsword
-							conquest(1800, i(209551)),	-- Verdant Gladiator's Pulverizer
-							conquest(1800, i(209540)),	-- Verdant Gladiator's Rifle
-							conquest(1350, i(209541)),	-- Verdant Gladiator's Scepter
-							conquest(1800, i(209538)),	-- Verdant Gladiator's Scythe
-							conquest(450, i(209543)),	-- Verdant Gladiator's Shield
-							conquest(900, i(209553)),	-- Verdant Gladiator's Shotel
-							conquest(1350, i(209545)),	-- Verdant Gladiator's Sickle
-							conquest(900, i(209535)),	-- Verdant Gladiator's Splitter
-							conquest(1800, i(209539)),	-- Verdant Gladiator's Staff
-							conquest(900, i(209552)),	-- Verdant Gladiator's Sword
-							conquest(900, i(209537)),	-- Verdant Gladiator's Warglaive
 						}),
 					}),
-				}),
-			})),
+				},
+			}),
 			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, bonusID = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {

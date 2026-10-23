@@ -25,7 +25,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 		ach(18734),	-- Powerful Concoctions I
 	})),
 	expansion(EXPANSION.CLASSIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18723, {	-- Look, You're Specialized!
 				sourceQuests = {
 					29481,	-- Elixir Master
@@ -33,8 +33,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 					29482,	-- Transmutation Master
 				},
 				sourceQuestNumRequired = 1,
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, sharedData({
 			sharedDescription = "Requires 300 Classic Alchemy.",
 			qgs = {
@@ -91,20 +92,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			}),
 		})),
 		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_EIGHT, n(QUESTS, bubbleDown({ timeline = { ADDED_1_15_7 }}, {
+		applyclassicphase(SOD_PHASE_EIGHT, n(QUESTS, {
 			q(90560, {	-- Familiar Foulness
+				timeline = { ADDED_1_15_7 },
 				races = HORDE_ONLY,
 				groups = {
 					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
 				},
 			}),
 			q(90567, {	-- Unfamiliar Foulness
+				timeline = { ADDED_1_15_7 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
 				},
 			}),
-		}))),
+		})),
 		-- #endif
 	}),
 	expansion(EXPANSION.TBC, {
@@ -561,11 +564,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
 				provider = { "i", 156631 },	-- Silas' Sphere of Transmutation
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, {
 			q(54463, {	-- Alchemical Equations [A]
 				provider = { "n", 132228 },	-- Elric Whalgrene
@@ -753,20 +757,23 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18805, {	-- Draconic Phial Cabinet
-				crit(61271),	-- Phial of Tepid Versatility
-				crit(61272),	-- Phial of Charged Isolation
-				crit(61273),	-- Phial of the Eye in the Storm
-				crit(61274),	-- Phial of Static Empowerment
-				crit(61275),	-- Phial of Still Air
-				crit(61276),	-- Phial of Glacial Fury
-				crit(61277),	-- Phial of Icy Preservation
-				crit(61278),	-- Phial of Elemental Chaos
-				crit(61279),	-- Iced Phial of Corrupting Rage
-				crit(61280),	-- Charged Phial of Alacrity
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61271),	-- Phial of Tepid Versatility
+					crit(61272),	-- Phial of Charged Isolation
+					crit(61273),	-- Phial of the Eye in the Storm
+					crit(61274),	-- Phial of Static Empowerment
+					crit(61275),	-- Phial of Still Air
+					crit(61276),	-- Phial of Glacial Fury
+					crit(61277),	-- Phial of Icy Preservation
+					crit(61278),	-- Phial of Elemental Chaos
+					crit(61279),	-- Iced Phial of Corrupting Rage
+					crit(61280),	-- Charged Phial of Alacrity
+				},
 			}),
-		})),
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.ALCHEMY, 1 }}
 		},{

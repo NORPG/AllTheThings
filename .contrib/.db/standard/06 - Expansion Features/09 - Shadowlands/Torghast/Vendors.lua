@@ -7,12 +7,13 @@ local PHANTASMA = 1728;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	m(TORGHAST, {
 		n(VENDORS, {
-			n(BROKER_VEKEN_BROKER_VENOTT, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
+			n(BROKER_VEKEN_BROKER_VENOTT, {
 				description = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
 				crs = {
 					152594,	-- Broker Ve'ken
 					170257,	-- Broker Ve'nott
 				},
+				timeline = { ADDED_9_1_0 },
 				groups = {
 					n(176761, {	-- Adamant Vault
 						i(187034, {	-- Gilded Agony Cage
@@ -118,7 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					-- Misc
 					i(170540),	-- Ravenous Anima Cell
 				},
-			})),
+			}),
 		}),
 	}),
 }));

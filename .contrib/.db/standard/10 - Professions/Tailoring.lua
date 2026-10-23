@@ -11,10 +11,11 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 		ach(18903),	-- Ton of Tops (automated)
 	})),
 	-- #if SEASON_OF_DISCOVERY
-	expansion(EXPANSION.CLASSIC, applyclassicphase(SOD_PHASE_EIGHT, bubbleDownSelf({ timeline = { ADDED_1_15_7 } }, {
+	expansion(EXPANSION.CLASSIC, applyclassicphase(SOD_PHASE_EIGHT, {
 		q(90116, {	-- Holy Threads
 			provider = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
 			coord = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			timeline = { ADDED_1_15_7 },
 			groups = {
 				i(239149),	-- Pattern: Crusader's Knapsack (RECIPE!)
 			},
@@ -22,14 +23,15 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 		q(90120, {	-- Red is Not Dead
 			provider = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
 			coord = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			timeline = { ADDED_1_15_7 },
 			groups = {
 				i(239150),	-- Pattern: Crimson Dawnwoven Bag (RECIPE!)
 			},
 		}),
-	}))),
+	})),
 	-- #endif
-	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_2_0_5 } }, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
+		n(ACHIEVEMENTS, {
 			ach(17499, {	-- Renowned Tailoring Specialist
 				sourceQuests = {
 					10831,	-- Becoming a Mooncloth Tailor
@@ -39,8 +41,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				sourceQuestNumRequired = 1,
 				timeline = { ADDED_10_0_7, REMOVED_10_0_7 },
 			}),
-		})),
-		n(QUESTS, bubbleDownSelf({ timeline = { ADDED_2_0_5, REMOVED_4_0_3 } }, {
+		}),
+		n(QUESTS, sharedData({ timeline = { ADDED_2_0_5, REMOVED_4_0_3 } }, {
 			q(10831, {	-- Becoming a Mooncloth Tailor
 				description = "Upon finishing this quest, you will become a Mooncloth Tailor.",
 				altQuests = {
@@ -111,7 +113,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				},
 			}),
 		})),
-	}))),
+	})),
 	expansion(EXPANSION.WRATH, {
 		-- #if AFTER BFA
 		ach(137, {	-- Stocking Up
@@ -638,7 +640,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				}
 			}),
 		})),
-		n(QUESTS, bubbleDown({ timeline = { ADDED_8_1_5 } }, {
+		n(QUESTS, sharedData({ timeline = { ADDED_8_1_5 } }, {
 			q(54483, {	-- Tailored Training [A]
 				provider = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
 				coord = { 76.8, 11.2, BORALUS },
@@ -855,17 +857,20 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18902, {	-- Uncertified Nurse
-				crit(61745, {
-					providers = {
-						{ "i", 194048 },	-- Wildercloth Bandage Bronze
-						{ "i", 194049 },	-- Wildercloth Bandage Silver
-						{ "i", 194050 },	-- Wildercloth Bandage Gold
-					},
-				}),
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61745, {
+						providers = {
+							{ "i", 194048 },	-- Wildercloth Bandage Bronze
+							{ "i", 194049 },	-- Wildercloth Bandage Silver
+							{ "i", 194050 },	-- Wildercloth Bandage Gold
+						},
+					}),
+				},
 			}),
-		})),
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.TAILORING, 1 }}
 		},{

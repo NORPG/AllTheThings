@@ -542,18 +542,19 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	}),
 	-- #if NOT ANYCLASSIC
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_0_3, REMOVED_3_0_2 } }, {
+	expansion(EXPANSION.TBC, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",
 		groups = {
 			ach(665, {	-- Collector's Edition: Netherwhelp
 				timeline = { ADDED_3_0_2, REMOVED_3_0_2 },
 			}),
-			i(25535),	-- Netherwhelp (PET!)
+			i(25535, { timeline = { ADDED_2_0_3, REMOVED_3_0_2 } }),	-- Netherwhelp (PET!)
 			euONLY(i(30360, {	-- Lurky (PET!)
 				description = "This was only available in the EU.",
+				timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
 			})),
 		},
-	})),
+	}),
 	-- #else
 	q(63865, {	-- A Special Thank
 		timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
@@ -1264,8 +1265,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 	}),
 
 	-- Anniversary
-	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ timeline = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
+	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, {
 		description = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
+		timeline = { ADDED_8_2_5, REMOVED_10_1_0 },
 		groups = {
 			i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 				races = ALLIANCE_ONLY,
@@ -1274,7 +1276,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 				races = HORDE_ONLY,
 			}),
 		},
-	})),
+	}),
 
 	-- Other Blizzard Games
 	n(DIABLO_III, bubbleDownSelf({
@@ -1316,15 +1318,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			i(106256),	-- Treasure Goblin (PET!)
 		},
 	})),
-	n(DIABLO_IV, bubbleDownSelf({ timeline = { ADDED_10_0_2, REMOVED_11_0_7 } }, {
+	n(DIABLO_IV, {
 		description = "These rewards are available to anyone who purchases Diablo 4 Standard Edition.",
+		timeline = { ADDED_10_0_2, REMOVED_11_0_7 },
 		groups = {
 			ach(15640),	-- Return to Darkness
 			i(191114),	-- Amalgam of Rage (MOUNT!)
 		},
-	})),
-	n(DIABLO_IV_LORD_OF_HATRED, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+	}),
+	n(DIABLO_IV_LORD_OF_HATRED, {
 		description = "These rewards are available to anyone who purchases Diablo 4: Lord of Hatred Standard Edition.",
+		timeline = { ADDED_11_2_7 },
 		groups = {
 			i(265804, {	-- Sanctuary Chess Collection
 				i(259055),	-- Hatred's Wolfpelt Rug (DECOR!)
@@ -1345,18 +1349,20 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 				i(259057),	-- Sanctuary's Chess Match (DECOR!)
 			}),
 		},
-	})),
-	n(DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK, bubbleDownSelf({ timeline = { ADDED_12_0_1 } }, {
+	}),
+	n(DIABLO_II_RESURRECTED_REIGN_OF_WARLOCK, {
 		description = "These rewards are available to anyone who purchases Diablo 2: Resurrected - Reign of Warlock.",
+		timeline = { ADDED_12_0_1 },
 		groups = { i(256764) },	-- Sanctuary's Horadric Cube (DECOR!)
-	})),
-	n(OVERWATCH_ORIGINS, bubbleDownSelf({ timeline = { ADDED_6_2_3, REMOVED_10_0_2 } }, {
+	}),
+	n(OVERWATCH_ORIGINS, {
 		description = "These rewards are available to anyone who purchases Overwatch Origins Collection.",
+		timeline = { ADDED_6_2_3, REMOVED_10_0_2 },
 		groups = {
 			ach(11064),	-- Collector's Edition: Baby Winston
 			i(134047),	-- Baby Winston (PET!)
 		},
-	})),
+	}),
 	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({
 		timeline = {
 			-- #if ANYCLASSIC
@@ -1387,22 +1393,25 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			i(90177),	-- Baneling (PET!)
 		},
 	})),
-	n(STARCRAFT_II_LEGACY_OF_THE_VOID, bubbleDownSelf({ timeline = { ADDED_6_2_2 } }, {
+	n(STARCRAFT_II_LEGACY_OF_THE_VOID, {
 		description = "These rewards are available to anyone who purchases Starcraft 2: Legacy of the Void Collection.",
+		timeline = { ADDED_6_2_2 },
 		groups = {
 			ach(10309),	-- Collector's Edition: Zeradar
 			i(128423),	-- Zeradar (PET!)
 		},
-	})),
-	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+	}),
+	n(WARCRAFT_III_REFORGED_SPOILS_OF_WAR, {
 		description = "These rewards are available to anyone who purchases Warcraft 3: Refogred, Spoils of War Edition.",
+		timeline = { ADDED_8_1_0 },
 		groups = {
 			ach(13196),	-- Meat Marauder
 			i(164571),	-- Meat Wagon (MOUNT!)
 		},
-	})),
-	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
+	}),
+	n(WORLD_OF_WARCRAFT_FOREVER_COLLECTORS, {
 		description = "These rewards are available to anyone who purchased World of Warcraft: Forever Collector's Edition or digital equivalents.",
+		timeline = { ADDED_12_1_0 },
 		groups = {
 			n(HEROIC_EDITION, {
 				i(280519),	-- Cerulean Prideclaw (MOUNT!)
@@ -1420,12 +1429,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 				i(280599),	-- Veteran Adventurer's Loyal Companion (MOUNT!)
 				-- NOTE: Lordaeron Forever (270272) and Shen'dorei Tabard (280545) exist in retail data but are only granted in WoW: Forever.
 			}),
-			n(WARCRAFT_FOREVER_COLLECTION, bubbleDownSelf({ timeline = { "removed 12.1.7.99999" }, }, {	--TODO: available through January 11, 2027
-				i(280554),	-- Boardcraft Forsaken Figurine (DECOR!)
-				i(280556),	-- Boardcraft Human Figurine (DECOR!)
-			})),
+			n(WARCRAFT_FOREVER_COLLECTION, {	--TODO: available through January 11, 2027
+				timeline = { "removed 12.1.7.99999" },
+				groups = {
+					i(280554),	-- Boardcraft Forsaken Figurine (DECOR!)
+					i(280556),	-- Boardcraft Human Figurine (DECOR!)
+				},
+			}),
 		},
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, {
@@ -1450,7 +1462,7 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_
 	});
 	-- #endif
 	expansion(EXPANSION.TWW, {
-		n(HEROIC_EDITION, sharedData({ timeline = { ADDED_11_0_0 } }, {
+		n(HEROIC_EDITION, {
 			q(81991),	-- 3 Ensembles tints tied to single HQT
 						-- Ensemble: Champion Stormrider's Attire
 						-- Ensemble: Deep Stormrider's Attire
@@ -1462,6 +1474,6 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_
 			q(81995),	-- During Gryphons of a Feather (82809)
 			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993) [Dragon Isle Version]
 			q(84825),	-- triggered when accepting "The Stormrider's Bond" (83024) [Khaz Algar Version]
-		})),
+		}),
 	});
 })));

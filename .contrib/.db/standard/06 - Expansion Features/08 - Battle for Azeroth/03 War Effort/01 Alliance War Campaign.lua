@@ -1114,7 +1114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 				}),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+				n(QUESTS, sharedData({ timeline = { ADDED_8_1_0 } }, {
 					-- BETWEEN READY FOR WAR AND TIDES OF VENGEANCE START
 					q(53986, {	-- The Calm Before
 						sourceQuests = { 53098 },	-- Champion: Shandris Feathermoon
@@ -1700,7 +1700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						races = ALLIANCE_ONLY,
 					}),
 				})),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
+				n(QUESTS, {
 					q(55784, {	-- Payment in Kind
 						sourceQuests = {
 							55937,	-- Clearing Out the Cache
@@ -1708,6 +1708,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 						provider = { "n", 150101 },	-- Lady Jaina Proudmoore
 						coord = { 40.2, 55.2, 1355 },	-- Nazjatar
+						timeline = { ADDED_8_2_0 },
 						races = ALLIANCE_ONLY,
 						lvl = 120,
 					}),
@@ -1715,14 +1716,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						sourceQuests = { 55784 },	-- Payment in Kind
 						provider = { "n", 107574 },	-- Anduin Wrynn
 						coord = { 85.7, 31.7, STORMWIND_CITY },
+						timeline = { ADDED_8_2_0 },
 						maps = {
 							1479,	-- Baine Rescue (Scenario)
 						},
 						races = ALLIANCE_ONLY,
 						lvl = 120,
 					}),
-				})),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {
+				}),
+				n(QUESTS, sharedData({ timeline = { ADDED_8_2_5 } }, {
 					q(56494, {	-- The Eye of Battle
 						sourceQuests = { 55783 },	-- Stay of Execution
 						provider = { "n", 135614 },	-- Master Mathias Shaw

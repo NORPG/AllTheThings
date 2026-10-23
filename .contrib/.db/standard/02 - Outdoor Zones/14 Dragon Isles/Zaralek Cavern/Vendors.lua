@@ -43,8 +43,9 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					i(205936),	-- New Niffen No-Sniffin' Tonic (TOY!)
 				},
 			}),
-			n(205676, bubbleDown({ timeline = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
+			n(205676, {	-- Norzko the Proud
 				coord = { 52.0, 25.6, ZARALEK_CAVERN },
+				timeline = { REMOVED_11_0_0 },
 				groups = bubbleDownFiltered({
 					cost = { { "i", 204843, 1 } },	-- Draconic Mark of Mastery
 					bonusID = 7532,
@@ -141,7 +142,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 						i(205800),	-- Thraexhelm of the Onyx Crucible
 					}),
 				}),
-			})),
+			}),
 			n(203615, {	-- Saccratros
 				coord = { 55.9, 55.4, ZARALEK_CAVERN },
 				groups = {

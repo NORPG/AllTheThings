@@ -11,7 +11,6 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: BETA 10.0.2 50 Trials became 60 Trials
 			description = "These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			lvl = 70,
-			timeline = { ADDED_11_0_0 },
 			groups = {
 				i(185940),	-- Pristine Survival Kit
 				cl(DEATHKNIGHT, {

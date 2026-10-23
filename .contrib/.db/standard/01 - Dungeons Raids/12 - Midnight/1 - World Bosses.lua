@@ -127,10 +127,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 							-- Heroic appearances
 							i(275224),	-- Mertei's Adjutant Leggings
 							i(275227),	-- Leth'ir's Dress Sabatons
-							n(UPGRADE, bubbleDownSelf({ modID = 6, timeline = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
-								-- Mythic appearances
-								i(275224),	-- Mertei's Adjutant Leggings
-								i(275227),	-- Leth'ir's Dress Sabatons
+							n(UPGRADE, bubbleDownSelf({ modID = 6 }, {
+								timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+								groups = {
+									-- Mythic appearances
+									i(275224),	-- Mertei's Adjutant Leggings
+									i(275227),	-- Leth'ir's Dress Sabatons
+								},
 							})),
 						},
 					}),
@@ -161,9 +164,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 							-- Heroic appearances
 							i(275225),	-- Toxic Voidscythe Spaulders
 							i(275226),	-- Shredclaw Handler's Grips
-							n(UPGRADE, bubbleDownSelf({ modID = 6, timeline = { ADDED_12_0_7, REMOVED_12_1_0 } }, {
-								i(275225),	-- Toxic Voidscythe Spaulders
-								i(275226),	-- Shredclaw Handler's Grips
+							n(UPGRADE, bubbleDownSelf({ modID = 6 }, {
+								timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+								groups = {
+									i(275225),	-- Toxic Voidscythe Spaulders
+									i(275226),	-- Shredclaw Handler's Grips
+								},
 							})),
 						},
 					}),

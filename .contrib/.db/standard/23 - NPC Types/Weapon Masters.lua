@@ -190,177 +190,204 @@ local WEAPON_SKILL_WANDS = {
 root(ROOTS.Zones, {
 	m(KALIMDOR, {
 		m(DARNASSUS, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(11866, {	-- Ilyenia Moonfire <Weapon Master>
-					coord = { 57.5, 46.8, DARNASSUS },
-					races = ALLIANCE_ONLY,
-					groups = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_FIST_WEAPONS,
-						WEAPON_SKILL_STAVES,
-						WEAPON_SKILL_THROWN,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(11866, {	-- Ilyenia Moonfire <Weapon Master>
+						coord = { 57.5, 46.8, DARNASSUS },
+						races = ALLIANCE_ONLY,
+						groups = {
+							WEAPON_SKILL_BOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_FIST_WEAPONS,
+							WEAPON_SKILL_STAVES,
+							WEAPON_SKILL_THROWN,
+						},
+					}),
+				},
+			}),
 		}),
 		m(ORGRIMMAR, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(2704, {	-- Hanashi <Weapon Master>
-					coord = { 81.6, 19.4, ORGRIMMAR },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_ONE_HANDED_AXES,
-						WEAPON_SKILL_STAVES,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_AXES,
-					},
-				}),
-				n(11868, {	-- Sayoc <Weapon Master>
-					coord = { 81.6, 19.4, ORGRIMMAR },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_FIST_WEAPONS,
-						WEAPON_SKILL_ONE_HANDED_AXES,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_AXES,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(2704, {	-- Hanashi <Weapon Master>
+						coord = { 81.6, 19.4, ORGRIMMAR },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_BOWS,
+							WEAPON_SKILL_ONE_HANDED_AXES,
+							WEAPON_SKILL_STAVES,
+							WEAPON_SKILL_THROWN,
+							WEAPON_SKILL_TWO_HANDED_AXES,
+						},
+					}),
+					n(11868, {	-- Sayoc <Weapon Master>
+						coord = { 81.6, 19.4, ORGRIMMAR },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_BOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_FIST_WEAPONS,
+							WEAPON_SKILL_ONE_HANDED_AXES,
+							WEAPON_SKILL_THROWN,
+							WEAPON_SKILL_TWO_HANDED_AXES,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #if AFTER TBC
 		m(THE_EXODAR, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(16773, {	-- Handiir <Weapon Master>
-					coord = { 53.6, 84.8, THE_EXODAR },
-					races = ALLIANCE_ONLY,
-					groups = {
-						WEAPON_SKILL_CROSSBOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_MACES,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_TWO_HANDED_MACES,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(16773, {	-- Handiir <Weapon Master>
+						coord = { 53.6, 84.8, THE_EXODAR },
+						races = ALLIANCE_ONLY,
+						groups = {
+							WEAPON_SKILL_CROSSBOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_ONE_HANDED_MACES,
+							WEAPON_SKILL_ONE_HANDED_SWORDS,
+							WEAPON_SKILL_TWO_HANDED_MACES,
+							WEAPON_SKILL_TWO_HANDED_SWORDS,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #endif
 		m(THUNDER_BLUFF, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(11869, {	-- Ansekhwa <Weapon Master>
-					coord = { 41.2, 61.4, THUNDER_BLUFF },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_GUNS,
-						WEAPON_SKILL_ONE_HANDED_MACES,
-						WEAPON_SKILL_STAVES,
-						WEAPON_SKILL_TWO_HANDED_MACES,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(11869, {	-- Ansekhwa <Weapon Master>
+						coord = { 41.2, 61.4, THUNDER_BLUFF },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_GUNS,
+							WEAPON_SKILL_ONE_HANDED_MACES,
+							WEAPON_SKILL_STAVES,
+							WEAPON_SKILL_TWO_HANDED_MACES,
+						},
+					}),
+				},
+			}),
 		}),
 	}),
 	m(EASTERN_KINGDOMS, {
 		m(IRONFORGE, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(13084, {	-- Bixi Wobblebonk <Weapon Master>
-					coord = { 62.2, 89.6, IRONFORGE },
-					races = ALLIANCE_ONLY,
-					groups = {
-						WEAPON_SKILL_CROSSBOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_THROWN,
-					},
-				}),
-				n(11865, {	-- Buliwyf Stonehand <Weapon Master>
-					coord = { 61.2, 89.5, IRONFORGE },
-					races = ALLIANCE_ONLY,
-					groups = {
-						WEAPON_SKILL_FIST_WEAPONS,
-						WEAPON_SKILL_GUNS,
-						WEAPON_SKILL_ONE_HANDED_AXES,
-						WEAPON_SKILL_ONE_HANDED_MACES,
-						WEAPON_SKILL_TWO_HANDED_AXES,
-						WEAPON_SKILL_TWO_HANDED_MACES,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(13084, {	-- Bixi Wobblebonk <Weapon Master>
+						coord = { 62.2, 89.6, IRONFORGE },
+						races = ALLIANCE_ONLY,
+						groups = {
+							WEAPON_SKILL_CROSSBOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_THROWN,
+						},
+					}),
+					n(11865, {	-- Buliwyf Stonehand <Weapon Master>
+						coord = { 61.2, 89.5, IRONFORGE },
+						races = ALLIANCE_ONLY,
+						groups = {
+							WEAPON_SKILL_FIST_WEAPONS,
+							WEAPON_SKILL_GUNS,
+							WEAPON_SKILL_ONE_HANDED_AXES,
+							WEAPON_SKILL_ONE_HANDED_MACES,
+							WEAPON_SKILL_TWO_HANDED_AXES,
+							WEAPON_SKILL_TWO_HANDED_MACES,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #if AFTER TBC
 		m(SILVERMOON_CITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(16621, {	-- Ileda <Weapon Master>
-					coord = { 91.0, 38.6, SILVERMOON_CITY },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(16621, {	-- Ileda <Weapon Master>
+						coord = { 91.0, 38.6, SILVERMOON_CITY },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_BOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_ONE_HANDED_SWORDS,
+							WEAPON_SKILL_POLEARMS,
+							WEAPON_SKILL_THROWN,
+							WEAPON_SKILL_TWO_HANDED_SWORDS,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #endif
 		m(STORMWIND_CITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(11867, {	-- Woo Ping <Weapon Master>
-					coords = {
-						-- #if AFTER WRATH
-						{ 63.8, 69.0, STORMWIND_CITY },
-						-- #else
-						{ 57.1, 57.7, STORMWIND_CITY },
-						-- #endif
-					},
-					races = ALLIANCE_ONLY,
-					groups = {
-						WEAPON_SKILL_CROSSBOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_STAVES,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(11867, {	-- Woo Ping <Weapon Master>
+						coords = {
+							-- #if AFTER WRATH
+							{ 63.8, 69.0, STORMWIND_CITY },
+							-- #else
+							{ 57.1, 57.7, STORMWIND_CITY },
+							-- #endif
+						},
+						races = ALLIANCE_ONLY,
+						groups = {
+							WEAPON_SKILL_CROSSBOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_ONE_HANDED_SWORDS,
+							WEAPON_SKILL_POLEARMS,
+							WEAPON_SKILL_STAVES,
+							WEAPON_SKILL_TWO_HANDED_SWORDS,
+						},
+					}),
+				},
+			}),
 		}),
 		m(UNDERCITY, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(11870, {	-- Archibald <Weapon Master>
-					coord = { 57.2, 32.4, UNDERCITY },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_CROSSBOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(11870, {	-- Archibald <Weapon Master>
+						coord = { 57.2, 32.4, UNDERCITY },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_CROSSBOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_ONE_HANDED_SWORDS,
+							WEAPON_SKILL_POLEARMS,
+							WEAPON_SKILL_TWO_HANDED_SWORDS,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #if AFTER TBC
 		m(EVERSONG_WOODS, {
-			n(WEAPON_MASTER, bubbleDownSelf({ timeline = { REMOVED_4_0_1 } }, {
-				n(17005, {	-- Duelist Larenis <Weapon Master>
-					coord = { 48.4, 46.0, EVERSONG_WOODS },
-					races = HORDE_ONLY,
-					groups = {
-						WEAPON_SKILL_BOWS,
-						WEAPON_SKILL_DAGGERS,
-						WEAPON_SKILL_ONE_HANDED_SWORDS,
-						WEAPON_SKILL_POLEARMS,
-						WEAPON_SKILL_THROWN,
-						WEAPON_SKILL_TWO_HANDED_SWORDS,
-					},
-				}),
-			})),
+			n(WEAPON_MASTER, {
+				timeline = { REMOVED_4_0_1 },
+				groups = {
+					n(17005, {	-- Duelist Larenis <Weapon Master>
+						coord = { 48.4, 46.0, EVERSONG_WOODS },
+						races = HORDE_ONLY,
+						groups = {
+							WEAPON_SKILL_BOWS,
+							WEAPON_SKILL_DAGGERS,
+							WEAPON_SKILL_ONE_HANDED_SWORDS,
+							WEAPON_SKILL_POLEARMS,
+							WEAPON_SKILL_THROWN,
+							WEAPON_SKILL_TWO_HANDED_SWORDS,
+						},
+					}),
+				},
+			}),
 		}),
 		-- #endif
 	}),

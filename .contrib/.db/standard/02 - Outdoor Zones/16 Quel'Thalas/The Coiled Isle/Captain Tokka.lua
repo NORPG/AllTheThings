@@ -149,7 +149,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 							i(274808),	-- Envenomed Umbral Claymore (COSMETIC!)
 						},
 					}),
-					filter(QUEST_ITEMS, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
+					filter(QUEST_ITEMS, {
 						i(279384, {	-- Bonemail Gauntlet (QS!)
 							description = "Can be fished in open waters",
 							sourceQuest = 98343,	-- Venom Fishing: My Second-Best
@@ -196,7 +196,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 							description = "Can be fished in open waters",
 							sourceQuest = 96113,	-- Venom Fishing: Maximum Potency
 						}),
-					})),
+					}),
 				}),
 				n(RARES, {
 					n(270024, {	-- Cook Leathertongue

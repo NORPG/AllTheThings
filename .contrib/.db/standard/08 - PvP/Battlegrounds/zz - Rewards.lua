@@ -299,8 +299,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					i(134777),	-- Seasoned Accolade*
 				},
 			}),
-			container(135546, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
+			container(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 before 9.0 / Ashran
 				description = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
+				timeline = { ADDED_7_0_3, REMOVED_9_0_1 },
 				groups = {
 					i(135578),	-- Battle Touched Banner
 					i(135568),	-- Battle Touched Blood of the Fallen
@@ -334,7 +335,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					i(134701),	-- Swarming Legguards
 					i(134702),	-- Swarming Shoulders
 				},
-			})),
+			}),
 			i(165714, {	-- Gold Strongbox - Win (A)
 				timeline = { ADDED_8_1_0 },
 				races = ALLIANCE_ONLY,

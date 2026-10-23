@@ -86,7 +86,7 @@ maproot(KALIMDOR, {
 							}),
 						}),
 					}),
-					n(PROFESSIONS, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
+					n(PROFESSIONS, sharedData({ timeline = { ADDED_8_3_0 } }, {
 						-- Void Focus quests
 						q(57275, {	-- Something in Your Mind
 							description = "Can be made with any crafting profession.",

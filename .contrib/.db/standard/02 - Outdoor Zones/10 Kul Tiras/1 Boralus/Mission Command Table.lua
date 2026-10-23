@@ -26,8 +26,9 @@ maproot(KUL_TIRAS, BORALUS, {
 				mission(1877, {	-- The Shadow War
 					i(160982),	-- Recruitment Orders
 				}),
-				mission(2121, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- A Shady Character
+				mission(2121, {	-- A Shady Character
 					provider = { "i", 165944 },	-- A Shady Message [A]
+					timeline = { ADDED_8_1_0 },
 					groups = {
 						i(165945),	-- Investigation Results
 						q(54424, {	-- A Shady Character
@@ -38,7 +39,7 @@ maproot(KUL_TIRAS, BORALUS, {
 							},
 						}),
 					},
-				})),
+				}),
 				mi(1918),	-- Barren Supplies
 				mi(1917),	-- Investigate Wailing Caverns
 				mi(1913),	-- Echo Isles Navy

@@ -891,9 +891,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				sourceQuests = { 62159 },	-- Aiding the Shadowlands
 				customCollect = "SL_SKIP",	-- SL Skip Character
 				lockCriteria = { 1, "lvl", 60 },
-			}, bubbleDown({
-				timeline = { ADDED_9_0_2 },
-			}, {
+			}, sharedData({ timeline = { ADDED_9_0_2 } }, {
 				q(62742, {	-- Avoid 'Em Like the Plague
 					coord = { 58.0, 63.6, MALDRAXXUS },
 					groups = {

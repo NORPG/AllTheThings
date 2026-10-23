@@ -1715,8 +1715,9 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(REWARDS, {
-				container(35348, bubbleDownSelf({ timeline = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+				container(35348, {	-- Bag of Fishing Treasures
 					description = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
+					timeline = { ADDED_2_4_0 },
 					groups = {
 						i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 						i(34828),	-- Antique Silver Cufflinks
@@ -1732,9 +1733,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(33820),	-- Weather-Beaten Fishing Hat
 						i(34109),	-- Weather-Beaten Journal (RECIPE!)
 					},
-				})),
-				container(34863, bubbleDownSelf({ timeline = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+				}),
+				container(34863, {	-- Bag of Fishing Treasures
 					description = "Shared reward bag for all the non-Croc dailies.",
+					timeline = { ADDED_2_4_0 },
 					groups = {
 						i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 						i(34828),	-- Antique Silver Cufflinks
@@ -1747,7 +1749,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(33820),	-- Weather-Beaten Fishing Hat
 						i(34109),	-- Weather-Beaten Journal (RECIPE!)
 					},
-				})),
+				}),
 			}),
 			n(VENDORS, {
 				n(18962, {	-- Bar Talet

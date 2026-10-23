@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(DRAKEWATCHER_MANUSCRIPTS, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_0_5 } }, {
 			header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 				ach(16724, {	-- Cliffside Wylderdrake Armor
 					crit(56446, {	-- Armor

@@ -483,7 +483,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
 				timeline = { ADDED_1_15_4 },
 				groups = {
-					n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, bubbleDown({ timeline = { ADDED_1_15_4 }, }, {
+					n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, {
 						cl(DRUID, {
 
 						}),
@@ -656,7 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 								i(230839),	-- Master Dragonslayer's Ring
 							},
 						}),
-					}))),
+					})),
 					n(ZONE_DROPS, {
 						i(18562, {	-- Elementium Ingot
 							crs = {

@@ -397,13 +397,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					lvl = 110,
 				}),
 			}),
-			n(SPECIAL, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
+			n(SPECIAL, {
 				n(118930, {	-- Ixallon the Soulbreaker
-					i(212779, {	-- Grimoire of the Bloodrage Tyrant (CI!)
-						description = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
-					}),
+					timeline = { ADDED_10_2_5 },
+					groups = {
+						i(212779, {	-- Grimoire of the Bloodrage Tyrant (CI!)
+							description = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+						}),
+					},
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
 					i(146411),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 1]

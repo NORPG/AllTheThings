@@ -8,65 +8,71 @@ local function LifebloodRank(rankID)
 	return rankID
 end
 root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALISM }, {
-	n(DISCOVERY, bubbleDownSelf({ timeline = { ADDED_3_0_2, REMOVED_6_0_2 } }, {
-		r(81708, {	-- Lifeblood [Rank 1] [CATA]
-			rank = 1,
-			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
-		}),
-		r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
-			rank = LifebloodRank(2),
-		}),
-		r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
-			rank = LifebloodRank(3),
-		}),
-		r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
-			rank = LifebloodRank(4),
-		}),
-		r(55501, {	-- Lifeblood [Rank 4] / Rank 5 [CATA]
-			rank = LifebloodRank(5),
-		}),
-		r(55502, {	-- Lifeblood [Rank 5] / Rank 6 [CATA]
-			rank = LifebloodRank(6),
-		}),
-		r(55503, {	-- Lifeblood [Rank 6] / Rank 7 [CATA]
-			rank = LifebloodRank(7),
-			timeline = { ADDED_3_0_3, REMOVED_6_0_2 }
-		}),
-		r(74497, {	-- Lifeblood [Rank 8] [CATA]
-			rank = 8,
-			timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
-		}),
-		r(121279, {	-- Lifeblood [Rank 9] [MOP]
-			rank = 9,
-			timeline = { ADDED_5_0_4, REMOVED_6_0_2 }
-		}),
-	})),
-	expansion(EXPANSION.LEGION, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
-			ach(18837, {	-- Broken Isles Herbalism Techniques
-				crit(61501, {	-- Aethril
-					sourceQuests = { 40017 },	-- A Slip of the Hand
-				}),
-				crit(61507, {	-- Astral Glory
-					sourceQuests = { 48029 },	-- The Heart of It
-				}),
-				crit(61502, {	-- Dreamleaf
-					sourceQuests = { 40023 },	-- The Last Straw
-				}),
-				crit(61506, {	-- Felwort
-					sourceQuests = { 40042 },	-- The Emerald Nightmare: Felwort Mastery
-				}),
-				crit(61504, {	-- Fjarnskaggl
-					sourceQuests = { 40033 },	-- Fjarnskaggl
-				}),
-				crit(61503, {	-- Foxflower
-					sourceQuests = { 40028 },	-- The Pied Picker
-				}),
-				crit(61505, {	-- Starlight Rose
-					sourceQuests = { 40039 },	-- Tharillon's Fall
-				}),
+	n(DISCOVERY, {
+		timeline = { ADDED_3_0_2, REMOVED_6_0_2 },
+		groups = {
+			r(81708, {	-- Lifeblood [Rank 1] [CATA]
+				rank = 1,
+				timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
 			}),
-		})),
+			r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
+				rank = LifebloodRank(2),
+			}),
+			r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
+				rank = LifebloodRank(3),
+			}),
+			r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
+				rank = LifebloodRank(4),
+			}),
+			r(55501, {	-- Lifeblood [Rank 4] / Rank 5 [CATA]
+				rank = LifebloodRank(5),
+			}),
+			r(55502, {	-- Lifeblood [Rank 5] / Rank 6 [CATA]
+				rank = LifebloodRank(6),
+			}),
+			r(55503, {	-- Lifeblood [Rank 6] / Rank 7 [CATA]
+				rank = LifebloodRank(7),
+				timeline = { ADDED_3_0_3, REMOVED_6_0_2 }
+			}),
+			r(74497, {	-- Lifeblood [Rank 8] [CATA]
+				rank = 8,
+				timeline = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
+			}),
+			r(121279, {	-- Lifeblood [Rank 9] [MOP]
+				rank = 9,
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 }
+			}),
+		},
+	}),
+	expansion(EXPANSION.LEGION, {
+		n(ACHIEVEMENTS, {
+			ach(18837, {	-- Broken Isles Herbalism Techniques
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61501, {	-- Aethril
+						sourceQuests = { 40017 },	-- A Slip of the Hand
+					}),
+					crit(61507, {	-- Astral Glory
+						sourceQuests = { 48029 },	-- The Heart of It
+					}),
+					crit(61502, {	-- Dreamleaf
+						sourceQuests = { 40023 },	-- The Last Straw
+					}),
+					crit(61506, {	-- Felwort
+						sourceQuests = { 40042 },	-- The Emerald Nightmare: Felwort Mastery
+					}),
+					crit(61504, {	-- Fjarnskaggl
+						sourceQuests = { 40033 },	-- Fjarnskaggl
+					}),
+					crit(61503, {	-- Foxflower
+						sourceQuests = { 40028 },	-- The Pied Picker
+					}),
+					crit(61505, {	-- Starlight Rose
+						sourceQuests = { 40039 },	-- Tharillon's Fall
+					}),
+				},
+			}),
+		}),
 		header(HEADERS.Spell, 193294, {	-- Aethril [Rank 3]
 			provider = { "o", 244774 },	-- Aethril
 			maps = { AZSUNA },
@@ -382,57 +388,60 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18838, {	-- Fourth War Herbalism Techniques
-				crit(61510, {	-- Akunda's Bite
-					sourceQuests = { 51404 },	-- What Happens Next
-				}),
-				crit(61514, {	-- Anchor Weed
-					sourceQuests = {
-						51361,	-- More Anchor Pods [A]
-						51481,	-- More Anchor Pods [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61508, {	-- Riverbud
-					sourceQuests = {
-						48754,	-- Breaking the Food Chain [A]
-						51243,	-- Breaking the Food Chain [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61513, {	-- Sea Stalk
-					sourceQuests = {
-						48769,	-- Gathering Mementos [A]
-						51503,	-- Gathering Mementos [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61512, {	-- Siren's Pollen
-					sourceQuests = {
-						48755,	-- Pollen Punching [A]
-						51452,	-- Pollen Punching [H]
-					},
-				}),
-				crit(61509, {	-- Star Moss
-					sourceQuests = {
-						48757,	-- Ghost Busting [A]
-						51478,	-- Ghost Busting [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
-				crit(61511, {	-- Winter's Kiss
-					sourceQuests = { 48763 },	-- The Frigid Boon
-				}),
-				crit(61515, {	-- Zin'anthid
-					sourceQuests = {
-						56098,	-- Defensive in Death [A]
-						56430,	-- Defensive in Death [H]
-					},
-					sourceQuestNumRequired = 1,
-				}),
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61510, {	-- Akunda's Bite
+						sourceQuests = { 51404 },	-- What Happens Next
+					}),
+					crit(61514, {	-- Anchor Weed
+						sourceQuests = {
+							51361,	-- More Anchor Pods [A]
+							51481,	-- More Anchor Pods [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61508, {	-- Riverbud
+						sourceQuests = {
+							48754,	-- Breaking the Food Chain [A]
+							51243,	-- Breaking the Food Chain [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61513, {	-- Sea Stalk
+						sourceQuests = {
+							48769,	-- Gathering Mementos [A]
+							51503,	-- Gathering Mementos [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61512, {	-- Siren's Pollen
+						sourceQuests = {
+							48755,	-- Pollen Punching [A]
+							51452,	-- Pollen Punching [H]
+						},
+					}),
+					crit(61509, {	-- Star Moss
+						sourceQuests = {
+							48757,	-- Ghost Busting [A]
+							51478,	-- Ghost Busting [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+					crit(61511, {	-- Winter's Kiss
+						sourceQuests = { 48763 },	-- The Frigid Boon
+					}),
+					crit(61515, {	-- Zin'anthid
+						sourceQuests = {
+							56098,	-- Defensive in Death [A]
+							56430,	-- Defensive in Death [H]
+						},
+						sourceQuestNumRequired = 1,
+					}),
+				},
 			}),
-		})),
+		}),
 		header(HEADERS.Spell, 252413, {	-- Akunda's Bite [Rank 3]
 			provider = { "o", 276237 },	-- Akunda's Bite
 			maps = { VOLDUN },
@@ -884,7 +893,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
 			ach(18828, {	-- Botanist's Log: Dragon Isles
 				-- Meta Achievement
 				sym = {{"meta_achievement",

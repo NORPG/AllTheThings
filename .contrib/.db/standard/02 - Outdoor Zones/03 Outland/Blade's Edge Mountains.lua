@@ -2480,7 +2480,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					description = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 					coord = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					groups = bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = {
 						i(32759, {	-- Accelerator Module
 							cost = { { "i", 32569, 35 } },	-- Apexis Shard
 						}),
@@ -2538,7 +2538,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 								i(31567),	-- Skystalker's Gloves
 							},
 						}),
-					}),
+					},
 				})),
 				n(19499, {	-- Cahill <Weaponsmith>
 					coord = { 37.6, 63.8, BLADES_EDGE_MOUNTAINS },
@@ -2657,7 +2657,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
 					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-					groups = bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32686),	-- Mingo's Fortune Giblets
 						i(32685),	-- Ogri'la Chicken Fingers
 						i(29453),	-- Sporeggar Mushroom
@@ -2668,7 +2668,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
 					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-					groups = bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32667),	-- Bash Ale
 						i(32668),	-- Dos Ogris
 					}),
@@ -2677,7 +2677,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
 					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
-					groups = bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32758),	-- Brute Cologne
 					}),
 				})),

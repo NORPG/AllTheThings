@@ -445,7 +445,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 		}),
 		n(251248, {	-- Intrepid Entrepreneur
 			coord = { 57.7, 71.6, MAP.MIDNIGHT.SILVERMOON_CITY },
-			groups = bubbleDown({ timeline = { ADDED_12_0_5 } }, {
+			groups = sharedData({ timeline = { ADDED_12_0_5 } }, {
 				i(273307),	-- Vial of Intrepid Lemonade
 			}),
 		}),

@@ -719,24 +719,27 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 			}),
 		}),
 		n(REWARDS, {
-			petbattle(container(94207, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {	-- Fabled Pandaren Pet Supplies
-				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94210)),	-- Mountain Panda (PET!)
-				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94209)),	-- Snowy Panda (PET!)
-				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94208)),	-- Sunfur Panda (PET!)
-				i(89139),	-- Chain Pet Leash
-				i(44820),	-- Red Ribbon Pet Leash
-				i(37460),	-- Rope Pet Leash
-				i(92679),	-- Flawless Aquatic Battle-Stone
-				i(92675),	-- Flawless Beast Battle-Stone
-				i(92676),	-- Flawless Critter Battle-Stone
-				i(92683),	-- Flawless Dragonkin Battle-Stone
-				i(92665),	-- Flawless Elemental Battle-Stone
-				i(92677),	-- Flawless Flying Battle-Stone
-				i(92682),	-- Flawless Humanoid Battle-Stone
-				i(92678),	-- Flawless Magic Battle-Stone
-				i(92680),	-- Flawless Mechanical Battle-Stone
-				i(92681),	-- Flawless Undead Battle-Stone
-			}))),
+			petbattle(container(94207, {	-- Fabled Pandaren Pet Supplies
+				timeline = { ADDED_5_2_0 },
+				groups = {
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94210)),	-- Mountain Panda (PET!)
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94209)),	-- Snowy Panda (PET!)
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94208)),	-- Sunfur Panda (PET!)
+					i(89139),	-- Chain Pet Leash
+					i(44820),	-- Red Ribbon Pet Leash
+					i(37460),	-- Rope Pet Leash
+					i(92679),	-- Flawless Aquatic Battle-Stone
+					i(92675),	-- Flawless Beast Battle-Stone
+					i(92676),	-- Flawless Critter Battle-Stone
+					i(92683),	-- Flawless Dragonkin Battle-Stone
+					i(92665),	-- Flawless Elemental Battle-Stone
+					i(92677),	-- Flawless Flying Battle-Stone
+					i(92682),	-- Flawless Humanoid Battle-Stone
+					i(92678),	-- Flawless Magic Battle-Stone
+					i(92680),	-- Flawless Mechanical Battle-Stone
+					i(92681),	-- Flawless Undead Battle-Stone
+				},
+			})),
 		}),
 		n(SPECIAL, {
 			n(64403, {	-- Alani

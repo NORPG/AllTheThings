@@ -7,9 +7,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 		faction(FACTION_VALDRAKKEN_ACCORD, {
 			icon = 4687629,
 		}),
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
+		n(ACHIEVEMENTS, {
 			ach(19483, {	-- Flight Club
 				-- Meta Achievement
+				timeline = { ADDED_10_2_6 },
 				sym = {{"meta_achievement",
 					16679,	-- Adventurer of Thaldraszus
 					17782,	-- Daycare Derby
@@ -43,6 +44,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				minReputation = { FACTION_VALDRAKKEN_ACCORD, 15 },	-- Valdrakken Accord Renown 15
 				timeline = { ADDED_11_0_7 },
 			}),
-		})),
+		}),
 	}),
 }));

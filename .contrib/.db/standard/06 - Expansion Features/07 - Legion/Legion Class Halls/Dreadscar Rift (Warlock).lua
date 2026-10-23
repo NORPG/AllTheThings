@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 				maps = { DREADSCAR_RIFT },
 				groups = {
-					n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
 						ach(42297, {	-- Hidden Potential of the Netherlord
 							i(248940),	-- Replica Felblood Altar (DECOR!)
 						}),

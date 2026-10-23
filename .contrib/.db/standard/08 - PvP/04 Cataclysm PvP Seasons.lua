@@ -750,7 +750,7 @@ root(ROOTS.PVP, {
 					moh(2, i(64869)),	-- Bloodthirsty Gladiator's Warboots of Alacrity
 					moh(2, i(64870)),	-- Bloodthirsty Gladiator's Warboots of Cruelty
 				}),
-				filter(NECK_F, bubbleDown({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(NECK_F, sharedData({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64713),	-- Bloodthirsty Gladiator's Choker of Accuracy
 					i(64714),	-- Bloodthirsty Gladiator's Choker of Proficiency
 					i(64800),	-- Bloodthirsty Gladiator's Necklace of Proficiency
@@ -759,7 +759,7 @@ root(ROOTS.PVP, {
 					i(64808),	-- Bloodthirsty Gladiator's Pendant of Diffusion
 					i(64809),	-- Bloodthirsty Gladiator's Pendant of Meditation
 				})),
-				filter(FINGER_F, bubbleDown({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(FINGER_F, sharedData({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64690),	-- Bloodthirsty Gladiator's Band of Accuracy
 					i(64691),	-- Bloodthirsty Gladiator's Band of Cruelty
 					i(64692),	-- Bloodthirsty Gladiator's Band of Meditation
@@ -768,17 +768,17 @@ root(ROOTS.PVP, {
 					i(64851),	-- Bloodthirsty Gladiator's Signet of Accuracy
 					i(64852),	-- Bloodthirsty Gladiator's Signet of Cruelty
 				})),
-				filter(THROWN, bubbleDown({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(THROWN, sharedData({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64759),	-- Bloodthirsty Gladiator's Hatchet (Throw wep)
 					i(64871),	-- Bloodthirsty Gladiator's War Edge (Throw wep)
 				})),
-				filter(RELICS_F, bubbleDown({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(RELICS_F, sharedData({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64819),	-- Bloodthirsty Gladiator's Relic of Conquest
 					i(64820),	-- Bloodthirsty Gladiator's Relic of Dominance
 					i(64821),	-- Bloodthirsty Gladiator's Relic of Salvation
 					i(64822),	-- Bloodthirsty Gladiator's Relic of Triumph
 				})),
-				filter(TRINKET_F, bubbleDown({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
+				filter(TRINKET_F, sharedData({ timeline = { ADDED_4_0_3, REMOVED_4_2_0 }, }, {
 					i(64687),	-- Bloodthirsty Gladiator's Badge of Conquest
 					i(64688),	-- Bloodthirsty Gladiator's Badge of Dominance
 					i(64689),	-- Bloodthirsty Gladiator's Badge of Victory
@@ -2553,7 +2553,7 @@ root(ROOTS.PVP, {
 						i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
 						i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
 					}),
-					n(BACK, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					n(BACK, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 						i(72305),	-- Ruthless Gladiator's Cape of Cruelty
 						i(72306),	-- Ruthless Gladiator's Cape of Prowess
 						i(72451),	-- Ruthless Gladiator's Cloak of Alacrity
@@ -2562,7 +2562,7 @@ root(ROOTS.PVP, {
 						i(72324),	-- Ruthless Gladiator's Drape of Meditation
 						i(72322),	-- Ruthless Gladiator's Drape of Prowess
 					})),
-					filter(FINGER_F, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					filter(FINGER_F, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 						i(72330),	-- Ruthless Gladiator's Band of Accuracy
 						i(72329),	-- Ruthless Gladiator's Band of Cruelty
 						i(72331),	-- Ruthless Gladiator's Band of Meditation
@@ -2571,7 +2571,7 @@ root(ROOTS.PVP, {
 						i(72458),	-- Ruthless Gladiator's Signet of Accuracy
 						i(72457),	-- Ruthless Gladiator's Signet of Cruelty
 					})),
-					filter(NECK_F, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					filter(NECK_F, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 						i(72454),	-- Ruthless Gladiator's Choker of Accuracy
 						i(72453),	-- Ruthless Gladiator's Choker of Proficiency
 						i(72307),	-- Ruthless Gladiator's Necklace of Proficiency
@@ -2580,13 +2580,13 @@ root(ROOTS.PVP, {
 						i(72326),	-- Ruthless Gladiator's Pendant of Diffusion
 						i(72327),	-- Ruthless Gladiator's Pendant of Meditation
 					})),
-					filter(RELICS_F, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					filter(RELICS_F, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 						i(72456),	-- Ruthless Gladiator's Relic of Conquest
 						i(72328),	-- Ruthless Gladiator's Relic of Dominance
 						i(72358),	-- Ruthless Gladiator's Relic of Salvation
 						i(72310),	-- Ruthless Gladiator's Relic of Triumph
 					})),
-					filter(TRINKET_F, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+					filter(TRINKET_F, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 						i(72304),	-- Ruthless Gladiator's Badge of Conquest
 						i(72448),	-- Ruthless Gladiator's Badge of Dominance
 						i(72450),	-- Ruthless Gladiator's Badge of Victory
@@ -2851,11 +2851,11 @@ root(ROOTS.PVP, {
 					i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
 					i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
 				}),
-				filter(THROWN, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+				filter(THROWN, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 					i(73471),	-- Cataclysmic Gladiator's Hatchet (Throw Wep)
 					i(73445),	-- Cataclysmic Gladiator's War Edge (Throw Wep)
 				})),
-				filter(RELICS_F, bubbleDown({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
+				filter(RELICS_F, sharedData({ timeline = { ADDED_4_3_0, REMOVED_5_0_4 } }, {
 					i(73490),	-- Cataclysmic Gladiator's Relic of Conquest
 					i(73624),	-- Cataclysmic Gladiator's Relic of Dominance
 					i(73594),	-- Cataclysmic Gladiator's Relic of Salvation

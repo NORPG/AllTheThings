@@ -13,98 +13,101 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180058, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past III
 	i(180059, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past IV
 	i(180060, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Ironwood Lumber
-			maps = {
-				ARATHI_HIGHLANDS,
-				ASHENVALE,
-				AZSHARA,
-				BADLANDS,
-				BLASTED_LANDS,
-				BURNING_STEPPES,
-				DARKSHORE,
-				DEADWIND_PASS,
-				DESOLACE,
-				DUROTAR,
-				VALLEY_OF_TRIALS,
-				DUSKWOOD,
-				DUSTWALLOW_MARSH,
-				EASTERN_PLAGUELANDS,
-				ELWYNN_FOREST,
-				NORTHSHIRE_VALLEY,
-				FELWOOD,
-				FERALAS,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
-				MOONGLADE,
-				MULGORE,
-				CAMP_NARACHE,
-				THUNDER_BLUFF,
-				NEW_TINKERTOWN,
-				COLDRIDGE_VALLEY,
-				DUN_MOROGH,
-				NORTHERN_BARRENS,
-				NORTHERN_STRANGLETHORN,
-				THE_CAPE_OF_STRANGLETHORN,
-				REDRIDGE_MOUNTAINS,
-				SEARING_GORGE,
-				SILVERPINE_FOREST,
-				SOUTHERN_BARRENS,
-				STONETALON_MOUNTAINS,
-				SWAMP_OF_SORROWS,
-				TANARIS,
-				THE_HINTERLANDS,
-				TIRISFAL_GLADES,
-				UNGORO_CRATER,
-				WESTERN_PLAGUELANDS,
-				WESTFALL,
-				WETLANDS,
-				WINTERSPRING,
-			},
-			groups = {
-				-- Objects
-				o(574596),	-- [Arathi Highlands]
-				o(578925),	-- [Ashenvale]
-				o(576717),	-- [Azshara]
-				o(574938),	-- [Badlands]
-				o(576622),	-- [Blasted Lands]
-				o(575031),	-- [Burning Steppes]
-				o(577792),	-- [Darkshore]
-				o(576400),	-- [Deadwind Pass]
-				o(582143),	-- [Desolace]
-				o(576692),	-- [Durotar/Valley of Trials]
-				o(576199),	-- [Duskwood]
-				o(582149),	-- [Dustwallow Marsh]
-				o(572254),	-- [Eastern Plaguelands]
-				o(575032),	-- [Elwynn Forest/Northshire]
-				o(577999),	-- [Felwood]
-				o(584475),	-- [Feralas]
-				o(573695),	-- [Hillsbrad Foothills]
-				o(574913),	-- [Loch Modan]
-				o(577787),	-- [Moonglade]
-				o(584445),	-- [Mulgore/Camp Narache/Thunder Bluff]
-				o(574731),	-- [New Tinkertown/Coldridge Valley/Dun Morogh]
-				o(581830),	-- [Northern Barrens]
-				o(576448),	-- [Northern Stranglethorn/The Cape of Stranglethorn]
-				o(576113),	-- [Redridge Mountains]
-				o(574966),	-- [Searing Gorge]
-				o(573459),	-- [Silverpine Forest]
-				o(581876),	-- [Southern Barrens]
-				o(578023),	-- [Stonetalon Mountains]
-				o(576402),	-- [Swamp of Sorrows]
-				o(584615),	-- [Tanaris]
-				o(574416),	-- [The Hinterlands]
-				o(573368),	-- [Tirisfal Glades]
-				o(584694),	-- [Un'Goro Crater]
-				o(573057),	-- [Western Plaguelands]
-				o(576282),	-- [Westfall]
-				o(574599),	-- [Wetlands]
-				o(577703),	-- [Winterspring]
-				-- Drops
-				i(245586),	-- Ironwood Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Ironwood Lumber
+				maps = {
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					AZSHARA,
+					BADLANDS,
+					BLASTED_LANDS,
+					BURNING_STEPPES,
+					DARKSHORE,
+					DEADWIND_PASS,
+					DESOLACE,
+					DUROTAR,
+					VALLEY_OF_TRIALS,
+					DUSKWOOD,
+					DUSTWALLOW_MARSH,
+					EASTERN_PLAGUELANDS,
+					ELWYNN_FOREST,
+					NORTHSHIRE_VALLEY,
+					FELWOOD,
+					FERALAS,
+					HILLSBRAD_FOOTHILLS,
+					LOCH_MODAN,
+					MOONGLADE,
+					MULGORE,
+					CAMP_NARACHE,
+					THUNDER_BLUFF,
+					NEW_TINKERTOWN,
+					COLDRIDGE_VALLEY,
+					DUN_MOROGH,
+					NORTHERN_BARRENS,
+					NORTHERN_STRANGLETHORN,
+					THE_CAPE_OF_STRANGLETHORN,
+					REDRIDGE_MOUNTAINS,
+					SEARING_GORGE,
+					SILVERPINE_FOREST,
+					SOUTHERN_BARRENS,
+					STONETALON_MOUNTAINS,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					THE_HINTERLANDS,
+					TIRISFAL_GLADES,
+					UNGORO_CRATER,
+					WESTERN_PLAGUELANDS,
+					WESTFALL,
+					WETLANDS,
+					WINTERSPRING,
+				},
+				groups = {
+					-- Objects
+					o(574596),	-- [Arathi Highlands]
+					o(578925),	-- [Ashenvale]
+					o(576717),	-- [Azshara]
+					o(574938),	-- [Badlands]
+					o(576622),	-- [Blasted Lands]
+					o(575031),	-- [Burning Steppes]
+					o(577792),	-- [Darkshore]
+					o(576400),	-- [Deadwind Pass]
+					o(582143),	-- [Desolace]
+					o(576692),	-- [Durotar/Valley of Trials]
+					o(576199),	-- [Duskwood]
+					o(582149),	-- [Dustwallow Marsh]
+					o(572254),	-- [Eastern Plaguelands]
+					o(575032),	-- [Elwynn Forest/Northshire]
+					o(577999),	-- [Felwood]
+					o(584475),	-- [Feralas]
+					o(573695),	-- [Hillsbrad Foothills]
+					o(574913),	-- [Loch Modan]
+					o(577787),	-- [Moonglade]
+					o(584445),	-- [Mulgore/Camp Narache/Thunder Bluff]
+					o(574731),	-- [New Tinkertown/Coldridge Valley/Dun Morogh]
+					o(581830),	-- [Northern Barrens]
+					o(576448),	-- [Northern Stranglethorn/The Cape of Stranglethorn]
+					o(576113),	-- [Redridge Mountains]
+					o(574966),	-- [Searing Gorge]
+					o(573459),	-- [Silverpine Forest]
+					o(581876),	-- [Southern Barrens]
+					o(578023),	-- [Stonetalon Mountains]
+					o(576402),	-- [Swamp of Sorrows]
+					o(584615),	-- [Tanaris]
+					o(574416),	-- [The Hinterlands]
+					o(573368),	-- [Tirisfal Glades]
+					o(584694),	-- [Un'Goro Crater]
+					o(573057),	-- [Western Plaguelands]
+					o(576282),	-- [Westfall]
+					o(574599),	-- [Wetlands]
+					o(577703),	-- [Winterspring]
+					-- Drops
+					i(245586),	-- Ironwood Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
 			groups = appendAllGroups(
@@ -369,181 +372,184 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(9149),	-- Philosopher's Stone
 		}),
 	}),
-	prof(ARCHAEOLOGY, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
-		i(52843),	-- Dwarf Rune Stone
-		i(63127),	-- Highborne Scroll
-		i(63128),	-- Troll Tablet
-		header(HEADERS.Currency, ARCH_CURRENCY_DWARF, {
-			provider = { "o", 204282 },	-- Dwarf Archaeology Find
-			maps_disp = {
-				ARATHI_HIGHLANDS,
-				BADLANDS,
-				BURNING_STEPPES,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
-				SEARING_GORGE,
-				SOUTHERN_BARRENS,
-				THE_HINTERLANDS,
-				TWILIGHT_HIGHLANDS,
-				WETLANDS,
-			},
-			groups = {
-				i(63113, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Belt Buckle with Anvilmar Crest
-				i(64339, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Bodacious Door Knocker
-				i(63112, {cost={{"c",ARCH_CURRENCY_DWARF,32}}}),	-- Bone Gaming Dice
-				i(64340, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Boot Heel with Scrollwork
-				i(63409, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Ceramic Funeral Urn
-				i(64373, {cost={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Chalice of the Mountain Kings (TOY!)
-				i(64372, {cost={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Clockwork Gnome (PET!)
-				i(64362, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Dented Shield of Horuz Killcrow
-				i(66054, {cost={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Dwarven Baby Socks
-				i(64342, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Golden Chamber Pot
-				i(64344, {cost={{"c",ARCH_CURRENCY_DWARF,36}}}),	-- Ironstar's Petrified Shield
-				i(64368, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Mithril Chain of Angerforge
-				i(63414, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Moltenfist's Jeweled Goblet
-				i(64337, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Notched Sword of Tunadil the Redeemer
-				i(63408, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Pewter Drinking Cup
-				i(64659, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Pipe of Franclorn Forgewright
-				i(64487, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Scepter of Bronzebeard
-				i(64367, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scepter of Charlga Razorflank
-				i(64366, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scorched Staff of Shadow Priest Anund
-				i(64483, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Silver Kris of Korl
-				i(63411, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Silver Neck Torc
-				i(64371, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Skull Staff of Shadowforge
-				i(64485, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Spiked Gauntlets of Anvilrage
-				i(64489, {cost={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- Staff of Sorcerer-Thane Thaurissan
-				i(63410, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Stone Gryphon
-				i(64488, {cost={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- The Innkeeper's Daughter (TOY!)
-				i(64484, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Warmaul of Burningeye
-				i(64343, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Winged Helm of Corehammer
-				i(63111, {cost={{"c",ARCH_CURRENCY_DWARF,28}}}),	-- Wooden Whistle
-				i(64486, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Word of Empress Zoe
-				i(63110, {cost={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Worn Hunting Knife
-			},
-		}),
-		header(HEADERS.Currency, ARCH_CURRENCY_FOSSIL, {
-			provider = { "o", 206836 },	-- Fossil Archaeology Find
-			maps_disp = {
-				BLASTED_LANDS,
-				BURNING_STEPPES,
-				DESOLACE,
-				DUSKWOOD,
-				DUSTWALLOW_MARSH,
-				EASTERN_PLAGUELANDS,
-				HILLSBRAD_FOOTHILLS,
-				NORTHERN_STRANGLETHORN,
-				REDRIDGE_MOUNTAINS,
-				SOUTHERN_BARRENS,
-				STONETALON_MOUNTAINS,
-				SWAMP_OF_SORROWS,
-				TANARIS,
-				UNGORO_CRATER,
-				WESTERN_PLAGUELANDS,
-				WETLANDS,
-			},
-			groups = {
-				i(69776, {cost={{"c",ARCH_CURRENCY_FOSSIL,100}},timeline = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
-				i(64355, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Ancient Shark Jaws
-				i(63121, {cost={{"c",ARCH_CURRENCY_FOSSIL,25}}}),	-- Beautiful Preserved Fern
-				i(63109, {cost={{"c",ARCH_CURRENCY_FOSSIL,31}}}),	-- Black Trilobite
-				i(64349, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Devilsaur Tooth
-				i(69764, {cost={{"c",ARCH_CURRENCY_FOSSIL,150}},timeline = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
-				i(64385, {cost={{"c",ARCH_CURRENCY_FOSSIL,33}}}),	-- Feathered Raptor Arm
-				i(60955, {cost={{"c",ARCH_CURRENCY_FOSSIL,85}}}),	-- Fossilized Hatchling (PET!)
-				i(60954, {cost={{"c",ARCH_CURRENCY_FOSSIL,100}}}),	-- Fossilized Raptor (MOUNT!)
-				i(64473, {cost={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Imprint of a Kraken Tentacle
-				i(64350, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Insect in Amber
-				i(64468, {cost={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Proto-Drake Skeleton
-				i(69821, {cost={{"c",ARCH_CURRENCY_FOSSIL,120}},timeline = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
-				i(66056, {cost={{"c",ARCH_CURRENCY_FOSSIL,30}}}),	-- Shared of Petrified Wood
-				i(66057, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Strange Velvet Worm
-				i(63527, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Twisted Ammonite Shell
-				i(64387, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Vicious Ancient Fish
-			},
-		}),
-		header(HEADERS.Currency, ARCH_CURRENCY_NIGHTELF, {
-			provider = { "o", 203071 },	-- Night Elf Archaeology Find
-			maps_disp = {
-				ASHENVALE,
-				AZSHARA,
-				BOREAN_TUNDRA,
-				CRYSTALSONG_FOREST,
-				DARKSHORE,
-				DESOLACE,
-				DIRE_MAUL,
-				DRAGONBLIGHT,
-				DUSKWOOD,
-				EASTERN_PLAGUELANDS,
-				FELWOOD,
-				FERALAS,
-				MOUNT_HYJAL,
-				SILITHUS,
-				SOUTHERN_BARRENS,
-				STONETALON_MOUNTAINS,
-				WINTERSPRING,
-			},
-			groups = {
-				i(64646, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Bones of Transformation (TOY!)
-				i(64647, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Carcanet of the Hundred Magi
-				i(64379, {cost={{"c",ARCH_CURRENCY_NIGHTELF,34}}}),	-- Chest of Tiny Glass Animals
-				i(63407, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cloak Clasp with Antlers
-				i(63525, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Coin from Eldre'Thalas
-				i(64381, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cracked Crystal Vial
-				i(64357, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Delicate Music Box
-				i(64361, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Druid and Priest Statue Set (TOY!)
-				i(63528, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Green Dragon Ring
-				i(64356, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Hairpin of Silver and Malachite
-				i(63129, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Highborne Pyxis
-				i(64358, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Highborne Soul Mirror (TOY!)
-				i(63130, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Inlaid Ivory Comb
-				i(64354, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Kaldorei Amphora
-				i(64383, {cost={{"c",ARCH_CURRENCY_NIGHTELF,98}}}),	-- Kaldorei Wind Chimes (TOY!)
-				i(66055, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Necklace with Elune Pendant
-				i(64643, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Queen Azshara's Dressing Gown
-				i(63131, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Scandalous Silk Nightgown
-				i(64382, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Scepter of Xavius
-				i(63526, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Shattered Glaive
-				i(64648, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Silver Scroll Case
-				i(64378, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- String of Small Pink Pearls
-				i(64645, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Tyrande's Favorite Doll
-				i(64650, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Umbra Crescent
-				i(64651, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Wisp Amulet (TOY!)
-			},
-		}),
-		header(HEADERS.Currency, ARCH_CURRENCY_TROLL, {
-			provider = { "o", 202655 },	-- Troll Archaeology Find
-			maps_disp = {
-				ARATHI_HIGHLANDS,
-				EASTERN_PLAGUELANDS,
-				GRIZZLY_HILLS,
-				NORTHERN_STRANGLETHORN,
-				SWAMP_OF_SORROWS,
-				TANARIS,
-				THE_CAPE_OF_STRANGLETHORN,
-				THE_HINTERLANDS,
-				ZULDRAK,
-			},
-			groups = {
-				i(64348, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Atal'ai Scepter
-				i(64346, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Bracelet of Jade and Coins
-				i(63524, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Cinnabar Bijou
-				i(64375, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Drakkari Sacrificial Knife
-				i(63523, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Eerie Smolderthorn Idol
-				i(63413, {cost={{"c",ARCH_CURRENCY_TROLL,34}}}),	-- Feathered Gold Earring
-				i(63120, {cost={{"c",ARCH_CURRENCY_TROLL,30}}}),	-- Fetish of Hireek
-				i(66058, {cost={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Fine Bloodscalp Dinnerware
-				i(64347, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Gahz'rilla Figurine
-				i(69777, {cost={{"c",ARCH_CURRENCY_TROLL,100}},timeline = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
-				i(63412, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Jade Asp with Ruby Eyes
-				i(63118, {cost={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Lizard Foot Charm
-				i(64345, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Skull-Shaped Planter
-				i(64374, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Tooth with Gold Filling
-				i(69824, {cost={{"c",ARCH_CURRENCY_TROLL,100}},timeline = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
-				i(63115, {cost={{"c",ARCH_CURRENCY_TROLL,27}}}),	-- Zandalari Voodoo Doll
-				i(64377, {cost={{"c",ARCH_CURRENCY_TROLL,150}}}),	-- Zin'rokh, Destroyer of Worlds
-			},
-		}),
-	})),
+	prof(ARCHAEOLOGY, {
+		timeline = { ADDED_4_0_3_LAUNCH },
+		groups = {
+			i(52843),	-- Dwarf Rune Stone
+			i(63127),	-- Highborne Scroll
+			i(63128),	-- Troll Tablet
+			header(HEADERS.Currency, ARCH_CURRENCY_DWARF, {
+				provider = { "o", 204282 },	-- Dwarf Archaeology Find
+				maps_disp = {
+					ARATHI_HIGHLANDS,
+					BADLANDS,
+					BURNING_STEPPES,
+					HILLSBRAD_FOOTHILLS,
+					LOCH_MODAN,
+					SEARING_GORGE,
+					SOUTHERN_BARRENS,
+					THE_HINTERLANDS,
+					TWILIGHT_HIGHLANDS,
+					WETLANDS,
+				},
+				groups = {
+					i(63113, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Belt Buckle with Anvilmar Crest
+					i(64339, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Bodacious Door Knocker
+					i(63112, {cost={{"c",ARCH_CURRENCY_DWARF,32}}}),	-- Bone Gaming Dice
+					i(64340, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Boot Heel with Scrollwork
+					i(63409, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Ceramic Funeral Urn
+					i(64373, {cost={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Chalice of the Mountain Kings (TOY!)
+					i(64372, {cost={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Clockwork Gnome (PET!)
+					i(64362, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Dented Shield of Horuz Killcrow
+					i(66054, {cost={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Dwarven Baby Socks
+					i(64342, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Golden Chamber Pot
+					i(64344, {cost={{"c",ARCH_CURRENCY_DWARF,36}}}),	-- Ironstar's Petrified Shield
+					i(64368, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Mithril Chain of Angerforge
+					i(63414, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Moltenfist's Jeweled Goblet
+					i(64337, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Notched Sword of Tunadil the Redeemer
+					i(63408, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Pewter Drinking Cup
+					i(64659, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Pipe of Franclorn Forgewright
+					i(64487, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Scepter of Bronzebeard
+					i(64367, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scepter of Charlga Razorflank
+					i(64366, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scorched Staff of Shadow Priest Anund
+					i(64483, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Silver Kris of Korl
+					i(63411, {cost={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Silver Neck Torc
+					i(64371, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Skull Staff of Shadowforge
+					i(64485, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Spiked Gauntlets of Anvilrage
+					i(64489, {cost={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- Staff of Sorcerer-Thane Thaurissan
+					i(63410, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Stone Gryphon
+					i(64488, {cost={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- The Innkeeper's Daughter (TOY!)
+					i(64484, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Warmaul of Burningeye
+					i(64343, {cost={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Winged Helm of Corehammer
+					i(63111, {cost={{"c",ARCH_CURRENCY_DWARF,28}}}),	-- Wooden Whistle
+					i(64486, {cost={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Word of Empress Zoe
+					i(63110, {cost={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Worn Hunting Knife
+				},
+			}),
+			header(HEADERS.Currency, ARCH_CURRENCY_FOSSIL, {
+				provider = { "o", 206836 },	-- Fossil Archaeology Find
+				maps_disp = {
+					BLASTED_LANDS,
+					BURNING_STEPPES,
+					DESOLACE,
+					DUSKWOOD,
+					DUSTWALLOW_MARSH,
+					EASTERN_PLAGUELANDS,
+					HILLSBRAD_FOOTHILLS,
+					NORTHERN_STRANGLETHORN,
+					REDRIDGE_MOUNTAINS,
+					SOUTHERN_BARRENS,
+					STONETALON_MOUNTAINS,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					UNGORO_CRATER,
+					WESTERN_PLAGUELANDS,
+					WETLANDS,
+				},
+				groups = {
+					i(69776, {cost={{"c",ARCH_CURRENCY_FOSSIL,100}},timeline = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
+					i(64355, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Ancient Shark Jaws
+					i(63121, {cost={{"c",ARCH_CURRENCY_FOSSIL,25}}}),	-- Beautiful Preserved Fern
+					i(63109, {cost={{"c",ARCH_CURRENCY_FOSSIL,31}}}),	-- Black Trilobite
+					i(64349, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Devilsaur Tooth
+					i(69764, {cost={{"c",ARCH_CURRENCY_FOSSIL,150}},timeline = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
+					i(64385, {cost={{"c",ARCH_CURRENCY_FOSSIL,33}}}),	-- Feathered Raptor Arm
+					i(60955, {cost={{"c",ARCH_CURRENCY_FOSSIL,85}}}),	-- Fossilized Hatchling (PET!)
+					i(60954, {cost={{"c",ARCH_CURRENCY_FOSSIL,100}}}),	-- Fossilized Raptor (MOUNT!)
+					i(64473, {cost={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Imprint of a Kraken Tentacle
+					i(64350, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Insect in Amber
+					i(64468, {cost={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Proto-Drake Skeleton
+					i(69821, {cost={{"c",ARCH_CURRENCY_FOSSIL,120}},timeline = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
+					i(66056, {cost={{"c",ARCH_CURRENCY_FOSSIL,30}}}),	-- Shared of Petrified Wood
+					i(66057, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Strange Velvet Worm
+					i(63527, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Twisted Ammonite Shell
+					i(64387, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Vicious Ancient Fish
+				},
+			}),
+			header(HEADERS.Currency, ARCH_CURRENCY_NIGHTELF, {
+				provider = { "o", 203071 },	-- Night Elf Archaeology Find
+				maps_disp = {
+					ASHENVALE,
+					AZSHARA,
+					BOREAN_TUNDRA,
+					CRYSTALSONG_FOREST,
+					DARKSHORE,
+					DESOLACE,
+					DIRE_MAUL,
+					DRAGONBLIGHT,
+					DUSKWOOD,
+					EASTERN_PLAGUELANDS,
+					FELWOOD,
+					FERALAS,
+					MOUNT_HYJAL,
+					SILITHUS,
+					SOUTHERN_BARRENS,
+					STONETALON_MOUNTAINS,
+					WINTERSPRING,
+				},
+				groups = {
+					i(64646, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Bones of Transformation (TOY!)
+					i(64647, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Carcanet of the Hundred Magi
+					i(64379, {cost={{"c",ARCH_CURRENCY_NIGHTELF,34}}}),	-- Chest of Tiny Glass Animals
+					i(63407, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cloak Clasp with Antlers
+					i(63525, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Coin from Eldre'Thalas
+					i(64381, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cracked Crystal Vial
+					i(64357, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Delicate Music Box
+					i(64361, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Druid and Priest Statue Set (TOY!)
+					i(63528, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Green Dragon Ring
+					i(64356, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Hairpin of Silver and Malachite
+					i(63129, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Highborne Pyxis
+					i(64358, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Highborne Soul Mirror (TOY!)
+					i(63130, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Inlaid Ivory Comb
+					i(64354, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Kaldorei Amphora
+					i(64383, {cost={{"c",ARCH_CURRENCY_NIGHTELF,98}}}),	-- Kaldorei Wind Chimes (TOY!)
+					i(66055, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Necklace with Elune Pendant
+					i(64643, {cost={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Queen Azshara's Dressing Gown
+					i(63131, {cost={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Scandalous Silk Nightgown
+					i(64382, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Scepter of Xavius
+					i(63526, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Shattered Glaive
+					i(64648, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Silver Scroll Case
+					i(64378, {cost={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- String of Small Pink Pearls
+					i(64645, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Tyrande's Favorite Doll
+					i(64650, {cost={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Umbra Crescent
+					i(64651, {cost={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Wisp Amulet (TOY!)
+				},
+			}),
+			header(HEADERS.Currency, ARCH_CURRENCY_TROLL, {
+				provider = { "o", 202655 },	-- Troll Archaeology Find
+				maps_disp = {
+					ARATHI_HIGHLANDS,
+					EASTERN_PLAGUELANDS,
+					GRIZZLY_HILLS,
+					NORTHERN_STRANGLETHORN,
+					SWAMP_OF_SORROWS,
+					TANARIS,
+					THE_CAPE_OF_STRANGLETHORN,
+					THE_HINTERLANDS,
+					ZULDRAK,
+				},
+				groups = {
+					i(64348, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Atal'ai Scepter
+					i(64346, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Bracelet of Jade and Coins
+					i(63524, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Cinnabar Bijou
+					i(64375, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Drakkari Sacrificial Knife
+					i(63523, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Eerie Smolderthorn Idol
+					i(63413, {cost={{"c",ARCH_CURRENCY_TROLL,34}}}),	-- Feathered Gold Earring
+					i(63120, {cost={{"c",ARCH_CURRENCY_TROLL,30}}}),	-- Fetish of Hireek
+					i(66058, {cost={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Fine Bloodscalp Dinnerware
+					i(64347, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Gahz'rilla Figurine
+					i(69777, {cost={{"c",ARCH_CURRENCY_TROLL,100}},timeline = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
+					i(63412, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Jade Asp with Ruby Eyes
+					i(63118, {cost={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Lizard Foot Charm
+					i(64345, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Skull-Shaped Planter
+					i(64374, {cost={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Tooth with Gold Filling
+					i(69824, {cost={{"c",ARCH_CURRENCY_TROLL,100}},timeline = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
+					i(63115, {cost={{"c",ARCH_CURRENCY_TROLL,27}}}),	-- Zandalari Voodoo Doll
+					i(64377, {cost={{"c",ARCH_CURRENCY_TROLL,150}}}),	-- Zin'rokh, Destroyer of Worlds
+				},
+			}),
+		},
+	}),
 	prof(BLACKSMITHING, {
 		n(COMMON_VENDOR_ITEMS, {
 			groups = appendAllGroups(
@@ -1814,13 +1820,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(263027),	-- Darkmaster's Mystical Brazier (DECOR!)
 			i(253250),	-- Tirisfal Hollow Campfire (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-			i(138787, {	-- Tome of Illusions: Azeroth
-				ill(803),	-- Fiery Weapon (ILLUSION!)
-				ill(1899),	-- Unholy Weapon (ILLUSION!)
-				ill(5863),	-- Coldlight (ILLUSION!)
-			}),
-		})),
+		filter(ILLUSIONS, {
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(138787, {	-- Tome of Illusions: Azeroth
+					ill(803),	-- Fiery Weapon (ILLUSION!)
+					ill(1899),	-- Unholy Weapon (ILLUSION!)
+					ill(5863),	-- Coldlight (ILLUSION!)
+				}),
+			},
+		}),
 		filter(MISC, {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(211848, {timeline = { ADDED_1_15_0 }})),	-- Blackfathom Mana Oil

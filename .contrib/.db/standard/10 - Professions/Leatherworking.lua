@@ -156,11 +156,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 			}),
 		})),
 	}),
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18894),	-- Free Stylin' (automated)
 		})),
-	})),
+	}),
 	expansion(EXPANSION.WOD, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
@@ -823,11 +823,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18777, {	-- Mallet of Thunderous Skins
 				provider = { "i", 164978 },	-- Mallet of Thunderous Skins
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, {
 			q(54481, {	-- Leathered Patterns [A]
 				provider = { "n", 136063 },	-- Cassandra Brennor

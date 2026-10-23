@@ -285,14 +285,16 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 		q(93766),	-- Midnight: World Quests
 		q(95842, { timeline = { ADDED_12_0_5 } }),	-- Midnight: Void Assaults
 	})),
-	n(SPECIAL, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
+	n(SPECIAL, {
 		campsite(155, {	-- Silvermoon City (CAMPSITE!)
+			timeline = { ADDED_12_1_0 },
 			cost = { { "i", 279575, 1 } },	-- 1x Silvermoon Citizen's Emblem
 		}),
 		campsite(158, {	-- Silvermoon in Void (CAMPSITE!)
+			timeline = { ADDED_12_1_0 },
 			cost = { { "i", 279576, 4 } },	-- 4x Void Vestige
 		}),
-	})),
+	}),
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {

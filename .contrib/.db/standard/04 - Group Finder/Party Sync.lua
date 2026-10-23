@@ -2,8 +2,9 @@
 --    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
-root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ timeline = { ADDED_8_2_5 } }, {
+root(ROOTS.GroupFinder, n(PARTY_SYNC, {
 	description = "Rewarded from Quest while in Party Sync",
+	timeline = { ADDED_8_2_5 },
 	groups = {
 		i(171305, {	-- Salvaged Cache of Goods
 			cl(DEATHKNIGHT, {
@@ -207,4 +208,4 @@ root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ timeline = { ADDED_8_2_5 } },
 			}),
 		}),
 	},
-})));
+}));

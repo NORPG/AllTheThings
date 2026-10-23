@@ -11,33 +11,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	i(162460, {timeline = {ADDED_8_1_0}}),	-- Hydrocore
 	i(162461, {timeline = {ADDED_8_1_0}}),	-- Sanguicell
 	i(171320, {timeline = {ADDED_8_3_0}}),	-- Void Focus
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Darkpine Lumber
-			maps = {
-				DRUSTVAR,
-				MECHAGON,
-				NAZMIR,
-				STORMSONG_VALLEY,
-				TIRAGARDE_SOUND,
-				BORALUS,
-				VOLDUN,
-				ZULDAZAR,
-				DAZARALOR,
-			},
-			groups = {
-				-- Objects
-				o(557988),	-- [Drustvar]
-				o(558338),	-- [Mechagon]
-				o(556076),	-- [Nazmir]
-				o(556704),	-- [Stormsong Valley]
-				o(556425),	-- [Tiragarde Sound/Boralus]
-				o(556387),	-- [Vol'dun]
-				o(555545),	-- [Zuldazar/Dazar'alor]
-				-- Drops
-				i(251768),	-- Darkpine Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Darkpine Lumber
+				maps = {
+					DRUSTVAR,
+					MECHAGON,
+					NAZMIR,
+					STORMSONG_VALLEY,
+					TIRAGARDE_SOUND,
+					BORALUS,
+					VOLDUN,
+					ZULDAZAR,
+					DAZARALOR,
+				},
+				groups = {
+					-- Objects
+					o(557988),	-- [Drustvar]
+					o(558338),	-- [Mechagon]
+					o(556076),	-- [Nazmir]
+					o(556704),	-- [Stormsong Valley]
+					o(556425),	-- [Tiragarde Sound/Boralus]
+					o(556387),	-- [Vol'dun]
+					o(555545),	-- [Zuldazar/Dazar'alor]
+					-- Drops
+					i(251768),	-- Darkpine Lumber
+				},
+			}),
+		},
+	}),
 	filter(MOUNTS, {
 		i(153594, {	-- Xiwyllag ATV (MOUNT!)
 			cost = {
@@ -94,19 +97,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 				},
 			}),
 		}),
-		spell(286547, bubbleDownSelf({timeline = { ADDED_8_1_0 } }, {	-- Transmute: Herbs to Anchors
-			i(165851, {	-- Bag of Anchors
-				i(159386, {	-- Anchor Chain Girdle
-					modID = 1,	-- Normal Dungeon version (Siege only has heroic/mythic, but a normal version of this item drops from the transmute bag)
+		spell(286547, {	-- Transmute: Herbs to Anchors
+			timeline = { ADDED_8_1_0 },
+			groups = {
+				i(165851, {	-- Bag of Anchors
+					i(159386, {	-- Anchor Chain Girdle
+						modID = 1,	-- Normal Dungeon version (Siege only has heroic/mythic, but a normal version of this item drops from the transmute bag)
+					}),
+					i(142420, {	-- Anchor Chain Waistguard
+						modID = 3,	-- Normal Raid version
+					}),
+					i(15865),	-- Anchorhold Buckler
+					i(152692),	-- Devastator Anchor Crystal
+					i(151013),	-- Ethereal Anchor
 				}),
-				i(142420, {	-- Anchor Chain Waistguard
-					modID = 3,	-- Normal Raid version
-				}),
-				i(15865),	-- Anchorhold Buckler
-				i(152692),	-- Devastator Anchor Crystal
-				i(151013),	-- Ethereal Anchor
-			}),
-		})),
+			},
+		}),
 		filter(CONSUMABLES, {
 			i(169451, {timeline = {ADDED_8_2_0}}),	-- Abyssal Healing Potion
 			i(163223),	-- Battle Potion of Agility

@@ -689,9 +689,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					34684,	-- Laha Farplain
 					34683,	-- Rose Standish
 				},
-				groups = bubbleDown({ timeline = { ADDED_3_2_2 } }, {
-					i(44835),	-- Autumnal Herbs
+				groups = {
+					i(44835, { timeline = { ADDED_3_2_2 } }),	-- Autumnal Herbs
 					i(46888, {	-- Bountiful Basket
+						timeline = { ADDED_3_2_2 },
 						cost = {
 							{ "i", 44839, 1 },	-- Candied Sweet Potato
 							{ "i", 44840, 1 },	-- Cranberry Chutney
@@ -704,6 +705,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						},
 					}),
 					i(46809, {	-- Bountiful Cookbook
+						timeline = { ADDED_3_2_2 },
 						races = ALLIANCE_ONLY,
 						groups = {
 							i(44859),	-- Recipe: Candied Sweet Potato (RECIPE!)
@@ -714,6 +716,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						},
 					}),
 					i(46810, {	-- Bountiful Cookbook
+						timeline = { ADDED_3_2_2 },
 						races = HORDE_ONLY,
 						groups = {
 							i(46806),	-- Recipe: Candied Sweet Potato (RECIPE!)
@@ -723,8 +726,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 							i(46803),	-- Recipe: Spice Bread Stuffing (RECIPE!)
 						},
 					}),
-					i(44853),	-- Honey
-				}),
+					i(44853, { timeline = { ADDED_3_2_2 } }),	-- Honey
+				},
 			}),
 			n(34685, {	-- Dalni Tallgrass <Pilgrim's Bounty Vendor>
 				coord = { 46.6, 13.8, DUROTAR },

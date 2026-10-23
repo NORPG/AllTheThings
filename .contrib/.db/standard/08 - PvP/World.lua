@@ -88,16 +88,20 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					},
 				}),
 				q(52786, bubbleDownSelf({	-- The Alliance Slayer
-					timeline = { REMOVED_10_0_2 },
 					races = HORDE_ONLY,
 				},{
-					title(376),	-- <Name> the Alliance Slayer
+					timeline = { REMOVED_10_0_2 },
+					groups = {
+						title(376),	-- <Name> the Alliance Slayer
+					},
 				})),
 				q(52784, bubbleDownSelf({	-- The Horde Slayer
-					timeline = { REMOVED_10_0_2 },
 					races = ALLIANCE_ONLY,
 				},{
-					title(375),	-- <Name> the Horde Slayer
+					timeline = { REMOVED_10_0_2 },
+					groups = {
+						title(375),	-- <Name> the Horde Slayer
+					},
 				})),
 			}),
 		})),

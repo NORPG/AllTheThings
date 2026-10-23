@@ -1592,8 +1592,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				groups = { i(LOVE_TOKEN) },
 			}),
 		})),
-		n(QUESTS, bubbleDown({ timeline = { ADDED_10_2_5 }, isDaily = true, },
-		sharedData({ groups = { i(LOVE_TOKEN) }, },{
+		n(QUESTS, bubbleDown({ isDaily = true, },
+		sharedData({ groups = { i(LOVE_TOKEN) }, },sharedData({ timeline = { ADDED_10_2_5 } }, {
 			q(78594, {	-- Getaway to Scenic Feralas! (A)
 				qg = 212677,	-- Gabbo Blinkwink
 				coord = { 34.3, 51.6, ELWYNN_FOREST },
@@ -1891,7 +1891,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				coord = { 41.9, 16.2, DUROTAR },
 				races = HORDE_ONLY,
 			}),
-		}))),
+		})))),
 		n(REWARDS, {
 			-- #if BEFORE 3.3.2.11403
 			providers = {
@@ -1978,8 +1978,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 			},
 		}),
-		n(DROPS, bubbleDownSelf({timeline = { ADDED_10_2_5 }}, {
+		n(DROPS, {
 			description = "Perfumes and Colognes can be looted from any killed creature related to the Holiday.",
+			timeline = { ADDED_10_2_5 },
 			groups = {
 				i(49859),	-- "Bravado" Cologne
 				i(49857),	-- "Enchantress" Perfume
@@ -1988,7 +1989,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(49856),	-- "VICTORY" Perfume
 				i(49860),	-- "Wizardry" Cologne
 			},
-		})),
+		}),
 		-- #if AFTER 3.3.2.11403
 		n(VENDORS, {
 			n(211873, {	-- Bang Sparknozzle <Lovely Novelties>
@@ -2221,35 +2222,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							cost = { { "i", LOVE_TOKEN, 10 } },
 						}),
 					}),
-					filter(COSMETIC, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
-						iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
-							cost = { { "i", LOVE_TOKEN, 100 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235653, {	-- Spring Butterfly Longbow
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235269, {	-- Spring Butterfly Mace
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235399, {	-- Spring Butterfly Polearm
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235289, {	-- Spring Butterfly Sword
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235293, {	-- Spring Butterfly Wand
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-					})),
+					filter(COSMETIC, {
+						timeline = { ADDED_11_0_7 },
+						groups = {
+							iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
+								cost = { { "i", LOVE_TOKEN, 40 } },
+							}),
+							iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
+								cost = { { "i", LOVE_TOKEN, 100 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235653, {	-- Spring Butterfly Longbow
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235269, {	-- Spring Butterfly Mace
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235399, {	-- Spring Butterfly Polearm
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235289, {	-- Spring Butterfly Sword
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235293, {	-- Spring Butterfly Wand
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+						},
+					}),
 				},
 			}),
 			n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
@@ -2560,35 +2564,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							cost = { { "i", LOVE_TOKEN, 10 } },
 						}),
 					}),
-					filter(COSMETIC, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
-						iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
-							cost = { { "i", LOVE_TOKEN, 100 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235653, {	-- Spring Butterfly Longbow
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235269, {	-- Spring Butterfly Mace
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235399, {	-- Spring Butterfly Polearm
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235289, {	-- Spring Butterfly Sword
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-						i(235293, {	-- Spring Butterfly Wand
-							cost = { { "i", LOVE_TOKEN, 30 } },
-							timeline = { ADDED_12_0_0 },
-						}),
-					})),
+					filter(COSMETIC, {
+						timeline = { ADDED_11_0_7 },
+						groups = {
+							iensemble(232925, {	-- Ensemble: Truly Heartfelt Shoulders
+								cost = { { "i", LOVE_TOKEN, 40 } },
+							}),
+							iensemble(235227, {	-- Ensemble: Ornaments of the Spring Butterfly
+								cost = { { "i", LOVE_TOKEN, 100 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235653, {	-- Spring Butterfly Longbow
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235269, {	-- Spring Butterfly Mace
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235399, {	-- Spring Butterfly Polearm
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235289, {	-- Spring Butterfly Sword
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+							i(235293, {	-- Spring Butterfly Wand
+								cost = { { "i", LOVE_TOKEN, 30 } },
+								timeline = { ADDED_12_0_0 },
+							}),
+						},
+					}),
 				},
 			}),
 			n(211864, {	-- Maurice Guichi <House of Chocolates>
@@ -3744,7 +3751,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WRATH, {
 		applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
 			-- #if BEFORE LEGION
-			n(QUESTS, bubbleDown({ timeline = { ADDED_3_3_0 } }, {
+			n(QUESTS, sharedData({ timeline = { ADDED_3_3_0 } }, {
 				q(24661),	-- Crush the Crown Daily Tracker / Theryn Fed Tracker [LEGION]
 			})),
 			-- #endif
@@ -3752,7 +3759,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.DF, {
 		applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
-			n(QUESTS, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
+			n(QUESTS, sharedData({ timeline = { ADDED_10_2_5 } }, {
 				q(79143),	-- Completed alongside Love is in the Air (A)
 				q(79144),	-- Completed alongside Love is in the Air (H)
 				q(78734),	-- After choosing "a challenge" for The Gift of Self-Care
@@ -3765,7 +3772,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
-			n(QUESTS, bubbleDown({ timeline = { ADDED_12_0_0 } }, {
+			n(QUESTS, sharedData({ timeline = { ADDED_12_0_0 } }, {
 				q(95067, {	-- Daily on Dungeon Completion
 					isDaily = true,
 				}),

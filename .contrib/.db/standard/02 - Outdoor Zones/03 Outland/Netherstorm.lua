@@ -2000,7 +2000,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					timeline = { ADDED_4_3_0 },
 					-- #if NOT ANYCLASSIC
 					description = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ timeline = { ADDED_4_3_0 } }, pvp({
+					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, sharedData({ timeline = { ADDED_4_3_0 } }, pvp({
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -2144,7 +2144,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					timeline = { ADDED_4_0_3 },
 					-- #if NOT ANYCLASSIC
 					description = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ timeline = { ADDED_4_3_0 } }, pvp({
+					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, sharedData({ timeline = { ADDED_4_3_0 } }, pvp({
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal
@@ -2407,58 +2407,58 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					-- #if AFTER 4.3.0.15005
 					-- #if NOT ANYCLASSIC
 					description = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-					groups = bubbleDown({ timeline = { ADDED_4_3_0 } }, applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp({
-						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
-						i(77673),	-- Replica Field Marshal's Chain Spaulders
-						i(77714),	-- Replica Field Marshal's Plate Armor
-						i(77707),	-- Replica Field Marshal's Mail Armor
-						i(77705),	-- Replica Field Marshal's Mail Spaulders
-						i(77704),	-- Replica Field Marshal's Mail Helm
-						i(77715),	-- Replica Field Marshal's Plate Helm
-						i(77674),	-- Replica Field Marshal's Chain Breastplate
-						i(77676),	-- Replica Field Marshal's Chain Helm
-						i(77687),	-- Replica Field Marshal's Lamellar Chestplate
-						i(77688),	-- Replica Field Marshal's Lamellar Faceguard
-						i(77689),	-- Replica Field Marshal's Lamellar Pauldrons
-						i(77645),	-- Replica Lieutenant Commander's Mail Pauldrons
-						i(77719),	-- Replica Marshal's Plate Boots
-						i(77763),	-- Replica Lieutenant Commander's Chain Helm
-						i(77703),	-- Replica Marshal's Mail Gauntlets
-						i(77702),	-- Replica Marshal's Mail Boots
-						i(77664),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77665),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77672),	-- Replica Marshal's Chain Boots
-						i(77867),	-- Replica Lieutenant Commander's Plate Helmet
-						i(77762),	-- Replica Lieutenant Commander's Chain Shoulders
-						i(77675),	-- Replica Marshal's Chain Legguards
-						i(77706),	-- Replica Marshal's Mail Leggings
-						i(77717),	-- Replica Marshal's Plate Legguards
-						i(77684),	-- Replica Marshal's Lamellar Boots
-						i(77685),	-- Replica Marshal's Lamellar Gloves
-						i(77686),	-- Replica Marshal's Lamellar Legplates
-						i(77677),	-- Replica Marshal's Chain Grips
-						i(77642),	-- Replica Lieutenant Commander's Mail Headguard
-						i(77859),	-- Replica Lieutenant Commander's Plate Shoulders
-						i(77716),	-- Replica Marshal's Plate Gauntlets
-						i(77662),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77661),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77643),	-- Replica Knight-Captain's Mail Legguards
-						i(77641),	-- Replica Knight-Captain's Mail Hauberk
-						i(77761),	-- Replica Knight-Captain's Chain Hauberk
-						i(77769),	-- Replica Knight-Captain's Chain Legguards
-						i(77858),	-- Replica Knight-Captain's Plate Hauberk
-						i(77864),	-- Replica Knight-Captain's Plate Leggings
-						i(77644),	-- Replica Knight-Lieutenant's Mail Greaves
+					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp({
+						i(77718, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Plate Shoulderguards
+						i(77673, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Chain Spaulders
+						i(77714, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Plate Armor
+						i(77707, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Mail Armor
+						i(77705, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Mail Spaulders
+						i(77704, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Mail Helm
+						i(77715, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Plate Helm
+						i(77674, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Chain Breastplate
+						i(77676, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Chain Helm
+						i(77687, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Lamellar Chestplate
+						i(77688, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Lamellar Faceguard
+						i(77689, { timeline = { ADDED_4_3_0 } }),	-- Replica Field Marshal's Lamellar Pauldrons
+						i(77645, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Mail Pauldrons
+						i(77719, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Plate Boots
+						i(77763, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Chain Helm
+						i(77703, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Mail Gauntlets
+						i(77702, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Mail Boots
+						i(77664, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Lamellar Headguard
+						i(77665, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Lamellar Shoulders
+						i(77672, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Chain Boots
+						i(77867, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Plate Helmet
+						i(77762, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Chain Shoulders
+						i(77675, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Chain Legguards
+						i(77706, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Mail Leggings
+						i(77717, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Plate Legguards
+						i(77684, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Lamellar Boots
+						i(77685, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Lamellar Gloves
+						i(77686, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Lamellar Legplates
+						i(77677, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Chain Grips
+						i(77642, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Mail Headguard
+						i(77859, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Plate Shoulders
+						i(77716, { timeline = { ADDED_4_3_0 } }),	-- Replica Marshal's Plate Gauntlets
+						i(77662, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Lamellar Breastplate
+						i(77661, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Lamellar Leggings
+						i(77643, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Mail Legguards
+						i(77641, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Mail Hauberk
+						i(77761, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Chain Hauberk
+						i(77769, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Chain Legguards
+						i(77858, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Plate Hauberk
+						i(77864, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Plate Leggings
+						i(77644, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Mail Greaves
 						i(120977, {	-- Replica Knight-Lieutenant's Plate Waistguard
 							timeline = { ADDED_6_1_0 },
 						}),
-						i(77646),	-- Replica Knight-Lieutenant's Mail Vices
-						i(77735),	-- Replica Knight-Lieutenant's Plate Greaves
-						i(77734),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77727),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77726),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77723),	-- Replica Knight-Lieutenant's Chain Greaves
-						i(77722),	-- Replica Knight-Lieutenant's Chain Vices
+						i(77646, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Mail Vices
+						i(77735, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Plate Greaves
+						i(77734, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Plate Gauntlets
+						i(77727, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+						i(77726, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+						i(77723, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Chain Greaves
+						i(77722, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Chain Vices
 						i(120983, {	-- Replica Knight-Lieutenant's Chain Belt
 							timeline = { ADDED_6_1_0 },
 						}),
@@ -2468,37 +2468,39 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(120981, {	-- Replica Knight-Lieutenant's Lamellar Girdle
 							timeline = { ADDED_6_1_0 },
 						}),
-						i(77625),	-- Replica Knight-Lieutenant's Lamellar Sabatons
-						i(77607),	-- Replica Lieutenant Commander's Chain Pauldrons
-						i(77659),	-- Replica Sergeant Major's Plate Wristguards
-						i(77658),	-- Replica Knight-Lieutenant's Plate Boots
-						i(77657),	-- Replica Lieutenant Commander's Plate Pauldrons
-						i(77656),	-- Replica Lieutenant Commander's Plate Helm
-						i(77655),	-- Replica Knight-Captain's Plate Leggings
-						i(77654),	-- Replica Knight-Captain's Plate Chestguard
-						i(77653),	-- Replica Knight-Lieutenant's Plate Gauntlets
-						i(77626),	-- Replica Knight-Captain's Lamellar Breastplate
-						i(77608),	-- Replica Knight-Captain's Chain Hauberk
-						i(77624),	-- Replica Lieutenant Commander's Lamellar Headguard
-						i(77623),	-- Replica Knight-Captain's Lamellar Leggings
-						i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
-						i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
-						i(77612),	-- Replica Sergeant Major's Chain Armguards
+						i(77625, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Lamellar Sabatons
+						i(77607, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Chain Pauldrons
+						i(77659, { timeline = { ADDED_4_3_0 } }),	-- Replica Sergeant Major's Plate Wristguards
+						i(77658, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Plate Boots
+						i(77657, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Plate Pauldrons
+						i(77656, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Plate Helm
+						i(77655, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Plate Leggings
+						i(77654, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Plate Chestguard
+						i(77653, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Plate Gauntlets
+						i(77626, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Lamellar Breastplate
+						i(77608, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Chain Hauberk
+						i(77624, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Lamellar Headguard
+						i(77623, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Lamellar Leggings
+						i(77622, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
+						i(77621, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Lamellar Shoulders
+						i(77612, { timeline = { ADDED_4_3_0 } }),	-- Replica Sergeant Major's Chain Armguards
 						i(77613, {	-- Replica Sergeant Major's Chain Armguards
 							description = "Horde appearance is learned when buying the Alliance version.",
+							timeline = { ADDED_4_3_0 },
 							races = ALLIANCE_ONLY,
 							groups = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
 						}),
-						i(77611),	-- Replica Knight-Captain's Chain Leggings
-						i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
-						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
-						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
+						i(77611, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Captain's Chain Leggings
+						i(77610, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Chain Gauntlets
+						i(77609, { timeline = { ADDED_4_3_0 } }),	-- Replica Lieutenant Commander's Chain Helmet
+						i(77606, { timeline = { ADDED_4_3_0 } }),	-- Replica Knight-Lieutenant's Chain Boots
 						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
 							description = "Horde appearance is learned when buying the Alliance version.",
+							timeline = { ADDED_4_3_0 },
 							races = ALLIANCE_ONLY,
 							groups = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
 						}),
-					}))),
+					})),
 					-- #endif
 					-- #endif
 				}),
@@ -2507,7 +2509,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					timeline = { ADDED_4_3_0 },
 					-- #if NOT ANYCLASSIC
 					description = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ timeline = { ADDED_4_3_0 } }, pvp({
+					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, sharedData({ timeline = { ADDED_4_3_0 } }, pvp({
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
 						i(77880),	-- Replica Warlord's Chain Shoulders
 						i(77923),	-- Replica Warlord's Plate Shoulders
@@ -2624,7 +2626,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					timeline = { ADDED_4_3_0 },
 					-- #if NOT ANYCLASSIC
 					description = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, bubbleDown({ timeline = { ADDED_4_3_0 } }, pvp({
+					groups = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, sharedData({ timeline = { ADDED_4_3_0 } }, pvp({
 						i(77900),	-- Replica Warlord's Satin Cowl
 						i(77874),	-- Replica Warlord's Dragonhide Helmet
 						i(77919),	-- Replica Warlord's Dreadweave Robe

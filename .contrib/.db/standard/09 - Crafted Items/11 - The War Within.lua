@@ -16,29 +16,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 		cost = {{"i", 231757, 2}},	-- Fractured Spark of Starlight
 		timeline = { ADDED_11_2_0 },
 	}),
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Dornic Fir Lumber
-			maps = {
-				AZJ_KAHET,
-				NERUBAR,
-				HALLOWFALL,
-				ISLE_OF_DORN,
-				DORNOGAL,
-				SIREN_ISLE,
-				THE_RINGING_DEEPS,
-			},
-			groups = {
-				-- Objects
-				o(544781),	-- [Azj-Kahet/City of Threads]
-				o(546737),	-- [Hallowfall]
-				o(543723),	-- [Isle of Dorn/Dornogal]
-				o(546928),	-- [Siren Isle]
-				o(546738),	-- [The Ringing Deeps]
-				-- Drops
-				i(248012),	-- Dornic Fir Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Dornic Fir Lumber
+				maps = {
+					AZJ_KAHET,
+					NERUBAR,
+					HALLOWFALL,
+					ISLE_OF_DORN,
+					DORNOGAL,
+					SIREN_ISLE,
+					THE_RINGING_DEEPS,
+				},
+				groups = {
+					-- Objects
+					o(544781),	-- [Azj-Kahet/City of Threads]
+					o(546737),	-- [Hallowfall]
+					o(543723),	-- [Isle of Dorn/Dornogal]
+					o(546928),	-- [Siren Isle]
+					o(546738),	-- [The Ringing Deeps]
+					-- Drops
+					i(248012),	-- Dornic Fir Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(212719, {	-- Algari Flask Cauldron+

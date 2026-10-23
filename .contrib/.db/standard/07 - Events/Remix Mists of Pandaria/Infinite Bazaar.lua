@@ -5,7 +5,7 @@
 local BRONZE = 2778;
 local BONES_OF_MANNOROTH = 224461;
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 	n(INFINITE_BAZAAR, {
 		coords = {
 		--[[	-- Accurate, but its 100 Ensembles per Zone in the Minilist
@@ -1136,4 +1136,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ t
 			})),
 		},
 	}),
-}))));
+})));

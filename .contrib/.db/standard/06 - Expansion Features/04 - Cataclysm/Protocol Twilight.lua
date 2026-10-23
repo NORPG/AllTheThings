@@ -143,7 +143,8 @@ local HOUR_OF_TWILIGHT_DUNGEON_LAST_BOSSES = {
 	54969,	-- Mannoroth
 }
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
-	n(PROTOCOL_TWILIGHT, bubbleDownSelf({ timeline = { ADDED_4_3_0 } }, {
+	n(PROTOCOL_TWILIGHT, {
+		timeline = { ADDED_4_3_0 },
 		lvl = 85,
 		groups = {
 			n(COMMON_BOSS_DROPS, {
@@ -505,6 +506,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 		},
-	})),
+	}),
 })));
 -- #endif

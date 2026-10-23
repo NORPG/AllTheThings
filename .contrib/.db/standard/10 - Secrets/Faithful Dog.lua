@@ -54,18 +54,20 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 			},
 			timeline = { ADDED_7_2_0 },
 		})),
-		hqt(83093, name(HEADERS.Object, 452438, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {	-- Step 3: Half-Buried Dog Bowl
+		hqt(83093, name(HEADERS.Object, 452438, {	-- Step 3: Half-Buried Dog Bowl
 			description = "Interact with the bowl near Dalaran's crash site to bring Dog out of hiding.",
 			sourceQuests = { 46952 },
 			provider = { "o", 452438 },	-- Half-Buried Dog Bowl
 			coord = { 31.4, 51.3, ISLE_OF_DORN },
-		}))),
-		hqt(83094, name(HEADERS.NPC, 225486, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {	-- Step 4: Interact with Dog
+			timeline = { ADDED_11_0_2 },
+		})),
+		hqt(83094, name(HEADERS.NPC, 225486, {	-- Step 4: Interact with Dog
 			description = "Interact with Dog and <Pet his head> to get him as a pet.",
 			sourceQuests = { 83093 },
 			provider = { "n", 225486 },	-- Dog
 			coord = { 31.4, 51.3, ISLE_OF_DORN },
+			timeline = { ADDED_11_0_2 },
 			groups = { i(224766) },	-- Faithful Dog (PET!)
-		}))),
+		})),
 	},
 }));

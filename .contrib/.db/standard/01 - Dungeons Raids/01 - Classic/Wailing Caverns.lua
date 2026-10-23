@@ -273,16 +273,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(132743, {	-- Slither-Scale Gauntlets
 						timeline = { ADDED_7_0_3 },
 					}),
-					i(208015, bubbleDown({ timeline = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
-						i(208016),	-- Deviate Scale Pouch
-						i(208020),	-- Dagmire Gloves
-						i(208018),	-- Fangblade
-						i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
-						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
-						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
-						i(208019),	-- Quagmire Trudgers
-						i(208021),	-- Sizzling Stick
-					})),
+					i(208015, {	-- Stuffed Deviate Scale Pouch
+						timeline = { ADDED_10_1_5 },
+						groups = {
+							i(208016),	-- Deviate Scale Pouch
+							i(208020),	-- Dagmire Gloves
+							i(208018),	-- Fangblade
+							i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
+							i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+							i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
+							i(208019),	-- Quagmire Trudgers
+							i(208021),	-- Sizzling Stick
+						},
+					}),
 				}),
 			}),
 			prof(SKINNING, {

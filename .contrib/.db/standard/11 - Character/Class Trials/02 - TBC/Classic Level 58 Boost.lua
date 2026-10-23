@@ -5,8 +5,8 @@
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 58 boosts became available in Classic late into the Naxxramas patch, with the Dark Portal Pass for TBC
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.TBC, bubbleDown({ u = REAL_MONEY, timeline = { ADDED_1_13_7, REMOVED_3_4_0 } }, {
-		groups = {
+	expansion(EXPANSION.TBC, bubbleDown({ u = REAL_MONEY }, {
+		groups = sharedData({ timeline = { ADDED_1_13_7, REMOVED_3_4_0 } }, {
 			cl(DRUID, {
 				i(186055),	-- Communal Stave (Agi)
 				i(186026),	-- Communal Crown (Leather Agi/Spi)
@@ -142,7 +142,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			i(185986),	-- Communal Stone of Durability
 			i(185987),	-- Communal Stone of Wisdom
 			i(185988),	-- Communal Stone of Stoicism
-		},
+		}),
 	})),
 }));
 -- #endif

@@ -25,7 +25,8 @@ local ELEMENTAL_BONDS = createHeader({
 });
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
-	n(ELEMENTAL_BONDS, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {
+	n(ELEMENTAL_BONDS, {
+		timeline = { ADDED_4_2_0 },
 		lvl = lvlsquish(85, 32, 32),
 		groups = {
 			q(29328, {	-- Elemental Bonds: Desire
@@ -119,5 +120,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				},
 			}),
 		},
-	})),
+	}),
 })));

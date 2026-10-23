@@ -952,7 +952,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							}),
 						},
 					}),
-					ach(18706, bubbleDown({ timeline = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
+					ach(18706, sharedData({ timeline = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
 						iensemble(208490, {	-- Ensemble: Infinite Acolyte's Regalia
 							extraTransmogSetSpells = {
 								421485,	-- Ensemble: Infinite Acolyte's Regalia
@@ -1049,7 +1049,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 							}),
 						},
 					}),
-					ach(18706, bubbleDown({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
+					ach(18706, sharedData({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
 						iensemble(208490, {	-- Ensemble: Infinite Acolyte's Regalia
 							extraTransmogSetSpells = {
 								421485,	-- Ensemble: Infinite Acolyte's Regalia

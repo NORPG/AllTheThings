@@ -83,14 +83,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 				-- Fashion
 				ach(41595, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_1_LAUNCH } }),	-- Prized Guise
 			})),
-			filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
-				i(229989, {	-- Vicious Electro Eel [A] (MOUNT!)
-					races = ALLIANCE_ONLY,
-				}),
-				i(229988, {	-- Vicious Electro Eel [H] (MOUNT!)
-					races = HORDE_ONLY,
-				}),
-			})),
+			filter(MOUNTS, {
+				timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				groups = {
+					i(229989, {	-- Vicious Electro Eel [A] (MOUNT!)
+						races = ALLIANCE_ONLY,
+					}),
+					i(229988, {	-- Vicious Electro Eel [H] (MOUNT!)
+						races = HORDE_ONLY,
+					}),
+				},
+			}),
 			n(PVP_WARMODE, {
 				n(219213, {	-- Gilderann <War Mode Quartermaster>
 					coord = { 55.2, 76.8, DORNOGAL },
@@ -175,140 +178,143 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 					}),
 				}),
 			}),
-			n(PVP_ASPIRANT, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } }, {
-				n(219217, {	-- Velerd <Honor Quartermaster>
-					coord = { 55.0, 76.5, DORNOGAL },
-					groups = sharedData({
-						timeline = { ADDED_12_0_1_LAUNCH },
-					}, {
-						moh(80, iensemble(232867)),	-- Arsenal: Prized Aspirant's Weapons
-						moh(12, iensemble(232695)),	-- Ensemble: Prized Aspirant's Cloth Armor
-						moh(12, iensemble(232696)),	-- Ensemble: Prized Aspirant's Leather Armor
-						moh(12, iensemble(232697)),	-- Ensemble: Prized Aspirant's Mail Armor
-						moh(12, iensemble(232698)),	-- Ensemble: Prized Aspirant's Plate Armor
-					}),
-				}),
-				n(219217, {	-- Velerd <Honor Quartermaster>
-					coord = { 55.0, 76.5, DORNOGAL },
-					groups = bubbleDownFiltered({
-						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
-					},FILTERFUNC_itemID,{
-						filter(BACK_F, {
-							honor(525, i(229504)),	-- Prized Aspirant's Cape
-							honor(525, i(229503)),	-- Prized Aspirant's Cloak
-							honor(525, i(229502)),	-- Prized Aspirant's Drape
-							honor(525, i(229505)),	-- Prized Aspirant's Greatcloak
-						}),
-						filter(CLOTH, {
-							honor(700, i(229484)),	-- Prized Aspirant's Silk Belt
-							honor(525, i(229487)),	-- Prized Aspirant's Silk Bindings
-							honor(700, i(229452)),	-- Prized Aspirant's Silk Cord
-							honor(875, i(229472)),	-- Prized Aspirant's Silk Cover
-							honor(700, i(229465)),	-- Prized Aspirant's Silk Footwraps
-							honor(700, i(229438)),	-- Prized Aspirant's Silk Gloves
-							honor(700, i(229470)),	-- Prized Aspirant's Silk Handwraps
-							honor(875, i(229440)),	-- Prized Aspirant's Silk Hood
-							honor(875, i(229444)),	-- Prized Aspirant's Silk Leggings
-							honor(875, i(229476)),	-- Prized Aspirant's Silk Legwraps
-							honor(700, i(229449)),	-- Prized Aspirant's Silk Mantle
-							honor(875, i(229428)),	-- Prized Aspirant's Silk Robe
-							honor(700, i(229481)),	-- Prized Aspirant's Silk Shawl
-							honor(875, i(229460)),	-- Prized Aspirant's Silk Shirt
-							honor(700, i(229433)),	-- Prized Aspirant's Silk Treads
-							honor(525, i(229455)),	-- Prized Aspirant's Silk Wristwraps
-						}),
-						filter(FINGER_F, {
-							honor(525, i(229497)),	-- Prized Aspirant's Band
-							honor(525, i(229496)),	-- Prized Aspirant's Ring i(
-							honor(525, i(229498)),	-- Prized Aspirant's Signet
-						}),
-						filter(LEATHER, {
-							honor(525, i(229490)),	-- Prized Aspirant's Leather Armguards
-							honor(700, i(229454)),	-- Prized Aspirant's Leather Belt
-							honor(700, i(229435)),	-- Prized Aspirant's Leather Boots
-							honor(875, i(229446)),	-- Prized Aspirant's Leather Breeches
-							honor(700, i(229486)),	-- Prized Aspirant's Leather Cord
-							honor(700, i(229467)),	-- Prized Aspirant's Leather Footpads
-							honor(700, i(229436)),	-- Prized Aspirant's Leather Gloves
-							honor(700, i(229468)),	-- Prized Aspirant's Leather Grips
-							honor(875, i(229442)),	-- Prized Aspirant's Leather Helm
-							honor(875, i(229478)),	-- Prized Aspirant's Leather Leggings
-							honor(700, i(229479)),	-- Prized Aspirant's Leather Mantle
-							honor(875, i(229474)),	-- Prized Aspirant's Leather Mask
-							honor(700, i(229447)),	-- Prized Aspirant's Leather Spaulders
-							honor(875, i(229463)),	-- Prized Aspirant's Leather Tunic
-							honor(875, i(229431)),	-- Prized Aspirant's Leather Vest
-							honor(525, i(229458)),	-- Prized Aspirant's Leather Wristwraps
-						}),
-						filter(MAIL, {
-							honor(875, i(229462)),	-- Prized Aspirant's Armored Tunic
-							honor(875, i(229430)),	-- Prized Aspirant's Armored Vest
-							honor(700, i(229453)),	-- Prized Aspirant's Chain Belt
-							honor(525, i(229489)),	-- Prized Aspirant's Chain Bracer
-							honor(700, i(229485)),	-- Prized Aspirant's Chain Clasp
-							honor(700, i(229439)),	-- Prized Aspirant's Chain Gauntlets
-							honor(700, i(229471)),	-- Prized Aspirant's Chain Handguards
-							honor(875, i(229473)),	-- Prized Aspirant's Chain Headguard
-							honor(875, i(229441)),	-- Prized Aspirant's Chain Helm
-							honor(875, i(229445)),	-- Prized Aspirant's Chain Leggings
-							honor(700, i(229434)),	-- Prized Aspirant's Chain Sabatons
-							honor(700, i(229482)),	-- Prized Aspirant's Chain Shoulderguards
-							honor(700, i(229450)),	-- Prized Aspirant's Chain Spaulders
-							honor(700, i(229466)),	-- Prized Aspirant's Chain Stompers
-							honor(875, i(229477)),	-- Prized Aspirant's Chain Wargreaves
-							honor(525, i(229457)),	-- Prized Aspirant's Chain Wristwraps
-						}),
-						filter(NECK_F, {
-							honor(525, i(229500)),	-- Prized Aspirant's Choker
-							honor(525, i(229499)),	-- Prized Aspirant's Necklace
-							honor(525, i(229501)),	-- Prized Aspirant's Pendant
-						}),
-						filter(PLATE, {
-							honor(875, i(229429)),	-- Prized Aspirant's Chestplate
-							honor(525, i(229488)),	-- Prized Aspirant's Plate Armguards
-							honor(875, i(229461)),	-- Prized Aspirant's Plate Armor
-							honor(525, i(229456)),	-- Prized Aspirant's Plate Cuffs
-							honor(700, i(229437)),	-- Prized Aspirant's Plate Gauntlets
-							honor(700, i(229451)),	-- Prized Aspirant's Plate Girdle
-							honor(700, i(229483)),	-- Prized Aspirant's Plate Greatbelt
-							honor(700, i(229469)),	-- Prized Aspirant's Plate Handguards
-							honor(875, i(229459)),	-- Prized Aspirant's Plate Headguard
-							honor(875, i(229427)),	-- Prized Aspirant's Plate Helm
-							honor(875, i(229443)),	-- Prized Aspirant's Plate Legguards
-							honor(700, i(229480)),	-- Prized Aspirant's Plate Pauldrons
-							honor(700, i(229448)),	-- Prized Aspirant's Plate Shoulders
-							honor(700, i(229464)),	-- Prized Aspirant's Plate Stompers
-							honor(700, i(229432)),	-- Prized Aspirant's Plate Warboots
-							honor(875, i(229475)),	-- Prized Aspirant's Plate Wargreaves
-						}),
-						filter(TRINKET_F, {
-							honor(700, i(229491)),	-- Prized Aspirant's Badge of Ferocity
-							honor(700, i(229494)),	-- Prized Aspirant's Emblem
-							honor(700, i(229493)),	-- Prized Aspirant's Insignia of Alacrity
-							honor(525, i(229492)),	-- Prized Aspirant's Medallion
-							honor(525, i(229495)),	-- Prized Aspirant's Sigil of Adaptation
-						}),
-						n(WEAPONS, {
-							honor(875, i(229506)),	-- Prized Aspirant's Battleaxe
-							honor(1225, i(229521)),	-- Prized Aspirant's Blastoff Rod
-							honor(875, i(229520)),	-- Prized Aspirant's Chopper
-							honor(875, i(229507)),	-- Prized Aspirant's Dagger
-							honor(1225, i(229519)),	-- Prized Aspirant's Drill
-							honor(1750, i(229511)),	-- Prized Aspirant's Greatsword
-							honor(1750, i(229517)),	-- Prized Aspirant's Halberd
-							honor(875, i(229508)),	-- Prized Aspirant's Hammer
-							honor(875, i(229518)),	-- Prized Aspirant's Mace
-							honor(525, i(229512)),	-- Prized Aspirant's Molotov
-							honor(1750, i(229509)),	-- Prized Aspirant's Polearm
-							honor(1750, i(229516)),	-- Prized Aspirant's Rifle
-							honor(875, i(229513)),	-- Prized Aspirant's Rocketglaive
-							honor(1225, i(229514)),	-- Prized Aspirant's Scepter
-							honor(525, i(229515)),	-- Prized Aspirant's Shield
-							honor(1750, i(229510)),	-- Prized Aspirant's Staff
+			n(PVP_ASPIRANT, {
+				timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH },
+				groups = {
+					n(219217, {	-- Velerd <Honor Quartermaster>
+						coord = { 55.0, 76.5, DORNOGAL },
+						groups = sharedData({
+							timeline = { ADDED_12_0_1_LAUNCH },
+						}, {
+							moh(80, iensemble(232867, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } })),	-- Arsenal: Prized Aspirant's Weapons
+							moh(12, iensemble(232695, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } })),	-- Ensemble: Prized Aspirant's Cloth Armor
+							moh(12, iensemble(232696, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } })),	-- Ensemble: Prized Aspirant's Leather Armor
+							moh(12, iensemble(232697, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } })),	-- Ensemble: Prized Aspirant's Mail Armor
+							moh(12, iensemble(232698, { timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH } })),	-- Ensemble: Prized Aspirant's Plate Armor
 						}),
 					}),
-				}),
-			})),
+					n(219217, {	-- Velerd <Honor Quartermaster>
+						coord = { 55.0, 76.5, DORNOGAL },
+						groups = bubbleDownFiltered({
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+						},FILTERFUNC_itemID,{
+							filter(BACK_F, {
+								honor(525, i(229504)),	-- Prized Aspirant's Cape
+								honor(525, i(229503)),	-- Prized Aspirant's Cloak
+								honor(525, i(229502)),	-- Prized Aspirant's Drape
+								honor(525, i(229505)),	-- Prized Aspirant's Greatcloak
+							}),
+							filter(CLOTH, {
+								honor(700, i(229484)),	-- Prized Aspirant's Silk Belt
+								honor(525, i(229487)),	-- Prized Aspirant's Silk Bindings
+								honor(700, i(229452)),	-- Prized Aspirant's Silk Cord
+								honor(875, i(229472)),	-- Prized Aspirant's Silk Cover
+								honor(700, i(229465)),	-- Prized Aspirant's Silk Footwraps
+								honor(700, i(229438)),	-- Prized Aspirant's Silk Gloves
+								honor(700, i(229470)),	-- Prized Aspirant's Silk Handwraps
+								honor(875, i(229440)),	-- Prized Aspirant's Silk Hood
+								honor(875, i(229444)),	-- Prized Aspirant's Silk Leggings
+								honor(875, i(229476)),	-- Prized Aspirant's Silk Legwraps
+								honor(700, i(229449)),	-- Prized Aspirant's Silk Mantle
+								honor(875, i(229428)),	-- Prized Aspirant's Silk Robe
+								honor(700, i(229481)),	-- Prized Aspirant's Silk Shawl
+								honor(875, i(229460)),	-- Prized Aspirant's Silk Shirt
+								honor(700, i(229433)),	-- Prized Aspirant's Silk Treads
+								honor(525, i(229455)),	-- Prized Aspirant's Silk Wristwraps
+							}),
+							filter(FINGER_F, {
+								honor(525, i(229497)),	-- Prized Aspirant's Band
+								honor(525, i(229496)),	-- Prized Aspirant's Ring i(
+								honor(525, i(229498)),	-- Prized Aspirant's Signet
+							}),
+							filter(LEATHER, {
+								honor(525, i(229490)),	-- Prized Aspirant's Leather Armguards
+								honor(700, i(229454)),	-- Prized Aspirant's Leather Belt
+								honor(700, i(229435)),	-- Prized Aspirant's Leather Boots
+								honor(875, i(229446)),	-- Prized Aspirant's Leather Breeches
+								honor(700, i(229486)),	-- Prized Aspirant's Leather Cord
+								honor(700, i(229467)),	-- Prized Aspirant's Leather Footpads
+								honor(700, i(229436)),	-- Prized Aspirant's Leather Gloves
+								honor(700, i(229468)),	-- Prized Aspirant's Leather Grips
+								honor(875, i(229442)),	-- Prized Aspirant's Leather Helm
+								honor(875, i(229478)),	-- Prized Aspirant's Leather Leggings
+								honor(700, i(229479)),	-- Prized Aspirant's Leather Mantle
+								honor(875, i(229474)),	-- Prized Aspirant's Leather Mask
+								honor(700, i(229447)),	-- Prized Aspirant's Leather Spaulders
+								honor(875, i(229463)),	-- Prized Aspirant's Leather Tunic
+								honor(875, i(229431)),	-- Prized Aspirant's Leather Vest
+								honor(525, i(229458)),	-- Prized Aspirant's Leather Wristwraps
+							}),
+							filter(MAIL, {
+								honor(875, i(229462)),	-- Prized Aspirant's Armored Tunic
+								honor(875, i(229430)),	-- Prized Aspirant's Armored Vest
+								honor(700, i(229453)),	-- Prized Aspirant's Chain Belt
+								honor(525, i(229489)),	-- Prized Aspirant's Chain Bracer
+								honor(700, i(229485)),	-- Prized Aspirant's Chain Clasp
+								honor(700, i(229439)),	-- Prized Aspirant's Chain Gauntlets
+								honor(700, i(229471)),	-- Prized Aspirant's Chain Handguards
+								honor(875, i(229473)),	-- Prized Aspirant's Chain Headguard
+								honor(875, i(229441)),	-- Prized Aspirant's Chain Helm
+								honor(875, i(229445)),	-- Prized Aspirant's Chain Leggings
+								honor(700, i(229434)),	-- Prized Aspirant's Chain Sabatons
+								honor(700, i(229482)),	-- Prized Aspirant's Chain Shoulderguards
+								honor(700, i(229450)),	-- Prized Aspirant's Chain Spaulders
+								honor(700, i(229466)),	-- Prized Aspirant's Chain Stompers
+								honor(875, i(229477)),	-- Prized Aspirant's Chain Wargreaves
+								honor(525, i(229457)),	-- Prized Aspirant's Chain Wristwraps
+							}),
+							filter(NECK_F, {
+								honor(525, i(229500)),	-- Prized Aspirant's Choker
+								honor(525, i(229499)),	-- Prized Aspirant's Necklace
+								honor(525, i(229501)),	-- Prized Aspirant's Pendant
+							}),
+							filter(PLATE, {
+								honor(875, i(229429)),	-- Prized Aspirant's Chestplate
+								honor(525, i(229488)),	-- Prized Aspirant's Plate Armguards
+								honor(875, i(229461)),	-- Prized Aspirant's Plate Armor
+								honor(525, i(229456)),	-- Prized Aspirant's Plate Cuffs
+								honor(700, i(229437)),	-- Prized Aspirant's Plate Gauntlets
+								honor(700, i(229451)),	-- Prized Aspirant's Plate Girdle
+								honor(700, i(229483)),	-- Prized Aspirant's Plate Greatbelt
+								honor(700, i(229469)),	-- Prized Aspirant's Plate Handguards
+								honor(875, i(229459)),	-- Prized Aspirant's Plate Headguard
+								honor(875, i(229427)),	-- Prized Aspirant's Plate Helm
+								honor(875, i(229443)),	-- Prized Aspirant's Plate Legguards
+								honor(700, i(229480)),	-- Prized Aspirant's Plate Pauldrons
+								honor(700, i(229448)),	-- Prized Aspirant's Plate Shoulders
+								honor(700, i(229464)),	-- Prized Aspirant's Plate Stompers
+								honor(700, i(229432)),	-- Prized Aspirant's Plate Warboots
+								honor(875, i(229475)),	-- Prized Aspirant's Plate Wargreaves
+							}),
+							filter(TRINKET_F, {
+								honor(700, i(229491)),	-- Prized Aspirant's Badge of Ferocity
+								honor(700, i(229494)),	-- Prized Aspirant's Emblem
+								honor(700, i(229493)),	-- Prized Aspirant's Insignia of Alacrity
+								honor(525, i(229492)),	-- Prized Aspirant's Medallion
+								honor(525, i(229495)),	-- Prized Aspirant's Sigil of Adaptation
+							}),
+							n(WEAPONS, {
+								honor(875, i(229506)),	-- Prized Aspirant's Battleaxe
+								honor(1225, i(229521)),	-- Prized Aspirant's Blastoff Rod
+								honor(875, i(229520)),	-- Prized Aspirant's Chopper
+								honor(875, i(229507)),	-- Prized Aspirant's Dagger
+								honor(1225, i(229519)),	-- Prized Aspirant's Drill
+								honor(1750, i(229511)),	-- Prized Aspirant's Greatsword
+								honor(1750, i(229517)),	-- Prized Aspirant's Halberd
+								honor(875, i(229508)),	-- Prized Aspirant's Hammer
+								honor(875, i(229518)),	-- Prized Aspirant's Mace
+								honor(525, i(229512)),	-- Prized Aspirant's Molotov
+								honor(1750, i(229509)),	-- Prized Aspirant's Polearm
+								honor(1750, i(229516)),	-- Prized Aspirant's Rifle
+								honor(875, i(229513)),	-- Prized Aspirant's Rocketglaive
+								honor(1225, i(229514)),	-- Prized Aspirant's Scepter
+								honor(525, i(229515)),	-- Prized Aspirant's Shield
+								honor(1750, i(229510)),	-- Prized Aspirant's Staff
+							}),
+						}),
+					}),
+				},
+			}),
 			n(PVP_GLADIATOR, {
 				timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART, ADDED_12_0_1_LAUNCH },
 				groups = {
@@ -847,233 +853,239 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_1_LAUNCH }, bonusID = 7532 }, {
-				n(CLASSES, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
-					cl(DEATHKNIGHT, {
-						i(229731),	-- Prized Gladiator's Cloak
-						i(229713),	-- Prized Gladiator's Chestguard
-						i(229718),	-- Prized Gladiator's Plate Gauntlets
-						i(229727),	-- Prized Gladiator's Plate Girdle
-						i(229721),	-- Prized Gladiator's Plate Helm
-						i(229723),	-- Prized Gladiator's Plate Legguards
-						i(229725),	-- Prized Gladiator's Plate Shoulders
-						i(229716),	-- Prized Gladiator's Plate Warboots
-						i(229729),	-- Prized Gladiator's Plate Wristguards
-					}),
-					cl(DEMONHUNTER, {
-						i(229615),	-- Prized Gladiator's Cloak
-						i(229611),	-- Prized Gladiator's Leather Belt
-						i(229601),	-- Prized Gladiator's Leather Boots
-						i(229607),	-- Prized Gladiator's Leather Breeches
-						i(229603),	-- Prized Gladiator's Leather Gloves
-						i(229605),	-- Prized Gladiator's Leather Helm
-						i(229609),	-- Prized Gladiator's Leather Spaulders
-						i(229599),	-- Prized Gladiator's Leather Vest
-						i(229613),	-- Prized Gladiator's Leather Wristwraps
-					}),
-					cl(DRUID, {
-						i(229596),	-- Prized Gladiator's Cloak
-						i(229591),	-- Prized Gladiator's Leather Belt
-						i(229581),	-- Prized Gladiator's Leather Boots
-						i(229587),	-- Prized Gladiator's Leather Breeches
-						i(229583),	-- Prized Gladiator's Leather Gloves
-						i(229585),	-- Prized Gladiator's Leather Helm
-						i(229589),	-- Prized Gladiator's Leather Spaulders
-						i(229579),	-- Prized Gladiator's Leather Vest
-						i(229594),	-- Prized Gladiator's Leather Wristwraps
-					}),
-					cl(EVOKER, {
-						i(229672),	-- Prized Gladiator's Cloak
-						i(229656),	-- Prized Gladiator's Armored Scales
-						i(229668),	-- Prized Gladiator's Chain Belt
-						i(229660),	-- Prized Gladiator's Chain Gauntlets
-						i(229662),	-- Prized Gladiator's Chain Helm
-						i(229664),	-- Prized Gladiator's Chain Leggings
-						i(229666),	-- Prized Gladiator's Chain Monnion
-						i(229658),	-- Prized Gladiator's Chain Sabatons
-						i(229670),	-- Prized Gladiator's Chain Wristguards
-					}),
-					cl(HUNTER, {
-						i(229691),	-- Prized Gladiator's Cloak
-						i(229687),	-- Prized Gladiator's Chain Belt
-						i(229679),	-- Prized Gladiator's Chain Gauntlets
-						i(229681),	-- Prized Gladiator's Chain Helm
-						i(229683),	-- Prized Gladiator's Chain Leggings
-						i(229685),	-- Prized Gladiator's Chain Monnion
-						i(229677),	-- Prized Gladiator's Chain Sabatons
-						i(229675),	-- Prized Gladiator's Chain Vest
-						i(229689),	-- Prized Gladiator's Chain Wristguards
-					}),
-					cl(MAGE, {
-						i(229538),	-- Prized Gladiator's Cloak
-						i(229534),	-- Prized Gladiator's Silk Cord
-						i(229526),	-- Prized Gladiator's Silk Gloves
-						i(229528),	-- Prized Gladiator's Silk Hat
-						i(229530),	-- Prized Gladiator's Silk Leggings
-						i(229532),	-- Prized Gladiator's Silk Mantle
-						i(229522),	-- Prized Gladiator's Silk Robe
-						i(229524),	-- Prized Gladiator's Silk Slippers
-						i(229536),	-- Prized Gladiator's Silk Wristwraps
-					}),
-					cl(MONK, {
-						i(229634),	-- Prized Gladiator's Cloak
-						i(229630),	-- Prized Gladiator's Leather Belt
-						i(229620),	-- Prized Gladiator's Leather Boots
-						i(229626),	-- Prized Gladiator's Leather Breeches
-						i(229622),	-- Prized Gladiator's Leather Gloves
-						i(229624),	-- Prized Gladiator's Leather Helm
-						i(229628),	-- Prized Gladiator's Leather Spaulders
-						i(229618),	-- Prized Gladiator's Leather Vest
-						i(229632),	-- Prized Gladiator's Leather Wristwraps
-					}),
-					cl(PALADIN, {
-						i(229751),	-- Prized Gladiator's Cloak
-						i(229734),	-- Prized Gladiator's Chestguard
-						i(229738),	-- Prized Gladiator's Plate Gauntlets
-						i(229746),	-- Prized Gladiator's Plate Girdle
-						i(229740),	-- Prized Gladiator's Plate Helm
-						i(229742),	-- Prized Gladiator's Plate Legguards
-						i(229744),	-- Prized Gladiator's Plate Shoulders
-						i(229736),	-- Prized Gladiator's Plate Warboots
-						i(229748),	-- Prized Gladiator's Plate Wristguards
-					}),
-					cl(PRIEST, {
-						i(229557),	-- Prized Gladiator's Cloak
-						i(229541),	-- Prized Gladiator's Silk Chestwrap
-						i(229553),	-- Prized Gladiator's Silk Cord
-						i(229545),	-- Prized Gladiator's Silk Gloves
-						i(229547),	-- Prized Gladiator's Silk Hood
-						i(229549),	-- Prized Gladiator's Silk Leggings
-						i(229551),	-- Prized Gladiator's Silk Mantle
-						i(229543),	-- Prized Gladiator's Silk Slippers
-						i(229555),	-- Prized Gladiator's Silk Wristwraps
-					}),
-					cl(ROGUE, {
-						i(229653),	-- Prized Gladiator's Cloak
-						i(229649),	-- Prized Gladiator's Leather Belt
-						i(229639),	-- Prized Gladiator's Leather Boots
-						i(229645),	-- Prized Gladiator's Leather Breeches
-						i(229641),	-- Prized Gladiator's Leather Gloves
-						i(229643),	-- Prized Gladiator's Leather Helm
-						i(229647),	-- Prized Gladiator's Leather Spaulders
-						i(229637),	-- Prized Gladiator's Leather Vest
-						i(229651),	-- Prized Gladiator's Leather Wristwraps
-					}),
-					cl(SHAMAN, {
-						i(229710),	-- Prized Gladiator's Cloak
-						i(229706),	-- Prized Gladiator's Chain Belt
-						i(229698),	-- Prized Gladiator's Chain Gauntlets
-						i(229700),	-- Prized Gladiator's Chain Helm
-						i(229702),	-- Prized Gladiator's Chain Leggings
-						i(229704),	-- Prized Gladiator's Chain Monnion
-						i(229696),	-- Prized Gladiator's Chain Sabatons
-						i(229694),	-- Prized Gladiator's Chain Vest
-						i(229708),	-- Prized Gladiator's Chain Wristguards
-					}),
-					cl(WARLOCK, {
-						i(229576),	-- Prized Gladiator's Cloak
-						i(229572),	-- Prized Gladiator's Silk Cord
-						i(229564),	-- Prized Gladiator's Silk Gloves
-						i(229566),	-- Prized Gladiator's Silk Hood
-						i(229568),	-- Prized Gladiator's Silk Leggings
-						i(229570),	-- Prized Gladiator's Silk Mantle
-						i(229560),	-- Prized Gladiator's Silk Raiment
-						i(229562),	-- Prized Gladiator's Silk Slippers
-						i(229574),	-- Prized Gladiator's Silk Wristwraps
-					}),
-					cl(WARRIOR, {
-						i(229771),	-- Prized Gladiator's Cloak
-						i(229754),	-- Prized Gladiator's Chestguard
-						i(229758),	-- Prized Gladiator's Plate Gauntlets
-						i(229767),	-- Prized Gladiator's Plate Girdle
-						i(229760),	-- Prized Gladiator's Plate Helm
-						i(229762),	-- Prized Gladiator's Plate Legguards
-						i(229765),	-- Prized Gladiator's Plate Shoulders
-						i(229756),	-- Prized Gladiator's Plate Warboots
-						i(229769),	-- Prized Gladiator's Plate Wristguards
-					}),
-				})),
-				n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
-					coord = { 59.8, 69.3, DORNOGAL },
-					groups = sharedData({
-						cost = { { "i", MOH, 12 } },
-						u = ELITE_PVP_REQUIREMENT,
-						timeline = { ADDED_12_0_1_LAUNCH },
-					}, {
-						iensemble(232869, {	-- Arsenal: Elite Prized Gladiator's Weapons
-							cost = { { "i", MOH, 80 } },
-						}),
-						iensemble(232712, {	-- Ensemble: Elite Prized Gladiator's Death Knight Armor
-							classes = { DEATHKNIGHT },
-						}),
-						iensemble(232713, {	-- Ensemble: Elite Prized Gladiator's Demon Hunter Armor
-							classes = { DEMONHUNTER },
-						}),
-						iensemble(232714, {	-- Ensemble: Elite Prized Gladiator's Druid Armor
-							classes = { DRUID },
-						}),
-						iensemble(232715, {	-- Ensemble: Elite Prized Gladiator's Evoker Armor
-							classes = { EVOKER },
-						}),
-						iensemble(232716, {	-- Ensemble: Elite Prized Gladiator's Hunter Armor
-							classes = { HUNTER },
-						}),
-						iensemble(232717, {	-- Ensemble: Elite Prized Gladiator's Mage Armor
-							classes = { MAGE },
-						}),
-						iensemble(232718, {	-- Ensemble: Elite Prized Gladiator's Monk Armor
-							classes = { MONK },
-						}),
-						iensemble(232719, {	-- Ensemble: Elite Prized Gladiator's Paladin Armor
-							classes = { PALADIN },
-						}),
-						iensemble(232720, {	-- Ensemble: Elite Prized Gladiator's Priest Armor
-							classes = { PRIEST },
-						}),
-						iensemble(232721, {	-- Ensemble: Elite Prized Gladiator's Rogue Armor
-							classes = { ROGUE },
-						}),
-						iensemble(232722, {	-- Ensemble: Elite Prized Gladiator's Shaman Armor
-							classes = { SHAMAN },
-						}),
-						iensemble(232723, {	-- Ensemble: Elite Prized Gladiator's Warlock Armor
-							classes = { WARLOCK },
-						}),
-						iensemble(232724, {	-- Ensemble: Elite Prized Gladiator's Warrior Armor
-							classes = { WARRIOR },
-						}),
-					}),
-				}),
-				n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
-					coord = { 59.8, 69.3, DORNOGAL },
-					groups = bubbleDownFiltered({
+			n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
+				timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0, ADDED_12_0_1_LAUNCH },
+				groups = {
+					n(CLASSES, {
 						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-					},FILTERFUNC_itemID,{
-						honor(100, i(231637, {	-- Prized Gladiator's Tabard
-							sourceAchievements = { 41019 },	-- Elite: The War Within Season 2
-						})),
-						moh(5, i(230784)),	-- Prized Gladiator's Army Knife
-						moh(10, i(230776)),	-- Prized Gladiator's Blaster
-						moh(5, i(230774)),	-- Prized Gladiator's Bludgeon
-						moh(10, i(230788)),	-- Prized Gladiator's Bow
-						moh(5, i(230785)),	-- Prized Gladiator's Conduit
-						moh(10, i(230782)),	-- Prized Gladiator's Dagger
-						moh(5, i(230787)),	-- Prized Gladiator's Detonator
-						moh(10, i(230778)),	-- Prized Gladiator's Drill
-						moh(5, i(230783)),	-- Prized Gladiator's Flail
-						moh(5, i(230786)),	-- Prized Gladiator's Gasket
-						moh(10, i(230789)),	-- Prized Gladiator's Greatsaw
-						moh(5, i(230775)),	-- Prized Gladiator's Pincer
-						moh(10, i(230790)),	-- Prized Gladiator's Pulverizer
-						moh(10, i(230781)),	-- Prized Gladiator's Pylon
-						moh(10, i(230779)),	-- Prized Gladiator's Staff
-						moh(5, i(244552, {	-- Prized Gladiator's Torchblade
-							timeline = { ADDED_11_1_7, REMOVED_11_2_0 }
-						})),
-						moh(10, i(230780)),	-- Prized Gladiator's Torchsword
-						moh(5, i(230777)),	-- Prized Gladiator's Warglaive
+						groups = {
+							cl(DEATHKNIGHT, {
+								i(229731),	-- Prized Gladiator's Cloak
+								i(229713),	-- Prized Gladiator's Chestguard
+								i(229718),	-- Prized Gladiator's Plate Gauntlets
+								i(229727),	-- Prized Gladiator's Plate Girdle
+								i(229721),	-- Prized Gladiator's Plate Helm
+								i(229723),	-- Prized Gladiator's Plate Legguards
+								i(229725),	-- Prized Gladiator's Plate Shoulders
+								i(229716),	-- Prized Gladiator's Plate Warboots
+								i(229729),	-- Prized Gladiator's Plate Wristguards
+							}),
+							cl(DEMONHUNTER, {
+								i(229615),	-- Prized Gladiator's Cloak
+								i(229611),	-- Prized Gladiator's Leather Belt
+								i(229601),	-- Prized Gladiator's Leather Boots
+								i(229607),	-- Prized Gladiator's Leather Breeches
+								i(229603),	-- Prized Gladiator's Leather Gloves
+								i(229605),	-- Prized Gladiator's Leather Helm
+								i(229609),	-- Prized Gladiator's Leather Spaulders
+								i(229599),	-- Prized Gladiator's Leather Vest
+								i(229613),	-- Prized Gladiator's Leather Wristwraps
+							}),
+							cl(DRUID, {
+								i(229596),	-- Prized Gladiator's Cloak
+								i(229591),	-- Prized Gladiator's Leather Belt
+								i(229581),	-- Prized Gladiator's Leather Boots
+								i(229587),	-- Prized Gladiator's Leather Breeches
+								i(229583),	-- Prized Gladiator's Leather Gloves
+								i(229585),	-- Prized Gladiator's Leather Helm
+								i(229589),	-- Prized Gladiator's Leather Spaulders
+								i(229579),	-- Prized Gladiator's Leather Vest
+								i(229594),	-- Prized Gladiator's Leather Wristwraps
+							}),
+							cl(EVOKER, {
+								i(229672),	-- Prized Gladiator's Cloak
+								i(229656),	-- Prized Gladiator's Armored Scales
+								i(229668),	-- Prized Gladiator's Chain Belt
+								i(229660),	-- Prized Gladiator's Chain Gauntlets
+								i(229662),	-- Prized Gladiator's Chain Helm
+								i(229664),	-- Prized Gladiator's Chain Leggings
+								i(229666),	-- Prized Gladiator's Chain Monnion
+								i(229658),	-- Prized Gladiator's Chain Sabatons
+								i(229670),	-- Prized Gladiator's Chain Wristguards
+							}),
+							cl(HUNTER, {
+								i(229691),	-- Prized Gladiator's Cloak
+								i(229687),	-- Prized Gladiator's Chain Belt
+								i(229679),	-- Prized Gladiator's Chain Gauntlets
+								i(229681),	-- Prized Gladiator's Chain Helm
+								i(229683),	-- Prized Gladiator's Chain Leggings
+								i(229685),	-- Prized Gladiator's Chain Monnion
+								i(229677),	-- Prized Gladiator's Chain Sabatons
+								i(229675),	-- Prized Gladiator's Chain Vest
+								i(229689),	-- Prized Gladiator's Chain Wristguards
+							}),
+							cl(MAGE, {
+								i(229538),	-- Prized Gladiator's Cloak
+								i(229534),	-- Prized Gladiator's Silk Cord
+								i(229526),	-- Prized Gladiator's Silk Gloves
+								i(229528),	-- Prized Gladiator's Silk Hat
+								i(229530),	-- Prized Gladiator's Silk Leggings
+								i(229532),	-- Prized Gladiator's Silk Mantle
+								i(229522),	-- Prized Gladiator's Silk Robe
+								i(229524),	-- Prized Gladiator's Silk Slippers
+								i(229536),	-- Prized Gladiator's Silk Wristwraps
+							}),
+							cl(MONK, {
+								i(229634),	-- Prized Gladiator's Cloak
+								i(229630),	-- Prized Gladiator's Leather Belt
+								i(229620),	-- Prized Gladiator's Leather Boots
+								i(229626),	-- Prized Gladiator's Leather Breeches
+								i(229622),	-- Prized Gladiator's Leather Gloves
+								i(229624),	-- Prized Gladiator's Leather Helm
+								i(229628),	-- Prized Gladiator's Leather Spaulders
+								i(229618),	-- Prized Gladiator's Leather Vest
+								i(229632),	-- Prized Gladiator's Leather Wristwraps
+							}),
+							cl(PALADIN, {
+								i(229751),	-- Prized Gladiator's Cloak
+								i(229734),	-- Prized Gladiator's Chestguard
+								i(229738),	-- Prized Gladiator's Plate Gauntlets
+								i(229746),	-- Prized Gladiator's Plate Girdle
+								i(229740),	-- Prized Gladiator's Plate Helm
+								i(229742),	-- Prized Gladiator's Plate Legguards
+								i(229744),	-- Prized Gladiator's Plate Shoulders
+								i(229736),	-- Prized Gladiator's Plate Warboots
+								i(229748),	-- Prized Gladiator's Plate Wristguards
+							}),
+							cl(PRIEST, {
+								i(229557),	-- Prized Gladiator's Cloak
+								i(229541),	-- Prized Gladiator's Silk Chestwrap
+								i(229553),	-- Prized Gladiator's Silk Cord
+								i(229545),	-- Prized Gladiator's Silk Gloves
+								i(229547),	-- Prized Gladiator's Silk Hood
+								i(229549),	-- Prized Gladiator's Silk Leggings
+								i(229551),	-- Prized Gladiator's Silk Mantle
+								i(229543),	-- Prized Gladiator's Silk Slippers
+								i(229555),	-- Prized Gladiator's Silk Wristwraps
+							}),
+							cl(ROGUE, {
+								i(229653),	-- Prized Gladiator's Cloak
+								i(229649),	-- Prized Gladiator's Leather Belt
+								i(229639),	-- Prized Gladiator's Leather Boots
+								i(229645),	-- Prized Gladiator's Leather Breeches
+								i(229641),	-- Prized Gladiator's Leather Gloves
+								i(229643),	-- Prized Gladiator's Leather Helm
+								i(229647),	-- Prized Gladiator's Leather Spaulders
+								i(229637),	-- Prized Gladiator's Leather Vest
+								i(229651),	-- Prized Gladiator's Leather Wristwraps
+							}),
+							cl(SHAMAN, {
+								i(229710),	-- Prized Gladiator's Cloak
+								i(229706),	-- Prized Gladiator's Chain Belt
+								i(229698),	-- Prized Gladiator's Chain Gauntlets
+								i(229700),	-- Prized Gladiator's Chain Helm
+								i(229702),	-- Prized Gladiator's Chain Leggings
+								i(229704),	-- Prized Gladiator's Chain Monnion
+								i(229696),	-- Prized Gladiator's Chain Sabatons
+								i(229694),	-- Prized Gladiator's Chain Vest
+								i(229708),	-- Prized Gladiator's Chain Wristguards
+							}),
+							cl(WARLOCK, {
+								i(229576),	-- Prized Gladiator's Cloak
+								i(229572),	-- Prized Gladiator's Silk Cord
+								i(229564),	-- Prized Gladiator's Silk Gloves
+								i(229566),	-- Prized Gladiator's Silk Hood
+								i(229568),	-- Prized Gladiator's Silk Leggings
+								i(229570),	-- Prized Gladiator's Silk Mantle
+								i(229560),	-- Prized Gladiator's Silk Raiment
+								i(229562),	-- Prized Gladiator's Silk Slippers
+								i(229574),	-- Prized Gladiator's Silk Wristwraps
+							}),
+							cl(WARRIOR, {
+								i(229771),	-- Prized Gladiator's Cloak
+								i(229754),	-- Prized Gladiator's Chestguard
+								i(229758),	-- Prized Gladiator's Plate Gauntlets
+								i(229767),	-- Prized Gladiator's Plate Girdle
+								i(229760),	-- Prized Gladiator's Plate Helm
+								i(229762),	-- Prized Gladiator's Plate Legguards
+								i(229765),	-- Prized Gladiator's Plate Shoulders
+								i(229756),	-- Prized Gladiator's Plate Warboots
+								i(229769),	-- Prized Gladiator's Plate Wristguards
+							}),
+						},
 					}),
-				}),
+					n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+						coord = { 59.8, 69.3, DORNOGAL },
+						groups = sharedData({
+							cost = { { "i", MOH, 12 } },
+							u = ELITE_PVP_REQUIREMENT,
+							timeline = { ADDED_12_0_1_LAUNCH },
+						}, {
+							iensemble(232869, {	-- Arsenal: Elite Prized Gladiator's Weapons
+								cost = { { "i", MOH, 80 } },
+							}),
+							iensemble(232712, {	-- Ensemble: Elite Prized Gladiator's Death Knight Armor
+								classes = { DEATHKNIGHT },
+							}),
+							iensemble(232713, {	-- Ensemble: Elite Prized Gladiator's Demon Hunter Armor
+								classes = { DEMONHUNTER },
+							}),
+							iensemble(232714, {	-- Ensemble: Elite Prized Gladiator's Druid Armor
+								classes = { DRUID },
+							}),
+							iensemble(232715, {	-- Ensemble: Elite Prized Gladiator's Evoker Armor
+								classes = { EVOKER },
+							}),
+							iensemble(232716, {	-- Ensemble: Elite Prized Gladiator's Hunter Armor
+								classes = { HUNTER },
+							}),
+							iensemble(232717, {	-- Ensemble: Elite Prized Gladiator's Mage Armor
+								classes = { MAGE },
+							}),
+							iensemble(232718, {	-- Ensemble: Elite Prized Gladiator's Monk Armor
+								classes = { MONK },
+							}),
+							iensemble(232719, {	-- Ensemble: Elite Prized Gladiator's Paladin Armor
+								classes = { PALADIN },
+							}),
+							iensemble(232720, {	-- Ensemble: Elite Prized Gladiator's Priest Armor
+								classes = { PRIEST },
+							}),
+							iensemble(232721, {	-- Ensemble: Elite Prized Gladiator's Rogue Armor
+								classes = { ROGUE },
+							}),
+							iensemble(232722, {	-- Ensemble: Elite Prized Gladiator's Shaman Armor
+								classes = { SHAMAN },
+							}),
+							iensemble(232723, {	-- Ensemble: Elite Prized Gladiator's Warlock Armor
+								classes = { WARLOCK },
+							}),
+							iensemble(232724, {	-- Ensemble: Elite Prized Gladiator's Warrior Armor
+								classes = { WARRIOR },
+							}),
+						}),
+					}),
+					n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+						coord = { 59.8, 69.3, DORNOGAL },
+						groups = bubbleDownFiltered({
+							timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						},FILTERFUNC_itemID,{
+							honor(100, i(231637, {	-- Prized Gladiator's Tabard
+								sourceAchievements = { 41019 },	-- Elite: The War Within Season 2
+							})),
+							moh(5, i(230784)),	-- Prized Gladiator's Army Knife
+							moh(10, i(230776)),	-- Prized Gladiator's Blaster
+							moh(5, i(230774)),	-- Prized Gladiator's Bludgeon
+							moh(10, i(230788)),	-- Prized Gladiator's Bow
+							moh(5, i(230785)),	-- Prized Gladiator's Conduit
+							moh(10, i(230782)),	-- Prized Gladiator's Dagger
+							moh(5, i(230787)),	-- Prized Gladiator's Detonator
+							moh(10, i(230778)),	-- Prized Gladiator's Drill
+							moh(5, i(230783)),	-- Prized Gladiator's Flail
+							moh(5, i(230786)),	-- Prized Gladiator's Gasket
+							moh(10, i(230789)),	-- Prized Gladiator's Greatsaw
+							moh(5, i(230775)),	-- Prized Gladiator's Pincer
+							moh(10, i(230790)),	-- Prized Gladiator's Pulverizer
+							moh(10, i(230781)),	-- Prized Gladiator's Pylon
+							moh(10, i(230779)),	-- Prized Gladiator's Staff
+							moh(5, i(244552, {	-- Prized Gladiator's Torchblade
+								timeline = { ADDED_11_1_7, REMOVED_11_2_0 }
+							})),
+							moh(10, i(230780)),	-- Prized Gladiator's Torchsword
+							moh(5, i(230777)),	-- Prized Gladiator's Warglaive
+						}),
+					}),
+				},
 			})),
 			n(REWARDS, {
 				i(229401, {	-- Artisan's Consortium Pamphlet (QS!/QI!)

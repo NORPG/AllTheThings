@@ -79,7 +79,8 @@ local PROTOCOL_BOSSES = {
 	44566,	-- Ozumat
 }
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
-	n(PROTOCOL_INFERNO, bubbleDownSelf({ timeline = { ADDED_4_2_0 } }, {
+	n(PROTOCOL_INFERNO, {
+		timeline = { ADDED_4_2_0 },
 		lvl = 85,
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -384,6 +385,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 		},
-	})),
+	}),
 })));
 -- #endif

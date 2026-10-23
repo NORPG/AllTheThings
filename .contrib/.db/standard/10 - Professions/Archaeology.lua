@@ -669,32 +669,35 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				}),
 			}),
 			n(QUESTS, {
-				n(ARCHAEOLOGY_MANTID, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
-					q(32686, {	-- Pristine Banner of the Mantid Empire
-						provider = { "i", 95383 },	-- Pristine Banner of the Mantid Empire
-					}),
-					q(32687, {	-- Pristine Ancient Sap Feeder
-						provider = { "i", 95384 },	-- Pristine Ancient Sap Feeder
-					}),
-					q(32688, {	-- Pristine Praying Mantid
-						provider = { "i", 95385 },	-- Pristine Praying Mantid
-					}),
-					q(32689, {	-- Pristine Sound Beacon
-						provider = { "i", 95386 },	-- Pristine Sound Beacon
-					}),
-					q(32690, {	-- Pristine Remains of a Paragon
-						provider = { "i", 95387 },	-- Pristine Remains of a Paragon
-					}),
-					q(32691, {	-- Pristine Mantid Lamp
-						provider = { "i", 95388 },	-- Pristine Mantid Lamp
-					}),
-					q(32692, {	-- Pristine Pollen Collector
-						provider = { "i", 95389 },	-- Pristine Pollen Collector
-					}),
-					q(32693, {	-- Pristine Kypari Sap Container
-						provider = { "i", 95390 },	-- Pristine Kypari Sap Container
-					}),
-				})),
+				n(ARCHAEOLOGY_MANTID, {
+					timeline = { ADDED_5_2_0 },
+					groups = {
+						q(32686, {	-- Pristine Banner of the Mantid Empire
+							provider = { "i", 95383 },	-- Pristine Banner of the Mantid Empire
+						}),
+						q(32687, {	-- Pristine Ancient Sap Feeder
+							provider = { "i", 95384 },	-- Pristine Ancient Sap Feeder
+						}),
+						q(32688, {	-- Pristine Praying Mantid
+							provider = { "i", 95385 },	-- Pristine Praying Mantid
+						}),
+						q(32689, {	-- Pristine Sound Beacon
+							provider = { "i", 95386 },	-- Pristine Sound Beacon
+						}),
+						q(32690, {	-- Pristine Remains of a Paragon
+							provider = { "i", 95387 },	-- Pristine Remains of a Paragon
+						}),
+						q(32691, {	-- Pristine Mantid Lamp
+							provider = { "i", 95388 },	-- Pristine Mantid Lamp
+						}),
+						q(32692, {	-- Pristine Pollen Collector
+							provider = { "i", 95389 },	-- Pristine Pollen Collector
+						}),
+						q(32693, {	-- Pristine Kypari Sap Container
+							provider = { "i", 95390 },	-- Pristine Kypari Sap Container
+						}),
+					},
+				}),
 				n(ARCHAEOLOGY_MOGU, {
 					q(31793, {	-- Pristine Branding Iron
 						provider = { "i", 89176 },	-- Pristine Branding Iron
@@ -1807,7 +1810,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					}),
 				}),
 			}),
-			n(VENDORS, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+			n(VENDORS, {
 				crs = {
 					136106,	-- Jane Hudson <Archaeology Trainer>
 					122701,	-- Examiner Alerinda <Archaeology Trainer>
@@ -1820,16 +1823,25 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					cost = {{"i", RESTORED_ARTIFACT, 1}},
 				}, {
 					i(164625, {	-- Crate of Demon Archaeology Fragments
-						currency(ARCH_CURRENCY_DEMONIC),
+						timeline = { ADDED_8_1_0 },
+						groups = {
+							currency(ARCH_CURRENCY_DEMONIC),
+						},
 					}),
 					i(164626, {	-- Crate of Highborne Archaeology Fragments
-						currency(ARCH_CURRENCY_HIGHBORNE),
+						timeline = { ADDED_8_1_0 },
+						groups = {
+							currency(ARCH_CURRENCY_HIGHBORNE),
+						},
 					}),
 					i(164627, {	-- Crate of Highmountain Tauren Archaeology Fragments
-						currency(ARCH_CURRENCY_HIGHMOUNTAIN),
+						timeline = { ADDED_8_1_0 },
+						groups = {
+							currency(ARCH_CURRENCY_HIGHMOUNTAIN),
+						},
 					}),
 				}),
-			})),
+			}),
 		}),
 		expansion(EXPANSION.BFA, {
 			n(ACHIEVEMENTS, {

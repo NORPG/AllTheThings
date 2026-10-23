@@ -26,7 +26,7 @@ local mapped = function(t)
 	return t
 end
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {
 			mapped(d(DIFFICULTY.LEGACY_RAID.FINDER, bubbleDown({ modID = 0 }, {
@@ -909,4 +909,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ t
 			}),
 		}),
 	}),
-}))));
+})));

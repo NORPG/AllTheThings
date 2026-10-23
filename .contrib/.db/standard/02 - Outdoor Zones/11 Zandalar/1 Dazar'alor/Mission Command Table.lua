@@ -46,8 +46,9 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				mission(1878, {	-- The Shadow War
 					i(160983),	-- Recruitment Orders
 				}),
-				mission(2122, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {	-- A Shady Character
+				mission(2122, {	-- A Shady Character
 					provider = { "i", 166242 },	-- A Shady Message [H]
+					timeline = { ADDED_8_1_0 },
 					groups = {
 						i(166243),	-- Investigation Results
 						q(54447, {	-- A Shady Character
@@ -58,7 +59,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 							},
 						}),
 					},
-				})),
+				}),
 				mi(1956),	-- Barren Supplies
 				mi(1955),	-- Investigate Wailing Caverns
 				mi(1944),	-- Steamwheedle Alliance

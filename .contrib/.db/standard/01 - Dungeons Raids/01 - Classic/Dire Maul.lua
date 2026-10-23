@@ -1572,10 +1572,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							},
 						}),
 					})),
-					n(QUESTS, bubbleDown({ timeline = { ADDED_10_1_5 } }, {
+					n(QUESTS, {
 						q(77194, {	-- Free Knot!
 							description = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
 							qg = 14338,	-- Knot Thimblejack
+							timeline = { ADDED_10_1_5 },
 							cost = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 							repeatable = true,
 							groups = {
@@ -1590,7 +1591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								}),
 							},
 						}),
-					})),
+					}),
 					n(COMMON_BOSS_DROPS, {
 						description = "The following items can drop from any of the guards.",
 						crs = {

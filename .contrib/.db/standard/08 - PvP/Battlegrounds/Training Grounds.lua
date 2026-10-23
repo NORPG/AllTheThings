@@ -7,7 +7,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		timeline = { ADDED_12_0_0 },
 		groups = {
 			-- #IF AFTER 12.0.0
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_12_0_0 } }, {
+			n(ACHIEVEMENTS, {
 				ach(61958, {	-- Focused Target
 					races = ALLIANCE_ONLY,
 				}),
@@ -28,7 +28,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(63697, { timeline = { ADDED_12_1_0 } }),	-- Arena Exercise 100 wins
 				ach(63698, { timeline = { ADDED_12_1_0 } }),	-- Arena Exercise 250 wins
 				ach(63699, { timeline = { ADDED_12_1_0 } }),	-- World Wide Trainer
-			})),
+			}),
 			m(ARATHI_BASIN, {
 				lore = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 				icon = 236385,

@@ -446,7 +446,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
 			},
-		}, bubbleDown({
+		}, sharedData({
 			timeline = { ADDED_10_0_7 },
 		}, {
 			------ Repeatables ------

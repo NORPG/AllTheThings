@@ -79,12 +79,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 			n(199605, {	-- Evantkis <Token Exchange>
 				coord = { 58.6, 57.6, VALDRAKKEN },
 				groups = {
-					i(199197, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Bottled Essence
+					i(199197, {	-- Bottled Essence
+						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 } },
 						groups = {
 							i(190453),	-- Spark of Ingenuity
 						},
-					})),
+					}),
 					i(206028, {	-- Chest of Gold
 						cost = {
 							-- #if AFTER 10.2.6.54358
@@ -117,12 +118,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 } },
 						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
-					i(202122, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
+					i(202122, {	-- Primal Chaos Cluster
+						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 } },
 						groups = {
 							i(190454),	-- Depleted Primal Chaos
 						},
-					})),
+					}),
 					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S4, 1 } },
 						timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH }
@@ -661,7 +663,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 			}),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				coord = { 19.0, 50.2, VALDRAKKEN },
-				groups = bubbleDown({ timeline = { ADDED_10_2_0, REMOVED_11_0_2 } }, {	-- Think it was technically 1 week after 11.0.2 released but who cares
+				groups = sharedData({ timeline = { ADDED_10_2_0, REMOVED_11_0_2 } }, {	-- Think it was technically 1 week after 11.0.2 released but who cares
 					iensemble(211300, {	-- Arsenal: Whispering Temple Blades
 						cost = 2000000000,	-- 200,000g
 					}),

@@ -443,7 +443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			timeline = { ADDED_3_0_2 },
 		}),
 	}),
-	n(RARES, bubbleDownSelf({ timeline = { ADDED_10_2_6 }, }, {
+	n(RARES, sharedData({ timeline = { ADDED_10_2_6 } }, {
 		n(213665, {	-- Daetan Swiftplume
 			providers = {
 				{ "n", 216836 },	-- Golden Egg

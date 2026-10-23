@@ -1793,16 +1793,19 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(5, i(35109)),	-- Brutal Gladiator's War Staff
 					moh(5, i(35110)),	-- Brutal Gladiator's Waraxe
 				}),
-				bubbleDown({ timeline = { ADDED_3_3_2 } }, cl(DEATHKNIGHT, {
-					moh(12, iensemble(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
-						timeline = { ADDED_7_2_0 },
-					})),
-					moh(3, i(40440)),	-- Brutal Gladiator's Dreadplate Chestpiece
-					moh(2, i(40441)),	-- Brutal Gladiator's Dreadplate Gauntlets
-					moh(3, i(40442)),	-- Brutal Gladiator's Dreadplate Helm
-					moh(3, i(40443)),	-- Brutal Gladiator's Dreadplate Legguards
-					moh(2, i(40444)),	-- Brutal Gladiator's Dreadplate Shoulders
-				})),
+				cl(DEATHKNIGHT, {
+					timeline = { ADDED_3_3_2 },
+					groups = {
+						moh(12, iensemble(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
+							timeline = { ADDED_7_2_0 },
+						})),
+						moh(3, i(40440)),	-- Brutal Gladiator's Dreadplate Chestpiece
+						moh(2, i(40441)),	-- Brutal Gladiator's Dreadplate Gauntlets
+						moh(3, i(40442)),	-- Brutal Gladiator's Dreadplate Helm
+						moh(3, i(40443)),	-- Brutal Gladiator's Dreadplate Legguards
+						moh(2, i(40444)),	-- Brutal Gladiator's Dreadplate Shoulders
+					},
+				}),
 				cl(DRUID, {
 					moh(12, iensemble(146599, {	-- Ensemble: Brutal Gladiator's Dragonhide Armor
 						timeline = { ADDED_7_2_0 },
@@ -1941,12 +1944,15 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 					moh(2, i(35067)),	-- Brutal Gladiator's Plate Gauntlets
 					moh(3, i(35069)),	-- Brutal Gladiator's Plate Legguards
 				}),
-				bubbleDown({ timeline = { ADDED_3_0_2 } }, n(BACK, {
-					moh(2, i(41591)),	-- Sergeant's Reinforced Cape
-					moh(2, i(41592)),	-- The Gladiator's Resolution
-					moh(2, i(44429)),	-- Volanthius Shroud
-					moh(2, i(44431)),	-- Cloak of Certain Reprieve
-				})),
+				n(BACK, {
+					timeline = { ADDED_3_0_2 },
+					groups = {
+						moh(2, i(41591)),	-- Sergeant's Reinforced Cape
+						moh(2, i(41592)),	-- The Gladiator's Resolution
+						moh(2, i(44429)),	-- Volanthius Shroud
+						moh(2, i(44431)),	-- Cloak of Certain Reprieve
+					},
+				}),
 				n(WRIST, {
 					moh(1, i(35166)),	-- Guardian's Chain Bracers
 					moh(1, i(35167)),	-- Guardian's Dragonhide Bracers

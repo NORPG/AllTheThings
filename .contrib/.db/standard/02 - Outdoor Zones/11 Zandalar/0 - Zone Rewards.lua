@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, {
 	m(ZANDALAR, {
 		n(ZONE_REWARDS, {
 			i(163856, {	-- Ancient Pilgrimage Scrollcasing
@@ -59,4 +59,4 @@ root(ROOTS.Zones, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(158155),	-- Dinobone Charm
 		}),
 	}),
-}));
+});

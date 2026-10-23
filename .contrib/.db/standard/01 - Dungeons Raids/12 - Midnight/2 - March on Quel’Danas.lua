@@ -243,7 +243,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		},
 	}),
 	inst(1308, bubbleDown({	-- March on Quel'Danas
-		timeline = { ADDED_12_0_1_SEASONSTART },
 		isWeekly = true,
 	},{
 		timeline = { ADDED_12_0_1_SEASONSTART },

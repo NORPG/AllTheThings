@@ -455,11 +455,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18773, {	-- Jewelhammer's Focus
 				provider = { "i", 153716 },	-- Jewelhammer's Focus
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, {
 			q(54479, {	-- Jeweled Designs [A]
 				provider = { "n", 130368 },	-- Samuel D. Colton III

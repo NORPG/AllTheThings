@@ -3,14 +3,15 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.MID, {
-	n(COMMON_BOSS_DROPS, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	n(COMMON_BOSS_DROPS, {
 		i(258839, {	-- Concealed Catalogue
 			description = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
 			--sym = {{"select","itemID",
 
 			--}},
+			timeline = { ADDED_12_0_1_LAUNCH },
 		}),
-	})),
+	}),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_UMBRAL, {
 			timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
@@ -335,9 +336,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				groups = { i(275436), }	-- Timelost Saddle
 			}),
 		}),
-		n(REWARDS, bubbleDownSelf({
-			timeline = { ADDED_12_0_5, REMOVED_12_1_0 }
-		}, {
+		n(REWARDS, sharedData({ timeline = { ADDED_12_0_5, REMOVED_12_1_0 } }, {
 			i(268650, {	-- Ascendant Voidshard
 				i(268552),	-- Ascendant Voidcore
 			}),
@@ -350,9 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			i(268470),	-- Nebulous Voidcache: Skyreach
 			i(268471),	-- Nebulous Voidcache: Windrunner Spire
 		})),
-		n(REWARDS, bubbleDownSelf({
-			timeline = { ADDED_12_1_0, REMOVED_12_2_0 }
-		}, {
+		n(REWARDS, sharedData({ timeline = { ADDED_12_1_0, REMOVED_12_2_0 } }, {
 			i(279618),	-- Nebulous Voidcache: Altar of Fangs
 			i(279620),	-- Nebulous Voidcache: Den of Nalorakk
 			i(279621),	-- Nebulous Voidcache: Kings' Rest

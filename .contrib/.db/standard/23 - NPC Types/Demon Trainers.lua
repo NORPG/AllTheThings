@@ -3,7 +3,7 @@
 -- You should probably ignore this file. :D
 root(ROOTS.Character, {
 	cl(WARLOCK, {
-		n(DEMON_TRAINER, bubbleDown({ timeline = { REMOVED_3_0_2 } }, {
+		n(DEMON_TRAINER, {
 			aqd = {
 				crs = {
 					6374,	-- Cylina Darkheart <Demon Trainer> [Elwynn Forest]
@@ -42,6 +42,7 @@ root(ROOTS.Character, {
 					{ 85.8, 15.8, MAP.UNDERCITY },
 				},
 			},
+			timeline = { REMOVED_3_0_2 },
 			classes = { WARLOCK },
 			groups = {
 				applyclassicphase(TBC_PHASE_ONE, {
@@ -454,7 +455,7 @@ root(ROOTS.Character, {
 					rank = 7,
 				}),
 			},
-		})),
+		}),
 	}),
 });
 -- #endif

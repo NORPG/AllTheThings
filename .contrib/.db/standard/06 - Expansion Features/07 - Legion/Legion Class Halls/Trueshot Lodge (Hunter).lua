@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 			maps = { TRUESHOT_LODGE },
 			groups = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+				n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
 					ach(42290, {	-- Hidden Potential of the Huntmaster
 						i(250125),	-- Replica Altar of the Eternal Hunt (DECOR!)
 					}),
@@ -912,7 +912,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						-- TODO: tw = "",
 					},
 				}), {
-					n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
+					n(QUESTS, sharedData({ timeline = { ADDED_8_1_5 } }, {
 						q(54913, {	-- Spark of Genius
 							provider = { "n", 152002 },	-- Image of Mimiron
 							coords = {
@@ -970,10 +970,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							coord = { 33.4, 58.0, THE_STORM_PEAKS },
 						}),
 					})),
-					n(VENDORS, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
+					n(VENDORS, {
 						n(151794, {	-- Clockwerk <Lightning-Resistant Pet Toys>
 							sourceQuest = 55195,	-- Reverberation
 							coord = { 33.8, 58.0, THE_STORM_PEAKS },
+							timeline = { ADDED_8_1_5 },
 							groups = {
 								i(167800),	-- Charged Sparkstone
 								i(168098),	-- Hati Wipe
@@ -983,7 +984,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								i(167801),	-- Voltweave Fez
 							},
 						}),
-					})),
+					}),
 				}),
 				n(SPECIAL, {
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
@@ -1036,13 +1037,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(139713, {	-- Belt of the Unseen Path
 								cost = 5000000,	-- 500g
 							}),
-							iensemble(191658, bubbleDownSelf({ timeline = { ADDED_9_2_5 } }, {	-- Ensemble: Dark Ranger's Attire
+							iensemble(191658, {	-- Ensemble: Dark Ranger's Attire
 								sourceQuests = {
 									65788,	-- A Walk with Ghosts
 									65669,	-- Report to Greymane
 								},
+								timeline = { ADDED_9_2_5 },
 								cost = 10000000,	-- 1000g
-							})),
+							}),
 							i(139709, {	-- Grips of the Unseen Path
 								cost = 5000000,	-- 500g
 							}),

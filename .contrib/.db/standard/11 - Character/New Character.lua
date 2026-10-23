@@ -514,41 +514,47 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		}),
 	}),
-	cl(DEATHKNIGHT, bubbleDownSelf({ timeline = { ADDED_3_0_2 }, }, {
-		i(34649),	-- Archerus Knight's Gauntlets
-		i(34651),	-- Archerus Knight's Girdle
-		i(34648),	-- Archerus Knight's Greaves
-		i(34652),	-- Archerus Knight's Hood
-		i(34656),	-- Archerus Knight's Legplates
-		i(34655),	-- Archerus Knight's Pauldrons
-		i(34659),	-- Archerus Knight's Shroud
-		i(34650),	-- Archerus Knight's Tunic
-		i(34653),	-- Archerus Knight's Wristguard
-		i(34657),	-- Choker of Damnation
-		i(38147),	-- Corrupted Band
-		i(38145),	-- Deathweave Bag
-		i(34658),	-- Plague Band
-	})),
-	cl(DEMONHUNTER, bubbleDownSelf({ timeline = { ADDED_7_0_3 }, }, {
-		i(123960),	-- Charm of Demonic
-		i(123958),	-- Demon Hide Satchel
-		i(123959),	-- Demon Trophy
-		i(112460),	-- Illidari Band
-		i(112453),	-- Illidari Belt
-		i(112450),	-- Illidari Blindfold
-		i(112457),	-- Illidari Boots
-		i(112452),	-- Illidari Bracers
-		i(112461),	-- Illidari Chain
-		i(112462),	-- Illidari Drape
-		i(112455),	-- Illidari Gloves
-		i(112451),	-- Illidari Leggings
-		i(112459),	-- Illidari Ring
-		i(112454),	-- Illidari Robe
-		i(112456),	-- Illidari Shoulders
-		i(112458),	-- Illidari Warglaive
-		i(129181),	-- Illidari Warglaive
-		title(344)	-- Illidari <Name>
-	})),
+	cl(DEATHKNIGHT, {
+		timeline = { ADDED_3_0_2 },
+		groups = {
+			i(34649),	-- Archerus Knight's Gauntlets
+			i(34651),	-- Archerus Knight's Girdle
+			i(34648),	-- Archerus Knight's Greaves
+			i(34652),	-- Archerus Knight's Hood
+			i(34656),	-- Archerus Knight's Legplates
+			i(34655),	-- Archerus Knight's Pauldrons
+			i(34659),	-- Archerus Knight's Shroud
+			i(34650),	-- Archerus Knight's Tunic
+			i(34653),	-- Archerus Knight's Wristguard
+			i(34657),	-- Choker of Damnation
+			i(38147),	-- Corrupted Band
+			i(38145),	-- Deathweave Bag
+			i(34658),	-- Plague Band
+		},
+	}),
+	cl(DEMONHUNTER, {
+		timeline = { ADDED_7_0_3 },
+		groups = {
+			i(123960),	-- Charm of Demonic
+			i(123958),	-- Demon Hide Satchel
+			i(123959),	-- Demon Trophy
+			i(112460),	-- Illidari Band
+			i(112453),	-- Illidari Belt
+			i(112450),	-- Illidari Blindfold
+			i(112457),	-- Illidari Boots
+			i(112452),	-- Illidari Bracers
+			i(112461),	-- Illidari Chain
+			i(112462),	-- Illidari Drape
+			i(112455),	-- Illidari Gloves
+			i(112451),	-- Illidari Leggings
+			i(112459),	-- Illidari Ring
+			i(112454),	-- Illidari Robe
+			i(112456),	-- Illidari Shoulders
+			i(112458),	-- Illidari Warglaive
+			i(129181),	-- Illidari Warglaive
+			title(344)	-- Illidari <Name>
+		},
+	}),
 	cl(DRUID, {
 		n(ARMOR, {
 			i(187778, { timeline = { ADDED_9_1_5 } }),	-- Druid's Footwear
@@ -563,31 +569,37 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35, { timeline = { ADDED_1_1_0 } }),	-- Bent Staff
 			i(3661, { timeline = { ADDED_1_1_0 } }),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157619),	-- Spire of Astral Force
-			i(157672),	-- Wildshifter Belt
-			i(157673),	-- Wildshifter Bracers
-			i(157668),	-- Wildshifter Grips
-			i(157670),	-- Wildshifter Leggings
-			i(157667),	-- Wildshifter Treads
-			i(157666),	-- Wildshifter Tunic
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157619),	-- Spire of Astral Force
+				i(157672),	-- Wildshifter Belt
+				i(157673),	-- Wildshifter Bracers
+				i(157668),	-- Wildshifter Grips
+				i(157670),	-- Wildshifter Leggings
+				i(157667),	-- Wildshifter Treads
+				i(157666),	-- Wildshifter Tunic
+			},
+		}),
 	}),
-	cl(EVOKER, bubbleDownSelf({ timeline = { ADDED_10_0_2 }, }, {
-		i(188817),	-- Claw-Carved Figurine
-		i(188814),	-- Emerald Winglord's Amulet
-		i(188824),	-- Emerald Winglord's Boots
-		i(188823),	-- Emerald Winglord's Bracers
-		i(188815),	-- Emerald Winglord's Cloak
-		i(188820),	-- Emerald Winglord's Coif
-		i(188819),	-- Emerald Winglord's Greaves
-		i(188821),	-- Emerald Winglord's Grips
-		i(188822),	-- Emerald Winglord's Hauberk
-		i(188816),	-- Emerald Winglord's Insignia
-		i(188813),	-- Emerald Winglord's Loop
-		i(188812),	-- Emerald Winglord's Ring
-		i(188213),	-- Large Green Bag
-	})),
+	cl(EVOKER, {
+		timeline = { ADDED_10_0_2 },
+		groups = {
+			i(188817),	-- Claw-Carved Figurine
+			i(188814),	-- Emerald Winglord's Amulet
+			i(188824),	-- Emerald Winglord's Boots
+			i(188823),	-- Emerald Winglord's Bracers
+			i(188815),	-- Emerald Winglord's Cloak
+			i(188820),	-- Emerald Winglord's Coif
+			i(188819),	-- Emerald Winglord's Greaves
+			i(188821),	-- Emerald Winglord's Grips
+			i(188822),	-- Emerald Winglord's Hauberk
+			i(188816),	-- Emerald Winglord's Insignia
+			i(188813),	-- Emerald Winglord's Loop
+			i(188812),	-- Emerald Winglord's Ring
+			i(188213),	-- Large Green Bag
+		},
+	}),
 	cl(HUNTER, {
 		n(ARMOR, {
 			i(187693, { timeline = { ADDED_9_1_5 } }),	-- Hunter's Belt
@@ -626,43 +638,49 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				timeline = { ADDED_4_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157649, {	-- Goldstring Recurve
-				description = "New Highmountain Tauren Hunters start with this weapon.",
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157649, {	-- Goldstring Recurve
+					description = "New Highmountain Tauren Hunters start with this weapon.",
+				}),
+				i(157680),	-- Heartbonded Belt
+				i(157681),	-- Heartbonded Bracers
+				i(157676),	-- Heartbonded Gauntlets
+				i(157675),	-- Heartbonded Greaves
+				i(157678),	-- Heartbonded Legguards
+				i(157674),	-- Heartbonded Vest
+				i(157622, {	-- Silverscope Longrifle
+					description = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
+				}),
+				i(232631, {	-- Wrapped Spear
+					i(157650, {	-- Tracker's Spear
+						description = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+					}),
+				}),
+			},
+		}),
+	}),
+	cl(MONK, {
+		timeline = { ADDED_7_3_5 },
+		groups = {
+			n(ARMOR, {
+				i(157696),	-- Ascetic's Cord
+				i(157697),	-- Ascetic's Cuffs
+				i(157691),	-- Ascetic's Footpads
+				i(157692),	-- Ascetic's Handguards
+				i(157694),	-- Ascetic's Legguards
+				i(157690),	-- Ascetic's Vest
 			}),
-			i(157680),	-- Heartbonded Belt
-			i(157681),	-- Heartbonded Bracers
-			i(157676),	-- Heartbonded Gauntlets
-			i(157675),	-- Heartbonded Greaves
-			i(157678),	-- Heartbonded Legguards
-			i(157674),	-- Heartbonded Vest
-			i(157622, {	-- Silverscope Longrifle
-				description = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
-			}),
-			i(232631, {	-- Wrapped Spear
-				i(157650, {	-- Tracker's Spear
-					description = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",
+			n(WEAPONS, {
+				i(3661, { timeline = { ADDED_10_0_7 } }),	-- Handcrafted Staff
+				i(157625),	-- Mash Tun Mixer
+				i(157627, {	-- Sword of Searing Winds
+					timeline = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
 				}),
 			}),
-		})),
+		},
 	}),
-	cl(MONK, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-		n(ARMOR, {
-			i(157696),	-- Ascetic's Cord
-			i(157697),	-- Ascetic's Cuffs
-			i(157691),	-- Ascetic's Footpads
-			i(157692),	-- Ascetic's Handguards
-			i(157694),	-- Ascetic's Legguards
-			i(157690),	-- Ascetic's Vest
-		}),
-		n(WEAPONS, {
-			i(3661, { timeline = { ADDED_10_0_7 } }),	-- Handcrafted Staff
-			i(157625),	-- Mash Tun Mixer
-			i(157627, {	-- Sword of Searing Winds
-				timeline = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
-			}),
-		}),
-	})),
 	cl(MAGE, {
 		n(ARMOR, {
 			i(55, { timeline = { REMOVED_9_1_5 } }),	-- Apprentice's Boots
@@ -682,15 +700,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35, { timeline = { ADDED_1_1_0 } }),	-- Bent Staff
 			i(3661, { timeline = { ADDED_1_1_0 } }),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157688),	-- Spellsculptor's Cord
-			i(157683),	-- Spellsculptor's Handwraps
-			i(157685),	-- Spellsculptor's Leggings
-			i(157686),	-- Spellsculptor's Robe
-			i(157682),	-- Spellsculptor's Sandals
-			i(157689),	-- Spellsculptor's Wristwraps
-			i(157651),	-- Staff of Elemental Shaping
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157688),	-- Spellsculptor's Cord
+				i(157683),	-- Spellsculptor's Handwraps
+				i(157685),	-- Spellsculptor's Leggings
+				i(157686),	-- Spellsculptor's Robe
+				i(157682),	-- Spellsculptor's Sandals
+				i(157689),	-- Spellsculptor's Wristwraps
+				i(157651),	-- Staff of Elemental Shaping
+			},
+		}),
 	}),
 	cl(PALADIN, {
 		filter(MOUNTS, {
@@ -727,17 +748,20 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36, { timeline = { ADDED_1_1_0 } }),	-- Worn Mace
 			i(2362, { timeline = { ADDED_1_1_0 } }),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157698),	-- Lightsoul Battleplate
-			i(157700),	-- Lightsoul Gauntlets
-			i(157704),	-- Lightsoul Girdle
-			i(157702),	-- Lightsoul Legplates
-			i(157699),	-- Lightsoul Sabatons
-			i(157705),	-- Lightsoul Vambraces
-			i(157631, {	-- Maul of Smiting
-				description = "New Lightforged Draenei Paladins start with this weapon."
-			}),
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157698),	-- Lightsoul Battleplate
+				i(157700),	-- Lightsoul Gauntlets
+				i(157704),	-- Lightsoul Girdle
+				i(157702),	-- Lightsoul Legplates
+				i(157699),	-- Lightsoul Sabatons
+				i(157705),	-- Lightsoul Vambraces
+				i(157631, {	-- Maul of Smiting
+					description = "New Lightforged Draenei Paladins start with this weapon."
+				}),
+			},
+		}),
 	}),
 	cl(PRIEST, {
 		n(ARMOR, {
@@ -759,17 +783,20 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(3661, { timeline = { ADDED_1_1_0 } }),	-- Handcrafted Staff
 			i(20981, { timeline = { ADDED_2_0_3, REMOVED_3_0_2 } }),	-- Neophyte's Mace
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157713),	-- Curate's Bindings
-			i(157706),	-- Curate's Boots
-			i(157707),	-- Curate's Gloves
-			i(157709),	-- Curate's Pants
-			i(157710),	-- Curate's Robe
-			i(157712),	-- Curate's Sash
-			i(157632, {	-- Staff of Interwoven Power
-				description = "New Nightborne or Void Elf Priests start with this weapon."
-			}),
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157713),	-- Curate's Bindings
+				i(157706),	-- Curate's Boots
+				i(157707),	-- Curate's Gloves
+				i(157709),	-- Curate's Pants
+				i(157710),	-- Curate's Robe
+				i(157712),	-- Curate's Sash
+				i(157632, {	-- Staff of Interwoven Power
+					description = "New Nightborne or Void Elf Priests start with this weapon."
+				}),
+			},
+		}),
 	}),
 	cl(ROGUE, {
 		n(ARMOR, {
@@ -799,15 +826,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(2092, { timeline = { ADDED_1_1_0 } }),	-- Worn Dagger
 			i(50055, { timeline = { ADDED_3_3_0 } }),	-- Worn Dirk
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157721),	-- Nimblefinger Bindings
-			i(157715),	-- Nimblefinger Boots
-			i(157718),	-- Nimblefinger Britches
-			i(157716),	-- Nimblefinger Gloves
-			i(157714),	-- Nimblefinger Jerkin
-			i(157720),	-- Nimblefinger Waistband
-			i(157636),	-- Serrated Poinard
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157721),	-- Nimblefinger Bindings
+				i(157715),	-- Nimblefinger Boots
+				i(157718),	-- Nimblefinger Britches
+				i(157716),	-- Nimblefinger Gloves
+				i(157714),	-- Nimblefinger Jerkin
+				i(157720),	-- Nimblefinger Waistband
+				i(157636),	-- Serrated Poinard
+			},
+		}),
 	}),
 	cl(SHAMAN, {
 		n(ARMOR, {
@@ -826,20 +856,23 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36, { timeline = { ADDED_1_1_0 } }),	-- Worn Mace
 			i(2362, { timeline = { ADDED_1_1_0 } }),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157655, {	-- Lightning-Binder's Bulwark
-				description = "New Allied Race Shamans start with this weapon."
-			}),
-			i(157638, {	-- Lightning-Binder's Claws
-				description = "New Allied Race Shamans start with this weapon."
-			}),
-			i(157729),	-- Totem-Caller Armbands
-			i(157728),	-- Totem-Caller Belt
-			i(157723),	-- Totem-Caller Boots
-			i(157724),	-- Totem-Caller Gloves
-			i(157726),	-- Totem-Caller Legwraps
-			i(157722),	-- Totem-Caller Tunic
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157655, {	-- Lightning-Binder's Bulwark
+					description = "New Allied Race Shamans start with this weapon."
+				}),
+				i(157638, {	-- Lightning-Binder's Claws
+					description = "New Allied Race Shamans start with this weapon."
+				}),
+				i(157729),	-- Totem-Caller Armbands
+				i(157728),	-- Totem-Caller Belt
+				i(157723),	-- Totem-Caller Boots
+				i(157724),	-- Totem-Caller Gloves
+				i(157726),	-- Totem-Caller Legwraps
+				i(157722),	-- Totem-Caller Tunic
+			},
+		}),
 	}),
 	cl(WARLOCK, {
 		filter(MOUNTS, {
@@ -856,11 +889,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				classes = { WARLOCK },
 			}),
 		}),
-		n(MAILBOX, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
-			i(206681),	-- Letter from Oman (QS!)
-			a(i(208226)),	-- Mysterious Letter (QS!)
-			h(i(208227)),	-- Mysterious Letter (QS!)
-		})),
+		n(MAILBOX, {
+			timeline = { ADDED_10_1_5 },
+			groups = {
+				i(206681),	-- Letter from Oman (QS!)
+				a(i(208226)),	-- Mysterious Letter (QS!)
+				h(i(208227)),	-- Mysterious Letter (QS!)
+			},
+		}),
 		n(QUESTS, {
 			timeline = { ADDED_9_2_0 },
 			groups = {
@@ -1006,17 +1042,20 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20978, { timeline = { ADDED_3_0_2 } }),	-- Apprentice's Staff
 			i(35, { timeline = { ADDED_1_1_0 } }),	-- Bent Staff
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157736),	-- Felburner's Cord
-			i(157731),	-- Felburner's Handwraps
-			i(157733),	-- Felburner's Leggings
-			i(157734),	-- Felburner's Robe
-			i(157730),	-- Felburner's Sandals
-			i(157737),	-- Felburner's Wristwraps
-			i(157652, {	-- Shadow-Binder's Spire
-				description = "New Allied Race Warlocks start with this weapon."
-			}),
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157736),	-- Felburner's Cord
+				i(157731),	-- Felburner's Handwraps
+				i(157733),	-- Felburner's Leggings
+				i(157734),	-- Felburner's Robe
+				i(157730),	-- Felburner's Sandals
+				i(157737),	-- Felburner's Wristwraps
+				i(157652, {	-- Shadow-Binder's Spire
+					description = "New Allied Race Warlocks start with this weapon."
+				}),
+			},
+		}),
 	}),
 	cl(WARRIOR, {
 		n(ARMOR, {
@@ -1043,15 +1082,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(25, { timeline = { ADDED_1_1_0 } }),	-- Worn Shortsword
 			i(2362, { timeline = { ADDED_1_1_0 } }),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {
-			i(157643),	-- Helm-Hewer Greataxe
-			i(157738),	-- Warsinger's Breastplate
-			i(157740),	-- Warsinger's Gauntlets
-			i(157744),	-- Warsinger's Girdle
-			i(157742),	-- Warsinger's Legplates
-			i(157739),	-- Warsinger's Sabatons
-			i(157745),	-- Warsinger's Vambraces
-		})),
+		n(ALLIED_RACES, {
+			timeline = { ADDED_7_3_5 },
+			groups = {
+				i(157643),	-- Helm-Hewer Greataxe
+				i(157738),	-- Warsinger's Breastplate
+				i(157740),	-- Warsinger's Gauntlets
+				i(157744),	-- Warsinger's Girdle
+				i(157742),	-- Warsinger's Legplates
+				i(157739),	-- Warsinger's Sabatons
+				i(157745),	-- Warsinger's Vambraces
+			},
+		}),
 	}),
 	-- #if AFTER 7.0.3
 	filter(COSMETIC, {
@@ -1068,15 +1110,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(142504, {timeline = {ADDED_7_1_0}}),	-- Hidden Tabard
 	}),
 	-- #endif
-	filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 }, }, {
-		ill(5387),	-- Agility (ILLUSION!)
-		ill(5861),	-- Beastslayer (ILLUSION!)
-		ill(5393),	-- Crusader (ILLUSION!)
-		ill(1898),	-- Lifestealing (ILLUSION!)
-		ill(5360),	-- Hide Weapon Enchant (ILLUSION!)
-		ill(5389),	-- Striking (ILLUSION!)
-		ill(5862),	-- Titanguard (ILLUSION!)
-	})),
+	filter(ILLUSIONS, {
+		timeline = { ADDED_7_0_3 },
+		groups = {
+			ill(5387),	-- Agility (ILLUSION!)
+			ill(5861),	-- Beastslayer (ILLUSION!)
+			ill(5393),	-- Crusader (ILLUSION!)
+			ill(1898),	-- Lifestealing (ILLUSION!)
+			ill(5360),	-- Hide Weapon Enchant (ILLUSION!)
+			ill(5389),	-- Striking (ILLUSION!)
+			ill(5862),	-- Titanguard (ILLUSION!)
+		},
+	}),
 	filter(SHIRTS, {
 		-- #if BEFORE 2.0.1
 		i(6097, {	-- Acolyte's Shirt
@@ -1198,7 +1243,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #if AFTER 10.0.7
 	-- #if BEFORE 11.0.0
 	-- Fixed with TWW - you can collect any armor with any class
-	filter(CLOTH, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+	filter(CLOTH, {
+		timeline = { ADDED_10_0_7 },
 		groups = sharedData({
 			sharedDescription = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
 			collectible = false,
@@ -1208,8 +1254,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(204266),	-- Gilnean Trainee's Vest
 			i(204269),	-- Gilnean Trainee's Wristwraps
 		}),
-	})),
-	filter(CLOTH, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
+	}),
+	filter(CLOTH, {
+		timeline = { ADDED_10_0_7 },
 		groups = sharedData({
 			sharedDescription = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
 			collectible = false,
@@ -1219,13 +1266,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(204261),	-- Goblin Trainee's Vest
 			i(204258),	-- Goblin Trainee's Wristwraps
 		}),
-	})),
+	}),
 	-- #endif
 	-- #endif
 	n(QUESTS, bubbleDownSelf({
 		races = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-		timeline = { ADDED_11_0_5 },
-	}, {
+	}, sharedData({ timeline = { ADDED_11_0_5 } }, {
 		q(84423, {	-- Shaking the Dust Off
 			provider = { "n", 229075 },	-- Scalecommander Emberthal
 			coord = { 43.0, 89.4, THE_WAR_CRECHE },
@@ -1249,7 +1295,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				{ 56.2, 17.2, STORMWIND_CITY },
 			},
 		}),
-	})),
+	}))),
 	i(6948),	-- Hearthstone
 }));
 root(ROOTS.HiddenQuestTriggers, {

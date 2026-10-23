@@ -4417,23 +4417,26 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 		-- Crieve NOTE: Inscription came out with Wrath and the other sections had like no content and a bunch of overlap.
 		-- So I merged them into Wrath for clarity.
 		applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+			n(ACHIEVEMENTS, {
 				ach(18725, {	-- Best Stellar
-					i(208421),	-- Compendium of the New Moon (TOY!)
-					crit(60884, {	-- Rituals of the New Moon - Black Wolf
-						provider = { "i", 45853 },	-- Rituals of the New Moon
-					}),
-					crit(60885, {	-- Rituals of the New Moon - White Wolf
-						provider = { "i", 45851 },	-- Rituals of the New Moon
-					}),
-					crit(60886, {	-- Rituals of the New Moon - Red Wolf
-						provider = { "i", 45850 },	-- Rituals of the New Moon
-					}),
-					crit(60887, {	-- Rituals of the New Moon - Gray Wolf
-						provider = { "i", 45852 },	-- Rituals of the New Moon
-					}),
+					timeline = { ADDED_10_1_7 },
+					groups = {
+						i(208421),	-- Compendium of the New Moon (TOY!)
+						crit(60884, {	-- Rituals of the New Moon - Black Wolf
+							provider = { "i", 45853 },	-- Rituals of the New Moon
+						}),
+						crit(60885, {	-- Rituals of the New Moon - White Wolf
+							provider = { "i", 45851 },	-- Rituals of the New Moon
+						}),
+						crit(60886, {	-- Rituals of the New Moon - Red Wolf
+							provider = { "i", 45850 },	-- Rituals of the New Moon
+						}),
+						crit(60887, {	-- Rituals of the New Moon - Gray Wolf
+							provider = { "i", 45852 },	-- Rituals of the New Moon
+						}),
+					},
 				}),
-			})),
+			}),
 			filter(RECIPES, {
 				r(51005, {	-- Milling
 					-- #if NOT ANYCLASSIC
@@ -5129,11 +5132,12 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 			}),
 		})),
 		expansion(EXPANSION.BFA, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+			n(ACHIEVEMENTS, {
 				ach(18772, {	-- Sanguine Feather Quill of Lana'thel
 					provider = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
+					timeline = { ADDED_10_1_7 },
 				}),
-			})),
+			}),
 			n(QUESTS, {
 				q(54477, {	-- Inscribed Methods [A]
 					provider = { "n", 130399 },	-- Zooey Inksprocket

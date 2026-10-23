@@ -13,36 +13,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Bamboo Lumber
-			maps = {
-				DREAD_WASTES,
-				ISLE_OF_THUNDER,
-				KRASARANG_WILDS,
-				KUN_LAI_SUMMIT,
-				THE_JADE_FOREST,
-				TIMELESS_ISLE,
-				TOWNLONG_STEPPES,
-				VALE_OF_ETERNAL_BLOSSOMS,
-				NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
-				VALLEY_OF_THE_FOUR_WINDS,
-			},
-			groups = {
-				-- Objects
-				o(568305),	-- [Dread Wastes/Townlong Steppes]
-				o(568405),	-- [Isle of Thunder]
-				o(567867),	-- [Krasarang Wilds/Valley of the Four Winds]
-				o(568132),	-- [Kun-Lai Summit]
-				o(562440),	-- [The Jade Forest]
-				o(568199),	-- [Timeless Isle]
-				o(568137),	-- [Townlong Steppes]
-				o(567726),	-- [Vale of Eternal Blossoms/Vale of Eternal Blossoms]
-				o(567840),	-- [Valley of the Four Winds]
-				-- Drops
-				i(251763),	-- Bamboo Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Bamboo Lumber
+				maps = {
+					DREAD_WASTES,
+					ISLE_OF_THUNDER,
+					KRASARANG_WILDS,
+					KUN_LAI_SUMMIT,
+					THE_JADE_FOREST,
+					TIMELESS_ISLE,
+					TOWNLONG_STEPPES,
+					VALE_OF_ETERNAL_BLOSSOMS,
+					NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
+					VALLEY_OF_THE_FOUR_WINDS,
+				},
+				groups = {
+					-- Objects
+					o(568305),	-- [Dread Wastes/Townlong Steppes]
+					o(568405),	-- [Isle of Thunder]
+					o(567867),	-- [Krasarang Wilds/Valley of the Four Winds]
+					o(568132),	-- [Kun-Lai Summit]
+					o(562440),	-- [The Jade Forest]
+					o(568199),	-- [Timeless Isle]
+					o(568137),	-- [Townlong Steppes]
+					o(567726),	-- [Vale of Eternal Blossoms/Vale of Eternal Blossoms]
+					o(567840),	-- [Valley of the Four Winds]
+					-- Drops
+					i(251763),	-- Bamboo Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			r(114774),	-- Darkwater Potion
@@ -688,17 +691,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(257097),	-- Intense Mogu Brazier (DECOR!)
 			i(257096),	-- Pandaren Table Lamp (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-			i(138793, {	-- Tome of Illusions: Pandaria
-				ill(4441),	-- Windsong (ILLUSION!)
-				ill(4443),	-- Elemental Force (ILLUSION!)
-				ill(5868),	-- Breath of Yu'lon (ILLUSION!)
-			}),
-			i(138794, {	-- Tome of Illusions: Secrets of the Shado-Pan
-				ill(4446),	-- River's Song (ILLUSION!)
-				ill(4444),	-- Dancing Steel (ILLUSION!)
-			}),
-		})),
+		filter(ILLUSIONS, {
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(138793, {	-- Tome of Illusions: Pandaria
+					ill(4441),	-- Windsong (ILLUSION!)
+					ill(4443),	-- Elemental Force (ILLUSION!)
+					ill(5868),	-- Breath of Yu'lon (ILLUSION!)
+				}),
+				i(138794, {	-- Tome of Illusions: Secrets of the Shado-Pan
+					ill(4446),	-- River's Song (ILLUSION!)
+					ill(4444),	-- Dancing Steel (ILLUSION!)
+				}),
+			},
+		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(74729),	-- Enchant Off-Hand - Major Intellect
 			i(89737),	-- Enchant Shield - Greater Parry

@@ -1095,8 +1095,6 @@ maproot(SHADOWLANDS, BASTION, {
 				customCollect = "SL_SKIP",	-- SL Skip Character
 				sourceQuests = { 62159 },	-- Aiding the Shadowlands
 				lockCriteria = { 1, "lvl", 60 },
-			}, bubbleDown({
-				timeline = { ADDED_9_0_2_LAUNCH },
 			}, {
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					coord = { 54.1, 80.4, BASTION },
@@ -1157,7 +1155,7 @@ maproot(SHADOWLANDS, BASTION, {
 						i(181721),	-- Ascendent Valor Signet
 					},
 				}),
-			}))),
+			})),
 		}),
 	},
 });

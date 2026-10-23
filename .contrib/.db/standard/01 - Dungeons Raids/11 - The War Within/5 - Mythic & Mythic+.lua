@@ -3,9 +3,10 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
-	n(COMMON_BOSS_DROPS, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+	n(COMMON_BOSS_DROPS, {
 		i(234425, {	-- Forgotten Folio
 			description = "Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes.",
+			timeline = { ADDED_11_0_5 },
 			sym = {{"select","itemID",
 				223141,	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
 				223142,	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
@@ -24,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				-- 223061,	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?] unsure if contained here due to strange acquisition
 			}},
 		}),
-	})),
+	}),
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_TEMPERED, {
 			timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },

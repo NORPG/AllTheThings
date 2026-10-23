@@ -823,83 +823,86 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 		}),
 	})),
 	-- #endif
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_12_0_1 } }, {
-		i(260727),	-- Alliance Doormat (DECOR!)
-		i(263052),	-- Beloved Lion Plushie (DECOR!)
-		i(263053),	-- Beloved Wolf Plushie (DECOR!)
-		i(250795),	-- Colorful Dotted Egg (DECOR!)
-		i(250794),	-- Colorful Shroomic Egg (DECOR!)
-		i(250796),	-- Colorful Striped Egg (DECOR!)
-		i(260728),	-- Horde Doormat (DECOR!)
-		i(253546),	-- Lush Garden Butterfly Sconce (DECOR!)
-		i(252419),	-- Lush Garden Fungal Basin (DECOR!)
-		i(258567),	-- Lush Garden Fungal Chair (DECOR!)
-		i(258888),	-- Lush Garden Fungal Fountain (DECOR!)
-		i(266164, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Picnic (DECOR!)
-		i(266163, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Planter (DECOR!)
-		i(266070, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Table (DECOR!)
-		i(258294),	-- Lush Garden Gnome-Like Statue (DECOR!)
-		i(266162, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Hedge (DECOR!)
-		i(268550, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Rug (DECOR!)
-		i(267203, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Stable (DECOR!)
-		i(250793),	-- Lush Garden Trellis (DECOR!)
-		i(264692, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Window (DECOR!)
-		i(259046, {	-- Paw Pal Bed (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(259093, {	-- Paw Pal House Frame (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(259044, {	-- Paw Pal Water Dish (DECOR!)
-			description = "Part of the charity Roofus Pack.",
-			timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
-		}),
-		i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
-		i(258569),	-- Spring Blossom Gazebo (DECOR!)
-		i(254417),	-- Spring Blossom Hanging Chair (DECOR!)
-		i(266165, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Lantern (DECOR!)
-		i(265556, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Privacy Screen (DECOR!)
-		i(266167, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Pond (DECOR!)
-		i(250798),	-- Spring Blossom Shelf (DECOR!)
-		i(265555, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone (DECOR!)
-		i(265557, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Duo (DECOR!)
-		i(265558, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Trio (DECOR!)
-		i(265559, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Collection (DECOR!)
-		i(266069, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Table (DECOR!)
-		i(266068, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tea Set (DECOR!)
-		i(266166, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tranquility Garden (DECOR!)
-		i(263290),	-- Spring Blossom Tree (DECOR!)
-		i(263291, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tree Pond (DECOR!)
-		i(258568),	-- Spring Blossom Window (DECOR!)
-		i(253547),	-- Spring Blossom Wreath (DECOR!)
-		i(281372, { timeline = { ADDED_12_1_5 } }),	-- Zhevraskin Rug (DECOR!)
+	n(DECOR, {
+		timeline = { ADDED_12_0_1 },
+		groups = {
+			i(260727),	-- Alliance Doormat (DECOR!)
+			i(263052),	-- Beloved Lion Plushie (DECOR!)
+			i(263053),	-- Beloved Wolf Plushie (DECOR!)
+			i(250795),	-- Colorful Dotted Egg (DECOR!)
+			i(250794),	-- Colorful Shroomic Egg (DECOR!)
+			i(250796),	-- Colorful Striped Egg (DECOR!)
+			i(260728),	-- Horde Doormat (DECOR!)
+			i(253546),	-- Lush Garden Butterfly Sconce (DECOR!)
+			i(252419),	-- Lush Garden Fungal Basin (DECOR!)
+			i(258567),	-- Lush Garden Fungal Chair (DECOR!)
+			i(258888),	-- Lush Garden Fungal Fountain (DECOR!)
+			i(266164, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Picnic (DECOR!)
+			i(266163, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Planter (DECOR!)
+			i(266070, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Fungal Table (DECOR!)
+			i(258294),	-- Lush Garden Gnome-Like Statue (DECOR!)
+			i(266162, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Hedge (DECOR!)
+			i(268550, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Rug (DECOR!)
+			i(267203, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Stable (DECOR!)
+			i(250793),	-- Lush Garden Trellis (DECOR!)
+			i(264692, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Window (DECOR!)
+			i(259046, {	-- Paw Pal Bed (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(259045, {	-- Paw Pal Bed and Blanket (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(264275, {	-- Paw Pal House Durotar Roof (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(259094, {	-- Paw Pal House Elwynn Roof (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(264276, {	-- Paw Pal House Eversong Roof (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(259093, {	-- Paw Pal House Frame (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(264277, {	-- Paw Pal House Shadowglen Roof (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(259044, {	-- Paw Pal Water Dish (DECOR!)
+				description = "Part of the charity Roofus Pack.",
+				timeline = { "added 12.0.1.66384", "removed 12.0.5.67451" },	-- Removed May 12, 2026
+			}),
+			i(250797),	-- Spring Blossom Ceiling Light (DECOR!)
+			i(258569),	-- Spring Blossom Gazebo (DECOR!)
+			i(254417),	-- Spring Blossom Hanging Chair (DECOR!)
+			i(266165, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Lantern (DECOR!)
+			i(265556, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Privacy Screen (DECOR!)
+			i(266167, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Pond (DECOR!)
+			i(250798),	-- Spring Blossom Shelf (DECOR!)
+			i(265555, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone (DECOR!)
+			i(265557, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Duo (DECOR!)
+			i(265558, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Trio (DECOR!)
+			i(265559, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Stepping Stone Collection (DECOR!)
+			i(266069, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Table (DECOR!)
+			i(266068, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tea Set (DECOR!)
+			i(266166, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tranquility Garden (DECOR!)
+			i(263290),	-- Spring Blossom Tree (DECOR!)
+			i(263291, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Tree Pond (DECOR!)
+			i(258568),	-- Spring Blossom Window (DECOR!)
+			i(253547),	-- Spring Blossom Wreath (DECOR!)
+			i(281372, { timeline = { ADDED_12_1_5 } }),	-- Zhevraskin Rug (DECOR!)
 
-		-- Houses
-		i(272146, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Treehouse
-		i(272992, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Treehouse
-	})),
+			-- Houses
+			i(272146, {timeline = { ADDED_12_0_5 }}),	-- Lush Garden Treehouse
+			i(272992, {timeline = { ADDED_12_0_5 }}),	-- Spring Blossom Treehouse
+		},
+	}),
 	filter(MOUNTS, {	-- AVAILABLE --
 		i(258479, {	-- Algarian Stormrider (MOUNT!)
 			timeline = { ADDED_11_2_7 },

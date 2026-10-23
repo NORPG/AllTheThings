@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				customCollect = "SL_COV_VEN",	-- Venthyr Covenant
 			}),
 		}),
-		cl(EVOKER, bubbleDown({ timeline = { ADDED_10_0_0 } }, {
+		cl(EVOKER, sharedData({ timeline = { ADDED_10_0_0 } }, {
 			i(199454),	-- Bronze Acceleration
 			i(199457),	-- Circle of Life
 			i(199460),	-- Graceful Stride

@@ -28,9 +28,9 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 	n(TREASURES, {
 		i(259362),	-- Pattern: Haranir Canopy Bed (RECIPE!)
 		header(HEADERS.Achievement, 61052, {	-- Dust 'Em Off
-			n(REWARDS, bubbleDownSelf({ timeline = { REMOVED_12_0_7 } }, {
-				currency(3385),	-- Luminous Dust
-			})),
+			n(REWARDS, {
+				currency(3385, { timeline = { REMOVED_12_0_7 } }),	-- Luminous Dust
+			}),
 			n(MOTH_RENOWN2, {	-- Exo: Verified Renown 2
 				o(571099, {	-- Glowing Moth
 					coord = { 36.4, 48.4, MAP.MIDNIGHT.HARANDAR },

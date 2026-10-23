@@ -41,8 +41,9 @@ local function OneTimeAccountLocked(questID, t)
 end
 
 root(ROOTS.Secrets, expansion(EXPANSION.DF, {
-	n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+	n(SECRETS_OF_AZEROTH_HEADER, {
 		description = "***Using Debug Mode is recommended.***\n",
+		timeline = { ADDED_10_1_5 },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(18644, {	-- Community Rumor Mill
@@ -161,6 +162,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 					questID = 78101,
 					coord = { 36.6, 61.8, VALDRAKKEN },
 					u = REMOVED_FROM_GAME,	-- No reason for timelines, it was available for two days (10/11 September 2023)
+					timeline = { ADDED_10_1_5 },
 				}),
 			}),
 			n(TREASURES, sharedData({
@@ -1101,7 +1103,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 				}),
 			}),
 		},
-	})),
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {

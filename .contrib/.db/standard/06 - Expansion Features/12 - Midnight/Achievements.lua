@@ -25,12 +25,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			ach(61519, {	-- Midnight Season 1: Catalyst Unbound
 				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 			}),
-			achraw(61490, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }, }, {	-- Midnight Season 1: Champion of the Dawn
-				crit(108731),	-- Attained 1600+ Rated PVP rating
-				crit(109029),	-- Attained 2000+ Mythic Plus rating
-				crit(109881),	-- Defeated Midnight Falls in March on Quel'Danas on Heroic or Mythic difficulty
-				i(260173),	-- Crystallized Dawnlight Manaflux
-			})),
+			achraw(61490, {	-- Midnight Season 1: Champion of the Dawn
+				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				groups = {
+					crit(108731),	-- Attained 1600+ Rated PVP rating
+					crit(109029),	-- Attained 2000+ Mythic Plus rating
+					crit(109881),	-- Defeated Midnight Falls in March on Quel'Danas on Heroic or Mythic difficulty
+					i(260173),	-- Crystallized Dawnlight Manaflux
+				},
+			}),
 			ach(61858, {	-- Light of the Party (automated)
 				iensemble(265071, {	-- Gleaming Sunmote (CI!)
 					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {

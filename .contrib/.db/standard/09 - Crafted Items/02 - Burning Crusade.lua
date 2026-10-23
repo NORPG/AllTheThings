@@ -13,32 +13,35 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Olemba Lumber
-			maps = {
-				BLADES_EDGE_MOUNTAINS,
-				ISLE_OF_QUELDANAS,
-				NAGRAND,
-				TEROKKAR_FOREST,
-				ZANGARMARSH,
-				-- SMV/Netherstorm have barely any nodes
-			},
-			groups = {
-				-- Objects
-				o(571070),	-- [Terokkar Forest/Shattrah/Nagrand]
-				o(571071),	-- [Zangarmarsh]
-				o(571213),	-- [Blade's Edge Mountains]
-				o(571345),	-- [Netherstorm]
-				o(572094),	-- [Nagrand]
-				o(572129),	-- [Shadowmoon Valley]
-				o(572785),	-- [Isle of Quel Danas]
-				o(572869),	-- [Eversong Woods/Ghostlands]
-				o(572995),	-- [Ghostlands]
-				-- Drops
-				i(242691),	-- Olemba Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Olemba Lumber
+				maps = {
+					BLADES_EDGE_MOUNTAINS,
+					ISLE_OF_QUELDANAS,
+					NAGRAND,
+					TEROKKAR_FOREST,
+					ZANGARMARSH,
+					-- SMV/Netherstorm have barely any nodes
+				},
+				groups = {
+					-- Objects
+					o(571070),	-- [Terokkar Forest/Shattrah/Nagrand]
+					o(571071),	-- [Zangarmarsh]
+					o(571213),	-- [Blade's Edge Mountains]
+					o(571345),	-- [Netherstorm]
+					o(572094),	-- [Nagrand]
+					o(572129),	-- [Shadowmoon Valley]
+					o(572785),	-- [Isle of Quel Danas]
+					o(572869),	-- [Eversong Woods/Ghostlands]
+					o(572995),	-- [Ghostlands]
+					-- Drops
+					i(242691),	-- Olemba Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		timeline = { ADDED_2_0_5 },
 		groups = {
@@ -147,54 +150,57 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 		},
 	}),
-	prof(ARCHAEOLOGY, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
-		i(64394),	-- Draenei Tome
-		i(64392),	-- Orc Blood Text
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, {
-			provider = { "o", 207188 },	-- Draenei Archaeology Find
-			maps = {
-				HELLFIRE_PENINSULA,
-				NAGRAND,
-				NETHERSTORM,
-				SHADOWMOON_VALLEY,
-				TEROKKAR_FOREST,
-				ZANGARMARSH,
-			},
-			groups = {
-				i(64440, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Anklet with Golden Bells
-				i(64456, {cost={{"c",ARCH_CURRENCY_DRAENEI,124}}}),	-- Arrival of the Naaru (TOY!)
-				i(64453, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Baroque Sword Scabbard
-				i(64442, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Carved Harp of Exotic Wood
-				i(64455, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Dignified Portrait
-				i(64454, {cost={{"c",ARCH_CURRENCY_DRAENEI,44}}}),	-- Fine Crystal Candelabra
-				i(64458, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
-				i(64444, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
-				i(64443, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
-				i(64457, {cost={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus (TOY!)
-			},
-		}),
-		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
-			provider = { "o", 207187 },	-- Orc Archaeology Find
-			maps = {
-				HELLFIRE_PENINSULA,
-				NAGRAND,
-				SHADOWMOON_VALLEY,
-				TEROKKAR_FOREST,
-			},
-			groups = {
-				i(64436, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fiendish Whip
-				i(64421, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fierce Wolf Figurine
-				i(64418, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Gray Candle Stub
-				i(64644, {cost={{"c",ARCH_CURRENCY_ORC,130}}}),	-- Headdress of the First Shaman
-				i(64417, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Maul of Stone Guard Mur'og
-				i(64419, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Rusted Steak Knife
-				i(64420, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Scepter of Nekros Skullcrusher
-				i(64438, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Skull Drinking Cup
-				i(64437, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tile of Glazed Clay
-				i(64389, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tiny Bronze Scorpion
-			},
-		}),
-	})),
+	prof(ARCHAEOLOGY, {
+		timeline = { ADDED_4_0_3_LAUNCH },
+		groups = {
+			i(64394),	-- Draenei Tome
+			i(64392),	-- Orc Blood Text
+			header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, {
+				provider = { "o", 207188 },	-- Draenei Archaeology Find
+				maps = {
+					HELLFIRE_PENINSULA,
+					NAGRAND,
+					NETHERSTORM,
+					SHADOWMOON_VALLEY,
+					TEROKKAR_FOREST,
+					ZANGARMARSH,
+				},
+				groups = {
+					i(64440, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Anklet with Golden Bells
+					i(64456, {cost={{"c",ARCH_CURRENCY_DRAENEI,124}}}),	-- Arrival of the Naaru (TOY!)
+					i(64453, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Baroque Sword Scabbard
+					i(64442, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Carved Harp of Exotic Wood
+					i(64455, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Dignified Portrait
+					i(64454, {cost={{"c",ARCH_CURRENCY_DRAENEI,44}}}),	-- Fine Crystal Candelabra
+					i(64458, {cost={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
+					i(64444, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
+					i(64443, {cost={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
+					i(64457, {cost={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus (TOY!)
+				},
+			}),
+			header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
+				provider = { "o", 207187 },	-- Orc Archaeology Find
+				maps = {
+					HELLFIRE_PENINSULA,
+					NAGRAND,
+					SHADOWMOON_VALLEY,
+					TEROKKAR_FOREST,
+				},
+				groups = {
+					i(64436, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fiendish Whip
+					i(64421, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fierce Wolf Figurine
+					i(64418, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Gray Candle Stub
+					i(64644, {cost={{"c",ARCH_CURRENCY_ORC,130}}}),	-- Headdress of the First Shaman
+					i(64417, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Maul of Stone Guard Mur'og
+					i(64419, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Rusted Steak Knife
+					i(64420, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Scepter of Nekros Skullcrusher
+					i(64438, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Skull Drinking Cup
+					i(64437, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tile of Glazed Clay
+					i(64389, {cost={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tiny Bronze Scorpion
+				},
+			}),
+		},
+	}),
 	prof(BLACKSMITHING, {
 		timeline = { ADDED_2_0_5 },
 		groups = {
@@ -546,13 +552,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(265331, { timeline = { ADDED_12_1_5 } }),	-- Draenei Holo-Junction (DECOR!)
 				i(257038),	-- Draenei Holo-Path (DECOR!)
 			})),
-			filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-				i(138789, {	-- Tome of Illusions: Outland
-					ill(5390),	-- Battlemaster (ILLUSION!)
-					ill(2674),	-- Spellsurge (ILLUSION!)
-					ill(5864),	-- Netherflame (ILLUSION!)
-				}),
-			})),
+			filter(ILLUSIONS, {
+				timeline = { ADDED_7_0_3 },
+				groups = {
+					i(138789, {	-- Tome of Illusions: Outland
+						ill(5390),	-- Battlemaster (ILLUSION!)
+						ill(2674),	-- Spellsurge (ILLUSION!)
+						ill(5864),	-- Netherflame (ILLUSION!)
+					}),
+				},
+			}),
 			filter(MISC, {
 				i(22460),	-- Prismatic Sphere
 				i(22521),	-- Superior Mana Oil
@@ -2253,12 +2262,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			}),
 		},
 	}),
-	prof(POISONS, bubbleDownSelf({ timeline = { ADDED_2_0_5, REMOVED_3_0_2 }, classes = { ROGUE }}, {
-		i(21835),	-- Anesthetic Poison
-		i(22053),	-- Deadly Poison VI
-		i(22054),	-- Deadly Poison VII
-		i(21927),	-- Instant Poison VII
-		i(22055),	-- Wound Poison V
+	prof(POISONS, bubbleDownSelf({ classes = { ROGUE }}, {
+		timeline = { ADDED_2_0_5, REMOVED_3_0_2 },
+		groups = {
+			i(21835),	-- Anesthetic Poison
+			i(22053),	-- Deadly Poison VI
+			i(22054),	-- Deadly Poison VII
+			i(21927),	-- Instant Poison VII
+			i(22055),	-- Wound Poison V
+		},
 	})),
 	prof(SKINNING, {
 		description = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",

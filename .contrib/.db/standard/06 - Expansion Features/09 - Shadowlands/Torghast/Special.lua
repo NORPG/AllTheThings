@@ -3,25 +3,28 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
-	m(TORGHAST, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
+	m(TORGHAST, {
 		n(NIGHT_FAE,  bubbleDown({ customCollect = "SL_COV_NFA" }, {
-			n(SOULSHAPES, {
-				n(185453, {	-- Lost Soul
-					i(189977),	-- Bat Soul
+			timeline = { ADDED_9_2_0 },
+			groups = {
+				n(SOULSHAPES, {
+					n(185453, {	-- Lost Soul
+						i(189977),	-- Bat Soul
+					}),
+					n(185557, {	-- Lost Soul
+						i(189975),	-- Elekk Soul
+					}),
+					n(185552, {	-- Lost Soul
+						i(189971),	-- Dragonhawk Soul
+					}),
+					n(185559, {	-- Lost Soul
+						i(189987),	-- Pig Soul
+					}),
+					n(185558, {	-- Lost Soul
+						i(189976),	-- Tallstrider Soul
+					}),
 				}),
-				n(185557, {	-- Lost Soul
-					i(189975),	-- Elekk Soul
-				}),
-				n(185552, {	-- Lost Soul
-					i(189971),	-- Dragonhawk Soul
-				}),
-				n(185559, {	-- Lost Soul
-					i(189987),	-- Pig Soul
-				}),
-				n(185558, {	-- Lost Soul
-					i(189976),	-- Tallstrider Soul
-				}),
-			}),
+			},
 		})),
-	})),
+	}),
 }));

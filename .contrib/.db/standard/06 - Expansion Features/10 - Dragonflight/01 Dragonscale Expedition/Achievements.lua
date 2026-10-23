@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 		faction(FACTION_DRAGONSCALE_EXPEDITION, {
 			icon = 4687628,
 		}),
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
+		n(ACHIEVEMENTS, {
 			ach(16522, {	-- A True Explorer
 				minReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },	-- Dragonscale Expedition Renown 25
 				timeline = { REMOVED_11_0_7 },
@@ -26,6 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			}),
 			ach(19479, {	-- Wake Me Up
 				-- Meta Achievement
+				timeline = { ADDED_10_2_6 },
 				sym = {{"meta_achievement",
 					16570,	-- A Legendary Album
 					16676,	-- Adventurer of The Waking Shores
@@ -42,7 +43,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			}),
 			ach(16571, {	-- Well Supplied
 				minReputation = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
+				timeline = { ADDED_10_2_6 },
 			}),
-		})),
+		}),
 	}),
 }));

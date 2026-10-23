@@ -673,7 +673,7 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 			},
 		}),
 	})),
-	n(REWARDS, bubbleDown({ timeline = { ADDED_5_1_0 } }, {	-- These can drop very rarely from none trainer pet battle
+	n(REWARDS, sharedData({ timeline = { ADDED_5_1_0 } }, {	-- These can drop very rarely from none trainer pet battle
 		i(92679),	-- Flawless Aquatic Battle-Stone
 		i(92741),	-- Flawless Battle-Stone
 		i(92675),	-- Flawless Beast Battle-Stone

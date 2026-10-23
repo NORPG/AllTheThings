@@ -20,18 +20,21 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 	filter(COSMETIC, bubbleDown({ u = REMOVED_FROM_GAME }, {	-- REMOVED --
 	})),
 	-- #endif
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_12_0_1 } }, {
-		cnONLY(i(264721, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Curio Display
-		cnONLY(i(264724, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Golden Carp Lantern
-		cnONLY(i(264725, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Imperial Lion
-		cnONLY(i(264722, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Inkmaster's Desk
-		cnONLY(i(269605, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Meal Case
-		cnONLY(i(269604, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Picnic Basket
-		cnONLY(i(272354, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Stone Lion
-		cnONLY(i(264723, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Tree of Fortune
-		cnONLY(i(272353, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Verdant Basin
-		cnONLY(i(266071, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Wooden Chair
-	})),
+	n(DECOR, {
+		timeline = { ADDED_12_0_1 },
+		groups = {
+			cnONLY(i(264721, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Curio Display
+			cnONLY(i(264724, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Golden Carp Lantern
+			cnONLY(i(264725, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Imperial Lion
+			cnONLY(i(264722, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Inkmaster's Desk
+			cnONLY(i(269605, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Meal Case
+			cnONLY(i(269604, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Picnic Basket
+			cnONLY(i(272354, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Stone Lion
+			cnONLY(i(264723, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Tree of Fortune
+			cnONLY(i(272353, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Verdant Basin
+			cnONLY(i(266071, { timeline = { ADDED_12_0_5 } })),	-- Auspicious Wooden Chair
+		},
+	}),
 	filter(MOUNTS, {	-- AVAILABLE --
 		cnONLY(i(272920, {	-- Spring Panda (MOUNT!)
 			timeline = { ADDED_12_0_7 },

@@ -4,7 +4,8 @@
 
 -- #if ANYCLASSIC
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
-	n(DEFENSE_PROTOCOL_BETA, bubbleDownSelf({ timeline = { ADDED_3_4_2 } }, {
+	n(DEFENSE_PROTOCOL_BETA, {
+		timeline = { ADDED_3_4_2 },
 		lvl = 80,
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -183,6 +184,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 			}),
 		},
-	})),
+	}),
 })));
 -- #endif

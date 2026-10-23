@@ -87,29 +87,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						provider = { "i", 168617 },	-- Fluctuating Worldvein
 					}),
 				}),
-				n(RANK_FOUR, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {
-					elitepvp(az(32, 4, {	-- Conflict and Strife (Rank 4)
-						provider = { "i", 169899 },	-- Polished Skull Trophy
-					})),
-					az(27, 4, {	-- Memory of Lucid Dreams (Rank 4)
-						provider = { "i", 168849 },	-- Pearl of Luminous Designs
-					}),
-					az(15, 4, {	-- Ripple in Space (Rank 4)
-						provider = { "i", 168853 },	-- Glinting Battlefield Memento
-					}),
-					az(12, 4, {	-- The Crucible of Flame (Rank 4)
-						provider = { "i", 168614 },	-- Charged Scale of the Blue Aspect
-					}),
-					az(37, 4, {	-- The Formless Void (Rank 4)
-						provider = { "i", 173886 },	-- Bursting Void Droplet
-					}),
-					az(22, 4, {	-- Vision of Perfection (Rank 4)
-						provider = { "i", 168845 },	-- Mecha-Perfection Turbo
-					}),
-					az(4, 4, {	-- Worldvein Resonance (Rank 4)
-						provider = { "i", 168618 },	-- Brilliant Worldvein
-					}),
-				})),
+				n(RANK_FOUR, {
+					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					groups = {
+						elitepvp(az(32, 4, {	-- Conflict and Strife (Rank 4)
+							provider = { "i", 169899 },	-- Polished Skull Trophy
+						})),
+						az(27, 4, {	-- Memory of Lucid Dreams (Rank 4)
+							provider = { "i", 168849 },	-- Pearl of Luminous Designs
+						}),
+						az(15, 4, {	-- Ripple in Space (Rank 4)
+							provider = { "i", 168853 },	-- Glinting Battlefield Memento
+						}),
+						az(12, 4, {	-- The Crucible of Flame (Rank 4)
+							provider = { "i", 168614 },	-- Charged Scale of the Blue Aspect
+						}),
+						az(37, 4, {	-- The Formless Void (Rank 4)
+							provider = { "i", 173886 },	-- Bursting Void Droplet
+						}),
+						az(22, 4, {	-- Vision of Perfection (Rank 4)
+							provider = { "i", 168845 },	-- Mecha-Perfection Turbo
+						}),
+						az(4, 4, {	-- Worldvein Resonance (Rank 4)
+							provider = { "i", 168618 },	-- Brilliant Worldvein
+						}),
+					},
+				}),
 			}),
 			n(DPS_ROLE, {
 				n(RANK_ONE, {
@@ -181,29 +184,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						provider = { "i", 168865 },	-- Polazired Azerite Slivershards
 					}),
 				}),
-				n(RANK_FOUR, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {
-					az(23, 4, {	-- Blood of the Enemy (Rank 4)
-						provider = { "i", 168814 },	-- Animated Blood of the Decimated
-					}),
-					az(35, 4, {	-- Breath of the Dying (Rank 4)
-						provider = { "i", 173283 },	-- Token of a Brilliant Death
-					}),
-					az(14, 4, {	-- Condensed Life-Force (Rank 4)
-						provider = { "i", 168857 },	-- Sparkling Elemental Heart
-					}),
-					az(5, 4, {	-- Essence of the Focusing Iris (Rank 4)
-						provider = { "i", 168623 },	-- Biconcavic Lens of the Focusing Iris
-					}),
-					az(6, 4, {	-- Purification Protocol (Rank 4)
-						provider = { "i", 168861 },	-- Ultimate Purification Protocols
-					}),
-					az(36, 4, {	-- Spark of Inspiration (Rank 4)
-						provider = { "i", 173291 },	-- Luminous Azerite Geode
-					}),
-					az(28, 4, {	-- The Unbound Force (Rank 4)
-						provider = { "i", 168866 },	-- Incandescent Azerite Slivershards
-					}),
-				})),
+				n(RANK_FOUR, {
+					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					groups = {
+						az(23, 4, {	-- Blood of the Enemy (Rank 4)
+							provider = { "i", 168814 },	-- Animated Blood of the Decimated
+						}),
+						az(35, 4, {	-- Breath of the Dying (Rank 4)
+							provider = { "i", 173283 },	-- Token of a Brilliant Death
+						}),
+						az(14, 4, {	-- Condensed Life-Force (Rank 4)
+							provider = { "i", 168857 },	-- Sparkling Elemental Heart
+						}),
+						az(5, 4, {	-- Essence of the Focusing Iris (Rank 4)
+							provider = { "i", 168623 },	-- Biconcavic Lens of the Focusing Iris
+						}),
+						az(6, 4, {	-- Purification Protocol (Rank 4)
+							provider = { "i", 168861 },	-- Ultimate Purification Protocols
+						}),
+						az(36, 4, {	-- Spark of Inspiration (Rank 4)
+							provider = { "i", 173291 },	-- Luminous Azerite Geode
+						}),
+						az(28, 4, {	-- The Unbound Force (Rank 4)
+							provider = { "i", 168866 },	-- Incandescent Azerite Slivershards
+						}),
+					},
+				}),
 			}),
 			n(HEALER_ROLE, bubbleDownSelf({
 				classes = HEALERS,
@@ -277,29 +283,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						provider = { "i", 168943 },	-- Grid of Bursting Vitality
 					}),
 				}),
-				n(RANK_FOUR, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {
-					az(18, 4, {	-- Artifice of Time (Rank 4)
-						provider = { "i", 168923 },	-- Unburdened Azerite Timequartz
-					}),
-					az(20, 4, {	-- Life-Binder's Invocation (Rank 4)
-						provider = { "i", 168927 },	-- Seed of Vibrant Blooms
-					}),
-					az(24, 4, {	-- Spirit of Preservation (Rank 4)
-						provider = { "i", 168816 },	-- Pulsing Star Heart
-					}),
-					az(17, 4, {	-- The Ever-Rising Tide (Rank 4)
-						provider = { "i", 168931 },	-- Vellum of Illuminating Tides
-					}),
-					az(19, 4, {	-- The Well of Existence (Rank 4)
-						provider = { "i", 168935 },	-- Existence Vibrancy Display
-					}),
-					az(16, 4, {	-- Unwavering Ward (Rank 4)
-						provider = { "i", 168940 },	-- Ward of Unimaginable Brilliance (Rank 4)
-					}),
-					az(21, 4, {	-- Vitality Conduit (Rank 4)
-						provider = { "i", 168944 },	-- Web of Unbridled Vitality
-					}),
-				})),
+				n(RANK_FOUR, {
+					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					groups = {
+						az(18, 4, {	-- Artifice of Time (Rank 4)
+							provider = { "i", 168923 },	-- Unburdened Azerite Timequartz
+						}),
+						az(20, 4, {	-- Life-Binder's Invocation (Rank 4)
+							provider = { "i", 168927 },	-- Seed of Vibrant Blooms
+						}),
+						az(24, 4, {	-- Spirit of Preservation (Rank 4)
+							provider = { "i", 168816 },	-- Pulsing Star Heart
+						}),
+						az(17, 4, {	-- The Ever-Rising Tide (Rank 4)
+							provider = { "i", 168931 },	-- Vellum of Illuminating Tides
+						}),
+						az(19, 4, {	-- The Well of Existence (Rank 4)
+							provider = { "i", 168935 },	-- Existence Vibrancy Display
+						}),
+						az(16, 4, {	-- Unwavering Ward (Rank 4)
+							provider = { "i", 168940 },	-- Ward of Unimaginable Brilliance (Rank 4)
+						}),
+						az(21, 4, {	-- Vitality Conduit (Rank 4)
+							provider = { "i", 168944 },	-- Web of Unbridled Vitality
+						}),
+					},
+				}),
 			})),
 			n(TANK_ROLE, bubbleDownSelf({
 				classes = TANKS,
@@ -373,29 +382,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						provider = { "i", 168575 },	-- Branch of Rejuvenating Rings
 					}),
 				}),
-				n(RANK_FOUR, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_9_0_1 } }, {
-					az(25, 4, {	-- Aegis of the Deep (Rank 4)
-						provider = { "i", 168840 },	-- Resplendent Bastion of the Depths
-					}),
-					az(7, 4, {	-- Anima of Life and Death (Rank 4)
-						provider = { "i", 168560 },	-- Fetish of the Gilded Catacombs
-					}),
-					az(2, 4, {	-- Azeroth's Undying Gift (Rank 4)
-						provider = { "i", 168538 },	-- Dazzling Azerite Formation
-					}),
-					az(13, 4, {	-- Nullification Dynamo (Rank 4)
-						provider = { "i", 168569 },	-- Null Force Visualizer
-					}),
-					az(3, 4, {	-- Sphere of Suppression (Rank 4)
-						provider = { "i", 168581 },	-- Sphere of Incandescent Neutralization
-					}),
-					az(34, 4, {	-- Strength of the Warden (Rank 4)
-						provider = { "i", 173311 },	-- Resplendent Warden's Badge
-					}),
-					az(33, 4, {	-- Touch of the Everlasting (Rank 4)
-						provider = { "i", 168576 },	-- Roots of Magnificent Revival
-					}),
-				})),
+				n(RANK_FOUR, {
+					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					groups = {
+						az(25, 4, {	-- Aegis of the Deep (Rank 4)
+							provider = { "i", 168840 },	-- Resplendent Bastion of the Depths
+						}),
+						az(7, 4, {	-- Anima of Life and Death (Rank 4)
+							provider = { "i", 168560 },	-- Fetish of the Gilded Catacombs
+						}),
+						az(2, 4, {	-- Azeroth's Undying Gift (Rank 4)
+							provider = { "i", 168538 },	-- Dazzling Azerite Formation
+						}),
+						az(13, 4, {	-- Nullification Dynamo (Rank 4)
+							provider = { "i", 168569 },	-- Null Force Visualizer
+						}),
+						az(3, 4, {	-- Sphere of Suppression (Rank 4)
+							provider = { "i", 168581 },	-- Sphere of Incandescent Neutralization
+						}),
+						az(34, 4, {	-- Strength of the Warden (Rank 4)
+							provider = { "i", 173311 },	-- Resplendent Warden's Badge
+						}),
+						az(33, 4, {	-- Touch of the Everlasting (Rank 4)
+							provider = { "i", 168576 },	-- Roots of Magnificent Revival
+						}),
+					},
+				}),
 			})),
 		},
 	}),

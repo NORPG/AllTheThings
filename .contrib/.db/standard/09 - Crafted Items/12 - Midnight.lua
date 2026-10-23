@@ -2129,9 +2129,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDE
 		filter(MISC, {
 			i(244639),	-- Void-Touched Drums
 		}),
-		filter(MOUNTS, bubbleDownSelf({ timeline = { ADDED_12_0_5 } }, {
-			i(270058),	-- Rope Lynx Harness (MOUNT!)
-		})),
+		filter(MOUNTS, {
+			timeline = { ADDED_12_0_5 },
+			groups = {
+				i(270058),	-- Rope Lynx Harness (MOUNT!)
+			},
+		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(244629, {requireSkill = JEWELCRAFTING}),	-- Apprentice Jeweler's Apron
 			i(244627, {requireSkill = BLACKSMITHING}),	-- Apprentice Smith's Apron

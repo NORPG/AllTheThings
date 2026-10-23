@@ -50,7 +50,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	})),
 	expansion(EXPANSION.CLASSIC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18730, {	-- Goblins vs Gnomes
 				sourceQuests = {
 					3526,	-- Goblin Engineering
@@ -66,8 +66,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					29477,	-- Gnomish Engineering
 				},
 				sourceQuestNumRequired = 1,
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {
 			q(29477, {	-- Gnomish Engineering
 				altQuests = {
@@ -493,11 +494,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, {
 			ach(18776, {	-- The Ub3r-Spanner
 				provider = { "i", 164740 },	-- Ub3r-Spanner
+				timeline = { ADDED_10_1_7 },
 			}),
-		})),
+		}),
 		n(QUESTS, {
 			q(54475, {	-- Engineered Blueprints [A]
 				provider = { "n", 136059 },	-- Layla Evenkeel

@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		cl(DEATHKNIGHT, bubbleDownSelf({ classes = { DEATHKNIGHT } }, {
 			maps = { ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },	-- Uppstairs/Down
 			groups = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+				n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
 					ach(42287, {	-- Hidden Potential of the Deathlord
 						i(250123),	-- Replica Acherus Soul Forge (DECOR!)
 					}),

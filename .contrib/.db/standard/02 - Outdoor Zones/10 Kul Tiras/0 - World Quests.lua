@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.Zones, {
 	m(KUL_TIRAS, {
 		n(WORLD_QUESTS, {
 			header(HEADERS.Faction, FACTION_TORTOLLAN_SEEKERS, {	-- Tortollan Seekers
@@ -22,4 +22,4 @@ root(ROOTS.Zones, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			}),
 		}),
 	}),
-}));
+});

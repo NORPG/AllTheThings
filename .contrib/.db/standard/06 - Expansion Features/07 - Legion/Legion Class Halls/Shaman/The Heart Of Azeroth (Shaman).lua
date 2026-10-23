@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 				maps = { THE_HEART_OF_AZEROTH },
 				groups = {
-					n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
 						ach(42296, {	-- Hidden Potential of the Farseer
 							i(250914),	-- Elemental Altar of the Maelstrom (DECOR!)
 						}),

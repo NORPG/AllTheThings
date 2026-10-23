@@ -13,35 +13,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	i(180058, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past III
 	i(180059, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past IV
 	i(180060, {timeline = { ADDED_9_0_1 }}),	-- Relic of the Past V
-	n(DECOR, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
-		o_repeated({	-- Coldwind Lumber
-			maps = {
-				BOREAN_TUNDRA,
-				CRYSTALSONG_FOREST,
-				DRAGONBLIGHT,
-				GRIZZLY_HILLS,
-				HOWLING_FJORD,
-				SHOLAZAR_BASIN,
-				THE_STORM_PEAKS,
-				WINTERGRASP,
-				ZULDRAK,
-			},
-			groups = {
-				-- Objects
-				o(571034),	-- [Borean Tundra]
-				o(570347),	-- [Crystalsong Forest]
-				o(569722),	-- [Dragonblight]
-				o(569408),	-- [Grizzly Hills/Howling Fjord]
-				o(568528),	-- [Howling Fjord]
-				o(570942),	-- [Sholazar Basin]
-				o(570896),	-- [The Storm Peaks]
-				o(569785),	-- [Wintergrasp]
-				o(570233),	-- [Zul'Drak]
-				-- Drops
-				i(251762),	-- Coldwind Lumber
-			},
-		}),
-	})),
+	n(DECOR, {
+		timeline = { ADDED_11_2_7 },
+		groups = {
+			o_repeated({	-- Coldwind Lumber
+				maps = {
+					BOREAN_TUNDRA,
+					CRYSTALSONG_FOREST,
+					DRAGONBLIGHT,
+					GRIZZLY_HILLS,
+					HOWLING_FJORD,
+					SHOLAZAR_BASIN,
+					THE_STORM_PEAKS,
+					WINTERGRASP,
+					ZULDRAK,
+				},
+				groups = {
+					-- Objects
+					o(571034),	-- [Borean Tundra]
+					o(570347),	-- [Crystalsong Forest]
+					o(569722),	-- [Dragonblight]
+					o(569408),	-- [Grizzly Hills/Howling Fjord]
+					o(568528),	-- [Howling Fjord]
+					o(570942),	-- [Sholazar Basin]
+					o(570896),	-- [The Storm Peaks]
+					o(569785),	-- [Wintergrasp]
+					o(570233),	-- [Zul'Drak]
+					-- Drops
+					i(251762),	-- Coldwind Lumber
+				},
+			}),
+		},
+	}),
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(40411, {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
@@ -170,49 +173,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(44324),	-- Mighty Alchemist Stone
 		}),
 	}),
-	prof(ARCHAEOLOGY, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
-		i(64396),	-- Nerubian Obelisk
-		i(64395),	-- Vrykul Rune Stick
-		header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, {
-			provider = { "o", 203078 },	-- Nerubian Archaeology Find
-			maps = {
-				BOREAN_TUNDRA,
-				DRAGONBLIGHT,
-				EASTERN_PLAGUELANDS,
-				ICECROWN,
-				ZULDRAK,
-			},
-			groups = {
-				i(64481, {cost={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Blessing of the Old God (TOY!)
-				i(64479, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Ewer of Jormungar Blood
-				i(64477, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Gruesome Heart Box
-				i(64476, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Infested Ruby Ring
-				i(64482, {cost={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Puzzle Box of Yogg-Saron (TOY!)
-				i(64475, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Scepter of Nezar'Azret
-				i(64478, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Six-Clawed Cornice
-				i(64474, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Spidery Sundial
-				i(64480, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Vizier's Scrawled Streamer
-			},
-		}),
-		header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, {
-			provider = { "o", 207189 },	-- Vrykul Archaeology Find
-			maps = {
-				HOWLING_FJORD,
-				GRIZZLY_HILLS,
-				ICECROWN,
-				THE_STORM_PEAKS,
-			},
-			groups = {
-				i(64464, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Fanged Cloak Pin
-				i(64462, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Flint Striker
-				i(64459, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Intricate Treasure Chest Key
-				i(64460, {cost={{"c",ARCH_CURRENCY_VRYKUL,130}}}),	-- Nifflevar Bearded Axe
-				i(64461, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Scramseax
-				i(64467, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Thorned Necklace
-				i(69775, {cost={{"c",ARCH_CURRENCY_VRYKUL,100}},timeline = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
-			},
-		}),
-	})),
+	prof(ARCHAEOLOGY, {
+		timeline = { ADDED_4_0_3_LAUNCH },
+		groups = {
+			i(64396),	-- Nerubian Obelisk
+			i(64395),	-- Vrykul Rune Stick
+			header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, {
+				provider = { "o", 203078 },	-- Nerubian Archaeology Find
+				maps = {
+					BOREAN_TUNDRA,
+					DRAGONBLIGHT,
+					EASTERN_PLAGUELANDS,
+					ICECROWN,
+					ZULDRAK,
+				},
+				groups = {
+					i(64481, {cost={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Blessing of the Old God (TOY!)
+					i(64479, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Ewer of Jormungar Blood
+					i(64477, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Gruesome Heart Box
+					i(64476, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Infested Ruby Ring
+					i(64482, {cost={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Puzzle Box of Yogg-Saron (TOY!)
+					i(64475, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Scepter of Nezar'Azret
+					i(64478, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Six-Clawed Cornice
+					i(64474, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Spidery Sundial
+					i(64480, {cost={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Vizier's Scrawled Streamer
+				},
+			}),
+			header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, {
+				provider = { "o", 207189 },	-- Vrykul Archaeology Find
+				maps = {
+					HOWLING_FJORD,
+					GRIZZLY_HILLS,
+					ICECROWN,
+					THE_STORM_PEAKS,
+				},
+				groups = {
+					i(64464, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Fanged Cloak Pin
+					i(64462, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Flint Striker
+					i(64459, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Intricate Treasure Chest Key
+					i(64460, {cost={{"c",ARCH_CURRENCY_VRYKUL,130}}}),	-- Nifflevar Bearded Axe
+					i(64461, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Scramseax
+					i(64467, {cost={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Thorned Necklace
+					i(69775, {cost={{"c",ARCH_CURRENCY_VRYKUL,100}},timeline = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+				},
+			}),
+		},
+	}),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
 		prof(9788, {	-- Armorsmith
@@ -561,13 +567,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(257094),	-- Mark of the Mages' Eye (DECOR!)
 			i(257101),	-- Stampwhistle's Postal Portal (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-			i(138790, {	-- Tome of Illusions: Northrend
-				ill(5391),	-- Berserking (ILLUSION!)
-				ill(5388),	-- Greater Spellpower (ILLUSION!)
-				ill(1894),	-- Icy Chill (ILLUSION!)
-			}),
-		})),
+		filter(ILLUSIONS, {
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(138790, {	-- Tome of Illusions: Northrend
+					ill(5391),	-- Berserking (ILLUSION!)
+					ill(5388),	-- Greater Spellpower (ILLUSION!)
+					ill(1894),	-- Icy Chill (ILLUSION!)
+				}),
+			},
+		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(44452, {timeline = { REMOVED_5_0_4 }}),	-- Runed Titanium Rod
 		}),

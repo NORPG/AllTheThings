@@ -485,12 +485,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(245601),	-- Ancestral Signal Brazier (DECOR!)
 			i(251655),	-- Draenethyst String Lights (DECOR!)
 		})),
-		filter(ILLUSIONS, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
-			i(138795, {	-- Tome of Illusions: Draenor
-				ill(5334),	-- Mark of the Frostwolf (ILLUSION!)
-				ill(5330),	-- Mark of the Thunderlord (ILLUSION!)
-			}),
-		})),
+		filter(ILLUSIONS, {
+			timeline = { ADDED_7_0_3 },
+			groups = {
+				i(138795, {	-- Tome of Illusions: Draenor
+					ill(5334),	-- Mark of the Frostwolf (ILLUSION!)
+					ill(5330),	-- Mark of the Thunderlord (ILLUSION!)
+				}),
+			},
+		}),
 		filter(MISC, {
 			i(112321),	-- Enchanted Dust
 			i(119293),	-- Secret of Draenor Enchanting

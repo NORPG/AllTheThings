@@ -21,8 +21,9 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					i(210766),	-- Silent Mark of the Umbraclaw
 				},
 			}),
-			n(213285, bubbleDown({ timeline = { REMOVED_11_0_0 } }, {	-- Theozhaklos the Curious <Novice Explorer>
+			n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
 				coord = { 36.7, 33.3, EMERALD_DREAM },
+				timeline = { REMOVED_11_0_0 },
 				groups = bubbleDownFiltered({
 					cost = { { "i", 210944, 1 } },	-- Emerald Mark of Mastery
 					bonusID = 7532,
@@ -119,7 +120,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 						i(207181),	-- Molten Vanguard's Steel Tassets
 					}),
 				}),
-			})),
+			}),
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
 				coord = { 49.8, 62.9, EMERALD_DREAM },
 				groups = {

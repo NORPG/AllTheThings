@@ -992,9 +992,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 				sourceQuests = { 62159 },	-- Aiding the Shadowlands
 				customCollect = "SL_SKIP",	-- SL Skip Character
 				lockCriteria = { 1, "lvl", 60 },
-			}, bubbleDown({
-				timeline = { ADDED_9_0_2 },
-			}, {
+			}, sharedData({ timeline = { ADDED_9_0_2 } }, {
 				q(62773, {	-- Dreamshrine Basin [Pre-60]
 					coord = { 62.0, 52.8, ARDENWEALD },
 					groups = {

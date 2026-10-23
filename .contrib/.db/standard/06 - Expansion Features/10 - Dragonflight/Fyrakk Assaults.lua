@@ -20,9 +20,10 @@ local FYRAKK_ASSAULTS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	n(FYRAKK_ASSAULTS, {
 		questID = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon
+		timeline = { ADDED_10_1_0 },
 		isWeekly = true,
 		maps = {
 			OHNAHRAN_PLAINS,
@@ -355,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	n(FYRAKK_ASSAULTS, sharedData({ timeline = { ADDED_10_1_0 } }, {

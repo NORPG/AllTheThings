@@ -1574,7 +1574,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			n(REWARDS, bubbleDownSelf({ timeline = { ADDED_2_3_0 } }, {
+			n(REWARDS, sharedData({ timeline = { ADDED_2_3_0 } }, {
 				container(33844, {	-- Barrel of Fish
 					i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
 					i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)

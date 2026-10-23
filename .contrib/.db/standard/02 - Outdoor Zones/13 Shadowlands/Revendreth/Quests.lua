@@ -1135,9 +1135,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				sourceQuests = { 62159 },	-- Aiding the Shadowlands
 				customCollect = "SL_SKIP",	-- SL Skip Character
 				lockCriteria = { 1, "lvl", 60 },
-			}, bubbleDown({
-				timeline = { ADDED_9_0_2 },
-			}, {
+			}, sharedData({ timeline = { ADDED_9_0_2 } }, {
 				q(62781, {	-- Ash You Like It [Pre-60]
 					coord = { 36.6, 56.0, REVENDRETH },
 					groups = {

@@ -22,7 +22,8 @@ local CALL_OF_THE_SCARAB_HEADER = createHeader({
 	},
 });
 
-root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, {
+	timeline = { ADDED_7_1_5 },
 	maps = { SILITHUS },
 	groups = {
 		n(QUESTS, {
@@ -408,4 +409,4 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 			i(143855),	-- Twilight Cultist Robe
 		}),
 	},
-}))));
+})));

@@ -75,8 +75,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(DARKIRON, bubbleDown({ timeline = { ADDED_8_0_1 }, races = { DARKIRON } }, {
+		race(DARKIRON, bubbleDown({ races = { DARKIRON } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+			timeline = { ADDED_8_0_1 },
 			groups = {
 				q(51483, {	-- Heritage o' the Dark Iron
 					provider = { "n", 144152 },	-- Moira Thaurissan
@@ -98,8 +99,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(DRAENEI, bubbleDown({ timeline = { ADDED_10_2_7 }, races = { DRAENEI } }, {
+		race(DRAENEI, bubbleDown({ races = { DRAENEI } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
+			timeline = { ADDED_10_2_7 },
 			groups = {
 				q(78068, {	-- An Artificer's Appeal
 					provider = { "o", 415303 },	-- Magically-Sealed Parcel
@@ -616,7 +618,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(HIGHMOUNTAIN_TAUREN, bubbleDown({ timeline = { ADDED_7_3_5 }, races = { HIGHMOUNTAIN_TAUREN } }, {
+		race(HIGHMOUNTAIN_TAUREN, bubbleDown({ races = { HIGHMOUNTAIN_TAUREN } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 			groups = {
 				q(49783, {	-- Heritage of Highmountain
@@ -781,8 +783,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(KULTIRAN, bubbleDown({ timeline = { ADDED_8_1_5 }, races = { KULTIRAN } }, {
+		race(KULTIRAN, bubbleDown({ races = { KULTIRAN } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+			timeline = { ADDED_8_1_5 },
 			groups = {
 				q(53722, {	-- Heritage of the Kul Tiran
 					provider = { "n", 150941 },	-- Katherine Proudmoore
@@ -808,7 +811,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(LIGHTFORGED, bubbleDown({ timeline = { ADDED_7_3_5 }, races = { LIGHTFORGED } }, {
+		race(LIGHTFORGED, bubbleDown({ races = { LIGHTFORGED } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 			groups = {
 				q(49782, {	-- Heritage of the Lightforged
@@ -831,8 +834,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(MAGHAR, bubbleDown({ timeline = { ADDED_8_0_1 }, races = { MAGHAR } }, {
+		race(MAGHAR, bubbleDown({ races = { MAGHAR } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+			timeline = { ADDED_8_0_1 },
 			groups = {
 				q(51484, {	-- Heritage of the Mag'har
 					provider = { "n", 143845 },	-- Overlord Geya'rah
@@ -870,8 +874,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(MECHAGNOME, bubbleDown({ timeline = { ADDED_8_3_0 }, races = { MECHAGNOME } }, {
+		race(MECHAGNOME, bubbleDown({ races = { MECHAGNOME } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
+			timeline = { ADDED_8_3_0 },
 			groups = {
 				q(58436, {	-- Heritage of the Mechagnome
 					provider = { "n", 158145 },	-- Prince Erazmin
@@ -892,8 +897,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(NIGHTELF, bubbleDown({ timeline = { ADDED_10_1_7 }, races = { NIGHTELF } }, {
+		race(NIGHTELF, bubbleDown({ races = { NIGHTELF } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Night Elf|r.",
+			timeline = { ADDED_10_1_7 },
 			groups = {
 				q(75890, {	-- The Clarion Call
 					provider = { "o", 405958 },	-- Sealed Kaldorei Scroll
@@ -976,7 +982,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		}));
-		race(NIGHTBORNE, bubbleDown({ timeline = { ADDED_7_3_5 }, races = { NIGHTBORNE } }, {
+		race(NIGHTBORNE, bubbleDown({ races = { NIGHTBORNE } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
 			groups = {
 				q(49784, {	-- Heritage of the Nightborne
@@ -1157,8 +1163,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(PANDAREN_NEUTRAL, bubbleDown({ timeline = { ADDED_11_2_7 }, races = { PANDAREN_ALLIANCE, PANDAREN_HORDE } }, {
+		race(PANDAREN_NEUTRAL, bubbleDown({ races = { PANDAREN_ALLIANCE, PANDAREN_HORDE } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Pandaren|r.",
+			timeline = { ADDED_11_2_7 },
 			groups = {
 				n(QUESTS, {
 					q(84442, {	-- Invitation to the Spirit Festival [A]
@@ -1450,8 +1457,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(TROLL, bubbleDown({ timeline = { ADDED_10_2_7 }, races = { TROLL } }, {
+		race(TROLL, bubbleDown({ races = { TROLL } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
+			timeline = { ADDED_10_2_7 },
 			groups = {
 				q(77869),	-- Return to the Echo Isles
 				q(77871, {	-- De Old Loa
@@ -1576,8 +1584,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		}));
-		race(UNDEAD, bubbleDown({ timeline = { ADDED_10_1_7 }, races = { UNDEAD } }, {
+		race(UNDEAD, bubbleDown({ races = { UNDEAD } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Undead|r who has personally done the |cFFFFD700Return to Lordaeron|r questline.",
+			timeline = { ADDED_10_1_7 },
 			groups = {
 				q(76530, {	-- Unliving Summons (automatically pops up when you meet the requirements)
 					sourceQuests = { 65788 },	-- A Walk with Ghosts
@@ -1704,7 +1713,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		}));
-		race(VOIDELF, bubbleDown({ timeline = { ADDED_7_3_5 }, races = { VOIDELF } }, {
+		race(VOIDELF, bubbleDown({ races = { VOIDELF } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 			maps = { TELOGRUS_RIFT },
 			groups = {
@@ -1729,8 +1738,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(VULPERA, bubbleDown({ timeline = { ADDED_8_3_0 }, races = { VULPERA } }, {
+		race(VULPERA, bubbleDown({ races = { VULPERA } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
+			timeline = { ADDED_8_3_0 },
 			groups = {
 				q(58435, {	-- Heritage of the Vulpera
 					provider = { "n", 124108 },	-- Hagashi <Innkeeper>
@@ -1829,8 +1839,9 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(ZANDALARI, bubbleDown({ timeline = { ADDED_8_1_5 }, races = { ZANDALARI } }, {
+		race(ZANDALARI, bubbleDown({ races = { ZANDALARI } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+			timeline = { ADDED_8_1_5 },
 			groups = {
 				q(53721, {	-- Heritage of the Zandalari
 					provider = { "n", 146335 },	-- Queen Talanji

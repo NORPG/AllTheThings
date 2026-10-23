@@ -1183,61 +1183,65 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 								i(206424),	-- Plans: Icebane Waistguard (RECIPE!)
 							}),
 						}),
-						n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+						n(ACHIEVEMENTS, {
 							ach(18557, {	-- Never Bothered, Anyway
 								description = "Equip the full crafted set of Glacial (cloth), Icebane (plate), Icy Scale (mail), or Polar (leather). Note that the tailor-crafted Glacial Cloak is required for any of the sets!",
+								timeline = { ADDED_10_1_5 },
 							}),
 							ach(18616, {	-- Putting Wilhelm Out of Business
-								crit(60649, {	-- Omarion's Notes - Pages 1 & 2
-									_quests = { 76291 },
-								}),
-								crit(60650, {	-- Omarion's Notes - Pages 3 & 4
-									_quests = { 76292 },
-								}),
-								crit(60651, {	-- Omarion's Notes - Pages 5 & 6
-									_quests = { 76293 },
-								}),
-								crit(60652, {	-- Omarion's Notes - Pages 7 & 8
-									_quests = { 76294 },
-								}),
-								crit(60653, {	-- Omarion's Notes - Pages 9 & 10
-									_quests = { 76295 },
-								}),
-								crit(60654, {	-- Omarion's Notes - Pages 11 & 12
-									_quests = { 76296 },
-								}),
-								crit(60655, {	-- Omarion's Notes - Pages 13 & 14
-									_quests = { 76297 },
-								}),
-								crit(60656, {	-- Omarion's Notes - Pages 15 & 16
-									_quests = { 76298 },
-								}),
-								crit(60657, {	-- Omarion's Notes - Pages 17 & 18
-									_quests = { 76299 },
-								}),
-								crit(60658, {	-- Omarion's Notes - Pages 19 & 20
-									_quests = { 76300 },
-								}),
-								crit(60659, {	-- Omarion's Notes - Pages 21 & 22
-									_quests = { 76301 },
-								}),
-								crit(60660, {	-- Omarion's Notes - Pages 23 & 24
-									_quests = { 76302 },
-								}),
-								crit(60661, {	-- Omarion's Notes - Pages 25 & 26
-									_quests = { 76303 },
-								}),
-								crit(60662, {	-- Omarion's Notes - Pages 27 & 28
-									_quests = { 76304 },
-								}),
-								crit(60663, {	-- Omarion's Notes - Pages 29 & 30
-									_quests = { 76305 },
-								}),
-								crit(60664, {	-- Omarion's Notes - Pages 31 & 32
-									_quests = { 76306 },
-								}),
+								timeline = { ADDED_10_1_5 },
+								groups = {
+									crit(60649, {	-- Omarion's Notes - Pages 1 & 2
+										_quests = { 76291 },
+									}),
+									crit(60650, {	-- Omarion's Notes - Pages 3 & 4
+										_quests = { 76292 },
+									}),
+									crit(60651, {	-- Omarion's Notes - Pages 5 & 6
+										_quests = { 76293 },
+									}),
+									crit(60652, {	-- Omarion's Notes - Pages 7 & 8
+										_quests = { 76294 },
+									}),
+									crit(60653, {	-- Omarion's Notes - Pages 9 & 10
+										_quests = { 76295 },
+									}),
+									crit(60654, {	-- Omarion's Notes - Pages 11 & 12
+										_quests = { 76296 },
+									}),
+									crit(60655, {	-- Omarion's Notes - Pages 13 & 14
+										_quests = { 76297 },
+									}),
+									crit(60656, {	-- Omarion's Notes - Pages 15 & 16
+										_quests = { 76298 },
+									}),
+									crit(60657, {	-- Omarion's Notes - Pages 17 & 18
+										_quests = { 76299 },
+									}),
+									crit(60658, {	-- Omarion's Notes - Pages 19 & 20
+										_quests = { 76300 },
+									}),
+									crit(60659, {	-- Omarion's Notes - Pages 21 & 22
+										_quests = { 76301 },
+									}),
+									crit(60660, {	-- Omarion's Notes - Pages 23 & 24
+										_quests = { 76302 },
+									}),
+									crit(60661, {	-- Omarion's Notes - Pages 25 & 26
+										_quests = { 76303 },
+									}),
+									crit(60662, {	-- Omarion's Notes - Pages 27 & 28
+										_quests = { 76304 },
+									}),
+									crit(60663, {	-- Omarion's Notes - Pages 29 & 30
+										_quests = { 76305 },
+									}),
+									crit(60664, {	-- Omarion's Notes - Pages 31 & 32
+										_quests = { 76306 },
+									}),
+								},
 							}),
-						})),
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -4958,32 +4962,35 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				CRAFTSMANS_WRIT_QUEST(9181, 22602, { "i", 12792, 3 }),	-- Craftsman's Writ - Volcanic Hammer
 				CRAFTSMANS_WRIT_QUEST(9186, 22607, { "i", 15088, 9 }),	-- Craftsman's Writ - Wicked Leather Belt
 				CRAFTSMANS_WRIT_QUEST(9184, 22605, { "i", 15086, 10 }),	-- Craftsman's Writ - Wicked Leather Headband
-				bubbleDown({ timeline = { REMOVED_4_0_3 } }, i(22568, {	-- Sealed Craftsman's Writ
-					i(22609),	-- Craftsman's Writ - Brightcloth Pants
-					i(22600),	-- Craftsman's Writ - Dense Weightstone
-					i(22621),	-- Craftsman's Writ - Flask of Petrification
-					i(22615),	-- Craftsman's Writ - Gnomish Battle Chicken
-					i(22613),	-- Craftsman's Writ - Goblin Sapper Charge
-					i(22620),	-- Craftsman's Writ - Greater Arcane Protection Potion
-					i(22603),	-- Craftsman's Writ - Huge Thorium Battleaxe
-					i(22601),	-- Craftsman's Writ - Imperial Plate Chest
-					i(22624),	-- Craftsman's Writ - Lightning Eel
-					i(22618),	-- Craftsman's Writ - Major Healing Potion
-					i(22617),	-- Craftsman's Writ - Major Mana Potion
-					i(22623),	-- Craftsman's Writ - Plated Armorfish
-					i(22604),	-- Craftsman's Writ - Radiant Circlet
-					i(22606),	-- Craftsman's Writ - Rugged Armor Kit
-					i(22611),	-- Craftsman's Writ - Runecloth Bag
-					i(22610),	-- Craftsman's Writ - Runecloth Boots
-					i(22612),	-- Craftsman's Writ - Runecloth Robe
-					i(22608),	-- Craftsman's Writ - Runic Leather Pants
-					i(22622),	-- Craftsman's Writ - Stonescale Eel
-					i(22614),	-- Craftsman's Writ - Thorium Grenade
-					i(22616),	-- Craftsman's Writ - Thorium Tube
-					i(22602),	-- Craftsman's Writ - Volcanic Hammer
-					i(22607),	-- Craftsman's Writ - Wicked Leather Belt
-					i(22605),	-- Craftsman's Writ - Wicked Leather Headband
-				})),
+				i(22568, {	-- Sealed Craftsman's Writ
+					timeline = { REMOVED_4_0_3 },
+					groups = {
+						i(22609),	-- Craftsman's Writ - Brightcloth Pants
+						i(22600),	-- Craftsman's Writ - Dense Weightstone
+						i(22621),	-- Craftsman's Writ - Flask of Petrification
+						i(22615),	-- Craftsman's Writ - Gnomish Battle Chicken
+						i(22613),	-- Craftsman's Writ - Goblin Sapper Charge
+						i(22620),	-- Craftsman's Writ - Greater Arcane Protection Potion
+						i(22603),	-- Craftsman's Writ - Huge Thorium Battleaxe
+						i(22601),	-- Craftsman's Writ - Imperial Plate Chest
+						i(22624),	-- Craftsman's Writ - Lightning Eel
+						i(22618),	-- Craftsman's Writ - Major Healing Potion
+						i(22617),	-- Craftsman's Writ - Major Mana Potion
+						i(22623),	-- Craftsman's Writ - Plated Armorfish
+						i(22604),	-- Craftsman's Writ - Radiant Circlet
+						i(22606),	-- Craftsman's Writ - Rugged Armor Kit
+						i(22611),	-- Craftsman's Writ - Runecloth Bag
+						i(22610),	-- Craftsman's Writ - Runecloth Boots
+						i(22612),	-- Craftsman's Writ - Runecloth Robe
+						i(22608),	-- Craftsman's Writ - Runic Leather Pants
+						i(22622),	-- Craftsman's Writ - Stonescale Eel
+						i(22614),	-- Craftsman's Writ - Thorium Grenade
+						i(22616),	-- Craftsman's Writ - Thorium Tube
+						i(22602),	-- Craftsman's Writ - Volcanic Hammer
+						i(22607),	-- Craftsman's Writ - Wicked Leather Belt
+						i(22605),	-- Craftsman's Writ - Wicked Leather Headband
+					},
+				}),
 			},
 		}),
 		n(TREASURES, {
