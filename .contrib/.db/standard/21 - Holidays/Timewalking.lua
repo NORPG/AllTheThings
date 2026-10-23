@@ -355,8 +355,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 
 -- Classic Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT, {
-	expansion(EXPANSION.CLASSIC, {forcetimeline = { ADDED_11_0_5 }}),
-	expansion(EXPANSION.CLASSIC, {
+	expansionHeader(EXPANSION.CLASSIC, { ADDED_11_0_5 }, {
 		n(ACHIEVEMENTS, {
 			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
 		}),
