@@ -3,9 +3,9 @@
 -----------------------------------
 -- Every thing in this file hasn't been sorted yet, but is known to exist and is not 'NYI'.
 -- #if NOT ANYCLASSIC
-root(ROOTS.Sourceless, sharedData({
+root(ROOTS.Sourceless, bubbleDownFiltered({
 		sharedDescription = "If you obtain this item, please provide as much information as you can about how and where you got it.",
-	},{
+	},FILTERFUNC_itemID,{
 	n(ARMOR, {
 		expansion(EXPANSION.CATA, {
 			-- 4.0.3
