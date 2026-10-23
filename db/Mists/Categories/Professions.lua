@@ -771,7 +771,10 @@ ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
 x(2,{awp=20005,phase=17,requireSkill=129,g={
 ach(134,{requireSkill=129})}}),
-x(3,{awp=30003,phase=30,requireSkill=129}),
+x(3,{awp=30003,phase=30,requireSkill=129,g={
+ach(135,{requireSkill=129}),
+ach(137,{providers={{"i",34722}},requireSkill=129}),
+ach(141,{providers={{"i",34722},{"i",53049},{"i",53051},{"i",72985},{"i",72986}},requireSkill=129})}}),
 x(4,{awp=40003,requireSkill=129,g={
 ach(4918,{requireSkill=129}),
 ach(5480,{providers={{"i",53051}},requireSkill=129})}}),

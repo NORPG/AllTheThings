@@ -229,7 +229,10 @@ ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
 x(2,{awp=20005,phase=17,requireSkill=129,g={
 ach(134,{requireSkill=129})}}),
-x(3,{awp=30003,phase=30,requireSkill=129})}}),
+x(3,{awp=30003,phase=30,requireSkill=129,g={
+ach(135,{requireSkill=129}),
+ach(137,{providers={{"i",34722}},requireSkill=129}),
+ach(141,{providers={{"i",34722}},requireSkill=129})}})}}),
 prof(356,{
 h(-12,{requireSkill=356,g={
 ach(1516,{awp=30003,phase=30,requireSkill=356,sym={{"meta_achievement",1561,1243,130,306,726,1517,905,878,1225,2096,150,144,153,1257}},g={

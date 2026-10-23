@@ -85,8 +85,7 @@ ach(734),
 ach(732),
 ach(731),
 ach(116),
-ach(730,{rwp=80001,g={
-crit(846,{achID=730,id=1})}}),
+ach(730,{rwp=80001}),
 ach(735)}}),
 x(4,{awp=40003,g={
 ach(4924),
@@ -398,7 +397,11 @@ ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
 x(2,{awp=20005,phase=17,requireSkill=129,g={
 ach(134,{requireSkill=129})}}),
-x(3,{awp=30003,phase=30,requireSkill=129}),
+x(3,{awp=30003,phase=30,requireSkill=129,g={
+ach(135,{requireSkill=129,g={
+crit(846,{achID=730,id=1})}}),
+ach(137,{providers={{"i",34722}},requireSkill=129}),
+ach(141,{providers={{"i",34722},{"i",53049},{"i",53051}},requireSkill=129})}}),
 x(4,{awp=40003,requireSkill=129,g={
 ach(4918,{requireSkill=129,g={
 crit(63617,{achID=4915,id=1})}}),

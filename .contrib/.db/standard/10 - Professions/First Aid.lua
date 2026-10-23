@@ -30,7 +30,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ requireSkill = FIRST_AI
 			},
 		})),
 		expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
-			forcetimeline = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
+			forcetimeline = { ADDED_3_0_3, REMOVED_8_0_1 },
 			groups = {
 				ach(135),	-- Grand Master in First Aid
 				-- #if BEFORE BFA

@@ -4503,7 +4503,8 @@ ach(132,{requireSkill=129,u=2}),
 ach(133,{requireSkill=129,u=2})}}),
 x(2,{awp=30002,requireSkill=129,u=2,g={
 ach(134,{requireSkill=129,u=2})}}),
-x(3,{awp=30003,requireSkill=129,u=2}),
+x(3,{awp=30003,requireSkill=129,u=2,g={
+ach(135,{requireSkill=129,u=2})}}),
 x(4,{awp=40003,requireSkill=129,u=2,g={
 ach(4918,{requireSkill=129,u=2})}}),
 x(5,{awp=50004,requireSkill=129,u=2,g={
