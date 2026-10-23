@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 					}),
 				}),
 			}),
-			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				n(ACHIEVEMENTS, {
 					ach(18786, {	-- Zaralek Cavern Challenge: Bronze
 						-- Meta Achievement

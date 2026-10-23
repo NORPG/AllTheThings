@@ -126,7 +126,7 @@ root(ROOTS.Zones, {
 					coord = { 45.1, 32.4, HIGHMOUNTAIN },
 					groups = {
 						i(200664, {	-- Bloodgem of Greed
-							timeline = ADDED_10_0_2,
+							timeline = { ADDED_10_0_2 },
 							classes = { EVOKER },
 						}),
 						i(133115),	-- Stonedark Focus
@@ -235,7 +235,7 @@ root(ROOTS.Zones, {
 					groups = {
 						i(264477, {timeline = { ADDED_12_0_1 }}),	-- Thunder Totem Mailbox (DECOR!)
 						i(200662, {	-- Encrusted Blade of the Mountains
-							timeline = ADDED_10_0_2,
+							timeline = { ADDED_10_0_2 },
 							classes = { EVOKER },
 						}),
 						i(133070),	-- Empowered Lifespring Crystal

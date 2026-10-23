@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		coord = { 36.8 ,47.7, KUN_LAI_SUMMIT},
-		timeline = ADDED_5_0_4,
+		timeline = { ADDED_5_0_4 },
 		maps = {
 			SHADOPAN_MONASTERY,
 			SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO,

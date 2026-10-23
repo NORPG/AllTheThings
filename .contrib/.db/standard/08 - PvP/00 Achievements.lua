@@ -241,7 +241,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	}),
 	-- #endif
-	pvp(ach(14519, bubbleDownSelf({timeline = ADDED_9_0_2_LAUNCH },{	-- Covenant Combat
+	pvp(ach(14519, bubbleDownSelf({timeline = { ADDED_9_0_2_LAUNCH } },{	-- Covenant Combat
 		crit(49222),	-- Venthyr
 		crit(49223),	-- Night Fae
 		crit(49224),	-- Necrolord

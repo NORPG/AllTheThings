@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(65, {	-- Throne of the Tides
 		mapID = 322,
 		coord = { 71.00, 29.00, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		maps = { 323 },
 		groups = {
 			n(QUESTS, sharedData({
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(55261),	-- Ring of the Great Whale
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(101, {	-- Lady Naz'jar
 					crs = { 40586 },	-- Lady Naz'jar
 					groups = {

@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
-		timeline = ADDED_4_3_0,
+		timeline = { ADDED_4_3_0 },
 		groups = {
 			n(QUESTS, {
 				q(30104, {	-- Documenting the Timeways

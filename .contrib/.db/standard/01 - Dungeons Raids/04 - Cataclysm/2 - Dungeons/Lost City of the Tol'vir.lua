@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(69, {	-- Lost City of the Tol'vir
 		mapID = 277,
 		coord = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		groups = {
 			n(QUESTS, {
 				q(28870, {	-- Return to the Lost City
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(117, {	-- General Husam
 					crs = { 44577 },	-- General Husam
 					groups = {

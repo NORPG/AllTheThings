@@ -130,7 +130,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 
 							coord = { 44.66, 72.87, HIGHMOUNTAIN },
 						}),
 					}),
-					expansion(EXPANSION.BFA, sharedDataSelf({ timeline = ADDED_11_0_5 }, {
+					expansion(EXPANSION.BFA, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
 						molemachine(80102, 9623, {	-- Tidebreak Summit
 							coord = { 64.21, 29.44, STORMSONG_VALLEY },
 						}),
@@ -147,7 +147,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 
 							coord = { 34.34, 45.15, NAZMIR },
 						}),
 					})),
-					expansion(EXPANSION.SL, sharedDataSelf({ timeline = ADDED_11_0_5 }, {
+					expansion(EXPANSION.SL, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
 						molemachine(80104, 11438, {	-- Scorched Crypt
 							coord = { 19.94, 38.81, REVENDRETH },
 						}),
@@ -161,7 +161,7 @@ root(ROOTS.Character, n(ALLIED_RACES, bubbleDownSelf({ timeline = { ADDED_7_3_5 
 							coord = { 53.49, 59.79, MALDRAXXUS },
 						}),
 					})),
-					expansion(EXPANSION.DF, sharedDataSelf({ timeline = ADDED_11_0_5 }, {
+					expansion(EXPANSION.DF, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
 						molemachine(80107, 14012, {	-- The Slagmire
 							coord = { 32.36, 54.90, THE_WAKING_SHORES },
 						}),

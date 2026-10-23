@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 					coord = { 51.9, 64.1, VALSHARAH },
 					groups = {
 						i(200669, {	-- Emerald Mace of Dreams
-							timeline = ADDED_10_0_2,
+							timeline = { ADDED_10_0_2 },
 							classes = { EVOKER },
 						}),
 						i(141387),	-- Emerald Bloom
@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 					coord = { 23.3, 42.1, 642 },	-- Darkpens
 					groups = {
 						i(200668, {	-- Ravencourt Field Sickle
-							timeline = ADDED_10_0_2,
+							timeline = { ADDED_10_0_2 },
 							classes = { EVOKER },
 						}),
 						i(141389),	-- Stareye Gem

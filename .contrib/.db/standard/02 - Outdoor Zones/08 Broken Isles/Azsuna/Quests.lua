@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				coord = { 50.2, 61.0, AZSUNA },
 				groups = {
 					i(200665, {	-- Seaweed Trimming Blade
-						timeline = ADDED_10_0_2,
+						timeline = { ADDED_10_0_2 },
 						classes = { EVOKER },
 					}),
 					i(133039),	-- Breath of Al'Akir
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				coord = { 48.2, 22.7, AZSUNA },
 				groups = {
 					i(200653, {	-- Azure Staff of Arcana
-						timeline = ADDED_10_0_2,
+						timeline = { ADDED_10_0_2 },
 						classes = { EVOKER },
 					}),
 					i(133016),	-- Azurewing Guile

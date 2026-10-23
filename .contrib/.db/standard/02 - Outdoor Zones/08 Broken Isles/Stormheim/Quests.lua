@@ -815,7 +815,7 @@ root(ROOTS.Zones, {
 					coord = { 46.3, 44.8, STORMHEIM },
 					groups = {
 						i(200666, {	-- Storm-Imbued Pole
-							timeline = ADDED_10_0_2,
+							timeline = { ADDED_10_0_2 },
 							classes = { EVOKER },
 						}),
 						i(132781),	-- Archived Record of Might

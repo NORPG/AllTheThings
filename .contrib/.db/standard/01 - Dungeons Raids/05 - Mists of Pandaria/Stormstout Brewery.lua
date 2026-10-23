@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(302, {	-- Stormstout Brewery
 		coord = { 36.0, 69.0, VALLEY_OF_THE_FOUR_WINDS },
-		timeline = ADDED_5_0_4,
+		timeline = { ADDED_5_0_4 },
 		maps = {
 			STORMSTOUT_BREWERY_GRAIN_CELLAR,
 			STORMSTOUT_BREWERY_STORMSTOUT_BREWHALL,

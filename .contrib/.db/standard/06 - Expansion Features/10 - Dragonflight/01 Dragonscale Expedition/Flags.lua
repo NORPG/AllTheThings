@@ -141,12 +141,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				o(386106, {	-- Dragonscale Expedition Flag
 					questID = 73699,
 					coord = { 54.6, 34.6, THE_FORBIDDEN_REACH },
-					timeline = ADDED_10_0_7,
+					timeline = { ADDED_10_0_7 },
 				}),
 				o(386108, {	-- Dragonscale Expedition Flag
 					questID = 73700,
 					coord = { 36.9, 37.9, THE_FORBIDDEN_REACH },
-					timeline = ADDED_10_0_7,
+					timeline = { ADDED_10_0_7 },
 				}),
 			}),
 		})),

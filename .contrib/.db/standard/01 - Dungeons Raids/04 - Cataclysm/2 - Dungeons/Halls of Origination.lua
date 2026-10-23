@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(70, {	-- Halls of Origination
 		mapID = 297,
 		coord = { 71.81, 52.16, ULDUM },	-- Halls of Origination
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		maps = { 298, 299 },
 		groups = {
 			n(QUESTS, {
@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(56110),	-- Charm of the Muse
 				i(56111),	-- Temple Band
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(124, {	-- Temple Guardian Anhuur
 					crs = { 39425 },	-- Temple Guardian Anhuur
 					groups = {

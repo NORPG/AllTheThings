@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		mapID = ZULGURUB,
 		coord = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		_drop = { "isRaid" },	-- prevent merging isRaid from Classic version
-		timeline = ADDED_4_1_0,
+		timeline = { ADDED_4_1_0 },
 		groups = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				header(HEADERS.Achievement, 17366, bubbleDown({ timeline = { ADDED_10_0_7 } }, {	-- Relics of a Fallen Empire

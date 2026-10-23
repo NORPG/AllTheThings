@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 					}),
 				}),
 			}),
-			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = ADDED_10_1_7 }, {	-- Dragonriding Challenge: Dragon Isles: Gold
+			header(HEADERS.Achievement, 18792, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Dragonriding Challenge: Dragon Isles: Gold
 				n(ACHIEVEMENTS, {
 					ach(18748, {	-- Waking Shores Challenge: Bronze
 						-- Meta Achievement
@@ -452,7 +452,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 					}),
 				}),
 			})),
-			header(HEADERS.Achievement, 17332, bubbleDownSelf({ timeline = ADDED_10_0_5 }, {	-- Reverse Racer: Gold
+			header(HEADERS.Achievement, 17332, bubbleDownSelf({ timeline = { ADDED_10_0_5 } }, {	-- Reverse Racer: Gold
 				n(ACHIEVEMENTS, {
 					ach(17195, {	-- Waking Shores Reverse: Bronze
 						-- Meta Achievement

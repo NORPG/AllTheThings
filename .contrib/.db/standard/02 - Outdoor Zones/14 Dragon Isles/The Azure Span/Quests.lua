@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 					coord = { 18.8, 24.4, THE_AZURE_SPAN },
 				}),
 			}),
-			header(HEADERS.Achievement, 17773, bubbleDownSelf({ timeline = ADDED_10_1_0 }, {	-- A Blue Dawn
+			header(HEADERS.Achievement, 17773, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {	-- A Blue Dawn
 				q(72900, {	-- Keeper of the Ossuary
 					qgs = {
 						187676,	-- Kalecgos

@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(303, {	-- Gate of the Setting Sun
 		coord = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
-		timeline = ADDED_5_0_4,
+		timeline = { ADDED_5_0_4 },
 		maps = {
 			GATE_OF_THE_SETTING_SUN,
 			GATE_OF_THE_SETTING_SUN_GATE_WATCH_TOWER,

@@ -2510,15 +2510,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(93631, name(HEADERS.NPC, 250582)),	-- Skinning Bloated Snapdragon
 			q(95459, name(HEADERS.NPC, 256770)),	-- Skinning Bilemaw the Gluttonous
 			q(93638, name(HEADERS.NPC, 249844)),	-- Skinning Chironex
-			q(97385, name(HEADERS.NPC, 257906), { timeline = ADDED_12_1_0 }),	-- Skinning Coin-Eye Skully
+			q(97385, name(HEADERS.NPC, 257906), { timeline = { ADDED_12_1_0 } }),	-- Skinning Coin-Eye Skully
 			q(93633, name(HEADERS.NPC, 255348)),	-- Skinning Dame Bloodshed
-			q(97415, name(HEADERS.NPC, 261142), { timeline = ADDED_12_1_0 }),	-- Skinning Destra
+			q(97415, name(HEADERS.NPC, 261142), { timeline = { ADDED_12_1_0 } }),	-- Skinning Destra
 			q(88545, name(HEADERS.NPC, 245688)),	-- Skinning Gloomclaw
 			q(95517, name(HEADERS.NPC, 249849)),	-- Skinning Ha'kalawe
 			q(93632, name(HEADERS.NPC, 246633)),	-- Skinning Harried Hawkstrider
-			q(97417, name(HEADERS.NPC, 265262), { timeline = ADDED_12_1_0 }),	-- Skinning Hisstara <The Raiser>
-			q(97419, name(HEADERS.NPC, 265237), { timeline = ADDED_12_1_0 }),	-- Skinning Lockjaw <The Snapper>
-			q(98365, name(HEADERS.NPC, 255088), { timeline = ADDED_12_1_0 }),	-- Skinning Looming Mutagenitor
+			q(97417, name(HEADERS.NPC, 265262), { timeline = { ADDED_12_1_0 } }),	-- Skinning Hisstara <The Raiser>
+			q(97419, name(HEADERS.NPC, 265237), { timeline = { ADDED_12_1_0 } }),	-- Skinning Lockjaw <The Snapper>
+			q(98365, name(HEADERS.NPC, 255088), { timeline = { ADDED_12_1_0 } }),	-- Skinning Looming Mutagenitor
 			q(88531, name(HEADERS.NPC, 245690)),	-- Skinning Lumenfin
 			q(88524, name(HEADERS.NPC, 247101)),	-- Skinning Netherscythe
 			q(93634, name(HEADERS.NPC, 242032)),	-- Skinning Oophaga
@@ -2529,12 +2529,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(95519, name(HEADERS.NPC, 248741)),	-- Skinning Rhazul
 			q(95515, name(HEADERS.NPC, 256922)),	-- Skinning Screammaxa the Matriarch
 			q(95518, name(HEADERS.NPC, 250180)),	-- Skinning Serrasa
-			q(97437, name(HEADERS.NPC, 268049), { timeline = ADDED_12_1_0 }),	-- Skinning Siltmouth
+			q(97437, name(HEADERS.NPC, 268049), { timeline = { ADDED_12_1_0 } }),	-- Skinning Siltmouth
 			q(88526, name(HEADERS.NPC, 245699)),	-- Skinning Silverscale
 			q(95470, name(HEADERS.NPC, 242031)),	-- Skinning Spinefrill
-			q(98368, name(HEADERS.NPC, 258254), { timeline = ADDED_12_1_0 }),	-- Skinning Ss'akrithos <The Boundless Ophidian>
-			q(97416, name(HEADERS.NPC, 261109), { timeline = ADDED_12_1_0 }),	-- Skinning Sss'alik
-			q(98363, name(HEADERS.NPC, 263456), { timeline = ADDED_12_1_0 }),	-- Skinning Szarith The Fanged
+			q(98368, name(HEADERS.NPC, 258254), { timeline = { ADDED_12_1_0 } }),	-- Skinning Ss'akrithos <The Boundless Ophidian>
+			q(97416, name(HEADERS.NPC, 261109), { timeline = { ADDED_12_1_0 } }),	-- Skinning Sss'alik
+			q(98363, name(HEADERS.NPC, 263456), { timeline = { ADDED_12_1_0 } }),	-- Skinning Szarith The Fanged
 			q(95446, name(HEADERS.NPC, 250876)),	-- Skinning Terrinor
 			q(93637, name(HEADERS.NPC, 242033)),	-- Skinning Tiny Vermin
 			q(93639, name(HEADERS.NPC, 238498)),	-- Skinning Territorial Voidscythe
@@ -2542,8 +2542,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(95471, name(HEADERS.NPC, 242035)),	-- Skinning The Devouring Invader
 			q(93636, name(HEADERS.NPC, 242024)),	-- Skinning The Snapping Scourge
 			q(88532, name(HEADERS.NPC, 247096)),	-- Skinning Umbrafang
-			q(98367, name(HEADERS.NPC, 257863), { timeline = ADDED_12_1_0 }),	-- Skinning Vassti, the Exalted Broodmother
-			q(98364, name(HEADERS.NPC, 255927), { timeline = ADDED_12_1_0 }),	-- Skinning Venom Lancer Ori'kassi / (triggered from Malformed Leviathan for me)
+			q(98367, name(HEADERS.NPC, 257863), { timeline = { ADDED_12_1_0 } }),	-- Skinning Vassti, the Exalted Broodmother
+			q(98364, name(HEADERS.NPC, 255927), { timeline = { ADDED_12_1_0 } }),	-- Skinning Venom Lancer Ori'kassi / (triggered from Malformed Leviathan for me)
 		})),
 		prof(TAILORING, {
 			q(89422),	-- 0/20 Arcanoweave Expertise

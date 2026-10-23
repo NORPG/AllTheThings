@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(66, {	-- Blackrock Caverns
 		mapID = 283,
 		coord = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		maps = { 284 },
 		groups = {
 			n(QUESTS, {
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(105, {	-- Rom'ogg Bonecrusher
 					crs = { 39665 },	-- Rom'ogg Bonecrusher
 					groups = {

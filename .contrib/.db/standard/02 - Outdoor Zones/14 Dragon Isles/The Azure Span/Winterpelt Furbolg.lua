@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
-		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ timeline = ADDED_10_0_7 }, {
+		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 			faction(FACTION_WINTERPELT_FURBOLG, {
 				-- completing the whole quest chain will always give exactly exalted
 				sourceQuest = 73031,	-- Champion of the Winterpelt

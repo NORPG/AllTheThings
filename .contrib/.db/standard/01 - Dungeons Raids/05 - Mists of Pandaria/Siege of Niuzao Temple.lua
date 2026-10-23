@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(324, {	-- Siege of Niuzao Temple
 		coord = { 35.0, 82.0, TOWNLONG_STEPPES },
-		timeline = ADDED_5_0_4,
+		timeline = { ADDED_5_0_4 },
 		maps = {
 			SIEGE_OF_NIUZAO_TEMPLE,
 			SIEGE_OF_NIUZAO_TEMPLE_THE_HOLLOWED_OUT_TREE,

@@ -650,7 +650,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 							i(197144),	-- Highland Drake: Red Scales (MM!)
 							i(197010),	-- Cliffside Wylderdrake: Red Scales (MM!)
 							i(197614),	-- Windborne Velocidrake: Red Scales (MM!)
-							i(203353, {timeline = ADDED_10_1_0}),	-- Winding Slitherdrake: Red Scales (MM!)
+							i(203353, {timeline = { ADDED_10_1_0 }}),	-- Winding Slitherdrake: Red Scales (MM!)
 						},
 					}),
 					q(72047, {	-- Dragon Isles Supplies

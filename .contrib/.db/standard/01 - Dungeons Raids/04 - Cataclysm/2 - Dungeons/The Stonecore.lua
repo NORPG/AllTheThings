@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(67, {	-- The Stonecore
 		mapID = 324,
 		coord = { 47.50, 52.05, DEEPHOLM },
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		groups = {
 			n(QUESTS, {
 				q(28814, {	-- Followers and Leaders
@@ -79,7 +79,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(110, {	-- Corborus
 					crs = { 43438 },	-- Corborus
 					groups = {

@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(68, {	-- The Vortex Pinnacle
 		mapID = 325,
 		coord = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
-		timeline = ADDED_4_0_3,
+		timeline = { ADDED_4_0_3 },
 		groups = {
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = REMOVED_7_3_5 }, {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
 				e(114, {	-- Grand Vizier Ertan
 					crs = { 43878 },	-- Grand Vizier Ertan
 					groups = {

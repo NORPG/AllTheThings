@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		mapID = ZULAMAN,
 		coord = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		_drop = { "isRaid" },	-- prevent merging isRaid from BC version
-		timeline = ADDED_4_1_0,
+		timeline = { ADDED_4_1_0 },
 		groups = {
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				groups = {
