@@ -3,6 +3,8 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ requireSkill = FIRST_AI
 		forcetimeline = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
+			-- #else
+			ADDED_1_0_1,
 			-- #endif
 			REMOVED_8_0_1,
 		},
