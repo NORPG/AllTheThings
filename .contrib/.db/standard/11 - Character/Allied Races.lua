@@ -68,7 +68,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					icon = 1786409,
 					coord = { 61.44, 24.35, 1186 },	-- Shadowforge City
 					groups = {
-						expansion(EXPANSION.CLASSIC, {
+						expansionHeader(EXPANSION.CLASSIC, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53591, 537, {	-- Fire Plume Ridge
 								coord = { 52.89, 55.76, UNGORO_CRATER },
 							}),
@@ -85,7 +85,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 61.82, 12.74, BLASTED_LANDS },
 							}),
 						}),
-						expansion(EXPANSION.TBC, {
+						expansionHeader(EXPANSION.TBC, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53592, 3538, {	-- Honor Hold [Outlands]
 								coord = { 53.15, 64.89, HELLFIRE_PENINSULA },
 							}),
@@ -96,7 +96,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 50.77, 35.28, SHADOWMOON_VALLEY },
 							}),
 						}),
-						expansion(EXPANSION.WRATH, {
+						expansionHeader(EXPANSION.WRATH, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53586, 4658, {	-- Argent Tournament Grounds
 								coord = { 76.97, 18.68, ICECROWN },
 							}),
@@ -104,12 +104,12 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 45.34, 49.92, DRAGONBLIGHT },
 							}),
 						}),
-						expansion(EXPANSION.CATA, {
+						expansionHeader(EXPANSION.CATA, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53601, 5039, {	-- Sulfuron Spire
 								coord = { 57.16, 77.09, MOUNT_HYJAL },
 							}),
 						}),
-						expansion(EXPANSION.MOP, {
+						expansionHeader(EXPANSION.MOP, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53595, 6085, {	-- One Keg
 								coord = { 57.68, 62.81, KUN_LAI_SUMMIT },
 							}),
@@ -117,7 +117,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 31.51, 73.57, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 						}),
-						expansion(EXPANSION.WOD, {
+						expansionHeader(EXPANSION.WOD, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53590, 7139, {	-- Elemental Plateau
 								coord = { 65.74, 08.24, DRAENOR_NAGRAND },
 							}),
@@ -125,7 +125,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 								coord = { 46.69, 38.75, GORGROND },
 							}),
 						}),
-						expansion(EXPANSION.LEGION, {
+						expansionHeader(EXPANSION.LEGION, { ADDED_8_0_1_LAUNCH }, {
 							molemachine(53589, 8648, {	-- Aalgen Point
 								coord = { 71.68, 48.01, BROKEN_SHORE },
 							}),

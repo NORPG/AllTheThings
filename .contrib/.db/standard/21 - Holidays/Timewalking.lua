@@ -1013,8 +1013,7 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
-	expansion(EXPANSION.TBC, {forcetimeline = { ADDED_6_2_2 }}),
-	expansion(EXPANSION.TBC, {
+	expansionHeader(EXPANSION.TBC, { ADDED_6_2_2 }, {
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				timeline = { ADDED_9_1_5 },
@@ -2235,8 +2234,7 @@ AddInstancesToRotation(EXPANSION.TBC, {
 
 -- Wrath of the Lich King Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, {
-	expansion(EXPANSION.WRATH, {forcetimeline = { ADDED_6_2_2 }}),
-	expansion(EXPANSION.WRATH, {
+	expansionHeader(EXPANSION.WRATH, { ADDED_6_2_2 }, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
 				description = "Drops from the last boss of any 'Wrath of the Lich King Timewalking' dungeon.",
@@ -3801,8 +3799,7 @@ AddInstancesToRotation(EXPANSION.WRATH, {
 
 -- Cataclysm Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLYSM_DUNGEON_EVENT, {
-	expansion(EXPANSION.CATA, {forcetimeline = { ADDED_6_2_3 }}),
-	expansion(EXPANSION.CATA, {
+	expansionHeader(EXPANSION.CATA, { ADDED_6_2_3 }, {
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				timeline = { ADDED_9_1_5 },
@@ -4835,8 +4832,7 @@ AddInstancesToRotation(EXPANSION.CATA, {
 
 -- Mists of Pandaria Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, {
-	expansion(EXPANSION.MOP, {forcetimeline = { ADDED_7_1_5 }}),
-	expansion(EXPANSION.MOP, {
+	expansionHeader(EXPANSION.MOP, { ADDED_7_1_5 }, {
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				timeline = { ADDED_9_1_5 },
@@ -5500,8 +5496,7 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 -- Warlords of Draenor Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
-	expansion(EXPANSION.WOD, {forcetimeline = { ADDED_8_1_5 }}),
-	expansion(EXPANSION.WOD, {
+	expansionHeader(EXPANSION.WOD, { ADDED_8_1_5 }, {
 		n(GROUP_FINDER, {
 			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
 				description = "Rewarded for completing any 'Warlords of Draenor Timewalking' dungeon.\nAvailable once per day.",
@@ -6146,8 +6141,7 @@ AddInstancesToRotation(EXPANSION.WOD, {
 
 -- Legion Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_DUNGEON_EVENT, {
-	expansion(EXPANSION.LEGION, {forcetimeline = { ADDED_9_1_5 }}),
-	expansion(EXPANSION.LEGION, {
+	expansionHeader(EXPANSION.LEGION, { ADDED_9_1_5 }, {
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 				description = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
@@ -6896,8 +6890,7 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 
 -- Battle for Azeroth Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_FOR_AZEROTH_DUNGEON_EVENT, {
-	expansion(EXPANSION.BFA, {forcetimeline = { ADDED_11_1_7 }}),
-	expansion(EXPANSION.BFA, {
+	expansionHeader(EXPANSION.BFA, { ADDED_11_1_7 }, {
 		n(GROUP_FINDER, {
 			i(238790, {	-- Remnant of Azeroth (A)
 				description = "Drops from the last boss of any 'Battle for Azeroth Timewalking' dungeon.",
@@ -7580,8 +7573,7 @@ AddInstancesToRotation(EXPANSION.BFA, {
 
 -- Shadowlands Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWLANDS_DUNGEON_EVENT, {
-	expansion(EXPANSION.SL, {forcetimeline = { ADDED_11_2_7 }}),
-	expansion(EXPANSION.SL, {
+	expansionHeader(EXPANSION.SL, { ADDED_11_2_7 }, {
 		n(GROUP_FINDER, {
 			i(253517, {	-- The Flickering Anima (QS!)
 				description = "Drops from the last boss of any 'Shadowlands Timewalking' dungeon.",
@@ -8130,8 +8122,7 @@ AddInstancesToRotation(EXPANSION.SL, {
 
 -- Dragonflight Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONFLIGHT_DUNGEON_EVENT, {
-	expansion(EXPANSION.DF, {forcetimeline = { ADDED_12_0_7 }}),
-	expansion(EXPANSION.DF, {
+	expansionHeader(EXPANSION.DF, { ADDED_12_0_7 }, {
 		n(GROUP_FINDER, {
 			i(262918, {	-- Lost Iridescent Flightstone (QS!)
 				description = "Drops from the last boss of any 'Dragonflight Timewalking' dungeon.",
@@ -8659,22 +8650,22 @@ end);
 ]]--
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, {
+	expansionHeader(EXPANSION.DF, { ADDED_10_1_7 }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(78204, { timeline = { ADDED_10_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
+			q(78204),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways I (spellID 423861)
 		})),
 	}),
-	expansion(EXPANSION.TWW, {
+	expansionHeader(EXPANSION.TWW, { ADDED_11_0_7 }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(85877, { timeline = { ADDED_11_0_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
+			q(85877),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways II (spellID 471544)
 			q(86295, { timeline = { ADDED_11_1_5 } }),	-- Disturbance Detected: Black Temple
 			q(89211, { timeline = { ADDED_11_1_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways III (spellID 1229050)
 			q(92856, { timeline = { ADDED_11_2_7 } }),	-- Gain Mastery of Timeways for 5 weeks during Turbulent Timeways IV (spellID 1258528)
 		})),
 	}),
-	expansion(EXPANSION.MID, {
+	expansionHeader(EXPANSION.MID, { ADDED_12_0_7 }, {
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
-			q(93509, { timeline = { ADDED_12_0_7 } }),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
+			q(93509),	-- Gain Mastery of Timeways for 4 weeks during Turbulent Timeways V (spellID 1269518)
 		})),
 	}),
 });
