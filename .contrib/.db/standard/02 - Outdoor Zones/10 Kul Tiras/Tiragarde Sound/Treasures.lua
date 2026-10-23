@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(TREASURES, {
 			o(293880, {	-- Buried Treasure Chest
 				questID = 52833,	-- Fading Treasure Map
@@ -69,8 +70,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				coord = { 72.6, 21.5, TIRAGARDE_SOUND },
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

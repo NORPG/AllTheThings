@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
+maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(VENDORS, {
 			n(251921, {	-- Arcanist Peroleth
@@ -295,4 +295,4 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 			}),
 		}),
 	}),
-})));
+}));

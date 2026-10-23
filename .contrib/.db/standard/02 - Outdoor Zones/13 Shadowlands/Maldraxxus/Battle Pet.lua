@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(MALDRAXXUS, {
+maproot(SHADOWLANDS, MALDRAXXUS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3051, {	-- Animated Cruor (PET!)
 				description = "Found commonly in the House of Constructs and northeast of Theatre of Pain.",
@@ -39,5 +40,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				description = "Found commonly around the outside of the ToP arena.",
 			}),
 		})),
-	}),
-})));
+	},
+});

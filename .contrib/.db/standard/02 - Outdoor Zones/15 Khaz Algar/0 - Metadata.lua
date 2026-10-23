@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, {
+maproot(KHAZ_ALGAR, {
 	icon = 5901550,
 	lore = "Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",
 	timeline = { ADDED_11_0_2 },
@@ -61,4 +61,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			timeline = { ADDED_11_1_0 },
 		}),
 	},
-}));
+});

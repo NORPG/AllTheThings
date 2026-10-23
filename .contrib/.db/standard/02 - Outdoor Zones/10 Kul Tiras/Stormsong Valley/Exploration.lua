@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		explorationHeader({
 			visit_exploration(9400,{coord={64.8,59.6,STORMSONG_VALLEY}}),	-- Addington Shipyards
 			visit_exploration(9652,{coord={67.8,35.7,STORMSONG_VALLEY}}),	-- Altar of Drowned Whispers
@@ -90,5 +91,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			visit_exploration(9829,{coord={60.0,26.9,STORMSONG_VALLEY}}),	-- Windfall Cavern
 			exploration(9628),	-- Windshorn Hills
 		}),
-	}),
-})));
+	},
+});

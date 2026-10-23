@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(WORLD_QUESTS, {
 			sourceQuests = {
 				71232,	-- Renown of the Dragon Isles
@@ -101,5 +102,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				})),
 			}),
 		}),
-	}),
-})));
+	},
+});

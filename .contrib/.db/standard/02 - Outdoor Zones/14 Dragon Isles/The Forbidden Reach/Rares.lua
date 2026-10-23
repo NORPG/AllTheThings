@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
 	return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(RARES, sharedData({
 			isDaily = true,
 		},{
@@ -299,8 +300,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {

@@ -5,8 +5,9 @@
 local COVETED_BAUBLE = 204727;
 local UNEARTHED_FRAGRANT_COIN = 204715;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(VENDORS, {
 			n(203301, {	-- Bottles <Food and Drink>
 				coord = {  58.1, 55.1, ZARALEK_CAVERN },
@@ -224,5 +225,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

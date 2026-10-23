@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(TREASURES, {
 			o(288596, {	-- Cache of Secrets
 				description = "Located in a cave behind a waterfall.",
@@ -121,8 +122,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			}))
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

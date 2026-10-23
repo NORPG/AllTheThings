@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2865, {	-- Dragonscale Camp, Zaralek Cavern
 				coord = { 40.3, 67.8, ZARALEK_CAVERN },
@@ -25,5 +26,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 			fp(2875, { collectible = false }),	-- Old Loamm Road, Zaralek Cavern
 			fp(2867, { collectible = false }),	-- The Throughway, Zaralek Cavern
 		}),
-	}),
-})));
+	},
+});

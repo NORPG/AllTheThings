@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(SPECIAL, {
 			header(HEADERS.Achievement, 14738, {	-- Hunting Party
 				q(63199, {	-- Hunt: Alpha Devourers
@@ -336,5 +337,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

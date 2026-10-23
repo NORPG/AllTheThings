@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(WORLD_QUESTS, {
 			sourceQuests = {
 				71232,	-- Renown of the Dragon Isles
@@ -77,8 +78,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {

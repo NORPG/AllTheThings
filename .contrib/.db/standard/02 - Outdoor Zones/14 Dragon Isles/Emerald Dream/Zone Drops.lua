@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(ZONE_DROPS, {
 			n(BACK, {
 				i(210133),	-- Harvest Guardian Cloak
@@ -86,5 +87,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				i(210112),	-- Wildleaf Staff
 			}),
 		}),
-	}),
-})));
+	},
+});

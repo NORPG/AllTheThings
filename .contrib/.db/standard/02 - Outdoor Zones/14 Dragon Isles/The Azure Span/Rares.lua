@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
     return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(RARES, sharedData({ isDaily = true }, {
 			n(194270, {	-- Arcane Devourer
 				coord = { 53.0, 35.6, THE_AZURE_SPAN },
@@ -232,8 +233,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				questID = 73900,
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {

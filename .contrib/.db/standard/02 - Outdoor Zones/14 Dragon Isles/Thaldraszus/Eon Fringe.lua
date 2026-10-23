@@ -20,8 +20,9 @@ local EON_FRINGE = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(EON_FRINGE, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {
 				ach(19507, {	-- Fringe Benefits
@@ -356,8 +357,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				}),
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 	m(DRAGON_ISLES, {

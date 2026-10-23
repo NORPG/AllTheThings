@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(SPECIAL, {
 			n(195353, {	-- Breezebiter
 				description = "Spawns near a cave, then patrols the area. Not considered a rare.",
@@ -67,5 +68,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

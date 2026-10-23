@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			achpart(17524, 17525),	-- Adventurer of the Forbidden Reach
 			ach(17525, {	-- Champion of the Forbidden Reach
@@ -133,5 +134,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 				}
 			}),
 		}),
-	}),
-})));
+	},
+});

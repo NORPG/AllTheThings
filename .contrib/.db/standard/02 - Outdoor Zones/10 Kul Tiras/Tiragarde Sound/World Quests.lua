@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(WORLD_QUESTS, sharedData({
 			lvl = { 50 },
 			isWorldQuest = true,
@@ -492,8 +493,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				races = ALLIANCE_ONLY,
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

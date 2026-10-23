@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, {
+maproot(DRAGON_ISLES, {
 	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
 		timeline = { ADDED_10_0_2_LAUNCH },
 		maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
@@ -173,4 +173,4 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 			}),
 		},
 	}),
-}));
+});

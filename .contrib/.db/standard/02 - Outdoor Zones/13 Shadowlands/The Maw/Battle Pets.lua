@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			sym = {{"select","speciesID",
 				3126,	-- Eye of Affliction (PET!)
@@ -48,5 +49,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				}),
 			},
 		})),
-	}),
-})));
+	},
+});

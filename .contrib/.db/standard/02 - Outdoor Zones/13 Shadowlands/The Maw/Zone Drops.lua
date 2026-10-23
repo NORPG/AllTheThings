@@ -2,8 +2,9 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(180802),	-- Chaotic Runes (QI!)
 			i(180801),	-- Coldheart Flight Routes (QI!)
@@ -76,8 +77,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			i(180807),	-- Venthyr Concordat (QI!)
 			i(180804),	-- Worn Obleron Etching (QI!)
 		}),
-	}),
-})));
+	},
+});
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {

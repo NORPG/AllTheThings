@@ -4,7 +4,7 @@
 
 local COOKIE_GROUPS = {};
 
-root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
+maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(AZUREMYST_ISLE, {
 		lore = "Azuremyst Isle is the zone the Draenei spaceship crashed into, leading to the formation of the Exodar as their capital city. Quests focus on the draenei acquainting themselves with the land and trying to strengthen their struggling settlements. Since this island was so far-out, there was very little other civilization before the crash.",
 		icon = 236715,
@@ -1710,7 +1710,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-})));
+}));
 
 -- Add the items that aren't marked with a phase.
 appendGroups({

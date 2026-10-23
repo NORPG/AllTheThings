@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
+maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(VENDORS, {
 			n(142190, {	-- Alchemist Hart <Amateur Potions>
@@ -842,4 +842,4 @@ root(ROOTS.Zones, m(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 			}),
 		}),
 	}),
-})));
+}));

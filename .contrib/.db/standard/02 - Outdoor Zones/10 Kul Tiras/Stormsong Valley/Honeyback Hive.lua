@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_5 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_2_5 },
+	groups = {
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				races = ALLIANCE_ONLY,
@@ -300,8 +301,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_5 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {
 	m(KUL_TIRAS, {

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2519, {	-- Bastion, Aspirant's Rest
 				coord = { 48.1, 74.2, BASTION },
@@ -18,5 +19,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				coord = { 35.6, 21.3, BASTION },
 			}),
 		}),
-	}),
-})));
+	},
+});

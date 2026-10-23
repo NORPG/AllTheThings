@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2813, {	-- Algeth'era, Thaldraszus
 				coord = { 49.5, 41.9, THALDRASZUS },
@@ -34,5 +35,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				cr = 189237,	-- Officer Obernax
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(NAZJATAR, {
+maproot(NAZJATAR, {
 	timeline = { ADDED_8_2_0 },
 	groups = {
 		n(SPECIAL, {
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(NAZJATAR, {
 			})),
 		}),
 	},
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 	m(NAZJATAR, {

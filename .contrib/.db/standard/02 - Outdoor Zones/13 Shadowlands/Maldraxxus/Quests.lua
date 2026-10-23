@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(MALDRAXXUS, {
+maproot(SHADOWLANDS, MALDRAXXUS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14206, {	-- Blade of the Primus
 				------ Chapter 1 ------
@@ -961,8 +962,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				coord = { 53.7, 47.5, MALDRAXXUS },
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16363, {	-- Just Don't Ask Me to Spell It
 				------ Chapter 1 ------
@@ -1285,8 +1286,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				-- The Weeping Vilomah
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {

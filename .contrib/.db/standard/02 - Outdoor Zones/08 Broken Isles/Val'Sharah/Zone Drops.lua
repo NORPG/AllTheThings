@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(VALSHARAH, {
+maproot(BROKEN_ISLES, VALSHARAH, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(128340, {	-- Chieftain's Beads (QS!)
 				coord = { 48.4, 87.9, VALSHARAH },
@@ -139,5 +140,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				cr = 94366,	-- Lelyn Swiftshadow
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(183877),	-- A Meandering Story
 			i(183881),	-- A Naughty Story
@@ -74,5 +75,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				i(175572),	-- Blackthorn Wristwraps
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
+maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
 			n(141954, {	-- Arbo
@@ -1024,4 +1024,4 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 			}),
 		}),
 	}),
-})));
+}));

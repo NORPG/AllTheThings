@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(2388, {	-- Bloodfeaver Tarantula (PET!)
 				description = "Found all around the Terrace of Sorrows.",
@@ -64,5 +65,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				description = "Found commonly around the outer shorelines of Nazmir.",
 			}),
 		})),
-	}),
-})));
+	},
+});

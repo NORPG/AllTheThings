@@ -20,8 +20,9 @@ local SNIFFENSEEKING = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(SNIFFENSEEKING, {
 			cost = {
 				{ "i", 205982, 1 },	-- 1x Lost Dig Map
@@ -340,8 +341,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 				}),
 			},
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {
 	m(DRAGON_ISLES, {

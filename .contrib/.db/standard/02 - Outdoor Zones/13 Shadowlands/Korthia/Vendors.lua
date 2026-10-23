@@ -7,8 +7,9 @@ local STYGIA = 1767;
 local SOUL_ASH = 1828;
 local SOUL_CINDERS = 1906;
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
 				coord = { 61.6, 21.7, KORTHIA },
@@ -470,5 +471,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

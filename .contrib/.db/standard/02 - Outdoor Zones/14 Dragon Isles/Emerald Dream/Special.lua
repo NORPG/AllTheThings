@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(SPECIAL, {
 			i(209860),	-- Thorn-Laden Heart @ 34.5, 63.2, EMERALD_DREAM [hunter only] from Envoy of Winter
 			i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only] from fire kitty/Keen-eyed Cian?
@@ -162,8 +163,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				provider = { "i", 210784 },	-- Xena, the Whimsical Whiskerfish
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {

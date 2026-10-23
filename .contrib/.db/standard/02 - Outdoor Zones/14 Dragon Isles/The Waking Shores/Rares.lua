@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
     return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
+maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(RARES, sharedData({ isDaily = true }, {
 			-- n(193132),	-- Amethyzar the Glittering // under DF/Timed Based Rare
 			n(187111, {	-- Ancient Hornswog
@@ -185,8 +186,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				questID = 73899,
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {

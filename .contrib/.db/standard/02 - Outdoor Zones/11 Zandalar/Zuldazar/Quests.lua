@@ -11,8 +11,9 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 	},
 });
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
 			-- what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
@@ -2110,8 +2111,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				q(49315),	-- Dreadpearl Collusion
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

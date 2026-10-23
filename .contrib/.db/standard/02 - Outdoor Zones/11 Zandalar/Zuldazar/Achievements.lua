@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(12480, {	-- A Bargain of Blood
 				sourceQuests = { 47229 },	-- Bulwark of Torcali
@@ -74,5 +75,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			pvp(ach(12575)),	-- Tour of Duty: Zuldazar
 			ach(12851),	-- Treasures of Zuldazar
 		}),
-	}),
-})));
+	},
+});

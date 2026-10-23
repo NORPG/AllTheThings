@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		explorationHeader({
 			visit_exploration(13691,{coord={52.5,32.2,KORTHIA}}),	-- Chamber of Knowledge
 			visit_exploration(13692,{coord={55.4,30.5,KORTHIA}}),	-- Chamber of Wisdom
@@ -21,5 +22,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 			exploration(13631),	-- Vault of Secrets
 			exploration(13629),	-- Windswept Aerie
 		}),
-	}),
-})));
+	},
+});

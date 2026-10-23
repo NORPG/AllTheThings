@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(166671),	-- Waycrest Guard's Cloak
 			i(158001),	-- Bloodbough Cowl
@@ -39,5 +40,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(158027),	-- Bleakweald Legguards
 			i(158023),	-- Bleakweald Stompers
 		}),
-	}),
-})));
+	},
+});

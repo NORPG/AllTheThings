@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
     return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(RARES, sharedData({
 			isDaily = true,
 		}, {
@@ -341,5 +342,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

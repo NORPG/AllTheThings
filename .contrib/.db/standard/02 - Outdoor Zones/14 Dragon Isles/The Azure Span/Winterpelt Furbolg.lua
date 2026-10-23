@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 			faction(FACTION_WINTERPELT_FURBOLG, {
 				-- completing the whole quest chain will always give exactly exalted
@@ -334,8 +335,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				}),
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {

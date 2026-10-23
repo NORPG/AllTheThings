@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(16678, {	-- Adventurer of The Azure Span
 				sym = {{ "achievement_criteria" }},
@@ -113,8 +114,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				sym = {{ "achievement_criteria" }},
 			}),
 		}),
-	}),
-})));
+	},
+});
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 -- 	m(DRAGON_ISLES, {
 -- 		m(THE_AZURE_SPAN, {

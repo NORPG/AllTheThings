@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1_LAUNCH },
+	groups = {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
@@ -140,8 +141,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } },
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

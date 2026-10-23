@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(TREASURES, {
 			o(380860, {	-- Centaur Horn
 				coord = { 73.5, 56.2, OHNAHRAN_PLAINS },
@@ -229,5 +230,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				coord = { 24.7, 65.9, OHNAHRAN_PLAINS },
 			}),
 		}),
-	}),
-})));
+	},
+});

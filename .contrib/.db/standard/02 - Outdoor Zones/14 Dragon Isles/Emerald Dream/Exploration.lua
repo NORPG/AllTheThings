@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		explorationHeader({
 			exploration(14860),	-- Amirdrassil
 			exploration(14856),	-- Ancient Bough
@@ -50,5 +51,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 			visit_exploration(14914,{coord={36.3,41.9,EMERALD_DREAM}}),	-- Wildfire Canyon
 			exploration(14991),	-- Wildling Garden
 		}),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
+maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(199216),	-- A Box of Rocks
 			i(202062, {	-- Ash Feather
@@ -70,5 +71,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			}),
 			i(201741),	-- Technique: Renewed Proto-Drake: Bovine Horns (RECIPE!)
 		}),
-	}),
-})));
+	},
+});

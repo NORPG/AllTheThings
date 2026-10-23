@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(166672),	-- Bloodhunter's Drape
 			i(157873),	-- Fen Spirit Headdress
@@ -39,5 +40,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(157899),	-- Bone-Fetished Wargreaves
 			i(157895),	-- Bone-Fetished Stompers
 		}),
-	}),
-})));
+	},
+});

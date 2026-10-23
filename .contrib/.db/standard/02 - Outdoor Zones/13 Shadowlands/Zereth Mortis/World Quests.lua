@@ -1,8 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		n(WORLD_QUESTS, sharedData({
 			sourceQuest = 64230,	-- Cyphers of the First Ones
 			isWorldQuest = true,
@@ -131,8 +132,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 				coord = { 38.4, 70.4, ZERETH_MORTIS },
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
 -- 	m(SHADOWLANDS, {

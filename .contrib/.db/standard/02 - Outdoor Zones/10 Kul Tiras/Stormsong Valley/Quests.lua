@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(QUESTS, {
 			q(50616, {	-- A Bit of a Bind
 				sourceQuests = { 49818 },	-- Trouble at Fort Daelin
@@ -1892,8 +1893,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			})),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

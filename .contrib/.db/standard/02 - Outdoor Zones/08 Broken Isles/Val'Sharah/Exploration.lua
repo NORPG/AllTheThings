@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(VALSHARAH, {
+maproot(BROKEN_ISLES, VALSHARAH, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(7804),	-- Andu'talah
 			visit_exploration(7746,{coord={68.3,41.1,VALSHARAH}}),	-- Ash'theran
@@ -74,5 +75,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 			exploration(7692),	-- Whispering Bluffs
 			visit_exploration(7605,{coord={41.8,77.6,VALSHARAH}}),	-- Wretched Hollow
 		}),
-	}),
-})));
+	},
+});

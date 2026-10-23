@@ -15,8 +15,9 @@ local RAINBOW_PEARL = 198397;
 local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		header(HEADERS.Faction, FACTION_COBALT_ASSEMBLY, {
 			faction(FACTION_COBALT_ASSEMBLY),
 			n(ACHIEVEMENTS, {
@@ -342,5 +343,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				i(201388),	-- Dragonspawn Wingtipped Staff
 			}),
 		}),
-	}),
-})));
+	},
+});

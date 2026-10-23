@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(TREASURES, {
 			i(180866),	-- Gilded Wader (PET!)
 			o(349797, {	-- Abandoned Curios
@@ -837,8 +838,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				questID = 59884,
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {

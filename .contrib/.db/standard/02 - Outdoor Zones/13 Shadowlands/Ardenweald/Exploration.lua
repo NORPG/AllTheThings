@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(12242),	-- Banks of Life
 			visit_exploration(12818,{coord={63.6,33.3,ARDENWEALD}}),	-- Autumnal Rise
@@ -56,5 +57,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			visit_exploration(11515,{coord={64.1,33.7,ARDENWEALD}}),	-- Tirna Vaal
 			visit_exploration(11517,{coord={59.1,41.7,ARDENWEALD}}),	-- Tranquil Pools
 		}),
-	}),
-})));
+	},
+});

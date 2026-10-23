@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(WORLD_QUESTS, sharedData({
 			isWorldQuest = true,
 			lvl = { 50 },
@@ -452,8 +453,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			petbattle(q(52937)),	-- You've Never Seen Jammer Upset
 			q(50866),	-- Zayoos
 		})),
-	}),
-})));
+	},
+});
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 -- 	m(ZANDALAR, {

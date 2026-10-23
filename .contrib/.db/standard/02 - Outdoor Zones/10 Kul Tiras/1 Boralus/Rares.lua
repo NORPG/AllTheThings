@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(RARES, {
 			n(139287, {	-- Sawtooth
 				questID = 51877,
@@ -19,5 +20,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

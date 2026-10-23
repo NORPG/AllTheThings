@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3081, {	-- Decay Grub (PET!)
 				description = "Found around Heartwood Grove, along the path of coords.",
@@ -50,5 +51,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(EXPLORATION, {
 			visit_exploration(9407,{coord={55.8,30.4,BORALUS}}),	-- Ashvane Company Yards
 			visit_exploration(9980,{coord={52.3,34.4,BORALUS}}),	-- Ashvane Docks
@@ -24,5 +25,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			visit_exploration(9593,{coord={42.9,81.5,BORALUS}}),	-- Unity Square
 			visit_exploration(10034,{coord={54.2,61.5,BORALUS}}),	-- Upton Borough
 		}),
-	}),
-})));
+	},
+});

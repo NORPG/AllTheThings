@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(VALSHARAH, {
+maproot(BROKEN_ISLES, VALSHARAH, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(TREASURES, {
 			o(243323, {	-- Balance Stone
 				i(123869),	-- Relic of Elune
@@ -221,5 +222,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				coord = { 67.2, 59.3, VALSHARAH },
 			}),
 		}),
-	}),
-})));
+	},
+});

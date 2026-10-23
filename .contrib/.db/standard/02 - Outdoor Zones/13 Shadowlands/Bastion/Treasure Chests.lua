@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(TREASURES, {
 			i(180866),	-- Gilded Wader (PET!)
 			o(354202, {	-- Abandoned Stockpile
@@ -313,8 +314,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {

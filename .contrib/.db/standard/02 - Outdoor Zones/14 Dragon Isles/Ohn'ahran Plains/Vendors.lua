@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(VENDORS, {
 			n(192818, {	-- Elder Yusa
 				description = "Target this NPC and /hungry emote. May have to do it twice- the first time she might emote back and not give you anything.",
@@ -114,5 +115,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		n(RARES, sharedData({
 			isDaily = true,
 		}, {
@@ -239,8 +240,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
 	m(SHADOWLANDS, {

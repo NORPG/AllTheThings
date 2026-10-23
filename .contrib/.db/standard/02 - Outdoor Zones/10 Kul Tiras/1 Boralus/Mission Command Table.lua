@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(138704, bubbleDownSelf({	-- Mission Command Table
 			races = ALLIANCE_ONLY,
 		},{
@@ -79,8 +80,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				mi(1883),	-- Lordamere Lake
 			},
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

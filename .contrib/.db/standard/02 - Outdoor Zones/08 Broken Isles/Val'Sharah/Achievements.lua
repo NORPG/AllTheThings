@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(VALSHARAH, {
+maproot(BROKEN_ISLES, VALSHARAH, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(11262, {	-- Adventurer of Val'sharah
 				sym = {{ "achievement_criteria" }},
@@ -17,5 +18,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				i(245703, {timeline = { ADDED_11_2_7 }}),	-- Kaldorei Treasure Trove (DECOR!)
 			}),
 		}),
-	}),
-})));
+	},
+});

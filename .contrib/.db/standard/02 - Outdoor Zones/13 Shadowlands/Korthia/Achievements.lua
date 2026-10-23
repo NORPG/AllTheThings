@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(15064, {	-- Breaking the Chains
 				-- Meta Achievement
@@ -237,5 +238,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(FACTIONS, {
 			faction(2370, {	-- Dino Training - Direhorn
 				races = HORDE_ONLY,
@@ -13,5 +14,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			}),
 			faction(FACTION_TORTOLLAN_SEEKERS),	-- Tortollan Seekers
 		}),
-	}),
-})));
+	},
+});

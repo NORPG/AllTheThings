@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
+maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(VENDORS, {
 			n(126833, {	-- Blind Wunja <Medicine Woman>
@@ -195,4 +195,4 @@ root(ROOTS.Zones, m(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 			}),
 		}),
 	}),
-})));
+}));

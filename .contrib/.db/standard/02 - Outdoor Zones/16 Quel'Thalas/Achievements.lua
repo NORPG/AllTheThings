@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+maproot(MAP.MIDNIGHT.QUELTHALAS, {
 	timeline = { ADDED_12_0_0 },
 	groups = {
 		n(ACHIEVEMENTS, {
@@ -75,4 +75,4 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 		})),
 	},
-}));
+});

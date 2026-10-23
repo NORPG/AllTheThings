@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_DROPS, {
 			i(160027, {	-- Ashenwood Relic (QS!)
 				coord = { 26.0, 41.0, DRUSTVAR },
@@ -86,5 +87,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(154842),	-- Corlain Girdle
 			i(154844),	-- Corlain Greaves
 		}),
-	}),
-})));
+	},
+});

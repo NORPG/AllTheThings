@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(13921),	-- Ancient Bough
 			visit_exploration(13747,{coord={70.7,29.0,OHNAHRAN_PLAINS}}),	-- Aylaag Outpost
@@ -73,5 +74,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			exploration(14094),	-- Wanderer's Steppe
 			exploration(13761),	-- Windsong Rise
 		}),
-	}),
-})));
+	},
+});

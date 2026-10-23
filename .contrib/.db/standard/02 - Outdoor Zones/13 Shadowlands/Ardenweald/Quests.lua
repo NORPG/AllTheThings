@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 14164, {	-- Awaken, Ardenweald
 				------ Chapter 1 ------
@@ -1048,8 +1049,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			}))),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {

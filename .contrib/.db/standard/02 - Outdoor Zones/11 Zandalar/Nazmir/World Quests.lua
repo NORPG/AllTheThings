@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(WORLD_QUESTS, sharedData({
 			isWorldQuest = true,
 			lvl = { 50 },
@@ -458,8 +459,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			q(50518),	-- Zanxib
 			q(50461),	-- Zujothgul
 		})),
-	}),
-})));
+	},
+});
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 -- 	m(ZANDALAR, {

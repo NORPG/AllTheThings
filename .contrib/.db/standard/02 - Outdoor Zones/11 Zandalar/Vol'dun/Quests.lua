@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(VOLDUN, {
+maproot(ZANDALAR, VOLDUN, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(QUESTS, {
 			-- TODO:
 			-- while on "armed and ready," i chose the staff and it triggered quest #49684. do the other 2 weapon choices have different quests?
@@ -1939,8 +1940,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			})),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

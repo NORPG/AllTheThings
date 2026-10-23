@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(HIGHMOUNTAIN, {
+maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(SPECIAL, sharedData({
 			sharedDescription = "Can be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit."
 		}, {
@@ -23,5 +24,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				crs = { 109161 },	-- Holk the Wanderer
 			}),
 		})),
-	}),
-})));
+	},
+});

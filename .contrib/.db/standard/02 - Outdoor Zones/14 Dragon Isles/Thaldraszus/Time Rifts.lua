@@ -26,8 +26,9 @@ local ULDEROTH = 2205;
 local AZEROTH = 2206;
 local THE_WARLANDS = 2207;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(TIME_RIFTS, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 			maps = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
@@ -1061,8 +1062,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				})),
 			},
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5} }, {
 	m(DRAGON_ISLES, {

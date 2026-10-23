@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		explorationHeader({
 			exploration(9404),	-- Atal'Dazar
 			exploration(9045),	-- Atal'Gral
@@ -40,5 +41,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			exploration(8726),	-- Zanchul
 			exploration(8733),	-- Zeb'ahari
 		}),
-	}),
-})));
+	},
+});

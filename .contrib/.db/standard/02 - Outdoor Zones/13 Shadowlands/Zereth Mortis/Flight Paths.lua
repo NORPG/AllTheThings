@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2734, {	-- Antecedent Isle
 				coord = { 47.4, 13.2, ZERETH_MORTIS },
@@ -109,5 +110,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 				-- sourceQuests = { TODO },	--
 			}),
 		}),
-	}),
-})));
+	},
+});

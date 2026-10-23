@@ -9,8 +9,9 @@
 -- The choice is basically "show everything" or "show only that the assault is up and no other information." My preference is to show everything.
 -- Perhaps a compromise would be to add a description on each header explaining this but my brain is not functional enough atm to figure out what that description should say.
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		n(COVENANT_ASSAULTS, {
 			n(ACHIEVEMENTS, {
 				ach(15032, {	-- Breaking Their Hold
@@ -936,8 +937,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {
 	m(SHADOWLANDS, {

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_DROPS, {
 			i(163699, {	-- Annealed Honey Amulet
 				coord = { 69.2, 68.8, STORMSONG_VALLEY },
@@ -85,5 +86,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

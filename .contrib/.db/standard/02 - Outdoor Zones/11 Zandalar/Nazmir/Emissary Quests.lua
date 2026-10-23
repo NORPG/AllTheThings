@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(EMISSARY_QUESTS, {
 			q(54460, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_TALANJIS_EXPEDITION, EXALTED } }, {	-- Supplies from Talanji's Expedition
 				provider = { "n", 135459 },	-- Provisioner Lija
@@ -48,8 +49,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(ZANDALAR, {

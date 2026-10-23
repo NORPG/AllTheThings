@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(MALDRAXXUS, {
+maproot(SHADOWLANDS, MALDRAXXUS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2398, {	-- Bleak Redoubt, Maldraxxus
 				customCollect = "SL_COV_NEC",	-- Necrolord
@@ -28,5 +29,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				coord = { 49.8, 53.2, MALDRAXXUS },
 			}),
 		}),
-	}),
-})));
+	},
+});

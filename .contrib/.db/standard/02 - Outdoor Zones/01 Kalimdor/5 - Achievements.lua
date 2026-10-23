@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KALIMDOR, {
+maproot(KALIMDOR, {
 	n(ACHIEVEMENTS, {
 		header(HEADERS.Achievement, 61051, {	-- Family Battler of Kalimdor
 			timeline = { ADDED_12_0_0 },
@@ -37,4 +37,4 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			},
 		}),
 	}),
-}));
+});

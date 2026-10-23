@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		explorationHeader({
 			exploration(9049),	-- Antul'Mita Plateau
 			exploration(9039),	-- Blood Bog
@@ -34,5 +35,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			exploration(8966),	-- Zalamar
 			exploration(8690),	-- Zul'Nazman
 		}),
-	}),
-})));
+	},
+});

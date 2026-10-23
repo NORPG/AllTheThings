@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_AZURE_SPAN, {
+maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(14487),	-- Ancient Outlook
 			exploration(13825),	-- Azure Archives
@@ -63,5 +64,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			exploration(13857),	-- Winterpelt Hollow
 			visit_exploration(13931,{coord={53.3,50.9,THE_AZURE_SPAN}}),	-- Zelthrak Outpost
 		}),
-	}),
-})));
+	},
+});

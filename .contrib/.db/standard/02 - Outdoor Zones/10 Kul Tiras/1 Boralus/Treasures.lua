@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(TREASURES, {
 			o(292673, {	-- A Damp Scroll
 				description = "Located in the underwater cave in Stormsong Monastery. Scroll located in skeleton's hand next to altar.",
@@ -66,5 +67,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				coord = { 70.3, 85.2, BORALUS },
 			}),
 		}),
-	}),
-})));
+	},
+});

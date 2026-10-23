@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
-	m(AMIRDRASSIL, {
+maproot(DRAGON_ISLES, AMIRDRASSIL, {
+	timeline = { ADDED_10_2_5 },
+	groups = {
 		n(TREASURES, {
 			o(421180, {	-- Kaldorei Backpack
 				coord = { 52.5, 17.7, AMIRDRASSIL },
@@ -149,8 +150,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 -- #if AFTER 10.2.6
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_5, REMOVED_10_2_6 } }, {

@@ -13,8 +13,9 @@ local function Sym_BrokerItem(...)
 	}
 end
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		n(VENDORS, {
 			n(185713, {	-- Hadja
 				coord = { 35.2, 65.7, ZERETH_MORTIS },
@@ -309,5 +310,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

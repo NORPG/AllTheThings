@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(TREASURES, {
 			i(205260),	-- Fleeting Glowspores
 			o(386104, {	-- Ancient Zaqali Chest
@@ -339,8 +340,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 				isDaily = true,
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 	m(DRAGON_ISLES, {

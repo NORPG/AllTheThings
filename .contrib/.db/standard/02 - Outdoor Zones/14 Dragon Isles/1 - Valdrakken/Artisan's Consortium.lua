@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(VALDRAKKEN, {
+maproot(DRAGON_ISLES, VALDRAKKEN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		header(HEADERS.Faction, FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
 			faction(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH),
 			n(ACHIEVEMENTS, {
@@ -254,5 +255,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

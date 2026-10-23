@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
+maproot(EASTERN_KINGDOMS, {
 	n(ACHIEVEMENTS, {
 		header(HEADERS.Achievement, 61040, {	-- Family Battler of Eastern Kingdoms
 			timeline = { ADDED_12_0_0 },
@@ -37,4 +37,4 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			},
 		}),
 	}),
-}));
+});

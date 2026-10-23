@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(12473, {	-- A Sound Plan
 				races = ALLIANCE_ONLY,
@@ -148,5 +149,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852),	-- Treasures of Tiragarde Sound
 		}),
-	}),
-})));
+	},
+});

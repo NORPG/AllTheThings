@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(VALSHARAH, {
+maproot(BROKEN_ISLES, VALSHARAH, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(1713, {	-- Bradensbrook, Val'sharah
 				coord = { 42.2, 58.4, VALSHARAH },
@@ -25,5 +26,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				classes = { HUNTER },
 			}),
 		}),
-	}),
-})));
+	},
+});

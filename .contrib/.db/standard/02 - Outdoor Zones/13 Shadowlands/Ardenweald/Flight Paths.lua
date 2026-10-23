@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2589, {	-- Ardenweald, Claw's Edge
 				coord = { 51.3, 71.3, ARDENWEALD },
@@ -29,5 +30,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				coord = { 63.4, 37.5, ARDENWEALD },
 			}),
 		}),
-	}),
-})));
+	},
+});

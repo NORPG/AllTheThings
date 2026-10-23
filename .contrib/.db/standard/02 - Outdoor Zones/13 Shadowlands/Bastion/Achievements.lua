@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(14307, {		-- Adventurer of Bastion (automated)
 				crit(50582, {
@@ -504,5 +505,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

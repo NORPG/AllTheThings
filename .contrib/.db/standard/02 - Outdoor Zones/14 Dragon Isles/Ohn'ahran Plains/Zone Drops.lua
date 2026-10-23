@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(199790, {	-- Makko's Journal Cover
 				crs = {
@@ -52,5 +53,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			}),
 			i(198904),	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 		}),
-	}),
-})));
+	},
+});

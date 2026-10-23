@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
     return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(RARES, sharedData({ isDaily = true },{
 			n(COMMON_BOSS_DROPS, {
 				crs = {	-- Probably all, but going w/ only confirmed
@@ -333,5 +334,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

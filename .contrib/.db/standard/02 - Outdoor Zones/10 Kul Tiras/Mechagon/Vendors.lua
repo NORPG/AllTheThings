@@ -8,8 +8,9 @@ local SPARE_PARTS = 166846;
 local GALVANIC_IGNITERCOIL = 168327;
 local GALVANIC_OSCILLATOR = 168832;
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		n(VENDORS, {
 			n(152321, {	-- Cork Stuttguard
 				coord = { 63.3, 42.9, MECHAGON },
@@ -241,5 +242,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

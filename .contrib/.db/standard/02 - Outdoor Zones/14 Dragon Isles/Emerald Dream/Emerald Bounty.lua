@@ -21,8 +21,9 @@ local EMERALD_BOUNTY = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(EMERALD_BOUNTY, {
 			currency(2650),	-- Emerald Dewdrop
 			i(208066),	-- Small Dreamseed
@@ -308,8 +309,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {

@@ -2,8 +2,9 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		explorationHeader({
 			exploration(9638),	-- Abandoned Junkheap
 			exploration(9334),	-- Algerson Lumber Yard
@@ -65,5 +66,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			exploration(9580),	-- Winterdeep Mining Camp
 			visit_exploration(9796,{coord={61.4,14.0,TIRAGARDE_SOUND}}),	-- Wolf's Den
 		}),
-	}),
-})));
+	},
+});

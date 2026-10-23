@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 13878, {	-- The Master of Revendreth
 				------ Chapter 1 ------
@@ -1252,8 +1253,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				provider = { "i", 173709 },	-- Vial of Dredger Muck
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
 	m(SHADOWLANDS, {

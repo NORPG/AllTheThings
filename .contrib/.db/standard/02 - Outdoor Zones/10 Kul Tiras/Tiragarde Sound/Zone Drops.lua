@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_DROPS, {
 			i(162580),	-- Fading Treasure Map
 			i(162584),	-- Singed Treasure Map
@@ -33,5 +34,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(159162),	-- Ashvane Company Greaves
 			i(159164),	-- Ashvane Company Sabatons
 		}),
-	}),
-})))
+	},
+})

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(4304, {	-- Dream Badger (PET!)
 				description = "Kill pewling to force this pet to spawn.",
@@ -77,5 +78,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

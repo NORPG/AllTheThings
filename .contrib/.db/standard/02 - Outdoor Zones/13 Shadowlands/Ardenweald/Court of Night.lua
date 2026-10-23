@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ARDENWEALD, {
+maproot(SHADOWLANDS, ARDENWEALD, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_COURT_OF_NIGHT, {
 				faction(FACTION_COURT_OF_NIGHT),
@@ -132,5 +133,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

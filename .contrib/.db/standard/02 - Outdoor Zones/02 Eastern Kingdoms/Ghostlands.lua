@@ -8,7 +8,7 @@ local MASTER_CHEF_GROUPS = {
 	i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
 };
 local RATHIS_TOMBER_GROUPS = {};
-root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
+maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(GHOSTLANDS, {
 		lore = "Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",
 		maps = { 96 },	-- Amani Catacombs
@@ -1539,7 +1539,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 		},
 	}),
-})));
+}));
 
 -- #if AFTER WRATH
 -- Add the 2 recipes that aren't TBC Phase One, they get added to his loot table in Wrath.

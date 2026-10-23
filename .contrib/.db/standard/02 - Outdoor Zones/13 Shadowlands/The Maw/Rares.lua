@@ -6,8 +6,9 @@ local function bo(questID)
     return { questID = questID, isDaily = true };
 end
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(RARES, sharedData({
 			isDaily = true,
 		}, {
@@ -539,8 +540,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {

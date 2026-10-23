@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2086, {	-- Brennadam, Stormsong Valley [Alliance]
 				coord = { 59.73, 70.57, STORMSONG_VALLEY },
@@ -73,5 +74,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				races = HORDE_ONLY,
 			}),
 		}),
-	}),
-})));
+	},
+});

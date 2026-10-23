@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(11489),	-- Agthia's Repose
 			exploration(11497),	-- Anima Shrine
@@ -71,5 +72,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			visit_exploration(13399,{coord={43.1,55.0,BASTION}}),	-- Xandria's Vigil
 			visit_exploration(13503,{coord={30.3,53.3,BASTION}}),	-- Zolramus
 		}),
-	}),
-})));
+	},
+});

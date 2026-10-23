@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(EMISSARY_QUESTS, {
 			q(50600, {	-- Order of Embers
 				provider = { "n", 135815 },	-- Quartermaster Alcorn
@@ -46,8 +47,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			})),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(KUL_TIRAS, {

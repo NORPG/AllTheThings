@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(BORALUS, {
+maproot(KUL_TIRAS, BORALUS, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(164579, {	-- Cache of Uldir Treasures (N)
@@ -143,5 +144,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				q(53030),					-- The World Awaits
 			})),
 		}),
-	}),
-})));
+	},
+});

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+maproot(MAP.MIDNIGHT.QUELTHALAS, {
 	icon = 7488399,
 	lore = "Quel'Thalas is a forested area in northern Lordaeron. It is ruled by the blood elves, descendants of the kingdom's Highborne founders, and is known as the Land of Eternal Spring. Its capital is Silvermoon City.",
 	timeline = { ADDED_12_0_1_LAUNCH },
@@ -90,4 +90,4 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			},
 		}),
 	},
-}));
+});

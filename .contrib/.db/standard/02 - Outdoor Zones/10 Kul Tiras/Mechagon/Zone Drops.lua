@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		n(ZONE_DROPS, {
 			i(168491, {	-- Blueprint: Personal Time Displacer
 				description = "Drops from normal mobs during the |cFFFFD700The Other Place|r quest.",
@@ -23,5 +24,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 			i(166846),	-- Spare Parts
 			i(168216),	-- Tempered Plating
 		}),
-	}),
-})));
+	},
+});

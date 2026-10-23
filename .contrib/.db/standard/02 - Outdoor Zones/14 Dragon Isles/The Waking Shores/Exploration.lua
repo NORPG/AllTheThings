@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
+maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(13734),	-- Apex Canopy
 			visit_exploration(13736,{coord={24.1,83.1,THE_WAKING_SHORES}}),	-- Apex Observatory
@@ -61,5 +62,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			visit_exploration(14511,{coord={86.5,15.4,THE_WAKING_SHORES}}),	-- Wingrest Bay
 			exploration(13939),	-- Wingrest Embassy
 		}),
-	}),
-})));
+	},
+});

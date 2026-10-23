@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		n(TREASURES, {
 			o(330183, {	-- Irontide Lockbox
 				coords = {		-- Coords need verification as they were just taken from wowhead
@@ -185,5 +186,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

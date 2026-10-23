@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
+maproot(MAP.MIDNIGHT.QUELTHALAS, {
 	n(WORLD_QUESTS, {
 		currency(3310, {	-- Coffer Key Shard (Season 1)
 			timeline = { ADDED_12_0_1_LAUNCH },
@@ -21,4 +21,4 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			100 } },	-- 100x Coffer Key Shard (Current Season)
 		}),
 	}),
-}));
+});

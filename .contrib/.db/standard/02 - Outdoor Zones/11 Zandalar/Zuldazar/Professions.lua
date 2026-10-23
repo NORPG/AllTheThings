@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(55582, {	-- Atal'Dazar: Not All That Glitters... (A)
@@ -20,5 +21,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

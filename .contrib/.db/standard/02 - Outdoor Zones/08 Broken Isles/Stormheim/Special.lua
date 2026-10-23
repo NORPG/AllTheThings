@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
-	m(STORMHEIM, {
+maproot(BROKEN_ISLES, STORMHEIM, {
+	timeline = { ADDED_7_0_3_LAUNCH },
+	groups = {
 		n(SPECIAL, {
 			n(109083, {	-- Houndmaster Payne
 				questID = 42858,
@@ -17,5 +18,5 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH }
 				description = "Patrols inside of Dreadwake's Landing. Alliance players can still interact with him, but be aware the rest of the camp will be hostile. Shares completion with |cffffff00Houndmaster Payne|r. \n\nCan be made hostile by Demon Hunters using 'Spectral Sight' or Paladins wielding 'Truthguard' allowing anyone to get credit.",
 			}),
 		}),
-	}),
-})));
+	},
+});

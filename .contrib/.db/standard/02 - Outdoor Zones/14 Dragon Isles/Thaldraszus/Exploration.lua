@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(13795),	-- Algeth'ar Academy
 			visit_exploration(14488,{coord={57.8,41.0,THALDRASZUS}}),	-- Algeth'ar Tower
@@ -57,5 +58,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			exploration(13794),	-- Veiled Ossuary
 			exploration(13881),	-- Wild Cliffs
 		}),
-	}),
-})));
+	},
+});

@@ -6,8 +6,9 @@ local function bo(questID, isDaily)
 	return { questID = questID, isDaily = isDaily };
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(RARES, {
 			n(COMMON_BOSS_DROPS, {
 				crs = {
@@ -404,5 +405,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(TIRAGARDE_SOUND, {
+maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(158164),	-- Plunderbeard's Flask
 			i(157969),	-- Sirensong Headdress
@@ -39,5 +40,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(157995),	-- Harbormaster Legplates
 			i(157991),	-- Harbormaster Stompers
 		}),
-	}),
-})));
+	},
+});

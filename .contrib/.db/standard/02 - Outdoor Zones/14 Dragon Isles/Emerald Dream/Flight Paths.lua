@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2902, {	-- Central Encampment
 				coord = { 51.1, 62.4, EMERALD_DREAM },
@@ -22,5 +23,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				cr = 209427,	-- Thevelo
 			}),
 		}),
-	}),
-})));
+	},
+});

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, {
+maproot(KHAZ_ALGAR, {
 	n(WORLD_QUESTS, {
 		i(229899, {	-- Coffer Key Shard (Season 1)
 			timeline = { REMOVED_11_1_0_SEASONSTART },
@@ -32,4 +32,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			i(227450),	-- Sky Racer's Purse
 		})),
 	}),
-}));
+});

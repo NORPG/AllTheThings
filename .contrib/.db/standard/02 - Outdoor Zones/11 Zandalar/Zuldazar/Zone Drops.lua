@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_DROPS, {
 			maps = {	-- Note!! We can list this in these two zones due to them dropping here. If we add more to Zuldazar then we'll look into adjusting this.
 				NAZMIR,
@@ -80,5 +81,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

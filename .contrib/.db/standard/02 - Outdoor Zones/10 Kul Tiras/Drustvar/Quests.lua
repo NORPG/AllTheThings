@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(QUESTS, {	-- [Alliance]
 			q(50970, {	-- A Farmer's Fate
 				sourceQuests = { 48622 },	-- The Vanishing Lord
@@ -1759,8 +1760,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			}),
 ]]--
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(KUL_TIRAS, {

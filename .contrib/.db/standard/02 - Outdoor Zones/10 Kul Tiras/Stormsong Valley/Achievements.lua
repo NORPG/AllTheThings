@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(12940, {	-- Adventurer of Stormsong Valley
 				sym = {{ "achievement_criteria" }},
@@ -89,5 +90,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			pvp(ach(12578)),	-- Tour of Duty: Stormsong Valley
 			ach(12853),	-- Treasures of Stormsong Valley
 		}),
-	}),
-})));
+	},
+});

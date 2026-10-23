@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(2936),	-- Copperfur Kit (PET!)
 			pet(2926, {	-- Fledgling Teroclaw (PET!)
@@ -32,5 +33,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			}),
 			pet(2943),	-- Wild Etherwyrm (PET!)
 		})),
-	}),
-})));
+	},
+});

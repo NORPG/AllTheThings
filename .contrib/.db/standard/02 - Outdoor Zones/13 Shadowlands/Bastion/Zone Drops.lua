@@ -2,8 +2,9 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(BASTION, {
+maproot(SHADOWLANDS, BASTION, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			currency(MEDALLION_OF_SERVICE, {
 				customCollect = "SL_COV_KYR",
@@ -77,5 +78,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			i(176789),	-- Umbrawing Wristwraps
 			i(176801),	-- Unburdened Hammer
 		}),
-	}),
-})));
+	},
+});

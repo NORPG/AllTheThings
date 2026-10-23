@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THALDRASZUS, {
+maproot(DRAGON_ISLES, THALDRASZUS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(ZONE_DROPS, {
 			i(201458, {	-- Aegis of Tyrhold
 				description = "Drops from mobs around the Tyrhold Area, Titan Chests or the Valdrakken Accord Weekly.",
@@ -76,5 +77,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				cost = { { "i", 197708, 5 } },	-- 5x Unstable Matrix Core
 			}),
 		}),
-	}),
-})));
+	},
+});

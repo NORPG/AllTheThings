@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		skyriding(n(DRAGONRIDING_RACING, {
 			header(HEADERS.Achievement, 17298, {	-- Forbidden Reach Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
@@ -524,5 +525,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 				}),
 			})),
 		})),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(OHNAHRAN_PLAINS, {
+maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2795, {	-- Broadhoof Outpost, Ohn'ahran Plains
 				coord = { 46.6, 41.3, OHNAHRAN_PLAINS },
@@ -46,5 +47,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				cr = 184630,	-- Baqir
 			}),
 		}),
-	}),
-})));
+	},
+});

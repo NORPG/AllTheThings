@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(13223),	-- Altar of Domination
 			exploration(13196),	-- Calcis
@@ -42,5 +43,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			exploration(13589),	-- The Beastwarrens
 			exploration(13634),	-- The Tremaculum
 		}),
-	}),
-})));
+	},
+});

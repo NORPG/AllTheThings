@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3102, {		-- Animite Broodling (PET!)
 				coords = {
@@ -43,5 +44,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

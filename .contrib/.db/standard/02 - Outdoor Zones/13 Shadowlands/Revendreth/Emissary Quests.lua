@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(EMISSARY_QUESTS, {
 			q(62849, {	-- Paragon of the Court of Harvesters
 				provider = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
@@ -22,5 +23,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

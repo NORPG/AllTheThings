@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(THE_GREAT_SEAL, {
+maproot(ZANDALAR, THE_GREAT_SEAL, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(WORLD_QUESTS, sharedData({
 			isWorldQuest = true,
 		}, {
@@ -266,5 +267,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				lvl = 120,
 			}),
 		})),
-	}),
-})));
+	},
+});

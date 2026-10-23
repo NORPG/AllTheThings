@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
-	m(THE_GREAT_SEAL, {
+maproot(ZANDALAR, THE_GREAT_SEAL, {
+	timeline = { ADDED_8_0_1_LAUNCH },
+	groups = {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
 				n(122703, {	-- Clever Kumali <Alchemist Trainer>
@@ -140,8 +141,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

@@ -19,7 +19,7 @@ local ZIRIAK = {
 	coord = { 61.4, 36.8, NERUBAR_LOWER },
 };
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, {
+maproot(KHAZ_ALGAR, {
 	n(ACHIEVEMENTS, {
 		ach(41555, {	-- All That Khaz
 			timeline = { ADDED_11_1_0 },
@@ -369,4 +369,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		}),
 		ach(42299, { timeline = { ADDED_11_2_7 }, }),	-- Visions of a Shadowed Sun
 	}),
-}));
+});

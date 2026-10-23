@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			visit_exploration(12782,{coord={70.6,38.8,REVENDRETH}}),	-- Absolution Crypt
 			exploration(10997),	-- Archivam
@@ -68,5 +69,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			exploration(11018),	-- Wildwall
 			visit_exploration(11017,{coord={62.4,78.2,REVENDRETH}}),	-- Witherfall Ruin
 		}),
-	}),
-})));
+	},
+});

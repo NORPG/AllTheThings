@@ -22,8 +22,9 @@ local WHELP_DAYCARE = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(VALDRAKKEN, {
+maproot(DRAGON_ISLES, VALDRAKKEN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(WHELP_DAYCARE, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(17782, {	-- Daycare Derby
@@ -620,8 +621,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				}),
 			})),
 		})),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
 	m(DRAGON_ISLES, {

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(12942, {	-- Adventurer of Nazmir
 				sym = {{ "achievement_criteria" }},
@@ -164,5 +165,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			pvp(ach(12574)),	-- Tour of Duty: Nazmir
 			ach(12771),	-- Treasures of Nazmir
 		}),
-	}),
-})));
+	},
+});

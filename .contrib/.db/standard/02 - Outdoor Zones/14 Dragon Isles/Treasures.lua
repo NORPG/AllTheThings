@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, {
+maproot(DRAGON_ISLES, {
 	n(TREASURES, sharedData({
 		description = "Does not show on minimap.\nEach 'cluster' of nearby coords has an independent spawn.\nPersists 90 sec once opened.\nRespawn: 60m",
 	},{
@@ -114,4 +114,4 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 			},
 		}),
 	})),
-}))
+})

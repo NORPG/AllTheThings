@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		explorationHeader({
 			exploration(13925),	-- Ageless Shards
 			exploration(13896),	-- Antecedent Isle
@@ -53,5 +54,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 			exploration(13702),	-- Untamed Verdure
 			exploration(13787),	-- Zovaal's Grasp
 		}),
-	}),
-})));
+	},
+});

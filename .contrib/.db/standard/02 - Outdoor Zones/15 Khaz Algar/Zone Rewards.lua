@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, {
+maproot(KHAZ_ALGAR, {
 	n(ZONE_DROPS, {
 		i(228963, {	-- Unfamiliar Emblem (QS!)
 			timeline = { ADDED_11_1_7 },
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		}),
 		currency(RESONANCE_CRYSTALS),
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	m(KHAZ_ALGAR, {

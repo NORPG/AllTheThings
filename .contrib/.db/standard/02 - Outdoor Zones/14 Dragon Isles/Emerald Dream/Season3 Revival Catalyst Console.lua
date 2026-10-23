@@ -8,8 +8,9 @@ local SymRaidAdmirdrassil = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1207,DiffID,ClassID}}
 end
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		-- #if BEFORE TWW 
 		-- Blizz forgot to allow S3/S4 items to be converted after S4 ended, so only raid items can be converted now. Jan 2025 ~Gold
 		o(382621, {	-- Revival Catalyst Console
@@ -137,5 +138,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 			}),
 		}),
 		-- #endif
-	}),
-})));
+	},
+});

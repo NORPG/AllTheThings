@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		n(ZONE_REWARDS, {
 			currency(1979),	-- Cyphers of the First Ones
 			currency(2009),	-- Cosmic Flux
@@ -91,5 +92,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 				i(192426),	-- Waltzing Glaive
 			})),
 		}),
-	}),
-})));
+	},
+});

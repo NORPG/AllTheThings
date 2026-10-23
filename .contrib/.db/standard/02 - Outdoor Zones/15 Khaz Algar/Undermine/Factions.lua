@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
-	m(UNDERMINE, {
+maproot(KHAZ_ALGAR, UNDERMINE, {
+	timeline = { ADDED_11_1_0 },
+	groups = {
 		n(FACTIONS, {
 			n(ACHIEVEMENTS, {
 				ach(41349, {	-- In with the Cartels
@@ -654,5 +655,5 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
 				})),
 			}),
 		}),
-	}),
-})));
+	},
+});

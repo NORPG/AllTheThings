@@ -4,8 +4,9 @@
 
 local STYGIA = 1767;
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(VENDORS, {
 			n(162804, {	-- Ve'nari
 				groups = bubbleDownRep(FACTION_VENARI, {
@@ -130,5 +131,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

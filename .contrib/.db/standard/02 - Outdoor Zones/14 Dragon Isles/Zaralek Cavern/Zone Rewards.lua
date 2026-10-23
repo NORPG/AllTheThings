@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
-	m(ZARALEK_CAVERN, {
+maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
+	timeline = { ADDED_10_1_0 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(205340),	-- Formula: Enchanted Aspect's Shadowflame Crest (RECIPE!)
 			i(205338),	-- Formula: Enchanted Whelpling's Shadowflame Crest (RECIPE!)
@@ -90,5 +91,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_1_0 } }, {
 				i(204980),	-- Neltharic Wingsplitter
 			}),
 		}),
-	}),
-})));
+	},
+});

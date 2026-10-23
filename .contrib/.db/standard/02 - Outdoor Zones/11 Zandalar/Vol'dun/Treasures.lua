@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(VOLDUN, {
+maproot(ZANDALAR, VOLDUN, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(TREASURES, {
 			o(294318, {	-- Abandoned Bobber
 				coord = { 26.5, 45.5, VOLDUN },
@@ -212,8 +213,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			})),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

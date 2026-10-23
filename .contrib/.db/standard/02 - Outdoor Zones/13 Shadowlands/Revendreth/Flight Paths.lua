@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2488, {	-- Revendreth, Darkhaven
 				coord = { 60.4, 60.6, REVENDRETH },
@@ -33,5 +34,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				coord = { 30.5, 48.8, REVENDRETH },
 			}),
 		}),
-	}),
-})));
+	},
+});

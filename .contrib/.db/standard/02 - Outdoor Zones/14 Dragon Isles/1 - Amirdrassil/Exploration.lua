@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
-	m(AMIRDRASSIL, {
+maproot(DRAGON_ISLES, AMIRDRASSIL, {
+	timeline = { ADDED_10_2_5 },
+	groups = {
 		explorationHeader({
 			visit_exploration(15128,{coord={28.7,24.0,AMIRDRASSIL}}),	-- Arlithrien Lodge
 			visit_exploration(15353,{coord={72.3,72.3,AMIRDRASSIL}}),	-- Barrows of Reverie
@@ -27,5 +28,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
 			visit_exploration(15122,{coord={41.3,21.5,AMIRDRASSIL}}),	-- Viridescent Thicket
 			visit_exploration(15123,{coord={25.7,56.4,AMIRDRASSIL}}),	-- Whorlwing Basin
 		}),
-	}),
-})));
+	},
+});

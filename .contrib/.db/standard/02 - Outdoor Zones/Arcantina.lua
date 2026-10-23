@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ARCANTINA, {
+maproot(ARCANTINA, {
 	icon = [[~_.asset("Arcantina")]],
 	timeline = { ADDED_12_0_1_LAUNCH },
 	groups = {
@@ -482,4 +482,4 @@ root(ROOTS.Zones, m(ARCANTINA, {
 			}),
 		}),
 	},
-}))
+})

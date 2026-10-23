@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(VALDRAKKEN, {
+maproot(DRAGON_ISLES, VALDRAKKEN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(202079, {	-- Cache of Vault Treasures (N)
@@ -95,5 +96,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				})),
 			})),
 		}),
-	}),
-})));
+	},
+});

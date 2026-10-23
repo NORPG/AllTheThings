@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(ZONE_DROPS, {
 			-- Artisan Curios
 			i(203402),	-- Broken Gnomish Voicebox
@@ -25,5 +26,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 			-- Misc
 			i(204311),	-- Fluorescent Veil
 		}),
-	}),
-})));
+	},
+});

@@ -2,8 +2,9 @@
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(MALDRAXXUS, {
+maproot(SHADOWLANDS, MALDRAXXUS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(ZONE_REWARDS, {
 			filter(CLOAKS, {
 				i(181638),	-- Gorewrought Drape
@@ -81,5 +82,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				i(181864),	-- Plague-Etched Hacker (STR)
 			}),
 		}),
-	}),
-})));
+	},
+});

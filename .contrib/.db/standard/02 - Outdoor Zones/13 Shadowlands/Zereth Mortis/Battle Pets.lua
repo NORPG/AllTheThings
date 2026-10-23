@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
-	m(ZERETH_MORTIS, {
+maproot(SHADOWLANDS, ZERETH_MORTIS, {
+	timeline = { ADDED_9_2_0 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(3216, {	-- Ambystan Snapper (PET!)
 				coords = {
@@ -83,5 +84,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_2_0 } }, {
 			pet(3190),	-- Vicious Leporid (PET!)
 			pet(3213),	-- Vombata Pup (PET!)
 		})),
-	}),
-})));
+	},
+});

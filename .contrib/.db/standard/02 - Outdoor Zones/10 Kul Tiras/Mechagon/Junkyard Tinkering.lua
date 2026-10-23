@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		prof(JUNKYARD_TINKERING, bubbleDownSelf({ requireSkill = JUNKYARD_TINKERING }, {
 			cr = 150359,	-- Pascal-K1N6
 			coord = { 71.4, 32.3, MECHAGON },
@@ -174,5 +175,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 				}),
 			},
 		})),
-	}),
-})));
+	},
+});

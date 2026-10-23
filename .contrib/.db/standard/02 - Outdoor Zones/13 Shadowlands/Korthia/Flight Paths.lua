@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
-	m(KORTHIA, {
+maproot(SHADOWLANDS, KORTHIA, {
+	timeline = { ADDED_9_1_0 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2698, {	-- Keeper's Respite
 				sourceQuests = { 63855 },	-- Ease of Passage
@@ -11,5 +12,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_1_0 } }, {
 				cr = 178119,	-- Animaflow Teleporter
 			}),
 		}),
-	}),
-})));
+	},
+});

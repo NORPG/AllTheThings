@@ -4,8 +4,9 @@
 
 local SINSTONE_FRAGMENTS = 1816;
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_THE_AVOWED, {	-- The Avowed
 				icon = 458226,
@@ -332,8 +333,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_0_1 } }, {
 	m(SHADOWLANDS, {

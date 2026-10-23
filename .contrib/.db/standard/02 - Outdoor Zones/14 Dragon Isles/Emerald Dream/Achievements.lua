@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	m(EMERALD_DREAM, {
+maproot(DRAGON_ISLES, EMERALD_DREAM, {
+	timeline = { ADDED_10_2_0 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(19316, {	-- Adventurer of the Emerald Dream
 				crit(62945, {	-- Bloodstripe Great Ray
@@ -210,5 +211,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

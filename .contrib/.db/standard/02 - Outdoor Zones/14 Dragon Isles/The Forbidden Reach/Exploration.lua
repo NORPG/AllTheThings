@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		explorationHeader({
 			exploration(14588),	-- Aerie Chasm
 			visit_exploration(14720,{coord={62.2,87.1,THE_FORBIDDEN_REACH}}),	-- Broken Seaboard
@@ -42,5 +43,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 			visit_exploration(14699,{coord={21.9,20.9,THE_FORBIDDEN_REACH}}),	-- Winglord's Perch
 			visit_exploration(14692,{coord={29.9,54.6,THE_FORBIDDEN_REACH}}),	-- Zskera Vaults
 		}),
-	}),
-})));
+	},
+});

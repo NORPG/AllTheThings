@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(VALDRAKKEN, {
+maproot(DRAGON_ISLES, VALDRAKKEN, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			visit_exploration(14493,{coord={34.1,31.0,VALDRAKKEN}}),	-- Azure Archives Annex
 			visit_exploration(14497,{coord={38.2,77.2,VALDRAKKEN}}),	-- Cascade's Edge
@@ -23,5 +24,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 			visit_exploration(14489,{coord={59.5,41.4,VALDRAKKEN}}),	-- The Seat of the Aspects
 			visit_exploration(14530,{coord={55.0,57.6,VALDRAKKEN}}),	-- Valdrakken Treasury Hoard
 		}),
-	}),
-})));
+	},
+});

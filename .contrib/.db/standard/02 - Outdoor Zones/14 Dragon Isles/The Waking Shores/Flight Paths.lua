@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
+maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2801, {	-- Apex Observatory, The Waking Shores
 				coord = { 23.8, 83.1, THE_WAKING_SHORES },
@@ -63,5 +64,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				sourceQuestNumRequired = 1,
 			}),
 		}),
-	}),
-})));
+	},
+});

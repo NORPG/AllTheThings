@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(RARES, {
 			-- Note: While these are all technically Achievement Criteria we don't want to use that in the information on whether you have killed it or not. This is because once you kill it on one character, it would auto-complete your alts. What we want to do is instead place it as a reward. This way it tracks if you did it for your account while also still telling you if you killed it on that toon.
 			n(129961, {	-- Atal'zul Gotaka
@@ -275,8 +276,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				coord = { 56.8, 23.2, ZULDAZAR },
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {

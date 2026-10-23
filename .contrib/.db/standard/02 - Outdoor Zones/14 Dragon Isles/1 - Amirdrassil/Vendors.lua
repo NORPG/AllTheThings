@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
-	m(AMIRDRASSIL, {
+maproot(DRAGON_ISLES, AMIRDRASSIL, {
+	timeline = { ADDED_10_2_5 },
+	groups = {
 		n(VENDORS, bubbleDown({ races = ALLIANCE_ONLY }, {
 			n(216286, {	-- Moon Priestess Lasara
 				coord = { 46.5, 70.6, AMIRDRASSIL },
@@ -76,5 +77,5 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_2_5 } }, {
 				},
 			}),
 		}),
-	}),
-})));
+	},
+});

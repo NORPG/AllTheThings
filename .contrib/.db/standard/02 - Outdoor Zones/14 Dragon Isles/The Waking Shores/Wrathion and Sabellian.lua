@@ -15,8 +15,9 @@ local SEREVITE_ORE = 190396;
 local TALLSTRIDER_SINEW = 201404;
 local WILDERCLOTH = 193050;
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
+maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
+	timeline = { ADDED_10_0_2_LAUNCH },
+	groups = {
 		n(WRATHION_SABELLIAN, {
 			n(ACHIEVEMENTS, {
 				ach(16497, {	-- I'm Playing All Sides
@@ -983,8 +984,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH 
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {

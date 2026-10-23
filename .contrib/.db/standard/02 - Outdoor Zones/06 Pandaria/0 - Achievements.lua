@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+maproot(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 	-- TODO: lots of these are lacking lots of information! (crs/coords/etc.)
 	n(ACHIEVEMENTS, {
 		ach(6541),	-- Loremaster of Pandaria (automated)
@@ -93,4 +93,4 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ time
 		ach(7997),	-- Riches of Pandaria
 		ach(6350),	-- To All the Squirrels I Once Caressed? (automated)
 	}),
-}))))
+})))

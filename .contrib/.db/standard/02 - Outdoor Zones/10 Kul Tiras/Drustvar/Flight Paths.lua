@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2127, {	-- Anyport, Drustvar [N]
 				coord = { 19.2, 43.2, DRUSTVAR },
@@ -64,5 +65,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				coord = { 25.6, 16.6, DRUSTVAR },
 			}),
 		}),
-	}),
-})));
+	},
+});

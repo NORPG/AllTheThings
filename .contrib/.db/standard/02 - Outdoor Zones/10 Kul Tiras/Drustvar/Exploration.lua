@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(DRUSTVAR, {
+maproot(KUL_TIRAS, DRUSTVAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		explorationHeader({
 			exploration(9268),	-- Alpine Rise
 			visit_exploration(9617,{coord={19.3,44.1,DRUSTVAR}}),	-- Anyport
@@ -73,5 +74,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			exploration(9774),	-- Western Watch
 			exploration(9587,{coord={24.0,15.7,DRUSTVAR}}),	-- Whitegrove Chapel
 		}),
-	}),
-})));
+	},
+});

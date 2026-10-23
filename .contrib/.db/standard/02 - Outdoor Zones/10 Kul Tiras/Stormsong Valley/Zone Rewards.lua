@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(STORMSONG_VALLEY, {
+maproot(KUL_TIRAS, STORMSONG_VALLEY, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(158033),	-- Squallshaper Hood
 			i(158035),	-- Squallshaper Mantle
@@ -38,5 +39,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(158059),	-- Shoalbreach Legguards
 			i(158055),	-- Shoalbreach Treads
 		}),
-	}),
-})));
+	},
+});

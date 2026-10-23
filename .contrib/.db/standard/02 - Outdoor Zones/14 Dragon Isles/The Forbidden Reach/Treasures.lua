@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(TREASURES, {
 			o(386633, {	-- Chest of Storms
 				coord = { 48.8, 73.1, THE_FORBIDDEN_REACH },
@@ -155,8 +156,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 			i(202870),	-- Mysterious Writings (Sealed Knowledge Scroll)
 			i(202872),	-- Token of Blessing (Sealed Spirit Scroll)
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {

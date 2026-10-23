@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(ZONE_REWARDS, {
 			i(158150),	-- Loa-Pledged Drape
 			i(162617),	-- Shadraspawn Shoulderpads
@@ -40,5 +41,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			i(157931),	-- Wargreaves of Rezan's Bodyguard
 			i(157927),	-- Warboots of Rezan's Bodyguard
 		}),
-	}),
-})));
+	},
+});

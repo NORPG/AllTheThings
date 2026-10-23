@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		n(ACHIEVEMENTS, {
 			ach(13790, {	-- Armed for Action
 				description = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
@@ -555,8 +556,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 			}),
 			pvp(ach(13570)),	-- Tour of Duty: Mechagon
 		}),
-	}),
-})));
+	},
+});
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
 -- 	m(KUL_TIRAS, {

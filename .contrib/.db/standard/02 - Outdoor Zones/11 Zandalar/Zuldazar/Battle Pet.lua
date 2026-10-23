@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(ZULDAZAR, {
+maproot(ZANDALAR, ZULDAZAR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(2537, {	-- Baby Zandalari Raptor (PET!)
 				coord = { 71.2, 41.2, ZULDAZAR },
@@ -36,5 +37,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				},
 			}),
 		})),
-	}),
-})));
+	},
+});

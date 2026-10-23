@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
+maproot(SHADOWLANDS, THE_MAW, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(TREASURES, {	-- Treasure Chest
 			o(369132, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {	-- Domination Sealed Chest
 				coord = { 66.0, 57.4, THE_MAW },
@@ -198,5 +199,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				},
 			})),
 		}),
-	}),
-})));
+	},
+});

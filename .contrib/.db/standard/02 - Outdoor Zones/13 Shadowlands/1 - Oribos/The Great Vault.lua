@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ORIBOS, {
+maproot(SHADOWLANDS, ORIBOS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		o(353484, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- The Great Vault
 			coord = { 64.3, 32.1, ORIBOS },
 			groups = {
@@ -15,5 +16,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			},
 		})),
-	}),
-})));
+	},
+});

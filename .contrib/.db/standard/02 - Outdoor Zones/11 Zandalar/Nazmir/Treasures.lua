@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(NAZMIR, {
+maproot(ZANDALAR, NAZMIR, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(TREASURES, {
 			o(298921, {	-- Ancient Nazmani Tablet
 				coord = { 56.3, 57.3, NAZMIR },
@@ -138,5 +139,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			})),
 		}),
-	}),
-})));
+	},
+});

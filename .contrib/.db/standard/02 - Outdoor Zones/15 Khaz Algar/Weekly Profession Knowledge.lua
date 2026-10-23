@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, {
+maproot(KHAZ_ALGAR, {
 	n(WEEKLY_PROFESSION_KNOWLEDGE, {
 		sharedDescription = "Rewarded from most repeatable treasures.",
 		groups = {
@@ -32,4 +32,4 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			i(225221),	-- Spool of Webweave
 		},
 	}),
-}));
+});

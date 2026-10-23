@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
-	m(MECHAGON, {
+maproot(KUL_TIRAS, MECHAGON, {
+	timeline = { ADDED_8_2_0 },
+	groups = {
 		explorationHeader({
 			exploration(10437),	-- Bondo's Yard
 			exploration(10470),	-- Broken Point
@@ -20,5 +21,5 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
 			exploration(10468),	-- Toothy Shallows
 			exploration(10467),	-- Western Spray
 		}),
-	}),
-})));
+	},
+});

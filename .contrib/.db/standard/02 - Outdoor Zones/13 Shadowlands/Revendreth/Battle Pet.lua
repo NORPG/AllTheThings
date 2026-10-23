@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(REVENDRETH, {
+maproot(SHADOWLANDS, REVENDRETH, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		petbattle(filter(BATTLE_PETS, {
 			pet(2902),	-- Dusky Dredwing Pup (PET!)
 			pet(2895, {	-- Lost Soul (PET!)
@@ -18,5 +19,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			}),
 			pet(3015),	-- Withering Creeper (PET!)
 		})),
-	}),
-})));
+	},
+});

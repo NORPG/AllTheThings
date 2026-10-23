@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ORIBOS, {
+maproot(SHADOWLANDS, ORIBOS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		n(PROFESSIONS, {
 			n(156692, {	-- Distributor Au'burk <Engineering Supplies>
 				coord = { 37.8, 43.6, ORIBOS },
@@ -231,5 +232,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

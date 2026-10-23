@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(VOLDUN, {
+maproot(ZANDALAR, VOLDUN, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(PROFESSIONS, {
 			prof(JEWELCRAFTING, {
 				q(55581, {	-- Sun-Speckled Dunes (A)
@@ -21,5 +22,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 				}),
 			}),
 		}),
-	}),
-})));
+	},
+});

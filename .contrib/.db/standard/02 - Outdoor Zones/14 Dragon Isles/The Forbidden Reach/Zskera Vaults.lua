@@ -20,8 +20,9 @@ local ZSKERA_VAULTS = createHeader({
 	},
 });
 
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
+maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
+	timeline = { ADDED_10_0_7 },
+	groups = {
 		n(ZSKERA_VAULTS, {
 			n(ACHIEVEMENTS, {
 				ach(17397),	-- Door To Door
@@ -1250,8 +1251,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
 				i(204687),	-- Obsidian Battle Horn (TOY!)
 			}),
 		}),
-	}),
-})));
+	},
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {
 	m(DRAGON_ISLES, {

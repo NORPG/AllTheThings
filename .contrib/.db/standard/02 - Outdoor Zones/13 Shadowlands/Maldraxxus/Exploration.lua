@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(MALDRAXXUS, {
+maproot(SHADOWLANDS, MALDRAXXUS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		explorationHeader({
 			exploration(12776),	-- Akarek's Tears
 			exploration(12903),	-- Blackhound Outpost
@@ -43,5 +44,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 			exploration(13406),	-- Valley of a Thousand Legs
 			exploration(12906),	-- Wrangler Pit
 		}),
-	}),
-})));
+	},
+});

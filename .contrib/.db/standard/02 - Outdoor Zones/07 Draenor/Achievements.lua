@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(DRAENOR, {
+maproot(DRAENOR, {
 	n(ACHIEVEMENTS, {
 		timeline = { ADDED_6_0_3_LAUNCH },
 		groups = {
@@ -174,4 +174,4 @@ root(ROOTS.Zones, m(DRAENOR, {
 			}),
 		},
 	}),
-}))
+})

@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
-	m(VOLDUN, {
+maproot(ZANDALAR, VOLDUN, {
+	timeline = { ADDED_8_0_1 },
+	groups = {
 		n(FLIGHT_PATHS, {
 			fp(2144, {	-- Goldtusk Inn, Vol'dun
 				sourceQuest = 48320,	-- The Best Kill is Overkill
@@ -48,5 +49,5 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
 			-- This FlightPath is not collectible, but is faked on the map by Blizzard
 			fp(2162, { collectible = false }),	-- Devoted Sanctuary, Vol'dun
 		}),
-	}),
-})));
+	},
+});

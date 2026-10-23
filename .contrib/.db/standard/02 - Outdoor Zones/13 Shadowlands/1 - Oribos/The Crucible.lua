@@ -2,8 +2,9 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
-	m(ORIBOS, {
+maproot(SHADOWLANDS, ORIBOS, {
+	timeline = { ADDED_9_0_2_LAUNCH },
+	groups = {
 		m(1673, {	-- The Crucible
 			description = "The Crucible - sub-zone accessed via Tal-Inara",
 			provider = { "n", 159478 },	-- Tal-Inara
@@ -41,5 +42,5 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } 
 				}),
 			},
 		}),
-	}),
-})))
+	},
+})
