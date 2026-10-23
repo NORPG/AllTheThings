@@ -1,6 +1,5 @@
 {
     "Lua.diagnostics.globals": [],
     "wowAPI.luals.configurationScope": "User",
-    "wowAPI.luals.defineKnownGlobals": false,
-    "editor.renderFinalNewline": "off"
+    "wowAPI.luals.defineKnownGlobals": false
 }
