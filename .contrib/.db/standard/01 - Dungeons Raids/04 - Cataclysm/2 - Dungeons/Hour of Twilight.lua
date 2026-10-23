@@ -2,13 +2,14 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_3_0 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(186, {	-- Hour of Twilight
 		mapID = 399,
 		coords = {
 			{ 66.2, 29.2, CAVERNS_OF_TIME },	-- dungeon entrance
 			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
+		timeline = ADDED_4_3_0,
 		maps = { 400 },
 		groups = {
 			n(QUESTS, {
@@ -126,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			}),
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(186, {

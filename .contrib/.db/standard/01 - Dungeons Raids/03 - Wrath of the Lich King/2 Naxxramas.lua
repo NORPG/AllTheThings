@@ -1424,7 +1424,7 @@ local NAXX_SHARED_CONTENT = d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 local DEATHS_BARGAINING_CHIP = 206576;
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 inst(754, {	-- Naxxramas
 	-- #if AFTER 10.1.5
 	description = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
@@ -1436,6 +1436,7 @@ inst(754, {	-- Naxxramas
 		{ 35.7, 22.9, EASTERN_PLAGUELANDS },
 		-- #endif
 	},
+	timeline = { ADDED_3_0_2 },
 	maps = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
 	-- #if NOT ANYCLASSIC
 	sharedLockout = 1,
@@ -2658,4 +2659,4 @@ inst(754, {	-- Naxxramas
 		NAXX_25MAN_LOOT,
 	}),
 }),
-}))));
+})));

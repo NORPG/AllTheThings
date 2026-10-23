@@ -202,12 +202,13 @@ InstanceHelper.LFRQueueNPC = {
 	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(786, {	-- The Nighthold
 		coords = {
 			{ 43.3, 62.3, SURAMAR },	-- entrance that leads underground
 			{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 		},
+		timeline = { ADDED_7_1_0 },
 		maps = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		isRaid = true,
 		lvl = 110,
@@ -959,24 +960,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	inst(786, {
-		q(45318),	-- Skorpyron
-		q(45319),	-- Chronomatic Anomaly
-		q(45320),	-- Triliax
-		q(45321),	-- Spellblade Aluriel
-		q(45322),	-- Tichondrius
-		q(45323),	-- Krosus
-		q(46329),	-- Krosus Normal
-		q(46330),	-- Krosus Heroic
-		q(46331),	-- Krosus Mythic
-		q(45324),	-- High Botanist Tel'arn
-		q(45325),	-- Star Augur Etraeus
-		q(45326),	-- Elisande
-		q(45327),	-- Gul'dan Mythic
-		q(45328),	-- Triggers when the door to Chronomatic Anomaly opens
-		q(46328),	-- Triggers when the port to Elisande is activated
+		timeline = { ADDED_7_1_0 },
+		groups = {
+			q(45318),	-- Skorpyron
+			q(45319),	-- Chronomatic Anomaly
+			q(45320),	-- Triliax
+			q(45321),	-- Spellblade Aluriel
+			q(45322),	-- Tichondrius
+			q(45323),	-- Krosus
+			q(46329),	-- Krosus Normal
+			q(46330),	-- Krosus Heroic
+			q(46331),	-- Krosus Mythic
+			q(45324),	-- High Botanist Tel'arn
+			q(45325),	-- Star Augur Etraeus
+			q(45326),	-- Elisande
+			q(45327),	-- Gul'dan Mythic
+			q(45328),	-- Triggers when the door to Chronomatic Anomaly opens
+			q(46328),	-- Triggers when the port to Elisande is activated
+		},
 	}),
-})));
+}));

@@ -23,10 +23,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(274, {	-- Gundrak
 		mapID = GUNDRAK,
 		coord = { 76.3, 21.1, ZULDRAK },
+		timeline = { ADDED_3_0_2 },
 		maps = { GUNDRAK_FLOOR2 },
 		lvl = lvlsquish(71, 71, 20),
 		groups = {
@@ -519,7 +520,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(284, {

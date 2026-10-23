@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(282, {	-- The Oculus
 		mapID = THE_OCULUS,
 		coord = { 28.1, 28.1, BOREAN_TUNDRA },
+		timeline = { ADDED_3_0_2 },
 		maps = { THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 		lvl = lvlsquish(77, 77, 20),
 		groups = {
@@ -528,7 +529,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(282, {

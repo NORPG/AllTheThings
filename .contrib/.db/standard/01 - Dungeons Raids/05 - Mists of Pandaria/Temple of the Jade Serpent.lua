@@ -2,9 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(313, {	-- Temple of the Jade Serpent
 		coord = { 56.0, 57.8, THE_JADE_FOREST },
+		timeline = ADDED_5_0_4,
 		maps = {
 			TEMPLE_OF_THE_JADE_SERPENT,
 			TEMPLE_OF_THE_JADE_SERPENT_THE_SCROLLKEEPERS_SANCTUM,
@@ -533,7 +534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MOP, {

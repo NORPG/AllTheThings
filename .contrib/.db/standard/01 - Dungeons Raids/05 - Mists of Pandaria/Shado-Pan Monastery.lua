@@ -2,9 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		coord = { 36.8 ,47.7, KUN_LAI_SUMMIT},
+		timeline = ADDED_5_0_4,
 		maps = {
 			SHADOPAN_MONASTERY,
 			SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO,
@@ -517,7 +518,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MOP, {

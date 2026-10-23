@@ -19,7 +19,7 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(248, {	-- Hellfire Ramparts
 		lore = "Hellfire Ramparts make up the first wing of Hellfire Citadel. The citadel itself sits in the center of the zone, in the middle of a broken-up wall that divided the zone before the conflict began. The Ramparts takes place atop this wall along the sides of the citadel.",
 		-- #if BEFORE MOP
@@ -27,6 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #endif
 		mapID = HELLFIRE_CITADEL_RAMPARTS,
 		coord = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
+		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(57, 57, 10),
 		groups = {
 			n(QUESTS, {
@@ -402,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(248, {

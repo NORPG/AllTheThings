@@ -2,9 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1197, {	-- Uldaman: Legacy of Tyr
 		coord = {41.2, 10.3, BADLANDS },
+		timeline = { ADDED_10_0_2 },
 		maps = {
 			2071,	-- Hall of the Keepers
 			2072,	-- The Vault of Tyr
@@ -154,4 +155,4 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10
 			}),
 		},
 	}),
-})));
+}));

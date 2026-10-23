@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(65, {	-- Throne of the Tides
 		mapID = 322,
 		coord = { 71.00, 29.00, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
+		timeline = ADDED_4_0_3,
 		maps = { 323 },
 		groups = {
 			n(QUESTS, sharedData({
@@ -277,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(65, {

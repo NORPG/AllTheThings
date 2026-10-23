@@ -4060,30 +4060,33 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ timeline = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, patch(1,0), {
 			inst(1031, {	-- Uldir
-				filter(CLOTH, {
-					i(166406),	-- Flaskzertauren's Cloth Robes
-					i(166407),	-- Flaskzertauren's Cloth Shoulders
-				}),
-				filter(LEATHER, {
-					i(166409),	-- Flaskzertauren's Leather Shoulderpads
-					i(166408),	-- Flaskzertauren's Leather Spaulders
-					i(166404),	-- Flaskzertauren's Leather Tunic
-					i(166403),	-- Flaskzertauren's Leather Vest
-				}),
-				filter(MAIL, {
-					i(166402),	-- Flaskzertauren's Mail Hauberk
-					i(166410),	-- Flaskzertauren's Mail Shoulderguards
-				}),
-				filter(PLATE, {
-					i(166400),	-- Flaskzertauren's Plate Chestguard
-					i(166401),	-- Flaskzertauren's Plate Cuirass
-					i(166412),	-- Flaskzertauren's Plate Pauldrons
-					i(166411),	-- Flaskzertauren's Plate Shoulderguards
-				}),
+				timeline = { CREATED_8_1_0 },
+				groups = {
+					filter(CLOTH, {
+						i(166406),	-- Flaskzertauren's Cloth Robes
+						i(166407),	-- Flaskzertauren's Cloth Shoulders
+					}),
+					filter(LEATHER, {
+						i(166409),	-- Flaskzertauren's Leather Shoulderpads
+						i(166408),	-- Flaskzertauren's Leather Spaulders
+						i(166404),	-- Flaskzertauren's Leather Tunic
+						i(166403),	-- Flaskzertauren's Leather Vest
+					}),
+					filter(MAIL, {
+						i(166402),	-- Flaskzertauren's Mail Hauberk
+						i(166410),	-- Flaskzertauren's Mail Shoulderguards
+					}),
+					filter(PLATE, {
+						i(166400),	-- Flaskzertauren's Plate Chestguard
+						i(166401),	-- Flaskzertauren's Plate Cuirass
+						i(166412),	-- Flaskzertauren's Plate Pauldrons
+						i(166411),	-- Flaskzertauren's Plate Shoulderguards
+					}),
+				},
 			}),
-		})),
+		}),
 
 		-- 8.2.0
 		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ timeline = { CREATED_8_2_0 } }, {

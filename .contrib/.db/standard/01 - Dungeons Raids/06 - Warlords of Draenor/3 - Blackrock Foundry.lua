@@ -411,9 +411,10 @@ InstanceHelper.LFRQueueNPC = {
 	crs = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(457, {	-- Blackrock Foundry
 		mapID = 598,
+		timeline = { ADDED_6_0_3_LAUNCH },
 		maps = { 596, 597, 599, 600 },
 		coord = { 51.55, 27.23, GORGROND },
 		isRaid = true,
@@ -1326,7 +1327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6
 			}),
 		},
 	}),
-})));
+}));
 
 -- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_0_2 } }, {
 -- 	inst(457, {

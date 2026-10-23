@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 	inst(669, {	-- Hellfire Citadel
 		mapID = 661,
 		coord = { 45.56, 53.61, TANAAN_JUNGLE },
+		timeline = { ADDED_6_2_0 },
 		maps = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		isRaid = true,
 		lvl = 100,
@@ -1956,10 +1957,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ timeline = { ADDED_6
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ timeline = { ADDED_6_2_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(669, {
 		-- q(8152),	-- Achimonde Normal. (Was also doing 39830)??
+		timeline = { ADDED_6_2_0 },
 	}),
-})));
+}));

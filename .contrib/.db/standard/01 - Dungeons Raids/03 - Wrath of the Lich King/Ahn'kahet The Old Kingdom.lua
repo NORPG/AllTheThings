@@ -23,10 +23,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		mapID = AHNKAHET_THE_OLD_KINGDOM,
 		coord = { 28.3, 51.6, DRAGONBLIGHT },
+		timeline = { ADDED_3_0_2 },
 		lvl = lvlsquish(68, 68, 15),
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -450,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(271, {

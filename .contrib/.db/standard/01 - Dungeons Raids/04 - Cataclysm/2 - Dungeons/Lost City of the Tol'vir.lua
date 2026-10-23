@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(69, {	-- Lost City of the Tol'vir
 		mapID = 277,
 		coord = { 60.53, 64.29, ULDUM },	-- Lost City of Tol'vir
+		timeline = ADDED_4_0_3,
 		groups = {
 			n(QUESTS, {
 				q(28870, {	-- Return to the Lost City
@@ -305,7 +306,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(69, {

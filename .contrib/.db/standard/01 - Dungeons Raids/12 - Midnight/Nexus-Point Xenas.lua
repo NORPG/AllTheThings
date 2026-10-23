@@ -24,9 +24,10 @@ InstanceHelper.BossOnly, InstanceHelper.Difficulty
 -- 	[MPLUS] = { 574409 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1316, {	-- Nexus-Point Xenas
 		coord = { 64.4, 61.8, MAP.MIDNIGHT.VOIDSTORM },
+		timeline = { ADDED_12_0_1_LAUNCH },
 		maps = { 2556 },	-- Nexus-Point Xenas
 		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -87,4 +88,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));

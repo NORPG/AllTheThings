@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(277, {	-- Halls of Stone
 		mapID = HALLS_OF_STONE,
 		coord = { 44.8, 14.5, THE_STORM_PEAKS },
+		timeline = { ADDED_3_0_2 },
 		lvl = lvlsquish(75, 75, 20),
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -410,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(277, {

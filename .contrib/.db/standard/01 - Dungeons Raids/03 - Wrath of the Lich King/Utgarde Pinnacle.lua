@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(286, {	-- Utgarde Pinnacle
 		mapID = UTGARDE_PINNACLE,
 		coord = { 57.0, 47.0, HOWLING_FJORD },
+		timeline = { ADDED_3_0_2 },
 		maps = { UTGARDE_PINNACLE_FLOOR2 },
 		lvl = lvlsquish(75, 75, 20),
 		groups = {
@@ -480,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(286, {

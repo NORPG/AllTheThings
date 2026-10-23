@@ -3537,11 +3537,14 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(35904),	-- Blackrock Depths (Everything) Reward Quest
 		}),
 	}),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+	expansion(EXPANSION.TWW, {
 		inst(228, {
-			q(82739),	-- ???
-			q(82740),	-- Twilight Scheming (New 11.0 ID)
-			-- Both of these keep getting reported completed on turnin of seemingly any BRD class quest regardless of race or faction
+			timeline = { ADDED_11_0_5 },
+			groups = {
+				q(82739),	-- ???
+				q(82740),	-- Twilight Scheming (New 11.0 ID)
+				-- Both of these keep getting reported completed on turnin of seemingly any BRD class quest regardless of race or faction
+			},
 		}),
-	})),
+	}),
 });

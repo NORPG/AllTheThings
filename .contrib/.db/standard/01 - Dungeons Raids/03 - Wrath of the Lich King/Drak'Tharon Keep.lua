@@ -21,10 +21,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty, CommonBossDrops =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(273, {	-- Drak'Tharon Keep
 		mapID = DRAKTHARON_KEEP,
 		coord = { 28.6, 86.9, ZULDRAK },
+		timeline = { ADDED_3_0_2 },
 		maps = { DRAKTHARON_KEEP_FLOOR2 },
 		lvl = lvlsquish(69, 69, 15),
 		groups = {
@@ -421,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(273, {

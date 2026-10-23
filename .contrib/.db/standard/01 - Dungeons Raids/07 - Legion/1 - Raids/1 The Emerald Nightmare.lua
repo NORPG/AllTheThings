@@ -171,9 +171,10 @@ InstanceHelper.LFRQueueNPC = {
 	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(768, {	-- The Emerald Nightmare
 		coord = { 56.3, 36.9, VALSHARAH },
+		timeline = { ADDED_7_0_3_LAUNCH },
 		maps = {
 			777,
 			778,
@@ -434,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	inst(768, {

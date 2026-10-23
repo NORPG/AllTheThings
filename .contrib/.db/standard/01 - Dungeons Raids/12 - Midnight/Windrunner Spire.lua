@@ -24,9 +24,10 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1299, {	-- Windrunner Spire
 		coord = { 35.5, 78.8, MAP.MIDNIGHT.EVERSONG_WOODS },
+		timeline = { ADDED_12_0_1_LAUNCH },
 		maps = {
 			2492,	-- The Promenade
 			2493,	-- Veressa's Repose - Upper
@@ -104,4 +105,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));

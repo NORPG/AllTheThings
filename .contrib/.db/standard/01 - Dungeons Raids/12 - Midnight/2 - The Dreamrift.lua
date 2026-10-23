@@ -66,9 +66,10 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift
 		coord = { 61.0, 64.2, MAP.MIDNIGHT.HARANDAR },
+		timeline = { ADDED_12_0_1_SEASONSTART },
 		maps = {
 			2531,	-- The Dreamrift
 			2532,	-- Den of the Undreamt
@@ -163,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1314, {	-- The Dreamrift

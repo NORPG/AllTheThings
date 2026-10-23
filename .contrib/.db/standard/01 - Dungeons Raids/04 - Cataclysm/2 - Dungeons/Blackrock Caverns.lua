@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(66, {	-- Blackrock Caverns
 		mapID = 283,
 		coord = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
+		timeline = ADDED_4_0_3,
 		maps = { 284 },
 		groups = {
 			n(QUESTS, {
@@ -366,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(66, {

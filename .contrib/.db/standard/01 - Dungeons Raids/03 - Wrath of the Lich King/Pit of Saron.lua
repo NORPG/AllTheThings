@@ -7,10 +7,11 @@
 -- 	[MPLUS] = { 574411 },	-- Challenger's Cache
 -- }
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ timeline = { ADDED_3_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(278, {	-- Pit of Saron
 		mapID = PIT_OF_SARON,
 		coord = { 52.3, 89.3, ICECROWN },
+		timeline = { ADDED_3_3_0 },
 		lvl = lvlsquish(78, 78, 25),
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -316,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(278, {

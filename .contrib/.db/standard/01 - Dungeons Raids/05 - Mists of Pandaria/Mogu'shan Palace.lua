@@ -2,9 +2,10 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0_4 }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(321, {	-- Mogu'shan Palace
 		coord = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
+		timeline = ADDED_5_0_4,
 		maps = {
 			MOGUSHAN_PALACE_THE_CRIMSON_ASSEMBLY_HALL,
 			MOGUSHAN_PALACE_THRONE_OF_ANCIENT_CONQUERORS,
@@ -526,7 +527,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = ADDED_5_0
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.MOP, {

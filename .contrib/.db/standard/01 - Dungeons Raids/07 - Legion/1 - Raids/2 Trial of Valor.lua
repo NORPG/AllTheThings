@@ -84,9 +84,10 @@ InstanceHelper.LFRQueueNPC = {
 	coord = { 63.7, 55.0, LEGION_DALARAN },
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(861, {	-- Trial of Valor
 		coord = { 70.4, 69.4, STORMHEIM },
+		timeline = { ADDED_7_1_0 },
 		maps = { 806, 807, 808 },
 		isRaid = true,
 		lvl = 110,
@@ -251,16 +252,19 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDE
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	inst(861, {	-- Trial of Valor
-		q(46661),	-- Odyn LFR
-		q(46662),	-- Odyn Normal
-		q(46663),	-- Odyn Heroic
-		q(46664),	-- Odyn Mythic
-		q(45429),	-- Odyn
-		q(45430),	-- Guarm
-		q(45431),	-- Helya
+		timeline = { ADDED_7_1_5 },
+		groups = {
+			q(46661),	-- Odyn LFR
+			q(46662),	-- Odyn Normal
+			q(46663),	-- Odyn Heroic
+			q(46664),	-- Odyn Mythic
+			q(45429),	-- Odyn
+			q(45430),	-- Guarm
+			q(45431),	-- Helya
+		},
 	}),
-})));
+}));

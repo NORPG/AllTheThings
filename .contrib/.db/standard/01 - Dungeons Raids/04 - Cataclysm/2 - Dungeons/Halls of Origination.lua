@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(70, {	-- Halls of Origination
 		mapID = 297,
 		coord = { 71.81, 52.16, ULDUM },	-- Halls of Origination
+		timeline = ADDED_4_0_3,
 		maps = { 298, 299 },
 		groups = {
 			n(QUESTS, {
@@ -347,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			-- #endif
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(70, {

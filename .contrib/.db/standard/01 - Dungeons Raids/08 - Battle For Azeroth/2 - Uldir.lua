@@ -186,8 +186,9 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1031, {	-- Uldir
+		timeline = { ADDED_8_0_1 },
 		maps = {
 			1148,	-- Ruin's Descent
 			1149,	-- Hall of Sanitation
@@ -472,18 +473,21 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	inst(1031, {	-- Uldir
-		q(53269),	-- killed Taloc the Corrupted in LFR
-		q(51736),	-- killed Taloc on Mythic
-		q(51735),	-- killed MOTHER on Mythic
-		q(51734),	-- killed Vectis on Mythic / Heroic
-		q(51733),	-- killed Fetid Devourer on Mythic
-		q(51730),	-- killed Mythrax the Unraveler on Mythic
-		q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
-		q(51731),	-- reported as triggering after doing "Edgelords" achievement, perhaps a kill quest
-		q(51729),	-- reported as triggering after doing "Double Dribble" achievement, perhaps a kill quest
+		timeline = { ADDED_8_0_1 },
+		groups = {
+			q(53269),	-- killed Taloc the Corrupted in LFR
+			q(51736),	-- killed Taloc on Mythic
+			q(51735),	-- killed MOTHER on Mythic
+			q(51734),	-- killed Vectis on Mythic / Heroic
+			q(51733),	-- killed Fetid Devourer on Mythic
+			q(51730),	-- killed Mythrax the Unraveler on Mythic
+			q(51732),	-- reported as triggering after doing "What's in the Box?" achievement, perhaps a kill quest
+			q(51731),	-- reported as triggering after doing "Edgelords" achievement, perhaps a kill quest
+			q(51729),	-- reported as triggering after doing "Double Dribble" achievement, perhaps a kill quest
+		},
 	}),
-})));
+}));

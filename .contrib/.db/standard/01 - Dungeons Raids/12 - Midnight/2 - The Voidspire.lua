@@ -285,9 +285,10 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire
 		coord = { 45.4, 64.0, MAP.MIDNIGHT.VOIDSTORM },
+		timeline = { ADDED_12_0_1_SEASONSTART },
 		maps = {
 			2529,	-- Voidspire
 			2530,	-- Crown of the Cosmos
@@ -578,7 +579,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	inst(1307, {	-- The Voidspire

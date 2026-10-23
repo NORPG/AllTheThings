@@ -56,9 +56,10 @@ InstanceHelper.LFRQueueNPC = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1177, {	-- Crucible of Storms
 		coord = { 83.8, 47.0, STORMSONG_VALLEY },
+		timeline = { ADDED_8_1_0 },
 		maps = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption
@@ -141,4 +142,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8
 			}),
 		},
 	}),
-})));
+}));

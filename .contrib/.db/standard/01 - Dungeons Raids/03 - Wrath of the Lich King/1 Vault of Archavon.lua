@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(753, {	-- Vault of Archavon
 		mapID = VAULT_OF_ARCHAVON,
 		coord = { 50.0, 11.9, WINTERGRASP },
@@ -10,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		sharedLockout = 1,
 		-- #endif
 		isRaid = true,
+		timeline = { ADDED_3_0_2 },
 		lvl = 80,
 		groups = {
 			n(COMMON_BOSS_DROPS, {
@@ -1106,4 +1107,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 		},
 	}),
-}))));
+})));

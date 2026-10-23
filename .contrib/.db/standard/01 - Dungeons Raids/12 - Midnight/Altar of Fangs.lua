@@ -30,10 +30,11 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1322, {	-- Altar of Fangs
 		InRetailSeason=InRetailSeason,
 		coord = { 47.2, 68.5, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
+		timeline = { ADDED_12_1_0 },
 		maps = {
 			2588,	-- Sacrificial Approach / The Carnage Pit
 			2589,	-- Ancient Burrow
@@ -94,4 +95,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ timeline = { ADDED_3_3_5 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, {
 	inst(761, {	-- The Ruby Sanctum
 		mapID = THE_RUBY_SANCTUM,
 		coord = { 61.2, 52.7, DRAGONBLIGHT },
@@ -10,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		sharedLockout = 1,
 		-- #endif
 		isRaid = true,
+		timeline = { ADDED_3_3_5 },
 		lvl = 80,
 		groups = {
 			n(QUESTS, {
@@ -144,4 +145,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 		},
 	}),
-}))));
+})));

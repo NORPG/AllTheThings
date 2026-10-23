@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(68, {	-- The Vortex Pinnacle
 		mapID = 325,
 		coord = { 76.76, 84.44, ULDUM },	-- Vortex Pinnacle
+		timeline = ADDED_4_0_3,
 		groups = {
 			n(QUESTS, {
 				q(28779, {	-- A Long Way from Home
@@ -277,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			})),
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(68, {

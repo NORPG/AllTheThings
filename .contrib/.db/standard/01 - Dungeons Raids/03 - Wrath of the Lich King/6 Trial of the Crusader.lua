@@ -2,10 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ timeline = { ADDED_3_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(757, {	-- Trial of the Crusader
 		mapID = TRIAL_OF_THE_CRUSADER,
 		coord = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
+		timeline = { ADDED_3_2_0 },
 		maps = { 173 },
 		-- #if AFTER CATA
 		sharedLockout = 1,
@@ -2431,4 +2432,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 		},
 	}),
-}))));
+})));

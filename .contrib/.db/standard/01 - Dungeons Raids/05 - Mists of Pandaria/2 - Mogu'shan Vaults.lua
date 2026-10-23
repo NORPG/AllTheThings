@@ -6,9 +6,10 @@
 local CUTTING_EDGE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, 50200);
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE_MOGUSHAN_VAULTS, inst(317, {	-- Mogu'shan Vaults
 		coord = { 59.6, 39.1, KUN_LAI_SUMMIT },
+		timeline = { ADDED_5_0_4 },
 		maps = {
 			471,	-- Dais of Conquerors
 			472,	-- The Repository
@@ -671,4 +672,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5
 			}),
 		},
 	})),
-})));
+}));

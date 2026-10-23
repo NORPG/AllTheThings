@@ -42,7 +42,7 @@ local TOKENS = {
 };
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, bubbleDown({ timeline = { ADDED_1_6_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, {
 	inst(742, {	-- Blackwing Lair
 		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		-- #if BEFORE WRATH
@@ -54,6 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		provider = { "o", 179879 },	-- Orb of Command
 		mapID = BLACKWING_LAIR,
 		coord = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
+		timeline = { ADDED_1_6_0 },
 		maps = { BLACKWING_LAIR_LEVEL2, BLACKWING_LAIR_LEVEL3, BLACKWING_LAIR_LEVEL4 },
 		sharedLockout = 1,
 		isRaid = true,
@@ -1137,4 +1138,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #endif
 		},
 	}),
-}))));
+})));

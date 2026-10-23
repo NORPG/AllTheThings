@@ -236,7 +236,7 @@ local SARTH_25MAN_LOOT = d(SARTH_25MAN_DIFFICULTY_ID, {
 	}),
 });
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(755, {	-- The Obsidian Sanctum
 		mapID = THE_OBSIDIAN_SANCTUM,
 		coord = { 60.0, 56.7, DRAGONBLIGHT },
@@ -244,6 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		sharedLockout = 1,
 		-- #endif
 		isRaid = true,
+		timeline = { ADDED_3_0_2 },
 		lvl = 80,
 		groups = {
 			SARTH_10MAN_METADATA_AND_ACHIEVEMENTS,
@@ -254,4 +255,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			SARTH_25MAN_LOOT,
 		},
 	}),
-}))));
+})));

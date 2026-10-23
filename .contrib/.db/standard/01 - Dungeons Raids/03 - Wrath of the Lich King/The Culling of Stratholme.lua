@@ -21,10 +21,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(279, {	-- The Culling of Stratholme
 		mapID = THE_CULLING_OF_STRATHOLME,
 		coord = { 56.9, 82.4, CAVERNS_OF_TIME },
+		timeline = { ADDED_3_0_2 },
 		maps = { THE_CULLING_OF_STRATHOLME_FLOOR2 },
 		lvl = lvlsquish(75, 75, 25),
 		groups = {
@@ -409,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(279, {

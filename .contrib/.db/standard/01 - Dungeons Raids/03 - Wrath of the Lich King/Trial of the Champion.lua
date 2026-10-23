@@ -41,10 +41,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, bubbleDown({ timeline = { ADDED_3_2_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(284, {	-- Trial of the Champion
 		mapID = TRIAL_OF_THE_CHAMPION,
 		coord = { 74.0, 20.9, ICECROWN },
+		timeline = { ADDED_3_2_0 },
 		lvl = lvlsquish(75, 75, 25),
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -806,7 +807,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(284, {

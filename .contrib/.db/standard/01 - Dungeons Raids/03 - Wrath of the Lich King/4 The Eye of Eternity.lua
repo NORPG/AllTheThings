@@ -6,7 +6,7 @@
 local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_TWO, 30100);
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_3_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(756, {	-- The Eye of Eternity
 		mapID = THE_EYE_OF_ETERNITY,
 		coord = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
@@ -14,6 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		sharedLockout = 1,
 		-- #endif
 		isRaid = true,
+		timeline = { ADDED_3_0_2 },
 		lvl = 80,
 		groups = {
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
@@ -139,4 +140,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 		},
 	}),
-}))));
+})));

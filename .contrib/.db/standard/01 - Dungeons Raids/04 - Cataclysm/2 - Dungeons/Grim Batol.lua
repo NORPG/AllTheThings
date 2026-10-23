@@ -71,11 +71,12 @@ local MixedNormalAndHeroicLootTable = {
 		},
 	}),
 };
-root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_0_3 }, {
+root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(71, {	-- Grim Batol
 		lore = "Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alexstrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.",
 		mapID = 293,
 		coord = { 19.2, 54.2, TWILIGHT_HIGHLANDS },
+		timeline = ADDED_4_0_3,
 		groups = {
 			n(QUESTS, {
 				q(28854, {	-- Closing A Dark Chapter
@@ -278,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ timeline = ADDED_4_
 			-- History: Grim Batol was rolled in as a m+ dungeon in TWW S1, and the Heroic difficulty did not return to it's pre-TWW state until September 2025.
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(71, {

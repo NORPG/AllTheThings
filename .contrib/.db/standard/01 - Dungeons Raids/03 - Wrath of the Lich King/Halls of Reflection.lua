@@ -19,10 +19,11 @@ local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
 local BossOnly, Difficulty =
 InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, bubbleDown({ timeline = { ADDED_3_3_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(276, {	-- Halls of Reflection
 		mapID = HALLS_OF_REFLECTION,
 		coord = { 52.3, 89.3, ICECROWN },
+		timeline = { ADDED_3_3_0 },
 		lvl = lvlsquish(78, 78, 25),
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -250,7 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			-- #endif
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(276, {

@@ -36,10 +36,11 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1309, {	-- The Blinding Vale
 		InRetailSeason=InRetailSeason,
 		coord = { 27.2, 78.0, MAP.MIDNIGHT.HARANDAR },
+		timeline = { ADDED_12_0_1_LAUNCH },
 		maps = { 2500 },
 		groups = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
@@ -113,4 +114,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));

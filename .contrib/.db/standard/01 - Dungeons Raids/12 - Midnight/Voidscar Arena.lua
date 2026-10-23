@@ -30,10 +30,11 @@ InRetailSeason = {	-- MID S2
 }
 -- #ENDIF
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1313, {	-- Voidscar Arena
 		InRetailSeason=InRetailSeason,
 		coord = { 53.7, 34.8, MAP.MIDNIGHT.VOIDSTORM },
+		timeline = { ADDED_12_0_1_LAUNCH },
 		maps = {
 			2572,	-- Voidscar Arena
 			2573,	-- Domanaar's Ascent
@@ -93,4 +94,4 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));

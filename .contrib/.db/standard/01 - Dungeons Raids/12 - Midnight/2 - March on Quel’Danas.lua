@@ -64,9 +64,10 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MID, {
 	inst(1308, {	-- March on Quel'Danas
 		coord = { 52.6, 86.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+		timeline = { ADDED_12_0_1_SEASONSTART },
 		maps = {
 			2533,	-- March on Quel'Danas
 			2534,	-- The Darkwell
@@ -228,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADD
 			}),
 		},
 	}),
-})));
+}));
 --]]
 
 
