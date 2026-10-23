@@ -17,6 +17,7 @@
         ConditionalData,
         Incorporation,
         Consolidation,
+        HierarchicalPass,
         UnsortedGeneration,
         DataIntegrityAnalysis,
         ExportLocalizationStrings,

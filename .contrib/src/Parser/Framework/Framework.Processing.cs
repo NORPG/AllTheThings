@@ -221,13 +221,13 @@ namespace ATT
             AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("questID"), Consolidate_questID);
             AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Parallel);
             AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("_unsorted"), Consolidate_CheckUnsortedDuplicates);
-            // the last operation since it involves deletion of many fields from data which may otherwise be needed in prior steps
-            AddHandlerAction(ParseStage.Consolidation, Handler.AlwaysHandle, Consolidate_Cleaning);
             // special case for Classic -- any 'spell' object with a 'Recipe' filter can convert to a Recipe
             if (PreProcessorTags.Contains("ANYCLASSIC"))
             {
                 AddHandlerAction(ParseStage.Consolidation, data => data.ContainsKey("spellID"), Consolidate_ConvertManualRecipe);
             }
+            // the last operation since it involves deletion of many fields from data which may otherwise be needed in prior steps
+            AddHandlerAction(ParseStage.HierarchicalPass, Handler.AlwaysHandle, Consolidate_Cleaning);
 
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
@@ -255,6 +255,11 @@ namespace ATT
             CurrentParseStage = ParseStage.Consolidation;
             Validator.OnlyClean = true;
             ProcessingFunction = DataConsolidation;
+            ProcessContainers();
+            RunCurrentParseStageHandlers();
+
+            CurrentParseStage = ParseStage.HierarchicalPass;
+            ProcessingFunction = DataHierarchicalPass;
             ProcessContainers();
 
             // Sort World Drops by Name
@@ -748,7 +753,7 @@ namespace ATT
                 if (aqd != null || hqd != null)
                 {
                     // Include Parent field consolidation on the aqd/hqd data also
-                    if (CurrentParseStage >= ParseStage.Consolidation)
+                    if (CurrentParseStage >= ParseStage.HierarchicalPass)
                         HierarchicalFieldAdjustments.Apply(data, aqd ?? new Dictionary<string, object>(), hqd ?? new Dictionary<string, object>());
                 }
 
@@ -774,7 +779,7 @@ namespace ATT
                     Process(groups, data);
 
                     // Parent field consolidation now that groups have been processed
-                    if (CurrentParseStage >= ParseStage.Consolidation)
+                    if (CurrentParseStage >= ParseStage.HierarchicalPass)
                         HierarchicalFieldAdjustments.Apply(data, groups);
 
                     /*
@@ -1101,6 +1106,10 @@ namespace ATT
 
             return true;
         }
+
+        // Currently does nothing as the HierarchicalPass stage is performed after leaving the processing for a set of groups,
+        // not within the individual Process method
+        private static bool DataHierarchicalPass(IDictionary<string, object> data, IDictionary<string, object> parentData) => true;
 
         private static void Consolidate_TrackUsage(IDictionary<string, object> data)
         {
@@ -5128,23 +5137,32 @@ namespace ATT
             // Mark when this Thing was put into (or back into) the game
             if (addedPatch > 10000)
             {
-                if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
+                // For any header group (with children) that has a timeline, we will not apply 'awp' deterministically since a header is only used
+                // to group content, rather than specifically define addition or removal to the game, and 'awp' values can
+                // will be consolidated automatically via HierarchicalFieldAdjustments
+                if (!data.ContainsAnyKey("headerID") || !data.ContainsKey("g"))
                 {
-                    if (!wasDefaulted)
+                    if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
                     {
-                        LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+                        if (!wasDefaulted)
+                        {
+                            LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+                            data["awp"] = addedPatch; // "Added With Patch"
+                        }
+                    }
+                    else
+                    {
                         data["awp"] = addedPatch; // "Added With Patch"
                     }
-                }
-                else
-                {
-                    data["awp"] = addedPatch; // "Added With Patch"
                 }
             }
 
             // Mark when this Thing was (or will be) removed from the game
             if (removedPatch > 10000)
             {
+                // headers CAN specify their 'rwp' value specifically since the 'rwp' field is not hierarchically refined via HierarchicalFieldAdjustments
+                // e.g. All Things can be removed from a Vendor which itself is NOT removed
+
                 if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
                 {
                     if (!wasDefaulted)
