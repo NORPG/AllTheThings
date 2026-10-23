@@ -42,8 +42,9 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				})),
 			},
 		}),
-		q(46745, bubbleDownSelf({ minReputation = { FACTION_COURT_OF_FARONDIS, EXALTED }}, {	-- Supplies from the Court
+		q(46745, {	-- Supplies from the Court
 			provider = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
+			minReputation = { FACTION_COURT_OF_FARONDIS, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152102, {	-- Farondis Chest
@@ -59,9 +60,10 @@ maproot(BROKEN_ISLES, AZSUNA, {
 					},
 				})),
 			},
-		})),
-		q(46749, bubbleDownSelf({ minReputation = { FACTION_THE_WARDENS, EXALTED }}, {	-- Supplies From the Wardens
+		}),
+		q(46749, {	-- Supplies From the Wardens
 			provider = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
+			minReputation = { FACTION_THE_WARDENS, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152107, {	-- Warden's Supply Kit
@@ -77,7 +79,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 					},
 				})),
 			},
-		})),
+		}),
 		q(42422, {	-- The Wardens
 			provider = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
 			repeatable = true,

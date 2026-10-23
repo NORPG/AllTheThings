@@ -6,9 +6,11 @@ maproot(ZANDALAR, VOLDUN, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(54461, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_VOLDUNAI, EXALTED } }, {-- Supplies from the Voldunai
+			q(54461, {-- Supplies from the Voldunai
 				provider = { "n", 135804 },	-- Hoarder Jena
 				coord = { 56.68, 49.74, VOLDUN },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_VOLDUNAI, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 120,
@@ -18,7 +20,7 @@ maproot(ZANDALAR, VOLDUN, {
 						i(166880),	-- Meerah's Jukebox (TOY!)
 					}),
 				},
-			})),
+			}),
 			q(50603, {	-- Voldunai
 				provider = { "n", 135804 },	-- Hoarder Jena
 				coord = { 56.68, 49.74, VOLDUN },

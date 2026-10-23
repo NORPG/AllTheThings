@@ -6,7 +6,8 @@ maproot(KUL_TIRAS, MECHAGON, {
 	timeline = { ADDED_8_2_0 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(55348, bubbleDownSelf({ minReputation = { FACTION_RUSTBOLT_RESISTANCE, EXALTED } }, {	-- Supplies from the Rustbolt Resistance
+			q(55348, {	-- Supplies from the Rustbolt Resistance
+				minReputation = { FACTION_RUSTBOLT_RESISTANCE, EXALTED },
 				repeatable = true,
 				lvl = 120,
 				groups = {
@@ -34,7 +35,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 						i(168368),	-- Recipe: Famine Evaluator And Snack Table [Rank 3] (RECIPE!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

@@ -6,9 +6,11 @@ maproot(ZANDALAR, NAZMIR, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(54460, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_TALANJIS_EXPEDITION, EXALTED } }, {	-- Supplies from Talanji's Expedition
+			q(54460, {	-- Supplies from Talanji's Expedition
 				provider = { "n", 135459 },	-- Provisioner Lija
 				coord = { 39.11, 79.47, NAZMIR },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_TALANJIS_EXPEDITION, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				groups = {
@@ -17,7 +19,7 @@ maproot(ZANDALAR, NAZMIR, {
 						i(166716),	-- Crimson Bat Pup (PET!)
 					}),
 				},
-			})),
+			}),
 			q(50602, {	-- Talanji's Expedition
 				provider = { "n", 135459 },	-- Provisioner Lija
 				coord = { 39.11, 79.47, NAZMIR },

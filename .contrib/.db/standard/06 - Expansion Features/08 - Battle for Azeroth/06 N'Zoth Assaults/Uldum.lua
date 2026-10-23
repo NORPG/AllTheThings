@@ -1069,7 +1069,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 				},
 			}),
 			n(EMISSARY_QUESTS, {
-				q(58097, bubbleDownSelf({ minReputation = { FACTION_ULDUM_ACCORD, EXALTED } }, {	-- Supplies from the Uldum Accord
+				q(58097, {	-- Supplies from the Uldum Accord
+					minReputation = { FACTION_ULDUM_ACCORD, EXALTED },
 					repeatable = true,
 					groups = {
 						i(174484, {	-- Uldum Accord Supplies
@@ -1079,7 +1080,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 							i(174481),	-- Cursed Dune Watcher (PET!)
 						}),
 					},
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(2427),	-- Aqir Hatchling

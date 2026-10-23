@@ -46,11 +46,12 @@ maproot(BROKEN_ISLES, SURAMAR, {
 				})),
 			},
 		}),
-		q(46748, bubbleDownSelf({ minReputation = { FACTION_THE_NIGHTFALLEN, EXALTED }}, {		-- Supplies From the Nightfallen
+		q(46748, {		-- Supplies From the Nightfallen
 			qgs = {
 				97140,	-- Thalyssra
 				115736,	-- First Arcanist Thalyssra
 			},
+			minReputation = { FACTION_THE_NIGHTFALLEN, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152105, {	-- Nightfallen Cache
@@ -67,6 +68,6 @@ maproot(BROKEN_ISLES, SURAMAR, {
 					},
 				})),
 			},
-		})),
+		}),
 	}),
 });

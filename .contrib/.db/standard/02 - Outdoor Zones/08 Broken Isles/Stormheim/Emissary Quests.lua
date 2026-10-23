@@ -42,8 +42,9 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				})),
 			},
 		}),
-		q(46746, bubbleDownSelf({ minReputation = { FACTION_VALAJAR, EXALTED }}, {		-- Supplies from the Valarjar
+		q(46746, {		-- Supplies from the Valarjar
 			provider = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
+			minReputation = { FACTION_VALAJAR, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152106, {	-- Valarjar Strongbox
@@ -59,6 +60,6 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 					},
 				})),
 			},
-		})),
+		}),
 	}),
 });

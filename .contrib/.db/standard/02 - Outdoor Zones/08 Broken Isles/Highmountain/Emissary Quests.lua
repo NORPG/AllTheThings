@@ -42,8 +42,9 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				})),
 			},
 		}),
-		q(46743, bubbleDownSelf({ minReputation = { FACTION_HIGHMOUNTAIN_TRIBE, EXALTED }}, {	-- Supplies From Highmountain
+		q(46743, {	-- Supplies From Highmountain
 			provider = { "n", 106902 },	-- Ransa Greyfeather <Highmountain Emissary>
+			minReputation = { FACTION_HIGHMOUNTAIN_TRIBE, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152104, {	-- Highmountain Supplies
@@ -62,6 +63,6 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 					},
 				})),
 			},
-		})),
+		}),
 	}),
 });

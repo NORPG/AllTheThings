@@ -139,17 +139,19 @@ maproot(BROKEN_ISLES, ARGUS, THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
 					}),
 				},
 			}),
-			q(48976, bubbleDownSelf({ minReputation = { FACTION_ARGUSSIAN_REACH, EXALTED }}, {	-- Supplies From the Argussian Reach
+			q(48976, {	-- Supplies From the Argussian Reach
 				provider = { "n", 127151 },	-- Toraan the Revered
+				minReputation = { FACTION_ARGUSSIAN_REACH, EXALTED },
 				repeatable = true,
 				groups = {
 					i(152922, {	-- Brittle Krokul Chest
 						i(153127),	-- Cube of Discovery
 					}),
 				},
-			})),
-			q(48977, bubbleDownSelf({ minReputation = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
+			}),
+			q(48977, {	-- Supplies From the Army of the Light
 				provider = { "n", 127120 },	-- Vindicator Jaelaana
+				minReputation = { FACTION_ARMY_OF_THE_LIGHT, EXALTED },
 				repeatable = true,
 				groups = {
 					i(152923, {	-- Gleaming Footlocker
@@ -159,7 +161,7 @@ maproot(BROKEN_ISLES, ARGUS, THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
 						i(153182),	-- Holy Lightsphere (TOY!)
 					}),
 				},
-			})),
+			}),
 		}),
 		n(FLIGHT_PATHS, {
 			fp(1994, {	-- Vindicaar, Antoran Wastes

@@ -6,9 +6,11 @@ maproot(ZANDALAR, ZULDAZAR, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(54451, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_TORTOLLAN_SEEKERS, EXALTED } }, {	-- Baubles from the Seekers
+			q(54451, {	-- Baubles from the Seekers
 				provider = { "n", 134345 },	-- Collector Kojo
 				coord = { 71.51, 30.35, ZULDAZAR },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_TORTOLLAN_SEEKERS, EXALTED },
 				repeatable = true,
 				lvl = 120,
 				groups = {
@@ -18,7 +20,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 						i(166264),	-- Recipe: Sanguinated Feast [Rank 3] (RECIPE!)
 					}),
 				},
-			})),
+			}),
 			q(50604, {	-- Tortollan Seekers
 				provider = { "n", 134345 },	-- Collector Kojo
 				coord = { 71.51, 30.35, ZULDAZAR },

@@ -17,9 +17,10 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 						coord = { 48.4, 50.4, ARDENWEALD },
 						minReputation = { FACTION_THE_WILD_HUNT, EXALTED },
 					}),
-					q(61098, bubbleDownSelf({ minReputation = { FACTION_THE_WILD_HUNT, EXALTED } }, {	-- Supplies from The Wild Hunt
+					q(61098, {	-- Supplies from The Wild Hunt
 						provider = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 						coord = { 48.4, 50.4, ARDENWEALD },
+						minReputation = { FACTION_THE_WILD_HUNT, EXALTED },
 						repeatable = true,
 						groups = {
 							i(180649, {	-- Wild Hunt Supplies
@@ -29,7 +30,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 								i(185054, {timeline = { ADDED_9_1_5 }}),	-- Mammoth Soul (SS!)
 							}),
 						},
-					})),
+					}),
 				}),
 				n(VENDORS, {
 					n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>

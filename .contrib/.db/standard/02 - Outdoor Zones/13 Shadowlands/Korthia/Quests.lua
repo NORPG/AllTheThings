@@ -1286,28 +1286,30 @@ maproot(SHADOWLANDS, KORTHIA, {
 					{ 61.6, 21.8, KORTHIA },
 				},
 			}),
-			q(64530, bubbleDownSelf({ customCollect = "SL_COV_VEN" }, {	-- Gravewing Crystal
+			q(64530, {	-- Gravewing Crystal
 				sourceQuests = { 64556 },	-- In Need of Assistance
 				provider = { "i", 187283 },	-- Gravewing Crystal
 				coord = { 46.3, 79.7, KORTHIA },
+				customCollect = "SL_COV_VEN",
 				groups = {
 					i(186479),	-- Mastercraft Gravewing (MOUNT!)
 				},
-			})),
+			}),
 			q(64557, {	-- In Darkness, Found
 				sourceQuests = { 63902 },	-- Good News, Everyone!
 				provider = { "n", 178845 },	-- Xy'lony
 				coord = { 64.5, 25.4, KORTHIA },
 				isBreadcrumb = true,
 			}),
-			q(64529, bubbleDownSelf({ customCollect = "SL_COV_KYR" }, {	-- Intact Aquilon Core
+			q(64529, {	-- Intact Aquilon Core
 				sourceQuests = { 64556 },	-- In Need of Assistance
 				provider = { "i", 187282 },	-- Intact Aquilon Core
 				coord = { 46.9, 35.1, KORTHIA },
+				customCollect = "SL_COV_KYR",
 				groups = {
 					i(186483),	-- Forsworn Aquilon (MOUNT!)
 				},
-			})),
+			}),
 			q(65020, {	-- Practical Applications
 				provider = { "n", 178257 },	-- Archivist Roh-Suir
 				coords = {
@@ -1370,14 +1372,15 @@ maproot(SHADOWLANDS, KORTHIA, {
 				sourceQuests = { 64556 },	-- In Need of Assistance
 				provider = { "i", 187264 },	-- Ve'rayn's Head
 			}),
-			q(64528, bubbleDownSelf({ customCollect = "SL_COV_NFA" }, {	-- Wilderling Saddle
+			q(64528, {	-- Wilderling Saddle
 				sourceQuests = { 64556 },	-- In Need of Assistance
 				provider = { "i", 187281 },	-- Wilderling Saddle
 				coord = { 33.1, 39.5, KORTHIA },
+				customCollect = "SL_COV_NFA",
 				groups = {
 					i(186492),	-- Summer Wilderling (MOUNT!)
 				},
-			})),
+			}),
 		}),
 		-- Weeklies
 		n(QUESTS, sharedData({

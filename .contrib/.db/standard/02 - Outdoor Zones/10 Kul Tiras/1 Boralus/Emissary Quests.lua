@@ -14,9 +14,11 @@ maproot(KUL_TIRAS, BORALUS, {
 				lvl = 120,
 				sym = { { "select", "itemID", 165872, 163857 } },	-- 7th Legion Equipment Cache & Azerite Armor Cache
 			}),
-			q(54454, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_7TH_LEGION, EXALTED } }, {	-- Supplies from the 7th Legion
+			q(54454, {	-- Supplies from the 7th Legion
 				provider = { "n", 135446 },	-- Vindicator Jaelaana
 				coord = { 69.32, 24.94, BORALUS },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_7TH_LEGION, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -25,7 +27,7 @@ maproot(KUL_TIRAS, BORALUS, {
 						i(166279),	-- Technique: Contract: 7th Legion [Rank 3] (RECIPE!)
 					}),
 				},
-			})),
+			}),
 			q(50599, {	-- Proudmoore Admiralty
 					provider = { "n", 135808 },	-- Provisioner Fray
 					coord = { 67.52, 21.56, BORALUS },
@@ -58,9 +60,11 @@ maproot(KUL_TIRAS, BORALUS, {
 						}),
 					},
 			}),
-			q(54458, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_PROUDMOORE_ADMIRALTY, EXALTED } }, {	-- Supplies from Proudmoore Admiralty
+			q(54458, {	-- Supplies from Proudmoore Admiralty
 				provider = { "n", 135808 },	-- Provisioner Fray
 				coord = { 67.52, 21.56, BORALUS },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_PROUDMOORE_ADMIRALTY, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -69,7 +73,7 @@ maproot(KUL_TIRAS, BORALUS, {
 						i(166702),	-- Proudmoore Music Box (TOY!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

@@ -35,8 +35,10 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 					}),
 				},
 			}),
-			q(54456, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_ORDER_OF_EMBERS, EXALTED } }, {	-- Supplies from the Order of Embers
+			q(54456, {	-- Supplies from the Order of Embers
 				provider = { "n", 135815 },	-- Quartermaster Alcorn
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_ORDER_OF_EMBERS, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -45,7 +47,7 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 						i(166718),	-- Cobalt Raven (PET!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

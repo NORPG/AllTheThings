@@ -11,9 +11,10 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				coord = { 50.6, 53.4, MALDRAXXUS },
 				minReputation = { FACTION_THE_UNDYING_ARMY, EXALTED },
 			}),
-			q(61095, bubbleDownSelf({ minReputation = { FACTION_THE_UNDYING_ARMY, EXALTED } }, {	-- Supplies from the Undying Army
+			q(61095, {	-- Supplies from the Undying Army
 				provider = { "n", 173003 },	-- Nalcorn Talsen
 				coord = { 50.6, 53.4, MALDRAXXUS },
+				minReputation = { FACTION_THE_UNDYING_ARMY, EXALTED },
 				repeatable = true,
 				groups = {
 					i(180646, {	-- Supplies of the Undying Army
@@ -22,7 +23,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 						i(182081),	-- Colossal Slaughterclaw (MOUNT!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

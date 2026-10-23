@@ -87,22 +87,20 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 						i(174020),	-- N'lyeth, Sliver of N'Zoth (Q Item)
 					},
 				}),
-				q(52786, bubbleDownSelf({	-- The Alliance Slayer
-					races = HORDE_ONLY,
-				},{
+				q(52786, {	-- The Alliance Slayer
 					timeline = { REMOVED_10_0_2 },
+					races = HORDE_ONLY,
 					groups = {
 						title(376),	-- <Name> the Alliance Slayer
 					},
-				})),
-				q(52784, bubbleDownSelf({	-- The Horde Slayer
-					races = ALLIANCE_ONLY,
-				},{
+				}),
+				q(52784, {	-- The Horde Slayer
 					timeline = { REMOVED_10_0_2 },
+					races = ALLIANCE_ONLY,
 					groups = {
 						title(375),	-- <Name> the Horde Slayer
 					},
-				})),
+				}),
 			}),
 		})),
 		expansion(EXPANSION.SL, {

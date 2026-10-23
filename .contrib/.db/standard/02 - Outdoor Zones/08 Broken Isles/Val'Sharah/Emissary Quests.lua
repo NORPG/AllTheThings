@@ -43,8 +43,9 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 				})),
 			},
 		}),
-		q(46747, bubbleDownSelf({ minReputation = { FACTION_THE_DREAMWEAVERS, EXALTED }}, {		-- Supplies From the Dreamweavers
+		q(46747, {		-- Supplies From the Dreamweavers
 			provider = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
+			minReputation = { FACTION_THE_DREAMWEAVERS, EXALTED },
 			repeatable = true,
 			groups = {
 				i(152103, {	-- Dreamweaver Cache
@@ -60,6 +61,6 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 					},
 				})),
 			},
-		})),
+		}),
 	}),
 });

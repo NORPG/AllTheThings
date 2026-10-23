@@ -11,9 +11,10 @@ maproot(SHADOWLANDS, BASTION, {
 				coord = { 52.2, 47.0, BASTION },
 				minReputation = { FACTION_THE_ASCENDED, EXALTED },
 			}),
-			q(61097, bubbleDownSelf({ minReputation = { FACTION_THE_ASCENDED, EXALTED } }, {	-- Supplies from The Ascended
+			q(61097, {	-- Supplies from The Ascended
 				provider = { "n", 160470 },	-- Adjutant Nikos
 				coord = { 52.2, 47.0, BASTION },
+				minReputation = { FACTION_THE_ASCENDED, EXALTED },
 				repeatable = true,
 				groups = {
 					i(180647, {	-- Ascended Supplies
@@ -25,7 +26,7 @@ maproot(SHADOWLANDS, BASTION, {
 						i(184435),	-- Mark of Purity (TOY!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

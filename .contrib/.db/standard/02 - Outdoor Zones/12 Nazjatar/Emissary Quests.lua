@@ -6,8 +6,9 @@ maproot(NAZJATAR, {
 	timeline = { ADDED_8_2_0 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(53982, bubbleDownSelf({ minReputation = { FACTION_THE_UNSHACKLED, EXALTED } }, {	-- Supplies From The Unshackled
+			q(53982, {	-- Supplies From The Unshackled
 				provider = { "n", 154002 },	-- Atolia Seapearl
+				minReputation = { FACTION_THE_UNSHACKLED, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				groups = {
@@ -36,13 +37,14 @@ maproot(NAZJATAR, {
 						},
 					}),
 				},
-			})),
+			}),
 			q(56120, {	-- The Unshackled
 				races = HORDE_ONLY,
 				isWorldQuest = true,
 			}),
-			q(55976, bubbleDownSelf({ minReputation = { FACTION_WAVEBLADE_ANKOAN, EXALTED } }, {	-- Supplies From The Waveblade Ankoan
+			q(55976, {	-- Supplies From The Waveblade Ankoan
 				provider = { "n", 154140 },	-- Speaker Utia
+				minReputation = { FACTION_WAVEBLADE_ANKOAN, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 120,
@@ -72,7 +74,7 @@ maproot(NAZJATAR, {
 						},
 					}),
 				},
-			})),
+			}),
 			q(56119, {	-- The Ankoan
 				races = ALLIANCE_ONLY,
 				isWorldQuest = true,

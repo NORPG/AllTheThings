@@ -908,7 +908,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(EMISSARY_QUESTS, {
-				q(58096, bubbleDownSelf({ minReputation = { FACTION_RAJANI, EXALTED } }, {	-- Supplies from the Rajani
+				q(58096, {	-- Supplies from the Rajani
+					minReputation = { FACTION_RAJANI, EXALTED },
 					repeatable = true,
 					groups = {
 						i(174483, {	-- Rajani Supplies
@@ -923,7 +924,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							i(174479),	-- Jade Defender (PET!)
 						}),
 					},
-				})),
+				}),
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RAJANI),	-- Rajani

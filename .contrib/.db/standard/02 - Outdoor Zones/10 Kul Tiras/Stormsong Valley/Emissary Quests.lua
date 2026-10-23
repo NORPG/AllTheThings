@@ -6,9 +6,11 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		n(EMISSARY_QUESTS, {
-			q(54451, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_TORTOLLAN_SEEKERS, EXALTED } }, {	-- Baubles from the Seekers
+			q(54451, {	-- Baubles from the Seekers
 				provider = { "n", 135793 },	-- Collector Kojo
 				coord = { 40.54, 36.41, STORMSONG_VALLEY },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_TORTOLLAN_SEEKERS, EXALTED },
 				repeatable = true,
 				groups = {
 					i(166245, {	-- Tortollan Seekers Supplies
@@ -17,7 +19,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 						i(166264),	-- Recipe: Sanguinated Feast [Rank 3] (RECIPE!)
 					}),
 				},
-			})),
+			}),
 			q(50604, {	-- Tortollan Seekers
 				provider = { "n", 135793 },	-- Collector Kojo
 				coord = { 40.54, 36.41, STORMSONG_VALLEY },
@@ -67,9 +69,11 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					}),
 				},
 			}),
-			q(54457, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_STORMS_WAKE, EXALTED } }, {	-- Supplies from Storm's Wake
+			q(54457, {	-- Supplies from Storm's Wake
 				provider = { "n", 135800 },	-- Sister Lilyana
 				coord = { 59.29, 69.33, STORMSONG_VALLEY },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_STORMS_WAKE, EXALTED },
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				groups = {
@@ -78,7 +82,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 						i(166665),	-- Technique: Glyph of Storm's Wake (RECIPE!)
 					}),
 				},
-			})),
+			}),
 		}),
 	},
 });

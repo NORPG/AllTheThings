@@ -4,9 +4,10 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_ISKAARA_TUSKARR, {
-		q(70893, bubbleDownSelf({ minReputation = { FACTION_ISKAARA_TUSKARR, 3 } }, {	-- Community Feast
+		q(70893, {	-- Community Feast
 			provider = { "n", 196620 },	-- Pleeqi
 			coord = { 13.5, 48.5, THE_AZURE_SPAN },
+			minReputation = { FACTION_ISKAARA_TUSKARR, 3 },
 			isWeekly = true,
 			groups = {
 				i(200095, {	-- Supply-Laden Soup Pot
@@ -94,7 +95,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					i(199835),	-- Torga's Braid
 				}),
 			},
-		})),
+		}),
 	}),
 }));
 

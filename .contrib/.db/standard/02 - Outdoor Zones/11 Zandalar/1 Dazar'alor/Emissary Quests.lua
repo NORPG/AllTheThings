@@ -14,9 +14,11 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				lvl = 120,
 				sym = { { "select", "itemID", 165871, 163857 } },	-- Honorbound Equipment Cache & Azerite Armor Cache
 			}),
-			q(54455, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_THE_HONORBOUND, EXALTED } }, {	-- Supplies from the Honorbound
+			q(54455, {	-- Supplies from the Honorbound
 				provider = { "n", 135447 },	-- Ransa Greyfeather
 				coord = { 58.0, 62.6, DAZARALOR },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_THE_HONORBOUND, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 120,
@@ -26,10 +28,12 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 						i(166311),	-- Technique: Contract: The Honorbound [Rank 3] (RECIPE!)
 					}),
 				},
-			})),
-			q(54462, bubbleDownSelf({ timeline = { ADDED_8_1_0 }, minReputation = { FACTION_ZANDALARI_EMPIRE, EXALTED } }, {	-- Supplies from the Zandalari Empire
+			}),
+			q(54462, {	-- Supplies from the Zandalari Empire
 				provider = { "n", 131287 },	-- Natal'hakata
 				coord = { 67.07, 71.44, HALL_OF_CHRONICLERS },
+				timeline = { ADDED_8_1_0 },
+				minReputation = { FACTION_ZANDALARI_EMPIRE, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 120,
@@ -38,7 +42,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 						i(166701),	-- Warbeast Kraal Dinner Bell (TOY!)
 					}),
 				},
-			})),
+			}),
 			q(50598, {	-- Zandalari Empire
 				provider = { "n", 131287 },	-- Natal'hakata
 				coord = { 67.07, 71.44, HALL_OF_CHRONICLERS },
