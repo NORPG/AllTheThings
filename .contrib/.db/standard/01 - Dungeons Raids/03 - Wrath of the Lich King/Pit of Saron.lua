@@ -2,6 +2,26 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local GARFROST = 608;
+local ICK_AND_KRICK = 609;
+local TYRANNUS = 610;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[GARFROST] = { 36494 },	-- Forgemaster Garfrost
+	[ICK_AND_KRICK] = {
+		36476,	-- Ick <Krick's Minion>
+		36477,	-- Krick
+	},
+	[TYRANNUS] = { 36658 },	-- Scourgelord Tyrannus
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 -- TODO with InstanceHelper
 -- InstanceHelper.BossObjects = {
 -- 	[MPLUS] = { 574411 },	-- Challenger's Cache
@@ -16,25 +36,37 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(4517, {	-- The Pit of Saron
+					-- #if AFTER 7.3.5
 					crit(13317, {	-- Forgemaster Garfrost
-						_encounter = { 608, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GARFROST, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13318, {	-- Ick and Krick
-						_encounter = { 609, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { ICK_AND_KRICK, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(13319, {	-- Scourgelord Tyrannus and Rimefang
-						_encounter = { 610, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { TYRANNUS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
+					-- #else
+					crit(13317, {	-- Forgemaster Garfrost
+						_encounter = { GARFROST, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(13318, {	-- Ick and Krick
+						_encounter = { ICK_AND_KRICK, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(13319, {	-- Scourgelord Tyrannus and Rimefang
+						_encounter = { TYRANNUS, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					-- #endif
 				}),
 				ach(4520, {	-- Heroic: The Pit of Saron
 					crit(13182, {	-- Forgemaster Garfrost
-						_encounter = { 608, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GARFROST, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13173, {	-- Ick and Krick
-						_encounter = { 609, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { ICK_AND_KRICK, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(13175, {	-- Scourgelord Tyrannus and Rimefang
-						_encounter = { 610, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { TYRANNUS, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -104,217 +136,183 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					},
 				}),
 			}),
-			-- #if ANYCLASSIC
-			n(ZONE_DROPS, {
-				i(49718, {	-- Infused Saronite Bar
-					provider = { "o", 201592 },	-- Infused Saronite Bars
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					a(i(50379)),	-- Battered Hilt [A]
+					h(i(50380)),	-- Battered Hilt [H]
+					i(49852),	-- Coffin Nail
+					i(50318),	-- Ghostly Wristwraps
+					i(49854),	-- Mantle of Tattered Feathers
+					i(49855),	-- Plated Grips of Korth'azz
+					i(50315),	-- Seven-Fingered Claws
+					i(49853),	-- Titanium Links of Lore
+					i(50319),	-- Unsharpened Ice Razor
+				}),
+				BossOnly(GARFROST, {
+					i(50228),	-- Barbed Ymirheim Choker
+					i(49806),	-- Flayer's Black Belt
+					i(49802),	-- Garfrost's Two-Ton Hammer
+					i(49805),	-- Ice-Steeped Sandals
+					i(50229),	-- Legguards of the Frosty Depths
+					i(50230),	-- Malykriss Vambraces
+					i(49804),	-- Polished Mirror Helm
+					i(49803),	-- Ring of Carnelian and Bone
+					i(50234),	-- Shoulderplates of Frozen Blood
+					i(50233),	-- Spurned Val'kyr Shoulderguards
+					i(50227),	-- Surgeon's Needle
+					i(49801),	-- Unspeakable Secret
+				}),
+				BossOnly(ICK_AND_KRICK, {
+					i(50266),	-- Ancient Polar Bear Hide
+					i(49808),	-- Bent Gold Belt
+					i(49811),	-- Black Dragonskin Breeches
+					i(50265),	-- Blackened Ghoul Skin Leggings
+					i(50263),	-- Braid of Salt and Fire
+					i(50264),	-- Chewed Leather Wristguards
+					i(50262),	-- Felglacier Bolter
+					i(50235),	-- Ick's Rotting Thumb
+					i(49807),	-- Krick's Beetle Stabber
+					i(49812),	-- Purloined Wedding Ring
+					i(49810),	-- Scabrous Zombie Leather Belt
+					i(49809),	-- Wristguards of Subterranean Moss
+				}),
+				BossOnly(TYRANNUS, {
+					i(50271),	-- Band of Stained Souls
+					i(50270),	-- Belt of Rotted Fingernails
+					i(49823),	-- Cloak of the Fallen Cardinal
+					i(50273),	-- Engraved Gargoyle Femur
+					i(267007, { timeline = { ADDED_12_0_0 } }),	-- Eye of Acherus (DECOR!)
+					i(50269),	-- Fleshwerk Leggings
+					i(50272),	-- Frost Wyrm Ribcage
+					i(49820),	-- Gondria's Spectral Bracer
+					i(49824),	-- Horns of the Spurned Val'kyr
+					i(50285),	-- Icebound Bronze Cuirass
+					i(50283),	-- Mudslide Boots
+					i(50259),	-- Nevermelting Ice Crystal
+					i(49818),	-- Painfully Sharp Choker
+					i(49825),	-- Palebone Robes
+					i(50286),	-- Prelate's Snowshoes
+					i(49821),	-- Protector of Frigid Souls
+					i(49813),	-- Rimebane Rifle
+					i(50268),	-- Rimefang's Claw
+					i(49822),	-- Rimewoven Silks
+					i(50284),	-- Rusty Frozen Fingerguards
+					i(49816),	-- Scourgelord's Frigid Chestplate
+					i(49817),	-- Shaggy Wyrmleather Leggings
+					i(49826),	-- Shroud of Rime
+					i(49819),	-- Skeleton Lord's Cranium
+					i(50267),	-- Tyrannical Beheader
 				}),
 			}),
-			-- #endif
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ACHIEVEMENTS, {
+					ach(4525, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
+				}),
+				BossOnly(GARFROST, {
+					ach(4524, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
+				}),
+				BossOnly(ICK_AND_KRICK),
+				BossOnly(TYRANNUS, {
+					ach(5113, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Pit of Saron Guild Run
+					i(252421, { timeline = { ADDED_12_0_1_LAUNCH } }),	-- Rotting Globule
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				-- #if ANYCLASSIC
+				n(ZONE_DROPS, {
+					i(49718, {	-- Infused Saronite Bar
+						provider = { "o", 201592 },	-- Infused Saronite Bars
+					}),
+				}),
+				-- #endif
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(49852),	-- Coffin Nail
 					i(49854),	-- Mantle of Tattered Feathers
 					i(49855),	-- Plated Grips of Korth'azz
 					i(49853),	-- Titanium Links of Lore
 				}),
-				e(608, {	-- Forgemaster Garfrost
-					creatureID = 36494,	-- Forgemaster Garfrost
-					groups = {
-						i(49802),	-- Garfrost's Two-Ton Hammer
-						i(49801),	-- Unspeakable Secret
-						-- #if AFTER 7.3.5
-						i(50227),	-- Surgeon's Needle (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49804),	-- Polished Mirror Helm
-						-- #if AFTER 7.3.5
-						i(50228),	-- Barbed Ymirheim Choker (7.3.5 - Used to be only Heroic Mode)
-						i(50234),	-- Shoulderplates of Frozen Blood (7.3.5 - Used to be only Heroic Mode)
-						i(50233),	-- Spurned Val'kyr Shoulderguards (7.3.5 - Used to be only Heroic Mode)
-						i(50230),	-- Malykriss Vambraces (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49806),	-- Flayer's Black Belt
-						-- #if AFTER 7.3.5
-						i(50229),	-- Legguards of the Frosty Depths (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49805),	-- Ice-Steeped Sandals
-						i(49803),	-- Ring of Carnelian and Bone
-					},
+				BossOnly(GARFROST, {
+					i(49806),	-- Flayer's Black Belt
+					i(49802),	-- Garfrost's Two-Ton Hammer
+					i(49805),	-- Ice-Steeped Sandals
+					i(49804),	-- Polished Mirror Helm
+					i(49803),	-- Ring of Carnelian and Bone
+					i(49801),	-- Unspeakable Secret
 				}),
-				e(609, {	-- Ick and Krick
-					creatureID = 36476,	-- Ick <Krick's Minion>
-					groups = {
-						i(49807),	-- Krick's Beetle Stabber
-						-- #if AFTER 7.3.5
-						i(50262),	-- Felglacier Bolter (7.3.5 - Used to be only Heroic Mode)
-						i(50266),	-- Ancient Polar Bear Hide (7.3.5 - Used to be only Heroic Mode)
-						i(50264),	-- Chewed Leather Wristguards (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49809),	-- Wristguards of Subterranean Moss
-						i(49808),	-- Bent Gold Belt
-						-- #if AFTER 7.3.5
-						i(50263),	-- Braid of Salt and Fire (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49810),	-- Scabrous Zombie Leather Belt
-						i(49811),	-- Black Dragonskin Breeches
-						-- #if AFTER 7.3.5
-						i(50265),	-- Blackened Ghoul Skin Leggings (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49812),	-- Purloined Wedding Ring
-						-- #if AFTER 7.3.5
-						i(50235),	-- Ick's Rotting Thumb (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(ICK_AND_KRICK, {
+					i(49808),	-- Bent Gold Belt
+					i(49811),	-- Black Dragonskin Breeches
+					i(49807),	-- Krick's Beetle Stabber
+					i(49812),	-- Purloined Wedding Ring
+					i(49810),	-- Scabrous Zombie Leather Belt
+					i(49809),	-- Wristguards of Subterranean Moss
 				}),
-				e(610, {	-- Scourgelord Tyrannus
-					creatureID = 36658,	-- Scourgelord Tyrannus
-					groups = {
-						i(267007, {timeline = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
-						-- #if AFTER 7.3.5
-						i(50273),	-- Engraved Gargoyle Femur (7.3.5 - Used to be only Heroic Mode)
-						i(50267),	-- Tyrannical Beheader (7.3.5 - Used to be only Heroic Mode)
-						i(50268),	-- Rimefang's Claw (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49813),	-- Rimebane Rifle
-						i(49821),	-- Protector of Frigid Souls
-						i(49824),	-- Horns of the Spurned Val'kyr
-						i(49819),	-- Skeleton Lord's Cranium
-						i(49818),	-- Painfully Sharp Choker
-						i(49823),	-- Cloak of the Fallen Cardinal
-						-- #if AFTER 7.3.5
-						i(50272),	-- Frost Wyrm Ribcage (7.3.5 - Used to be only Heroic Mode)
-						i(50285),	-- Icebound Bronze Cuirass (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49825),	-- Palebone Robes
-						i(49816),	-- Scourgelord's Frigid Chestplate
-						i(49826),	-- Shroud of Rime
-						i(49820),	-- Gondria's Spectral Bracer
-						-- #if AFTER 7.3.5
-						i(50284),	-- Rusty Frozen Fingerguards (7.3.5 - Used to be only Heroic Mode)
-						i(50270),	-- Belt of Rotted Fingernails (7.3.5 - Used to be only Heroic Mode)
-						i(50269),	-- Fleshwerk Leggings (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(49822),	-- Rimewoven Silks
-						i(49817),	-- Shaggy Wyrmleather Leggings
-						-- #if AFTER 7.3.5
-						i(50283),	-- Mudslide Boots (7.3.5 - Used to be only Heroic Mode)
-						i(50286),	-- Prelate's Snowshoes (7.3.5 - Used to be only Heroic Mode)
-						i(50271),	-- Band of Stained Souls (7.3.5 - Used to be only Heroic Mode)
-						i(50259),	-- Nevermelting Ice Crystal (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(TYRANNUS, {
+					i(49823),	-- Cloak of the Fallen Cardinal
+					i(49820),	-- Gondria's Spectral Bracer
+					i(49824),	-- Horns of the Spurned Val'kyr
+					i(49818),	-- Painfully Sharp Choker
+					i(49825),	-- Palebone Robes
+					i(49821),	-- Protector of Frigid Souls
+					i(49813),	-- Rimebane Rifle
+					i(49822),	-- Rimewoven Silks
+					i(49816),	-- Scourgelord's Frigid Chestplate
+					i(49817),	-- Shaggy Wyrmleather Leggings
+					i(49826),	-- Shroud of Rime
+					i(49819),	-- Skeleton Lord's Cranium
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				lvl = lvlsquish(80, 80, 30),
-				groups = {
-					n(ACHIEVEMENTS, {
-						ach(4525, {	-- Don't Look Up
-							timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
-						}),
-					}),
-					n(ZONE_DROPS, {
-						a(i(50379)),	-- Battered Hilt [A]
-						h(i(50380)),	-- Battered Hilt [H]
-						i(50318),	-- Ghostly Wristwraps
-						i(50315),	-- Seven-Fingered Claws
-						i(50319),	-- Unsharpened Ice Razor
-					}),
-					e(608, {	-- Forgemaster Garfrost
-						creatureID = 36494,	-- Forgemaster Garfrost
-						groups = {
-							ach(4524, {	-- Doesn't Go to Eleven
-								timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH },
-							}),
-							-- #if AFTER 7.3.5
-							i(49802),	-- Garfrost's Two-Ton Hammer (7.3.5 - Used to be only Normal Mode)
-							i(49801),	-- Unspeakable Secret (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50227),	-- Surgeon's Needle
-							-- #if AFTER 7.3.5
-							i(49804),	-- Polished Mirror Helm (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50228),	-- Barbed Ymirheim Choker
-							i(50234),	-- Shoulderplates of Frozen Blood
-							i(50233),	-- Spurned Val'kyr Shoulderguards
-							i(50230),	-- Malykriss Vambraces
-							-- #if AFTER 7.3.5
-							i(49806),	-- Flayer's Black Belt (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50229),	-- Legguards of the Frosty Depths
-							-- #if AFTER 7.3.5
-							i(49805),	-- Ice-Steeped Sandals (7.3.5 - Used to be only Normal Mode)
-							i(49803),	-- Ring of Carnelian and Bone (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-						},
-					}),
-					e(609, {	-- Ick and Krick
-						creatureID = 36476,	-- Ick <Krick's Minion>
-						groups = {
-							-- #if AFTER 7.3.5
-							i(49807),	-- Krick's Beetle Stabber (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50262),	-- Felglacier Bolter
-							i(50266),	-- Ancient Polar Bear Hide
-							i(50264),	-- Chewed Leather Wristguards
-							-- #if AFTER 7.3.5
-							i(49809),	-- Wristguards of Subterranean Moss (7.3.5 - Used to be only Normal Mode)
-							i(49808),	-- Bent Gold Belt (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50263),	-- Braid of Salt and Fire
-							-- #if AFTER 7.3.5
-							i(49810),	-- Scabrous Zombie Leather Belt (7.3.5 - Used to be only Normal Mode)
-							i(49811),	-- Black Dragonskin Breeches (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50265),	-- Blackened Ghoul Skin Leggings
-							-- #if AFTER 7.3.5
-							i(49812),	-- Purloined Wedding Ring (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50235),	-- Ick's Rotting Thumb
-						},
-					}),
-					e(610, {	-- Scourgelord Tyrannus
-						creatureID = 36658,	-- Scourgelord Tyrannus
-						groups = {
-							ach(5113, {	-- Heroic: The Pit of Saron Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(267007, {timeline = { ADDED_12_0_0 }}),	-- Eye of Acherus (DECOR!)
-							i(252421, {timeline = { ADDED_12_0_1_LAUNCH }}),	-- Rotting Globule
-							i(50273),	-- Engraved Gargoyle Femur
-							i(50267),	-- Tyrannical Beheader
-							i(50268),	-- Rimefang's Claw
-							-- #if AFTER 7.3.5
-							i(49813),	-- Rimebane Rifle (7.3.5 - Used to be only Normal Mode)
-							i(49821),	-- Protector of Frigid Souls (7.3.5 - Used to be only Normal Mode)
-							i(49824),	-- Horns of the Spurned Val'kyr (7.3.5 - Used to be only Normal Mode)
-							i(49819),	-- Skeleton Lord's Cranium (7.3.5 - Used to be only Normal Mode)
-							i(49818),	-- Painfully Sharp Choker (7.3.5 - Used to be only Normal Mode)
-							i(49823),	-- Cloak of the Fallen Cardinal (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50272),	-- Frost Wyrm Ribcage
-							i(50285),	-- Icebound Bronze Cuirass
-							-- #if AFTER 7.3.5
-							i(49825),	-- Palebone Robes (7.3.5 - Used to be only Normal Mode)
-							i(49816),	-- Scourgelord's Frigid Chestplate (7.3.5 - Used to be only Normal Mode)
-							i(49826),	-- Shroud of Rime (7.3.5 - Used to be only Normal Mode)
-							i(49820),	-- Gondria's Spectral Bracer (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50284),	-- Rusty Frozen Fingerguards
-							i(50270),	-- Belt of Rotted Fingernails
-							i(50269),	-- Fleshwerk Leggings
-							-- #if AFTER 7.3.5
-							i(49822),	-- Rimewoven Silks (7.3.5 - Used to be only Normal Mode)
-							i(49817),	-- Shaggy Wyrmleather Leggings (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(50283),	-- Mudslide Boots
-							i(50286),	-- Prelate's Snowshoes
-							i(50271),	-- Band of Stained Souls
-							i(50259),	-- Nevermelting Ice Crystal
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ACHIEVEMENTS, {
+					ach(4525, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
+				}),
+				n(ZONE_DROPS, {
+					a(i(50379)),	-- Battered Hilt [A]
+					h(i(50380)),	-- Battered Hilt [H]
+					i(50318),	-- Ghostly Wristwraps
+					i(50315),	-- Seven-Fingered Claws
+					i(50319),	-- Unsharpened Ice Razor
+				}),
+				BossOnly(GARFROST, {
+					ach(4524, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
+					i(50228),	-- Barbed Ymirheim Choker
+					i(50229),	-- Legguards of the Frosty Depths
+					i(50230),	-- Malykriss Vambraces
+					i(50234),	-- Shoulderplates of Frozen Blood
+					i(50233),	-- Spurned Val'kyr Shoulderguards
+					i(50227),	-- Surgeon's Needle
+				}),
+				BossOnly(ICK_AND_KRICK, {
+					i(50266),	-- Ancient Polar Bear Hide
+					i(50265),	-- Blackened Ghoul Skin Leggings
+					i(50263),	-- Braid of Salt and Fire
+					i(50264),	-- Chewed Leather Wristguards
+					i(50262),	-- Felglacier Bolter
+					i(50235),	-- Ick's Rotting Thumb
+				}),
+				BossOnly(TYRANNUS, {
+					ach(5113, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Pit of Saron Guild Run
+					i(50271),	-- Band of Stained Souls
+					i(50270),	-- Belt of Rotted Fingernails
+					i(50273),	-- Engraved Gargoyle Femur
+					i(50269),	-- Fleshwerk Leggings
+					i(50272),	-- Frost Wyrm Ribcage
+					i(50285),	-- Icebound Bronze Cuirass
+					i(50283),	-- Mudslide Boots
+					i(50259),	-- Nevermelting Ice Crystal
+					i(50286),	-- Prelate's Snowshoes
+					i(50268),	-- Rimefang's Claw
+					i(50284),	-- Rusty Frozen Fingerguards
+					i(50267),	-- Tyrannical Beheader
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
