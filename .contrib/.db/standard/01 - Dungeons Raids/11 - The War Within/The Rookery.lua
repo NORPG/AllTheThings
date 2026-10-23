@@ -64,15 +64,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { CREATED_11_0_2, ADDED_11_1_0 } }, {
-				e(2568, {	-- Voidstone Monstrosity
-					crs = { 207207 },	-- Voidstone Monstrosity
-					groups = {
-						ach(40642),	-- Mythic: The Rookery
-						ach(61601, {timeline = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				timeline = { CREATED_11_0_2, ADDED_11_1_0 },
+				groups = {
+					e(2568, {	-- Voidstone Monstrosity
+						crs = { 207207 },	-- Voidstone Monstrosity
+						groups = {
+							ach(40642),	-- Mythic: The Rookery
+							ach(61601, {timeline = { ADDED_12_0_0 }}),	-- Mythic: The Rookery Guild Run
+						},
+					}),
+				},
+			}),
 		},
 	}),
 }));

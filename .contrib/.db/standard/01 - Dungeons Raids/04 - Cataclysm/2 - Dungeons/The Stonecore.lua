@@ -79,67 +79,70 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(110, {	-- Corborus
-					crs = { 43438 },	-- Corborus
-					groups = {
-						i(55792),	-- Cinnabar Shoulders
-						i(55793),	-- Dolomite Adorned Gloves
-						i(55796),	-- Fist of Pained Senses
-						i(55795),	-- Key to the Endless Chamber
-						i(55794),	-- Phosphorescent Ring
-					},
-				}),
-				e(111, {	-- Slabhide
-					crs = { 43214 },	-- Slabhide
-					groups = {
-						-- #if BEFORE 7.3.5
-						i(63043),	-- Vitreous Stone Drake (MOUNT!)
-						-- #endif
-						i(55798),	-- Deep Delving Gloves
-						i(55797),	-- Hematite Plate Gloves
-						i(55801),	-- Quicksilver Blade
-						i(55799),	-- Rose Quartz Band
-						-- #if BEFORE MOP
-						i(55800, {	-- Stalagmite Dragon
-							timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-						}),
-						-- #endif
-					},
-				}),
-				e(112, {	-- Ozruk
-					crs = { 42188 },	-- Ozruk
-					groups = {
-						i(55803),	-- Belt of the Ringworm
-						i(55802),	-- Elementium Scale Bracers
-						i(55804),	-- Pendant of the Lightless Grotto
-						i(55811),	-- Sword of the Bottomless Pit
-						i(55810),	-- Tendrils of Burrowing Dark
-					},
-				}),
-				e(113, {	-- High Priestess Azil
-					crs = { 42333 },	-- High Priestess Azil
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4846),	-- The Stonecore
-						-- #endif
-						i(55818),	-- Cowl of the Unseen World
-						i(55815),	-- Darkling Staff
-						i(55813),	-- Elementium Fang
-						i(55812),	-- Helm of Numberless Shadow
-						i(55816),	-- Leaden Despair
-						i(55814),	-- Magnetite Mirror
-						i(55820),	-- Prophet Scepter
-						i(55817),	-- Slippers of the Twilight Prophet
-						i(55819),	-- Tear of Blood
-						-- #if BEFORE MOP
-						i(55821, {	-- Book of Dark Prophecies
-							timeline = { REMOVED_5_0_4 },
-						}),
-						-- #endif
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(110, {	-- Corborus
+						crs = { 43438 },	-- Corborus
+						groups = {
+							i(55792),	-- Cinnabar Shoulders
+							i(55793),	-- Dolomite Adorned Gloves
+							i(55796),	-- Fist of Pained Senses
+							i(55795),	-- Key to the Endless Chamber
+							i(55794),	-- Phosphorescent Ring
+						},
+					}),
+					e(111, {	-- Slabhide
+						crs = { 43214 },	-- Slabhide
+						groups = {
+							-- #if BEFORE 7.3.5
+							i(63043),	-- Vitreous Stone Drake (MOUNT!)
+							-- #endif
+							i(55798),	-- Deep Delving Gloves
+							i(55797),	-- Hematite Plate Gloves
+							i(55801),	-- Quicksilver Blade
+							i(55799),	-- Rose Quartz Band
+							-- #if BEFORE MOP
+							i(55800, {	-- Stalagmite Dragon
+								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
+						},
+					}),
+					e(112, {	-- Ozruk
+						crs = { 42188 },	-- Ozruk
+						groups = {
+							i(55803),	-- Belt of the Ringworm
+							i(55802),	-- Elementium Scale Bracers
+							i(55804),	-- Pendant of the Lightless Grotto
+							i(55811),	-- Sword of the Bottomless Pit
+							i(55810),	-- Tendrils of Burrowing Dark
+						},
+					}),
+					e(113, {	-- High Priestess Azil
+						crs = { 42333 },	-- High Priestess Azil
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4846),	-- The Stonecore
+							-- #endif
+							i(55818),	-- Cowl of the Unseen World
+							i(55815),	-- Darkling Staff
+							i(55813),	-- Elementium Fang
+							i(55812),	-- Helm of Numberless Shadow
+							i(55816),	-- Leaden Despair
+							i(55814),	-- Magnetite Mirror
+							i(55820),	-- Prophet Scepter
+							i(55817),	-- Slippers of the Twilight Prophet
+							i(55819),	-- Tear of Blood
+							-- #if BEFORE MOP
+							i(55821, {	-- Book of Dark Prophecies
+								timeline = { REMOVED_5_0_4 },
+							}),
+							-- #endif
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(110, {	-- Corborus

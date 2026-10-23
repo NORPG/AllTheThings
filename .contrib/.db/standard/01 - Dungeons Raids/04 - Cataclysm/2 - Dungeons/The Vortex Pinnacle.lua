@@ -84,52 +84,55 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(114, {	-- Grand Vizier Ertan
-					crs = { 43878 },	-- Grand Vizier Ertan
-					groups = {
-						i(55834),	-- Biting Wind
-						i(55832),	-- Fallen Snow Shoulderguards
-						i(55831),	-- Headcover of Fog
-						i(55833),	-- Red Sky Pendant
-						i(55830),	-- Stratosphere Belt
-					},
-				}),
-				e(115, {	-- Altairus
-					crs = { 43873 },	-- Altairus
-					groups = {
-						i(63040),	-- Drake of the North Wind (MOUNT!)
-						i(55840),	-- Amulet of Tender Breath
-						i(55841),	-- Axe of the Eclipse
-						i(55835),	-- Hail-Strung Belt
-						i(55838),	-- Mantle of Bestilled Winds
-						i(55839),	-- Skyshard Ring
-					},
-				}),
-				e(116, {	-- Asaad, Caliph of Zephyrs
-					crs = { 43875 },	-- Asaad, Caliph of Zephyrs
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4847),	-- The Vortex Pinnacle
-						-- #endif
-						i(55847),	-- Billowing Cape
-						i(55844),	-- Gloves of Haze
-						i(55845),	-- Heart of Thunder
-						i(55849),	-- Leggings of Iridescent Clouds
-						i(55842),	-- Legguards of Winnowing Wind
-						i(55846),	-- Lightningflash
-						i(55848),	-- Lunar Halo
-						i(55851),	-- Ring of Frozen Rain
-						i(55850),	-- Shadow of Perfect Bliss
-						i(55853),	-- Thundercall
-							-- #if BEFORE MOP
-							i(55852, {	-- Captured Lightning
-								timeline = { REMOVED_5_0_4 },
-							}),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(114, {	-- Grand Vizier Ertan
+						crs = { 43878 },	-- Grand Vizier Ertan
+						groups = {
+							i(55834),	-- Biting Wind
+							i(55832),	-- Fallen Snow Shoulderguards
+							i(55831),	-- Headcover of Fog
+							i(55833),	-- Red Sky Pendant
+							i(55830),	-- Stratosphere Belt
+						},
+					}),
+					e(115, {	-- Altairus
+						crs = { 43873 },	-- Altairus
+						groups = {
+							i(63040),	-- Drake of the North Wind (MOUNT!)
+							i(55840),	-- Amulet of Tender Breath
+							i(55841),	-- Axe of the Eclipse
+							i(55835),	-- Hail-Strung Belt
+							i(55838),	-- Mantle of Bestilled Winds
+							i(55839),	-- Skyshard Ring
+						},
+					}),
+					e(116, {	-- Asaad, Caliph of Zephyrs
+						crs = { 43875 },	-- Asaad, Caliph of Zephyrs
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4847),	-- The Vortex Pinnacle
 							-- #endif
-					},
-				}),
-			})),
+							i(55847),	-- Billowing Cape
+							i(55844),	-- Gloves of Haze
+							i(55845),	-- Heart of Thunder
+							i(55849),	-- Leggings of Iridescent Clouds
+							i(55842),	-- Legguards of Winnowing Wind
+							i(55846),	-- Lightningflash
+							i(55848),	-- Lunar Halo
+							i(55851),	-- Ring of Frozen Rain
+							i(55850),	-- Shadow of Perfect Bliss
+							i(55853),	-- Thundercall
+								-- #if BEFORE MOP
+								i(55852, {	-- Captured Lightning
+									timeline = { REMOVED_5_0_4 },
+								}),
+								-- #endif
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				groups = {

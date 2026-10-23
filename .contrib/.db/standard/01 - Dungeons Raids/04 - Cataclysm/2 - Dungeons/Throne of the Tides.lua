@@ -72,60 +72,63 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(55261),	-- Ring of the Great Whale
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(101, {	-- Lady Naz'jar
-					crs = { 40586 },	-- Lady Naz'jar
-					groups = {
-						i(55198),	-- Aurelian Mitre
-						i(55201),	-- Entwined Nereis
-						i(55203),	-- Lightning Whelk Axe
-						i(55202),	-- Periwinkle Cloak
-						i(55195),	-- Wrasse Handwraps
-					},
-				}),
-				e(102, {	-- Commander Ulthok
-					crs = { 40765 },	-- Commander Ulthok
-					groups = {
-						i(55204),	-- Caridean Epaulets
-						i(55228),	-- Cerith Spire Staff
-						i(55205),	-- Chromis Chestpiece
-						i(55206),	-- Eagle Ray Cloak
-						i(55207),	-- Harp Shell Pauldrons
-					},
-				}),
-				e(103, {	-- Mindbender Ghur'sha
-					crs = { 40788 },	-- Mindbender Ghur'sha
-					groups = {
-						i(55229),	-- Anomuran Helm
-						i(55236),	-- Anthia's Ring
-						i(55235),	-- Decapod Slippers
-						i(55237),	-- Porcelain Crab
-						-- #if BEFORE MOP
-						i(55248, {	-- Conch of Thundering Waves
-							timeline = { REMOVED_5_0_4 },
-						}),
-						-- #endif
-					},
-				}),
-				e(104, {	-- Ozumat
-					crs = { 44566 },	-- Ozumat
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4839),	-- Throne of the Tides
-						-- #endif
-						i(55254),	-- Abalone Plate Armor
-						i(55259),	-- Bioluminescent Lamp
-						i(55251),	-- Might of the Ocean
-						i(55255),	-- Mnemiopsis Gloves
-						i(55250),	-- Nautilus Ring
-						i(55258),	-- Pipefish Cord
-						i(55256),	-- Sea Star
-						i(55249),	-- Triton Legplates
-						i(55253),	-- Wentletrap Vest
-						i(55252),	-- Whitefin Axe
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(101, {	-- Lady Naz'jar
+						crs = { 40586 },	-- Lady Naz'jar
+						groups = {
+							i(55198),	-- Aurelian Mitre
+							i(55201),	-- Entwined Nereis
+							i(55203),	-- Lightning Whelk Axe
+							i(55202),	-- Periwinkle Cloak
+							i(55195),	-- Wrasse Handwraps
+						},
+					}),
+					e(102, {	-- Commander Ulthok
+						crs = { 40765 },	-- Commander Ulthok
+						groups = {
+							i(55204),	-- Caridean Epaulets
+							i(55228),	-- Cerith Spire Staff
+							i(55205),	-- Chromis Chestpiece
+							i(55206),	-- Eagle Ray Cloak
+							i(55207),	-- Harp Shell Pauldrons
+						},
+					}),
+					e(103, {	-- Mindbender Ghur'sha
+						crs = { 40788 },	-- Mindbender Ghur'sha
+						groups = {
+							i(55229),	-- Anomuran Helm
+							i(55236),	-- Anthia's Ring
+							i(55235),	-- Decapod Slippers
+							i(55237),	-- Porcelain Crab
+							-- #if BEFORE MOP
+							i(55248, {	-- Conch of Thundering Waves
+								timeline = { REMOVED_5_0_4 },
+							}),
+							-- #endif
+						},
+					}),
+					e(104, {	-- Ozumat
+						crs = { 44566 },	-- Ozumat
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4839),	-- Throne of the Tides
+							-- #endif
+							i(55254),	-- Abalone Plate Armor
+							i(55259),	-- Bioluminescent Lamp
+							i(55251),	-- Might of the Ocean
+							i(55255),	-- Mnemiopsis Gloves
+							i(55250),	-- Nautilus Ring
+							i(55258),	-- Pipefish Cord
+							i(55256),	-- Sea Star
+							i(55249),	-- Triton Legplates
+							i(55253),	-- Wentletrap Vest
+							i(55252),	-- Whitefin Axe
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(101, {	-- Lady Naz'jar

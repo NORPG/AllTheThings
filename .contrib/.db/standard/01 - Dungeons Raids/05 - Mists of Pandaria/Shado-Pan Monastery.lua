@@ -422,22 +422,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8432, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Shado-Pan Monastery
-					title(246),	-- Purified Defender <Name>
-				}))),
-				ach(6893),	-- Shado-Pan Monastery Challenger
-				ach(6902),	-- Shado-Pan Monastery: Bronze
-				ach(6903),	-- Shado-Pan Monastery: Silver
-				ach(6904, {	-- Shado-Pan Monastery: Gold
-					spell(131206),	-- Path of the Shado-Pan
-				}),
-				-- #if ANYCLASSIC
-				ach(61970, {	-- Shado-Pan Monastery: Platinum
-					i(265419),	-- Platinum Potion of Invisibility
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8432, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Shado-Pan Monastery
+						title(246),	-- Purified Defender <Name>
+					}))),
+					ach(6893),	-- Shado-Pan Monastery Challenger
+					ach(6902),	-- Shado-Pan Monastery: Bronze
+					ach(6903),	-- Shado-Pan Monastery: Silver
+					ach(6904, {	-- Shado-Pan Monastery: Gold
+						spell(131206),	-- Path of the Shado-Pan
+					}),
+					-- #if ANYCLASSIC
+					ach(61970, {	-- Shado-Pan Monastery: Platinum
+						i(265419),	-- Platinum Potion of Invisibility
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,

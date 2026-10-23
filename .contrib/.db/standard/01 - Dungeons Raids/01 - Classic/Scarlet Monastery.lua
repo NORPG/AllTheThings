@@ -1218,22 +1218,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8437, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
-					title(244),	-- Scarlet Commander <Name>
-				}))),
-				ach(6896),	-- Scarlet Monastery Challenger
-				ach(6911),	-- Scarlet Monastery: Bronze
-				ach(6912),	-- Scarlet Monastery: Silver
-				ach(6913, {	-- Scarlet Monastery: Gold
-					spell(131229),	-- Path of the Scarlet Mitre
-				}),
-				-- #if ANYCLASSIC
-				ach(61973, {	-- Scarlet Monastery: Platinum
-					i(265573),	-- Platinum Sacrificial Dagger
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8437, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
+						title(244),	-- Scarlet Commander <Name>
+					}))),
+					ach(6896),	-- Scarlet Monastery Challenger
+					ach(6911),	-- Scarlet Monastery: Bronze
+					ach(6912),	-- Scarlet Monastery: Silver
+					ach(6913, {	-- Scarlet Monastery: Gold
+						spell(131229),	-- Path of the Scarlet Mitre
+					}),
+					-- #if ANYCLASSIC
+					ach(61973, {	-- Scarlet Monastery: Platinum
+						i(265573),	-- Platinum Sacrificial Dagger
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,

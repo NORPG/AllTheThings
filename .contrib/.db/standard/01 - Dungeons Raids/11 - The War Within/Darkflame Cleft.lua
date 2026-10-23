@@ -79,16 +79,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { CREATED_11_0_2, ADDED_11_1_0 } }, {
-				e(2561, {	-- The Darkness
-					crs = { 208747 },	-- The Darkness
-					groups = {
-						ach(40429),	-- Mythic: Darkflame Cleft
-						ach(61598, {timeline = { ADDED_12_0_0 }}),	-- Mythic: Darkflame Cleft Guild Run
-						i(225548),	-- Wick's Lead (MOUNT!)
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				timeline = { CREATED_11_0_2, ADDED_11_1_0 },
+				groups = {
+					e(2561, {	-- The Darkness
+						crs = { 208747 },	-- The Darkness
+						groups = {
+							ach(40429),	-- Mythic: Darkflame Cleft
+							ach(61598, {timeline = { ADDED_12_0_0 }}),	-- Mythic: Darkflame Cleft Guild Run
+							i(225548),	-- Wick's Lead (MOUNT!)
+						},
+					}),
+				},
+			}),
 		},
 	}),
 }));

@@ -142,56 +142,59 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(56219),	-- Shroud of Dark Memories
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(131, {	-- General Umbriss
-					crs = { 39625 },	-- General Umbriss
-					groups = {
-						i(56113),	-- Cursed Skardyn Vest
-						i(56116),	-- Modgud's Blade
-						i(56115),	-- Skardyn's Grace
-						i(56114),	-- Umbriss Band
-						i(56112),	-- Wildhammer Riding Helm
-					},
-				}),
-				e(132, {	-- Forgemaster Throngus
-					crs = { 40177 },	-- Forgemaster Throngus
-					groups = {
-						i(56118),	-- Belt of the Forgemaster
-						i(56119),	-- Dark Iron Chain Boots
-						i(56120),	-- Ring of Dun Algaz
-						i(56121),	-- Throngus's Finger
-						i(56122),	-- Wand of Untainted Power
-					},
-				}),
-				e(133, {	-- Drahga Shadowburner
-					crs = { 40319 },	-- Drahga Shadowburner
-					groups = {
-						i(56126),	-- Azureborne Cloak
-						i(56125),	-- Crimsonborne Bracers
-						i(56124),	-- Earthshaper Pauldrons
-						i(56123),	-- Red Scale Boots
-						i(56127),	-- Windwalker Blade
-					},
-				}),
-				e(134, {	-- Erudax
-					crs = { 40484 },	-- Erudax
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4840),	-- Grim Batol
-						-- #endif
-						i(56135),	-- Bracers of Umbral Mending
-						i(56129),	-- Circle of Bone
-						i(56136),	-- Corrupted Egg Shell
-						i(56133),	-- Crown of Enfeebled Bodies
-						i(56138),	-- Gale of Shadows
-						i(56130),	-- Mace of Transformed Bone
-						i(56132),	-- Mark of Khardros
-						i(56137),	-- Staff of Siphoned Essences
-						i(56128),	-- Vest of Misshapen Hides
-						i(56131),	-- Wild Hammer
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(131, {	-- General Umbriss
+						crs = { 39625 },	-- General Umbriss
+						groups = {
+							i(56113),	-- Cursed Skardyn Vest
+							i(56116),	-- Modgud's Blade
+							i(56115),	-- Skardyn's Grace
+							i(56114),	-- Umbriss Band
+							i(56112),	-- Wildhammer Riding Helm
+						},
+					}),
+					e(132, {	-- Forgemaster Throngus
+						crs = { 40177 },	-- Forgemaster Throngus
+						groups = {
+							i(56118),	-- Belt of the Forgemaster
+							i(56119),	-- Dark Iron Chain Boots
+							i(56120),	-- Ring of Dun Algaz
+							i(56121),	-- Throngus's Finger
+							i(56122),	-- Wand of Untainted Power
+						},
+					}),
+					e(133, {	-- Drahga Shadowburner
+						crs = { 40319 },	-- Drahga Shadowburner
+						groups = {
+							i(56126),	-- Azureborne Cloak
+							i(56125),	-- Crimsonborne Bracers
+							i(56124),	-- Earthshaper Pauldrons
+							i(56123),	-- Red Scale Boots
+							i(56127),	-- Windwalker Blade
+						},
+					}),
+					e(134, {	-- Erudax
+						crs = { 40484 },	-- Erudax
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4840),	-- Grim Batol
+							-- #endif
+							i(56135),	-- Bracers of Umbral Mending
+							i(56129),	-- Circle of Bone
+							i(56136),	-- Corrupted Egg Shell
+							i(56133),	-- Crown of Enfeebled Bodies
+							i(56138),	-- Gale of Shadows
+							i(56130),	-- Mace of Transformed Bone
+							i(56132),	-- Mark of Khardros
+							i(56137),	-- Staff of Siphoned Essences
+							i(56128),	-- Vest of Misshapen Hides
+							i(56131),	-- Wild Hammer
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(131, {	-- General Umbriss

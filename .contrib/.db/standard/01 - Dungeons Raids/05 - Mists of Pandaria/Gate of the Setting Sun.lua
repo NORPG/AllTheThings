@@ -402,22 +402,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8434, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Gate of the Setting Sun
-					title(241),	-- <Name>, Defender of the Wall
-				}))),
-				ach(6894),	-- Gate of the Setting Sun Challenger
-				ach(6905),	-- Gate of the Setting Sun: Bronze
-				ach(6906),	-- Gate of the Setting Sun: Silver
-				ach(6907, {	-- Gate of the Setting Sun: Gold
-					spell(131225),	-- Path of the Setting Sun
-				}),
-				-- #if ANYCLASSIC
-				ach(61971, {	-- Gate of the Setting Sun: Platinum
-					i(265418),	-- Platinum Rod of Ambershaping
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8434, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Gate of the Setting Sun
+						title(241),	-- <Name>, Defender of the Wall
+					}))),
+					ach(6894),	-- Gate of the Setting Sun Challenger
+					ach(6905),	-- Gate of the Setting Sun: Bronze
+					ach(6906),	-- Gate of the Setting Sun: Silver
+					ach(6907, {	-- Gate of the Setting Sun: Gold
+						spell(131225),	-- Path of the Setting Sun
+					}),
+					-- #if ANYCLASSIC
+					ach(61971, {	-- Gate of the Setting Sun: Platinum
+						i(265418),	-- Platinum Rod of Ambershaping
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,

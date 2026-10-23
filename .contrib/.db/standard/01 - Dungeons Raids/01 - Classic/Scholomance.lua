@@ -2499,22 +2499,25 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	},
 }));
 -- #if AFTER 5.0.4
-table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-	challengemaster(ach(8438, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
-		title(245),	-- Darkmaster <Name>
-	}))),
-	ach(6897),	-- Scholomance Challenger
-	ach(6914),	-- Scholomance: Bronze
-	ach(6915),	-- Scholomance: Silver
-	ach(6916, {	-- Scholomance: Gold
-		spell(131232),	-- Path of the Necromancer
-	}),
-	-- #if ANYCLASSIC
-	ach(61974, {	-- Scholomance: Platinum
-		i(265415),	-- Platinum Vial of Polyformic Acid
-	}),
-	-- #endif
-})));
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+	timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+	groups = {
+		challengemaster(ach(8438, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
+			title(245),	-- Darkmaster <Name>
+		}))),
+		ach(6897),	-- Scholomance Challenger
+		ach(6914),	-- Scholomance: Bronze
+		ach(6915),	-- Scholomance: Silver
+		ach(6916, {	-- Scholomance: Gold
+			spell(131232),	-- Path of the Necromancer
+		}),
+		-- #if ANYCLASSIC
+		ach(61974, {	-- Scholomance: Platinum
+			i(265415),	-- Platinum Vial of Polyformic Acid
+		}),
+		-- #endif
+	},
+}));
 -- #endif
 -- #endif
 

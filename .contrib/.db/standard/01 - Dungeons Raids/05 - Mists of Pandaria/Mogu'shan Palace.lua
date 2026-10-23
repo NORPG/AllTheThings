@@ -416,22 +416,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8433, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Mogu'shan Palace
-					title(242),	-- Mogu-Slayer <Name>
-				}))),
-				ach(6892),	-- Mogu'shan Palace Challenger
-				ach(6899),	-- Mogu'shan Palace: Bronze
-				ach(6900),	-- Mogu'shan Palace: Silver
-				ach(6901, {	-- Mogu'shan Palace: Gold
-					spell(131222),	-- Path of the Mogu King
-				}),
-				-- #if ANYCLASSIC
-				ach(61969, {	-- Mogu'shan Palace: Platinum
-					i(265417),	-- Platinum Battle Horn
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8433, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Mogu'shan Palace
+						title(242),	-- Mogu-Slayer <Name>
+					}))),
+					ach(6892),	-- Mogu'shan Palace Challenger
+					ach(6899),	-- Mogu'shan Palace: Bronze
+					ach(6900),	-- Mogu'shan Palace: Silver
+					ach(6901, {	-- Mogu'shan Palace: Gold
+						spell(131222),	-- Path of the Mogu King
+					}),
+					-- #if ANYCLASSIC
+					ach(61969, {	-- Mogu'shan Palace: Platinum
+						i(265417),	-- Platinum Battle Horn
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,

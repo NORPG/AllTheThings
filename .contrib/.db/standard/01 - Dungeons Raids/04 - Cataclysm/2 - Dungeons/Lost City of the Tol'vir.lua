@@ -104,56 +104,59 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(117, {	-- General Husam
-					crs = { 44577 },	-- General Husam
-					groups = {
-						i(55856),	-- Greaves of Wu the Elder
-						i(55857),	-- Ionic Gloves
-						i(55858),	-- Kaleti Cloak
-						i(55860),	-- Siliza's Spear
-						i(55859),	-- Spirit Creeper Ring
-					},
-				}),
-				e(118, {	-- Lockmaw
-					crs = { 43614 },	-- Lockmaw
-					groups = {
-						i(55870),	-- Barim's Main Gauche
-						i(55863),	-- Ring of the Darkest Day
-						i(55866),	-- Sand Silk Wristband
-						i(55867),	-- Sand Dune Belt
-						i(55864),	-- Tauntka's Necklace
-					},
-				}),
-				e(119, {	-- High Prophet Barim
-					crs = { 43612 },	-- High Prophet Barim
-					groups = {
-						i(55861),	-- Balkar's Waders
-						i(55862),	-- Greaves of Wu the Younger
-						i(55868),	-- Heart of Solace
-						i(55865),	-- Resonant Kris
-						i(55869),	-- Veneficial Band
-					},
-				}),
-				e(122, {	-- Siamat
-					crs = { 44819 },	-- Siamat
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4848),	-- Lost City of the Tol'vir
-						-- #endif
-						i(55871),	-- Crafty's Gaiters
-						i(55878),	-- Evelyn's Belt
-						i(55872),	-- Geordan's Cloak
-						i(55875),	-- Hammer of Sparks
-						i(55877),	-- Leggings of the Path
-						i(55876),	-- Mantle of Master Cho
-						i(55873),	-- Ring of Three Lights
-						i(55879),	-- Sorrowsong
-						i(55874),	-- Tia's Grace
-						i(55880),	-- Zora's Ward
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(117, {	-- General Husam
+						crs = { 44577 },	-- General Husam
+						groups = {
+							i(55856),	-- Greaves of Wu the Elder
+							i(55857),	-- Ionic Gloves
+							i(55858),	-- Kaleti Cloak
+							i(55860),	-- Siliza's Spear
+							i(55859),	-- Spirit Creeper Ring
+						},
+					}),
+					e(118, {	-- Lockmaw
+						crs = { 43614 },	-- Lockmaw
+						groups = {
+							i(55870),	-- Barim's Main Gauche
+							i(55863),	-- Ring of the Darkest Day
+							i(55866),	-- Sand Silk Wristband
+							i(55867),	-- Sand Dune Belt
+							i(55864),	-- Tauntka's Necklace
+						},
+					}),
+					e(119, {	-- High Prophet Barim
+						crs = { 43612 },	-- High Prophet Barim
+						groups = {
+							i(55861),	-- Balkar's Waders
+							i(55862),	-- Greaves of Wu the Younger
+							i(55868),	-- Heart of Solace
+							i(55865),	-- Resonant Kris
+							i(55869),	-- Veneficial Band
+						},
+					}),
+					e(122, {	-- Siamat
+						crs = { 44819 },	-- Siamat
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4848),	-- Lost City of the Tol'vir
+							-- #endif
+							i(55871),	-- Crafty's Gaiters
+							i(55878),	-- Evelyn's Belt
+							i(55872),	-- Geordan's Cloak
+							i(55875),	-- Hammer of Sparks
+							i(55877),	-- Leggings of the Path
+							i(55876),	-- Mantle of Master Cho
+							i(55873),	-- Ring of Three Lights
+							i(55879),	-- Sorrowsong
+							i(55874),	-- Tia's Grace
+							i(55880),	-- Zora's Ward
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(117, {	-- General Husam

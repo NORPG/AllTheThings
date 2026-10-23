@@ -124,70 +124,73 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { REMOVED_7_3_5 } }, {
-				e(105, {	-- Rom'ogg Bonecrusher
-					crs = { 39665 },	-- Rom'ogg Bonecrusher
-					groups = {
-						i(55278),	-- Inquisition Robes
-						i(55279),	-- Manacles of Pain
-						i(55778),	-- Shield of the Iron Maiden
-						i(55776),	-- Skullcracker Ring
-						i(55777),	-- Torturer's Mercy
-					},
-				}),
-				e(106, {	-- Corla, Herald of Twilight
-					crs = { 39679 },	-- Corla, Herald of Twilight
-					groups = {
-						i(55264),	-- Armbands of Change
-						i(55267),	-- Corla's Baton
-						i(55266),	-- Grace of the Herald
-						i(55263),	-- Renouncer's Cowl
-						i(55265),	-- Signet of Transformation
-					},
-				}),
-				e(107, {	-- Karsh Steelbender
-					crs = { 39698 },	-- Karsh Steelbender
-					groups = {
-						i(55268),	-- Bracers of Cooled Anger
-						i(55270),	-- Burned Gatherings
-						i(55269),	-- Heat Wave Leggings
-						i(55271),	-- Quicksilver Amulet
-						i(55272),	-- Steelbender's Masterpiece
-					},
-				}),
-				e(108, {	-- Beauty
-					crs = { 39700 },	-- Beauty
-					groups = {
-						i(55273),	-- Beauty's Chew Toy
-						i(55274),	-- Beauty's Plate
-						i(55275),	-- Beauty's Silken Ribbon
-						i(55277),	-- Beauty's Favorite Bone
-						i(55276),	-- Kibble
-					},
-				}),
-				e(109, {	-- Ascendant Lord Obsidius
-					crs = { 39705 },	-- Ascendant Lord Obsidius
-					groups = {
-						-- #if BEFORE 7.3.5
-						ach(4833),	-- Blackrock Caverns
-						-- #endif
-						i(55782),	-- Amber Messenger
-						i(55781),	-- Carrier Wave Pendant
-						i(55784),	-- Clutches of Dying Light
-						i(55788),	-- Crepuscular Shield
-						i(55786),	-- Kyrstel Mantle
-						i(55779),	-- Raz's Pauldrons
-						i(55780),	-- Twitching Shadows
-						i(55785),	-- Willowy Crown
-						i(55787),	-- Witching Hourglass
-						-- #if BEFORE MOP
-						i(55783, {	-- Sandshift Relic
-							timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-						}),
-						-- #endif
-					},
-				}),
-			})),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { REMOVED_7_3_5 },
+				groups = {
+					e(105, {	-- Rom'ogg Bonecrusher
+						crs = { 39665 },	-- Rom'ogg Bonecrusher
+						groups = {
+							i(55278),	-- Inquisition Robes
+							i(55279),	-- Manacles of Pain
+							i(55778),	-- Shield of the Iron Maiden
+							i(55776),	-- Skullcracker Ring
+							i(55777),	-- Torturer's Mercy
+						},
+					}),
+					e(106, {	-- Corla, Herald of Twilight
+						crs = { 39679 },	-- Corla, Herald of Twilight
+						groups = {
+							i(55264),	-- Armbands of Change
+							i(55267),	-- Corla's Baton
+							i(55266),	-- Grace of the Herald
+							i(55263),	-- Renouncer's Cowl
+							i(55265),	-- Signet of Transformation
+						},
+					}),
+					e(107, {	-- Karsh Steelbender
+						crs = { 39698 },	-- Karsh Steelbender
+						groups = {
+							i(55268),	-- Bracers of Cooled Anger
+							i(55270),	-- Burned Gatherings
+							i(55269),	-- Heat Wave Leggings
+							i(55271),	-- Quicksilver Amulet
+							i(55272),	-- Steelbender's Masterpiece
+						},
+					}),
+					e(108, {	-- Beauty
+						crs = { 39700 },	-- Beauty
+						groups = {
+							i(55273),	-- Beauty's Chew Toy
+							i(55274),	-- Beauty's Plate
+							i(55275),	-- Beauty's Silken Ribbon
+							i(55277),	-- Beauty's Favorite Bone
+							i(55276),	-- Kibble
+						},
+					}),
+					e(109, {	-- Ascendant Lord Obsidius
+						crs = { 39705 },	-- Ascendant Lord Obsidius
+						groups = {
+							-- #if BEFORE 7.3.5
+							ach(4833),	-- Blackrock Caverns
+							-- #endif
+							i(55782),	-- Amber Messenger
+							i(55781),	-- Carrier Wave Pendant
+							i(55784),	-- Clutches of Dying Light
+							i(55788),	-- Crepuscular Shield
+							i(55786),	-- Kyrstel Mantle
+							i(55779),	-- Raz's Pauldrons
+							i(55780),	-- Twitching Shadows
+							i(55785),	-- Willowy Crown
+							i(55787),	-- Witching Hourglass
+							-- #if BEFORE MOP
+							i(55783, {	-- Sandshift Relic
+								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
+						},
+					}),
+				},
+			}),
 			-- #if BEFORE 7.3.5
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(105, {	-- Rom'ogg Bonecrusher

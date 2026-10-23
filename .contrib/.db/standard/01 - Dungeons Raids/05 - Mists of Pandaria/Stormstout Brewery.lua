@@ -369,22 +369,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8431, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Stormstout Brewery
-					title(248),	-- Stormbrewer <Name>
-				}))),
-				ach(6888),	-- Stormstout Brewery Challenger
-				ach(6889),	-- Stormstout Brewery: Bronze
-				ach(6890),	-- Stormstout Brewery: Silver
-				ach(6891, {	-- Stormstout Brewery: Gold
-					spell(131205),	-- Path of the Stout Brew
-				}),
-				-- #if ANYCLASSIC
-				ach(61968, {	-- Stormstout Brewery: Platinum
-					i(265780),	-- Platinum "Little Ale"
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8431, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Stormstout Brewery
+						title(248),	-- Stormbrewer <Name>
+					}))),
+					ach(6888),	-- Stormstout Brewery Challenger
+					ach(6889),	-- Stormstout Brewery: Bronze
+					ach(6890),	-- Stormstout Brewery: Silver
+					ach(6891, {	-- Stormstout Brewery: Gold
+						spell(131205),	-- Path of the Stout Brew
+					}),
+					-- #if ANYCLASSIC
+					ach(61968, {	-- Stormstout Brewery: Platinum
+						i(265780),	-- Platinum "Little Ale"
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,

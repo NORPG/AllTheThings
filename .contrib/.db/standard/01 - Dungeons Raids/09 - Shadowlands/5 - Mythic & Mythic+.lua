@@ -3,9 +3,12 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.SL, {
-	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
-		ig(182173),	-- Hyena Soul
-	})),
+	d(DIFFICULTY.DUNGEON.MYTHIC, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
+			ig(182173),	-- Hyena Soul
+		},
+	}),
 	n(MYTHIC_PLUS, {
 		ig(182173, {	-- Hyena Soul
 			timeline = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH },

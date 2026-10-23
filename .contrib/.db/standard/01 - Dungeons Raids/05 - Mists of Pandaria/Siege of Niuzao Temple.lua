@@ -47,201 +47,204 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
-				e(693, {	-- Vizier Jin'bak
-					crs = { 61567 },	-- Vizier Jin'bak
-					groups = {
-						-- Available
-						i(144022, {	-- Hood of Viridian Residue
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144162, {	-- Engraved Amber Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144163, {	-- Girdle of Soothing Detonation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143996, {	-- Sap-Encrusted Legplates
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144156, {	-- Flashfrozen Resin Globule
-							timeline = { ADDED_7_1_5 },
-						}),
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				timeline = { ADDED_5_4_0 },
+				groups = {
+					e(693, {	-- Vizier Jin'bak
+						crs = { 61567 },	-- Vizier Jin'bak
+						groups = {
+							-- Available
+							i(144022, {	-- Hood of Viridian Residue
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144162, {	-- Engraved Amber Pendant
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144163, {	-- Girdle of Soothing Detonation
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143996, {	-- Sap-Encrusted Legplates
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144156, {	-- Flashfrozen Resin Globule
+								timeline = { ADDED_7_1_5 },
+							}),
 
-						-- Removed
-						i(100952, {	-- Hood of Viridian Residue
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100950, {	-- Engraved Amber Pendant
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100953, {	-- Girdle of Soothing Detonation
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100954, {	-- Sap-Encrusted Legplates
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100951, {	-- Flashfrozen Resin Globule
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-					},
-				}),
-				e(738, {	-- Commander Vo'jak
-					crs = { 61634 },	-- Commander Vo'jak
-					groups = {
-						-- Available
-						i(144164, {	-- Siege-Captain's Scimitar
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144023, {	-- Sightfinder Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143963, {	-- Chestwrap of Arcing Flame
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144165, {	-- Bombardment Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144166, {	-- Archer's Precision Grips
-							timeline = { ADDED_7_1_5 },
-						}),
+							-- Removed
+							i(100952, {	-- Hood of Viridian Residue
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100950, {	-- Engraved Amber Pendant
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100953, {	-- Girdle of Soothing Detonation
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100954, {	-- Sap-Encrusted Legplates
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100951, {	-- Flashfrozen Resin Globule
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+						},
+					}),
+					e(738, {	-- Commander Vo'jak
+						crs = { 61634 },	-- Commander Vo'jak
+						groups = {
+							-- Available
+							i(144164, {	-- Siege-Captain's Scimitar
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144023, {	-- Sightfinder Helm
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143963, {	-- Chestwrap of Arcing Flame
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144165, {	-- Bombardment Bracers
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144166, {	-- Archer's Precision Grips
+								timeline = { ADDED_7_1_5 },
+							}),
 
-						-- Removed
-						i(100955, {	-- Siege-Captain's Scimitar
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100959, {	-- Sightfinder Helm
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100957, {	-- Chestwrap of Arcing Flame
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100956, {	-- Bombardment Bracers
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100958, {	-- Archer's Precision Grips
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-					},
-				}),
-				e(692, {	-- General Pa'valak
-					crs = { 61485 },	-- General Pa'valak
-					groups = {
-						-- Available
-						i(144167, {	-- Tempestuous Longbow
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144170, {	-- Aerial Bombardment Cloak
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144168, {	-- Siegeworn Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144169, {	-- Breezebinder Handwraps
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144157, {	-- Vial of Ichorous Blood
-							timeline = { ADDED_7_1_5 },
-						}),
+							-- Removed
+							i(100955, {	-- Siege-Captain's Scimitar
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100959, {	-- Sightfinder Helm
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100957, {	-- Chestwrap of Arcing Flame
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100956, {	-- Bombardment Bracers
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100958, {	-- Archer's Precision Grips
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+						},
+					}),
+					e(692, {	-- General Pa'valak
+						crs = { 61485 },	-- General Pa'valak
+						groups = {
+							-- Available
+							i(144167, {	-- Tempestuous Longbow
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144170, {	-- Aerial Bombardment Cloak
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144168, {	-- Siegeworn Bracers
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144169, {	-- Breezebinder Handwraps
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144157, {	-- Vial of Ichorous Blood
+								timeline = { ADDED_7_1_5 },
+							}),
 
-						-- Removed
-						i(100960, {	-- Tempestuous Longbow
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100961, {	-- Aerial Bombardment Cloak
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100964, {	-- Siegeworn Bracers
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100962, {	-- Breezebinder Handwraps
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100963, {	-- Vial of Ichorous Blood
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-					},
-				}),
-				e(727, {	-- Wing Leader Ner'onok
-					crs = { 62205 },	-- Wing Leader Ner'onok
-					groups = {
-						-- Available
-						i(144219, {	-- Tolakesh, Horn of the Black Ox
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144172, {	-- Gustwalker Staff
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144171, {	-- Ner'onok's Razor Katar
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144025, {	-- Breezeswept Hood
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144024, {	-- Windblast Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143998, {	-- Spaulders of Immovable Stone
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143999, {	-- Whisperwind Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143964, {	-- Galedodger Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144173, {	-- Belt of Totemic Binding
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144000, {	-- Airbender Sandals
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143997, {	-- Anchoring Sabatons
-							timeline = { ADDED_7_1_5 },
-						}),
+							-- Removed
+							i(100960, {	-- Tempestuous Longbow
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100961, {	-- Aerial Bombardment Cloak
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100964, {	-- Siegeworn Bracers
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100962, {	-- Breezebinder Handwraps
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100963, {	-- Vial of Ichorous Blood
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+						},
+					}),
+					e(727, {	-- Wing Leader Ner'onok
+						crs = { 62205 },	-- Wing Leader Ner'onok
+						groups = {
+							-- Available
+							i(144219, {	-- Tolakesh, Horn of the Black Ox
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144172, {	-- Gustwalker Staff
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144171, {	-- Ner'onok's Razor Katar
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144025, {	-- Breezeswept Hood
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144024, {	-- Windblast Helm
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143998, {	-- Spaulders of Immovable Stone
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143999, {	-- Whisperwind Spaulders
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143964, {	-- Galedodger Chestguard
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144173, {	-- Belt of Totemic Binding
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(144000, {	-- Airbender Sandals
+								timeline = { ADDED_7_1_5 },
+							}),
+							i(143997, {	-- Anchoring Sabatons
+								timeline = { ADDED_7_1_5 },
+							}),
 
-						-- Removed
-						i(100966, {	-- Tolakesh, Horn of the Black Ox
-							-- #if BEFORE WOD
-							-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
-							description = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
-							isBounty = true,
-							-- #endif
-							timeline = { CREATED_5_4_0 },
-						}),
-						i(100973, {	-- Gustwalker Staff
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100965, {	-- Ner'onok's Razor Katar
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100971, {	-- Breezeswept Hood
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100967, {	-- Windblast Helm
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100970, {	-- Spaulders of Immovable Stone
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100972, {	-- Whisperwind Spaulders
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100968, {	-- Galedodger Chestguard
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100974, {	-- Belt of Totemic Binding
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100975, {	-- Airbender Sandals
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-						i(100969, {	-- Anchoring Sabatons
-							timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
-						}),
-					},
-				}),
-			})),
+							-- Removed
+							i(100966, {	-- Tolakesh, Horn of the Black Ox
+								-- #if BEFORE WOD
+								-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
+								description = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
+								isBounty = true,
+								-- #endif
+								timeline = { CREATED_5_4_0 },
+							}),
+							i(100973, {	-- Gustwalker Staff
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100965, {	-- Ner'onok's Razor Katar
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100971, {	-- Breezeswept Hood
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100967, {	-- Windblast Helm
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100970, {	-- Spaulders of Immovable Stone
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100972, {	-- Whisperwind Spaulders
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100968, {	-- Galedodger Chestguard
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100974, {	-- Belt of Totemic Binding
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100975, {	-- Airbender Sandals
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+							i(100969, {	-- Anchoring Sabatons
+								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+							}),
+						},
+					}),
+				},
+			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(693, {	-- Vizier Jin'bak
 					crs = { 61567 },	-- Vizier Jin'bak
@@ -436,22 +439,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-				challengemaster(ach(8439, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Siege of Niuzao Temple
-					title(247),	-- Siegebreaker <Name>
-				}))),
-				ach(6898),	-- Siege of Niuzao Temple Challenger
-				ach(6917),	-- Siege of Niuzao Temple: Bronze
-				ach(6918),	-- Siege of Niuzao Temple: Silver
-				ach(6919, {	-- Siege of Niuzao Temple: Gold
-					spell(131228),	-- Path of the Black Ox
-				}),
-				-- #if ANYCLASSIC
-				ach(61975, {	-- Siege of Niuzao Temple: Platinum
-					i(265414),	-- Platinum Amber
-				}),
-				-- #endif
-			})),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
+				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				groups = {
+					challengemaster(ach(8439, bubbleDownSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Siege of Niuzao Temple
+						title(247),	-- Siegebreaker <Name>
+					}))),
+					ach(6898),	-- Siege of Niuzao Temple Challenger
+					ach(6917),	-- Siege of Niuzao Temple: Bronze
+					ach(6918),	-- Siege of Niuzao Temple: Silver
+					ach(6919, {	-- Siege of Niuzao Temple: Gold
+						spell(131228),	-- Path of the Black Ox
+					}),
+					-- #if ANYCLASSIC
+					ach(61975, {	-- Siege of Niuzao Temple: Platinum
+						i(265414),	-- Platinum Amber
+					}),
+					-- #endif
+				},
+			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.CELESTIAL_DUNGEON_DIFFICULTY_BUFFS,
