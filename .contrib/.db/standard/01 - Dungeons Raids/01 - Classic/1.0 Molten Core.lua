@@ -244,7 +244,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				-- #endif
-				q(7486, bubbleDown({	-- A Hero's Reward
+				q(7486, {	-- A Hero's Reward
+					providers = {
+						{ "n",  13278 },	-- Duke Hydraxis
+						{ "o", 179551 },	-- Hydraxis' Coffer
+					},
+					sourceQuest = 6824,	-- Hands of the Enemy
+					coord = { 79.2, 73.6, AZSHARA },
 					timeline = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
@@ -252,19 +258,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						ADDED_1_0_1, REMOVED_3_0_8,
 						-- #endif
 					},
-				}, {
-					providers = {
-						{ "n",  13278 },	-- Duke Hydraxis
-						{ "o", 179551 },	-- Hydraxis' Coffer
-					},
-					sourceQuest = 6824,	-- Hands of the Enemy
-					coord = { 79.2, 73.6, AZSHARA },
 					lvl = 55,
 					groups = {
 						i(18399),	-- Ocean's Breeze
 						i(18398),	-- Tidal Loop
 					},
-				})),
+				}),
 				q(6823, {	-- Agent of Hydraxis
 					sourceQuest = 6822,	-- The Molten Core
 					qg = 13278,	-- Duke Hydraxis
