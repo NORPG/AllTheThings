@@ -791,20 +791,33 @@ root(ROOTS.Zones, {
 						isBreadcrumb = true,
 						lvl = 70,
 					})),
-					q(41160, bubbleDownSelf({ timeline = { ADDED_7_1_5 } }, {	-- Earth to Earth
+					q(41160, {	-- Earth to Earth
 						qg = 115546,	-- Lunelli
 						coord = { 64.1, 71.5, SHATTRATH_CITY },
-						timeline = { ADDED_7_0_3 },
+						timeline = { ADDED_7_1_5 },
+						maps = { BLADES_EDGE_MOUNTAINS, NAGRAND, TEROKKAR_FOREST },
 						requireSkill = BLACKSMITHING,
 						groups = {
+							objective(1, {	-- 0/1 Cardinal Stone Core
+								provider = { "i", 142267 },	-- Cardinal Stone Core (QI!)
+								coord = { 47.6, 40.6, TEROKKAR_FOREST },
+								cr = 115695,	-- Dampscale Patriarch
+							}),
+							objective(2, {	-- 0/1 Cardinal Earth Core
+								provider = { "i", 142269 },	-- Cardinal Earth Core (QI!)
+								coord = { 56.6, 88.6, NAGRAND },
+								cr = 115647,	-- Terra'gul <Elemental Guardian>
+							}),
+							objective(3, {	-- 0/1 Cardinal Lava Core
+								provider = { "i", 142268 },	-- Cardinal Lava Core (QI!)
+								coord = { 47.6, 72.6, BLADES_EDGE_MOUNTAINS },
+								cr = 115597,	-- Geo-Lord Garug
+							}),
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
-							i(142269),	-- Cardinal Earth Core (QI!)
-							i(142268),	-- Cardinal Lava Core (QI!)
-							i(142267),	-- Cardinal Stone Core (QI!)
 						},
-					})),
+					}),
 					q(10421, {	-- Fel Armaments
 						sourceQuest = 10420,	-- A Cleansing Light
 						qg = 18538,	-- Ishanah
