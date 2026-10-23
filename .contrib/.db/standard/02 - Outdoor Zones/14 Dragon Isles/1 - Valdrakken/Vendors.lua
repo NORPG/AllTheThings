@@ -9,9 +9,9 @@ local ASPECTS_TOKEN_OF_MERIT_S4 = 217409;
 local ANTIQUE_BRONZE = 213089;
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(VENDORS, {
 				n(198587, {	-- Andoris <Enchanting Supplies>
 					coord = { 30.8, 60.8, VALDRAKKEN },
@@ -842,6 +842,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

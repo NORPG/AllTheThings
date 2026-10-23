@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			pvp(n(PVP, {
 				n(QUESTS, {
 					q(72723, {	-- A Call to Battle
@@ -381,6 +381,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					})),
 				}),
 			})),
-		}),
-	},
+		},
+	}),
 }));

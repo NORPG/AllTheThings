@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THE_AZURE_SPAN, {
+	m(THE_AZURE_SPAN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(TREASURES, {
 				o(381713, {	-- A Solid Foundation
 					coord = { 8.0, 45.6, THE_AZURE_SPAN },
@@ -236,6 +236,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

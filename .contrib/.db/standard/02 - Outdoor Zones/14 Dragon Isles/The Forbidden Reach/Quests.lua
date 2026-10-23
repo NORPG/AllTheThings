@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_7 },
-	groups = {
-		m(THE_FORBIDDEN_REACH, {
+	m(THE_FORBIDDEN_REACH, {
+		timeline = { ADDED_10_0_7 },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
 					------ Prologue ------
@@ -432,8 +432,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					coord = { 34.4, 58.6, THE_FORBIDDEN_REACH },
 				}),
 			})),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_7 } }, {

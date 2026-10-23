@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			petbattles({
 				q(70647, {	-- Oh Where, Oh Where Can He Be?
 					sourceQuests = {
@@ -28,6 +28,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					maps = { THE_AZURE_SPAN },
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

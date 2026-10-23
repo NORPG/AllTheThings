@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(ZANDALAR, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		m(THE_GREAT_SEAL, {
+	m(THE_GREAT_SEAL, {
+		timeline = { ADDED_8_0_1 },
+		groups = {
 			n(QUESTS, {
 			-- TODO: TO SOLVE:
 				-- when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
@@ -1039,8 +1039,8 @@ root(ROOTS.Zones, m(ZANDALAR, {
 					groups = { i(206566) },	-- Scarlet Pterrordax (MOUNT!)
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {

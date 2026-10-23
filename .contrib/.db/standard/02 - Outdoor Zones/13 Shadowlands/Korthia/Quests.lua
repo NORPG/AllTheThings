@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_1_0 },
-	groups = {
-		m(KORTHIA, {
+	m(KORTHIA, {
+		timeline = { ADDED_9_1_0 },
+		groups = {
 			n(QUESTS, {
 				n(REWARDS, {
 					description = "These pieces can be rewarded from covenant dailies in Korthia.",
@@ -1926,8 +1926,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					coord = { 63.0, 24.1, KORTHIA },
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_1_0 } }, {

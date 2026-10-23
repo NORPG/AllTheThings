@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(KUL_TIRAS, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		m(DRUSTVAR, {
+	m(DRUSTVAR, {
+		timeline = { ADDED_8_0_1 },
+		groups = {
 			n(VENDORS, {
 				n(136655, {	-- Alisha Darkwater
 					coord = { 26.7, 72.5, DRUSTVAR },
@@ -204,6 +204,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

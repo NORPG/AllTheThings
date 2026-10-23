@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_2_0 },
-	groups = {
-		m(ZERETH_MORTIS, {
+	m(ZERETH_MORTIS, {
+		timeline = { ADDED_9_2_0 },
+		groups = {
 			n(QUESTS, {
 				n(REWARDS, {
 					i(190754, {	-- Firim's Specimen Container (TOY!)
@@ -1343,8 +1343,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				}),
 			})),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {

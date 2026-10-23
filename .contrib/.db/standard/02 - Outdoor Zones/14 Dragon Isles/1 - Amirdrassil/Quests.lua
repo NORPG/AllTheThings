@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_2_5 },
-	groups = {
-		m(AMIRDRASSIL, {
+	m(AMIRDRASSIL, {
+		timeline = { ADDED_10_2_5 },
+		groups = {
 			n(QUESTS, {
 				q(78643, {	-- Fair Skies and Strong Winds
 					sourceQuests = { 76283 },	-- Andu-falah-dor
@@ -106,8 +106,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {

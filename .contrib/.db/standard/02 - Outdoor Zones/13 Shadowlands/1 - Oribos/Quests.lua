@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_0_2_LAUNCH },
-	groups = {
-		m(ORIBOS, {
+	m(ORIBOS, {
+		timeline = { ADDED_9_0_2_LAUNCH },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Quest, 60152, {	-- The Eternal City
 					icon = 3847780,
@@ -967,8 +967,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					coord = { 44.6, 33.4, ORIBOS_RING },
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {

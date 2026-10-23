@@ -9,9 +9,9 @@ local ATTENDANTS_TOKEN_OF_MERIT = 199202;	-- Shadowlands Season 4
 -- #endif
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_0_2_LAUNCH },
-	groups = {
-		m(ORIBOS, {
+	m(ORIBOS, {
+		timeline = { ADDED_9_0_2_LAUNCH },
+		groups = {
 			n(VENDORS, {
 				n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
 					coord = { 61.7, 72.3, ORIBOS },
@@ -414,6 +414,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					},
 				})),
 			}),
-		}),
-	},
+		},
+	}),
 }));

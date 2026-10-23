@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			header(HEADERS.Quest, 70750, {	-- Aiding the Accord
 				-- Weekly
 				-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
@@ -148,8 +148,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					}),
 				})),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {

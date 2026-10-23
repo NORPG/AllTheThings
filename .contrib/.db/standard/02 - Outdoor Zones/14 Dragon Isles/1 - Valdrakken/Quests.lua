@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(REWARDS, {
 				i(200452, {	-- Dragonscale Expedition Insignia [Rare]
 					minReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
@@ -563,8 +563,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					timeline = { ADDED_10_0_2, REMOVED_10_1_0 },
 				}),
 			})),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {

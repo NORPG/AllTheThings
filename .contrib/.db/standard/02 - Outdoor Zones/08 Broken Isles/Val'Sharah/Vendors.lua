@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(BROKEN_ISLES, {
-	timeline = { ADDED_7_0_3_LAUNCH },
-	groups = {
-		m(VALSHARAH, {
+	m(VALSHARAH, {
+		timeline = { ADDED_7_0_3_LAUNCH },
+		groups = {
 			n(VENDORS, {
 				n(252498, {	-- Corbin Branbell <Decor Specialist>
 					coord = { 42.1, 59.4, VALSHARAH },
@@ -202,6 +202,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					}),
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

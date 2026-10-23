@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THE_WAKING_SHORES, {
+	m(THE_WAKING_SHORES, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(TREASURES, {
 				o(381485, {	-- Adventurer's Lost Soap Bar
 					coord = { 39.6, 84.7, THE_WAKING_SHORES },
@@ -284,6 +284,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

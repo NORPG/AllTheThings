@@ -5,9 +5,9 @@
 local ELEMENTAL_OVERFLOW = 2118;
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_7 },
-	groups = {
-		m(THE_FORBIDDEN_REACH, {
+	m(THE_FORBIDDEN_REACH, {
+		timeline = { ADDED_10_0_7 },
+		groups = {
 			n(VENDORS, {
 				n(200566, {	-- Cataloger Daela
 					coord = { 34.3, 60.0, THE_FORBIDDEN_REACH },
@@ -261,6 +261,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

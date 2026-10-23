@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_2_0 },
-	groups = {
-		m(EMERALD_DREAM, {
+	m(EMERALD_DREAM, {
+		timeline = { ADDED_10_2_0 },
+		groups = {
 			n(VENDORS, {
 				n(208170, {	-- Mythrin'dir <Trade Goods>
 					coord = { 49.6, 62.8, EMERALD_DREAM },
@@ -171,6 +171,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

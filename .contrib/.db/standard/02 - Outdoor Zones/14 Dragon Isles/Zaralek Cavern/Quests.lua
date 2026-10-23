@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_1_0 },
-	groups = {
-		m(ZARALEK_CAVERN, {
+	m(ZARALEK_CAVERN, {
+		timeline = { ADDED_10_1_0 },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 17739, {	-- Embers of Neltharion
 					------ Chapter 1 ------
@@ -957,8 +957,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_1_0 } }, {

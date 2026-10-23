@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(KUL_TIRAS, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		m(STORMSONG_VALLEY, {
+	m(STORMSONG_VALLEY, {
+		timeline = { ADDED_8_0_1 },
+		groups = {
 			n(VENDORS, {
 				n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 					coord = { 40.4, 36.4, STORMSONG_VALLEY },
@@ -337,6 +337,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, {
 					}),
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

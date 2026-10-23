@@ -22,9 +22,9 @@ local VIPERID_LATTICE = 189155;
 local VOMBATA_LATTICE = 189156;
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_2_0 },
-	groups = {
-		m(ZERETH_MORTIS, {
+	m(ZERETH_MORTIS, {
+		timeline = { ADDED_9_2_0 },
+		groups = {
 			prof(PROTOFORM_SYNTHESIS, {
 				n(ACHIEVEMENTS, {
 					achpart(15406, 15411),	-- Synthesized!
@@ -977,6 +977,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					}),
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

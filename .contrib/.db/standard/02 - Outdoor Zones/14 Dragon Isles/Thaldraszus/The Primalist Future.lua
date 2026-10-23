@@ -6,13 +6,13 @@ local ESSENCE_OF_THE_STORM = 202039;
 local ELEMENTAL_OVERFLOW = 2118;
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THALDRASZUS, {
+	m(THALDRASZUS, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			m(THE_PRIMALIST_FUTURE, {
-				timeline = { ADDED_10_0_5 },
-				groups = {
-					n(ACHIEVEMENTS, {
+				n(ACHIEVEMENTS, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						ach(17343),	-- Drop It Like It's Hot
 						ach(17342, {	-- The Future We Make
 							crit(57965, {
@@ -28,12 +28,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 								crs = { 200439 },	-- Seismodor, Earth's Wrath
 							}),
 						}),
-					}),
-					n(EXPLORATION, {
+					},
+				}),
+				n(EXPLORATION, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						visit_exploration(14148,{coord={40.9,6.5,THE_PRIMALIST_FUTURE}}),	-- Out of Temporal Bounds
 						visit_exploration(14454,{coord={61.8,51.4,THE_PRIMALIST_FUTURE}}),	-- Temporal Conflux
-					}),
-					n(QUESTS, {
+					},
+				}),
+				n(QUESTS, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						q(74376, {	-- Coalesced Storm Remnants
 							provider = { "i", 203469 },	-- Coalesced Storm Remnants
 							groups = {
@@ -84,41 +90,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 								}),
 							}),
 						})),
+					},
+				}),
+				n(RARES, sharedData({
+					timeline = { ADDED_10_0_5 },
+					isDaily = true,
+				},{
+					n(201543, {	-- Avalantus
+						coord = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
+						questID = 74554,
+						groups = {
+							i(203670),	-- Prismatic Diamond Loop
+						},
 					}),
-					n(RARES, sharedData({
-						isDaily = true,
-					},{
-						n(201543, {	-- Avalantus
-							coord = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
-							questID = 74554,
-							groups = {
-								i(203670),	-- Prismatic Diamond Loop
-							},
-						}),
-						n(201545, {	-- Shapemaster Za'lani
-							coord = { 46.9, 42.6, THE_PRIMALIST_FUTURE },
-							questID = 74553,
-							groups = {
-								i(203668),	-- Earthshaping Grips
-							},
-						}),
-						n(201562, {	-- Shardwing
-							coord = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
-							questID = 74556,
-							groups = {
-								i(203669),	-- Chillwing Leggings
-								i(200241),	-- Stormcaller's Ritual Hatchet
-							},
-						}),
-						n(201542, {	-- Tikar Frostclaw
-							coord = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
-							questID = 74558,
-							groups = {
-								i(203667),	-- Frostclaw's Spellfingers
-							},
-						}),
-					})),
-					n(TREASURES, {
+					n(201545, {	-- Shapemaster Za'lani
+						coord = { 46.9, 42.6, THE_PRIMALIST_FUTURE },
+						questID = 74553,
+						groups = {
+							i(203668),	-- Earthshaping Grips
+						},
+					}),
+					n(201562, {	-- Shardwing
+						coord = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
+						questID = 74556,
+						groups = {
+							i(203669),	-- Chillwing Leggings
+							i(200241),	-- Stormcaller's Ritual Hatchet
+						},
+					}),
+					n(201542, {	-- Tikar Frostclaw
+						coord = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
+						questID = 74558,
+						groups = {
+							i(203667),	-- Frostclaw's Spellfingers
+						},
+					}),
+				})),
+				n(TREASURES, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						o(382193, {	-- Chest of the Elements
 							providers = {
 								{ "o", 382195 },	-- Elemental Bound Chest (vignette)
@@ -140,8 +150,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 								i(201444),	-- Primal Revenant's Earthblade
 							}
 						});
-					}),
-					n(VENDORS, {
+					},
+				}),
+				n(VENDORS, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						n(198831, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {	-- Bivogosa <Head Chef>
 							coord = { 61.5, 53.3, THE_PRIMALIST_FUTURE },
 							groups = {
@@ -216,32 +229,38 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 								i(202096),	-- Armaments of the Scale
 							},
 						}),
-					}),
-					n(ZONE_DROPS, {
+					},
+				}),
+				n(ZONE_DROPS, {
+					timeline = { ADDED_10_0_5 },
+					groups = {
 						i(203469),	-- Coalesced Storm Remnants
-					}),
-					n(199502, {		-- Glakis, Winter's Wrath
-						description = "Possible Boss at the end of the Storm's Fury Event.",
-						groups	= {
-							i(204215),	-- Dormanted Primordial Fragment
-						},
-					}),
-					n(199667, {		-- Nimbulatus, Storm's Wrath
-						description = "Possible Boss at the end of the Storm's Fury Event.",
-						groups	= {
-							i(204215),	-- Dormanted Primordial Fragment
-						},
-					}),
-					n(200439, {		-- Seismodor, Earth's Wrath
-						description = "Possible Boss at the end of the Storm's Fury Event.",
-						groups	= {
-							i(204215),	-- Dormanted Primordial Fragment
-						},
-					}),
-				},
+					},
+				}),
+				n(199502, {		-- Glakis, Winter's Wrath
+					description = "Possible Boss at the end of the Storm's Fury Event.",
+					timeline = { ADDED_10_0_5 },
+					groups	= {
+						i(204215),	-- Dormanted Primordial Fragment
+					},
+				}),
+				n(199667, {		-- Nimbulatus, Storm's Wrath
+					description = "Possible Boss at the end of the Storm's Fury Event.",
+					timeline = { ADDED_10_0_5 },
+					groups	= {
+						i(204215),	-- Dormanted Primordial Fragment
+					},
+				}),
+				n(200439, {		-- Seismodor, Earth's Wrath
+					description = "Possible Boss at the end of the Storm's Fury Event.",
+					timeline = { ADDED_10_0_5 },
+					groups	= {
+						i(204215),	-- Dormanted Primordial Fragment
+					},
+				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_5} }, {

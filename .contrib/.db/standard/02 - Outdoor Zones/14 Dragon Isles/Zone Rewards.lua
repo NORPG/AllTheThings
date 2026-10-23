@@ -3,16 +3,17 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
-			maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-			groups = {
-				i(202071),	-- Elemental Mote
-				i(202070),	-- Exceptional Pelt
-			},
-		}),
-		n(ZONE_REWARDS, {
+	n(ZONE_DROPS, {	-- Drops available from pretty much anywhere in Dragon Isles
+		timeline = { ADDED_10_0_2_LAUNCH },
+		maps = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+		groups = {
+			i(202071),	-- Elemental Mote
+			i(202070),	-- Exceptional Pelt
+		},
+	}),
+	n(ZONE_REWARDS, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			-- DF open world supplies
 			i(200691),	-- Claw Thistle Barbs
 			i(200700),	-- Cuppressa Berries
@@ -170,6 +171,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 				i(192025),	-- World Breaker's Maul
 				i(197924),	-- Wyrm Poacher's Emberblade
 			}),
-		}),
-	},
+		},
+	}),
 }));

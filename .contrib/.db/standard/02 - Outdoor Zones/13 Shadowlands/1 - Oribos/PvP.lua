@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(SHADOWLANDS, {
-	timeline = { ADDED_9_0_2_LAUNCH },
-	groups = {
-		m(ORIBOS, {
+	m(ORIBOS, {
+		timeline = { ADDED_9_0_2_LAUNCH },
+		groups = {
 			pvp(n(PVP, {
 				n(QUESTS, {
 					q(62910, {	-- Against Overwhelming Odds
@@ -220,6 +220,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, {
 					}),
 				}),
 			})),
-		}),
-	},
+		},
+	}),
 }));

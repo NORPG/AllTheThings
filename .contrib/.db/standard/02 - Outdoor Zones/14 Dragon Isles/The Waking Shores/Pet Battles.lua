@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THE_WAKING_SHORES, {
+	m(THE_WAKING_SHORES, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			petbattles({
 				q(70853, {	-- A Friend for Lubbins
 					sourceQuest = 70851,	-- Born to Be Wilder
@@ -37,6 +37,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

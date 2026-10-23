@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(KUL_TIRAS, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		m(TIRAGARDE_SOUND, {
+	m(TIRAGARDE_SOUND, {
+		timeline = { ADDED_8_0_1 },
+		groups = {
 			m(BORALUS, {
 				icon = 2011139,
 				-- Almost all rep for the Proudmoore Faction comes from Tirisgarde, so the rep vendor should show up in the Minilist.
@@ -99,6 +99,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

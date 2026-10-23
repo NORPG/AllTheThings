@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(VALDRAKKEN, {
+	m(VALDRAKKEN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(TREASURES, {
 				o(381691, {	-- A Steamy Romance Novel: The Lusty Draconian Mage
 					coord = { 47.7, 15.4, VALDRAKKEN },
@@ -25,6 +25,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					groups = { i(213181) },	-- A Tiny Dragon Goblet (Pepe!)
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

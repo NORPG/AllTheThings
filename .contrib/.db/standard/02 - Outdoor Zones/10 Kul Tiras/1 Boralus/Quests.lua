@@ -12,9 +12,9 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 });
 
 root(ROOTS.Zones, m(KUL_TIRAS, {
-	timeline = { ADDED_8_0_1 },
-	groups = {
-		m(BORALUS, {
+	m(BORALUS, {
+		timeline = { ADDED_8_0_1 },
+		groups = {
 			n(QUESTS, {
 				pvp(n(PVP, {
 					n(AZERITE_ESSENCES, {
@@ -876,8 +876,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, {
 					groups = { i(206567) },	-- Harbor Gryphon (MOUNT!)
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1 } }, {

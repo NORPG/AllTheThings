@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(KUL_TIRAS, {
-	timeline = { ADDED_8_2_0 },
-	groups = {
-		m(MECHAGON, {
+	m(MECHAGON, {
+		timeline = { ADDED_8_2_0 },
+		groups = {
 			n(QUESTS, {
 				n(REWARDS, {
 					i(246697, {	-- Self-Assembling Homeware Kit
@@ -1376,8 +1376,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, {
 					provider = { "i", 169692 },	-- Vinyl: Triumph of Gnomeregan
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {

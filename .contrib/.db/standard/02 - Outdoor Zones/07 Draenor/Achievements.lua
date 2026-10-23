@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAENOR, {
-	timeline = { ADDED_6_0_3_LAUNCH },
-	groups = {
-		n(ACHIEVEMENTS, {
+	n(ACHIEVEMENTS, {
+		timeline = { ADDED_6_0_3_LAUNCH },
+		groups = {
 			applyclassicphase(WOD_PHASE_ONE, ach(8935, {	-- Draenor Explorer [7.0.3] / Explore Draenor
 				-- Meta Achievement
 				sym = {{"meta_achievement",
@@ -172,6 +172,6 @@ root(ROOTS.Zones, m(DRAENOR, {
 					coord = { 72.89, 42.27, DRAENOR_NAGRAND },
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }))

@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THE_WAKING_SHORES, {
+	m(THE_WAKING_SHORES, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 16334, {	-- Waking Hope
 					------ Prologue ------
@@ -1528,8 +1528,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					-- TODO: for the two above mentioned chains, how do we sort these types of things going forward? Also, is Skytop an actual quest or should this be a NYI/Never Implemented?
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {

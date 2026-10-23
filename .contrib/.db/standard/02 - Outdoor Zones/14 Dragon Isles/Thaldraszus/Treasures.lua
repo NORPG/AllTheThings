@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THALDRASZUS, {
+	m(THALDRASZUS, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(TREASURES, {
 				o(381731, {	-- A Timely Message
 					coord = { 60.1, 85.0, THALDRASZUS },
@@ -156,6 +156,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					},
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));

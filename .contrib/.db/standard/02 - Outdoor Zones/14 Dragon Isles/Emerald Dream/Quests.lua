@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_2_0 },
-	groups = {
-		m(EMERALD_DREAM, {
+	m(EMERALD_DREAM, {
+		timeline = { ADDED_10_2_0 },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 19026, {	-- Defenders of the Dream
 					------ Chapter 1 ------
@@ -1176,8 +1176,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					-- probably move big rares here, since they have seems like weekly lockout?
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {

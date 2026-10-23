@@ -3,9 +3,9 @@
 ---------------------------------------------------
 
 root(ROOTS.Zones, m(DRAGON_ISLES, {
-	timeline = { ADDED_10_0_2_LAUNCH },
-	groups = {
-		m(THE_AZURE_SPAN, {
+	m(THE_AZURE_SPAN, {
+		timeline = { ADDED_10_0_2_LAUNCH },
+		groups = {
 			n(QUESTS, {
 				header(HEADERS.Achievement, 16336, {	-- Azure Spanner
 					------ Chapter 1 ------
@@ -2408,8 +2408,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 					}),
 				}),
 			}),
-		}),
-	},
+		},
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
