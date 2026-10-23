@@ -5,13 +5,14 @@
 local REMOVED_WITH_RETURN_TO_KARAZHAN = { REMOVED_7_1_0 };
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(745, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- Karazhan (Raid)
+	inst(745, {	-- Karazhan (Raid)
 		lore = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
 		description = "The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
 		-- #if BEFORE CATA
 		zoneTextAreaID = 2562,	-- Karazhan
 		-- #endif
 		coord = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
+		timeline = { ADDED_2_0_3 },
 		maps = {
 			KARAZHAN,	-- Servant's Quarters
 			351,	-- Upper Livery Stables
@@ -44,7 +45,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(FACTIONS, {
 				faction(FACTION_THE_VIOLET_EYE),	-- The Violet Eye
 			}),
-			n(QUESTS, bubbleDown({ timeline = REMOVED_WITH_RETURN_TO_KARAZHAN }, {
+			n(QUESTS, {
+				timeline = REMOVED_WITH_RETURN_TO_KARAZHAN,
 				groups = bubbleDownClassicRep(FACTION_THE_VIOLET_EYE, {
 					{		-- Neutral
 						q(9844, {	-- A Demonic Presence
@@ -612,7 +614,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 					},
 				}),
-			})),
+			}),
 			filter(REAGENTS, {
 				i(21882, {	-- Soul Essence
 					description = "Drops from Undead creatures in Karazhan."
@@ -1054,5 +1056,5 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	})),
+	}),
 })));

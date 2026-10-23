@@ -10,9 +10,10 @@ local revampAch = function(id, t)
 end
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
-	inst(759, bubbleDownSelf({ timeline = { ADDED_3_1_0 } }, {	-- Ulduar
+	inst(759, {	-- Ulduar
 		mapID = ULDUAR,
 		coord = { 41.5, 17.9, THE_STORM_PEAKS },
+		timeline = { ADDED_3_1_0 },
 		maps = { 148, 149, 150, 151, 152 },
 		-- #if NOT ANYCLASSIC
 		sharedLockout = 1,
@@ -2896,5 +2897,5 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			-- #endif
 		},
-	})),
+	}),
 })));

@@ -1422,7 +1422,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 			}),
 		})),
 	}),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.HERBALISM, 1 }}
 		},{
@@ -1583,7 +1583,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 				provider = { "i", 224265 },	-- Deepgrove Rose
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42793, {	-- Herbalism at Midnight

@@ -192,7 +192,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 			}),
 		}),
 	}),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		n(QUESTS, {
 			q(39958, {	-- Skin Deep
 				provider = { "n", 93523 },	-- Namha Moonwater
@@ -815,8 +815,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18777, {	-- Mallet of Thunderous Skins
 				provider = { "i", 164978 },	-- Mallet of Thunderous Skins
@@ -1017,8 +1017,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.LEATHERWORKING, 1 }}
 		},{
@@ -1371,7 +1371,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.LEATHERWORKING, 1 }}

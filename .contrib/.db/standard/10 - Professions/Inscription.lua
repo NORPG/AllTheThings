@@ -4768,364 +4768,367 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 				}),
 			}),
 		})),
-		applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3 } }, {
+		applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
 			n(QUESTS, {
-				q(39847, {	-- Sign This
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					groups = {
-						i(129047, {	-- Unsigned Contract (PQI!)
-							i(129043),	-- Signed Contract (QI!)
-						}),
-						r(195115, {	-- Inscription (Legion) (RECIPE!)
-							timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
-							collectible = false,
-						}),
-						applyclassicphase(BFA_PHASE_ONE, r(264506, {timeline = {ADDED_8_0_1}})),	-- Legion Inscription (RECIPE!)
-					},
-				}),
-				q(39931, {	-- Smashing Herbs
-					sourceQuests = { 39847 },	-- Sign This
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-				}),
-				q(39932, {	-- Fish Ink
-					sourceQuests = { 39931 },	-- Smashing Herbs
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-				}),
-				q(39933, {	-- The Card Shark
-					sourceQuests = { 39932 },	-- Fish Ink
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					groups = {
-						o(244679, {	-- Hearthstone Card
-							coords = {
-								{ 46.3, 39.7, LEGION_DALARAN },
-								{ 47.0, 38.7, LEGION_DALARAN },
-								{ 47.3, 41.1, LEGION_DALARAN },
-								{ 47.4, 40.3, LEGION_DALARAN },
-								{ 47.5, 40.8, LEGION_DALARAN },
-								{ 47.6, 40.3, LEGION_DALARAN },
-								{ 48.1, 41.8, LEGION_DALARAN },
-								{ 48.4, 39.4, LEGION_DALARAN },
-								{ 48.6, 39.4, LEGION_DALARAN },
-								{ 48.6, 40.8, LEGION_DALARAN },
-								{ 48.7, 38.4, LEGION_DALARAN },
-								{ 48.7, 41.5, LEGION_DALARAN },
-								{ 48.9, 39.9, LEGION_DALARAN },
-								{ 49.8, 39.5, LEGION_DALARAN },
-								{ 49.9, 39.1, LEGION_DALARAN },
-							},
-							groups = { i(129092) },	-- Hearthstone Card (QI!)
-						}),
-						--
-						r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
-					},
-				}),
-				q(40056, {	-- Our New Allies (DH)
-					sourceQuests = { 39933 },	-- The Card Shark
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					classes = { DEMONHUNTER },
-				}),
-				q(39934, {	-- Our New Allies (non-DH)
-					sourceQuests = { 39933 },	-- The Card Shark
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-				}),
-				q(40057, {	-- The Price of Power (DH)
-					sourceQuests = { 40056 },	-- Our New Allies (DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = { DEMONHUNTER },
-					groups = {
-						r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
-					},
-				}),
-				q(39935, {	-- The Price of Power (non-DH)
-					sourceQuests = { 39934 },	-- Our New Allies (non-DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-					groups = {
-						r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
-					},
-				}),
-				q(40058, {	-- Defense Symbology (DH)
-					sourceQuests = { 40057 },	-- The Price of Power (DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = { DEMONHUNTER },
-				}),
-				q(39936, {	-- Inscription of the Body (non-DH)
-					sourceQuests = { 39935 },	-- The Price of Power (non-DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-				}),
-				q(40059, {	-- Opposites Repel (DH)
-					sourceQuests = { 40058 },	-- Defense Symbology (DH)
-					provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-					coord = { 54.0, 15.4, AZSUNA },
-					classes = { DEMONHUNTER },
-					groups = {
-						i(129105),	-- Ley Dust
-					},
-				}),
-				q(39937, {	-- Opposites Repel (non-DH)
-					sourceQuests = { 39936 },	-- Inscription of the Body (non-DH)
-					provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-					coord = { 54.0, 15.4, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-					groups = {
-						i(129105),	-- Ley Dust
-					},
-				}),
-				q(40060, {	-- Containing the Demon Within (DH)
-					sourceQuests = { 40059 },	-- Opposites Repel (DH)
-					provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-					coord = { 54.0, 15.4, AZSUNA },
-					classes = { DEMONHUNTER },
-					groups = {
-						r(192851),	-- Glyph of Fallow Wings (RECIPE!)
-					},
-				}),
-				q(39938, {	-- Containing the Demon Within (non-DH)
-					sourceQuests = { 39937 },	-- Opposites Repel (non-DH)
-					provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
-					coord = { 54.0, 15.4, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-					groups = {
-						r(192851),	-- Glyph of Fallow Wings (RECIPE!)
-					},
-				}),
-				q(40061, {	-- To Know Your Enemy (DH)
-					sourceQuests = { 40057 },	-- The Price of Power (DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = { DEMONHUNTER },
-				}),
-				q(39939, {	-- Scribal Knowledge (non-DH)
-					sourceQuests = { 39935 },	-- The Price of Power (non-DH)
-					provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-				}),
-				q(39940, {	-- Runes of Power
-					sourceQuests = {
-						40061,	-- To Know Your Enemy (DH)
-						39939,	-- Scribal Knowledge (non-DH)
-					},
-					provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					groups = {
-						r(192850),	-- Glyph of Crackling Flames (RECIPE!)
-					},
-				}),
-				q(40063, {	-- Control is Key (DH)
-					sourceQuests = { 40061 },	-- To Know Your Enemy (DH)
-					provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-					coord = { 65.0, 25.8, AZSUNA },
-					classes = { DEMONHUNTER },
-				}),
-				q(39941, {	-- Control is Key (non-DH)
-					sourceQuests = { 39939 },	-- Scribal Knowledge (non-DH)
-					provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
-					coord = { 43.2, 43.2, AZSUNA },
-					classes = exclude(DEMONHUNTER, ALL_CLASSES),
-				}),
-				q(39943, {	-- The Burdens of Hunting
-					sourceQuests = {
-						40060,	-- Containing the Demon Within (DH)
-						39938,	-- Containing the Demon Within (non-DH)
-						39940,	-- Runes of Power
-						40063,	-- Control is Key (DH)
-						39941,	-- Control is Key (non-DH)
-					},
-					qgs = {
-						97734,	-- Zaria Shadowheart
-						98026,	-- Baric Stormrunner
-					},
-					coords = {
-						{ 54.0, 15.4, AZSUNA },
-						{ 43.2, 43.2, AZSUNA },
-					},
-					groups = {
-						r(192852),	-- Glyph of Tattered Wings (RECIPE!)
-					},
-				}),
-				q(39944, {	-- Mysterious Messages
-					sourceQuests = { 39933 },	-- The Card Shark
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-				}),
-				q(39945, {	-- Runes Within the Ruins
-					sourceQuests = { 39944 },	-- Mysterious Messages
-					provider = { "n", 97748 },	-- Nicholo Swiftfuse
-					coord = { 69.2, 40.6, STORMHEIM },
-					groups = {
-						i(129164),	-- Ancient Vrykul Rune Tablet (QI!)
-					},
-				}),
-				q(39946, {	-- Right Tool for the Job
-					sourceQuests = { 39944 },	-- Mysterious Messages
-					provider = { "n", 97748 },	-- Nicholo Swiftfuse
-					coord = { 69.2, 40.6, STORMHEIM },
-				}),
-				q(39947, {	-- Not So Complex?
-					sourceQuests = {
-						39945,	-- Runes Within the Ruins
-						39946,	-- Right Tool for the Job
-					},
-					provider = { "n", 97748 },	-- Nicholo Swiftfuse
-					coord = { 69.2, 40.6, STORMHEIM },
-				}),
-				q(40052, {	-- Ancient Vrykul Mastered
-					sourceQuests = { 39947 },	-- Not So Complex?
-					provider = { "n", 97748 },	-- Nicholo Swiftfuse
-					coord = { 69.2, 40.6, STORMHEIM },
-					groups = {
-						r(192802),	-- Scroll of Forgotten Knowledge (RECIPE!)
-					},
-				}),
-				q(39948, {	-- The Ink Flows
-					sourceQuests = { 40052 },	-- Ancient Vrykul Mastered
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-				}),
-				q(39949, {	-- Once a Scribe Like You
-					sourceQuests = { 39948 },	-- The Ink Flows
-					provider = { "n", 97359 },	-- Raethan
-					coord = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
-				}),
-				q(39950, {	-- An Odd Trinket
-					sourceQuests = { 39949 },	-- Once a Scribe Like You
-					provider = { "n", 97359 },	-- Raethan
-					coord = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
-					groups = {
-						r(192855),	-- Prophecy Tarot [Rank 2] (RECIPE!)
-					},
-				}),
-				q(39954, {	-- Mass Milling Techniques
-					sourceQuests = { 39933 },	-- The Card Shark
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					groups = {
-						r(210116),	-- Mass Mill Yseralline Seeds (RECIPE!)
-					},
-				}),
-				q(39961, {	-- An Embarrassing Revelation
-					sourceQuests = { 39933 },	-- The Card Shark
-					provider = { "o", 244651 },	-- Steamy Romance Novel
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-				}),
-				q(39955, {	-- The Plot Thickens [A]
-					sourceQuests = { 39961 },	-- An Embarrassing Revelation
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					races = ALLIANCE_ONLY,
-					isBreadcrumb = true,
-				}),
-				q(39959, {	-- The Plot Thickens [H]
-					sourceQuests = { 39961 },	-- An Embarrassing Revelation
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					races = HORDE_ONLY,
-					isBreadcrumb = true,
-				}),
-				q(39956, {	-- The Legacy Passed On [A]
-					sourceQuests = { 39955 },	-- The Plot Thickens [A]
-					provider = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
-					coord = { 77.2, 10.4, IRONFORGE },
-					races = ALLIANCE_ONLY,
-					groups = {
-						r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
-					},
-				}),
-				q(39960, {	-- The Legacy Passed On [H]
-					sourceQuests = { 39959 },	-- The Plot Thickens [H]
-					provider = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
-					coord = { 77.8, 38.8, UNDERCITY },
-					races = HORDE_ONLY,
-					groups = {
-						r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
-					},
-				}),
-				q(39953, {	-- Halls of Valor: Vision of Valor
-					sourceQuests = {
-						40052,	-- Ancient Vrykul Mastered
-						39950,	-- An Odd Trinket
-						39943,	-- The Burdens of Hunting
-					},
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					maps = { 703, 704, 705 },	-- Halls of Valor
-				}),
-				q(39957, {	-- Demon Ink
-					sourceQuests = { 39953 },	-- Halls of Valor: Vision of Valor
-					provider = { "n", 92195 },	-- Professor Pallin
-					coord = { 41.6, 37.2, LEGION_DALARAN },
-					cost = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
-					groups = {
-						i(129204),	-- Vial of Felsoul Blood (RECIPE!)
-						r(191659),	-- Darkmoon Card of the Legion [Rank 1] (RECIPE!)
-					},
-				}),
-				q(39942, {	-- Aethrem Crystal
-					description = "There is a chance of getting this quest when milling Aethril.",
-					provider = { "i", 136909 },	-- Aethrem Crystal
-					groups = {
-						r(209658),	-- Mass Mill Aethril (RECIPE!)
-					},
-				}),
-				q(40062, {	-- Bulging Nightmare Pod
-					description = "There is a chance of getting this quest when milling Dreamleaf.",
-					provider = { "i", 136912 },	-- Bulging Nightmare Pod
-					groups = {
-						r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
-					},
-				}),
-				q(40065, {	-- Fjarnsk
-					description = "There is a chance of getting this quest when milling Fjarnskaggl.",
-					provider = { "i", 136916 },	-- Fjarnsk
-					groups = {
-						r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
-					},
-				}),
-				q(39951, {	-- Roseate Essence
-					description = "There is a chance of getting this quest when milling Starlight Rose.",
-					provider = { "i", 136917 },	-- Roseate Essence
-					groups = {
-						r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
-					},
-				}),
-				q(39952, {	-- Sallow Essence
-					description = "There is a chance of getting this quest when milling Felwort.",
-					provider = { "i", 136918 },	-- Sallow Essence
-					groups = {
-						r(209664),	-- Mass Mill Felwort (RECIPE!)
-					},
-				}),
-				q(40064, {	-- Woody Seed Cluster
-					description = "There is a chance of getting this quest when milling Foxflower.",
-					provider = { "i", 136915 },	-- Woody Seed Cluster
-					groups = {
-						r(209660),	-- Mass Mill Foxflower (RECIPE!)
-					},
-				}),
-				q(43929, {	-- Vantus Mastery
-					description = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
-					provider = { "n", 90417 },	-- Archmage Khadgar
-					timeline = { ADDED_7_1_0 },
-					groups = {
-						i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
-					},
-				}),
+				timeline = { ADDED_7_0_3 },
+				groups = {
+					q(39847, {	-- Sign This
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						groups = {
+							i(129047, {	-- Unsigned Contract (PQI!)
+								i(129043),	-- Signed Contract (QI!)
+							}),
+							r(195115, {	-- Inscription (Legion) (RECIPE!)
+								timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+								collectible = false,
+							}),
+							applyclassicphase(BFA_PHASE_ONE, r(264506, {timeline = {ADDED_8_0_1}})),	-- Legion Inscription (RECIPE!)
+						},
+					}),
+					q(39931, {	-- Smashing Herbs
+						sourceQuests = { 39847 },	-- Sign This
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+					}),
+					q(39932, {	-- Fish Ink
+						sourceQuests = { 39931 },	-- Smashing Herbs
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+					}),
+					q(39933, {	-- The Card Shark
+						sourceQuests = { 39932 },	-- Fish Ink
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						groups = {
+							o(244679, {	-- Hearthstone Card
+								coords = {
+									{ 46.3, 39.7, LEGION_DALARAN },
+									{ 47.0, 38.7, LEGION_DALARAN },
+									{ 47.3, 41.1, LEGION_DALARAN },
+									{ 47.4, 40.3, LEGION_DALARAN },
+									{ 47.5, 40.8, LEGION_DALARAN },
+									{ 47.6, 40.3, LEGION_DALARAN },
+									{ 48.1, 41.8, LEGION_DALARAN },
+									{ 48.4, 39.4, LEGION_DALARAN },
+									{ 48.6, 39.4, LEGION_DALARAN },
+									{ 48.6, 40.8, LEGION_DALARAN },
+									{ 48.7, 38.4, LEGION_DALARAN },
+									{ 48.7, 41.5, LEGION_DALARAN },
+									{ 48.9, 39.9, LEGION_DALARAN },
+									{ 49.8, 39.5, LEGION_DALARAN },
+									{ 49.9, 39.1, LEGION_DALARAN },
+								},
+								groups = { i(129092) },	-- Hearthstone Card (QI!)
+							}),
+							--
+							r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
+						},
+					}),
+					q(40056, {	-- Our New Allies (DH)
+						sourceQuests = { 39933 },	-- The Card Shark
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						classes = { DEMONHUNTER },
+					}),
+					q(39934, {	-- Our New Allies (non-DH)
+						sourceQuests = { 39933 },	-- The Card Shark
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+					}),
+					q(40057, {	-- The Price of Power (DH)
+						sourceQuests = { 40056 },	-- Our New Allies (DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = { DEMONHUNTER },
+						groups = {
+							r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
+						},
+					}),
+					q(39935, {	-- The Price of Power (non-DH)
+						sourceQuests = { 39934 },	-- Our New Allies (non-DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+						groups = {
+							r(192849),	-- Glyph of Fel Touched Souls (RECIPE!)
+						},
+					}),
+					q(40058, {	-- Defense Symbology (DH)
+						sourceQuests = { 40057 },	-- The Price of Power (DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = { DEMONHUNTER },
+					}),
+					q(39936, {	-- Inscription of the Body (non-DH)
+						sourceQuests = { 39935 },	-- The Price of Power (non-DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+					}),
+					q(40059, {	-- Opposites Repel (DH)
+						sourceQuests = { 40058 },	-- Defense Symbology (DH)
+						provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+						coord = { 54.0, 15.4, AZSUNA },
+						classes = { DEMONHUNTER },
+						groups = {
+							i(129105),	-- Ley Dust
+						},
+					}),
+					q(39937, {	-- Opposites Repel (non-DH)
+						sourceQuests = { 39936 },	-- Inscription of the Body (non-DH)
+						provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+						coord = { 54.0, 15.4, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+						groups = {
+							i(129105),	-- Ley Dust
+						},
+					}),
+					q(40060, {	-- Containing the Demon Within (DH)
+						sourceQuests = { 40059 },	-- Opposites Repel (DH)
+						provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+						coord = { 54.0, 15.4, AZSUNA },
+						classes = { DEMONHUNTER },
+						groups = {
+							r(192851),	-- Glyph of Fallow Wings (RECIPE!)
+						},
+					}),
+					q(39938, {	-- Containing the Demon Within (non-DH)
+						sourceQuests = { 39937 },	-- Opposites Repel (non-DH)
+						provider = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+						coord = { 54.0, 15.4, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+						groups = {
+							r(192851),	-- Glyph of Fallow Wings (RECIPE!)
+						},
+					}),
+					q(40061, {	-- To Know Your Enemy (DH)
+						sourceQuests = { 40057 },	-- The Price of Power (DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = { DEMONHUNTER },
+					}),
+					q(39939, {	-- Scribal Knowledge (non-DH)
+						sourceQuests = { 39935 },	-- The Price of Power (non-DH)
+						provider = { "n", 89398 },	-- Allari the Souleater <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+					}),
+					q(39940, {	-- Runes of Power
+						sourceQuests = {
+							40061,	-- To Know Your Enemy (DH)
+							39939,	-- Scribal Knowledge (non-DH)
+						},
+						provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						groups = {
+							r(192850),	-- Glyph of Crackling Flames (RECIPE!)
+						},
+					}),
+					q(40063, {	-- Control is Key (DH)
+						sourceQuests = { 40061 },	-- To Know Your Enemy (DH)
+						provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+						coord = { 65.0, 25.8, AZSUNA },
+						classes = { DEMONHUNTER },
+					}),
+					q(39941, {	-- Control is Key (non-DH)
+						sourceQuests = { 39939 },	-- Scribal Knowledge (non-DH)
+						provider = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+						coord = { 43.2, 43.2, AZSUNA },
+						classes = exclude(DEMONHUNTER, ALL_CLASSES),
+					}),
+					q(39943, {	-- The Burdens of Hunting
+						sourceQuests = {
+							40060,	-- Containing the Demon Within (DH)
+							39938,	-- Containing the Demon Within (non-DH)
+							39940,	-- Runes of Power
+							40063,	-- Control is Key (DH)
+							39941,	-- Control is Key (non-DH)
+						},
+						qgs = {
+							97734,	-- Zaria Shadowheart
+							98026,	-- Baric Stormrunner
+						},
+						coords = {
+							{ 54.0, 15.4, AZSUNA },
+							{ 43.2, 43.2, AZSUNA },
+						},
+						groups = {
+							r(192852),	-- Glyph of Tattered Wings (RECIPE!)
+						},
+					}),
+					q(39944, {	-- Mysterious Messages
+						sourceQuests = { 39933 },	-- The Card Shark
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+					}),
+					q(39945, {	-- Runes Within the Ruins
+						sourceQuests = { 39944 },	-- Mysterious Messages
+						provider = { "n", 97748 },	-- Nicholo Swiftfuse
+						coord = { 69.2, 40.6, STORMHEIM },
+						groups = {
+							i(129164),	-- Ancient Vrykul Rune Tablet (QI!)
+						},
+					}),
+					q(39946, {	-- Right Tool for the Job
+						sourceQuests = { 39944 },	-- Mysterious Messages
+						provider = { "n", 97748 },	-- Nicholo Swiftfuse
+						coord = { 69.2, 40.6, STORMHEIM },
+					}),
+					q(39947, {	-- Not So Complex?
+						sourceQuests = {
+							39945,	-- Runes Within the Ruins
+							39946,	-- Right Tool for the Job
+						},
+						provider = { "n", 97748 },	-- Nicholo Swiftfuse
+						coord = { 69.2, 40.6, STORMHEIM },
+					}),
+					q(40052, {	-- Ancient Vrykul Mastered
+						sourceQuests = { 39947 },	-- Not So Complex?
+						provider = { "n", 97748 },	-- Nicholo Swiftfuse
+						coord = { 69.2, 40.6, STORMHEIM },
+						groups = {
+							r(192802),	-- Scroll of Forgotten Knowledge (RECIPE!)
+						},
+					}),
+					q(39948, {	-- The Ink Flows
+						sourceQuests = { 40052 },	-- Ancient Vrykul Mastered
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+					}),
+					q(39949, {	-- Once a Scribe Like You
+						sourceQuests = { 39948 },	-- The Ink Flows
+						provider = { "n", 97359 },	-- Raethan
+						coord = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+					}),
+					q(39950, {	-- An Odd Trinket
+						sourceQuests = { 39949 },	-- Once a Scribe Like You
+						provider = { "n", 97359 },	-- Raethan
+						coord = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
+						groups = {
+							r(192855),	-- Prophecy Tarot [Rank 2] (RECIPE!)
+						},
+					}),
+					q(39954, {	-- Mass Milling Techniques
+						sourceQuests = { 39933 },	-- The Card Shark
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						groups = {
+							r(210116),	-- Mass Mill Yseralline Seeds (RECIPE!)
+						},
+					}),
+					q(39961, {	-- An Embarrassing Revelation
+						sourceQuests = { 39933 },	-- The Card Shark
+						provider = { "o", 244651 },	-- Steamy Romance Novel
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+					}),
+					q(39955, {	-- The Plot Thickens [A]
+						sourceQuests = { 39961 },	-- An Embarrassing Revelation
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
+					}),
+					q(39959, {	-- The Plot Thickens [H]
+						sourceQuests = { 39961 },	-- An Embarrassing Revelation
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						races = HORDE_ONLY,
+						isBreadcrumb = true,
+					}),
+					q(39956, {	-- The Legacy Passed On [A]
+						sourceQuests = { 39955 },	-- The Plot Thickens [A]
+						provider = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
+						coord = { 77.2, 10.4, IRONFORGE },
+						races = ALLIANCE_ONLY,
+						groups = {
+							r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
+						},
+					}),
+					q(39960, {	-- The Legacy Passed On [H]
+						sourceQuests = { 39959 },	-- The Plot Thickens [H]
+						provider = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
+						coord = { 77.8, 38.8, UNDERCITY },
+						races = HORDE_ONLY,
+						groups = {
+							r(192804),	-- Steamy Romance Novel Kit (RECIPE!)
+						},
+					}),
+					q(39953, {	-- Halls of Valor: Vision of Valor
+						sourceQuests = {
+							40052,	-- Ancient Vrykul Mastered
+							39950,	-- An Odd Trinket
+							39943,	-- The Burdens of Hunting
+						},
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						maps = { 703, 704, 705 },	-- Halls of Valor
+					}),
+					q(39957, {	-- Demon Ink
+						sourceQuests = { 39953 },	-- Halls of Valor: Vision of Valor
+						provider = { "n", 92195 },	-- Professor Pallin
+						coord = { 41.6, 37.2, LEGION_DALARAN },
+						cost = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
+						groups = {
+							i(129204),	-- Vial of Felsoul Blood (RECIPE!)
+							r(191659),	-- Darkmoon Card of the Legion [Rank 1] (RECIPE!)
+						},
+					}),
+					q(39942, {	-- Aethrem Crystal
+						description = "There is a chance of getting this quest when milling Aethril.",
+						provider = { "i", 136909 },	-- Aethrem Crystal
+						groups = {
+							r(209658),	-- Mass Mill Aethril (RECIPE!)
+						},
+					}),
+					q(40062, {	-- Bulging Nightmare Pod
+						description = "There is a chance of getting this quest when milling Dreamleaf.",
+						provider = { "i", 136912 },	-- Bulging Nightmare Pod
+						groups = {
+							r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
+						},
+					}),
+					q(40065, {	-- Fjarnsk
+						description = "There is a chance of getting this quest when milling Fjarnskaggl.",
+						provider = { "i", 136916 },	-- Fjarnsk
+						groups = {
+							r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
+						},
+					}),
+					q(39951, {	-- Roseate Essence
+						description = "There is a chance of getting this quest when milling Starlight Rose.",
+						provider = { "i", 136917 },	-- Roseate Essence
+						groups = {
+							r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
+						},
+					}),
+					q(39952, {	-- Sallow Essence
+						description = "There is a chance of getting this quest when milling Felwort.",
+						provider = { "i", 136918 },	-- Sallow Essence
+						groups = {
+							r(209664),	-- Mass Mill Felwort (RECIPE!)
+						},
+					}),
+					q(40064, {	-- Woody Seed Cluster
+						description = "There is a chance of getting this quest when milling Foxflower.",
+						provider = { "i", 136915 },	-- Woody Seed Cluster
+						groups = {
+							r(209660),	-- Mass Mill Foxflower (RECIPE!)
+						},
+					}),
+					q(43929, {	-- Vantus Mastery
+						description = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
+						provider = { "n", 90417 },	-- Archmage Khadgar
+						timeline = { ADDED_7_1_0 },
+						groups = {
+							i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
+						},
+					}),
+				},
 			}),
-		}))),
-		expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+		})),
+		expansion(EXPANSION.BFA, {
 			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 				ach(18772, {	-- Sanguine Feather Quill of Lana'thel
 					provider = { "i", 153670 },	-- Sanguine Feather Quill of Lana'thel
@@ -5271,8 +5274,8 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					timeline = { ADDED_8_2_5 },
 				}),
 			}),
-		})),
-		expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+		}),
+		expansion(EXPANSION.DF, {
 			n(PROFESSION_NODES_HEADER, sharedData({
 				cost = {{ "c", PROFESSION_KNOWLEDGE.DF.INSCRIPTION, 1 }}
 			},{
@@ -5638,7 +5641,7 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					},
 				}),
 			})),
-		})),
+		}),
 		expansion(EXPANSION.TWW, {
 			n(PROFESSION_NODES_HEADER, sharedData({
 				cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.INSCRIPTION, 1 }}

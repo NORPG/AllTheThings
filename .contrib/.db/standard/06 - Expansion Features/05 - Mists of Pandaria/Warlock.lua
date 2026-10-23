@@ -2,9 +2,10 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDown({ timeline = { ADDED_5_2_0 } },{
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 	cl(WARLOCK, {
 		description = "The Warlock Green Fire is a special visual effect for Destruction Warlocks. To unlock it you will have to complete a series of warlock-exclusive quests related to the Council of the Black Harvest.\n\nTo start the quest you must first find a Sealed Tome of the Lost Legion from rares on the Isle of Thunder.",
+		timeline = { ADDED_5_2_0 },
 		groups = bubbleDown({ classes = { WARLOCK }, lvl = lvlsquish(90, 35, 35) },{
 			n(QUESTS, {
 				i(92426, {	-- Sealed Tome of the Lost Legion
@@ -134,7 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			}),
 		}),
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
 	cl(WARLOCK, bubbleDown({ classes = { WARLOCK } }, {

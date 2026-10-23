@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(253, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- Shadow Labyrinth
+	inst(253, {	-- Shadow Labyrinth
 		lore = "Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",
 		-- #if BEFORE MOP
 		zoneTextAreaID = 3789,	-- Shadow Labyrinth
@@ -13,6 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE CATA
 		cost = { { "i", 27991, 1 } },	-- Shadow Labyrinth Key
 		-- #endif
+		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(65, 65, 20),
 		groups = {
 			n(QUESTS, {
@@ -381,7 +382,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {

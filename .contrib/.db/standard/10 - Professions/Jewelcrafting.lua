@@ -114,7 +114,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 			}),
 		}),
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+	expansion(EXPANSION.LEGION, {
 		q(40523, {	-- Facet-nating Friends
 			provider = { "n", 93526 },	-- Tiffany Cartier
 			coord = { 40.3, 34.7, LEGION_DALARAN },
@@ -453,8 +453,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 
 			},
 		}),
-	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18773, {	-- Jewelhammer's Focus
 				provider = { "i", 153716 },	-- Jewelhammer's Focus
@@ -702,8 +702,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.JEWELCRAFTING, 1 }}
 		},{
@@ -1093,7 +1093,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.JEWELCRAFTING, 1 }}

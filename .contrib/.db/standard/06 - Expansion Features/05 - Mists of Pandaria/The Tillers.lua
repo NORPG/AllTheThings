@@ -24,7 +24,7 @@ local HARVESTING = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {
 		description = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
 		maps = { VALLEY_OF_THE_FOUR_WINDS },
@@ -2669,7 +2669,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {

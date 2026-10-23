@@ -2245,7 +2245,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					})),
 				},
 			})),
-			n(37674, bubbleDownSelf({ timeline = { ADDED_3_3_2, REMOVED_10_2_5 } }, {	-- Lovely Merchant <Crown Chemical Co.>
+			n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 				coords = {
 					{ 45.2, 57.6, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
@@ -2256,6 +2256,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ 43.6, 53.6, THUNDER_BLUFF },
 					{ 66.0, 38.6, UNDERCITY },
 				},
+				timeline = { ADDED_3_3_2, REMOVED_10_2_5 },
 				groups = {
 					i(122339, {	-- Ancient Heirloom Scabbard
 						cost = { { "i", LOVE_TOKEN, 200 } },	-- 200x Love Token
@@ -2445,7 +2446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						cost = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 					}),
 				},
-			})),
+			}),
 			n(214481, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {	-- Lythianne Morningspear <Lovely Prizes and Heirlooms>
 				coord = { 41.9, 17.3, DUROTAR },
 				races = HORDE_ONLY,

@@ -626,85 +626,88 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				header(HEADERS.Item, 135479, bubbleDownSelf({ timeline = { ADDED_7_2_5 } }, {	-- Lost Mail
-					o(247797, {	-- Lost Mail
-						maps = {
-							LEGION_DALARAN, LEGION_THE_UNDERBELLY, AEGWYNNS_GALLERY,
-						},
-						groups = {
-							i(134859),	-- Lost Mail
-						},
-					}),
-					q(41368, {	-- Lost Mail
-						description = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran. It can spawn in multiple places and has a long respawn timer. If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
-						provider = { "i", 134859 },	-- Lost Mail
-					}),
-					q(41411, {	-- Lost Mail
-						description = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House. (Players who complete the questline will get a piece of mail that can be traded or sold.)",
-						provider = { "i", 135479 },	-- Lost Mail
-					}),
-					q(46278, {	-- Return to Sender
-						description = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
-						sourceQuests = { 41368, 41411 },	-- Lost Mail
-						provider = { "n", 103976 },	-- The Postmaster
-						coord = { 33.0, 31.7, LEGION_DALARAN },
-					}),
-					q(41397, {	-- A Huge Package
-						sourceQuests = { 46278 },	-- Return to Sender
-						provider = { "n", 103976 },	-- The Postmaster
-						coord = { 38.6, 40.8, LEGION_DALARAN },
-					}),
-					q(41367, {	-- Priority Delivery
-						sourceQuests = { 41397 },	-- A Huge Package
-						provider = { "n", 103976 },	-- The Postmaster
-						coord = { 38.6, 40.8, LEGION_DALARAN },
-						maps = { 701 },	-- Icecrown Citadel (scenario version)
-						groups = {
-							i(134857),	-- Invincible's Reins (QI!)
-						},
-					}),
-					q(41394, {	-- Service with a Smile
-						sourceQuests = { 41367 },	-- Priority Delivery
-						provider = { "n", 52562 },	-- Johnny Awesome
-						coord = { 68.6, 73.1, FERALAS },
-						groups = {
-							i(135464),	-- Bulging Sack of Gold (QI!)
-							i(135463),	-- Invincible's Reins (QI!)
-						},
-					}),
-					q(41395, {	-- Due Reward
-						sourceQuests = { 41394 },	-- Service with a Smile
-						provider = { "n", 52562 },	-- Johnny Awesome
-						coord = { 68.6, 73.1, FERALAS },
-					}),
-					q(50247, {	-- The Mail Must Flow
-						description = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
-						sourceQuests = { 41395 },	-- Due Reward
-						provider = { "n", 103976 },	-- The Postmaster
-						timeline = { ADDED_7_3_5 },
-						groups = {
-							ach(12416),	-- The Total Package
-						},
-					}),
-					ach(12431, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Post Haste
-						sourceQuests = { 50247 },	-- The Mail Must Flow
-						description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-						groups = {
-							i(156721),	-- Mailemental (PET!)
-							i(156836, {	-- Bulging Package
-								i(156833),	-- Katy's Stampwhistle (TOY!)
-								i(135479),	-- Lost Mail
-							}),
-						},
-					})),
-					ach(12439, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Priority Mail
-						sourceQuests = { 50247 },	-- The Mail Must Flow
-						description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-						groups = {
-							title(372),	-- Postmaster <Name>
-						},
-					})),
-				})),
+				header(HEADERS.Item, 135479, {	-- Lost Mail
+					timeline = { ADDED_7_2_5 },
+					groups = {
+						o(247797, {	-- Lost Mail
+							maps = {
+								LEGION_DALARAN, LEGION_THE_UNDERBELLY, AEGWYNNS_GALLERY,
+							},
+							groups = {
+								i(134859),	-- Lost Mail
+							},
+						}),
+						q(41368, {	-- Lost Mail
+							description = "To get this quest, you must find a small envelope near a mailbox in Broken Isles Dalaran. It can spawn in multiple places and has a long respawn timer. If you don't want to wait, you can try to find Lost Mail for sale on the Auction House.",
+							provider = { "i", 134859 },	-- Lost Mail
+						}),
+						q(41411, {	-- Lost Mail
+							description = "If you don't want to camp out to start the questline, you can try to find Lost Mail for sale on the Auction House. (Players who complete the questline will get a piece of mail that can be traded or sold.)",
+							provider = { "i", 135479 },	-- Lost Mail
+						}),
+						q(46278, {	-- Return to Sender
+							description = "After turning in the Lost Mail to Madam Goya in the Underbelly, you'll receive a letter from the Postmaster instructing you to report for duty!  Use the Mail Tube at the coordinates provided to head down to the mail room.",
+							sourceQuests = { 41368, 41411 },	-- Lost Mail
+							provider = { "n", 103976 },	-- The Postmaster
+							coord = { 33.0, 31.7, LEGION_DALARAN },
+						}),
+						q(41397, {	-- A Huge Package
+							sourceQuests = { 46278 },	-- Return to Sender
+							provider = { "n", 103976 },	-- The Postmaster
+							coord = { 38.6, 40.8, LEGION_DALARAN },
+						}),
+						q(41367, {	-- Priority Delivery
+							sourceQuests = { 41397 },	-- A Huge Package
+							provider = { "n", 103976 },	-- The Postmaster
+							coord = { 38.6, 40.8, LEGION_DALARAN },
+							maps = { 701 },	-- Icecrown Citadel (scenario version)
+							groups = {
+								i(134857),	-- Invincible's Reins (QI!)
+							},
+						}),
+						q(41394, {	-- Service with a Smile
+							sourceQuests = { 41367 },	-- Priority Delivery
+							provider = { "n", 52562 },	-- Johnny Awesome
+							coord = { 68.6, 73.1, FERALAS },
+							groups = {
+								i(135464),	-- Bulging Sack of Gold (QI!)
+								i(135463),	-- Invincible's Reins (QI!)
+							},
+						}),
+						q(41395, {	-- Due Reward
+							sourceQuests = { 41394 },	-- Service with a Smile
+							provider = { "n", 52562 },	-- Johnny Awesome
+							coord = { 68.6, 73.1, FERALAS },
+						}),
+						q(50247, {	-- The Mail Must Flow
+							description = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+							sourceQuests = { 41395 },	-- Due Reward
+							provider = { "n", 103976 },	-- The Postmaster
+							timeline = { ADDED_7_3_5 },
+							groups = {
+								ach(12416),	-- The Total Package
+							},
+						}),
+						ach(12431, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Post Haste
+							sourceQuests = { 50247 },	-- The Mail Must Flow
+							description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+							groups = {
+								i(156721),	-- Mailemental (PET!)
+								i(156836, {	-- Bulging Package
+									i(156833),	-- Katy's Stampwhistle (TOY!)
+									i(135479),	-- Lost Mail
+								}),
+							},
+						})),
+						ach(12439, bubbleDownSelf({ timeline = { ADDED_7_3_5 } }, {	-- Priority Mail
+							sourceQuests = { 50247 },	-- The Mail Must Flow
+							description = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
+							groups = {
+								title(372),	-- Postmaster <Name>
+							},
+						})),
+					},
+				}),
 			},
 		}),
 	}),

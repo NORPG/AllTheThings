@@ -4,11 +4,12 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_FIVE, inst(2804, bubbleDownSelf({timeline = { ADDED_1_15_4 }}, {	-- The Crystal Vale
+	applyclassicphase(SOD_PHASE_FIVE, inst(2804, {	-- The Crystal Vale
 		lore = "The Crystal Vale can be found near the northwest corner of Silithus.",
 		zoneTextAreaID = 15825,	-- The Crystal Vale
 		coord = { 22.0, 10.0, SILITHUS },
 		isRaid = true,
+		timeline = { ADDED_1_15_4 },
 		lvl = 60,
 		groups = {
 			n(QUESTS, {
@@ -156,6 +157,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				groups = { i(19018) },	-- Dormant Wind Kissed Blade
 			})),
 		},
-	}))),
+	})),
 }));
 -- #endif

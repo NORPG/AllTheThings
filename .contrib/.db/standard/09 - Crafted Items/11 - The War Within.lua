@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_0_2 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 	i(ARTISANS_ACUITY),
 	i(228338),	-- Soul Sigil I
 	i(228339),	-- Soul Sigil II
@@ -2765,7 +2765,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { AD
 			FirstCraft(80861, 446997);	-- Weavercloth Embroidery Thread
 		})),
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(PROFESSIONS, {

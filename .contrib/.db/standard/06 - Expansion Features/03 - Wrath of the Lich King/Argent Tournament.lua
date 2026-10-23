@@ -95,8 +95,9 @@ local FORCE_ITEM_FACTION = function(item, faction)	-- Overwrite bad "races" Bliz
 	});
 end
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ timeline = { ADDED_3_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
 	n(ARGENT_TOURNAMENT, {
+		timeline = { ADDED_3_2_0 },
 		maps = { ICECROWN, 170 },
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -4903,7 +4904,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			}),
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_2_0 } }, {
 	m(NORTHREND, {

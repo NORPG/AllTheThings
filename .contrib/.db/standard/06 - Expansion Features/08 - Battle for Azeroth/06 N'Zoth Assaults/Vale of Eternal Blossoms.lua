@@ -2,9 +2,10 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = { ADDED_8_3_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, {	-- Vale of Eternal Blossoms
 		icon = 3196265,
+		timeline = { ADDED_8_3_0 },
 		lvl = { 50 },
 		maps = {
 			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
@@ -1102,7 +1103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ timeline = {
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_3_0 } }, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)

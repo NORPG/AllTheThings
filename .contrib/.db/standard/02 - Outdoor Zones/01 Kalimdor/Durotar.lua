@@ -30,951 +30,954 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				timeline = { ADDED_4_0_3 },
 				maps = { 464 },	-- Spitescale Cavern
 				groups = {
-					n(QUESTS, bubbleDown({ races = HORDE_ONLY, timeline = { ADDED_4_0_3 } }, {
-						q(24767, {	-- A Rough Start (Druid)
-							sourceQuest = 24765,	-- The Basics: Hitting Things (Druid)
-							qg = 38243,	-- Zen'tabra <Druid Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 54.0, ECHO_ISLES },
-								-- #else
-								{ 67.7, 84.7, DUROTAR },
-								-- #endif
-							},
-							classes = { DRUID },
-						}),
-						q(24779, {	-- A Rough Start (Hunter)
-							sourceQuest = 24777,	-- The Basics: Hitting Things (Hunter)
-							qg = 38247,	-- Ortezza <Hunter Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 56.4, 50.1, ECHO_ISLES },
-								-- #else
-								{ 67.1, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { HUNTER },
-						}),
-						q(24753, {	-- A Rough Start (Mage)
-							sourceQuest = 24751,	-- The Basics: Hitting Things (Mage)
-							qg = 38246,	-- Soratha
-							coords = {
-								-- #if AFTER MOP
-								{ 59.7, 52.1, ECHO_ISLES },
-								-- #else
-								{ 68.2, 84.0, DUROTAR },
-								-- #endif
-							},
-							classes = { MAGE },
-						}),
-						q(31160, {	-- A Rough Start (Monk)
-							sourceQuest = 31158,	-- The Basics: Hitting Things (Monk)
-							qg = 63310,	-- Zabrax
-							coord = { 52.6, 51.8, ECHO_ISLES },
-							timeline = { ADDED_5_0_4 },
-							classes = { MONK },
-						}),
-						q(24785, {	-- A Rough Start (Priest)
-							sourceQuest = 24783,	-- The Basics: Hitting Things (Priest)
-							qg = 38245,	-- Tunari <Priest Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 49.3, ECHO_ISLES },
-								-- #else
-								{ 67.7, 83.0, DUROTAR },
-								-- #endif
-							},
-							classes = { PRIEST },
-						}),
-						q(24773, {	-- A Rough Start (Rogue)
-							sourceQuest = 24770,	-- The Basics: Hitting Things (Rogue)
-							qg = 38244,	-- Legati <Rogue Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.9, 49.9, ECHO_ISLES },
-								-- #else
-								{ 65.9, 83.2, DUROTAR },
-								-- #endif
-							},
-							classes = { ROGUE },
-						}),
-						q(24761, {	-- A Rough Start (Shaman)
-							sourceQuest = 24759,	-- The Basics: Hitting Things (Shaman)
-							qg = 38242,	-- Nekali <Shaman Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.1, 52.8, ECHO_ISLES },
-								-- #else
-								{ 64.9, 84.2, DUROTAR },
-								-- #endif
-							},
-							classes = { SHAMAN },
-						}),
-						q(26275, {	-- A Rough Start (Warlock)
-							sourceQuest = 26273,	-- The Basics: Hitting Things (Warlock)
-							qg = 42618,	-- Voldreka <Warlock Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.0, 50.0, ECHO_ISLES },
-								-- #else
-								{ 64.9, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { WARLOCK },
-						}),
-						q(24641, {	-- A Rough Start (Warrior)
-							sourceQuest = 24639,	-- The Basics: Hitting Things (Warrior)
-							qg = 38037,	-- Nortet <Warrior Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.5, 53.7, ECHO_ISLES },
-								-- #else
-								{ 65.8, 84.5, DUROTAR },
-								-- #endif
-							},
-							classes = { WARRIOR },
-						}),
-						q(24622, {	-- A Troll's Truest Companion
-							sourceQuest = 25064,	-- Moraya
-							qg = 38005,	-- Moraya
-							coords = {
-								-- #if AFTER MOP
-								{ 56.8, 63.7, ECHO_ISLES },
-								-- #else
-								{ 67.2, 88.0, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(24814, {	-- An Ancient Enemy
-							sourceQuests = {
-								24812,	-- No More Mercy
-								24813,	-- Territorial Fetish
-							},
-							qg = 38442,	-- Morakki
-							coords = {
-								-- #if AFTER MOP
-								{ 58.9, 23.1, ECHO_ISLES },
-								-- #else
-								{ 67.8, 74.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-							groups = {
-								i(52879),	-- Sea Witch's Bracers
-								i(52884),	-- Footsteps of the Fallen Friend
-								i(131828, {	-- Spitescale Stompers
-									timeline = { ADDED_7_0_3 },
-								}),
-								i(52887),	-- Zuni's Family Heirloom
-								i(60260),	-- Sea Witch's Bag
-							},
-						}),
-						q(25035, {	-- Breaking the Line
-							sourceQuest = 24626,	-- Young and Vicious
-							qg = 38440,	-- Tortunga
-							coords = {
-								-- #if AFTER MOP
-								{ 58.9, 66.8, ECHO_ISLES },
-								-- #else
-								{ 69.0, 88.6, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(24625, {	-- Consort of the Sea Witch
-							sourceQuest = 24622,	-- A Troll's Truest Companion
-							qg = 37987,	-- Tegashi
-							coords = {
-								-- #if AFTER MOP
-								{ 45.7, 85.0, ECHO_ISLES },
-								-- #else
-								{ 63.4, 95.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-							groups = {
-								i(131826, {	-- Bloodtalon Chain Vest
-									timeline = { ADDED_7_0_3 },
-								}),
-								i(52880),	-- Fierce Heart Vest
-								i(52885),	-- Bloodtalon Keeper Leggings
-								i(52869),	-- Boots of Changing Fortune
-							},
-						}),
-						q(25037, {	-- Crab Fishin'
-							sourceQuest = 25064,	-- Moraya
-							qg = 39007,	-- Tora'jin
-							coords = {
-								-- #if AFTER MOP
-								{ 60.5, 62.9, ECHO_ISLES },
-								-- #else
-								{ 68.4, 87.6, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(24624, {	-- Mercy for the Lost
-							sourceQuest = 24622,	-- A Troll's Truest Companion
-							qg = 37987,	-- Tegashi
-							coords = {
-								-- #if AFTER MOP
-								{ 45.7, 85.0, ECHO_ISLES },
-								-- #else
-								{ 63.4, 95.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(25064, {	-- Moraya
-							sourceQuests = {	-- More Than Expected (All Classes)
-								24781,
-								-- #if AFTER MOP
-								31163,	-- Monk
-								-- #endif
-								24787,
-								24775,
-								24763,
-								24755,
-								26277,
-								24643,
-								24769
-							},
-							qg = 38966,	-- Vol'jin
-							coords = {
-								-- #if AFTER MOP
-								{ 61.6, 65.9, ECHO_ISLES },
-								-- #else
-								{ 68.8, 88.6, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(24769, {	-- More Than Expected (Druid)
-							sourceQuest = 24768,	-- Proving Pit (Druid)
-							qg = 38243,	-- Zen'tabra <Druid Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 54.0, ECHO_ISLES },
-								-- #else
-								{ 67.7, 84.7, DUROTAR },
-								-- #endif
-							},
-							classes = { DRUID },
-						}),
-						q(24781, {	-- More Than Expected (Hunter)
-							sourceQuest = 24780,	-- Proving Pit (Hunter)
-							qg = 38247,	-- Ortezza <Hunter Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 56.4, 50.1, ECHO_ISLES },
-								-- #else
-								{ 67.1, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { HUNTER },
-						}),
-						q(24755, {	-- More Than Expected (Mage)
-							sourceQuest = 24754,	-- Proving Pit (Mage)
-							qg = 38246,	-- Soratha
-							coords = {
-								-- #if AFTER MOP
-								{ 59.7, 52.1, ECHO_ISLES },
-								-- #else
-								{ 68.2, 84.0, DUROTAR },
-								-- #endif
-							},
-							classes = { MAGE },
-						}),
-						q(31163, {	-- More Than Expected (Monk)
-							sourceQuest = 31161,	-- Proving Pit (Monk)
-							qg = 63310,	-- Zabrax
-							coord = { 52.6, 51.8, ECHO_ISLES },
-							timeline = { ADDED_5_0_4 },
-							classes = { MONK },
-						}),
-						q(24787, {	-- More Than Expected (Priest)
-							sourceQuest = 24786,	-- Proving Pit (Priest)
-							qg = 38245,	-- Tunari <Priest Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 49.3, ECHO_ISLES },
-								-- #else
-								{ 67.7, 83.0, DUROTAR },
-								-- #endif
-							},
-							classes = { PRIEST },
-						}),
-						q(24775, {	-- More Than Expected (Rogue)
-							sourceQuest = 24774,	-- Proving Pit (Rogue)
-							qg = 38244,	-- Legati <Rogue Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.9, 49.9, ECHO_ISLES },
-								-- #else
-								{ 65.9, 83.2, DUROTAR },
-								-- #endif
-							},
-							classes = { ROGUE },
-						}),
-						q(24763, {	-- More Than Expected (Shaman)
-							sourceQuest = 24762,	-- Proving Pit (Shaman)
-							qg = 38242,	-- Nekali <Shaman Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.1, 52.8, ECHO_ISLES },
-								-- #else
-								{ 64.9, 84.2, DUROTAR },
-								-- #endif
-							},
-							classes = { SHAMAN },
-						}),
-						q(26277, {	-- More Than Expected (Warlock)
-							sourceQuest = 26276,	-- Proving Pit (Warlock)
-							qg = 42618,	-- Voldreka <Warlock Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.0, 50.0, ECHO_ISLES },
-								-- #else
-								{ 64.9, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { WARLOCK },
-						}),
-						q(24643, {	-- More Than Expected (Warrior)
-							sourceQuest = 24642,	-- Proving Pit (Warrior)
-							qg = 38037,	-- Nortet <Warrior Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.5, 53.7, ECHO_ISLES },
-								-- #else
-								{ 65.8, 84.5, DUROTAR },
-								-- #endif
-							},
-							classes = { WARRIOR },
-						}),
-						q(24812, {	-- No More Mercy
-							sourceQuest = 25035,	-- Breaking the Line
-							qg = 38442,	-- Morakki
-							coords = {
-								-- #if AFTER MOP
-								{ 58.9, 23.1, ECHO_ISLES },
-								-- #else
-								{ 67.8, 74.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-							groups = {
-								i(52878),	-- Merciless Hands
-								i(52886),	-- Spitescale Breastplate
-								i(52883),	-- Cold Focus Leggings
-								i(131827, {	-- Spitescale Pants
-									timeline = { ADDED_7_0_3 },
-								}),
-							},
-						}),
-						q(24768, {	-- Proving Pit (Druid)
-							sourceQuest = 24767,	-- A Rough Start (Druid)
-							qg = 38243,	-- Zen'tabra <Druid Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 54.0, ECHO_ISLES },
-								-- #else
-								{ 67.7, 84.7, DUROTAR },
-								-- #endif
-							},
-							classes = { DRUID },
-							groups = {
-								i(52870),	-- Darkspear Druidic Staff
-							},
-						}),
-						q(24780, {	-- Proving Pit (Hunter)
-							sourceQuest = 24779,	-- A Rough Start (Hunter)
-							qg = 38247,	-- Ortezza <Hunter Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 56.4, 50.1, ECHO_ISLES },
-								-- #else
-								{ 67.1, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { HUNTER },
-							groups = {
-								i(52872),	-- Darkspear Hunter's Bow
-							},
-						}),
-						q(24754, {	-- Proving Pit (Mage)
-							sourceQuest = 24753,	-- A Rough Start (Mage)
-							qg = 38246,	-- Soratha
-							coords = {
-								-- #if AFTER MOP
-								{ 59.7, 52.1, ECHO_ISLES },
-								-- #else
-								{ 68.2, 84.0, DUROTAR },
-								-- #endif
-							},
-							classes = { MAGE },
-							groups = {
-								i(52873),	-- Darkspear Magic Weaver Tunic
-							},
-						}),
-						q(31161, {	-- Proving Pit (Monk)
-							sourceQuest = 31160,	-- A Rough Start (Monk)
-							qg = 63310,	-- Zabrax
-							coord = { 52.6, 51.8, ECHO_ISLES },
-							timeline = { ADDED_5_0_4 },
-							classes = { MONK },
-							groups = {
-								i(85574),	-- Darkspear Monk's Staff
-							},
-						}),
-						q(24786, {	-- Proving Pit (Priest)
-							sourceQuest = 24785,	-- A Rough Start (Priest)
-							qg = 38245,	-- Tunari <Priest Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 49.3, ECHO_ISLES },
-								-- #else
-								{ 67.7, 83.0, DUROTAR },
-								-- #endif
-							},
-							classes = { PRIEST },
-							groups = {
-								i(52874),	-- Darkspear Soothsayer Robes
-							},
-						}),
-						q(24774, {	-- Proving Pit (Rogue)
-							sourceQuest = 24773,	-- A Rough Start (Rogue)
-							qg = 38244,	-- Legati <Rogue Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.9, 49.9, ECHO_ISLES },
-								-- #else
-								{ 65.9, 83.2, DUROTAR },
-								-- #endif
-							},
-							classes = { ROGUE },
-							groups = {
-								i(52889),	-- Blooded Darkspear Dagger
-							},
-						}),
-						q(24762, {	-- Proving Pit (Shaman)
-							sourceQuest = 24761,	-- A Rough Start (Shaman)
-							qg = 38242,	-- Nekali <Shaman Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.1, 52.8, ECHO_ISLES },
-								-- #else
-								{ 64.9, 84.2, DUROTAR },
-								-- #endif
-							},
-							classes = { SHAMAN },
-							groups = {
-								i(52875),	-- Darkspear Shamanic Staff
-							},
-						}),
-						q(26276, {	-- Proving Pit (Warlock)
-							sourceQuest = 26275,	-- A Rough Start (Warlock)
-							qg = 42618,	-- Voldreka <Warlock Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.0, 50.0, ECHO_ISLES },
-								-- #else
-								{ 64.9, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { WARLOCK },
-							groups = {
-								i(52873),	-- Darkspear Magic Weaver Tunic
-							},
-						}),
-						q(24642, {	-- Proving Pit (Warrior)
-							sourceQuest = 24641,	-- A Rough Start (Warrior)
-							qg = 38037,	-- Nortet <Warrior Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.5, 53.7, ECHO_ISLES },
-								-- #else
-								{ 65.8, 84.5, DUROTAR },
-								-- #endif
-							},
-							classes = { WARRIOR },
-							groups = {
-								i(52876),	-- Darkspear Battle Axe
-							},
-						}),
-						q(24623, {	-- Saving the Young
-							sourceQuest = 24622,	-- A Troll's Truest Companion
-							qg = 37969,	-- Kijara
-							coords = {
-								-- #if AFTER MOP
-								{ 44.6, 85.6, ECHO_ISLES },
-								-- #else
-								{ 63.4, 95.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(25073, {	-- Sen'jin Village
-							sourceQuest = 24814,	-- An Ancient Enemy
-							qg = 38966,	-- Vol'jin
-							coords = {
-								-- #if AFTER MOP
-								{ 61.6, 65.9, ECHO_ISLES },
-								-- #else
-								{ 68.8, 88.6, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-							isBreadcrumb = true,
-						}),
-						q(24813, {	-- Territorial Fetish
-							sourceQuest = 25035,	-- Breaking the Line
-							qg = 38442,	-- Morakki
-							coords = {
-								-- #if AFTER MOP
-								{ 58.9, 23.1, ECHO_ISLES },
-								-- #else
-								{ 67.8, 74.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-						}),
-						q(24766, {	-- The Arts of a Druid
-							sourceQuest = 24768,	-- Proving Pit (Druid)
-							qg = 38243,	-- Zen'tabra <Druid Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 54.0, ECHO_ISLES },
-								-- #else
-								{ 67.7, 84.7, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { DRUID },
-						}),
-						q(24778, {	-- The Arts of a Hunter
-							sourceQuest = 24780,	-- Proving Pit (Hunter)
-							qg = 38247,	-- Ortezza <Hunter Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 56.4, 50.1, ECHO_ISLES },
-								-- #else
-								{ 67.1, 83.3, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { HUNTER },
-						}),
-						q(24752, {	-- The Arts of a Mage
-							qg = 38246,	-- Soratha <Mage Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 59.6, 52.0, ECHO_ISLES },
-								-- #else
-								{ 68.2, 84.0, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { MAGE },
-						}),
-						q(31162, {	-- The Arts of a Monk
-							timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
-							classes = { MONK },
-						}),
-						q(24784, {	-- The Arts of a Priest [Cata] / Learnin' tha Word [MoP+]
-							sourceQuest = 24786,	-- Proving Pit (Priest)
-							qg = 38245,	-- Tunari <Priest Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 49.3, ECHO_ISLES },
-								-- #else
-								{ 67.7, 83.0, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { PRIEST },
-						}),
-						q(24772, {	-- The Arts of a Rogue
-							sourceQuest = 24774,	-- Proving Pit (Rogue)
-							qg = 38244,	-- Legati <Rogue Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.9, 49.9, ECHO_ISLES },
-								-- #else
-								{ 65.9, 83.2, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { ROGUE },
-						}),
-						q(24760, {	-- The Arts of a Shaman
-							sourceQuest = 24762,	-- Proving Pit (Shaman)
-							qg = 38242,	-- Nekali <Shaman Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.1, 52.8, ECHO_ISLES },
-								-- #else
-								{ 64.9, 84.2, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { SHAMAN },
-						}),
-						q(26274, {	-- The Arts of a Warlock
-							sourceQuest = 26276,	-- Proving Pit (Warlock)
-							qg = 42618,	-- Voldreka <Warlock Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.0, 50.0, ECHO_ISLES },
-								-- #else
-								{ 64.9, 83.3, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { WARLOCK },
-						}),
-						q(24640, {	-- The Arts of a Warrior
-							sourceQuest = 24642,	-- Proving Pit (Warrior)
-							qg = 38037,	-- Nortet <Warrior Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.5, 53.7, ECHO_ISLES },
-								-- #else
-								{ 65.8, 84.5, DUROTAR },
-								-- #endif
-							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-							classes = { WARRIOR },
-						}),
-						q(24765, {	-- The Basics: Hitting Things (Druid)
-							sourceQuest = 24764,	-- The Rise of the Darkspear (Druid)
-							qg = 38243,	-- Zen'tabra <Druid Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 54.0, ECHO_ISLES },
-								-- #else
-								{ 67.7, 84.7, DUROTAR },
-								-- #endif
-							},
-							classes = { DRUID },
-						}),
-						q(24777, {	-- The Basics: Hitting Things (Hunter)
-							sourceQuest = 24776,	-- The Rise of the Darkspear (Hunter)
-							qg = 38247,	-- Ortezza <Hunter Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 56.4, 50.1, ECHO_ISLES },
-								-- #else
-								{ 67.1, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { HUNTER },
-						}),
-						q(24751, {	-- The Basics: Hitting Things (Mage)
-							sourceQuest = 24750,	-- The Rise of the Darkspear (Mage)
-							qg = 38246,	-- Soratha
-							coords = {
-								-- #if AFTER MOP
-								{ 59.7, 52.1, ECHO_ISLES },
-								-- #else
-								{ 68.2, 84.0, DUROTAR },
-								-- #endif
-							},
-							classes = { MAGE },
-						}),
-						q(31158, {	-- The Basics: Hitting Things (Monk)
-							sourceQuest = 31159,	-- The Rise of the Darkspear (Monk)
-							qg = 63310,	-- Zabrax
-							coord = { 52.6, 51.8, ECHO_ISLES },
-							timeline = { ADDED_5_0_4 },
-							classes = { MONK },
-						}),
-						q(24783, {	-- The Basics: Hitting Things (Priest)
-							sourceQuest = 24782,	-- The Rise of the Darkspear (Priest)
-							qg = 38245,	-- Tunari <Priest Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 58.0, 49.3, ECHO_ISLES },
-								-- #else
-								{ 67.7, 83.0, DUROTAR },
-								-- #endif
-							},
-							classes = { PRIEST },
-						}),
-						q(24771, {	-- The Basics: Hitting Things (Rogue)
-							sourceQuest = 24770,	-- The Rise of the Darkspear (Rogue)
-							qg = 38244,	-- Legati <Rogue Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.9, 49.9, ECHO_ISLES },
-								-- #else
-								{ 65.9, 83.2, DUROTAR },
-								-- #endif
-							},
-							classes = { ROGUE },
-						}),
-						q(24759, {	-- The Basics: Hitting Things (Shaman)
-							sourceQuest = 24758,	-- The Rise of the Darkspear (Shaman)
-							qg = 38242,	-- Nekali <Shaman Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.1, 52.8, ECHO_ISLES },
-								-- #else
-								{ 64.9, 84.2, DUROTAR },
-								-- #endif
-							},
-							classes = { SHAMAN },
-						}),
-						q(26273, {	-- The Basics: Hitting Things (Warlock)
-							sourceQuest = 26272,	-- The Rise of the Darkspear (Warlock)
-							qg = 42618,	-- Voldreka <Warlock Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 50.0, 50.0, ECHO_ISLES },
-								-- #else
-								{ 64.9, 83.3, DUROTAR },
-								-- #endif
-							},
-							classes = { WARLOCK },
-						}),
-						q(24639, {	-- The Basics: Hitting Things (Warrior)
-							sourceQuest = 24607,	-- The Rise of the Darkspear (Warrior)
-							qg = 38037,	-- Nortet <Warrior Trainer>
-							coords = {
-								-- #if AFTER MOP
-								{ 52.5, 53.7, ECHO_ISLES },
-								-- #else
-								{ 65.8, 84.5, DUROTAR },
-								-- #endif
-							},
-							classes = { WARRIOR },
-						}),
-						q(24764, {	-- The Rise of the Darkspear (Druid)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { DRUID },
-						}),
-						q(24776, {	-- The Rise of the Darkspear (Hunter)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { HUNTER },
-						}),
-						q(24750, {	-- The Rise of the Darkspear (Mage)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { MAGE },
-						}),
-						q(31159, {	-- The Rise of the Darkspear (Monk)
-							qg = 37951,	-- Jin'thala
-							coord = { 42.8, 53.4, ECHO_ISLES },
-							timeline = { ADDED_5_0_4 },
-							classes = { MONK },
-						}),
-						q(24782, {	-- The Rise of the Darkspear (Priest)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { PRIEST },
-						}),
-						q(24770, {	-- The Rise of the Darkspear (Rogue)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { ROGUE },
-						}),
-						q(24758, {	-- The Rise of the Darkspear (Shaman)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { SHAMAN },
-						}),
-						q(26272, {	-- The Rise of the Darkspear (Warlock)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { WARLOCK },
-						}),
-						q(24607, {	-- The Rise of the Darkspear (Warrior)
-							qg = 37951,	-- Jin'thala
-							coords = {
-								-- #if AFTER MOP
-								{ 42.8, 53.4, ECHO_ISLES },
-								-- #else
-								{ 62.4, 84.4, DUROTAR },
-								-- #endif
-							},
-							classes = { WARRIOR },
-						}),
-						q(24626, {	-- Young and Vicious
-							sourceQuests = {
-								24625,	-- Consort of the Sea Witch
-								24624,	-- Mercy for the Lost
-								24623,	-- Saving the Young
-							},
-							qg = 37969,	-- Kijara
-							coords = {
-								-- #if AFTER MOP
-								{ 45.1, 85.5, ECHO_ISLES },
-								-- #else
-								{ 63.4, 95.2, DUROTAR },
-								-- #endif
-							},
-							classes = exclude({
-								PALADIN,
-								DEATHKNIGHT,
-								-- #if AFTER LEGION
-								DEMONHUNTER,
-								-- #endif
-								-- #if AFTER DF
-								EVOKER
-								-- #endif
-							}, ALL_CLASSES),
-							groups = {
-								i(52882),	-- Swift Plate Armbands
-								i(52877),	-- Moraya's Belt
-								i(131825, {	-- Wrangler's Chain Cinch
-									timeline = { ADDED_7_0_3 },
-								}),
-							},
-						}),
+					n(QUESTS, bubbleDown({ races = HORDE_ONLY,  }, {
+						timeline = { ADDED_4_0_3 },
+						groups = {
+							q(24767, {	-- A Rough Start (Druid)
+								sourceQuest = 24765,	-- The Basics: Hitting Things (Druid)
+								qg = 38243,	-- Zen'tabra <Druid Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 54.0, ECHO_ISLES },
+									-- #else
+									{ 67.7, 84.7, DUROTAR },
+									-- #endif
+								},
+								classes = { DRUID },
+							}),
+							q(24779, {	-- A Rough Start (Hunter)
+								sourceQuest = 24777,	-- The Basics: Hitting Things (Hunter)
+								qg = 38247,	-- Ortezza <Hunter Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 56.4, 50.1, ECHO_ISLES },
+									-- #else
+									{ 67.1, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { HUNTER },
+							}),
+							q(24753, {	-- A Rough Start (Mage)
+								sourceQuest = 24751,	-- The Basics: Hitting Things (Mage)
+								qg = 38246,	-- Soratha
+								coords = {
+									-- #if AFTER MOP
+									{ 59.7, 52.1, ECHO_ISLES },
+									-- #else
+									{ 68.2, 84.0, DUROTAR },
+									-- #endif
+								},
+								classes = { MAGE },
+							}),
+							q(31160, {	-- A Rough Start (Monk)
+								sourceQuest = 31158,	-- The Basics: Hitting Things (Monk)
+								qg = 63310,	-- Zabrax
+								coord = { 52.6, 51.8, ECHO_ISLES },
+								timeline = { ADDED_5_0_4 },
+								classes = { MONK },
+							}),
+							q(24785, {	-- A Rough Start (Priest)
+								sourceQuest = 24783,	-- The Basics: Hitting Things (Priest)
+								qg = 38245,	-- Tunari <Priest Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 49.3, ECHO_ISLES },
+									-- #else
+									{ 67.7, 83.0, DUROTAR },
+									-- #endif
+								},
+								classes = { PRIEST },
+							}),
+							q(24773, {	-- A Rough Start (Rogue)
+								sourceQuest = 24770,	-- The Basics: Hitting Things (Rogue)
+								qg = 38244,	-- Legati <Rogue Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.9, 49.9, ECHO_ISLES },
+									-- #else
+									{ 65.9, 83.2, DUROTAR },
+									-- #endif
+								},
+								classes = { ROGUE },
+							}),
+							q(24761, {	-- A Rough Start (Shaman)
+								sourceQuest = 24759,	-- The Basics: Hitting Things (Shaman)
+								qg = 38242,	-- Nekali <Shaman Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.1, 52.8, ECHO_ISLES },
+									-- #else
+									{ 64.9, 84.2, DUROTAR },
+									-- #endif
+								},
+								classes = { SHAMAN },
+							}),
+							q(26275, {	-- A Rough Start (Warlock)
+								sourceQuest = 26273,	-- The Basics: Hitting Things (Warlock)
+								qg = 42618,	-- Voldreka <Warlock Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.0, 50.0, ECHO_ISLES },
+									-- #else
+									{ 64.9, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { WARLOCK },
+							}),
+							q(24641, {	-- A Rough Start (Warrior)
+								sourceQuest = 24639,	-- The Basics: Hitting Things (Warrior)
+								qg = 38037,	-- Nortet <Warrior Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.5, 53.7, ECHO_ISLES },
+									-- #else
+									{ 65.8, 84.5, DUROTAR },
+									-- #endif
+								},
+								classes = { WARRIOR },
+							}),
+							q(24622, {	-- A Troll's Truest Companion
+								sourceQuest = 25064,	-- Moraya
+								qg = 38005,	-- Moraya
+								coords = {
+									-- #if AFTER MOP
+									{ 56.8, 63.7, ECHO_ISLES },
+									-- #else
+									{ 67.2, 88.0, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(24814, {	-- An Ancient Enemy
+								sourceQuests = {
+									24812,	-- No More Mercy
+									24813,	-- Territorial Fetish
+								},
+								qg = 38442,	-- Morakki
+								coords = {
+									-- #if AFTER MOP
+									{ 58.9, 23.1, ECHO_ISLES },
+									-- #else
+									{ 67.8, 74.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+								groups = {
+									i(52879),	-- Sea Witch's Bracers
+									i(52884),	-- Footsteps of the Fallen Friend
+									i(131828, {	-- Spitescale Stompers
+										timeline = { ADDED_7_0_3 },
+									}),
+									i(52887),	-- Zuni's Family Heirloom
+									i(60260),	-- Sea Witch's Bag
+								},
+							}),
+							q(25035, {	-- Breaking the Line
+								sourceQuest = 24626,	-- Young and Vicious
+								qg = 38440,	-- Tortunga
+								coords = {
+									-- #if AFTER MOP
+									{ 58.9, 66.8, ECHO_ISLES },
+									-- #else
+									{ 69.0, 88.6, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(24625, {	-- Consort of the Sea Witch
+								sourceQuest = 24622,	-- A Troll's Truest Companion
+								qg = 37987,	-- Tegashi
+								coords = {
+									-- #if AFTER MOP
+									{ 45.7, 85.0, ECHO_ISLES },
+									-- #else
+									{ 63.4, 95.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+								groups = {
+									i(131826, {	-- Bloodtalon Chain Vest
+										timeline = { ADDED_7_0_3 },
+									}),
+									i(52880),	-- Fierce Heart Vest
+									i(52885),	-- Bloodtalon Keeper Leggings
+									i(52869),	-- Boots of Changing Fortune
+								},
+							}),
+							q(25037, {	-- Crab Fishin'
+								sourceQuest = 25064,	-- Moraya
+								qg = 39007,	-- Tora'jin
+								coords = {
+									-- #if AFTER MOP
+									{ 60.5, 62.9, ECHO_ISLES },
+									-- #else
+									{ 68.4, 87.6, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(24624, {	-- Mercy for the Lost
+								sourceQuest = 24622,	-- A Troll's Truest Companion
+								qg = 37987,	-- Tegashi
+								coords = {
+									-- #if AFTER MOP
+									{ 45.7, 85.0, ECHO_ISLES },
+									-- #else
+									{ 63.4, 95.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(25064, {	-- Moraya
+								sourceQuests = {	-- More Than Expected (All Classes)
+									24781,
+									-- #if AFTER MOP
+									31163,	-- Monk
+									-- #endif
+									24787,
+									24775,
+									24763,
+									24755,
+									26277,
+									24643,
+									24769
+								},
+								qg = 38966,	-- Vol'jin
+								coords = {
+									-- #if AFTER MOP
+									{ 61.6, 65.9, ECHO_ISLES },
+									-- #else
+									{ 68.8, 88.6, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(24769, {	-- More Than Expected (Druid)
+								sourceQuest = 24768,	-- Proving Pit (Druid)
+								qg = 38243,	-- Zen'tabra <Druid Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 54.0, ECHO_ISLES },
+									-- #else
+									{ 67.7, 84.7, DUROTAR },
+									-- #endif
+								},
+								classes = { DRUID },
+							}),
+							q(24781, {	-- More Than Expected (Hunter)
+								sourceQuest = 24780,	-- Proving Pit (Hunter)
+								qg = 38247,	-- Ortezza <Hunter Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 56.4, 50.1, ECHO_ISLES },
+									-- #else
+									{ 67.1, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { HUNTER },
+							}),
+							q(24755, {	-- More Than Expected (Mage)
+								sourceQuest = 24754,	-- Proving Pit (Mage)
+								qg = 38246,	-- Soratha
+								coords = {
+									-- #if AFTER MOP
+									{ 59.7, 52.1, ECHO_ISLES },
+									-- #else
+									{ 68.2, 84.0, DUROTAR },
+									-- #endif
+								},
+								classes = { MAGE },
+							}),
+							q(31163, {	-- More Than Expected (Monk)
+								sourceQuest = 31161,	-- Proving Pit (Monk)
+								qg = 63310,	-- Zabrax
+								coord = { 52.6, 51.8, ECHO_ISLES },
+								timeline = { ADDED_5_0_4 },
+								classes = { MONK },
+							}),
+							q(24787, {	-- More Than Expected (Priest)
+								sourceQuest = 24786,	-- Proving Pit (Priest)
+								qg = 38245,	-- Tunari <Priest Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 49.3, ECHO_ISLES },
+									-- #else
+									{ 67.7, 83.0, DUROTAR },
+									-- #endif
+								},
+								classes = { PRIEST },
+							}),
+							q(24775, {	-- More Than Expected (Rogue)
+								sourceQuest = 24774,	-- Proving Pit (Rogue)
+								qg = 38244,	-- Legati <Rogue Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.9, 49.9, ECHO_ISLES },
+									-- #else
+									{ 65.9, 83.2, DUROTAR },
+									-- #endif
+								},
+								classes = { ROGUE },
+							}),
+							q(24763, {	-- More Than Expected (Shaman)
+								sourceQuest = 24762,	-- Proving Pit (Shaman)
+								qg = 38242,	-- Nekali <Shaman Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.1, 52.8, ECHO_ISLES },
+									-- #else
+									{ 64.9, 84.2, DUROTAR },
+									-- #endif
+								},
+								classes = { SHAMAN },
+							}),
+							q(26277, {	-- More Than Expected (Warlock)
+								sourceQuest = 26276,	-- Proving Pit (Warlock)
+								qg = 42618,	-- Voldreka <Warlock Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.0, 50.0, ECHO_ISLES },
+									-- #else
+									{ 64.9, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { WARLOCK },
+							}),
+							q(24643, {	-- More Than Expected (Warrior)
+								sourceQuest = 24642,	-- Proving Pit (Warrior)
+								qg = 38037,	-- Nortet <Warrior Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.5, 53.7, ECHO_ISLES },
+									-- #else
+									{ 65.8, 84.5, DUROTAR },
+									-- #endif
+								},
+								classes = { WARRIOR },
+							}),
+							q(24812, {	-- No More Mercy
+								sourceQuest = 25035,	-- Breaking the Line
+								qg = 38442,	-- Morakki
+								coords = {
+									-- #if AFTER MOP
+									{ 58.9, 23.1, ECHO_ISLES },
+									-- #else
+									{ 67.8, 74.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+								groups = {
+									i(52878),	-- Merciless Hands
+									i(52886),	-- Spitescale Breastplate
+									i(52883),	-- Cold Focus Leggings
+									i(131827, {	-- Spitescale Pants
+										timeline = { ADDED_7_0_3 },
+									}),
+								},
+							}),
+							q(24768, {	-- Proving Pit (Druid)
+								sourceQuest = 24767,	-- A Rough Start (Druid)
+								qg = 38243,	-- Zen'tabra <Druid Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 54.0, ECHO_ISLES },
+									-- #else
+									{ 67.7, 84.7, DUROTAR },
+									-- #endif
+								},
+								classes = { DRUID },
+								groups = {
+									i(52870),	-- Darkspear Druidic Staff
+								},
+							}),
+							q(24780, {	-- Proving Pit (Hunter)
+								sourceQuest = 24779,	-- A Rough Start (Hunter)
+								qg = 38247,	-- Ortezza <Hunter Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 56.4, 50.1, ECHO_ISLES },
+									-- #else
+									{ 67.1, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { HUNTER },
+								groups = {
+									i(52872),	-- Darkspear Hunter's Bow
+								},
+							}),
+							q(24754, {	-- Proving Pit (Mage)
+								sourceQuest = 24753,	-- A Rough Start (Mage)
+								qg = 38246,	-- Soratha
+								coords = {
+									-- #if AFTER MOP
+									{ 59.7, 52.1, ECHO_ISLES },
+									-- #else
+									{ 68.2, 84.0, DUROTAR },
+									-- #endif
+								},
+								classes = { MAGE },
+								groups = {
+									i(52873),	-- Darkspear Magic Weaver Tunic
+								},
+							}),
+							q(31161, {	-- Proving Pit (Monk)
+								sourceQuest = 31160,	-- A Rough Start (Monk)
+								qg = 63310,	-- Zabrax
+								coord = { 52.6, 51.8, ECHO_ISLES },
+								timeline = { ADDED_5_0_4 },
+								classes = { MONK },
+								groups = {
+									i(85574),	-- Darkspear Monk's Staff
+								},
+							}),
+							q(24786, {	-- Proving Pit (Priest)
+								sourceQuest = 24785,	-- A Rough Start (Priest)
+								qg = 38245,	-- Tunari <Priest Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 49.3, ECHO_ISLES },
+									-- #else
+									{ 67.7, 83.0, DUROTAR },
+									-- #endif
+								},
+								classes = { PRIEST },
+								groups = {
+									i(52874),	-- Darkspear Soothsayer Robes
+								},
+							}),
+							q(24774, {	-- Proving Pit (Rogue)
+								sourceQuest = 24773,	-- A Rough Start (Rogue)
+								qg = 38244,	-- Legati <Rogue Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.9, 49.9, ECHO_ISLES },
+									-- #else
+									{ 65.9, 83.2, DUROTAR },
+									-- #endif
+								},
+								classes = { ROGUE },
+								groups = {
+									i(52889),	-- Blooded Darkspear Dagger
+								},
+							}),
+							q(24762, {	-- Proving Pit (Shaman)
+								sourceQuest = 24761,	-- A Rough Start (Shaman)
+								qg = 38242,	-- Nekali <Shaman Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.1, 52.8, ECHO_ISLES },
+									-- #else
+									{ 64.9, 84.2, DUROTAR },
+									-- #endif
+								},
+								classes = { SHAMAN },
+								groups = {
+									i(52875),	-- Darkspear Shamanic Staff
+								},
+							}),
+							q(26276, {	-- Proving Pit (Warlock)
+								sourceQuest = 26275,	-- A Rough Start (Warlock)
+								qg = 42618,	-- Voldreka <Warlock Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.0, 50.0, ECHO_ISLES },
+									-- #else
+									{ 64.9, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { WARLOCK },
+								groups = {
+									i(52873),	-- Darkspear Magic Weaver Tunic
+								},
+							}),
+							q(24642, {	-- Proving Pit (Warrior)
+								sourceQuest = 24641,	-- A Rough Start (Warrior)
+								qg = 38037,	-- Nortet <Warrior Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.5, 53.7, ECHO_ISLES },
+									-- #else
+									{ 65.8, 84.5, DUROTAR },
+									-- #endif
+								},
+								classes = { WARRIOR },
+								groups = {
+									i(52876),	-- Darkspear Battle Axe
+								},
+							}),
+							q(24623, {	-- Saving the Young
+								sourceQuest = 24622,	-- A Troll's Truest Companion
+								qg = 37969,	-- Kijara
+								coords = {
+									-- #if AFTER MOP
+									{ 44.6, 85.6, ECHO_ISLES },
+									-- #else
+									{ 63.4, 95.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(25073, {	-- Sen'jin Village
+								sourceQuest = 24814,	-- An Ancient Enemy
+								qg = 38966,	-- Vol'jin
+								coords = {
+									-- #if AFTER MOP
+									{ 61.6, 65.9, ECHO_ISLES },
+									-- #else
+									{ 68.8, 88.6, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+								isBreadcrumb = true,
+							}),
+							q(24813, {	-- Territorial Fetish
+								sourceQuest = 25035,	-- Breaking the Line
+								qg = 38442,	-- Morakki
+								coords = {
+									-- #if AFTER MOP
+									{ 58.9, 23.1, ECHO_ISLES },
+									-- #else
+									{ 67.8, 74.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+							}),
+							q(24766, {	-- The Arts of a Druid
+								sourceQuest = 24768,	-- Proving Pit (Druid)
+								qg = 38243,	-- Zen'tabra <Druid Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 54.0, ECHO_ISLES },
+									-- #else
+									{ 67.7, 84.7, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { DRUID },
+							}),
+							q(24778, {	-- The Arts of a Hunter
+								sourceQuest = 24780,	-- Proving Pit (Hunter)
+								qg = 38247,	-- Ortezza <Hunter Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 56.4, 50.1, ECHO_ISLES },
+									-- #else
+									{ 67.1, 83.3, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { HUNTER },
+							}),
+							q(24752, {	-- The Arts of a Mage
+								qg = 38246,	-- Soratha <Mage Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 59.6, 52.0, ECHO_ISLES },
+									-- #else
+									{ 68.2, 84.0, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { MAGE },
+							}),
+							q(31162, {	-- The Arts of a Monk
+								timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+								classes = { MONK },
+							}),
+							q(24784, {	-- The Arts of a Priest [Cata] / Learnin' tha Word [MoP+]
+								sourceQuest = 24786,	-- Proving Pit (Priest)
+								qg = 38245,	-- Tunari <Priest Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 49.3, ECHO_ISLES },
+									-- #else
+									{ 67.7, 83.0, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { PRIEST },
+							}),
+							q(24772, {	-- The Arts of a Rogue
+								sourceQuest = 24774,	-- Proving Pit (Rogue)
+								qg = 38244,	-- Legati <Rogue Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.9, 49.9, ECHO_ISLES },
+									-- #else
+									{ 65.9, 83.2, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { ROGUE },
+							}),
+							q(24760, {	-- The Arts of a Shaman
+								sourceQuest = 24762,	-- Proving Pit (Shaman)
+								qg = 38242,	-- Nekali <Shaman Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.1, 52.8, ECHO_ISLES },
+									-- #else
+									{ 64.9, 84.2, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { SHAMAN },
+							}),
+							q(26274, {	-- The Arts of a Warlock
+								sourceQuest = 26276,	-- Proving Pit (Warlock)
+								qg = 42618,	-- Voldreka <Warlock Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.0, 50.0, ECHO_ISLES },
+									-- #else
+									{ 64.9, 83.3, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { WARLOCK },
+							}),
+							q(24640, {	-- The Arts of a Warrior
+								sourceQuest = 24642,	-- Proving Pit (Warrior)
+								qg = 38037,	-- Nortet <Warrior Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.5, 53.7, ECHO_ISLES },
+									-- #else
+									{ 65.8, 84.5, DUROTAR },
+									-- #endif
+								},
+								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								classes = { WARRIOR },
+							}),
+							q(24765, {	-- The Basics: Hitting Things (Druid)
+								sourceQuest = 24764,	-- The Rise of the Darkspear (Druid)
+								qg = 38243,	-- Zen'tabra <Druid Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 54.0, ECHO_ISLES },
+									-- #else
+									{ 67.7, 84.7, DUROTAR },
+									-- #endif
+								},
+								classes = { DRUID },
+							}),
+							q(24777, {	-- The Basics: Hitting Things (Hunter)
+								sourceQuest = 24776,	-- The Rise of the Darkspear (Hunter)
+								qg = 38247,	-- Ortezza <Hunter Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 56.4, 50.1, ECHO_ISLES },
+									-- #else
+									{ 67.1, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { HUNTER },
+							}),
+							q(24751, {	-- The Basics: Hitting Things (Mage)
+								sourceQuest = 24750,	-- The Rise of the Darkspear (Mage)
+								qg = 38246,	-- Soratha
+								coords = {
+									-- #if AFTER MOP
+									{ 59.7, 52.1, ECHO_ISLES },
+									-- #else
+									{ 68.2, 84.0, DUROTAR },
+									-- #endif
+								},
+								classes = { MAGE },
+							}),
+							q(31158, {	-- The Basics: Hitting Things (Monk)
+								sourceQuest = 31159,	-- The Rise of the Darkspear (Monk)
+								qg = 63310,	-- Zabrax
+								coord = { 52.6, 51.8, ECHO_ISLES },
+								timeline = { ADDED_5_0_4 },
+								classes = { MONK },
+							}),
+							q(24783, {	-- The Basics: Hitting Things (Priest)
+								sourceQuest = 24782,	-- The Rise of the Darkspear (Priest)
+								qg = 38245,	-- Tunari <Priest Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 58.0, 49.3, ECHO_ISLES },
+									-- #else
+									{ 67.7, 83.0, DUROTAR },
+									-- #endif
+								},
+								classes = { PRIEST },
+							}),
+							q(24771, {	-- The Basics: Hitting Things (Rogue)
+								sourceQuest = 24770,	-- The Rise of the Darkspear (Rogue)
+								qg = 38244,	-- Legati <Rogue Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.9, 49.9, ECHO_ISLES },
+									-- #else
+									{ 65.9, 83.2, DUROTAR },
+									-- #endif
+								},
+								classes = { ROGUE },
+							}),
+							q(24759, {	-- The Basics: Hitting Things (Shaman)
+								sourceQuest = 24758,	-- The Rise of the Darkspear (Shaman)
+								qg = 38242,	-- Nekali <Shaman Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.1, 52.8, ECHO_ISLES },
+									-- #else
+									{ 64.9, 84.2, DUROTAR },
+									-- #endif
+								},
+								classes = { SHAMAN },
+							}),
+							q(26273, {	-- The Basics: Hitting Things (Warlock)
+								sourceQuest = 26272,	-- The Rise of the Darkspear (Warlock)
+								qg = 42618,	-- Voldreka <Warlock Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 50.0, 50.0, ECHO_ISLES },
+									-- #else
+									{ 64.9, 83.3, DUROTAR },
+									-- #endif
+								},
+								classes = { WARLOCK },
+							}),
+							q(24639, {	-- The Basics: Hitting Things (Warrior)
+								sourceQuest = 24607,	-- The Rise of the Darkspear (Warrior)
+								qg = 38037,	-- Nortet <Warrior Trainer>
+								coords = {
+									-- #if AFTER MOP
+									{ 52.5, 53.7, ECHO_ISLES },
+									-- #else
+									{ 65.8, 84.5, DUROTAR },
+									-- #endif
+								},
+								classes = { WARRIOR },
+							}),
+							q(24764, {	-- The Rise of the Darkspear (Druid)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { DRUID },
+							}),
+							q(24776, {	-- The Rise of the Darkspear (Hunter)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { HUNTER },
+							}),
+							q(24750, {	-- The Rise of the Darkspear (Mage)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { MAGE },
+							}),
+							q(31159, {	-- The Rise of the Darkspear (Monk)
+								qg = 37951,	-- Jin'thala
+								coord = { 42.8, 53.4, ECHO_ISLES },
+								timeline = { ADDED_5_0_4 },
+								classes = { MONK },
+							}),
+							q(24782, {	-- The Rise of the Darkspear (Priest)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { PRIEST },
+							}),
+							q(24770, {	-- The Rise of the Darkspear (Rogue)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { ROGUE },
+							}),
+							q(24758, {	-- The Rise of the Darkspear (Shaman)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { SHAMAN },
+							}),
+							q(26272, {	-- The Rise of the Darkspear (Warlock)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { WARLOCK },
+							}),
+							q(24607, {	-- The Rise of the Darkspear (Warrior)
+								qg = 37951,	-- Jin'thala
+								coords = {
+									-- #if AFTER MOP
+									{ 42.8, 53.4, ECHO_ISLES },
+									-- #else
+									{ 62.4, 84.4, DUROTAR },
+									-- #endif
+								},
+								classes = { WARRIOR },
+							}),
+							q(24626, {	-- Young and Vicious
+								sourceQuests = {
+									24625,	-- Consort of the Sea Witch
+									24624,	-- Mercy for the Lost
+									24623,	-- Saving the Young
+								},
+								qg = 37969,	-- Kijara
+								coords = {
+									-- #if AFTER MOP
+									{ 45.1, 85.5, ECHO_ISLES },
+									-- #else
+									{ 63.4, 95.2, DUROTAR },
+									-- #endif
+								},
+								classes = exclude({
+									PALADIN,
+									DEATHKNIGHT,
+									-- #if AFTER LEGION
+									DEMONHUNTER,
+									-- #endif
+									-- #if AFTER DF
+									EVOKER
+									-- #endif
+								}, ALL_CLASSES),
+								groups = {
+									i(52882),	-- Swift Plate Armbands
+									i(52877),	-- Moraya's Belt
+									i(131825, {	-- Wrangler's Chain Cinch
+										timeline = { ADDED_7_0_3 },
+									}),
+								},
+							}),
+						},
 					})),
 				},
 			}),

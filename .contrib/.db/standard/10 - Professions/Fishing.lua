@@ -196,7 +196,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 			maps = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
 		}),
 	})),
-	expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+	expansion(EXPANSION.CATA, {
 		n(ACHIEVEMENTS, {
 			ach(4917),	-- Cataclysmic Fisherman
 			ach(5851, {	-- Gone Fishin' (A)
@@ -240,7 +240,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 				i(67388),	-- String of Alligator Teeth
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.MOP, {
 		n(ACHIEVEMENTS, {
 			ach(6839),	-- Zen Master Fisherman
@@ -592,7 +592,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 			}),
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, {
 			ach(12753, {	-- Kul Tiran Fisherman [A]
 				races = ALLIANCE_ONLY,
@@ -754,7 +754,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 				}),
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.SL, {
 		n(ACHIEVEMENTS, {
 			ach(14333),	-- Shadowlands Fisherman
@@ -865,7 +865,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 			i(225768),	-- Crusty Darkmoon Card
 		}),
 	}),
-	expansion(EXPANSION.MID, bubbleDownSelf({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+	expansion(EXPANSION.MID, {
 		n(ACHIEVEMENTS, {
 			ach(42797, {	-- Fishing at Midnight
 				cost = {
@@ -894,5 +894,5 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ requireSkill = FISHING },
 				maps = { MAP.MIDNIGHT.QUELTHALAS },
 			}),
 		}),
-	})),
+	}),
 })));

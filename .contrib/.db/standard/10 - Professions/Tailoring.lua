@@ -624,7 +624,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			},
 		}),
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18774),	-- Synchronous Thread (automated)
 			ach(18896, {	-- United as Three
@@ -850,8 +850,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				}),
 			},
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18902, {	-- Uncertified Nurse
 				crit(61745, {
@@ -1215,7 +1215,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				},
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.TAILORING, 1 }}

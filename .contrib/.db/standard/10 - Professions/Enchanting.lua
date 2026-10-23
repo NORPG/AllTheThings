@@ -343,7 +343,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 			},
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18775),	-- Iwen's Enchanting Rod
 		})),
@@ -450,8 +450,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18764),	-- Break Upon Your Body
 			ach(18763, {
@@ -823,7 +823,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				crs = { 181536 },	-- Destabilized Elemental
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENCHANTING, 1 }}

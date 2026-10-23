@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.SL, {
 	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
 		ig(182173),	-- Hyena Soul
 	})),
@@ -110,45 +110,46 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_
 				spell(354467),	-- Path of the Undefeated
 			}),
 		})),
-		header(HEADERS.Achievement, SEASON_SHROUDED, bubbleDownSelf({
+		header(HEADERS.Achievement, SEASON_SHROUDED, {
 			timeline = { ADDED_9_2_5, REMOVED_10_0_0 },
-		}, {
-			ach(15688),	-- Shadowlands Keystone Explorer: Season Four
-			ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
-				title(465),	-- <Name> the Shrouded
-			}),
-			ach(15690, {	-- Shadowlands Keystone Master: Season Four
-				i(192557),	-- Restoration Deathwalker (MOUNT!)
-			}),
-			ach(15756, {	-- Shrouded Hero: Shadowlands Season 4
-				title(466),	-- <Name> the Shrouded Hero
-			}),
-			-- Keystone Hero
-			ach(15695, {	-- Keystone Hero: Grimrail Depot
-				spell(159900),	-- Path of the Dark Rail
-			}),
-			ach(15694, {	-- Keystone Hero: Iron Docks
-				spell(159896),	-- Path of the Iron Prow
-			}),
-			ach(15693, {	-- Keystone Hero: Operation: Mechagon
-				spell(373274),	-- Path of the Scrappy Prince
-				crit(53624),	-- Operation: Mechagon - Junkyard
-				crit(53625),	-- Operation: Mechagon - Workshop
-			}),
-			ach(15692, {	-- Keystone Hero: Return to Karazhan
-				timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
-				maps = { 809 },	-- Return to Karazhan
-				groups = {
-					spell(373262),	-- Path of the Fallen Guardian
-					crit(53622),	-- Return to Karazhan: Lower
-					crit(53623),	-- Return to Karazhan: Upper
-				},
-			}),
-			ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
-				spell(367416),	-- Path of the Streetwise Merchant
-				crit(53264),	-- Tazavesh: Streets of Wonder
-				crit(53266),	-- Tazavesh: So'leah's Gambit
-			}),
-		})),
+			groups = {
+				ach(15688),	-- Shadowlands Keystone Explorer: Season Four
+				ach(15689, {	-- Shadowlands Keystone Conqueror: Season Four
+					title(465),	-- <Name> the Shrouded
+				}),
+				ach(15690, {	-- Shadowlands Keystone Master: Season Four
+					i(192557),	-- Restoration Deathwalker (MOUNT!)
+				}),
+				ach(15756, {	-- Shrouded Hero: Shadowlands Season 4
+					title(466),	-- <Name> the Shrouded Hero
+				}),
+				-- Keystone Hero
+				ach(15695, {	-- Keystone Hero: Grimrail Depot
+					spell(159900),	-- Path of the Dark Rail
+				}),
+				ach(15694, {	-- Keystone Hero: Iron Docks
+					spell(159896),	-- Path of the Iron Prow
+				}),
+				ach(15693, {	-- Keystone Hero: Operation: Mechagon
+					spell(373274),	-- Path of the Scrappy Prince
+					crit(53624),	-- Operation: Mechagon - Junkyard
+					crit(53625),	-- Operation: Mechagon - Workshop
+				}),
+				ach(15692, {	-- Keystone Hero: Return to Karazhan
+					timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_LEGION_REMIX, REMOVED_LEGION_REMIX_END },
+					maps = { 809 },	-- Return to Karazhan
+					groups = {
+						spell(373262),	-- Path of the Fallen Guardian
+						crit(53622),	-- Return to Karazhan: Lower
+						crit(53623),	-- Return to Karazhan: Upper
+					},
+				}),
+				ach(15500, {	-- Keystone Hero: Tazavesh, the Veiled Market
+					spell(367416),	-- Path of the Streetwise Merchant
+					crit(53264),	-- Tazavesh: Streets of Wonder
+					crit(53266),	-- Tazavesh: So'leah's Gambit
+				}),
+			},
+		}),
 	}),
-})));
+}));

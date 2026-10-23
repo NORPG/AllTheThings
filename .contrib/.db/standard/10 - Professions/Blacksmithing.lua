@@ -714,7 +714,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			},
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18771, {	-- Khaz'gorian Smithing Hammer
 				provider = { "i", 152839 },	-- Khaz'gorian Smithing Hammer
@@ -848,8 +848,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.BLACKSMITHING, 1 }}
 		},{
@@ -1215,7 +1215,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.BLACKSMITHING, 1 }}

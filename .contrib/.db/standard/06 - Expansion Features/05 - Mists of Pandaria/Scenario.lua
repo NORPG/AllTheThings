@@ -17,7 +17,7 @@ local REMOVED_WITH_LANDFALL_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemove
 local REMOVED_WITH_ESCALATION_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(MOP_PHASE_ESCALATION, 50300);
 -- #endif
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, n(SCENARIOS, {
 		-- #if AFTER 6.0.1
 		crs = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
@@ -1319,7 +1319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 			})),
 		},
 	})),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_3_0 } }, {
 	n(SCENARIOS, {

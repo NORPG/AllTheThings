@@ -10,7 +10,7 @@ local PROVING_GROUNDS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4 } }, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 	n(PROVING_GROUNDS, {
 		maps = { 480 },	-- Proving Grounds
 		groups = {
@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 			}),
 		},
 	}),
-}))));
+})));
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 	n(PROVING_GROUNDS, {

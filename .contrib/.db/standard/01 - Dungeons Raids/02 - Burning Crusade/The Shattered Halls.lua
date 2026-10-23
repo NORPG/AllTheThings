@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(259, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- The Shattered Halls
+	inst(259, {	-- The Shattered Halls
 		lore = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
 		-- #if BEFORE MOP
 		zoneTextAreaID = 3714,	-- The Shattered Halls
@@ -13,6 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #if BEFORE CATA
 		cost = { { "i", 28395, 1 } },	-- Shattered Halls Key
 		-- #endif
+		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(65, 65, 20),
 		groups = {
 			n(QUESTS, {
@@ -609,7 +610,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {

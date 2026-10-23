@@ -958,15 +958,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						cost = { { "i", 208485, 1 } },	-- The Scarlet Key
 					}),
 				}),
-				n(TREASURES, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {
-					o(421151, {	-- Carved Eye
-						coord = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
-						timeline = { ADDED_10_2_5 },
-						groups = {
-							i(212984),	-- Grimoire of the Zealous Observer (CI!)
-						},
-					}),
-				})),
+				n(TREASURES, {
+					timeline = { ADDED_10_2_5 },
+					groups = {
+						o(421151, {	-- Carved Eye
+							coord = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
+							timeline = { ADDED_10_2_5 },
+							groups = {
+								i(212984),	-- Grimoire of the Zealous Observer (CI!)
+							},
+						}),
+					},
+				}),
 				n(ZONE_DROPS, {
 					icon = 133154,
 					crs = {

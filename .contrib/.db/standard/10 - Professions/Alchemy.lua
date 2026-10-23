@@ -107,7 +107,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 		}))),
 		-- #endif
 	}),
-	expansion(EXPANSION.TBC, bubbleDownSelf({ timeline = { ADDED_2_0_5 } }, {
+	expansion(EXPANSION.TBC, {
 		q(10906, {	-- Master of Elixirs (1/2)
 			altQuests = {
 				10905,	-- Master of Potions (1/2)
@@ -248,7 +248,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				}),
 			},
 		}),
-	})),
+	}),
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_3_2_0 } }, {
 		applyclassicphase(WRATH_PHASE_THREE, q(14151, {	-- Cardinal Ruby
 			qg = 28703,	-- Linzy Blackbolt <Alchemy Trainer>
@@ -558,7 +558,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 			},
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18770, {	-- Silas' Sphere of Transmutation
 				provider = { "i", 156631 },	-- Silas' Sphere of Transmutation
@@ -749,8 +749,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				},
 			}),
 		}),
-	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	}),
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18805, {	-- Draconic Phial Cabinet
 				crit(61271),	-- Phial of Tepid Versatility
@@ -1079,7 +1079,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				crs = { 191712 },	-- Hissing Springsoul
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(19704),	-- Overflowing Algari Flasks (automated)

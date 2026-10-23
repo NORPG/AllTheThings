@@ -483,7 +483,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 			}),
 		}),
 	}),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+	expansion(EXPANSION.BFA, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18776, {	-- The Ub3r-Spanner
 				provider = { "i", 164740 },	-- Ub3r-Spanner
@@ -633,13 +633,13 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				},
 			}),
 		}),
-	})),
+	}),
 	expansion(EXPANSION.SL, {
 		ach(18907, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs (automated)
 			iensemble(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
 		})),
 	}),
-	expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+	expansion(EXPANSION.DF, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18856),	-- Just an Ordinary Gas Cloud
 			ach(18857, {	-- That's No Ordinary Gas Cloud!
@@ -1051,7 +1051,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				crs = { 193244 },	-- Titan Defense Matrix
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.TWW, {
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.TWW.ENGINEERING, 1 }}

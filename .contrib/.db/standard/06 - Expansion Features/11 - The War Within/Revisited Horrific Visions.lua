@@ -24,8 +24,9 @@ local DISPLACED_CORRUPTED_MEMENTOS = 3149;	-- Displaced Corrupted Mementos
 local RE_HORRIFIC_ORGRIMMAR = 2403;	-- Vision of Orgrimmar
 local RE_HORRIFIC_STORMWIND = 2404;	-- Vision of Stormwind
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ timeline = { ADDED_11_1_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(HORRIFIC_VISIONS_REVISITED, {
+		timeline = { ADDED_11_1_5 },
 		maps = {
 			-- RE_HORRIFIC_ORGRIMMAR,
 			-- RE_HORRIFIC_STORMWIND,
@@ -1017,7 +1018,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ timeline = {
 			}),
 		},
 	}),
-})));
+}));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
 	n(HORRIFIC_VISIONS_REVISITED, {

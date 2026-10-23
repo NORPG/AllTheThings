@@ -3,13 +3,14 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(262, bubbleDownSelf({ timeline = { ADDED_2_0_3 } }, {	-- The Underbog
+	inst(262, {	-- The Underbog
 		lore = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
 		-- #if BEFORE MOP
 		zoneTextAreaID = 3716,	-- The Underbog
 		-- #endif
 		mapID = COILFANG_RESERVOIR_UNDERBOG,
 		coord = { 54.24, 34.45, ZANGARMARSH },	-- The Underbog, Zangarmarsh
+		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(60, 60, 10),
 		groups = {
 			n(QUESTS, {
@@ -379,7 +380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	})),
+	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {

@@ -9,7 +9,7 @@ local ignoreTimeline = function(item)	-- Items applied with this were never actu
 	return item;
 end
 
-local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 } }, {
+local SCHOLOMANCE_LEGACY_DATA = {
 	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			sourceQuest = 76249,	-- Memory of Scholomance
@@ -32,919 +32,931 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 		}),
 	})),
 	n(QUESTS, {
-		-- #if BEFORE 5.0.4
-		q(28756, {	-- Aberrations of Bone
-			sourceQuest = 27464,	-- Argent Call: The Trial of the Crypt
-			qg = 49856,	-- Lord Raymond George
-			coord = { 76.2, 50.9, EASTERN_PLAGUELANDS },
-			maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-			timeline = { ADDED_4_0_3 },
-			repeatable = true,
-			lvl = lvlsquish(40, 40, 15),
-			groups = {
-				objective(1, {	-- 0/1 Rattlegore slain
-					provider = { "n", 11622 },	-- Rattlegore
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			-- #if BEFORE 5.0.4
+			q(28756, {	-- Aberrations of Bone
+				sourceQuest = 27464,	-- Argent Call: The Trial of the Crypt
+				qg = 49856,	-- Lord Raymond George
+				coord = { 76.2, 50.9, EASTERN_PLAGUELANDS },
+				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+				timeline = { ADDED_4_0_3 },
+				repeatable = true,
+				lvl = lvlsquish(40, 40, 15),
+				groups = {
+					objective(1, {	-- 0/1 Rattlegore slain
+						provider = { "n", 11622 },	-- Rattlegore
+					}),
+				},
+			}),
+			-- #endif
+			applyclassicphase(PHASE_FOUR, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
+				sourceQuest = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+				altQuests = { 8258 },	-- The Darkreaver Menace (New)
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+				coord = { 38.7, 35.9, ORGRIMMAR },
+				timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
+				classes = { SHAMAN },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					i(20134),	-- Skyfury Helm
+				},
+			})),
+			q(7666,	{ -- Again Into the Great Ossuary [A]
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				sourceQuest = 7647,	-- Judgment and Redemption
+				coords = {
+					-- #if AFTER WRATH
+					{ 48.6, 50.0, STORMWIND_CITY },
+					-- #else
+					{ 37.6, 32.6, STORMWIND_CITY },
+					-- #endif
+				},
+				timeline = { REMOVED_4_0_3 },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = 60,
+				groups = {
+					i(18746),	-- Divination Scryer
+				},
+			}),
+			q(7669, {	-- Again Into the Great Ossuary [H]
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+				sourceQuest = 8258,	-- The Darkreaver Menace
+				coord = { 38.7, 35.9, ORGRIMMAR },
+				timeline = { REMOVED_4_0_3 },
+				classes = { SHAMAN },
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = 60,
+				groups = {
+					i(18746),	-- Divination Scryer
+				},
+			}),
+			q(27140, {	-- Alexi's Gambit
+				qg = 45110,	-- Alexi Barov <House of Barov>
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 Vectus slain
+						provider = { "n", 10432 },	-- Vectus
+					}),
+					objective(2, {	-- 0/1 Marduk Blackpool slain
+						provider = { "n", 10433 },	-- Marduk Blackpool
+					}),
+				},
+			}),
+			{	-- Araj's Scarab
+				allianceQuestData = q(5803, {	-- Araj's Scarab [A]
+					sourceQuest = 5801,	-- Fire Plume Forged [Alliance]
+					qg = 11056,	-- Alchemist Arbington
+					coord = { 42.7, 83.8, WESTERN_PLAGUELANDS },
 				}),
+				hordeQuestData = q(5804, {	-- Araj's Scarab [H]
+					sourceQuest = 5802,	-- Fire Plume Forged [Horde]
+					qg = 11057,	-- Apothecary Dithers
+					coord = { 83.3, 69.2, TIRISFAL_GLADES },
+					maps = { WESTERN_PLAGUELANDS },
+				}),
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Araj's Scarab
+						providers = {
+							{ "i",  14610 },	-- Araj's Scarab
+							{ "o", 177241 },	-- Araj's Phylactery
+						},
+						coord = { 45.6, 69.2, WESTERN_PLAGUELANDS },
+						cr = 1852,	-- Araj the Summoner
+					}),
+				},
 			},
-		}),
-		-- #endif
-		applyclassicphase(PHASE_FOUR, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
-			sourceQuest = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
-			altQuests = { 8258 },	-- The Darkreaver Menace (New)
-			qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			coord = { 38.7, 35.9, ORGRIMMAR },
-			timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
-			classes = { SHAMAN },
-			races = HORDE_ONLY,
-			lvl = 55,
-			groups = {
-				i(20134),	-- Skyfury Helm
+			{	-- Barov Family Fortune
+				allianceQuestData = q(5343, {	-- Barov Family Fortune [A]
+					qg = 11023,	-- Weldon Barov <House of Barov>
+					coord = { 43.5, 83.7, WESTERN_PLAGUELANDS },
+				}),
+				hordeQuestData = q(5341, {	-- Barov Family Fortune [H]
+					qg = 11022,	-- Alexi Barov <House of Barov>
+					coord = { 83.06, 71.6, TIRISFAL_GLADES },
+					maps = { WESTERN_PLAGUELANDS },
+				}),
+				timeline = { REMOVED_4_0_3 },
+				lvl = 52,
+				groups = {
+					objective(1, {	-- 0/1 The Deed to Brill
+						providers = {
+							{ "i",  13471 },	-- The Deed to Brill
+							{ "o", 176484 },	-- The Deed to Brill
+						},
+						description = "Can be found along the wall in Ras Frostwhisper's room.",
+					}),
+					objective(2, {	-- 0/1 The Deed to Caer Darrow
+						providers = {
+							{ "i",  13448 },	-- The Deed to Caer Darrow
+							{ "o", 176485 },	-- The Deed to Caer Darrow
+						},
+						description = "Can be found right next to Alexi Barov.",
+					}),
+					objective(3, {	-- 0/1 The Deed to Southshore
+						providers = {
+							{ "i",  13450 },	-- The Deed to Southshore
+							{ "o", 176486 },	-- The Deed to Southshore
+						},
+						description = "Can be found in the very back of the first room hidden behind some bookshelves.",
+					}),
+					objective(4, {	-- 0/1 The Deed to Tarren Mill
+						providers = {
+							{ "i",  13451 },	-- The Deed to Tarren Mill
+							{ "o", 176487 },	-- The Deed to Tarren Mill
+						},
+						description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+					}),
+				},
 			},
-		})),
-		q(7666,	{ -- Again Into the Great Ossuary [A]
-			qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-			sourceQuest = 7647,	-- Judgment and Redemption
-			coords = {
-				-- #if AFTER WRATH
-				{ 48.6, 50.0, STORMWIND_CITY },
-				-- #else
-				{ 37.6, 32.6, STORMWIND_CITY },
+			q(27143, {	-- Barov Family Fortune [CATA]
+				qg = 45109,	-- Weldon Barov <House of Barov>
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 The Deed to Brill
+						providers = {
+							{ "i",  13471 },	-- The Deed to Brill
+							{ "o", 176484 },	-- The Deed to Brill
+						},
+						description = "Can be found along the wall in Ras Frostwhisper's room.",
+					}),
+					objective(2, {	-- 0/1 The Deed to Caer Darrow
+						providers = {
+							{ "i",  13448 },	-- The Deed to Caer Darrow
+							{ "o", 176485 },	-- The Deed to Caer Darrow
+						},
+						description = "Can be found right next to Alexi Barov.",
+					}),
+					objective(3, {	-- 0/1 The Deed to Southshore
+						providers = {
+							{ "i",  13450 },	-- The Deed to Southshore
+							{ "o", 176486 },	-- The Deed to Southshore
+						},
+						description = "Can be found in the very back of the first room hidden behind some bookshelves.",
+					}),
+					objective(4, {	-- 0/1 The Deed to Tarren Mill
+						providers = {
+							{ "i",  13451 },	-- The Deed to Tarren Mill
+							{ "o", 176487 },	-- The Deed to Tarren Mill
+						},
+						description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
+					}),
+					i(65923),	-- Barov Servant Caller
+				},
+			}),
+			q(5531, {	-- Betina Bigglezink
+				sourceQuest = 5522,	-- Leonid Barthalomew
+				qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+				coord = { 81.73, 57.83, EASTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+				qi = 13761,	-- Frozen Eggs (QI!)
+			}),
+			q(76257, {	-- Darkmaster's Scourgestone
+				qs = 206373,	-- Darkmaster's Scourgestone (QS!)
+				timeline = { ADDED_10_1_5 },
+				groups = { i(12844) },	-- Argent Dawn Valor Token
+			}),
+			q(4771, {	-- Dawn's Gambit
+				-- #if BEFORE 4.0.3
+				description = "After completing this quest, you can return to Betina to have her give you another Gambit.",
 				-- #endif
-			},
-			timeline = { REMOVED_4_0_3 },
-			classes = { PALADIN },
-			races = ALLIANCE_ONLY,
-			repeatable = true,
-			lvl = 60,
-			groups = {
-				i(18746),	-- Divination Scryer
-			},
-		}),
-		q(7669, {	-- Again Into the Great Ossuary [H]
-			qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			sourceQuest = 8258,	-- The Darkreaver Menace
-			coord = { 38.7, 35.9, ORGRIMMAR },
-			timeline = { REMOVED_4_0_3 },
-			classes = { SHAMAN },
-			races = HORDE_ONLY,
-			repeatable = true,
-			lvl = 60,
-			groups = {
-				i(18746),	-- Divination Scryer
-			},
-		}),
-		q(27140, {	-- Alexi's Gambit
-			qg = 45110,	-- Alexi Barov <House of Barov>
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 Vectus slain
-					provider = { "n", 10432 },	-- Vectus
-				}),
-				objective(2, {	-- 0/1 Marduk Blackpool slain
-					provider = { "n", 10433 },	-- Marduk Blackpool
-				}),
-			},
-		}),
-		{	-- Araj's Scarab
-			allianceQuestData = q(5803, {	-- Araj's Scarab [A]
-				sourceQuest = 5801,	-- Fire Plume Forged [Alliance]
-				qg = 11056,	-- Alchemist Arbington
-				coord = { 42.7, 83.8, WESTERN_PLAGUELANDS },
+				sourceQuest = 5531,	-- Betina Bigglezink
+				qg = 11035,	-- Betina Bigglezink <The Argent Dawn>
+				coord = { 81.5, 59.7, EASTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+				groups = {
+					objective(1, {	-- 0/1 Vectus slain
+						provider = { "n", 10432 },	-- Vectus
+					}),
+					objective(2, {	-- 0/1 Place Dawn's Gambit
+						provider = { "i", 12368 },	-- Dawn's Gambit
+						description = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
+					}),
+					i(15854),	-- Dancing Sliver
+					i(15853),	-- Windreaper
+				},
 			}),
-			hordeQuestData = q(5804, {	-- Araj's Scarab [H]
-				sourceQuest = 5802,	-- Fire Plume Forged [Horde]
-				qg = 11057,	-- Apothecary Dithers
-				coord = { 83.3, 69.2, TIRISFAL_GLADES },
-				maps = { WESTERN_PLAGUELANDS },
+			q(5382, {	-- Doctor Theolen Krastinov, the Butcher
+				description = "Talk to Eva until she offers the quest.",
+				qg = 11216,	-- Eva Sarkhoff
+				coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
+						provider = { "n", 11261 },	-- Doctor Theolen Krastinov <The Butcher>
+					}),
+					objective(2, {	-- 0/1 Remains of Eva Sarkhoff Burned
+						provider = { "o", 176544 },	-- Remains of Eva Sarkhoff
+					}),
+					objective(3, {	-- 0/1 Remains of Lucien Sarkhoff Burned
+						provider = { "o", 176545 },	-- Remains of Lucien Sarkhoff
+					}),
+				},
 			}),
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Araj's Scarab
-					providers = {
-						{ "i",  14610 },	-- Araj's Scarab
-						{ "o", 177241 },	-- Araj's Phylactery
-					},
-					coord = { 45.6, 69.2, WESTERN_PLAGUELANDS },
-					cr = 1852,	-- Araj the Summoner
+			q(27146, {	-- Doctor Theolen Krastinov, the Butcher [CATA]
+				qg = 45107,	-- Eva Sarkhoff
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
+						provider = { "n", 11261 },	-- Doctor Theolen Krastinov <The Butcher>
+					}),
+					objective(2, {	-- 0/1 Remains of Eva Sarkhoff Burned
+						provider = { "o", 176544 },	-- Remains of Eva Sarkhoff
+					}),
+					objective(3, {	-- 0/1 Remains of Lucien Sarkhoff Burned
+						provider = { "o", 176545 },	-- Remains of Lucien Sarkhoff
+					}),
+				},
+			}),
+			{	-- Fire Plume Forged
+				allianceQuestData = q(5801, {	-- Fire Plume Forged [A]
+					sourceQuest = 5538,	-- Mold Rhymes With... [Alliance]
 				}),
+				hordeQuestData = q(5802, {	-- Fire Plume Forged [H]
+					sourceQuest = 5514,	-- Mold Rhymes With... [Horde]
+				}),
+				qg = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
+				coord = { 51.5, 28.8, TANARIS },
+				timeline = { REMOVED_4_0_3 },
+				maps = { UNGORO_CRATER },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Unfinished Skeleton Key
+						provider = { "i", 14645 },	-- Unfinished Skeleton Key
+						coord = { 49.6, 47.6, UNGORO_CRATER },
+						cost = {
+							{ "i", 14644, 1 },	-- Skeleton Key Mold
+							{ "i", 12359, 2 },	-- Thorium Bar
+						},
+					}),
+				},
 			},
-		},
-		{	-- Barov Family Fortune
-			allianceQuestData = q(5343, {	-- Barov Family Fortune [A]
+			q(5582, {	-- Healthy Dragon Scale
+				sourceQuest = 5529,	-- Plagued Hatchlings
+				provider = { "i", 13920 },	-- Healthy Dragon Scale
+				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+				timeline = { REMOVED_4_0_3 },
+				repeatable = true,
+				lvl = 55,
+			}),
+			q(5384, {	-- Kirtonos the Herald
+				qg = 11216,	-- Eva Sarkhoff
+				sourceQuest = 5515,	-- Krastinov's Bag of Horrors
+				coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Kirtonos the Herald slain
+						provider = { "n", 10506 },	-- Kirtonos the Herald
+					}),
+					i(15806),	-- Mirah's Song
+					i(15805),	-- Penelope's Rose
+					ig(13544),	-- Spectral Essence
+				},
+			}),
+			q(27147, {	-- Kirtonos the Herald [CATA]
+				qg = 45107,	-- Eva Sarkhoff
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 Kirtonos the Herald slain
+						provider = { "n", 10506 },	-- Kirtonos the Herald
+					}),
+				},
+			}),
+			q(5515, {	-- Krastinov's Bag of Horrors
+				sourceQuest = 5382,	-- Doctor Theolen Krastinov, the Butcher
+				qg = 11216,	-- Eva Sarkhoff
+				coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Krastinov's Bag of Horrors
+						provider = { "i", 13725 },	-- Krastinov's Bag of Horrors
+					}),
+				},
+			}),
+			q(7647, {	-- Judgment and Redemption
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				qi = 18804,	-- Lord Grayson's Satchel
+				sourceQuest = 7646,	-- The Divination Scryer
+				coords = {
+					-- #if AFTER WRATH
+					{ 48.6, 50.0, STORMWIND_CITY },
+					-- #else
+					{ 37.6, 32.6, STORMWIND_CITY },
+					-- #endif
+				},
+				timeline = { REMOVED_4_0_3 },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Charger's Redeemed Soul
+						provider = { "i", 18799 },	-- Charger's Redeemed Soul
+						cost = { { "i", 18749, 1 } },	-- Charger's Lost Soul
+						crs = {
+							14516,	-- Death Knight Darkreaver
+							14568,	-- Darkreaver's Fallen Charger
+						},
+					}),
+					objective(2, {	-- 0/1 Blessed Arcanite Barding
+						provider = { "i", 18792 },	-- Blessed Arcanite Barding
+					}),
+					mount(23214, {	-- Charger (MOUNT!)
+						classes = { PALADIN },
+						races = ALLIANCE_ONLY,
+						lvl = 60,
+					}),
+				},
+			}),
+			q(5522, {	-- Leonid Barthalomew
+				sourceQuest = 4735,	-- Egg Collection
+				qg = 10267,	-- Tinkee Steamboil
+				qi = 13761,	-- Frozen Eggs
+				coord = { 65.2, 23.8, BURNING_STEPPES },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+			}),
+			q(7667, {	-- Material Assistance
+				qg = 13417,	-- Sagorne Creststrider
+				coord = { 39.2, 48.4, ORGRIMMAR },
+				timeline = { ADDED_1_4_0, REMOVED_4_0_3 },
+				cost = {
+					{ "i", 12800, 1 },	-- Azerothian Diamond
+					{ "i", 18335, 1 },	-- Pristine Black Diamond
+				},
+				classes = { SHAMAN },
+				races = HORDE_ONLY,
+				lvl = 58,
+			}),
+			q(76249, name(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
+				description = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
+				timeline = { ADDED_10_1_5 },
+				maps = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
+				cost = {
+					{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
+					{ "i", 206364, 1 },	-- 1x Eva's Femur
+					{ "i", 206346, 1 },	-- 1x Eva's Journal
+					{ "i", 206356, 1 },	-- 1x Ghost-Warding Candle
+					{ "i", 206358, 1 },	-- 1x Imported Candle
+					{ "i", 206354, 1 },	-- 1x Stinky Candle
+					{ "i", 206355, 1 },	-- 1x Tobacco-Filled Candle
+				},
+			})),
+			q(5463, {	-- Menethil's Gift (1/2)
+				description = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
+				sourceQuest = 5462,	-- The Dying, Ras Frostwhisper
+				qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+				qi = 13585,	-- Keepsake of Remembrance
+				coord = { 81.7, 57.8, EASTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				maps = { STRATHOLME },
+				lvl = 57,
+			}),
+			q(5464, {	-- Menethil's Gift (2/2)
+				sourceQuest = 5463,	-- Menethil's Gift (1/2)
+				providers = {
+					{ "o", 176631 },	-- Menethil's Gift
+					{ "i", 13624 },	-- Soulbound Keepsake
+				},
+				timeline = { REMOVED_4_0_3 },
+				maps = { STRATHOLME },
+				lvl = 57,
+			}),
+			{	-- Mold Rhymes With...
+				allianceQuestData = q(5538, {	-- Mold Rhymes With... [A]
+					sourceQuest = 5537,	-- Skeletal Fragments [Alliance]
+					qg = 11056,	-- Alchemist Arbington
+					coord = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+				}),
+				hordeQuestData = q(5514, {	-- Mold Rhymes With... [H]
+					sourceQuest = 964,	-- Skeletal Fragments [Horde]
+					qg = 11057,	-- Apothecary Dithers
+					coord = { 83.3, 69.2, TIRISFAL_GLADES },
+					maps = { WESTERN_PLAGUELANDS },
+				}),
+				timeline = { REMOVED_4_0_3 },
+				cost = {
+					{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
+					{ "g", 150000 },	-- 15g
+				},
+				lvl = 55,
+			},
+			q(5529, {	-- Plagued Hatchlings
+				qg = 11035,	-- Betina Bigglezink <The Argent Dawn>
+				coord = { 81.47, 59.66, EASTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/20 Plagued Hatchling slain
+						provider = { "n", 10678 },	-- Plagued Hatchling
+					}),
+				},
+			}),
+			q(27145, {	-- Plagued Hatchlings...For Now
+				qg = 45109,	-- Weldon Barov <House of Barov>
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/10 Plagued Hatchling slain
+						provider = { "n", 10678 },	-- Plagued Hatchling
+					}),
+					objective(2, {	-- 0/1 Rattlegore slain
+						provider = { "n", 11622 },	-- Rattlegore
+					}),
+				},
+			}),
+			q(5533, {	-- Scholomance [Alliance]
+				sourceQuest = 5097,	-- All Along the Watchtowers [Alliance]
+				qg = 10838,	-- Commander Ashlam Valorfist
+				coord = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				races = ALLIANCE_ONLY,
+				lvl = 55,
+			}),
+			q(838, {	-- Scholomance [Horde]
+				sourceQuest = 5098,	-- All Along the Watchtowers [Horde]
+				qg = 10837,	-- High Executor Derrington
+				coord = { 83.1, 68.9, TIRISFAL_GLADES },
+				timeline = { REMOVED_4_0_3 },
+				races = HORDE_ONLY,
+				lvl = 55,
+			}),
+			q(27148, {	-- School's Out Forever
+				qg = 45108,	-- Lucien Sarkhoff
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 Darkmaster Gandling slain
+						provider = { "n", 1853 },	-- Darkmaster Gandling
+					}),
+					i(65974),	-- Discipline Rod
+					i(65925),	-- Lucien's Boots
+					i(65950),	-- Shackles of Punishment
+					i(65995),	-- Signet of the Darkmaster
+				},
+			}),
+			{	-- Skeletal Fragments
+				allianceQuestData = q(5537, {	-- Skeletal Fragments [A]
+					sourceQuest = 5533,	-- Scholomance [Alliance]
+					qg = 11056,	-- Alchemist Arbington
+					coord = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+				}),
+				hordeQuestData = q(964, {	-- Skeletal Fragments [H]
+					sourceQuest = 838,	-- Scholomance [Horde]
+					qg = 11057,	-- Apothecary Dithers
+					coord = { 83.3, 69.2, TIRISFAL_GLADES },
+					maps = { WESTERN_PLAGUELANDS },
+				}),
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/15 Skeletal Fragments
+						provider = { "i", 14619 },	-- Skeletal Fragments
+						crs = {
+							1789,	-- Skeletal Acolyte
+							1787,	-- Skeletal Executioner
+							1783,	-- Skeletal Flayer
+							1784,	-- Skeletal Sorcerer
+							1785,	-- Skeletal Terror
+							1788,	-- Skeletal Warlord
+						},
+					}),
+				},
+			},
+			q(5465, {	-- Soulbound Keepsake
+				sourceQuest = 5464,	-- Menethil's Gift (2/2)
+				qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+				qi = 13624,	-- Soulbound Keepsake
+				coord = { 81.7, 57.8, EASTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+			}),
+			q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+				sourceQuest = 7667,	-- Material Assistance
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+				coord = { 38.7, 35.9, ORGRIMMAR },
+				timeline = { REMOVED_1_7_0 },
+				classes = { SHAMAN },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Darkreaver's Head
+						provider = { "i", 18880 },	-- Darkreaver's Head
+						cr = 14516,	-- Death Knight Darkreaver
+					}),
+					i(18807),	-- Helm of Latent Power
+				},
+			}),
+			applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
+				sourceQuest = 7667,	-- Material Assistance
+				altQuests = {
+					7668,	-- The Darkreaver Menace (Original)
+				},
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+				coord = { 38.7, 35.9, ORGRIMMAR },
+				timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
+				classes = { SHAMAN },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Darkreaver's Head
+						provider = { "i", 18880 },	-- Darkreaver's Head
+						cr = 14516,	-- Death Knight Darkreaver
+					}),
+					i(20134),	-- Skyfury Helm
+				},
+			})),
+			q(5462, {	-- The Dying, Ras Frostwhisper
+				sourceQuest = 5461,	-- The Human, Ras Frostwhisper
+				providers = {
+					{ "n", 11286 },	-- Magistrate Marduke
+					{ "i", 13544 },	-- Spectral Essence
+					{ "i", 13585 },	-- Keepsake of Remembrance
+				},
+				coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+			}),
+			q(5461, {	-- The Human, Ras Frostwhisper
+				sourceQuest = 5384,	-- Kirtonos the Herald
+				qg = 11286,	-- Magistrate Marduke
+				qi = 13544,	-- Spectral Essence
+				coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				maps = { ARATHI_HIGHLANDS },
+				lvl = 57,
+				groups = {
+					objective(1, {	-- 0/1 Keepsake of Remembrance
+						providers = {
+							{ "i",  13585 },	-- Keepsake of Remembrance
+							{ "o", 176630 },	-- Keepsake of Remembrance
+						},
+						coord = { 17.9, 69.4, ARATHI_HIGHLANDS },
+					}),
+				},
+			}),
+			{	-- The Key to Scholomance
+				allianceQuestData = q(5505, {	-- The Key to Scholomance [A]
+					sourceQuest = 5803,	-- Araj's Scarab
+					qg = 11056,	-- Alchemist Arbington
+					coord = { 42.6, 83.8, WESTERN_PLAGUELANDS },
+				}),
+				hordeQuestData = q(5511, {	-- The Key to Scholomance [H]
+					sourceQuest = 5804,	-- Araj's Scarab
+					qg = 11057,	-- Apothecary Dithers
+					coord = { 83.2, 69.2, TIRISFAL_GLADES },
+					maps = { WESTERN_PLAGUELANDS },
+				}),
+				timeline = { REMOVED_4_0_3 },
+				lvl = 55,
+				groups = {
+					i(13704, {	-- Skeleton Key
+						timeline = { DELETED_4_0_3 },
+					}),
+				},
+			},
+			q(5344, {	-- The Last Barov [Alliance]
+				sourceQuest = 5343,	-- Barov Family Fortune [Alliance]
 				qg = 11023,	-- Weldon Barov <House of Barov>
 				coord = { 43.5, 83.7, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				maps = { TIRISFAL_GLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 52,
+				groups = {
+					objective(1, {	-- 0/1 Head of Alexi Barov
+						provider = { "i", 13470 },	-- Head of Alexi Barov
+						coord = { 83.0, 71.6, TIRISFAL_GLADES },
+						cr = 11022,	-- Alexi Barov <House of Barov>
+					}),
+					i(14023),	-- Barov Peasant Caller
+				},
 			}),
-			hordeQuestData = q(5341, {	-- Barov Family Fortune [H]
+			q(5342, {	-- The Last Barov [Horde]
+				sourceQuest = 5341,	-- Barov Family Fortune [Horde]
 				qg = 11022,	-- Alexi Barov <House of Barov>
 				coord = { 83.06, 71.6, TIRISFAL_GLADES },
+				timeline = { REMOVED_4_0_3 },
 				maps = { WESTERN_PLAGUELANDS },
+				races = HORDE_ONLY,
+				lvl = 52,
+				groups = {
+					objective(1, {	-- 0/1 Head of Weldon Barov
+						provider = { "i", 13469 },	-- Head of Weldon Barov
+						coord = { 43.4, 83.6, WESTERN_PLAGUELANDS },
+						cr = 11023,	-- Weldon Barov <House of Barov>
+					}),
+					i(14022),	-- Barov Peasant Caller
+				},
 			}),
-			timeline = { REMOVED_4_0_3 },
-			lvl = 52,
-			groups = {
-				objective(1, {	-- 0/1 The Deed to Brill
-					providers = {
-						{ "i",  13471 },	-- The Deed to Brill
-						{ "o", 176484 },	-- The Deed to Brill
-					},
-					description = "Can be found along the wall in Ras Frostwhisper's room.",
-				}),
-				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					providers = {
-						{ "i",  13448 },	-- The Deed to Caer Darrow
-						{ "o", 176485 },	-- The Deed to Caer Darrow
-					},
-					description = "Can be found right next to Alexi Barov.",
-				}),
-				objective(3, {	-- 0/1 The Deed to Southshore
-					providers = {
-						{ "i",  13450 },	-- The Deed to Southshore
-						{ "o", 176486 },	-- The Deed to Southshore
-					},
-					description = "Can be found in the very back of the first room hidden behind some bookshelves.",
-				}),
-				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					providers = {
-						{ "i",  13451 },	-- The Deed to Tarren Mill
-						{ "o", 176487 },	-- The Deed to Tarren Mill
-					},
-					description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
-				}),
-			},
+			q(5466, {	-- The Lich, Ras Frostwhisper
+				sourceQuest = 5465,	-- Soulbound Keepsake
+				qg = 11286,	-- Magistrate Marduke
+				qi = 13544,	-- Spectral Essence
+				coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
+				timeline = { REMOVED_4_0_3 },
+				lvl = 57,
+				groups = {
+					objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
+						provider = { "i", 13626 },	-- Human Head of Ras Frostwhisper
+					}),
+					i(14002),	-- Darrowshire Strongguard
+					i(13984),	-- Darrowspike
+					i(13982),	-- Warblade of Caer Darrow
+					i(13986),	-- Crown of Caer Darrow
+				},
+			}),
+			q(27142, {	-- The Lich, Ras Frostwhisper [CATA]
+				qg = 45110,	-- Alexi Barov <House of Barov>
+				timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/1 Ras Frostwhisper slain
+						provider = { "n", 10508 },	-- Ras Frostwhisper
+					}),
+				},
+			}),
 		},
-		q(27143, {	-- Barov Family Fortune [CATA]
-			qg = 45109,	-- Weldon Barov <House of Barov>
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 The Deed to Brill
-					providers = {
-						{ "i",  13471 },	-- The Deed to Brill
-						{ "o", 176484 },	-- The Deed to Brill
-					},
-					description = "Can be found along the wall in Ras Frostwhisper's room.",
-				}),
-				objective(2, {	-- 0/1 The Deed to Caer Darrow
-					providers = {
-						{ "i",  13448 },	-- The Deed to Caer Darrow
-						{ "o", 176485 },	-- The Deed to Caer Darrow
-					},
-					description = "Can be found right next to Alexi Barov.",
-				}),
-				objective(3, {	-- 0/1 The Deed to Southshore
-					providers = {
-						{ "i",  13450 },	-- The Deed to Southshore
-						{ "o", 176486 },	-- The Deed to Southshore
-					},
-					description = "Can be found in the very back of the first room hidden behind some bookshelves.",
-				}),
-				objective(4, {	-- 0/1 The Deed to Tarren Mill
-					providers = {
-						{ "i",  13451 },	-- The Deed to Tarren Mill
-						{ "o", 176487 },	-- The Deed to Tarren Mill
-					},
-					description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
-				}),
-				i(65923),	-- Barov Servant Caller
-			},
-		}),
-		q(5531, {	-- Betina Bigglezink
-			sourceQuest = 5522,	-- Leonid Barthalomew
-			qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-			coord = { 81.73, 57.83, EASTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-			qi = 13761,	-- Frozen Eggs (QI!)
-		}),
-		q(76257, {	-- Darkmaster's Scourgestone
-			qs = 206373,	-- Darkmaster's Scourgestone (QS!)
-			timeline = { ADDED_10_1_5 },
-			groups = { i(12844) },	-- Argent Dawn Valor Token
-		}),
-		q(4771, {	-- Dawn's Gambit
-			-- #if BEFORE 4.0.3
-			description = "After completing this quest, you can return to Betina to have her give you another Gambit.",
-			-- #endif
-			sourceQuest = 5531,	-- Betina Bigglezink
-			qg = 11035,	-- Betina Bigglezink <The Argent Dawn>
-			coord = { 81.5, 59.7, EASTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-			groups = {
-				objective(1, {	-- 0/1 Vectus slain
-					provider = { "n", 10432 },	-- Vectus
-				}),
-				objective(2, {	-- 0/1 Place Dawn's Gambit
-					provider = { "i", 12368 },	-- Dawn's Gambit
-					description = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
-				}),
-				i(15854),	-- Dancing Sliver
-				i(15853),	-- Windreaper
-			},
-		}),
-		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
-			description = "Talk to Eva until she offers the quest.",
-			qg = 11216,	-- Eva Sarkhoff
-			coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
-					provider = { "n", 11261 },	-- Doctor Theolen Krastinov <The Butcher>
-				}),
-				objective(2, {	-- 0/1 Remains of Eva Sarkhoff Burned
-					provider = { "o", 176544 },	-- Remains of Eva Sarkhoff
-				}),
-				objective(3, {	-- 0/1 Remains of Lucien Sarkhoff Burned
-					provider = { "o", 176545 },	-- Remains of Lucien Sarkhoff
-				}),
-			},
-		}),
-		q(27146, {	-- Doctor Theolen Krastinov, the Butcher [CATA]
-			qg = 45107,	-- Eva Sarkhoff
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 Doctor Theolen Krastinov slain
-					provider = { "n", 11261 },	-- Doctor Theolen Krastinov <The Butcher>
-				}),
-				objective(2, {	-- 0/1 Remains of Eva Sarkhoff Burned
-					provider = { "o", 176544 },	-- Remains of Eva Sarkhoff
-				}),
-				objective(3, {	-- 0/1 Remains of Lucien Sarkhoff Burned
-					provider = { "o", 176545 },	-- Remains of Lucien Sarkhoff
-				}),
-			},
-		}),
-		{	-- Fire Plume Forged
-			allianceQuestData = q(5801, {	-- Fire Plume Forged [A]
-				sourceQuest = 5538,	-- Mold Rhymes With... [Alliance]
-			}),
-			hordeQuestData = q(5802, {	-- Fire Plume Forged [H]
-				sourceQuest = 5514,	-- Mold Rhymes With... [Horde]
-			}),
-			qg = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
-			coord = { 51.5, 28.8, TANARIS },
-			timeline = { REMOVED_4_0_3 },
-			maps = { UNGORO_CRATER },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Unfinished Skeleton Key
-					provider = { "i", 14645 },	-- Unfinished Skeleton Key
-					coord = { 49.6, 47.6, UNGORO_CRATER },
-					cost = {
-						{ "i", 14644, 1 },	-- Skeleton Key Mold
-						{ "i", 12359, 2 },	-- Thorium Bar
-					},
-				}),
-			},
-		},
-		q(5582, {	-- Healthy Dragon Scale
-			sourceQuest = 5529,	-- Plagued Hatchlings
-			provider = { "i", 13920 },	-- Healthy Dragon Scale
-			maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-			timeline = { REMOVED_4_0_3 },
-			repeatable = true,
-			lvl = 55,
-		}),
-		q(5384, {	-- Kirtonos the Herald
-			qg = 11216,	-- Eva Sarkhoff
-			sourceQuest = 5515,	-- Krastinov's Bag of Horrors
-			coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Kirtonos the Herald slain
-					provider = { "n", 10506 },	-- Kirtonos the Herald
-				}),
-				i(15806),	-- Mirah's Song
-				i(15805),	-- Penelope's Rose
-				ig(13544),	-- Spectral Essence
-			},
-		}),
-		q(27147, {	-- Kirtonos the Herald [CATA]
-			qg = 45107,	-- Eva Sarkhoff
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 Kirtonos the Herald slain
-					provider = { "n", 10506 },	-- Kirtonos the Herald
-				}),
-			},
-		}),
-		q(5515, {	-- Krastinov's Bag of Horrors
-			sourceQuest = 5382,	-- Doctor Theolen Krastinov, the Butcher
-			qg = 11216,	-- Eva Sarkhoff
-			coord = { 70.2, 73.7, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Krastinov's Bag of Horrors
-					provider = { "i", 13725 },	-- Krastinov's Bag of Horrors
-				}),
-			},
-		}),
-		q(7647, {	-- Judgment and Redemption
-			qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-			qi = 18804,	-- Lord Grayson's Satchel
-			sourceQuest = 7646,	-- The Divination Scryer
-			coords = {
-				-- #if AFTER WRATH
-				{ 48.6, 50.0, STORMWIND_CITY },
-				-- #else
-				{ 37.6, 32.6, STORMWIND_CITY },
-				-- #endif
-			},
-			timeline = { REMOVED_4_0_3 },
-			classes = { PALADIN },
-			races = ALLIANCE_ONLY,
-			lvl = 60,
-			groups = {
-				objective(1, {	-- 0/1 Charger's Redeemed Soul
-					provider = { "i", 18799 },	-- Charger's Redeemed Soul
-					cost = { { "i", 18749, 1 } },	-- Charger's Lost Soul
-					crs = {
-						14516,	-- Death Knight Darkreaver
-						14568,	-- Darkreaver's Fallen Charger
-					},
-				}),
-				objective(2, {	-- 0/1 Blessed Arcanite Barding
-					provider = { "i", 18792 },	-- Blessed Arcanite Barding
-				}),
-				mount(23214, {	-- Charger (MOUNT!)
-					classes = { PALADIN },
-					races = ALLIANCE_ONLY,
-					lvl = 60,
-				}),
-			},
-		}),
-		q(5522, {	-- Leonid Barthalomew
-			sourceQuest = 4735,	-- Egg Collection
-			qg = 10267,	-- Tinkee Steamboil
-			qi = 13761,	-- Frozen Eggs
-			coord = { 65.2, 23.8, BURNING_STEPPES },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-		}),
-		q(7667, {	-- Material Assistance
-			qg = 13417,	-- Sagorne Creststrider
-			coord = { 39.2, 48.4, ORGRIMMAR },
-			timeline = { ADDED_1_4_0, REMOVED_4_0_3 },
-			cost = {
-				{ "i", 12800, 1 },	-- Azerothian Diamond
-				{ "i", 18335, 1 },	-- Pristine Black Diamond
-			},
-			classes = { SHAMAN },
-			races = HORDE_ONLY,
-			lvl = 58,
-		}),
-		q(76249, name(HEADERS.Achievement, 18368, {	-- Memory of Scholomance
-			description = "It's recommended to activate the Debug Mode to properly see every step and description.\n\nTo start unlocking old Scholomance, you must first do a clear of Heroic Scholomance. Once done, go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room). At the top left portion of the room, use the Krastinov's Bag of Horrors toy. When you do, the ghost of Eva Sarkhoff will spawn, afraid of you (as the toy transforms you into the Butcher himself). Removing the toy's buff will make Eva realize you're not her murderer, and she will talk to you, giving you the old Spectral Essence trinket and allowing you to loot Eva's Femur on the ground. This allows you to see ghosts in Caer Darrow.\n\nOnce you do, you can talk to Eva at her old spot outside Scholomance, where she will request you to look for her journal, as well as five candles, to perform a horrible ritual. The candles are traded from citizens in Caer Darrow, and require items they treasured when alive. Below, we have the locations for all items:",
-			timeline = { ADDED_10_1_5 },
-			maps = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
-			cost = {
-				{ "i", 206357, 1 },	-- 1x Authentic Andorhal Candle
-				{ "i", 206364, 1 },	-- 1x Eva's Femur
-				{ "i", 206346, 1 },	-- 1x Eva's Journal
-				{ "i", 206356, 1 },	-- 1x Ghost-Warding Candle
-				{ "i", 206358, 1 },	-- 1x Imported Candle
-				{ "i", 206354, 1 },	-- 1x Stinky Candle
-				{ "i", 206355, 1 },	-- 1x Tobacco-Filled Candle
-			},
-		})),
-		q(5463, {	-- Menethil's Gift (1/2)
-			description = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
-			sourceQuest = 5462,	-- The Dying, Ras Frostwhisper
-			qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-			qi = 13585,	-- Keepsake of Remembrance
-			coord = { 81.7, 57.8, EASTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			maps = { STRATHOLME },
-			lvl = 57,
-		}),
-		q(5464, {	-- Menethil's Gift (2/2)
-			sourceQuest = 5463,	-- Menethil's Gift (1/2)
-			providers = {
-				{ "o", 176631 },	-- Menethil's Gift
-				{ "i", 13624 },	-- Soulbound Keepsake
-			},
-			timeline = { REMOVED_4_0_3 },
-			maps = { STRATHOLME },
-			lvl = 57,
-		}),
-		{	-- Mold Rhymes With...
-			allianceQuestData = q(5538, {	-- Mold Rhymes With... [A]
-				sourceQuest = 5537,	-- Skeletal Fragments [Alliance]
-				qg = 11056,	-- Alchemist Arbington
-				coord = { 42.66, 83.77, WESTERN_PLAGUELANDS },
-			}),
-			hordeQuestData = q(5514, {	-- Mold Rhymes With... [H]
-				sourceQuest = 964,	-- Skeletal Fragments [Horde]
-				qg = 11057,	-- Apothecary Dithers
-				coord = { 83.3, 69.2, TIRISFAL_GLADES },
-				maps = { WESTERN_PLAGUELANDS },
-			}),
-			timeline = { REMOVED_4_0_3 },
-			cost = {
-				{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
-				{ "g", 150000 },	-- 15g
-			},
-			lvl = 55,
-		},
-		q(5529, {	-- Plagued Hatchlings
-			qg = 11035,	-- Betina Bigglezink <The Argent Dawn>
-			coord = { 81.47, 59.66, EASTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/20 Plagued Hatchling slain
-					provider = { "n", 10678 },	-- Plagued Hatchling
-				}),
-			},
-		}),
-		q(27145, {	-- Plagued Hatchlings...For Now
-			qg = 45109,	-- Weldon Barov <House of Barov>
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/10 Plagued Hatchling slain
-					provider = { "n", 10678 },	-- Plagued Hatchling
-				}),
-				objective(2, {	-- 0/1 Rattlegore slain
-					provider = { "n", 11622 },	-- Rattlegore
-				}),
-			},
-		}),
-		q(5533, {	-- Scholomance [Alliance]
-			sourceQuest = 5097,	-- All Along the Watchtowers [Alliance]
-			qg = 10838,	-- Commander Ashlam Valorfist
-			coord = { 42.7, 84.0, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			races = ALLIANCE_ONLY,
-			lvl = 55,
-		}),
-		q(838, {	-- Scholomance [Horde]
-			sourceQuest = 5098,	-- All Along the Watchtowers [Horde]
-			qg = 10837,	-- High Executor Derrington
-			coord = { 83.1, 68.9, TIRISFAL_GLADES },
-			timeline = { REMOVED_4_0_3 },
-			races = HORDE_ONLY,
-			lvl = 55,
-		}),
-		q(27148, {	-- School's Out Forever
-			qg = 45108,	-- Lucien Sarkhoff
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 Darkmaster Gandling slain
-					provider = { "n", 1853 },	-- Darkmaster Gandling
-				}),
-				i(65974),	-- Discipline Rod
-				i(65925),	-- Lucien's Boots
-				i(65950),	-- Shackles of Punishment
-				i(65995),	-- Signet of the Darkmaster
-			},
-		}),
-		{	-- Skeletal Fragments
-			allianceQuestData = q(5537, {	-- Skeletal Fragments [A]
-				sourceQuest = 5533,	-- Scholomance [Alliance]
-				qg = 11056,	-- Alchemist Arbington
-				coord = { 42.66, 83.77, WESTERN_PLAGUELANDS },
-			}),
-			hordeQuestData = q(964, {	-- Skeletal Fragments [H]
-				sourceQuest = 838,	-- Scholomance [Horde]
-				qg = 11057,	-- Apothecary Dithers
-				coord = { 83.3, 69.2, TIRISFAL_GLADES },
-				maps = { WESTERN_PLAGUELANDS },
-			}),
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/15 Skeletal Fragments
-					provider = { "i", 14619 },	-- Skeletal Fragments
-					crs = {
-						1789,	-- Skeletal Acolyte
-						1787,	-- Skeletal Executioner
-						1783,	-- Skeletal Flayer
-						1784,	-- Skeletal Sorcerer
-						1785,	-- Skeletal Terror
-						1788,	-- Skeletal Warlord
-					},
-				}),
-			},
-		},
-		q(5465, {	-- Soulbound Keepsake
-			sourceQuest = 5464,	-- Menethil's Gift (2/2)
-			qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-			qi = 13624,	-- Soulbound Keepsake
-			coord = { 81.7, 57.8, EASTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-		}),
-		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
-			sourceQuest = 7667,	-- Material Assistance
-			qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			coord = { 38.7, 35.9, ORGRIMMAR },
-			timeline = { REMOVED_1_7_0 },
-			classes = { SHAMAN },
-			races = HORDE_ONLY,
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Darkreaver's Head
-					provider = { "i", 18880 },	-- Darkreaver's Head
-					cr = 14516,	-- Death Knight Darkreaver
-				}),
-				i(18807),	-- Helm of Latent Power
-			},
-		}),
-		applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
-			sourceQuest = 7667,	-- Material Assistance
-			altQuests = {
-				7668,	-- The Darkreaver Menace (Original)
-			},
-			qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			coord = { 38.7, 35.9, ORGRIMMAR },
-			timeline = { ADDED_1_7_0, REMOVED_4_0_3 },
-			classes = { SHAMAN },
-			races = HORDE_ONLY,
-			lvl = 55,
-			groups = {
-				objective(1, {	-- 0/1 Darkreaver's Head
-					provider = { "i", 18880 },	-- Darkreaver's Head
-					cr = 14516,	-- Death Knight Darkreaver
-				}),
-				i(20134),	-- Skyfury Helm
-			},
-		})),
-		q(5462, {	-- The Dying, Ras Frostwhisper
-			sourceQuest = 5461,	-- The Human, Ras Frostwhisper
-			providers = {
-				{ "n", 11286 },	-- Magistrate Marduke
-				{ "i", 13544 },	-- Spectral Essence
-				{ "i", 13585 },	-- Keepsake of Remembrance
-			},
-			coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-		}),
-		q(5461, {	-- The Human, Ras Frostwhisper
-			sourceQuest = 5384,	-- Kirtonos the Herald
-			qg = 11286,	-- Magistrate Marduke
-			qi = 13544,	-- Spectral Essence
-			coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			maps = { ARATHI_HIGHLANDS },
-			lvl = 57,
-			groups = {
-				objective(1, {	-- 0/1 Keepsake of Remembrance
-					providers = {
-						{ "i",  13585 },	-- Keepsake of Remembrance
-						{ "o", 176630 },	-- Keepsake of Remembrance
-					},
-					coord = { 17.9, 69.4, ARATHI_HIGHLANDS },
-				}),
-			},
-		}),
-		{	-- The Key to Scholomance
-			allianceQuestData = q(5505, {	-- The Key to Scholomance [A]
-				sourceQuest = 5803,	-- Araj's Scarab
-				qg = 11056,	-- Alchemist Arbington
-				coord = { 42.6, 83.8, WESTERN_PLAGUELANDS },
-			}),
-			hordeQuestData = q(5511, {	-- The Key to Scholomance [H]
-				sourceQuest = 5804,	-- Araj's Scarab
-				qg = 11057,	-- Apothecary Dithers
-				coord = { 83.2, 69.2, TIRISFAL_GLADES },
-				maps = { WESTERN_PLAGUELANDS },
-			}),
-			timeline = { REMOVED_4_0_3 },
-			lvl = 55,
-			groups = {
-				i(13704, {	-- Skeleton Key
-					timeline = { DELETED_4_0_3 },
-				}),
-			},
-		},
-		q(5344, {	-- The Last Barov [Alliance]
-			sourceQuest = 5343,	-- Barov Family Fortune [Alliance]
-			qg = 11023,	-- Weldon Barov <House of Barov>
-			coord = { 43.5, 83.7, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			maps = { TIRISFAL_GLADES },
-			races = ALLIANCE_ONLY,
-			lvl = 52,
-			groups = {
-				objective(1, {	-- 0/1 Head of Alexi Barov
-					provider = { "i", 13470 },	-- Head of Alexi Barov
-					coord = { 83.0, 71.6, TIRISFAL_GLADES },
-					cr = 11022,	-- Alexi Barov <House of Barov>
-				}),
-				i(14023),	-- Barov Peasant Caller
-			},
-		}),
-		q(5342, {	-- The Last Barov [Horde]
-			sourceQuest = 5341,	-- Barov Family Fortune [Horde]
-			qg = 11022,	-- Alexi Barov <House of Barov>
-			coord = { 83.06, 71.6, TIRISFAL_GLADES },
-			timeline = { REMOVED_4_0_3 },
-			maps = { WESTERN_PLAGUELANDS },
-			races = HORDE_ONLY,
-			lvl = 52,
-			groups = {
-				objective(1, {	-- 0/1 Head of Weldon Barov
-					provider = { "i", 13469 },	-- Head of Weldon Barov
-					coord = { 43.4, 83.6, WESTERN_PLAGUELANDS },
-					cr = 11023,	-- Weldon Barov <House of Barov>
-				}),
-				i(14022),	-- Barov Peasant Caller
-			},
-		}),
-		q(5466, {	-- The Lich, Ras Frostwhisper
-			sourceQuest = 5465,	-- Soulbound Keepsake
-			qg = 11286,	-- Magistrate Marduke
-			qi = 13544,	-- Spectral Essence
-			coord = { 70.6, 74.1, WESTERN_PLAGUELANDS },
-			timeline = { REMOVED_4_0_3 },
-			lvl = 57,
-			groups = {
-				objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
-					provider = { "i", 13626 },	-- Human Head of Ras Frostwhisper
-				}),
-				i(14002),	-- Darrowshire Strongguard
-				i(13984),	-- Darrowspike
-				i(13982),	-- Warblade of Caer Darrow
-				i(13986),	-- Crown of Caer Darrow
-			},
-		}),
-		q(27142, {	-- The Lich, Ras Frostwhisper [CATA]
-			qg = 45110,	-- Alexi Barov <House of Barov>
-			timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
-			lvl = 38,
-			groups = {
-				objective(1, {	-- 0/1 Ras Frostwhisper slain
-					provider = { "n", 10508 },	-- Ras Frostwhisper
-				}),
-			},
-		}),
 	}),
 	n(TREASURES, {
-		o(403567, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			description = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
-			groups = {
-				i(206372),	-- Cracked Argent Dawn Commission
-			},
-		})),
-		o(405388, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Familiar Journal
-			description = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
-			groups = {
-				i(208096),	-- Familiar Journal (TOY!)
-			},
-		})),
-		i(12736, {	-- Frostwhisper's Embalming Fluid
-			description = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-			provider = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
-			timeline = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			o(403567, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
+				description = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
+				groups = {
+					i(206372),	-- Cracked Argent Dawn Commission
+				},
+			})),
+			o(405388, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {		-- Familiar Journal
+				description = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+				groups = {
+					i(208096),	-- Familiar Journal (TOY!)
+				},
+			})),
+			i(12736, {	-- Frostwhisper's Embalming Fluid
+				description = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
+				provider = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
+				timeline = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
+			}),
+		},
 	}),
 	n(ZONE_DROPS, {
-		i(20520),	-- Dark Rune
-		i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
-			cr = 10469,	-- Scholomance Adept
-		}),
-		i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
-			cr = 10499,	-- Spectral Researcher
-		}),
-		i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
-			-- #if AFTER 4.0.3
-			description = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
-			-- #endif
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-			cr = 11582,	-- Scholomance Dark Summoner
-		}),
-		i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
-			-- #if AFTER 4.0.3
-			description = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
-			-- #endif
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-			cr = 10499,	-- Spectral Researcher
-		}),
-		applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
-		i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
-			description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
-			description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
-			description = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		i(13920, {	-- Healthy Dragon Scale
-			description = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
-			timeline = { REMOVED_4_0_3, ADDED_10_1_5 },
-			cr = 10678,	-- Plagued Hatchling
-		}),
-		i(12753, {	-- Skin of Shadow
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		ignoreTimeline(i(18702)),	-- Belt of the Ordained
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226751, {	-- Bindings of Elements
-			timeline = { ADDED_1_15_3 },
-			cr = 10478,	-- Splintered Skeleton
-		})),
-		-- #endif
-		i(16671, {	-- Bindings of Elements
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(20520),	-- Dark Rune
+			i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit / CLASSIC: Formula: Enchant 2H Weapon - Major Versatility (RECIPE!)
+				cr = 10469,	-- Scholomance Adept
+			}),
+			i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
+				cr = 10499,	-- Spectral Researcher
+			}),
+			i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
+				-- #if AFTER 4.0.3
+				description = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
 				-- #endif
-			},
-			cr = 10478,	-- Splintered Skeleton
-		}),
-		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228703, {	-- Coldstone Slippers
-			description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
-			timeline = { CREATED_1_15_3 },
-		})),
-		-- #endif
-		ignoreTimeline(i(18697, {	-- Coldstone Slippers
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+				cr = 11582,	-- Scholomance Dark Summoner
+			}),
+			i(15773, {	-- Pattern: Wicked Leather Armor (RECIPE!)
+				-- #if AFTER 4.0.3
+				description = "This pattern no longer drops. The recipe can now be trained at any leatherworking trainer.",
+				-- #endif
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+				cr = 10499,	-- Spectral Researcher
+			}),
+			applyclassicphase(PHASE_SIX, i(22526)),	-- Bone Fragments
+			i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
+				description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
+			i(12841, {	-- Invader's Scourgestone / Inert Invader's Scourgestone
+				description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
+			i(12840, {	-- Minion's Scourgestone / Inert Minion's Scourgestone
+				description = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
+			i(13920, {	-- Healthy Dragon Scale
+				description = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
+				timeline = { REMOVED_4_0_3, ADDED_10_1_5 },
+				cr = 10678,	-- Plagued Hatchling
+			}),
+			i(12753, {	-- Skin of Shadow
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
+			ignoreTimeline(i(18702)),	-- Belt of the Ordained
 			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			-- timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(226751, {	-- Bindings of Elements
+				timeline = { ADDED_1_15_3 },
+				cr = 10478,	-- Splintered Skeleton
+			})),
 			-- #endif
-		})),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226761, {	-- Dreadmist Belt
-			timeline = { ADDED_1_15_3 },
-			cr = 10477,	-- Scholomance Necromancer
-		})),
-		-- #endif
-		i(16702, {	-- Dreadmist Belt
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			cr = 10477,	-- Scholomance Necromancer
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
-			timeline = { ADDED_1_15_3 },
-			cr = 10477,	-- Scholomance Necromancer
-		})),
-		-- #endif
-		i(16705, {	-- Dreadmist Wraps
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			cr = 10477,	-- Scholomance Necromancer
-		}),
-		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
-		ignoreTimeline(i(18701)),	-- Innervating Band
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
-			timeline = { ADDED_1_15_3 },
-			crs = {
-				10487,	-- Risen Protector
-				10486,	-- Risen Warrior
-			},
-		})),
-		-- #endif
-		i(16722, {	-- Lightforge Bracers
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			crs = {
-				10487,	-- Risen Protector
-				10486,	-- Risen Warrior
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226724, {	-- Magister's Belt
-			timeline = { ADDED_1_15_3 },
-			cr = 10469,	-- Scholomance Adept
-		})),
-		-- #endif
-		i(16685, {	-- Magister's Belt
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			cr = 10469,	-- Scholomance Adept
-		}),
-		i(16684, {	-- Magister's Gloves
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			cr = 10469,	-- Scholomance Adept
-		}),
-		ignoreTimeline(i(18700)),	-- Malefic Bracers
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
-			timeline = { ADDED_1_15_3 },
-			crs = {
-				11284,	-- Dark Shade
-				10472,	-- Scholomance Occultist
-				10488,	-- Risen Construct
-			},
-		})),
-		-- #endif
-		i(16710, {	-- Shadowcraft Bracers
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-			crs = {
-				11284,	-- Dark Shade
-				10472,	-- Scholomance Occultist
-				10488,	-- Risen Construct
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228704, {	-- Tattered Leather Hood
-			description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
-			timeline = { CREATED_1_15_3 },
-		})),
-		-- #endif
-		ignoreTimeline(i(18698, {	-- Tattered Leather Hood
+			i(16671, {	-- Bindings of Elements
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10478,	-- Splintered Skeleton
+			}),
+			ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
-			-- timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228703, {	-- Coldstone Slippers
+				description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+				timeline = { CREATED_1_15_3 },
+			})),
 			-- #endif
-		})),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
-			timeline = { ADDED_1_15_3 },
-			crs = {
-				11257,	-- Scholomance Handler
-				10500,	-- Spectral Teacher
-				10499,	-- Spectral Researcher
-			},
-		})),
-		-- #endif
-		i(16716, {	-- Wildheart Belt
-			timeline = {
+			ignoreTimeline(i(18697, {	-- Coldstone Slippers
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+				-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
+				-- timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-			crs = {
-				11257,	-- Scholomance Handler
-				10500,	-- Spectral Teacher
-				10499,	-- Spectral Researcher
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226714, {	-- Wildheart Bracers
-			timeline = { ADDED_1_15_3 },
-			cr = 10495,	-- Diseased Ghoul
-		})),
-		-- #endif
-		i(16714, {	-- Wildheart Bracers
-			timeline = {
+			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226761, {	-- Dreadmist Belt
+				timeline = { ADDED_1_15_3 },
+				cr = 10477,	-- Scholomance Necromancer
+			})),
+			-- #endif
+			i(16702, {	-- Dreadmist Belt
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10477,	-- Scholomance Necromancer
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
+				timeline = { ADDED_1_15_3 },
+				cr = 10477,	-- Scholomance Necromancer
+			})),
+			-- #endif
+			i(16705, {	-- Dreadmist Wraps
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10477,	-- Scholomance Necromancer
+			}),
+			ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
+			ignoreTimeline(i(18701)),	-- Innervating Band
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
+				timeline = { ADDED_1_15_3 },
+				crs = {
+					10487,	-- Risen Protector
+					10486,	-- Risen Warrior
+				},
+			})),
+			-- #endif
+			i(16722, {	-- Lightforge Bracers
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				crs = {
+					10487,	-- Risen Protector
+					10486,	-- Risen Warrior
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226724, {	-- Magister's Belt
+				timeline = { ADDED_1_15_3 },
+				cr = 10469,	-- Scholomance Adept
+			})),
+			-- #endif
+			i(16685, {	-- Magister's Belt
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10469,	-- Scholomance Adept
+			}),
+			i(16684, {	-- Magister's Gloves
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10469,	-- Scholomance Adept
+			}),
+			ignoreTimeline(i(18700)),	-- Malefic Bracers
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
+				timeline = { ADDED_1_15_3 },
+				crs = {
+					11284,	-- Dark Shade
+					10472,	-- Scholomance Occultist
+					10488,	-- Risen Construct
+				},
+			})),
+			-- #endif
+			i(16710, {	-- Shadowcraft Bracers
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				crs = {
+					11284,	-- Dark Shade
+					10472,	-- Scholomance Occultist
+					10488,	-- Risen Construct
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228704, {	-- Tattered Leather Hood
+				description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+				timeline = { CREATED_1_15_3 },
+			})),
+			-- #endif
+			ignoreTimeline(i(18698, {	-- Tattered Leather Hood
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+				-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
+				-- timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-			cr = 10495,	-- Diseased Ghoul
-		}),
+			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
+				timeline = { ADDED_1_15_3 },
+				crs = {
+					11257,	-- Scholomance Handler
+					10500,	-- Spectral Teacher
+					10499,	-- Spectral Researcher
+				},
+			})),
+			-- #endif
+			i(16716, {	-- Wildheart Belt
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				crs = {
+					11257,	-- Scholomance Handler
+					10500,	-- Spectral Teacher
+					10499,	-- Spectral Researcher
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226714, {	-- Wildheart Bracers
+				timeline = { ADDED_1_15_3 },
+				cr = 10495,	-- Diseased Ghoul
+			})),
+			-- #endif
+			i(16714, {	-- Wildheart Bracers
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+				cr = 10495,	-- Diseased Ghoul
+			}),
+		},
 	}),
 	n(14861, {	-- Blood Steward of Kirtonos
-		i(13523, {	-- Blood of Innocents
-			timeline = { REMOVED_5_0_4 },
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(13523, {	-- Blood of Innocents
+				timeline = { REMOVED_5_0_4 },
+			}),
+		},
 	}),
 	n(10506, {	-- Kirtonos the Herald
 		providers = {
@@ -956,6 +968,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 			-- #endif
 		},
 		description = "Can only be summoned if someone in your group has the Blood of Innocents.",
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
 		groups = {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(228015, {	-- Frightalon
@@ -1045,143 +1058,149 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 		},
 	}),
 	n(10503, {	-- Jandice Barov
-		i(13523, {	-- Blood of Innocents
-			timeline = { REMOVED_5_0_4 },
-		}),
-		i(13725),	-- Krastinov's Bag of Horrors
-		o(180794, {	-- Journal of Jandice Barov
-			description = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
-			groups = {
-				r(26086, {	-- Felcloth Bag
-					requireSkill = TAILORING,
-				}),
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(227997, {	-- Barovian Family Sword
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14541, {	-- Barovian Family Sword
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(13523, {	-- Blood of Innocents
+				timeline = { REMOVED_5_0_4 },
+			}),
+			i(13725),	-- Krastinov's Bag of Horrors
+			o(180794, {	-- Journal of Jandice Barov
+				description = "Jandice Barov drops this item when killed, which teaches Felcloth Bag. You must be a tailor of skill 285 or higher to learn this recipe.",
+				groups = {
+					r(26086, {	-- Felcloth Bag
+						requireSkill = TAILORING,
+					}),
+				},
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(227997, {	-- Barovian Family Sword
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
-		i(18689),	-- Phantasmal Cloak
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226756, {	-- Dreadmist Mantle
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16701, {	-- Dreadmist Mantle
-			timeline = {
+			i(14541, {	-- Barovian Family Sword
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+				timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-		}),
-		i(14548),	-- Royal Cap Spaulders
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228031, {	-- Darkshade Gloves
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14543, {	-- Darkshade Gloves
-			-- #if AFTER 2.0.1
-			description = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
-			isBounty = true,
+			}),
+			applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
+			i(18689),	-- Phantasmal Cloak
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226756, {	-- Dreadmist Mantle
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-			timeline = {
+			i(16701, {	-- Dreadmist Mantle
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			i(14548),	-- Royal Cap Spaulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228031, {	-- Darkshade Gloves
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(14543, {	-- Darkshade Gloves
+				-- #if AFTER 2.0.1
+				description = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
+				isBounty = true,
+				-- #endif
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_2_0_1,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228040, {	-- Ghostloom Leggings
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(14545, {	-- Ghostloom Leggings
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_2_0_1,
+				timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228040, {	-- Ghostloom Leggings
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14545, {	-- Ghostloom Leggings
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228041, {	-- Wraithplate Leggings
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228041, {	-- Wraithplate Leggings
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(18690, {	-- Wraithplate Leggings
-			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
-			-- #endif
-		}),
+			i(18690, {	-- Wraithplate Leggings
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+		},
 	}),
 	n(11622, {	-- Rattlegore
-		i(13873, {	-- Viewing Room Key
-			description = "You must use this item on the door prior to Vectus and Marduk.",
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		i(206371, {	-- Viewing Room Key
-			description = "You must use this item on the door prior to Vectus and Marduk.",
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
-			timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(227994, {	-- Frightskull Shaft
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14531, {	-- Frightskull Shaft
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(13873, {	-- Viewing Room Key
+				description = "You must use this item on the door prior to Vectus and Marduk.",
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
+			i(206371, {	-- Viewing Room Key
+				description = "You must use this item on the door prior to Vectus and Marduk.",
+				timeline = { ADDED_10_1_5 },
+			}),
+			i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
+				timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(227994, {	-- Frightskull Shaft
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228037, {	-- Rattlecage Buckler
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14528, {	-- Rattlecage Buckler
-			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
-			-- #endif
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228032, {	-- Bone Ring Helm
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14539, {	-- Bone Ring Helm
-			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
-			-- #endif
-		}),
-		i(18686),	-- Bone Golem Shoulders
-		i(14538),	-- Deadwalker Mantle
-		i(14537),	-- Corpselight Greaves
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226703, {	-- Shadowcraft Boots
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16711, {	-- Shadowcraft Boots
-			timeline = {
+			i(14531, {	-- Frightskull Shaft
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+				timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-		}),
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228037, {	-- Rattlecage Buckler
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(14528, {	-- Rattlecage Buckler
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228032, {	-- Bone Ring Helm
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(14539, {	-- Bone Ring Helm
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(18686),	-- Bone Golem Shoulders
+			i(14538),	-- Deadwalker Mantle
+			i(14537),	-- Corpselight Greaves
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226703, {	-- Shadowcraft Boots
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16711, {	-- Shadowcraft Boots
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
 	-- To get the summon item again, you would have to abandon the quest and pick it up again, which you can't.	-- Gold 02/08/2023 (EU)
@@ -1217,119 +1236,128 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 		},
 	})),
 	n(10433, {	-- Marduk Blackpool
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(227993, {	-- Ebon Hilt of Marduk
-			description = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
-			timeline = { CREATED_1_15_3 },
-		})),
-		-- #endif
-		i(14576, {	-- Ebon Hilt of Marduk
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
 			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: The reitemized version isn't in the game.
-			-- timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(227993, {	-- Ebon Hilt of Marduk
+				description = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+				timeline = { CREATED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		i(18692),	-- Death Knight Sabatons
+			i(14576, {	-- Ebon Hilt of Marduk
+				-- #if SEASON_OF_DISCOVERY
+				-- CRIEVE NOTE: The reitemized version isn't in the game.
+				-- timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(18692),	-- Death Knight Sabatons
+		},
 	}),
 	n(10432, {	-- Vectus
-		i(18691),	-- Dark Advisor's Pendant
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228017, {	-- Skullsmoke Pants
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14577, {	-- Skullsmoke Pants
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(18691),	-- Dark Advisor's Pendant
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228017, {	-- Skullsmoke Pants
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
+			i(14577, {	-- Skullsmoke Pants
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+		},
 	}),
 	n(10508, {	-- Ras Frostwhisper
-		i(13626, {	-- Human Head of Ras Frostwhisper
-			description = "Use the Keepsake on him before he dies to turn him back into a human.",
-			cost = { { "i", 13752, 1 } },	-- Soulbound Keepsake
-		}),
-		i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
-		i(14487),	-- Bonechill Hammer
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228027, {	-- Iceblade Hacker
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(13952, {	-- Iceblade Hacker
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(13626, {	-- Human Head of Ras Frostwhisper
+				description = "Use the Keepsake on him before he dies to turn him back into a human.",
+				cost = { { "i", 13752, 1 } },	-- Soulbound Keepsake
+			}),
+			i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
+			i(14487),	-- Bonechill Hammer
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228027, {	-- Iceblade Hacker
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		i(18696),	-- Intricately Runed Shield
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228039, {	-- Spellbound Tome
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(18695, {	-- Spellbound Tome
-			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
-			-- #endif
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226726, {	-- Magister's Mantle
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16689, {	-- Magister's Mantle
-			timeline = {
+			i(13952, {	-- Iceblade Hacker
 				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
+				timeline = { REMOVED_1_15_3 },
 				-- #endif
-			},
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228023, {	-- Alanna's Embrace
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(13314, {	-- Alanna's Embrace
+			}),
+			i(18696),	-- Intricately Runed Shield
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228039, {	-- Spellbound Tome
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228036, {	-- Death's Clutch
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14503, {	-- Death's Clutch
+			i(18695, {	-- Spellbound Tome
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(226726, {	-- Magister's Mantle
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		i(14525),	-- Boneclenched Gauntlets
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228034, {	-- Shivery Handwraps
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(18693, {	-- Shivery Handwraps
+			i(16689, {	-- Magister's Mantle
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228023, {	-- Alanna's Embrace
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		i(14340),	-- Freezing Lich Robes
-		i(14502),	-- Frostbite Girdle
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(228044, {	-- Maelstrom Leggings
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(14522, {	-- Maelstrom Leggings
+			i(13314, {	-- Alanna's Embrace
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			timeline = { REMOVED_1_15_3 },
+			applyclassicphase(SOD_PHASE_FOUR, i(228036, {	-- Death's Clutch
+				timeline = { ADDED_1_15_3 },
+			})),
 			-- #endif
-		}),
-		i(18694),	-- Shadowy Mail Greaves
+			i(14503, {	-- Death's Clutch
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(14525),	-- Boneclenched Gauntlets
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228034, {	-- Shivery Handwraps
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(18693, {	-- Shivery Handwraps
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(14340),	-- Freezing Lich Robes
+			i(14502),	-- Frostbite Girdle
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228044, {	-- Maelstrom Leggings
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(14522, {	-- Maelstrom Leggings
+				-- #if SEASON_OF_DISCOVERY
+				timeline = { REMOVED_1_15_3 },
+				-- #endif
+			}),
+			i(18694),	-- Shadowy Mail Greaves
+		},
 	}),
 	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16118, {	-- Kormok
 		description =
@@ -1418,6 +1446,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 			10504,	-- Lord Alexi Barov
 			10507,	-- The Ravenian
 		},
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
 		groups = {
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227996, {	-- Ancient Bone Bow
@@ -1615,94 +1644,110 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 		},
 	}),
 	n(10505, {	-- Instructor Malicia
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16710, {	-- Shadowcraft Bracers
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16710, {	-- Shadowcraft Bracers
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
-		i(206370, {	-- Blood of Innocents
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(13523, {	-- Blood of Innocents
-			timeline = { REMOVED_5_0_4 },
-		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226731, {	-- Magister's Gloves
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16684, {	-- Magister's Gloves
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-		}),
-		i(14617),	-- Sawbones Shirt
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			i(206370, {	-- Blood of Innocents
+				timeline = { ADDED_10_1_5 },
+			}),
+			i(13523, {	-- Blood of Innocents
+				timeline = { REMOVED_5_0_4 },
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226731, {	-- Magister's Gloves
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16684, {	-- Magister's Gloves
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			i(14617),	-- Sawbones Shirt
+		},
 	}),
 	n(10901, {	-- Lorekeeper Polkelt
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16705, {	-- Dreadmist Wraps
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16705, {	-- Dreadmist Wraps
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	n(10507, {	-- The Ravenian
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16716, {	-- Wildheart Belt
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16716, {	-- Wildheart Belt
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	n(10504, {	-- Lord Alexei Barov
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
-			timeline = { ADDED_1_15_3 },
-		})),
-		-- #endif
-		i(16722, {	-- Lightforge Bracers
-			timeline = {
-				-- #if SEASON_OF_DISCOVERY
-				REMOVED_1_15_3,
-				-- #else
-				REMOVED_4_0_3,
-				-- #endif
-			},
-		}),
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
+		groups = {
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
+				timeline = { ADDED_1_15_3 },
+			})),
+			-- #endif
+			i(16722, {	-- Lightforge Bracers
+				timeline = {
+					-- #if SEASON_OF_DISCOVERY
+					REMOVED_1_15_3,
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+		},
 	}),
 	n(1853, {	-- Darkmaster Gandling
 		description = "You must fully clear out the six rooms around Headmaster's Study before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
+		timeline = { ADDED_1_3_0, REMOVED_5_0_4, ADDED_10_1_5 },
 		groups = {
 			i(206373, {	-- Darkmaster's Scourgestone (QI!)
 				description = "Drops only with equipped Argent Dawn Commission",
@@ -1930,7 +1975,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ timeline = { ADDED_1_3_0, REMOV
 	}),
 	-- n(14695),	-- Lord Blackwood
 	-- Listed under Worldevent>Scourge>
-});
+};
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
