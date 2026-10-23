@@ -1979,13 +1979,13 @@ local SCHOLOMANCE_LEGACY_DATA = {
 
 -- #if BEFORE 5.0.4
 -- Before MOP there was only one difficulty for Scholomance. Merge all the legacy data into the groups directly.
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
 	table.insert(SCHOLOMANCE_GROUPS, o);
 end
 -- #else
 -- After MOP they revamped Scholomance and included a lot of extra stuff. They also created a Heroic Difficulty, so a Normal header is now necessary.
 local LEGACY_DUNGEON_GROUPS = {};
-for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA.groups) do
+for i,o in ipairs(SCHOLOMANCE_LEGACY_DATA) do
 	table.insert(LEGACY_DUNGEON_GROUPS, o);
 end
 -- #if AFTER 10.1.5

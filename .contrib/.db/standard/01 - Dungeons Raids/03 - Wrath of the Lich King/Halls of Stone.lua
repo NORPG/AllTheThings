@@ -365,7 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	inst(277, {
