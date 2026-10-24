@@ -400,7 +400,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 									75951,	-- An Exemplar of Order: Talthis
 									75953,	-- An Exemplar of Order: Valunei
 								},
-								provider = { "n", 206221 },	-- Travard
+								qgs = {
+									204602,	-- Travard
+									206221,	-- Travard
+								},
 								coord = { 17.6, 31.5, THE_AZURE_SPAN },
 							}),
 							q(76176, {	-- First Steps
@@ -484,15 +487,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 									ach(18958, {	-- Of the Tyr's Guard
 										title(516),	-- <Name> Of the Tyr's Guard
 									}),
+									-- #if BEFORE 10.2.5
 									n(MAILBOX, {
-										i(208826),	-- Letter from Valunei (QI!)
+										i(208826),	-- Letter from Valunei (QS!)
 									}),
+									-- #endif
 								},
 							}),
 							q(77341, {	-- Logotyrapy
 								sourceQuests = { 77344 },	-- Time to Process
-								provider = { "i", 208826 },	-- Letter from Valunei (QI!)
+								qs = 208826,	-- Letter from Valunei (QS!)
+								-- #if AFTER 10.2.5
+								provider = { "o", 414068 },	-- Sealed Letter
+								coord = { 60.8, 63.6, THALDRASZUS },
+								-- #else
 								maps = { THALDRASZUS },
+								-- #endif
 								groups = {
 									i(208199),	-- Tabard of the Tyr's Guard
 								},

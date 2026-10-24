@@ -24,7 +24,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 	-- #if BEFORE WRATH
 	zoneTextAreaIDs = {
 		1637,	-- Orgrimmar
-		2917,	--  Hall of Legends
+		2917,	-- Hall of Legends
 	},
 	-- #endif
 	icon = 255142,

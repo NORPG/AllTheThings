@@ -2,6 +2,22 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
+--[[
+IMPORTANT!
+Lorewalking is a feature that allows players to revisit storylines from Warcraft's past.
+This file contains so-called "Wrapper Quests" that start a certain Lorewalking tale and then serve as a pivot from one point in lore to another.
+Despite the faction or level identifiers for the quests, all quests while Lorewalking are neutral, have no class requirement, and are available from levels 10-90.
+Because the whole point is to tell a specific 'tale', many quests from already established quest chains are taken out of their regular placement and given to players out of their regular order.
+For us, that posed a problem because our Contributor Report feature constantly threw errors regarding Inaccurate Quest Data.
+For that reason, a function was implemented to suppress such reports because, when it comes to Lorewalking, the reports themselves are inaccurate.
+Commit that introduced the function: '5c4a754fb418c49d4a0eae26641bafe0fdcc8f17' with additional refinement in '4413dd9a6d09ac7695e650061cdf7bde826b9abf'
+
+To any and all PTR Surfers working on sourcing new Lorewalking quests:
+Before starting anything related to Lorewalking, comment out (--) the entire line containing "GetPlayerAura(463943)" in the file 'Contributor.lua' locally.
+That way, you, the contributor, will get the reports of newly introduced Wrapper Quests.
+After you have finished your work, discard that change. DO NOT commit that change to the repository.
+--]]
+
 local LOREWALKING = createHeader({
 	readable = "Lorewalking",
 	icon = 441147,--[[~_.asset("Feature_Lorewalking")]]--,	-- TODO Not a real asset file
@@ -22,7 +38,7 @@ local LOREWALKING = createHeader({
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 	n(LOREWALKING, {
-		cr = 230246,	-- Lorewalker Cho	// As of 12.0.7, this ID belongs to Li Li Stormstout
+		cr = 230246,	-- Lorewalker Cho [Pre 12.0.7] // Li Li Stormstout [Post 12.0.7]
 		timeline = { ADDED_11_1_7 },
 		groups = {
 			n(ACHIEVEMENTS, {
@@ -57,6 +73,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = { i(281626) },	-- Tale of the First Warchief (DECOR!)
 				}),
+				ach(63604, {	-- Lorewalking: Tyr
+					timeline = { ADDED_12_1_7 },
+					groups = { i(283463) },	-- Origin of the Silver Hand (DECOR!)
+				}),
 			}),
 			n(REWARDS, {
 				i(242386,{	-- Lorewalker's Crate of Memorabilia
@@ -68,7 +88,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					isBreadcrumb = true,	-- speculation
 					-- auto-pop at login @ 80s character
 				}),
-				-- As of commit 5c4a754fb418c49d4a0eae26641bafe0fdcc8f17 we should no longer see contrib reports about Inaccurate Quest Data while Lorewalking
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
@@ -136,7 +155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 						groups = {
 							i(244888),	-- Echo of Xal'atath, Blade of the Black Empire (TOY!)
-							i(244846),	-- Lorewalker's Notes: Xal'atath, Blade of the Black Empire (lore)
+							i(244846),	-- Lorewalker's Notes: Xal'atath, Blade of the Black Empire
 						},
 					}),
 				}),
@@ -180,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 						groups = {
 							i(245567),	-- K'aresh Memory Crystal (TOY!)
-							i(244843),	-- Lorewalker's Notes: The Ethereals (lore)
+							i(244843),	-- Lorewalker's Notes: The Ethereals
 						},
 					}),
 				}),
@@ -267,7 +286,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 						groups = {
 							i(245631),	-- Royal Visage (TOY!)
-							i(244858),	-- Lorewalker's Notes: The Lich King (lore)
+							i(244858),	-- Lorewalker's Notes: The Lich King
 						},
 					}),
 					q(85875, {	-- Ascent of the Lich King
@@ -359,6 +378,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							sourceQuest = 92676,	-- Lorewalking: In Another's Footsteps
 							provider = { "n", 252907 },	-- Li Li Stormstout
 							coord = { 60.2, 27.4, KORTHIA },
+							isRepeatable = true,
+						}),
+					},
+				}),
+				header(HEADERS.Achievement, 63604, {	-- Lorewalking: Tyr
+					timeline = { ADDED_12_1_7 },
+					groups = {
+						i(282709),	-- Lorewalker's Notes: Keeper Tyr
+						q(95441, {	-- Lorewalking: The Silver Scale
+							provider = { "n", 230246 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(95442, {	-- Lorewalking: The Silver Hand
+							provider = { "n", 261308 },	-- Li Li Stormstout
+							coord = { 55.3, 43.8, VALDRAKKEN },
+							isRepeatable = true,
+						}),
+						q(95443, {	-- Lorewalking: Tyr's Fall
+							provider = { "n", 261308 },	-- Li Li Stormstout
+							coord = { 13.8, 56.5, TIRISFAL_GLADES },
+							isRepeatable = true,
+						}),
+						q(95444, {	-- Lorewalking: Locating Tyr's Memories
+							provider = { "n", 261308 },	-- Li Li Stormstout
+							coord = { 60.4, 58.8, THALDRASZUS },
 							isRepeatable = true,
 						}),
 					},

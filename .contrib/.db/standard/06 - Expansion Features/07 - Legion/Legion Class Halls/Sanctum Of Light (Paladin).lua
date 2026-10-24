@@ -162,6 +162,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 							sourceQuests = { 42377 },	-- The Brother's Trail
 							provider = { "n", 106337 },	-- Travard
 							coord = { 72.0, 49.3, LEGION_DALARAN },
+							qis = {
+								173523,	-- Tirisfal Camp Scroll (QI!)
+								-- #if AFTER 12.1.7
+								269855,	-- The Silver Hand
+								-- #endfif
+							},
 							groups = {
 								o(249824, {	-- The Silver Hand
 									coord = { 37.5, 56.0, 20 },	-- Keeper's Rest
@@ -172,7 +178,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 										}),
 									},
 								}),
-								i(173523),	-- Tirisfal Camp Scroll (QI!)
 							},
 						}),
 					}),
