@@ -5,7 +5,7 @@
 -- since many world event files aren't organized based on pre-launch event, we can setup the prelaunch groupings here first to ensure correct expac order
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.TBC, {forcetimeline=IGNORED_VALUE}),
-	expansion(EXPANSION.WRATH, {forcetimeline=IGNORED_VALUE}),
+	-- expansion(EXPANSION.WRATH, {forcetimeline=IGNORED_VALUE}), -- no data for this yet
 	expansion(EXPANSION.CATA, {forcetimeline=IGNORED_VALUE}),
 	expansion(EXPANSION.MOP, {forcetimeline=IGNORED_VALUE}),
 	expansion(EXPANSION.LEGION, {forcetimeline=IGNORED_VALUE}),
