@@ -4,7 +4,7 @@
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.BFA,{
-		forcetimeline = { ADDED_8_0_1, REMOVED_8_0_1 },
+		forcetimeline = { ADDED_8_0_1, REMOVED_8_0_1_LAUNCH },
 		lvl = 110,
 	}),
 	expansion(EXPANSION.BFA, {
