@@ -134,3 +134,7 @@ tests export-ignore
 
 # VS Code workspace configuration
 /.vscode/*.json text eol=lf
+
+# GitHub metadata
+/.github/*.yml text eol=lf
+/.github/ISSUE_TEMPLATE/*.yml text eol=lf
