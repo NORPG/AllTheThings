@@ -3928,7 +3928,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				n(29529, {	-- Ninsianna <Relics>
 					description = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
 					-- #if BEFORE MOP
-					groups = bubbleDown({ timeline = { REMOVED_5_0_4 } }, {
+					groups = sharedData({ timeline = { REMOVED_5_0_4 } }, {
 						emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
 						emov(25, i(40342)),	-- Idol of Awakening
 						emot(25, i(47671)),	-- Idol of Flaring Growth

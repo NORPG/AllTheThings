@@ -1774,7 +1774,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 					coord = { 64.3, 66.2, TEROKKAR_FOREST },
 					timeline = { ADDED_2_1_0 },
-					groups = bubbleDownClassicRep(FACTION_SHATARI_SKYGUARD, bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = bubbleDownClassicRep(FACTION_SHATARI_SKYGUARD, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(32722),	-- Enriched Terocone Juice
@@ -1796,7 +1796,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							i(32770),	-- Skyguard Silver Cross
 							i(32445),	-- Skyguard Tabard
 						},
-					})),
+					}),
 				})),
 				n(19296, {	-- Innkeeper Biribi <Innkeeper>
 					coord = { 56.6, 53.2, TEROKKAR_FOREST },

@@ -558,33 +558,3 @@ maproot(KUL_TIRAS, MECHAGON, {
 		}),
 	},
 });
-
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
--- 	m(KUL_TIRAS, {
--- 		m(MECHAGON, {
--- 			n(ACHIEVEMENTS, {
--- 				-- Achievement 'Armed for Action' (achievementID 13790)
--- 				hqt(55260, name(HEADERS.AchCriteria, 13790.01)),	-- Volatile Blaster
--- 				hqt(55261, name(HEADERS.AchCriteria, 13790.02)),	-- Lightning Zap 5000
--- 				hqt(55903, name(HEADERS.AchCriteria, 13790.03)),	-- Boltspitter
--- 				hqt(55414, name(HEADERS.AchCriteria, 13790.04)),	-- Ricket's Special Delivery
--- 				hqt(55902, name(HEADERS.AchCriteria, 13790.05)),	-- Supercollider
--- 				-- Achievement 'Most Minis Wins' (achievementID 13708)
--- 				hqt(56624, name(HEADERS.AchCriteria, 13708.01)),	-- Collected Izira Gearsworn
--- 				hqt(56625, name(HEADERS.AchCriteria, 13708.02)),	-- Collected Bondo Grosbloc
--- 				hqt(56626, name(HEADERS.AchCriteria, 13708.03)),	-- Collected Wrenchbot
--- 				hqt(56627, name(HEADERS.AchCriteria, 13708.04)),	-- Collected Roadtrogg
--- 				hqt(56628, name(HEADERS.AchCriteria, 13708.05)),	-- Collected Overspark
--- 				hqt(56629, name(HEADERS.AchCriteria, 13708.06)),	-- Collected Gazlowe
--- 				hqt(56630, name(HEADERS.AchCriteria, 13708.07)),	-- Collected HK-8
--- 				hqt(56631, name(HEADERS.AchCriteria, 13708.08)),	-- Collected King Mechagon
--- 				hqt(56632, name(HEADERS.AchCriteria, 13708.09)),	-- Collected Prince Erazmin
--- 				hqt(56633, name(HEADERS.AchCriteria, 13708.10)),	-- Collected Cork Stuttguard
--- 				hqt(56634, name(HEADERS.AchCriteria, 13708.11)),	-- Collected Naeno Megacrash
--- 				hqt(56635, name(HEADERS.AchCriteria, 13708.12)),	-- Collected Cogstar
--- 				hqt(56652, name(HEADERS.AchCriteria, 13708.13)),	-- Collected Blastatron
--- 				hqt(56729, name(HEADERS.AchCriteria, 13708.14)),	-- Collected Sapphronetta
--- 			}),
--- 		}),
--- 	}),
--- })));

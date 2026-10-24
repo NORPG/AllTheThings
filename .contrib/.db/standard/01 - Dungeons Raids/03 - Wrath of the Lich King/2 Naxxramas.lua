@@ -83,16 +83,17 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 				},
 			}),
 		}),
-		n(SPECIAL, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {
+		n(SPECIAL, {
 			n(206712, {	-- Valiance
 				description = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
 				questID = 76378,
 				cost = { { "i", 208068, 1 } },	-- 1x Rotten Delicious
+				timeline = { ADDED_10_1_5 },
 				groups = {
 					i(206585),	-- Valiance (MOUNT!)
 				},
 			}),
-		})),
+		}),
 		-- #if NOT NAXX_10MAN_DROPS_25MAN_LOOT
 		n(ZONE_DROPS),
 		-- #endif
@@ -1446,8 +1447,9 @@ inst(754, {	-- Naxxramas
 		-- #if AFTER 7.2.0
 		{
 			-- #if AFTER 10.1.5
-			header(HEADERS.Achievement, 18372, bubbleDown({ timeline = { ADDED_10_1_5 } }, {		-- Wards of the Dread Citadel
+			header(HEADERS.Achievement, 18372, {		-- Wards of the Dread Citadel
 				description = "With 10.1.5, Blizzard readded vanilla Naxxramas and the tier 3 crafts. Unlocking this content requires completing following stages:\n\nStages 1-3 takes place in Scholomance and Plaguelands, see instructions in the 'Wards of the Dread Citadel'-header in the respective zones.\n\nThe following stages takes place in Naxxramas, and you can get here from Eastern Plaguelands by using a portal at coordinates 35.7, 23.1. It is recommended to proceed with a Gnome or Goblin due to required parkouring in tight spaces.\nRequired items:\nAt least 1x Stratholme Holy Water\n3x Dark Rune\n20x Invader's Scourgestones\n1x Black Coffee, bought in Shattrath (70.6, 51.8) / Stormwind (69.4, 65.4)\n2x Speed potions if you do not have an ability like Burning Rush.\n\nStage 4: Makeshift Grappling Hook, see the instructions in the subheader below.\n\nStage 5: Mutually Beneficial Transactions, see the instructions in the subheader below.\n\nStage 6: Forgotten Knowledge, see the instructions in the subheader below.\n\nCongratulations, all is unlocked and welcome to the grind!",
+				timeline = { ADDED_10_1_5 },
 				groups = {
 					header(HEADERS.Item, 206473, {	-- Makeshift Grappling Hook
 						description = "1. First you need to create a Makeshift Grappling Hook from the following items:\n\n1.1 Abomination's Chain can be fished from any slime (green liquid), like the small pool just inside Arachnid Quarter.\n\n1.2 Faerlina's Sewing Kit drops from Grand Widow Faerlina in the Arachnid Quarter.\n\n1.3 Construct's Hook can be found on a handle under a vat of slime on the right side of the second room of the Construct Quarter.\n\n2. Use your Makeshift Grappling Hook to get access to grapple points inside Naxxramas on an account-wide basis.\n\n",
@@ -2640,7 +2642,7 @@ inst(754, {	-- Naxxramas
 						}),
 					}),
 				},
-			})),
+			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
 				ach(11750, {timeline = { ADDED_7_2_0 }}),	-- Undying Aesthetic (Naxxramas)

@@ -641,7 +641,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					i(181383),	-- Unrelenting Cold
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR, {timeline = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15122, {	-- The Jailer's Vanguard
 					Boss(TARRAGRUE),
@@ -667,7 +667,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				header(HEADERS.Achievement, 15125, {	-- The Reckoning
 					Boss(SYLVANAS),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(TARRAGRUE, {
 					ach(14998),	-- Name A Better Duo, I'll Wait

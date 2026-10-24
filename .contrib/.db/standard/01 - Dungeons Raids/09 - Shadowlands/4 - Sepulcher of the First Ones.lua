@@ -895,7 +895,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					i(182318),	-- Viscous Ink (CONDUIT!)
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR, {timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					Boss(VIGILANT_GUARDIAN),
@@ -916,7 +916,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				header(HEADERS.Achievement, 15418, {	-- The Grand Design
 					Boss(THE_JAILER),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(VIGILANT_GUARDIAN, {
 					ach(15381),	-- Power ON
@@ -1065,27 +1065,27 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					ach(15469, {timeline = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Mythic]
 				}),
 				Boss(THE_JAILER, {
-					ach(15489, {	-- Mythic: The Jailer
-						title(455),	-- <Name>, Guardian of the Pattern
-					}),
-					ach(15474),	-- Mythic The Jailer Guild Run
-					ig(190768),	-- Zereth Overseer (MOUNT!)
-				}),
-				Boss(THE_JAILER, bubbleDown({timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					ach(15476, {	-- Hall of Fame: The Jailer (A)
 						races = ALLIANCE_ONLY,
+						timeline = { REMOVED_9_2_5 },
 						groups = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),
 					ach(15475, {	-- Hall of Fame: The Jailer (H)
 						races = HORDE_ONLY,
+						timeline = { REMOVED_9_2_5 },
 						groups = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),
-					ach(15471),	-- Cutting Edge: The Jailer
-				})),
+					ach(15471, {timeline = { REMOVED_9_2_5 }}),	-- Cutting Edge: The Jailer
+					ach(15489, {	-- Mythic: The Jailer
+						title(455),	-- <Name>, Guardian of the Pattern
+					}),
+					ach(15474),	-- Mythic The Jailer Guild Run
+					ig(190768),	-- Zereth Overseer (MOUNT!)
+				}),
 			}),
 		},
 	}),

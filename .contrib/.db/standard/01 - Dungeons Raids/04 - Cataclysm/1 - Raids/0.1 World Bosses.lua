@@ -8,9 +8,10 @@ local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemo
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, bubbleDownSelf({ timeline = { ADDED_4_0_3 }, }, {
+	applyclassicphase(CATA_PHASE_ONE, n(WORLD_BOSSES, {
 		isRaid = true,
 		lvl = 85,
+		timeline = { ADDED_4_0_3 },
 		groups = {
 			n(COMMON_BOSS_DROPS, {
 				crs = {
@@ -157,5 +158,5 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 			}),
 		},
-	}))),
+	})),
 }));

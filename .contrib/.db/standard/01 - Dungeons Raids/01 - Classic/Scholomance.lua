@@ -2036,8 +2036,9 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 	timeline = { ADDED_5_0_4 },
 	groups = {
 		-- #if AFTER 10.1.5
-		header(HEADERS.NPC, 206014, bubbleDown({ timeline = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
+		header(HEADERS.NPC, 206014, {	-- Eva Sarkhoff
 			description = "See the 'Memory of Scholomance'-header for proper instructions on how to do this.",
+			timeline = { ADDED_10_1_5 },
 			groups = {
 				n(TREASURES, {
 					o(403552, {	-- Eva's Femur
@@ -2074,7 +2075,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 					},
 				}),
 			},
-		})),
+		}),
 		-- #endif
 		n(59613, {	-- Professor Slate <Potions Master>
 			timeline = { ADDED_5_0_4 },

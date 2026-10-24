@@ -739,7 +739,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					i(183199),	-- Withering Ground
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR, {timeline = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }}).AddGroups({
 				ZoneDrops(),
 				n(LEECHING_VAULTS_HEADER, {
 					Boss(HUNTSMAN, {
@@ -797,7 +797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						FatedItem(modItemId(183899,LFR_LAST2), FATED_LFR_LAST2),	-- Zenith Anima Spherule (Fated)
 					}),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(SHRIEKWING, {
 					ach(14293),	-- Blind as a Bat

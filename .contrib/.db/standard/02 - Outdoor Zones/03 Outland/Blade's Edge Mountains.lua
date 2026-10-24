@@ -2589,7 +2589,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 					coord = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					groups = bubbleDownClassicRep(FACTION_OGRILA, bubbleDown({ timeline = { ADDED_2_1_0 } }, {
+					groups = bubbleDownClassicRep(FACTION_OGRILA, {
 						{		-- Neutral
 							i(33934),	-- Crystal Healing Potion
 							i(33935),	-- Crystal Mana Potion
@@ -2651,7 +2651,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 								},
 							}),
 						},
-					})),
+					}),
 				})),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 					coord = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },

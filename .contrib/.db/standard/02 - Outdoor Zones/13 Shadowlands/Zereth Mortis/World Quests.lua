@@ -134,13 +134,3 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 		})),
 	},
 });
-
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ timeline = { ADDED_9_2_0 } }, {
--- 	m(SHADOWLANDS, {
--- 		m(ZERETH_MORTIS, {
--- 			n(WORLD_QUESTS, {
--- 				q(65418),	-- Triggered when completing a puzzle WQ
--- 			}),
--- 		}),
--- 	}),
--- })));

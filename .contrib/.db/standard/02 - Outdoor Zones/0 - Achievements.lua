@@ -1895,8 +1895,7 @@ root(ROOTS.Zones, {
 			},
 		}),
 		ach(1244, {	-- Well Read
-
-timeline = { ADDED_3_0_2 },
+			timeline = { ADDED_3_0_2 },
 		}),
 		petbattle(ach(41092, {	-- Undermine Safari (also includes Zandalar locations)
 			timeline = { ADDED_11_1_0 },
@@ -2039,7 +2038,7 @@ timeline = { ADDED_3_0_2 },
 			},
 		})),
 	}),
-	n(TREASURES, bubbleDownSelf({timeline = { ADDED_3_0_2 } }, {
+	n(TREASURES, timelineSelf({timeline = { ADDED_3_0_2 } }, {
 		o(175738, {	-- Aegwynn and the Dragon Hunt
 			coords = {
 				-- #if AFTER CATA
