@@ -247,7 +247,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 									{ "i", 277976 },	-- Gozwin's Mechanic's Log (QI!)
 									{ "o", 664122 },	-- Gozwin's Mechanic's Log
 								},
-								coord = { 27.3, 62.9, MAP.DUN_MOROGH },
+								coord = { 27.3, 62.8, MAP.DUN_MOROGH },
 							}),
 							objective(2, {	-- 0/1 Snow Leopard Prowler
 								provider = { "n", 269075 },	-- Snow Leopard Prowler
@@ -276,7 +276,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(3364, {	-- Scalding Mornbrew Delivery
 						qg = 12738,	-- Nori Pridedrift
 						qi = 10439,	-- Durnan's Scalding Mornbrew (PQI!)
-						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
+						coord = { 25.0, 76.0, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
 					}),

@@ -348910,6 +348910,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		ignorewowhead = true,
 		text = {
 			en = "Gozwin's Mechanic's Log",
+			tw = "戈茲溫的機師記錄",
 		},
 	},
 	[665240] = {
