@@ -1,12 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
 if (args.Length == 0)
 {
-    Trace.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
+    Trace.WriteLine("[0] => CSV File to Clean | [1] (optional) => File containing Regex line(s) for allowed CSV lines");
     Console.ReadKey();
     return -1;
 }
@@ -17,36 +15,125 @@ foreach (var arg in args)
 }
 
 string filepath = args[0];
-string regexFile = args[1];
+string regexFile = args.Length > 1 ? args[1] : null;
 
-if (!File.Exists(filepath) || !File.Exists(regexFile))
+if (!File.Exists(filepath))
 {
-    Trace.WriteLine("[0] => CSV File to Clean | [1] => File containing Regex line(s) for allowed CSV lines");
-    Console.ReadKey();
+    Trace.WriteLine($"CSV file not found: {filepath}");
     return -1;
 }
 
-string[] regexPatterns = File.ReadAllLines(regexFile);
-//string[] csvLines = File.ReadAllLines(filepath);
-StringBuilder sb = new();
-using StreamReader sr = new(filepath);
+Regex[] regexes = [];
 
-// header columns
-sb.AppendLine(sr.ReadLine());
-
-string line;
-while ((line = sr.ReadLine()) != null)
+if (regexFile != null && File.Exists(regexFile))
 {
-    foreach (string regex in regexPatterns)
+    regexes = File.ReadAllLines(regexFile)
+        .Where(l => !string.IsNullOrWhiteSpace(l))
+        .Select(l => new Regex(l, RegexOptions.Compiled))
+        .ToArray();
+}
+else
+{
+    Trace.WriteLine("Regex file not provided or not found; Regex cleaning skipped.");
+}
+
+string header;
+List<string> lines = [];
+
+using (StreamReader sr = new(filepath))
+{
+    header = ReadRecord(sr);
+
+    string record;
+    while ((record = ReadRecord(sr)) != null)
     {
-        if (Regex.IsMatch(line, regex))
+        if (regexes.Length == 0 || regexes.Any(r => r.IsMatch(record)))
         {
-            sb.AppendLine(line); break;
+            lines.Add(record);
         }
     }
 }
-sr.Dispose();
+
+if (header == null)
+{
+    Trace.WriteLine("CSV file is empty.");
+    return -1;
+}
+
+int idIndex = SplitCsv(header)
+    .FindIndex(h => h.Trim().Equals("ID", StringComparison.OrdinalIgnoreCase));
+
+IEnumerable<string> sorted = lines;
+
+if (idIndex < 0)
+{
+    Trace.WriteLine("No 'ID' column found in header; sorting skipped.");
+}
+else
+{
+    // OrderBy is stable; lines with a missing/non-numeric ID go last
+    sorted = lines
+        .Select(l =>
+        {
+            var fields = SplitCsv(l);
+            long id = idIndex < fields.Count && long.TryParse(fields[idIndex].Trim(), out long v)
+                ? v
+                : long.MaxValue;
+            return (Line: l, Id: id);
+        })
+        .OrderBy(x => x.Id)
+        .Select(x => x.Line);
+}
+
+StringBuilder sb = new();
+sb.AppendLine(header);
+foreach (string l in sorted)
+{
+    sb.AppendLine(l);
+}
 
 File.WriteAllText(filepath, sb.ToString());
 
 return 0;
+
+// Splits one CSV line, respecting quoted fields and "" escapes
+static List<string> SplitCsv(string line)
+{
+    List<string> fields = [];
+    StringBuilder cur = new();
+    bool inQuotes = false;
+
+    for (int i = 0; i < line.Length; i++)
+    {
+        char c = line[i];
+        if (inQuotes)
+        {
+            if (c == '"' && i + 1 < line.Length && line[i + 1] == '"') { cur.Append('"'); i++; }
+            else if (c == '"') inQuotes = false;
+            else cur.Append(c);
+        }
+        else if (c == '"') inQuotes = true;
+        else if (c == ',') { fields.Add(cur.ToString()); cur.Clear(); }
+        else cur.Append(c);
+    }
+    fields.Add(cur.ToString());
+    return fields;
+}
+
+// Reads one CSV record, joining physical lines while inside an open quoted value
+static string ReadRecord(StreamReader sr)
+{
+    string line = sr.ReadLine();
+    if (line == null) return null;
+
+    StringBuilder sb = new(line);
+    int quotes = line.Count(c => c == '"');
+
+    // Odd quote count => still inside a quoted value
+    while (quotes % 2 != 0 && (line = sr.ReadLine()) != null)
+    {
+        sb.Append(Environment.NewLine).Append(line);
+        quotes += line.Count(c => c == '"');
+    }
+    return sb.ToString();
+}
