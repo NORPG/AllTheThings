@@ -214,20 +214,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 				maps = { SKYHOLD },
 				groups = {
-					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-						ach(42298, {	-- Hidden Potential of the Battlelord
-							i(249458),	-- Replica Forge of Odyn (DECOR!)
-						}),
-						ach(60973, {	-- Legendary Research of the Valarjar
-							i(257396),	-- Replica Saga of the Valarjar (DECOR!)
-						}),
-						ach(60992, {	-- Raise an Army for Skyhold
-							i(249461),	-- Skyhold War Table (DECOR!)
-						}),
-						ach(42282, {	-- The Battlelord's Campaign
-							i(249466),	-- Valarjar Shield Wall (DECOR!)
-						}),
-					})),
+					n(ACHIEVEMENTS, {
+						timeline = { ADDED_11_2_7 },
+						groups = {
+							ach(42298, {	-- Hidden Potential of the Battlelord
+								i(249458),	-- Replica Forge of Odyn (DECOR!)
+							}),
+							ach(60973, {	-- Legendary Research of the Valarjar
+								i(257396),	-- Replica Saga of the Valarjar (DECOR!)
+							}),
+							ach(60992, {	-- Raise an Army for Skyhold
+								i(249461),	-- Skyhold War Table (DECOR!)
+							}),
+							ach(42282, {	-- The Battlelord's Campaign
+								i(249466),	-- Valarjar Shield Wall (DECOR!)
+							}),
+						},
+					}),
 					n(ARTIFACTS, {
 						cl(WARRIOR, ARMS, {
 							q(43643, {	-- Secrets of the Axes

@@ -359,9 +359,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(FYRAKK_ASSAULTS, sharedData({ timeline = { ADDED_10_1_0 } }, {
-		q(75448),	-- Ward of Ingira Elite
-		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
-		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
-	})),
+	n(FYRAKK_ASSAULTS, {
+		timeline = { ADDED_10_1_0 },
+		groups = {
+			q(75448),	-- Ward of Ingira Elite
+			q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
+			q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
+		},
+	}),
 }));

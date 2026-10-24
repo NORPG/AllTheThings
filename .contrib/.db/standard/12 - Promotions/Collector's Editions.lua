@@ -1449,16 +1449,22 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_
 			q(63770, { timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }),	-- A Special Thanks (Innkeepers)
 	});
 	expansion(EXPANSION.TBC, {
-		n(TBC_CLASSIC_DELUXE_EDITION, sharedData({ timeline = { ADDED_2_5_1, REMOVED_3_0_2 } }, {
-			q(63448),	-- A Deluxe Delivery (Innkeepers)
-		})),
+		n(TBC_CLASSIC_DELUXE_EDITION, {
+			timeline = { ADDED_2_5_1, REMOVED_3_0_2 },
+			groups = {
+				q(63448),	-- A Deluxe Delivery (Innkeepers)
+			},
+		}),
 	});
 	-- #endif
 	-- #if CLASSIC_ANNIVERSARY
 	expansion(EXPANSION.TBC, {
-		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, sharedData({ timeline = { ADDED_2_5_5, REMOVED_3_0_2 } }, {
-			q(93823),	-- A Deluxe Delivery (Innkeepers)
-		})),
+		n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, {
+			timeline = { ADDED_2_5_5, REMOVED_3_0_2 },
+			groups = {
+				q(93823),	-- A Deluxe Delivery (Innkeepers)
+			},
+		}),
 	});
 	-- #endif
 	expansion(EXPANSION.TWW, {

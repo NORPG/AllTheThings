@@ -7,20 +7,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 		cl(DEATHKNIGHT, bubbleDownSelf({ classes = { DEATHKNIGHT } }, {
 			maps = { ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },	-- Uppstairs/Down
 			groups = {
-				n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-					ach(42287, {	-- Hidden Potential of the Deathlord
-						i(250123),	-- Replica Acherus Soul Forge (DECOR!)
-					}),
-					ach(60962, {	-- Legendary Research of the Ebon Blade
-						i(260584),	-- Replica Libram of the Dead (DECOR!)
-					}),
-					ach(60981, {	-- Raise an Army for Acherus
-						i(250112),	-- Ebon Blade Planning Map (DECOR!)
-					}),
-					ach(42270, {	-- The Deathlord's Campaign
-						i(250115),	-- Ebon Blade Weapon Rack (DECOR!)
-					}),
-				})),
+				n(ACHIEVEMENTS, {
+					timeline = { ADDED_11_2_7 },
+					groups = {
+						ach(42287, {	-- Hidden Potential of the Deathlord
+							i(250123),	-- Replica Acherus Soul Forge (DECOR!)
+						}),
+						ach(60962, {	-- Legendary Research of the Ebon Blade
+							i(260584),	-- Replica Libram of the Dead (DECOR!)
+						}),
+						ach(60981, {	-- Raise an Army for Acherus
+							i(250112),	-- Ebon Blade Planning Map (DECOR!)
+						}),
+						ach(42270, {	-- The Deathlord's Campaign
+							i(250115),	-- Ebon Blade Weapon Rack (DECOR!)
+						}),
+					},
+				}),
 				n(ARTIFACTS, {
 					cl(DEATHKNIGHT, BLOOD, {
 						i(139546, {	-- Twisting Anima of Souls

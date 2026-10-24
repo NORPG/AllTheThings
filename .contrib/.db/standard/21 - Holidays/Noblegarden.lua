@@ -443,56 +443,59 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			timeline = { ADDED_3_0_2 },
 		}),
 	}),
-	n(RARES, sharedData({ timeline = { ADDED_10_2_6 } }, {
-		n(213665, {	-- Daetan Swiftplume
-			providers = {
-				{ "n", 216836 },	-- Golden Egg
-				{ "n", 219936 },	-- [DNT] Vignette
-			},
-			description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
-			coord = { 30.3, 91.4, ELWYNN_FOREST },
-			races = ALLIANCE_ONLY,
-			groups = {
-				i(210594, {	-- Noblegarden Trinket (QI!)
-					races = ALLIANCE_ONLY,
-				}),
-			},
-		}),
-		n(218738, {	-- Daetan Swiftplume
-			providers = {
-				{ "n", 218736 },	-- Golden Egg
-				{ "n", 219928 },	-- [DNT] Vignette
-			},
-			description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
-			coord = { 44.4, 35.1, DUROTAR },
-			races = HORDE_ONLY,
-			groups = {
-				i(216932, {	-- Noblegarden Trinket (QI!)
-					races = HORDE_ONLY,
-				}),
-			},
-		}),
-		n(216836, {	-- Golden Egg
-			description = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
-			coords = {
-				{ 31.0, 85.0, ELWYNN_FOREST },
-				{ 34.91, 87.96, ELWYNN_FOREST },
-				{ 28.8, 86.68, ELWYNN_FOREST },
-				{ 34.83, 81.68, ELWYNN_FOREST },
-				{ 34.5, 80.7, ELWYNN_FOREST },
-			},
-		}),
-		n(218736, {	-- Golden Egg
-			description = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
-			coords = {
-				{ 44.8, 32.0, DUROTAR },
-				{ 46.2, 33.4, DUROTAR },	-- confirmed starting point
-				{ 42.6, 37.8, DUROTAR },
-				{ 45.2, 39.6, DUROTAR },
-				{ 46.0, 37.2, DUROTAR },	-- confirmed starting point
-			},
-		}),
-	})),
+	n(RARES, {
+		timeline = { ADDED_10_2_6 },
+		groups = {
+			n(213665, {	-- Daetan Swiftplume
+				providers = {
+					{ "n", 216836 },	-- Golden Egg
+					{ "n", 219936 },	-- [DNT] Vignette
+				},
+				description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+				coord = { 30.3, 91.4, ELWYNN_FOREST },
+				races = ALLIANCE_ONLY,
+				groups = {
+					i(210594, {	-- Noblegarden Trinket (QI!)
+						races = ALLIANCE_ONLY,
+					}),
+				},
+			}),
+			n(218738, {	-- Daetan Swiftplume
+				providers = {
+					{ "n", 218736 },	-- Golden Egg
+					{ "n", 219928 },	-- [DNT] Vignette
+				},
+				description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
+				coord = { 44.4, 35.1, DUROTAR },
+				races = HORDE_ONLY,
+				groups = {
+					i(216932, {	-- Noblegarden Trinket (QI!)
+						races = HORDE_ONLY,
+					}),
+				},
+			}),
+			n(216836, {	-- Golden Egg
+				description = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+				coords = {
+					{ 31.0, 85.0, ELWYNN_FOREST },
+					{ 34.91, 87.96, ELWYNN_FOREST },
+					{ 28.8, 86.68, ELWYNN_FOREST },
+					{ 34.83, 81.68, ELWYNN_FOREST },
+					{ 34.5, 80.7, ELWYNN_FOREST },
+				},
+			}),
+			n(218736, {	-- Golden Egg
+				description = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
+				coords = {
+					{ 44.8, 32.0, DUROTAR },
+					{ 46.2, 33.4, DUROTAR },	-- confirmed starting point
+					{ 42.6, 37.8, DUROTAR },
+					{ 45.2, 39.6, DUROTAR },
+					{ 46.0, 37.2, DUROTAR },	-- confirmed starting point
+				},
+			}),
+		},
+	}),
 	n(QUESTS, {
 		q(74120, {	-- A Spring Awakening (A)
 			qg = 199261,	-- Holiday Enthusiast

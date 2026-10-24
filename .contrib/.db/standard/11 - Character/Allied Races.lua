@@ -1739,13 +1739,16 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
-	n(ALLIED_RACES, sharedData({ timeline = { ADDED_7_3_5 } }, {
-		q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
-		q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
-		q(53468),	-- Turned in "The Call for Allies" (49930) Orgrimmar
-		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
-		q(59030, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Flames of Fury (175158) for Bag of Tricks
-		q(59033, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Sinister Shadows (175159) for Bag of Tricks
-		q(59036, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Holy Relic (175160) for Bag of Tricks
-	})),
+	n(ALLIED_RACES, {
+		timeline = { ADDED_7_3_5 },
+		groups = {
+			q(48575),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity? Maybe an alliance/horde equivalent?
+			q(53441),	-- Turned in "The Call for Allies" in stormwind. Possibly used to denote flag activity?
+			q(53468),	-- Turned in "The Call for Allies" (49930) Orgrimmar
+			q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
+			q(59030, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Flames of Fury (175158) for Bag of Tricks
+			q(59033, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Sinister Shadows (175159) for Bag of Tricks
+			q(59036, { timeline = { ADDED_8_3_0 } }),	-- Vulpera learning Holy Relic (175160) for Bag of Tricks
+		},
+	}),
 }));

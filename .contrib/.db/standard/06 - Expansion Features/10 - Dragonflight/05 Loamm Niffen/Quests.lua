@@ -307,11 +307,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
-		n(QUESTS, sharedData({ timeline = { ADDED_10_1_0 } }, {
-			q(76208),	-- Triggered at Renown 3
-			q(76209),	-- Triggered at Renown 3
-			q(76020),	-- Triggered at Renown 5
-			q(76019),	-- Triggered at Renown 13
-		})),
+		n(QUESTS, {
+			timeline = { ADDED_10_1_0 },
+			groups = {
+				q(76208),	-- Triggered at Renown 3
+				q(76209),	-- Triggered at Renown 3
+				q(76020),	-- Triggered at Renown 5
+				q(76019),	-- Triggered at Renown 13
+			},
+		}),
 	}),
 }));

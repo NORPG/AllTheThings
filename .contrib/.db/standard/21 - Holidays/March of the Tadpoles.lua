@@ -46,11 +46,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TAD
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
-	applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, sharedData({ timeline = { ADDED_7_2_0 } }, {
-		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
-		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
-		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
-		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
-		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
-	}))),
+	applyevent(EVENTS.MARCH_OF_THE_TADPOLES, n(MARCH_OF_THE_TADPOLES_HEADER, {
+		timeline = { ADDED_7_2_0 },
+		groups = {
+			q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
+			q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
+			q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
+			q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
+			q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
+		},
+	})),
 }));

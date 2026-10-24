@@ -96,26 +96,29 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(QUESTS, sharedData({ timeline = { ADDED_8_2_0 } }, {
-			q(56042, {	-- Blingtron 7000
-				qg = 153897,	-- Blingtron 7000
-				isDaily = true,
-				groups = {
-					i(168740, {	-- Blingtron 7000 Gift Package
-						sym = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
-						groups = {
-							i(170060, {	-- Encrypted Message
-								i(170055),	-- Decrypted Message 001-322
-								i(170056),	-- Decrypted Message 001-346
-								i(170057),	-- Decrypted Message 001-372
-								i(170058),	-- Decrypted Message 001-398
-								i(170059),	-- Decrypted Message 002-001
-							}),
-							i(168790),	-- Sack of Fish Bones
-						},
-					}),
-				},
-			}),
-		})),
+		n(QUESTS, {
+			timeline = { ADDED_8_2_0 },
+			groups = {
+				q(56042, {	-- Blingtron 7000
+					qg = 153897,	-- Blingtron 7000
+					isDaily = true,
+					groups = {
+						i(168740, {	-- Blingtron 7000 Gift Package
+							sym = {{"select","itemID",132892},{"pop"}},	-- Blingtron 6000 Gift Package
+							groups = {
+								i(170060, {	-- Encrypted Message
+									i(170055),	-- Decrypted Message 001-322
+									i(170056),	-- Decrypted Message 001-346
+									i(170057),	-- Decrypted Message 001-372
+									i(170058),	-- Decrypted Message 001-398
+									i(170059),	-- Decrypted Message 002-001
+								}),
+								i(168790),	-- Sack of Fish Bones
+							},
+						}),
+					},
+				}),
+			},
+		}),
 	}),
 });

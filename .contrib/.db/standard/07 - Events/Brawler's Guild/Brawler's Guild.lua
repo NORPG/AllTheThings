@@ -2427,9 +2427,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	}));
 	expansion(EXPANSION.TWW, {
 		n(BRAWLERS_GUILD, {
-			n(QUESTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-				q(93223),	-- Triggered upon entering the arena for the first time
-			})),
+			n(QUESTS, {
+				timeline = { ADDED_11_2_7 },
+				groups = {
+					q(93223),	-- Triggered upon entering the arena for the first time
+				},
+			}),
 		}),
 	});
 });

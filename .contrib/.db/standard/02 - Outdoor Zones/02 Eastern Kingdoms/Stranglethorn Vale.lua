@@ -3633,13 +3633,16 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 	m(EASTERN_KINGDOMS, {
-		m(STRANGLETHORN_VALE, sharedData({ timeline = { ADDED_1_11_1 } }, {
-			q(7908, {timeline = { ADDED_1_12_1 }}),	-- Arena Master [Old] - completed with quest 7810
-			q(618),	-- Facing Negolash [Old] - completed with quest 8554
-			q(614),	-- The Captain's Chest [Old] - completed with quest 8551
-			q(615, {timeline = { ADDED_1_12_1 }}),	-- The Captain's Cutlass [Old] - completed with quest 8553
-			q(620, {timeline = { ADDED_1_12_1 }}),	-- The Monogrammed Sash [Old] - completed with quest 8552
-		})),
+		m(STRANGLETHORN_VALE, {
+			timeline = { ADDED_1_11_1 },
+			groups = {
+				q(7908, {timeline = { ADDED_1_12_1 }}),	-- Arena Master [Old] - completed with quest 7810
+				q(618),	-- Facing Negolash [Old] - completed with quest 8554
+				q(614),	-- The Captain's Chest [Old] - completed with quest 8551
+				q(615, {timeline = { ADDED_1_12_1 }}),	-- The Captain's Cutlass [Old] - completed with quest 8553
+				q(620, {timeline = { ADDED_1_12_1 }}),	-- The Monogrammed Sash [Old] - completed with quest 8552
+			},
+		}),
 	}),
 }));
 -- #endif

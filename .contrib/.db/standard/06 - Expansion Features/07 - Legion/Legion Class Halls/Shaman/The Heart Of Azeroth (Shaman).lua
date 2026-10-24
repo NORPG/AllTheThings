@@ -9,20 +9,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 				maps = { THE_HEART_OF_AZEROTH },
 				groups = {
-					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-						ach(42296, {	-- Hidden Potential of the Farseer
-							i(250914),	-- Elemental Altar of the Maelstrom (DECOR!)
-						}),
-						ach(60971, {	-- Legendary Research of the Maelstrom
-							i(250915),	-- Replica Words of Wind and Earth (DECOR!)
-						}),
-						ach(60990, {	-- Raise an Army for the Maelstrom
-							i(251014),	-- Earthen Ring Scouting Map (DECOR!)
-						}),
-						ach(42280, {	-- The Farseer's Campaign
-							i(257403),	-- Maelstrom Lava Lamp (DECOR!)
-						}),
-					})),
+					n(ACHIEVEMENTS, {
+						timeline = { ADDED_11_2_7 },
+						groups = {
+							ach(42296, {	-- Hidden Potential of the Farseer
+								i(250914),	-- Elemental Altar of the Maelstrom (DECOR!)
+							}),
+							ach(60971, {	-- Legendary Research of the Maelstrom
+								i(250915),	-- Replica Words of Wind and Earth (DECOR!)
+							}),
+							ach(60990, {	-- Raise an Army for the Maelstrom
+								i(251014),	-- Earthen Ring Scouting Map (DECOR!)
+							}),
+							ach(42280, {	-- The Farseer's Campaign
+								i(257403),	-- Maelstrom Lava Lamp (DECOR!)
+							}),
+						},
+					}),
 					n(ARTIFACTS, {
 						cl(SHAMAN, ELEMENTAL, {
 							i(139572, {	-- Lost Codex of the Amani

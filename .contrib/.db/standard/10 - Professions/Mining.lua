@@ -15,9 +15,12 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 	}),
 	-- #endif
 	expansion(EXPANSION.CLASSIC, {
-		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
-			ach(18841),	-- Doing Your Share (automated)
-		})),
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				ach(18841),	-- Doing Your Share (automated)
+			},
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
@@ -906,305 +909,308 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
-			ach(18820, {	-- Geologist's Ledger: Dragon Isles
-				-- Meta Achievement
-				sym = {{"meta_achievement",
-					18819,	-- Geologist's Ledger - Draconium
-					18818,	-- Geologist's Ledger - Serevite
-					18821,	-- Geologist's Ledger - Overloaded Elements
-				}},
-				groups = {
-					crit(61388, {	-- Iridescent Ore Recovered
-						provider = { "i", 201301 },	-- Iridescent Ore
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				ach(18820, {	-- Geologist's Ledger: Dragon Isles
+					-- Meta Achievement
+					sym = {{"meta_achievement",
+						18819,	-- Geologist's Ledger - Draconium
+						18818,	-- Geologist's Ledger - Serevite
+						18821,	-- Geologist's Ledger - Overloaded Elements
+					}},
+					groups = {
+						crit(61388, {	-- Iridescent Ore Recovered
+							provider = { "i", 201301 },	-- Iridescent Ore
+						}),
+						crit(61389, {	-- Elementally Charged Stone Recovered
+							provider = { "i", 202011 },	-- Elementally Charged Stone
+						}),
+					},
+				}),
+				ach(18819, {	-- Geologist's Ledger - Draconium
+					crit(61370, {	-- Draconium Deposit
+						providers = {
+							{ "o", 379252 },	-- Draconium Deposit
+							{ "o", 379248 },	-- Draconium Deposit
+						},
+						_quests = { 71951 },	-- Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
 					}),
-					crit(61389, {	-- Elementally Charged Stone Recovered
-						provider = { "i", 202011 },	-- Elementally Charged Stone
+					crit(61371, {	-- Rich Draconium Deposit
+						providers = {
+							{ "o", 379263 },	-- Rich Draconium Deposit
+							{ "o", 379267 },	-- Rich Draconium Deposit
+						},
+						_quests = { 71952 },	-- Rich Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
 					}),
-				},
-			}),
-			ach(18819, {	-- Geologist's Ledger - Draconium
-				crit(61370, {	-- Draconium Deposit
-					providers = {
-						{ "o", 379252 },	-- Draconium Deposit
-						{ "o", 379248 },	-- Draconium Deposit
-					},
-					_quests = { 71951 },	-- Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
+					crit(61372, {	-- Molten Draconium Deposit
+						provider = { "o", 375235 },	-- Molten Draconium Deposit
+						_quests = { 71954 },	-- Molten Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61373, {	-- Hardened Draconium Deposit
+						provider = { "o", 375234 },	-- Hardened Draconium Deposit
+						_quests = { 71956 },	-- Hardened Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61374, {	-- Titan-Touched Draconium Deposit
+						provider = { "o", 375238 },	-- Titan-Touched Draconium Deposit
+						_quests = { 71958 },	-- Titan-Touched Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61375, {	-- Primal Draconium Deposit
+						provider = { "o", 375239 },	-- Primal Draconium Deposit
+						_quests = { 71960 },	-- Primal Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61376, {	-- Infurious Draconium Deposit
+						provider = { "o", 375240 },	-- Infurious Draconium Deposit
+						_quests = { 71962 },	-- Infurious Draconium Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61377, {	-- Draconium Seam
+						provider = { "o", 379272 },	-- Draconium Seam
+						_quests = { 72347 },	-- Draconium Seam
+						maps = {
+							THE_FORBIDDEN_REACH,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61378, {	-- Metamorphic Draconium
+						provider = { "o", 390138 },	-- Metamorphic Draconium
+						_quests = { 75140 },	-- Metamorphic Draconium
+						-- worth coords since it cannot actually be found throughout the entire zone it seems
+						coords = {
+							{ 29.7, 41.4, ZARALEK_CAVERN },
+							{ 29.9, 42.2, ZARALEK_CAVERN },
+							{ 30.6, 50.4, ZARALEK_CAVERN },
+							{ 30.8, 41.3, ZARALEK_CAVERN },
+							{ 31.2, 44.5, ZARALEK_CAVERN },
+							{ 31.9, 42.3, ZARALEK_CAVERN },
+							{ 32.5, 43.1, ZARALEK_CAVERN },
+							{ 32.7, 44.0, ZARALEK_CAVERN },
+							{ 33.1, 45.1, ZARALEK_CAVERN },
+							{ 33.6, 41.8, ZARALEK_CAVERN },
+							{ 33.7, 44.4, ZARALEK_CAVERN },
+							{ 34.3, 54.0, ZARALEK_CAVERN },
+							{ 34.7, 49.0, ZARALEK_CAVERN },
+							{ 35.3, 43.4, ZARALEK_CAVERN },
+							{ 35.3, 51.8, ZARALEK_CAVERN },
+							{ 36.0, 42.2, ZARALEK_CAVERN },
+							{ 49.5, 40.4, ZARALEK_CAVERN },
+						},
+					}),
 				}),
-				crit(61371, {	-- Rich Draconium Deposit
-					providers = {
-						{ "o", 379263 },	-- Rich Draconium Deposit
-						{ "o", 379267 },	-- Rich Draconium Deposit
-					},
-					_quests = { 71952 },	-- Rich Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
+				ach(18818, {	-- Geologist's Ledger - Serevite
+					crit(61362, {	-- Rich Serevite Deposit
+						providers = {
+							{ "o", 381104 },	-- Rich Serevite Deposit
+							{ "o", 381105 },	-- Rich Serevite Deposit
+						},
+						_quests = { 71950 },	-- Rich Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61363, {	-- Molten Serevite Deposit
+						provider = { "o", 381516 },	-- Molten Serevite Deposit
+						_quests = { 71953 },	-- Molten Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61364, {	-- Hardened Serevite Deposit
+						provider = { "o", 381515 },	-- Hardened Serevite Deposit
+						_quests = { 71955 },	-- Hardened Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61365, {	-- Titan-Touched Serevite Deposit
+						provider = { "o", 381517 },	-- Titan-Touched Serevite Deposit
+						_quests = { 71957 },	-- Titan-Touched Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61366, {	-- Primal Serevite Deposit
+						provider = { "o", 381518 },	-- Primal Serevite Deposit
+						_quests = { 71959 },	-- Primal Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61367, {	-- Infurious Serevite Deposit
+						provider = { "o", 381519 },	-- Infurious Serevite Deposit
+						_quests = { 71961 },	-- Infurious Serevite Deposit
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61368, {	-- Serevite Seam
+						provider = { "o", 381106 },	-- Serevite Seam
+						_quests = { 72346 },	-- Serevite Seam
+						maps = {
+							THE_FORBIDDEN_REACH,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61369, {	-- Metamorphic Serevite
+						provider = { "o", 390137 },	-- Metamorphic Serevite
+						_quests = { 75139 },	-- Metamorphic Serevite
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61372, {	-- Molten Draconium Deposit
-					provider = { "o", 375235 },	-- Molten Draconium Deposit
-					_quests = { 71954 },	-- Molten Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
+				ach(18821, {	-- Geologist's Ledger - Overloaded Elements
+					crit(61382, {	-- Overload Molten Node
+						providers = {
+							{ "o", 375235 },	-- Molten Draconium Deposit
+							{ "o", 381516 },	-- Molten Serevite Deposit
+						},
+						_quests = { 71963 },	-- Overload Molten Node
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61383, {	-- Overload Hardened Node
+						providers = {
+							{ "o", 375234 },	-- Hardened Draconium Deposit
+							{ "o", 381515 },	-- Hardened Serevite Deposit
+						},
+						_quests = { 71964 },	-- Overload Hardened Node
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61384, {	-- Overload Titan-Touched Node
+						providers = {
+							{ "o", 375238 },	-- Titan-Touched Draconium Deposit
+							{ "o", 381517 },	-- Titan-Touched Serevite Deposit
+						},
+						_quests = { 71965 },	-- Overload Titan-Touched Node
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61385, {	-- Overload Primal Node
+						providers = {
+							{ "o", 375239 },	-- Primal Draconium Deposit
+							{ "o", 381518 },	-- Primal Serevite Deposit
+						},
+						_quests = { 71966 },	-- Overload Primal Node
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61386, {	-- Overload Infurious Node
+						providers = {
+							{ "o", 375240 },	-- Infurious Draconium Deposit
+							{ "o", 381519 },	-- Infurious Serevite Deposit
+						},
+						_quests = { 71967 },	-- Overload Infurious Node
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61387, {	-- Overload Metamorphic Node
+						providers = {
+							{ "o", 390138 },	-- Metamorphic Draconium
+							{ "o", 390137 },	-- Metamorphic Serevite
+						},
+						_quests = { 75137 },	-- Overload Metamorphic Node
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61373, {	-- Hardened Draconium Deposit
-					provider = { "o", 375234 },	-- Hardened Draconium Deposit
-					_quests = { 71956 },	-- Hardened Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61374, {	-- Titan-Touched Draconium Deposit
-					provider = { "o", 375238 },	-- Titan-Touched Draconium Deposit
-					_quests = { 71958 },	-- Titan-Touched Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61375, {	-- Primal Draconium Deposit
-					provider = { "o", 375239 },	-- Primal Draconium Deposit
-					_quests = { 71960 },	-- Primal Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61376, {	-- Infurious Draconium Deposit
-					provider = { "o", 375240 },	-- Infurious Draconium Deposit
-					_quests = { 71962 },	-- Infurious Draconium Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61377, {	-- Draconium Seam
-					provider = { "o", 379272 },	-- Draconium Seam
-					_quests = { 72347 },	-- Draconium Seam
-					maps = {
-						THE_FORBIDDEN_REACH,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61378, {	-- Metamorphic Draconium
-					provider = { "o", 390138 },	-- Metamorphic Draconium
-					_quests = { 75140 },	-- Metamorphic Draconium
-					-- worth coords since it cannot actually be found throughout the entire zone it seems
-					coords = {
-						{ 29.7, 41.4, ZARALEK_CAVERN },
-						{ 29.9, 42.2, ZARALEK_CAVERN },
-						{ 30.6, 50.4, ZARALEK_CAVERN },
-						{ 30.8, 41.3, ZARALEK_CAVERN },
-						{ 31.2, 44.5, ZARALEK_CAVERN },
-						{ 31.9, 42.3, ZARALEK_CAVERN },
-						{ 32.5, 43.1, ZARALEK_CAVERN },
-						{ 32.7, 44.0, ZARALEK_CAVERN },
-						{ 33.1, 45.1, ZARALEK_CAVERN },
-						{ 33.6, 41.8, ZARALEK_CAVERN },
-						{ 33.7, 44.4, ZARALEK_CAVERN },
-						{ 34.3, 54.0, ZARALEK_CAVERN },
-						{ 34.7, 49.0, ZARALEK_CAVERN },
-						{ 35.3, 43.4, ZARALEK_CAVERN },
-						{ 35.3, 51.8, ZARALEK_CAVERN },
-						{ 36.0, 42.2, ZARALEK_CAVERN },
-						{ 49.5, 40.4, ZARALEK_CAVERN },
-					},
-				}),
-			}),
-			ach(18818, {	-- Geologist's Ledger - Serevite
-				crit(61362, {	-- Rich Serevite Deposit
-					providers = {
-						{ "o", 381104 },	-- Rich Serevite Deposit
-						{ "o", 381105 },	-- Rich Serevite Deposit
-					},
-					_quests = { 71950 },	-- Rich Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61363, {	-- Molten Serevite Deposit
-					provider = { "o", 381516 },	-- Molten Serevite Deposit
-					_quests = { 71953 },	-- Molten Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61364, {	-- Hardened Serevite Deposit
-					provider = { "o", 381515 },	-- Hardened Serevite Deposit
-					_quests = { 71955 },	-- Hardened Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61365, {	-- Titan-Touched Serevite Deposit
-					provider = { "o", 381517 },	-- Titan-Touched Serevite Deposit
-					_quests = { 71957 },	-- Titan-Touched Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61366, {	-- Primal Serevite Deposit
-					provider = { "o", 381518 },	-- Primal Serevite Deposit
-					_quests = { 71959 },	-- Primal Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61367, {	-- Infurious Serevite Deposit
-					provider = { "o", 381519 },	-- Infurious Serevite Deposit
-					_quests = { 71961 },	-- Infurious Serevite Deposit
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61368, {	-- Serevite Seam
-					provider = { "o", 381106 },	-- Serevite Seam
-					_quests = { 72346 },	-- Serevite Seam
-					maps = {
-						THE_FORBIDDEN_REACH,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61369, {	-- Metamorphic Serevite
-					provider = { "o", 390137 },	-- Metamorphic Serevite
-					_quests = { 75139 },	-- Metamorphic Serevite
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-			ach(18821, {	-- Geologist's Ledger - Overloaded Elements
-				crit(61382, {	-- Overload Molten Node
-					providers = {
-						{ "o", 375235 },	-- Molten Draconium Deposit
-						{ "o", 381516 },	-- Molten Serevite Deposit
-					},
-					_quests = { 71963 },	-- Overload Molten Node
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61383, {	-- Overload Hardened Node
-					providers = {
-						{ "o", 375234 },	-- Hardened Draconium Deposit
-						{ "o", 381515 },	-- Hardened Serevite Deposit
-					},
-					_quests = { 71964 },	-- Overload Hardened Node
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61384, {	-- Overload Titan-Touched Node
-					providers = {
-						{ "o", 375238 },	-- Titan-Touched Draconium Deposit
-						{ "o", 381517 },	-- Titan-Touched Serevite Deposit
-					},
-					_quests = { 71965 },	-- Overload Titan-Touched Node
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61385, {	-- Overload Primal Node
-					providers = {
-						{ "o", 375239 },	-- Primal Draconium Deposit
-						{ "o", 381518 },	-- Primal Serevite Deposit
-					},
-					_quests = { 71966 },	-- Overload Primal Node
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61386, {	-- Overload Infurious Node
-					providers = {
-						{ "o", 375240 },	-- Infurious Draconium Deposit
-						{ "o", 381519 },	-- Infurious Serevite Deposit
-					},
-					_quests = { 71967 },	-- Overload Infurious Node
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61387, {	-- Overload Metamorphic Node
-					providers = {
-						{ "o", 390138 },	-- Metamorphic Draconium
-						{ "o", 390137 },	-- Metamorphic Serevite
-					},
-					_quests = { 75137 },	-- Overload Metamorphic Node
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-		})),
+			},
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.MINING, 1 }}
 		},{

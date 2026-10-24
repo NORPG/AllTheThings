@@ -902,8 +902,9 @@ COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({
 	i(84226),	-- Plans: Masterwork Spiritguard Shield (RECIPE!)
 	i(84227),	-- Plans: Masterwork Spiritguard Shoulders (RECIPE!)
 }));
-DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, {
 	description = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158737, {	-- Blacksmithing (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -924,7 +925,7 @@ DRAENOR_BLACKSMITHING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 		r(176090),	-- Secrets of Draenor Blacksmithing
 		r(171690),	-- Truesteel Ingot
 	},
-})));
+}));
 COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(256940, {	-- Plans: Blackrock Weapon Rack (RECIPE!)
 		cost = {{"i", SECRET_OF_DRAENOR_BLACKSMITHING, 1}},

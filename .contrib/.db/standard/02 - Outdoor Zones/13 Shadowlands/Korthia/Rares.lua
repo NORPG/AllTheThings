@@ -64,11 +64,14 @@ maproot(SHADOWLANDS, KORTHIA, {
 				groups = {
 					i(187424),	-- Legend of the Animaswell
 					i(187372),	-- Miasma Filtering Headpiece
-					i(187181, bubbleDownSelf({ customCollect = "SL_COV_NEC" }, {	-- Small Corpsefly Egg
-						i(187182, {	-- Hatching Corpsefly Egg
-							i(186489),	-- Lord of the Corpseflies (MOUNT!)
-						}),
-					})),
+					i(187181, {	-- Small Corpsefly Egg
+						customCollect = "SL_COV_NEC",
+						groups = {
+							i(187182, {	-- Hatching Corpsefly Egg
+								i(186489),	-- Lord of the Corpseflies (MOUNT!)
+							}),
+						},
+					}),
 				},
 			}),
 			n(179472, {	-- Konthrogz the Obliterator
@@ -246,11 +249,14 @@ maproot(SHADOWLANDS, KORTHIA, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
-			n(RARES, sharedData({ timeline = { ADDED_9_1_0 } }, {
-				q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
-				q(64699, name(HEADERS.Item, 187327)),	-- popped when looting 48-research item Encrypted Korthian Journal from Fleshwing
-				q(64703),	-- popped when looting 48-research item Half-Completed Runeforge Pattern from Xyraxz
-			})),
+			n(RARES, {
+				timeline = { ADDED_9_1_0 },
+				groups = {
+					q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
+					q(64699, name(HEADERS.Item, 187327)),	-- popped when looting 48-research item Encrypted Korthian Journal from Fleshwing
+					q(64703),	-- popped when looting 48-research item Half-Completed Runeforge Pattern from Xyraxz
+				},
+			}),
 		}),
 	}),
 }));

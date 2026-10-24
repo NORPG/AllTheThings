@@ -1953,22 +1953,25 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #endif
 			d(CURRENT_NORMAL_PLUS_DIFFICULTIES, {		-- Flexible+ (5.4.0+) / Normal+ (6.0.2+)
-				n(ZONE_DROPS, sharedData({ timeline = { ADDED_6_0_2 } }, {
-					i(113224),	-- Aeth's Swiftcinder Cloak
-					i(113231),	-- Brave Niunai's Cloak
-					i(113226),	-- Cape of the Alpha
-					i(113230),	-- Drape of the Omega
-					i(113223),	-- Turtleshell Greatcloak
-					i(113225),	-- Kalaena's Arcane Handwraps
-					i(113218),	-- Seebo's Sainted Touch
-					i(113220),	-- Crimson Gauntlets of Death
-					i(113221),	-- Siid's Silent Stranglers
-					i(113222),	-- Keengrip Arrowpullers
-					i(113227),	-- Marco's Crackling Gloves
-					i(113228),	-- Gauntlets of Discarded Time
-					i(113219),	-- Romy's Reliable Grips
-					i(113229),	-- Zoid's Molten Gauntlets
-				})),
+				n(ZONE_DROPS, {
+					timeline = { ADDED_6_0_2 },
+					groups = {
+						i(113224),	-- Aeth's Swiftcinder Cloak
+						i(113231),	-- Brave Niunai's Cloak
+						i(113226),	-- Cape of the Alpha
+						i(113230),	-- Drape of the Omega
+						i(113223),	-- Turtleshell Greatcloak
+						i(113225),	-- Kalaena's Arcane Handwraps
+						i(113218),	-- Seebo's Sainted Touch
+						i(113220),	-- Crimson Gauntlets of Death
+						i(113221),	-- Siid's Silent Stranglers
+						i(113222),	-- Keengrip Arrowpullers
+						i(113227),	-- Marco's Crackling Gloves
+						i(113228),	-- Gauntlets of Discarded Time
+						i(113219),	-- Romy's Reliable Grips
+						i(113229),	-- Zoid's Molten Gauntlets
+					},
+				}),
 				cr(71543, e(852, {	-- Immerseus
 					ach(8536),	-- No More Tears
 				})),

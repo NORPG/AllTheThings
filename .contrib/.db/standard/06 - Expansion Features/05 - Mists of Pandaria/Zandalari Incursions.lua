@@ -44,22 +44,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 		maps = { KRASARANG_WILDS },
 		lvl = lvlsquish(85, 85, 10),
 		groups = {
-			n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_5_2_0 } }, {
-				ach(8078, {	-- Zul'Again
-					crit(22733, {	-- Zandalari Scouts Slain slain (10)
-						_npcs = { 69768 },	-- Zandalari Warscout
+			n(ACHIEVEMENTS, {
+				timeline = { ADDED_5_2_0 },
+				groups = {
+					ach(8078, {	-- Zul'Again
+						crit(22733, {	-- Zandalari Scouts Slain slain (10)
+							_npcs = { 69768 },	-- Zandalari Warscout
+						}),
+						crit(22942, {	-- Zandalari Warbringers Slain slain (5)
+							_npcs = { 69842 },
+						}),
+						crit(22941, {	-- Zandalari Warbringers Slain slain (5)
+							_npcs = { 69841 },
+						}),
+						crit(22732, {	-- Zandalari Warbringers Slain slain (5)
+							_npcs = { 69769 },
+						}),
 					}),
-					crit(22942, {	-- Zandalari Warbringers Slain slain (5)
-						_npcs = { 69842 },
-					}),
-					crit(22941, {	-- Zandalari Warbringers Slain slain (5)
-						_npcs = { 69841 },
-					}),
-					crit(22732, {	-- Zandalari Warbringers Slain slain (5)
-						_npcs = { 69769 },
-					}),
-				}),
-			})),
+				},
+			}),
 			n(COMMON_BOSS_DROPS, {
 				crs = {
 					69768,	-- Zandalari Warscout

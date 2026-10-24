@@ -11,169 +11,175 @@
 
 maproot(SHADOWLANDS, THE_MAW, {
 	n(COVENANT_ASSAULTS, {
-		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_9_1_0 } }, {
-			ach(15032, {	-- Breaking Their Hold
-				crit(52000, {	-- Dead On Their Feet
-					sourceQuests = { 63455 },	-- Dead On Their Feet
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_9_1_0 },
+			groups = {
+				ach(15032, {	-- Breaking Their Hold
+					crit(52000, {	-- Dead On Their Feet
+						sourceQuests = { 63455 },	-- Dead On Their Feet
+					}),
+					crit(52001, {	-- Here's an Axe, Get to Work!
+						sourceQuests = { 63625 },	-- Here's an Axe, Get to Work!
+					}),
+					crit(52002, {	-- You and What Army
+						sourceQuests = { 63773 },	-- You and What Army
+					}),
+					crit(52003, {	-- An Embarrassment of Corpses
+						sourceQuests = { 63774 },	-- An Embarrassment of Corpses
+					}),
+					crit(52004, {	-- Putting A Plan Together
+						sourceQuests = { 63545 },	-- Putting A Plan Together
+					}),
+					crit(52005, {	-- Centurions March!
+						sourceQuests = { 63753 },	-- Centurions March!
+					}),
+					crit(52006, {	-- Pulling His Chain
+						sourceQuests = { 63621 },	-- Pulling His Chain
+					}),
+					crit(52007, {	-- Splash Damage
+						sourceQuests = { 59004 },	-- Splash Damage
+					}),
+					crit(52008, {	-- Get to the Point
+						sourceQuests = { 63664 },	-- Get to the Point
+					}),
+					crit(52009, {	-- Somebody Feed Kevin
+						sourceQuests = { 63669 },	-- Somebody Feed Kevin
+					}),
 				}),
-				crit(52001, {	-- Here's an Axe, Get to Work!
-					sourceQuests = { 63625 },	-- Here's an Axe, Get to Work!
+				ach(15035, {	-- On the Offensive
+					-- Meta Achievement
+					sym = {{"meta_achievement",
+						15000,	-- United Front
+						15001,	-- Jailer's Personal Stash
+						15037,	-- This Army
+						15039,	-- Up For Grabs
+						15041,	-- The Zovaal Shuffle
+						15043,	-- Hoarder of Torghast
+						15004,	-- A Sly Fox
+						15042,	-- Tea for the Troubled
+						15044,	-- Krrprripripkraak's Heroes
+					}},
 				}),
-				crit(52002, {	-- You and What Army
-					sourceQuests = { 63773 },	-- You and What Army
+				ach(15036, {	-- Rooting Out The Evil
+					crit(52031, {	-- Clean Out the Crucible
+						sourceQuests = { 63968 },	-- Clean Out the Crucible
+					}),
+					crit(52032, {	-- Looming Darkness
+						sourceQuests = { 63969 },	-- Looming Darkness
+					}),
+					crit(52033, {	-- No Soul Left Behind
+						sourceQuests = { 63970 },	-- No Soul Left Behind
+					}),
+					crit(52034, {	-- Snail Stomping
+						sourceQuests = { 63971 },	-- Snail Stomping
+					}),
+					crit(52035, {	-- Just Don't Ask Me to Spell It
+						sourceQuests = { 63972 },	-- Just Don't Ask Me to Spell It
+					}),
+					crit(52036, {	-- Double Dromans
+						sourceQuests = { 63973 },	-- Double Dromans
+					}),
+					crit(52037, {	-- That's Going to Sting
+						sourceQuests = { 63974 },	-- That's Going to Sting
+					}),
+					crit(52038, {	-- The Soul Blade
+						sourceQuests = { 63945 },	-- The Soul Blade
+					}),
+					crit(52039, {	-- A Shady Place
+						sourceQuests = { 63951 },	-- A Shady Place
+					}),
+					crit(52040, {	-- Heavy-Handed Tactics
+						sourceQuests = { 63952 },	-- Heavy-Handed Tactics
+					}),
 				}),
-				crit(52003, {	-- An Embarrassment of Corpses
-					sourceQuests = { 63774 },	-- An Embarrassment of Corpses
+				ach(15033, {	-- Taking the Tremaculum
+					crit(52017, {	-- Terrorizing the Tremaculum
+						sourceQuests = { 63833 },	-- Terrorizing the Tremaculum
+					}),
+					crit(52018, {	-- Weapons of the Tremaculum
+						sourceQuests = { 63834 },	-- Weapons of the Tremaculum
+					}),
+					crit(52019, {	-- That's a Good Trick
+						sourceQuests = { 63842 },	-- That's a Good Trick
+					}),
+					crit(52020, {	-- Fangcrack's Fan Club
+						sourceQuests = { 63836 },	-- Fangcrack's Fan Club
+					}),
+					crit(52021, {	-- A Tea for Every Occasion
+						sourceQuests = { 63837 },	-- A Tea for Every Occasion
+					}),
+					crit(52022, {	-- Duelist's Challenge
+						sourceQuests = { 63838 },	-- Duelist's Challenge
+					}),
+					crit(52023, {	-- If Even One is Worthy
+						sourceQuests = { 63839 },	-- If Even One is Worthy
+					}),
+					crit(52024, {	-- They Grow Up So Quickly
+						sourceQuests = { 63840 },	-- They Grow Up So Quickly
+					}),
+					crit(52025, {	-- The Skyhunt
+						sourceQuests = { 63841 },	-- The Skyhunt
+					}),
+					crit(52026, {	-- Wrath of the Party Herald
+						sourceQuests = { 63835 },	-- Wrath of the Party Herald
+					}),
 				}),
-				crit(52004, {	-- Putting A Plan Together
-					sourceQuests = { 63545 },	-- Putting A Plan Together
+				ach(15000, {	-- United Front
+					crit(51720, {	-- Necrolord Assault
+						sourceQuests = { 63543 },	-- Necrolord Assault
+					}),
+					crit(51721, {	-- Venthyr Assault
+						sourceQuests = { 63822 },	-- Venthyr Assault
+					}),
+					crit(51722, {	-- Night Fae Assault
+						sourceQuests = { 63823 },	-- Night Fae Assault
+					}),
+					crit(51723, {	-- Kyrian Assault
+						sourceQuests = { 63824 },	-- Kyrian Assault
+					}),
 				}),
-				crit(52005, {	-- Centurions March!
-					sourceQuests = { 63753 },	-- Centurions March!
+				ach(15034, {	-- Wings Against the Flames
+					crit(52010, {	-- Mine's Bigger
+						sourceQuests = { 63828 },	-- Mine's Bigger
+					}),
+					crit(52011, {	-- Heart and Soul
+						sourceQuests = { 63843 },	-- Heart and Soul
+					}),
+					crit(52012, {	-- No One Floats Down Here
+						sourceQuests = { 63829 },	-- No One Floats Down Here
+					}),
+					crit(52013, {	-- Encouraging Words
+						sourceQuests = { 63827 },	-- Encouraging Words
+					}),
+					crit(52014, {	-- Courage of the Soul
+						sourceQuests = { 63858 },	-- Courage of the Soul
+					}),
+					crit(52015, {	-- Saved By The Bells
+						sourceQuests = { 63859 },	-- Saved By The Bells
+					}),
+					crit(52016, {	-- United In Pride
+						sourceQuests = { 63863 },	-- United In Pride
+					}),
+					crit(52041, {	-- The Ember Count
+						sourceQuests = { 63846 },	-- The Ember Count
+					}),
+					crit(52042, {	-- Kill The Flame
+						sourceQuests = { 63853 },	-- Kill The Flame
+					}),
+					crit(52043, {	-- The Dreadful Blend
+						sourceQuests = { 63864 },	-- The Dreadful Blend
+					}),
 				}),
-				crit(52006, {	-- Pulling His Chain
-					sourceQuests = { 63621 },	-- Pulling His Chain
+			},
+		}),
+		n(REWARDS, {
+			timeline = { ADDED_9_1_0 },
+			groups = {
+				i(187410, {	-- Death's Advance Battlefield Drape
+					description = "Can be rewarded from any Maw Assault.",
 				}),
-				crit(52007, {	-- Splash Damage
-					sourceQuests = { 59004 },	-- Splash Damage
-				}),
-				crit(52008, {	-- Get to the Point
-					sourceQuests = { 63664 },	-- Get to the Point
-				}),
-				crit(52009, {	-- Somebody Feed Kevin
-					sourceQuests = { 63669 },	-- Somebody Feed Kevin
-				}),
-			}),
-			ach(15035, {	-- On the Offensive
-				-- Meta Achievement
-				sym = {{"meta_achievement",
-					15000,	-- United Front
-					15001,	-- Jailer's Personal Stash
-					15037,	-- This Army
-					15039,	-- Up For Grabs
-					15041,	-- The Zovaal Shuffle
-					15043,	-- Hoarder of Torghast
-					15004,	-- A Sly Fox
-					15042,	-- Tea for the Troubled
-					15044,	-- Krrprripripkraak's Heroes
-				}},
-			}),
-			ach(15036, {	-- Rooting Out The Evil
-				crit(52031, {	-- Clean Out the Crucible
-					sourceQuests = { 63968 },	-- Clean Out the Crucible
-				}),
-				crit(52032, {	-- Looming Darkness
-					sourceQuests = { 63969 },	-- Looming Darkness
-				}),
-				crit(52033, {	-- No Soul Left Behind
-					sourceQuests = { 63970 },	-- No Soul Left Behind
-				}),
-				crit(52034, {	-- Snail Stomping
-					sourceQuests = { 63971 },	-- Snail Stomping
-				}),
-				crit(52035, {	-- Just Don't Ask Me to Spell It
-					sourceQuests = { 63972 },	-- Just Don't Ask Me to Spell It
-				}),
-				crit(52036, {	-- Double Dromans
-					sourceQuests = { 63973 },	-- Double Dromans
-				}),
-				crit(52037, {	-- That's Going to Sting
-					sourceQuests = { 63974 },	-- That's Going to Sting
-				}),
-				crit(52038, {	-- The Soul Blade
-					sourceQuests = { 63945 },	-- The Soul Blade
-				}),
-				crit(52039, {	-- A Shady Place
-					sourceQuests = { 63951 },	-- A Shady Place
-				}),
-				crit(52040, {	-- Heavy-Handed Tactics
-					sourceQuests = { 63952 },	-- Heavy-Handed Tactics
-				}),
-			}),
-			ach(15033, {	-- Taking the Tremaculum
-				crit(52017, {	-- Terrorizing the Tremaculum
-					sourceQuests = { 63833 },	-- Terrorizing the Tremaculum
-				}),
-				crit(52018, {	-- Weapons of the Tremaculum
-					sourceQuests = { 63834 },	-- Weapons of the Tremaculum
-				}),
-				crit(52019, {	-- That's a Good Trick
-					sourceQuests = { 63842 },	-- That's a Good Trick
-				}),
-				crit(52020, {	-- Fangcrack's Fan Club
-					sourceQuests = { 63836 },	-- Fangcrack's Fan Club
-				}),
-				crit(52021, {	-- A Tea for Every Occasion
-					sourceQuests = { 63837 },	-- A Tea for Every Occasion
-				}),
-				crit(52022, {	-- Duelist's Challenge
-					sourceQuests = { 63838 },	-- Duelist's Challenge
-				}),
-				crit(52023, {	-- If Even One is Worthy
-					sourceQuests = { 63839 },	-- If Even One is Worthy
-				}),
-				crit(52024, {	-- They Grow Up So Quickly
-					sourceQuests = { 63840 },	-- They Grow Up So Quickly
-				}),
-				crit(52025, {	-- The Skyhunt
-					sourceQuests = { 63841 },	-- The Skyhunt
-				}),
-				crit(52026, {	-- Wrath of the Party Herald
-					sourceQuests = { 63835 },	-- Wrath of the Party Herald
-				}),
-			}),
-			ach(15000, {	-- United Front
-				crit(51720, {	-- Necrolord Assault
-					sourceQuests = { 63543 },	-- Necrolord Assault
-				}),
-				crit(51721, {	-- Venthyr Assault
-					sourceQuests = { 63822 },	-- Venthyr Assault
-				}),
-				crit(51722, {	-- Night Fae Assault
-					sourceQuests = { 63823 },	-- Night Fae Assault
-				}),
-				crit(51723, {	-- Kyrian Assault
-					sourceQuests = { 63824 },	-- Kyrian Assault
-				}),
-			}),
-			ach(15034, {	-- Wings Against the Flames
-				crit(52010, {	-- Mine's Bigger
-					sourceQuests = { 63828 },	-- Mine's Bigger
-				}),
-				crit(52011, {	-- Heart and Soul
-					sourceQuests = { 63843 },	-- Heart and Soul
-				}),
-				crit(52012, {	-- No One Floats Down Here
-					sourceQuests = { 63829 },	-- No One Floats Down Here
-				}),
-				crit(52013, {	-- Encouraging Words
-					sourceQuests = { 63827 },	-- Encouraging Words
-				}),
-				crit(52014, {	-- Courage of the Soul
-					sourceQuests = { 63858 },	-- Courage of the Soul
-				}),
-				crit(52015, {	-- Saved By The Bells
-					sourceQuests = { 63859 },	-- Saved By The Bells
-				}),
-				crit(52016, {	-- United In Pride
-					sourceQuests = { 63863 },	-- United In Pride
-				}),
-				crit(52041, {	-- The Ember Count
-					sourceQuests = { 63846 },	-- The Ember Count
-				}),
-				crit(52042, {	-- Kill The Flame
-					sourceQuests = { 63853 },	-- Kill The Flame
-				}),
-				crit(52043, {	-- The Dreadful Blend
-					sourceQuests = { 63864 },	-- The Dreadful Blend
-				}),
-			}),
-		})),
-		n(REWARDS, sharedData({ timeline = { ADDED_9_1_0 } }, {
-			i(187410, {	-- Death's Advance Battlefield Drape
-				description = "Can be rewarded from any Maw Assault.",
-			}),
-		})),
+			},
+		}),
 		q(63824, {	-- Kyrian Assault
 			sourceQuests = { 63902 },	-- Good News, Everyone!
 			provider = { "n", 177900 },	-- Xandria
@@ -945,55 +951,58 @@ maproot(SHADOWLANDS, THE_MAW, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(COVENANT_ASSAULTS, sharedData({ timeline = { ADDED_9_1_0 } }, {
-				-- TODO: Stolen Anima Vessels probably need to be added at some point, but I'm not really sure how they work
-				-- Example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc. So I am just throwing them here for now.
-				-- Kyrian
-				q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
-				q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
+			n(COVENANT_ASSAULTS, {
+				timeline = { ADDED_9_1_0 },
+				groups = {
+					-- TODO: Stolen Anima Vessels probably need to be added at some point, but I'm not really sure how they work
+					-- Example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc. So I am just throwing them here for now.
+					-- Kyrian
+					q(63820),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824) (spellID 351106)
+					q(64077),	-- triggered when completing the final step of 'Kyrian Assault' (questID 63824)
 
-				-- Necrolord
-				q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
-				q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
-				q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
-				q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
-				q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
-				-- q(64147, name(HEADERS.NPC, 177767)),	-- triggered when turning in 'Pulling His Chain' (questID 63621) // Boil Master Yetch
-				-- q(64148, name(HEADERS.NPC, 177771)),	-- triggered when completing 'Pulling His Chain' (questID 63621) // Cutter Fin
-				-- q(64149, name(HEADERS.NPC, 177764)),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop) // Winslow Swain
-				-- q(64150, name(HEADERS.NPC, 158300)),	-- turning in 'Centurion's March' (questID 63753) // Flytrap
-				-- q(64151, name(HEADERS.NPC, 177769)),	-- Completed at the same time as 63669 (Somebody Feed Kevin) // Kearnen the Blade
-				q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
+					-- Necrolord
+					q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army (spellID 350868)
+					q(63809),	-- selecting Cutter Fin to accompany you on You and What Army (spellID 350870)
+					q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
+					q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
+					q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
+					-- q(64147, name(HEADERS.NPC, 177767)),	-- triggered when turning in 'Pulling His Chain' (questID 63621) // Boil Master Yetch
+					-- q(64148, name(HEADERS.NPC, 177771)),	-- triggered when completing 'Pulling His Chain' (questID 63621) // Cutter Fin
+					-- q(64149, name(HEADERS.NPC, 177764)),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop) // Winslow Swain
+					-- q(64150, name(HEADERS.NPC, 158300)),	-- turning in 'Centurion's March' (questID 63753) // Flytrap
+					-- q(64151, name(HEADERS.NPC, 177769)),	-- Completed at the same time as 63669 (Somebody Feed Kevin) // Kearnen the Blade
+					q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
 
-				-- Night Fae
-				q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
+					-- Night Fae
+					q(63821),	-- triggered when completing 'Night Fae Assault' (questID 63823) (spellID 351107)
 
-				-- Venthyr
-				q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
-				q(63939),	-- triggered when returning Goo Goo to Reldorn on "They Grow Up So Quickly"
-				q(63940),	-- triggered when returning Roots to Reldorn on "They Grow Up So Quickly"
-				q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
-				q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
-				q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
-				q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
-				q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
+					-- Venthyr
+					q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
+					q(63939),	-- triggered when returning Goo Goo to Reldorn on "They Grow Up So Quickly"
+					q(63940),	-- triggered when returning Roots to Reldorn on "They Grow Up So Quickly"
+					q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
+					q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
+					q(63943),	-- triggered when returning Stinky to Reldorn on "They Grow Up So Quickly"
+					q(64253),	-- triggered when walking through a Maw Mirror on the last part of the 'Venthyr Assault' (questID 63822) (spellID 355359)
+					q(63819),	-- triggered when completing 'Venthyr Assault' (questID 63822) (spellID 351105)
 
-				-- Stolen Anima Vessels
-				q(64575),	-- After anima vessel, in Maw (rifted)
-				q(64701),	-- Stolen Anima Supplies 2nd trigger ?
-				q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-				q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
+					-- Stolen Anima Vessels
+					q(64575),	-- After anima vessel, in Maw (rifted)
+					q(64701),	-- Stolen Anima Supplies 2nd trigger ?
+					q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+					q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
 
-				-- Achievement The Zovaal Shuffle
-				q(64153),	-- dancing near a forge for The Zovaal Shuffle
-				q(64154),	-- dancing near a forge for The Zovaal Shuffle
-				q(64155),	-- dancing near a forge for The Zovaal Shuffle
-				q(64156),	-- dancing near a forge for The Zovaal Shuffle
-				q(64157),	-- dancing near a forge for The Zovaal Shuffle
-				q(64158),	-- dancing near a forge for The Zovaal Shuffle
-				q(64160),	-- dancing near a forge for The Zovaal Shuffle
-				q(64161),	-- dancing near a forge for The Zovaal Shuffle
-			})),
+					-- Achievement The Zovaal Shuffle
+					q(64153),	-- dancing near a forge for The Zovaal Shuffle
+					q(64154),	-- dancing near a forge for The Zovaal Shuffle
+					q(64155),	-- dancing near a forge for The Zovaal Shuffle
+					q(64156),	-- dancing near a forge for The Zovaal Shuffle
+					q(64157),	-- dancing near a forge for The Zovaal Shuffle
+					q(64158),	-- dancing near a forge for The Zovaal Shuffle
+					q(64160),	-- dancing near a forge for The Zovaal Shuffle
+					q(64161),	-- dancing near a forge for The Zovaal Shuffle
+				},
+			}),
 		}),
 	}),
 }));

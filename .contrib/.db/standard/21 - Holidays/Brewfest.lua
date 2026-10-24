@@ -3878,17 +3878,23 @@ root(ROOTS.HiddenQuestTriggers, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, sharedData({ timeline = { ADDED_11_2_0 } }, {
-			q(90118),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
-			q(91959),	-- (Sometimes) Triggers along with 90118 when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
-			q(91960),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 2nd kill of the day
-		}))),
+		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+			timeline = { ADDED_11_2_0 },
+			groups = {
+				q(90118),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
+				q(91959),	-- (Sometimes) Triggers along with 90118 when you kill Keggor the Fermented during Brewfest Banquet, 1st kill of the day
+				q(91960),	-- Triggers when you kill Keggor the Fermented during Brewfest Banquet, 2nd kill of the day
+			},
+		})),
 	}),
 	expansion(EXPANSION.MID, {
-		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, sharedData({ timeline = { ADDED_12_1_0 } }, {
-			q(94053),	-- Killed Coren Direbrew (Not Accountwide)
-			q(94054, {isDaily=true}),	-- Killed Coren Direbrew (Accountwide) (without Brewfest Bomber)
-		}))),
+		applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+			timeline = { ADDED_12_1_0 },
+			groups = {
+				q(94053),	-- Killed Coren Direbrew (Not Accountwide)
+				q(94054, {isDaily=true}),	-- Killed Coren Direbrew (Accountwide) (without Brewfest Bomber)
+			},
+		})),
 	}),
 });
 -- #endif

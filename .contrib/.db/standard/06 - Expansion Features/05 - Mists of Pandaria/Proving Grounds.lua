@@ -130,17 +130,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, applyclassicphase(MOP_PHA
 
 root(ROOTS.HiddenQuestTriggers, {
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.MOP, {
-		n(PROVING_GROUNDS, sharedData({ timeline = { ADDED_5_4_0 } }, {
-			q(33089),	-- FLAG - Proving Grounds - Damage Bronze
-			q(33091),	-- FLAG - Proving Grounds - Damage Gold
-			q(33090),	-- FLAG - Proving Grounds - Damage Silver
-			q(33095),	-- FLAG - Proving Grounds - Healer Bronze
-			q(33097),	-- FLAG - Proving Grounds - Healer Gold
-			q(33096),	-- FLAG - Proving Grounds - Healer Silver
-			q(33092),	-- FLAG - Proving Grounds - Tank Bronze
-			q(33094),	-- FLAG - Proving Grounds - Tank Gold
-			q(33093),	-- FLAG - Proving Grounds - Tank Silver
-		})),
+		n(PROVING_GROUNDS, {
+			timeline = { ADDED_5_4_0 },
+			groups = {
+				q(33089),	-- FLAG - Proving Grounds - Damage Bronze
+				q(33091),	-- FLAG - Proving Grounds - Damage Gold
+				q(33090),	-- FLAG - Proving Grounds - Damage Silver
+				q(33095),	-- FLAG - Proving Grounds - Healer Bronze
+				q(33097),	-- FLAG - Proving Grounds - Healer Gold
+				q(33096),	-- FLAG - Proving Grounds - Healer Silver
+				q(33092),	-- FLAG - Proving Grounds - Tank Bronze
+				q(33094),	-- FLAG - Proving Grounds - Tank Gold
+				q(33093),	-- FLAG - Proving Grounds - Tank Silver
+			},
+		}),
 	})),
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, expansion(EXPANSION.WOD, {
 		n(PROVING_GROUNDS, {

@@ -4,25 +4,28 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 	n(RATED, {
-		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_0_2, REMOVED_12_0_0 } }, {
-			-- RBG
-			ach(40795, {	-- Battleground Blitz Medic: The War Within
-				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
-				-- Having it not filtered is providing information about the Toy which is good.
-				-- classes = HEALERS,
-				groups = {
-					i(227539),	-- Unbound Strategist's Pennant (TOY!)
-				},
-			}),
-			-- Solo
-			ach(40792, {	-- Solo Shuffle Medic: The War Within
-				-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
-				-- Having it not filtered is providing information about the Toy which is good.
-				-- classes = HEALERS,
-				groups = {
-					i(227538),	-- Unbound Legend's Pennant (TOY!)
-				},
-			}),
-		})),
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_11_0_2, REMOVED_12_0_0 },
+			groups = {
+				-- RBG
+				ach(40795, {	-- Battleground Blitz Medic: The War Within
+					-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
+					-- Having it not filtered is providing information about the Toy which is good.
+					-- classes = HEALERS,
+					groups = {
+						i(227539),	-- Unbound Strategist's Pennant (TOY!)
+					},
+				}),
+				-- Solo
+				ach(40792, {	-- Solo Shuffle Medic: The War Within
+					-- While the Filter is correct, the ACM/Toy is hidden for none healers until you learn it.
+					-- Having it not filtered is providing information about the Toy which is good.
+					-- classes = HEALERS,
+					groups = {
+						i(227538),	-- Unbound Legend's Pennant (TOY!)
+					},
+				}),
+			},
+		}),
 	}),
 })));

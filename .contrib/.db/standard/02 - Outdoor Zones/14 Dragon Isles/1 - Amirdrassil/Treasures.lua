@@ -157,20 +157,23 @@ maproot(DRAGON_ISLES, AMIRDRASSIL, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(AMIRDRASSIL, {
-			n(TREASURES, sharedData({ timeline = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
-				-- Old questIDs of treasures
-				q(79494),	-- Kaldorei Backpack
-				q(79472),	-- Kaldorei Bag
-				q(79493),	-- Kaldorei Bag
-				q(79473),	-- Kaldorei Bedroll
-				q(79496),	-- Kaldorei Dagger
-				q(79498),	-- Kaldorei Horn
-				q(79497),	-- Kaldorei Horn
-				q(79520),	-- Kaldorei Moon Bow
-				q(79499),	-- Kaldorei Shield
-				q(79490),	-- Kaldorei Spear
-				q(79500),	-- Kaldorei Spyglass
-			})),
+			n(TREASURES, {
+				timeline = { ADDED_10_2_5, REMOVED_10_2_6 },
+				groups = {
+					-- Old questIDs of treasures
+					q(79494),	-- Kaldorei Backpack
+					q(79472),	-- Kaldorei Bag
+					q(79493),	-- Kaldorei Bag
+					q(79473),	-- Kaldorei Bedroll
+					q(79496),	-- Kaldorei Dagger
+					q(79498),	-- Kaldorei Horn
+					q(79497),	-- Kaldorei Horn
+					q(79520),	-- Kaldorei Moon Bow
+					q(79499),	-- Kaldorei Shield
+					q(79490),	-- Kaldorei Spear
+					q(79500),	-- Kaldorei Spyglass
+				},
+			}),
 		}),
 	}),
 }));

@@ -58,7 +58,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			races = HORDE_ONLY,
 			coord = { 56.5, 28.1, LEGION_DALARAN },
 			groups = {
-				filter(RECIPES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
+				filter(RECIPES, sharedData({ timeline = { ADDED_10_0_7 } }, {
 					moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 					moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 					moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
@@ -867,7 +867,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			races = ALLIANCE_ONLY,
 			coord = { 29.4, 75.6, LEGION_DALARAN },
 			groups = {
-				filter(RECIPES, bubbleDown({ timeline = { ADDED_10_0_7 } }, {
+				filter(RECIPES, sharedData({ timeline = { ADDED_10_0_7 } }, {
 					moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 					moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
 					moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)

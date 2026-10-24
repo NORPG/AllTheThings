@@ -1491,9 +1491,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.BFA, {
 		m(BROKEN_ISLES, {
-			m(LEGION_DALARAN, sharedData({ timeline = { ADDED_8_3_0 } }, {
-				q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
-			})),
+			m(LEGION_DALARAN, {
+				timeline = { ADDED_8_3_0 },
+				groups = {
+					q(58658),	-- Selecting an option to hide Vulpera hyena mount canopy/sunshade
+				},
+			}),
 		}),
 	}),
 });

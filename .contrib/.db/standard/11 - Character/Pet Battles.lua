@@ -1056,8 +1056,11 @@ root(ROOTS.NeverImplemented, {
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
-	n(PET_BATTLES, sharedData({ timeline = { ADDED_8_3_0 } }, {
-		q(81957),	-- Complete the Blackrock Pet Battle Dungeon for the first time.
-		q(81958),	-- Joining their team
-	}))
+	n(PET_BATTLES, {
+		timeline = { ADDED_8_3_0 },
+		groups = {
+			q(81957),	-- Complete the Blackrock Pet Battle Dungeon for the first time.
+			q(81958),	-- Joining their team
+		},
+	})
 }));

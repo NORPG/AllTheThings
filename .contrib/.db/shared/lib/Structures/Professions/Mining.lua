@@ -142,8 +142,9 @@ MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADD
 	r(102165),	-- Smelt Ghost Iron
 	r(102167),	-- Smelt Trillium
 }));
-DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, {
 	description = "This can drop from any ore gathering node on Draenor.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158754, {	-- Mining (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -155,7 +156,7 @@ DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, bubbleDownSelf({ tim
 		r(2656),	-- Mining Journal \ Smelting
 		applyclassicphase(BFA_PHASE_ONE, r(265847, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Mining (Draenor)
 	},
-})));
+}));
 BFA_MINING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(2656),	-- Mining Journal \ Smelting
 	r(253333),	-- Monelite Deposit [Rank 1]

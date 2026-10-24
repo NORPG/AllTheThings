@@ -2265,9 +2265,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WOD, {
 		m(EASTERN_KINGDOMS, {
 			m(THE_HINTERLANDS, {
-				n(QUESTS, sharedData({ timeline = { ADDED_6_2_2 } }, {
-					q(38931),	-- Hero's Call: The Hinterlands! - completed with q:26542
-				})),
+				n(QUESTS, {
+					timeline = { ADDED_6_2_2 },
+					groups = {
+						q(38931),	-- Hero's Call: The Hinterlands! - completed with q:26542
+					},
+				}),
 			}),
 		}),
 	}),

@@ -893,427 +893,430 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_1_7 } }, {
-			ach(18828, {	-- Botanist's Log: Dragon Isles
-				-- Meta Achievement
-				sym = {{"meta_achievement",
-					18824,	-- Botanist's Log - Bubble Poppy
-					18822,	-- Botanist's Log - Hochenblume
-					18829,	-- Botanist's Log - Overloaded Elements
-					18823,	-- Botanist's Log - Saxifrage
-					18825,	-- Botanist's Log - Writhebark
-				}},
-				groups = {
-					crit(61434),	-- Infused Pollen Recovered
-					crit(61433),	-- Dreambloom Recovered
-				},
-			}),
-			ach(18824, {	-- Botanist's Log - Bubble Poppy
-				crit(61406, {	-- Bubble Poppy
-					providers = {
-						{ "o", 375241 },	-- Bubble Poppy
-						{ "o", 398755 },	-- Bubble Poppy
-					},
-					_quests = { 71972 },	-- Bubble Poppy
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
+		n(ACHIEVEMENTS, {
+			timeline = { ADDED_10_1_7 },
+			groups = {
+				ach(18828, {	-- Botanist's Log: Dragon Isles
+					-- Meta Achievement
+					sym = {{"meta_achievement",
+						18824,	-- Botanist's Log - Bubble Poppy
+						18822,	-- Botanist's Log - Hochenblume
+						18829,	-- Botanist's Log - Overloaded Elements
+						18823,	-- Botanist's Log - Saxifrage
+						18825,	-- Botanist's Log - Writhebark
+					}},
+					groups = {
+						crit(61434),	-- Infused Pollen Recovered
+						crit(61433),	-- Dreambloom Recovered
 					},
 				}),
-				crit(61407, {	-- Lush Bubble Poppy
-					providers = {
-						{ "o", 381957 },	-- Lush Bubble Poppy
-						{ "o", 398751 },	-- Lush Bubble Poppy
-					},
-					_quests = { 71973 },	-- Lush Bubble Poppy
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
+				ach(18824, {	-- Botanist's Log - Bubble Poppy
+					crit(61406, {	-- Bubble Poppy
+						providers = {
+							{ "o", 375241 },	-- Bubble Poppy
+							{ "o", 398755 },	-- Bubble Poppy
+						},
+						_quests = { 71972 },	-- Bubble Poppy
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61407, {	-- Lush Bubble Poppy
+						providers = {
+							{ "o", 381957 },	-- Lush Bubble Poppy
+							{ "o", 398751 },	-- Lush Bubble Poppy
+						},
+						_quests = { 71973 },	-- Lush Bubble Poppy
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61408, {	-- Windswept Bubble Poppy
+						provider = { "o", 375245 },	-- Windswept Bubble Poppy
+						_quests = { 71978 },	-- Windswept Bubble Poppy
+						maps = { OHNAHRAN_PLAINS },
+					}),
+					crit(61409, {	-- Frigid Bubble Poppy
+						provider = { "o", 375244 },	-- Frigid Bubble Poppy
+						_quests = { 71982 },	-- Frigid Bubble Poppy
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+						},
+					}),
+					crit(61410, {	-- Titan-Touched Bubble Poppy
+						providers = {
+							{ "o", 375242 },	-- Titan-Touched Bubble Poppy
+							{ "o", 398759 },	-- Titan-Touched Bubble Poppy
+						},
+						_quests = { 71986 },	-- Titan-Touched Bubble Poppy
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61411, {	-- Decayed Bubble Poppy
+						provider = { "o", 375246 },	-- Decayed Bubble Poppy
+						_quests = { 71990 },	-- Decayed Bubble Poppy
+						maps = { THE_AZURE_SPAN },
+					}),
+					crit(61412, {	-- Infurious Bubble Poppy
+						providers = {
+							{ "o", 375243 },	-- Infurious Bubble Poppy
+							{ "o", 398764 },	-- Infurious Bubble Poppy
+						},
+						_quests = { 71994 },	-- Infurious Bubble Poppy
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61413, {	-- Lambent Bubble Poppy
+						provider = { "o", 390142 },	-- Lambent Bubble Poppy
+						_quests = { 75142 },	-- Lambent Bubble Poppy
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61408, {	-- Windswept Bubble Poppy
-					provider = { "o", 375245 },	-- Windswept Bubble Poppy
-					_quests = { 71978 },	-- Windswept Bubble Poppy
-					maps = { OHNAHRAN_PLAINS },
+				ach(18822, {	-- Botanist's Log - Hochenblume
+					crit(61391, {	-- Lush Hochenblume
+						providers = {
+							{ "o", 381960 },	-- Lush Hochenblume
+							{ "o", 398753 },	-- Lush Hochenblume
+						},
+						_quests = { 71969 },	-- Lush Hochenblume
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61392, {	-- Windswept Hochenblume
+						provider = { "o", 381213 },	-- Windswept Hochenblume
+						_quests = { 71976 },	-- Windswept Hochenblume
+						maps = { OHNAHRAN_PLAINS },
+					}),
+					crit(61393, {	-- Frigid Hochenblume
+						provider = { "o", 381214 },	-- Frigid Hochenblume
+						_quests = { 71980 },	-- Frigid Hochenblume
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+						},
+					}),
+					crit(61394, {	-- Titan-Touched Hochenblume
+						providers = {
+							{ "o", 381210 },	-- Titan-Touched Hochenblume
+							{ "o", 398761 },	-- Titan-Touched Hochenblume
+						},
+						_quests = { 71984 },	-- Titan-Touched Hochenblume
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61395, {	-- Decayed Hochenblume
+						provider = { "o", 381212 },	-- Decayed Hochenblume
+						_quests = { 71988 },	-- Decayed Hochenblume
+						maps = { THE_AZURE_SPAN },
+					}),
+					crit(61396, {	-- Infurious Hochenblume
+						providers = {
+							{ "o", 381211 },	-- Infurious Hochenblume
+							{ "o", 398766 },	-- Infurious Hochenblume
+						},
+						_quests = { 71992 },	-- Infurious Hochenblume
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61397, {	-- Lambent Hochenblume
+						provider = { "o", 390139 },	-- Lambent Hochenblume
+						_quests = { 75141 },	-- Lambent Hochenblume
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61409, {	-- Frigid Bubble Poppy
-					provider = { "o", 375244 },	-- Frigid Bubble Poppy
-					_quests = { 71982 },	-- Frigid Bubble Poppy
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-					},
+				ach(18829, {	-- Botanist's Log - Overloaded Elements
+					crit(61422, {	-- Overload Windswept Herb
+						providers = {
+							{ "o", 375245 },	-- Windswept Bubble Poppy
+							{ "o", 381213 },	-- Windswept Hochenblume
+							{ "o", 381202 },	-- Windswept Saxifrage
+							{ "o", 381199 },	-- Windswept Writhebark
+						},
+						_quests = { 72342 },	-- Overload Windswept Herb
+						maps = { OHNAHRAN_PLAINS },
+					}),
+					crit(61423, {	-- Overload Frigid Herb
+						providers = {
+							{ "o", 375244 },	-- Frigid Bubble Poppy
+							{ "o", 381214 },	-- Frigid Hochenblume
+							{ "o", 381201 },	-- Frigid Saxifrage
+							{ "o", 381200 },	-- Frigid Writhebark
+						},
+						_quests = { 72343 },	-- Overload Frigid Herb
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+						},
+					}),
+					crit(61424, {	-- Overload Titan-Touched Herb
+						providers = {
+							{ "o", 375242 },	-- Titan-Touched Bubble Poppy
+							{ "o", 398759 },	-- Titan-Touched Bubble Poppy
+							{ "o", 381210 },	-- Titan-Touched Hochenblume
+							{ "o", 398761 },	-- Titan-Touched Hochenblume
+							{ "o", 381205 },	-- Titan-Touched Saxifrage
+							{ "o", 398762 },	-- Titan-Touched Saxifrage
+							{ "o", 381196 },	-- Titan-Touched Writhebark
+							{ "o", 398760 },	-- Titan-Touched Writhebark
+						},
+						_quests = { 72344 },	-- Overload Titan-Touched Herb
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61425, {	-- Overload Decayed Herb
+						providers = {
+							{ "o", 375246 },	-- Decayed Bubble Poppy
+							{ "o", 381212 },	-- Decayed Hochenblume
+							{ "o", 381203 },	-- Decayed Saxifrage
+							{ "o", 381198 },	-- Decayed Writhebark
+						},
+						_quests = { 72345 },	-- Overload Decayed Herb
+						maps = { THE_AZURE_SPAN },
+					}),
+					crit(61426, {	-- Overload Infurious Herb
+						providers = {
+							{ "o", 375243 },	-- Infurious Bubble Poppy
+							{ "o", 398764 },	-- Infurious Bubble Poppy
+							{ "o", 381211 },	-- Infurious Hochenblume
+							{ "o", 398766 },	-- Infurious Hochenblume
+							{ "o", 381204 },	-- Infurious Saxifrage
+							{ "o", 398767 },	-- Infurious Saxifrage
+							{ "o", 381197 },	-- Infurious Writhebark
+							{ "o", 398765 },	-- Infurious Writhebark
+						},
+						_quests = { 72348 },	-- Overload Infurious Herb
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61427, {	-- Overload Lambent Herb
+						providers = {
+							{ "o", 390142 },	-- Lambent Bubble Poppy
+							{ "o", 390139 },	-- Lambent Hochenblume
+							{ "o", 390140 },	-- Lambent Saxifrage
+							{ "o", 390141 },	-- Lambent Writhebark
+						},
+						_quests = { 75138 },	-- Overload Lambent Herb
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61410, {	-- Titan-Touched Bubble Poppy
-					providers = {
-						{ "o", 375242 },	-- Titan-Touched Bubble Poppy
-						{ "o", 398759 },	-- Titan-Touched Bubble Poppy
-					},
-					_quests = { 71986 },	-- Titan-Touched Bubble Poppy
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
+				ach(18823, {	-- Botanist's Log - Saxifrage
+					crit(61398, {	-- Saxifrage
+						providers = {
+							{ "o", 381207 },	-- Saxifrage
+							{ "o", 398758 },	-- Saxifrage
+						},
+						_quests = { 71974 },	-- Saxifrage
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61399, {	-- Lush Saxifrage
+						providers = {
+							{ "o", 381959 },	-- Lush Saxifrage
+							{ "o", 398754 },	-- Lush Saxifrage
+						},
+						_quests = { 71975 },	-- Lush Saxifrage
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61400, {	-- Windswept Saxifrage
+						provider = { "o", 381202 },	-- Windswept Saxifrage
+						_quests = { 71979 },	-- Windswept Saxifrage
+						maps = { OHNAHRAN_PLAINS },
+					}),
+					crit(61401, {	-- Frigid Saxifrage
+						provider = { "o", 381201 },	-- Frigid Saxifrage
+						_quests = { 71983 },	-- Frigid Saxifrage
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+						},
+					}),
+					crit(61402, {	-- Titan-Touched Saxifrage
+						providers = {
+							{ "o", 381205 },	-- Titan-Touched Saxifrage
+							{ "o", 398762 },	-- Titan-Touched Saxifrage
+						},
+						_quests = { 71987 },	-- Titan-Touched Saxifrage
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61403, {	-- Decayed Saxifrage
+						provider = { "o", 381203 },	-- Decayed Saxifrage
+						_quests = { 71991 },	-- Decayed Saxifrage
+						maps = { THE_AZURE_SPAN },
+					}),
+					crit(61404, {	-- Infurious Saxifrage
+						providers = {
+							{ "o", 381204 },	-- Infurious Saxifrage
+							{ "o", 398767 },	-- Infurious Saxifrage
+						},
+						_quests = { 72341 },	-- Infurious Saxifrage
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61405, {	-- Lambent Saxifrage
+						provider = { "o", 390140 },	-- Lambent Saxifrage
+						_quests = { 75143 },	-- Lambent Saxifrage
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61411, {	-- Decayed Bubble Poppy
-					provider = { "o", 375246 },	-- Decayed Bubble Poppy
-					_quests = { 71990 },	-- Decayed Bubble Poppy
-					maps = { THE_AZURE_SPAN },
+				ach(18825, {	-- Botanist's Log - Writhebark
+					crit(61414, {	-- Writhebark
+						providers = {
+							{ "o", 381154 },	-- Writhebark
+							{ "o", 398756 },	-- Writhebark
+						},
+						_quests = { 71970 },	-- Writhebark
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61415, {	-- Lush Writhebark
+						providers = {
+							{ "o", 381958 },	-- Lush Writhebark
+							{ "o", 398752 },	-- Lush Writhebark
+						},
+						_quests = { 71971 },	-- Lush Writhebark
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61416, {	-- Windswept Writhebark
+						provider = { "o", 381199 },	-- Windswept Writhebark
+						_quests = { 71977 },	-- Windswept Writhebark
+						maps = { OHNAHRAN_PLAINS },
+					}),
+					crit(61417, {	-- Frigid Writhebark
+						provider = { "o", 381200 },	-- Frigid Writhebark
+						_quests = { 71981 },	-- Frigid Writhebark
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+						},
+					}),
+					crit(61418, {	-- Titan-Touched Writhebark
+						providers = {
+							{ "o", 381196 },	-- Titan-Touched Writhebark
+							{ "o", 398760 },	-- Titan-Touched Writhebark
+						},
+						_quests = { 71985 },	-- Titan-Touched Writhebark
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61419, {	-- Decayed Writhebark
+						provider = { "o", 381198 },	-- Decayed Writhebark
+						_quests = { 71989 },	-- Decayed Writhebark
+						maps = { THE_AZURE_SPAN },
+					}),
+					crit(61420, {	-- Infurious Writhebark
+						providers = {
+							{ "o", 381197 },	-- Infurious Writhebark
+							{ "o", 398765 },	-- Infurious Writhebark
+						},
+						_quests = { 71993 },	-- Infurious Writhebark
+						maps = {
+							OHNAHRAN_PLAINS,
+							THALDRASZUS,
+							THE_AZURE_SPAN,
+							THE_WAKING_SHORES,
+							ZARALEK_CAVERN,
+						},
+					}),
+					crit(61421, {	-- Lambent Writhebark
+						provider = { "o", 390141 },	-- Lambent Writhebark
+						_quests = { 75144 },	-- Lambent Writhebark
+						maps = { ZARALEK_CAVERN },
+					}),
 				}),
-				crit(61412, {	-- Infurious Bubble Poppy
-					providers = {
-						{ "o", 375243 },	-- Infurious Bubble Poppy
-						{ "o", 398764 },	-- Infurious Bubble Poppy
-					},
-					_quests = { 71994 },	-- Infurious Bubble Poppy
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61413, {	-- Lambent Bubble Poppy
-					provider = { "o", 390142 },	-- Lambent Bubble Poppy
-					_quests = { 75142 },	-- Lambent Bubble Poppy
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-			ach(18822, {	-- Botanist's Log - Hochenblume
-				crit(61391, {	-- Lush Hochenblume
-					providers = {
-						{ "o", 381960 },	-- Lush Hochenblume
-						{ "o", 398753 },	-- Lush Hochenblume
-					},
-					_quests = { 71969 },	-- Lush Hochenblume
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61392, {	-- Windswept Hochenblume
-					provider = { "o", 381213 },	-- Windswept Hochenblume
-					_quests = { 71976 },	-- Windswept Hochenblume
-					maps = { OHNAHRAN_PLAINS },
-				}),
-				crit(61393, {	-- Frigid Hochenblume
-					provider = { "o", 381214 },	-- Frigid Hochenblume
-					_quests = { 71980 },	-- Frigid Hochenblume
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-					},
-				}),
-				crit(61394, {	-- Titan-Touched Hochenblume
-					providers = {
-						{ "o", 381210 },	-- Titan-Touched Hochenblume
-						{ "o", 398761 },	-- Titan-Touched Hochenblume
-					},
-					_quests = { 71984 },	-- Titan-Touched Hochenblume
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61395, {	-- Decayed Hochenblume
-					provider = { "o", 381212 },	-- Decayed Hochenblume
-					_quests = { 71988 },	-- Decayed Hochenblume
-					maps = { THE_AZURE_SPAN },
-				}),
-				crit(61396, {	-- Infurious Hochenblume
-					providers = {
-						{ "o", 381211 },	-- Infurious Hochenblume
-						{ "o", 398766 },	-- Infurious Hochenblume
-					},
-					_quests = { 71992 },	-- Infurious Hochenblume
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61397, {	-- Lambent Hochenblume
-					provider = { "o", 390139 },	-- Lambent Hochenblume
-					_quests = { 75141 },	-- Lambent Hochenblume
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-			ach(18829, {	-- Botanist's Log - Overloaded Elements
-				crit(61422, {	-- Overload Windswept Herb
-					providers = {
-						{ "o", 375245 },	-- Windswept Bubble Poppy
-						{ "o", 381213 },	-- Windswept Hochenblume
-						{ "o", 381202 },	-- Windswept Saxifrage
-						{ "o", 381199 },	-- Windswept Writhebark
-					},
-					_quests = { 72342 },	-- Overload Windswept Herb
-					maps = { OHNAHRAN_PLAINS },
-				}),
-				crit(61423, {	-- Overload Frigid Herb
-					providers = {
-						{ "o", 375244 },	-- Frigid Bubble Poppy
-						{ "o", 381214 },	-- Frigid Hochenblume
-						{ "o", 381201 },	-- Frigid Saxifrage
-						{ "o", 381200 },	-- Frigid Writhebark
-					},
-					_quests = { 72343 },	-- Overload Frigid Herb
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-					},
-				}),
-				crit(61424, {	-- Overload Titan-Touched Herb
-					providers = {
-						{ "o", 375242 },	-- Titan-Touched Bubble Poppy
-						{ "o", 398759 },	-- Titan-Touched Bubble Poppy
-						{ "o", 381210 },	-- Titan-Touched Hochenblume
-						{ "o", 398761 },	-- Titan-Touched Hochenblume
-						{ "o", 381205 },	-- Titan-Touched Saxifrage
-						{ "o", 398762 },	-- Titan-Touched Saxifrage
-						{ "o", 381196 },	-- Titan-Touched Writhebark
-						{ "o", 398760 },	-- Titan-Touched Writhebark
-					},
-					_quests = { 72344 },	-- Overload Titan-Touched Herb
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61425, {	-- Overload Decayed Herb
-					providers = {
-						{ "o", 375246 },	-- Decayed Bubble Poppy
-						{ "o", 381212 },	-- Decayed Hochenblume
-						{ "o", 381203 },	-- Decayed Saxifrage
-						{ "o", 381198 },	-- Decayed Writhebark
-					},
-					_quests = { 72345 },	-- Overload Decayed Herb
-					maps = { THE_AZURE_SPAN },
-				}),
-				crit(61426, {	-- Overload Infurious Herb
-					providers = {
-						{ "o", 375243 },	-- Infurious Bubble Poppy
-						{ "o", 398764 },	-- Infurious Bubble Poppy
-						{ "o", 381211 },	-- Infurious Hochenblume
-						{ "o", 398766 },	-- Infurious Hochenblume
-						{ "o", 381204 },	-- Infurious Saxifrage
-						{ "o", 398767 },	-- Infurious Saxifrage
-						{ "o", 381197 },	-- Infurious Writhebark
-						{ "o", 398765 },	-- Infurious Writhebark
-					},
-					_quests = { 72348 },	-- Overload Infurious Herb
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61427, {	-- Overload Lambent Herb
-					providers = {
-						{ "o", 390142 },	-- Lambent Bubble Poppy
-						{ "o", 390139 },	-- Lambent Hochenblume
-						{ "o", 390140 },	-- Lambent Saxifrage
-						{ "o", 390141 },	-- Lambent Writhebark
-					},
-					_quests = { 75138 },	-- Overload Lambent Herb
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-			ach(18823, {	-- Botanist's Log - Saxifrage
-				crit(61398, {	-- Saxifrage
-					providers = {
-						{ "o", 381207 },	-- Saxifrage
-						{ "o", 398758 },	-- Saxifrage
-					},
-					_quests = { 71974 },	-- Saxifrage
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61399, {	-- Lush Saxifrage
-					providers = {
-						{ "o", 381959 },	-- Lush Saxifrage
-						{ "o", 398754 },	-- Lush Saxifrage
-					},
-					_quests = { 71975 },	-- Lush Saxifrage
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61400, {	-- Windswept Saxifrage
-					provider = { "o", 381202 },	-- Windswept Saxifrage
-					_quests = { 71979 },	-- Windswept Saxifrage
-					maps = { OHNAHRAN_PLAINS },
-				}),
-				crit(61401, {	-- Frigid Saxifrage
-					provider = { "o", 381201 },	-- Frigid Saxifrage
-					_quests = { 71983 },	-- Frigid Saxifrage
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-					},
-				}),
-				crit(61402, {	-- Titan-Touched Saxifrage
-					providers = {
-						{ "o", 381205 },	-- Titan-Touched Saxifrage
-						{ "o", 398762 },	-- Titan-Touched Saxifrage
-					},
-					_quests = { 71987 },	-- Titan-Touched Saxifrage
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61403, {	-- Decayed Saxifrage
-					provider = { "o", 381203 },	-- Decayed Saxifrage
-					_quests = { 71991 },	-- Decayed Saxifrage
-					maps = { THE_AZURE_SPAN },
-				}),
-				crit(61404, {	-- Infurious Saxifrage
-					providers = {
-						{ "o", 381204 },	-- Infurious Saxifrage
-						{ "o", 398767 },	-- Infurious Saxifrage
-					},
-					_quests = { 72341 },	-- Infurious Saxifrage
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61405, {	-- Lambent Saxifrage
-					provider = { "o", 390140 },	-- Lambent Saxifrage
-					_quests = { 75143 },	-- Lambent Saxifrage
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-			ach(18825, {	-- Botanist's Log - Writhebark
-				crit(61414, {	-- Writhebark
-					providers = {
-						{ "o", 381154 },	-- Writhebark
-						{ "o", 398756 },	-- Writhebark
-					},
-					_quests = { 71970 },	-- Writhebark
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61415, {	-- Lush Writhebark
-					providers = {
-						{ "o", 381958 },	-- Lush Writhebark
-						{ "o", 398752 },	-- Lush Writhebark
-					},
-					_quests = { 71971 },	-- Lush Writhebark
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61416, {	-- Windswept Writhebark
-					provider = { "o", 381199 },	-- Windswept Writhebark
-					_quests = { 71977 },	-- Windswept Writhebark
-					maps = { OHNAHRAN_PLAINS },
-				}),
-				crit(61417, {	-- Frigid Writhebark
-					provider = { "o", 381200 },	-- Frigid Writhebark
-					_quests = { 71981 },	-- Frigid Writhebark
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-					},
-				}),
-				crit(61418, {	-- Titan-Touched Writhebark
-					providers = {
-						{ "o", 381196 },	-- Titan-Touched Writhebark
-						{ "o", 398760 },	-- Titan-Touched Writhebark
-					},
-					_quests = { 71985 },	-- Titan-Touched Writhebark
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61419, {	-- Decayed Writhebark
-					provider = { "o", 381198 },	-- Decayed Writhebark
-					_quests = { 71989 },	-- Decayed Writhebark
-					maps = { THE_AZURE_SPAN },
-				}),
-				crit(61420, {	-- Infurious Writhebark
-					providers = {
-						{ "o", 381197 },	-- Infurious Writhebark
-						{ "o", 398765 },	-- Infurious Writhebark
-					},
-					_quests = { 71993 },	-- Infurious Writhebark
-					maps = {
-						OHNAHRAN_PLAINS,
-						THALDRASZUS,
-						THE_AZURE_SPAN,
-						THE_WAKING_SHORES,
-						ZARALEK_CAVERN,
-					},
-				}),
-				crit(61421, {	-- Lambent Writhebark
-					provider = { "o", 390141 },	-- Lambent Writhebark
-					_quests = { 75144 },	-- Lambent Writhebark
-					maps = { ZARALEK_CAVERN },
-				}),
-			}),
-		})),
+			},
+		}),
 		n(PROFESSION_NODES_HEADER, sharedData({
 			cost = {{ "c", PROFESSION_KNOWLEDGE.DF.HERBALISM, 1 }}
 		},{

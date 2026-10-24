@@ -250,8 +250,9 @@ WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = {
 	r(104303),	-- Sea Mist Rice Noodles
 	r(104302),	-- Valley Stir Fry
 }));
-DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, {
 	description = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158765, {	-- Cooking (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -264,7 +265,7 @@ DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ti
 		r(161002),	-- Grilled Saberfish
 		r(161001),	-- Saberfish Broth
 	},
-})));
+}));
 BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {

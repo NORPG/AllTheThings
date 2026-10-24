@@ -134,7 +134,8 @@ MOP_FIRST_AID = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { 
 		}),
 	}),
 }));
-DRAENOR_FIRST_AID = applyclassicphase(WOD_PHASE_ONE, i(111364, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 } }, {
+DRAENOR_FIRST_AID = applyclassicphase(WOD_PHASE_ONE, i(111364, {
+	timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1 },
 	groups = {
 		r(158741, {	-- First Aid (Draenor Master)
 			-- #if NOT ANYCLASSIC
@@ -147,7 +148,7 @@ DRAENOR_FIRST_AID = applyclassicphase(WOD_PHASE_ONE, i(111364, bubbleDownSelf({ 
 		r(172542),	-- Fire Ammonite Oil
 		r(172540),	-- Healing Tonic
 	},
-})));
+}));
 LEGION_FIRST_AID = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3, REMOVED_8_0_1 } }, {
 	r(195113, {	-- First Aid (Legion Master)
 		-- #if NOT ANYCLASSIC

@@ -42,77 +42,80 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				timeline = { ADDED_10_0_7, REMOVED_10_0_7 },
 			}),
 		}),
-		n(QUESTS, sharedData({ timeline = { ADDED_2_0_5, REMOVED_4_0_3 } }, {
-			q(10831, {	-- Becoming a Mooncloth Tailor
-				description = "Upon finishing this quest, you will become a Mooncloth Tailor.",
-				altQuests = {
-					-- 10831,	-- Becoming a Mooncloth Tailor
-					10833,	-- Becoming a Shadoweave Tailor
-					10832,	-- Becoming a Spellfire Tailor
-				},
-				qg = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
-				coord = { 66.5, 69.3, SHATTRATH_CITY },
-				maps = { ZANGARMARSH },
-				lvl = 60,
-				groups = {
-					objective(1, {	-- 0/1 Sample of Primal Mooncloth
-						provider = { "i", 31530 },	-- Sample of Primal Mooncloth
-						coord = { 80.0, 65.0, ZANGARMARSH },
-						cost = {
-							{ "i", 31524, 1 },	-- Square of Imbued Netherweave
-							{ "i", 31525, 1 },	-- Vial of Primal Reagents
-						},
-					}),
-					r(MOONCLOTH_TAILORING),
-					i(31522, {	-- Primal Mooncloth Supplies
-						i(31524),	-- Square of Imbued Netherweave
-						i(31525),	-- Vial of Primal Reagents
-					}),
-				},
-			}),
-			q(10833, {	-- Becoming a Shadoweave Tailor
-				description = "Upon finishing this quest, you will become a Shadoweave Tailor.",
-				altQuests = {
-					10831,	-- Becoming a Mooncloth Tailor
-					-- 10833,	-- Becoming a Shadoweave Tailor
-					10832,	-- Becoming a Spellfire Tailor
-				},
-				qg = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
-				coord = { 66.6, 68.2, SHATTRATH_CITY },
-				maps = { SHADOWMOON_VALLEY },
-				requireSkill = TAILORING,
-				lvl = 60,
-				groups = {
-					objective(1, {	-- Deepen Altar of Shadows Attunement
-						provider = { "i", 31736 },	-- Crystal of Deep Shadows
-						coord = { 58.0, 71.0, SHADOWMOON_VALLEY },
-					}),
-					r(SHADOWEAVE_TAILORING),
-				},
-			}),
-			q(10832, {	-- Becoming a Spellfire Tailor
-				description = "Upon finishing this quest, you will become a Spellfire Tailor.",
-				altQuests = {
-					10831,	-- Becoming a Mooncloth Tailor
-					10833,	-- Becoming a Shadoweave Tailor
-					-- 10832,	-- Becoming a Spellfire Tailor
-				},
-				qg = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
-				coord = { 66.6, 68.4, SHATTRATH_CITY },
-				maps = { NETHERSTORM },
-				lvl = 60,
-				groups = {
-					objective(1, {	-- 0/1 Nether-wraith Essence
-						provider = { "i", 31741 },	-- Nether-wraith Essence
-						cr = 22408,	-- Furious Nether-wraith
-						cost = {
-							{ "i", 31742, 1 },	-- Nether-wraith Beacon
-						},
-					}),
-					r(SPELLFIRE_TAILORING),
-				},
-			}),
-		})),
+		n(QUESTS, {
+			timeline = { ADDED_2_0_5, REMOVED_4_0_3 },
+			groups = {
+				q(10831, {	-- Becoming a Mooncloth Tailor
+					description = "Upon finishing this quest, you will become a Mooncloth Tailor.",
+					altQuests = {
+						-- 10831,	-- Becoming a Mooncloth Tailor
+						10833,	-- Becoming a Shadoweave Tailor
+						10832,	-- Becoming a Spellfire Tailor
+					},
+					qg = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
+					coord = { 66.5, 69.3, SHATTRATH_CITY },
+					maps = { ZANGARMARSH },
+					lvl = 60,
+					groups = {
+						objective(1, {	-- 0/1 Sample of Primal Mooncloth
+							provider = { "i", 31530 },	-- Sample of Primal Mooncloth
+							coord = { 80.0, 65.0, ZANGARMARSH },
+							cost = {
+								{ "i", 31524, 1 },	-- Square of Imbued Netherweave
+								{ "i", 31525, 1 },	-- Vial of Primal Reagents
+							},
+						}),
+						r(MOONCLOTH_TAILORING),
+						i(31522, {	-- Primal Mooncloth Supplies
+							i(31524),	-- Square of Imbued Netherweave
+							i(31525),	-- Vial of Primal Reagents
+						}),
+					},
+				}),
+				q(10833, {	-- Becoming a Shadoweave Tailor
+					description = "Upon finishing this quest, you will become a Shadoweave Tailor.",
+					altQuests = {
+						10831,	-- Becoming a Mooncloth Tailor
+						-- 10833,	-- Becoming a Shadoweave Tailor
+						10832,	-- Becoming a Spellfire Tailor
+					},
+					qg = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
+					coord = { 66.6, 68.2, SHATTRATH_CITY },
+					maps = { SHADOWMOON_VALLEY },
+					requireSkill = TAILORING,
+					lvl = 60,
+					groups = {
+						objective(1, {	-- Deepen Altar of Shadows Attunement
+							provider = { "i", 31736 },	-- Crystal of Deep Shadows
+							coord = { 58.0, 71.0, SHADOWMOON_VALLEY },
+						}),
+						r(SHADOWEAVE_TAILORING),
+					},
+				}),
+				q(10832, {	-- Becoming a Spellfire Tailor
+					description = "Upon finishing this quest, you will become a Spellfire Tailor.",
+					altQuests = {
+						10831,	-- Becoming a Mooncloth Tailor
+						10833,	-- Becoming a Shadoweave Tailor
+						-- 10832,	-- Becoming a Spellfire Tailor
+					},
+					qg = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
+					coord = { 66.6, 68.4, SHATTRATH_CITY },
+					maps = { NETHERSTORM },
+					lvl = 60,
+					groups = {
+						objective(1, {	-- 0/1 Nether-wraith Essence
+							provider = { "i", 31741 },	-- Nether-wraith Essence
+							cr = 22408,	-- Furious Nether-wraith
+							cost = {
+								{ "i", 31742, 1 },	-- Nether-wraith Beacon
+							},
+						}),
+						r(SPELLFIRE_TAILORING),
+					},
+				}),
+			},
+		}),
 	})),
 	expansion(EXPANSION.WRATH, {
 		-- #if AFTER BFA
@@ -1568,9 +1571,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.BFA, {
 		n(PROFESSIONS, {
-			prof(TAILORING, sharedData({ timeline = { ADDED_8_1_5 } }, {
-				q(55239),	-- During quest objective of Seam Stress (55214)
-			})),
+			prof(TAILORING, {
+				timeline = { ADDED_8_1_5 },
+				groups = {
+					q(55239),	-- During quest objective of Seam Stress (55214)
+				},
+			}),
 		}),
 	}),
 });

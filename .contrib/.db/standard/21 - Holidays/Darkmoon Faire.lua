@@ -4495,10 +4495,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 
 root(ROOTS.HiddenQuestTriggers,{
 	expansion(EXPANSION.CATA, {
-		n(QUESTS, sharedData({ timeline = { ADDED_4_3_2 } }, {
-			-- q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
-			q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
-		})),
+		n(QUESTS, {
+			timeline = { ADDED_4_3_2 },
+			groups = {
+				-- q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)
+				q(30561),	-- [DNT] Fun for the Little Ones TRACKER - triggers after completing Fun For the Little Ones (questID 29507)
+			},
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		n(QUESTS, {

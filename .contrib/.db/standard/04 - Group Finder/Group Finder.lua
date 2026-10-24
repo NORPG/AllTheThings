@@ -136,13 +136,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51992),	-- Tumultuous Ring
 			},
 		}),
-		i(52001, bubbleDownSelf({ timeline = { ADDED_3_3_0, REMOVED_7_3_5 } }, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
+		i(52001, {	-- Satchel of Helpful Goods 40-45 [36-45 in wrath]
 			description =
 				-- #if AFTER CATA
 				"Rewarded for completing a random dungeon in the level 40-45 range.",
 				-- #else
 				"Rewarded for completing a random dungeon in the level 36-45 range.",
 				-- #endif
+			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
 			groups = {
 				i(51976),	-- Earthbound Shoulderguards
 				i(51974),	-- Enumerated Shoulderpads
@@ -150,7 +151,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(51966),	-- Vigorous Spaulders
 				i(51992),	-- Tumultuous Ring
 			},
-		})),
+		}),
 		i(52002, {	-- Satchel of Helpful Goods 46-55
 			description = "Rewarded for completing a random dungeon in the level 46-55 range.",
 			timeline = { ADDED_3_3_0, REMOVED_7_3_5 },
@@ -476,13 +477,14 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	-- #endif
 	expansion(EXPANSION.MOP, {
-		i(156698, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
+		i(156698, {	-- Tranquil Satchel of Helpful Goods
 			description =
 				-- #if AFTER 10.1.5
 				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling or respective Timewalking event.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #else
 				"Rewarded for completing a random 'Mists of Pandaria' dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 				-- #endif
+			timeline = { ADDED_7_3_5 },
 			groups = {
 				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
@@ -523,7 +525,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
 				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
 			},
-		})),
+		}),
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 			description = "Rewarded for completing a random 'Mists of Pandaria' dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
 			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
@@ -864,10 +866,13 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WRATH, {
-		n(GROUP_FINDER, sharedData({ timeline = { ADDED_3_3_0 } }, {
-			q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
-			q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
-		})),
+		n(GROUP_FINDER, {
+			timeline = { ADDED_3_3_0 },
+			groups = {
+				q(24887),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+				q(24895),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
+			},
+		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		n(GROUP_FINDER, {

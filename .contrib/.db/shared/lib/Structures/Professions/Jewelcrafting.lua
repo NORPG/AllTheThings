@@ -1326,8 +1326,9 @@ MOP_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_5_0_4 } }, {
 		r(122671),	-- Widow Chain
 	}),
 });
-DRAENOR_JEWELCRAFTING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_JEWELCRAFTING = applyclassicphase(WOD_PHASE_ONE, i(115356, {
 	description = "This is a reward for completing the introductory Jewelcrafting questline that can drop from any Draenor mob. Also sold at Gem Boutique for 100 gold.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158750, {	-- Jewelcrafting (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -1349,7 +1350,7 @@ DRAENOR_JEWELCRAFTING = applyclassicphase(WOD_PHASE_ONE, i(115356, bubbleDownSel
 		r(170706),	-- Whispering Iron Band
 		r(170709),	-- Whispering Iron Choker
 	},
-})));
+}));
 COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(257031, {	-- Design: Draenethyst Sconce (RECIPE!)
 		cost = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 1}},

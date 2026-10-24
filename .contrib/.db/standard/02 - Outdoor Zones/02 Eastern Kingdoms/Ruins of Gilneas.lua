@@ -478,11 +478,14 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	m(RUINS_OF_GILNEAS, sharedData({ timeline = { ADDED_10_2_5 } }, {
-		q(79474),	-- Loot Tess's Peacebloom (211788)
-		q(80080),	-- Ensemble: Gilnean Noble's Suit
-		q(78903, {	-- Ask Greymane Seneschal by Cathedral or Manor to leave for the day
-			isDaily = true,
-		}),
-	})),
+	m(RUINS_OF_GILNEAS, {
+		timeline = { ADDED_10_2_5 },
+		groups = {
+			q(79474),	-- Loot Tess's Peacebloom (211788)
+			q(80080),	-- Ensemble: Gilnean Noble's Suit
+			q(78903, {	-- Ask Greymane Seneschal by Cathedral or Manor to leave for the day
+				isDaily = true,
+			}),
+		},
+	}),
 }));

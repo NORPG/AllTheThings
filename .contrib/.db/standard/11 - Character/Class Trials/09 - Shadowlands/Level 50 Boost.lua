@@ -92,22 +92,25 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 						i(170607),	-- Springrain Idol of Rage
 						i(170610),	-- Springrain Stone of Rage
 					})),
-					cl(DRUID, RESTORATION, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
-						i(170611),	-- Springrain Stave
-						i(170794),	-- Springrain Hood
-						i(170796),	-- Springrain Shoulders
-						i(170618),	-- Springrain Cloak of Wisdom
-						i(170791),	-- Springrain Jerkin
-						i(170798),	-- Springrain Bindings
-						i(170793),	-- Springrain Gloves
-						i(170797),	-- Springrain Waistband
-						i(170795),	-- Springrain Britches
-						i(170792),	-- Springrain Boots
-						i(170621),	-- Springrain Band of Wisdom
-						i(170622),	-- Springrain Ring of Wisdom
-						i(170620),	-- Springrain Idol of Wisdom
-						i(170623),	-- Springrain Stone of Wisdom
-					})),
+					cl(DRUID, RESTORATION, {
+						timeline = { ADDED_9_0_1, REMOVED_9_1_5 },
+						groups = {
+							i(170611),	-- Springrain Stave
+							i(170794),	-- Springrain Hood
+							i(170796),	-- Springrain Shoulders
+							i(170618),	-- Springrain Cloak of Wisdom
+							i(170791),	-- Springrain Jerkin
+							i(170798),	-- Springrain Bindings
+							i(170793),	-- Springrain Gloves
+							i(170797),	-- Springrain Waistband
+							i(170795),	-- Springrain Britches
+							i(170792),	-- Springrain Boots
+							i(170621),	-- Springrain Band of Wisdom
+							i(170622),	-- Springrain Ring of Wisdom
+							i(170620),	-- Springrain Idol of Wisdom
+							i(170623),	-- Springrain Stone of Wisdom
+						},
+					}),
 				}),
 				cl(HUNTER, {
 					i(171988, {	-- Adventurer's Footlocker
@@ -177,22 +180,25 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 							i(170660),	-- Mistdancer Sword
 						},
 					}),
-					cl(MONK, MISTWEAVER, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
-						i(170659),	-- Mistdancer Staff
-						i(170825),	-- Mistdancer Hood
-						i(170827),	-- Mistdancer Shoulders
-						i(170653),	-- Mistdancer Cloak of Wisdom
-						i(170830),	-- Mistdancer Jerkin
-						i(170829),	-- Mistdancer Bindings
-						i(170824),	-- Mistdancer Gloves
-						i(170828),	-- Mistdancer Waistband
-						i(170826),	-- Mistdancer Britches
-						i(170823),	-- Mistdancer Boots
-						i(170657),	-- Mistdancer Band of Wisdom
-						i(170656),	-- Mistdancer Ring of Wisdom
-						i(170654),	-- Mistdancer Idol of Wisdom
-						i(170658),	-- Mistdancer Stone of Wisdom
-					})),
+					cl(MONK, MISTWEAVER, {
+						timeline = { ADDED_9_0_1, REMOVED_9_1_5 },
+						groups = {
+							i(170659),	-- Mistdancer Staff
+							i(170825),	-- Mistdancer Hood
+							i(170827),	-- Mistdancer Shoulders
+							i(170653),	-- Mistdancer Cloak of Wisdom
+							i(170830),	-- Mistdancer Jerkin
+							i(170829),	-- Mistdancer Bindings
+							i(170824),	-- Mistdancer Gloves
+							i(170828),	-- Mistdancer Waistband
+							i(170826),	-- Mistdancer Britches
+							i(170823),	-- Mistdancer Boots
+							i(170657),	-- Mistdancer Band of Wisdom
+							i(170656),	-- Mistdancer Ring of Wisdom
+							i(170654),	-- Mistdancer Idol of Wisdom
+							i(170658),	-- Mistdancer Stone of Wisdom
+						},
+					}),
 					cl(MONK, WINDWALKER, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
 						i(170660),	-- Mistdancer Sword
 						i(170818),	-- Mistdancer Helm
@@ -220,40 +226,46 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 							i(170677),	-- Sunsoul Warmaul
 						},
 					}),
-					cl(PALADIN, HOLY, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
-						i(170676),	-- Sunsoul Bulwark
-						i(170675),	-- Sunsoul Sword
-						i(170842),	-- Sunsoul Headpiece
-						i(170844),	-- Sunsoul Spaulders
-						i(170667),	-- Sunsoul Cloak of Wisdom
-						i(170839),	-- Sunsoul Breastplate
-						i(170846),	-- Sunsoul Armplates
-						i(170841),	-- Sunsoul Gloves
-						i(170853),	-- Sunsoul Waistband
-						i(170843),	-- Sunsoul Leggings
-						i(170840),	-- Sunsoul Boots
-						i(170671),	-- Sunsoul Band of Wisdom
-						i(170670),	-- Sunsoul Ring of Wisdom
-						i(170669),	-- Sunsoul Idol of Wisdom
-						i(170672),	-- Sunsoul Stone of Wisdom
-					})),
-					cl(PALADIN, PROTECTION, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
-						i(170676),	-- Sunsoul Bulwark
-						i(170675),	-- Sunsoul Sword
-						i(170850),	-- Sunsoul Faceguard
-						i(170852),	-- Sunsoul Shoulderguards
-						i(170684),	-- Sunsoul Cloak of Stoicism
-						i(170847),	-- Sunsoul Chestguard
-						i(170854),	-- Sunsoul Armguards
-						i(170849),	-- Sunsoul Handguards
-						i(170845),	-- Sunsoul Belt
-						i(170851),	-- Sunsoul Legguards
-						i(170848),	-- Sunsoul Greaves
-						i(170688),	-- Sunsoul Band of Stoicism
-						i(170687),	-- Sunsoul Ring of Stoicism
-						i(170686),	-- Sunsoul Defender Idol
-						i(170689),	-- Sunsoul Defender Stone
-					})),
+					cl(PALADIN, HOLY, {
+						timeline = { ADDED_9_0_1, REMOVED_9_1_5 },
+						groups = {
+							i(170676),	-- Sunsoul Bulwark
+							i(170675),	-- Sunsoul Sword
+							i(170842),	-- Sunsoul Headpiece
+							i(170844),	-- Sunsoul Spaulders
+							i(170667),	-- Sunsoul Cloak of Wisdom
+							i(170839),	-- Sunsoul Breastplate
+							i(170846),	-- Sunsoul Armplates
+							i(170841),	-- Sunsoul Gloves
+							i(170853),	-- Sunsoul Waistband
+							i(170843),	-- Sunsoul Leggings
+							i(170840),	-- Sunsoul Boots
+							i(170671),	-- Sunsoul Band of Wisdom
+							i(170670),	-- Sunsoul Ring of Wisdom
+							i(170669),	-- Sunsoul Idol of Wisdom
+							i(170672),	-- Sunsoul Stone of Wisdom
+						},
+					}),
+					cl(PALADIN, PROTECTION, {
+						timeline = { ADDED_9_0_1, REMOVED_9_1_5 },
+						groups = {
+							i(170676),	-- Sunsoul Bulwark
+							i(170675),	-- Sunsoul Sword
+							i(170850),	-- Sunsoul Faceguard
+							i(170852),	-- Sunsoul Shoulderguards
+							i(170684),	-- Sunsoul Cloak of Stoicism
+							i(170847),	-- Sunsoul Chestguard
+							i(170854),	-- Sunsoul Armguards
+							i(170849),	-- Sunsoul Handguards
+							i(170845),	-- Sunsoul Belt
+							i(170851),	-- Sunsoul Legguards
+							i(170848),	-- Sunsoul Greaves
+							i(170688),	-- Sunsoul Band of Stoicism
+							i(170687),	-- Sunsoul Ring of Stoicism
+							i(170686),	-- Sunsoul Defender Idol
+							i(170689),	-- Sunsoul Defender Stone
+						},
+					}),
 					cl(PALADIN, RETRIBUTION, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
 						i(170677),	-- Sunsoul Warmaul
 						i(170834),	-- Sunsoul Helm
@@ -358,23 +370,26 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 						i(170715),	-- Streamtalker Idol of Rage
 						i(170718),	-- Streamtalker Stone of Rage
 					})),
-					cl(SHAMAN, RESTORATION, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {
-						i(170725),	-- Streamtalker Aegis
-						i(170724),	-- Streamtalker Claws
-						i(170898),	-- Streamtalker Cowl
-						i(170902),	-- Streamtalker Bracers
-						i(170895),	-- Streamtalker Vest
-						i(170727),	-- Streamtalker Cloak of Wisdom
-						i(170900),	-- Streamtalker Spaulders
-						i(170896),	-- Streamtalker Sabatons
-						i(170899),	-- Streamtalker Leggings
-						i(170901),	-- Streamtalker Girdle
-						i(170897),	-- Streamtalker Grips
-						i(170731),	-- Streamtalker Band of Wisdom
-						i(170730),	-- Streamtalker Ring of Wisdom
-						i(170729),	-- Streamtalker Idol of Wisdom
-						i(170732),	-- Streamtalker Stone of Wisdom
-					})),
+					cl(SHAMAN, RESTORATION, {
+						timeline = { ADDED_9_0_1, REMOVED_9_1_5 },
+						groups = {
+							i(170725),	-- Streamtalker Aegis
+							i(170724),	-- Streamtalker Claws
+							i(170898),	-- Streamtalker Cowl
+							i(170902),	-- Streamtalker Bracers
+							i(170895),	-- Streamtalker Vest
+							i(170727),	-- Streamtalker Cloak of Wisdom
+							i(170900),	-- Streamtalker Spaulders
+							i(170896),	-- Streamtalker Sabatons
+							i(170899),	-- Streamtalker Leggings
+							i(170901),	-- Streamtalker Girdle
+							i(170897),	-- Streamtalker Grips
+							i(170731),	-- Streamtalker Band of Wisdom
+							i(170730),	-- Streamtalker Ring of Wisdom
+							i(170729),	-- Streamtalker Idol of Wisdom
+							i(170732),	-- Streamtalker Stone of Wisdom
+						},
+					}),
 				}),
 				cl(WARLOCK, {	-- Level 50 Boost provides the Level 48 items. Confirmed by Timum 24.09.2021
 					cl(WARLOCK, AFFLICTION, sharedData({ timeline = { ADDED_9_0_1, REMOVED_9_1_5 } }, {

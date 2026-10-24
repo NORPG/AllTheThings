@@ -316,8 +316,9 @@ MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { AD
 		r(136197, {timeline = {ADDED_5_2_0}}),	-- Zen Alchemist Stone
 	}),
 }));
-DRAENOR_ALCHEMY = applyclassicphase(WOD_PHASE_ONE, i(109558, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_ALCHEMY = applyclassicphase(WOD_PHASE_ONE, i(109558, {
 	description = "This is a reward for completing the introductory Alchemy questline that can drop from any Draenor mob.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(156606, {	-- Alchemy (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -344,7 +345,7 @@ DRAENOR_ALCHEMY = applyclassicphase(WOD_PHASE_ONE, i(109558, bubbleDownSelf({ ti
 			r(156585),	-- Crescent Oil
 		}),
 	},
-})));
+}));
 COMMON_DRAENOR_ALCHEMY_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(160662, {timeline = {ADDED_8_0_1}}),	-- Recipe: Blackwater Anti-Venom (RECIPE!)
 	i(112024, {	-- Recipe: Draenic Agility Flask (RECIPE!)

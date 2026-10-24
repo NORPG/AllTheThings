@@ -2910,22 +2910,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.LEGION, {
-		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, sharedData({ timeline = { ADDED_7_1_0 } }, {
-			q(45766, {	-- finding Greatfather Winter in Highmountain (npc ID 104710)
-				isYearly = true,
-			}),
-		}))),
+		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+			timeline = { ADDED_7_1_0 },
+			groups = {
+				q(45766, {	-- finding Greatfather Winter in Highmountain (npc ID 104710)
+					isYearly = true,
+				}),
+			},
+		})),
 	}),
 	expansion(EXPANSION.DF, {
-		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, sharedData({ timeline = { ADDED_10_2_0 } }, {
-			q(78130),	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
-			q(78445),	-- Looting Highland Drake: Winter Veil Armor [210432]
-		}))),
+		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+			timeline = { ADDED_10_2_0 },
+			groups = {
+				q(78130),	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
+				q(78445),	-- Looting Highland Drake: Winter Veil Armor [210432]
+			},
+		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, sharedData({ timeline = { ADDED_11_0_7 } }, {
-			q(86440),	-- Stolen Present Daily / Scroll of Storytelling id 116456 (already known) / daily bonus?
-			q(86441),	-- Bronze Celebration Token Winter Veil tracker
-		}))),
+		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+			timeline = { ADDED_11_0_7 },
+			groups = {
+				q(86440),	-- Stolen Present Daily / Scroll of Storytelling id 116456 (already known) / daily bonus?
+				q(86441),	-- Bronze Celebration Token Winter Veil tracker
+			},
+		})),
 	}),
 });

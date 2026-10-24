@@ -471,8 +471,9 @@ MOP_ENCHANTING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = {
 		r(104425),	-- Windsong
 	}),
 }));
-DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, {
 	description = "This is a reward for completing the introductory Enchanting questline that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158716, {	-- Enchanting (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -497,7 +498,7 @@ DRAENOR_ENCHANTING = applyclassicphase(WOD_PHASE_ONE, i(111922, bubbleDownSelf({
 		r(169092),	-- Temporal Crystal
 		r(159236),	-- Mark of the Shattered Hand
 	},
-})));
+}));
 COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(256941, {	-- Formula: Ancestral Signal Brazier (RECIPE!)
 		cost = {{"i", SECRET_OF_DRAENOR_ENCHANTING, 1}},

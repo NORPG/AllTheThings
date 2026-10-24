@@ -100,8 +100,9 @@ MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { AD
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, {
 	description = "Rewarded for fishing",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158743, {	-- Fishing (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -114,7 +115,7 @@ DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, bubbleDownSelf({ ti
 		applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 		r(7738),	-- Fishing Poles
 	},
-})));
+}));
 LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
 	r(227511, {	-- Fishing (Legion Master)
 		timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },

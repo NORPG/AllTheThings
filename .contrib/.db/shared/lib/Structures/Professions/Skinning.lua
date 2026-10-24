@@ -111,8 +111,9 @@ MOP_SKINNING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { A
 	r(194174, {timeline = {ADDED_7_0_3}}),	-- Skinning Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265863, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Pandaria)
 }));
-DRAENOR_SKINNING = applyclassicphase(WOD_PHASE_ONE, i(111351, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_SKINNING = applyclassicphase(WOD_PHASE_ONE, i(111351, {
 	description = "This item can drop while skinning mobs in Draenor.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158756, {	-- Skinning (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -124,7 +125,7 @@ DRAENOR_SKINNING = applyclassicphase(WOD_PHASE_ONE, i(111351, bubbleDownSelf({ t
 		r(194174, {timeline = {ADDED_7_0_3}}),	-- Skinning Journal
 		applyclassicphase(BFA_PHASE_ONE, r(265865, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Skinning (Draenor)
 	},
-})));
+}));
 BFA_SKINNING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(257152),	-- Bone Gathering [Rank 1]
 	r(257146),	-- Leather Gathering [Rank 1]

@@ -179,10 +179,11 @@ root(ROOTS.PVP, pvp(n(RATED, {
 			}),
 		}),
 		n(REWARDS, {
-			filter(RECIPES, bubbleDown({ timeline = { ADDED_7_0_3, REMOVED_8_0_1 }, }, {
+			filter(RECIPES, {
 				-- #if BEFORE 8.0.1
 				description = "This has a chance to drop from any rated battleground win during Legion.",
 				-- #endif
+				timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
 				groups = {
 					-- Added to Vendor in 10.0.7
 					i(137894),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
@@ -192,7 +193,7 @@ root(ROOTS.PVP, pvp(n(RATED, {
 					}),
 					i(123950),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 				},
-			})),
+			}),
 			i(182167, {	-- Cobra Soul (SS!)
 				timeline = { ADDED_9_0_2_LAUNCH },
 			}),

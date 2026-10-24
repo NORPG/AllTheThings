@@ -559,8 +559,11 @@ root(ROOTS.Character, n(TUTORIALS, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
-		m(ARATHI_HIGHLANDS_CATCHUP, sharedData({ timeline = { ADDED_11_2_7 } }, {
-			q(93382),	-- Pardon the Interruption
-		})),
+		m(ARATHI_HIGHLANDS_CATCHUP, {
+			timeline = { ADDED_11_2_7 },
+			groups = {
+				q(93382),	-- Pardon the Interruption
+			},
+		}),
 	});
 });

@@ -1574,38 +1574,41 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 			}),
-			n(REWARDS, sharedData({ timeline = { ADDED_2_3_0 } }, {
-				container(33844, {	-- Barrel of Fish
-					i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
-					i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-						timeline = { ADDED_3_2_0 },
+			n(REWARDS, {
+				timeline = { ADDED_2_3_0 },
+				groups = {
+					container(33844, {	-- Barrel of Fish
+						i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
+						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							timeline = { ADDED_3_2_0 },
+						}),
+						i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+						i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+						i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
+						i(33871),	-- Recipe: Stormchops (RECIPE!)
 					}),
-					i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-					i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-					i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
-					i(33871),	-- Recipe: Stormchops (RECIPE!)
-				}),
-				container(33857, {	-- Crate of Meat
-					i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
-						timeline = { ADDED_3_2_0 },
+					container(33857, {	-- Crate of Meat
+						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
+							timeline = { ADDED_3_2_0 },
+						}),
+						i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
+						i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
+						i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
+						i(33871),	-- Recipe: Stormchops (RECIPE!)
+						i(33855),	-- Tarnished Silver Ring
 					}),
-					i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
-					i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
-					i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
-					i(33871),	-- Recipe: Stormchops (RECIPE!)
-					i(33855),	-- Tarnished Silver Ring
-				}),
-				container(31800, {	-- Outcasts Cache
-					i(28495),	-- Windwalker's Sash
-					i(28496),	-- Talonite's Belt
-					i(28497),	-- Dreadhawk's Girdle
-					i(28498),	-- Ravenguard's Baldric
-					i(28491),	-- Windwalker's Footwraps
-					i(28493),	-- Dreadhawk's Schynbald
-					i(28492),	-- Talonite's Boots
-					i(28494),	-- Ravenguard's Greaves
-				}),
-			})),
+					container(31800, {	-- Outcasts Cache
+						i(28495),	-- Windwalker's Sash
+						i(28496),	-- Talonite's Belt
+						i(28497),	-- Dreadhawk's Girdle
+						i(28498),	-- Ravenguard's Baldric
+						i(28491),	-- Windwalker's Footwraps
+						i(28493),	-- Dreadhawk's Schynbald
+						i(28492),	-- Talonite's Boots
+						i(28494),	-- Ravenguard's Greaves
+					}),
+				},
+			}),
 			n(VENDORS, {
 				n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
 					coord = { 64.0, 71.8, SHATTRATH_CITY },

@@ -109,8 +109,9 @@ MOP_HERBALISM = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { 
 	r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
 	applyclassicphase(BFA_PHASE_ONE, r(265827, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Pandaria)
 }));
-DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, {
 	description = "This can drop from any herb gathering node on Draenor.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158745, {	-- Herb Gathering (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -122,7 +123,7 @@ DRAENOR_HERBALISM = applyclassicphase(WOD_PHASE_ONE, i(111350, bubbleDownSelf({ 
 		r(193290, {timeline = {ADDED_7_0_3}}),	-- Herbalism Journal
 		applyclassicphase(BFA_PHASE_ONE, r(265829, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Herb Gathering (Draenor)
 	},
-})));
+}));
 BFA_HERBALISM = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
 	r(193290),	-- Herbalism Journal
 	r(252424),	-- Anchor Weed [Rank 1]

@@ -2150,10 +2150,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WRATH, {
 		applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
-			n(QUESTS, sharedData({ timeline = { ADDED_3_1_3 } }, {
-				q(13959),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Oracle quest during Children's Week)
-				q(13960),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Wolvar quest during Children's Week)
-			})),
+			n(QUESTS, {
+				timeline = { ADDED_3_1_3 },
+				groups = {
+					q(13959),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Oracle quest during Children's Week)
+					q(13960),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Wolvar quest during Children's Week)
+				},
+			}),
 		})),
 	}),
 	expansion(EXPANSION.BFA, {
@@ -2166,9 +2169,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
-			n(QUESTS, sharedData({ timeline = { ADDED_11_1_5 } }, {
-				q(90599),	-- Dialogue after completing The Eager Engineer
-			})),
+			n(QUESTS, {
+				timeline = { ADDED_11_1_5 },
+				groups = {
+					q(90599),	-- Dialogue after completing The Eager Engineer
+				},
+			}),
 		})),
 	}),
 });

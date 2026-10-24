@@ -9,20 +9,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(MONK, bubbleDownSelf({ classes = { MONK } }, {
 				maps = { THE_WANDERING_ISLE },
 				groups = {
-					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-						ach(42292, {	-- Hidden Potential of the Grandmaster
-							i(262619),	-- Replica Forge of the Roaring Mountain (DECOR!)
-						}),
-						ach(60967, {	-- Legendary Research of Five Dawns
-							i(256679),	-- Replica Chronicle of Ages (DECOR!)
-						}),
-						ach(60986, {	-- Raise an Army for the Temple of Five Dawns
-							i(248942),	-- Five Dawns Planning Table (DECOR!)
-						}),
-						ach(42275, {	-- The Grandmaster's Campaign
-							i(248958),	-- Monastery Gong (DECOR!)
-						}),
-					})),
+					n(ACHIEVEMENTS, {
+						timeline = { ADDED_11_2_7 },
+						groups = {
+							ach(42292, {	-- Hidden Potential of the Grandmaster
+								i(262619),	-- Replica Forge of the Roaring Mountain (DECOR!)
+							}),
+							ach(60967, {	-- Legendary Research of Five Dawns
+								i(256679),	-- Replica Chronicle of Ages (DECOR!)
+							}),
+							ach(60986, {	-- Raise an Army for the Temple of Five Dawns
+								i(248942),	-- Five Dawns Planning Table (DECOR!)
+							}),
+							ach(42275, {	-- The Grandmaster's Campaign
+								i(248958),	-- Monastery Gong (DECOR!)
+							}),
+						},
+					}),
 					n(ARTIFACTS, {
 						cl(MONK, BREWMASTER, {
 							gt(254, {	-- Brewhouse

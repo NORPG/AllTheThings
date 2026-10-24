@@ -732,8 +732,9 @@ MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { 
 		r(130325),	-- Song of Harmony
 	}),
 }));
-DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, {
 	description = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at Tailoring Emporium for 100 gold.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158758, {	-- Tailoring (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -757,7 +758,7 @@ DRAENOR_TAILORING = applyclassicphase(WOD_PHASE_ONE, i(115357, bubbleDownSelf({ 
 		r(168854),	-- Sumptuous Leggings
 		r(168853),	-- Sumptuous Robes
 	},
-})));
+}));
 COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(257109, {	-- Pattern: Argussian Circular Rug (RECIPE!)
 		cost = {{"i", SECRET_OF_DRAENOR_TAILORING, 1}},

@@ -62,12 +62,15 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_FORBIDDEN_REACH, {
-			n(PRIMAL_STORMS, sharedData({ timeline = { ADDED_10_0_7 } }, {
-				q(75399),	-- Water Storm Mini-Boss
-				q(75400),	-- Fire Storm Mini-Boss
-				q(75401),	-- Earth Storm Mini-Boss
-				q(75402),	-- Air Storm Mini-Boss
-			})),
+			n(PRIMAL_STORMS, {
+				timeline = { ADDED_10_0_7 },
+				groups = {
+					q(75399),	-- Water Storm Mini-Boss
+					q(75400),	-- Fire Storm Mini-Boss
+					q(75401),	-- Earth Storm Mini-Boss
+					q(75402),	-- Air Storm Mini-Boss
+				},
+			}),
 		}),
 	}),
 }));

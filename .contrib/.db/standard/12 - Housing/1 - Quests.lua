@@ -474,28 +474,31 @@ root(ROOTS.Housing, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
-		n(HOUSING, sharedData({ timeline = { ADDED_11_2_7 } }, {
-			q(92486),	-- Triggered after acquired a house
-			q(92654),	-- Triggered after talking to Elven Decor vendor
-			q(92666),	-- Triggered after talking to Local Decor vendor
-			q(92733),	-- Triggered after entering house
-			q(94424),	-- Triggered after entering house
-			q(92734),	-- Triggered after entering Razorwind and Founder's Point
-			q(93629),	-- Triggered after completing 'Time to Decorate'
-			q(94392),	-- Triggered after talking to flora decor
-			-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
-			q(95166, {	-- Pet the Pet
-				name = "Pet the Pet",
-				qgs = {
-					-- Add more Pets as you discover them!
-					235461,	-- Cat
-					245551,	-- Dog
-					256523,	-- Raptor Hatchling
-					256522,	-- Wolf Pup
-				},
-				isDaily = true,
-			}),
-		})),
+		n(HOUSING, {
+			timeline = { ADDED_11_2_7 },
+			groups = {
+				q(92486),	-- Triggered after acquired a house
+				q(92654),	-- Triggered after talking to Elven Decor vendor
+				q(92666),	-- Triggered after talking to Local Decor vendor
+				q(92733),	-- Triggered after entering house
+				q(94424),	-- Triggered after entering house
+				q(92734),	-- Triggered after entering Razorwind and Founder's Point
+				q(93629),	-- Triggered after completing 'Time to Decorate'
+				q(94392),	-- Triggered after talking to flora decor
+				-- q(91029),	-- Triggered after talking to Xiz'ro <Lumberjack> (added in 11.1.7, probably not housing related?)
+				q(95166, {	-- Pet the Pet
+					name = "Pet the Pet",
+					qgs = {
+						-- Add more Pets as you discover them!
+						235461,	-- Cat
+						245551,	-- Dog
+						256523,	-- Raptor Hatchling
+						256522,	-- Wolf Pup
+					},
+					isDaily = true,
+				}),
+			},
+		}),
 	}),
 });
 

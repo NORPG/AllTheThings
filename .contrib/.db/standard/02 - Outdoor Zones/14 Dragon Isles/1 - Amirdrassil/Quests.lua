@@ -111,9 +111,12 @@ maproot(DRAGON_ISLES, AMIRDRASSIL, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(AMIRDRASSIL, {
-			n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_10_2_5 } }, {
-				q(80190),	-- Triggers on getting Achievement 20206
-			})),
+			n(ACHIEVEMENTS, {
+				timeline = { ADDED_10_2_5 },
+				groups = {
+					q(80190),	-- Triggers on getting Achievement 20206
+				},
+			}),
 			n(QUESTS, {
 				q(82249, {timeline = { ADDED_10_2_7 }}),	-- Triggers during 'Sins of the Sister' (questID 80077) when you choose option #1 (allow)
 				q(82250, {timeline = { ADDED_10_2_7 }}),	-- Triggers during 'Sins of the Sister' (questID 80077) when you choose option #2 (deny)

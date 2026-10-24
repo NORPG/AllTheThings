@@ -718,8 +718,9 @@ ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
 );
 
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
-DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, {
 	description = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158739, {	-- Engineering (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -743,7 +744,7 @@ DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf(
 			collectible = false,
 		}),
 	},
-})));
+}));
 COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(120267, {	-- Schematic: Blackrock Rifling (RECIPE!)
 		cost = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 5 }},

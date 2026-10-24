@@ -140,9 +140,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	header(HEADERS.Faction, FACTION_LOAMM_NIFFEN, {
 		header(HEADERS.Faction, FACTION_GLIMMEROGG_RACER, {
-			n(QUESTS, sharedData({ timeline = { ADDED_10_1_0 } }, {
-				q(75710),	-- After turn in 'A Race To The Finish' (questID 75662) (spellID 409255)
-			})),
+			n(QUESTS, {
+				timeline = { ADDED_10_1_0 },
+				groups = {
+					q(75710),	-- After turn in 'A Race To The Finish' (questID 75662) (spellID 409255)
+				},
+			}),
 		}),
 	}),
 }));

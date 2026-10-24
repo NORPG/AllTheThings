@@ -146,17 +146,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			icon = [[~_.asset("Delves_Nerubian")]],
 			coord = { 6.7, 33.9, NERUBAR },
 			groups = {
-				n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
-					ach(40431, {	-- Hunting the Hunter
-						title(560),	-- <Name> Ascension Breaker
-					}),
-					ach(40433, {	-- Let Me Solo Him
-						i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
-					}),
-					ach(40103, {	-- My First Nemesis (Namechanged from Nemesis in 11.1)
-						i(212171),	-- Zekvir's Raptorial Spine
-					}),
-				})),
+				n(ACHIEVEMENTS, {
+					timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+					groups = {
+						ach(40431, {	-- Hunting the Hunter
+							title(560),	-- <Name> Ascension Breaker
+						}),
+						ach(40433, {	-- Let Me Solo Him
+							i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
+						}),
+						ach(40103, {	-- My First Nemesis (Namechanged from Nemesis in 11.1)
+							i(212171),	-- Zekvir's Raptorial Spine
+						}),
+					},
+				}),
 				n(DELVE_COMPLETION, {
 					n(TREASURES, {
 						i(218126),	-- Befouler's Syringe
@@ -211,17 +214,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			coord = { 52.7, 9.4, UNDERMINE },
 			maps = { 2426 },
 			groups = {
-				n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
-					ach(41529, {	-- Breaking the Bank
-						title(612),	-- <Name>, the Real Deal
-					}),
-					ach(41210, {	-- Let Me Solo Him: The Underpin
-						i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
-					}),
-					ach(41530, {	-- My New Nemesis
-						i(235614),	-- Golden-Gob Propulsion Rig
-					}),
-				})),
+				n(ACHIEVEMENTS, {
+					timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+					groups = {
+						ach(41529, {	-- Breaking the Bank
+							title(612),	-- <Name>, the Real Deal
+						}),
+						ach(41210, {	-- Let Me Solo Him: The Underpin
+							i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
+						}),
+						ach(41530, {	-- My New Nemesis
+							i(235614),	-- Golden-Gob Propulsion Rig
+						}),
+					},
+				}),
 				n(EXPLORATION, {
 					map_exploration(15991,{coord={82.2,43.1,2426}}),	-- Demolition Dome
 				}),
@@ -3047,7 +3053,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
-				filter(MISC, bubbleDownSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
+				filter(MISC, sharedData({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
 					i(233792, {	-- Delver's Disguise
 						timeline = { ADDED_11_1_0_SEASONSTART },
 						cost = { { "c", UNDERCOIN, 500 } },
@@ -3163,7 +3169,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 							cost = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
-					filter(CLOTH, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
+					filter(CLOTH, sharedData({ timeline = { ADDED_11_1_0 } }, {
 						i(211013, {	-- Cave Topographer's Cord
 							cost = { { "c", UNDERCOIN, 625 } },
 						}),
@@ -3200,7 +3206,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 							cost = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
-					filter(LEATHER, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
+					filter(LEATHER, sharedData({ timeline = { ADDED_11_1_0 } }, {
 						i(211020, {	-- Treasure-Seeker's Bindings
 							cost = { { "c", UNDERCOIN, 625 } },
 						}),
@@ -3226,7 +3232,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 							cost = { { "c", UNDERCOIN, 875 } },
 						}),
 					})),
-					filter(MAIL, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
+					filter(MAIL, sharedData({ timeline = { ADDED_11_1_0 } }, {
 						i(211028, {	-- Torchbearer's Bracers
 							cost = { { "c", UNDERCOIN, 625 } },
 						}),
@@ -3257,7 +3263,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 							cost = { { "c", UNDERCOIN, 500 } },
 						}),
 					}),
-					filter(PLATE, bubbleDown({ timeline = { ADDED_11_1_0 } }, {
+					filter(PLATE, sharedData({ timeline = { ADDED_11_1_0 } }, {
 						i(211036, {	-- Secret-Dredger's Armplates
 							cost = { { "c", UNDERCOIN, 625 } },
 						}),

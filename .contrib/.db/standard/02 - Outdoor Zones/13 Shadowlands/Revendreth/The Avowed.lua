@@ -339,9 +339,12 @@ maproot(SHADOWLANDS, REVENDRETH, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			header(HEADERS.Faction, FACTION_THE_AVOWED, sharedData({ timeline = { ADDED_9_0_1 } }, {
-				q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
-			})),
+			header(HEADERS.Faction, FACTION_THE_AVOWED, {
+				timeline = { ADDED_9_0_1 },
+				groups = {
+					q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
+				},
+			}),
 		}),
 	}),
 }));

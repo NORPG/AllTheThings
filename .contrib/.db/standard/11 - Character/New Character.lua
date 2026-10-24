@@ -1271,31 +1271,34 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #endif
 	n(QUESTS, bubbleDownSelf({
 		races = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
-	}, sharedData({ timeline = { ADDED_11_0_5 } }, {
-		q(84423, {	-- Shaking the Dust Off
-			provider = { "n", 229075 },	-- Scalecommander Emberthal
-			coord = { 43.0, 89.4, THE_WAR_CRECHE },
-		}),
-		q(84424, {	-- Forward, to Adventure!
-			sourceQuests = { 84423 },	-- Shaking the Dust Off
-			provider = { "n", 229075 },	-- Scalecommander Emberthal
-			coord = { 43.0, 89.4, THE_WAR_CRECHE },
-			groups = {
-				o(467064, {	-- Quest Journal
-					coord = { 44.2, 82.5, THE_WAR_CRECHE },
-					groups = { i(229165) },	-- Quest Journal (QI!)
-				}),
-			},
-		}),
-		q(85026, {	-- Where Legends are Made
-			sourceQuests = { 84424 },	-- Forward, to Adventure!
-			provider = { "n", 167032 },	-- Chromie
-			coords = {
-				{ 40.8, 80.1, ORGRIMMAR },
-				{ 56.2, 17.2, STORMWIND_CITY },
-			},
-		}),
-	}))),
+	}, {
+		timeline = { ADDED_11_0_5 },
+		groups = {
+			q(84423, {	-- Shaking the Dust Off
+				provider = { "n", 229075 },	-- Scalecommander Emberthal
+				coord = { 43.0, 89.4, THE_WAR_CRECHE },
+			}),
+			q(84424, {	-- Forward, to Adventure!
+				sourceQuests = { 84423 },	-- Shaking the Dust Off
+				provider = { "n", 229075 },	-- Scalecommander Emberthal
+				coord = { 43.0, 89.4, THE_WAR_CRECHE },
+				groups = {
+					o(467064, {	-- Quest Journal
+						coord = { 44.2, 82.5, THE_WAR_CRECHE },
+						groups = { i(229165) },	-- Quest Journal (QI!)
+					}),
+				},
+			}),
+			q(85026, {	-- Where Legends are Made
+				sourceQuests = { 84424 },	-- Forward, to Adventure!
+				provider = { "n", 167032 },	-- Chromie
+				coords = {
+					{ 40.8, 80.1, ORGRIMMAR },
+					{ 56.2, 17.2, STORMWIND_CITY },
+				},
+			}),
+		},
+	})),
 	i(6948),	-- Hearthstone
 }));
 root(ROOTS.HiddenQuestTriggers, {
@@ -1314,9 +1317,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		n(NEW_CHARACTER, {
-			n(QUESTS, sharedData({ timeline = { ADDED_11_0_5 } }, {
-				q(85023),	-- When accepting 'Forward, to Adventure!' (questID 84424)
-			})),
+			n(QUESTS, {
+				timeline = { ADDED_11_0_5 },
+				groups = {
+					q(85023),	-- When accepting 'Forward, to Adventure!' (questID 84424)
+				},
+			}),
 		}),
 	}),
 });

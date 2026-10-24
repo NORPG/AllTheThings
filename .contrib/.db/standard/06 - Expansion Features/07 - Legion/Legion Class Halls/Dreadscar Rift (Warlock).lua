@@ -9,20 +9,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 			cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 				maps = { DREADSCAR_RIFT },
 				groups = {
-					n(ACHIEVEMENTS, sharedData({ timeline = { ADDED_11_2_7 } }, {
-						ach(42297, {	-- Hidden Potential of the Netherlord
-							i(248940),	-- Replica Felblood Altar (DECOR!)
-						}),
-						ach(60972, {	-- Legendary Research of the Black Harvest
-							i(256907),	-- Replica Tome of Blighted Implements (DECOR!)
-						}),
-						ach(60991, {	-- Raise an Army for the Dreadscar Rift
-							i(264242),	-- Dreadscar Battle Planning Map (DECOR!)
-						}),
-						ach(42281, {	-- The Netherlord's Campaign
-							i(248960),	-- Dreadscar Dais (DECOR!)
-						}),
-					})),
+					n(ACHIEVEMENTS, {
+						timeline = { ADDED_11_2_7 },
+						groups = {
+							ach(42297, {	-- Hidden Potential of the Netherlord
+								i(248940),	-- Replica Felblood Altar (DECOR!)
+							}),
+							ach(60972, {	-- Legendary Research of the Black Harvest
+								i(256907),	-- Replica Tome of Blighted Implements (DECOR!)
+							}),
+							ach(60991, {	-- Raise an Army for the Dreadscar Rift
+								i(264242),	-- Dreadscar Battle Planning Map (DECOR!)
+							}),
+							ach(42281, {	-- The Netherlord's Campaign
+								i(248960),	-- Dreadscar Dais (DECOR!)
+							}),
+						},
+					}),
 					n(ARTIFACTS, {
 						cl(WARLOCK, AFFLICTION, {
 							i(140764, {	-- Grimoire of the First Necrolyte (QS!)

@@ -362,16 +362,19 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 			}),
 		}),
 		m(BROKEN_SHORE, {
-			n(WORLD_BOSSES, sharedData({ timeline = { ADDED_7_2_0 } }, {
-				q(47084),	-- Tracking Quest - Apocron killID
-				q(47087),	-- Tracking Quest - Apocron bonus roll
-				q(47085),	-- Tracking Quest - Brutallus killID
-				q(47088),	-- Tracking Quest - Brutallus bonus roll
-				q(47086),	-- Tracking Quest - Malificus killID
-				q(47089),	-- Tracking Quest - Malificus bonus roll
-				q(47090),	-- Tracking Quest - Si'vash killID
-				q(47091),	-- Tracking Quest - Si'vash bonus roll
-			})),
+			n(WORLD_BOSSES, {
+				timeline = { ADDED_7_2_0 },
+				groups = {
+					q(47084),	-- Tracking Quest - Apocron killID
+					q(47087),	-- Tracking Quest - Apocron bonus roll
+					q(47085),	-- Tracking Quest - Brutallus killID
+					q(47088),	-- Tracking Quest - Brutallus bonus roll
+					q(47086),	-- Tracking Quest - Malificus killID
+					q(47089),	-- Tracking Quest - Malificus bonus roll
+					q(47090),	-- Tracking Quest - Si'vash killID
+					q(47091),	-- Tracking Quest - Si'vash bonus roll
+				},
+			}),
 		}),
 		m(HIGHMOUNTAIN, {
 			n(WORLD_BOSSES, {

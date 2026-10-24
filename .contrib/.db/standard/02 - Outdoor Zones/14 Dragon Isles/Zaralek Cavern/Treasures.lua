@@ -346,12 +346,15 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(ZARALEK_CAVERN, {
-			n(TREASURES, sharedData({ timeline = { ADDED_10_1_0 } }, {
-				q(75559),	-- Orange Crystal (Crystal Chest) (spellID 408322)
-				q(74987),	-- Purple Crystal (Crystal Chest) (spellID 400760)
-				q(75601),	-- Lock Opened? (Crystal Chest) (spellID 408329)
-				q(75814),	-- Probably Some Barter Brick Tracker
-			})),
+			n(TREASURES, {
+				timeline = { ADDED_10_1_0 },
+				groups = {
+					q(75559),	-- Orange Crystal (Crystal Chest) (spellID 408322)
+					q(74987),	-- Purple Crystal (Crystal Chest) (spellID 400760)
+					q(75601),	-- Lock Opened? (Crystal Chest) (spellID 408329)
+					q(75814),	-- Probably Some Barter Brick Tracker
+				},
+			}),
 		}),
 	}),
 }));

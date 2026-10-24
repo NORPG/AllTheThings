@@ -4910,12 +4910,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, {
 	m(NORTHREND, {
 		m(ICECROWN, {
 			n(ARGENT_TOURNAMENT, {
-				n(QUESTS, sharedData({ timeline = { ADDED_3_2_0 } }, {
-					q(13700),	-- Argent Tournament - Alliance Champion Marker
-					q(13701),	-- Argent Tournament - Horde Champion Marker
-					q(13686),	-- Alliance Tournament Eligibility Marker
-					q(13687),	-- Horde Tournament Eligibility Marker
-				})),
+				n(QUESTS, {
+					timeline = { ADDED_3_2_0 },
+					groups = {
+						q(13700),	-- Argent Tournament - Alliance Champion Marker
+						q(13701),	-- Argent Tournament - Horde Champion Marker
+						q(13686),	-- Alliance Tournament Eligibility Marker
+						q(13687),	-- Horde Tournament Eligibility Marker
+					},
+				}),
 			}),
 		}),
 	}),

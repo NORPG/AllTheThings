@@ -84,9 +84,12 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {
 		m(THE_FORBIDDEN_REACH, {
-			n(WORLD_QUESTS, sharedData({ timeline = { ADDED_10_0_7 } }, {
-				q(72907),	-- [DNT] Storm Pet Battle Fodder Tracking Quest (Used for Vortex & Flow, maybe others too)
-			})),
+			n(WORLD_QUESTS, {
+				timeline = { ADDED_10_0_7 },
+				groups = {
+					q(72907),	-- [DNT] Storm Pet Battle Fodder Tracking Quest (Used for Vortex & Flow, maybe others too)
+				},
+			}),
 		}),
 	}),
 }));

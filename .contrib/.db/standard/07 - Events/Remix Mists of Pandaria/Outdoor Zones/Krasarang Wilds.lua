@@ -240,7 +240,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, sharedData({ timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-		q(81666),	-- Triggered on first completion of questID 80444 Aid the Anglers
-	}))),
+	applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
+		timeline = { ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		groups = {
+			q(81666),	-- Triggered on first completion of questID 80444 Aid the Anglers
+		},
+	})),
 }));

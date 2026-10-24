@@ -955,8 +955,9 @@ COMMON_MOP_LEATHERWORKING_RECIPES = sharedData({ cost = {{ "i", SPIRIT_OF_HARMON
 	i(86270),	-- Pattern: Contender's Wyrmhide Leggings (RECIPE!)
 	i(86271),	-- Pattern: Contender's Wyrmhide Shoulders (RECIPE!)
 });
-DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, {
 	description = "This is a reward for completing the introductory Leaterworking questline that can drop from any Draenor mob.",
+	timeline = { ADDED_6_0_3_LAUNCH },
 	groups = {
 		r(158752, {	-- Leatherworking (Draenor Master)
 			timeline = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -980,7 +981,7 @@ DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSe
 		r(171265),	-- Traveling Leggings
 		r(171264),	-- Traveling Tunic
 	},
-})));
+}));
 COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 	i(257033, {	-- Pattern: Blackrock Bunkbed (RECIPE!)
 		cost = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
