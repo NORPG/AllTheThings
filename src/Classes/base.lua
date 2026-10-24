@@ -112,26 +112,26 @@ app.SetCAN_RETRY_DURATION_SEC = function(sec) CAN_RETRY_DURATION_SEC = sec end
 -- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
-	["parent"] = function(t)
+	parent = function(t)
 		return t.sourceParent;
 	end,
 	-- A semi-unique string value that identifies this object based on its key, or text if it doesn't have one.
-	["hash"] = function(t)
+	hash = function(t)
 		return CreateHash(t);
 	end,
-	["keyval"] = function(t)
+	keyval = function(t)
 		return t[t.key]
 	end,
 	-- Default text should be a valid link or name
-	["text"] = function(t)
+	text = function(t)
 		return t.link or TryColorizeName(t, t.name)
 	end,
 	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
-	["modItemID"] = function(t)
+	modItemID = function(t)
 		return t.itemID;
 	end,
 	-- whether something is considered 'missing' by seeing if it can search for itself
-	["_missing"] = function(t)
+	_missing = function(t)
 		local key = t.key;
 		-- only process this logic for real 'Things' in the game
 		if not app.ThingKeys[key] then return; end
@@ -160,14 +160,14 @@ local DefaultFields = {
 		return true
 	end,
 	-- Whether or not something is repeatable.
-	["repeatable"] = function(t)
+	repeatable = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
-	["costTotal"] = returnZero,
-	["upgradeTotal"] = returnZero,
-	["progress"] = returnZero,
-	["total"] = returnZero,
-	["isContainer"] = function(t)
+	costTotal = returnZero,
+	upgradeTotal = returnZero,
+	progress = returnZero,
+	total = returnZero,
+	isContainer = function(t)
 		local total = t.total
 		return total and (total > 1 or (total > 0 and not t.collectible))
 	end,
@@ -182,14 +182,14 @@ local DefaultFields = {
 		if not merge then return end
 		return merge.isOwnedCost
 	end,
-	["nmc"] = function(t)
+	nmc = function(t)
 		local c = t.c;
 		local nmc = c and not containsValue(c, app.ClassIndex) or false;
 		-- app.PrintDebug("base.nmc",t.__type,nmc)
 		t.nmc = nmc;
 		return nmc;
 	end,
-	["nmr"] = function(t)
+	nmr = function(t)
 		local races = t.races;
 		local r = t.r;
 		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
@@ -197,7 +197,7 @@ local DefaultFields = {
 		t.nmr = nmr;
 		return nmr;
 	end,
-	["AccessibilityScore"] = function(t)
+	AccessibilityScore = function(t)
 		local score = 0;
 		if GetRelativeValue(t, "nmr") then
 			score = score + 20;
@@ -228,17 +228,17 @@ local DefaultFields = {
 		t.AccessibilityScore = score;
 		return score;
 	end,
-	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+	creatureID = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	["filterID"] = function(t)	-- we like to use different field names in different places
+	filterID = function(t)	-- we like to use different field names in different places
 		return t.f
 	end,
-	["iconPath"] = function(t)
+	iconPath = function(t)
 		return rawget(t, "icon")
 	end,
 	-- Base ShouldExcludeFromTooltip is false, so search upwards in hierarchy for a defined result
-	["ShouldExcludeFromTooltip"] = function(t)
+	ShouldExcludeFromTooltip = function(t)
 		-- If this t has a helper defined for exclusion
 		local helper = t.ShouldExcludeFromTooltipHelper
 		if helper and helper(t) then return true end
@@ -255,7 +255,7 @@ local DefaultFields = {
 	-- (number) - the retry has been started with this duration in seconds
 	-- true - the group is pending an active retry timer
 	-- nil - the group has retried and the retry timer has not been re-started
-	["CanRetry"] = function(t)
+	CanRetry = function(t)
 		local canretry = t.__canretry
 		if canretry == nil then
 			-- first check if we can retry for this group
@@ -1175,13 +1175,13 @@ end
 --[[
 -- Proof of Concept with Class Conditionals
 local fields = {
-	["name"] = function(t)
+	name = function(t)
 		return "Loki";
 	end,
 	MyField = function(t)
 		return "MyField";
 	end,
-	["OnTest"] = function()
+	OnTest = function()
 		return function(t)
 			print(t.name .. " (" .. t.__type .. "): I'm a god!");
 		end

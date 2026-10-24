@@ -175,23 +175,13 @@ local ExclusiveFactions = {
 	[1104]=1,	-- Frenzyheart Tribe
 	[1105]=1,	-- The Oracles
 };
-DefineToggleFilter("MinReputation", CharacterFilters,
-function(item)
-	local minReputation = item.minReputation;
-	if minReputation then
-		if ExclusiveFactions[minReputation[1]] then
-			if minReputation[2] > GetFactionCurrentReputation(minReputation[1]) then
-				return false;
-			else
-				return true;
-			end
-		else
-			return true;
-		end
-	else
-		return true;
+DefineToggleFilter("MinReputation", CharacterFilters, function(item)
+	local minReputation = rawget(item, "minReputation")
+	if minReputation and ExclusiveFactions[minReputation[1]] then
+		return minReputation[2] <= GetFactionCurrentReputation(minReputation[1])
 	end
-end);
+	return true
+end)
 
 -- MaxReputation (TODO)
 -- DefineToggleFilter("MaxReputation", CharacterFilters,
@@ -213,6 +203,7 @@ end);
 DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 
 -- ItemUnbound
+---@type function
 local SettingsFilterItemUnbound;
 -- Whether this is a Character-transferable Thing/Item
 local function ItemUnbound(item)	-- FilterItemBind
@@ -364,7 +355,7 @@ RawCharacterFilters.Race = api.Filters.Race;
 -- CustomCollect
 DefineToggleFilter("CustomCollect", CharacterFilters,
 function(item)
-	local customCollect = item.customCollect;
+	local customCollect = rawget(item, "customCollect")
 	if customCollect then
 		for i=1,#customCollect do
 			if not ActiveCustomCollects[customCollect[i]] then return end
