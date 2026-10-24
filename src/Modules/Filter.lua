@@ -858,3 +858,129 @@ app.AddEventHandler("OnRecalculate_NewSettings", CacheSettingsData)
 -- 		print(name,stat)
 -- 	end
 -- end
+
+------ Filter performance testing block
+--[[
+local SAMPLE = 200000
+
+local function CollectNodes(g, list)
+	for i = 1, #g do
+		local o = g[i]
+		list[#list + 1] = o
+		local sub = o.g
+		if sub then CollectNodes(sub, list) end
+	end
+	return list
+end
+
+local function Sample(list, max)
+	if #list <= max then return list end
+	local out, step = {}, #list / max
+	for i = 1, max do out[i] = list[math.floor((i - 1) * step) + 1] end
+	return out
+end
+
+local function TimePerCall(f, items)
+	local s = debugprofilestop()
+	for i = 1, #items do f(items[i]) end
+	return (debugprofilestop() - s) * 1e6 / #items  -- ns per call
+end
+
+local function OrderFilters(filters, items)
+	local pool = {}
+	for name, f in next, filters do
+		pool[#pool + 1] = { name = name, f = f, cost = TimePerCall(f, items) }
+	end
+	local ordered, remaining = {}, items
+	while #pool > 0 do
+		local bestI, bestScore, bestRate
+		for i = 1, #pool do
+			local f, rej, n = pool[i].f, 0, #remaining
+			for j = 1, n do if not f(remaining[j]) then rej = rej + 1 end end
+			local rate = n > 0 and rej / n or 0
+			local score = rate > 0 and pool[i].cost / rate or math.huge
+			if not bestScore or score < bestScore then bestI, bestScore, bestRate = i, score, rate end
+		end
+		local pick = table.remove(pool, bestI)
+		pick.rate = bestRate
+		ordered[#ordered + 1] = pick
+		local nextRemaining = {}
+		for j = 1, #remaining do
+			if pick.f(remaining[j]) then nextRemaining[#nextRemaining + 1] = remaining[j] end
+		end
+		remaining = nextRemaining
+	end
+	return ordered, remaining
+end
+local function RankIndependent(filters, items)
+	local out, n = {}, #items
+	for name, f in next, filters do
+		local rej = 0
+		local s = debugprofilestop()
+		for i = 1, n do if not f(items[i]) then rej = rej + 1 end end
+		local cost = (debugprofilestop() - s) * 1e6 / n
+		local rate = rej / n
+		out[#out + 1] = { name = name, cost = cost, rate = rate, score = rate > 0 and cost / rate or math.huge }
+	end
+	table.sort(out, function(a, b) return a.score < b.score end)
+	return out
+end
+
+local function Report(title, ordered)
+	local names = {}
+	for i, p in ipairs(ordered) do
+		names[i] = ("%q"):format(p.name)
+		app.print(("%s %d. %s  %.0f ns  rejects %.1f%%"):format(title, i, p.name, p.cost, p.rate * 100))
+	end
+	app.print(title .. ": " .. table.concat(names, ", "))
+end
+local function KeyReport(list, key)
+	local n, v, present = #list, nil, 0
+	local rawget = rawget
+	local s = debugprofilestop()
+	for i = 1, n do v = list[i][key] end
+	local tIndex = (debugprofilestop() - s) * 1e6 / n
+	s = debugprofilestop()
+	for i = 1, n do v = rawget(list[i], key) end
+	local tRaw = (debugprofilestop() - s) * 1e6 / n
+	for i = 1, n do if rawget(list[i], key) ~= nil then present = present + 1 end end
+	app.print(("%-14s index %4.0f ns | rawget %4.0f ns | present %3.0f%% | dynamic: %s"):format(
+		key, tIndex, tRaw, present / n * 100, app.AllClassFields[key] and "YES" or "no"))
+end
+
+local function GetRoot()
+	return app:GetWindow("Prime").data   -- adapt to however you reach the main hierarchy
+end
+
+local NotInChain = { ItemUnbound = true }   -- add any other exemption-style filters
+
+app.ChatCommands.Add("filter-order", function(args)
+	local items = Sample(CollectNodes(GetRoot().g, {}), SAMPLE)
+	local pool = {}
+	local runner = app.CreateRunner("filtertesting")
+	for name, f in next, api.Filters do
+		if not NotInChain[name] then
+			runner.Run(function()
+				if pcall(f, items[1]) then pool[name] = f
+				else app.print("skipping (errors when called):", name) end
+			end)
+		end
+	end
+	runner.Run(function()
+		local ordered = RankIndependent(pool, items)
+		Report("All", ordered)
+	end)
+	return true
+end, { "Usage : /att filter-order" })
+
+app.ChatCommands.Add("key-report", function(args)
+	local list = CollectNodes(GetRoot().g, {})
+	-- in a chat command, using CollectNodes(GetRoot().g, {}) as `list`:
+	for _, k in ipairs({ "u", "f", "loc", "g", "visible", "__type", "nmc", "requireSkill", "customCollect", "minReputation" }) do
+		KeyReport(list, k)
+	end
+	return true
+end, { "Usage : /att filter-order" })
+
+
+--]]--
