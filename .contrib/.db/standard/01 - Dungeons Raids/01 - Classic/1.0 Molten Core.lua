@@ -52,6 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		isRaid = true,
 		cr = 14387,	-- Lothos Riftwalker
 		lvl = lvlsquish(50, 50, 25),
+		timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 		groups = {
 			header(HEADERS.Item, 17182, {	-- Sulfuras, Hand of Ragnaros
 				isRaid = true,
@@ -255,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
 						-- #else
-						ADDED_1_0_1, REMOVED_3_0_8,
+						REMOVED_3_0_8,
 						-- #endif
 					},
 					lvl = 55,
@@ -269,14 +270,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
 					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 					lvl = 55,
 				}),
 				q(7633, {	-- An Introduction
 					sourceQuest = 7632,	-- The Ancient Leaf
 					qg = 14524,	-- Vartrus the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
-					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 					classes = { HUNTER },
 					lvl = 60,
 				}),
@@ -324,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 					maps = {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -345,7 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					sourceQuest = 6823,	-- Agent of Hydraxis
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Hand of Shazzrah
@@ -366,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6804, {	-- Poisoned Water
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 					maps = { EASTERN_PLAGUELANDS },
 					lvl = 55,
 					groups = {
@@ -385,7 +386,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6805, {	-- Stormers and Rumblers
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 					maps = { SILITHUS },
 					lvl = 55,
 					groups = {
@@ -401,7 +402,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					description = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					qg = 14524,	-- Vartrus the Ancient
 					coord = { 47.0, 24.48, FELWOOD },
-					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 					cost = { { "i", 18703, 1 } },	-- Ancient Petrified Leaf
 					classes = { HUNTER },
 					lvl = 60,
@@ -410,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					sourceQuest = 6821,	-- Eye of the Emberseer
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 					lvl = 55,
 					groups = {
 						objective(1, {	-- 0/1 Molten Giant slain
@@ -433,13 +434,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					description = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
 					sourceQuest = 6824,	-- Hands of the Enemy
 					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
 					description = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
 					sourceQuest = 6824,	-- Hands of the Enemy
 					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
-					timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+					timeline = { REMOVED_3_0_8 },
 				})),
 			}),
 			n(ZONE_DROPS, {
@@ -447,7 +448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE CATA
 					description = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					-- #endif
-					timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 				})),
 				i(17010),	-- Fiery Core
 				i(17011),	-- Lava Core
@@ -545,7 +546,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19147),	-- Ring of Spell Power
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(16665, {	-- Tome of Tranquilizing Shot
-						timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+						timeline = { REMOVED_3_0_8 },
 						classes = { HUNTER },
 						-- #if BEFORE WRATH
 						recipeID = 19801,	-- Tranquilizing Shot
@@ -776,13 +777,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				groups = {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18703, {	-- Ancient Petrified Leaf
-						timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 						classes = { HUNTER },
 						lvl = 60,
 					}),
 					i(18646, {	-- The Eye of Divinity
 						description = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-						timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 						classes = { PRIEST },
 					}),
 					-- #endif
@@ -1386,7 +1387,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(228242),	-- Heavy Dark Iron Ring
 						i(228243),	-- Ring of Spell Power
 						i(16665, {	-- Tome of Tranquilizing Shot
-							timeline = { ADDED_1_0_1, REMOVED_3_0_8 },
+							timeline = { REMOVED_3_0_8 },
 							classes = { HUNTER },
 							-- #if BEFORE WRATH
 							recipeID = 19801,	-- Tranquilizing Shot
@@ -1592,13 +1593,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						provider = { "o", 179703 },	-- Cache of the Firelord
 						groups = {
 							i(18703, {	-- Ancient Petrified Leaf
-								timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								classes = { HUNTER },
 								lvl = 60,
 							}),
 							i(18646, {	-- The Eye of Divinity
 								description = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-								timeline = { ADDED_1_0_1, REMOVED_4_0_3 },
+								timeline = { REMOVED_4_0_3 },
 								classes = { PRIEST },
 							}),
 							i(17203),	-- Sulfuron Ingot

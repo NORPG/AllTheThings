@@ -1649,13 +1649,11 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 			n(52146, {	-- Chitter
 				coord = { 63.8, 65.2, REDRIDGE_MOUNTAINS },
 				timeline = { ADDED_4_1_0 },
-				-- #if AFTER 10.1.7
 				groups = {
 					i(3229, {	-- Tarantula Silk Sash
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
-				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, n(214456, {	-- Dro'zem the Blasphemous

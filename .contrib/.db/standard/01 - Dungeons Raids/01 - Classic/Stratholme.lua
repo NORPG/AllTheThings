@@ -73,6 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #else
 			48,
 			-- #endif
+		timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(646),	-- Stratholme

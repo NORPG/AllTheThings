@@ -4013,7 +4013,7 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				groups = {
 					i(7559, {	-- Runic Cane
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -4045,10 +4045,10 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				groups = {
 					i(4768, {	-- Adept's Gloves
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 					i(4771, {	-- Harvest Cloak
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -4080,10 +4080,10 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				groups = {
 					i(5183, {	-- Pulsating Hydra Heart
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 					i(5182, {	-- Shiver Blade
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -4106,10 +4106,10 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				groups = {
 					i(5111, {	-- Rathorian's Cape
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 					i(5112, {	-- Ritual Blade
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -4162,7 +4162,7 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				groups = {
 					i(1355, {	-- Buckskin Cape
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+						timeline = { ADDED_10_1_7 },
 					}),
 				},
 			}),

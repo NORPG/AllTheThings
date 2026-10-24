@@ -3303,9 +3303,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				groups = {
 					i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
 					i(7997),	-- Red Defias Mask
-					i(2057, {	-- Pitted Defias Shortsword
-						timeline = { REMOVED_4_0_3, ADDED_8_1_0 },
-					}),
+					i(2057),	-- Pitted Defias Shortsword
 				},
 			}),
 		}),
