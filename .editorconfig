@@ -35,3 +35,23 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Binary assets (BLP, OGG, WAV)
+[assets/**]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+tab_width = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
+
+# Binary asset extensions (BLP, OGG, WAV)
+[**.{blp,ogg,wav}]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+tab_width = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
