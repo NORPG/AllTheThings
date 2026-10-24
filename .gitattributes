@@ -12,6 +12,8 @@
 /AllTheThings.lua text eol=lf
 /lib/**/*.lua  text eol=lf
 /src/**/*.lua  text eol=lf
+/tests/*.lua     text eol=lf
+/locales/*.lua   text eol=lf
 # project config / tool config
 *.config    text eol=crlf
 # WOW addon filelist
