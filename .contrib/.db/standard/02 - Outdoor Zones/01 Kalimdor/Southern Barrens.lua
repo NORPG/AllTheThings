@@ -2228,7 +2228,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 							-- #else
 							nil,
 							-- #endif
-						timeline = { ADDED_10_1_7 },
+						timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -2248,7 +2248,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				groups = {
 					i(1539, {	-- Gnarled Hermit's Staff
-						timeline = { ADDED_10_1_7 },
+						timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -2287,7 +2287,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 							-- #else
 							nil,
 							-- #endif
-						timeline = { ADDED_10_1_7 },
+						timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -2408,7 +2408,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 			}),
 			i(5092, {	-- Charred Razormane Wand
-				timeline = { ADDED_10_1_7 },
+				timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 				crs = {
 					-- #if AFTER 10.1.7
 					37661,	-- Razormane Seer
@@ -2438,7 +2438,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				cr = 3444,	-- Dig Rat
 			}),
 			i(5093, {	-- Razormane Backstabber
-				timeline = { ADDED_10_1_7 },
+				timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 				crs = {
 					-- #if AFTER 10.1.7
 					37560,	-- Razormane Pathfinder
@@ -2459,7 +2459,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 			}),
 			i(5094, {	-- Razormane War Shield
-				timeline = { ADDED_10_1_7 },
+				timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC], REMOVED_4_0_3, ADDED_10_1_7 },
 				crs = {
 					-- #if AFTER 10.1.7
 					37660,	-- Razormane Warfrenzy
