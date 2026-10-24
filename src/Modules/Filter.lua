@@ -65,8 +65,51 @@ api.Filters = {}
 
 local AccountFilters, CharacterFilters, RawCharacterFilters = {}, {}, {}
 
+-- Array-based Filter handling for faster filter evaluation loops
+local AccountArr, CharacterArr = {}, {}
+local nAccount, nCharacter = 0, 0
+
+local FilterOrderList = {
+	-- "Race_Horde", "Race_Alliance", "Race_CurrentFaction", -- these are never actually used directly
+	-- AccountFilters
+	"Unobtainable", "ExpansionContent", "Event", "Skyriding", "PetBattles", "PvP", "ChallengeMaster", "Phase", "UnavailablePersonalLoot",
+	-- Character Filters
+	"Level", "Class", "Race", "InGame", "FilterID", "Bound", "RequireSkill", "CustomCollect", "MinReputation",
+	-- Not used within Acct/Char filter sets
+	-- "CompletedGroups", "Trackable", "Bind", "Visible", "Group",
+
+	-- "RecursiveDefaultCharacterRequirementsFilter",
+	-- "RecursiveCharacterRequirementsFilter",
+	-- "RecursiveGroupRequirementsExtraFilter", "GetRecursiveFilterRequirement",
+	-- "RecursiveDirectGroupRequirementsFilter", "RecursiveGroupRequirementsFilter",
+	-- "RecursiveGroupRequirementsFilter_Account",
+	-- "RecursiveUnobtainableFilter",
+}
+local RankedNames, InRanked = {}, {}
+for i, name in ipairs(FilterOrderList) do RankedNames[i] = name; InRanked[name] = true end
+
+local function RebuildArray(arr, filters)
+	local old, n = #arr, 0
+	for i = 1, #RankedNames do
+		local f = filters[RankedNames[i]]
+		if f then n = n + 1; arr[n] = f end
+	end
+	for name, f in next, filters do        -- unranked filters go last
+		if not InRanked[name] then n = n + 1; arr[n] = f end
+	end
+	for i = n + 1, old do arr[i] = nil end
+	return n
+end
+
+local function RebuildFilterArrays()
+	nAccount = RebuildArray(AccountArr, AccountFilters)
+	nCharacter = RebuildArray(CharacterArr, CharacterFilters)
+end
+
+local FilterNameOf = {}
 -- Helper function to encapsulate simple logic for a 'toggle' filter
 local function DefineToggleFilter(name, filterGroup, filter)
+	FilterNameOf[filter] = name
 	-- Filters capture
 	-- app.PrintDebug("DefineFilter",name,filter)
 	api.Filters[name] = filter;
@@ -74,6 +117,7 @@ local function DefineToggleFilter(name, filterGroup, filter)
 	api.Set[name] = function(active)
 		-- app.PrintDebug("FILTER",name,"->",active)
 		filterGroup[name] = active and api.Filters[name] or nil;
+		RebuildFilterArrays();
 	end
 	-- Get implementation
 	api.Get[name] = function()
@@ -85,6 +129,7 @@ local function DefineToggleFilter(name, filterGroup, filter)
 		LateSetFilters[name] = nil;
 		-- app.PrintDebug("Late Set Filter",name)
 		filterGroup[name] = filter;
+		RebuildFilterArrays();
 	end
 
 	-- Keep track of all raw CharacterFilters
@@ -486,35 +531,49 @@ end
 local function PrintExclusionCause(name, o)
 	app.PrintDebug("F-EX",name,o.hash,o.link or o.name)
 end
-local function ApplySettingsFilters(o, filters)
-	for _,filter in next, filters do
-		-- if not filter(o) then PrintExclusionCause(name, o) return end
-		if not filter(o) then return end
-	end
-	return true;
-end
 
 -- Represents filters which should be applied during Updates to groups
-local function SettingsFilters(item)
-	if ApplySettingsFilters(item, AccountFilters) then
-		-- BoE can skip Character trait filters
-		if SettingsFilterItemUnbound(item) then return true; end
-		return ApplySettingsFilters(item, CharacterFilters)
+local function SettingsFilters(o)
+	local arr, n = AccountArr, nAccount
+	for i = 1, n do
+		if not arr[i](o) then
+			-- PrintExclusionCause(FilterNameOf[arr[i]], o)
+			return
+		end
 	end
+	-- BoE can skip Character trait filters
+	if SettingsFilterItemUnbound(o) then return true end
+	arr, n = CharacterArr, nCharacter
+	for i = 1, n do
+		if not arr[i](o) then
+			-- PrintExclusionCause(FilterNameOf[arr[i]], o)
+			return
+		end
+	end
+	return true
 end
-local function SettingsFilters_Account(item)
-	return ApplySettingsFilters(item, AccountFilters)
+local function SettingsFilters_Account(o)
+	local arr, n = AccountArr, nAccount
+	for i = 1, n do
+		if not arr[i](o) then
+			-- PrintExclusionCause(FilterNameOf[arr[i]], o)
+			return
+		end
+	end
+	return true
 end
-local function SettingsExtraFilters(item, extraFilters)
-	if SettingsFilters(item) then
+local function SettingsExtraFilters(o, extraFilters)
+	if SettingsFilters(o) then
 		if extraFilters then
 			local filters = api.Filters
 			local filter
 			for name in next, extraFilters do
 				filter = filters[name]
 				if filter then
-					-- if not filter(item) then PrintExclusionCause(name, item) return end
-					if not filter(item) then return end
+					if not filter(o) then
+						-- PrintExclusionCause(name, o)
+						return
+					end
 				end
 			end
 		end
@@ -522,16 +581,30 @@ local function SettingsExtraFilters(item, extraFilters)
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
-local function SettingsFilters_IgnoreBoEFilter(item)
-	if ApplySettingsFilters(item, AccountFilters) then
-		return ApplySettingsFilters(item, CharacterFilters)
+local function SettingsFilters_IgnoreBoEFilter(o)
+	local arr, n = AccountArr, nAccount
+	for i = 1, n do
+		if not arr[i](o) then
+			-- PrintExclusionCause(FilterNameOf[arr[i]], o)
+			return
+		end
 	end
+	arr, n = CharacterArr, nCharacter
+	for i = 1, n do
+		if not arr[i](o) then
+			-- PrintExclusionCause(FilterNameOf[arr[i]], o)
+			return
+		end
+	end
+	return true
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
 local function CurrentCharacterFilters(o)
 	for _,filter in next, RawCharacterFilters do
-		-- if not filter(o) then PrintExclusionCause(name, o) return end
-		if not filter(o) then return end
+		if not filter(o) then
+			-- PrintExclusionCause(name, o)
+			return
+		end
 	end
 	return true;
 end
@@ -690,6 +763,7 @@ local function CacheSettingsData()
 	-- app.PrintDebug("SettingsFilterIDs",#SettingsFilterIDs)
 end
 
+RebuildFilterArrays()
 app.AddEventHandler("OnLoad", function()
 	FactionID = app.FactionID;
 	if FactionID == Enum.FlightPathFaction.Horde then
