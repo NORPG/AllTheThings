@@ -886,7 +886,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(10169, {	-- Losing Gracefully
 					qg = 19485,	-- Magister Falris
 					coord = { 47.0, 83.5, SHATTRATH_CITY },
-					timeline = { ADDED_2_0_3, REMOVED_2_4_0 },
+					timeline = { REMOVED_2_4_0 },
 				}),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11514, {	-- Maintaining the Sunwell Portal
 					sourceQuest = 11534,	-- Report to Nasuun
@@ -1627,7 +1627,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							isLimited = true,
 						}),
 						i(25846, {	-- Plans: Adamantite Rod (RECIPE!)
-							timeline = { ADDED_2_0_3, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 							isLimited = true,
 						}),
 					},

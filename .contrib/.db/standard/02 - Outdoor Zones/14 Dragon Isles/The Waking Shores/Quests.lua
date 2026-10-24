@@ -9,13 +9,13 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			header(HEADERS.Achievement, 16334, {	-- Waking Hope
 				------ Prologue ------
 				q(70197, {	-- The Call of the Isles [A]
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
+					timeline = { REMOVED_TWW_LAUNCH },
 					maps = { STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				}),
 				q(70198, {	-- The Call of the Isles [H]
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
+					timeline = { REMOVED_TWW_LAUNCH },
 					maps = { ORGRIMMAR },
 					races = HORDE_ONLY,
 					isBreadcrumb = true,
@@ -1370,7 +1370,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				q(66076, {	-- Ancient Hornswog
 					provider = { "n", 187111 },	-- Ancient Hornswog
 					coord = { 77.6, 22.2, THE_WAKING_SHORES },
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 },
+					timeline = { REMOVED_11_0_0 },
 				}),
 				q(66117, {	-- Clear the Battlefield
 					sourceQuests = { 66116 },	-- The Primary Threat

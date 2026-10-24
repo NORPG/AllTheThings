@@ -52,7 +52,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				ach(18249, { timeline = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }),	-- Obsidian Tie Event
 			})),
 			filter(MOUNTS, {
-				timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+				timeline = { REMOVED_10_2_0 },
 				groups = {
 					i(205246, {	-- Vicious War Snail [A] (MOUNT!)
 						races = ALLIANCE_ONLY,
@@ -91,7 +91,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					coord = { 43.4, 42.5, VALDRAKKEN },
 					groups = {
 						filter(BACK_F, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(200, i(206241)),	-- Scalewarden's Drape
 								bloody(200, i(206240)),	-- Scalewarden's Cloak
@@ -100,7 +100,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 							},
 						}),
 						filter(CLOTH, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(350, i(206213)),	-- Scalewarden's Cloth Mantle
 								bloody(200, i(206212)),	-- Scalewarden's Cloth Bindings
@@ -113,7 +113,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 							},
 						}),
 						filter(LEATHER, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(350, i(206221)),	-- Scalewarden's Leather Shoulderguard
 								bloody(500, i(206220)),	-- Scalewarden's Leather Jerkin
@@ -126,7 +126,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 							},
 						}),
 						filter(MAIL, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(200, i(206237)),	-- Scalewarden's Chain Armguards
 								bloody(200, i(206236)),	-- Scalewarden's Chain Cinch
@@ -139,7 +139,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 							},
 						}),
 						filter(PLATE, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(200, i(206229)),	-- Scalewarden's Plate Bracers
 								bloody(200, i(206228)),	-- Scalewarden's Plate Clasp
@@ -152,7 +152,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 							},
 						}),
 						n(WEAPONS, {
-							timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 							groups = {
 								bloody(400, i(206830)),	-- Scalewarden's Dirk
 								bloody(500, i(206820)),	-- Scalewarden's Dagger

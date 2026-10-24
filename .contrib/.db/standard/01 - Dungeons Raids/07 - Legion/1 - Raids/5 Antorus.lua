@@ -580,10 +580,10 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(ARGUS, {
 					ach(12110, {	-- Ahead of the Curve: Argus the Unmaker
-						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 					}),
 					i(152900, {	-- Blood of the Unmaker
-						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 					}),
 				}),
 			}),
@@ -663,14 +663,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				Boss(ARGUS, {
 					ach(12111, {	-- Cutting Edge: Argus the Unmaker
-						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 					}),
 					ach(12002, {	-- Mythic: Argus the Unmaker
 						title(364),	-- Titanslayer
 					}),
 					ach(12113),	-- Mythic: Argus the Unmaker Guild Run
 					ach(12258, {	-- Realm First! Argus the Unmaker
-						timeline = { ADDED_7_3_0, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 					}),
 					i(155880),	-- Scythe of the Unmaker [RED]
 					i(152789),	-- Shackled Ur'zul (MOUNT!)

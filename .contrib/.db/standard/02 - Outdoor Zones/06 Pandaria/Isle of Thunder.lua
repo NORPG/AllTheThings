@@ -764,7 +764,7 @@ maproot(PANDARIA, {
 						description = "You will need 3 stones to summon special rares at their specific spawn points.",
 					}),
 					i(97268, {	-- Tome of Valor
-						timeline = { ADDED_5_2_0, REMOVED_5_3_0 },
+						timeline = { REMOVED_5_3_0 },
 					}),
 					-- TODO: maybe make it more clear this is a 'looted' trigger via built-in handling?
 					header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]

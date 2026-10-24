@@ -342,7 +342,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(45, i(78458)),	-- Timepiece of the Bronze Flight
 						frags(70, i(78399)),	-- Finger of Zon'ozz
 						frags(25, i(78374, {	-- Razor Saronite Chip
-							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						})),
 						-- Plate
 						frags(45, i(78470)),	-- Backbreaker Spaulders

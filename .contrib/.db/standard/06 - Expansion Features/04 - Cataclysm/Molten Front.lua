@@ -1698,10 +1698,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						i(70175),	-- Pattern: Triple-Reinforced Mining Bag (RECIPE!)
 						-- #if BEFORE MOP
 						i(70111, {	-- Relic of Elune's Light
-							timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(70109, {	-- Relic of Elune's Shadow
-							timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
@@ -1745,10 +1745,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						i(70124),	-- Spirit Fragment Band
 						-- #if BEFORE MOP
 						i(70125, {	-- Relic of Lo'Gosh
-							timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						i(70128, {	-- Relic of Tortolla
-							timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},

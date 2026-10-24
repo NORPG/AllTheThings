@@ -266,7 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				CommonBossDrops({
-					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
 				BossOnly(NADOX, {
 					ach(2038),	-- Respect Your Elders
@@ -330,7 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37625),	-- Web Winder Gloves
 				}),
 				CommonBossDrops({
-					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
 				BossOnly(NADOX, {
 					ach(2038),	-- Respect Your Elders

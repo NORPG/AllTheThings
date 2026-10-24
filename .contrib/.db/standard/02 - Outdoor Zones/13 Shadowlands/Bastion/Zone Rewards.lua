@@ -21,7 +21,7 @@ maproot(SHADOWLANDS, BASTION, {
 				i(181630),	-- Honortoll Spear
 				i(184840),	-- Hymnal of the Path
 				i(184842, {	-- Instructor's Divine Bell
-					timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_2_0 },
+					timeline = { REMOVED_9_2_0 },
 				}),
 				i(190641, {	-- Instructor's Divine Bell
 					timeline = { ADDED_9_2_0 },

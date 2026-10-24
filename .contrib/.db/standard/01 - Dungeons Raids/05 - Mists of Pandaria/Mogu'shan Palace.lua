@@ -127,19 +127,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(85175, {	-- Crest of the Clan Lords
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85179, {	-- Meteoric Greathelm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85177, {	-- Whirling Dervish Choker
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85178, {	-- Conflagrating Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85176, {	-- Hurricane Belt
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -165,19 +165,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(85183, {	-- Claws of Gekkan
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85182, {	-- Cloak of Cleansing Flames
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85184, {	-- Hexxer's Lethargic Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85180, {	-- Glintrok Sollerets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85181, {	-- Iron Protector Talisman
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -221,34 +221,34 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(85190, {	-- Firescribe Dagger
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85185, {	-- Ghostheart
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85191, {	-- Mindcapture Pendant
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85194, {	-- Regal Silk Shoulderpads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85193, {	-- Mind's Eye Breastplate
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85189, {	-- Groundshaker Bracer
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85186, {	-- Axebreaker Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85187, {	-- Boots of Plummeting Death
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85192, {	-- Soulbinder Treads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(85188, {	-- Blade Trap Signet
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -283,19 +283,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81237, {	-- Crest of the Clan Lords
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81241, {	-- Meteoric Greathelm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81239, {	-- Whirling Dervish Choker
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81240, {	-- Conflagrating Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81238, {	-- Hurricane Belt
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -322,19 +322,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81245, {	-- Claws of Gekkan
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81244, {	-- Cloak of Cleansing Flames
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81246, {	-- Hexxer's Lethargic Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81242, {	-- Glintrok Sollerets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81243, {	-- Iron Protector Talisman
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -381,43 +381,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(87542, {	-- Mogu'Dar, Blade of the Thousand Slaves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81253, {	-- Firescribe Dagger
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81247, {	-- Ghostheart
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81254, {	-- Mindcapture Pendant
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81257, {	-- Regal Silk Shoulderpads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81256, {	-- Mind's Eye Breastplate
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81252, {	-- Groundshaker Bracer
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81248, {	-- Axebreaker Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81249, {	-- Boots of Plummeting Death
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81255, {	-- Soulbinder Treads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81251, {	-- Blade Trap Signet
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					challengemaster(ach(8433, {	-- Challenge Master: Mogu'shan Palace
 						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },

@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
-				timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+				timeline = { REMOVED_7_3_5 },
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
 					-- #if AFTER 7.3.5.25727
@@ -993,7 +993,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
-				timeline = { ADDED_3_1_0, REMOVED_7_3_5 },
+				timeline = { REMOVED_7_3_5 },
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
 					-- #if AFTER 7.3.5.25727

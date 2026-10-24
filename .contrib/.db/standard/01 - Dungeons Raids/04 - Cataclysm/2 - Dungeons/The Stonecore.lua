@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(56333),	-- Rose Quartz Band
 						-- #if BEFORE MOP
 						i(56337, {	-- Stalagmite Dragon
-							timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},

@@ -193,7 +193,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			cost = {{ "i", 124437, 10 }},	-- 10x Shal'dorei Silk
 			groups = {
 				r(195126, {	-- Tailoring (Legion Master)
-					timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
+					timeline = { REMOVED_8_0_1 },
 					collectible = false,
 				}),
 				applyclassicphase(BFA_PHASE_ONE, r(264628, {timeline = {ADDED_8_0_1}})),	-- Legion Tailoring

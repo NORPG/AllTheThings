@@ -650,7 +650,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 67.7, 84.7, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { DRUID },
 						}),
 						q(24778, {	-- The Arts of a Hunter
@@ -663,7 +663,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 67.1, 83.3, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { HUNTER },
 						}),
 						q(24752, {	-- The Arts of a Mage
@@ -675,7 +675,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 68.2, 84.0, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { MAGE },
 						}),
 						q(31162, {	-- The Arts of a Monk
@@ -692,7 +692,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 67.7, 83.0, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { PRIEST },
 						}),
 						q(24772, {	-- The Arts of a Rogue
@@ -705,7 +705,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 65.9, 83.2, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { ROGUE },
 						}),
 						q(24760, {	-- The Arts of a Shaman
@@ -718,7 +718,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 64.9, 84.2, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { SHAMAN },
 						}),
 						q(26274, {	-- The Arts of a Warlock
@@ -731,7 +731,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 64.9, 83.3, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { WARLOCK },
 						}),
 						q(24640, {	-- The Arts of a Warrior
@@ -744,7 +744,7 @@ maproot(KALIMDOR, DUROTAR, {
 								{ 65.8, 84.5, DUROTAR },
 								-- #endif
 							},
-							timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 							classes = { WARRIOR },
 						}),
 						q(24765, {	-- The Basics: Hitting Things (Druid)
@@ -2872,13 +2872,13 @@ maproot(KALIMDOR, DUROTAR, {
 					i(52581),	-- SI:7 Emblem (QI!)
 					--
 					i(67154, {	-- Staff of the Unwelcome (CATA)
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(67157, {	-- Harness of Binding (CATA)
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(67156, {	-- Girdle of Servitude (CATA)
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(118217, {	-- Staff of Dubious Pacts (WOD)
 						timeline = { ADDED_6_0_2 },

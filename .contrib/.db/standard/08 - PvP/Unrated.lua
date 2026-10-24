@@ -6,16 +6,16 @@ root(ROOTS.PVP, pvp(n(UNRATED, {
 	timeline = { ADDED_6_2_0 },
 	groups = {
 		i(126919, {	-- Champion's Strongbox [Alliance]
-			timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
+			timeline = { REMOVED_7_0_3 },
 		}),
 		i(126923, {	-- Champion's Strongbox [Alliance]
-			timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
+			timeline = { REMOVED_7_0_3 },
 		}),
 		i(126920, {	-- Champion's Strongbox [Horde]
-			timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
+			timeline = { REMOVED_7_0_3 },
 		}),
 		i(126924, {	-- Champion's Strongbox [Horde]
-			timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
+			timeline = { REMOVED_7_0_3 },
 		}),
 		i(138469, {	-- Champion's Strongbox [Alliance]
 			timeline = { ADDED_7_0_3, REMOVED_7_2_5 },

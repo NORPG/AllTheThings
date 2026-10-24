@@ -86,7 +86,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 				ach(42800, { timeline = { ADDED_11_2_0_SEASONSTART } }),	-- Astral Attire
 			})),
 			filter(MOUNTS, {
-				timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+				timeline = { REMOVED_12_0_1_LAUNCH },
 				groups = {
 					i(243157, {	-- Vicious Void Creeper [A] (MOUNT!)
 						races = ALLIANCE_ONLY,
@@ -1097,7 +1097,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 			})),
 			n(REWARDS, {
 				i(230284, {	-- Artisan's Consortium Pamphlet (QS!/QI!)
-					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
+					timeline = { REMOVED_12_0_1_LAUNCH },
 					description = "Rewarded within the first few wins in queued PvP Content.",
 				}),
 			}),

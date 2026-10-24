@@ -824,7 +824,7 @@ maproot(KALIMDOR, ULDUM, {
 					}),
 					-- #if BEFORE MOP
 					i(68612, {	-- Scarab Leg Talisman
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -863,7 +863,7 @@ maproot(KALIMDOR, ULDUM, {
 					i(65814),	-- Sekhemet's Seal
 					-- #if BEFORE MOP
 					i(65812, {	-- Namkhare's Cabochon Charm
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},

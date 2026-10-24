@@ -380,7 +380,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(43854),	-- Cobalt Skeleton Key
 			i(41611),	-- Eternal Belt Buckle
 			i(44693, {timeline = {ADDED_3_0_8}}),	-- Titanium Plating
-			i(41745, {timeline = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Titanium Rod
+			i(41745, {timeline = {REMOVED_5_0_4}}),	-- Titanium Rod
 			i(42500),	-- Titanium Shield Spike
 			i(43853),	-- Titanium Skeleton Key
 			i(41976),	-- Titanium Weapon Chain
@@ -402,7 +402,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(43871),	-- Saronite Spellblade
 			i(41182),	-- Savage Cobalt Slicer
 			i(41239),	-- Sturdy Cobalt Quickblade
-			i(41241, {timeline = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Sure-fire Shuriken
+			i(41241, {timeline = {REMOVED_5_0_4}}),	-- Sure-fire Shuriken
 			i(41383),	-- Titansteel Bonecrusher
 			i(41257),	-- Titansteel Destroyer
 			i(41384),	-- Titansteel Guardian
@@ -703,9 +703,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				description = "This still isn't a toy... BLIZZARD.",
 			}),
 			-- #endif
-			i(41164, {timeline = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mammoth Cutters
+			i(41164, {timeline = {REMOVED_4_0_1}}),	-- Mammoth Cutters
 			i(42546),	-- Mana Injector Kit
-			i(41165, {timeline = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Saronite Razorheads
+			i(41165, {timeline = {REMOVED_4_0_1}}),	-- Saronite Razorheads
 			i(40769),	-- Scrapbot Construction Kit
 			i(23775, {timeline = {ADDED_3_0_8}}),	-- Titanium Toolbox
 		}),
@@ -1786,78 +1786,78 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				timeline = { ADDED_3_2_0 },
 				groups = {
 					i(40162),	-- Accurate Ametrine
-					i(40136, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Balanced Dreadstone
+					i(40136, {timeline = {REMOVED_4_0_3}}),	-- Balanced Dreadstone
 					i(40111),	-- Bold Cardinal Ruby
-					i(40114, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Bright Cardinal Ruby
-					i(40123, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Brilliant King's Amber
+					i(40114, {timeline = {REMOVED_4_0_3}}),	-- Bright Cardinal Ruby
+					i(40123, {timeline = {REMOVED_4_0_3}}),	-- Brilliant King's Amber
 					i(40144),	-- Champion's Ametrine
-					i(40175, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Dazzling Eye of Zul
+					i(40175, {timeline = {REMOVED_4_0_3}}),	-- Dazzling Eye of Zul
 					i(40147),	-- Deadly Ametrine
 					i(40139),	-- Defender's Dreadstone
 					i(40150),	-- Deft Ametrine
 					i(40112),	-- Delicate Cardinal Ruby
 					i(40154),	-- Durable Ametrine
-					i(40158, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Empowered Ametrine
+					i(40158, {timeline = {REMOVED_4_0_3}}),	-- Empowered Ametrine
 					i(40167),	-- Enduring Eye of Zul
 					i(40179),	-- Energized Eye of Zul
 					i(40143),	-- Etched Ametrine
 					i(40146),	-- Fierce Ametrine
 					i(40116),	-- Flashing Cardinal Ruby
 					i(40169),	-- Forceful Eye of Zul
-					i(40117, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Fractured Cardinal Ruby
-					i(40161, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glimmering Ametrine
-					i(40148, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glinting Ametrine
-					i(40132, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glowing Dreadstone
+					i(40117, {timeline = {REMOVED_4_0_3}}),	-- Fractured Cardinal Ruby
+					i(40161, {timeline = {REMOVED_4_0_3}}),	-- Glimmering Ametrine
+					i(40148, {timeline = {REMOVED_4_0_3}}),	-- Glinting Ametrine
+					i(40132, {timeline = {REMOVED_4_0_3}}),	-- Glowing Dreadstone
 					i(40141),	-- Guardian's Dreadstone
-					i(40137, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Infused Dreadstone
+					i(40137, {timeline = {REMOVED_4_0_3}}),	-- Infused Dreadstone
 					i(40142),	-- Inscribed Ametrine
-					i(40174, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Intricate Eye of Zul
+					i(40174, {timeline = {REMOVED_4_0_3}}),	-- Intricate Eye of Zul
 					i(40165),	-- Jagged Eye of Zul
 					i(40177),	-- Lambent Eye of Zul
 					i(40149),	-- Lucent Ametrine
-					i(40151, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Luminous Ametrine
-					i(40121, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Lustrous Majestic Zircon
+					i(40151, {timeline = {REMOVED_4_0_3}}),	-- Luminous Ametrine
+					i(40121, {timeline = {REMOVED_4_0_3}}),	-- Lustrous Majestic Zircon
 					i(40171),	-- Misty Eye of Zul
 					i(40135),	-- Mysterious Dreadstone
 					i(40127),	-- Mystic King's Amber
 					i(49110),	-- Nightmare Tear
-					i(40178, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Opaque Eye of Zul
+					i(40178, {timeline = {REMOVED_4_0_3}}),	-- Opaque Eye of Zul
 					i(40152),	-- Potent Ametrine
 					i(40118),	-- Precise Cardinal Ruby
 					i(40157),	-- Pristine Ametrine
-					i(40140, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Puissant Dreadstone
+					i(40140, {timeline = {REMOVED_4_0_3}}),	-- Puissant Dreadstone
 					i(40133),	-- Purified Dreadstone
 					i(40128),	-- Quick King's Amber
 					i(40180),	-- Radiant Eye of Zul
 					i(40155),	-- Reckless Ametrine
-					i(40138, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Regal Dreadstone
+					i(40138, {timeline = {REMOVED_4_0_3}}),	-- Regal Dreadstone
 					i(40163),	-- Resolute Ametrine
 					i(40145),	-- Resplendent Ametrine
 					i(40125),	-- Rigid King's Amber
-					i(40134, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Royal Dreadstone
+					i(40134, {timeline = {REMOVED_4_0_3}}),	-- Royal Dreadstone
 					i(40113),	-- Runed Cardinal Ruby
-					i(40170, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Seer's Eye of Zul
+					i(40170, {timeline = {REMOVED_4_0_3}}),	-- Seer's Eye of Zul
 					i(40182),	-- Shattered Eye of Zul
 					i(40130),	-- Shifting Dreadstone
-					i(40172, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Shining Eye of Zul
+					i(40172, {timeline = {REMOVED_4_0_3}}),	-- Shining Eye of Zul
 					i(40124),	-- Smooth King's Amber
 					i(40119),	-- Solid Majestic Zircon
 					i(40129),	-- Sovereign Dreadstone
 					i(40120),	-- Sparkling Majestic Zircon
 					i(40160),	-- Stalwart Ametrine
-					i(40159, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Stark Ametrine
+					i(40159, {timeline = {REMOVED_4_0_3}}),	-- Stark Ametrine
 					i(40168),	-- Steady Eye of Zul
 					i(40122),	-- Stormy Majestic Zircon
 					i(40115),	-- Subtle Cardinal Ruby
-					i(40176, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Sundered Eye of Zul
-					i(40181, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Tense Eye of Zul
-					i(40131, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Tenuous Dreadstone
-					i(40126, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Thick King's Amber
+					i(40176, {timeline = {REMOVED_4_0_3}}),	-- Sundered Eye of Zul
+					i(40181, {timeline = {REMOVED_4_0_3}}),	-- Tense Eye of Zul
+					i(40131, {timeline = {REMOVED_4_0_3}}),	-- Tenuous Dreadstone
+					i(40126, {timeline = {REMOVED_4_0_3}}),	-- Thick King's Amber
 					i(40164),	-- Timeless Eye of Zul
 					i(40173),	-- Turbid Eye of Zul
 					i(40153),	-- Veiled Ametrine
 					i(40166),	-- Vivid Eye of Zul
-					i(40156, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Wicked Ametrine
+					i(40156, {timeline = {REMOVED_4_0_3}}),	-- Wicked Ametrine
 				},
 			})),
 			-- #else
@@ -2130,73 +2130,73 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					i(40162),	-- Accurate Dreadstone
 					i(40111),	-- Bold Cardinal Ruby
 					i(40113),	-- Brilliant Cardinal Ruby
-					i(40123, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Brilliant Cardinal Ruby
+					i(40123, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Cardinal Ruby
 					i(40144),	-- Champion's Ametrine
 					i(40147),	-- Deadly Ametrine
-					i(40156, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Deadly Ametrine
+					i(40156, {timeline = {REMOVED_4_0_3}}),	-- Deadly Ametrine
 					i(40139),	-- Defender's Dreadstone
 					i(40150),	-- Deft Ametrine
-					i(40159, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Deft Ametrine
-					i(40114, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Delicate Cardinal Ruby
+					i(40159, {timeline = {REMOVED_4_0_3}}),	-- Deft Ametrine
+					i(40114, {timeline = {REMOVED_4_0_3}}),	-- Delicate Cardinal Ruby
 					i(40112),	-- Delicate Cardinal Ruby
 					i(40179),	-- Energized Eye of Zul
-					i(40174, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Energized Eye of Zul
+					i(40174, {timeline = {REMOVED_4_0_3}}),	-- Energized Eye of Zul
 					i(40143),	-- Etched Dreadstone
 					i(40146),	-- Fierce Ametrine
 					i(40116),	-- Flashing Cardinal Ruby
 					i(40169),	-- Forceful Eye of Zul
-					i(40148, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glinting Dreadstone
+					i(40148, {timeline = {REMOVED_4_0_3}}),	-- Glinting Dreadstone
 					i(40157),	-- Glinting Dreadstone
-					i(40137, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glinting Dreadstone
-					i(40131, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Glinting Dreadstone
+					i(40137, {timeline = {REMOVED_4_0_3}}),	-- Glinting Dreadstone
+					i(40131, {timeline = {REMOVED_4_0_3}}),	-- Glinting Dreadstone
 					i(40141),	-- Guardian's Dreadstone
 					i(40142),	-- Inscribed Ametrine
-					i(40140, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Jagged Eye of Zul
+					i(40140, {timeline = {REMOVED_4_0_3}}),	-- Jagged Eye of Zul
 					i(40165),	-- Jagged Eye of Zul
 					i(40177),	-- Lightning Eye of Zul
-					i(40172, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Lightning Eye of Zul
-					i(40158, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Lucent Ametrine
+					i(40172, {timeline = {REMOVED_4_0_3}}),	-- Lightning Eye of Zul
+					i(40158, {timeline = {REMOVED_4_0_3}}),	-- Lucent Ametrine
 					i(40149),	-- Lucent Ametrine
 					i(40171),	-- Misty Eye of Zul
-					i(40176, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Misty Eye of Zul
+					i(40176, {timeline = {REMOVED_4_0_3}}),	-- Misty Eye of Zul
 					i(40135),	-- Mysterious Dreadstone
 					i(40127),	-- Mystic King's Amber
 					i(49110),	-- Nightmare Tear
 					i(40166),	-- Nimble Eye of Zul
 					i(40152),	-- Potent Ametrine
 					i(40118),	-- Precise Cardinal Ruby
-					i(40151, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Purified Dreadstone
+					i(40151, {timeline = {REMOVED_4_0_3}}),	-- Purified Dreadstone
 					i(40133),	-- Purified Dreadstone
-					i(40134, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Purified Dreadstone
-					i(40175, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Purified Dreadstone
-					i(40170, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Purified Dreadstone
+					i(40134, {timeline = {REMOVED_4_0_3}}),	-- Purified Dreadstone
+					i(40175, {timeline = {REMOVED_4_0_3}}),	-- Purified Dreadstone
+					i(40170, {timeline = {REMOVED_4_0_3}}),	-- Purified Dreadstone
 					i(40128),	-- Quick King's Amber
 					i(40180),	-- Radiant Eye of Zul
-					i(40181, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Radiant Eye of Zul
+					i(40181, {timeline = {REMOVED_4_0_3}}),	-- Radiant Eye of Zul
 					i(40155),	-- Reckless Ametrine
-					i(40138, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Regal Eye of Zul
+					i(40138, {timeline = {REMOVED_4_0_3}}),	-- Regal Eye of Zul
 					i(40167),	-- Regal Eye of Zul
 					i(40163),	-- Resolute Ametrine
 					i(40145),	-- Resplendent Ametrine
 					i(40125),	-- Rigid Majestic Zircon
 					i(40182),	-- Shattered Eye of Zul
-					i(40136, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Shifting Dreadstone
+					i(40136, {timeline = {REMOVED_4_0_3}}),	-- Shifting Dreadstone
 					i(40130),	-- Shifting Dreadstone
-					i(40117, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Smooth King's Amber
+					i(40117, {timeline = {REMOVED_4_0_3}}),	-- Smooth King's Amber
 					i(40124),	-- Smooth King's Amber
 					i(40119),	-- Solid Majestic Zircon
 					i(40129),	-- Sovereign Dreadstone
-					i(40121, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Sparkling Majestic Zircon
+					i(40121, {timeline = {REMOVED_4_0_3}}),	-- Sparkling Majestic Zircon
 					i(40120),	-- Sparkling Majestic Zircon
-					i(40161, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Stalwart Ametrine
+					i(40161, {timeline = {REMOVED_4_0_3}}),	-- Stalwart Ametrine
 					i(40160),	-- Stalwart Ametrine
 					i(40168),	-- Steady Eye of Zul
 					i(40122),	-- Stormy Majestic Zircon
 					i(40115),	-- Subtle King's Amber
-					i(40126, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Subtle King's Amber
-					i(40132, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Timeless Dreadstone
+					i(40126, {timeline = {REMOVED_4_0_3}}),	-- Subtle King's Amber
+					i(40132, {timeline = {REMOVED_4_0_3}}),	-- Timeless Dreadstone
 					i(40164),	-- Timeless Dreadstone
-					i(40178, {timeline = {ADDED_3_2_0, REMOVED_4_0_3}}),	-- Turbid Eye of Zul
+					i(40178, {timeline = {REMOVED_4_0_3}}),	-- Turbid Eye of Zul
 					i(40173),	-- Turbid Eye of Zul
 					i(40153),	-- Veiled Dreadstone
 					i(40154),	-- Willful Ametrine
@@ -2394,7 +2394,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		filter(MISC, {
 			i(38375),	-- Borean Armor Kit
 			i(33568),	-- Borean Leather
-			i(44447, {timeline = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Dragonscale Ammo Pouch
+			i(44447, {timeline = {REMOVED_4_0_1}}),	-- Dragonscale Ammo Pouch
 			i(69386, {timeline = {ADDED_3_2_2}}),	-- Drums of Forgotten Kings
 			i(49633, {timeline = {ADDED_3_2_2}}),	-- Drums of the Wild
 			i(44963),	-- Earthen Leg Armor
@@ -2405,7 +2405,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(38371),	-- Jormungar Leg Armor
 			i(38347),	-- Mammoth Mining Bag
 			i(38372),	-- Nerubian Leg Armor
-			i(44448, {timeline = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Nerubian Reinforced Quiver
+			i(44448, {timeline = {REMOVED_4_0_1}}),	-- Nerubian Reinforced Quiver
 			i(44446),	-- Pack of Endless Pockets
 			i(38399),	-- Trapper's Traveling Pack
 		}),

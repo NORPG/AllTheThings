@@ -370,7 +370,7 @@ maproot(PANDARIA, {
 					q(31691, {	-- Inscribed Crane Staff
 						qg = 56064,	-- Inkmaster Glenzu
 						coord = { 54.8, 45.2, THE_JADE_FOREST },
-						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { REMOVED_5_2_0 },
 						requireSkill = INSCRIPTION,
 						-- #if BEFORE 5.2.0
 						groups = {
@@ -381,7 +381,7 @@ maproot(PANDARIA, {
 					q(31692, {	-- Inscribed Serpent Staff
 						qg = 56064,	-- Inkmaster Glenzu
 						coord = { 54.8, 45.2, THE_JADE_FOREST },
-						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { REMOVED_5_2_0 },
 						requireSkill = INSCRIPTION,
 						-- #if BEFORE 5.2.0
 						groups = {
@@ -392,7 +392,7 @@ maproot(PANDARIA, {
 					q(31690, {	-- Inscribed Tiger Staff
 						qg = 56064,	-- Inkmaster Glenzu
 						coord = { 54.8, 45.2, THE_JADE_FOREST },
-						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { REMOVED_5_2_0 },
 						requireSkill = INSCRIPTION,
 						-- #if BEFORE 5.2.0
 						groups = {

@@ -270,7 +270,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuests = { 40225 },	-- A Ring Reforged
 							provider = { "n", 96528 },	-- Farseer Nobundo
 							coord = { 31.6, 76.2, THE_HEART_OF_AZEROTH },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						-- Start Legion Zone
 						q(41510, {	-- Azeroth Needs You
@@ -804,7 +804,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43886, {	-- Speaking to the Wind
 							provider = { "n", 111739 },	-- Gorma Windspeaker
 							coord = { 32.4, 49.4, THE_HEART_OF_AZEROTH },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46147, {	-- Knowledge is Power
 							sourceQuest = 43886,	-- Speaking to the Wind

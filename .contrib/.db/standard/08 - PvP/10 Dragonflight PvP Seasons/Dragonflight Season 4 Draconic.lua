@@ -57,7 +57,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				}),
 			})),
 			filter(MOUNTS, {
-				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+				timeline = { REMOVED_TWW_LAUNCH },
 				groups = {
 					i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
 						races = ALLIANCE_ONLY,
@@ -68,7 +68,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				},
 			}),
 			n(PVP_WARMODE, {
-				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+				timeline = { REMOVED_TWW_LAUNCH },
 				groups = {
 					n(197553, {	-- Fieldmaster Emberath
 						coord = { 43.1, 42.4, VALDRAKKEN },
@@ -151,7 +151,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+				timeline = { REMOVED_TWW_LAUNCH },
 				groups = {
 					n(199601, {	-- Seltherex
 						coord = { 44.7, 37.0, VALDRAKKEN },
@@ -275,7 +275,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				},
 			}),
 			n(PVP_GLADIATOR, {
-				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+				timeline = { REMOVED_TWW_LAUNCH },
 				groups = {
 					n(199599, {	-- Calderax
 						coord = { 44.3, 36.6, VALDRAKKEN },

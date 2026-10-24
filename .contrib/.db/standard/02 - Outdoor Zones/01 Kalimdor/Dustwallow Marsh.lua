@@ -3237,10 +3237,10 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 						coord = { 46.6, 24.3, DUSTWALLOW_MARSH },
 					}),
 					i(33269, {	-- Bejeweled Dagger
-						timeline = { ADDED_2_3_0, REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 					}),
 					i(33252, {	-- Gleaming Scale Breastplate
-						timeline = { ADDED_2_3_0, REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 					}),
 					i(33250),	-- Archer's Wristguard
 					i(57851, {	-- Swamp Gas Gauntlets

@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6888,	-- Stormstout Brewery Challenger
 					6884,	-- Temple of the Jade Serpent Challenger
 				}},
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 			}),
 			ach(6374, {	-- Challenge Conqueror: Bronze
 				-- Meta Achievement
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6889,	-- Stormstout Brewery: Bronze
 					6885,	-- Temple of the Jade Serpent: Bronze
 				}},
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					title(201),	-- <Name> the Undaunted
 				},
@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6890,	-- Stormstout Brewery: Silver
 					6886,	-- Temple of the Jade Serpent: Silver
 				}},
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					i(90045),	-- Ancestral Phoenix Egg
 				},
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					6891,	-- Stormstout Brewery: Gold
 					6888,	-- Temple of the Jade Serpent: Gold
 				}},
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					i(90156, {	-- Golden Chest of the Betrayer
 						classes = { WARLOCK },
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			})),
 			-- #endif
 			ach(6433, {	-- Realm First! Challenge Conqueror: Gold
-				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { REMOVED_5_2_0 },
 			}),
 			-- #if ANYCLASSIC
 			-- SEASON 2

@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(UUNAT, {
 					ach(13418, {	-- Ahead of the Curve: Uu'nat, Harbinger of the Void
-						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { REMOVED_8_2_0 },
 					}),
 				}),
 			}),
@@ -128,15 +128,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					ach(13417),	-- Mythic: Uu'nat, Harbinger of the Void
 					ach(13421),	-- Mythic: Uu'nat, Harbinger of the Void Guild Run
 					ach(13419, {	-- Cutting Edge: Uu'nat, Harbinger of the Void
-						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { REMOVED_8_2_0 },
 					}),
 					ach(13423, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
-						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { REMOVED_8_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					}),
 					ach(13424, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
-						timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
+						timeline = { REMOVED_8_2_0 },
 						races = HORDE_ONLY,
 						groups = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					}),

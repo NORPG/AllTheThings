@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							timeline = { ADDED_4_0_3 },
 						}),
 						ach(1400, {	-- Realm First! Magic Seeker
-							timeline = { ADDED_3_0_2, REMOVED_3_0_8  },
+							timeline = { REMOVED_3_0_8 },
 							groups = {
 								title(88, {	-- <Name> the Magic Seeker
 									timeline = { ADDED_3_0_2, REMOVED_3_0_8 },

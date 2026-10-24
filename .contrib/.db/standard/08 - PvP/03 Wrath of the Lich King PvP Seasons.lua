@@ -72,7 +72,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+				timeline = { REMOVED_3_1_0 },
 				groups = {
 					ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 						title(56),	-- Deadly Gladiator <Name>
@@ -101,7 +101,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					})),
 					-- #if BEFORE MOP
 					i(42444, {	-- Savage Gladiator's War Edge (Throw Wep)
-						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(42511, {	-- Savage Gladiator's Baton of Light
@@ -344,7 +344,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(42574),	-- Savage Gladiator's Idol of Resolve
 						i(42575),	-- Savage Gladiator's Idol of Steadfastness
@@ -428,7 +428,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						moh(5, i(42236)),	-- Hateful Gladiator's Waraxe
 						-- #if BEFORE MOP
 						i(42449, {	-- Hateful Gladiator's War Edge (Throw Wep)
-							timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					}),
@@ -565,7 +565,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(BACK, {
 					-- #if ANYCLASSIC
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					-- #endif
 					groups = {
 						moh(1, i(42057)),	-- Hateful Gladiator's Cloak of Ascendancy
@@ -579,7 +579,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(WRIST, {
 					-- #if ANYCLASSIC
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					-- #endif
 					groups = {
 						moh(1, i(41638)),	-- Hateful Gladiator's Armwraps of Dominance
@@ -602,7 +602,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(WAIST, {
 					-- #if ANYCLASSIC
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					-- #endif
 					groups = {
 						moh(1, i(41628)),	-- Hateful Gladiator's Belt of Dominance
@@ -625,7 +625,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				}),
 				n(FEET, {
 					-- #if ANYCLASSIC
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					-- #endif
 					groups = {
 						moh(2, i(41633)),	-- Hateful Gladiator's Boots of Dominance
@@ -651,7 +651,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					groups = {
 						i(42024),	-- Hateful Gladiator's Pendant of Ascendancy
 						i(42025),	-- Hateful Gladiator's Pendant of Deliverance
@@ -667,7 +667,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					groups = {
 						i(42110),	-- Hateful Gladiator's Band of Dominance
 						i(42112),	-- Hateful Gladiator's Band of Triumph
@@ -679,7 +679,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = HATEFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(42587),	-- Hateful Gladiator's Idol of Resolve
 						i(42582),	-- Hateful Gladiator's Idol of Steadfastness
@@ -738,7 +738,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					moh(5, i(42237)),	-- Deadly Gladiator's Waraxe
 					-- #if BEFORE MOP
 					i(42450, {	-- Deadly Gladiator's War Edge (Throw Wep)
-						timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				}),
@@ -954,7 +954,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(42588),	-- Deadly Gladiator's Idol of Resolve
 						i(42583),	-- Deadly Gladiator's Idol of Steadfastness
@@ -973,7 +973,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+					timeline = { REMOVED_3_1_0 },
 					groups = {	-- see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
 						i(42123),	-- (A) Medallion of the Alliance Patch 3.0.1
 						i(42122),	-- (H) Medallion of the Horde Patch 3.0.1
@@ -992,7 +992,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				OnUpdate = DEADLY_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+				timeline = { REMOVED_3_1_0 },
 				groups = {
 					-- Exclusive to classic reward... BLIZZARD.
 					i(201993, {	-- Deadly Gladiator's Tabard
@@ -1014,7 +1014,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+				timeline = { REMOVED_3_2_0 },
 				groups = {
 					ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 						title(132),	-- Furious Gladiator <Name>
@@ -1299,7 +1299,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_1_0, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(42589),	-- Furious Gladiator's Idol of Resolve
 						i(42584),	-- Furious Gladiator's Idol of Steadfastness
@@ -1318,7 +1318,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = FURIOUS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
+					timeline = { REMOVED_3_2_0 },
 					groups = {
 						i(42124),	-- (A) Medallion of the Alliance
 						i(42126),	-- (H) Medallion of the Horde
@@ -1341,7 +1341,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 					-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 					-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
-					i(45983, { timeline = { ADDED_3_1_0, REMOVED_3_2_0 } }),	-- Furious Gladiator's Tabard
+					i(45983, { timeline = { REMOVED_3_2_0 } }),	-- Furious Gladiator's Tabard
 					n(WEAPONS, {
 						i(45954),	-- Furious Gladiator's Acute Staff
 						i(45968),	-- Furious Gladiator's Claw
@@ -1386,7 +1386,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				timeline = { ADDED_3_2_0, REMOVED_3_3_2 },
+				timeline = { REMOVED_3_3_2 },
 				groups = {
 					ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 						title(134),	-- Relentless Gladiator <Name>
@@ -1671,7 +1671,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_2_0, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(42591),	-- Relentless Gladiator's Idol of Resolve
 						i(42585),	-- Relentless Gladiator's Idol of Steadfastness
@@ -1690,7 +1690,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = RELENTLESS_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_2_0, REMOVED_3_3_2 },
+					timeline = { REMOVED_3_3_2 },
 					groups = {
 						i(42133),	-- Battlemaster's Fury
 						i(42134),	-- Battlemaster's Precision
@@ -1716,7 +1716,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					-- n34092 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
 					-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52
 					-- n34090 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
-					i(49086, { timeline = { ADDED_3_2_0, REMOVED_3_3_2 } }),	-- Relentless Gladiator's Tabard
+					i(49086, { timeline = { REMOVED_3_3_2 } }),	-- Relentless Gladiator's Tabard
 					n(WEAPONS, {
 						i(48412),	-- Relentless Gladiator's Acute Staff
 						i(49191),	-- Relentless Gladiator's Blade of Celerity
@@ -1764,7 +1764,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 				OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				timeline = { ADDED_3_3_2, REMOVED_4_0_1 },
+				timeline = { REMOVED_4_0_1 },
 				groups = {
 					ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 						title(142),	-- Wrathful Gladiator <Name>
@@ -2046,7 +2046,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_3_2, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					groups = {
 						i(51429),	-- Wrathful Gladiator's Idol of Resolve
 						i(51437),	-- Wrathful Gladiator's Idol of Steadfastness
@@ -2065,7 +2065,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 					OnUpdate = WRATHFUL_GLADIATOR_ONUPDATE,
 					-- #endif
 				}, {
-					timeline = { ADDED_3_3_2, REMOVED_4_0_1 },
+					timeline = { REMOVED_4_0_1 },
 					groups = {
 						i(51377),	-- (A) Medallion of the Alliance
 						i(51378),	-- (H) Medallion of the Horde

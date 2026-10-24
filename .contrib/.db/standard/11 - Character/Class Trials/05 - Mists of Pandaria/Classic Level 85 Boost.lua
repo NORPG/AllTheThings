@@ -91,7 +91,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 				cl(HUNTER, {
 					i(92193),	-- Forestwalker Rifle
-					i(92357, { timeline = { ADDED_4_4_2, REMOVED_5_5_0 } }),	-- Forestwalker Spear
+					i(92357, { timeline = { REMOVED_5_5_0 } }),	-- Forestwalker Spear
 					i(92247),	-- Forestwalker Helm
 					i(92153),	-- Forestwalker Spaulders
 					i(92213),	-- Forestwalker Choker

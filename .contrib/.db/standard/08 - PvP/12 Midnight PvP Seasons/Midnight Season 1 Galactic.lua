@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 				ach(61586, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Galactic Gala
 			})),
 			filter(MOUNTS, {
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					i(257504, {	-- Vicious Snaplizard [A] (MOUNT!)
 						races = ALLIANCE_ONLY,
@@ -89,7 +89,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 				},
 			}),
 			n(PVP_WARMODE, {
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					n(243224, {	-- Knight-Lord Bloodvalor <War Mode Quartermaster>
 						coord = { 34.1, 81.7, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -169,7 +169,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					n(243221, {	-- Captain Dawnrunner <Honor Quartermaster>
 						coord = { 34.0, 81.0, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -294,7 +294,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 				},
 			}),
 			n(PVP_GLADIATOR, {
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					n(243220, {	-- Irissa Bloodstar <Conquest Quartermaster>
 						coord = { 34.1, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -643,7 +643,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 				},
 			}),
 			n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
@@ -829,7 +829,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 			})),
 			n(REWARDS, {
 				i(257194, {	-- Artisan's Consortium Flyer (QS!)
-					timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+					timeline = { REMOVED_12_1_0 },
 					description = "Rewarded within the first few wins in queued PvP Content.",
 				}),
 				i(271341, {	-- Galactic Voidsliver

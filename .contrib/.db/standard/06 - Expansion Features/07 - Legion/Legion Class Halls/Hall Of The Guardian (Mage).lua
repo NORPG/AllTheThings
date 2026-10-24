@@ -430,7 +430,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(41125, {	-- Unlocked Potential
 							sourceQuest = 41114,	-- The Champion's Return
 							provider = { "n", 102700 },	-- Meryl Felstorm
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						-- Choose Zone
 						q(41112, {	-- The Great Akazamzarak
@@ -1026,7 +1026,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43749, {	-- Hitting the Books
 							provider = { "n", 110624 },	-- Edirah
 							coord = { 64.6, 50.1, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46143, {	-- Knowledge is Power
 							sourceQuest = 43749,	-- Hitting the Books
@@ -1066,7 +1066,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							q(44209, {	-- The Might of Dalaran
 								provider = { "n", 111734 },	-- Conjurer Awlyn
 								coord = { 78.1, 53.0, HALL_OF_THE_GUARDIAN },
-								timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+								timeline = { REMOVED_8_0_1 },
 							}),
 						}),
 					}),

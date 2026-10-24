@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				q(77423, {	-- Surging Dreams
 					provider = { "n", 211031 },	-- Archdruid Hamuul Runetotem
 					coord = { 50.6, 57.4, VALDRAKKEN },
-					timeline = { ADDED_10_1_7, REMOVED_10_2_0 },
+					timeline = { REMOVED_10_2_0 },
 					isBreadcrumb = true,
 				}),
 				q(77414, {	-- Dreamsurge Investigation
@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					groups = {
 						ach(19008),	-- Dream Shaper
 						i(208153, {	-- Dreamsurge Chrysalis
-							timeline = { ADDED_10_1_7, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 						}),
 						i(210254, {	-- Dreamsurge Chrysalis
 							timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },

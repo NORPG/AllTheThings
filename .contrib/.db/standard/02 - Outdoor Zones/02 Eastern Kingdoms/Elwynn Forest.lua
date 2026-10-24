@@ -105,7 +105,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 								timeline = { ADDED_7_0_3 },
 							}),
 							i(57254, {	-- Runner's Boots
-								timeline = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
+								timeline = { REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 							}),
 						},
 					}),
@@ -170,7 +170,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 								timeline = { ADDED_6_0_2 },
 							}),
 							i(57254, {	-- Runner's Boots
-								timeline = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
+								timeline = { REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
 							}),
 						},
 					}),
@@ -274,11 +274,11 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							}),
 							i(5580),	-- Militia Hammer
 							i(1161, {	-- Militia Shortsword
-								timeline = { ADDED_4_0_3, REMOVED_7_3_5 },
+								timeline = { REMOVED_7_3_5 },
 							}),
 							i(5579),	-- Militia Warhammer
 							i(1159, {	-- Militia Quarterstaff
-								timeline = { ADDED_4_0_3, REMOVED_7_3_5 },
+								timeline = { REMOVED_7_3_5 },
 							}),
 							i(85575, {	-- Peacebringer's Staff
 								timeline = { CREATED_5_0_4, ADDED_7_3_5 },
@@ -435,13 +435,13 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							-- #endif
 							-- CRIEVE NOTE: The following two items were replaced with the above items.
 							i(57394, {	-- Long Lost Wand
-								timeline = { ADDED_4_0_3, REMOVED_7_3_5 },
+								timeline = { REMOVED_7_3_5 },
 							}),
 							i(248621, {	-- Stormwind Arched Trellis (DECOR!)
 								timeline = { ADDED_11_2_7 },
 							}),
 							i(57392, {	-- Willem's Mitts
-								timeline = { ADDED_4_0_3, REMOVED_7_3_5 },
+								timeline = { REMOVED_7_3_5 },
 							}),
 						},
 					}),

@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				ach(41873),	-- Incremental Progress
 				ach(41889),	-- Horrific Masquerade
 				ach(41953, {	-- Mad World
-					timeline = { ADDED_11_1_5, REMOVED_12_0_0 },
+					timeline = { REMOVED_12_0_0 },
 					groups =  {
 						title(419),	-- <Name>, the Faceless One
 					},
@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					groups = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
 				}),
 				ach(41971, {	-- Through the Looking Glass
-					timeline = { ADDED_11_1_5, REMOVED_12_0_0 },
+					timeline = { REMOVED_12_0_0 },
 					groups =  {
 						title(631),	-- <Name> the Mad
 					},

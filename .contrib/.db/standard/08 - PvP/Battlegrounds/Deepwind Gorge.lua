@@ -23,7 +23,7 @@ battleground(519, {	-- Deepwind Gorge
 					8359,	-- Capping Spree
 					8358,	-- Deepwind Gorge All-Star
 				}},
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 				groups = {
 					title(229, {	-- Gorgeous
 						timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
@@ -46,13 +46,13 @@ battleground(519, {	-- Deepwind Gorge
 				},
 			}),
 			ach(8359, {		-- Capping Spree
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 			}),
 			ach(14187, {	-- Cruisin' for a Brewsin'
 				timeline = { ADDED_8_3_0 },
 			}),
 			ach(8358, {	-- Deepwind Gorge All-Star
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 				groups = {
 					crit(23425),	-- Assault 1 mine
 					crit(23426),	-- Defend 1 mine
@@ -67,10 +67,10 @@ battleground(519, {	-- Deepwind Gorge
 				timeline = { ADDED_8_3_0 },
 			}),
 			ach(8350, {		-- Mine! Mine! Mine!
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 			}),
 			ach(8351, {		-- Other People's Property
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 			}),
 			ach(8354, {		-- Puddle Jumper
 				-- #if AFTER 8.3.0
@@ -80,7 +80,7 @@ battleground(519, {	-- Deepwind Gorge
 				timeline = { ADDED_5_3_0 },
 			}),
 			ach(8355, {		-- Weighed Down
-				timeline = { ADDED_5_3_0, REMOVED_8_3_0 },
+				timeline = { REMOVED_8_3_0 },
 			}),
 			ach(14188, {	-- Well Gorged
 				timeline = { ADDED_8_3_0 },

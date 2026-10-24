@@ -1187,7 +1187,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						coord = { 59.1, 53.3, THE_DREAMGROVE },
 					}),
 					q(43879, {	-- Hitting the Books
-						timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+						timeline = { REMOVED_7_3_0 },
 					}),
 					q(46141, {	-- Knowledge is Power
 						timeline = { ADDED_7_1_5, REMOVED_7_3_0 },

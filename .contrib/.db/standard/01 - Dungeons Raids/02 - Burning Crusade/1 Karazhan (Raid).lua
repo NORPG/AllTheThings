@@ -643,7 +643,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 						}),
 						-- #if AFTER 6.0.2
-						r(27920,{timeline = {ADDED_2_0_3,REMOVED_6_0_2}}),	-- Striking
+						r(27920,{timeline = {REMOVED_6_0_2}}),	-- Striking
 						-- #endif
 					},
 				}),

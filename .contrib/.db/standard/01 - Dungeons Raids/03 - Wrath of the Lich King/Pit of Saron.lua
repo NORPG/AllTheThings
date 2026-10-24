@@ -209,10 +209,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
-					ach(4525, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
+					ach(4525, { timeline = { REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
 				}),
 				BossOnly(GARFROST, {
-					ach(4524, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
+					ach(4524, { timeline = { REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
 				}),
 				BossOnly(ICK_AND_KRICK),
 				BossOnly(TYRANNUS, {
@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
 				n(ACHIEVEMENTS, {
-					ach(4525, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
+					ach(4525, { timeline = { REMOVED_12_0_1_LAUNCH } }),	-- Don't Look Up
 				}),
 				n(ZONE_DROPS, {
 					a(i(50379)),	-- Battered Hilt [A]
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(50319),	-- Unsharpened Ice Razor
 				}),
 				BossOnly(GARFROST, {
-					ach(4524, { timeline = { ADDED_3_3_0, REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
+					ach(4524, { timeline = { REMOVED_12_0_1_LAUNCH } }),	-- Doesn't Go to Eleven
 					i(50228),	-- Barbed Ymirheim Choker
 					i(50229),	-- Legguards of the Frosty Depths
 					i(50230),	-- Malykriss Vambraces

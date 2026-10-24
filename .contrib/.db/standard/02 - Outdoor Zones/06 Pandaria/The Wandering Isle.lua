@@ -73,7 +73,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				sourceQuest = 30988,	-- The Alliance Way
 				qg = 61796,	-- King Varian Wrynn
 				coord = { 82.6, 28.2, STORMWIND_CITY },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				races = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 			}),
 			q(29410, {	-- Aysa of the Tushui
@@ -247,7 +247,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				sourceQuest = 31013,	-- The Horde Way
 				qg = 62092,	-- Garrosh Hellscream
 				coord = { 70.6, 30.8, ORGRIMMAR },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				maps = { 503 },	-- Brawl'gar Arena
 				races = { PANDAREN_HORDE },
 			}),
@@ -403,43 +403,43 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 			q(30039, {	-- Much to Learn (Monk)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { MONK },
 			}),
 			q(30040, {	-- Much to Learn (Mage)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { MAGE },
 			}),
 			q(30041, {	-- Much to Learn (Hunter)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { HUNTER },
 			}),
 			q(30042, {	-- Much to Learn (Priest)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { PRIEST },
 			}),
 			q(30043, {	-- Much to Learn (Rogue)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { ROGUE },
 			}),
 			q(30044, {	-- Much to Learn (Shaman)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { SHAMAN },
 			}),
 			q(30045, {	-- Much to Learn (Warrior)
 				qg = 53566,	-- Master Shang Xi
 				coord = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				classes = { WARRIOR },
 			}),
 			q(29800, {	-- New Allies
@@ -788,7 +788,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				sourceQuest = 30987,	-- Joining the Alliance
 				qg = 61796,	-- King Varian Wrynn
 				coord = { 82.6, 28.2, STORMWIND_CITY },
-				timeline = { ADDED_5_0_4, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				races = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 			}),
 			q(29664, {	-- The Challenger's Fires
@@ -1381,7 +1381,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 						-- Monks got the staff initially, replaced with fist weapons in legion, then back to staff in shadowlands.
 					}),
 					i(73210, {	-- Trainee's Sword
-						timeline = { ADDED_5_0_4, REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 						classes = { WARRIOR },
 						-- Warriors no longer get access to the sword with shadowlands as they are forced into Protection spec.
 					}),

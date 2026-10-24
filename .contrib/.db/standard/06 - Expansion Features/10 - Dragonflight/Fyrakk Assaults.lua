@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					i(200453),	-- Iskaara Tuskarr Insignia [Rare]
 					i(200454),	-- Maruuk Centaur Insignia [Rare]
 					i(204076, {	-- Drake's Shadowflame Crest Fragments
-						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 					}),
 					n(BACK, {
 						i(204897),	-- Suffused Cloak

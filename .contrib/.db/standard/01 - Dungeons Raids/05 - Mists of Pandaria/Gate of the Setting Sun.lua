@@ -72,13 +72,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80920, {	-- Fallout Filter
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80934, {	-- Pendant of Precise Timing
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80921, {	-- Saboteur's Stabilizing Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -104,13 +104,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80924, {	-- Acid-Scarred Spaulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80923, {	-- Impaler's Girdle
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80922, {	-- Airstream Treads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -136,13 +136,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80933, {	-- Mantid Trochanter
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80925, {	-- Swarmcall Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80926, {	-- Leggings of the Frenzy
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -186,22 +186,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80932, {	-- Carapace Breaker
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80931, {	-- Shield of the Protectorate
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80930, {	-- Swarmbringer Chestguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80927, {	-- Hive Protector's Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80929, {	-- Wall-Breaker Legguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80928, {	-- Treads of Fixation
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -233,19 +233,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81104, {	-- Fallout-Filtering Hood
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81095, {	-- Pendant of Precise Timing
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81190, {	-- Grenadier's Belt
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81090, {	-- Saboteur's Stablizing Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81191, {	-- Pulled Grenade Pin
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -271,19 +271,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81098, {	-- Acid-Scarred Spaulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81229, {	-- Bomber's Precision Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81085, {	-- Impaler's Girdle
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81111, {	-- Airstream Treads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81192, {	-- Vision of the Predator
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -309,19 +309,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81088, {	-- Mantid Trochanter
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81105, {	-- Swarmcall Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81230, {	-- Ri'mok's Shattered Scale
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81106, {	-- Leggings of the Frenzy
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81232, {	-- Viscous Ring
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -367,43 +367,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(87546, {	-- Klatith, Fangs of the Swarm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81094, {	-- Carapace Breaker
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81233, {	-- Impervious Carapace
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81097, {	-- Shield of the Protectorate
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81234, {	-- Drape of the Screeching Swarm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81235, {	-- Shoulders of Engulfing Winds
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81109, {	-- Swarmbringer Chestguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81236, {	-- Frenzyswarm Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81100, {	-- Hive Protector's Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81091, {	-- Wall-Breaker Legguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81112, {	-- Treads of Fixation
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					challengemaster(ach(8434, {	-- Challenge Master: Gate of the Setting Sun
 						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },

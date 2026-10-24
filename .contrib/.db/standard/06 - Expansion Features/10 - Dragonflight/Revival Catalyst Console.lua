@@ -2222,7 +2222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					-- "Off Slots" use old IDs of original items - main source in Catalyst of previous tiers/raids (new "Off Slot" IDs are NYI)
 					d(DIFFICULTY.RAID.LFR, {
 						description = "",
-						timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 4 }, {
 							cl(DEATHKNIGHT, {
 								sym = {{"select","modItemID",
@@ -2736,7 +2736,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					-- #endif
 					d(DIFFICULTY.RAID.HEROIC, {
 						description = "",
-						timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 5 }, {
 							cl(DEATHKNIGHT, {
 								sym = {{"select","modItemID",
@@ -2937,7 +2937,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					d(DIFFICULTY.RAID.MYTHIC, {
 						description = "",
-						timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 6 }, {
 							cl(DEATHKNIGHT, {
 								sym = {{"select","modItemID",
@@ -4216,7 +4216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				q(72360, {	-- Reviving the Machine
 					provider = { "n", 191369 },	-- Watcher Koranos
 					coord = { 54.6, 41.3, VALDRAKKEN },
-					timeline = { ADDED_10_0_5, REMOVED_10_1_0 },
+					timeline = { REMOVED_10_1_0 },
 				}),
 				q(72528, {	-- Revival Catalyst
 					sourceQuests = { 72360 },	-- Reviving the Machine
@@ -4228,7 +4228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						{ 60.6, 53.8, THALDRASZUS },
 						{ 58.5, 57.6, VALDRAKKEN },
 					},
-					timeline = { ADDED_10_0_5, REMOVED_10_1_0 },
+					timeline = { REMOVED_10_1_0 },
 					isWeekly = true,
 					groups = {
 						i(202002),	-- Enlightened Renascence (QI!)

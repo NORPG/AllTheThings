@@ -147,7 +147,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			coord = { 6.7, 33.9, NERUBAR },
 			groups = {
 				n(ACHIEVEMENTS, {
-					timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+					timeline = { REMOVED_11_1_0_SEASONSTART },
 					groups = {
 						ach(40431, {	-- Hunting the Hunter
 							title(560),	-- <Name> Ascension Breaker
@@ -173,7 +173,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 					q(83752, {	-- Threats of Zekvir
 						provider = { "n", 227492 },	-- Brann Bronzebeard
 						coord = { 46.2, 48.0, THE_RINGING_DEEPS },
-						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
+						timeline = { REMOVED_11_1_0_SEASONSTART },
 					}),
 				}),
 				n(221427, {	-- Zekvir
@@ -215,7 +215,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			maps = { 2426 },
 			groups = {
 				n(ACHIEVEMENTS, {
-					timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+					timeline = { REMOVED_11_2_0_SEASONSTART },
 					groups = {
 						ach(41529, {	-- Breaking the Bank
 							title(612),	-- <Name>, the Real Deal
@@ -261,7 +261,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 				cr = 245938,	-- Flickergate
 			})),
 			ach(42801, {	-- Journey's End (Season 3)
-				timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+				timeline = { REMOVED_12_0_1_LAUNCH },
 				groups = {
 					title(638, {	-- <Name> the Delver Within
 						timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
@@ -288,7 +288,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			maps = { DELVE_ETHEREAL_KYVEZA },
 			groups = {
 				n(ACHIEVEMENTS, {
-					timeline = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
+					timeline = { REMOVED_12_0_1_LAUNCH },
 					groups = {
 						ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
 							timeline = { REMOVED_12_0_0 },
@@ -1740,7 +1740,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 	})),
 	n(FACTIONS, {
 		faction(2640),	-- Brann Bronzebeard
-		faction(2644, {timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART }}),	-- Delves: Season 1
+		faction(2644, {timeline = { REMOVED_11_1_0_SEASONSTART }}),	-- Delves: Season 1
 		faction(2683, {timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Delves: Season 2
 		faction(2722, {timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH }}),	-- Delves: Season 3
 	}),

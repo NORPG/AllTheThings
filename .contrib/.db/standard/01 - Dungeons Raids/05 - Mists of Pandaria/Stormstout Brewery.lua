@@ -112,13 +112,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80892, {	-- Ook's Hozen Slicer
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80896, {	-- Nimbletoe Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80897, {	-- Bracers of Displaced Air
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -144,13 +144,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80893, {	-- Bottle of Potent Potables
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80899, {	-- Bubble-Breaker Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80898, {	-- Hopping Mad Leggings
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -194,22 +194,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80894, {	-- Gao's Keg Tapper
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80895, {	-- Yan-Zhu's Pressure Valve
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80900, {	-- Fizzy Spaulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80902, {	-- Uncasked Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80903, {	-- Fermenting Belt
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80901, {	-- Sudsy Legplates
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -241,19 +241,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81061, {	-- Ook's Hozen Slicer
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81080, {	-- Nimbletoe Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81064, {	-- Bracers of Displaced Air
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81134, {	-- Barreldodger Boots
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81133, {	-- Empty Fruit Barrel
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -279,19 +279,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81076, {	-- Bottle of Potent Potables
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81136, {	-- Cloak of Hidden Flasks
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81065, {	-- Bubble-Breaker Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81135, {	-- Belt of Brazen Inebriation
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81077, {	-- Hopping Mad Leggings
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -337,40 +337,40 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81062, {	-- Gao's Keg Tapper
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81140, {	-- Wort Stirring Rod
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81066, {	-- Yan-Zhu's Pressure Valve
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81068, {	-- Fizzy Spaulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81081, {	-- Uncasked Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81059, {	-- Fermenting Belt
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81078, {	-- Sudsy Legplates
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81141, {	-- Alemental Seal
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81139, {	-- Lime-Rimmed Signet
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81138, {	-- Carbonic Carbuncle
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					challengemaster(ach(8431, {	-- Challenge Master: Stormstout Brewery
 						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },

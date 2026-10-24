@@ -379,7 +379,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				OnUpdate = SEASONONE_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				timeline = { ADDED_2_0_1, REMOVED_2_1_2 },
+				timeline = { REMOVED_2_1_2 },
 				groups = {
 					ach(886, {	-- Swift Nether Drake
 						provider = { "i", 30609 },	-- Swift Nether Drake
@@ -1020,7 +1020,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				OnUpdate = MERCILESS_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				timeline = { ADDED_2_1_2, REMOVED_2_3_0 },
+				timeline = { REMOVED_2_3_0 },
 				groups = {
 					ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 						title(37),	-- Merciless Gladiator <Name>
@@ -1355,7 +1355,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				OnUpdate = VENGEFUL_GLADIATOR_ONUPDATE,
 				-- #endif
 			}, {
-				timeline = { ADDED_2_3_0, REMOVED_2_4_3 },
+				timeline = { REMOVED_2_4_3 },
 				groups = {
 					ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 						title(40),	-- Vengeful Gladiator <Name>
@@ -1717,7 +1717,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(exp
 				OnUpdate = BRUTAL_GLADIATOR_ONUPDATE,
 				-- #endif
 			},{
-				timeline = { ADDED_2_4_3, REMOVED_3_0_2 },
+				timeline = { REMOVED_3_0_2 },
 				groups = {
 					ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 						title(49),	-- Brutal Gladiator <Name>

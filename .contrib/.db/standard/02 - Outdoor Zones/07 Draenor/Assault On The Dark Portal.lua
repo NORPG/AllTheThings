@@ -426,19 +426,19 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 					q(35253),	-- FLAG: Thaelin Event Complete - triggers during "Onslaught's End" when door to Teron'gor is opened
 					q(36211, {	-- 6.0 Tanaan - Boots Bootstrap
 						name = "6.0 Tanaan - Boots Bootstrap",
-						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 					q(36214, {	-- 6.0 Tanaan - Hands Bootstrap
 						name = "6.0 Tanaan - Hands Bootstrap",
-						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 					q(36212, {	-- 6.0 Tanaan - Wrist Bootstrap
 						name = "6.0 Tanaan - Wrist Bootstrap",
-						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 					q(36213, {	-- 6.0 Tanaan - Ring Bootstrap
 						name = "6.0 Tanaan - Ring Bootstrap",
-						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 			},

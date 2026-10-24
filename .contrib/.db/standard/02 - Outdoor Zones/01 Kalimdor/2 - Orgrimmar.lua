@@ -1173,10 +1173,10 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				groups = {
 					i(56708, {	-- Bow of Ire (old version)
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(56710, {	-- Unbountied Cloak (Replaced by Durak's Downfall in WoD)
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(119325, {	-- Bow of Ire
 						timeline = { ADDED_6_0_2 },
@@ -2164,7 +2164,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(63915),	-- Vision-Tainted Treads
 					-- #if BEFORE 9.1.0
 					i(63917, {	-- Truthbreaker Shield [Not listed, but awards on completing quest] [9.1: was NOT received when completed. 2021-09-25]
-						timeline = { ADDED_4_0_3, REMOVED_9_1_0 },
+						timeline = { REMOVED_9_1_0 },
 						-- Crieve NOTE: This appears to have been an Alliance quest reward in SW.
 					}),
 					-- #endif

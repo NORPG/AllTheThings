@@ -187,7 +187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(56421),	-- Seedling Pod
 						-- #if BEFORE MOP
 						i(56420, {	-- Slashing Thorns
-							timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},

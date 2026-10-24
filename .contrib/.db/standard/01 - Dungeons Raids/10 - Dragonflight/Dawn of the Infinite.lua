@@ -922,7 +922,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
-						timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 						groups = {
 							title(514),	-- <Name> of the Infinite
 							crit(60810, {	-- Chronikar
@@ -1019,7 +1019,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
-						timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 						groups = {
 							title(514),	-- <Name> of the Infinite
 							crit(60810, {	-- Chronikar

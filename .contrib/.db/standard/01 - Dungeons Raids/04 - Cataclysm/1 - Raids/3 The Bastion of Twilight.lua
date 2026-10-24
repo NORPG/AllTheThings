@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(60210),	-- Crossfire Carbine
 				-- #if BEFORE MOP
 				i(68608, {	-- Dragonwreck Throwing Axe
-					timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(59901),	-- Heaving Plates of Protection

@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					filter(RECIPES, {
 						i(35305),	-- Design: Brilliant Living Ruby (RECIPE!) [BoP]
 						i(35306, {	-- Design: Delicate Living Ruby (RECIPE!) [BoP]
-							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Star of Elune (RECIPE!) [BoP]
 						i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]
@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					filter(RECIPES, {
 						-- #if BEFORE CATA
 						i(35306, {	-- Design: Bright Living Ruby (RECIPE!) [BoP]
-							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Dawnstone (RECIPE!) [BoP]
 						i(35305),	-- Design: Runed Living Ruby (RECIPE!) [BoP]
@@ -278,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						-- #else
 						i(35305),	-- Design: Brilliant Living Ruby (RECIPE!) [BoP]
 						i(35306, {	-- Design: Delicate Living Ruby (RECIPE!) [BoP]
-							timeline = { ADDED_2_4_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 						}),
 						i(35307),	-- Design: Rigid Star of Elune (RECIPE!) [BoP]
 						i(35304),	-- Design: Solid Star of Elune (RECIPE!) [BoP]

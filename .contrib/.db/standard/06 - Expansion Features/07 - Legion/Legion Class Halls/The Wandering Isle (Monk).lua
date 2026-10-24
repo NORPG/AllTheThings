@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuests = { 40793 },	-- A Matter of Planning
 							provider = { "n", 100438 },	-- Iron-Body Ponshu
 							coord = { 51.4, 48.5, THE_WANDERING_ISLE },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						-- Start Zone
 						q(40795, {	-- The Fight Begins
@@ -832,7 +832,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43881, {	-- Hitting the Books
 							provider = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 							coord = { 46.8, 46.8, THE_WANDERING_ISLE },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46144, {	-- Knowledge is Power
 							sourceQuest = 43881,	-- Hitting the Books

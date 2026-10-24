@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78386),	-- Pillarfoot Greaves
 							-- #if BEFORE MOP
 							i(78374, {	-- Razor Saronite Chip
-								timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						})),
@@ -656,7 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(77265),	-- Pillarfoot Greaves
 						-- #if BEFORE MOP
 						i(77213, {	-- Razor Saronite Chip
-							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					})),
@@ -808,7 +808,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78361),	-- Pillarfoot Greaves
 						-- #if BEFORE MOP
 						i(78369, {	-- Razor Saronite Chip
-							timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					})),

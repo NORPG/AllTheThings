@@ -673,7 +673,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					i(67221),	-- Breastplate of the Poetic Orc
 					-- #if BEFORE MOP
 					i(67228, {	-- Jadrag's Slicers
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},

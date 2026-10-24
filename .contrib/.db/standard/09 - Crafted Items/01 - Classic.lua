@@ -1777,25 +1777,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if BEFORE BFA
 			i(38895),	-- Enchant Cloak - Dodge
 			-- #endif
-			i(38815, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Fire Resistance
+			i(38815, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Fire Resistance
 			i(38825),	-- Enchant Cloak - Greater Defense
-			i(38891, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Fire Resistance
-			i(38892, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Nature Resistance
-			i(38858, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Resistance
+			i(38891, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Fire Resistance
+			i(38892, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Nature Resistance
+			i(38858, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Resistance
 			i(38835, {timeline = { ADDED_3_0_2, REMOVED_4_0_3, ADDED_4_2_0 }}),	-- Enchant Cloak - Lesser Agility
-			i(38784, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Lesser Fire Resistance
+			i(38784, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Lesser Fire Resistance
 			i(38790),	-- Enchant Cloak - Lesser Protection
-			i(38795, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Lesser Shadow Resistance
+			i(38795, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Lesser Shadow Resistance
 			i(38789),	-- Enchant Cloak - Minor Agility
 			i(38775),	-- Enchant Cloak - Minor Protection
-			i(38770, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Minor Resistance
-			i(38826, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Resistance
+			i(38770, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Minor Resistance
+			i(38826, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Resistance
 			-- #if BEFORE BFA
 			i(38893),	-- Enchant Cloak - Stealth
 			i(38894),	-- Enchant Cloak - Subtlety
 			-- #endif
 			i(38859),	-- Enchant Cloak - Superior Defense
-			i(38834, {timeline = { ADDED_3_0_2, REMOVED_4_0_3 }}),	-- Enchant Gloves - Advanced Herbalism
+			i(38834, {timeline = { REMOVED_4_0_3 }}),	-- Enchant Gloves - Advanced Herbalism
 			i(38831),	-- Enchant Gloves - Advanced Mining
 			i(38827),	-- Enchant Gloves - Agility
 			i(38888),	-- Enchant Gloves - Fire Power
@@ -1897,7 +1897,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, n(WEAPON_ENCHANTMENTS, sharedDataSelf({ timeline = { ADDED_3_0_2 } }, {
-			i(38843, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Shield - Frost Resistance
+			i(38843, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Shield - Frost Resistance
 			i(38861),	-- Enchant Shield - Greater Stamina
 			i(38839),	-- Enchant Shield - Greater Versatility / WRATH: Enchant Shield - Greater Spirit
 			i(38820),	-- Enchant Shield - Lesser Parry / WRATH: Enchant Shield - Lesser Block
@@ -1935,7 +1935,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(38877),	-- Enchant Weapon - Spellpower
 			i(38879),	-- Enchant Weapon - Strength
 			i(38821),	-- Enchant Weapon - Striking
-			i(38869, {timeline = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Enchant 2H Weapon - Superior Impact
+			i(38869, {timeline = {REMOVED_6_0_2}}),	-- Enchant 2H Weapon - Superior Impact
 			i(38870),	-- Enchant Weapon - Superior Striking
 			i(38872),	-- Enchant Weapon - Unholy Weapon
 			i(38876),	-- Enchant Weapon - Winter's Might

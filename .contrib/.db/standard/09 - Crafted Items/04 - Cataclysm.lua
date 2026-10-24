@@ -77,7 +77,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(58092),	-- Elixir of the Cobra
 			i(58148),	-- Elixir of the Master
 			i(58089),	-- Elixir of the Naga
-			i(58149, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Flask of Enhancement
+			i(58149, {timeline = {REMOVED_5_0_4}}),	-- Flask of Enhancement
 			i(67438),	-- Flask of Flowing Water
 			i(58085),	-- Flask of Steelskin
 			i(58086),	-- Flask of the Draconic Mind
@@ -268,7 +268,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		filter(MISC, {
 			i(55054),	-- Ebonsteel Belt Buckle
 			i(65365),	-- Folded Obsidium
-			i(65358, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Elementium Rod
+			i(65358, {timeline = {REMOVED_5_0_4}}),	-- Elementium Rod
 			i(55055),	-- Elementium Shield Spike
 			i(55053),	-- Obsidium Skeleton Key
 			i(55056),	-- Pyrium Shield Spike
@@ -464,7 +464,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			},
 		}),
 		filter(MISC, {
-			i(52723, {timeline = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Runed Elementium Rod
+			i(52723, {timeline = {REMOVED_5_0_4}}),	-- Runed Elementium Rod
 		}),
 		n(WEAPON_ENCHANTMENTS, {
 			i(52768),	-- Enchant Off-Hand - Superior Intellect

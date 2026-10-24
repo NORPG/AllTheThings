@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					currency(241),	-- Champion's Seal
 					-- #if BEFORE CATA
 					currency(301, {	-- Emblem of Triumph
-						timeline = { ADDED_3_2_0, REMOVED_4_0_1 },
+						timeline = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				}),
@@ -632,7 +632,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					currency(241),	-- Champion's Seal
 					-- #if BEFORE CATA
 					currency(301, {	-- Emblem of Triumph
-						timeline = { ADDED_3_2_0, REMOVED_4_0_1 },
+						timeline = { REMOVED_4_0_1 },
 					}),
 					-- #endif
 				}),

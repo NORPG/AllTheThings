@@ -92,13 +92,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80860, {	-- Waterburst Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80861, {	-- Riverbed Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80862, {	-- Treads of Corrupted Water
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -124,13 +124,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80864, {	-- Girdle of Endemic Anger
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80865, {	-- Sunheart Waistband
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80863, {	-- Stonestep Boots
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -156,13 +156,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80872, {	-- Firebelcher Hand Cannon
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80867, {	-- Serpentstrike Shoulderpads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80866, {	-- Cape of Entanglement
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -206,22 +206,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(80873, {	-- Dubious Handaxe
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80874, {	-- Staff of Trembling Will
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80868, {	-- Doubtridden Shoulderguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80871, {	-- Neverdare Shoulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80870, {	-- Chestguard of Despair
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80869, {	-- Hopecrusher Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -250,19 +250,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81075, {	-- Waterburst Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81123, {	-- Wind-Soaked Drape
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81083, {	-- Riverbed Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81072, {	-- Treads of Corrupted Water
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81124, {	-- Crystallized Droplet
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -288,19 +288,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81058, {	-- Girdle of Endemic Anger
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81060, {	-- Sunheart Waistband
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81126, {	-- Leggings of Whispered Dreams
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81073, {	-- Stonestep Boots
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81125, {	-- Windswept Pages
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -326,19 +326,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81067, {	-- Firebelcher Hand Cannon
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81070, {	-- Serpentstrike Shoulderpads
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81084, {	-- Cape of Entanglement
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81127, {	-- Flameheart Sandals
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81128, {	-- Signet of Dancing Jade
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -386,43 +386,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(87544, {	-- Je'lyu, Spirit of the Serpent
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81063, {	-- Dubious Handaxe
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81079, {	-- Staff of Trembling Will
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81131, {	-- Mindbreaker Pendant
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81071, {	-- Doubtridden Shoulderguards
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81129, {	-- Cloak of Failing Will
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81069, {	-- Neverdare Shoulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81082, {	-- Chestguard of Despair
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81074, {	-- Hopecrusher Gauntlets
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81132, {	-- Paralyzing Gloves
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81130, {	-- Binding of Broken Dreams
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					challengemaster(ach(8430, {	-- Challenge Master: Temple of the Jade Serpent
 						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },

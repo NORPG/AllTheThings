@@ -308,7 +308,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 							41070,	-- Spoils of Victory (Altruis)
 							41062,	-- Spoils of Victory (Kayn)
 						},
-						timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 					}),
 					-- confirmed/sourced
 					q(42810, {	-- A Final Offer
@@ -500,7 +500,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						sourceQuests = { 44694 },	-- One Battle at a Time
 						provider = { "n", 98648 },	-- Allari the Souleater
 						coord = { 55.6, 50.1, 721 },
-						timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+						timeline = { REMOVED_8_0_1 },
 						lvl = 110,
 					}),
 					q(42787, {	-- Deal With It Personally

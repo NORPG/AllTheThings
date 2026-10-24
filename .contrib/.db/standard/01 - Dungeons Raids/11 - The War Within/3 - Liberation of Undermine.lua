@@ -686,7 +686,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_UNDERMINE_CREST, {
-						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { REMOVED_11_2_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2780, {	-- Shock and Awesome
@@ -775,7 +775,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_UNDERMINE_CREST, {
-						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -814,13 +814,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
 				BossOnly(GALLYWIX, {
-					ach(41298, {timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
+					ach(41298, {timeline = { REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_UNDERMINE_CREST, {
-						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -849,7 +849,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_UNDERMINE_CREST, {
-						timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+						timeline = { REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -885,7 +885,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					ach(41236, {	-- Mythic: Chrome King Gallywix
 						title(605),	-- <Name>, Liberator of Undermine
 					}),
-					ach(41297, {timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
+					ach(41297, {timeline = { REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
 					ach(41296, applyDataSelf({timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {	-- Hall of Fame: Chrome King Gallywix
 						title(604),	-- <Name>, Famed Slayer of The Chrome King
 					})),

@@ -566,7 +566,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			ach(1292, {	-- Yellow Brewfest Stein [Removed]
 				provider = { "i", 32912 },	-- Yellow Brewfest Stein
-				timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+				timeline = { REMOVED_2_4_3 },
 			}),
 		}),
 		n(BREWFEST_BANQUET, {
@@ -1037,25 +1037,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				-- #else
 				i(37597, {	-- Direbrew's Shanker [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(37128, {	-- Balebrew Charm [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(37127, {	-- Brightbrew Charm [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(38289, {	-- Coren's Lucky Coin [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(38290, {	-- Dark Iron Smoking Pipe [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(38288, {	-- Direbrew Hops [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				i(38287, {	-- Empty Mug of Direbrew [Level 70]
-					timeline = { ADDED_2_2_2, REMOVED_3_0_2 },
+					timeline = { REMOVED_3_0_2 },
 				}),
 				-- #endif
 				i(38280, {	-- Direbrew's Dire Brew (Alliance)
@@ -1338,7 +1338,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 49.0, 39.8, DUN_MOROGH },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_11_2_0 },
+					timeline = { REMOVED_11_2_0 },
 					maps = { IRONFORGE },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
@@ -1369,7 +1369,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 44.4, 17.9, DUROTAR },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_11_2_0 },
+					timeline = { REMOVED_11_2_0 },
 					maps = { ORGRIMMAR },
 					races = HORDE_ONLY,
 					isDaily = true,
@@ -1400,7 +1400,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 49.5, 38.7, DUN_MOROGH },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_11_2_0 },
+					timeline = { REMOVED_11_2_0 },
 					maps = { IRONFORGE },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
@@ -1431,7 +1431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 44.4, 17.9, DUROTAR },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_11_2_0 },
+					timeline = { REMOVED_11_2_0 },
 					maps = { ORGRIMMAR },
 					races = HORDE_ONLY,
 					isDaily = true,
@@ -1952,7 +1952,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 46.4, 40.3, DUN_MOROGH },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+					timeline = { REMOVED_2_4_3 },
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = ALLIANCE_ONLY,
 					groups = {
@@ -1971,7 +1971,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 46.3, 14.8, DUROTAR },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+					timeline = { REMOVED_2_4_3 },
 					provider = { "i", 33955 },	-- Brewfest Stein Voucher
 					races = HORDE_ONLY,
 					groups = {
@@ -2248,14 +2248,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 44.3, 17.5, DUROTAR },
 						{ 48.1, 39.1, DUN_MOROGH },
 					},
-					timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+					timeline = { REMOVED_2_4_3 },
 					maps = { BLACKROCK_DEPTHS },
 					lvl = lvlsquish(48, 48, 48),
 				}),
 				q(11486, {	-- The Best of Brews (A)
 					sourceQuest = 11454,	-- Seek the Saboteurs
 					qg = 23872,	-- Coren Direbrew
-					timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+					timeline = { REMOVED_2_4_3 },
 					maps = { BLACKROCK_DEPTHS },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(48, 48, 48),
@@ -2266,7 +2266,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				q(11487, {	-- The Best of Brews (H)
 					sourceQuest = 11454,	-- Seek the Saboteurs
 					qg = 23872,	-- Coren Direbrew
-					timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+					timeline = { REMOVED_2_4_3 },
 					maps = { BLACKROCK_DEPTHS },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(48, 48, 48),
@@ -2338,7 +2338,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 47.5, 39.8, DUN_MOROGH },
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_8_2_0 },
+					timeline = { REMOVED_8_2_0 },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 					groups = appendGroups(BREWFEST_TOKEN, {
@@ -2356,7 +2356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						{ 40.7, 17.4, DUROTAR },	-- TODO: Get accurate coordinates for TBC
 						-- #endif
 					},
-					timeline = { ADDED_2_2_2, REMOVED_8_2_0 },
+					timeline = { REMOVED_8_2_0 },
 					races = HORDE_ONLY,
 					isDaily = true,
 					groups = appendGroups(BREWFEST_TOKEN, {
@@ -2470,7 +2470,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			fillstein(i(32912, {	-- Yellow Brewfest Stein
 				lore = "This stein was the reward from the 2007 Brewfest.",
-				timeline = { ADDED_2_2_2, REMOVED_2_4_3 },
+				timeline = { REMOVED_2_4_3 },
 				OnInit = OnInitForStein(20403),
 				groups = {
 					i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]

@@ -1406,7 +1406,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 					i(64556),	-- Petting Gloves
 					-- #if BEFORE MOP
 					i(64555, {	-- Kibler's Fetch Toy
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(66080),	-- Tiny Flamefly (PET!)
@@ -1561,7 +1561,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 					i(64552),	-- Belly Rubbers
 					-- #if BEFORE MOP
 					i(64551, {	-- Winky's Star
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(66080),	-- Tiny Flamefly (PET!)

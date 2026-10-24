@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				}),
 				ach(11752, {timeline = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
 				ach(4078, {	-- Realm First! Grand Crusader
-					timeline = { ADDED_3_2_0, REMOVED_3_2_2 },
+					timeline = { REMOVED_3_2_2 },
 					groups = {
 						title(135, {	-- Grand Crusader <Name>
 							timeline = { ADDED_3_2_0, REMOVED_3_2_2 },
@@ -479,7 +479,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Hellscream's Battlegear (657)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								-- DPS
@@ -501,7 +501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PALADIN, {	-- Liadrin's Plate (707)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								-- DPS
@@ -530,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(HUNTER, {	-- Windrunner's Pursuit (738)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								i(48267),	-- Windrunner's Headpiece of Triumph
@@ -541,7 +541,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(ROGUE, {		-- Garona's Battlegear (691)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								i(48235),	-- Garona's Helmet of Triumph
@@ -552,7 +552,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PRIEST, {	-- Zabra's Regalia (350)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								-- DPS
@@ -573,7 +573,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(SHAMAN, {	-- Thrall's Garb (641)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								-- Elemental
@@ -602,7 +602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(MAGE, {		-- Sunstrider's Regalia (723)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								i(47764),	-- Sunstrider's Hood of Triumph
@@ -613,7 +613,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(WARLOCK, {	-- Gul'dan's Regalia (675)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								i(47796),	-- Gul'dan's Hood of Triumph
@@ -624,7 +624,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DRUID, {		-- Runetotem's Battlegear (826)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								-- Boomkin
@@ -653,7 +653,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DEATHKNIGHT, {	-- Koltira's Battlegear (841)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								-- DPS
@@ -683,7 +683,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- TODO: Finish sorting this.
 						cl(WARRIOR, {	-- Wrynn's Battlegear (658)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								-- DPS
@@ -705,7 +705,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PALADIN, {	-- Turalyon's Garb (706)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								-- DPS
@@ -734,7 +734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(HUNTER, {	-- Windrunner's Battlegear (739)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								i(48262),	-- Windrunner's Headpiece of Triumph
@@ -745,7 +745,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(ROGUE, {		-- VanCleef's Battlegear (690)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								i(48230),	-- VanCleef's Helmet of Triumph
@@ -756,7 +756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(PRIEST, {	-- Velen's Regalia (349)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								-- DPS
@@ -777,7 +777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(SHAMAN, {	-- Nobundo's Plate (640)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47558, 1 } },	-- Regalia of the Grand Protector
 							groups = {
 								-- Elemental
@@ -807,7 +807,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(MAGE, {		-- Khadgar's Regalia (722)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								i(47761),	-- Khadgar's Hood of Triumph
@@ -818,7 +818,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(WARLOCK, {	-- Kel'Thuzad's Regalia (674)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47557, 1 } },	-- Regalia of the Grand Conqueror
 							groups = {
 								i(47788),	-- Kel'Thuzad's Gloves of Triumph
@@ -829,7 +829,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DRUID, {		-- Malfurion's Battlegear (825)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								-- Boomkin
@@ -858,7 +858,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						cl(DEATHKNIGHT, {	-- Thassarian's Battlegear (842)
-							timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+							timeline = { REMOVED_4_0_3 },
 							cost = { { "i", 47559, 1 } },	-- Regalia of the Grand Vanquisher
 							groups = {
 								-- DPS
@@ -1839,7 +1839,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						Drape of Bitter Incantation	Back, Caster	Drape of the Sunreavers
 						Shawl of Fervent Crusader	Back, Caster	Shawl of the Devout Crusader
 					]]--
-					timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 					groups = {
 						ach(4080, {	-- A Tribute to Dedicated Insanity
 							title(136),	-- the Argent Defender
@@ -2409,7 +2409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						Varian's Furor	Back, DPS	Garrosh's Rage
 						Vereesa's Dexterity	Back, DPS	Sylvanas' Cunning
 					]]--
-					timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
+					timeline = { REMOVED_4_0_3 },
 					groups = {
 						i(47557),	-- Regalia of the Grand Conqueror
 						i(47558),	-- Regalia of the Grand Protector

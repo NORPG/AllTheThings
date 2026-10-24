@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(ROTMIRE, {
 					ach(63237),	-- Rotmire
 					ach(63242),	-- Rotmire Guild Run
-					i(275228, {timeline = { ADDED_12_0_7, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Rotmire
+					i(275228, {timeline = { REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Rotmire
 					i(247235),	-- Luminous Rotshroom (DECOR!)
 					i(264313),	-- Madcap Redcap (TOY!)
 					i(264367),	-- Mycomancer's Hearthspore (TOY!)
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				--ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3215, {	-- Sporefall
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						timeline = { ADDED_12_0_7, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				--ZoneDrops({}),

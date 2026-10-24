@@ -1301,7 +1301,7 @@ maproot(KALIMDOR, FELWOOD, {
 					i(65302),	-- Farlus' Staff
 					-- #if BEFORE MOP
 					i(65321, {	-- Stars of Felwood
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},

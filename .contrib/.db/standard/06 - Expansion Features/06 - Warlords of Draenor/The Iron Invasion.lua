@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						36941,	-- Report to the King
 						36940,	-- Warning Orgrimmar
 					},
-					timeline = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+					timeline = { REMOVED_6_0_3_LAUNCH },
 					groups = {
 						title(289, {		-- <Name> of the Iron Vanguard
 							timeline = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
@@ -258,12 +258,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					races = HORDE_ONLY,
 				}),
 				warchiefscommand(q(36499, {	-- Iron Horde Invasion (LEGACY - pre WoD)
-					timeline = { ADDED_6_0_2, REMOVED_6_0_3 },
+					timeline = { REMOVED_6_0_3 },
 					races = HORDE_ONLY,
 					isBreadcrumb = true,
 				})),
 				heroscall(q(36498, {	-- Iron Horde Invasion
-					timeline = { ADDED_6_0_2, REMOVED_6_0_3 },
+					timeline = { REMOVED_6_0_3 },
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				})),

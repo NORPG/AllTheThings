@@ -46,7 +46,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 				timeline = { ADDED_9_1_5 },
 				groups = {
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
-						timeline = { ADDED_9_1_5, REMOVED_9_2_0 },
+						timeline = { REMOVED_9_2_0 },
 						cost = { { "c", CONQUEST, 375 } },
 						-- #IF BEFORE 9.2.0
 						skipFill = true,
@@ -73,7 +73,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 						-- #ENDIF
 					}),
 					i(188173, {	-- Valorous Equipment Cache [M+ S2]
-						timeline = { ADDED_9_1_5, REMOVED_9_2_0 },
+						timeline = { REMOVED_9_2_0 },
 						cost = { { "c", VALOR, 500 } },
 						-- #IF BEFORE 9.2.0
 						skipFill = true,
@@ -310,17 +310,17 @@ maproot(SHADOWLANDS, ORIBOS, {
 						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
 					i(185832, {	-- Shipment of Elethium Ore
-						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+						timeline = { REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(171833) },	-- Elethium Ore
 					}),
 					i(185765, {	-- Shipment of Heavy Callous Hide
-						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+						timeline = { REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(172097) },	-- Heavy Callous Hide
 					}),
 					i(185833, {	-- Shipment of Lightless Silk
-						timeline = { ADDED_9_0_5, REMOVED_10_0_2_LAUNCH },
+						timeline = { REMOVED_10_0_2_LAUNCH },
 						cost = { { "c", VALOR, 750 } },
 						groups = { i(173204) },	-- Lightless Silk
 					}),

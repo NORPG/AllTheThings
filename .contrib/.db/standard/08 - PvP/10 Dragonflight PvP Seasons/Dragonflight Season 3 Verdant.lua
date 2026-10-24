@@ -55,7 +55,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				ach(19276, { timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }),	-- Verdant Vogue
 			})),
 			filter(MOUNTS, {
-				timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				timeline = { REMOVED_10_2_6_SEASON_FOUR },
 				groups = {
 					i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
 						races = ALLIANCE_ONLY,

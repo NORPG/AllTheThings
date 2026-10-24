@@ -1113,21 +1113,21 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 59583 },	-- Welcome to Stormwind
 				provider = { "n", 163095 },	-- Lindie Springstock
 				coord = { 70.1, 85.3, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(58909, {	-- License to Ride [A]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163007 },	-- Curly
 				coord = { 77.3, 67.0, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_10_1_5 },
+				timeline = { REMOVED_10_1_5 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(58910, {	-- What's Your Specialty? [A] [Druid]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { DRUID },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1135,7 +1135,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { HUNTER },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1143,7 +1143,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { MAGE },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1151,7 +1151,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { MONK },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1159,7 +1159,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { PALADIN },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1167,7 +1167,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { PRIEST },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1175,7 +1175,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { ROGUE },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1183,7 +1183,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { SHAMAN },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1191,7 +1191,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1199,7 +1199,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1219,14 +1219,14 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuestNumRequired = 1,
 				provider = { "n", 163097 },	-- Lindle Springstock
 				coord = { 79.0, 69.8, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(58912, {	-- An Urgent Meeting [A]
 				sourceQuests = { 58911 },	-- Home Is Where the Hearth Is [A]
 				provider = { "n", 163211 },	-- Henry Garrick
 				coord = { 75.3, 54.3, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_0_2 },
+				timeline = { REMOVED_11_0_2 },
 				races = ALLIANCE_ONLY,
 				customCollect = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 			}),
@@ -1235,7 +1235,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuest = 58912,	-- An Urgent Meeting [A]
 				qg = 163219,	-- Captain Garrick
 				coord = { 85.2, 32.1, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_0_2 },
+				timeline = { REMOVED_11_0_2 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(178941),	-- Alliance Dog Tags,
@@ -1245,7 +1245,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuest = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
 				qg = 165395,	-- Anduin Wrynn
 				coord = { 85.8, 31.6, STORMWIND_CITY },
-				timeline = { ADDED_9_0_1, REMOVED_11_0_2 },
+				timeline = { REMOVED_11_0_2 },
 				races = ALLIANCE_ONLY,
 			}),
 
@@ -1262,21 +1262,21 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60343 },	-- Welcome to Orgrimmar
 				provider = { "n", 168441 },	-- Cork Fizzlepop
 				coord = { 51.9, 85.4, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				races = HORDE_ONLY,
 			}),
 			q(60345, {	-- License to Ride
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168540 },	-- Rohaka Tuskmaul
 				coord = { 61.5, 32.9, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_10_1_5 },
+				timeline = { REMOVED_10_1_5 },
 				races = HORDE_ONLY,
 			}),
 			q(60346, {	-- What's Your Specialty? [H] [Druid]
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { DRUID },
 				races = HORDE_ONLY,
 			}),
@@ -1284,7 +1284,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { HUNTER },
 				races = HORDE_ONLY,
 			}),
@@ -1292,7 +1292,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { MAGE },
 				races = HORDE_ONLY,
 			}),
@@ -1300,7 +1300,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { MONK },
 				races = HORDE_ONLY,
 			}),
@@ -1308,7 +1308,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { PALADIN },
 				races = HORDE_ONLY,
 			}),
@@ -1316,7 +1316,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { PRIEST },
 				races = HORDE_ONLY,
 			}),
@@ -1324,7 +1324,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { ROGUE },
 				races = HORDE_ONLY,
 			}),
@@ -1332,7 +1332,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { SHAMAN },
 				races = HORDE_ONLY,
 			}),
@@ -1340,7 +1340,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
 			}),
@@ -1348,7 +1348,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60344 },	-- Finding Your Way [H]
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 61.5, 33.0, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				classes = { WARRIOR },
 				races = HORDE_ONLY,
 			}),
@@ -1368,7 +1368,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuestNumRequired = 1,
 				provider = { "n", 168545 },	-- Cork Fizzlepop
 				coord = { 73.6, 43.4, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_2_7 },
+				timeline = { REMOVED_11_2_7 },
 				races = HORDE_ONLY,
 			}),
 			----- The original ending of the questline where new players got funneled into BfA -----
@@ -1377,7 +1377,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuests = { 60359 },	-- Home Is Where the Hearth Is [H]
 				provider = { "n", 168771 },	-- Shuja Grimaxe
 				coord = { 70.9, 49.6, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_0_2 },
+				timeline = { REMOVED_11_0_2 },
 				races = HORDE_ONLY,
 				customCollect = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 			}),
@@ -1386,7 +1386,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				sourceQuest = 60360,	-- An Urgent Meeting
 				qg = 168431,	-- Warlord Breka Grimaxe
 				coord = { 48.3, 71.4, ORGRIMMAR },
-				timeline = { ADDED_9_0_1, REMOVED_11_0_2 },
+				timeline = { REMOVED_11_0_2 },
 				races = HORDE_ONLY,
 				groups = {
 					i(178942),	-- War-Chain of the Horde

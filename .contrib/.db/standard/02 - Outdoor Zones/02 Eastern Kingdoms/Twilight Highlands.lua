@@ -660,7 +660,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					i(63775),	-- Helm of Verdant Explosion
 					-- #if BEFORE MOP
 					i(63776, {	-- Exhausted Flashgrowth Mote
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -1203,7 +1203,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					}),
 					-- #if BEFORE MOP
 					i(63798, {	-- Winged Axe
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -1218,7 +1218,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					i(63793),	-- Shard-Heart Ring
 					-- #if BEFORE MOP
 					i(63795, {	-- Garona's Spare Star
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -1660,7 +1660,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					i(63892),	-- Beach-Sweeper Wand
 					-- #if BEFORE MOP
 					i(63891, {	-- Shore-Cleansing Standard
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -2177,7 +2177,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					i(63773),	-- Gatekeeper's Helm
 					-- #if BEFORE MOP
 					i(63772, {	-- Spearwarden's "Lucky" Charm
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -2206,7 +2206,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					i(63770),	-- Helm of Durable Hatred
 					-- #if BEFORE MOP
 					i(63769, {	-- Spearwarden's Unlucky Charm
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -3282,7 +3282,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(68810, {	-- Technique: Glyph of Colossus Smash
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 				},
 			}),
@@ -3439,7 +3439,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 				races = HORDE_ONLY,
 				groups = {
 					i(68810, {	-- Technique: Glyph of Colossus Smash
-						timeline = { ADDED_4_0_3, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 				},
 			}),

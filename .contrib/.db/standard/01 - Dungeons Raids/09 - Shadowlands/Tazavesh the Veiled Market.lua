@@ -453,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					groups = {
 						ach(15106),	-- Quality Control
 						i(185844, {	-- Ticking Sack of Terror
-							timeline = { ADDED_9_1_0 , REMOVED_9_2_0 },
+							timeline = { REMOVED_9_2_0 },
 						}),
 					},
 				}),
@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						ach(15185),	-- Mythic: Tazavesh, the Veiled Market Guild Run
 						ach(15652, {timeline = { ADDED_9_2_5 }}),	-- Mythic: So'leah's Gambit
 						i(185818, {	-- So'leah's Secret Technique
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
+							timeline = { REMOVED_9_2_0 },
 						}),
 						i(185047, {	-- Yak Soul (SS!)
 							description = "Drops on Hard Mode or M+.",
@@ -565,7 +565,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185811),	-- Package Protector
 						i(185807),	-- Pan-Dimensional Packing Cord
 						i(185844, {	-- Ticking Sack of Terror
-							timeline = { ADDED_9_1_0 , REMOVED_9_2_0 },
+							timeline = { REMOVED_9_2_0 },
 						}),
 						i(190652, {	-- Ticking Sack of Terror
 							timeline = { ADDED_9_2_0 },
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(185784),	-- Novaburst Warplate
 						i(185813),	-- Signet of Collapsing Stars
 						i(185818, {	-- So'leah's Secret Technique
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
+							timeline = { REMOVED_9_2_0 },
 						}),
 						i(185822),	-- Staff of Fractured Spacetime
 					},

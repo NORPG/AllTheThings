@@ -72,19 +72,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 							-- Removed
 							i(100952, {	-- Hood of Viridian Residue
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100950, {	-- Engraved Amber Pendant
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100953, {	-- Girdle of Soothing Detonation
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100954, {	-- Sap-Encrusted Legplates
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100951, {	-- Flashfrozen Resin Globule
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -110,19 +110,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 							-- Removed
 							i(100955, {	-- Siege-Captain's Scimitar
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100959, {	-- Sightfinder Helm
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100957, {	-- Chestwrap of Arcing Flame
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100956, {	-- Bombardment Bracers
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100958, {	-- Archer's Precision Grips
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -148,19 +148,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 							-- Removed
 							i(100960, {	-- Tempestuous Longbow
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100961, {	-- Aerial Bombardment Cloak
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100964, {	-- Siegeworn Bracers
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100962, {	-- Breezebinder Handwraps
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100963, {	-- Vial of Ichorous Blood
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -212,34 +212,34 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								timeline = { CREATED_5_4_0 },
 							}),
 							i(100973, {	-- Gustwalker Staff
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100965, {	-- Ner'onok's Razor Katar
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100971, {	-- Breezeswept Hood
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100967, {	-- Windblast Helm
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100970, {	-- Spaulders of Immovable Stone
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100972, {	-- Whisperwind Spaulders
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100968, {	-- Galedodger Chestguard
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100974, {	-- Belt of Totemic Binding
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100975, {	-- Airbender Sandals
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 							i(100969, {	-- Anchoring Sabatons
-								timeline = { ADDED_5_4_0, REMOVED_7_1_5 },
+								timeline = { REMOVED_7_1_5 },
 							}),
 						},
 					}),
@@ -268,19 +268,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81262, {	-- Hood of Viridian Residue
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81271, {	-- Engraved Amber Pendant
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81272, {	-- Girdle of Soothing Detonation
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81270, {	-- Sap-Encrusted Legplates
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81263, {	-- Flashfrozen Resin Globule
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -307,19 +307,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81273, {	-- Siege-Captain's Scimitar
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81274, {	-- Sightfinder Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81275, {	-- Chestwrap of Arcing Flame
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81276, {	-- Bombardment Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81277, {	-- Archer's Precision Grips
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -345,19 +345,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(81279, {	-- Tempestuous Longbow
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81282, {	-- Aerial Bombardment Cloak
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81280, {	-- Siegeworn Bracers
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81281, {	-- Breezebinder Handwraps
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81264, {	-- Vial of Ichorous Blood
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
@@ -404,43 +404,43 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 
 						-- Removed
 						i(87547, {	-- Tolakesh, Horn of the Black Ox
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81288, {	-- Gustwalker Staff
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81286, {	-- Ner'onok's Razor Katar
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81289, {	-- Breezeswept Hood
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81283, {	-- Windblast Helm
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81287, {	-- Spaulders of Immovable Stone
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81291, {	-- Whisperwind Spaulders
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81285, {	-- Galedodger Chestguard
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81290, {	-- Belt of Totemic Binding
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81292, {	-- Airbender Sandals
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81284, {	-- Anchoring Sabatons
-							timeline = { ADDED_5_0_4, REMOVED_7_1_5 },
+							timeline = { REMOVED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					challengemaster(ach(8439, {	-- Challenge Master: Siege of Niuzao Temple
 						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },

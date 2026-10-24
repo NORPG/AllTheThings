@@ -744,7 +744,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				BossOnly(FATESCRIBE),
 				BossOnly(KELTHUZAD),
 				BossOnly(SYLVANAS, {
-					ach(15134, {timeline = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
+					ach(15134, {timeline = { REMOVED_9_2_0 }}),	-- Ahead of the Curve: Sylvanas Windrunner
 					ig(182177),	-- Owlcat Soul (SS!)
 				}),
 			}),
@@ -824,20 +824,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						title(447),	-- Breaker of Chains
 					}),
 					ach(15197, {	-- Hall of Fame: Sylvanas (Alliance)
-						timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
+						timeline = { REMOVED_9_2_0 },
 						races = ALLIANCE_ONLY,
 						groups = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
 					}),
 					ach(15196, {	-- Hall of Fame: Sylvanas (Horde)
-						timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
+						timeline = { REMOVED_9_2_0 },
 						races = HORDE_ONLY,
 						groups = {
 							title(448),	-- <Name>, Famed Bane of the Banshee Queen
 						},
 					}),
-					ach(15135, {timeline = { ADDED_9_1_0, REMOVED_9_2_0 }}),	-- Cutting Edge: Sylvanas Windrunner
+					ach(15135, {timeline = { REMOVED_9_2_0 }}),	-- Cutting Edge: Sylvanas Windrunner
 					ig(186642),	-- Vengeance (MOUNT!)
 					i(187593),	-- Ethereal Fletching (Upgrade Legendary)
 					i(199183, {	-- Condemned Queen's Grip (Upgrade Legendary)(fated)

@@ -835,16 +835,16 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					classes = { DEATHKNIGHT },
 					groups = {
 						r(53428),	-- Runeforging
-						r(53341, {timeline = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Rune of Cinderglacier
+						r(53341, {timeline = {REMOVED_6_0_2}}),	-- Rune of Cinderglacier
 						r(326911, {timeline = {ADDED_9_0_1, REMOVED_11_0_0}}),	-- Rune of Hysteria
-						r(53331, {timeline = {ADDED_3_0_2, REMOVED_7_0_3}}),	-- Rune of Lichbane
+						r(53331, {timeline = {REMOVED_7_0_3}}),	-- Rune of Lichbane
 						r(53343),	-- Rune of Razorice
 						r(326805, {timeline = {ADDED_9_0_1}}),	-- Rune of Sanguination
-						r(54447, {timeline = {ADDED_3_0_2, REMOVED_7_0_3}}),	-- Rune of Spellbreaking
-						r(53342, {timeline = {ADDED_3_0_2, REMOVED_7_0_3}}),	-- Rune of Spellshattering
+						r(54447, {timeline = {REMOVED_7_0_3}}),	-- Rune of Spellbreaking
+						r(53342, {timeline = {REMOVED_7_0_3}}),	-- Rune of Spellshattering
 						r(326855, {timeline = {ADDED_9_0_1}}),	-- Rune of Spellwarding
-						r(54446, {timeline = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Rune of Swordbreaking
-						r(53323, {timeline = {ADDED_3_0_2, REMOVED_6_0_2}}),	-- Rune of Swordshattering
+						r(54446, {timeline = {REMOVED_6_0_2}}),	-- Rune of Swordbreaking
+						r(53323, {timeline = {REMOVED_6_0_2}}),	-- Rune of Swordshattering
 						r(327082, {timeline = {ADDED_9_0_1}}),	-- Rune of the Apocalypse
 						r(53344),	-- Rune of the Fallen Crusader
 						r(70164, {timeline = {ADDED_3_3_0, REMOVED_6_0_2}}),	-- Rune of the Nerubian Carapace

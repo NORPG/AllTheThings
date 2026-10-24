@@ -80,7 +80,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 				coord = { 58.6, 57.6, VALDRAKKEN },
 				groups = {
 					i(199197, {	-- Bottled Essence
-						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						timeline = { REMOVED_10_1_0 },
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 12 } },
 						groups = {
 							i(190453),	-- Spark of Ingenuity
@@ -119,7 +119,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }
 					}),
 					i(202122, {	-- Primal Chaos Cluster
-						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						timeline = { REMOVED_10_1_0 },
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 } },
 						groups = {
 							i(190454),	-- Depleted Primal Chaos
@@ -155,7 +155,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					}),
 					i(202152, {	-- Storm-Charged Manipulator
 						cost = { { "i", ASPECTS_TOKEN_OF_MERIT_S1, 6 } },
-						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
+						timeline = { REMOVED_10_1_0 }
 					}),
 					i(248124, {	-- The Great Hoard (DECOR!)
 						cost = { { "c", DRAGON_SUPPLIES, 7500 } },

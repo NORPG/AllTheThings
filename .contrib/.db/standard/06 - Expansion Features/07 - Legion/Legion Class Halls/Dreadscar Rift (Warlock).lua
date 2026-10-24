@@ -359,7 +359,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuests = { 40731 },	-- The Heart of the Dreadscar
 							provider = { "n", 101097 },	-- Calydus
 							coord = { 37.7, 31.8, DREADSCAR_RIFT },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						q(44254, {	-- Gazing Into Oblivion
 							sourceQuest = 40731,	-- The Heart of the Dreadscar
@@ -872,7 +872,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43887, {	-- Hitting the Books
 							provider = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 							coord = { 57.6, 40.6, DREADSCAR_RIFT },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46131, {	-- Knowledge is Power
 							sourceQuest = 43887,	-- Hitting the Books
@@ -948,7 +948,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								sourceQuest = 42601,	-- Tech It Up A Notch
 								provider = { "n", 113371 },	-- Demonia Pickerin
 								coord = { 50.0, 24.4, DREADSCAR_RIFT },
-								timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+								timeline = { REMOVED_8_0_1 },
 							}),
 						}),
 						gt(364, {	-- Shadow Pact

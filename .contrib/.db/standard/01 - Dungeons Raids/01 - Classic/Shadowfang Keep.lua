@@ -2290,7 +2290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(63464),	-- Greaves of the Misguided
 							-- #if BEFORE MOP
 							i(63460, {	-- Relic of Arathor
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},

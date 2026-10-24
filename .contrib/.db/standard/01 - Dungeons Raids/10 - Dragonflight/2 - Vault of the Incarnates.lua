@@ -708,7 +708,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				BossOnly(KUROG),
 				BossOnly(DIURNA),
 				BossOnly(RASZAGETH, {
-					ach(17107, {timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
+					ach(17107, {timeline = { REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
@@ -788,17 +788,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						title(488),	-- <Name> the Storm-Eater
 					}),
 					ach(16358),	-- Mythic: Raszageth the Storm-Eater Guild Run
-					ach(17108, {timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
+					ach(17108, {timeline = { REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 					ach(17116, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 						races = ALLIANCE_ONLY,
-						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						timeline = { REMOVED_10_1_0 },
 						groups = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					}),
 					ach(17118, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 						races = HORDE_ONLY,
-						timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+						timeline = { REMOVED_10_1_0 },
 						groups = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},

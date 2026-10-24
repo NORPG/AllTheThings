@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				ach(14162),	-- Horrific Masquerade
 				ach(14140, {	-- Mad World
 					-- Meta Achievement
-					timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					sym = {{"meta_achievement",
 						14141,	-- Solo Nightmares - Stormwind
 						14142,	-- Solo Nightmares - Orgrimmar
@@ -240,7 +240,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						ach(14065),	-- The Even More Horrific Vision of Orgrimmar
 						ach(14067),	-- The Most Horrific Vision of Orgrimmar
 						ach(14142, {	-- Solo Nightmares - Orgrimmar
-							timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
+							timeline = { REMOVED_9_0_1 },
 						}),
 					}),
 					n(CORRUPTED_AREA, {
@@ -291,7 +291,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						ach(14064),	-- The Even More Horrific Vision of Stormwind
 						ach(14066),	-- The Most Horrific Vision of Stormwind
 						ach(14141, {	-- Solo Nightmares - Stormwind
-							timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
+							timeline = { REMOVED_9_0_1 },
 						}),
 					}),
 					n(158284, {	-- Craggle Wobbletop <Toys and Novelties>

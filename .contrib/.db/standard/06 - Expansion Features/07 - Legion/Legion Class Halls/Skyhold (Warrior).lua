@@ -450,13 +450,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuestNumRequired = 1,
 							provider = { "n", 96469 },	-- Odyn
 							coord = { 58.3, 84.6, SKYHOLD },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						q(39192, {	-- The Forge of Odyn
 							sourceQuest = 39530,	-- The Forgening
 							provider = { "n", 96586 },	-- Master Smith Helgar
 							coord = { 41.0, 37.1, SKYHOLD },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						-- Start Legion Zone
 						q(39214, {	-- The Eye of Odyn
@@ -864,7 +864,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43888, {	-- Hitting the Books
 							provider = { "n", 111741 },	-- Fjornson Stonecarver
 							coord = { 45.1, 28.2, SKYHOLD },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46142, {	-- Knowledge is Power
 							sourceQuest = 43888,	-- Hitting the Books
@@ -915,7 +915,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							q(44222, {	-- The Might of the Val'kyr
 								provider = { "n", 111774 },	-- Matilda Skoptidottir
 								coord = { 72.6, 30.8, SKYHOLD },
-								timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+								timeline = { REMOVED_8_0_1 },
 							}),
 						}),
 						gt(408, {	-- For Honor and Glory

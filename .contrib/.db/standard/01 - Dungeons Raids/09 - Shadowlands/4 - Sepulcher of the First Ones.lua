@@ -976,7 +976,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				n(QUESTS, {
 					q(65717, {
 						provider = { "i", 190773 },	-- Carcinized Protoform
-						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
+						timeline = { REMOVED_10_0_2_LAUNCH },
 						groups = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
@@ -997,8 +997,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					ach(15468, {timeline = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH }}),	-- We Are All Made of Stars [Heroic]
 				}),
 				BossOnly(THE_JAILER, {
-					ach(15470, {timeline = { ADDED_9_2_0, REMOVED_9_2_5 }}),	-- Ahead of the Curve: The Jailer
-					ig(190773, {timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
+					ach(15470, {timeline = { REMOVED_9_2_5 }}),	-- Ahead of the Curve: The Jailer
+					ig(190773, {timeline = { REMOVED_10_0_2_LAUNCH }}),	-- Carcinized Protoform (MOUNT! - QUEST)
 					ig(189982),	-- Silithid Soul (SS!)
 				}),
 			}),

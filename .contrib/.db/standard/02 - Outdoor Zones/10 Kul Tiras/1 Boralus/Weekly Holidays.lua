@@ -8,7 +8,7 @@ maproot(KUL_TIRAS, BORALUS, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(164579, {	-- Cache of Uldir Treasures (N)
-					timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
+					timeline = { REMOVED_8_1_0 },
 					sym = {
 						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
@@ -20,7 +20,7 @@ maproot(KUL_TIRAS, BORALUS, {
 					},
 				}),
 				i(164257, {	-- Cache of Uldir Treasures (HC)
-					timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
+					timeline = { REMOVED_8_1_0 },
 					sym = {
 						{"select", "instanceID", 1031},			-- Uldir
 						{"pop"},								-- Discard the Instance Headers and acquire all of their children.

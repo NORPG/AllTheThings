@@ -825,14 +825,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						groups = {
 							n(QUESTS, {
 								i(97979, {	-- The Bear and the Lady Fair (QI!)
-									timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+									timeline = { REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
 									description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",
 									-- #endif
 								}),
 								i(97982, {	-- Vial of Reddish Ooze (QI!)
-									timeline = { ADDED_5_3_0, REMOVED_7_0_3_LAUNCH },
+									timeline = { REMOVED_7_0_3_LAUNCH },
 									-- Wouter NOTE: in MoP Classic, this started dropping in Phase 2 (Landfall) already
 									-- #if BEFORE 5.5.3
 									description = "This is not supposed to be in the game until Phase 4 and doesn't work yet, keep it in your bank until then.",

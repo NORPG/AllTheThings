@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						31855,	-- The Peak of Serenity - Continue Your Training
 					},
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					lvl = lvlsquish(30, 30, 10),
 					groups = {
 						objective(1, {	-- Master Woo's Training Completed
@@ -230,7 +230,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31833,	-- Continue Your Training: Master Woo
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					isDaily = true,
 					lvl = lvlsquish(30, 30, 10),
 					groups = {
@@ -263,7 +263,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31834,	-- Begin Your Training: Master Cheng
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_7_3_5 },
+					timeline = { REMOVED_7_3_5 },
 					isBreadcrumb = true,
 					lvl = lvlsquish(30, 30, 10),
 				}),
@@ -277,7 +277,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					isBreadcrumb = true,
 					lvl = lvlsquish(40, 40, 10),
 				}),
@@ -285,7 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31835,	-- Continue Your Training: Master Kistane
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					isBreadcrumb = true,
 					lvl = lvlsquish(50, 50, 15),
 				}),
@@ -293,7 +293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31836,	-- Continue Your Training: Master Yoon
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					isBreadcrumb = true,
 					lvl = lvlsquish(60, 60, 20),
 				}),
@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31837,	-- Continue Your Training: Master Cheng
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					isBreadcrumb = true,
 					lvl = lvlsquish(70, 70, 25),
 				}),
@@ -309,7 +309,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					sourceQuest = 31838,	-- Continue Your Training: Master Tsang
 					qg = 66260,	-- Master Hight <Grand Master>
 					coord = { 48.6, 42.8, KUN_LAI_SUMMIT },
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					isBreadcrumb = true,
 					lvl = lvlsquish(80, 80, 30),
 				}),
@@ -324,7 +324,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					-- #if ANYCLASSIC
 					timeline = { CREATED_5_5_0 },
 					-- #else
-					timeline = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
+					timeline = { REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					-- #endif
 				}),
 			}),

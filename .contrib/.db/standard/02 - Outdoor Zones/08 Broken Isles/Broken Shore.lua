@@ -132,7 +132,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 							},
 						}),
 						i(152649, {	-- Legionfall Spoils
-							timeline = { ADDED_7_3_0, REMOVED_7_3_2 },
+							timeline = { REMOVED_7_3_2 },
 							sym = {
 								-- #if AFTER 7.3.2
 								{"select","itemID", 157830 },	-- Legionfall Spoils
@@ -171,7 +171,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 							},
 						}),
 						i(147361, {	-- Legionfall Chest
-							timeline = { ADDED_7_2_0, REMOVED_7_2_5 },
+							timeline = { REMOVED_7_2_5 },
 							-- #if AFTER 7.2.5
 							sym = {{"select", "itemID", 152108},{"pop"}},	-- Legionfall Chest
 							-- #else
@@ -1421,7 +1421,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					},
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-					timeline = { ADDED_7_2_0, REMOVED_7_3_0 },
+					timeline = { REMOVED_7_3_0 },
 					groups = {
 						i(147796, {	-- Relinquished Hood
 							i(146786),	-- Cloth

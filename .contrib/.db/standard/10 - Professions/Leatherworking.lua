@@ -37,7 +37,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 						5148,	-- Tribal Leatherworking [H]
 					},
 					sourceQuestNumRequired = 1,
-					timeline = { ADDED_10_0_7, REMOVED_10_0_7 },
+					timeline = { REMOVED_10_0_7 },
 				}),
 				ach(18899, {	-- You Saw Nothing
 					timeline = { ADDED_10_1_7 },

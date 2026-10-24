@@ -1511,7 +1511,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					crs = { 68397 },	-- Lei Shen
 					groups = {
 						ach(8249, {	-- Ahead of the Curve: Lei Shen
-							timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
+							timeline = { REMOVED_5_4_0 },
 							-- #if MOP
 							OnUpdate = CUTTING_EDGE_ONUPDATE,
 							-- #endif
@@ -2686,7 +2686,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						crs = { 68397 },	-- Lei Shen
 						groups = {
 							ach(8238, {	-- Cutting Edge: Lei Shen
-								timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
+								timeline = { REMOVED_5_4_0 },
 								-- #if MOP
 								OnUpdate = CUTTING_EDGE_ONUPDATE,
 								-- #endif
@@ -2743,7 +2743,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						crs = { 69473 },	-- Ra-den
 						groups = {
 							ach(8260, {	-- Cutting Edge: Ra-den
-								timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
+								timeline = { REMOVED_5_4_0 },
 								-- #if MOP
 								OnUpdate = CUTTING_EDGE_ONUPDATE,
 								-- #endif
@@ -2751,10 +2751,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							ach(8068),	-- Heroic: Ra-den
 							ach(8258),	-- Heroic: Ra-den Guild Run
 							ach(8089, {	-- I Thought He Was Supposeed to Be Hard?
-								timeline = { ADDED_5_2_0, REMOVED_6_0_2 },
+								timeline = { REMOVED_6_0_2 },
 							}),
 							ach(8257, {	-- Realm First! Ra-den
-								timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
+								timeline = { REMOVED_5_4_0 },
 								-- #if MOP
 								OnUpdate = CUTTING_EDGE_ONUPDATE,
 								-- #endif

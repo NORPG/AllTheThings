@@ -262,7 +262,7 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7362, {	-- Ally of the Tauren
 				qg = 14186,	-- Ravak Grimtotem <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7081, {	-- Alterac Valley Graveyards
@@ -285,7 +285,7 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(6846, {	-- Begin the Attack!
 				qg = 13446,	-- Field Marshal Teravaine
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7282, {	-- Brotherly Love (Alliance)
@@ -415,17 +415,17 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7421, {	-- Darkspear Defense
 				qg = 14185,	-- Najak Hexxen <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7367, {	-- Defusing the Threat (Alliance)
 				qg = 13598,	-- Stormpike Explosives Expert
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7368, {	-- Defusing the Threat (Horde)
 				qg = 13597,	-- Frostwolf Explosives Expert
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7170, {	-- Earned Reverence (Alliance)
@@ -512,12 +512,12 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7361, {	-- Favor Amongst the Darkspear
 				qg = 14185,	-- Najak Hexxen <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7364, {	-- Gnomeregan Bounty
 				qg = 14188,	-- Dirk Swindle <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(8272, {	-- Hero of the Frostwolf
@@ -599,7 +599,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7423, {	-- I've Got A Fever For More Bone Chips
 				qg = 13154,	-- Commander Louis Philips
 				coord = { 50.4, 65.5, ALTERAC_VALLEY },
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7241, {	-- In Defense of Frostwolf
@@ -651,14 +651,14 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7202, {	-- Korrak the Bloodrager
 				qg = 13841,	-- Lieutenant Haggerdin
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = ALLIANCE_ONLY,
 				_drop = { "g" },
 			}),
 			q(7382, {	-- Korrak the Everliving
 				sourceQuest = 7202,	-- Korrak the Bloodrager
 				qg = 13841,	-- Lieutenant Haggerdin
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -667,7 +667,7 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(6901, {	-- Launch the Attack!
 				qg = 13449,	-- Warmaster Garrick
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7171, {	-- Legendary Heroes (Alliance)
@@ -718,12 +718,12 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(6848, {	-- Master Ryson's All Seeing Eye (Alliance)
 				qg = 13151,	-- Syndicate Master Ryson
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(6847, {	-- Master Ryson's All Seeing Eye (Horde)
 				qg = 13151,	-- Syndicate Master Ryson
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = HORDE_ONLY,
 			}),
 			q(6781, {	-- More Armor Scraps
@@ -747,7 +747,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7426, {	-- One Man's Love
 				qg = 13320,	-- Commander Karl Philips
 				coord = { 50.9, 30.8, ALTERAC_VALLEY },
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7162, {	-- Proving Grounds (Alliance)
@@ -869,18 +869,18 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7425, {	-- Staghelm's Mojo Jamboree
 				qg = 14187,	-- Athramanis <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7365, {	-- Staghelm's Requiem
 				qg = 14187,	-- Athramanis <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7366, {	-- The Archbishop's Mercy
 				qg = 13320,	-- Commander Karl Philips
 				coord = { 50.9, 30.8, ALTERAC_VALLEY },
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7141, {	-- The Battle of Alterac (Alliance)
@@ -968,12 +968,12 @@ battleground(ALTERAC_VALLEY, {
 			q(7363, {	-- The Human Condition
 				qg = 13154,	-- Commander Louis Philips
 				coord = { 50.4, 65.5, ALTERAC_VALLEY },
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7181, {	-- The Legend of Korrak
 				qg = 13840,	-- Warmaster Laggrond
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = HORDE_ONLY,
 				_drop = { "g" },
 			}),
@@ -986,7 +986,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7381, {	-- The Return of Korrak
 				sourceQuest = 7181,	-- The Legend of Korrak
 				qg = 13840,	-- Warmaster Laggrond
-				timeline = { ADDED_1_5_0, REMOVED_1_8_0 },
+				timeline = { REMOVED_1_8_0 },
 				races = HORDE_ONLY,
 				repeatable = true,
 				groups = {
@@ -1026,37 +1026,37 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(7422, {	-- Tuft it Out
 				qg = 14186,	-- Ravak Grimtotem <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7401, {	-- WANTED: DWARVES!
 				qg = 13448,	-- Sergeant Yazra Bloodsnarl
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7427, {	-- Wanted: MORE DWARVES!
 				qg = 13448,	-- Sergeant Yazra Bloodsnarl
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 			}),
 			q(7428, {	-- Wanted: MORE ORCS!
 				qg = 13447,	-- Corporal Noreg Stormpike
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7402, {	-- Wanted: ORCS!
 				qg = 13447,	-- Corporal Noreg Stormpike
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(7424, {	-- What the Hoof?
 				qg = 14188,	-- Dirk Swindle <Bounty Hunter>
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(6862, {	-- Zinfizzlex's Portable Shredder Unit (A)
 				qg = 13377,	-- Master Engineer Zinfizzlex
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(17410),	-- Zinfizzlex's Portable Shredder Unit
@@ -1064,7 +1064,7 @@ battleground(ALTERAC_VALLEY, {
 			}),
 			q(6861, {	-- Zinfizzlex's Portable Shredder Unit (H)
 				qg = 13377,	-- Master Engineer Zinfizzlex
-				timeline = { ADDED_1_5_0, REMOVED_1_10_0 },
+				timeline = { REMOVED_1_10_0 },
 				races = HORDE_ONLY,
 				groups = {
 					i(17384),	-- Zinfizzlex's Portable Shredder Unit

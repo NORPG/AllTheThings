@@ -175,7 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						siderealessence(25, i(45449)),	-- The Masticator
 						siderealessence(38, i(46033)),	-- Tortured Earth
 						siderealessence(15, i(45296, {	-- Twirling Blades
-							timeline = { ADDED_3_4_2, REMOVED_5_0_4 },
+							timeline = { REMOVED_5_0_4 },
 						})),
 						siderealessence(25, i(46036)),	-- Void Sabre
 						siderealessence(15, i(45447)),	-- Watchful Eye of Fate

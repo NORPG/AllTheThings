@@ -86,7 +86,7 @@ battleground(EYE_OF_THE_STORM, applyclassicphase(TBC_PHASE_ONE, {
 		}),
 		n(REWARDS, {
 			i(29024, {	-- Eye of the Storm Mark of Honor
-				timeline = { ADDED_2_0_3, REMOVED_3_3_3 },
+				timeline = { REMOVED_3_3_3 },
 			}),
 		}),
 	},

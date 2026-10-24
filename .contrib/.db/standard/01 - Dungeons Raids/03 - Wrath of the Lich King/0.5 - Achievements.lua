@@ -131,7 +131,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				maps = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 				groups = {
 					i(44175, {	-- Plagued Proto-Drake (MOUNT!)
-						timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+						timeline = { REMOVED_3_1_0 },
 						-- #if BEFORE CATA
 						-- They didn't actually remove this with Phase 2... Blizzard?!
 						OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ONE, 30100),
@@ -171,7 +171,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 				maps = { THE_EYE_OF_ETERNITY, THE_OBSIDIAN_SANCTUM, NAXXRAMAS },
 				groups = {
 					i(44164, {	-- Black Proto-Drake (MOUNT!)
-						timeline = { ADDED_3_0_2, REMOVED_3_1_0 },
+						timeline = { REMOVED_3_1_0 },
 						-- #if BEFORE CATA
 						-- They didn't actually remove this with Phase 2... Blizzard?!
 						OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(CATA_PHASE_ONE, 30100),

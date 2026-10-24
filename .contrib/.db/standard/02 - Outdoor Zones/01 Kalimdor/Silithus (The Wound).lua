@@ -155,7 +155,7 @@ maproot(KALIMDOR, {
 							sourceQuest = 51795,	-- The Battle for Lordaeron
 							qg = 142930,	-- Halford Wyrmbane
 							coord = { 27.7, 21.5, STORMWIND_CITY },
-							timeline = { ADDED_8_0_1, REMOVED_9_0_1 },
+							timeline = { REMOVED_9_0_1 },
 							races = ALLIANCE_ONLY,
 						}),
 						q(53028, {	-- A Dying World (A/H)
@@ -769,7 +769,7 @@ maproot(KALIMDOR, {
 							sourceQuest = 53405,	-- Unlocking the Heart's Potential
 							qg = 130216,	-- Magni Bronzebeard
 							coord = { 42.1, 44.3, SILITHUS },
-							timeline = { ADDED_8_0_1, REMOVED_8_2_0 },
+							timeline = { REMOVED_8_2_0 },
 							lvl = 120,
 						}),
 						q(55618, {	-- The Heart Forge
@@ -799,7 +799,7 @@ maproot(KALIMDOR, {
 							description = "This quest awards +15 item levels for your Heart of Azeroth. You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							qg = 130216,	-- Magni Bronzebeard
 							coord = { 42.1, 44.3, SILITHUS },
-							timeline = { ADDED_8_0_1, REMOVED_8_2_0 },
+							timeline = { REMOVED_8_2_0 },
 							lvl = 120,
 						}),
 						q(55398, {	-- The Long Awake
@@ -818,7 +818,7 @@ maproot(KALIMDOR, {
 							sourceQuest = 52428,	-- Infusing the Heart
 							qg = 136907,	-- Magni Bronzebeard
 							coord = { 50.1, 53.6, CHAMBER_OF_HEART },
-							timeline = { ADDED_8_0_1, REMOVED_10_1_5 },
+							timeline = { REMOVED_10_1_5 },
 							races = ALLIANCE_ONLY,
 							-- TODO: likely this is technically a breadcrumb as well, if someone tests heading to Stormwind after receiving their neck and not picking this up...
 						}),
@@ -826,7 +826,7 @@ maproot(KALIMDOR, {
 							sourceQuest = 52428,	-- Infusing the Heart
 							qg = 136907,	-- Magni Bronzebeard
 							coord = { 50.1, 53.6, CHAMBER_OF_HEART },
-							timeline = { ADDED_8_0_1, REMOVED_10_1_5 },
+							timeline = { REMOVED_10_1_5 },
 							races = HORDE_ONLY,
 							isBreadcrumb = true,
 							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
@@ -878,7 +878,7 @@ maproot(KALIMDOR, {
 							sourceQuest = 50973,	-- The Heart's Power
 							qg = 130216,	-- Magni Bronzebeard
 							coord = { 42.1, 44.3, SILITHUS },
-							timeline = { ADDED_8_0_1, REMOVED_8_2_0 },
+							timeline = { REMOVED_8_2_0 },
 							lvl = 120,
 						}),
 						q(56263, {	-- Unlocking the Power (A)
@@ -1339,7 +1339,7 @@ maproot(KALIMDOR, {
 						50056,	-- The Speaker's Call
 					},
 					qg = 133388,	-- Magni Bronzebeard
-					timeline = { ADDED_7_3_5, REMOVED_8_0_1 },
+					timeline = { REMOVED_8_0_1 },
 					groups = {
 						ach(12071),	-- Crucible's Promise
 					},
@@ -1416,14 +1416,14 @@ maproot(KALIMDOR, {
 					sourceQuest = 49976,	-- Gifts of the Fallen
 					qg = 132255,	-- Master Mathias Shaw
 					coord = { 39.0, 62.6, STORMWIND_CITY },
-					timeline = { ADDED_7_3_5, REMOVED_8_0_1 },
+					timeline = { REMOVED_8_0_1 },
 					races = ALLIANCE_ONLY,
 				}),
 				q(49982, {	-- Witness to the Wound (H)
 					sourceQuest = 50341,	-- A Recent Discovery
 					qg = 132254,	-- Nathanos Blightcaller
 					coord = { 49.8, 75.6, ORGRIMMAR },
-					timeline = { ADDED_7_3_5, REMOVED_8_0_1 },
+					timeline = { REMOVED_8_0_1 },
 					races = HORDE_ONLY,
 				}),
 			}),

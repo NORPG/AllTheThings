@@ -1360,7 +1360,7 @@ maproot(EASTERN_KINGDOMS, BLASTED_LANDS, {
 					i(59393),	-- Harmless Bracers
 					i(59395),	-- Netherwane Cloak
 					i(59392, {	-- Rogue Star
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
@@ -1379,7 +1379,7 @@ maproot(EASTERN_KINGDOMS, BLASTED_LANDS, {
 					i(59432),	-- Gloves of Foolish Innocence
 					i(59431),	-- Harmless Bracers
 					i(59430, {	-- Rogue Star
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 				},
 			}),

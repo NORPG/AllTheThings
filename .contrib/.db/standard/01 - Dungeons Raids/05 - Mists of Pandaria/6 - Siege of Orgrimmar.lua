@@ -1258,7 +1258,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #if AFTER 6.0.2
 				description = "This was the original Raid Finder difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				ignoreBonus = true,
 				groups = {
 					-- #if BEFORE 6.0.2
@@ -2064,7 +2064,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #if NOT ANYCLASSIC
 			FLEX_RAID_HEADER({							-- Flexible (Removed with Patch 6.0.2) >> Items marked "Normal" after 6.0 <<
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				ignoreBonus = true,
 				groups = {
 					n(ZONE_DROPS, {
@@ -2792,7 +2792,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER10, {
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
@@ -2811,7 +2811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER25, {
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8399, {	-- Ahead of the Curve: Garrosh Hellscream (25 player)
@@ -2833,7 +2833,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #if AFTER 6.0.2
 				description = "This was the original Normal difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				ignoreBonus = true,
 				groups = {
 					n(ZONE_DROPS, {
@@ -3830,7 +3830,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #if AFTER 6.0.2
 				description = "This was the original Heroic difficulty. Previously, loot had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				-- #endif
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				ignoreBonus = true,
 				groups = {
 					n(ZONE_DROPS, {
@@ -4875,7 +4875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8400, {	-- Cutting Edge: Garrosh Hellscream (10 player)
@@ -4892,7 +4892,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				},
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
-				timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+				timeline = { REMOVED_6_0_2 },
 				groups = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8401, {	-- Cutting Edge: Garrosh Hellscream (25 player)

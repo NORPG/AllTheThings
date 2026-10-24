@@ -297,13 +297,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 				}),
 				heroscall(q(29156, {	-- The Troll Incursion
-					timeline = { ADDED_4_1_0, REMOVED_7_0_3 },
+					timeline = { REMOVED_7_0_3 },
 					maps = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				})),
 				warchiefscommand(q(29157, {	-- The Zandalari Menace
-					timeline = { ADDED_4_1_0, REMOVED_7_0_3 },
+					timeline = { REMOVED_7_0_3 },
 					maps = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 					races = HORDE_ONLY,
 					isBreadcrumb = true,
@@ -311,7 +311,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29158, {	-- The Zandalar Representative
 					qg = 52654,	-- Bwemba
 					coord = { 25.96, 29.32, STORMWIND_CITY },
-					timeline = { ADDED_4_1_0, REMOVED_7_0_3 },
+					timeline = { REMOVED_7_0_3 },
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				}),

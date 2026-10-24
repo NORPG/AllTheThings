@@ -32,7 +32,7 @@ root(ROOTS.Promotions, {
 			-- SEASON 1
 			mount(348162, {	-- Wandering Ancient (MOUNT!)
 				description = "Granted to players by logging in on character of at least level 20.",
-				timeline = { ADDED_9_0_5, REMOVED_10_0_0 },
+				timeline = { REMOVED_10_0_0 },
 			}),
 			-- SEASON 2
 			i(187834, {		-- Tormented Banner of the Opportune (TOY!)

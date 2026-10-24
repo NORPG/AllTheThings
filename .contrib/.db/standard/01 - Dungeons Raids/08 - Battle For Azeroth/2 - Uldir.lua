@@ -411,7 +411,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(GHUUN, {
 					ach(12536, {	-- Ahead of the Curve: G'huun
-						timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
+						timeline = { REMOVED_8_1_0 },
 					}),
 				}),
 			}),
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				}),
 				Boss(GHUUN, {
 					ach(12535, {	-- Cutting Edge: G'huun
-						timeline = { ADDED_8_0_1, REMOVED_8_1_0 },
+						timeline = { REMOVED_8_1_0 },
 					}),
 					ach(12533, {	-- Mythic: G'huun
 						title(381),	-- <Name> the Purifier

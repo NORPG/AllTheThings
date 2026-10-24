@@ -8,25 +8,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 		groups = {
 			-- Season 1
 			ach(61809, {	-- Adventurer of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(42767, {	-- Veteran of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(42768, {	-- Champion of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(42769, {	-- Hero of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(42770, {	-- Myth of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			ach(61519, {	-- Midnight Season 1: Catalyst Unbound
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 			}),
 			achraw(61490, {	-- Midnight Season 1: Champion of the Dawn
-				timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0 },
 				groups = {
 					crit(108731),	-- Attained 1600+ Rated PVP rating
 					crit(109029),	-- Attained 2000+ Mythic Plus rating

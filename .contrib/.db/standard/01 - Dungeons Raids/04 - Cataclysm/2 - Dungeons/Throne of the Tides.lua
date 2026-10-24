@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					crs = { 40586 },	-- Lady Naz'jar
 					groups = {
 						ach(5285, {	-- Old Faithful
-							timeline = { ADDED_4_0_3, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 						}),
 					},
 				}),
@@ -260,7 +260,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						ach(5061),	-- Heroic: Throne of the Tides
 						ach(5135),	-- Heroic: Throne of the Tides Guild Run
 						ach(5286, {	-- Prince of Tides
-							timeline = { ADDED_4_0_3, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 						}),
 					},
 				}),

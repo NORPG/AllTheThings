@@ -31,16 +31,16 @@ root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 				}),
 			}),
 			ach(406, {	-- High Five: 1550
-				timeline = { ADDED_3_0_2, REMOVED_6_2_0 },
+				timeline = { REMOVED_6_2_0 },
 			}),
 			ach(407, {	-- High Five: 1750
-				timeline = { ADDED_3_0_2, REMOVED_6_2_0 },
+				timeline = { REMOVED_6_2_0 },
 			}),
 			ach(404, {	-- High Five: 2000
-				timeline = { ADDED_3_0_2, REMOVED_6_2_0 },
+				timeline = { REMOVED_6_2_0 },
 			}),
 			ach(1161, {	-- High Five: 2200
-				timeline = { ADDED_3_0_2, REMOVED_6_2_0 },
+				timeline = { REMOVED_6_2_0 },
 			}),
 			ach(408),	-- Hot Streak
 			ach(1162),	-- Hotter Streak
@@ -49,7 +49,7 @@ root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 			ach(401),	-- Just the Two of Us: 2000
 			ach(1159),	-- Just the Two of Us: 2200
 			ach(409, {	-- Last Man Standing
-				timeline = { ADDED_3_0_2, REMOVED_6_2_0 },
+				timeline = { REMOVED_6_2_0 },
 			}),
 			ach(2093, {	-- Rival
 				title(31, {	-- Rival
@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(n(ARENA, {	-- Arena
 				},
 			}),
 			ach(1174, {	-- The Arena Master
-				timeline = { ADDED_3_0_2, REMOVED_7_0_3 },
+				timeline = { REMOVED_7_0_3 },
 				groups = {
 					title(50),	-- Arena Master <Name>
 				},

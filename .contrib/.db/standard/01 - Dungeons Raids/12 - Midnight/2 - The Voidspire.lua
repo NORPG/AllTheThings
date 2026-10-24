@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				BossOnly(COSMOS, {
 					i(269269),	-- Devouring Ritual Spire (DECOR!)
-					i(268049, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
+					i(268049, { timeline = { REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Argent Trophy (DECOR!)
 					i(267488, {timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}),	-- Nebulous Voidcache: Crown of the Cosmos
 				}),
 			}),
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(VETERAN_DAWNCREST, {
-						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 3156, {	-- Weapons of the Void
@@ -475,7 +475,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CHAMPION_DAWNCREST, {
-						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -499,14 +499,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(EZZORAK_VAELGOR),
 				BossOnly(VANGUARD),
 				BossOnly(COSMOS, {
-					ach(61624, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
-					i(265951, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
+					ach(61624, { timeline = { REMOVED_12_1_0 } }),	-- Ahead of the Curve: Crown of the Cosmos
+					i(265951, { timeline = { REMOVED_12_1_0 } }),	-- Voidspire Vanquisher's Aureate Trophy (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(HERO_DAWNCREST, {
-						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -526,7 +526,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(MYTH_DAWNCREST, {
-						timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+						timeline = { REMOVED_12_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -569,12 +569,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					ach(61377, {	-- Mythic: Crown of the Cosmos
 						title(690),	-- Spirebane <Name>
 					}),
-					ach(61625, {timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
+					ach(61625, {timeline = { REMOVED_12_1_0 }}),	-- Cutting Edge: Crown of the Cosmos
 					ach(61622, applyDataSelf({timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {	-- Hall of Fame: Crown of the Cosmos
 						title(676),	-- <Name>, Famed Slayer of the Voidspire
 					})),
 					ach(61608),	-- Mythic: Crown of the Cosmos Guild Run
-					i(266887, {timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
+					i(266887, {timeline = { REMOVED_12_1_0 }}),	-- Voidspire Vanquisher's Gleaming Trophy (DECOR!)
 				}),
 			}),
 		},

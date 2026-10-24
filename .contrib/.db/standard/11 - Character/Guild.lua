@@ -175,7 +175,7 @@ root(ROOTS.Character, n(createHeader({
 			timeline = { ADDED_5_0_4 },
 		}),
 		ach(5028, {	-- Skinnin' for a Livin'
-			timeline = { ADDED_4_0_3, REMOVED_10_0_2 },
+			timeline = { REMOVED_10_0_2 },
 			isGuild = true,	-- achievement data deleted for this achieve post-mop
 		}),
 		ach(5457),	-- The Pen is Mightier
@@ -237,7 +237,7 @@ root(ROOTS.Character, n(createHeader({
 			timeline = { ADDED_5_0_4, REMOVED_5_0_4 },
 		}),
 		ach(5408, {	-- Realm First! Working as a Team
-			timeline = { ADDED_4_0_3, REMOVED_4_0_3 },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		ach(7444, {	-- Scenario Challenges
 			timeline = { ADDED_5_0_4, REMOVED_7_0_3 },

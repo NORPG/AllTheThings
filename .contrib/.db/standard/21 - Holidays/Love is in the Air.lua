@@ -89,7 +89,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						1703,	-- My Love is Like a Red, Red Rose
 						1704,	-- I Pitied The Fool
 					}},
-					timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					races = ALLIANCE_ONLY,
 					groups = {
 						title(103),	-- the Love Fool
@@ -159,7 +159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				ach(260, {	-- Charming
 					provider = { "i", 49661 },	-- Lovely Charm Collector's Kit
 					cost = { { "i", 49916, 12 } },	-- Lovely Charm Bracelet
-					timeline = { ADDED_3_0_2, REMOVED_10_2_5 },
+					timeline = { REMOVED_10_2_5 },
 				}),
 				ach(1695, {	-- Dangerous Love
 					sourceQuests = {
@@ -211,7 +211,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 49856 },	-- "VICTORY" Perfume
 					},
 					coord = { 46.6, 48.4, IRONFORGE },
-					timeline = { ADDED_3_0_2, REMOVED_10_2_5 },
+					timeline = { REMOVED_10_2_5 },
 					races = ALLIANCE_ONLY,
 				}),
 				ach(1280, {	-- Flirt With Disaster [Horde]
@@ -223,7 +223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						{ "i", 49856 },	-- "VICTORY" Perfume
 					},
 					coord = { 67.6, 43.8, UNDERCITY },
-					timeline = { ADDED_3_0_2, REMOVED_10_2_5 },
+					timeline = { REMOVED_10_2_5 },
 					races = HORDE_ONLY,
 				}),
 				ach(1704, {	-- I Pitied The Fool
@@ -348,7 +348,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				ach(1697, {	-- Nation of Adoration [Alliance]
-					timeline = { ADDED_3_0_2, REMOVED_10_2_5 },
+					timeline = { REMOVED_10_2_5 },
 					races = ALLIANCE_ONLY,
 					groups = {
 						crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -366,7 +366,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				ach(1698, {	-- Nation of Adoration [Horde]
-					timeline = { ADDED_3_0_2, REMOVED_10_2_5 },
+					timeline = { REMOVED_10_2_5 },
 					races = HORDE_ONLY,
 					groups = {
 						crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -465,7 +465,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 				provider = { "o", 181073 },	-- Fragrant Cauldron
 				coord = { 89.3, 75.1, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				isYearly = true,
 				groups = {
 					i(22281),	-- Blue Dinner Suit
@@ -599,7 +599,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8903,	-- Dangerous Love (A)
 				qg = 16105,	-- Aristan Mottar
 				coord = { 54.6, 65.6, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				groups = {
@@ -1037,7 +1037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8903, {	-- Dangerous Love (A)
 				qg = 16105,	-- Aristan Mottar
 				coord = { 54.6, 65.6, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				groups = {
@@ -1049,7 +1049,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			q(8904, {	-- Dangerous Love (H)
 				qg = 16108,	-- Fenstad Argyle
 				coord = { 66.8, 44.4, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 				groups = {
@@ -1062,7 +1062,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16005,	-- Lieutenant Jocryn Heldric
 				qi = 21921,	-- Carefully Penned Note
 				coord = { 57.0, 59.8, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
@@ -1070,7 +1070,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16009,	-- Tormek Stoneriver
 				qi = 21920,	-- Creased Letter
 				coord = { 32.4, 66.0, IRONFORGE },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				maps = { STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -1079,7 +1079,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16001,	-- Aldris Fourclouds
 				qi = 21925,	-- Immaculate Letter
 				coord = { 42.0, 42.0, DARNASSUS },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				maps = { STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -1088,7 +1088,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16007,	-- Orok Deathbane
 				qi = 21926,	-- Slightly Creased Note
 				coord = { 51.2, 70.2, ORGRIMMAR },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				maps = { UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -1097,7 +1097,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16008,	-- Temma of the Wells
 				qi = 22264,	-- Carefully Written Letter
 				coord = { 44.8, 59.6, THUNDER_BLUFF },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				maps = { UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -1106,7 +1106,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 16003,	-- Deathguard Tor
 				qi = 22265,	-- Lovingly Composed Letter
 				coord = { 60.6, 59.6, TIRISFAL_GLADES },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				maps = { UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -1115,7 +1115,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8904,	-- Dangerous Love (H)
 				qg = 16108,	-- Fenstad Argyle
 				coord = { 66.8, 44.4, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 				groups = {
@@ -1155,7 +1155,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ 41.0, 55.2, IRONFORGE },
 					{ 78.6, 17.6, STORMWIND_CITY },
 				},
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				-- #if BEFORE 3.3.0
@@ -1179,7 +1179,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ 60.8, 50.6, THUNDER_BLUFF },
 					{ 54.8, 90.0, UNDERCITY },
 				},
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 				-- #if BEFORE 3.3.0
@@ -1228,7 +1228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 9024,	-- Aristan's Hunch
 				qg = 279,	-- Morgan Pestle
 				coord = { 56.2, 64.8, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				-- #if BEFORE 3.3.0
@@ -1323,7 +1323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 9027,	-- Tracing the Source (A) (2/2)
 				qg = 16106,	-- Evert Sorisam
 				coord = { 39.8, 46.8, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
@@ -1331,7 +1331,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8983,	-- Tracing the Source (H) (2/2)
 				qg = 16109,	-- Mara Rennick
 				coord = { 70.8, 28.8, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 			}),
@@ -1339,7 +1339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 9025,	-- Morgan's Discovery
 				qg = 16105,	-- Aristan Mottar
 				coord = { 54.6, 65.6, STORMWIND_CITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
@@ -1353,7 +1353,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					{ 52.8, 65.4, STORMWIND_CITY },
 					-- #endif
 				},
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
@@ -1361,7 +1361,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8980,	-- Zinge's Assessment
 				qg = 16108,	-- Fenstad Argyle
 				coord = { 66.8, 44.4, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 			}),
@@ -1369,7 +1369,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8982,	-- Tracing the Source (H) (1/2)
 				qg = 6741,	-- Innkeeper Norman <Innkeeper>
 				coord = { 67.6, 38.2, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 			}),
@@ -1413,7 +1413,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				sourceQuest = 8979,	-- Fenstad's Hunch
 				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				coord = { 50.0, 68.6, UNDERCITY },
-				timeline = { ADDED_1_9_3, REMOVED_3_3_0 },
+				timeline = { REMOVED_3_3_0 },
 				races = HORDE_ONLY,
 				isYearly = true,
 				-- #if BEFORE 3.3.0
@@ -1931,7 +1931,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					},
 				}),
 				i(21812, {	-- Box of Chocolates
-					timeline = { ADDED_1_9_3, REMOVED_3_3_2 },
+					timeline = { REMOVED_3_3_2 },
 					groups = {
 						i(22236),	-- Buttermilk Delight
 						i(22237),	-- Dark Desire
@@ -1948,7 +1948,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				-- #if BEFORE 3.3.2.11403
 				i(22279, {	-- Lovely Black Dress
-					timeline = { ADDED_1_9_3, REMOVED_7_2_5 },
+					timeline = { REMOVED_7_2_5 },
 				}),
 				i(34480, {	-- Romantic Picnic Basket (TOY!)
 					timeline = { ADDED_2_4_0 },
@@ -1956,7 +1956,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(22200),	-- Silver Shafted Arrow
 				i(22235),	-- Peddlefeet (PET!)
 				i(22259, {	-- Unbestowed Friendship Bracelet
-					timeline = { ADDED_1_9_3, REMOVED_3_3_2 },
+					timeline = { REMOVED_3_3_2 },
 				}),
 				-- #endif
 			},
@@ -1973,7 +1973,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					_drop = { "f", "spellID" },
 				}),
 				i(21815, {	-- Wrinkled Love Token
-					timeline = { ADDED_1_9_3, REMOVED_3_3_2 },
+					timeline = { REMOVED_3_3_2 },
 					_drop = { "f" },
 				}),
 			},

@@ -357,13 +357,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuest = 40950,	-- Honoring Success
 							provider = { "n", 101513 },	-- Lord Jorach Ravenholdt
 							coord = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						q(40995, {	-- Injection of Power
 							sourceQuest = 40994,	-- Right Tools for the Job
 							provider = { "n", 102594 },	-- Marin Noggenfogger
 							coord = { 30.4, 70.4, THE_HALL_OF_SHADOWS },
-							timeline = { ADDED_7_0_3, REMOVED_8_0_1 },
+							timeline = { REMOVED_8_0_1 },
 						}),
 						-- Start Legion Zone
 						q(40996, {	-- Delegation
@@ -1016,7 +1016,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(43885, {	-- Hitting the Books
 							provider = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 							coord = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
-							timeline = { ADDED_7_0_3, REMOVED_7_3_0 },
+							timeline = { REMOVED_7_3_0 },
 						}),
 						q(46148, {	-- Knowledge is Power
 							sourceQuest = 43885,	-- Hitting the Books

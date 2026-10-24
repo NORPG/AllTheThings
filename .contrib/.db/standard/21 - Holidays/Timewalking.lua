@@ -1779,7 +1779,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			}),
 		}),
 		inst_tw(254, {	-- The Arcatraz
-			timeline = { ADDED_6_2_2, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				e(548, {	-- Zereketh the Unbound
 					creatureID = 20870,
@@ -2074,7 +2074,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			}),
 		}),
 		inst_tw(260, {	-- The Slave Pens
-			timeline = { ADDED_6_2_2, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				e(570, {	-- Mennu the Betrayer
 					creatureID = 17941,
@@ -3346,7 +3346,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			},
 		}),
 		inst_tw(271, {	-- Ahn'kahet: The Old Kingdom
-			timeline = { ADDED_6_2_2, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				cr(29309, e(580, {	-- Elder Nadox
 					i(127607),	-- Blade of Nadox
@@ -3527,7 +3527,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			})),
 		}),
 		inst_tw(278, {	-- Pit of Saron
-			timeline = { ADDED_6_2_2, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				cr(36494, e(608, {	-- Forgemaster Garfrost
 					i(133486),	-- Garfrost's Two-Ton Hammer
@@ -3713,7 +3713,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			},
 		}),
 		inst_tw(286, {	-- Utgarde Pinnacle
-			timeline = { ADDED_6_2_2, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				cr(26668, e(641, {	-- Svala Sorrowgrave
 					i(127458),	-- Ritualistic Arthame
@@ -4576,7 +4576,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			})),
 		}),
 		inst_tw(71, {	-- Grim Batol
-			timeline = { ADDED_6_2_3, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				cr(39625, e(131, {	-- General Umbriss
 					i(133283),	-- Modgud's Blade
@@ -5333,7 +5333,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 		}),
 		inst_tw(324, {	-- Siege of Niuzao Temple
-			timeline = { ADDED_7_1_5, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				e(693, {	-- Vizier Jin'bak
 					crs = { 61567 },	-- Vizier Jin'bak
@@ -6037,7 +6037,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 			},
 		}),
 		inst_tw_wod(558, {	-- Iron Docks
-			timeline = { ADDED_8_1_5, REMOVED_9_1_5 },
+			timeline = { REMOVED_9_1_5 },
 			groups = {
 				e(1235, {	-- Fleshrender Nok'gar
 					crs = {

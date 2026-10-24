@@ -94,7 +94,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(76087),	-- Flask of the Earth
 			i(76085),	-- Flask of the Warm Sun
 			i(76088),	-- Flask of Winter's Bite
-			i(76091, {timeline = {ADDED_5_0_4, REMOVED_5_1_0}}),	-- Greater Potion of Luck[5.1.0+] // Potion of Luck
+			i(76091, {timeline = {REMOVED_5_1_0}}),	-- Greater Potion of Luck[5.1.0+] // Potion of Luck
 			i(76076),	-- Mad Hozen Elixir
 			i(76075),	-- Mantid Elixir
 			i(76097),	-- Master Healing Potion

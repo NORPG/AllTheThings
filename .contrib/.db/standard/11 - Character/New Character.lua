@@ -904,7 +904,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					description = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					provider = { "n", 184600 },	-- Warlock Minion
 					coord = { 79.5, 69.8, STORMWIND_CITY },
-					timeline = { ADDED_9_2_0, REMOVED_10_1_5 },
+					timeline = { REMOVED_10_1_5 },
 					races = ALLIANCE_ONLY,
 					classes = { WARLOCK },
 				}),
@@ -912,7 +912,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					description = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					provider = { "n", 184600 },	-- Warlock Minion
 					coord = { 74.6, 47.4, ORGRIMMAR },
-					timeline = { ADDED_9_2_0, REMOVED_10_1_5 },
+					timeline = { REMOVED_10_1_5 },
 					races = HORDE_ONLY,
 					classes = { WARLOCK },
 				}),

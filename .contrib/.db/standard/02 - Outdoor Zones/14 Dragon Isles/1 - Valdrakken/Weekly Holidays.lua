@@ -8,10 +8,10 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
 				i(202079, {	-- Cache of Vault Treasures (N)
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+					timeline = { REMOVED_10_1_0 },
 				}),
 				i(202080, {	-- Cache of Vault Treasures (H)
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+					timeline = { REMOVED_10_1_0 },
 				}),
 				i(205966, {	-- Cache of Aberrus Treasures (N)
 					timeline = { ADDED_10_1_0, REMOVED_10_2_0 },

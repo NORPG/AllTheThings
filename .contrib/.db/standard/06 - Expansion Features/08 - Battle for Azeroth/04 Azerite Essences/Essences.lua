@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(13779, {		-- Phenomenal Cosmic Power
-					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					groups = {
 						title(407, {		-- <Name>, Azeroth's Champion
 							timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(RANK_FOUR, {
-					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					groups = {
 						elitepvp(az(32, 4, {	-- Conflict and Strife (Rank 4)
 							provider = { "i", 169899 },	-- Polished Skull Trophy
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(RANK_FOUR, {
-					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					groups = {
 						az(23, 4, {	-- Blood of the Enemy (Rank 4)
 							provider = { "i", 168814 },	-- Animated Blood of the Decimated
@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(RANK_FOUR, {
-					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					groups = {
 						az(18, 4, {	-- Artifice of Time (Rank 4)
 							provider = { "i", 168923 },	-- Unburdened Azerite Timequartz
@@ -383,7 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(RANK_FOUR, {
-					timeline = { ADDED_8_2_0, REMOVED_9_0_1 },
+					timeline = { REMOVED_9_0_1 },
 					groups = {
 						az(25, 4, {	-- Aegis of the Deep (Rank 4)
 							provider = { "i", 168840 },	-- Resplendent Bastion of the Depths

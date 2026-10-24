@@ -2647,7 +2647,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				ach(40997),	-- The Gatecrashers (automated)
 				ach(40995),	-- The Originals (automated)
-				ach(41038, {timeline = {ADDED_11_0_5, REMOVED_11_0_7}}),	-- Token Collector
+				ach(41038, {timeline = {REMOVED_11_0_7}}),	-- Token Collector
 				ach(41013),	-- Upgraded Apparel
 				ach(40661, {	-- Zoomies!
 					provider = { "i", 224157 },	-- Pet Mirror
@@ -2730,7 +2730,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								{ 56.0, 18.4, STORMWIND_CITY },
 								-- #endif
 							},
-							timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+							timeline = { REMOVED_11_0_7 },
 							isWeekly = true,
 							groups = {
 								i(232471, {	-- Cache of Dark Iron Treasures
@@ -2741,7 +2741,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84735, {	-- Truth of the Dark Irons
 							provider = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
 							coord = { 63.0, 49.7, TANARIS },
-							timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+							timeline = { REMOVED_11_0_7 },
 						}),
 						------ Stay awhile and listen ------
 						hqt(84743, {	-- Stay awhile and listen: Moira Thaurissan <Queen of the Dark Iron>
@@ -2755,7 +2755,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 					}),
 					n(VENDORS, {
-						timeline = {ADDED_11_0_5, REMOVED_11_0_7},
+						timeline = {REMOVED_11_0_7},
 						groups = {
 							-- TODO: maybe once I have figured out better 'Sources' tech to list things with a Source and then assign alternate Sources
 							-- this can be cleaned up again while maintaining proper 'cost' links
@@ -2931,14 +2931,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							}),
 						}),
 					}),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {timeline = {ADDED_11_0_5, REMOVED_11_0_7}}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.NORMAL, {timeline = {REMOVED_11_0_7}}).AddGroups({
 						CommonBossDrops({
 							i(232365, {	-- Timewarped Relic Coffer Key
 								description = "You can only loot 120 keys per difficulty per character for the entire event.",
 							}),
 						}),
 					}),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {timeline = {ADDED_11_0_5, REMOVED_11_0_7}}).AddGroups({
+					Difficulty(DIFFICULTY.RAID.HEROIC, {timeline = {REMOVED_11_0_7}}).AddGroups({
 						CommonBossDrops({
 							i(232366, {	-- Timewarped Relic Coffer Key
 								description = "You can only loot 120 keys per difficulty per character for the entire event.",
@@ -4129,7 +4129,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					groups = {
 						ach(40977),	-- Codex Editor: Ahn'Qiraj
 						i(233014, {	-- Bronze Celebration Cache of Treasures
-							timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+							timeline = { REMOVED_11_0_7 },
 							sym = SYM_ALL_BRD_DROPS,
 						}),
 						-- #IF AFTER 11.2.5
@@ -4149,7 +4149,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(VENDORS, {
 				n(223884, {	-- Bobadormu
 					coord = { 62.7, 50.3, TANARIS },
-					timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+					timeline = { REMOVED_11_0_7 },
 					groups = {
 						filter(MISC, sharedData({
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
@@ -4321,7 +4321,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(229707, {	-- Storekeeper Reginald <Out of Time-ly Trinkets>
 					coord = { 62.9, 51.1, TANARIS },
-					timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+					timeline = { REMOVED_11_0_7 },
 					groups = sharedData({
 						cost = { { "c", BRONZE_TOKEN, 10 } },
 					}, {
@@ -4340,7 +4340,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(223902, {	-- Traeya <Armor Vendor>
 					coord = { 63.1, 50.9, TANARIS },
-					timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
+					timeline = { REMOVED_11_0_7 },
 					groups = sharedData({
 						cost = { { "c", BRONZE_TOKEN, 60 } },
 					}, {

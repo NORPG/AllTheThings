@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 				cr(91331, e(1438, {	-- Archimonde
 					ach(10073),	-- Echoes of Doomfire
 					ach(9680, {	-- Time is a Flat Circle
-						timeline = { ADDED_6_2_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 					un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 				})),

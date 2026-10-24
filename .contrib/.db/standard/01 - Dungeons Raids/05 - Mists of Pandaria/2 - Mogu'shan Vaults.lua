@@ -138,11 +138,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				groups = {
 					i(89804, {	-- Cache of Mogu Riches (Original)
 						description = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { REMOVED_5_2_0 },
 					}),
 					i(89858, {	-- Cache of Mogu Riches (Original)
 						description = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+						timeline = { REMOVED_5_2_0 },
 					}),
 					i(95618, {	-- Cache of Mogu Riches
 						description = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Mogu'shan Vaults.",
@@ -379,7 +379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					groups = {
 						ach(6455),	-- Show Me Your Moves!
 						ach(6954, {	-- Ahead of the Curve: Will of the Emperor
-							timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+							timeline = { REMOVED_5_2_0 },
 							-- #if MOP
 							OnUpdate = CUTTING_EDGE_ONUPDATE;
 							-- #endif
@@ -640,14 +640,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								title(204),	-- , Delver of the Vaults
 							}),
 							ach(7485, {	-- Cutting Edge: Will of the Emperor
-								timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+								timeline = { REMOVED_5_2_0 },
 								-- #if MOP
 								OnUpdate = CUTTING_EDGE_ONUPDATE;
 								-- #endif
 							}),
 							ach(6675),	-- Heroic: Will of the Emperor Guild Run
 							ach(6680, {	-- Realm First! Will of the Emperor
-								timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+								timeline = { REMOVED_5_2_0 },
 								-- #if MOP
 								OnUpdate = CUTTING_EDGE_ONUPDATE;
 								-- #endif

@@ -209,15 +209,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				description = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 				groups = {
 					i(28483, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Breastplate of Kings
-					i(28484, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of Kings
-					i(28485, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
-					i(30069, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Earthforged Leggings
-					i(23565, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
-					i(30074, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
+					i(28484, {timeline = {REMOVED_4_0_3}}),	-- Bulwark of Kings
+					i(28485, {timeline = {REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
+					i(30069, {timeline = {REMOVED_4_0_3}}),	-- Earthforged Leggings
+					i(23565, {timeline = {REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
+					i(30074, {timeline = {REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
 					i(23563, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-					i(30076, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormforged Hauberk
-					i(23564, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-					i(30070, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windforged Leggings
+					i(30076, {timeline = {REMOVED_4_0_3}}),	-- Stormforged Hauberk
+					i(23564, {timeline = {REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+					i(30070, {timeline = {REMOVED_4_0_3}}),	-- Windforged Leggings
 				},
 			}),
 			prof(9787, {	-- Weaponsmith
@@ -226,38 +226,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					prof(17041, {	-- Master Axesmith
 						description = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 						groups = {
-							i(28432, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Black Planar Edge
-							i(28436, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bloodmoon
-							i(28434, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lunar Crescent
-							i(28435, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Mooncleaver
+							i(28432, {timeline = {REMOVED_4_0_3}}),	-- Black Planar Edge
+							i(28436, {timeline = {REMOVED_4_0_3}}),	-- Bloodmoon
+							i(28434, {timeline = {REMOVED_4_0_3}}),	-- Lunar Crescent
+							i(28435, {timeline = {REMOVED_4_0_3}}),	-- Mooncleaver
 							i(30088, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Skyforged Great Axe
 							i(30087, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stormforged Axe
-							i(28431, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- The Planar Edge
-							i(28433, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
+							i(28431, {timeline = {REMOVED_4_0_3}}),	-- The Planar Edge
+							i(28433, {timeline = {REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
 						},
 					}),
 					prof(17040, {	-- Master Hammersmith
 						description = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 						groups = {
-							i(28441, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Deep Thunder
-							i(28438, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonmaw
-							i(28439, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonstrike
-							i(28437, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Drakefist Hammer
+							i(28441, {timeline = {REMOVED_4_0_3}}),	-- Deep Thunder
+							i(28438, {timeline = {REMOVED_4_0_3}}),	-- Dragonmaw
+							i(28439, {timeline = {REMOVED_4_0_3}}),	-- Dragonstrike
+							i(28437, {timeline = {REMOVED_4_0_3}}),	-- Drakefist Hammer
 							i(30093, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Great Earthforged Hammer
 							i(30089, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Lavaforged Warhammer
-							i(28442, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormherald
-							i(28440, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thunder
+							i(28442, {timeline = {REMOVED_4_0_3}}),	-- Stormherald
+							i(28440, {timeline = {REMOVED_4_0_3}}),	-- Thunder
 						},
 					}),
 					prof(17039, {	-- Master Swordsmith
 						description = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 						groups = {
-							i(28427, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazefury
-							i(28426, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazeguard
-							i(28425, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Fireguard
-							i(28428, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Blade
-							i(28429, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Champion
-							i(28430, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Executioner
+							i(28427, {timeline = {REMOVED_4_0_3}}),	-- Blazefury
+							i(28426, {timeline = {REMOVED_4_0_3}}),	-- Blazeguard
+							i(28425, {timeline = {REMOVED_4_0_3}}),	-- Fireguard
+							i(28428, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Blade
+							i(28429, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Champion
+							i(28430, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Executioner
 							i(30086, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stoneforged Claymore
 							i(30077, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Windforged Rapier
 						},
@@ -266,8 +266,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 						description = "These can be crafted by any Weaponsmith.",
 						groups = {
 							i(30071,  {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Light Earthforged Blade
-							i(30073, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Emberforged Hammer
-							i(30072, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Skyforged Axe
+							i(30073, {timeline = {REMOVED_4_0_3}}),	-- Light Emberforged Hammer
+							i(30072, {timeline = {REMOVED_4_0_3}}),	-- Light Skyforged Axe
 						},
 					}),
 				},
@@ -339,15 +339,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(31367),	-- Wildguard Leggings
 				-- #if AFTER CATA
 				i(28483, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Breastplate of Kings
-				i(28484, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of Kings
-				i(28485, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
-				i(30069, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Earthforged Leggings
-				i(23565, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
-				i(30074, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
+				i(28484, {timeline = {REMOVED_4_0_3}}),	-- Bulwark of Kings
+				i(28485, {timeline = {REMOVED_4_0_3}}),	-- Bulwark of the Ancient Kings
+				i(30069, {timeline = {REMOVED_4_0_3}}),	-- Earthforged Leggings
+				i(23565, {timeline = {REMOVED_4_0_3}}),	-- Embrace of the Twisting Nether
+				i(30074, {timeline = {REMOVED_4_0_3}}),	-- Heavy Earthforged Breastplate
 				i(23563, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-				i(30076, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormforged Hauberk
-				i(23564, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
-				i(30070, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windforged Leggings
+				i(30076, {timeline = {REMOVED_4_0_3}}),	-- Stormforged Hauberk
+				i(23564, {timeline = {REMOVED_4_0_3}}),	-- Twisting Nether Chain Shirt / Nether Plate Shirt[LEGION+]
+				i(30070, {timeline = {REMOVED_4_0_3}}),	-- Windforged Leggings
 				-- #endif
 			}),
 			n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
@@ -357,11 +357,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			})),
 			filter(MISC, {
 				i(33185, {timeline = {ADDED_2_3_0}}),	-- Adamantite Weapon Chain
-				i(25844, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Adamantite Rod
+				i(25844, {timeline = {REMOVED_5_0_4}}),	-- Adamantite Rod
 				i(23529),	-- Adamantite Sharpening Stone
 				i(28421),	-- Adamantite Weightstone
-				i(25845, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Eternium Rod
-				i(25843, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Fel Iron Rod
+				i(25845, {timeline = {REMOVED_5_0_4}}),	-- Eternium Rod
+				i(25843, {timeline = {REMOVED_5_0_4}}),	-- Fel Iron Rod
 				i(23528),	-- Fel Sharpening Stone
 				i(28420),	-- Fel Weightstone
 				i(23530),	-- Felsteel Shield Spike
@@ -384,37 +384,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(23497),	-- Fel Iron Hatchet
 				i(23540),	-- Felsteel Longblade
 				i(23543),	-- Felsteel Reaper
-				i(29204, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
+				i(29204, {timeline = {REMOVED_5_0_4}}),	-- Felsteel Whisper Knives
 				i(32854, {timeline = {ADDED_2_3_0}}),	-- Hammer of Righteous Might
 				i(23556),	-- Hand of Eternity
 				i(23541),	-- Khorium Champion
 				i(23544),	-- Runic Hammer
 				-- #if AFTER CATA
-				i(28432, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Black Planar Edge
-				i(28427, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazefury
-				i(28426, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Blazeguard
-				i(28436, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bloodmoon
-				i(28441, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Deep Thunder
-				i(28438, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonmaw
-				i(28439, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dragonstrike
-				i(28437, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Drakefist Hammer
-				i(28425, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Fireguard
+				i(28432, {timeline = {REMOVED_4_0_3}}),	-- Black Planar Edge
+				i(28427, {timeline = {REMOVED_4_0_3}}),	-- Blazefury
+				i(28426, {timeline = {REMOVED_4_0_3}}),	-- Blazeguard
+				i(28436, {timeline = {REMOVED_4_0_3}}),	-- Bloodmoon
+				i(28441, {timeline = {REMOVED_4_0_3}}),	-- Deep Thunder
+				i(28438, {timeline = {REMOVED_4_0_3}}),	-- Dragonmaw
+				i(28439, {timeline = {REMOVED_4_0_3}}),	-- Dragonstrike
+				i(28437, {timeline = {REMOVED_4_0_3}}),	-- Drakefist Hammer
+				i(28425, {timeline = {REMOVED_4_0_3}}),	-- Fireguard
 				i(30093, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Great Earthforged Hammer
 				i(30089, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Lavaforged Warhammer
-				i(30073, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Emberforged Hammer
-				i(30072, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Light Skyforged Axe
-				i(28428, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Blade
-				i(28429, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Champion
-				i(28430, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lionheart Executioner
-				i(28434, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lunar Crescent
-				i(28435, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Mooncleaver
+				i(30073, {timeline = {REMOVED_4_0_3}}),	-- Light Emberforged Hammer
+				i(30072, {timeline = {REMOVED_4_0_3}}),	-- Light Skyforged Axe
+				i(28428, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Blade
+				i(28429, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Champion
+				i(28430, {timeline = {REMOVED_4_0_3}}),	-- Lionheart Executioner
+				i(28434, {timeline = {REMOVED_4_0_3}}),	-- Lunar Crescent
+				i(28435, {timeline = {REMOVED_4_0_3}}),	-- Mooncleaver
 				i(30088, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Skyforged Great Axe
 				i(30086, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stoneforged Claymore
 				i(30087, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Stormforged Axe
-				i(28442, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Stormherald
-				i(28431, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- The Planar Edge
-				i(28440, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thunder
-				i(28433, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
+				i(28442, {timeline = {REMOVED_4_0_3}}),	-- Stormherald
+				i(28431, {timeline = {REMOVED_4_0_3}}),	-- The Planar Edge
+				i(28440, {timeline = {REMOVED_4_0_3}}),	-- Thunder
+				i(28433, {timeline = {REMOVED_4_0_3}}),	-- Wicked Edge of the Planes
 				i(30077, {timeline = {ADDED_2_0_5, REMOVED_4_0_3, ADDED_7_1_5}}),	-- Windforged Rapier
 				-- #endif
 			}),
@@ -443,7 +443,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(33825, {timeline = {ADDED_2_3_0}}),	-- Skullfish Soup
 			i(27667),	-- Spicy Crawdad
 			i(33872, {timeline = {ADDED_2_3_0}}),	-- Spicy Hot Talbuk
-			i(27656, {timeline = {ADDED_2_0_5, REMOVED_4_2_0}}),	-- Sporeling Snack
+			i(27656, {timeline = {REMOVED_4_2_0}}),	-- Sporeling Snack
 			applyclassicphase(TBC_PHASE_TWO, i(33048, {timeline = {ADDED_2_1_2}})),	-- Stewed Trout
 			i(33866, {timeline = {ADDED_2_3_0}}),	-- Stormchops
 			i(27660),	-- Talbuk Steak
@@ -524,11 +524,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(38928),	-- Enchant Chest - Major Versatility / TBC: Major Spirit
 				i(38929),	-- Enchant Chest - Versatility Prime / TBC: Restore Mana Prime
 				i(38940),	-- Enchant Cloak - Greater Agility
-				i(38941, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Arcane Resistance
+				i(38941, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Arcane Resistance
 				i(39000),	-- Enchant Cloak - Greater Dodge / TBC: Steelweave
-				i(38942, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Shadow Resistance
+				i(38942, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Shadow Resistance
 				i(38914),	-- Enchant Cloak - Major Armor
-				i(38915, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Major Resistance
+				i(38915, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Cloak - Major Resistance
 				i(38939),	-- Enchant Cloak - Empowerment
 				-- #if AFTER BFA
 				i(38895),	-- Enchant Cloak - Dodge
@@ -581,7 +581,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(38904),	-- Enchant Shield - Lesser Dodge / TBC: Tough Shield
 				i(38945),	-- Enchant Shield - Major Stamina
 				i(38906),	-- Enchant Shield - Parry / TBC: Shield Block
-				i(38907, {timeline = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Shield - Resistance
+				i(38907, {timeline = { REMOVED_5_0_4 }}),	-- Enchant Shield - Resistance
 				i(38927),	-- Enchant Weapon - Battlemaster
 				i(38948),	-- Enchant Weapon - Executioner
 				i(38998),	-- Enchant Weapon - Deathfrost
@@ -738,11 +738,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(23737),	-- Adamantite Grenade
 				applyclassicphase(TBC_PHASE_TWO, i(20475, {timeline = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Adamantite Arrow Maker
 				applyclassicphase(TBC_PHASE_TWO, i(33803, {timeline = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Adamantite Stinger
-				applyclassicphase(TBC_PHASE_TWO, i(34504, {timeline = {ADDED_2_0_5, REMOVED_4_0_1}})),	-- Adamantite Shell Machine
-				applyclassicphase(TBC_PHASE_TWO, i(23773, {timeline = {ADDED_2_0_5, REMOVED_4_0_1}})),	-- Adamantite Shells
+				applyclassicphase(TBC_PHASE_TWO, i(34504, {timeline = {REMOVED_4_0_1}})),	-- Adamantite Shell Machine
+				applyclassicphase(TBC_PHASE_TWO, i(23773, {timeline = {REMOVED_4_0_1}})),	-- Adamantite Shells
 				i(23819),	-- Elemental Seaforium Charge
 				i(23736),	-- Fel Iron Bomb
-				i(23772, {timeline = {ADDED_2_0_5, REMOVED_4_0_1}}),	-- Fel Iron Shells
+				i(23772, {timeline = {REMOVED_4_0_1}}),	-- Fel Iron Shells
 				i(23774),	-- Fel Iron Toolbox
 				i(34113, {timeline = {ADDED_2_3_0}}),	-- Field Repair Bot 110G
 				i(32413, {timeline = {ADDED_2_1_0}}),	-- Frost Grenade
@@ -1523,9 +1523,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31862, {timeline = {ADDED_2_2_0, REMOVED_4_0_3}})),	-- Balanced Shadow Draenite
 					i(23095),	-- Bold Blood Garnet
 					i(28595),	-- Bright Blood Garnet
-					i(23113, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Golden Draenite
-					i(23106, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Dazzling Deep Peridot
-					i(23097, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Delicate Blood Garnet
+					i(23113, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Golden Draenite
+					i(23106, {timeline = {REMOVED_4_0_3}}),	-- Dazzling Deep Peridot
+					i(23097, {timeline = {REMOVED_4_0_3}}),	-- Delicate Blood Garnet
 					i(23105),	-- Enduring Deep Peridot
 					i(23114),	-- Gleaming Golden Draenite
 					i(23100),	-- Glinting Flame Spessarite
@@ -1535,15 +1535,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(23098),	-- Inscribed Flame Spessarite
 					i(23104),	-- Jagged Deep Peridot
 					i(23099),	-- Luminous Flame Spessarite
-					i(23121, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lustrous Azure Moonstone
+					i(23121, {timeline = {REMOVED_4_0_3}}),	-- Lustrous Azure Moonstone
 					i(23101),	-- Potent Flame Spessarite
 					i(32833, {timeline = {ADDED_2_1_0}}),	-- Purified Jaggal Pearl
 					i(23103),	-- Radiant Deep Peridot
 					i(23116),	-- Rigid Golden Draenite
 					i(23109),	-- Royal Shadow Draenite
-					i(23096, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Runed Blood Garnet
+					i(23096, {timeline = {REMOVED_4_0_3}}),	-- Runed Blood Garnet
 					i(23110),	-- Shifting Shadow Draenite
-					i(28290, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Smooth Golden Draenite
+					i(28290, {timeline = {REMOVED_4_0_3}}),	-- Smooth Golden Draenite
 					i(23118),	-- Solid Azure Moonstone
 					i(23111),	-- Sovereign Shadow Draenite
 					i(23119),	-- Sparkling Azure Moonstone
@@ -1557,20 +1557,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(31863, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Balanced Nightseye
 					i(24027),	-- Bold Living Ruby
 					i(25897),	-- Bracing Earthstorm Diamond
-					i(24031, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Bright Living Ruby
-					i(24047, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Dawnstone
+					i(24031, {timeline = {REMOVED_4_0_3}}),	-- Bright Living Ruby
+					i(24047, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Dawnstone
 					i(25899),	-- Brutal Earthstorm Diamond
 					i(34220, {timeline = {ADDED_2_3_0}}),	-- Chaotic Skyfire Diamond
 					i(24065),	-- Dazzling Talasite
 					i(24028),	-- Delicate Living Ruby
 					i(25890),	-- Destructive Skyfire Diamond
 					applyclassicphase(TBC_PHASE_FIVE, i(35503, {timeline = {ADDED_2_4_0}})),	-- Ember Skyfire Diamond
-					i(24062, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Enduring Talasite
+					i(24062, {timeline = {REMOVED_4_0_3}}),	-- Enduring Talasite
 					i(25895),	-- Enigmatic Skyfire Diamond
 					applyclassicphase(TBC_PHASE_FIVE, i(35501, {timeline = {ADDED_2_4_0}})),	-- Eternal Earthstorm Diamond
 					i(24036),	-- Flashing Living Ruby
 					applyclassicphase(TBC_PHASE_FIVE, i(35318, {timeline = {ADDED_2_4_2}})),	-- Forceful Talasite
-					i(24050, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Gleaming Dawnstone
+					i(24050, {timeline = {REMOVED_4_0_3}}),	-- Gleaming Dawnstone
 					i(24061),	-- Glinting Noble Topaz
 					i(24056),	-- Glowing Nightseye
 					i(31861, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Great Dawnstone
@@ -1579,7 +1579,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(25901),	-- Insightful Earthstorm Diamond
 					i(24067),	-- Jagged Talasite
 					i(24060),	-- Luminous Noble Topaz
-					i(24037, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Lustrous Star of Elune
+					i(24037, {timeline = {REMOVED_4_0_3}}),	-- Lustrous Star of Elune
 					i(24053, {timeline = {ADDED_2_1_3}}),	-- Mystic Dawnstone
 					i(25893),	-- Mystical Skyfire Diamond
 					i(24059),	-- Potent Noble Topaz
@@ -1591,7 +1591,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					applyclassicphase(TBC_PHASE_FIVE, i(35707, {timeline = {ADDED_2_4_0}})),	-- Regal Nightseye
 					i(32409, {timeline = {ADDED_2_1_0}}),	-- Relentless Earthstorm Diamond
 					i(24051),	-- Rigid Dawnstone
-					i(24057, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Royal Nightseye
+					i(24057, {timeline = {REMOVED_4_0_3}}),	-- Royal Nightseye
 					i(24030),	-- Runed Living Ruby
 					i(24055),	-- Shifting Nightseye
 					i(24048),	-- Smooth Dawnstone
@@ -1602,9 +1602,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(24039),	-- Stormy Star of Elune
 					i(24032),	-- Subtle Living Ruby
 					i(25894),	-- Swift Skyfire Diamond
-					i(24029, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Teardrop Living Ruby
+					i(24029, {timeline = {REMOVED_4_0_3}}),	-- Teardrop Living Ruby
 					i(25898),	-- Tenacious Earthstorm Diamond
-					i(24052, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Thick Dawnstone
+					i(24052, {timeline = {REMOVED_4_0_3}}),	-- Thick Dawnstone
 					i(32410, {timeline = {ADDED_2_1_0}}),	-- Thundering Skyfire Diamond
 					i(31867, {timeline = {ADDED_2_1_0}}),	-- Veiled Noble Topaz
 					i(31868, {timeline = {ADDED_2_1_0}}),	-- Wicked Noble Topaz
@@ -1612,24 +1612,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				applyclassicphase(TBC_PHASE_THREE, n(QUALITY_EPIC, {
 					timeline = { ADDED_2_1_0 },
 					groups = {
-						i(32213, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Balanced Shadowsong Amethyst
+						i(32213, {timeline = {REMOVED_4_0_3}}),	-- Balanced Shadowsong Amethyst
 						i(32193),	-- Bold Crimson Spinel
-						i(32197, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Bright Crimson Spinel
-						i(32204, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Brilliant Lionseye
+						i(32197, {timeline = {REMOVED_4_0_3}}),	-- Bright Crimson Spinel
+						i(32204, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Lionseye
 						i(32225),	-- Dazzling Seaspray Emerald
 						i(32194),	-- Delicate Crimson Spinel
 						i(32223),	-- Enduring Seaspray Emerald
 						i(32199),	-- Flashing Crimson Spinel
 						applyclassicphase(TBC_PHASE_FIVE, i(35759, {timeline = {ADDED_2_4_0}})),	-- Forceful Seaspray Emerald
-						i(32207, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Gleaming Lionseye
+						i(32207, {timeline = {REMOVED_4_0_3}}),	-- Gleaming Lionseye
 						i(32220),	-- Glinting Pyrestone
 						i(32215),	-- Glowing Shadowsong Amethyst
-						i(32210, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Great Lionseye
-						i(32214, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Infused Shadowsong Amethyst
+						i(32210, {timeline = {REMOVED_4_0_3}}),	-- Great Lionseye
+						i(32214, {timeline = {REMOVED_4_0_3}}),	-- Infused Shadowsong Amethyst
 						i(32217),	-- Inscribed Pyrestone
 						i(32226),	-- Jagged Seaspray Emerald
-						i(32219, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Luminous Pyrestone
-						i(32202, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Lustrous Empyrean Sapphire
+						i(32219, {timeline = {REMOVED_4_0_3}}),	-- Luminous Pyrestone
+						i(32202, {timeline = {REMOVED_4_0_3}}),	-- Lustrous Empyrean Sapphire
 						i(32209),	-- Mystic Lionseye
 						i(32218),	-- Potent Pyrestone
 						applyclassicphase(TBC_PHASE_FIVE, i(37503, {timeline = {ADDED_2_4_2, REMOVED_4_0_3}})),	-- Purified Shadowsong Amethyst
@@ -1637,7 +1637,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 						i(32224),	-- Radiant Seaspray Emerald
 						applyclassicphase(TBC_PHASE_FIVE, i(35760, {timeline = {ADDED_2_4_0}})),	-- Reckless Pyrestone
 						i(32206),	-- Rigid Lionseye
-						i(32216, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Royal Shadowsong Amethyst
+						i(32216, {timeline = {REMOVED_4_0_3}}),	-- Royal Shadowsong Amethyst
 						i(32196),	-- Runed Crimson Spinel
 						i(32212),	-- Shifting Shadowsong Amethyst
 						i(32205),	-- Smooth Lionseye
@@ -1647,8 +1647,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 						applyclassicphase(TBC_PHASE_FIVE, i(35758, {timeline = {ADDED_2_4_0}})),	-- Steady Seaspray Emerald
 						i(32203),	-- Stormy Empyrean Sapphire
 						i(32198),	-- Subtle Crimson Spinel
-						i(32195, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Teardrop Crimson Spinel
-						i(32208, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Thick Lionseye
+						i(32195, {timeline = {REMOVED_4_0_3}}),	-- Teardrop Crimson Spinel
+						i(32208, {timeline = {REMOVED_4_0_3}}),	-- Thick Lionseye
 						i(32221),	-- Veiled Pyrestone
 						i(32222),	-- Wicked Pyrestone
 					},
@@ -1657,12 +1657,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				n(QUALITY_UNCOMMON, {
 					i(23095),	-- Bold Blood Garnet
 					i(23094),	-- Brilliant Blood Garnet
-					i(23113, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Blood Garnet
-					i(23096, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Blood Garnet
+					i(23113, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Blood Garnet
+					i(23096, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Blood Garnet
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31869)),	-- Deadly Flame Spessarite
 					i(31868, {timeline = {ADDED_2_1_0}}),	-- Deadly Noble Topaz
 					i(28595),	-- Delicate Blood Garnet
-					i(23097, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Delicate Blood Garnet
+					i(23097, {timeline = {REMOVED_4_0_3}}),	-- Delicate Blood Garnet
 					applyclassicphase(TBC_PHASE_FIVE, i(35318, {timeline = {ADDED_2_4_2}})),	-- Forceful Talasite
 					i(23100),	-- Glinting Shadow Draenite
 					i(23098),	-- Inscribed Flame Spessarite
@@ -1672,7 +1672,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(23101),	-- Potent Flame Spessarite
 					i(24059),	-- Potent Noble Topaz
 					i(32833, {timeline = {ADDED_2_1_0}}),	-- Purified Jaggal Pearl
-					i(23106, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Purified Shadow Draenite
+					i(23106, {timeline = {REMOVED_4_0_3}}),	-- Purified Shadow Draenite
 					i(23109),	-- Purified Shadow Draenite
 					i(23103),	-- Radiant Deep Peridot
 					i(24066),	-- Radiant Talasite
@@ -1680,19 +1680,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					applyclassicphase(TBC_PHASE_FIVE, i(35316, {timeline = {ADDED_2_4_2, REMOVED_4_0_3}})),	-- Reckless Noble Topaz
 					i(24060),	-- Reckless Noble Topaz
 					i(23105),	-- Regal Deep Peridot
-					i(24062, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Regal Talasite
+					i(24062, {timeline = {REMOVED_4_0_3}}),	-- Regal Talasite
 					applyclassicphase(TBC_PHASE_FIVE, i(35707, {timeline = {ADDED_2_4_0}})),	-- Regal Talasite
 					i(23116),	-- Rigid Azure Moonstone
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31860, {timeline = {ADDED_2_2_0, REMOVED_4_0_3}})),	-- Rigid Azure Moonstone
 					i(23110),	-- Shifting Shadow Draenite
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31862, {timeline = {ADDED_2_2_0, REMOVED_4_0_3}})),	-- Shifting Shadow Draenite
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, i(31864, {timeline = {ADDED_2_2_0, REMOVED_4_0_3}})),	-- Shifting Shadow Draenite
-					i(28290, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Smooth Golden Draenite
+					i(28290, {timeline = {REMOVED_4_0_3}}),	-- Smooth Golden Draenite
 					i(23114),	-- Smooth Golden Draenite
 					i(23118),	-- Solid Azure Moonstone
 					i(23111),	-- Sovereign Shadow Draenite
 					i(23119),	-- Sparkling Azure Moonstone
-					i(23121, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Sparkling Azure Moonstone
+					i(23121, {timeline = {REMOVED_4_0_3}}),	-- Sparkling Azure Moonstone
 					i(33782, {timeline = {ADDED_2_2_0}}),	-- Steady Talasite
 					i(23120),	-- Stormy Azure Moonstone
 					i(23115),	-- Subtle Golden Draenite
@@ -1702,12 +1702,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				n(QUALITY_RARE, {
 					i(24027),	-- Bold Living Ruby
 					i(25897),	-- Bracing Earthstorm Diamond
-					i(24047, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Living Ruby
-					i(24029, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Brilliant Living Ruby
+					i(24047, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Living Ruby
+					i(24029, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Living Ruby
 					i(24030),	-- Brilliant Living Ruby
 					i(25899),	-- Brutal Earthstorm Diamond
 					i(34220, {timeline = {ADDED_2_3_0}}),	-- Chaotic Skyfire Diamond
-					i(24031, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Delicate Living Ruby
+					i(24031, {timeline = {REMOVED_4_0_3}}),	-- Delicate Living Ruby
 					i(24028),	-- Delicate Living Ruby
 					i(25890),	-- Destructive Skyfire Diamond
 					applyclassicphase(TBC_PHASE_FIVE, i(35503, {timeline = {ADDED_2_4_0}})),	-- Ember Skyfire Diamond
@@ -1720,7 +1720,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(24053, {timeline = {ADDED_2_1_3}}),	-- Mystic Dawnstone
 					i(25893),	-- Mystical Skyfire Diamond
 					i(25896),	-- Powerful Earthstorm Diamond
-					i(24057, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Purified Nightseye
+					i(24057, {timeline = {REMOVED_4_0_3}}),	-- Purified Nightseye
 					i(24065),	-- Purified Nightseye
 					i(32836, {timeline = {ADDED_2_1_0}}),	-- Purified Shadow Pearl
 					applyclassicphase(TBC_PHASE_FIVE, i(35315, {timeline = {ADDED_2_4_2}})),	-- Quick Dawnstone
@@ -1729,14 +1729,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(24051),	-- Rigid Star of Elune
 					i(31863, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Shifting Nightseye
 					i(24055),	-- Shifting Nightseye
-					i(24050, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Smooth Dawnstone
+					i(24050, {timeline = {REMOVED_4_0_3}}),	-- Smooth Dawnstone
 					i(24048),	-- Smooth Dawnstone
 					i(24033),	-- Solid Star of Elune
 					i(24054),	-- Sovereign Nightseye
-					i(24037, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Sparkling Star of Elune
+					i(24037, {timeline = {REMOVED_4_0_3}}),	-- Sparkling Star of Elune
 					i(24035),	-- Sparkling Star of Elune
 					i(24039),	-- Stormy Star of Elune
-					i(24052, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Subtle Dawnstone
+					i(24052, {timeline = {REMOVED_4_0_3}}),	-- Subtle Dawnstone
 					i(24032),	-- Subtle Dawnstone
 					i(25894),	-- Swift Skyfire Diamond
 					i(25898),	-- Tenacious Earthstorm Diamond
@@ -1748,23 +1748,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					timeline = { ADDED_2_1_0 },
 					groups = {
 						i(32193),	-- Bold Crimson Spinel
-						i(32195, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Brilliant Crimson Spinel
-						i(32204, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Brilliant Crimson Spinel
+						i(32195, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Crimson Spinel
+						i(32204, {timeline = {REMOVED_4_0_3}}),	-- Brilliant Crimson Spinel
 						i(32196),	-- Brilliant Crimson Spinel
-						i(32197, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Delicate Crimson Spinel
+						i(32197, {timeline = {REMOVED_4_0_3}}),	-- Delicate Crimson Spinel
 						i(32194),	-- Delicate Crimson Spinel
 						i(32199),	-- Flashing Crimson Spinel
 						i(32222),	-- Deadly Pyrestone
 						i(32217),	-- Inscribed Pyrestone
 						i(32218),	-- Potent Pyrestone
-						i(32219, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Reckless Pyrestone
+						i(32219, {timeline = {REMOVED_4_0_3}}),	-- Reckless Pyrestone
 						applyclassicphase(TBC_PHASE_FIVE, i(35760, {timeline = {ADDED_2_4_0}})),	-- Reckless Pyrestone
-						i(32214, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Glinting Shadowsong Amethyst
+						i(32214, {timeline = {REMOVED_4_0_3}}),	-- Glinting Shadowsong Amethyst
 						i(32220),	-- Glinting Shadowsong Amethyst
-						i(32216, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Purified Shadowsong Amethyst
+						i(32216, {timeline = {REMOVED_4_0_3}}),	-- Purified Shadowsong Amethyst
 						applyclassicphase(TBC_PHASE_FIVE, i(37503, {timeline = {ADDED_2_4_2, REMOVED_4_0_3}})),	-- Purified Shadowsong Amethyst
 						i(32225),	-- Purified Shadowsong Amethyst
-						i(32213, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Shifting Shadowsong Amethyst
+						i(32213, {timeline = {REMOVED_4_0_3}}),	-- Shifting Shadowsong Amethyst
 						i(32212),	-- Shifting Shadowsong Amethyst
 						i(32211),	-- Sovereign Shadowsong Amethyst
 						i(32215),	-- Timeless Shadowsong Amethyst
@@ -1776,14 +1776,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 						applyclassicphase(TBC_PHASE_FIVE, i(35758, {timeline = {ADDED_2_4_0}})),	-- Steady Seaspray Emerald
 						i(32209),	-- Mystic Lionseye
 						applyclassicphase(TBC_PHASE_FIVE, i(35761, {timeline = {ADDED_2_4_0}})),	-- Quick Lionseye
-						i(32207, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Smooth Lionseye
+						i(32207, {timeline = {REMOVED_4_0_3}}),	-- Smooth Lionseye
 						i(32205),	-- Smooth Lionseye
-						i(32208, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Subtle Lionseye
+						i(32208, {timeline = {REMOVED_4_0_3}}),	-- Subtle Lionseye
 						i(32198),	-- Subtle Lionseye
-						i(32210, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Rigid Empyrean Sapphire
+						i(32210, {timeline = {REMOVED_4_0_3}}),	-- Rigid Empyrean Sapphire
 						i(32206),	-- Rigid Empyrean Sapphire
 						i(32200),	-- Solid Empyrean Sapphire
-						i(32202, {timeline = {ADDED_2_1_0, REMOVED_4_0_3}}),	-- Sparkling Empyrean Sapphire
+						i(32202, {timeline = {REMOVED_4_0_3}}),	-- Sparkling Empyrean Sapphire
 						i(32201),	-- Sparkling Empyrean Sapphire
 						i(32203),	-- Stormy Empyrean Sapphire
 					},
@@ -1861,13 +1861,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				description = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 				groups = {
 					i(29971),	-- Dragonstrike Leggings
-					i(29516, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
-					i(29517, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
-					i(29515, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
+					i(29516, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
+					i(29517, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
+					i(29515, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
 					i(29975),	-- Golden Dragonstrike Breastplate
-					i(29520, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Belt
-					i(29521, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Bracers
-					i(29519, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Breastplate
+					i(29520, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Belt
+					i(29521, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Bracers
+					i(29519, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Breastplate
 				},
 			}),
 			prof(10658, {	-- Elemental Leatherworking
@@ -1875,9 +1875,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				groups = {
 					i(29964),	-- Blackstorm Leggings
 					i(29973),	-- Primalstorm Breastplate
-					i(29526, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Belt
-					i(29527, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Bracers
-					i(29525, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Vest
+					i(29526, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Belt
+					i(29527, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Bracers
+					i(29525, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Vest
 				},
 			}),
 			prof(10660, {	-- Tribal Leatherworking
@@ -1885,9 +1885,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				groups = {
 					i(29974),	-- Living Crystal Breastplate
 					i(29970),	-- Wildfeather Leggings
-					i(29522, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Hauberk
-					i(29523, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Bracers
-					i(29524, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Belt
+					i(29522, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Hauberk
+					i(29523, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Bracers
+					i(29524, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Belt
 				},
 			}),
 			-- #endif
@@ -1941,14 +1941,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 
 					-- #if AFTER CATA
 					i(29973),	-- Primalstorm Breastplate
-					i(29526, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Belt
-					i(29527, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Bracers
-					i(29525, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Primalstrike Vest
+					i(29526, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Belt
+					i(29527, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Bracers
+					i(29525, {timeline = {REMOVED_4_0_3}}),	-- Primalstrike Vest
 
 					i(29974),	-- Living Crystal Breastplate
-					i(29522, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Hauberk
-					i(29523, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Bracers
-					i(29524, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Windhawk Belt
+					i(29522, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Hauberk
+					i(29523, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Bracers
+					i(29524, {timeline = {REMOVED_4_0_3}}),	-- Windhawk Belt
 					-- #endif
 				}),
 				filter(MAIL, {
@@ -2001,13 +2001,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(25676),	-- Wild Draenish Vest
 					i(29509),	-- Windstrike Gloves
 					-- #if AFTER CATA
-					i(29516, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
-					i(29517, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
-					i(29515, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
+					i(29516, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Belt
+					i(29517, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Bracers
+					i(29515, {timeline = {REMOVED_4_0_3}}),	-- Ebon Netherscale Breastplate
 					i(29975),	-- Golden Dragonstrike Breastplate
-					i(29520, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Belt
-					i(29521, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Bracers
-					i(29519, {timeline = {ADDED_2_0_5, REMOVED_4_0_3}}),	-- Netherstrike Breastplate
+					i(29520, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Belt
+					i(29521, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Bracers
+					i(29519, {timeline = {REMOVED_4_0_3}}),	-- Netherstrike Breastplate
 					-- #endif
 				}),
 			}),
@@ -2016,7 +2016,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(258190),	-- Outland Mag'har Banner (DECOR!)
 			})),
 			filter(MISC, {
-				i(29488, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Arcane Armor Kit
+				i(29488, {timeline = {REMOVED_5_0_4}}),	-- Arcane Armor Kit
 				i(34490, {timeline = {ADDED_2_3_0}}),	-- Bag of Many Hides
 				i(29534),	-- Clefthide Leg Armor
 				i(29533),	-- Cobrahide Leg Armor
@@ -2026,8 +2026,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(29531),	-- Drums of Restoration
 				i(29530),	-- Drums of Speed
 				i(29528),	-- Drums of War
-				i(29485, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Flame Armor Kit
-				i(29486, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Frost Armor Kit
+				i(29485, {timeline = {REMOVED_5_0_4}}),	-- Flame Armor Kit
+				i(29486, {timeline = {REMOVED_5_0_4}}),	-- Frost Armor Kit
 				i(34207, {timeline = {ADDED_2_3_0}}),	-- Glove Reinforcements
 				-- #if ANYCLASSIC
 				applyclassicphase(TBC_PHASE_FOUR, i(185848)),	-- Greater Drums of Battle
@@ -2046,13 +2046,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				applyclassicphase(TBC_PHASE_FOUR, i(34100, {timeline = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Knothide Quiver
 				i(34482, {timeline = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
 				i(25652),	-- Magister's Armor Kit
-				i(29487, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Nature Armor Kit
+				i(29487, {timeline = {REMOVED_5_0_4}}),	-- Nature Armor Kit
 				i(29536),	-- Nethercleft Leg Armor
 				i(29535),	-- Nethercobra Leg Armor
 				applyclassicphase(TBC_PHASE_THREE, i(34106, {timeline = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Netherscale Ammo Pouch
 				applyclassicphase(TBC_PHASE_THREE, i(34105, {timeline = {ADDED_2_3_0, REMOVED_4_0_1}})),	-- Quiver of a Thousand Feathers
 				i(29540),	-- Reinforced Mining Bag
-				i(29483, {timeline = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Shadow Armor Kit
+				i(29483, {timeline = {REMOVED_5_0_4}}),	-- Shadow Armor Kit
 				i(25651),	-- Vindicator's Armor Kit
 			}),
 			filter(TRINKET_F, {

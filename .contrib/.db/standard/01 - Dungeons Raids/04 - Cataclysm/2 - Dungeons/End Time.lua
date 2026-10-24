@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 				-- #if BEFORE MOP
 				i(76155, {	-- Thorns of the Dying Day
-					timeline = { ADDED_4_3_0, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 			})),

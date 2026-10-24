@@ -240,7 +240,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					},
 					groups = {
 						i(207030, {	-- Dilated Time Capsule (10.1.5)
-							timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
+							timeline = { REMOVED_10_2_0 },
 						}),
 						i(209856, {	-- Dilated Time Capsule (10.2)
 							timeline = { ADDED_10_2_0, REMOVED_10_2_7 },
@@ -403,7 +403,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						groups = {
 							i(208090, {	-- Contained Paracausality
 								i(207030, {	-- Dilated Time Capsule (10.1.5)
-									timeline = { ADDED_10_1_5, REMOVED_10_2_0 },
+									timeline = { REMOVED_10_2_0 },
 								}),
 								i(209856, {	-- Dilated Time Capsule (10.2)
 									timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },

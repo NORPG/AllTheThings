@@ -965,14 +965,14 @@ maproot(PANDARIA, {
 				q(33229, {	-- A Flash of Bronze... (A)
 					qg = 73691,	-- Chromie <The Timewalkers>
 					coord = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
-					timeline = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
+					timeline = { REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				}),
 				q(33230, {	-- A Flash of Bronze... (H)
 					qg = 73691,	-- Chromie <The Timewalkers>
 					coord = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
-					timeline = { ADDED_5_4_0, REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
+					timeline = { REMOVED_11_0_0 },	-- Supposedly accidentally removed since 11.0.0?
 					races = HORDE_ONLY,
 					isBreadcrumb = true,
 				}),
@@ -1214,7 +1214,7 @@ maproot(PANDARIA, {
 					cost = { { "i", 103684, 1 } },	-- Scroll of Challenge
 					groups = {
 						i(86574, {	-- Elixir of Ancient Knowledge
-							timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -1230,7 +1230,7 @@ maproot(PANDARIA, {
 					groups = {
 						i(104169),	-- Gulp Froglet (PET!)
 						i(104241, {	-- Technique: Glyph of Rain of Frogs
-							timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -1454,7 +1454,7 @@ maproot(PANDARIA, {
 						i(104156),	-- Ashleaf Spriteling (PET!)
 						i(104289),	-- Faintly-Glowing Herb
 						i(104222, {	-- Technique: Glyph of One with Nature
-							timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -1537,7 +1537,7 @@ maproot(PANDARIA, {
 						i(104313),	-- Golden Moss
 						i(104312),	-- Strange Glowing Mushroom
 						i(104210, {	-- Technique: Glyph of Regenerative Magic
-							timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -1622,7 +1622,7 @@ maproot(PANDARIA, {
 					groups = {
 						i(104303),	-- Rain Stone
 						i(104225, {	-- Technique: Glyph of Condensation
-							timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+							timeline = { REMOVED_7_0_3 },
 						}),
 					},
 				}),
@@ -2101,7 +2101,7 @@ maproot(PANDARIA, {
 							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
 						}),
 						i(104014, {	-- Pouch of Timeless Coins (was purchased via valor points)
-							timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+							timeline = { REMOVED_6_0_2 },
 						}),
 						i(103990, {	-- Resolve of Niuzao
 							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
@@ -2440,7 +2440,7 @@ maproot(PANDARIA, {
 							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
 						}),
 						i(104230, {	-- Technique: Glyph of Shifted Appearances
-							timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+							timeline = { REMOVED_6_0_2 },
 							cost = { { "c", 777, 4000 } },	-- 4000x Timeless Coin
 						}),
 					},
@@ -2454,7 +2454,7 @@ maproot(PANDARIA, {
 					i(106130),	-- Big Bag of Herbs
 					i(104289),	-- Faintly-Glowing Herb
 					i(104222, {	-- Technique: Glyph of One with Nature
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				n(72897, {	-- Blazebound Chanter
@@ -2468,12 +2468,12 @@ maproot(PANDARIA, {
 					i(106130),	-- Big Bag of Herbs
 					i(86566),	-- Forager's Gloves
 					i(104232, {	-- Technique: Glyph of Headhunting
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				n(72807, {	-- Crag Stalker
 					i(104279, {	-- Technique: Glyph of the Lean Pack
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				n(72876, {	-- Crimsonscale Firestorm
@@ -2482,7 +2482,7 @@ maproot(PANDARIA, {
 				n(72771, {	-- Damp Shambler
 					i(104312),	-- Strange Glowing Mushroom
 					i(104210, {	-- Technique: Glyph of Regenerative Magic
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				n(72841, {	-- Death Adder
@@ -2496,7 +2496,7 @@ maproot(PANDARIA, {
 					i(104297),	-- Blazing Sigil of Ordos
 					i(104309),	-- Eternal Kiln (TOY!)
 					i(104217, {	-- Technique: Glyph of Impaling Throws
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 				}),
 				n(73162, {	-- Foreboding Flame
@@ -2509,7 +2509,7 @@ maproot(PANDARIA, {
 				}),
 				n(72777, {	-- Gulp Frog
 					i(104241, {	-- Technique: Glyph of Rain of Frogs
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				i(104266, {	-- Heavy Yak Flank
@@ -2532,29 +2532,29 @@ maproot(PANDARIA, {
 				n(72875, {	-- Ordon Candlekeeper
 					i(86565),	-- Battle Horn (TOY!)
 					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 				}),
 				n(72894, {	-- Ordon Fire-Watcher
 					i(104297),	-- Blazing Sigil of Ordos
 					i(104296),	-- Ordon Ceremonial Robes
 					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 				}),
 				n(72892, {	-- Ordon Oathguard
 					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+						timeline = { REMOVED_6_0_2 },
 					}),
 					i(104244, {	-- Technique: Glyph of the Watchful Eye
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 					i(104330),	-- Warped Warning Sign
 				}),
 				n(72805, {	-- Primal Stalker
 					i(104268),	-- Pristine Stalker Hide
 					i(104279, {	-- Technique: Glyph of the Lean Pack
-						timeline = { ADDED_5_4_0, REMOVED_7_0_3 },
+						timeline = { REMOVED_7_0_3 },
 					}),
 				}),
 				i(104257, {	-- Pristine Firestorm Egg

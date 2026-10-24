@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					q(76158, {	-- Temporal Gossamer
 						sourceQuests = { 74913 },	-- Memories of an Artifact
 						provider = { "i", 206163 },	-- Temporal Gossamer
-						timeline = { ADDED_10_1_0, REMOVED_10_2_7 },
+						timeline = { REMOVED_10_2_7 },
 						qis = {
 							206165,	-- Major Resonating Vestigial (QI!)
 							206166,	-- Strong Resonating Vestigial (QI!)
@@ -783,7 +783,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
-						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 						up = IGNORED_VALUE,
 					}),
 				}),
@@ -883,7 +883,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ZoneDrops({
 					i(204076, {	-- Drake's Shadowflame Crest Fragment
-						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 						up = IGNORED_VALUE,
 					}),
 				}),
@@ -928,7 +928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ZoneDrops({
 					i(204077, {	-- Wyrm's Shadowflame Crest Fragment
-						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 						up = IGNORED_VALUE,
 					}),
 				}),
@@ -941,7 +941,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(MAGMORAX),
 				Boss(NELTHARION),
 				Boss(SARKARETH, {
-					ach(18253, {timeline = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
+					ach(18253, {timeline = { REMOVED_10_2_0 }}),	-- Ahead of the Curve: Scalecommander Sarkareth
 					i(206046, {	-- Void-Touched Curio
 						sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.HEROIC}},
 						up = IGNORED_VALUE,
@@ -959,7 +959,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				ZoneDrops({
 					i(204078, {	-- Aspect's Shadowflame Crest Fragment
-						timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
+						timeline = { REMOVED_10_2_0 },
 					}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 weeks BoP version drops
@@ -1005,7 +1005,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					ach(18176, applyDataSelf({timeline = { ADDED_10_1_0, REMOVED_10_2_0 } }, {	-- Hall of Fame: Scalecommander Sarkareth
 						title(506),	-- <Name>, Famed Slayer of Sarkareth
 					})),
-					ach(18254, {timeline = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
+					ach(18254, {timeline = { REMOVED_10_2_0 }}),	-- Cutting Edge: Scalecommander Sarkareth
 					ach(18179),	-- Mythic: Scalecommander Sarkareth Guild Run
 					i(205876),	-- Highland Drake: Embodiment of the Hellforged (MM!) [Mythic]
 					i(206046, {	-- Void-Touched Curio

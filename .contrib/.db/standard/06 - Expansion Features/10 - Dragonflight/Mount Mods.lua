@@ -1009,7 +1009,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				i(203335),	-- Winding Slitherdrake: Curved Horns (MM!)
 				i(203349, {timeline = {ADDED_10_1_5}}),	-- Winding Slitherdrake: Curved Nose Horn (MM!)
 				i(203320),	-- Winding Slitherdrake: Ears (MM!)
-				pvp(i(205865, {timeline = {ADDED_10_1_0, REMOVED_10_2_0 }})),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (MM!)
+				pvp(i(205865, {timeline = {REMOVED_10_2_0}})),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (MM!)
 				pvp(i(210064, {timeline = {ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR}})),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (MM!)
 				i(203361),	-- Winding Slitherdrake: Finned Tip Tail (MM!)
 				i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (MM!)

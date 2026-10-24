@@ -707,7 +707,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
-						timeline = { ADDED_8_0_1, REMOVED_9_0_1 },
+						timeline = { REMOVED_9_0_1 },
 						cost = 50000000000,	-- 5,000,000g
 					}),
 					i(163568, {	-- Lost Platysaur (PET!)

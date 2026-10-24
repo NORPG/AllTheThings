@@ -383,7 +383,7 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 					i(63209),	-- Glassweb Robes
 					-- #if BEFORE MOP
 					i(63208, {	-- Glassweb Spider Fangs
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},
@@ -728,7 +728,7 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 						cr = 14635,	-- Sleepy Dark Iron Worker
 					}),
 					i(63241, {	-- Very Soft Pillow
-						timeline = { ADDED_4_0_3, REMOVED_4_0_3 },
+						timeline = { REMOVED_4_0_3 },
 					}),
 				},
 			}),

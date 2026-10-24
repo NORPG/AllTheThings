@@ -152,7 +152,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 							i(59638),	-- Necklace of the Furious Standard
 							-- #if BEFORE MOP
 							i(59640, {	-- Fetish of Azrajar
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -173,7 +173,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 							i(59635),	-- Necklace of the Furious Standard
 							-- #if BEFORE MOP
 							i(59637, {	-- Fetish of Azrajar
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -392,7 +392,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 							i(59627),	-- Tentacle-Slayer Bracers
 							-- #if BEFORE MOP
 							i(59626, {	-- Wil'hai's Extraneous Tooth
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -584,7 +584,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						races = ALLIANCE_ONLY,
 						groups = {
 							i(59634, {	-- Beak of the Merciless One
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(59632),	-- Riptide Legguards
 							i(59633),	-- Severed Visionary Tentacle
@@ -597,7 +597,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						races = HORDE_ONLY,
 						groups = {
 							i(59631, {	-- Beak of the Merciless One
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							i(59629),	-- Riptide Legguards
 							i(59630),	-- Severed Visionary Tentacle
@@ -1107,7 +1107,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						groups = {
 							-- #if BEFORE MOP
 							i(68609, {	-- Fine-Toothed Comb
-								timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+								timeline = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -3073,7 +3073,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						coord = { 57.0, 69.6, VASHJIR_SHIMMERING_EXPANSE },
 						groups = {
 							i(65665, {	-- Burgy Blackheart's Handsome Hat
-								timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
+								timeline = { REMOVED_7_0_3 },
 							}),
 							i(134022, {	-- Burgy Blackheart's Handsome Hat (TOY!)
 								timeline = { ADDED_7_0_3 },

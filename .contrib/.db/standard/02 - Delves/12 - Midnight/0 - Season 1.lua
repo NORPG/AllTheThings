@@ -67,7 +67,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						isWeekly = true,
 						groups = {
 							ach(61797, {	-- My Shady Nemesis
-								timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								timeline = { REMOVED_12_1_0 },
 								groups = { i(263413) },	-- Nullaeus Domaneye (COSMETIC!)
 							}),
 							i(262391),	-- Ominous Dominus (PET!)
@@ -79,15 +79,15 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						isWeekly = true,
 						groups = {
 							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
-								timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_0_1_SEASONSTART },
+								timeline = { REMOVED_12_0_1_SEASONSTART },
 								groups = { title(689) },	-- <Name>, Fabled Vanquisher of Nullaeus
 							}),
 							ach(61799, {	-- Let Me Solo Him: Nullaeus
-								timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								timeline = { REMOVED_12_1_0 },
 								groups = { i(263222) },	-- Arcanovoid Construct (MOUNT!)
 							}),
 							ach(61798, {	-- Lighting the Dark
-								timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
+								timeline = { REMOVED_12_1_0 },
 								groups = { title(688) },	-- <Name> the Ominous
 							}),
 							i(262391),	-- Ominous Dominus (PET!)

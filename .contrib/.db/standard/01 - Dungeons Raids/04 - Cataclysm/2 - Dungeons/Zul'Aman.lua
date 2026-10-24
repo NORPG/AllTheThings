@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								i(69598),	-- Robes of Dissention
 								-- #if BEFORE MOP
 								i(69597, {	-- Zulian Throwing Axe
-									timeline = { ADDED_4_1_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 								}),
 								-- #endif
 							},

@@ -2127,7 +2127,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				},
 				-- #endif
 				races = HORDE_ONLY,
-				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { REMOVED_5_2_0 },
 				-- #if BEFORE WOD
 				OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 				sym = {
@@ -2764,7 +2764,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				},
 				-- #endif
 				races = HORDE_ONLY,
-				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { REMOVED_5_2_0 },
 				-- #if BEFORE WOD
 				OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 				sym = {
@@ -2788,7 +2788,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				},
 				-- #endif
 				races = HORDE_ONLY,
-				timeline = { ADDED_5_0_4, REMOVED_5_2_0 },
+				timeline = { REMOVED_5_2_0 },
 				-- #if BEFORE WOD
 				OnUpdate = SEASON_MALEVOLENT_ONUPDATE,
 				sym = {

@@ -2024,7 +2024,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					i(57442),	-- Mine Sealer's Ring
 					-- #if BEFORE MOP
 					i(57441, {	-- Shutter Uppers
-						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
+						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 				},

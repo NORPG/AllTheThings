@@ -3188,7 +3188,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						timeline = { ADDED_4_3_0 },
 					}),
 					i(93730, {	-- Darkmoon Top Hat
-						timeline = { ADDED_5_2_0, REMOVED_8_2_5 },
+						timeline = { REMOVED_8_2_5 },
 					}),
 					i(171364, {	-- Darkmoon Top Hat
 						timeline = { ADDED_8_2_5 },
@@ -3993,11 +3993,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 
 					i(75029, {	-- Beer-Basted Short Ribs
 						lore = "This may be made of dwarves.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75031, {	-- Draenic Dumplings
 						lore = "This may be made of draenei.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75034, {	-- Forsaken Foie Gras
 						lore = "This may be made of undead.",
@@ -4005,7 +4005,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(75030, {	-- Gnomeregan Gnuggets
 						lore = "This may be made of gnomes.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75033, {	-- Green Ham & Eggs
 						lore = "This may be made of orcs. Hope the eggs are really gull ones...",
@@ -4023,23 +4023,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					})),
 					i(75032, {	-- Mulgore Meat Pie
 						lore = "This may be made of tauren.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75036, {	-- Silvermoon Steak
 						lore = "This may be made of blood elves.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75028, {	-- Stormwind Surprise
 						lore = "This may be made of humans.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75027, {	-- Teldrassil Tenderloin
 						lore = "This may be made of night elves.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 					i(75035, {	-- Troll Tartare
 						lore = "This may be made of trolls.",
-						timeline = { ADDED_4_3_0, REMOVED_7_2_5 },
+						timeline = { REMOVED_7_2_5 },
 					}),
 				},
 			}),

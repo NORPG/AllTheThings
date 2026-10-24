@@ -2819,7 +2819,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
-					timeline = { ADDED_2_0_3, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 					cr = 18870,	-- Voidshrieker
 				}),
 				i(22551, {	-- Formula: Enchant Weapon - Major Intellect

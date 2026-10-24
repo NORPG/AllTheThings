@@ -10,7 +10,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 				q(72723, {	-- A Call to Battle
 					provider = { "n", 196191 },	-- Malicia
 					coord = { 43.4, 42.5, VALDRAKKEN },
-					timeline = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
+					timeline = { REMOVED_TWW_LAUNCH },
 					isWeekly = true,
 				}),
 				q(71026, {	-- Against Overwhelming Odds
@@ -346,36 +346,36 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					groups = {
 						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
 						bloody(100, i(206144, {		-- Curious Primordial Fungus
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(206143, {		-- Energized Temporal Spores
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(750, i(201464)),	-- Flesh Parachute
 						bloody(100, i(206142, {		-- Gritty Stone Potion
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(198076, {		-- Pest Fogger
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(206141, {		-- Prismatic Snail Mucus
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(1000, i(201414)),	-- Qalashi Wingshredder
 						bloody(100, i(206140, {		-- Soothing Emerald Tea
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(206139, {		-- Volatile Crimson Embers
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(202064, {		-- Warbanner of Ire
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(200953, {		-- Wild Dragon Fruit
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 						bloody(100, i(200966, {		-- Wild Truffle
-							timeline = { ADDED_10_2_0, REMOVED_11_0_0 },
+							timeline = { REMOVED_11_0_0 },
 						})),
 					},
 				}),

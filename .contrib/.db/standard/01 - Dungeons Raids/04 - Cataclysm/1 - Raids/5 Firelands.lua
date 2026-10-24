@@ -423,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(70929),	-- Firebound Gorget
 				-- #if BEFORE MOP
 				i(71154, {	-- Giantslicer
-					timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+					timeline = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(71365),	-- Hide-Bound Chains
@@ -801,21 +801,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								}),
 								-- #if BEFORE MOP
 								i(71567, {	-- Covenant of the Flame
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71146, 1 },	-- Covenant of the Flame
 									},
 								}),
 								i(71590, {	-- Deathclutch Figurine
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 70939, 1 },	-- Deathclutch Figurine
 									},
 								}),
 								i(71592, {	-- Deflecting Star
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71218, 1 },	-- Deflecting Star
@@ -830,7 +830,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								}),
 								-- #if BEFORE MOP
 								i(71593, {	-- Giantslicer
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71154, 1 },	-- Giantslicer
@@ -851,7 +851,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								}),
 								-- #if BEFORE MOP
 								i(71568, {	-- Morningstar Shard
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71152, 1 },	-- Morningstar Shard
@@ -872,7 +872,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								}),
 								-- #if BEFORE MOP
 								i(71587, {	-- Relic of the Elemental Lords
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71147, 1 },	-- Relic of the Elemental Lords
@@ -899,14 +899,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								}),
 								-- #if BEFORE MOP
 								i(71577, {	-- Singed Plume of Aviana
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71149, 1 },	-- Singed Plume of Aviana
 									},
 								}),
 								i(71580, {	-- Soulflame Vial
-									timeline = { ADDED_4_2_0, REMOVED_5_0_4 },
+									timeline = { REMOVED_5_0_4 },
 									cost = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 71148, 1 },	-- Soulflame Vial
