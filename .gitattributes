@@ -138,3 +138,6 @@ tests export-ignore
 # GitHub metadata
 /.github/*.yml text eol=lf
 /.github/ISSUE_TEMPLATE/*.yml text eol=lf
+
+# GitHub Actions workflows
+/.github/workflows/*.yml text eol=lf

@@ -69,6 +69,6 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-            name: db  # Artifact name
-            path: db/  # File path to upload
-            retention-days: 7
+          name: db  # Artifact name
+          path: db/  # File path to upload
+          retention-days: 7
