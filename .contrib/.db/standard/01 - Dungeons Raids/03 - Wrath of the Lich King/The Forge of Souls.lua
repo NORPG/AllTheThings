@@ -114,6 +114,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			}),
 			-- #if AFTER 7.3.5
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					a(i(50379)),	-- Battered Hilt [A]
+					h(i(50380)),	-- Battered Hilt [H]
+					i(49852),	-- Coffin Nail
+					i(50318),	-- Ghostly Wristwraps
+					i(49854),	-- Mantle of Tattered Feathers
+					i(49855),	-- Plated Grips of Korth'azz
+					i(50315),	-- Seven-Fingered Claws
+					i(49853),	-- Titanium Links of Lore
+					i(50319),	-- Unsharpened Ice Razor
+				}),
 				BossOnly(BRONJAHM, {
 					i(49785),	-- Bewildering Shoulderpads
 					i(49788),	-- Cold Sweat Grips
@@ -157,24 +168,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
-				n(ZONE_DROPS, {
-					i(49852),	-- Coffin Nail
-					i(49854),	-- Mantle of Tattered Feathers
-					i(49855),	-- Plated Grips of Korth'azz
-					i(49853),	-- Titanium Links of Lore
-				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
-				n(ZONE_DROPS, {
-					a(i(50379)),	-- Battered Hilt [A]
-					h(i(50380)),	-- Battered Hilt [H]
-					i(50318),	-- Ghostly Wristwraps
-					i(50315),	-- Seven-Fingered Claws
-					i(50319),	-- Unsharpened Ice Razor
-				}),
 				BossOnly(BRONJAHM, {
-					i(50169, { timeline = { REMOVED_5_0_4 } }),	-- Papa's Brand New Knife
 					ach(4522),	-- Soul Power
+					i(50169, { timeline = { REMOVED_5_0_4 } }),	-- Papa's Brand New Knife
 				}),
 				BossOnly(DEVOURER, {
 					ach(5112, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Forge of Souls Guild Run
@@ -226,8 +224,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(50197),	-- Eyes of Bewilderment
 					i(50196),	-- Love's Prisoner
 					i(50191),	-- Nighttime
-					i(50169, { timeline = { REMOVED_5_0_4 } }),	-- Papa's Brand New Knife
 					i(50316),	-- Papa's Brand New Bag
+					i(50169, { timeline = { REMOVED_5_0_4 } }),	-- Papa's Brand New Knife
 					i(50193),	-- Very Fashionable Shoulders
 					i(50194),	-- Weeping Gauntlets
 				}),

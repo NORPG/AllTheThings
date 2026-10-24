@@ -18,8 +18,8 @@ local EncounterToCRS = {
 
 ------ Boss Functions ------
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
-local BossOnly, Difficulty =
-InstanceHelper.BossOnly, InstanceHelper.Difficulty
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(279, {	-- The Culling of Stratholme
@@ -40,6 +40,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 					crit(5468, {	-- Chrono-Lord Epoch
 						_encounter = { CHRONOLORD, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(6433, {	-- Mal'Ganis
+						_encounter = { MALGANIS, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					-- #else
 					crit(5467, {	-- Meathook
@@ -178,8 +181,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				BossOnly(SALRAMM, {
 					i(37682),	-- Bindings of Dark Will
 					i(37084),	-- Flowing Cloak of Command
-					i(157563, { timeline = { ADDED_7_3_5 } }),	-- Freshly Sewn Leggings
 					i(37684),	-- Forgotten Shadow Hood
+					i(157563, { timeline = { ADDED_7_3_5 } }),	-- Freshly Sewn Leggings
 					i(37681),	-- Gavel of the Fleshcrafter
 					i(37683),	-- Necromancer's Amulet
 					i(37088),	-- Spiked Metal Cilice
@@ -194,7 +197,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37688),	-- Legplates of the Infinite Drakonid
 					i(37685, { timeline = { REMOVED_11_1_5 } }),	-- Mobius Band
 					i(238992, { timeline = { ADDED_11_1_5 } }),	-- Mobius Band
-					i(37096),	-- Necklace of the Chrono-Lord
 					i(37096, { timeline = { REMOVED_11_1_5 } }),	-- Necklace of the Chrono-Lord
 					i(238990, { timeline = { ADDED_11_1_5 } }),	-- Necklace of the Chrono-Lord
 					i(37106),	-- Ouroboros Belt
@@ -202,21 +204,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37105),	-- Treads of Altered History
 				}),
 				BossOnly(MALGANIS, {
-					i(37112),	-- Beguiling Scepter
 					i(37694),	-- Band of Guile
+					i(37112),	-- Beguiling Scepter
 					i(37113),	-- Demonic Fabric Bands
 					i(37109),	-- Discarded Silver Hand Spaulders
 					i(37108),	-- Dreadlord's Blade
 					i(37110),	-- Gauntlets of Dark Conversion
 					i(37114),	-- Gloves of Northern Lordaeron
 					i(37693),	-- Greed
-					i(37695),	-- Legguards of Nature's Power
 					i(37107),	-- Leeka's Shield
+					i(37695),	-- Legguards of Nature's Power
 					i(37691),	-- Mantle of Deceit
+					i(37690),	-- Pauldrons of Destiny
 					i(37689),	-- Pendant of the Nathrezim
 					i(37692),	-- Pierce's Pistol
 					i(37696),	-- Plague-Infected Bracers
-					i(37690),	-- Pauldrons of Destiny
 					i(43085),	-- Royal Crest of Lordaeron
 					i(37111),	-- Soul Preserver
 				}),
@@ -229,6 +231,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						description = "Gather zombies leading up to Meathook, but do not kill them.\n\nKill Meathook and wait for zombies to respawn; then gather and kill more zombies.",
 						cr = 27737,	-- Risen Zombie
 					}),
+				}),
+				CommonBossDrops({
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
 				BossOnly(MEATHOOK),
 				BossOnly(SALRAMM),
@@ -246,15 +251,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #else
 			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				BossOnly(MEATHOOK, {
-					i(37081),	-- Meathook's Slicer
-					i(37083),	-- Kilt of Sewn Flesh
-					i(37082),	-- Slaughterhouse Sabatons
 					i(37079),	-- Enchanted Wire Stitching
+					i(37083),	-- Kilt of Sewn Flesh
+					i(37081),	-- Meathook's Slicer
+					i(37082),	-- Slaughterhouse Sabatons
 				}),
 				BossOnly(SALRAMM, {
-					i(37086),	-- Tome of Salramm
 					i(37084),	-- Flowing Cloak of Command
 					i(37088),	-- Spiked Metal Cilice
+					i(37086),	-- Tome of Salramm
 					i(37095),	-- Waistband of the Thuzadin
 				}),
 				BossOnly(CHRONOLORD, {
@@ -291,24 +296,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						cr = 27737,	-- Risen Zombie
 					}),
 				}),
-				-- #if BEFORE CATA
-				n(COMMON_BOSS_DROPS, {
-					currency(101, {	-- Emblem of Heroism
-						timeline = { REMOVED_4_0_1 },
-					}),
+				CommonBossDrops({
+					currency(101, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
 				}),
-				-- #endif
 				BossOnly(MEATHOOK, {
-					i(37679),	-- Spaulders of the Abomination
-					i(37678),	-- Bile-Cured Gloves
 					i(37680),	-- Belt of Unified Souls
+					i(37678),	-- Bile-Cured Gloves
 					i(37675),	-- Legplates of Steel Implants
+					i(37679),	-- Spaulders of the Abomination
 				}),
 				BossOnly(SALRAMM, {
-					i(37681),	-- Gavel of the Fleshcrafter
-					i(37684),	-- Forgotten Shadow Hood
-					i(37683),	-- Necromancer's Amulet
 					i(37682),	-- Bindings of Dark Will
+					i(37684),	-- Forgotten Shadow Hood
+					i(37681),	-- Gavel of the Fleshcrafter
+					i(37683),	-- Necromancer's Amulet
 				}),
 				BossOnly(CHRONOLORD, {
 					i(37686, { timeline = { REMOVED_11_1_5 } }),	-- Cracked Epoch Grasps
@@ -328,10 +329,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37693),	-- Greed
 					i(37695),	-- Legguards of Nature's Power
 					i(37691),	-- Mantle of Deceit
+					i(37690),	-- Pauldrons of Destiny
 					i(37689),	-- Pendant of the Nathrezim
 					i(37692),	-- Pierce's Pistol
 					i(37696),	-- Plague-Infected Bracers
-					i(37690),	-- Pauldrons of Destiny
 					i(43085),	-- Royal Crest of Lordaeron
 				}),
 			}),
