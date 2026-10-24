@@ -541,7 +541,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.","Avast Ye, Admiral!","Title: Bloodsail Admiral",871,-1,-1,0,81,0,0,0,184,133168,8576,0
 "Return 5 flags in a single Warsong Gulch battle.","Frenzied Defender",,872,489,-1,0,14804,0,10,0,5,236372,8268,0
 "Win Alterac Valley without losing a tower or captain. You must also control all of the Alliance's towers.","Frostwolf Perfection",,873,30,0,0,14801,0,20,0,12,133285,5530,0
-"Raise a pet to level 10.","Growing Up",,6567,-1,-1,6566,15120,0,5,131072,3,651378,22775,0
 "Win 200 ranked arena matches.","Vengefully Dedicated",,875,-1,-1,398,165,0,10,0,3,236535,5135,0
 "Win 300 ranked arena matches.","Brutally Dedicated","Reward: Tabard of Brute Force",876,-1,-1,875,165,0,10,0,4,236536,3775,0
 "Bake a Delicious Chocolate Cake.","The Cake Is Not A Lie",,877,-1,-1,0,170,0,10,0,16,133783,2680,0
@@ -1203,7 +1202,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Thaddius in Naxxramas without anyone in the raid crossing the negative and positive charges in 10-player mode.","Shocking! (10 player)",,2178,533,-1,0,14922,0,10,0,31,135769,10614,0
 "Defeat Thaddius in Naxxramas without anyone in the raid crossing the negative and positive charges in 25 player mode.","Shocking! (25 player)",,2179,533,-1,0,14922,0,10,0,32,135769,15137,0
 "Defeat Thaddius in Naxxramas with less than 9 players in 10-player mode.","Subtraction (10 player)",,2180,533,-1,0,14922,0,10,0,33,135768,11179,0
-"Destroy each of the vehicles listed below.","Destruction Derby",,2476,571,0,0,14901,0,10,0,6,135783,9970,0
 "Defeat Thaddius in Naxxramas with less than 21 players in 25-player mode.","Subtraction (25 player)",,2181,533,-1,0,14922,0,10,0,34,135768,11207,0
 "Defeat Loatheb in Naxxramas without killing any spores in 10-player mode.","Spore Loser (10 player)",,2182,533,-1,0,14922,0,10,0,35,134220,9803,0
 "Defeat Loatheb in Naxxramas without killing any spores in 25-player mode.","Spore Loser (25 player)",,2183,533,-1,0,14922,0,10,0,36,134220,9806,0
@@ -1241,6 +1239,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Use Spring Flowers to place rabbit ears upon players.","Shake Your Bunny-Maker",,2422,-1,-1,0,159,0,10,0,11,133939,14735,0
 "Use Spring Robes to plant a flower in each of the deserts listed below.","Desert Rose",,2436,-1,-1,0,159,0,10,0,12,237578,9963,0
 "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.","Vampire Hunter",,2456,-1,-1,0,81,1,0,0,304,132182,15013,0
+"Destroy each of the vehicles listed below.","Destruction Derby",,2476,571,0,0,14901,0,10,0,6,135783,9970,0
 "Obtain an Aqual Quintessence.","The Fifth Element",,2496,-1,-1,0,81,0,0,0,208,135862,9976,0
 "Find your pet Spring Rabbit another one to love in each of the towns listed below.","Spring Fling",,2497,-1,0,0,159,0,10,0,8,237000,12524,0
 "Collect 75 unique pets.","Lil' Game Hunter","Reward: Little Fawn",2516,-1,-1,1250,15118,0,10,135168,5,132599,22158,0
@@ -1680,7 +1679,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain Mimiron's Head from 25-player Yogg-Saron with no Keepers assisting you.","And I'll Form the Head!",,4626,-1,-1,0,81,1,0,131072,194,133861,15734,0
 "Obtain the X-45 Heartbreaker from Apothecary Hummel in Shadowfang Keep during Love is in the Air.","X-45 Heartbreaker",,4627,-1,-1,0,81,1,0,131072,195,135448,15810,0
 "Defeat the first four bosses in Icecrown Citadel in 10-player Heroic mode.","Heroic: Storming the Citadel (10 player)",,4628,631,-1,4531,14922,0,10,0,219,343640,14544,0
-"Festergut kills (Heroic Icecrown 10 player)","Festergut kills (Heroic Icecrown 10 player)",,4665,-1,-1,0,14823,0,0,1,163,136243,17154,0
 "Defeat the bosses of The Plagueworks in Icecrown Citadel in 10-player Heroic mode.","Heroic: The Plagueworks (10 player)",,4629,631,-1,4528,14922,0,10,0,223,342919,15521,0
 "Defeat the bosses of The Crimson Hall in Icecrown Citadel in 10-player Heroic mode.","Heroic: The Crimson Hall (10 player)",,4630,631,-1,4529,14922,0,10,0,227,341981,14554,0
 "Defeat the bosses of The Frostwing Halls in Icecrown Citadel in 10-player Heroic mode.","Heroic: The Frostwing Halls (10 player)",,4631,631,-1,4527,14922,0,10,0,231,343638,14346,0
@@ -1716,6 +1714,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Deathbringer kills (Heroic Icecrown 10 player)","Deathbringer kills (Heroic Icecrown 10 player)",,4662,-1,-1,0,14823,0,0,1,159,136243,17934,0
 "Deathbringer kills (Icecrown 25 player)","Deathbringer kills (Icecrown 25 player)",,4663,-1,-1,0,14823,0,0,1,160,136243,15356,0
 "Deathbringer kills (Heroic Icecrown 25 player)","Deathbringer kills (Heroic Icecrown 25 player)",,4664,-1,-1,0,14823,0,0,1,161,136243,16651,0
+"Festergut kills (Heroic Icecrown 10 player)","Festergut kills (Heroic Icecrown 10 player)",,4665,-1,-1,0,14823,0,0,1,163,136243,17154,0
 "Festergut kills (Icecrown 25 player)","Festergut kills (Icecrown 25 player)",,4666,-1,-1,0,14823,0,0,1,164,136243,14896,0
 "Festergut kills (Heroic Icecrown 25 player)","Festergut kills (Heroic Icecrown 25 player)",,4667,-1,-1,0,14823,0,0,1,165,136243,17937,0
 "Rotface kills (Heroic Icecrown 10 player)","Rotface kills (Heroic Icecrown 10 player)",,4668,-1,-1,0,14823,0,0,1,167,136243,17940,0
@@ -2480,7 +2479,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Speak with the following characters during the attack on the Molten Front.","Fireside Chat",,5870,-1,-1,0,15070,0,10,0,31,236450,20026,0
 "Complete the following challenges within the Molten Flow.","Master of the Molten Flow",,5871,-1,-1,0,15070,0,10,0,38,135822,20074,0
 "Reach the highest point in the Widow's Clutch within the Molten Front.","King of the Spider-Hill",,5872,-1,-1,0,15070,0,10,0,39,132196,18629,0
-"Win the Darkmoon Deathmatch and receive a Pit Fighter trinket.","Darkmoon Duelist",,6023,-1,-1,0,15101,0,10,0,3,237273,20788,0
 "Slay the following Lieutenants of Flame in Ragnaros' Reach without getting hit by their special attacks.","Ready for Raiding II",,5873,-1,-1,0,15070,0,10,0,41,135789,2951,0
 "Bomb the following elementals during a bombing run in the Molten Front.","Death From Above",,5874,-1,-1,0,15070,0,10,0,40,512904,13725,0
 "Collect 150 unique pets.","Littlest Pet Shop","Reward: Celestial Dragon",5875,-1,-1,5877,15118,0,10,143360,8,132599,22164,0
@@ -2522,7 +2520,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Play five different Darkmoon games.","Step Right Up",,6020,-1,-1,0,15101,0,10,0,12,531974,7806,0
 "Score a bullseye when launched from the Darkmoon Cannon.","Blastenheimer Bullseye",,6021,-1,-1,0,15101,0,10,0,1,132177,7813,0
 "Score a Quick Shot at the Shooting Gallery.","Quick Shot",,6022,-1,-1,0,15101,0,10,0,11,132383,20534,0
-"Proud owner of Murkablo from the 2011 BlizzCon.",Murkablo,,6185,-1,-1,0,81,1,0,131072,135,528288,4665,0
+"Win the Darkmoon Deathmatch and receive a Pit Fighter trinket.","Darkmoon Duelist",,6023,-1,-1,0,15101,0,10,0,3,237273,20788,0
 "Win the Darkmoon Deathmatch twelve times and receive a Master Pit Fighter trinket.","Darkmoon Dominator",,6024,-1,-1,6023,15101,0,20,0,4,237569,20079,0
 "Ride a Darkmoon Pony.","I Was Promised a Pony",,6025,-1,-1,0,15101,0,5,0,10,132261,18224,0
 "Consume one of every Darkmoon food and drink.","Fairegoer's Feast",,6026,-1,-1,0,15101,0,10,0,9,134016,18227,0
@@ -2559,7 +2557,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Archbishop Benedictus in Hour of Twilight on Heroic difficulty while in a guild group.","Heroic: Hour of Twilight Guild Run",,6122,-1,-1,0,15083,0,10,53248,14,574795,19826,0
 "Defeat the bosses in Dragon Soul while in a guild group.","Dragon Soul Guild Run",,6123,967,-1,0,15087,0,10,53248,6,535291,19739,0
 "Achieved Ruthless Gladiator title.","Ruthless Gladiator: Season 10","Title Reward: Ruthless Gladiator",6124,-1,-1,0,81,0,0,2048,423,236543,20601,0
-"Reach level 90.","Level 90",,6193,-1,-1,4826,92,0,10,12292,10,614740,5852,0
 "Defeat Deathwing in Dragon Soul on Heroic difficulty while in a guild group.","Heroic: Deathwing Guild Run",,6125,967,-1,0,15087,1,10,61440,12,574788,20604,0
 "First guild on the realm to defeat Deathwing in Dragon Soul on Heroic difficulty while in a guild group.","Realm First! Deathwing",,6126,967,-1,0,15093,1,0,63744,8,574788,20608,0
 "Defeat Peroth'arn in Well of Eternity on Heroic Difficulty without any party member being detected by an Eye of Peroth'arn.","Lazy Eye",,6127,939,-1,0,15067,0,10,0,69,237297,20315,0
@@ -2599,6 +2596,8 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Destroy Deathwing in Dragon Soul on Normal or Heroic Difficulty after beginning the encounter on each Aspect's platform:","Chromatic Champion",,6180,967,-1,0,15068,0,10,0,62,576138,19386,0
 "Wielder of the Fangs of the Father.","Fangs of the Father",,6181,-1,-1,0,81,0,0,0,270,537102,8622,0
 "Wielder of the Fangs of the Father","Fangs of the Father - Guild Edition",,6182,-1,-1,0,15079,1,10,94208,22,537102,8145,0
+"Proud owner of Murkablo from the 2011 BlizzCon.",Murkablo,,6185,-1,-1,0,81,1,0,131072,135,528288,4665,0
+"Reach level 90.","Level 90",,6193,-1,-1,4826,92,0,10,12292,10,614740,5852,0
 "Complete the Jade Forest storylines listed below.","Upjade Complete",,6300,-1,1,0,15110,0,10,0,1,617825,21345,0
 "Complete the Valley of the Four Winds storylines listed below.","Rally the Valley",,6301,-1,-1,0,15110,0,10,0,3,618318,10755,0
 "End PvP season 10 in the top .5% of the rated battleground ladder.","Hero of the Alliance: Ruthless",,6316,-1,1,0,81,0,0,12288,323,236593,206788,0
@@ -2671,6 +2670,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win a pet battle in 30 different zones.","Traveling Pet Mauler",,6559,-1,-1,6558,15119,0,5,131072,21,652414,28741,0
 "Win a pet battle in 60 different zones.","World Pet Mauler",,6560,-1,-1,6559,15119,0,10,135168,22,652415,30642,0
 "Raise a pet to level 5.","Just a Pup","Reward: Pet Battle Slot 3",6566,-1,-1,7433,15120,0,5,131072,2,651383,22501,0
+"Raise a pet to level 10.","Growing Up",,6567,-1,-1,6566,15120,0,5,131072,3,651378,22775,0
 "Raise a pet to level 15.","Time for a Leash",,6568,-1,-1,6567,15120,0,5,131072,4,651379,22777,0
 "Raise a pet to level 20.","Old Timer",,6569,-1,-1,6568,15120,0,5,131072,5,651380,22779,0
 "Raise a pet to level 25.","All Growns Up!",,6570,-1,-1,6569,15120,0,10,131072,6,651381,22781,0
@@ -3548,7 +3548,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 15 of the cats listed below.","Crazy for Cats","Title Reward: The Crazy Cat Lady/Man",8397,-1,-1,0,15118,0,10,131072,35,656579,33277,0
 "Defeat Garrosh Hellscream on 10-Player Normal difficulty, prior to the release of the next tier of content.","Ahead of the Curve: Garrosh Hellscream (10 player)","Reward: Reins of the Kor'kron War Wolf",8398,1136,-1,0,81,0,0,133120,354,456571,34038,0
 "Defeat Garrosh Hellscream on 25-Player Normal difficulty, prior to the release of the next tier of content.","Ahead of the Curve: Garrosh Hellscream (25 player)","Reward: Reins of the Kor'kron War Wolf",8399,1136,-1,0,81,0,0,133120,356,456571,34040,0
-"Defeat Garrosh Hellscream in Siege of Orgrimmar on Heroic difficulty.","Heroic: Garrosh Hellscream","Title Reward: Hellscream's Downfall",8482,1136,-1,0,15107,0,10,0,93,896622,33506,0
 "Defeat Garrosh Hellscream on 10-Player Heroic difficulty, prior to the release of the next tier of content.","Cutting Edge: Garrosh Hellscream (10 player)",,8400,1136,-1,8398,81,0,0,1179648,355,456571,34042,0
 "Defeat Garrosh Hellscream on 25-Player Heroic difficulty, prior to the release of the next tier of content.","Cutting Edge: Garrosh Hellscream (25 player)",,8401,1136,-1,8399,81,0,0,1179648,357,456571,34044,0
 "Completed the Celestial Tournament scenario.","Celestial Tournament wins",,8408,-1,-1,0,15219,0,0,1,5,656166,33364,0
@@ -3584,6 +3583,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Thok the Bloodthirsty in Siege of Orgrimmar on Heroic difficulty.","Heroic: Thok the Bloodthirsty",,8479,1136,-1,0,15107,0,10,0,90,896625,33500,0
 "Defeat Siegecrafter Blackfuse in Siege of Orgrimmar on Heroic difficulty.","Heroic: Siegecrafter Blackfuse",,8480,1136,-1,0,15107,0,10,0,91,897633,33502,0
 "Defeat the Klaxxi Paragons in Siege of Orgrimmar on Heroic difficulty.","Heroic: Paragons of the Klaxxi",,8481,1136,-1,0,15107,0,10,0,92,897697,33504,0
+"Defeat Garrosh Hellscream in Siege of Orgrimmar on Heroic difficulty.","Heroic: Garrosh Hellscream","Title Reward: Hellscream's Downfall",8482,1136,-1,0,15107,0,10,0,93,896622,33506,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14","Grievous Combatant","Reward: Vicious Saddle",8484,-1,0,0,95,0,15,0,7,463449,33508,0
 "Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14","Grievous Combatant","Reward: Vicious Saddle",8485,-1,1,0,95,0,15,0,8,463448,33509,0
 "Successfully complete the Basic Damage (Bronze) trial at the Proving Grounds.","Proving Yourself: Bronze Damage",,8486,-1,-1,0,15222,0,10,131072,1,618857,0,0
@@ -3615,7 +3615,6 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain all four of the celestial pets.","Celestial Family",,8519,-1,-1,0,15118,0,5,131072,34,877408,33591,0
 "Stomp on 6 superheated Crawler Mines and then defeat the Iron Juggernaut in Siege of Orgrimmar on Flexible, Normal, or Heroic difficulty.","Fire in the Hole!",,8520,1136,-1,0,15107,0,10,0,99,465879,33596,0
 "Defeat the Sha of Pride in Siege of Orgrimmar on Flexible, Normal, or Heroic difficulty after no player has gained Pride from Manifestations of Pride while Norushen is alive.","Swallow Your Pride",,8521,1136,-1,0,15107,0,10,0,97,895885,33598,0
-,"Sha of Pride kills (10-player Normal Siege of Orgrimmar)",,8569,1136,-1,0,15164,0,0,1,186,136243,33752,0
 "Open the Thrice-Locked Cage during the Thok the Bloodthirsty encounter in Siege of Orgrimmar on Flexible, Normal, or Heroic difficulty, and then allow its inhabitant to feast upon Thok's corpse once you have defeated the encounter.","Giant Dinosaur vs. Mega Snail",,8527,1136,-1,0,15107,0,10,0,105,134434,33989,0
 "Transfer the Mark of Anguish to at least 5 unique players over a total of 200 yards or more during a single Desperate Measures phase, and then defeat the Fallen Protectors in Siege of Orgrimmar on Flexible, Normal, or Heroic difficulty.","Go Long",,8528,1136,-1,0,15107,0,10,0,95,841383,33624,0
 "Complete the Spoils of Pandaria encounter in Siege of Orgrimmar on Flexible, Normal, or Heroic difficulty without any raid member defeating both a Mantid and a Mogu enemy.","Criss Cross",,8529,1136,-1,0,15107,0,10,0,104,132764,33626,0
@@ -3653,6 +3652,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Norushen's test passed (25-player Heroic Siege of Orgrimmar)",,8566,1136,-1,0,15164,0,0,1,183,136243,33746,0
 ,"Sha of Pride kills (LFR Siege of Orgrimmar)",,8567,1136,-1,0,15164,0,0,1,184,136243,33748,0
 ,"Sha of Pride kills (Flexible Siege of Orgrimmar)",,8568,1136,-1,0,15164,0,0,1,185,136243,33750,0
+,"Sha of Pride kills (10-player Normal Siege of Orgrimmar)",,8569,1136,-1,0,15164,0,0,1,186,136243,33752,0
 ,"Sha of Pride kills (25-player Normal Siege of Orgrimmar)",,8570,1136,-1,0,15164,0,0,1,187,136243,33754,0
 ,"Sha of Pride kills (10-player Heroic Siege of Orgrimmar)",,8571,1136,-1,0,15164,0,0,1,188,136243,33756,0
 ,"Sha of Pride kills (25-player Heroic Siege of Orgrimmar)",,8573,1136,-1,0,15164,0,0,1,189,136243,33758,0
@@ -3801,6 +3801,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 5).","Gladiator: Season 5","Title Reward: Gladiator",16314,-1,-1,16315,81,0,0,2048,397,236537,0,0
 "End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 5).","Duelist: Season 5","Title Reward: Duelist",16315,-1,-1,16313,81,0,0,2048,396,236539,0,0
 "End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 5).","Challenger: Season 5","Title Reward: Challenger",16316,-1,-1,0,81,0,0,2048,394,236534,0,0
+"Receive a Glowing Pebble from Pebble the penguin.","The Perfect Pebble",,16332,-1,-1,0,81,0,0,0,238,294481,138064,0
 ,"[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)",,16397,-1,-1,0,81,0,0,1048576,242,136243,138317,0
 "Reach level 60 without ever dying during the Season of Mastery.","Soul of Iron (Season of Mastery)","Title Reward: Soul of Iron",16433,-1,-1,0,81,0,0,2048,18,134902,0,0
 ,"[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)",,16437,-1,-1,0,81,0,0,1050624,15,136243,138593,0
@@ -3997,4 +3998,3 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the Scarlet Monastery Challenge Mode with a rating of Diamond.","Scarlet Monastery: Diamond S3 (Tracker)",,63378,1004,-1,0,15115,0,0,1048576,62,648755,229793,0
 "Complete the Scholomance Challenge Mode with a rating of Diamond.","Scholomance: Diamond S3 (Tracker)",,63379,1007,-1,0,15115,0,0,1048576,71,648760,229795,0
 "Complete the Siege of Niuzao Temple Challenge Mode with a rating of Diamond.","Siege of Niuzao Temple: Diamond S3 (Tracker)",,63380,1011,-1,0,15115,0,0,1048576,80,648765,229797,0
-"Receive a Glowing Pebble from Pebble the penguin.","The Perfect Pebble",,16332,-1,-1,0,81,0,0,0,238,294481,138064,0

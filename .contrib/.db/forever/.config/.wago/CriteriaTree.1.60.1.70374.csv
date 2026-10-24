@@ -164,18 +164,31 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 9943,"General Drakkisath",9942,1,0,3268,1,0
 14324,"Emperor Dagran Thaurissan kills (Blackrock Depths)",0,0,4,0,0,0
 14325,"Emperor Dagran Thaurissan",14324,1,0,3266,1,0
+18064,,0,0,4,0,0,0
 18065,,18064,0,0,16881,1,2
+18070,,0,0,4,0,0,0
 18071,,18070,0,0,16882,1,2
+18143,,0,0,4,0,0,0
 18144,,18143,0,0,16883,1,2
+18659,,0,0,4,0,0,0
 18660,,18659,0,0,17386,1,2
+19395,,0,0,4,0,0,0
 19396,Aku'mai,19395,1,0,18526,1,2
+19398,,0,0,4,0,0,0
 19399,"Charlga Razorflank",19398,1,0,18528,1,2
+19401,,0,0,4,0,0,0
 19402,"Mekgineer Thermaplugg",19401,1,0,18529,1,2
+19408,,0,0,4,0,0,0
 19409,"Overlord Wyrmthalak",19408,1,0,18534,1,2
+19411,,0,0,4,0,0,0
 19412,"Shade of Eranikus",19411,1,0,18533,1,2
+19492,,0,0,4,0,0,0
 19493,"King Gordok",19492,1,0,18535,1,0
+19670,,0,0,4,0,0,0
 19671,"Amnennar the Coldbringer",19670,1,0,18530,1,2
+19673,,0,0,4,0,0,0
 19674,"Princess Theradras",19673,1,0,18532,1,2
+19752,,0,0,4,0,0,0
 19753,Archaedas,19752,1,0,18531,1,2
 22423,"Statistic - High Inquisitor Whitemane",0,0,4,0,0,0
 26937,"Scarlet Halls (Flameweaver Koegler)",0,0,4,0,0,0
@@ -185,6 +198,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 38168,"Statistic - General Drakkisath",0,0,4,0,0,0
 38169,,38168,1,0,3268,0,2
 82060,server-only,0,0,4,0,0,2
+82062,server-only,0,0,4,0,0,2
 91539,,1559,1,0,3275,0,0
 91540,,8133,1,0,51995,0,0
 91541,,648,1,0,3271,13,0
@@ -253,14 +267,18 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121246,"Gavin's Naze",121233,1,0,953,10,0
 121247,"The Headland",121233,1,0,960,6,0
 121248,"The Uplands",121233,1,0,961,12,0
+121286,,0,0,4,0,0,0
 121287,"Eye of the Storm Honorable Kills",121286,0,0,5510,0,0
+121288,,0,0,4,0,0,0
 121289,"Alterac Valley Honorable Kills",121288,0,0,5507,0,0
+121330,,0,0,4,0,0,0
 121331,"Total cheers",121330,0,0,3233,0,0
 121346,,0,0,6,0,0,0
 121347,Outland,121346,0,0,5494,0,0
 121348,Northrend,121346,0,0,5495,0,0
 121349,Kalimdor,121346,0,0,5493,0,0
 121350,"Eastern Kingdoms",121346,0,0,5492,0,0
+121472,,0,0,4,0,0,0
 121473,"Duels lost",121472,0,0,3630,0,0
 121474,,0,0,5,0,0,0
 121475,"Thane Korth'azz",121474,0,0,7845,0,0
@@ -316,6 +334,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121525,Yogg-Saron,121474,0,0,11030,0,0
 121526,"Algalon the Observer",121474,0,0,11031,0,0
 121527,"Emalon the Storm Watcher",121474,0,0,11032,0,0
+121720,,0,0,4,0,0,0
 121721,"Terror Run",121720,1,0,1455,0,0
 121722,"Golakka Hot Springs",121720,1,0,1454,0,0
 121723,"The Slithering Scar",121720,1,0,1456,0,0
@@ -323,6 +342,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121725,"Fire Plume Ridge",121720,1,0,1453,0,0
 121726,"Lakkari Tar Pits",121720,1,0,1459,0,0
 121727,"Ironstone Plateau",121720,1,0,1458,0,0
+121728,,0,0,4,0,0,0
 121729,"Starfall Village",121728,1,0,1476,0,0
 121730,"Lake Kel'Theril",121728,1,0,1475,0,0
 121731,"Ice Thistle Hills",121728,1,0,1482,0,0
@@ -336,6 +356,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121739,"The Hidden Grove",121728,1,0,1484,0,0
 121740,Mazthoril,121728,1,0,1477,0,0
 121741,Everlook,121728,1,0,1478,0,0
+121742,,0,0,4,0,0,0
 121743,"Arathi Basin Honorable Kills",121742,0,0,5508,0,0
 121744,,0,1,6,0,0,0
 121745,"Alterac Valley Runecloth Bandage",121744,1,0,3301,0,0
@@ -368,6 +389,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121772,"Arathi Basin Silk Bandage",121744,1,0,3304,0,0
 121773,"Warsong Gulch Mageweave Bandage",121744,1,0,3322,0,0
 121774,"Runecloth Bandage",121744,1,0,3319,0,0
+121780,,0,0,4,0,0,0
 121781,"Total Killing Blows",121780,0,0,5529,0,0
 121784,"Weapon skills at maximum skill",0,400,7,0,0,0
 121785,Guns,121784,400,0,5583,14,0
@@ -389,44 +411,62 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121801,"Total kills that grant experience or honor",0,0,5,0,0,0
 121802,"Kill an NPC that yields XP",121801,0,0,4946,1,0
 121803,"Honorable Kills",121801,0,0,9160,0,0
+121809,,0,0,5,0,0,0
 121810,"Nagrand 5v5 Matches",121809,0,0,8596,0,0
 121811,"Blade's Edge 5v5 Matches",121809,0,0,5723,0,0
 121812,"Dalara 5v5 Matches",121809,0,0,8595,0,0
 121813,"Ruins of Lordaeron 5v5 Matches",121809,0,0,8597,0,0
 121814,"Ring of Valor 5v5 Matches",121809,0,0,8598,0,0
+121815,,0,0,5,0,0,0
 121816,"Dalaran 3v3 Matches",121815,0,0,8603,0,0
 121817,"Nagrand 3v3 Matches",121815,0,0,8604,0,0
 121818,"Ring of Valor 3v3 Matches",121815,0,0,8606,0,0
 121819,"Blade's Edge 3v3 Matches",121815,0,0,5724,0,0
 121820,"Ruind of Lordaeron 3v3 Matches",121815,0,0,8605,0,0
+121821,,0,0,5,0,0,0
 121822,"Ruins of Lordaeron 2v2 Wins",121821,0,0,8617,0,0
 121823,"Dalran 2v2 Wins",121821,0,0,8615,0,0
 121824,"Blade's Edge 2v2 Wins",121821,0,0,5728,0,0
 121825,"Nagrand 2v2 Wins",121821,0,0,8616,0,0
 121826,"Ring of Valor 2v2 Wins",121821,0,0,8618,0,0
+121827,,0,0,4,0,0,0
 121828,"Highest 2 man personal rating",121827,0,0,451,0,0
+121829,,0,0,5,0,0,0
 121830,Outland,121829,0,0,5494,0,0
 121831,Northrend,121829,0,0,5495,0,0
 121832,Kalimdor,121829,0,0,5493,0,0
 121833,"Eastern Kingdoms",121829,0,0,5492,0,0
+121834,,0,0,5,0,0,0
 121835,"Dalaran Sewers Arena Kills",121834,0,0,9161,0,0
 121836,"The Ring of Valor Arena Kills",121834,0,0,9164,0,0
 121837,"Blade's Edge Arena Kills",121834,0,0,8839,0,0
 121838,"Ruins of Lordaeron Arena Kills",121834,0,0,9163,0,0
 121839,"Nagrand Arena Kills",121834,0,0,9162,0,0
+121887,,0,0,5,0,0,0
 121888,"10 man raids",121887,0,0,6845,0,0
+121905,,0,0,4,0,0,0
 121906,"Talent tree respecs",121905,0,0,3359,0,0
+121910,,0,0,4,0,0,0
 121911,"Keli'dan the Breaker",121910,1,0,3239,0,0
+121920,,0,0,4,0,0,0
 121921,Cyanigosa,121920,1,0,5613,0,0
+121922,,0,0,4,0,0,0
 121923,Kronus,121922,1,0,5616,0,0
+121932,,0,0,4,0,0,0
 121933,"Warsong Gulch Victories",121932,0,0,140,0,0
+121936,,0,0,4,0,0,0
 121937,"Blacksmithing plans known",121936,0,0,7224,0,0
 121938,"Blacksmithing plans known",121936,0,0,6387,0,0
+121939,,0,0,4,0,0,0
 121940,"Total healing done",121939,0,0,4943,0,0
+121974,,0,0,4,0,0,0
 121975,"Warsong Gulch",121974,0,0,5747,0,0
+121976,,0,0,4,0,0,0
 121977,"Alterac Valley battles",121976,0,0,104,0,0
+121981,,0,0,4,0,0,0
 121982,"Enchanting formulae known",121981,0,0,4990,0,0
 121983,"Enchanting formulae known",121981,0,0,7225,0,0
+121989,,0,0,4,0,0,0
 121990,Southshore,121989,1,0,1109,0,0
 121991,"Dun Garok",121989,1,0,1106,0,0
 121992,"Hillsbrad Fields",121989,1,0,1110,0,0
@@ -499,9 +539,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122113,"Elixir of Firepower",122014,0,0,4357,43,0
 122114,"Elixir of Greater Defense",122014,0,0,4363,49,0
 122117,"Juju Might",122014,0,0,8072,33,0
+122118,,0,0,4,0,0,0
 122119,,122118,0,0,2002,0,0
+122183,,0,0,5,0,0,0
 122184,"Total quests",122183,0,0,3631,0,0
 122185,"Daily quests",122183,0,0,4984,0,0
+122186,,0,0,5,0,0,0
 122187,Demons,122186,0,0,4949,0,0
 122188,Beasts,122186,0,0,4948,0,0
 122189,Elemental,122186,0,0,4951,0,0
@@ -512,12 +555,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122194,Totems,122186,0,0,4957,0,0
 122195,Dragonkin,122186,0,0,4950,0,0
 122196,Giant,122186,0,0,4952,0,0
+122209,,0,0,4,0,0,0
 122210,"Eye of the Storm flag captures",122209,0,0,438,0,0
+122211,,0,0,4,0,0,0
 122212,"Warsong Gulch flags returned",122211,0,0,440,0,0
+122213,,0,0,4,0,0,0
 122214,"Highest 5 man team rating",122213,0,0,450,0,0
+122215,,0,0,4,0,0,0
 122216,"Highest 3 man personal rating",122215,0,0,447,0,0
+122232,,0,0,4,0,0,0
 122233,"Largest heal cast",122232,0,0,5376,0,0
+122234,,0,0,4,0,0,0
 122235,"Largest hit dealt",122234,0,0,5373,0,0
+122250,,0,0,4,0,0,0
 122251,"Number of mounts",122250,0,0,4787,0,0
 122252,Beverages,0,0,5,0,0,0
 122253,"Bubbly Beverage",122252,0,0,8999,28,2
@@ -933,6 +983,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122863,"Stolen Ribs",122443,0,0,7045,276,2
 122864,"Crunchy Serpent",122443,0,0,6553,66,2
 122865,"Mag'har Mild Cheese",122443,0,0,6873,67,2
+122872,,0,0,4,0,0,0
 122873,"Gold from vendors",122872,0,0,3361,0,8
 122874,,0,42000,7,0,0,0
 122875,"Exlated with the Sha'tar",122874,42000,0,4764,0,0
@@ -953,6 +1004,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122890,"Exlated with the Netherwing",122874,42000,0,4755,0,0
 122891,"Exlated with the Keepers of Time",122874,42000,0,4765,0,0
 122892,"Exlated with the Scryers",122874,42000,0,4763,0,0
+122893,,0,42000,7,0,0,0
 122894,"Exalted with The Taunka",122893,42000,0,5326,0,0
 122895,"Exalted with Tranquillen",122893,42000,0,5323,0,0
 122896,"Exalted with The Hand of Vengeance",122893,42000,0,5325,0,0
@@ -968,27 +1020,45 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122906,"Exalted with The Mag'har",122893,42000,0,5321,0,0
 122907,"Exalted with The Sunreavers",122893,42000,0,5342,0,0
 122908,"Exalted with Frostwolf Clan",122893,42000,0,5320,0,0
+122978,,0,0,4,0,0,0
 122979,"Number of hugs",122978,0,0,3231,0,0
+122980,,0,0,4,0,0,0
 122981,"Need rolls for loot",122980,0,0,5802,0,0
+122982,,0,0,4,0,0,0
 122983,"Total facepalms",122982,0,0,3232,0,0
+122986,,0,0,4,0,0,0
 122987,"Ring of Trials matches",122986,0,0,5730,0,0
+123016,,0,0,4,0,0,0
 123017,"Eye of the Storm victories",123016,0,0,5745,0,0
+123018,,0,0,4,0,0,0
 123019,"Arathi Basin victories",123018,0,0,102,0,0
+123035,,0,0,4,0,0,0
 123036,"Total factions encountered",123035,0,0,5301,0,0
+123037,,0,0,4,0,0,0
 123038,"10-man instances run",123037,0,0,4988,0,0
+123056,,0,0,4,0,0,0
 123057,"Ring of Trials victories",123056,0,0,5735,0,0
+123058,,0,0,4,0,0,0
 123059,"5v5 Arena Kills",123058,0,0,4961,0,0
+123075,,0,0,4,0,0,0
 123076,"Deaths from falling",123075,0,0,149,0,0
+123079,,0,0,4,0,0,0
 123080,"Gold spent on travel",123079,0,0,3356,0,8
+123081,,0,0,4,0,0,0
 123082,"Gold spent on postage",123081,0,0,3358,0,8
+123085,,0,0,4,0,0,0
 123086,"Total waves",123085,0,0,3236,0,0
+123087,,0,0,5,0,0,0
 123088,laugh,123087,0,0,3238,0,0
 123089,rofl,123087,0,0,7196,0,0
 123090,giggle,123087,0,0,7197,0,0
 123091,chuckle,123087,0,0,7194,0,0
 123092,guffaw,123087,0,0,7195,0,0
+123093,,0,0,4,0,0,0
 123094,"Epoch Hunter",123093,1,0,3242,0,0
+123095,,0,0,4,0,0,0
 123096,Quagmirran,123095,1,0,3240,0,0
+123102,,0,0,4,0,0,0
 123103,"Ironband's Excavation Site",123102,1,0,1180,0,0
 123104,"Grizzlepaw Ridge",123102,1,0,1181,0,0
 123105,"North Gate Pass",123102,1,0,1178,0,0
@@ -1000,19 +1070,31 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123111,"Stonesplinter Valley",123102,1,0,1183,0,0
 123112,"Valley of Kings",123102,1,0,1184,0,0
 123113,"Silver Stream Mine",123102,1,0,1177,0,0
+123114,,0,0,4,0,0,0
 123115,,123114,0,0,5343,0,0
 123116,"Epic items obtained",123114,0,0,6142,0,0
+123117,,0,0,4,0,0,0
 123118,"Alterac Valley towers defended",123117,0,0,436,0,0
+123259,,0,0,4,0,0,0
 123260,"Largest hit received",123259,0,0,5371,0,0
+123263,,0,0,4,0,0,0
 123264,"Exarch Maladaar",123263,1,0,3244,0,0
+123275,,0,0,4,0,0,0
 123276,"Deaths in Alterac Valley",123275,0,0,108,0,0
+123279,,0,0,4,0,0,0
 123280,"Fishing skill",123279,450,0,5696,0,1
+123281,,0,0,4,0,0,0
 123282,"Leatherworking skill",123281,450,0,5718,0,1
+123283,,0,0,4,0,0,0
 123284,"Quests abandoned",123283,0,0,5289,0,0
+123285,,0,0,4,0,0,0
 123286,"Circle of Blood matches",123285,0,0,5729,0,0
+123328,,0,0,5,0,0,0
 123329,"25 man raids",123328,0,0,6846,0,0
+123332,,0,0,4,0,0,0
 123333,,123332,0,0,164,0,0
 123334,"First aid skill",123332,450,0,5592,0,1
+123351,,0,0,4,0,0,0
 123352,"Ridgepoint Tower",123351,1,0,1155,0,0
 123353,"Eastvale Logging Camp",123351,1,0,1154,0,0
 123354,"Jerod's Landing",123351,1,0,1151,0,0
@@ -1025,6 +1107,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123361,"Stone Cairn Lake",123351,1,0,1157,0,0
 123362,Goldshire,123351,1,0,1147,0,0
 123363,"Fargodeep Mine",123351,1,0,1148,0,0
+123364,,0,0,4,0,0,0
 123365,"Twilight Grove",123364,1,0,1166,0,0
 123366,"Manor Mistmantle",123364,1,0,1172,0,0
 123367,Darkshire,123364,1,0,1171,0,0
@@ -1074,13 +1157,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123462,"Warsong Gulch",123459,0,0,140,3,0
 123463,"Arathi Basin",123459,0,0,102,2,0
 123464,"Darkspear Islands",123459,0,0,118228,1,0
+123468,,0,0,4,0,0,0
 123469,"Inscription skill",123468,450,0,5716,0,1
+123501,,0,0,4,0,0,0
 123502,"Critters killed",123501,0,0,4958,0,0
+123503,,0,0,4,0,0,0
 123504,"Deaths from fatigue",123503,0,0,148,0,0
+123505,,0,0,5,0,0,0
 123506,"Deaths from fire and lava",123505,0,0,150,0,0
 123507,"Deaths from fire and lava",123505,0,0,151,0,0
+123533,,0,0,4,0,0,0
 123534,"Deaths in Naxxramas",123533,0,0,943,0,0
+123637,,0,0,4,0,0,0
 123638,"Honorable Kills",123637,0,0,9160,0,0
+123639,,0,0,4,0,0,0
 123640,"Highest 3 man team rating",123639,0,0,449,0,0
 123641,,0,0,7,0,0,0
 123642,Demons,123641,0,0,4949,0,0
@@ -1099,15 +1189,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123665,"Rank 1",123660,0,0,118239,0,0
 123666,"Rank 3",123660,0,0,118242,2,0
 123667,"Rank 5",123660,0,0,118244,4,0
+123672,,0,0,4,0,0,0
 123673,,123672,0,0,5345,0,0
 123674,"Legendary items obtained",123672,0,0,6141,0,0
+123675,,0,0,4,0,0,0
 123676,"Flight paths taken",123675,0,0,5305,0,0
+123677,,0,0,5,0,0,0
 123678,"Ruins of Lordaeron 3v3 Wins",123677,0,0,8609,0,0
 123679,"Ring of Valor 3v3 Wins",123677,0,0,8610,0,0
 123680,"Nagrand 3v3 Wins",123677,0,0,8608,0,0
 123681,"Dalaran 3v3 Wins",123677,0,0,8607,0,0
 123682,"Blade's Edge 3v3 Wins",123677,0,0,5727,0,0
+123708,,0,0,4,0,0,0
 123709,"Total damage received",123708,0,0,5372,0,0
+123710,,0,0,4,0,0,0
 123711,"Lake Nazferiti",123710,1,0,1215,0,0
 123712,"Booty Bay",123710,1,0,1196,0,0
 123713,"Bloodsail Compound",123710,1,0,1204,0,0
@@ -1135,6 +1230,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123735,"Mistvale Valley",123710,1,0,1203,0,0
 123736,"Ruins of Jubuwal",123710,1,0,1206,0,0
 123737,"Mosh'Ogg Ogre Mound",123710,1,0,1213,0,0
+123738,,0,0,4,0,0,0
 123739,Stagalbog,123738,1,0,1230,0,0
 123740,"The Shifting Mire",123738,1,0,1227,0,0
 123741,"Misty Valley",123738,1,0,1224,0,0
@@ -1146,7 +1242,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123747,Stonard,123738,1,0,1228,0,0
 123748,Sorrowmurk,123738,1,0,1231,0,0
 123749,"Misty Reed Strand",123738,1,0,1233,0,0
+123750,,0,0,4,0,0,0
 123751,"Grand Widow Faerlina",123750,1,0,5126,0,0
+123752,,0,0,4,0,0,0
 123753,"Sartharion the Onyx Guardian",123752,1,0,5138,0,0
 123754,Redemption,0,0,5,0,0,0
 123757,Redemption,123754,0,0,7857,4,0
@@ -1160,15 +1258,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123779,"Flask of Supreme Power",123763,0,0,4422,4,0
 123783,"Flask of Distilled Wisdom",123763,0,0,4413,0,0
 123786,"Flask of Petrification",123763,0,0,4417,1,0
+123796,,0,0,5,0,0,0
 123797,"Nagrand Matches",123796,0,0,5730,0,0
 123798,"Ruins of Lordaeron Matches",123796,0,0,8593,0,0
 123799,"Ring of Valor Matches",123796,0,0,8594,0,0
 123800,"Blade's Edge Matches",123796,0,0,5729,0,0
 123801,"Dalaran Sewers Matches",123796,0,0,8591,0,0
+123802,,0,0,4,0,0,0
 123803,Hearthstone,123802,0,0,5008,0,0
 123804,"Ruby Slippers",123802,0,0,11719,0,0
+123805,,0,0,4,0,0,0
 123806,"Deaths from Hogger",123805,0,0,455,0,0
 123807,"Deaths from Hogger",123805,0,0,12038,0,0
+123808,,0,0,4,0,0,0
 123809,"Alchemy skill",123808,450,0,164,0,1
 123810,,0,1,7,0,0,0
 123811,"Body is Epic!",123810,1,0,4769,0,0
@@ -1192,7 +1294,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123829,"Gloves are Epic!",123810,1,0,4774,0,0
 123830,"20-player raids entered",0,0,4,0,0,0
 123831,"20-man raids run",123830,0,0,4989,0,0
+123832,,0,0,4,0,0,0
 123833,"Cooking skill",123832,450,0,5701,0,1
+123834,,0,1,5,0,0,0
 123835,"The One That Got Away",123834,1,0,5709,0,0
 123836,"Crocolisks in the City",123834,1,0,5706,0,0
 123837,"Bait Bandits",123834,1,0,5707,0,0
@@ -1203,11 +1307,17 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123842,"Dangerously Delicious",123834,0,0,13365,0,0
 123843,"Monsterbelly Appetite",123834,0,0,13366,0,0
 123844,"Blood is Thicker",123834,0,0,13367,0,0
+123845,,0,0,4,0,0,0
 123846,"Fish and other things caught",123845,0,0,5288,0,0
+123847,,0,0,4,0,0,0
 123848,"Badges of Justice acquired",123847,0,0,5310,0,0
+123849,,0,0,4,0,0,0
 123850,"Emblems of Valor acquired",123849,0,0,5312,0,0
+123918,,0,0,4,0,0,0
 123919,"Pathaleon the Calculator",123918,1,0,3250,0,0
+123920,,0,0,4,0,0,0
 123921,Zul'jin,123920,1,0,3255,0,0
+123922,,0,0,4,0,0,0
 123923,"Scarlet Commander Mograine",123922,1,0,3264,0,0
 123924,Resurrection,0,0,5,0,0,0
 123925,"Resurrection (Rank 5)",123924,0,0,4967,1,0
@@ -1221,6 +1331,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123936,"Rebirth (Rank 2)",123932,0,0,4976,1,0
 123937,"Rebirth (Rank 1)",123932,0,0,4977,0,0
 123939,"Rebirth (Rank 5)",123932,0,0,4973,4,0
+123940,,0,0,4,0,0,0
 123941,"Broken Pillar",123940,1,0,1417,0,0
 123942,"Southmoon Ruins",123940,1,0,1424,0,0
 123943,"Valley of the Watchers",123940,1,0,1425,0,0
@@ -1241,22 +1352,31 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 123958,Gadgetzan,123940,1,0,1405,0,0
 123959,"Zalashji's Den",123940,1,0,1413,0,0
 123960,"Caverns of Time",123940,1,0,1428,0,0
+123966,,0,1,5,0,0,0
 123967,"Sartharion the Onyx Guardian",123966,1,0,5138,0,0
 123968,Yogg-Saron,123966,1,0,5643,0,0
 123969,Kel'Thuzad,123966,1,0,5647,0,0
 123970,Malygos,123966,1,0,5692,0,0
 123971,Anub'arak,123966,1,0,13308,0,0
 123972,"The Lich King",123966,1,0,13309,0,0
+123973,,0,0,4,0,0,0
 123974,"Arathi Basin battles",123973,0,0,106,0,0
+123980,,0,0,4,0,0,0
 123981,"Deaths in Eye of the Storm",123980,0,0,3276,0,0
+123982,,0,0,4,0,0,0
 123983,"Prince Malchezaar",123982,1,0,3254,0,0
+124048,,0,0,5,0,0,0
 124049,"Money from vendors",124048,0,0,3361,0,8
 124050,"Money looted from creatures",124048,0,0,4093,0,8
 124051,"Money from questing",124048,0,0,4092,0,8
 124052,"Money from auctions",124048,0,0,4225,0,8
+124053,,0,0,4,0,0,0
 124054,"Daily quests complete",124053,0,0,4984,0,0
+124095,,0,0,4,0,0,0
 124096,"Skinning skill",124095,450,0,5720,0,1
+124097,,0,0,4,0,0,0
 124098,"Engineering skill",124097,450,0,5722,0,1
+124127,,0,0,4,0,0,0
 124128,"Palemane Rock",124127,1,0,904,0,0
 124129,"Winterhoof Water Well",124127,1,0,905,0,0
 124130,"Thunderhorn Water Well",124127,1,0,909,0,0
@@ -1271,6 +1391,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124139,"Windfury Ridge",124127,1,0,913,0,0
 124140,"The Venture Co. Mine",124127,1,0,907,0,0
 124141,"Red Rocks",124127,1,0,912,0,0
+124142,,0,0,4,0,0,0
 124143,"Grol'dom Farm",124142,1,0,924,0,0
 124144,"Boulder Lode Mine",124142,1,0,917,0,0
 124145,"Field of Giants",124142,1,0,937,0,0
@@ -1296,9 +1417,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124165,"Razorfen Downs",124142,1,0,941,0,0
 124166,"Thorn Hill",124142,1,0,926,0,0
 124167,"Raptor Grounds",124142,1,0,932,0,0
+124172,,0,0,4,0,0,0
 124173,"Highest 5 man personal rating",124172,0,0,452,0,0
+124192,,0,0,5,0,0,0
 124193,"Total NPC kills",124192,0,0,4944,0,0
 124194,"Honorable Kills",124192,0,0,9160,0,0
+124195,,0,1,7,0,0,0
 124196,Leatherworking,124195,1,0,5558,0,0
 124197,Mining,124195,1,0,5559,0,0
 124198,Skinning,124195,1,0,5560,0,0
@@ -1310,13 +1434,18 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124204,Alchemy,124195,1,0,5551,0,0
 124205,Engineering,124195,1,0,5554,0,0
 124206,Herbalism,124195,1,0,5555,0,0
+124219,,0,0,5,0,0,0
 124220,"Money from vendors",124219,0,0,3361,0,8
 124221,"Money looted from creatures",124219,0,0,4093,0,8
 124222,"Money from questing",124219,0,0,4092,0,8
 124223,"Money from auctions",124219,0,0,4225,0,8
+124224,,0,0,4,0,0,0
 124225,"Highest sale value on an auction",124224,0,0,4223,0,8
+124226,,0,0,4,0,0,0
 124227,"Total gold looted",124226,0,0,4093,0,8
+124228,,0,0,4,0,0,0
 124229,"Most gold ever owned:",124228,0,0,4224,0,8
+124236,,0,0,4,0,0,0
 124237,"Rut'theran Village",124236,1,0,1309,0,0
 124238,"Pools of Arlithrien",124236,1,0,1304,0,0
 124239,"Lake Al'Ameth",124236,1,0,1303,0,0
@@ -1328,8 +1457,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124245,"Wellspring Lake",124236,1,0,1307,0,0
 124246,Darnassus,124236,1,0,1308,0,0
 124247,"Gnarlpine Hold",124236,1,0,1302,0,0
+124248,,0,0,4,0,0,0
 124249,"Deaths in Warsong Gulch",124248,0,0,107,0,0
+124250,,0,0,4,0,0,0
 124251,"Killed by Drek'Thar",124250,0,0,456,0,0
+124252,,0,0,4,0,0,0
 124253,"Disenchanted items",124252,0,0,4991,0,0
 124270,All,0,0,4,0,0,0
 124271,"Thondroril River",124270,1,0,1081,12,0
@@ -1354,6 +1486,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124291,"Quel'Lithien Lodge",124270,1,0,1099,11,0
 124292,"Light's Hope Chapel",124270,1,0,1091,15,0
 124293,Stratholme,124270,1,0,1102,4,0
+124294,,0,0,5,0,0,0
 124295,Keristrasza,124294,0,0,7759,0,0
 124296,Anub'arak,124294,0,0,7760,0,0
 124297,"The Prophet Tharon'ja",124294,0,0,7762,0,0
@@ -1408,16 +1541,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124346,Anomalus,124294,0,0,7770,0,0
 124347,"Drakkari Colossus",124294,0,0,7783,0,0
 124348,Mal'Ganis,124294,0,0,7804,0,0
+124353,,0,0,5,0,0,0
 124354,"Dalaran 5v5 Wins",124353,0,0,8599,0,0
 124355,"Ruins of Lordaeron 5v5 Wins",124353,0,0,8601,0,0
 124356,"Nagrand 5v5 Wins",124353,0,0,8600,0,0
 124357,"Blade's Edge 5v5 Wins",124353,0,0,5726,0,0
 124358,"Ring of Valor 5v5 Wins",124353,0,0,8602,0,0
+124359,,0,0,5,0,0,0
 124360,"Ruins of Lordaeron 2v2 Matches",124359,0,0,8613,0,0
 124361,"Dalaran 2v2 Matches",124359,0,0,8611,0,0
 124362,"Ring of Valor 2v2 Matches",124359,0,0,8614,0,0
 124363,"Blade's Edge 2v2 Matches",124359,0,0,5725,0,0
 124364,"nagrand 2v2 Matches",124359,0,0,8612,0,0
+124365,,0,0,4,0,0,0
 124366,"Factions at revered",124365,0,0,5299,0,0
 124395,,0,450,7,0,0,0
 124396,Alchemy,124395,450,0,164,0,0
@@ -1431,16 +1567,25 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124404,Mining,124395,450,0,5573,0,0
 124405,Skinning,124395,450,0,5720,0,0
 124406,Tailoring,124395,450,0,5575,0,0
+124407,,0,0,4,0,0,0
 124408,"Total deaths",124407,0,0,111,0,0
+124413,,0,0,4,0,0,0
 124414,"Factions at honored",124413,0,0,5300,0,0
+124433,,0,0,4,0,0,0
 124434,"Alterac Valley towers captured",124433,0,0,437,0,0
+124435,,0,0,4,0,0,0
 124436,"Total healing received",124435,0,0,5375,0,0
+124443,,0,0,4,0,0,0
 124444,Gal'darah,124443,1,0,5614,0,0
+124476,,0,0,4,0,0,0
 124477,"Eye of the Storm battles",124476,0,0,105,0,0
+124478,,0,0,4,0,0,0
 124479,"The Prophet Tharon'ja",124478,1,0,3651,0,0
 124480,"The Prophet Tharon'ja",124478,1,0,9258,0,0
 124481,"The Prophet Tharon'ja",124478,1,0,9259,0,0
+124482,,0,0,4,0,0,0
 124483,Gal'darah,124482,1,0,3656,0,0
+124484,,0,0,4,0,0,0
 124485,Mal'Ganis,124484,1,0,3674,0,0
 124486,Mal'Ganis,124484,1,0,5619,0,0
 124487,Mal'Ganis,124484,1,0,6435,0,0
@@ -1454,12 +1599,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124580,"Warsong Gulch",124578,0,0,5747,1,0
 124581,"Arathi Basin",124578,0,0,106,2,0
 124583,,124578,0,0,118229,3,0
+124716,,0,0,4,0,0,0
 124717,"Lady Vashj",124716,1,0,3258,0,0
+124718,,0,0,4,0,0,0
 124719,Kil'jaeden,124718,1,0,3261,0,0
+124724,,0,0,4,0,0,0
 124725,"3v3 Deaths",124724,0,0,4963,0,0
+124726,,0,0,4,0,0,0
 124727,"5v5 Deaths",124726,0,0,4964,0,0
+124728,,0,0,4,0,0,0
 124729,"2v2 Arena Kills",124728,0,0,4959,0,0
+124734,,0,0,4,0,0,0
 124735,"Harbinger Skyriss",124734,1,0,3252,0,0
+124738,,0,0,4,0,0,0
 124739,"Lake Everstill",124738,1,0,1188,0,0
 124740,"Galardell Valley",124738,1,0,1195,0,0
 124741,"Stonewatch Falls",124738,1,0,1194,0,0
@@ -1471,28 +1623,45 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124747,"Lakeridge Highway",124738,1,0,1187,0,0
 124748,"Redridge Canyons",124738,1,0,1189,0,0
 124749,"Render's Valley",124738,1,0,1193,0,0
+124750,,0,0,4,0,0,0
 124751,"Largest heal received",124750,0,0,5374,0,0
+124755,,0,0,4,0,0,0
 124756,"Vanity pets owned",124755,0,0,4788,0,0
+124851,,0,0,4,0,0,0
 124852,"Arathi Basin Deaths",124851,0,0,110,0,0
+124910,,0,0,4,0,0,0
 124911,"Raised as a ghoul",124910,0,0,3814,0,0
+124912,,0,0,4,0,0,0
 124913,"Gold spent on talent tree respecs",124912,0,0,3360,0,8
+124914,,0,0,4,0,0,0
 124915,"The Black Stalker",124914,1,0,3243,0,0
+124995,,0,0,4,0,0,0
 124996,Mal'Ganis,124995,1,0,5620,0,0
 124997,Mal'Ganis,124995,1,0,6434,0,0
+124998,,0,0,4,0,0,0
 124999,"Fish caught",124998,0,0,5695,0,0
+125000,,0,0,4,0,0,0
 125001,"Ring of Valor victories",125000,0,0,5737,0,0
+125002,,0,0,4,0,0,0
 125003,"Strand of the Ancients Honorable Kills",125002,0,0,5511,0,0
+125004,,0,0,5,0,0,0
 125005,"Warsong Gulch",125004,0,0,5538,0,0
 125006,"Alterac Valley",125004,0,0,5536,0,0
 125007,"Arathi Basin",125004,0,0,5537,0,0
 125008,"Eye of the Storm",125004,0,0,5539,0,0
 125009,"Strand of the Ancients",125004,0,0,5540,0,0
 125010,"Isle of Conquest",125004,0,0,13254,0,0
+125011,,0,0,4,0,0,0
 125012,"2v2 Arena Killing Blows",125011,0,0,5541,0,0
+125019,,0,0,4,0,0,0
 125020,"Herald Volazj",125019,1,0,5611,0,0
+125021,,0,0,4,0,0,0
 125022,"Jewelcrafting skill",125021,450,0,5571,0,1
+125023,,0,0,4,0,0,0
 125024,Kronus,125023,1,0,3663,0,0
+125094,,0,0,4,0,0,0
 125095,Kel'Thuzad,125094,1,0,5647,0,0
+125096,,0,0,4,0,0,0
 125097,Sapphiron,125096,1,0,5135,0,0
 125171,Silithus,0,0,4,0,0,0
 125172,"The Crystal Vale",125171,1,0,1460,2,0
@@ -1501,8 +1670,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125176,Hive'Zora,125171,1,0,1468,4,0
 125177,"Valor's Rest",125171,1,0,1462,1,0
 125178,"Cenarion Hold",125171,1,0,1463,0,0
+125188,,0,0,4,0,0,0
 125189,Patchwerk,125188,1,0,5103,0,0
+125190,,0,0,4,0,0,0
 125191,"Warsong Gulch flags captured",125190,0,0,439,0,0
+125274,,0,0,5,0,0,0
 125275,"Ancestral Spirit",125274,0,0,1246,0,0
 125276,"Ancestral Spirit",125274,0,0,7852,0,0
 125277,"Ancestral Spirit",125274,0,0,7850,0,0
@@ -1510,6 +1682,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125279,"Ancestral Spirit",125274,0,0,7853,0,0
 125280,"Ancestral Spirit",125274,0,0,7854,0,0
 125281,"Ancestral Spirit",125274,0,0,7855,0,0
+125312,,0,0,4,0,0,0
 125313,"Rise of the Defiler",125312,1,0,1036,0,0
 125314,"Altar of Storms",125312,1,0,1033,0,0
 125315,"Nethergarde Keep",125312,1,0,1030,0,0
@@ -1519,6 +1692,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125319,"Dreadmaul Post",125312,1,0,1034,0,0
 125320,"Garrison Armory",125312,1,0,1029,0,0
 125321,"The Tainted Scar",125312,1,0,1035,0,0
+125345,,0,0,4,0,0,0
 125346,"Bloodvenom Falls",125345,1,0,1445,0,0
 125347,"Jadefire Run",125345,1,0,1404,0,0
 125348,Jaedenar,125345,1,0,1446,0,0
@@ -1537,7 +1711,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125398,"Use Soulstone",125389,0,0,7867,1,0
 125399,"Use Soulstone",125389,0,0,7866,2,0
 125402,"Use Soulstone",125389,0,0,7865,3,0
+125403,,0,0,4,0,0,0
 125404,"Talon King Ikiss",125403,1,0,3245,0,0
+125419,,0,1,5,0,0,0
 125420,Mal'Ganis,125419,1,0,6432,0,0
 125421,Anub'arak,125419,1,0,5623,0,0
 125422,"Herald Volazj",125419,1,0,5624,0,0
@@ -1551,14 +1727,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125430,"The Prophet Tharon'ja",125419,1,0,5625,0,0
 125431,"Sjonnir the Ironshaper",125419,1,0,5628,0,0
 125432,"King Ymiron",125419,1,0,5631,0,0
+125502,,0,0,4,0,0,0
 125503,"Eye of the Storm Killing Blows",125502,0,0,5539,0,0
+125504,,0,0,5,0,0,0
 125505,"Dalaran Sewers",125504,0,0,9165,0,0
 125506,"Nagrand Arena",125504,0,0,5533,0,0
 125507,"Ruind of Lordaeron",125504,0,0,5535,0,0
 125508,"Ring of Valor",125504,0,0,9166,0,0
 125509,"Blade's Edge Arena",125504,0,0,5534,0,0
+125512,,0,0,4,0,0,0
 125513,Murmur,125512,1,0,3246,0,0
+125514,,0,0,4,0,0,0
 125515,Magtheridon,125514,1,0,3257,0,0
+125547,,0,0,4,0,0,0
 125548,"Firewatch Ridge",125547,1,0,1129,0,0
 125549,"Dustfire Valley",125547,1,0,1135,0,0
 125550,"Grimesilt Dig Site",125547,1,0,1134,0,0
@@ -1566,10 +1747,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125552,"The Cauldron",125547,1,0,1130,0,0
 125553,"Blackchar Cave",125547,1,0,1131,0,0
 125554,"The Sea of Cinders",125547,1,0,1132,0,0
+125572,,0,0,4,0,0,0
 125573,"3v3 Arena Killing Blows",125572,0,0,5542,0,0
+125574,,0,0,4,0,0,0
 125575,"5v5 Arena Killing Blows",125574,0,0,5543,0,0
+125576,,0,0,4,0,0,0
 125577,"Alterac Valley Killing Blows",125576,0,0,5536,0,0
+125583,,0,0,4,0,0,0
 125584,"Exalted Reputations",125583,0,0,982,0,0
+125606,,0,0,7,0,0,0
 125607,"Elixir of Mighty Strength",125606,0,0,4384,0,0
 125608,"Elixir of Minor Agility",125606,0,0,4385,0,0
 125609,"Elixir of Shadow Power",125606,0,0,4389,0,0
@@ -1673,12 +1859,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125707,"Elixir of Empowerment",125606,0,0,4356,0,0
 125708,"Elixir of Ironskin",125606,0,0,4368,0,0
 125709,"Juju Might",125606,0,0,8072,0,0
+125713,,0,0,4,0,0,0
 125714,"Gold spent at barber shops",125713,0,0,3357,0,8
+125727,,0,0,4,0,0,0
 125728,"Dalaran Sewers matches",125727,0,0,8591,0,0
+125729,,0,0,5,0,0,0
 125730,Northrend,125729,0,0,5532,0,0
 125731,"Burning Crusade Areas",125729,0,0,5531,0,0
 125732,"Eastern Kingdoms",125729,0,0,5512,0,0
 125733,Kalimdor,125729,0,0,5530,0,0
+125754,,0,0,6,0,0,0
 125755,Demons,125754,0,0,4949,0,0
 125756,Beasts,125754,0,0,4948,0,0
 125757,Elemental,125754,0,0,4951,0,0
@@ -1689,19 +1879,32 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125762,Totems,125754,0,0,4957,0,0
 125763,Dragonkin,125754,0,0,4950,0,0
 125764,Giant,125754,0,0,4952,0,0
+125801,,0,0,4,0,0,0
 125802,"Strand of the Ancients Killing Blows",125801,0,0,5540,0,0
+125803,,0,0,4,0,0,0
 125804,Gluth,125803,1,0,5124,0,0
+125805,,0,0,4,0,0,0
 125806,"Gothik the Harvester",125805,1,0,5125,0,0
+125807,,0,0,4,0,0,0
 125808,"The Four Horsemen",125807,1,0,7806,0,0
 125809,"<NYI> Need to hook up event",125807,1,0,5129,0,0
+125810,,0,0,4,0,0,0
 125811,"Total times playing world's smallest violin",125810,0,0,3237,0,0
+125814,,0,0,4,0,0,0
 125815,"Noth the Plaguebringer",125814,1,0,5104,0,0
+125857,,0,0,4,0,0,0
 125858,Malygos,125857,1,0,5692,0,0
+125866,,0,0,4,0,0,0
 125867,"Ignis the Furnace Master",125866,1,0,9956,0,0
+125881,,0,0,4,0,0,0
 125882,,125881,0,0,5593,0,0
+125894,,0,0,4,0,0,0
 125895,"Herald Volazj",125894,1,0,3647,0,0
+125907,,0,0,4,0,0,0
 125908,Thaddius,125907,1,0,5134,0,0
+125915,,0,0,4,0,0,0
 125916,"Strand of the Ancients",125915,0,0,5894,0,0
+125988,,0,0,4,0,0,0
 125989,Deathknell,125988,1,0,1037,0,0
 125990,"Agamand Mills",125988,1,0,1039,0,0
 125991,Brill,125988,1,0,1043,0,0
@@ -1718,10 +1921,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126002,"Venomweb Vale",125988,1,0,1051,0,0
 126003,"Stillwater Pond",125988,1,0,1040,0,0
 126004,Undercity,125988,1,0,1045,0,0
+126005,,0,0,5,0,0,0
 126006,"Total quests",126005,0,0,3631,0,0
 126007,"Daily quests",126005,0,0,4984,0,0
+126121,,0,0,4,0,0,0
 126122,"Warchief Kargath Bladefist",126121,1,0,3249,0,0
+126128,,0,0,4,0,0,0
 126129,Keristrasza,126128,1,0,3639,0,0
+126140,,0,0,4,0,0,0
 126141,"Saltspray Glen",126140,1,0,1267,0,0
 126142,"Ironbeard's Tomb",126140,1,0,1268,0,0
 126143,"Raptor Ridge",126140,1,0,1275,0,0
@@ -1737,16 +1944,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126153,"Grim Batol",126140,1,0,1276,0,0
 126154,"Menethil Harbor",126140,1,0,1262,0,0
 126155,"Direforge Hill",126140,1,0,1274,0,0
+126170,,0,0,6,0,0,0
 126171,Northrend,126170,0,0,5532,0,0
 126172,"Burning Crusade Areas",126170,0,0,5531,0,0
 126173,"Eastern Kingdoms",126170,0,0,5512,0,0
 126174,Kalimdor,126170,0,0,5530,0,0
+126192,,0,0,4,0,0,0
 126193,"King Ymiron",126192,1,0,3669,0,0
+126210,,0,0,4,0,0,0
 126211,"Warlord Kalithresh",126210,1,0,3248,0,0
+126212,,0,0,4,0,0,0
 126213,"Illidan Stormrage",126212,1,0,3260,0,0
+126280,,0,0,4,0,0,0
 126281,"Herbalism skill",126280,450,0,5569,0,1
+126282,,0,0,4,0,0,0
 126283,"Blacksmithing skill",126282,450,0,5566,0,1
+126284,,0,0,4,0,0,0
 126285,"Ley-Guardian Eregos",126284,1,0,5617,0,0
+126298,,0,0,4,0,0,0
 126299,"North Tide's Hollow",126298,1,0,1057,0,0
 126300,"The Dead Field",126298,1,0,1055,0,0
 126301,"Deep Elem Mine",126298,1,0,1061,0,0
@@ -1762,6 +1977,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126311,"Fenris Isle",126298,1,0,1058,0,0
 126312,"Shadowfang Keep",126298,1,0,1064,0,0
 126313,"Beren's Peril",126298,1,0,1067,0,0
+126314,,0,0,4,0,0,0
 126315,"Skulk Rock",126314,1,0,1125,0,0
 126316,"The Overlook Cliffs",126314,1,0,1128,0,0
 126317,Agol'watha,126314,1,0,1121,0,0
@@ -1776,7 +1992,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126326,"The Altar of Zul",126314,1,0,1123,0,0
 126327,Jintha'Alor,126314,1,0,1127,0,0
 126328,"Valorwind Lake",126314,1,0,1120,0,0
+126334,,0,0,4,0,0,0
 126335,Anub'Rekhan,126334,1,0,5100,0,0
+126344,,0,1,5,0,0,0
 126345,"Revenge is Tasty",126344,1,0,5702,0,0
 126346,Manalicious,126344,1,0,5704,0,0
 126347,"Soup for the Soul",126344,1,0,5705,0,0
@@ -1791,8 +2009,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126356,"Infused Mushroom Meatloaf - Alliance",126344,1,0,12085,0,0
 126357,"Infused Mushroom Meatloaf - Alliance",126344,1,0,11960,0,0
 126358,"Infused Mushroom Meatloaf - Horde",126344,1,0,11961,0,0
+126359,,0,0,4,0,0,0
 126360,"Alchemy recipes known",126359,0,0,7223,0,0
 126361,"Alchemy recipes known",126359,0,0,6386,0,0
+126372,,0,0,4,0,0,0
 126373,"Misty Pine Refuge",126372,1,0,506,0,0
 126374,"Iceflow Lake",126372,1,0,517,0,0
 126375,"Helm's Bed Lake",126372,1,0,509,0,0
@@ -1811,6 +2031,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126388,Gnomeregan,126372,1,0,518,0,0
 126389,"Gates of Ironforge",126372,1,0,519,0,0
 126390,"South Gate Outpost",126372,1,0,516,0,0
+126395,,0,0,4,0,0,0
 126396,Moonbrook,126395,1,0,1256,0,0
 126397,"The Molsen Farm",126395,1,0,1253,0,0
 126398,"Gold Coast Quarry",126395,1,0,1254,0,0
@@ -1825,9 +2046,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126407,"The Dagger Hills",126395,1,0,1260,0,0
 126408,"Demont's Place",126395,1,0,1258,0,0
 126409,"Furlbrow's Pumpkin Farm",126395,1,0,1250,0,0
+126410,,0,0,4,0,0,0
 126411,"Strand of the Ancients",126410,0,0,5898,0,0
+126435,,0,0,4,0,0,0
 126436,Mimiron,126435,1,0,9963,0,0
+126437,,0,0,4,0,0,0
 126438,"General Vezax",126437,1,0,9964,0,0
+126439,,0,1,7,0,0,0
 126440,"Alterac Valley Runecloth Bandage",126439,1,0,3301,0,0
 126441,"Heavy Silk Bandage",126439,1,0,3315,0,0
 126442,"Mageweave Bandage",126439,1,0,3317,0,0
@@ -1858,6 +2083,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126467,"Arathi Basin Silk Bandage",126439,1,0,3304,0,0
 126468,"Warsong Gulch Mageweave Bandage",126439,1,0,3322,0,0
 126469,"Runecloth Bandage",126439,1,0,3319,0,0
+126470,,0,0,7,0,0,0
 126471,"Superior Healing Draught",126470,0,0,4304,0,0
 126472,"Major Dreamless Sleep Potion",126470,0,0,4320,0,0
 126473,"Dreamless Sleep Potion",126470,0,0,4318,0,0
@@ -1896,6 +2122,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126506,"Major Combat Healing Potion",126470,0,0,5181,0,0
 126507,"Runic Healing Potion",126470,0,0,5183,0,0
 126508,"Resurgent Healing Potion",126470,0,0,5182,0,0
+126509,"Super Healing Potion",126470,0,0,4310,0,0
+126559,,0,0,5,0,0,0
 126560,"Flame Leviathan",126559,0,0,10999,0,0
 126561,Razorscale,126559,0,0,11000,0,0
 126562,"Ignis the Furnace Master",126559,0,0,11001,0,0
@@ -1951,8 +2179,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126612,"Algalon the Observer",126559,0,0,11014,0,0
 126613,"Emalon the Storm Watcher",126559,0,0,11015,0,0
 126614,"Runemaster Molgeim",126559,0,0,11005,0,0
+126628,,0,0,4,0,0,0
 126629,"Ingvar the Plunderer",126628,1,0,3679,0,0
+126650,,0,0,4,0,0,0
 126651,Malygos,126650,1,0,5140,0,0
+126708,,0,0,7,0,0,0
 126709,"Greater Dreamless Sleep Potion",126708,0,0,4319,0,0
 126710,"Wildvine Potion",126708,0,0,4307,0,0
 126711,"Major Dreamless Sleep Potion",126708,0,0,4320,0,0
@@ -1989,6 +2220,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126742,"Lesser Mana Potion",126708,0,0,4323,0,0
 126743,"Runic Mana Potion",126708,0,0,5184,0,0
 126744,"Mad Alchemist's Potion",126708,0,0,4325,0,0
+126745,,0,0,6,0,0,0
 126746,"Flask of the Frost Wyrm",126745,0,0,4423,0,0
 126747,"Shattrath Flask of Relentless Assault",126745,0,0,4429,0,0
 126748,"Unstable Flask of the Beast",126745,0,0,4432,0,0
@@ -2021,8 +2253,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126775,"Flask of Stoneblood",126745,0,0,13250,0,0
 126776,"Flask of the North",126745,0,0,13251,0,0
 126777,"Flask of the Frost Wyrm",126745,0,0,13252,0,0
+126786,,0,0,4,0,0,0
 126787,"Warsong Gulch Honorable Kills",126786,0,0,5509,0,0
+126860,,0,0,4,0,0,0
 126861,"Killed by Vanndar Stormpike",126860,0,0,4965,0,0
+126894,,0,0,4,0,0,0
 126895,"Skull Rock",126894,1,0,831,0,0
 126896,"Valley of Trials",126894,1,0,822,0,0
 126897,"Thunder Ridge",126894,1,0,829,0,0
@@ -2034,7 +2269,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126903,"Drygulch Ravine",126894,1,0,830,0,0
 126904,Orgrimmar,126894,1,0,832,0,0
 126905,"Razormane Grounds",126894,1,0,828,0,0
+126914,,0,0,4,0,0,0
 126915,"Grand Widow Faerlina",126914,1,0,5101,0,0
+126945,,0,450,7,0,0,0
 126946,"First Aid",126945,450,0,5592,0,0
 126947,Cooking,126945,450,0,5701,0,0
 126948,Fishing,126945,450,0,5696,0,0
@@ -2043,6 +2280,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126953,"Warsong Gulch",126951,0,0,5747,0,0
 126954,"Arathi Basin",126951,0,0,106,1,0
 126955,"Darkspear Islands",126951,0,0,118229,3,0
+126972,,0,0,4,0,0,0
 126973,"Thistlefur Village",126972,1,0,1326,0,0
 126974,Astranaar,126972,1,0,1329,0,0
 126975,"The Shrine of Aessina",126972,1,0,1327,0,0
@@ -2061,6 +2299,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126988,"Raynewood Retreat",126972,1,0,1334,0,0
 126989,"Felfire Hill",126972,1,0,1340,0,0
 126990,"The Zoram Strand",126972,1,0,1323,0,0
+126991,,0,0,4,0,0,0
 126992,"Darkcloud Pinnacle",126991,1,0,1342,0,0
 126993,"The Screeching Canyon",126991,1,0,1343,0,0
 126994,"Splithoof Crag",126991,1,0,1345,0,0
@@ -2070,6 +2309,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126998,"The Shimmering Flats",126991,1,0,1347,0,0
 126999,"Camp E'thok",126991,1,0,1348,0,0
 127000,"Freewind Post",126991,1,0,1344,0,0
+127001,,0,0,4,0,0,0
 127002,"Nijel's Point",127001,1,0,1366,0,0
 127003,Sargeron,127001,1,0,1367,0,0
 127004,"Thunder Axe Fortress",127001,1,0,1368,0,0
@@ -2085,8 +2325,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127014,"Shadowprey Village",127001,1,0,1378,0,0
 127015,"Gelkis Village",127001,1,0,1379,0,0
 127016,"Magram Village",127001,1,0,1381,0,0
+127042,,0,0,4,0,0,0
 127043,"Heigan the Unclean",127042,1,0,5112,0,0
+127044,,0,0,4,0,0,0
 127045,Grobbulus,127044,1,0,5114,0,0
+127084,,0,0,4,0,0,0
 127085,"Lake Elune'ara",127084,1,0,1464,0,0
 127086,"Mana Potions consumed",0,0,5,0,0,0
 127087,"Greater Dreamless Sleep Potion",127086,0,0,4319,6,0
@@ -2103,10 +2346,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127117,"Major Mana Draught",127086,0,0,4326,8,0
 127118,"Minor Mana Potion",127086,0,0,4331,3,0
 127120,"Lesser Mana Potion",127086,0,0,4323,9,0
+127144,,0,0,4,0,0,0
 127145,"Jewelcrafting Designs known",127144,0,0,7228,0,0
 127146,"Jewelcrafting Designs known",127144,0,0,6390,0,0
+127159,,0,0,4,0,0,0
 127160,Maexxna,127159,1,0,5102,0,0
+127161,,0,0,4,0,0,0
 127162,"Noth the Plaguebringer",127161,1,0,5133,0,0
+127180,,0,0,6,0,0,0
 127181,"Elixir of Mighty Strength",127180,0,0,4384,0,0
 127182,"Elixir of Minor Agility",127180,0,0,4385,0,0
 127183,"Elixir of Shadow Power",127180,0,0,4389,0,0
@@ -2210,7 +2457,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127281,"Elixir of Empowerment",127180,0,0,4356,0,0
 127282,"Elixir of Ironskin",127180,0,0,4368,0,0
 127283,"Juju Might",127180,0,0,8072,0,0
+127328,,0,0,4,0,0,0
 127329,"5-man instances run",127328,0,0,4987,0,0
+127332,,0,0,4,0,0,0
 127333,"Circle of Inner Binding",127332,1,0,967,0,0
 127334,"Thandol Span",127332,1,0,968,0,0
 127335,"Witherbark Village",127332,1,0,972,0,0
@@ -2227,8 +2476,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127346,"Northfold Manor",127332,1,0,963,0,0
 127347,"Stromgarde Keep",127332,1,0,965,0,0
 127348,"Circle of East Binding",127332,1,0,975,0,0
+127349,,0,0,4,0,0,0
 127350,Keristrasza,127349,1,0,5609,0,0
+127351,,0,0,4,0,0,0
 127352,Anub'arak,127351,1,0,5610,0,0
+127353,,0,0,4,0,0,0
 127354,"Brackenwall Village",127353,1,0,1363,0,0
 127355,"The Quagmire",127353,1,0,1364,0,0
 127356,"Alcaz Island",127353,1,0,1398,0,0
@@ -2236,13 +2488,21 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127358,"Theramore Isle",127353,1,0,1361,0,0
 127359,"Witch Hill",127353,1,0,1362,0,0
 127360,Wyrmbog,127353,1,0,1397,0,0
+127439,,0,0,4,0,0,0
 127440,"Duels won",127439,0,0,3629,0,0
+127441,,0,0,4,0,0,0
 127442,"Total damage done",127441,0,0,162,0,0
+127443,,0,0,4,0,0,0
 127444,"Ruins of Lordaeron victories",127443,0,0,5736,0,0
+127447,,0,0,4,0,0,0
 127448,"Deaths in Strand of the Ancients",127447,0,0,5549,0,0
+127449,,0,0,4,0,0,0
 127450,"King Ymiron",127449,1,0,5618,0,0
+127451,,0,0,4,0,0,0
 127452,"Mining skill",127451,450,0,5573,0,1
+127453,,0,0,4,0,0,0
 127454,"Dalaran Sewers victories",127453,0,0,5738,0,0
+127488,,0,0,4,0,0,0
 127489,"Grimtotem Post",127488,1,0,1351,0,0
 127490,"Boulderslide Ravine",127488,1,0,1354,0,0
 127491,"Mirkfallon Lake",127488,1,0,1359,0,0
@@ -2254,6 +2514,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127497,"Webwinder Path",127488,1,0,1353,0,0
 127498,Malaka'jin,127488,1,0,1352,0,0
 127499,"Stonetalon Peak",127488,1,0,1360,0,0
+127541,,0,0,4,0,0,0
 127542,Draco'dar,127541,1,0,1143,0,0
 127543,"Blackrock Pass",127541,1,0,1139,0,0
 127544,"The Pillar of Ash",127541,1,0,1141,0,0
@@ -2264,6 +2525,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127549,"Dreadmaul Rock",127541,1,0,1136,0,0
 127550,"Morgan's Vigil",127541,1,0,1137,0,0
 127551,"Blackrock Stronghold",127541,1,0,1142,0,0
+127552,,0,0,4,0,0,0
 127553,"Grimtotem Compound",127552,1,0,1391,0,0
 127554,"Dire Maul",127552,1,0,1385,0,0
 127555,"The Writhing Deep",127552,1,0,1389,0,0
@@ -2280,6 +2542,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127566,"Gordunni Outpost",127552,1,0,1392,0,0
 127567,"Sardor Isle",127552,1,0,1393,0,0
 127568,"The Twin Colossals",127552,1,0,1372,0,0
+127596,,0,0,4,0,0,0
 127597,"Sorrow Hill",127596,1,0,1070,0,0
 127598,"Thondroril River",127596,1,0,1080,0,0
 127599,"Northridge Lumber Camp",127596,1,0,1076,0,0
@@ -2293,9 +2556,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127607,"The Weeping Cave",127596,1,0,1079,0,0
 127608,Hearthglen,127596,1,0,1077,0,0
 127609,"The Bulwark",127596,1,0,1072,0,0
+127612,,0,0,4,0,0,0
 127613,"Epic Items Looted",127612,0,0,6140,0,0
 127614,,127612,0,0,5344,0,0
+127615,,0,0,4,0,0,0
 127616,,127615,0,0,448,0,0
+127635,,0,0,4,0,0,0
 127636,"Lethlor Ravine",127635,1,0,1014,0,0
 127637,"Angor Fortress",127635,1,0,1023,0,0
 127638,"Camp Cagg",127635,1,0,1018,0,0
@@ -2310,6 +2576,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127647,"Mirage Flats",127635,1,0,1017,0,0
 127648,Kargath,127635,1,0,1020,0,0
 127649,"Camp Boff",127635,1,0,1015,0,0
+127652,,0,0,7,0,0,0
 127653,"Flask of the Frost Wyrm",127652,0,0,4423,0,0
 127654,"Shattrath Flask of Relentless Assault",127652,0,0,4429,0,0
 127655,"Unstable Flask of the Beast",127652,0,0,4432,0,0
@@ -2342,6 +2609,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127682,"Flask of Stoneblood",127652,0,0,13250,0,0
 127683,"Flask of the North",127652,0,0,13251,0,0
 127684,"Flask of the Frost Wyrm",127652,0,0,13252,0,0
+127706,,0,0,4,0,0,0
 127707,Bashal'Aran,127706,1,0,1318,0,0
 127708,"Ruins of Mathystra",127706,1,0,1315,0,0
 127709,"Remtravel's Excavation",127706,1,0,1321,0,0
@@ -2351,10 +2619,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127713,"The Master's Glaive",127706,1,0,1322,0,0
 127714,"Cliffspring River",127706,1,0,1317,0,0
 127715,"Grove of the Ancients",127706,1,0,1320,0,0
+127771,,0,0,4,0,0,0
 127772,"Daily quests complete",127771,0,0,4984,0,0
+127901,,0,0,4,0,0,0
 127902,"Deadman's Crossing",127901,1,0,1158,0,0
 127903,"The Vice",127901,1,0,1159,0,0
 127904,Karazhan,127901,1,0,1160,0,0
+127905,,0,0,4,0,0,0
 127906,"Shadowsong Shrine",127905,1,0,1437,0,0
 127907,"Legash Encampment",127905,1,0,1431,0,0
 127908,Ursolan,127905,1,0,1433,0,0
@@ -2374,6 +2645,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 127922,"Ruins of Eldarath",127905,1,0,1438,0,0
 127923,"Lake Mennar",127905,1,0,1441,0,0
 127924,"The Ruined Reaches",127905,1,0,1442,0,0
+128004,,0,0,6,0,0,0
 128005,Keristrasza,128004,0,0,7759,0,0
 128006,Anub'arak,128004,0,0,7760,0,0
 128007,"The Prophet Tharon'ja",128004,0,0,7762,0,0
@@ -2435,7 +2707,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128079,"Portal to Undercity",128069,0,0,5004,4,0
 128081,"Portal to Darnassus",128069,0,0,4994,5,0
 128082,"Portal to Orgrimmar",128069,0,0,4998,0,0
+128124,,0,0,4,0,0,0
 128125,Thorim,128124,1,0,10561,0,0
+128169,,0,0,5,0,0,0
 128170,"Healthstone (1)",128169,0,0,4723,0,0
 128171,"Master Healthstone (1)",128169,0,0,4735,0,0
 128172,"Lesser Healthstone (2)",128169,0,0,4727,0,0
@@ -2453,13 +2727,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128184,"Demonic Healthstone",128169,0,0,9045,0,0
 128185,"Fel Healthstone",128169,0,0,9049,0,0
 128186,"Demonic Healthstone",128169,0,0,9044,0,0
+128187,"Demonic Healthstone",128169,0,0,9044,0,0
+128188,"Demonic Healthstone",128169,0,0,9045,0,0
 128189,"Fel Healthstone",128169,0,0,9041,0,0
 128190,"Fel Healthstone",128169,0,0,9042,0,0
+128191,"Fel Healthstone",128169,0,0,9049,0,0
+128192,"Fel Healthstone",128169,0,0,9041,0,0
+128193,"Fel Healthstone",128169,0,0,9042,0,0
 128194,"Major Healthstone (0)",128169,0,0,4728,0,0
 128195,"Master Healthstone (0)",128169,0,0,4734,0,0
 128196,"Lesser Healthstone (0)",128169,0,0,4725,0,0
 128197,"Demonic Healthstone",128169,0,0,9046,0,0
 128198,"Lesser Healthstone (1)",128169,0,0,4726,0,0
+128199,"Demonic Healthstone",128169,0,0,9046,0,0
+128200,,0,42000,7,0,0,0
 128201,"Exlated with Valiance Expedition",128200,42000,0,5339,0,0
 128202,"Exlated with the Argent Crusade",128200,42000,0,4737,0,0
 128203,"Exlated with the Knights of the Ebon Blade",128200,42000,0,4743,0,0
@@ -2468,16 +2749,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128206,"Exlated with the Oracles",128200,42000,0,4740,0,0
 128207,"Exlated with the Kirin Tor",128200,42000,0,4742,0,0
 128208,"Exlated with the Hand of Vengeance",128200,42000,0,5325,0,0
-128516,Thaddius,128515,1,0,5119,0,0
 128209,"Exlated with the Silver Convenant",128200,42000,0,5340,0,0
 128210,"Exlated with the Taunka",128200,42000,0,5326,0,0
 128211,"Exlated with the Wyrmrest Accord",128200,42000,0,4741,0,0
 128212,"Exlated with the Frenzyheart Tribe",128200,42000,0,4739,0,0
 128213,"Exlated with the Explorer's League",128200,42000,0,5341,0,0
+128214,,0,0,4,0,0,0
 128215,"Warp Splinter",128214,1,0,3251,0,0
+128216,,0,0,4,0,0,0
 128217,"Total gold from quest rewards",128216,0,0,4092,0,8
+128239,,0,0,4,0,0,0
 128240,Loatheb,128239,1,0,5113,0,0
+128255,,0,0,4,0,0,0
 128256,"Enchanting skill",128255,450,0,5567,0,1
+128330,,0,1,6,0,0,0
 128331,Xevozz,128330,1,0,8798,0,0
 128332,Lavanthor,128330,1,0,8799,0,0
 128333,Ichoron,128330,1,0,8800,0,0
@@ -2538,37 +2823,55 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128388,Falric,128330,1,0,13320,0,0
 128389,Marwyn,128330,1,0,13321,0,0
 128390,"The Lich King",128330,1,0,13323,0,0
+128477,,0,0,4,0,0,0
 128478,"Sartharion the Onyx Guardian",128477,1,0,5139,0,0
+128479,,0,0,5,0,0,0
 128480,"Ring of Valor Wins",128479,0,0,5737,0,0
 128481,"Blade's Edge Wins",128479,0,0,5739,0,0
 128482,"Dalaran Sewers Wins",128479,0,0,5738,0,0
 128483,"Nagrand Wins",128479,0,0,5735,0,0
 128484,"Ruins of Lordaeron Wins",128479,0,0,5736,0,0
+128495,,0,0,4,0,0,0
 128496,"Dalaran Cooking Awards gained",128495,0,0,7262,0,0
+128505,,0,0,4,0,0,0
 128506,"Inscriptions known",128505,0,0,6389,0,0
 128507,"Inscriptions known",128505,0,0,7227,0,0
+128508,,0,0,4,0,0,0
 128509,"Cooking recipes known",128508,0,0,7221,0,0
 128510,"Cooking recipes known",128508,0,0,6393,0,0
+128513,,0,0,4,0,0,0
 128514,Anub'Rekhan,128513,1,0,5111,0,0
+128515,,0,0,4,0,0,0
+128516,Thaddius,128515,1,0,5119,0,0
+128517,,0,0,4,0,0,0
 128518,"<NYI> Need to hook up event",128517,1,0,5121,0,0
 128519,"The Four Horsemen",128517,1,0,7805,0,0
+128547,,0,0,4,0,0,0
 128548,"Algalon the Observer",128547,1,0,10566,0,0
+128549,,0,0,4,0,0,0
 128550,Yogg-Saron,128549,1,0,9967,0,0
+128584,,0,0,4,0,0,0
 128585,"Smelting Recipes Known",128584,0,0,10518,0,0
 128586,"Smelting Recipes Known",128584,0,0,10519,0,0
 128587,"Learn a Second Talent Specilization AND Reach level 40",0,0,4,0,0,0
 128588,"Level up to 40.",128587,40,0,52891,1,2
 128589,"Learn a Second Talent Specialization.",128587,1,0,9619,0,2
+128596,,0,0,4,0,0,0
 128597,"Ring of Valor matches",128596,0,0,8594,0,0
+128631,,0,0,4,0,0,0
 128632,Loatheb,128631,1,0,5131,0,0
+128663,,0,0,6,0,0,0
 128664,"Warsong Gulch",128663,0,0,5538,0,0
 128665,"Alterac Valley",128663,0,0,5536,0,0
 128666,"Arathi Basin",128663,0,0,5537,0,0
 128667,"Eye of the Storm",128663,0,0,5539,0,0
 128668,"Strand of the Ancients",128663,0,0,5540,0,0
 128669,"Isle of Conquest",128663,0,0,13254,0,0
+128749,,0,0,4,0,0,0
 128750,"Alterac Valley victories",128749,0,0,5742,0,0
+128751,,0,0,4,0,0,0
 128752,"Circle of Blood victories",128751,0,0,5739,0,0
+128753,,0,0,4,0,0,0
 128754,"Auctions Posted",128753,0,0,4220,0,0
 128755,"Health potions used",0,0,5,0,0,0
 128756,"Superior Healing Draught",128755,0,0,4304,10,0
@@ -2586,6 +2889,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128784,"Minor Rejuvenation Potion",128755,0,0,4300,6,0
 128788,"Major healing Draught",128755,0,0,4296,2,0
 128790,"Wildvine Potion",128755,0,0,4307,0,0
+128795,,0,1,7,0,0,0
 128796,Xevozz,128795,1,0,8798,0,0
 128797,Lavanthor,128795,1,0,8799,0,0
 128798,Ichoron,128795,1,0,8800,0,0
@@ -2646,16 +2950,27 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128853,Falric,128795,1,0,13320,0,0
 128854,Marwyn,128795,1,0,13321,0,0
 128855,"The Lich King",128795,1,0,13323,0,0
+128864,,0,0,4,0,0,0
 128865,"General Vezax",128864,1,0,9948,0,0
+128866,,0,0,4,0,0,0
 128867,Hodir,128866,1,0,10560,0,0
+128868,,0,0,4,0,0,0
 128869,"Assembly of Iron",128868,1,0,10580,0,0
+128874,,0,0,4,0,0,0
 128875,"Emblems of Conquest acquired",128874,0,0,10196,0,0
+128911,,0,0,4,0,0,0
 128912,Cyanigosa,128911,1,0,3652,0,0
+128913,,0,0,4,0,0,0
 128914,Patchwerk,128913,1,0,5110,0,0
+128930,,0,0,4,0,0,0
 128931,"Total Auction Purchases",128930,0,0,4221,0,0
+128932,,0,0,4,0,0,0
 128933,Anub'arak,128932,1,0,3643,0,0
+128934,,0,0,4,0,0,0
 128935,"Kael'thas Sunstrider",128934,1,0,3259,0,0
+128936,,0,0,4,0,0,0
 128937,"Emblems of Heroism acquired",128936,0,0,5311,0,0
+128938,,0,0,6,0,0,0
 128939,"Superior Healing Draught",128938,0,0,4304,0,0
 128940,"Major Dreamless Sleep Potion",128938,0,0,4320,0,0
 128941,"Dreamless Sleep Potion",128938,0,0,4318,0,0
@@ -2694,6 +3009,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128974,"Major Combat Healing Potion",128938,0,0,5181,0,0
 128975,"Runic Healing Potion",128938,0,0,5183,0,0
 128976,"Resurgent Healing Potion",128938,0,0,5182,0,0
+128977,"Super Healing Potion",128938,0,0,4310,0,0
+128978,,0,0,6,0,0,0
 128979,"Greater Dreamless Sleep Potion",128978,0,0,4319,0,0
 128980,"Wildvine Potion",128978,0,0,4307,0,0
 128981,"Major Dreamless Sleep Potion",128978,0,0,4320,0,0
@@ -2730,12 +3047,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129012,"Lesser Mana Potion",128978,0,0,4323,0,0
 129013,"Runic Mana Potion",128978,0,0,5184,0,0
 129014,"Mad Alchemist's Potion",128978,0,0,4325,0,0
+129051,,0,0,4,0,0,0
 129052,"Gold Earned from Auctions",129051,0,0,4225,0,8
+129055,,0,0,4,0,0,0
 129056,Sapphiron,129055,1,0,5122,0,0
+129057,,0,0,4,0,0,0
 129058,Kel'Thuzad,129057,1,0,5136,0,0
+129059,,0,0,4,0,0,0
 129060,"Heigan the Unclean",129059,1,0,5128,0,0
+129061,,0,0,4,0,0,0
 129062,"Warsong Gulch Killing Blows",129061,0,0,5538,0,0
+129096,,0,0,4,0,0,0
 129097,"Ingvar the Plunderer",129096,1,0,5608,0,0
+129100,,0,1,6,0,0,0
 129101,Malygos,129100,1,0,5692,0,0
 129102,Kel'Thuzad,129100,1,0,5647,0,0
 129103,Sapphiron,129100,1,0,5122,0,0
@@ -2788,18 +3112,30 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129150,Mimiron,129100,1,0,9986,0,0
 129151,Auriaya,129100,1,0,9992,0,0
 129152,Yogg-Saron,129100,1,0,5643,0,0
+129365,,0,0,4,0,0,0
 129366,"Highest Auction Bid",129365,0,0,4222,0,8
+129400,,0,0,4,0,0,0
 129401,"Instructor Razuvious",129400,1,0,6429,0,0
+129420,,0,0,4,0,0,0
 129421,"Flame Leviathan",129420,1,0,9968,0,0
+129424,,0,0,4,0,0,0
 129425,"XT-002 Deconstructor",129424,1,0,9974,0,0
+129426,,0,0,4,0,0,0
 129427,Mimiron,129426,1,0,9947,0,0
+129428,,0,0,4,0,0,0
 129429,Yogg-Saron,129428,1,0,5643,0,0
+129430,,0,0,4,0,0,0
 129431,Razorscale,129430,1,0,9955,0,0
+129432,,0,0,4,0,0,0
 129433,Auriaya,129432,1,0,9966,0,0
+129434,,0,0,4,0,0,0
 129435,"XT-002 Deconstructor",129434,1,0,9957,0,0
+129442,,0,0,4,0,0,0
 129443,"Arathi Basin Killing Blows",129442,0,0,5537,0,0
+129454,,0,0,4,0,0,0
 129455,"Tailoring Patterns known",129454,0,0,7230,0,0
 129456,"Tailoring Patterns known",129454,0,0,6392,0,0
+129524,,0,1,5,0,0,0
 129525,Kel'Thuzad,129524,1,0,5136,0,0
 129526,"Instructor Razuvious",129524,1,0,6410,0,0
 129527,"Grand Widow Faerlina",129524,1,0,5126,0,0
@@ -2853,6 +3189,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129575,"General Vezax",129524,1,0,9964,0,0
 129576,Yogg-Saron,129524,1,0,9967,0,0
 129577,"Emalon the Storm Watcher",129524,1,0,9997,0,2
+129641,,0,0,6,0,0,0
 129642,"Flame Leviathan",129641,0,0,10999,0,0
 129643,Razorscale,129641,0,0,11000,0,0
 129644,"Ignis the Furnace Master",129641,0,0,11001,0,0
@@ -2908,10 +3245,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129694,"Algalon the Observer",129641,0,0,11014,0,0
 129695,"Emalon the Storm Watcher",129641,0,0,11015,0,0
 129696,"Runemaster Molgeim",129641,0,0,11005,0,0
+129740,,0,0,4,0,0,0
 129741,"Ley-Guardian Eregos",129740,1,0,3667,0,0
+129742,,0,0,4,0,0,0
 129743,"Gothik the Harvester",129742,1,0,6431,0,0
+129744,,0,0,4,0,0,0
 129745,"Instructor Razuvious",129744,1,0,6410,0,0
+129790,,0,0,4,0,0,0
 129791,"Baron Rivendare",129790,1,0,18471,0,0
+129794,,0,1,5,0,0,0
 129795,Xevozz,129794,1,0,8798,0,0
 129796,Lavanthor,129794,1,0,8799,0,0
 129797,Ichoron,129794,1,0,8800,0,0
@@ -2979,6 +3321,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129865,"Portal to Undercity",129855,0,0,5004,1,0
 129867,"Portal to Darnassus",129855,0,0,4994,3,0
 129868,"Portal to Orgrimmar",129855,0,0,4998,5,0
+129885,,0,1,5,0,0,0
 129886,Malygos,129885,1,0,5692,0,0
 129887,Kel'Thuzad,129885,1,0,5647,0,0
 129888,Sapphiron,129885,1,0,5122,0,0
@@ -3031,15 +3374,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129935,Mimiron,129885,1,0,9986,0,0
 129936,Auriaya,129885,1,0,9992,0,0
 129937,Yogg-Saron,129885,1,0,5643,0,0
+129940,,0,0,4,0,0,0
 129941,"Ruins of Lordaeron matches",129940,0,0,8593,0,0
+129942,,0,0,4,0,0,0
 129943,,129942,0,0,5304,0,0
+129997,,0,0,4,0,0,0
 129998,Thorim,129997,1,0,10558,0,0
+130003,,0,1,5,0,0,0
 130004,Kel'Thuzad,130003,1,0,5136,0,0
 130005,"Sartharion the Onyx Guardian",130003,1,0,5139,0,0
 130006,Malygos,130003,1,0,5140,0,0
 130007,Anub'arak,130003,1,0,13350,0,0
 130008,Anub'arak,130003,1,0,13362,0,0
 130009,Yogg-Saron,130003,1,0,9967,0,0
+130025,,0,0,6,0,0,0
 130026,"Bubbly Beverage",130025,0,0,8999,0,2
 130027,"Fizzy Energy Drink",130025,0,0,9000,0,2
 130028,"Fiery Festival Brew",130025,0,0,9001,0,2
@@ -3209,6 +3557,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130192,"Molasses Firewater",130025,0,0,4698,0,2
 130193,"Caraway Burnwine",130025,0,0,6485,0,2
 130194,Evermurky,130025,0,0,4685,0,2
+130195,"Bitter Plasma",130025,0,0,6961,0,2
 130196,"Netehrgarde Bitter",130025,0,0,4702,0,2
 130197,"Conjured Manna Biscuit",130025,0,0,4670,0,2
 130198,"Junglevine Wine",130025,0,0,4696,0,2
@@ -3229,6 +3578,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130213,"Wild Winter Pilsner",130025,0,0,10978,0,2
 130214,"Tournament Brew",130025,0,0,10618,0,2
 130215,"Autumnal Acorn Ale",130025,0,0,10498,0,2
+130228,,0,1,7,0,0,0
 130229,Malygos,130228,1,0,5692,0,0
 130230,Kel'Thuzad,130228,1,0,5647,0,0
 130231,Sapphiron,130228,1,0,5122,0,0
@@ -3281,6 +3631,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130278,Mimiron,130228,1,0,9986,0,0
 130279,Auriaya,130228,1,0,9992,0,0
 130280,Yogg-Saron,130228,1,0,5643,0,0
+130283,,0,1,6,0,0,0
 130284,Kel'Thuzad,130283,1,0,5136,0,0
 130285,"Instructor Razuvious",130283,1,0,6410,0,0
 130286,"Grand Widow Faerlina",130283,1,0,5126,0,0
@@ -3334,8 +3685,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130334,"General Vezax",130283,1,0,9964,0,0
 130335,Yogg-Saron,130283,1,0,9967,0,0
 130336,"Emalon the Storm Watcher",130283,1,0,9997,0,2
+130348,,0,0,4,0,0,0
 130349,Razorscale,130348,1,0,9970,0,0
+130350,,0,0,4,0,0,0
 130351,Kologarn,130350,1,0,9979,0,0
+130361,,0,0,7,0,0,0
 130362,"Bubbly Beverage",130361,0,0,8999,0,2
 130363,"Fizzy Energy Drink",130361,0,0,9000,0,2
 130364,"Fiery Festival Brew",130361,0,0,9001,0,2
@@ -3505,6 +3859,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130528,"Molasses Firewater",130361,0,0,4698,0,2
 130529,"Caraway Burnwine",130361,0,0,6485,0,2
 130530,Evermurky,130361,0,0,4685,0,2
+130531,"Bitter Plasma",130361,0,0,6961,0,2
 130532,"Netehrgarde Bitter",130361,0,0,4702,0,2
 130533,"Conjured Manna Biscuit",130361,0,0,4670,0,2
 130534,"Junglevine Wine",130361,0,0,4696,0,2
@@ -3525,6 +3880,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130549,"Wild Winter Pilsner",130361,0,0,10978,0,2
 130550,"Tournament Brew",130361,0,0,10618,0,2
 130551,"Autumnal Acorn Ale",130361,0,0,10498,0,2
+130552,,0,0,7,0,0,0
 130553,"Stormgarde Muenster",130552,0,0,7087,0,2
 130554,"Steaming Chicken Soup",130552,0,0,7042,0,2
 130555,"Spiced Wolf Ribs",130552,0,0,7028,0,2
@@ -3947,6 +4303,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 130972,"Stolen Ribs",130552,0,0,7045,0,2
 130973,"Crunchy Serpent",130552,0,0,6553,0,2
 130974,"Mag'har Mild Cheese",130552,0,0,6873,0,2
+130975,,0,0,6,0,0,0
 130976,"Stormgarde Muenster",130975,0,0,7087,0,2
 130977,"Steaming Chicken Soup",130975,0,0,7042,0,2
 130978,"Spiced Wolf Ribs",130975,0,0,7028,0,2
@@ -4369,40 +4726,67 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 131395,"Stolen Ribs",130975,0,0,7045,0,2
 131396,"Crunchy Serpent",130975,0,0,6553,0,2
 131397,"Mag'har Mild Cheese",130975,0,0,6873,0,2
+131446,,0,0,4,0,0,0
 131447,"Dalaran Jewelcrafter's Tokens gained",131446,0,0,7263,0,0
+131455,,0,0,4,0,0,0
 131456,"Leatherworking Patterns known",131455,0,0,6391,0,0
 131457,"Leatherworking Patterns known",131455,0,0,7229,0,0
+131937,,0,0,4,0,0,0
 131938,"Tailoring skill",131937,450,0,5575,0,1
+131939,,0,0,4,0,0,0
 131940,"Nexus-Prince Shaffar",131939,1,0,3241,0,0
+131981,,0,0,4,0,0,0
 131982,"Complete the Trial of the Crusader",131981,1,0,13308,0,0
+131983,,0,0,4,0,0,0
 131984,"Defeat the Twin Val'kyr",131983,1,0,12241,0,0
+131985,,0,0,4,0,0,0
 131986,"Beasts Attempt",131985,1,0,11882,0,2
+131987,,0,0,4,0,0,0
 131988,Freya,131987,1,0,10563,0,0
+132013,,0,0,4,0,0,0
 132014,"Archavon the Stone Watcher",132013,1,0,8745,0,2
+132036,,0,0,6,0,0,0
 132037,"Alterac Valley",132036,0,0,5507,0,0
 132038,"Arathi Basin",132036,0,0,5508,0,0
 132039,"Eye of the Storm",132036,0,0,5510,0,0
 132040,"Strand of the Ancients",132036,0,0,5511,0,0
 132041,"Warsong Gulch",132036,0,0,5509,0,0
 132042,"Isle of Conquest",132036,0,0,13260,0,0
+132048,,0,0,4,0,0,0
 132049,"Sjonnir the Ironshaper",132048,1,0,5615,0,0
+132050,,0,0,4,0,0,0
 132051,"Steelbreaker last (10)",132050,1,0,10797,0,2
+132052,,0,0,4,0,0,0
 132053,"Mimiron (25)",132052,1,0,10809,0,2
+132057,,0,0,4,0,0,0
 132058,"Force Thorim to enter the arena while Sif is present",132057,1,0,10800,0,2
+132059,,0,0,4,0,0,0
 132060,"Kill XT Heart (25)",132059,1,0,10794,0,2
+132061,,0,0,4,0,0,0
 132062,"Molgeim last (10)",132061,1,0,10796,0,2
+132085,,0,0,4,0,0,0
 132086,"Sjonnir the Ironshaper",132085,1,0,3659,0,0
+132087,,0,0,4,0,0,0
 132088,"Total deaths from other players",132087,0,0,5594,0,0
+132091,,0,0,4,0,0,0
 132092,"First Aid Manuals learned",132091,0,0,6394,0,0
 132093,"First Aid Manuals learned",132091,0,0,7222,0,0
+132112,,0,0,4,0,0,0
 132113,"Steelbreaker last (25)",132112,1,0,10799,0,2
+132114,,0,0,4,0,0,0
 132115,"Flame Leviathan + 3 (10)",132114,1,0,10786,0,2
+132116,,0,0,4,0,0,0
 132117,"Flame Leviathan + 4 (10)",132116,1,0,10787,0,2
+132118,,0,0,4,0,0,0
 132119,"Yogg + 1 (10)",132118,1,0,10814,0,2
+132120,,0,0,4,0,0,0
 132121,"Jaraxxus Attempt",132120,1,0,12215,0,2
+132122,,0,0,4,0,0,0
 132123,"Faction Champions attempt",132122,1,0,12216,0,2
+132151,,0,1,7,0,0,0
 132152,"Mr. Bigglesworth",132151,1,0,9438,0,0
 132153,"Mr. Bigglesworth",132151,1,0,9819,0,0
+132166,,0,1,7,0,0,0
 132167,Kel'Thuzad,132166,1,0,5136,0,0
 132168,"Instructor Razuvious",132166,1,0,6410,0,0
 132169,"Grand Widow Faerlina",132166,1,0,5126,0,0
@@ -4456,92 +4840,169 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 132217,"General Vezax",132166,1,0,9964,0,0
 132218,Yogg-Saron,132166,1,0,9967,0,0
 132219,"Emalon the Storm Watcher",132166,1,0,9997,0,2
+132229,,0,0,4,0,0,0
 132230,"Defeat the Twin Val'kyr",132229,1,0,13329,0,0
+132231,,0,0,4,0,0,0
 132232,"Faction Champions attempt",132231,1,0,12219,0,2
+132233,,0,0,4,0,0,0
 132234,"Anub'arak attempt",132233,1,0,12225,0,2
+132235,,0,0,4,0,0,0
 132236,"Yogg + 0 (10)",132235,1,0,10815,0,2
+132237,,0,0,4,0,0,0
 132238,"Yogg + 3 (25)",132237,1,0,10816,0,2
+132239,,0,0,4,0,0,0
 132240,"Yogg + 2 (10)",132239,1,0,10817,0,2
+132241,,0,0,4,0,0,0
 132242,"Yogg + 1 (25)",132241,1,0,10818,0,2
+132243,,0,0,4,0,0,0
 132244,"Yogg + 0 (25)",132243,1,0,10819,0,2
+132258,,0,0,4,0,0,0
 132259,"Defeat the Faction Champions",132258,1,0,12239,0,0
+132260,,0,0,4,0,0,0
 132261,"Defeat the Beasts of Northrend",132260,1,0,13326,0,0
+132262,,0,0,4,0,0,0
 132263,"Complete the Trial of the Crusader",132262,1,0,12245,0,0
+132266,,0,0,4,0,0,0
 132267,Freya,132266,1,0,10559,0,0
+132274,,0,0,4,0,0,0
 132275,"Deaths from drowning",132274,0,0,147,0,0
+132276,,0,0,4,0,0,0
 132277,"Koralon the Flame Watcher",132276,1,0,13344,0,2
+132281,,0,0,4,0,0,0
 132282,Maexxna,132281,1,0,6405,0,0
+132283,,0,0,4,0,0,0
 132284,Gluth,132283,1,0,6416,0,0
 132285,"1.60.1 Die in a 5-man instance",0,0,4,0,0,0
 132286,"5-man instances",132285,0,0,6847,0,0
+132289,,0,0,4,0,0,0
 132290,Aeonus,132289,1,0,3247,0,0
 132293,"Win Battleground",0,0,6,0,0,0
 132294,"Alterac Valley",132293,0,0,5742,2,0
 132296,"Warsong Gulch",132293,0,0,140,0,0
 132297,"Arathi Basin",132293,0,0,102,1,0
 132299,"Darkspear Islands",132293,0,0,118228,3,0
+132316,,0,0,4,0,0,0
 132317,"2v2 Deaths",132316,0,0,4962,0,0
+132352,,0,0,4,0,0,0
 132353,Auriaya,132352,1,0,9992,0,0
+132354,,0,0,4,0,0,0
 132355,"Freya +2 (25)",132354,1,0,10806,0,2
+132356,,0,0,4,0,0,0
 132357,"General Vezax (10)",132356,1,0,10810,0,2
+132358,,0,0,4,0,0,0
 132359,"Yogg + 3 (10)",132358,1,0,10812,0,2
+132364,,0,0,4,0,0,0
 132365,"Force Thorim to enter the arena while Sif is present",132364,1,0,10801,0,2
+132395,,0,0,4,0,0,0
 132396,"Archavon the Stone Watcher",132395,1,0,8744,0,2
+132416,,0,0,4,0,0,0
 132417,"Val'kyr Twins attempt",132416,1,0,12220,0,2
+132439,,0,0,4,0,0,0
 132440,"Freya +1 (25)",132439,1,0,10805,0,2
+132441,,0,0,4,0,0,0
 132442,"Flame Leviathan + 2 (10)",132441,1,0,10785,0,2
+132443,,0,0,4,0,0,0
 132444,"Flame Leviathan + 4 (25)",132443,1,0,10791,0,2
+132465,,0,0,4,0,0,0
 132466,"3v3 Arena Kills",132465,0,0,4960,0,0
+132467,,0,0,4,0,0,0
 132468,"The Prophet Tharon'ja",132467,1,0,5612,0,0
 132469,"The Prophet Tharon'ja",132467,1,0,9260,0,0
 132470,"The Prophet Tharon'ja",132467,1,0,9261,0,0
+132477,,0,0,4,0,0,0
 132478,"Flame Leviathan + 3 (25)",132477,1,0,10790,0,2
+132479,,0,0,4,0,0,0
 132480,"Mimiron (10)",132479,1,0,10808,0,2
+132481,,0,0,4,0,0,0
 132482,"Kill XT Heart (10)",132481,1,0,10792,0,2
+132483,,0,0,4,0,0,0
 132484,"Wound XT Heart (25)",132483,1,0,10795,0,2
+132485,,0,0,4,0,0,0
 132486,"Val'kyr Twins attempt",132485,1,0,12222,0,2
+132487,,0,0,4,0,0,0
 132488,"Val'kyr Twins attempt",132487,1,0,12223,0,2
+132489,,0,0,4,0,0,0
 132490,"Anub'arak attempt",132489,1,0,12224,0,2
+132493,,0,0,4,0,0,0
 132494,"Val'kyr Twins attempt",132493,1,0,12221,0,2
+132495,,0,0,4,0,0,0
 132496,"Marshal Jacob Alerius",132495,1,0,12542,0,0
+132501,,0,0,4,0,0,0
 132502,"Wound XT Heart (10)",132501,1,0,10793,0,2
+132505,,0,0,4,0,0,0
 132506,"Defeat Lord Jaraxxus",132505,1,0,13347,0,0
+132507,,0,0,4,0,0,0
 132508,"Marshal Jacob Alerius",132507,1,0,12543,0,0
+132509,,0,0,4,0,0,0
 132510,"Defeat the Faction Champions",132509,1,0,13328,0,0
+132511,,0,0,4,0,0,0
 132512,"Marshal Jacob Alerius",132511,1,0,12545,0,0
+132513,,0,0,4,0,0,0
 132514,"Defeat the Twin Val'kyr",132513,1,0,12243,0,0
+132515,,0,0,4,0,0,0
 132516,"Faction Champions attempt",132515,1,0,12217,0,2
+132517,,0,0,4,0,0,0
 132518,"Faction Champions attempt",132517,1,0,12218,0,2
+132519,,0,0,4,0,0,0
 132520,"Defeat the Beasts of Northrend",132519,1,0,12229,0,0
+132547,,0,0,4,0,0,0
 132548,"Beasts Attempt",132547,1,0,12210,0,2
+132549,,0,0,4,0,0,0
 132550,"Marshal Jacob Alerius",132549,1,0,12544,0,0
+132555,,0,0,4,0,0,0
 132556,"Emalon the Storm Watcher",132555,1,0,9996,0,2
+132557,,0,0,4,0,0,0
 132558,"Flame Leviathan",132557,1,0,9969,0,0
+132559,,0,0,4,0,0,0
 132560,"Assembly of Iron",132559,1,0,10581,0,0
+132614,,0,0,4,0,0,0
 132615,"Defeat Lord Jaraxxus",132614,1,0,12235,0,0
+132616,,0,0,4,0,0,0
 132617,"Defeat the Twin Val'kyr",132616,1,0,13349,0,0
+132618,,0,0,4,0,0,0
 132619,"Ignis the Furnace Master",132618,1,0,9972,0,0
+132620,,0,0,4,0,0,0
 132621,"Algalon the Observer",132620,1,0,10565,0,0
+132645,,0,0,4,0,0,0
 132646,"Gruul the Dragonkiller",132645,1,0,3256,0,0
+132687,,0,0,4,0,0,0
 132688,"Marshal Jacob Alerius",132687,1,0,12538,0,0
+132689,,0,0,4,0,0,0
 132690,"Beasts Attempt",132689,1,0,12211,0,2
+132724,,0,0,4,0,0,0
 132725,"The Black Knight",132724,1,0,12553,0,0
+132734,,0,0,4,0,0,0
 132735,"Defeat the Faction Champions",132734,1,0,12237,0,0
+132736,,0,0,4,0,0,0
 132737,"Marshal Jacob Alerius",132736,1,0,12545,0,0
+132738,,0,0,4,0,0,0
 132739,"Marshal Jacob Alerius",132738,1,0,12539,0,0
+132740,,0,0,4,0,0,0
 132741,"Jaraxxus Attempt",132740,1,0,12212,0,2
+132764,,0,0,4,0,0,0
 132765,"Beasts Attempt",132764,1,0,12209,0,2
+132766,,0,0,4,0,0,0
 132767,"Jaraxxus Attempt",132766,1,0,12213,0,2
+132768,,0,0,4,0,0,0
 132769,"Koralon the Flame Watcher",132768,1,0,13325,0,2
+132770,,0,0,4,0,0,0
 132771,"Anub'arak attempt",132770,1,0,12226,0,2
+132772,,0,0,4,0,0,0
 132773,"Anub'arak attempt",132772,1,0,12227,0,2
+132776,,0,0,4,0,0,0
 132777,"Isle of Conquest",132776,0,0,13368,0,0
+132778,,0,0,4,0,0,0
 132779,"Isle of Conquest victories",132778,0,0,13369,0,0
+132780,,0,0,4,0,0,0
 132781,Grobbulus,132780,1,0,6406,0,0
+132782,,0,0,4,0,0,0
 132783,"Marshal Jacob Alerius",132782,1,0,12541,0,0
+132820,,0,0,4,0,0,0
 132821,"Summons accepted",132820,1,0,8586,0,0
+132855,,0,0,4,0,0,0
 132856,"Engineering Schematics known",132855,0,0,6388,0,0
 132857,"Engineering Schematics known",132855,0,0,7226,0,0
+132858,,0,0,5,0,0,0
 132859,"Alterac Valley",132858,0,0,5507,0,0
 132860,"Arathi Basin",132858,0,0,5508,0,0
 132861,"Eye of the Storm",132858,0,0,5510,0,0
@@ -4550,7 +5011,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 132864,"Isle of Conquest",132858,0,0,13260,0,0
 132865,"1.60.1 Die in a 5-man heroic instance",0,0,4,0,0,0
 132866,"5-man heroic instances",132865,0,0,7849,0,0
+132867,,0,0,4,0,0,0
 132868,"Kael'thas Sunstrider",132867,1,0,3253,0,0
+132873,,0,0,6,0,0,0
 132874,"Thane Korth'azz",132873,0,0,7845,0,0
 132875,Anub'Rekhan,132873,0,0,7828,0,0
 132876,Gluth,132873,0,0,7829,0,0
@@ -4604,11 +5067,17 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 132924,Yogg-Saron,132873,0,0,11030,0,0
 132925,"Algalon the Observer",132873,0,0,11031,0,0
 132926,"Emalon the Storm Watcher",132873,0,0,11032,0,0
+132927,,0,0,4,0,0,0
 132928,Kologarn,132927,1,0,9978,0,0
+132992,,0,0,4,0,0,0
 132993,Hodir,132992,1,0,10562,0,0
+132994,,0,0,4,0,0,0
 132995,"Emalon the Storm Watcher",132994,1,0,9997,0,2
+133007,,0,0,4,0,0,0
 133008,"Deaths in Ulduar",133007,0,0,10998,0,2
+133020,,0,0,4,0,0,0
 133021,"Eadric the Pure",133020,1,0,12551,0,0
+133042,,0,0,4,0,0,0
 133043,"Crimson Whelpling",133042,0,0,12618,0,2
 133044,"Azure Whelpling",133042,0,0,12619,0,2
 133045,"Emerald Whelpling",133042,0,0,12620,0,2
@@ -4627,7 +5096,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 133058,Toothy,133042,0,0,12633,0,2
 133059,Muckbreath,133042,0,0,12634,0,2
 133060,Snarly,133042,0,0,12636,0,2
+133061,,0,0,4,0,0,0
 133062,"Rivendare's Deathcharger",133061,0,0,12635,0,2
+133075,,0,1,5,0,0,0
 133076,"Ingvar the Plunderer",133075,1,0,12678,0,0
 133077,"King Ymiron",133075,1,0,12679,0,0
 133078,"Ley-Guardian Eregos",133075,1,0,12680,0,0
@@ -4640,65 +5111,125 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 133085,Gal'darah,133075,1,0,12687,0,0
 133086,Cyanigosa,133075,1,0,12688,0,0
 133087,Keristrasza,133075,1,0,12689,0,0
+133115,,0,0,4,0,0,0
 133116,"Argent Confessor Paletress",133115,1,0,12548,0,0
+133117,,0,0,4,0,0,0
 133118,"Defeat the Faction Champions",133117,1,0,13348,0,0
+133119,,0,0,4,0,0,0
 133120,"Complete the Trial of the Crusader",133119,1,0,13350,0,0
+133121,,0,0,4,0,0,0
 133122,"Complete the Trial of the Crusader",133121,1,0,12247,0,0
+133123,,0,0,4,0,0,0
 133124,"Marshal Jacob Alerius",133123,1,0,12546,0,0
+133130,,0,0,4,0,0,0
 133131,"Argent Confessor Paletress",133130,1,0,12549,0,0
+133189,,0,0,4,0,0,0
 133190,"Jaraxxus Attempt",133189,1,0,12214,0,2
+133200,,0,0,4,0,0,0
 133201,"Eadric the Pure",133200,1,0,12550,0,0
+133202,,0,0,4,0,0,0
 133203,"Flame Leviathan + 2 (25)",133202,1,0,10789,0,2
+133204,,0,0,4,0,0,0
 133205,"Molgeim last (25)",133204,1,0,10798,0,2
+133206,,0,0,4,0,0,0
 133207,"Freya +1 (10)",133206,1,0,10802,0,2
+133208,,0,0,4,0,0,0
 133209,"Freya +2 (10)",133208,1,0,10803,0,2
+133210,,0,0,4,0,0,0
 133211,"Freya +3 (10)",133210,1,0,10802,0,2
+133212,,0,0,4,0,0,0
 133213,"Freya +3 (25)",133212,1,0,10805,0,2
+133214,,0,0,4,0,0,0
 133215,"General Vezax (25)",133214,1,0,10811,0,2
+133238,,0,0,4,0,0,0
 133239,"Flame Leviathan + 1 (10)",133238,1,0,10784,0,2
+133240,,0,0,4,0,0,0
 133241,"Flame Leviathan + 1 (25)",133240,1,0,10788,0,2
+133247,,0,0,4,0,0,0
 133248,"Marshal Jacob Alerius",133247,1,0,12540,0,0
+133249,,0,0,4,0,0,0
 133250,"The Black Knight",133249,1,0,12552,0,0
+133251,,0,0,4,0,0,0
 133252,"Defeat the Beasts of Northrend",133251,1,0,12231,0,0
+133253,,0,0,4,0,0,0
 133254,"Defeat the Beasts of Northrend",133253,1,0,13346,0,0
+133257,,0,0,4,0,0,0
 133258,"Defeat Lord Jaraxxus",133257,1,0,12233,0,0
+133332,,0,0,4,0,0,0
 133333,"Yogg + 2 (25)",133332,1,0,10813,0,2
+133359,,0,0,4,0,0,0
 133360,"Greed rolls on loot",133359,0,0,5803,0,0
+133387,,0,0,4,0,0,0
 133388,"Defeat Lord Jaraxxus",133387,1,0,13327,0,0
+133389,,0,0,4,0,0,0
 133390,Sindragosa,133389,1,0,13228,0,2
+133391,,0,0,4,0,0,0
 133392,"Lich King",133391,1,0,13229,0,2
+133393,,0,0,4,0,0,0
 133394,"Lich King",133393,1,0,13230,0,2
+133395,,0,0,4,0,0,0
 133396,Bronjahm,133395,1,0,13166,0,0
+133397,,0,0,4,0,0,0
 133398,Bronjahm,133397,1,0,13167,0,0
+133399,,0,0,4,0,0,0
 133400,"Devourer of Souls",133399,1,0,13169,0,0
+133401,,0,0,4,0,0,0
 133402,"Devourer of Souls",133401,1,0,13168,0,0
+133403,,0,0,4,0,0,0
 133404,"Forgemaster Garfrost",133403,1,0,13170,0,0
+133405,,0,0,4,0,0,0
 133406,"Ick and Krick",133405,1,0,13172,0,0
+133407,,0,0,4,0,0,0
 133408,"Ick and Krick",133407,1,0,13173,0,0
+133409,,0,0,4,0,0,0
 133410,"Scourgelord Tyrannus and Rimefang",133409,1,0,13174,0,0
+133411,,0,0,4,0,0,0
 133412,"Scourgelord Tyrannus and Rimefang",133411,1,0,13175,0,0
+133413,,0,0,4,0,0,0
 133414,Falric,133413,1,0,13176,0,0
+133415,,0,0,4,0,0,0
 133416,Falric,133415,1,0,13177,0,0
+133417,,0,0,4,0,0,0
 133418,Marwyn,133417,1,0,13178,0,0
+133419,,0,0,4,0,0,0
 133420,Marwyn,133419,1,0,13179,0,0
+133421,,0,0,4,0,0,0
 133422,"Survive the encounter with the Lich King",133421,1,0,13180,0,0
+133423,,0,0,4,0,0,0
 133424,"Survive the encounter with the Lich King",133423,1,0,13181,0,0
+133425,,0,0,4,0,0,0
 133426,"Forgemaster Garfrost",133425,1,0,13182,0,0
+133427,,0,0,4,0,0,0
 133428,"Emblems of Triumph acquired <DND>",133427,0,0,13183,0,0
+133429,,0,0,4,0,0,0
 133430,"Emblems of Frost acquired <DND>",133429,0,0,13184,0,0
+133439,,0,0,4,0,0,0
 133440,"Deaths in Trial of the Crusader",133439,0,0,13306,0,0
+133441,,0,0,4,0,0,0
 133442,"Deaths in Icecrown Citadel",133441,0,0,13307,0,0
+133532,,0,0,4,0,0,0
 133533,Marrowgar,133532,1,0,13207,0,2
+133534,,0,0,4,0,0,0
 133535,Marrowgar,133534,1,0,13208,0,2
+133536,,0,0,4,0,0,0
 133537,Deathwhisper,133536,1,0,13209,0,2
+133538,,0,0,4,0,0,0
 133539,Deathwhisper,133538,1,0,13210,0,2
+133540,,0,0,4,0,0,0
 133541,Gunship,133540,1,0,13211,0,2
+133542,,0,0,4,0,0,0
 133543,Gunship,133542,1,0,13212,0,2
+133544,,0,0,4,0,0,0
 133545,Deathbringer,133544,1,0,13213,0,2
+133546,,0,0,4,0,0,0
 133547,Deathbringer,133546,1,0,13214,0,2
+133548,,0,0,4,0,0,0
 133549,Festergut,133548,1,0,13215,0,2
+133550,,0,0,4,0,0,0
 133551,Festergut,133550,1,0,13216,0,2
+133552,,0,0,4,0,0,0
 133553,Rotface,133552,1,0,13217,0,2
+133556,,0,1,5,0,0,0
 133557,"Ingvar the Plunderer",133556,1,0,12798,0,0
 133558,"King Ymiron",133556,1,0,12799,0,0
 133559,"Ley-Guardian Eregos",133556,1,0,12800,0,0
@@ -4711,102 +5242,197 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 133566,Gal'darah,133556,1,0,12807,0,0
 133567,Cyanigosa,133556,1,0,12808,0,0
 133568,Keristrasza,133556,1,0,12809,0,0
+133611,,0,0,4,0,0,0
 133612,"Isle of Conquest Killing Blows",133611,0,0,13254,0,0
+133613,,0,0,4,0,0,0
 133614,Rotface,133613,1,0,13218,0,2
+133615,,0,0,4,0,0,0
 133616,"Blood Princes",133615,1,0,13219,0,2
+133617,,0,0,4,0,0,0
 133618,"Blood Princes",133617,1,0,13220,0,2
+133619,,0,0,4,0,0,0
 133620,Valithria,133619,1,0,13221,0,2
+133621,,0,0,4,0,0,0
 133622,Valithria,133621,1,0,13222,0,2
+133623,,0,0,4,0,0,0
 133624,Putricide,133623,1,0,13223,0,2
+133625,,0,0,4,0,0,0
 133626,Putricide,133625,1,0,13224,0,2
+133627,,0,0,4,0,0,0
 133628,"Blood Queen",133627,1,0,13225,0,2
+133629,,0,0,4,0,0,0
 133630,"Blood Queen",133629,1,0,13226,0,2
+133631,,0,0,4,0,0,0
 133632,Sindragosa,133631,1,0,13227,0,2
+133635,,0,0,4,0,0,0
 133636,"Lord Marrowgar",133635,1,0,13331,0,0
+133637,,0,0,4,0,0,0
 133638,"Lord Marrowgar",133637,1,0,13090,0,0
+133639,,0,0,4,0,0,0
 133640,"Lord Marrowgar",133639,1,0,13351,0,0
+133641,,0,0,4,0,0,0
 133642,"Lord Marrowgar",133641,1,0,13091,0,0
+133643,,0,0,4,0,0,0
 133644,"Lady Deathwhisper",133643,1,0,13332,0,0
+133645,,0,0,4,0,0,0
 133646,"Claim victory in the Gunship Battle",133645,1,0,13333,0,0
+133647,,0,0,4,0,0,0
 133648,"The Deathbringer",133647,1,0,13334,0,0
+133649,,0,0,4,0,0,0
 133650,Festergut,133649,1,0,13336,0,0
+133651,,0,0,4,0,0,0
 133652,Rotface,133651,1,0,13337,0,0
+133653,,0,0,4,0,0,0
 133654,"Defeat the Blood Prince Council",133653,1,0,13339,0,0
 133655,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
 133656,"Rescue Valithria Dreamwalker",133655,1,0,13335,0,0
+133657,,0,0,4,0,0,0
 133658,"Professor Putricide",133657,1,0,13338,0,0
+133659,,0,0,4,0,0,0
 133660,"Defeat Blood-Queen Lana'thel",133659,1,0,13340,0,0
+133661,,0,0,4,0,0,0
 133662,Sindragosa,133661,1,0,13341,0,0
+133663,,0,0,4,0,0,0
 133664,"The Lich King",133663,1,0,13309,0,0
+133665,,0,0,4,0,0,0
 133666,"Lady Deathwhisper",133665,1,0,13104,0,0
+133667,,0,0,4,0,0,0
 133668,"Lady Deathwhisper",133667,1,0,13352,0,0
+133669,,0,0,4,0,0,0
 133670,"Lady Deathwhisper",133669,1,0,13106,0,0
+133671,,0,0,4,0,0,0
 133672,"Toravon the Ice Watcher",133671,1,0,13324,0,2
+133673,,0,0,4,0,0,0
 133674,"Toravon the Ice Watcher",133673,1,0,13343,0,2
+133675,,0,0,4,0,0,0
 133676,"Claim victory in the Gunship Battle",133675,1,0,13110,0,0
+133677,,0,0,4,0,0,0
 133678,"Claim victory in the Gunship Battle",133677,1,0,13353,0,0
+133679,,0,0,4,0,0,0
 133680,"Claim victory in the Gunship Battle",133679,1,0,13111,0,0
+133681,,0,0,4,0,0,0
 133682,"The Deathbringer",133681,1,0,13113,0,0
+133683,,0,0,4,0,0,0
 133684,"The Deathbringer",133683,1,0,13354,0,0
+133685,,0,0,4,0,0,0
 133686,"The Deathbringer",133685,1,0,13114,0,0
+133687,,0,0,4,0,0,0
 133688,Festergut,133687,1,0,13116,0,0
+133689,,0,0,4,0,0,0
 133690,Festergut,133689,1,0,13356,0,0
+133691,,0,0,4,0,0,0
 133692,Festergut,133691,1,0,13117,0,0
+133693,,0,0,4,0,0,0
 133694,Rotface,133693,1,0,13119,0,0
+133695,,0,0,4,0,0,0
 133696,Rotface,133695,1,0,13357,0,0
+133697,,0,0,4,0,0,0
 133698,Rotface,133697,1,0,13120,0,0
+133699,,0,0,4,0,0,0
 133700,"Defeat the Blood Prince Council",133699,1,0,13122,0,0
+133701,,0,0,4,0,0,0
 133702,"Defeat the Blood Prince Council",133701,1,0,13359,0,0
+133703,,0,0,4,0,0,0
 133704,"Defeat the Blood Prince Council",133703,1,0,13123,0,0
+133705,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
 133706,"Rescue Valithria Dreamwalker",133705,1,0,13125,0,0
+133707,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
 133708,"Rescue Valithria Dreamwalker",133707,1,0,13355,0,0
+133709,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
 133710,"Rescue Valithria Dreamwalker",133709,1,0,13126,0,0
+133711,,0,0,4,0,0,0
 133712,"Professor Putricide",133711,1,0,13128,0,0
+133713,,0,0,4,0,0,0
 133714,"Professor Putricide",133713,1,0,13358,0,0
+133715,,0,0,4,0,0,0
 133716,"Professor Putricide",133715,1,0,13129,0,0
+133717,,0,0,4,0,0,0
 133718,"Defeat Blood-Queen Lana'thel",133717,1,0,13131,0,0
+133719,,0,0,4,0,0,0
 133720,"Defeat Blood-Queen Lana'thel",133719,1,0,13360,0,0
+133721,,0,0,4,0,0,0
 133722,"Defeat Blood-Queen Lana'thel",133721,1,0,13132,0,0
+133723,,0,0,4,0,0,0
 133724,Sindragosa,133723,1,0,13361,0,0
+133725,,0,0,4,0,0,0
 133726,Sindragosa,133725,1,0,13134,0,0
+133727,,0,0,4,0,0,0
 133728,Sindragosa,133727,1,0,13135,0,0
+133729,,0,0,4,0,0,0
 133730,"The Lich King",133729,1,0,13137,0,0
+133731,,0,0,4,0,0,0
 133732,"The Lich King",133731,1,0,13362,0,0
+133733,,0,0,4,0,0,0
 133734,"The Lich King",133733,1,0,13138,0,0
+133735,,0,0,4,0,0,0
 133736,Marrowgar,133735,1,0,13139,0,2
+133737,,0,0,4,0,0,0
 133738,Marrowgar,133737,1,0,13140,0,2
+133739,,0,0,4,0,0,0
 133740,Deathwhisper,133739,1,0,13141,0,2
+133741,,0,0,4,0,0,0
 133742,Deathwhisper,133741,1,0,13142,0,2
+133743,,0,0,4,0,0,0
 133744,Gunship,133743,1,0,13143,0,2
+133745,,0,0,4,0,0,0
 133746,Gunship,133745,1,0,13144,0,2
+133747,,0,0,4,0,0,0
 133748,Deathbringer,133747,1,0,13145,0,2
+133749,,0,0,4,0,0,0
 133750,Deathbringer,133749,1,0,13146,0,2
+133751,,0,0,4,0,0,0
 133752,Festergut,133751,1,0,13147,0,2
+133753,,0,0,4,0,0,0
 133754,Festergut,133753,1,0,13148,0,2
+133755,,0,0,4,0,0,0
 133756,Rotface,133755,1,0,13149,0,2
+133757,,0,0,4,0,0,0
 133758,Rotface,133757,1,0,13150,0,2
+133759,,0,0,4,0,0,0
 133760,"Blood Princes",133759,1,0,13151,0,2
+133761,,0,0,4,0,0,0
 133762,"Blood Princes",133761,1,0,13152,0,2
+133763,,0,0,4,0,0,0
 133764,Valithria,133763,1,0,13153,0,2
+133765,,0,0,4,0,0,0
 133766,Valithria,133765,1,0,13154,0,2
+133767,,0,0,4,0,0,0
 133768,Putricide,133767,1,0,13155,0,2
+133769,,0,0,4,0,0,0
 133770,Putricide,133769,1,0,13156,0,2
+133771,,0,0,4,0,0,0
 133772,"Blood Queen",133771,1,0,13157,0,2
+133773,,0,0,4,0,0,0
 133774,"Blood Queen",133773,1,0,13158,0,2
+133775,,0,0,4,0,0,0
 133776,Sindragosa,133775,1,0,13159,0,2
+133777,,0,0,4,0,0,0
 133778,"Lich King",133777,1,0,13161,0,2
+133779,,0,0,4,0,0,0
 133780,"Lich King",133779,1,0,13162,0,2
+133781,,0,0,4,0,0,0
 133782,Sindragosa,133781,1,0,13160,0,2
+133790,,0,0,4,0,0,0
 133791,,133790,0,0,13422,0,0
+133792,,0,0,4,0,0,0
 133793,,133792,0,0,13423,0,0
+133794,,0,0,4,0,0,0
 133795,,133794,0,0,13424,0,0
+133796,,0,0,4,0,0,0
 133797,,133796,0,0,13425,0,0
+133798,,0,0,4,0,0,0
 133799,,133798,0,0,13426,0,0
+133881,,0,0,4,0,0,0
 133882,"Disenchant rolls made on loot",133881,0,0,13258,0,0
+133883,,0,0,4,0,0,0
 133884,"Isle of Conquest Honorable Kills",133883,0,0,13260,0,0
+133889,,0,0,4,0,0,0
 133890,Halion,133889,1,0,13465,0,2
+133891,,0,0,4,0,0,0
 133892,Halion,133891,1,0,13466,0,2
+133893,,0,0,4,0,0,0
 133894,Halion,133893,1,0,13468,0,2
+133895,,0,0,4,0,0,0
 133896,Halion,133895,1,0,13467,0,2
 150026,"S03 - Mage 25 Collectibles - First Reward",0,7,8,0,0,0
 150027,,150026,1,0,62215,0,0
@@ -4855,9 +5481,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 157567,,157566,40,0,66857,0,2
 157661,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 157662,,157661,1,0,66905,0,0
+157663,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 157664,,157663,1,0,66906,0,0
+161332,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161333,,161332,1,0,66939,0,0
+161334,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161335,,161334,1,0,66940,0,0
+161336,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161337,,161336,1,0,66941,0,0
 161345,"S03 - Cast Murky Sapta Sight (Fire)",0,0,4,0,0,4096
 161346,,161345,1,0,66946,0,0
@@ -4878,6 +5508,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 166786,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
 166788,"S03 - 60 - Steppes Warrior Victory",0,0,4,0,0,4096
 166789,,166788,1,0,69419,0,0
+166809,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166811,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166813,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166816,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166818,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166820,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166822,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166868,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166926,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 166927,,166926,1,0,69502,0,0
 168117,"S03 - P5 - Speak With Fallen Syndicate Member",0,0,4,0,0,4096
 168118,,168117,1,0,69926,0,0
@@ -4962,6 +5601,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 208264,,208263,0,0,103911,0,0
 208319,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
 208320,,208319,1,0,103943,0,0
+208324,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
 208325,,208324,1,0,103947,0,0
 208951,"1.50.0 - Hyjal Attunement Quest - 5 - Defeat Gol'gere and Leyara",0,0,4,0,0,4096
 208952,,208951,0,0,104264,0,0
@@ -4980,6 +5620,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 215904,"1.60.0 - Hyjal - Survivors' Slopes - quest - Defeat summoned air & earth elementals (JLH)",0,0,4,0,0,4096
 215905,,215904,1,0,108675,0,0
 215906,,215904,1,0,108676,1,0
+216221,"1.60.0 - Hyjal - Survivors' Slopes - quest - Defeat summoned air & earth elementals (JLH)",0,0,4,0,0,4096
 216222,,216221,1,0,108789,0,0
 216223,,216221,1,0,108790,1,0
 216878,"1.60.0 - Hyjal - Survivor Village - Quest - Hnaz's Demons (JLH)",0,0,4,0,0,4096
@@ -5015,7 +5656,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 220610,,220609,10,0,111013,0,0
 220773,"[DNT] Player has turned in writ with Blacksmithing label",0,0,4,0,0,0
 220774,,220773,1,0,111093,0,0
+221086,"Use Skysight",0,0,4,0,0,4096
 221087,,221086,1,0,111298,0,0
+221092,"Read Ley Line",0,0,4,0,0,4096
 221093,,221092,1,0,111302,0,0
 221135,"Used Halaan's Skysight",0,0,4,0,0,4096
 221136,,221135,1,0,111328,0,0
@@ -5112,7 +5755,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221573,"Reach exalted reputation with the Silverwing Sentinels",221571,42000,0,111561,1,512
 222668,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
 222669,,222668,1,0,112210,0,0
+222670,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
 222671,,222670,1,0,112211,0,0
+222929,"1.60.0 - Hyjal - Survivors' Slopes - quest - Defeat summoned air & earth elementals (JLH)",0,0,4,0,0,4096
 222930,,222929,1,0,112364,0,0
 222931,,222929,1,0,112365,1,0
 223090,"1.60 Legendary - Solo Encounter Completed (Tracking Quest)",0,0,4,0,0,4096
@@ -5121,6 +5766,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223093,,223092,1,0,112458,0,0
 223142,"1.60 Legendary - Moonglade - Barrow Dens - Satyr - Conversation",0,0,4,0,0,4096
 223143,,223142,1,0,112482,0,0
+223257,"1.60 Legendary - Solo Encounter Completed (Tracking Quest)",0,0,4,0,0,4096
 223258,,223257,0,0,112526,0,0
 223429,"Explore Eastern Kingdoms",0,0,4,0,0,0
 223430,"Alterac Mountains",223429,1,0,112642,0,0
@@ -5171,11 +5817,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223477,Kalimdor,223475,1,0,112672,1,0
 223519,"Explore Azeroth - Account Wide",0,0,4,0,0,0
 223520,Explorer,223519,1,0,112686,0,0
+223703,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
 223704,,223703,1,0,112730,0,0
 223805,"1.60 Legendary - Un'Goro Pylon Puzzle Solved",0,0,4,0,0,4096
 223806,,223805,1,0,112849,0,0
 224183,"1.60.0 - Warlock - Quest - Greater Fel Rites - Survived the Ritual",0,0,4,0,0,4098
 224184,,224183,0,0,113058,0,0
+224713,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 224714,,224713,1,0,113405,0,0
 224929,"1.60.0 - Silverpine Forest - Quest - Tortured Soul - 03 - Blood Offering",0,0,4,0,0,4096
 224930,,224929,1,0,113495,0,0
@@ -5191,6 +5839,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225072,"Use sit in Camp Tutorial Area Trigger",0,0,4,0,0,4096
 225073,,225072,1,0,113579,0,0
 225074,,225072,1,0,113580,1,0
+225092,"1.60.0 - Warlock - Quest - Fel Rites - Survived the Ritual",0,0,4,0,0,4098
 225093,,225092,0,0,113591,0,0
 225123,"1.60.0 - Arathi Highlands - Lightning Rod - Use Lightning Rod",0,0,4,0,0,4096
 225124,,225123,0,0,113593,0,0
@@ -5200,14 +5849,18 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225133,,225132,1,0,113598,0,0
 225134,"Gain Boosted Rest",0,0,4,0,0,4096
 225135,"Gain Boosted Rest Debuff",225134,1,0,113599,0,0
+225212,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 225213,,225212,1,0,116671,0,0
 225214,,225212,1,0,113624,1,0
+225215,"Gain Boosted Rest",0,0,4,0,0,4096
 225216,"Gain Boosted Rest Debuff",225215,1,0,113625,0,0
 225217,"Raise Tailoring to Journeyman",0,0,4,0,0,4096
 225218,,225217,1,0,113626,0,0
 225219,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
 225220,,225219,1,0,113628,0,0
+225307,"1.60.0 - Arathi Highlands - Lightning Rod - Use Lightning Rod",0,0,4,0,0,4096
 225308,,225307,0,0,113665,0,0
+225309,"1.60.0 - Arathi Highlands - Lightning Rod - Charge Ogre Lightning Rod",0,0,4,0,0,4096
 225310,,225309,0,0,113666,0,0
 225311,"1.60.0 - Shaman - Thousand Needles - Wind Offering - Offering Presented",0,0,4,0,0,4096
 225312,,225311,0,0,113667,0,0
@@ -5221,20 +5874,30 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225582,,225581,300,0,113811,0,0
 225583,,225581,300,0,113812,1,0
 225584,,225581,300,0,113813,2,0
+227678,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227679,,227678,1,0,116666,0,0
 227680,,227678,1,0,114065,1,0
+227681,"Gain Boosted Rest",0,0,4,0,0,4096
 227682,"Gain Boosted Rest Debuff",227681,1,0,114066,0,0
+227683,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227684,,227683,1,0,116668,0,0
 227685,,227683,1,0,114071,1,0
+227686,"Gain Boosted Rest",0,0,4,0,0,4096
 227687,"Gain Boosted Rest Debuff",227686,1,0,114072,0,0
+227688,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227689,,227688,1,0,116669,0,0
 227690,,227688,1,0,114077,1,0
+227691,"Gain Boosted Rest",0,0,4,0,0,4096
 227692,"Gain Boosted Rest Debuff",227691,1,0,114078,0,0
+227693,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227694,,227693,1,0,116670,0,0
 227695,,227693,1,0,114083,1,0
+227696,"Gain Boosted Rest",0,0,4,0,0,4096
 227697,"Gain Boosted Rest Debuff",227696,1,0,114084,0,0
+227698,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
 227699,,227698,1,0,116661,0,0
 227700,,227698,1,0,113621,1,0
+227701,"Gain Boosted Rest",0,0,4,0,0,4096
 227702,"Gain Boosted Rest Debuff",227701,1,0,114090,0,0
 227798,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 227799,,227798,1,0,114177,0,0
@@ -5258,22 +5921,35 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 227817,,227816,1,0,114186,0,0
 227818,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 227819,,227818,1,0,114187,0,0
+227820,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 227821,,227820,1,0,114188,0,0
+227842,"Use sit in Camp Tutorial Area Trigger",0,0,4,0,0,4096
 227843,,227842,1,0,114195,0,0
 227844,,227842,1,0,114196,1,0
+227845,"Gain Boosted Rest",0,0,4,0,0,4096
 227846,"Gain Boosted Rest Debuff",227845,1,0,114197,0,0
+227847,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 227848,,227847,1,0,114198,0,0
+227849,"Use sit in Camp Tutorial Area Trigger",0,0,4,0,0,4096
 227850,,227849,1,0,114199,0,0
 227851,,227849,1,0,114200,1,0
+227852,"Gain Boosted Rest",0,0,4,0,0,4096
 227853,"Gain Boosted Rest Debuff",227852,1,0,114201,0,0
+227854,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227855,,227854,1,0,114205,0,0
+227868,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227869,,227868,1,0,114211,0,0
+227877,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227878,,227877,1,0,114217,0,0
+227879,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227880,,227879,1,0,114218,0,0
+227884,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227885,,227884,1,0,114220,0,0
+227886,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 227887,,227886,1,0,114221,0,0
 227890,"Reach Friendly Barkskin Reputation",0,0,4,0,0,4096
 227891,,227890,6000,0,114223,0,0
+227972,"Reach Friendly Barkskin Reputation",0,0,4,0,0,4096
 227973,,227972,6000,0,114236,0,0
 227974,"Reach neutral Barkskin reputation",0,0,4,0,0,4096
 227975,,227974,3000,0,114238,0,0
@@ -5418,72 +6094,139 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231013,"Kill King Op",0,1,5,0,0,0
 231015,"Kill Bolt",0,1,5,0,0,0
 231017,"Kill Snowtalon",0,1,5,0,0,0
+231021,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231022,,231021,1,0,116169,0,0
+231023,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231024,,231023,1,0,116171,0,0
+231025,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 231026,,231025,1,0,116172,0,0
+231027,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231028,,231027,1,0,116174,0,0
+231029,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231030,,231029,1,0,116178,0,0
+231031,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231032,,231031,1,0,116183,0,0
+231033,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231034,,231033,1,0,116191,0,0
+231035,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231036,,231035,1,0,116194,0,0
+231050,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231051,,231050,1,0,116196,0,0
+231052,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231053,,231052,1,0,116198,0,0
+231054,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231055,,231054,1,0,116200,0,0
+231064,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231065,,231064,1,0,116209,0,0
+231066,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231067,,231066,1,0,116211,0,0
+231068,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
 231069,,231068,1,0,116212,0,0
+231070,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231071,,231070,1,0,116214,0,0
+231072,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231073,,231072,1,0,116216,0,0
+231074,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231075,,231074,1,0,116218,0,0
+231076,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231077,,231076,1,0,116220,0,0
+231078,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231079,,231078,1,0,116222,0,0
+231080,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231081,,231080,1,0,116224,0,0
+231082,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231083,,231082,1,0,116226,0,0
+231084,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231085,,231084,1,0,116228,0,0
+231086,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
 231087,,231086,1,0,116230,0,0
+231088,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231089,,231088,1,0,116232,0,0
+231090,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231091,,231090,1,0,116234,0,0
+231092,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231093,,231092,1,0,116238,0,0
+231094,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231095,,231094,1,0,116242,0,0
+231096,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231097,,231096,1,0,116244,0,0
+231098,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231099,,231098,1,0,116246,0,0
+231100,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231101,,231100,1,0,116248,0,0
+231102,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231103,,231102,1,0,116250,0,0
+231104,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231105,,231104,1,0,116252,0,0
+231106,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231107,,231106,1,0,116254,0,0
+231108,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
 231109,,231108,1,0,116256,0,0
+231110,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231111,,231110,1,0,116258,0,0
+231112,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231113,,231112,1,0,116260,0,0
+231114,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231115,,231114,1,0,116262,0,0
+231116,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231117,,231116,1,0,116264,0,0
+231118,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231119,,231118,1,0,116266,0,0
+231120,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231121,,231120,1,0,116268,0,0
+231122,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231123,,231122,1,0,116270,0,0
+231124,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231125,,231124,1,0,116272,0,0
+231126,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231127,,231126,1,0,116274,0,0
+231128,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231129,,231128,1,0,116276,0,0
+231130,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
 231131,,231130,1,0,116278,0,0
+231134,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231135,,231134,1,0,116281,0,0
+231136,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231137,,231136,1,0,116283,0,0
+231138,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231139,,231138,1,0,116285,0,0
+231140,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231141,,231140,1,0,116287,0,0
+231142,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231143,,231142,1,0,116289,0,0
+231144,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231145,,231144,1,0,116291,0,0
+231146,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231147,,231146,1,0,116293,0,0
+231148,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231149,,231148,1,0,116295,0,0
+231150,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231151,,231150,1,0,116297,0,0
+231152,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231153,,231152,1,0,116299,0,0
+231154,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
 231155,,231154,1,0,116301,0,0
+231156,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
 231157,,231156,1,0,116303,0,0
+231158,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
 231159,,231158,1,0,116305,0,0
+231160,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231161,,231160,1,0,116306,0,0
+231162,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
 231163,,231162,1,0,116308,0,0
+231164,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
 231165,,231164,1,0,116310,0,0
+231166,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
 231167,,231166,1,0,116312,0,0
+231168,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
 231169,,231168,1,0,116314,0,0
+231170,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
 231171,,231170,1,0,116316,0,0
+231172,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
 231173,,231172,1,0,116318,0,0
+231174,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
 231175,,231174,1,0,116321,0,0
+231176,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
 231177,,231176,1,0,116324,0,0
 231191,"1.60.0 Shadowglen - A - Racial Tutorial - The Light of Elune - GJC",0,0,4,0,0,4096
 231192,,231191,1,0,116329,0,16
@@ -5491,15 +6234,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231194,,231193,1,0,116330,0,16
 231275,"Gain Skyborne Portal to Stormwind Aura",0,0,4,0,0,4096
 231276,,231275,1,0,116403,0,0
+231277,"Gain Skyborne Portal to Stormwind Aura",0,0,4,0,0,4096
 231278,,231277,1,0,116404,0,0
 231426,"Shadowfang Keep",230759,1,0,3263,4,0
+231441,"Cast Summer Sapling",0,0,4,0,0,4096
 231442,,231441,1,0,116517,0,0
+231443,"Cast Spring Sapling",0,0,4,0,0,4096
 231444,,231443,1,0,116518,0,0
+231445,"Cast Fall Sapling",0,0,4,0,0,4096
 231446,,231445,1,0,116519,0,0
+231447,"Cast Winter Sapling",0,0,4,0,0,4096
 231448,,231447,1,0,116520,0,0
+231647,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231648,,231647,1,0,116642,0,0
+231649,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231650,,231649,1,0,116644,0,0
+231651,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
 231652,,231651,1,0,116646,0,0
+231653,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
 231654,,231653,1,0,116648,0,0
 231888,"Player Learns or Knows Apprentice Riding [Dwarf]",0,0,4,0,0,4096
 231889,"Player Learns or Knows Apprentice Riding",231888,0,0,116814,0,0
@@ -5556,66 +6308,118 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233497,,233496,25,0,117429,0,0
 233598,"Have Completed The Madness Within",0,0,4,0,0,4096
 233599,,233598,1,0,117493,0,0
+233693,"Win in Darkspear Islands",0,1,5,0,0,6144
 233694,,233693,1,0,117543,0,2048
 233722,"Win Darkspear Islands while controlling all four bases",0,0,4,0,0,4096
 233723,"Win Darkspear Islands while controlling all four bases",233722,1,0,117560,0,0
+233726,"Win Darkspear Islands while controlling all four bases",0,0,4,0,0,4096
 233727,"Win Darkspear Islands while controlling all four bases",233726,1,0,117562,0,0
 233754,"Win Darkspear Islands while controlling at least three bases",0,0,4,0,0,4096
 233755,"Win Darkspear Islands while controlling at least three bases",233754,1,0,117573,0,0
+233756,"Win Darkspear Islands while controlling at least three bases",0,0,4,0,0,4096
 233757,"Win Darkspear Islands while controlling at least three bases",233756,1,0,117574,0,0
+234036,"Level 25 Warrior",0,0,4,0,0,0
 234037,,234036,25,0,117712,0,0
+234038,"Level 45 Warrior",0,0,4,0,0,0
 234039,,234038,45,0,117712,0,0
+234040,"Level 60 Warrior",0,0,4,0,0,0
 234041,,234040,60,0,117712,0,0
+234042,"Level 25 Druid",0,0,4,0,0,0
 234043,,234042,25,0,117713,0,0
+234044,"Level 45 Druid",0,0,4,0,0,0
 234045,,234044,45,0,117713,0,0
+234046,"Level 60 Druid",0,0,4,0,0,0
 234047,,234046,60,0,117713,0,0
+234048,"Level 25 Hunter",0,0,4,0,0,0
 234049,,234048,25,0,117714,0,0
+234050,"Level 45 Hunter",0,0,4,0,0,0
 234051,,234050,45,0,117714,0,0
+234052,"Level 60 Hunter",0,0,4,0,0,0
 234053,,234052,60,0,117714,0,0
+234054,"Level 25 Mage",0,0,4,0,0,0
 234055,,234054,25,0,117715,0,0
+234056,"Level 45 Mage",0,0,4,0,0,0
 234057,,234056,45,0,117715,0,0
+234058,"Level 60 Mage",0,0,4,0,0,0
 234059,,234058,60,0,117715,0,0
+234060,"Level 25 Paladin",0,0,4,0,0,0
 234061,,234060,25,0,117716,0,0
+234062,"Level 45 Paladin",0,0,4,0,0,0
 234063,,234062,45,0,117716,0,0
+234064,"Level 60 Paladin",0,0,4,0,0,0
 234065,,234064,60,0,117716,0,0
+234066,"Level 25 Priest",0,0,4,0,0,0
 234067,,234066,25,0,117717,0,0
+234068,"Level 45 Priest",0,0,4,0,0,0
 234069,,234068,45,0,117717,0,0
+234070,"Level 60 Priest",0,0,4,0,0,0
 234071,,234070,60,0,117717,0,0
+234072,"Level 25 Rogue",0,0,4,0,0,0
 234073,,234072,25,0,117718,0,0
+234074,"Level 45 Rogue",0,0,4,0,0,0
 234075,,234074,45,0,117718,0,0
+234076,"Level 60 Rogue",0,0,4,0,0,0
 234077,,234076,60,0,117718,0,0
+234078,"Level 25 Shaman",0,0,4,0,0,0
 234079,,234078,25,0,117719,0,0
+234080,"Level 45 Shaman",0,0,4,0,0,0
 234081,,234080,45,0,117719,0,0
+234082,"Level 60 Shaman",0,0,4,0,0,0
 234083,,234082,60,0,117719,0,0
+234084,"Level 25 Warlock",0,0,4,0,0,0
 234085,,234084,25,0,117720,0,0
+234086,"Level 45 Warlock",0,0,4,0,0,0
 234087,,234086,45,0,117720,0,0
+234088,"Level 60 Warlock",0,0,4,0,0,0
 234089,,234088,60,0,117720,0,0
+234090,"150 Skill in Alchemy",0,0,4,0,0,0
 234091,"150 Alchemy Skill",234090,150,0,117721,0,1
+234092,"225 Skill in Alchemy",0,0,4,0,0,0
 234093,"225 Alchemy Skill",234092,225,0,117721,0,1
+234094,"300 Skill in Alchemy",0,0,4,0,0,0
 234095,"300 Alchemy Skill",234094,300,0,117721,0,1
+234096,"150 Skill in Blacksmithing",0,0,4,0,0,0
 234097,"150 Blacksmithing Skill",234096,150,0,117722,0,1
+234098,"225 Skill in Blacksmithing",0,0,4,0,0,0
 234099,"225 Blacksmithing Skill",234098,225,0,117722,0,1
+234100,"300 Skill in Blacksmithing",0,0,4,0,0,0
 234101,"300 Blacksmithing Skill",234100,300,0,117722,0,1
+234102,"150 Skill in Enchanting",0,0,4,0,0,0
 234103,"150 Enchanting Skill",234102,150,0,117723,0,1
+234104,"225 Skill in Enchanting",0,0,4,0,0,0
 234105,"225 Enchanting Skill",234104,225,0,117723,0,1
+234106,"300 Skill in Enchanting",0,0,4,0,0,0
 234107,"300 Enchanting Skill",234106,300,0,117723,0,1
+234108,"150 Skill in Engineering",0,0,4,0,0,0
 234109,"150 Engineering Skill",234108,150,0,117724,0,1
+234110,"225 Skill in Engineering",0,0,4,0,0,0
 234111,"225 Engineering Skill",234110,225,0,117724,0,1
+234112,"300 Skill in Engineering",0,0,4,0,0,0
 234113,"300 Engineering Skill",234112,300,0,117724,0,1
+234114,"150 Skill in Leatherworking",0,0,4,0,0,0
 234115,"150 Leatherworking Skill",234114,150,0,117725,0,1
+234116,"225 Skill in Leatherworking",0,0,4,0,0,0
 234117,"225 Leatherworking Skill",234116,225,0,117725,0,1
+234118,"300 Skill in Leatherworking",0,0,4,0,0,0
 234119,"300 Leatherworking Skill",234118,300,0,117725,0,1
+234120,"150 Skill in Tailoring",0,0,4,0,0,0
 234121,"150 Tailoring Skill",234120,150,0,117726,0,1
+234122,"225 Skill in Tailoring",0,0,4,0,0,0
 234123,"225 Tailoring Skill",234122,225,0,117726,0,1
+234124,"300 Skill in Tailoring",0,0,4,0,0,0
 234125,"300 Tailoring Skill",234124,300,0,117726,0,1
+234126,"1.60.0 - Complete Dungeon Upgrade Questline - Saving the Best for Last",0,0,4,0,0,4096
 234127,,234126,1,0,117727,0,0
+234128,"Explore Azeroth - Account Wide",0,0,4,0,0,0
 234129,Explorer,234128,1,0,117728,0,0
+234130,"Novice Spelunker",0,0,4,0,0,0
 234131,"Ruins of Lordaeron",234130,1,0,117729,1,0
 234132,"Excavation Site: Wetlands",234130,1,0,117730,5,0
 234133,"The Deadmines",234130,1,0,117731,3,0
 234134,"Wailing Caverns",234130,1,0,117732,2,0
 234135,"Ragefire Chasm or Hall of Thanes",234130,1,0,117733,0,0
 234136,"Shadowfang Keep",234130,1,0,117734,4,0
+234137,"Experienced Spelunker",0,0,4,0,0,32
 234138,"City of Dalaran",234137,1,0,117735,0,0
 234139,"The Drowned City",234137,1,0,117736,3,0
 234140,"Blackfathom Deeps",234137,1,0,117737,1,0
@@ -5626,6 +6430,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234145,"Scarlet Monastery: Armory",234137,1,0,117742,6,0
 234146,"Scarlet Monastery: Cathedral",234137,1,0,117743,7,0
 234147,"Krol'dok Stronghold",234137,1,0,117744,9,0
+234148,"Master Spelunker",0,0,4,0,0,32
 234149,"Razorfen Downs",234148,1,0,117745,0,0
 234150,Uldaman,234148,1,0,117746,1,0
 234151,Zul'Farrak,234148,1,0,117747,2,0
@@ -5643,6 +6448,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234163,"Dire Maul: West",234148,1,0,117759,15,0
 234164,"The Shaper's Terrace",234148,1,0,117760,16,0
 234165,"Blackmaw Hold",234148,1,0,117761,7,0
+234166,"Complete Hyjal Summit",0,0,4,0,0,0
 234167,Bandalar,234166,1,0,117762,0,0
 234168,"Ancient of Decay",234166,1,0,117763,1,0
 234169,"Time-Lost Battalion",234166,1,0,117764,2,0
@@ -5656,6 +6462,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234177,"Council of Thorns",234166,1,0,117772,10,0
 234178,"Nythus the Dreambound",234166,1,0,117773,11,0
 234179,"The Wild King",234166,1,0,117774,12,0
+234180,"Complete The Barrow Deeps",0,0,4,0,0,0
 234181,"Sonya Darkhallow",234180,1,0,117775,7,0
 234182,"Elder Tangleclaw",234180,1,0,117776,1,0
 234183,"Khalith the Dreadspinner",234180,1,0,117777,2,0
@@ -5664,25 +6471,41 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234186,"Del'lynar Songwood",234180,1,0,117780,5,0
 234187,Chillhowl,234180,1,0,117781,0,0
 234188,"Ravus and Darlissa",234180,1,0,117782,6,0
+234189,"Rank 3",0,0,4,0,0,0
 234190,,234189,3,0,117783,0,0
+234191,"Rank 7",0,0,4,0,0,0
 234192,,234191,7,0,117783,0,0
+234193,"Rank 10",0,0,4,0,0,0
 234194,,234193,10,0,117783,0,0
+234195,"Rank 13",0,0,4,0,0,0
 234196,,234195,13,0,117783,0,0
+234197,"Rank 14",0,0,4,0,0,0
 234198,,234197,14,0,117783,0,0
+234199,"Exalted with Alterac Valley",0,0,4,0,0,0
 234200,"Reach exalted reputation with the Frostwolf Clan",234199,42000,0,117784,0,1024
 234201,"Reach exalted reputation with the Stormpike Guard",234199,42000,0,117785,1,512
+234202,"Exalted with Arathi Basin",0,0,4,0,0,0
 234203,"Reach exalted reputation with The Defilers",234202,42000,0,117786,0,1024
 234204,"Reach exalted reputation with the League of Arathor",234202,42000,0,117787,1,512
+234205,"Exalted with Warsong Gulch",0,0,4,0,0,0
 234206,"Reach exalted reputation with the Warsong Outriders",234205,42000,0,117788,0,1024
 234207,"Reach exalted reputation with the Silverwing Sentinels",234205,42000,0,117789,1,512
+234208,"Exalted with Darkspear Islands",0,0,4,0,0,0
 234209,"Reach exalted reputation with the Darkspear Raiders",234208,42000,0,117790,0,1024
 234210,"Reach exalted reputation with the Theramore Expeditionary Force",234208,42000,0,117791,1,512
+234211,"Kill Onyxia",0,0,4,0,0,0
 234212,Onyxia,234211,1,0,117792,0,2
+234213,"Complete Field of Honor: Week 4",0,0,4,0,0,0
 234214,"Complete Field of Honor: Week 4",234213,1,0,117793,0,0
+234215,"Complete Field of Honor: Week 7",0,0,4,0,0,0
 234216,"Complete Field of Honor: Week 7",234215,1,0,117794,0,0
+234217,"Complete Field of Honor: Week 10",0,0,4,0,0,0
 234218,"Complete Field of Honor: Week 10",234217,1,0,117795,0,0
+234395,"Rank 3",0,0,4,0,0,0
 234396,,234395,3,0,116036,0,0
+234397,"Rank 7",0,0,4,0,0,0
 234398,,234397,7,0,116036,0,0
+234399,"Rank 10",0,0,4,0,0,0
 234400,,234399,10,0,116036,0,0
 234401,"Rank 1",0,0,4,0,0,0
 234402,,234401,1,0,116036,0,0
@@ -5702,7 +6525,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234416,,234415,11,0,116036,0,0
 234417,"Rank 12",0,0,4,0,0,0
 234418,,234417,12,0,116036,0,0
+234419,"Rank 13",0,0,4,0,0,0
 234420,,234419,13,0,116036,0,0
+234421,"Rank 14",0,0,4,0,0,0
 234422,,234421,14,0,116036,0,0
 234567,"Tier 1 Achievement",0,0,4,0,0,0
 234568,,234567,1,0,117917,0,0
@@ -5727,27 +6552,35 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234876,"[DNT] Reach Level 30 in Beta on a Paladin",0,0,4,0,0,0
 234945,"Player Learns or Knows Journeyman Riding [Troll]",0,0,4,0,0,4096
 234946,"Player Learns or Knows Journeyman Riding",234945,0,0,118154,0,0
+234947,"Player Learns or Knows Apprentice Riding [Tauren]",0,0,4,0,0,4096
 234948,"Player Learns or Knows Apprentice Riding",234947,0,0,118155,0,0
 234949,"Player Learns or Knows Journeyman Riding [Tauren]",0,0,4,0,0,4096
 234950,"Player Learns or Knows Journeyman Riding",234949,0,0,118156,0,0
+234951,"Player Learns or Knows Apprentice Riding [Skyborne]",0,0,4,0,0,4096
 234952,"Player Learns or Knows Apprentice Riding",234951,0,0,118157,0,0
 234953,"Player Learns or Knows Journeyman Riding [Skyborne]",0,0,4,0,0,4096
 234954,"Player Learns or Knows Journeyman Riding",234953,0,0,118158,0,0
+234955,"Player Learns or Knows Apprentice Riding [Orc]",0,0,4,0,0,4096
 234956,"Player Learns or Knows Apprentice Riding",234955,0,0,118159,0,0
 234957,"Player Learns or Knows Journeyman Riding [Orc]",0,0,4,0,0,4096
 234958,"Player Learns or Knows Journeyman Riding",234957,0,0,118160,0,0
+234959,"Player Learns or Knows Apprentice Riding [Night Elf]",0,0,4,0,0,4096
 234960,"Player Learns or Knows Apprentice Riding",234959,0,0,118161,0,0
 234961,"Player Learns or Knows Journeyman Riding [Night Elf]",0,0,4,0,0,4096
 234962,"Player Learns or Knows Journeyman Riding",234961,0,0,118162,0,0
+234963,"Player Learns or Knows Apprentice Riding [Human]",0,0,4,0,0,4096
 234964,"Player Learns or Knows Apprentice Riding",234963,0,0,118163,0,0
 234965,"Player Learns or Knows Journeyman Riding [Human]",0,0,4,0,0,4096
 234966,"Player Learns or Knows Journeyman Riding",234965,0,0,118164,0,0
+234967,"Player Learns or Knows Apprentice Riding [Gnome]",0,0,4,0,0,4096
 234968,"Player Learns or Knows Apprentice Riding",234967,0,0,118165,0,0
 234969,"Player Learns or Knows Journeyman Riding [Gnome]",0,0,4,0,0,4096
 234970,"Player Learns or Knows Journeyman Riding",234969,0,0,118166,0,0
+234971,"Player Learns or Knows Apprentice Riding [Forsaken]",0,0,4,0,0,4096
 234972,"Player Learns or Knows Apprentice Riding",234971,0,0,118167,0,0
 234973,"Player Learns or Knows Journeyman Riding [Forsaken]",0,0,4,0,0,4096
 234974,"Player Learns or Knows Journeyman Riding",234973,0,0,118168,0,0
+234975,"Player Learns or Knows Apprentice Riding [Dwarf]",0,0,4,0,0,4096
 234976,"Player Learns or Knows Apprentice Riding",234975,0,0,118169,0,0
 234977,"Player Learns or Knows Journeyman Riding [Dwarf]",0,0,4,0,0,4096
 234978,"Player Learns or Knows Journeyman Riding",234977,0,0,118170,0,0
@@ -5757,7 +6590,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235078,"Darkspear Islands",235077,0,0,118229,0,0
 235079,"Darkspear Islands Participation",0,0,4,0,0,0
 235080,,235079,0,0,118229,0,0
-235952,,235950,1,0,118353,1,2
 235081,"Darkspear Islands Honorable Kills",0,0,4,0,0,0
 235082,"Darkspear Islands Honorable Kills",235081,0,0,118230,0,0
 235083,"Darkspear Islands Killing Blows",0,0,4,0,0,0
@@ -5793,6 +6625,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235900,,235221,1,0,118341,1,2
 235901,,235231,1,0,118369,1,2
 235902,,235227,1,0,118344,1,2
+235903,"[DNT] Learn Flight Path - EK - Westfall",0,0,4,0,0,0
 235904,,235903,1,0,118305,0,2
 235905,"[DNT] Learn Flight Path - EK - Blasted Lands",0,0,4,0,0,0
 235906,,235905,1,0,118314,0,2
@@ -5838,6 +6671,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235949,,235947,1,0,118343,1,2
 235950,"[DNT] Learn Flight Path - K - Felwood",0,1,8,0,0,0
 235951,,235950,1,0,118327,0,2
+235952,,235950,1,0,118353,1,2
 235953,"Hidden: Flight Path Tracker - K - Feralas (A)",0,1,8,0,0,0
 235954,,235953,1,0,118334,0,2
 235956,,235953,1,0,118328,1,2
@@ -5907,837 +6741,3 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 236026,,236023,1,0,118366,2,2
 236079,"Played in Beta",0,0,4,0,0,0
 236080,"Played in the World of Warcraft: Forever Beta",236079,1,0,118798,0,0
-18064,,0,0,4,0,0,0
-18070,,0,0,4,0,0,0
-18143,,0,0,4,0,0,0
-18659,,0,0,4,0,0,0
-19395,,0,0,4,0,0,0
-19398,,0,0,4,0,0,0
-19401,,0,0,4,0,0,0
-19408,,0,0,4,0,0,0
-19411,,0,0,4,0,0,0
-19492,,0,0,4,0,0,0
-19670,,0,0,4,0,0,0
-19673,,0,0,4,0,0,0
-19752,,0,0,4,0,0,0
-121286,,0,0,4,0,0,0
-121288,,0,0,4,0,0,0
-121330,,0,0,4,0,0,0
-121472,,0,0,4,0,0,0
-121720,,0,0,4,0,0,0
-121728,,0,0,4,0,0,0
-121742,,0,0,4,0,0,0
-121780,,0,0,4,0,0,0
-121827,,0,0,4,0,0,0
-121905,,0,0,4,0,0,0
-121910,,0,0,4,0,0,0
-121920,,0,0,4,0,0,0
-121922,,0,0,4,0,0,0
-121932,,0,0,4,0,0,0
-121936,,0,0,4,0,0,0
-121939,,0,0,4,0,0,0
-121974,,0,0,4,0,0,0
-121976,,0,0,4,0,0,0
-121981,,0,0,4,0,0,0
-121989,,0,0,4,0,0,0
-122118,,0,0,4,0,0,0
-122209,,0,0,4,0,0,0
-122211,,0,0,4,0,0,0
-122213,,0,0,4,0,0,0
-122215,,0,0,4,0,0,0
-122232,,0,0,4,0,0,0
-122234,,0,0,4,0,0,0
-122250,,0,0,4,0,0,0
-122872,,0,0,4,0,0,0
-122978,,0,0,4,0,0,0
-122980,,0,0,4,0,0,0
-122982,,0,0,4,0,0,0
-122986,,0,0,4,0,0,0
-123016,,0,0,4,0,0,0
-123018,,0,0,4,0,0,0
-123035,,0,0,4,0,0,0
-123037,,0,0,4,0,0,0
-123056,,0,0,4,0,0,0
-123058,,0,0,4,0,0,0
-123075,,0,0,4,0,0,0
-123079,,0,0,4,0,0,0
-123081,,0,0,4,0,0,0
-123085,,0,0,4,0,0,0
-123093,,0,0,4,0,0,0
-123095,,0,0,4,0,0,0
-123102,,0,0,4,0,0,0
-123114,,0,0,4,0,0,0
-123117,,0,0,4,0,0,0
-123259,,0,0,4,0,0,0
-123263,,0,0,4,0,0,0
-123275,,0,0,4,0,0,0
-123279,,0,0,4,0,0,0
-123281,,0,0,4,0,0,0
-123283,,0,0,4,0,0,0
-123285,,0,0,4,0,0,0
-123332,,0,0,4,0,0,0
-123351,,0,0,4,0,0,0
-123364,,0,0,4,0,0,0
-123468,,0,0,4,0,0,0
-123501,,0,0,4,0,0,0
-123503,,0,0,4,0,0,0
-123533,,0,0,4,0,0,0
-123637,,0,0,4,0,0,0
-123639,,0,0,4,0,0,0
-123672,,0,0,4,0,0,0
-123675,,0,0,4,0,0,0
-123708,,0,0,4,0,0,0
-123710,,0,0,4,0,0,0
-123738,,0,0,4,0,0,0
-123750,,0,0,4,0,0,0
-123752,,0,0,4,0,0,0
-123802,,0,0,4,0,0,0
-123805,,0,0,4,0,0,0
-123808,,0,0,4,0,0,0
-123832,,0,0,4,0,0,0
-123845,,0,0,4,0,0,0
-123847,,0,0,4,0,0,0
-123849,,0,0,4,0,0,0
-123918,,0,0,4,0,0,0
-123920,,0,0,4,0,0,0
-123922,,0,0,4,0,0,0
-123940,,0,0,4,0,0,0
-123973,,0,0,4,0,0,0
-123980,,0,0,4,0,0,0
-123982,,0,0,4,0,0,0
-124053,,0,0,4,0,0,0
-124095,,0,0,4,0,0,0
-124097,,0,0,4,0,0,0
-124127,,0,0,4,0,0,0
-124142,,0,0,4,0,0,0
-124172,,0,0,4,0,0,0
-124224,,0,0,4,0,0,0
-124226,,0,0,4,0,0,0
-124228,,0,0,4,0,0,0
-124236,,0,0,4,0,0,0
-124248,,0,0,4,0,0,0
-124250,,0,0,4,0,0,0
-124252,,0,0,4,0,0,0
-124365,,0,0,4,0,0,0
-124407,,0,0,4,0,0,0
-124413,,0,0,4,0,0,0
-124433,,0,0,4,0,0,0
-124435,,0,0,4,0,0,0
-124443,,0,0,4,0,0,0
-124476,,0,0,4,0,0,0
-124478,,0,0,4,0,0,0
-124482,,0,0,4,0,0,0
-124484,,0,0,4,0,0,0
-124716,,0,0,4,0,0,0
-124718,,0,0,4,0,0,0
-124724,,0,0,4,0,0,0
-124726,,0,0,4,0,0,0
-124728,,0,0,4,0,0,0
-124734,,0,0,4,0,0,0
-124738,,0,0,4,0,0,0
-124750,,0,0,4,0,0,0
-124755,,0,0,4,0,0,0
-124851,,0,0,4,0,0,0
-124910,,0,0,4,0,0,0
-124912,,0,0,4,0,0,0
-124914,,0,0,4,0,0,0
-124995,,0,0,4,0,0,0
-124998,,0,0,4,0,0,0
-125000,,0,0,4,0,0,0
-125002,,0,0,4,0,0,0
-125011,,0,0,4,0,0,0
-125019,,0,0,4,0,0,0
-125021,,0,0,4,0,0,0
-125023,,0,0,4,0,0,0
-125094,,0,0,4,0,0,0
-125096,,0,0,4,0,0,0
-125188,,0,0,4,0,0,0
-125190,,0,0,4,0,0,0
-125312,,0,0,4,0,0,0
-125345,,0,0,4,0,0,0
-125403,,0,0,4,0,0,0
-125502,,0,0,4,0,0,0
-125512,,0,0,4,0,0,0
-125514,,0,0,4,0,0,0
-125547,,0,0,4,0,0,0
-125572,,0,0,4,0,0,0
-125574,,0,0,4,0,0,0
-125576,,0,0,4,0,0,0
-125583,,0,0,4,0,0,0
-125713,,0,0,4,0,0,0
-125727,,0,0,4,0,0,0
-125801,,0,0,4,0,0,0
-125803,,0,0,4,0,0,0
-125805,,0,0,4,0,0,0
-125807,,0,0,4,0,0,0
-125810,,0,0,4,0,0,0
-125814,,0,0,4,0,0,0
-125857,,0,0,4,0,0,0
-125866,,0,0,4,0,0,0
-125881,,0,0,4,0,0,0
-125894,,0,0,4,0,0,0
-125907,,0,0,4,0,0,0
-125915,,0,0,4,0,0,0
-125988,,0,0,4,0,0,0
-126121,,0,0,4,0,0,0
-126128,,0,0,4,0,0,0
-126140,,0,0,4,0,0,0
-126192,,0,0,4,0,0,0
-126210,,0,0,4,0,0,0
-126212,,0,0,4,0,0,0
-126280,,0,0,4,0,0,0
-126282,,0,0,4,0,0,0
-126284,,0,0,4,0,0,0
-126298,,0,0,4,0,0,0
-126314,,0,0,4,0,0,0
-126334,,0,0,4,0,0,0
-126359,,0,0,4,0,0,0
-126372,,0,0,4,0,0,0
-126395,,0,0,4,0,0,0
-126410,,0,0,4,0,0,0
-126435,,0,0,4,0,0,0
-126437,,0,0,4,0,0,0
-126628,,0,0,4,0,0,0
-126650,,0,0,4,0,0,0
-126786,,0,0,4,0,0,0
-126860,,0,0,4,0,0,0
-126894,,0,0,4,0,0,0
-126914,,0,0,4,0,0,0
-126972,,0,0,4,0,0,0
-126991,,0,0,4,0,0,0
-127001,,0,0,4,0,0,0
-127042,,0,0,4,0,0,0
-127044,,0,0,4,0,0,0
-127084,,0,0,4,0,0,0
-127144,,0,0,4,0,0,0
-127159,,0,0,4,0,0,0
-127161,,0,0,4,0,0,0
-127328,,0,0,4,0,0,0
-127332,,0,0,4,0,0,0
-127349,,0,0,4,0,0,0
-127351,,0,0,4,0,0,0
-127353,,0,0,4,0,0,0
-127439,,0,0,4,0,0,0
-127441,,0,0,4,0,0,0
-127443,,0,0,4,0,0,0
-127447,,0,0,4,0,0,0
-127449,,0,0,4,0,0,0
-127451,,0,0,4,0,0,0
-127453,,0,0,4,0,0,0
-127488,,0,0,4,0,0,0
-127541,,0,0,4,0,0,0
-127552,,0,0,4,0,0,0
-127596,,0,0,4,0,0,0
-127612,,0,0,4,0,0,0
-127615,,0,0,4,0,0,0
-127635,,0,0,4,0,0,0
-127706,,0,0,4,0,0,0
-127771,,0,0,4,0,0,0
-127901,,0,0,4,0,0,0
-127905,,0,0,4,0,0,0
-128124,,0,0,4,0,0,0
-128214,,0,0,4,0,0,0
-128216,,0,0,4,0,0,0
-128239,,0,0,4,0,0,0
-128255,,0,0,4,0,0,0
-128477,,0,0,4,0,0,0
-128495,,0,0,4,0,0,0
-128505,,0,0,4,0,0,0
-128508,,0,0,4,0,0,0
-128513,,0,0,4,0,0,0
-128515,,0,0,4,0,0,0
-128517,,0,0,4,0,0,0
-128547,,0,0,4,0,0,0
-128549,,0,0,4,0,0,0
-128584,,0,0,4,0,0,0
-128596,,0,0,4,0,0,0
-128631,,0,0,4,0,0,0
-128749,,0,0,4,0,0,0
-128751,,0,0,4,0,0,0
-128753,,0,0,4,0,0,0
-128864,,0,0,4,0,0,0
-128866,,0,0,4,0,0,0
-128868,,0,0,4,0,0,0
-128874,,0,0,4,0,0,0
-128911,,0,0,4,0,0,0
-128913,,0,0,4,0,0,0
-128930,,0,0,4,0,0,0
-128932,,0,0,4,0,0,0
-128934,,0,0,4,0,0,0
-128936,,0,0,4,0,0,0
-129051,,0,0,4,0,0,0
-129055,,0,0,4,0,0,0
-129057,,0,0,4,0,0,0
-129059,,0,0,4,0,0,0
-129061,,0,0,4,0,0,0
-129096,,0,0,4,0,0,0
-129365,,0,0,4,0,0,0
-129400,,0,0,4,0,0,0
-129420,,0,0,4,0,0,0
-129424,,0,0,4,0,0,0
-129426,,0,0,4,0,0,0
-129428,,0,0,4,0,0,0
-129430,,0,0,4,0,0,0
-129432,,0,0,4,0,0,0
-129434,,0,0,4,0,0,0
-129442,,0,0,4,0,0,0
-129454,,0,0,4,0,0,0
-129740,,0,0,4,0,0,0
-129742,,0,0,4,0,0,0
-129744,,0,0,4,0,0,0
-129790,,0,0,4,0,0,0
-129940,,0,0,4,0,0,0
-129942,,0,0,4,0,0,0
-129997,,0,0,4,0,0,0
-130348,,0,0,4,0,0,0
-130350,,0,0,4,0,0,0
-131446,,0,0,4,0,0,0
-131455,,0,0,4,0,0,0
-131937,,0,0,4,0,0,0
-131939,,0,0,4,0,0,0
-131981,,0,0,4,0,0,0
-131983,,0,0,4,0,0,0
-131985,,0,0,4,0,0,0
-131987,,0,0,4,0,0,0
-132013,,0,0,4,0,0,0
-132048,,0,0,4,0,0,0
-132050,,0,0,4,0,0,0
-132052,,0,0,4,0,0,0
-132057,,0,0,4,0,0,0
-132059,,0,0,4,0,0,0
-132061,,0,0,4,0,0,0
-132085,,0,0,4,0,0,0
-132087,,0,0,4,0,0,0
-132091,,0,0,4,0,0,0
-132112,,0,0,4,0,0,0
-132114,,0,0,4,0,0,0
-132116,,0,0,4,0,0,0
-132118,,0,0,4,0,0,0
-132120,,0,0,4,0,0,0
-132122,,0,0,4,0,0,0
-132229,,0,0,4,0,0,0
-132231,,0,0,4,0,0,0
-132233,,0,0,4,0,0,0
-132235,,0,0,4,0,0,0
-132237,,0,0,4,0,0,0
-132239,,0,0,4,0,0,0
-132241,,0,0,4,0,0,0
-132243,,0,0,4,0,0,0
-132258,,0,0,4,0,0,0
-132260,,0,0,4,0,0,0
-132262,,0,0,4,0,0,0
-132266,,0,0,4,0,0,0
-132274,,0,0,4,0,0,0
-132276,,0,0,4,0,0,0
-132281,,0,0,4,0,0,0
-132283,,0,0,4,0,0,0
-132289,,0,0,4,0,0,0
-132316,,0,0,4,0,0,0
-132352,,0,0,4,0,0,0
-132354,,0,0,4,0,0,0
-132356,,0,0,4,0,0,0
-132358,,0,0,4,0,0,0
-132364,,0,0,4,0,0,0
-132395,,0,0,4,0,0,0
-132416,,0,0,4,0,0,0
-132439,,0,0,4,0,0,0
-132441,,0,0,4,0,0,0
-132443,,0,0,4,0,0,0
-132465,,0,0,4,0,0,0
-132467,,0,0,4,0,0,0
-132477,,0,0,4,0,0,0
-132479,,0,0,4,0,0,0
-132481,,0,0,4,0,0,0
-132483,,0,0,4,0,0,0
-132485,,0,0,4,0,0,0
-132487,,0,0,4,0,0,0
-132489,,0,0,4,0,0,0
-132493,,0,0,4,0,0,0
-132495,,0,0,4,0,0,0
-132501,,0,0,4,0,0,0
-132505,,0,0,4,0,0,0
-132507,,0,0,4,0,0,0
-132509,,0,0,4,0,0,0
-132511,,0,0,4,0,0,0
-132513,,0,0,4,0,0,0
-132515,,0,0,4,0,0,0
-132517,,0,0,4,0,0,0
-132519,,0,0,4,0,0,0
-132547,,0,0,4,0,0,0
-132549,,0,0,4,0,0,0
-132555,,0,0,4,0,0,0
-132557,,0,0,4,0,0,0
-132559,,0,0,4,0,0,0
-132614,,0,0,4,0,0,0
-132616,,0,0,4,0,0,0
-132618,,0,0,4,0,0,0
-132620,,0,0,4,0,0,0
-132645,,0,0,4,0,0,0
-132687,,0,0,4,0,0,0
-132689,,0,0,4,0,0,0
-132724,,0,0,4,0,0,0
-132734,,0,0,4,0,0,0
-132736,,0,0,4,0,0,0
-132738,,0,0,4,0,0,0
-132740,,0,0,4,0,0,0
-132764,,0,0,4,0,0,0
-132766,,0,0,4,0,0,0
-132768,,0,0,4,0,0,0
-132770,,0,0,4,0,0,0
-132772,,0,0,4,0,0,0
-132776,,0,0,4,0,0,0
-132778,,0,0,4,0,0,0
-132780,,0,0,4,0,0,0
-132782,,0,0,4,0,0,0
-132820,,0,0,4,0,0,0
-132855,,0,0,4,0,0,0
-132867,,0,0,4,0,0,0
-132927,,0,0,4,0,0,0
-132992,,0,0,4,0,0,0
-132994,,0,0,4,0,0,0
-133007,,0,0,4,0,0,0
-133020,,0,0,4,0,0,0
-133042,,0,0,4,0,0,0
-133061,,0,0,4,0,0,0
-133115,,0,0,4,0,0,0
-133117,,0,0,4,0,0,0
-133119,,0,0,4,0,0,0
-133121,,0,0,4,0,0,0
-133123,,0,0,4,0,0,0
-133130,,0,0,4,0,0,0
-133189,,0,0,4,0,0,0
-133200,,0,0,4,0,0,0
-133202,,0,0,4,0,0,0
-133204,,0,0,4,0,0,0
-133206,,0,0,4,0,0,0
-133208,,0,0,4,0,0,0
-133210,,0,0,4,0,0,0
-133212,,0,0,4,0,0,0
-133214,,0,0,4,0,0,0
-133238,,0,0,4,0,0,0
-133240,,0,0,4,0,0,0
-133247,,0,0,4,0,0,0
-133249,,0,0,4,0,0,0
-133251,,0,0,4,0,0,0
-133253,,0,0,4,0,0,0
-133257,,0,0,4,0,0,0
-133332,,0,0,4,0,0,0
-133359,,0,0,4,0,0,0
-133387,,0,0,4,0,0,0
-133389,,0,0,4,0,0,0
-133391,,0,0,4,0,0,0
-133393,,0,0,4,0,0,0
-133395,,0,0,4,0,0,0
-133397,,0,0,4,0,0,0
-133399,,0,0,4,0,0,0
-133401,,0,0,4,0,0,0
-133403,,0,0,4,0,0,0
-133405,,0,0,4,0,0,0
-133407,,0,0,4,0,0,0
-133409,,0,0,4,0,0,0
-133411,,0,0,4,0,0,0
-133413,,0,0,4,0,0,0
-133415,,0,0,4,0,0,0
-133417,,0,0,4,0,0,0
-133419,,0,0,4,0,0,0
-133421,,0,0,4,0,0,0
-133423,,0,0,4,0,0,0
-133425,,0,0,4,0,0,0
-133427,,0,0,4,0,0,0
-133429,,0,0,4,0,0,0
-133439,,0,0,4,0,0,0
-133441,,0,0,4,0,0,0
-133532,,0,0,4,0,0,0
-133534,,0,0,4,0,0,0
-133536,,0,0,4,0,0,0
-133538,,0,0,4,0,0,0
-133540,,0,0,4,0,0,0
-133542,,0,0,4,0,0,0
-133544,,0,0,4,0,0,0
-133546,,0,0,4,0,0,0
-133548,,0,0,4,0,0,0
-133550,,0,0,4,0,0,0
-133552,,0,0,4,0,0,0
-133611,,0,0,4,0,0,0
-133613,,0,0,4,0,0,0
-133615,,0,0,4,0,0,0
-133617,,0,0,4,0,0,0
-133619,,0,0,4,0,0,0
-133621,,0,0,4,0,0,0
-133623,,0,0,4,0,0,0
-133625,,0,0,4,0,0,0
-133627,,0,0,4,0,0,0
-133629,,0,0,4,0,0,0
-133631,,0,0,4,0,0,0
-133635,,0,0,4,0,0,0
-133637,,0,0,4,0,0,0
-133639,,0,0,4,0,0,0
-133641,,0,0,4,0,0,0
-133643,,0,0,4,0,0,0
-133645,,0,0,4,0,0,0
-133647,,0,0,4,0,0,0
-133649,,0,0,4,0,0,0
-133651,,0,0,4,0,0,0
-133653,,0,0,4,0,0,0
-133657,,0,0,4,0,0,0
-133659,,0,0,4,0,0,0
-133661,,0,0,4,0,0,0
-133663,,0,0,4,0,0,0
-133665,,0,0,4,0,0,0
-133667,,0,0,4,0,0,0
-133669,,0,0,4,0,0,0
-133671,,0,0,4,0,0,0
-133673,,0,0,4,0,0,0
-133675,,0,0,4,0,0,0
-133677,,0,0,4,0,0,0
-133679,,0,0,4,0,0,0
-133681,,0,0,4,0,0,0
-133683,,0,0,4,0,0,0
-133685,,0,0,4,0,0,0
-133687,,0,0,4,0,0,0
-133689,,0,0,4,0,0,0
-133691,,0,0,4,0,0,0
-133693,,0,0,4,0,0,0
-133695,,0,0,4,0,0,0
-133697,,0,0,4,0,0,0
-133699,,0,0,4,0,0,0
-133701,,0,0,4,0,0,0
-133703,,0,0,4,0,0,0
-133711,,0,0,4,0,0,0
-133713,,0,0,4,0,0,0
-133715,,0,0,4,0,0,0
-133717,,0,0,4,0,0,0
-133719,,0,0,4,0,0,0
-133721,,0,0,4,0,0,0
-133723,,0,0,4,0,0,0
-133725,,0,0,4,0,0,0
-133727,,0,0,4,0,0,0
-133729,,0,0,4,0,0,0
-133731,,0,0,4,0,0,0
-133733,,0,0,4,0,0,0
-133735,,0,0,4,0,0,0
-133737,,0,0,4,0,0,0
-133739,,0,0,4,0,0,0
-133741,,0,0,4,0,0,0
-133743,,0,0,4,0,0,0
-133745,,0,0,4,0,0,0
-133747,,0,0,4,0,0,0
-133749,,0,0,4,0,0,0
-133751,,0,0,4,0,0,0
-133753,,0,0,4,0,0,0
-133755,,0,0,4,0,0,0
-133757,,0,0,4,0,0,0
-133759,,0,0,4,0,0,0
-133761,,0,0,4,0,0,0
-133763,,0,0,4,0,0,0
-133765,,0,0,4,0,0,0
-133767,,0,0,4,0,0,0
-133769,,0,0,4,0,0,0
-133771,,0,0,4,0,0,0
-133773,,0,0,4,0,0,0
-133775,,0,0,4,0,0,0
-133777,,0,0,4,0,0,0
-133779,,0,0,4,0,0,0
-133781,,0,0,4,0,0,0
-133790,,0,0,4,0,0,0
-133792,,0,0,4,0,0,0
-133794,,0,0,4,0,0,0
-133796,,0,0,4,0,0,0
-133798,,0,0,4,0,0,0
-133881,,0,0,4,0,0,0
-133883,,0,0,4,0,0,0
-133889,,0,0,4,0,0,0
-133891,,0,0,4,0,0,0
-133893,,0,0,4,0,0,0
-133895,,0,0,4,0,0,0
-82062,server-only,0,0,4,0,0,2
-125754,,0,0,6,0,0,0
-126170,,0,0,6,0,0,0
-126745,,0,0,6,0,0,0
-127180,,0,0,6,0,0,0
-128004,,0,0,6,0,0,0
-128663,,0,0,6,0,0,0
-128938,,0,0,6,0,0,0
-128978,,0,0,6,0,0,0
-129641,,0,0,6,0,0,0
-130025,,0,0,6,0,0,0
-130975,,0,0,6,0,0,0
-132036,,0,0,6,0,0,0
-132873,,0,0,6,0,0,0
-121809,,0,0,5,0,0,0
-121815,,0,0,5,0,0,0
-121821,,0,0,5,0,0,0
-121829,,0,0,5,0,0,0
-121834,,0,0,5,0,0,0
-121887,,0,0,5,0,0,0
-122183,,0,0,5,0,0,0
-122186,,0,0,5,0,0,0
-123087,,0,0,5,0,0,0
-123328,,0,0,5,0,0,0
-123505,,0,0,5,0,0,0
-123677,,0,0,5,0,0,0
-123796,,0,0,5,0,0,0
-124048,,0,0,5,0,0,0
-124192,,0,0,5,0,0,0
-124219,,0,0,5,0,0,0
-124294,,0,0,5,0,0,0
-124353,,0,0,5,0,0,0
-124359,,0,0,5,0,0,0
-125004,,0,0,5,0,0,0
-125274,,0,0,5,0,0,0
-125504,,0,0,5,0,0,0
-125729,,0,0,5,0,0,0
-126005,,0,0,5,0,0,0
-126559,,0,0,5,0,0,0
-128169,,0,0,5,0,0,0
-128479,,0,0,5,0,0,0
-132858,,0,0,5,0,0,0
-128330,,0,1,6,0,0,0
-129100,,0,1,6,0,0,0
-130283,,0,1,6,0,0,0
-122893,,0,42000,7,0,0,0
-128200,,0,42000,7,0,0,0
-123834,,0,1,5,0,0,0
-123966,,0,1,5,0,0,0
-125419,,0,1,5,0,0,0
-126344,,0,1,5,0,0,0
-129524,,0,1,5,0,0,0
-129794,,0,1,5,0,0,0
-129885,,0,1,5,0,0,0
-130003,,0,1,5,0,0,0
-133075,,0,1,5,0,0,0
-133556,,0,1,5,0,0,0
-125606,,0,0,7,0,0,0
-126470,,0,0,7,0,0,0
-126708,,0,0,7,0,0,0
-127652,,0,0,7,0,0,0
-130361,,0,0,7,0,0,0
-130552,,0,0,7,0,0,0
-124195,,0,1,7,0,0,0
-126439,,0,1,7,0,0,0
-128795,,0,1,7,0,0,0
-130228,,0,1,7,0,0,0
-132151,,0,1,7,0,0,0
-132166,,0,1,7,0,0,0
-126945,,0,450,7,0,0,0
-126509,"Super Healing Potion",126470,0,0,4310,0,0
-128188,"Demonic Healthstone",128169,0,0,9045,0,0
-128191,"Fel Healthstone",128169,0,0,9049,0,0
-128187,"Demonic Healthstone",128169,0,0,9044,0,0
-128192,"Fel Healthstone",128169,0,0,9041,0,0
-128193,"Fel Healthstone",128169,0,0,9042,0,0
-128199,"Demonic Healthstone",128169,0,0,9046,0,0
-128977,"Super Healing Potion",128938,0,0,4310,0,0
-130195,"Bitter Plasma",130025,0,0,6961,0,2
-130531,"Bitter Plasma",130361,0,0,6961,0,2
-133705,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
-133707,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
-133709,"Rescue Valithria Dreamwalker",0,0,4,0,0,0
-231441,"Cast Summer Sapling",0,0,4,0,0,4096
-231443,"Cast Spring Sapling",0,0,4,0,0,4096
-231445,"Cast Fall Sapling",0,0,4,0,0,4096
-231447,"Cast Winter Sapling",0,0,4,0,0,4096
-157663,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161332,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161334,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161336,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-166926,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-224713,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-166809,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166811,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166813,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166816,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166818,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166820,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166822,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166868,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-208324,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
-216221,"1.60.0 - Hyjal - Survivors' Slopes - quest - Defeat summoned air & earth elementals (JLH)",0,0,4,0,0,4096
-222929,"1.60.0 - Hyjal - Survivors' Slopes - quest - Defeat summoned air & earth elementals (JLH)",0,0,4,0,0,4096
-221092,"Read Ley Line",0,0,4,0,0,4096
-234036,"Level 25 Warrior",0,0,4,0,0,0
-234038,"Level 45 Warrior",0,0,4,0,0,0
-234040,"Level 60 Warrior",0,0,4,0,0,0
-234042,"Level 25 Druid",0,0,4,0,0,0
-234044,"Level 45 Druid",0,0,4,0,0,0
-234046,"Level 60 Druid",0,0,4,0,0,0
-221086,"Use Skysight",0,0,4,0,0,4096
-234048,"Level 25 Hunter",0,0,4,0,0,0
-234050,"Level 45 Hunter",0,0,4,0,0,0
-234052,"Level 60 Hunter",0,0,4,0,0,0
-234054,"Level 25 Mage",0,0,4,0,0,0
-234056,"Level 45 Mage",0,0,4,0,0,0
-234058,"Level 60 Mage",0,0,4,0,0,0
-234060,"Level 25 Paladin",0,0,4,0,0,0
-234062,"Level 45 Paladin",0,0,4,0,0,0
-234064,"Level 60 Paladin",0,0,4,0,0,0
-234066,"Level 25 Priest",0,0,4,0,0,0
-234068,"Level 45 Priest",0,0,4,0,0,0
-234070,"Level 60 Priest",0,0,4,0,0,0
-234072,"Level 25 Rogue",0,0,4,0,0,0
-234074,"Level 45 Rogue",0,0,4,0,0,0
-234076,"Level 60 Rogue",0,0,4,0,0,0
-234078,"Level 25 Shaman",0,0,4,0,0,0
-234080,"Level 45 Shaman",0,0,4,0,0,0
-234082,"Level 60 Shaman",0,0,4,0,0,0
-234084,"Level 25 Warlock",0,0,4,0,0,0
-234086,"Level 45 Warlock",0,0,4,0,0,0
-234088,"Level 60 Warlock",0,0,4,0,0,0
-234090,"150 Skill in Alchemy",0,0,4,0,0,0
-234092,"225 Skill in Alchemy",0,0,4,0,0,0
-234094,"300 Skill in Alchemy",0,0,4,0,0,0
-234096,"150 Skill in Blacksmithing",0,0,4,0,0,0
-234098,"225 Skill in Blacksmithing",0,0,4,0,0,0
-234100,"300 Skill in Blacksmithing",0,0,4,0,0,0
-234102,"150 Skill in Enchanting",0,0,4,0,0,0
-234104,"225 Skill in Enchanting",0,0,4,0,0,0
-234106,"300 Skill in Enchanting",0,0,4,0,0,0
-234108,"150 Skill in Engineering",0,0,4,0,0,0
-234110,"225 Skill in Engineering",0,0,4,0,0,0
-234112,"300 Skill in Engineering",0,0,4,0,0,0
-234114,"150 Skill in Leatherworking",0,0,4,0,0,0
-234116,"225 Skill in Leatherworking",0,0,4,0,0,0
-234118,"300 Skill in Leatherworking",0,0,4,0,0,0
-234120,"150 Skill in Tailoring",0,0,4,0,0,0
-234122,"225 Skill in Tailoring",0,0,4,0,0,0
-234124,"300 Skill in Tailoring",0,0,4,0,0,0
-234126,"1.60.0 - Complete Dungeon Upgrade Questline - Saving the Best for Last",0,0,4,0,0,4096
-234199,"Exalted with Alterac Valley",0,0,4,0,0,0
-234202,"Exalted with Arathi Basin",0,0,4,0,0,0
-234205,"Exalted with Warsong Gulch",0,0,4,0,0,0
-222670,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
-223703,"Take Dalaran Portal (Skyborne)",0,0,4,0,0,4096
-223257,"1.60 Legendary - Solo Encounter Completed (Tracking Quest)",0,0,4,0,0,4096
-234128,"Explore Azeroth - Account Wide",0,0,4,0,0,0
-225092,"1.60.0 - Warlock - Quest - Fel Rites - Survived the Ritual",0,0,4,0,0,4098
-225212,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227678,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227683,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227688,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227693,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227698,"Use sit in Camp Tutorial Area Trigger",0,1,8,0,0,4096
-227842,"Use sit in Camp Tutorial Area Trigger",0,0,4,0,0,4096
-227849,"Use sit in Camp Tutorial Area Trigger",0,0,4,0,0,4096
-225307,"1.60.0 - Arathi Highlands - Lightning Rod - Use Lightning Rod",0,0,4,0,0,4096
-225309,"1.60.0 - Arathi Highlands - Lightning Rod - Charge Ogre Lightning Rod",0,0,4,0,0,4096
-231086,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
-231130,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
-231176,"1.60.0 - Camp Training - Raise Tailoring to 20+ (A)",0,0,4,0,0,4096
-225215,"Gain Boosted Rest",0,0,4,0,0,4096
-227681,"Gain Boosted Rest",0,0,4,0,0,4096
-227686,"Gain Boosted Rest",0,0,4,0,0,4096
-227691,"Gain Boosted Rest",0,0,4,0,0,4096
-227696,"Gain Boosted Rest",0,0,4,0,0,4096
-227701,"Gain Boosted Rest",0,0,4,0,0,4096
-227845,"Gain Boosted Rest",0,0,4,0,0,4096
-227852,"Gain Boosted Rest",0,0,4,0,0,4096
-231108,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
-231154,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
-231174,"1.60.0 - Camp Training - Raise Tailoring to 20+ (H)",0,0,4,0,0,4096
-231021,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231064,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231088,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231110,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231134,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231156,"1.60.0 - Camp Training - Raise Alchemy to 20+",0,0,4,0,0,4096
-231023,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-231066,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-231090,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-231112,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-231136,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-231158,"1.60.0 - Camp Training - Raise Blacksmithing to 20+",0,0,4,0,0,4096
-227854,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-227868,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-227877,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-227879,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-227884,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-227886,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-231025,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-231068,"1.60.0 - Camp Training - Learn cooking",0,0,4,0,0,4096
-231027,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231070,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231092,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231114,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231138,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231160,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231647,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231651,"1.60.0 - Camp Training - Raise Enchanting to 20+",0,0,4,0,0,4096
-231029,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231072,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231094,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231116,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231140,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231649,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231653,"1.60.0 - Camp Training - Raise Engineering to 20+",0,0,4,0,0,4096
-231031,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231074,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231096,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231118,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231142,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231162,"1.60.0 - Camp Training - Raise First Aid to 20+",0,0,4,0,0,4096
-231033,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231076,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231098,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231120,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231144,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231164,"1.60.0 - Camp Training - Raise Fishing to 20+",0,0,4,0,0,4096
-231035,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-231078,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-231100,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-231122,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-231146,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-231166,"1.60.0 - Camp Training - Raise Herbalism to 20+",0,0,4,0,0,4096
-227847,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231050,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231080,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231102,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231124,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231148,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231168,"1.60.0 - Camp Training - Raise Leatherworking to 20+",0,0,4,0,0,4096
-231052,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-231082,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-231104,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-231126,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-231150,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-231170,"1.60.0 - Camp Training - Raise Mining to 20+",0,0,4,0,0,4096
-227820,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231054,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231084,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231106,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231128,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231152,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-231172,"1.60.0 - Camp Training - Raise Skinning to 20+",0,0,4,0,0,4096
-227972,"Reach Friendly Barkskin Reputation",0,0,4,0,0,4096
-234213,"Complete Field of Honor: Week 4",0,0,4,0,0,0
-234215,"Complete Field of Honor: Week 7",0,0,4,0,0,0
-234217,"Complete Field of Honor: Week 10",0,0,4,0,0,0
-233693,"Win in Darkspear Islands",0,1,5,0,0,6144
-234208,"Exalted with Darkspear Islands",0,0,4,0,0,0
-234189,"Rank 3",0,0,4,0,0,0
-234395,"Rank 3",0,0,4,0,0,0
-234191,"Rank 7",0,0,4,0,0,0
-234397,"Rank 7",0,0,4,0,0,0
-234193,"Rank 10",0,0,4,0,0,0
-234399,"Rank 10",0,0,4,0,0,0
-234195,"Rank 13",0,0,4,0,0,0
-234419,"Rank 13",0,0,4,0,0,0
-234197,"Rank 14",0,0,4,0,0,0
-234421,"Rank 14",0,0,4,0,0,0
-234130,"Novice Spelunker",0,0,4,0,0,0
-234137,"Experienced Spelunker",0,0,4,0,0,32
-234148,"Master Spelunker",0,0,4,0,0,32
-234211,"Kill Onyxia",0,0,4,0,0,0
-234180,"Complete The Barrow Deeps",0,0,4,0,0,0
-234166,"Complete Hyjal Summit",0,0,4,0,0,0
-231277,"Gain Skyborne Portal to Stormwind Aura",0,0,4,0,0,4096
-234975,"Player Learns or Knows Apprentice Riding [Dwarf]",0,0,4,0,0,4096
-234959,"Player Learns or Knows Apprentice Riding [Night Elf]",0,0,4,0,0,4096
-234963,"Player Learns or Knows Apprentice Riding [Human]",0,0,4,0,0,4096
-234967,"Player Learns or Knows Apprentice Riding [Gnome]",0,0,4,0,0,4096
-234955,"Player Learns or Knows Apprentice Riding [Orc]",0,0,4,0,0,4096
-234971,"Player Learns or Knows Apprentice Riding [Forsaken]",0,0,4,0,0,4096
-234947,"Player Learns or Knows Apprentice Riding [Tauren]",0,0,4,0,0,4096
-234951,"Player Learns or Knows Apprentice Riding [Skyborne]",0,0,4,0,0,4096
-233726,"Win Darkspear Islands while controlling all four bases",0,0,4,0,0,4096
-233756,"Win Darkspear Islands while controlling at least three bases",0,0,4,0,0,4096
-235903,"[DNT] Learn Flight Path - EK - Westfall",0,0,4,0,0,0

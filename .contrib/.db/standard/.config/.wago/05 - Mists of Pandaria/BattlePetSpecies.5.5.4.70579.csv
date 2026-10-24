@@ -24,7 +24,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Night elf children are given an owl feather on their first birthday as a token of good luck.","|cFFFFD200Vendor: |rShylenai|n|cFFFFD200Zone: |rTeldrassil|n|cFFFFD200Cost: |r50|TINTERFACE\MONEYFRAME\UI-SILVERICON.BLP:0|t",68,7553,10707,132150,2,2,2,6,7
 "Winterspring's furbolg prize the brilliant white feathers of these majestic creatures for ritual purposes.","|cFFFFD200Pet Battle: |rWinterspring|n|cFFFFD200Season: |rWinter",69,7554,0,132150,2,26,4,6,7
 "A complex system of burrows protects the prairie dog from its neighbors' massive hooves.","|cFFFFD200Vendor: |rHalpa, Naleen|n|cFFFFD200Zone: |rMulgore|n|cFFFFD200Cost: |r50|TINTERFACE\MONEYFRAME\UI-SILVERICON.BLP:0|t",70,14421,10709,656176,4,2,2,6,7
-,,878,66964,0,254857,4,48,-1,6,7
 "If you go chasing snowshoe rabbits, you know you're going to fall.","|cFFFFD200Vendor: |rYarlyn Amberstill|n|cFFFFD200Zone: |rDun Morogh|n|cFFFFD200Cost: |r20|TINTERFACE\MONEYFRAME\UI-SILVERICON.BLP:0|t",72,7560,10711,132762,4,2,2,6,7
 "A favored companion of Kirin Tor magi, this reptile makes one wonder whether it's truly a snake or something else altogether.","|cFFFFD200Vendor: |rBreanni|n|cFFFFD200Zone: |rDalaran|n|cFFFFD200Cost: |r50|TINTERFACE\MONEYFRAME\UI-GOLDICON.BLP:0|t",74,7561,10713,136040,7,2,2,6,7
 "Xan'tish fearlessly tracks, captures, and trains these noble snakes so they will aid their comrades in battle.","|cFFFFD200Vendor: |rXan'tish|n|cFFFFD200Zone: |rOrgrimmar|n|cFFFFD200Cost: |r50|TINTERFACE\MONEYFRAME\UI-SILVERICON.BLP:0|t",75,7565,10714,136040,7,2,2,6,7
@@ -53,7 +52,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "During the majestic Winter Veil celebration, these faithful companions spread joy throughout the land. The rest of the year, they are busy.","|cFFFFD200World Event:|r Feast of Winter Veil",120,15705,26541,133202,0,2,6,39,7
 "Gurky is a born performer, though she remains elusive, making public appearances only on the rarest of occasions.","|cFFFFD200Promotion:|r EU Fansite Promotion|n",121,16069,27241,656557,0,16466,7,6,7
 "The power of love can be a dangerous thing, especially when wielded by an airborne, ill-tempered goblin.","|cFFFFD200World Event:|r Love is in the Air|n|cFFFFD200Vendor: |rLovely Merchant|n|cFFFFD200Cost: |r40|TINTERFACE\ICONS\INV_ValentinesCard01:0|t|n",122,16085,27570,132311,0,2,6,728,7
-,,879,66965,0,254857,4,48,-1,6,7
 "This cub shares many traits with its relatives, but it's in a league of its own with its singing ability.","|cFFFFD200Promotion:|r iCoke",124,16456,28505,132498,7,16466,7,6,7
 "Slow and steady wins the race.","|cFFFFD200World Event:|r Children's Week",125,16547,28738,656341,8,2,6,6,7
 "Many assume 'Wiggles' refers to the motion of this pig's posterior. They discover the true meaning when they see their own entrails.","|cFFFFD200World Event:|r Children's Week",126,16548,28739,132514,4,2,6,6,7
@@ -80,8 +78,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "He's slightly evil but extremely narcoleptic. Keep him away from critters!","|cFFFFD200World Event:|r Children's Week",157,23231,40613,294482,5,2,6,36,7
 "The sin'dorei use hawkstriders as mounts, but this little one was deemed unfit after being diagnosed with numerous anxiety disorders.","|cFFFFD200World Event:|r Children's Week",158,23258,40614,294475,4,2,6,6,7
 "Domesticated elekks are trained as mounts by the draenei people. In the wild they are hunted for their ivory tusks.","|cFFFFD200World Event:|r Children's Week",159,23266,40634,656598,4,2,6,6,7
-,,880,65662,0,132196,7,48,4,6,7
-,,881,65664,0,132196,7,48,-1,6,7
 "Stinker uses his aroma to repel predators and attract cats. He's much more successful with the former than the latter.","|cFFFFD200Achievement: |rShop Smart, Shop Pet...Smart|n|cFFFFD200Category: |rPet Battles",160,23274,40990,132599,4,82,5,6,7
 "This mischievous gourd likes to pop out of the ground and scare you right out of your pants. Hail to the pumpkin song!","|cFFFFD200World Event:|r Hallow's End",162,23909,42609,134015,6,2,6,6,7
 "The crocolisk's hide and meat are prized by hunters, but the beast is ferocious and seldom taken by surprise.","|cFFFFD200Profession: |rFishing|n|cFFFFD200Zone: |rShattrath",163,24388,43697,656555,8,2,3,6,7
@@ -165,7 +161,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Breanni in Dalaran, one of the world's foremost collectors of exotic pets, will only award the mystical Celestial Dragon to fellow collectors whose obsession rivals her own.","|cFFFFD200Achievement: |rLittlest Pet Shop|n|cFFFFD200Category: |rPet Battles",255,40624,75613,133443,1,82,5,6,7
 "Modeled after the huge titan prototype in Ulduar, this volatile little construct plays hard with its toys.","|cFFFFD200Pet Store|r",256,40703,75906,254104,9,16466,9,6,7
 "Murkimus is the most fearsome of all murloc arena warriors. And the only one.","|cFFFFD200Promotion:|r Arena Tournament 2010",257,40721,75936,135128,0,160,7,6,7
-,,882,65665,0,132196,7,48,-1,6,7
 "Powerful artillery of the terran army. The Thor is always the first one in and the last one out!","|cFFFFD200Promotion:|r StarCraft II: Wings of Liberty Collector's Edition",258,42078,78381,387415,9,114,7,6,7
 "Unlike its gold counterpart, the blue mini jouster takes a leisurely pace when jabbing its opponent's eyeballs.","|cFFFFD200Quest:|r Egg Wave|n|cFFFFD200Zone:|r Mount Hyjal|n|n",259,42177,78683,132188,2,18,1,6,7
 "This critter is infamous for its ability to unleash a fast and furious eyeball jabbing.","|cFFFFD200Quest:|r Egg Wave|n|cFFFFD200Zone:|r Mount Hyjal|n|n",260,42183,78685,132200,2,18,1,6,7
@@ -192,7 +187,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "You'll find him in his shell, exactly where a snail has to be!","|cFFFFD200World Event:|r Children's Week",289,51635,93817,134434,4,2,6,6,7
 "This sweet flower will brighten your day with its warm smile and cheerful song! Also strong against undead.","|cFFFFD200Quest:|r Lawn of the Dead|n|cFFFFD200Zone:|r Hillsbrad Foothills|n",291,51090,93823,133939,6,18,1,6,7
 "Higitus figi- hockity pocki- abracadab- prestidig--oh, pinfeathers!","|cFFFFD200Profession: |rEnchanting",292,50545,93837,134971,5,2,3,6,7
-,,883,66982,0,134134,5,48,-1,6,7
 "Often confused by miners as a rare gem, the geode initially makes its presence known by emitting melodic reverberations.","|cFFFFD200Drop:|r Elementium Vein, Rich Elementium Vein|n|cFFFFD200Zone:|r Deepholm, Twilight Highlands, Uldum",293,50722,93838,399040,6,2,0,6,7
 "Deathwing's emergence transformed the whole of Azeroth; not even the ocean-dwelling murlocs were immune to his corrupt influence.","|cFFFFD200Promotion:|r BlizzCon 2010",294,51122,94070,441880,0,114,7,6,7
 "Moonkin are blessed by Elune and spread nature's grace wherever they travel. The festive fowls are always in the mood for a dance.","|cFFFFD200Pet Store:|r Alliance",296,51601,95786,467893,0,16978,9,6,7
@@ -220,7 +214,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "The monkeys of Azeroth are infamous tricksters, and these beloved companions of the Darkmoon Faire have taken that innate cunning to a whole new level.","|cFFFFD200Vendor: |rLhara|n|cFFFFD200Zone: |rDarkmoon Island|n|cFFFFD200Cost: |r90|TINTERFACE\ICONS\inv_misc_ticket_darkmoon_01:0|t |n",330,54491,101733,132159,7,2,2,6,7
 "Created to entertain children at the Darkmoon Faire, these magical balloons never lose their floatiness.","|cFFFFD200Quest:|r Blown Away|n|cFFFFD200Zone:|r Stormwind",331,54539,101986,647628,2,658,1,6,7
 "A magical wonder, these balloons will never deflate and are traditionally created in batches of ninety-nine.","|cFFFFD200Quest:|r Blown Away|n|cFFFFD200Zone:|r Orgrimmar|n",332,54541,101989,647626,2,402,1,6,7
-"The cockroaches of Deepholm can burrow into stone itself to make their nests.","|cFFFFD200Pet Battle: |rDeepholm",555,62924,0,294474,4,26,4,6,7
 "The grell are embodiments of the wild side of nature. Tame ones are very rare.","|cFFFFD200Trading Card Game:|r Crown of the Heavens",333,54730,102317,136218,0,16386,8,6,7
 "This shelled reptile bravely protects the home on its back with an unwaveringly happy disposition.","|cFFFFD200Vendor: |rLhara|n|cFFFFD200Zone: |rDarkmoon Island|n|cFFFFD200Cost: |r90|TINTERFACE\ICONS\inv_misc_ticket_darkmoon_01:0|t ",335,54487,103074,656341,8,2,2,6,7
 "It just floats along...","|cFFFFD200Vendor: |rLhara|n|cFFFFD200Zone: |rDarkmoon Island|n|cFFFFD200Cost: |r90|TINTERFACE\ICONS\inv_misc_ticket_darkmoon_01:0|t |n",336,55187,103076,647625,2,144,2,6,7
@@ -275,8 +268,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Young apes quickly learn to hang from branches with their feet, leaving both hands free to fling objects at interlopers.","|cFFFFD200Pet Battle: |rThe Cape of Stranglethorn|n|cFFFFD200Weather: |rRain",411,61324,0,651242,7,26,4,6,7
 "The most common of the arachnid family, these critters spin their webs in nearly every corner of Azeroth.","|cFFFFD200Pet Battle: |rAzshara, Blasted Lands, Dustwallow Marsh, Eastern Plaguelands, Ghostlands, Hillsbrad Foothills, Howling Fjord, Stonetalon Mountains, Swamp of Sorrows, The Hinterlands, The Storm Peaks, Tirisfal Glades, Winterspring, Zul'Drak",412,61327,0,132196,7,26,4,6,7
 "Venom capable of killing creatures up to 100 times its own body weight.","|cFFFFD200Pet Battle: |rBlade's Edge Mountains, Blasted Lands, Burning Steppes, Eastern Plaguelands, Hellfire Peninsula, Orgrimmar, Shadowmoon Valley, Silithus, Thousand Needles, Twilight Highlands",414,61326,0,132195,7,24,4,6,7
-,,884,66983,0,132242,7,48,2,6,7
-,,885,65677,0,651242,7,48,4,6,7
 "Drawn to heat and the smell of smoke, the fire beetle's diet consists of ash.","|cFFFFD200Pet Battle: |rBlasted Lands, Burning Steppes, Mount Hyjal, Searing Gorge, Un'Goro Crater",415,61328,0,237144,4,26,4,6,7
 "Despite its snapping claws and venom-dripping tail, it is the bite of the diminutive scorpling that is the greatest threat.","|cFFFFD200Pet Battle: |rBlasted Lands",416,61329,0,132195,7,26,4,6,7
 "The intrepid archaeologist Harrison Jones has a well documented fear of rats.","|cFFFFD200Pet Battle: |rArathi Highlands, Ashenvale, Azshara, Bloodmyst Isle, Crystalsong Forest, Darkshore, Desolace, Ghostlands, Hillsbrad Foothills, Howling Fjord, Loch Modan, Nagrand, Ruins of Gilneas, Silverpine Forest, Stonetalon Mountains, Swamp of Sorrows, Terokkar Forest, The Cape of Stranglethorn, The Hinterlands, Tirisfal Glades",417,61366,0,134324,4,26,4,6,7
@@ -337,7 +328,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Most people only see gazelles from the rear.","|cFFFFD200Pet Battle: |rDesolace, Mulgore, Northern Barrens, Southern Barrens",476,62163,0,132368,4,160,4,6,7
 "Young gazelles quickly learn to flee when they hear the war cries of tauren hunters in Mulgore.  They don't hear the good hunters, unfortunately.","|cFFFFD200Pet Battle: |rMulgore",477,62176,0,132368,4,26,4,6,7
 "Prefers to dwell in cool, forested areas and feed on Mageroyal nectar.","|cFFFFD200Pet Battle: |rAshenvale, Darnassus, Desolace, Moonglade, Mount Hyjal, Teldrassil",478,62177,0,236193,2,26,4,6,7
-"A cousin to the Twilight Beetle, this insect has learned to feed on crystals which resonate with ancient energies.","|cFFFFD200Pet Battle: |rDeepholm",556,62925,0,237144,4,26,4,6,7
 "Their proximity to the magic of the elves has caused some of them unnatural long life. And in some elfin rabbits...stranger things.","|cFFFFD200Pet Battle: |rDarnassus, Desolace, Mount Hyjal, Teldrassil",479,62178,0,254857,4,26,4,6,7
 "Prized by gem crafters, the undamaged carapace of a topaz hatchling can be used to create stunning inlays for rings and bracelets.","|cFFFFD200Pet Battle: |rDeepholm, Desolace|n",480,62181,0,134395,6,26,4,6,7
 "Long ago, Mount Hyjal's druids tempered this species to live in peace alongside the region's other creatures.","|cFFFFD200Pet Battle: |rBlade's Edge Mountains, Desolace, Mount Hyjal, Silithus",482,62184,0,132211,7,26,4,6,7
@@ -402,6 +392,8 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Demonstrating that a little evil goes a long way, this fiendling uses its razor-sharp teeth and gaping maw to devour anything in its path.","|cFFFFD200Pet Battle: |rTwilight Highlands",552,62914,0,136199,5,26,4,6,7
 "In the lean times when adrift at sea, the sight of a rat was a welcome one.","|cFFFFD200Pet Battle: |rDeepholm",553,62921,0,134324,4,26,4,6,7
 "Through experimentation, the mages of Dalaran have discovered that the powered remains of a crimson shale spider will greatly increase the conflagration of their fire spells.","|cFFFFD200Pet Battle: |rDeepholm",554,62922,0,134396,6,26,4,6,7
+"The cockroaches of Deepholm can burrow into stone itself to make their nests.","|cFFFFD200Pet Battle: |rDeepholm",555,62924,0,294474,4,26,4,6,7
+"A cousin to the Twilight Beetle, this insect has learned to feed on crystals which resonate with ancient energies.","|cFFFFD200Pet Battle: |rDeepholm",556,62925,0,237144,4,26,4,6,7
 "Much like other faerie dragons, these playful and mystical flyers are born with a natural defense against magic.","|cFFFFD200Pet Battle: |rFeralas",557,62395,0,236997,1,26,4,6,7
 "During frigid nights in the Storm Peaks, these critters use their fluffy tails as a blanket to stay warm.","|cFFFFD200Pet Battle: |rThe Storm Peaks|n|cFFFFD200Weather: |rSnow",558,62864,0,797544,7,26,4,6,7
 "Therazane wore these spunky crimson elementals as jewelry before the azure craze swept through Deepholm.","|cFFFFD200Pet Battle: |rDeepholm",559,62927,0,134396,6,26,4,6,7
@@ -432,8 +424,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "Distinct from their cousins found in warmer climes, these hardy critters make their homes in the icy wastes of Northrend.","|cFFFFD200Pet Battle: |rBorean Tundra",639,62695,0,656176,4,24,4,6,7
 "With the extra large surface area of their legs, snowshoe hares are able to effortlessly hop along the snow while their pursuers get bogged down in the drifts.","|cFFFFD200Pet Battle: |rHillsbrad Foothills",640,61755,0,254857,4,26,4,6,7
 "The heart of an arctic hare beats twice as fast as a common hare.","|cFFFFD200Pet Battle: |rBorean Tundra, Dragonblight, The Storm Peaks, Zul'Drak",641,62693,0,254857,4,26,4,6,7
-,,876,65661,0,134065,9,48,-1,6,7
-,,877,65668,0,254857,4,48,-1,6,7
 "If not for being extremely accident prone, the fjord rat might take over the world.","|cFFFFD200Pet Battle: |rHowling Fjord",644,62641,0,134324,4,26,4,6,7
 "Capable of flying, unlike domesticated types.","|cFFFFD200Pet Battle: |rTwilight Highlands",645,62906,0,250626,2,26,4,6,7
 "Tends to avoid crossing roads, regardless of motivations.","|cFFFFD200Pet Battle: |rDuskwood, Dustwallow Marsh, Elwynn Forest, Hillsbrad Foothills, Howling Fjord, Redridge Mountains, Terokkar Forest, Tirisfal Glades, Westfall, Wetlands|n",646,62664,0,250626,2,26,4,6,7
@@ -539,6 +529,16 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 ,,873,64334,0,136040,7,48,-1,6,7
 ,,874,65659,0,647701,4,48,-1,6,7
 ,,875,65660,0,135996,2,48,1,6,7
+,,876,65661,0,134065,9,48,-1,6,7
+,,877,65668,0,254857,4,48,-1,6,7
+,,878,66964,0,254857,4,48,-1,6,7
+,,879,66965,0,254857,4,48,-1,6,7
+,,880,65662,0,132196,7,48,4,6,7
+,,881,65664,0,132196,7,48,-1,6,7
+,,882,65665,0,132196,7,48,-1,6,7
+,,883,66982,0,134134,5,48,-1,6,7
+,,884,66983,0,132242,7,48,2,6,7
+,,885,65677,0,651242,7,48,4,6,7
 ,,886,65675,0,136036,2,48,-1,6,7
 ,,887,65676,0,132921,2,48,0,6,7
 ,,888,66930,0,132834,0,48,7,6,7
@@ -748,8 +748,6 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "The red scales on these fish are believed to be a warning to predators of the Townlong Steppes and the Dread Wastes that their flesh is toxic. Dedicated fishermen can sometimes befriend one.","|cFFFFD200Profession:|r Fishing",1206,70257,139361,850139,8,2,3,6,7
 "These little guys can be found in the waters of the Timeless Isle, or swimming alongside Jewel Danio or Redbelly Mandarin. Dedicated fishermen can sometimes befriend one.","|cFFFFD200Profession:|r Fishing",1207,70258,139362,850137,8,2,3,6,7
 "It is believed that the green coloration and stripes on the tiny green carp serve as camouflage in the waters of the Jade Forest, Valley of the Four Winds and the Krasarang Wilds. Dedicated fishermen can sometimes befriend one.","|cFFFFD200Profession:|r Fishing",1208,70259,139363,850138,8,2,3,6,7
-,,1268,72053,0,840541,7,48,-1,6,7
-,,1269,72054,0,516665,2,48,-1,6,7
 "These hardy fish can survive in a wide range of climates, from the snow capped mountains of Kun-Lai Summit to the temperate, salty waters of the oceans around Pandaria. Dedicated fishermen can sometimes befriend one.","|cFFFFD200Profession:|r Fishing|n",1209,70260,139365,850140,8,2,3,6,7
 "These tiny minions of Zandalar are adept at stowing away within the cargo holds of the enormous Zandalari warships.","|cFFFFD200Drop: |rZandalari Dinomancer|n|cFFFFD200Zone: |rIsle Of Giants",1211,70451,139932,797326,7,2,0,6,7
 "Even at this size, these raptors can eviscerate an entire cow in less than 10 seconds.","|cFFFFD200Drop: |rZandalari Dinomancer|n|cFFFFD200Zone: |rIsle Of Giants",1212,70452,139933,797327,7,2,0,6,7
@@ -779,6 +777,8 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 ,,1259,71844,0,132196,7,48,4,6,7
 "Fierce and loyal, Xu-Fu loves to hunt by moonlight.  Once during a full moon, he killed and ate an entire Ironfur Great Bull, prompting a two day nap.","|cFFFFD200Vendor:|r Tournament of Celestials",1266,71942,145696,877410,7,82,2,6,7
 ,,1267,72009,0,877410,7,1072,4,6,7
+,,1268,72053,0,840541,7,48,-1,6,7
+,,1269,72054,0,516665,2,48,-1,6,7
 ,,1271,72055,0,132847,5,48,-1,6,7
 "Moonfang's cubs grow into massive, slavering, black-furred killing machines...except for Moon Moon.","|cFFFFD200Drop: |rMoonfang|n|cFFFFD200Zone: |rDarkmoon Island",1276,72160,144761,538568,7,2,0,6,7
 ,,1277,72100,0,133015,9,48,-1,6,7
@@ -861,24 +861,24 @@ Description_lang,SourceText_lang,ID,CreatureID,SummonSpellID,IconFileDataID,PetT
 "A peculiar penguin with a penchant for pebbles.","|cFFFFD200Promotion|r |n",4234,194870,384796,134575,8,16450,7,6,7
 "Because it's her favorite holiday, Hoplet wears her Lunar Festival outfit year-round.","|cFFFFD200Promotion|r |n",4235,196534,388541,4680677,5,16466,7,6,7
 "A bubbly goldfish who's always ready to make a splash!","|cFFFFD200Promotion|r |n",4236,200900,407786,4777763,8,16466,7,6,7
+"Cypress soars with the wisdom of forests and the fire of celebration.","|cFFFFD200Promotion|r |n",4273,211012,423843,5373378,1,16466,7,6,7
+"Don't let the tiny wings fool you. He is already scheming, sulking, and setting things on fire.","|cFFFFD200Promotion|r |n",4274,211025,423868,5210737,1,16466,7,6,7
 "There must always be a Lick King.","|cFFFFD200Achievement:|r Defense Protocol Gamma: Terminated|n|cFFFFD200Achievement:|r Dungeons & Raids|n",4329,213605,428053,5279604,3,82,5,6,7
 "Everything you own will eventually belong to Pinchy. What, are you really going to argue with those claws?","|cFFFFD200Special Event: |rPlunderstorm",4532,222858,446916,5617452,8,16466,7,6,7
 "This wise watcher of the winter woods is a hoot to adventure with!","|cFFFFD200Promotion|r |n",4585,224065,450535,5770411,2,16466,7,6,7
 "The game's afoot. Except when it is time to nap. Afterwards though, it's game on!","|cFFFFD200Promotion|r |n",4683,232527,468201,6124234,7,16466,7,6,7
 "Crafted from sacred timber and blessed by festive winds.","|cFFFFD200Promotion|r |n",4685,232536,468247,6124702,2,66,7,6,7
+"A rare Sha born of hope, radiating happiness instead of despair.","|cFFFFD200Promotion|r |n",4734,237248,1217380,6243478,6,16450,7,6,7
+"According to Tol'vir beliefs, a crocolisk nest that hatches during the Festival of the Sun is said to be blessed by the river guardian, Sa'bak.","|cFFFFD200Promotion|r |n",4850,245603,1238896,6694821,8,16466,7,6,7
 "With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",4862,248495,1246166,7142516,7,16466,9,6,7
 ,,4897,251819,1254207,7277052,8,16594,-1,6,7
 "A rare auspicious beast in Pandaria. Well-traveled hozen call it a ""mobile luck amplifier.""","|cFFFFD200In-Game Shop|r",4902,261152,1256380,7315561,4,16466,9,34,60
 "No one knows how Lil' Coalee got his name. Was it his black heart? Was it his love for a warm fire? Was it simply that one of his parents were Big Coalee. Asking him yields no answers, only rage.","|cFFFFD200Promotion|r ",4907,254356,1261676,4891621,5,16466,9,6,7
 "Curious and inquisitive, this starry-eyed whelpling has big dreams and a wish to explore every world in the cosmos.","|cFFFFD200Promotion|r |n",4962,255820,1266325,7317259,1,16466,7,6,7
-"With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",5000,259429,1280074,7481108,7,16466,9,6,7
-"Pinky just hatched and is ready for adventure. But naptime may take precedence.",|cFFFFD200Promotion|r|n|n,5080,266912,1297823,7889090,1,16466,7,6,7
-"Cypress soars with the wisdom of forests and the fire of celebration.","|cFFFFD200Promotion|r |n",4273,211012,423843,5373378,1,16466,7,6,7
-"A rare Sha born of hope, radiating happiness instead of despair.","|cFFFFD200Promotion|r |n",4734,237248,1217380,6243478,6,16450,7,6,7
 "With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200Promotion|r |n",4998,259428,1280069,7142516,7,16466,7,6,7
-"According to Tol'vir beliefs, a crocolisk nest that hatches during the Festival of the Sun is said to be blessed by the river guardian, Sa'bak.","|cFFFFD200Promotion|r |n",4850,245603,1238896,6694821,8,16466,7,6,7
+"With boundless energy and unbridled enthusiasm, the foal seeks the skies. It may not be ready, but exercise caution if you try to hold it back.","|cFFFFD200In-Game Shop|r",5000,259429,1280074,7481108,7,16466,9,6,7
 ,,5042,263232,1289296,7657804,2,16466,-1,6,7
-,,5120,268678,1302110,7864628,7,16594,-1,6,7
-,,5113,268569,1301783,7570980,2,16466,-1,6,7
-"Don't let the tiny wings fool you. He is already scheming, sulking, and setting things on fire.","|cFFFFD200Promotion|r |n",4274,211025,423868,5210737,1,16466,7,6,7
 ,,5051,263923,1291005,7657991,2,16466,-1,6,7
+"Pinky just hatched and is ready for adventure. But naptime may take precedence.",|cFFFFD200Promotion|r|n|n,5080,266912,1297823,7889090,1,16466,7,6,7
+,,5113,268569,1301783,7570980,2,16466,-1,6,7
+,,5120,268678,1302110,7864628,7,16594,-1,6,7

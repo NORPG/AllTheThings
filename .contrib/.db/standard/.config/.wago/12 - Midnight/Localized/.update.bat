@@ -1,6 +1,5 @@
 @echo off
 
-@REM Download Midnight Classic database
 SET BUILD=%~1
 set "FORCE_OVERWRITE="
 if /i "%~2"=="force_overwrite" set "FORCE_OVERWRITE=1"

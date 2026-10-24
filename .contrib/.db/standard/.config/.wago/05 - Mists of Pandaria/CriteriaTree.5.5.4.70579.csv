@@ -380,7 +380,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 462,"Visit a barbershop and pay for using their services.",461,1,0,2341,1,2
 464,"Shoot off 10 Love Rockets in 20 seconds or less.",0,0,4,0,0,0
 465,"Shoot off 10 Love Rockets in 20 seconds or less",464,10,0,6295,1,1
-927,"Portal to Stonard",921,0,0,5000,8,0
 472,"Explore Zangarmarsh, revealing the covered areas of the world map.",0,0,4,0,0,0
 473,"Quagg Ridge",472,1,0,1648,6,0
 474,"The Lagoon",472,1,0,1651,9,0
@@ -766,6 +765,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 924,"Portal to Shattrath",921,0,0,4996,4,0
 925,"Portal to Ironforge",921,0,0,4997,5,0
 926,"Portal to Silvermoon",921,0,0,4999,7,0
+927,"Portal to Stonard",921,0,0,5000,8,0
 928,"Portal to Stormwind",921,0,0,5001,9,0
 929,"Portal to Theramore",921,0,0,5002,10,0
 930,"Portal to Thunder Bluff",921,0,0,5003,11,0
@@ -983,6 +983,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1203,"Rejek: First Blood",1195,1,0,2060,7,0
 1211,"Extra bank slots purchased",0,0,4,0,0,0
 1212,,1211,0,0,2002,1,0
+1214,"Complete the Kalimdor, Eastern Kingdoms and Outland Tricks and Treats achievements.",0,0,4,0,0,0
 1215,"Tricks and Treats of Kalimdor",1214,0,0,2228,2,0
 1216,"Tricks and Treats of Eastern Kingdoms",1214,0,0,2229,1,0
 1217,"Tricks and Treats of Outland",1214,0,0,2230,3,0
@@ -1067,7 +1068,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1324,"Aldor Tabard",1322,1,0,2893,6,2
 1325,"Battle Tabard of the Defilers",1322,1,0,2894,7,2
 1326,"Blood Knight Tabard",1322,1,0,2895,8,2
-1404,"Tabard of Therazane",1322,1,0,16321,76,2
 1327,"Tabard of the Argent Dawn",1322,1,0,2925,38,2
 1328,"Tabard of the Defender",1322,1,0,2926,39,2
 1329,"Tabard of the Shattered Sun",1322,1,0,2929,42,2
@@ -1145,6 +1145,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1401,"Orgrimmar Tabard",1322,1,0,11378,63,2
 1402,"Tabard of the Achiever",1322,1,0,12600,71,2
 1403,"Tabard of the Dragonmaw Clan",1322,1,0,16319,74,2
+1404,"Tabard of Therazane",1322,1,0,16321,76,2
 1405,"Tabard of the Guardians of Hyjal",1322,1,0,16322,77,2
 1406,"Tabard of Ramkahen",1322,1,0,16324,79,2
 1407,"Baradin's Wardens Tabard",1322,1,0,16327,82,2
@@ -1362,6 +1363,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1650,"Steam Frog",1631,1,0,3739,17,0
 1651,"Borean Frog",1631,1,0,3741,0,0
 1652,,1643,1,0,21288,1,0
+1654,"Complete the Warsong Gulch achievements listed below.",0,0,4,0,0,0
 1655,"Capture the Flag",1654,0,0,3462,2,0
 1656,"Quick Cap",1654,0,0,3485,9,0
 1657,"Save The Day",1654,0,0,3472,11,0
@@ -1379,7 +1381,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1671,"10 man raids",1670,0,0,6845,1,0
 1673,"Kill the Headless Horseman.",0,0,4,0,0,0
 1674,"Headless Horseman",1673,1,0,409,1,2
-1773,Grunt,1772,0,0,739,1,2
 1676,"Explore Elwynn Forest, revealing the covered areas of the world map.",0,0,4,0,0,0
 1677,"Crystal Lake",1676,1,0,1156,10,0
 1678,"Stone Cairn Lake",1676,1,0,1157,11,0
@@ -1456,6 +1457,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1769,"First shaman on the realm to achieve level 80.",0,0,4,0,0,0
 1770,"Level to 80",1769,80,0,5213,1,2
 1772,"Earned the title, ""Grunt"".",0,0,4,0,0,0
+1773,Grunt,1772,0,0,739,1,2
 1775,"Earned the title, ""Corporal"".",0,0,4,0,0,0
 1776,Corporal,1775,0,0,739,1,2
 1778,"Explore Northern Stranglethorn, revealing the covered areas of the world map.",0,0,4,0,0,0
@@ -1504,6 +1506,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1826,"Hellfire Peninsula",1821,1,0,3090,2,0
 1827,Nagrand,1821,1,0,3091,3,0
 1828,"Terokkar Forest",1821,1,0,3094,6,0
+1830,"Honor the flames of Outland.",0,0,4,0,0,0
 1831,"Hellfire Peninsula",1830,1,0,3125,2,0
 1832,Netherstorm,1830,1,0,3127,4,0
 1833,"Shadowmoon Valley",1830,1,0,3128,5,0
@@ -1535,7 +1538,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1868,Demons,1860,0,0,4949,2,0
 1869,Dragonkin,1860,0,0,4950,3,0
 1870,Giant,1860,0,0,4952,5,0
-1962,"Battlegrounds won",0,0,5,0,0,0
 1872,"First person on the realm to achieve level 80.",0,0,4,0,0,0
 1873,"Level 80",1872,80,0,5212,1,2
 1875,"Wielder of a set of Warglaives of Azzinoth.",0,0,4,0,0,0
@@ -1613,6 +1615,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 1958,"Linen Bandage",1930,1,0,3316,15,0
 1959,"Warsong Gulch Silk Bandage",1930,1,0,3324,23,0
 1960,"Highlander's Runecloth Bandage",1930,1,0,7903,26,0
+1962,"Battlegrounds won",0,0,5,0,0,0
 1963,"Arathi Basin",1962,0,0,5896,1,0
 1964,"Eye of the Storm",1962,0,0,5897,3,0
 1965,"Strand of the Ancients",1962,0,0,5898,5,0
@@ -2064,6 +2067,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 2523,"Complete the quest, ""A Thief's Reward"", by stealing the flames from your enemy's capital cities.",0,1,8,0,0,0
 2524,"Horde, A Thief's Reward",2523,1,0,3352,2,2
 2525,"Alliance, A Thief's Reward",2523,1,0,3351,1,2
+2527,,0,0,4,0,0,0
 2530,"Complete a guild challenge.",0,0,4,0,0,0
 2531,"Complete a guild challenge",2530,1,0,17004,0,2
 2533,"Explore Winterspring, revealing the covered areas of the world map.",0,0,4,0,0,0
@@ -2190,6 +2194,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 2663,"Gronnstalker's Chestguard",2632,1,0,4809,23,2
 2664,"Skyshatter Tunic",2632,1,0,4814,28,2
 2665,"Thunderheart Vest",2632,1,0,4819,33,2
+2667,,0,1,8,0,0,0
 2668,Alysrazor,2667,1,0,18060,1,2
 2669,Alysrazor,2667,1,0,18061,2,2
 2671,"Win a ranked arena match.",0,0,4,0,0,0
@@ -2287,6 +2292,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 2790,"Drakos the Interrogator",2786,1,0,6859,1,0
 2792,"Obtain 450 skill points in first aid.",0,0,4,0,0,0
 2793,"Obtain 450 skill points in first aid.",2792,450,0,5592,1,2
+2795,,0,1,8,0,0,0
 2796,"Majordomo Fandral Staghelm",2795,1,0,18069,2,2
 2797,"Majordomo Fandral Staghelm",2795,1,0,18068,1,2
 2799,"Obtain 450 skill points in Fishing, First Aid, and Cooking.",0,0,4,0,0,0
@@ -2768,6 +2774,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3380,"Greed rolls on loot",3378,0,0,5803,2,0
 3382,server-only,0,1,8,0,0,2
 3383,"Lord Godfrey",3382,1,0,18525,0,2
+3385,server-only,0,1,8,0,0,2
 3386,Hogger,3385,1,0,18527,0,2
 3388,"Gal'darah kills (Heroic Gundrak)",0,0,4,0,0,0
 3389,Gal'darah,3388,1,0,5614,1,0
@@ -3025,6 +3032,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3679,Mining,3670,225,0,5573,9,2
 3680,Skinning,3670,225,0,5720,10,2
 3681,Tailoring,3670,225,0,5575,11,2
+3683,"Visit the Candy Buckets in Outland.",0,0,4,0,0,0
 3684," Zangarmarsh, Zabra'jin",3683,1,0,2224,13,0
 3685,"Blade's Edge Mountains, Thunderlord Stronghold",3683,1,0,2218,3,0
 3686,"Hellfire Peninsula, Thrallmar",3683,1,0,2221,5,0
@@ -3072,7 +3080,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3731,"Gronn-Stitched Girdle",3705,1,0,4917,12,2
 3732,"Shuriken of Negation",3705,1,0,4918,13,2
 3733,"Aldori Legacy Defender",3705,1,0,4908,3,2
-3913,"Combat Mana Potion",3886,1,0,7905,28,0
 3734,"Bloodmaw Magus-Blade",3705,1,0,4910,5,2
 3735,"Justicar Greaves",3705,1,0,4924,19,2
 3736,"Leggings of the Incarnate",3705,1,0,4931,26,2
@@ -3133,6 +3140,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3804,"Swamp of Sorrows, Bogpaddle",3778,1,0,18431,20,0
 3806,"Complete 200 daily quests.",0,0,4,0,0,0
 3807,,3806,200,0,4984,0,1
+3809,server-only,0,1,8,0,0,2
 3810,"""Captain"" Cookie",3809,1,0,18522,0,2
 3812,"Defeat Mekgineer Thermaplugg.",0,1,8,0,0,0
 3813,"Mekgineer Thermaplugg",3812,1,0,18529,1,2
@@ -3153,6 +3161,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3831,"Tower H4 owned by the Alliance",3823,1,0,1810,10,2
 3832,"Tower A1 owned by the Alliance",3823,1,0,1803,3,2
 3833,"Tower A3 owned by the Alliance",3823,1,0,1805,5,2
+3835,"Win Alterac Valley while your team controls both mines.",0,0,4,0,0,0
 3836,"Trogg Cave Owned",3835,1,0,3387,2,2
 3837,"Kobold Cave Owned",3835,1,0,3386,1,2
 3839,"Complete 100 battlegrounds at max level.",0,100,5,0,0,0
@@ -3220,6 +3229,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 3910,"Major Combat Mana Potion",3886,0,0,5188,31,0
 3911,"Runic Mana Potion",3886,0,0,5184,24,0
 3912,"Major Combat Mana Potion",3886,0,0,5187,30,0
+3913,"Combat Mana Potion",3886,1,0,7905,28,0
 3914,"Lesser Mana Potion",3886,0,0,4323,11,0
 3915,"Runic Mana Injector",3886,0,0,6379,33,0
 3916,"Major Combat Mana Potion",3886,0,0,5185,25,0
@@ -3609,6 +3619,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4367,"Sunken Temple",4348,0,0,3952,14,0
 4369,"Kill King Varian Wrynn.",0,0,4,0,0,0
 4370,"King Varian Wrynn",4369,1,0,5203,1,2
+4372,"Kill 50 enemy players in any of your home cities.",0,50,5,0,0,0
 4373,"Stormwind Harbor",4372,50,0,5030,11,3
 4374,"Cenarion Enclave",4372,50,0,5023,4,3
 4375,"Craftsmen's Terrace",4372,50,0,5024,5,3
@@ -3636,6 +3647,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4400,Murky,4398,0,0,6157,2,2
 4402,"Learn the ability to find fish.",0,0,4,0,0,0
 4403,"Find Fish",4402,0,0,3681,1,2
+4409,"Complete the Arathi Basin achievements listed below.",0,0,4,0,0,0
 4410,"Arathi Basin Perfection",4409,0,0,3417,2,0
 4411,"Me and the Cappin' Makin' it Happen",4409,0,0,3418,3,0
 4412,"To The Rescue!",4409,0,0,3421,6,0
@@ -3673,7 +3685,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4483,"Deadman's Crossing",4482,1,0,1158,1,0
 4484,"The Vice",4482,1,0,1159,2,0
 4485,Karazhan,4482,1,0,1160,3,0
-4572,"Lady Blaymeux",4559,0,0,7821,11,0
 4487,"Defeat the bosses of Naxxramas with less than 9 people in the zone in 10-player mode.",0,0,4,0,0,0
 4488,Anub'Rekhan,4487,1,0,7146,3,0
 4489,"Heigan the Unclean",4487,1,0,7154,5,0
@@ -3753,6 +3764,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4569,Yogg-Saron,4559,0,0,11013,36,0
 4570,"Stormcaller Brundir",4559,0,0,11006,28,0
 4571,"Archavon the Stone Watcher",4559,0,0,7827,17,0
+4572,"Lady Blaymeux",4559,0,0,7821,11,0
 4573,"Baron Rivendare",4559,0,0,7822,10,0
 4574,"Sir Zeliek",4559,0,0,7823,9,0
 4575,Malygos,4559,0,0,7826,18,0
@@ -3868,6 +3880,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4696,Giant,4686,0,0,4952,5,0
 4698,"Win ten ranked matches in a row with a personal rating above 1800.",0,0,4,0,0,0
 4699,"Win 10 arenas without losing",4698,10,0,3384,1,1
+4701,"Acquire the Brewfest beers listed below. Don't drink them all at once!",0,0,4,0,0,0
 4702,"Brewdoo Magic",4701,1,0,8889,0,0
 4703,"Gordok Grog",4701,1,0,8878,1,0
 4704,"Jungle River Water",4701,1,0,8888,2,0
@@ -3877,6 +3890,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4708,"Small Step Brew",4701,1,0,8891,7,0
 4709,"Stout Shrunken Head",4701,1,0,8890,8,0
 4710,"Mudder's Milk",4701,1,0,9014,4,0
+4712,,0,0,4,0,0,0
 4713,,4712,0,0,5593,1,0
 4715,"Complete 100 victories in Arathi Basin.",0,0,4,0,0,0
 4716,"Complete 100 victories in Arathi Basin.",4715,100,0,5896,1,1
@@ -3909,6 +3923,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4748,"Scarlet Point",4733,0,0,4177,17,0
 4749,"Obsidian Dragonshrine",4733,0,0,4162,3,0
 4750,"Wyrmrest Temple",4733,0,0,4172,12,0
+4752,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
 4753,"Cap in 75 seconds",4752,1,0,7769,1,2
 4754,"Pick up flag while it's at the base",4752,1,0,113797,0,2
 4756,"Complete the Defending Wyrmrest Temple quest in under 3 minutes while not in a group.",0,0,4,0,0,0
@@ -3964,6 +3979,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4809,,4808,50,0,3631,0,1
 4811,"Earn the right to represent Orgrimmar in the Argent Tournament.",0,0,4,0,0,0
 4812,"Champion of Orgrimmar",4811,1,0,9783,1,2
+4814,,0,0,4,0,0,0
 4815,"Crimson Whelpling",4814,0,0,12618,1,2
 4816,"Azure Whelpling",4814,0,0,12619,2,2
 4817,"Emerald Whelpling",4814,0,0,12620,3,2
@@ -3982,6 +3998,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4830,Toothy,4814,0,0,12633,16,2
 4831,Muckbreath,4814,0,0,12634,17,2
 4832,Snarly,4814,0,0,12636,18,2
+4834,,0,0,4,0,0,0
 4835,"Rivendare's Deathcharger",4834,0,0,12635,1,2
 4837,"Complete each of The Rokk's 4 cooking daily quests listed below.",0,0,4,0,0,0
 4838,Manalicious,4837,1,0,5704,3,0
@@ -4092,6 +4109,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4961,"Spicy Smoked Sausage",4955,1,0,18623,5,0
 4962,"The Essential Brewfest Pretzel",4955,1,0,7987,7,0
 4963,"The Golden Link",4955,1,0,18624,8,0
+4965,"Complete the battleground achievements listed below.",0,0,4,0,0,0
 4966,"Master of Eye of the Storm",4965,0,0,3503,4,0
 4967,"Master of Alterac Valley",4965,0,0,226,1,0
 4968,"Master of Warsong Gulch",4965,0,0,229,3,0
@@ -4116,6 +4134,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4991,"The Whelping Downs",4983,1,0,1143,8,0
 4992,"Ruins of Thaurissan",4983,1,0,1140,5,0
 4993,"Blackrock Stronghold",4983,1,0,1142,7,0
+4995,"Complete the Hallow's End achievements listed below.",0,0,4,0,0,0
 4996,"G.N.E.R.D. Rage",4995,0,0,5826,6,0
 4997,"Out With It",4995,0,0,5819,1,0
 4998,"The Savior of Hallow's End",4995,0,0,5822,3,0
@@ -4321,7 +4340,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 5228,"Highest 5 man team rating",5227,0,0,450,1,0
 5230,"First person on the realm to achieve 450 skill in engineering.",0,0,4,0,0,0
 5231,"Skill to 450",5230,450,0,5722,1,2
+5233,,0,0,4,0,0,0
 5234,"Strand of the Ancients",5233,0,0,5743,1,0
+5236,,0,0,4,0,0,0
 5237,"Strand of the Ancients",5236,0,0,5898,1,0
 5239,"Complete the main storyline quests involving Drakuru listed below.",0,0,4,0,0,0
 5240,"Cleansing Drak'Tharon",5239,1,0,5804,0,0
@@ -4370,6 +4391,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 5294,"Vanity pets owned",0,0,4,0,0,0
 5295,"Vanity pets owned",5294,0,0,4788,1,0
 5298,"1550 rating",140632,1550,0,452,0,2
+5300,"Complete all Extinguishing achievements.",0,0,4,0,0,0
 5301,"Extinguishing Kalimdor",5300,0,0,3203,3,0
 5302,"Extinguishing Outland",5300,0,0,3204,5,0
 5303,"Extinguishing Eastern Kingdoms",5300,0,0,3202,2,0
@@ -4391,6 +4413,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 5434,"Complete 150 quests in Borean Tundra.",0,150,5,0,0,0
 5435,"Complete 140 quests in Boren Tundra",5434,150,0,74,1,3
 5436,"Complete 140 quests in Borean Tundra",5434,150,0,5019,2,3
+5438,"Catch a fish in each of the specific nodes listed below.",0,0,4,0,0,0
 5439,"Nettlefish School",5438,1,0,5287,10,0
 5440,"Musselback Sculpin School",5438,1,0,5286,9,0
 5441,"Deep Sea Monsterbelly School",5438,1,0,5279,2,0
@@ -5025,6 +5048,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6195,"Defeat Murmur on Heroic Difficulty.",0,1,8,0,0,0
 6196,Murmur,6195,1,0,3716,1,2
 6197,"Trial of the Naaru: Strength",6195,1,0,4474,2,2
+6199,"Complete the Midsummer achievements listed below.",0,0,4,0,0,0
 6200,"The Fires of Azeroth",29044,0,0,3205,0,0
 6201,"Burning Hot Pole Dance",6199,0,0,7338,3,0
 6202,"Torch Juggler ",6199,0,0,7341,5,0
@@ -5079,6 +5103,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6260,Hive'Zora,6254,1,0,1468,4,0
 6261,"Southwind Village",6254,1,0,1462,2,0
 6262,"Valor's Rest",6254,1,0,15122,8,0
+6264,"Get an honorable, killing blow on seven different races.",0,0,4,0,0,0
 6265,Orc,6264,1,0,2370,3,0
 6266,Undead,6264,1,0,2372,6,0
 6267,Troll,6264,1,0,2373,5,0
@@ -5115,6 +5140,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6303,"Dun Niffelem",6287,0,0,5845,3,0
 6305,"Complete 85 quests in Nagrand.",0,0,4,0,0,0
 6306,"85 Nagrand quests",6305,85,0,3586,1,1
+6308,"Complete 100 battlegrounds at max level.",0,100,5,0,0,0
 6309,,6308,100,0,20777,0,2
 6310,,6308,100,0,20778,1,2
 6311,,6308,100,0,20779,2,2
@@ -5286,6 +5312,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6581,"Shatterspear War Camp",6572,1,0,14091,3,0
 6582,"Withering Thicket",6572,1,0,14093,5,0
 6583,"Wildbend River",6572,1,0,14092,4,0
+6585,"Visit the Candy Buckets in Kalimdor.",0,0,4,0,0,0
 6586,"Northern Barrens, The Crossroads",6585,1,0,2107,16,0
 6587,"Dustwallow Marsh, Brackenwall Village",6585,1,0,2110,9,0
 6588,"Stonetalon Mountains, Sun Rock Retreat",6585,1,0,2114,25,0
@@ -5344,7 +5371,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6644,"Complete Elune's Blessing",6643,1,0,2003,1,2
 6646,"Ossirian the Unscarred",0,0,4,0,0,0
 6648,"Ossirian the Unscarred",6646,1,0,18891,0,2
-6738,"Lich King 5-player dungeons completed (final boss killed)",0,1,5,0,0,0
 6650,"Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 10-player mode.",0,0,4,0,0,0
 6651,"Kill Maexxna within 20 minutes of Anub'Rekhan's death.",6650,1,0,7128,1,2
 6653,"First person on the realm to achieve 450 skill in herbalism.",0,0,4,0,0,0
@@ -5366,6 +5392,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6672,"Stormpike Perfection",29082,0,0,3399,0,0
 6674,"Earn exalted status with the Knights of the Ebon Blade.",0,0,4,0,0,0
 6675,"Exalted with Knights of the Ebon Blade",6674,42000,0,4743,1,2
+6677,"Visit the Candy Buckets in Eastern Kingdoms.",0,0,4,0,0,0
 6678,"Eastern Plaguelands, Light's Hope Chapel",6677,1,0,2145,7,0
 6679,"Eversong Woods, Falconwing Square",6677,1,0,2150,9,0
 6680,"Silvermoon City, The Bazaar",6677,1,0,2154,17,0
@@ -5398,6 +5425,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6709,"Level to 80",6708,80,0,5230,1,2
 6711,"Malygos kills (10 player)",0,0,4,0,0,0
 6712,Malygos,6711,1,0,5692,1,0
+6714,"Complete the Eastern Kingdoms quest achievements listed below.",0,0,4,0,0,0
 6715,"Blasted Lands Quests",6714,0,0,5906,2,0
 6716,"Redridge Mountains Quests",29146,0,0,5929,0,0
 6717,"Western Plaguelands Quests",6714,0,0,5947,12,0
@@ -5416,6 +5444,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6733,"Herbalism skill",6732,525,0,5569,1,1
 6735,"Gain three stacks of Resin Residue by defeating Mantid Conscripts.",0,0,4,0,0,0
 6736,"Mantid Conscript",6735,1,0,19131,0,2
+6738,"Lich King 5-player dungeons completed (final boss killed)",0,1,5,0,0,0
 6739,Mal'Ganis,6738,1,0,6432,4,0
 6740,Anub'arak,6738,1,0,5623,7,0
 6741,"The Prophet Tharon'ja",6738,1,0,5625,9,0
@@ -5448,8 +5477,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6771,Alchemy,6762,450,0,5573,9,2
 6772,Alchemy,6762,450,0,5720,10,2
 6773,Alchemy,6762,450,0,5575,11,2
+6775,,0,0,4,0,0,0
 6776,"Vanessa VanCleef",6775,1,0,16789,1,2
+6778,,0,0,4,0,0,0
 6779,"Lord Godfrey",6778,1,0,16790,1,2
+6894,"Complete the Northrend quest achievements listed below.",0,0,4,0,0,0
 6895,"I've Toured the Fjord",6894,1,0,5049,5,0
 6896,"Icecrown: The Final Goal",6894,1,0,5052,8,0
 6897,"Nothing Boring About Borean",6894,1,0,5045,1,0
@@ -5498,6 +5530,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6961,"Shady Rest Inn",6952,1,0,14115,5,0
 6963,"Complete 3000 quests.",0,0,4,0,0,0
 6964,,6963,3000,0,3631,0,1
+6966,"Earned the title, ""Sergeant"".",0,0,4,0,0,0
 6967,Sergeant,6966,0,0,724,1,2
 6969,"Ley-Guardian Eregos kills (Heroic Oculus)",0,0,4,0,0,0
 6970,"Ley-Guardian Eregos",6969,1,0,5617,1,0
@@ -5515,6 +5548,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 6984,"The Outland Gourmet",6975,0,0,6788,10,0
 6985,"Our Daily Bread (A)",29026,0,0,6624,0,0
 6986,"The Cake Is Not A Lie",6975,0,0,5764,1,0
+6988,"Kill 100 flag carriers in Warsong Gulch.",0,0,4,0,0,0
 6989,"Alliance Flag Carriers",6988,100,0,3699,1,1
 6991,"Earn exalted status with and the right to represent the Gnomeregan Exiles in the Argent Tournament.",0,0,4,0,0,0
 6992,"Champion of Gnomeregan",6991,1,0,9775,2,0
@@ -5631,6 +5665,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7174,,0,1,5,0,0,0
 7175,"Beth'tilac 10-Heroic",7174,1,0,18050,1,2
 7176,"Beth'tilac 25-Heroic",7174,1,0,18051,2,2
+7178,,0,1,5,0,0,0
 7179,"Lord Rhyolith 10-Normal",7178,1,0,18052,1,2
 7180,"Lord Rhyolith 25-Normal",7178,1,0,18053,2,2
 7182,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
@@ -5671,6 +5706,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7249,"Defeat the Twin Val'kyr in 3 minutes or less in 25-player mode.",0,1,8,0,0,0
 7250,"Val'kyr Twins",7249,1,0,11818,1,2
 7251,"Val'kyr Twins",7249,1,0,11860,2,2
+7256,,0,1,5,0,0,0
 7257,"Beth'tilac 25-Normal",7256,1,0,18049,2,2
 7258,"Beth'tilac 10-Normal",7256,1,0,18048,1,2
 7263,"In Isle of Conquest, destroy 10 vehicles and 100 players with turrets.",0,0,4,0,0,0
@@ -5705,6 +5741,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7311,,7309,1,0,10741,2,2
 7313,"Defeat Shade of Eranikus while in a guild group.",0,1,8,0,0,0
 7314,"Shade of Eranikus",7313,1,0,14333,1,2
+7316,"Honor the flames of Eastern Kingdoms.",0,0,4,0,0,0
 7317,"Arathi Highlands",7316,1,0,3101,0,0
 7318,"Silverpine Forest",7316,1,0,3107,8,0
 7319,"The Cape of Stranglethorn",7316,1,0,3108,10,0
@@ -5750,6 +5787,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7378,"Fall 65 yards without dying while wearing Synthebrew Goggles",7377,6500,0,3881,0,2
 7382,"Force Mimiron to kill an Assault Bot with a Rocket Strike in 25-player mode.",0,0,4,0,0,0
 7383,"Assault Bot Destroyed",7382,1,0,10405,1,2
+7385,,0,1,5,0,0,0
 7386,"Ragnaros 10-Heroic",7385,1,0,18074,1,2
 7387,"Ragnaros 25-Heroic",7385,1,0,18075,2,2
 7389,"Defeat Mimiron without anyone in the raid being hit by the following in 25-player mode.",0,0,4,0,0,0
@@ -5837,6 +5875,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7500,"Ghoul Explode",7499,1,0,11789,1,2
 7504,"Defeat Archavon the Stone Watcher, Emalon the Storm Watcher, and Koralon the Flame Watcher within 60 seconds of each other in 10-player mode.",0,0,4,0,0,0
 7505,"Earth, Wind and Fire",7504,1,0,12018,1,2
+7516,"Fight Thorim with Sif involved.",0,0,4,0,0,0
 7517,"Force Thorim to enter the arena while Sif is present",7516,1,0,10800,1,2
 7522,"Experience all 3 visions of Yogg-Saron's mind in 10-player mode.",0,0,4,0,0,0
 7523,"The Assassination of King Llane",7522,1,0,10324,1,0
@@ -5947,6 +5986,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7692,,7691,1,0,10918,1,2
 7694,"Defeat Ignis the Furnace Master in 4 minutes in 10-player mode.",0,0,4,0,0,0
 7695,"Flame Leviathan",7694,1,0,10073,1,2
+7697,"Defeat Heroic Beasts.",0,0,4,0,0,0
 7698,"Defeat the Beasts of Northrend",7697,1,0,12229,1,2
 7700,"Drink with the Dread Captain DeMeza to join her crew during Pirates' Day.",0,0,4,0,0,0
 7701,,7700,1,0,10919,1,2
@@ -5990,6 +6030,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7750,"Use Soulstone",7739,0,0,7863,9,0
 7751,"Use Soulstone",7739,0,0,7866,7,0
 7752,"Use Soulstone",7739,0,0,7867,3,0
+7754,"Complete the Alterac Valley achievements listed below.",0,0,4,0,0,0
 7755,"Alterac Valley Veteran",7754,0,0,3392,1,0
 7756,"Frostwolf Perfection",7754,0,0,3411,7,0
 7757,"Everything Counts",7754,0,0,3408,5,0
@@ -6015,6 +6056,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 7780,"Isle of Conquest",7774,0,0,13368,5,0
 7781,"Twin Peaks",7774,0,0,16510,6,0
 7782,"Battle for Gilneas",7774,0,0,16511,7,0
+7796,"Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",0,0,4,0,0,0
 7797,"Win Isle of Conquest.",7796,1,0,12061,1,2
 7799,"Wielder of Val'anyr, Hammer of Ancient Kings.",0,0,4,0,0,0
 7800,"Val'anyr, Hammer of Ancient Kings",7799,1,0,10838,1,2
@@ -6208,6 +6250,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8072,"Exalted with Alliance Vanguard",8071,42000,0,2425,0,2
 8074,"Earn the right to represent Darnassus in the Argent Tournament.",0,0,4,0,0,0
 8075,"Champion of Darnassus",8074,1,0,9773,1,2
+8077,"Raise all of The Burning Crusade dungeon reputations to exalted.",0,0,4,0,0,0
 8078,"Cenarion Expedition",8077,42000,0,4751,2,0
 8079,"Lower City",8077,42000,0,4759,3,0
 8080,"Keepers of Time",8077,42000,0,4765,4,0
@@ -6240,6 +6283,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8112,"I Found One!",8106,0,0,9863,1,0
 8113,Chocoholic,8106,0,0,9864,2,0
 8114,"Hard Boiled",8106,0,0,9865,3,0
+8116,"Complete the Noblegarden achievements listed below.",0,0,4,0,0,0
 8117,"Spring Fling",29038,0,0,9874,0,0
 8118,"Noble Garden",29040,0,0,9875,0,0
 8119,"Shake Your Bunny-Maker",8116,0,0,9868,7,0
@@ -6373,8 +6417,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8293,"Black Tuxedo Pants",8291,1,0,3222,2,0
 8295,"Emote /hug on a dead enemy before they release corpse.",0,0,4,0,0,0
 8296,"Hug a dead enemy",8295,1,0,2379,1,2
+8298,,0,1,5,0,0,0
 8299,"Lord Rhyolith 10-Heroic",8298,1,0,18054,1,2
 8300,"Lord Rhyolith 25-Heroic",8298,1,0,18055,2,2
+8305,"Defeat Heroic Val'kyr Twins.",0,0,4,0,0,0
 8306,"Defeat the Twin Val'kyr",8305,1,0,12243,1,2
 8314,"Obtain the Relentless Gladiator's Frost Wyrm from Arena Season 7 of Wrath of the Lich King.",0,1,8,0,0,0
 8315,,8314,1,0,11400,1,2
@@ -6471,6 +6517,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8444,"52 Zangarmarsh quests",8443,52,0,3584,1,1
 8446,"Algalon the Observer kills (Ulduar 10 player)",0,0,4,0,0,0
 8447,"Algalon the Observer",8446,1,0,10565,1,0
+8449,"Complete the Pilgrim's Bounty achievements listed below.",0,0,4,0,0,0
 8450,"""FOOD FIGHT!""",8449,0,0,11266,0,0
 8451,"Now Were Cookin'",29058,0,0,11258,0,0
 8452,"Pilgrim's Paunch",29060,0,0,11259,0,0
@@ -6480,8 +6527,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8456,"Terokkar Turkey Time",8449,0,0,11272,6,0
 8457,"The Turkinator",8449,0,0,11273,7,0
 8458,"Turkey Lurkey",8449,0,0,11274,8,0
+8460,,0,1,5,0,0,0
 8461,"Shannox 25-Heroic",8460,1,0,18059,2,2
 8462,"Shannox 10-Heroic",8460,1,0,18058,1,2
+8464,,0,1,5,0,0,0
 8465,"Baleroc 10-Heroic",8464,1,0,18066,1,2
 8466,"Baleroc 25-Heroic",8464,1,0,18067,2,2
 8468,"Val'kyr Twins kills  (Trial of the Grand Crusader 25 player)",0,0,4,0,0,0
@@ -6498,6 +6547,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8483,"XT-002 Deconstructor",8482,1,0,9957,1,0
 8485,"Mimiron victories (Ulduar 25 player)",0,0,4,0,0,0
 8486,Mimiron,8485,1,0,9963,1,0
+8488,,0,1,5,0,0,0
 8489,"Baleroc 10-Normal",8488,1,0,18064,1,2
 8490,"Baleroc 25-Normal",8488,1,0,18065,2,2
 8492,"Defeat Deathwing on Normal or Heroic Difficulty in the Dragon Soul raid.",0,0,4,0,0,0
@@ -6533,6 +6583,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8538,"We're Out of Cranberry Chutney Again?",8535,1,0,11199,5,0
 8539,"Don't Forget The Stuffing!",8535,1,0,11200,2,0
 8540,"Can't Get Enough Turkey",8535,1,0,11201,1,0
+8542,"Complete each of the Pilgrim's Bounty dailies.",0,0,4,0,0,0
 8543,"Can't Get Enough Turkey",8542,1,0,11203,1,0
 8544,"Don't Forget The Stuffing!",8542,1,0,11204,2,0
 8545,"Easy As Pie",8542,1,0,11205,3,0
@@ -6553,6 +6604,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8574,Gluth,8573,1,0,5124,1,0
 8576,"Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",0,0,4,0,0,0
 8577,"Complete the Avast Ye, Admiral quest",8576,1,0,1800,1,2
+8579,,0,1,5,0,0,0
 8580,"Majordomo Fandral Staghelm 25-Heroic",8579,1,0,18071,2,2
 8581,"Majordomo Fandral Staghelm 10-Heroic",8579,1,0,18070,1,2
 8583,"Cause 50 Onyxia Whelplings to hatch within 10 seconds of Onyxia's liftoff, and then defeat her in 25-player mode.",0,0,4,0,0,0
@@ -6581,6 +6633,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8611,Smash!,8610,1,0,19083,1,2
 8613,"Defeat Flame Leviathan with 3 Orbital Defense Systems active in 25-player mode.",0,0,4,0,0,0
 8614,"Flame Leviathan",8613,1,0,10060,1,2
+8616,"In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining and without allowing any raid member to die during any of the boss encounters in 25-player mode.",0,0,4,0,0,0
 8617,"Complete the Trial of the Grand Crusader",8616,1,0,12358,1,0
 8619,"Defeat Elder Brightleaf, Elder Ironbranch and Elder Stonebark within 15 seconds of each other in 25-player mode.",0,1,8,0,0,0
 8620,Lumberjacked,8619,1,0,10721,1,2
@@ -6803,6 +6856,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8896,Cyanigosa,8895,1,0,3652,1,0
 8898,"Illidan Stormrage kills (The Black Temple)",0,0,4,0,0,0
 8899,"Illidan Stormrage",8898,1,0,3260,1,0
+8923,"Complete the cooking achievements listed below.",0,0,4,0,0,0
 8924,"The Cake Is Not A Lie",8923,0,0,5764,2,0
 8925,"Critter Gitter",8923,0,0,6625,7,0
 8926,"Sous Chef",8923,0,0,6756,9,0
@@ -6844,6 +6898,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8965,"Old Crystalbark",8942,1,0,8103,3,16
 8967,"Plant 5 Seaforium charges which successfully damage a wall in a single battle.",0,0,4,0,0,0
 8968,"Plant 5 Seaforium charges which successfully damage a wall in a single battle",8967,5,0,7635,1,1
+8970,"Complete the Strand of the Ancients achievements listed below.",0,0,4,0,0,0
 8971,"The Dapper Sapper",8970,0,0,7657,3,0
 8972,"Strand of the Ancients Veteran",8970,0,0,7654,0,0
 8973,"Explosives Expert",8970,0,0,7658,4,0
@@ -7068,7 +7123,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 9752,"Proof of Demise: Sjonnir The Ironshaper",9740,1,0,7307,8,0
 9754,"Defeat Ignis the Furnace Master after shattering 2 Iron Constructs within 5 seconds in 25-player mode.",0,0,4,0,0,0
 9755,"Flame Leviathan",9754,1,0,10069,1,2
-9842,"Zul'drak Sentinel",9821,1,0,8115,16,0
 9757,"Defeat Yogg-Saron without any raid member going insane in 25-player mode.",0,0,4,0,0,0
 9758,Yogg-Saron,9757,1,0,10296,1,2
 9760,"Complete the Heroic Dungeon achievements listed below.",0,0,4,0,0,0
@@ -7145,6 +7199,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 9839,"Putridus the Ancient",9821,1,0,8122,23,0
 9840,"Fumblub Gearwind",9821,1,0,8104,5,0
 9841,"Crazed Indu'le Survivor",9821,1,0,8110,11,0
+9842,"Zul'drak Sentinel",9821,1,0,8115,16,0
 9843,"Scarlet Highlord Daion",9821,1,0,8111,12,0
 9844,"Old Crystalbark",9821,1,0,8103,4,0
 9846,"Summons accepted",0,0,4,0,0,0
@@ -7220,7 +7275,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 9940,"Flame Leviathan",9939,1,0,10079,1,2
 9942,"General Drakkisath kills (Blackrock Spire)",0,0,4,0,0,0
 9943,"General Drakkisath",9942,1,0,3268,1,0
-10032,"Warsong Offensive",9979,42000,0,17958,51,0
 9945,"Defeat Jedoga Shadowseeker in Ahn'kahet on Heroic Difficulty without killing any Twilight Volunteers.",0,0,4,0,0,0
 9946,"Jedoga Shadowseeker",9945,1,0,7359,1,2
 9948,"Obtained a Tabard of the Protector from the Dark Portal event.",0,0,4,0,0,0
@@ -7299,6 +7353,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10029,"The Oracles",9979,42000,0,17955,48,0
 10030,"The Sons of Hodir",9979,42000,0,17956,49,0
 10031,"The Taunka",9979,42000,0,17957,50,0
+10032,"Warsong Offensive",9979,42000,0,17958,51,0
 10033,"The Sunreavers",9979,42000,0,17959,52,0
 10034,"Hellscream's Reach",9979,42000,0,17960,53,0
 10035,"Exalted Bilgewater Cartel",9979,42000,0,17910,3,0
@@ -7457,7 +7512,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10240,"Emalon the Storm Watcher",10189,1,0,9997,16,2
 10241,"Assembly of Iron",10189,1,0,9977,6,0
 10242,"Lord Marrowgar",10189,1,0,13351,42,0
+10244,,0,0,4,0,0,0
 10245,,10244,1,0,18108,1,2
+10247,,0,0,4,0,0,0
 10248,,10247,1,0,18109,1,2
 10253,"Proud owner of the 2007 Vintage Winter Veil gift, the Clockwork Rocket Bot.",0,1,8,0,0,0
 10254,"Clockwork Rocket Bot",10253,0,0,6350,3,2
@@ -7497,6 +7554,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10306,"Runemaster Molgeim",10305,1,0,10082,1,2
 10308,"Make 30,000 gold from quest rewards.",0,0,4,0,0,0
 10309,,10308,300000000,0,4092,0,9
+10314,"Earn exalted status with and the right to represent every Horde race's faction in the Argent Tournament.",0,0,4,0,0,0
 10315,"The Argent Crusade",10314,0,0,2418,1,0
 10316,"Champion of Orgrimmar",10314,0,0,9673,2,0
 10317,"Champion of Sen'jin",10314,0,0,9674,3,0
@@ -7513,6 +7571,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10330,Stormwind,10328,1,0,11081,4,0
 10331,Darnassus,10328,1,0,11078,1,0
 10332,Ironforge,10328,1,0,11079,3,0
+10334,,0,1,5,0,0,0
 10335,"Shannox 25-Normal",10334,1,0,18057,2,2
 10336,"Shannox 10-Normal",10334,1,0,18056,1,2
 10338,"Defeat Captain Skyshatter in the Dragonmaw race on Netherwing Ledge.",0,0,4,0,0,0
@@ -7577,6 +7636,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10414,"The Black Stalker",10413,1,0,3243,1,0
 10416,"Gold from vendors",0,0,4,0,0,0
 10417,"Gold from vendors",10416,0,0,4091,1,8
+10419,,0,1,5,0,0,0
 10420,"Alysrazor 25-Normal",10419,1,0,18061,2,2
 10421,"Alysrazor 10-Normal",10419,1,0,18060,1,2
 10423,"In Isle of Conquest, kill 10 players with a Glaive Thrower without dying.",0,0,4,0,0,0
@@ -7701,10 +7761,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10566,"Vicious Gladiator",10561,1,0,18114,4,2
 10567,"Ruthless Gladiator",10561,1,0,18843,5,2
 10568,"Cataclysmic Gladiator",10561,1,0,18844,6,2
+10573,"Destroy the following vehicles in Isle of Conquest",0,0,4,0,0,0
 10574,"Siege Engine",10573,1,0,11501,4,0
 10575,Demolisher,10573,1,0,12179,2,0
 10576,Catapult,10573,1,0,12181,3,0
 10577,"Glaive Thrower",10573,1,0,11497,1,0
+10579,"Complete the Isle of Conquest achievements listed below.",0,0,4,0,0,0
 10580,"All Over the Isle",10579,0,0,11509,7,0
 10581,Mine,29090,0,0,11503,0,0
 10582,"Isle of Conquest Veteran",10579,0,0,11502,0,0
@@ -7778,6 +7840,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10694,"Exalted with Ratchet",10687,1,0,58453,4,2
 10696,"Defeat Hodir without any raid member having more than 2 stacks of Biting Cold in 10-player mode.",0,0,4,0,0,0
 10697,Hodir,10696,1,0,10247,1,2
+10705,"Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",0,0,4,0,0,0
 10706,"Knight of Arathor",10705,42000,0,5333,1,0
 10707,"Silverwing Sentinel",10705,42000,0,5334,2,0
 10708,"Hero of the Stormpike Guard",10705,42000,0,5335,0,0
@@ -7796,7 +7859,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 10727,Hadronox,10726,1,0,4244,1,2
 10729,"Koralon the Flame Watcher kills (Wintergrasp 25 player)",0,0,4,0,0,0
 10730,"Koralon the Flame Watcher",10729,1,0,13344,1,2
+10732,"Defeat Heroic Anub'arak.",0,0,4,0,0,0
 10733,"Complete the Trial of the Grand Crusader",10732,1,0,12208,1,2
+10735,"Earn exalted status with and the right to represent every Alliance race's faction in the Argent Tournament.",0,0,4,0,0,0
 10736,"Champion of Gnomeregan",10735,0,0,9670,4,0
 10737,"Champion of Stormwind",10735,0,0,9671,5,0
 10738,"Champion of Ironforge",10735,0,0,9672,6,0
@@ -7848,6 +7913,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 11023,Baleroc,11018,1,0,18100,5,0
 11024,"Majordomo Fandral Staghelm",11018,1,0,18101,6,0
 11025,Ragnaros,11018,1,0,18102,7,0
+11027,"While wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at each enemy capital's Bountiful Table.",0,0,4,0,0,0
 11028,"The Exodar",11027,1,0,11138,2,0
 11029,Darnassus,11027,1,0,11139,1,0
 11030,Ironforge,11027,1,0,11140,3,0
@@ -8017,6 +8083,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 11248,Freya,11247,1,0,10448,1,2
 11250,"Achieved Deadly Gladiator title.",0,0,4,0,0,0
 11251,"Deadly Gladiator",11250,1,0,10881,1,2
+11253,"Cook up one of every Pilgrim's Bounty dish.",0,0,4,0,0,0
 11254,"Cranberry Chutney",11253,1,0,11118,2,0
 11255,"Candied Sweet Potato",11253,1,0,11119,1,0
 11256,"Pumpkin Pie",11253,1,0,11120,3,0
@@ -8183,6 +8250,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 12345,"The Antechamber of Ulduar",12341,0,0,10028,2,0
 12347,"Kil'jaeden kills (Sunwell Plateau)",0,0,4,0,0,0
 12348,Kil'jaeden,12347,1,0,3261,1,0
+12350,,0,0,4,0,0,0
 12351,Occu'thar,12350,1,0,18093,1,2
 12353,"King Ymiron kills (Heroic Utgarde Pinnacle)",0,0,4,0,0,0
 12354,"King Ymiron",12353,1,0,5618,1,0
@@ -8200,6 +8268,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 12369,"Kill 50 rookery whelps within 15 seconds",12368,50,0,7622,1,1
 12371,"Kill 5 players carrying seaforium in a single battle.",0,0,4,0,0,0
 12372,"Kill 5 players carrying seaforium in a single battle",12371,5,0,7629,0,1
+12374,"Honor the flames of Kalimdor.",0,0,4,0,0,0
 12375,Ashenvale,12374,1,0,3112,0,0
 12376,Desolace,12374,1,0,3113,2,0
 12377,Durotar,12374,1,0,3114,3,0
@@ -8235,6 +8304,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 12409,Slad'ran,12408,1,0,7363,1,2
 12411,"Dalaran Jewelcrafter's Tokens gained",0,0,4,0,0,0
 12412,"Dalaran Jewelcrafter's Tokens gained",12411,0,0,7263,1,0
+12414,"Complete the Love is in the Air achievements listed below.",0,0,4,0,0,0
 12415,"Nation of Adoration",12414,0,0,6372,6,0
 12416,"Be Mine!",12414,0,0,6362,10,0
 12417,"Flirt With Disaster",12414,0,0,6367,3,0
@@ -8303,6 +8373,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 12519,Alchemy,12508,525,0,5567,3,2
 12521,"Complete 100 quests in Azshara.",0,0,4,0,0,0
 12522,Azshara,12521,100,0,13837,1,1
+12524,"Find your pet Spring Rabbit another one to love in each of the towns listed below.",0,0,4,0,0,0
 12525,"Falconwing Square",12524,1,0,9204,3,0
 12526,"Razor Hill",12524,1,0,9205,4,0
 12527,"Bloodhoof Village",12524,1,0,9202,1,0
@@ -8571,11 +8642,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 12853,"Toravon the Ice Watcher",12852,1,0,13324,1,2
 12857,"Valithria Dreamwalker rescues (Heroic Icecrown 10 player)",0,0,4,0,0,0
 12858,"Rescue Valithiria Dreamwalker",12857,1,0,13125,1,0
+12860,,0,0,4,0,0,0
 12861,"Scourgelord Tyrannus and Rimefang",12860,1,0,13174,1,0
 12863,"Professor Putricide kills (Heroic Icecrown 25 player)",0,0,4,0,0,0
 12864,"Professor Putricide",12863,1,0,13129,1,0
 12866,"Blood Queen Lana'thel kills (Heroic Icecrown 25 player)",0,0,4,0,0,0
 12867,"Defeat Blood-Queen Lana'thel",12866,1,0,13132,1,0
+12872,,0,1,8,0,0,0
 12873,Ragnaros,12872,1,0,18072,1,2
 12874,Ragnaros,12872,1,0,18073,2,2
 12876,"First person on the realm to achieve 450 skill in tailoring.",0,0,4,0,0,0
@@ -8724,12 +8797,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 13049,Rotface,13048,1,0,13120,1,0
 13051,"Victories over the Lich King (Heroic Icecrown 10 player)",0,0,4,0,0,0
 13052,"The Lich King",13051,1,0,13137,1,0
+13054,,0,0,4,0,0,0
 13055,Bronjahm,13054,1,0,13166,1,0
+13057,,0,0,4,0,0,0
 13058,Bronjahm,13057,1,0,13167,1,0
+13060,,0,1,8,0,0,0
 13061,Shannox,13060,1,0,18056,1,2
 13062,Shannox,13060,1,0,18057,2,2
 13067,"Defeat Trollgore in Drak'Tharon Keep on Heroic Difficulty before Consume reaches ten stacks.",0,0,4,0,0,0
 13068,Trollgore,13067,1,0,7579,1,2
+13070,"Complete the world events achievements listed below.",0,0,4,0,0,0
 13071,Merrymaker,13070,0,0,7566,7,0
 13072,"Hallowed Be Thy Name",13070,0,0,7558,6,0
 13073,"For The Children",13070,0,0,7555,3,0
@@ -8790,7 +8867,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 13156,"Flame Leviathan",13155,1,0,10087,1,2
 13158,"XT-002 Deconstructor kills (Ulduar 10 player)",0,0,4,0,0,0
 13159,"XT-002 Deconstructor",13158,1,0,9974,1,0
-13250,"Tender Wolf Steak",13185,0,0,7094,145,2
 13164,"Defeat Atramedes in Blackwing Descent on Heroic Difficulty.",0,1,8,0,0,0
 13165,Atramedes,13164,1,0,16266,1,2
 13166,Atramedes,13164,1,0,16267,2,2
@@ -8868,6 +8944,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 13247,"Mutton Chop",13185,0,0,6891,239,2
 13248,"Naaru Ration",13185,0,0,6893,243,2
 13249,"Spiced Worm Burger",13185,0,0,7029,157,2
+13250,"Tender Wolf Steak",13185,0,0,7094,145,2
 13251,"Senggin Root",13185,0,0,6989,466,2
 13252,"Sizzling Grizzly Flank",13185,0,0,6995,432,2
 13253,"Skyguard Rations",13185,0,0,6998,457,2
@@ -9374,6 +9451,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 13782,"Mr. Bigglesworth kills",0,1,7,0,0,0
 13783,"Mr. Bigglesworth",13782,1,0,9438,1,0
 13784,"Mr. Bigglesworth",13782,1,0,9819,2,0
+13786,"Raise 55 reputations to Exalted.",0,55,8,0,0,0
 13787,"Ashtongue Deathsworn",13786,42000,0,17926,19,0
 13788,"Hydraxian Waterlords",13786,42000,0,17909,2,0
 13789,"Exalted Darnassus",13786,42000,0,17456,3,0
@@ -9633,8 +9711,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14109,"Heroic: The Siege of Ulduar",14105,0,0,10031,1,0
 14111,"Defeat Razorscale without allowing her to fly into the air more than once in 25-player mode.",0,0,4,0,0,0
 14112,Razorscale,14111,1,0,10063,1,2
+14117,,0,0,4,0,0,0
 14118,"Devourer of Souls",14117,1,0,13169,1,0
+14120,,0,0,4,0,0,0
 14121,"Ick and Krick",14120,1,0,13172,1,0
+14123,,0,0,4,0,0,0
 14124,"Ick and Krick",14123,1,0,13173,1,0
 14126,"Heroic Rotface 10 (TRACKING ONLY) <DND>",0,0,4,0,0,0
 14127,Rotface,14126,1,0,13119,1,2
@@ -9656,8 +9737,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14155,"Unearthing Uldum",14152,1,0,13988,4,0
 14156,"Deep into Deepholm",14152,1,0,13987,3,0
 14157,"Coming Down the Mountain",14152,1,0,13986,2,0
+14159,,0,0,4,0,0,0
 14160,"Scourgelord Tyrannus and Rimefang",14159,1,0,13175,1,0
+14162,,0,0,4,0,0,0
 14163,Falric,14162,1,0,13176,1,0
+14165,,0,0,4,0,0,0
 14166,Marwyn,14165,1,0,13178,1,0
 14168,"Emblems of Triumph acquired",0,0,4,0,0,0
 14169,"Emblems of Triumph acquired <DND>",14168,0,0,13183,1,0
@@ -9671,6 +9755,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14180,"Survive the encounter with the Lich King",14179,1,0,13181,3,0
 14181,Marwyn,14179,1,0,13179,2,0
 14182,Falric,14179,1,0,13177,1,0
+14184,,0,1,5,0,0,0
 14185,"Alysrazor 10-Heroic",14184,1,0,18062,1,2
 14186,"Alysrazor 25-Heroic",14184,1,0,18063,2,2
 14188,"Arena Killing Blows",0,0,5,0,0,0
@@ -9688,6 +9773,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14204,"Defeat Sindragosa in 25-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",0,1,8,0,0,0
 14205,Sindragosa,14204,1,0,12989,2,2
 14206,Sindragosa,14204,1,0,12972,1,2
+14208,,0,1,8,0,0,0
 14209,,14208,1,0,18630,1,2
 14210,,14208,1,0,18631,2,2
 14211,,14208,1,0,18632,3,2
@@ -9719,6 +9805,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14240,Shredder,14235,100,0,7706,3,3
 14242,"Tailoring Patterns learned",0,0,4,0,0,0
 14243,"Tailoring Patterns known",14242,0,0,7230,0,0
+14246,"Complete the Wintergrasp achievements listed below.",0,0,4,0,0,0
 14247,"Wintergrasp Veteran",14246,0,0,9758,0,0
 14248,"Heroic: Archavon the Stone Watcher",14246,0,0,9766,5,0
 14249,"Within Our Grasp",14246,0,0,9759,1,0
@@ -9729,6 +9816,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14254,"Leaning Tower",14246,0,0,9770,8,0
 14255,"Wintergrasp Ranger",14246,0,0,9760,2,0
 14256,"Vehicular Gnomeslaughter",14246,0,0,9769,7,0
+14258,"Defend the beach without losing any walls.",0,0,4,0,0,0
 14259,"Defend the beach without losing any walls",14258,1,0,7636,1,2
 14261,"Attack Wintergrasp and succeed in 10 minutes or less.",0,0,4,0,0,0
 14262,"Attack Wintergrasp and succeed in 10 minutes or less.",14261,1,0,7666,1,2
@@ -9820,6 +9908,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14380,"Win 100 rated Arathi Basin matches while controlling all 5 flags in a guild group.",0,0,4,0,0,0
 14381,,14380,100,0,14654,0,1
 14387,"Eliminate the remaining Sha imprisoned in the Sealed Chambers and then defeat the Sha of Violence in Shado-pan Monastery on Heroic Difficulty.",0,0,4,0,0,0
+14389,"Obtain 100 mounts.",0,0,4,0,0,0
 14390,"Obtain 100 mounts",14389,100,0,4787,1,1
 14392,"Grobbulus kills (Naxxramas 10 player)",0,0,4,0,0,0
 14393,Grobbulus,14392,1,0,5114,1,0
@@ -9841,10 +9930,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14415,"Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 10-player mode.",0,1,8,0,0,0
 14416,Rotface,14415,1,0,12985,2,2
 14417,Rotface,14415,1,0,12984,1,2
+14419,,0,1,5,0,0,0
 14420,"Ragnaros 10-Normal",14419,1,0,18072,1,2
 14421,"Ragnaros 25-Normal",14419,1,0,18073,2,2
 14423,"Razorscale kills (Ulduar 25 player)",0,0,4,0,0,0
 14424,Razorscale,14423,1,0,9955,1,0
+14426,"Pelt the enemy leaders listed below.",0,0,4,0,0,0
 14427,"King Varian Wrynn",14426,1,0,12663,2,0
 14428,"Muradin Bronzebeard",14426,1,0,12664,1,0
 14429,"Tyrande Whisperwind",14426,1,0,12665,4,0
@@ -9916,6 +10007,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14506,"Smoke 'Em Out",14499,1,0,7285,8,0
 14507,"Riding the Red Rocket",14499,1,0,7286,9,0
 14508,"Kick 'Em While They're Down",14499,1,0,7282,5,0
+14510,"Complete the Grizzly Hills PvP daily quests listed below.",0,0,4,0,0,0
 14511,"Keep Them at Bay",14510,1,0,7294,8,0
 14512,"Shred the Alliance",14510,1,0,7288,2,0
 14513,"Smoke 'Em Out",14510,1,0,7295,9,0
@@ -9980,6 +10072,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14581,,14580,110,0,13609,1,1
 14583,"Complete 105 quests in Uldum.",0,0,4,0,0,0
 14584,,14583,105,0,13610,1,1
+14586,"Explore The Barrens, revealing the covered areas of the world map.",0,0,4,0,0,0
 14587,"Bael Modan",14586,1,0,14067,1,0
 14588,Battlescar,14586,1,0,14068,2,0
 14589,"Hunter's Hill",14586,1,0,14072,6,0
@@ -10005,6 +10098,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14611,Rogue,14607,85,0,14551,1,0
 14612,Warlock,14607,85,0,14552,2,0
 14613,Priest,14607,85,0,14650,5,0
+14615,"Complete the 25-player raid achievements listed below.",0,0,4,0,0,0
 14616,Boned,14615,0,0,13016,5,0
 14617,"Full House",14615,0,0,13017,6,0
 14618,"I'm on a Boat",14615,0,0,13018,7,0
@@ -10028,6 +10122,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14637,"Warsong Gulch",14634,1,0,6628,3,0
 14638,"Eye of the Storm",14634,1,0,6630,5,0
 14639,"Arathi Basin",14634,1,0,6627,2,0
+14641,"Destroy each of the vehicles listed below.",0,0,4,0,0,0
 14642,"Wintergrasp Catapult",14641,1,0,9178,1,0
 14643,"Wintergrasp Siege Engine",14641,1,0,6444,3,0
 14644,"Wintergrasp Tower Cannon",14641,1,0,9181,4,0
@@ -10072,6 +10167,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14708,"Lord Marrowgar",14707,1,0,13090,1,2
 14710,"Heroic Deathwhisper 10 (TRACKING ONLY) <DND>",0,0,4,0,0,0
 14711,"Lady Deathwhisper",14710,1,0,13104,1,2
+14713,,0,1,5,0,0,0
 14714,"Majordomo Fandral Staghelm 10-Normal",14713,1,0,18068,1,2
 14715,"Majordomo Fandral Staghelm 25-Normal",14713,1,0,18069,2,2
 14717,"Brew up some of Captain Rumsey's Lager.",0,0,4,0,0,0
@@ -10099,6 +10195,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14745,Gnome,14735,1,0,9146,4,0
 14746,Worgen,14735,1,0,17845,12,0
 14747,Goblin,14735,1,0,17846,5,0
+14749,"Complete all of the Tol Barad daily quests listed below.",0,0,4,0,0,0
 14750,"Rattling Their Cages",14749,1,0,16683,2,0
 14751,"Boosting Morale",14749,1,0,16684,3,0
 14752,"Shark Tank",14749,1,0,16685,4,0
@@ -10230,6 +10327,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14897,Festergut,14896,1,0,13356,1,0
 14899,"Rotface kills (Icecrown 25 player)",0,0,4,0,0,0
 14900,Rotface,14899,1,0,13357,1,0
+14902,,0,0,4,0,0,0
 14903,"Survive the encounter with the Lich King",14902,1,0,13181,1,0
 14914,"Resurrected by priests",0,0,5,0,0,0
 14915,"Resurrection (Rank 5)",14914,0,0,4967,3,0
@@ -10245,7 +10343,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14927,Thorim,14926,1,0,10561,1,0
 14929,"Freya victories (Ulduar 25 player)",0,0,4,0,0,0
 14930,Freya,14929,1,0,10563,1,0
+14932,"Defeat Heroic Faction Champions.",0,0,4,0,0,0
 14933,"Defeat the Faction Champions",14932,1,0,12239,1,2
+14935,"Defeat Heroic Lord Jaraxxus.",0,0,4,0,0,0
 14936,"Defeat Lord Jaraxxus",14935,1,0,12233,1,2
 14938,"Destroy a Flame Leviathan Defense Turret in 10-player mode.",0,0,4,0,0,0
 14939,"Leviathan Turret",14938,1,0,10619,1,2
@@ -10288,6 +10388,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 14996,"Total facepalms",14995,0,0,3232,1,0
 14998,"Emblems of Conquest acquired",0,0,4,0,0,0
 14999,"Emblems of Conquest acquired",14998,0,0,10196,1,0
+15001,"Win a Strand of the Ancients battle without losing any siege vehicles.",0,0,4,0,0,0
 15002,"Win a Strand of the Ancients battle without losing any siege vehicles",15001,1,0,7626,1,2
 15004,"Defeat XT-002 Deconstructor in 205 seconds in 25-player mode.",0,0,4,0,0,0
 15005,"Kill the XT-002",15004,1,0,10081,1,2
@@ -10488,7 +10589,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15282,"The Earthen Ring exalted",15281,42000,0,14520,1,2
 15284,"Earn exalted status with the Guardians of Hyjal.",0,0,4,0,0,0
 15285,"Guardians of Hyjal Exalted",15284,42000,0,14521,1,2
+15287,,0,0,4,0,0,0
 15288,"Forgemaster Garfrost",15287,1,0,13170,1,0
+15290,,0,0,4,0,0,0
 15291,"Forgemaster Garfrost",15290,1,0,13182,1,0
 15293,"Find 20 rare artifacts.",0,0,4,0,0,0
 15294,"Find 20 rare artifacts.",15293,20,0,16194,1,1
@@ -10521,6 +10624,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15332,"Defend 10 bases",15331,10,0,14932,1,1
 15334,"Defeat Exarch Maladaar on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 15335,"Exarch Maladaar",15334,1,0,14360,1,2
+15337,,0,1,5,0,0,0
 15338,"Nefarian 10-Normal",15337,1,0,16272,1,2
 15339,"Nefarian 25-Normal",15337,1,0,16273,2,2
 15341,"Defeat Halfus Wyrmbreaker after defeating two drakes within 10 seconds of each other. The Emerald Whelp pack counts as one drake for this purpose.",0,0,4,0,0,0
@@ -10548,7 +10652,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15377,"The Quaking Fields",15367,1,0,15130,9,0
 15378,"Deathwing's Fall",15367,0,0,13780,1,0
 15379,"Twilight Overlook",15367,1,0,15131,10,0
-15491,"Big Gulp",15490,1,0,15815,4,0
 15381,"Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 10-player mode.",0,1,8,0,0,0
 15382,Festergut,15381,1,0,12986,2,2
 15383,Festergut,15381,1,0,12977,1,2
@@ -10582,14 +10685,18 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15420,Alchemy,15411,525,0,5573,9,2
 15421,Alchemy,15411,525,0,5720,10,2
 15422,Alchemy,15411,525,0,5575,11,2
+15427,,0,1,5,0,0,0
 15428,"Al'Akir 10-Normal",15427,1,0,16294,1,2
 15429,"Al'Akir 25-Normal",15427,1,0,16295,2,2
 15431,"Defeat Ingvar the Plunderer on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 15432,"Ingvar the Plunderer",15431,1,0,14386,1,2
+15434,,0,1,5,0,0,0
 15435,"Nefarian 10-Heroic",15434,1,0,16274,1,2
 15436,"Nefarian 25-Heroic",15434,1,0,16275,2,2
+15438,,0,1,5,0,0,0
 15439,"Valiona 10-Heroic",15438,1,0,16278,1,2
 15440,"Valiona 25-Heroic",15438,1,0,16279,2,2
+15442,,0,1,5,0,0,0
 15443,"Ascendant Council 10-Heroic",15442,1,0,16282,1,2
 15444,"Ascendant Council 25-Heroic",15442,1,0,16283,2,2
 15446,"Earn a battleground rating of 1700.",0,0,4,0,0,0
@@ -10624,6 +10731,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15487,Rogue,15478,1,0,15550,7,0
 15488,Priest,15478,1,0,15549,6,0
 15490,"Complete each of the Stormwind fishing daily quests.",0,0,4,0,0,0
+15491,"Big Gulp",15490,1,0,15815,4,0
 15492,"Rock Lobster",15490,1,0,15814,3,0
 15493,"Hitting a Walleye",15490,1,0,15812,1,0
 15494,"Diggin' for Worms",15490,1,0,15813,2,0
@@ -10682,6 +10790,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15559,,15558,450,0,13812,0,2
 15561,"Perform a /gasp emote under the double rainbow in the Battle For Gilneas.",0,0,4,0,0,0
 15562,"Peform a /gasp emote beneath the double rainbow in the Battle for Gilneas",15561,1,0,14989,1,2
+15564,,0,1,5,0,0,0
 15565,"Al'Akir 25-Heroic",15564,1,0,16297,2,2
 15566,"Al'Akir 10-Heroic",15564,1,0,16296,1,2
 15568,"Defeat Blood-Queen Lana'thel once as a vampire and again without becoming a vampire in 10-player mode.",0,0,4,0,0,0
@@ -10881,23 +10990,31 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 15830,"The League of Arathor",15829,42000,0,5333,1,0
 15831,"Silverwing Sentinels",15829,42000,0,5334,2,0
 15832,"Stormpike Guard",15829,42000,0,5335,3,0
+15834,,0,1,5,0,0,0
 15835,"Halfus 10-Normal",15834,1,0,16250,1,2
 15836,"Halfus 25-Normal",15834,1,0,16251,2,2
+15838,,0,1,5,0,0,0
 15839,"Valiona 10-Normal",15838,1,0,16276,1,2
 15840,"Valiona 25-Normal",15838,1,0,16277,2,2
+15842,,0,1,5,0,0,0
 15843,"Magmaw 25-Heroic",15842,1,0,16255,2,2
 15844,"Magmaw 10-Heroic",15842,1,0,16254,1,2
+15846,,0,1,5,0,0,0
 15847,"Atramedes 10-Heroic",15846,1,0,16266,1,2
 15848,"Atramedes 25-Heroic",15846,1,0,16267,2,2
+15850,,0,1,5,0,0,0
 15851,"Chimaeron 10-Heroic",15850,1,0,16268,1,2
 15852,"Chimaeron 25-Heroic",15850,1,0,16269,2,2
+15854,,0,1,5,0,0,0
 15855,"Conclave 25-Normal",15854,1,0,16293,2,2
 15856,"Conclave 10-Normal",15854,1,0,16292,1,2
 15867,"Earn a battleground rating of 1800.",0,0,4,0,0,0
 15868,,15867,1800,0,15300,1,2
+15870,"Earn a battleground rating of 2100.",0,0,4,0,0,0
 15871,,15870,2100,0,15300,1,2
 15876,"Earn a battleground rating of 1600.",0,0,4,0,0,0
 15877,,15876,1600,0,15300,1,2
+15879,,0,1,5,0,0,0
 15880,,15879,1,0,16298,1,0
 15881,,15879,1,0,16299,2,0
 15886,"Win 10 rated battlegrounds.",0,0,4,0,0,0
@@ -11323,7 +11440,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16311,"Skethyl Berries",15901,0,0,6996,442,2
 16312,"Winter Veil Egg Nog",15901,1,0,4681,123,2
 16313,"Enriched Terocone Juice",15901,1,0,4683,122,2
-16394,"Draenic Dumplings",15901,0,0,18601,481,2
 16314,"Freshly-Speared Emperor Salmon",15901,1,0,7956,121,2
 16315,"Funnel Cake",15901,1,0,7957,118,2
 16316,"Dalaran Brownie",15901,0,0,6560,257,2
@@ -11404,11 +11520,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16391,"Conjured Mana Brownie",15901,0,0,18626,494,2
 16392,"Conjured Mana Cupcake",15901,0,0,18627,495,2
 16393,"Succulent Sausage",15901,0,0,18620,488,2
+16394,"Draenic Dumplings",15901,0,0,18601,481,2
 16395,"Spiced Onion Cheese",15901,0,0,18621,489,2
 16396,"Conjured Mana Lollipop",15901,0,0,18628,496,2
 16397,"Beer-Basted Short Ribs",15901,0,0,18599,479,2
 16398,"The Golden Link",15901,0,0,18624,492,2
 16399,"Conjured Mana Cake",15901,0,0,18629,497,2
+16401,"Complete the Winter Veil achievements listed below.",0,0,4,0,0,0
 16402,"On Metzen!",16401,0,0,6274,1,0
 16403,Scrooge,16401,0,0,6276,3,0
 16404,"He Knows If You've Been Naughty",16401,0,0,6284,10,0
@@ -11441,6 +11559,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16436,"Logged in during 6th anniversary event",16435,1,0,16082,1,2
 16441,"Victories over the Lich King (Icecrown 10 player)",0,0,4,0,0,0
 16442,"The Lich King",16441,1,0,13309,1,0
+16444,,0,0,4,0,0,0
 16445,"Devourer of Souls",16444,1,0,13168,1,0
 16447,"Earn 5000 Valor Points",0,0,4,0,0,0
 16448,,16447,500000,0,16305,0,1
@@ -11480,6 +11599,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16486,"First Trinket",16471,1,0,15341,12,0
 16488,"Win 300 rated battlegrounds.",0,0,4,0,0,0
 16489,"Win 300 rated battlegrounds",16488,300,0,15289,1,1
+16494,,0,1,5,0,0,0
 16495,"Halfus 10-Heroic",16494,1,0,16248,1,2
 16496,"Halfus 25-Heroic",16494,1,0,16249,2,2
 16501,"Reach level 85 on each of the Night Elf classes listed below.",0,0,4,0,0,0
@@ -11549,6 +11669,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16571,"Kill Anub'arak in 4 minutes or less.",16570,1,0,7130,1,2
 16576,"Defeat Rattlegore without allowing him to gain more than 5 stacks of Rusting in Scholomance on Heroic Difficulty.",0,0,4,0,0,0
 16577,Rattlegore,16576,1,0,19007,1,2
+16579,,0,0,4,0,0,0
 16580,Marwyn,16579,1,0,13179,1,0
 16582,"Completed the gates of Ahn'Qiraj quest chain up to and including Treasure of the Timeless One (even if someone else ended up with the mount).",0,0,4,0,0,0
 16583,,16582,1,0,16165,1,2
@@ -11618,6 +11739,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16667,"Ashtongue Deathsworn",16661,42000,0,4750,5,0
 16669,"Raise 25 reputations to Exalted.",0,1,8,0,0,0
 16670,"Raise 25 reputations to Exalted.",16669,25,0,17161,1,1
+16672,,0,1,8,0,0,0
 16673,Baleroc,16672,1,0,18064,1,2
 16674,Baleroc,16672,1,0,18065,2,2
 16676,"Gunship Battle victories (Heroic Icecrown 10 player)",0,0,4,0,0,0
@@ -11720,12 +11842,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16804,,16803,0,0,13426,1,0
 16806,"Achieved Wrathful Gladiator title.",0,0,4,0,0,0
 16807,,16806,1,0,12912,1,2
+16809,,0,1,5,0,0,0
 16810,"Ascendant Council 25-Normal",16809,1,0,16281,2,2
 16811,"Ascendant Council 10-Normal",16809,1,0,16280,1,2
 16816,"Complete the Twilight's Hammer quest chain in Twilight Highlands up to and including Skullcrusher the Mountain.",0,0,4,0,0,0
 16817,,16816,1,0,15285,1,2
 16819,"Kill 20 Mine Rats during the Helix Gearbreaker encounter in Deadmines on Heroic Difficulty.",0,0,4,0,0,0
 16820,"Helix Gearbreaker",16819,20,0,16209,1,1
+16822,"Earn a battleground rating of 1500.",0,0,4,0,0,0
 16823,,16822,1500,0,15300,1,2
 16825,"First person on the realm to achieve 525 skill in blacksmithing.",0,0,4,0,0,0
 16826,,16825,525,0,5566,0,2
@@ -11742,6 +11866,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 16842,"Admiral Ripsnarl",16841,3,0,16211,1,2
 16844,"Earn 25,000 Conquest Points",0,0,4,0,0,0
 16845,,16844,2500000,0,16309,0,1
+16847,"In a single Twin Peaks battle, capture and return a total of 9 flags.",0,9,5,0,0,0
 16848,"Capture the flag",16847,9,0,14895,1,3
 16849,"Return the flag",16847,9,0,14896,2,3
 16851,"Defeat Rajh in Halls of Origination.",0,0,4,0,0,0
@@ -11930,7 +12055,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17054,Warrior,17049,1,0,14741,5,0
 17055,Hunter,17049,1,0,14742,6,0
 17056,Shaman,17049,1,0,14743,7,0
-17164,"Wielder of Thunderfury, Blessed Blade of the Windseeker",0,1,8,0,0,0
 17058,"Defeat Blood-Queen Lana'thel once as a vampire and again without becoming a vampire in 25-player mode.",0,0,4,0,0,0
 17059,"Defeat Blood-Queen Lana'thel without becoming a vampire",17058,1,0,13012,1,0
 17060,"Defeat Blood-Queen Lana'thel while a vampire",17058,1,0,13013,2,0
@@ -11943,6 +12067,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17068,"Canopic Jar",17062,1,0,15105,6,0
 17070,"Win the Battle for Gilneas by 100 points or less.",0,0,4,0,0,0
 17071,"Win the Battle for Gilneas by 100 points or less.",17070,1,0,14945,1,2
+17073,"Complete the slayer achievements listed below.",0,0,4,0,0,0
 17074,"Human Slayer",17073,0,0,14752,1,0
 17075,"Dwarf Slayer",17073,0,0,14753,2,0
 17076,"Gnome Slayer",17073,0,0,14754,3,0
@@ -11959,6 +12084,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17091,"Loremaster (Hidden Old Criteria)",0,0,4,0,0,0
 17092,"Loremaster of Eastern Kingdoms",17091,1,0,6143,0,0
 17094,"Loremaster of Kalimdor",17091,1,0,6144,1,0
+17098,"Complete the Brewfest achievements listed below.",0,0,4,0,0,0
 17099,"Have Keg, Will Travel",17098,0,0,6190,5,0
 17100,"Does Your Wolpertinger Linger?",17098,0,0,7234,6,0
 17101,"The Brewfest Diet",17098,0,0,6174,1,0
@@ -11972,6 +12098,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17118,"Perform a roar emote with the flag while under the effect of both a speed power up and the berserking power up.",0,1,8,0,0,0
 17119,"Roar while Berserking and Speeding",17118,1,0,63548,2,2
 17120,"Roar while Berserking and Speeding",17118,1,0,63547,1,2
+17122,"Complete the classy achievements listed below.",0,0,4,0,0,0
 17123,"Classy Undead",17122,0,0,14585,3,0
 17124,"Classy Goblins",17122,0,0,14587,5,0
 17125,"Classy Orcs",17122,0,0,14582,0,0
@@ -11992,6 +12119,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17146,"King Ymiron",17145,1,0,14396,1,2
 17148,"Win a rated battleground.",0,0,4,0,0,0
 17149,"Win a rated battleground",17148,1,0,15289,1,2
+17151,"Win a rated battleground.",0,0,4,0,0,0
 17152,"Win a rated battleground",17151,1,0,15289,1,2
 17154,"Festergut kills (Heroic Icecrown 10 player)",0,0,4,0,0,0
 17155,Festergut,17154,1,0,13116,1,0
@@ -12001,6 +12129,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17160,"The Frostwing Halls",17157,0,0,12766,4,0
 17161,"The Crimson Hall",17157,0,0,12768,3,0
 17162,"The Frozen Throne",17157,0,0,12769,5,0
+17164,"Wielder of Thunderfury, Blessed Blade of the Windseeker",0,1,8,0,0,0
 17165,"Thunderfury, Blessed Blade of the Windseeker",17164,1,0,14762,1,2
 17167,"Owner of a set of Warglaives of Azzinoth.",0,0,4,0,0,0
 17168,"Warglaives of Azzinoth",17167,1,0,14764,1,2
@@ -12029,6 +12158,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17202,"Dragonwrath, Tarecgosa's Rest",17195,0,0,17720,6,0
 17204,"Find 10 rare artifacts.",0,0,4,0,0,0
 17205,"Find 10 rare artifacts.",17204,10,0,16194,1,1
+17207,"Complete the 10-player raid achievements listed below.",0,0,4,0,0,0
 17208,"Nausea, Heartburn, Indigestion...",17207,0,0,12923,11,0
 17209,"I'm on a Boat",17207,0,0,12919,7,0
 17210,"Dances with Oozes",17207,0,0,12921,9,0
@@ -12087,6 +12217,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17275,"Professor Putricide",17274,1,0,13358,1,0
 17277,"Valithria Dreamwalker rescues (Heroic Icecrown 25 player)",0,0,4,0,0,0
 17278,"Rescue Valithiria Dreamwalker",17277,1,0,13126,1,0
+17280,"Complete the Cataclysm quest achievements listed below.",0,0,4,0,0,0
 17281,"Sinking into Vashj'ir",29118,1,0,13663,0,0
 17282,"Coming Down the Mountain",17280,1,0,13986,1,0
 17283,"Deep into Deepholm",17280,1,0,13987,2,0
@@ -12119,6 +12250,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17334,"Clammy Hands",17331,1,0,15817,1,0
 17335,"A Staggering Effort",17331,1,0,15819,3,0
 17336,"A Golden Opportunity",17331,1,0,15821,5,0
+17338,,0,1,5,0,0,0
 17339,"Magmaw 25-Normal",17338,1,0,16253,2,2
 17340,"Magmaw 10-Normal",17338,1,0,16252,1,2
 17342,"Kill 5 Dwarves in a single Twin Peaks battle.",0,0,4,0,0,0
@@ -12161,12 +12293,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17396,,17395,1,0,12993,1,2
 17398,"Kill 5 Orcs in a single Twin Peaks battle.",0,0,4,0,0,0
 17399,"Kill 5 Orcs",17398,5,0,14894,1,1
+17401,,0,1,5,0,0,0
 17402,"Omnotron 10-Normal",17401,1,0,16256,1,2
 17403,"Omnotron 25-Normal",17401,1,0,16257,2,2
+17405,,0,1,5,0,0,0
 17406,"Maloriak 25-Normal",17405,1,0,16261,2,2
 17407,"Maloriak 10-Normal",17405,1,0,16260,1,2
+17409,,0,1,5,0,0,0
 17410,"Maloriak 25-Heroic",17409,1,0,16263,2,2
 17411,"Maloriak 10-Heroic",17409,1,0,16262,1,2
+17413,,0,1,5,0,0,0
 17414,"Atramedes 10-Normal",17413,1,0,16264,1,2
 17415,"Atramedes 25-Normal",17413,1,0,16265,2,2
 17417,"Complete 80 quests in Westfall and Duskwood.",0,80,5,0,0,0
@@ -12205,6 +12341,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17459,"Battle for Gilneas",17451,0,0,16531,7,0
 17461,"Rated Warsong Gulch victories",0,0,4,0,0,0
 17462,"Warsong Gulch Victories",17461,0,0,16524,1,0
+17464,,0,0,4,0,0,0
 17465,,17464,45,0,16400,1,2
 17467,"Rated battlegrounds played",0,0,5,0,0,0
 17468,"Eye of the Storm",17467,0,0,16515,1,0
@@ -12238,7 +12375,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17501,Bronjahm,17499,1,0,13167,1,0
 17503,"Defeat Lord Godfrey while in a guild group.",0,1,8,0,0,0
 17504,"Lord Godfrey",17503,1,0,14589,1,2
+17506,"Earn a battleground rating of 1200.",0,0,4,0,0,0
 17507,,17506,1200,0,15300,1,2
+17509,,0,1,5,0,0,0
 17510,"Cho'gall 10-Normal",17509,1,0,16286,1,2
 17511,"Cho'gall 25-Normal",17509,1,0,16287,2,2
 17513,"Earn 25,000 Valor Points",0,0,4,0,0,0
@@ -12249,8 +12388,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17520,,17519,5000000,0,16309,0,1
 17522,"Defeat Kael'thas Sunstrider in Tempest Keep while in a guild group.",0,1,8,0,0,0
 17523,"Kael'thas Sunstrider",17522,1,0,14378,1,2
+17525,,0,0,4,0,0,0
 17526,,17525,81,0,16400,1,2
+17528,,0,0,4,0,0,0
 17529,,17528,82,0,16400,1,2
+17531,,0,0,4,0,0,0
 17532,,17531,83,0,16400,1,2
 17534,"Level 84 <DND>",0,0,4,0,0,0
 17535,,17534,84,0,16400,0,2
@@ -12364,7 +12506,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17655,"Strand of the Ancients",17654,0,0,16516,1,0
 17657,"Rated Twin Peaks battles",0,0,4,0,0,0
 17658,"Twin Peaks",17657,0,0,16518,1,0
+17660,,0,0,4,0,0,0
 17661,"High Priestess Azil",17660,1,0,16779,1,2
+17663,,0,0,4,0,0,0
 17664,Rajh,17663,1,0,16786,1,2
 17666,"Owner of Dragonwrath, Tarecgosa's Rest",0,1,8,0,0,0
 17667,"Dragonwrath, Tarecgosa's Rest",17666,1,0,17718,1,2
@@ -12372,6 +12516,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17670,,17669,500000,0,16309,0,1
 17672,"Earn 1000 Conquest Points",0,0,4,0,0,0
 17673,,17672,100000,0,16309,0,1
+17675,,0,1,5,0,0,0
 17676,"Omnotron 10-Heroic",17675,1,0,16258,1,2
 17677,"Omnotron 25-Heroic",17675,1,0,16259,2,2
 17679,"Complete 40 quests in Wetlands.",0,0,4,0,0,0
@@ -12392,6 +12537,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17701,,17700,500,0,15691,1,1
 17703,"Win 1000 ranked arena matches while in a guild group.",0,0,4,0,0,0
 17704,,17703,1000,0,15691,1,1
+17706,"Earn a battleground rating of 1800.",0,0,4,0,0,0
 17707,,17706,1800,0,15300,1,2
 17709,"Earn the Grand Marshal title on all of the classes below.",0,0,4,0,0,0
 17710,Paladin,17709,1,0,15588,5,0
@@ -12415,6 +12561,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17729,Warlock,17721,1,0,15612,8,0
 17730,Warrior,17721,1,0,15613,9,0
 17731,"Death Knight",17721,1,0,15604,0,0
+17733,"Earn the Battlemaster title on all of the classes below.",0,0,4,0,0,0
 17734,Paladin,17733,1,0,22247,4,0
 17735,Priest,17733,1,0,22248,5,0
 17736,Rogue,17733,1,0,22249,6,0
@@ -12452,6 +12599,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17772,"Back to Basics",17767,1,0,17730,3,0
 17774,"Twin Peaks Honorable Kills",0,0,4,0,0,0
 17775,"Twin Peaks",17774,0,0,17412,1,0
+17777,"Win 150 rated battlegrounds.",0,0,4,0,0,0
 17778,"Win 150 rated battlegrounds",17777,150,0,15289,1,1
 17780,"Discover how orc Chieftan Hargal was killed by collecting the following artifacts.",0,0,4,0,0,0
 17781,"Tiny Bronze Scorpion",17780,1,0,15061,1,0
@@ -12464,6 +12612,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17790,,17789,3000,0,62968,0,1
 17792,"Defeat General Umbriss while he is affected with Modgud's Malice in Grim Batol on Heroic Difficulty.",0,0,4,0,0,0
 17793,"General Umbriss",17792,1,0,16000,1,2
+17795,"Complete the Twilight's Hammer quest chain in Twilight Highlands up to and including Skullcrusher the Mountain.",0,0,4,0,0,0
 17796,,17795,1,0,15284,1,2
 17798,"Deaths at Level 17 <DND>",0,0,4,0,0,0
 17799,,17798,0,0,16416,1,2
@@ -12584,6 +12733,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17965,"Get 250000 honorable kills",17964,250000,0,13253,1,1
 17967,"Win 25 rated battlegrounds.",0,0,4,0,0,0
 17968,"Win 25 rated battlegrounds",17967,25,0,15289,1,1
+17970,,0,0,4,0,0,0
 17971,,17970,2,0,16400,1,2
 17973,"Quests at Level 2 <DND>",0,0,4,0,0,0
 17974,"Quests at Level 2 <DND>",17973,0,0,16187,1,2
@@ -12591,6 +12741,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 17977,,17976,0,0,16188,1,2
 17979,"Complete 100 victories in the Battle For Gilneas.",0,0,4,0,0,0
 17980,"Complete 100 victories in the Battle For Gilneas.",17979,100,0,16513,1,1
+17982,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
 17983,"Pick up flag while it's at the base",17982,1,0,5603,1,2
 17984,"Cap in 75 seconds",17982,1,0,62967,2,2
 17986,"Return 50 flags as a defender in Twin Peaks.",0,0,4,0,0,0
@@ -12644,8 +12795,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18059,"Kill 10 enemies at the Lighthouse.",18056,10,0,14948,1,0
 18061,"Get Lady Naz'jar to kill one of her minions with her Geyser ability in Throne of the Tides on Heroic Difficulty.",0,0,4,0,0,0
 18062,"Minions Killed",18061,1,0,16006,1,2
+18064,,0,0,4,0,0,0
 18067,"Feel 1000% better by eating Chocolate Cookies.",0,0,4,0,0,0
 18068,"Gain 91 stacks of the Satisfied buff by eating Chocolate Cookies.",18067,1,0,17003,1,0
+18070,,0,0,4,0,0,0
 18073,"Survive 15 waves on Endless Mode the Peacebloom vs. Ghouls quest in Hillsbrad Foothills.",0,0,4,0,0,0
 18074,"Waves Survived",18073,15,0,23002,0,1
 18076,"Complete 62 quests in Ashenvale.",0,0,4,0,0,0
@@ -12665,9 +12818,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18092,"Ascendant Lord Obsidius",18091,1,0,15961,1,2
 18094,"Earn a battleground rating of 2000.",0,0,4,0,0,0
 18095,,18094,2000,0,15300,1,2
+18097,"Earn a battleground rating of 2200.",0,0,4,0,0,0
 18098,,18097,2200,0,15300,1,2
 18103,"Complete 15,000 daily quests.",0,0,4,0,0,0
 18104,,18103,15000,0,4984,0,1
+18106,"Earn a battleground rating of 1700.",0,0,4,0,0,0
 18107,,18106,1700,0,15300,1,2
 18109,"Deaths at Level 21-30 <DND>",0,0,4,0,0,0
 18110,,18109,0,0,16419,1,2
@@ -12694,6 +12849,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18138,"Lilian Voss",18137,1,0,19011,1,2
 18140,"Complete 50 guild raid challenges.",0,0,4,0,0,0
 18141,,18140,50,0,17007,0,1
+18143,,0,0,4,0,0,0
 18146,"Complete 50 guild rated battleground challenges.",0,0,4,0,0,0
 18147,,18146,50,0,17008,0,1
 18149,"Win a duel in Sethria's Roost while on the quest ""The Protectors of Hyjal.""",0,0,4,0,0,0
@@ -12784,6 +12940,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18262,Alysrazor,18255,1,0,17435,3,0
 18264,"Activate both of Fandral's Flames at once in Firelands without any raid member getting hit by Kneel to the Flame!",0,0,4,0,0,0
 18265,Fandral,18264,1,0,17418,1,2
+18267,,0,0,4,0,0,0
 18268,Falric,18267,1,0,13177,1,0
 18270,"Get 10 honorable kills at the Ironclad Garrison, Warden's Vigil, and Slagworks.",0,0,4,0,0,0
 18271,"Get 10 honorable kills at the Slagworks",18270,10,0,15967,3,1
@@ -12799,11 +12956,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18285,"The Battle for Gilneas",18284,0,0,17413,0,0
 18287,"Defeat Lord Rhyolith in the Firelands without ever causing him to turn left while his armor is intact.",0,0,4,0,0,0
 18288,"Lord Rhyolith",18287,1,0,17450,1,2
+18290,"Win a Twin Peaks battle after being behind by a score of 0 to 2.",0,0,4,0,0,0
 18291,Temp,18290,1,0,14891,1,2
 18293,"Twin Peaks battles",0,0,4,0,0,0
 18294,"Twin Peaks",18293,0,0,16510,1,0
 18299,"Defeat Talon King Ikiss on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 18300,"Talon King Ikiss",18299,1,0,14362,1,2
+18302,,0,1,5,0,0,0
 18303,"Sinestra 10-Heroic",18302,1,0,16288,1,2
 18304,"Sinestra 25-Heroic",18302,1,0,16289,2,2
 18306,"Earn a battleground rating of 1900.",0,0,4,0,0,0
@@ -12924,8 +13083,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18462,,18460,0,0,15368,2,2
 18464,"Complete the Restless Brood daily quest in Deepholm within 90 seconds of striking the Resonating Crystal.",0,1,8,0,0,0
 18465,,18464,1,0,63628,1,2
+18473,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
 18474,,18473,0,0,17548,1,0
+18476,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
 18477,,18476,0,0,17584,1,0
+18479,"Win 75 rated battlegrounds.",0,0,4,0,0,0
 18480,"Win 75 rated battlegrounds",18479,75,0,15289,1,1
 18482,"Defeat Ragnaros while three Living Meteors are ignited by Lava Wave.",0,0,4,0,0,0
 18483,Ragnaros,18482,1,0,17863,1,2
@@ -13050,6 +13212,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18627,Keristrasza,18615,1,0,12689,12,0
 18629,"Reach the highest point in the Widow's Clutch within the Molten Front.",0,0,4,0,0,0
 18630,"Reach the highest point in the Widow's Clutch",18629,1,0,17812,1,0
+18632,"Earn a battleground rating of 1400.",0,0,4,0,0,0
 18633,,18632,1400,0,15300,1,2
 18635,"Cut 2,500 gems of at least superior quality.",0,0,4,0,0,0
 18636,,18635,2500,0,14810,0,1
@@ -13067,10 +13230,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18651,,18644,1,0,16440,7,2
 18653,"Earn exalted status with the Shen'dralar.",0,0,4,0,0,0
 18654,"Exalted with the Shen'dralar.",18653,42000,0,17023,1,2
+18656,"Win 300 rated battlegrounds.",0,0,4,0,0,0
 18657,"Win 300 rated battlegrounds",18656,300,0,15289,1,1
+18659,,0,0,4,0,0,0
+18662,,0,0,4,0,0,0
 18663,Ozumat,18662,1,0,16777,1,2
+18665,,0,0,4,0,0,0
 18666,"High Priestess Azil",18665,1,0,16780,1,2
+18668,,0,0,4,0,0,0
 18669,Asaad,18668,1,0,16782,1,2
+18671,,0,0,4,0,0,0
 18672,"Siamat, Lord of the South Wind",18671,1,0,16787,1,2
 18674,"Defeat Nefarian in Blackwing Descent on Heroic Difficulty.",0,1,8,0,0,0
 18675,Nefarian,18674,1,0,16275,2,2
@@ -13110,6 +13279,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18716,"Storming the Citadel",18713,0,0,13071,1,0
 18717,"The Plagueworks",18713,0,0,13072,2,0
 18718,"The Crimson Hall",18713,0,0,13073,3,0
+18720,,0,0,4,0,0,0
 18721,"Survive the encounter with the Lich King",18720,1,0,13180,1,0
 18723,"Deaths in Trial of the Crusader",0,0,4,0,0,0
 18724,"Deaths in Trial of the Crusader",18723,0,0,13306,1,0
@@ -13122,11 +13292,17 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18732,"Towers of Power",18726,0,0,15973,2,0
 18734,"Loot 100,000 gold.",0,0,4,0,0,0
 18735,"Loot 100,000 gold",18734,1000000000,0,4093,1,9
+18740,,0,0,4,0,0,0
 18741,,18740,5,0,16400,1,2
+18743,,0,0,4,0,0,0
 18744,,18743,6,0,16400,1,2
+18746,,0,0,4,0,0,0
 18747,,18746,16,0,16400,1,2
+18749,,0,0,4,0,0,0
 18750,,18749,25,0,16400,1,2
+18752,,0,0,4,0,0,0
 18753,,18752,35,0,16400,1,2
+18755,,0,0,4,0,0,0
 18756,,18755,55,0,16400,1,2
 18758,"Deaths at Level 9 <DND>",0,0,4,0,0,0
 18759,,18758,0,0,16408,1,2
@@ -13150,6 +13326,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18783,"Sartharion the Onyx Guardian",18782,1,0,14242,1,2
 18785,"Earn 1000 Valor Points",0,0,4,0,0,0
 18786,,18785,100000,0,16305,0,1
+18788,"Win 10 rated battlegrounds.",0,0,4,0,0,0
 18789,"Win 10 rated battlegrounds",18788,10,0,15289,1,1
 18791,"Earn the General title on all of the classes below.",0,0,4,0,0,0
 18792,Druid,18791,1,0,15555,2,0
@@ -13197,6 +13374,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18842,"Quests at Level 10 <DND>",18841,0,0,16469,1,2
 18844,"Quests at Level 5 <DND>",0,0,4,0,0,0
 18845,"Quests at Level 5 <DND>",18844,0,0,16464,1,2
+18847,,0,1,5,0,0,0
 18848,"Conclave 25-Heroic",18847,1,0,16291,2,2
 18849,"Conclave 10-Heroic",18847,1,0,16290,1,2
 18851,"Deaths in Icecrown Citadel",0,0,4,0,0,0
@@ -13207,6 +13385,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18858,"Defeat Blood-Queen Lana'thel",18857,1,0,13131,1,2
 18863,"Destroy 3 Siege Engines in a single Tol Barad battle.",0,0,4,0,0,0
 18864,"Destroy 3 Siege Engines in a single battle",18863,3,0,15969,1,1
+18866,"Complete the Tol Barad achievements listed below.",0,0,4,0,0,0
 18867,"Tol Barad All-Star",18866,0,0,15975,4,0
 18868,"Tol Barad Veteran",29110,0,0,63508,0,0
 18869,"Tower Plower",18866,0,0,15972,1,0
@@ -13223,7 +13402,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18881,,18874,1,0,16454,7,2
 18886,"Deaths at Level 6 <DND>",0,0,4,0,0,0
 18887,,18886,0,0,16405,1,2
+18910,,0,0,4,0,0,0
 18911,,18910,3,0,16400,1,2
+18913,,0,0,4,0,0,0
 18914,,18913,4,0,16400,1,2
 18916,"Defeat Lord Rhyolith in Firelands on Heroic Difficulty.",0,1,8,0,0,0
 18917,"Lord Rhyolith",18916,1,0,18054,1,2
@@ -13233,6 +13414,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18922,Alysrazor,18920,1,0,18063,2,2
 18924,"Deaths at Level 1 <DND>",0,0,4,0,0,0
 18925,,18924,0,0,16494,1,2
+18927,"Complete 130 quests in Vashj'ir.",0,130,5,0,0,0
 18928,,18927,130,0,13607,1,2
 18929,,18927,130,0,16499,3,2
 18930,,18927,130,0,16500,4,2
@@ -13293,9 +13475,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18993,,18992,100000,0,64369,0,1
 18995,"Defeat Asaad in the Vortex Pinnacle on Heroic Difficulty.",0,0,4,0,0,0
 18996,Asaad,18995,1,0,16782,1,2
+18998,,0,1,5,0,0,0
 18999,"Chimaeron 10-Normal",18998,1,0,16270,1,2
 19000,"Chimaeron 25-Normal",18998,1,0,16271,2,2
-19110,"Scout's Tabard",19053,1,0,2909,22,2
 19005,"Complete 50 quests in Northern Stranglethorn.",0,0,4,0,0,0
 19006,"Stranglethorn Vale",19005,50,0,13704,1,1
 19008,"Complete 50 quests in Ghostlands.",0,0,4,0,0,0
@@ -13306,16 +13488,27 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19015,,19014,100000,0,15475,0,1
 19017,"Defeat Erudax without letting a Faceless Corruptor begin to cast Twilight Corruption on any of Alexstrasza's Eggs in Grim Batol on Heroic Difficulty.",0,0,4,0,0,0
 19018,"General Umbriss",19017,1,0,16001,1,2
+19020,,0,0,4,0,0,0
 19021,,19020,7,0,16400,1,2
+19023,,0,0,4,0,0,0
 19024,,19023,8,0,16400,1,2
+19026,,0,0,4,0,0,0
 19027,,19026,9,0,16400,1,2
+19029,,0,0,4,0,0,0
 19030,,19029,11,0,16400,1,2
+19032,,0,0,4,0,0,0
 19033,,19032,12,0,16400,1,2
+19035,,0,0,4,0,0,0
 19036,,19035,13,0,16400,1,2
+19038,,0,0,4,0,0,0
 19039,,19038,14,0,16400,1,2
+19041,,0,0,4,0,0,0
 19042,,19041,15,0,16400,1,2
+19044,,0,0,4,0,0,0
 19045,,19044,17,0,16400,1,2
+19047,,0,0,4,0,0,0
 19048,,19047,18,0,16400,1,2
+19050,,0,0,4,0,0,0
 19051,,19050,19,0,16400,1,2
 19053,"Equip 30 unique tabards.",0,30,8,0,0,0
 19054,"Tabard of the Protector",19053,1,0,2338,3,2
@@ -13374,6 +13567,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19107,"Tabard of the Hand",19053,1,0,2927,40,2
 19108,"Relentless Gladiator's Tabard",19053,1,0,12599,70,2
 19109,"Competitor's Tabard",19053,1,0,2897,10,2
+19110,"Scout's Tabard",19053,1,0,2909,22,2
 19111,"Wrathful Gladiator's Tabard",19053,1,0,13242,73,2
 19112,"Tabard of Brilliance",19053,1,0,2917,30,2
 19113,"Bilgewater Cartel Tabard",19053,1,0,16325,80,2
@@ -13422,6 +13616,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19159,Warrior,19155,1,0,14735,5,0
 19160,Warlock,19155,1,0,14736,6,0
 19161,"Death Knight",19155,1,0,14731,1,0
+19163,"Kill 100 flag carriers in Twin Peaks.",0,0,4,0,0,0
 19164,"Horde Flag Carriers",19163,100,0,14820,1,1
 19166,"Quests at Level 4 <DND>",0,0,4,0,0,0
 19167,"Quests at Level 4 <DND>",19166,0,0,16463,1,2
@@ -13463,9 +13658,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19214,,19213,5000,0,63537,0,1
 19216,"Complete the Coffer of Promise quests in Uldum up to and including Harrison Jones and the Temple of Uldum.",0,0,4,0,0,0
 19217,"Harrison Jones and the Temple of Uldum",19216,1,0,13926,1,2
+19219,,0,0,4,0,0,0
 19220,"Ascendant Lord Obsidius",19219,1,0,16776,1,2
+19222,,0,0,4,0,0,0
 19223,Ozumat,19222,1,0,16778,1,2
+19225,,0,0,4,0,0,0
 19226,Asaad,19225,1,0,16781,1,2
+19228,,0,0,4,0,0,0
 19229,Erudax,19228,1,0,16783,1,2
 19231,"Acknowledge your recognition by /waving at the following NPCs in Sethria's Roost.",0,0,4,0,0,0
 19232,Thassarian,19231,1,0,17811,6,0
@@ -13485,6 +13684,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19249,"Assault and Defend a base in a single Battle for Gilneas.",0,0,4,0,0,0
 19250,"Assault a base",19249,1,0,14946,1,0
 19251,"Defend a base",19249,1,0,14947,2,0
+19253,"Complete the Twin Peaks achievements listed below.",0,0,4,0,0,0
 19254,"Twin Peaks Veteran",19253,0,0,14833,1,0
 19255,"Top Defender",19253,0,0,14835,3,0
 19256,"Wild Hammering",19253,0,0,63597,8,0
@@ -13547,20 +13747,27 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19329,"Defeat Warmaster Blackhorn in Dragon Soul on Heroic Difficulty.",0,1,8,0,0,0
 19330,"Warmaster Blackhorn (10H)",19329,1,0,18565,1,2
 19331,"Warmaster Blackhorn (25H)",19329,1,0,18566,2,2
+19333,,0,1,8,0,0,0
 19334,"Morchok (10N)",19333,1,0,18545,1,2
 19335,"Morchok (25N)",19333,1,0,18546,2,2
+19337,,0,1,8,0,0,0
 19338,"Warlord Zon'ozz (10N)",19337,1,0,18547,1,2
 19339,"Warlord Zon'ozz (25N)",19337,1,0,18548,2,2
+19341,,0,1,8,0,0,0
 19342,"Yor'sahj the Unsleeping (10N)",19341,1,0,18549,1,2
 19343,"Yor'sahj the Unsleeping (25N)",19341,1,0,18550,2,2
+19345,,0,1,8,0,0,0
 19346,"Hagara the Stormbinder (10N)",19345,1,0,18551,1,2
 19347,"Hagara the Stormbinder (25N)",19345,1,0,18552,2,2
+19349,,0,1,8,0,0,0
 19350,"Ultraxion (10N)",19349,1,0,18553,1,2
 19351,"Ultraxion (25N)",19349,1,0,18554,2,2
+19353,,0,1,8,0,0,0
 19354,"Warmaster Blackhorn (10N)",19353,1,0,18555,1,2
 19355,"Warmaster Blackhorn (25N)",19353,1,0,18556,2,2
 19366,"Defeat Chimaeron in Blackwing Descent with no more than 2 raid member deaths.",0,0,4,0,0,0
 19367,Chimaeron,19366,1,0,16002,1,2
+19369,,0,1,5,0,0,0
 19370,"Cho'gall 10-Heroic",19369,1,0,16284,1,2
 19371,"Cho'gall 25-Heroic",19369,1,0,16285,2,2
 19373,"Defeat Rajh before he completes an entire recharging phase in the Halls of Origination on Heroic Difficulty.",0,0,4,0,0,0
@@ -13579,15 +13786,23 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19393,"Lava Guard Gordoth",19392,1,0,102769,0,2
 19395,server-only,0,0,4,0,0,2
 19396,Aku'mai,19395,1,0,18526,1,2
+19398,server-only,0,0,4,0,0,2
 19399,"Charlga Razorflank",19398,1,0,18528,1,2
+19401,server-only,0,0,4,0,0,2
 19402,"Mekgineer Thermaplugg",19401,1,0,18529,1,2
+19404,,0,1,5,0,0,0
 19405,"Morchok (10H)",19404,1,0,18575,1,2
 19406,"Morchok (25H)",19404,1,0,18576,2,2
+19408,server-only,0,0,4,0,0,2
 19409,"Overlord Wyrmthalak",19408,1,0,18534,1,2
+19411,server-only,0,0,4,0,0,2
 19412,"Shade of Eranikus",19411,1,0,18533,1,2
+19414,server-only,0,0,4,0,0,2
 19415,"Omor the Unscarred",19414,1,0,18536,1,2
+19417,,0,1,8,0,0,0
 19418,"Spine of Deathwing (10N)",19417,1,0,18557,1,2
 19419,"Spine of Deathwing (25N)",19417,1,0,18558,2,2
+19460,,0,0,4,0,0,0
 19461,"Siamat, Lord of the South Wind",19460,1,0,16788,1,2
 19463,"Defeat 20 Twisted Spirits within 15 seconds during the Jin'do encounter in Zul'Gurub on Heroic Difficulty.",0,0,4,0,0,0
 19464,"Kill 20 Twisted Spirits within 15 seconds.",19463,20,0,63602,1,1
@@ -13611,7 +13826,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19488,"Destroy Deathwing in Dragon Soul on Heroic Difficulty.",0,1,8,0,0,0
 19489,"Madness of Deathwing (25H)",19488,1,0,18562,2,2
 19490,"Madness of Deathwing (10H)",19488,1,0,18561,1,2
+19492,server-only,0,0,4,0,0,2
 19493,"King Gordok",19492,1,0,18535,1,0
+19495,,0,1,5,0,0,0
 19496,"Hagara the Stormbinder (25H)",19495,1,0,18570,2,2
 19497,"Hagara the Stormbinder (10H)",19495,1,0,18569,1,2
 19499,"Defeat Murozond in End Time on Heroic Difficulty.",0,0,4,0,0,0
@@ -13678,6 +13895,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19603,"Defeat Magmaw in Blackwing Descent on Heroic Difficulty.",0,1,8,0,0,0
 19604,Magmaw,19603,1,0,16254,1,2
 19605,Magmaw,19603,1,0,16255,2,2
+19607,"Earn exalted reputation with the classic battlegrounds listed below.",0,0,4,0,0,0
 19608,"The Defilers",19607,42000,0,5318,1,0
 19609,"Warsong Outriders",19607,42000,0,5319,2,0
 19610,"Frostwolf Clan",19607,42000,0,5320,3,0
@@ -13702,6 +13920,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19641,"Twilight Highlands",19639,1,0,18207,1,0
 19643,"Defeat Mannoroth in Well of Eternity on Heroic Difficulty after dealing enough damage to Mannoroth while Varo'then is still alive to cause him to sacrifice Varo'then to heal himself.",0,0,4,0,0,0
 19644,Mannoroth,19643,1,0,18363,1,2
+19646,,0,1,8,0,0,0
 19647,,19646,1,0,18503,1,2
 19648,,19646,1,0,18504,2,2
 19649,,19646,1,0,18505,3,2
@@ -13721,20 +13940,30 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19663,,19646,1,0,18519,17,2
 19664,,19646,1,0,18520,18,2
 19665,,19646,1,0,18521,19,2
+19667,,0,0,4,0,0,0
 19668,Hogger,19667,1,0,18527,1,2
+19670,server-only,0,0,4,0,0,2
 19671,"Amnennar the Coldbringer",19670,1,0,18530,1,2
+19673,server-only,0,0,4,0,0,2
 19674,"Princess Theradras",19673,1,0,18532,1,2
+19676,server-only,0,0,4,0,0,2
 19677,Archimonde,19676,1,0,18537,1,2
+19679,,0,0,4,0,0,0
 19680,Murozond,19679,1,0,18542,1,2
+19682,,0,0,4,0,0,0
 19683,"Archbishop Benedictus",19682,1,0,18544,1,2
+19685,,0,1,5,0,0,0
 19686,"Morchok (25N)",19685,1,0,18546,2,2
 19687,"Morchok (10N)",19685,1,0,18545,1,2
 19688,"Morchok (LFR)",19685,1,0,18687,3,2
+19690,,0,1,5,0,0,0
 19691,"Warlord Zon'ozz (25N)",19690,1,0,18548,2,2
 19692,"Warlord Zon'ozz (10N)",19690,1,0,18547,1,2
 19693,"Warlord Zon'ozz (LFR)",19690,1,0,18688,3,2
+19695,,0,1,5,0,0,0
 19696,"Warlord Zon'ozz (10H)",19695,1,0,18573,1,2
 19697,"Warlord Zon'ozz (25H)",19695,1,0,18574,2,2
+19699,,0,1,5,0,0,0
 19700,"Yor'sahj the Unsleeping (10N)",19699,1,0,18549,1,2
 19701,"Yor'sahj the Unsleeping (25N)",19699,1,0,18550,2,2
 19702,"Yor'sahj the Unsleeping (LFR)",19699,1,0,18689,3,2
@@ -13760,28 +13989,38 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19747,"Madness of Deathwing",19739,1,0,18487,8,0
 19749,"Defeat the Spine of Deathwing encounter on Normal or Heroic Difficulty after tricking Deathwing into performing the following roll sequence: Left, Right, Left, Right.",0,0,4,0,0,0
 19750,"Deathwing (Maybe he'll get dizzy...)",19749,1,0,18502,1,2
+19752,server-only,0,0,4,0,0,2
 19753,Archaedas,19752,1,0,18531,1,2
+19755,,0,1,5,0,0,0
 19756,"Yor'sahj the Unsleeping (25H)",19755,1,0,18572,2,2
 19757,"Yor'sahj the Unsleeping (10H)",19755,1,0,18571,1,2
+19759,,0,1,5,0,0,0
 19760,"Spine of Deathwing (LFR)",19759,1,0,18693,3,2
 19761,"Spine of Deathwing (25N)",19759,1,0,18558,2,2
 19762,"Spine of Deathwing (10N)",19759,1,0,18557,1,2
+19770,,0,1,5,0,0,0
 19771,"Hagara the Stormbinder (10N)",19770,1,0,18551,1,2
 19772,"Hagara the Stormbinder (25N)",19770,1,0,18552,2,2
 19773,"Hagara the Stormbinder (LFR)",19770,1,0,18690,3,2
+19775,,0,1,5,0,0,0
 19776,"Ultraxion (10N)",19775,1,0,18553,1,2
 19777,"Ultraxion (25N)",19775,1,0,18554,2,2
 19778,"Ultraxion (25N)",19775,1,0,18691,3,2
+19780,,0,1,5,0,0,0
 19781,"Ultraxion (25H)",19780,1,0,18568,2,2
 19782,"Ultraxion (10H)",19780,1,0,18567,1,2
+19784,,0,1,5,0,0,0
 19785,"Warmaster Blackhorn (25N)",19784,1,0,18692,3,2
 19786,"Warmaster Blackhorn (10N)",19784,1,0,18555,1,2
 19787,"Warmaster Blackhorn (25N)",19784,1,0,18556,2,2
+19789,,0,1,5,0,0,0
 19790,"Spine of Deathwing (10H)",19789,1,0,18563,1,2
 19791,"Spine of Deathwing (25H)",19789,1,0,18564,2,2
+19793,,0,1,5,0,0,0
 19794,"Madness of Deathwing (LFR)",19793,1,0,18694,3,2
 19795,"Madness of Deathwing (10N)",19793,1,0,18559,1,2
 19796,"Madness of Deathwing (25N)",19793,1,0,18560,2,2
+19798,,0,1,5,0,0,0
 19799,"Madness of Deathwing (10H)",19798,1,0,18561,1,2
 19800,"Madness of Deathwing (25H)",19798,1,0,18562,2,2
 19802,"Glory of the Dragon Soul Raider",0,0,4,0,0,0
@@ -13798,6 +14037,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19815,"Heroic: Morchok",19802,1,0,18589,1,0
 19816,"Taste the Rainbow!",19802,1,0,18655,10,0
 19818,"Chromatic Champion",19802,1,0,18657,14,0
+19820,,0,0,4,0,0,0
 19821,Alizabal,19820,1,0,18590,1,2
 19823,"Kill Ook-Ook after assaulting him with 20 Rolling Brew Barrels in Stormstout Brewery on Heroic Difficulty.",0,0,4,0,0,0
 19824,Ook-Ook,19823,1,0,18407,1,2
@@ -13811,7 +14051,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19835,"Ultraxion (25H)",19833,1,0,18568,2,2
 19837,"Defeat Warlord Kalithresh on Heroic Difficulty while in a guild group.",0,1,8,0,0,0
 19838,"Warlord Kalithresh",19837,1,0,14365,1,2
-20013,Warrior,20008,1,0,15503,10,0
 19840,"Defeat Warp Splinter on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 19841,"Warp Splinter",19840,1,0,14368,1,2
 19843,"First warlock on the realm to achieve level 85.",0,0,4,0,0,0
@@ -13830,6 +14069,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19905,"Warlord Zon'ozz (25H)",19903,1,0,18574,2,2
 19907,"Defeat Ultraxion in Dragon Soul on Normal or Heroic Difficulty without any raid member being hit by Hour of Twilight more than once.",0,0,4,0,0,0
 19908,Ultraxion,19907,1,0,18391,1,2
+19910,,0,0,4,0,0,0
 19911,Mannoroth,19910,1,0,18543,1,2
 19913,"Engage the Echo of Tyrande in End Time on Heroic Difficulty after surviving her Shadow Gauntlet without allowing the party's healer to take any damage.",0,0,4,0,0,0
 19914,Tyrande,19913,1,0,18138,1,2
@@ -13886,6 +14126,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20010,Paladin,20008,1,0,15498,5,0
 20011,Shaman,20008,1,0,15501,8,0
 20012,Warlock,20008,1,0,15502,9,0
+20013,Warrior,20008,1,0,15503,10,0
 20014,"Death Knight",20008,1,0,15494,0,0
 20015,Hunter,20008,1,0,15496,2,0
 20016,Mage,20008,1,0,15497,3,0
@@ -13923,11 +14164,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20054,Warlock,20045,85,0,14645,8,0
 20056,"Defeat Princess Theradras while in a guild group.",0,1,8,0,0,0
 20057,"Princess Theradras",20056,1,0,14332,1,2
+20059,"Win 25 rated battlegrounds.",0,0,4,0,0,0
 20060,"Win 25 rated battlegrounds",20059,25,0,15289,1,1
+20062,"Earn a battleground rating of 1900.",0,0,4,0,0,0
 20063,,20062,1900,0,15300,1,2
+20065,"Earn a battleground rating of 2000.",0,0,4,0,0,0
 20066,,20065,2000,0,15300,1,2
 20068,"Earn a battleground rating of 2300.",0,0,4,0,0,0
 20069,,20068,2300,0,15300,1,2
+20071,"Earn a battleground rating of 2400.",0,0,4,0,0,0
 20072,,20071,2400,0,15300,1,2
 20074,"Complete the following challenges within the Molten Flow.",0,0,4,0,0,0
 20075,"Kill a Flamewaker Sentinel while it is carrying someone",20074,1,0,17836,1,16
@@ -13961,7 +14206,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20112,"Defeat Morchok in Dragon Soul on Heroic Difficulty.",0,1,8,0,0,0
 20113,"Morchok (25H)",20112,1,0,18576,2,2
 20114,"Morchok (10H)",20112,1,0,18575,1,2
-20480,Paladin,20477,85,0,14538,1,0
 20116,"Defeat Yor'sahj the Unsleeping in Dragon Soul on Heroic Difficulty.",0,1,8,0,0,0
 20117,"Yor'sahj the Unsleeping (10H)",20116,1,0,18571,1,2
 20118,"Yor'sahj the Unsleeping (25H)",20116,1,0,18572,2,2
@@ -13974,6 +14218,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20128,,20127,525,0,5575,0,2
 20130,"Defeat The Black Knight in the Trial of the Champion on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 20131,"The Black Knight",20130,1,0,14401,1,2
+20145,"Earn a battleground rating of 1100.",0,0,4,0,0,0
 20146,,20145,1100,0,15300,1,2
 20148,"Overcome a 500 resource disadvantage in a match of the Battle for Gilneas and claim victory.",0,1,8,0,0,0
 20149,"Overcome a 500 resource disadvantage",20148,1,0,14938,2,2
@@ -13988,6 +14233,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20173,"Lava Spew",20171,1,0,17535,2,0
 20174,"Incendiary Cloud",20171,1,0,17536,3,0
 20175,"Fiery Tornado",20171,1,0,17538,4,0
+20177,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
 20178,,20177,0,0,17549,1,0
 20180,"Complete each of the Undercity cooking daily quests.",0,0,4,0,0,0
 20181,"Roach Coach",20180,1,0,17741,4,0
@@ -14014,13 +14260,17 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20205,Leatherworking,20192,1,0,18311,12,0
 20206,Mining,20192,1,0,18312,13,0
 20207,Skinning,20192,1,0,18313,14,0
+20209,,0,0,4,0,0,0
 20210,"Mutanus the Devourer",20209,1,0,18524,1,2
 20212,"Destroy the final Crystal Conductor during Hagara's lightning phase on Normal or Heroic Difficulty, while all raid members are part of the final Lightning Conduit.",0,0,4,0,0,0
 20213,"Holding Hands",20212,1,0,18608,1,2
 20215,"Collect all 30 Golden Hoplings hidden around the Stormstout Brewery on any difficulty.",0,0,4,0,0,0
 20216,"Golden Verming",20215,1,0,19015,1,2
+20233,,0,0,4,0,0,0
 20234,Daakara,20233,1,0,16871,1,2
+20236,,0,0,4,0,0,0
 20237,"Ascendant Lord Obsidius",20236,1,0,16775,1,2
+20239,"Earn a battleground rating of 1600.",0,0,4,0,0,0
 20240,,20239,1600,0,15300,1,2
 20242,"Purchase the 7th guild bank tab.",0,0,4,0,0,0
 20243,"Purchase the 7th guild bank tab.",20242,7,0,14794,0,1
@@ -14072,11 +14322,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20313,,20312,1,0,13256,1,2
 20315,"Defeat Peroth'arn in Well of Eternity on Heroic Difficulty without any party member being detected by an Eye of Peroth'arn.",0,0,4,0,0,0
 20316,,20315,1,0,18618,1,2
+20339,"Complete the Neptulon quests in Vashj'ir up to and including Defending the Rift.",0,0,4,0,0,0
 20340,,20339,1,0,15281,1,2
 20342,"Allow all three of Corla's zealots to evolve, then defeat Corla after slaying the evolved zealots in Blackrock Caverns on Heroic Difficulty.",0,0,4,0,0,0
 20343,"Corla, Herald of Twilight",20342,1,0,15944,1,2
+20345,,0,1,8,0,0,0
 20346,"Frosty's Collar",20345,1,0,15365,1,2
 20347,Frosty,20345,0,0,15366,0,2
+20349,"Earn a battleground rating of 2300.",0,0,4,0,0,0
 20350,,20349,2300,0,15300,1,2
 20352,"Earn the Duelist title on all of the classes below.",0,0,4,0,0,0
 20353,Mage,20352,1,0,15507,3,0
@@ -14097,9 +14350,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20371,,20370,0,0,16424,1,2
 20373,"Complete 50 guild dungeon challenges.",0,0,4,0,0,0
 20374,,20373,50,0,17009,0,1
+20376,,0,0,4,0,0,0
 20377,Rajh,20376,1,0,16785,1,2
 20379,"Defeat Halazzi in Zul'Aman on Heroic Difficulty without killing any of his totems.",0,0,4,0,0,0
 20380,"Halazzi (Lynx)",20379,1,0,16818,1,2
+20382,,0,0,4,0,0,0
 20383,"Jin'do the Godbreaker",20382,1,0,16872,1,2
 20385,"Visit the Candy Buckets in Northrend.",0,0,4,0,0,0
 20386,"Sholazar Basin, Nesingwary Base Camp",20385,1,0,17681,17,0
@@ -14124,6 +14379,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20405,"Dragonblight, Wyrmrest Temple",20385,1,0,17669,10,0
 20406,"Howling Fjord, Kamagua",20385,1,0,17673,14,0
 20407,"Zul'Drak, The Argent Stand",20385,1,0,17679,21,0
+20409,"Visit the Candy Buckets in Cataclysm zones.",0,0,4,0,0,0
 20410,"Twilight Highlands, The Krazzworks",20409,1,0,17711,7,0
 20411,"Mount Hyjal, Nordrassil",20409,1,0,17684,3,0
 20412,"Twilight Highlands, Bloodgulch",20409,1,0,17708,5,0
@@ -14143,9 +14399,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20428,,20427,1,0,18350,1,2
 20430,"Loot 100,000 gold from creatures.",0,0,4,0,0,0
 20431,,20430,1000000000,0,4093,0,9
+20433,"Earn a battleground rating of 1300.",0,0,4,0,0,0
 20434,,20433,1300,0,15300,1,2
+20436,,0,1,5,0,0,0
 20437,"Warmaster Blackhorn (25H)",20436,1,0,18566,2,2
 20438,"Warmaster Blackhorn (10H)",20436,1,0,18565,1,2
+20440,"Complete the heroic Northrend dungeon achievements listed below while in a guild group.",0,0,4,0,0,0
 20441,"Heroic Drak'Tharon Keep",20440,0,0,14224,6,0
 20442,"Heroic Halls of Reflection",20440,0,0,14418,16,0
 20443,"Heroic Halls of Stone",20440,0,0,14227,9,0
@@ -14162,6 +14421,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20454,"Heroic Utgarde Keep",20440,0,0,14219,1,0
 20455,"Heroic Gundrak",20440,0,0,14226,8,0
 20456,"Heroic Ahn'kahet: The Old Kingdom",20440,0,0,14223,5,0
+20458,"Earn exalted with the dungeon reputations listed below.",0,0,4,0,0,0
 20459,"Thorium Brotherhood",20458,42000,0,15946,17,0
 20460,Therazane,20458,42000,0,14517,1,0
 20461,Ramkahen,20458,42000,0,14518,2,0
@@ -14182,6 +14442,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20477,"Reach level 85 on each of the Human classes listed below.",0,0,4,0,0,0
 20478,"Death Knight",20477,85,0,14543,6,0
 20479,Mage,20477,85,0,14537,0,0
+20480,Paladin,20477,85,0,14538,1,0
 20481,Priest,20477,85,0,14539,2,0
 20482,Rogue,20477,85,0,14540,3,0
 20483,Warrior,20477,85,0,14541,4,0
@@ -14208,6 +14469,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20507,"Fish or Cut Bait: Ironforge",29030,0,0,63610,0,0
 20508,"Fish or Cut Bait: Darnassus",29028,0,0,63609,0,0
 20509,"Fish or Cut Bait: Stormwind",29032,0,0,63611,0,0
+20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
 20512,"Fish or Cut Bait: Orgrimmar",20511,0,0,63510,1,0
 20513,"Fish or Cut Bait: Undercity",20511,0,0,63512,3,0
 20514,"Fish or Cut Bait: Thunder Bluff",20511,0,0,63511,2,0
@@ -14250,17 +14512,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20559,Rajh,20558,1,0,16786,1,2
 20561,"Defeat Keli'dan the Breaker on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 20562,"Keli'dan the Breaker",20561,1,0,14356,1,2
+20564,"Win 25 battles for Tol Barad.",0,0,4,0,0,0
 20565,"Win Tol Barad 25 times",20564,25,0,15464,1,1
 20567,"Catch 25,000 fish from fishing pools.",0,0,4,0,0,0
 20568,,20567,25000,0,14812,0,1
+20570,,0,0,4,0,0,0
 20571,Erudax,20570,1,0,16784,1,2
+20573,"Launch off Darkmoon Fireworks in every friendly capital city.",0,0,4,0,0,0
 20574,Ironforge,20573,1,0,18289,4,0
 20575,Darnassus,20573,1,0,18290,2,0
 20576,"The Exodar",20573,1,0,18291,3,0
 20577,"Shattrath City",20573,1,0,18298,5,0
 20578,Dalaran,20573,1,0,18294,1,0
 20579,"Stormwind City",20573,1,0,18288,6,0
-20753,Deepholm,20748,1,0,18197,4,0
 20581,"Solo kill a Molten Behemoth in the Molten Front without taking any damage from Molten Stomp or Fiery Boulder.",0,0,4,0,0,0
 20582,"Solo kill a Molten Behemoth in the Molten Front without taking any damage.",20581,1,0,17830,1,2
 20584,"Achieved Vicious Gladiator title.",0,0,4,0,0,0
@@ -14383,6 +14647,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20717,Zul'Drak,20711,1,0,18178,6,0
 20718,"Crystalsong Forest",20711,1,0,18172,2,0
 20719,"Storm Peaks",20711,1,0,18177,5,0
+20721,"Honor the flames of Northrend.",0,0,4,0,0,0
 20722,"Sholazar Basin",20721,1,0,18184,4,0
 20723,"Borean Tundra",20721,1,0,18179,2,0
 20724,"Grizzly Hills",20721,1,0,18182,7,0
@@ -14406,10 +14671,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20744,Hyjal,20741,1,0,18198,5,0
 20745,Vashj'ir,20741,1,0,18199,4,0
 20746,Uldum,20741,1,0,18196,1,0
+20748,"Honor the flames of zones opened by the cataclysm.",0,0,4,0,0,0
 20749,Hyjal,20748,1,0,18198,3,0
 20750,Uldum,20748,1,0,18203,5,0
 20751,Vashj'ir,20748,1,0,18199,1,0
 20752,"Twilight Highlands",20748,1,0,18202,2,0
+20753,Deepholm,20748,1,0,18197,4,0
 20755,"Desecrate the Alliance's bonfires in zones opened by the cataclysm.",0,0,4,0,0,0
 20756,"Twilight Highlands",20755,1,0,18210,1,0
 20757,Uldum,20755,1,0,18211,2,0
@@ -14417,10 +14684,12 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20760,,20759,1,0,18860,2,2
 20763,"First person on the realm to achieve 525 skill in first aid.",0,0,4,0,0,0
 20764,,20763,525,0,5592,0,2
+20766,"Defeat The Black Knight in the Trial of the Champion on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 20767,"The Black Knight",20766,1,0,14401,1,2
 20769,"Defeat Valiona and Theralion in the Bastion of Twilight on Heroic Difficulty.",0,1,8,0,0,0
 20770,"Valiona and Theralion",20769,1,0,16278,1,2
 20771,"Valiona and Theralion",20769,1,0,16279,2,2
+20773,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
 20774,"Pick up flag while it's at the base",20773,1,0,5601,1,2
 20775,"Cap in 75 seconds",20773,1,0,63567,2,2
 20777,"Twin Peaks flags captured",0,0,4,0,0,0
@@ -14433,6 +14702,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20786,"Captured Insignia",20783,1,0,18651,3,0
 20788,"Win the Darkmoon Deathmatch and receive a Pit Fighter trinket.",0,0,4,0,0,0
 20789,,20788,1,0,18245,1,2
+20791,"Use your Gaudy Winter Veil Sweater to carol in enemy capital cities during the Feast of Winter Veil.",0,0,4,0,0,0
 20792,"Thunder Bluff",20791,1,0,17782,3,0
 20793,Undercity,20791,1,0,17783,4,0
 20794,Orgrimmar,20791,1,0,17780,1,0
@@ -14444,6 +14714,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20802,"Dragonwrath, Tarecgosa's Rest",20800,1,0,17851,2,2
 20804,"Logged in during WoW's 7th Anniversary.",0,0,4,0,0,0
 20805,"Logged in during 7th anniversary event",20804,1,0,17804,1,2
+20807,"Visit the Candy Buckets in Northrend.",0,0,4,0,0,0
 20808,"Borean Tundra, Taunka'le Village",20807,1,0,17637,2,0
 20809,"Dragonblight, Agmar's Hammer",20807,1,0,17643,8,0
 20810,"Howling Fjord, Vengeance Landing",20807,1,0,17652,17,0
@@ -14715,7 +14986,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 21426,"Golden Lotus exalted",21425,42000,0,19389,0,2
 21427,"Reputation - Pandaria - Klaxxi - Exalted",0,0,4,0,0,0
 21428,"Klaxxi exalted",21427,42000,0,19390,0,2
-21560,"Outland Pet Mauler",21557,0,0,19431,0,0
 21429,"Reputation - Pandaria - The Tillers",0,0,4,0,0,0
 21430,"The Tillers exalted",21429,42000,0,19391,0,2
 21431,"Reputation - Pandaria - The Anglers - Exalted",0,0,4,0,0,0
@@ -14796,6 +15066,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 21557,"Continental Mauler",0,0,4,0,0,0
 21558,"Eastern Kingdoms Pet Mauler",21557,0,0,19429,3,0
 21559,"Kalimdor Pet Mauler",21557,0,0,19430,1,0
+21560,"Outland Pet Mauler",21557,0,0,19431,0,0
 21561,"Northrend Pet Mauler",21557,0,0,19432,2,0
 21562,"Pandaria Pet Mauler",21557,0,0,19433,4,0
 21573,"Big City Pet Brawlin' (A)",0,0,4,0,0,0
@@ -14890,6 +15161,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 21697,,21696,150000,0,4984,0,1
 21702,"Pandaren Ambassador (H)",0,0,4,0,0,0
 21703,"The August Celestials",21702,42000,0,19388,1,0
+21704,"Get an honorable kill on each of the level 85 Pandaren classes listed below.",0,0,4,0,0,0
 21705,Rogue,21704,1,0,19289,0,0
 21706,Priest,21704,1,0,19292,0,0
 21707,Shaman,21704,1,0,19290,0,0
@@ -15335,6 +15607,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 22524,"The Tillers",22516,42000,0,19733,6,0
 22525,"Order of the Cloud Serpent",22516,42000,0,19734,7,0
 22526,"Tushui Pandaren",22516,42000,0,19736,8,0
+22527,"Raise 55 reputations to Exalted.",0,55,8,0,0,0
 22528,Explorers/Taunka,22527,1,8,0,0,2
 22529,"Realm First! Pandaren Ambassador",0,1,8,0,0,0
 22530,"Pandaren Ambassador (H)",22529,1,0,19737,0,2
@@ -16113,6 +16386,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 23696,"Quan Tou Kuo the Two Fisted",23695,1,0,20415,0,0
 23697,"Xin Wo Yin the Broken Hearted",23695,1,0,20416,1,0
 23698,"Ren Yun the Blind",23695,1,0,20417,2,0
+23699,"Defeat Captain Ook",0,0,4,0,0,0
 23700,"Defeat Captain Ook",23699,1,0,20696,0,0
 23701,"Resuscitated by monks",0,0,5,0,0,0
 23702,Resuscitate,23701,0,0,20418,0,0
@@ -16120,6 +16394,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 23704,"Raise Ally",23703,0,0,20419,0,0
 23705,"Deaths in Twin peaks",0,0,4,0,0,0
 23706,"Deaths in Twin Peaks",23705,0,0,20420,0,0
+23707,"Defeat Borokhula the Destroyer",0,0,4,0,0,0
 23708,"Defeat Borokhula the Destroyer",23707,1,0,19565,0,0
 23709,"Deaths in Battle for Gilneas",0,0,4,0,0,0
 23710,"Deaths in Battle for Gilneas",23709,0,0,20421,0,0
@@ -16220,6 +16495,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 23821,"Obtain 600 skill points in Way of the Pot.",23820,600,0,20486,0,2
 23822,"Obtain 600 skill points in Way of the Oven.",0,0,4,0,0,0
 23823,"Obtain 600 skill points in Way of the Oven.",23822,600,0,20494,0,2
+23824,"Obtain 600 skill points in Way of the Oven.",0,0,4,0,0,0
 23825,"Obtain 600 skill points in Way of the Oven.",23824,600,0,20494,0,2
 23826,"Dark Arts",23790,1,0,20467,4,0
 23827,"Bronze Claws",23790,1,0,20468,5,0
@@ -16463,15 +16739,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 24104,"Umbrella of Chi-Ji",24101,1,0,20637,2,0
 24105,"Spear of Xuen",24101,1,0,20638,3,0
 24106,"Anatomical Dummy",24097,1,0,20642,3,0
+24107,"Discover the following artifacts.",0,0,4,0,0,0
 24108,"Carved Bronze Mirror",24107,1,0,20632,0,0
 24109,"Gold-Inlaid Porcelain Funerary Figurine",24107,1,0,20633,1,0
 24110,"Apothecary Tins",24107,1,0,20634,2,0
+24112,"Discover the following artifacts.",0,0,4,0,0,0
 24113,"Iron Amulet",24112,1,0,20643,0,0
 24114,"Cracked Mogu Runestone",24112,1,0,20644,1,0
 24115,"Mogu Coin",24112,1,0,20645,2,0
 24116,"Thunder King Insignia",24112,1,0,20646,3,0
+24117,"Discover the following artifacts.",0,0,4,0,0,0
 24118,"Terracotta Arm",24117,1,0,20647,0,0
 24119,"Quilen Statuette",24117,1,0,20648,1,0
+24120,"Discover the following artifacts.",0,0,4,0,0,0
 24121,"Edicts of the Thunder King",24120,1,0,20649,0,0
 24122,"Worn Monument Ledger",24120,1,0,20650,1,0
 24123,"Restore 5 Pandaren Tea Sets.",0,0,4,0,0,0
@@ -16526,6 +16806,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 24173,,24172,20,0,20655,0,1
 24174,"Restore 20 Carved Bronze Mirrors.",0,0,4,0,0,0
 24175,,24174,20,0,20656,0,1
+24176,"Restore 20 Carved Bronze Mirrors.",0,0,4,0,0,0
 24177,,24176,20,0,20656,0,1
 24178,"Restore 20 Gold-Inlaid Porcelain Funerary Figurines.",0,0,4,0,0,0
 24179,,24178,20,0,20657,0,1
@@ -17059,7 +17340,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 24847,"Silk Bandage",24827,1,0,3320,19,0
 24848,"Thick Frostweave Bandage",24827,1,0,3321,20,0
 24849,"Warsong Gulch Mageweave Bandage",24827,1,0,3322,21,0
-25154,"Noggenfogger Elixir",25075,0,0,4406,78,0
 24850,"Warsong Gulch Runecloth Bandage",24827,1,0,3323,22,0
 24851,"Warsong Gulch Silk Bandage",24827,1,0,3324,23,0
 24852,"Wool Bandage",24827,1,0,3325,24,0
@@ -17364,6 +17644,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 25151,"Ground Scorpok Assay",25075,0,0,4403,75,0
 25152,"Lung Juice Cocktail",25075,0,0,4404,76,0
 25153,R.O.I.D.S.,25075,0,0,4405,77,0
+25154,"Noggenfogger Elixir",25075,0,0,4406,78,0
 25155,"Onslaught Elixir",25075,0,0,4407,79,0
 25156,"Elixir of Mighty Defense",25075,0,0,8062,80,0
 25157,"Elixir of Mighty Thoughts",25075,0,0,8066,81,0
@@ -17831,7 +18112,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 25619,Kungaloosh,25451,0,0,6962,167,2
 25620,"Aromatic Honey Brew",25451,0,0,5192,168,2
 25621,"Cuergo's Gold with Worm",25451,0,0,6950,169,2
-25860,"Stranglethorn Brew",25673,0,0,9502,186,2
 25622,"Northrend Honey Mead",25451,0,0,6963,170,2
 25623,"Blackrock Lager",25451,0,0,5193,171,2
 25624,"Snowplum Brandy",25451,0,0,6964,172,2
@@ -17990,7 +18270,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 25777,"Conjured Mountain Spring Water",25673,0,0,4672,103,2
 25778,"Conjured Purified Water",25673,0,0,4673,104,2
 25779,"Conjured Sparkling Water",25673,0,0,4674,105,2
-25861,"Autumnal Acorn Ale",25673,0,0,10498,187,2
 25780,"Conjured Spring Water",25673,0,0,4675,106,2
 25781,"Conjured Water",25673,0,0,4676,107,2
 25782,"Dark Dwarven Lager",25673,0,0,4677,108,2
@@ -18071,6 +18350,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 25857,"Wild Winter Pilsner",25673,0,0,9499,183,2
 25858,"Metok's Bubble Bock",25673,0,0,9500,184,2
 25859,"Springtime Stout",25673,0,0,9501,185,2
+25860,"Stranglethorn Brew",25673,0,0,9502,186,2
+25861,"Autumnal Acorn Ale",25673,0,0,10498,187,2
 25862,"Bartlett's Bitter Brew",25673,0,0,10499,188,2
 25863,"Draenic Pale Ale",25673,0,0,10500,189,2
 25864,"Izzard's Ever Flavor",25673,0,0,10501,190,2
@@ -19345,6 +19626,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 27241,,21083,2,0,21019,12,0
 27242,"Scenario - Theramore (A) - Defend Ship",0,0,4,0,0,0
 27243,"Ship defended",27242,1,0,21020,0,0
+27244,"Hold an Orb of Power in the center of the Temple of Kotmogu for 90 seconds.",0,0,4,0,0,0
 27245,,27244,1,0,21021,0,2
 27250,"Win Temple of Kotmogu while controlling all 4 Orbs of Power.",0,1,8,0,0,0
 27251,,27250,1,0,21025,0,2
@@ -19661,6 +19943,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 27583,"Arena of Annihilation",27577,1,0,21194,4,0
 27584,"A Brewing Storm",27577,1,0,21195,5,0
 27586,"Theramore's Fall",27577,1,0,21198,6,0
+27587,"Quests - Pandaria - Shado-Pan - Complete Shado-Pan dailies set w/o guardians",0,0,4,0,0,0
 27588,"Omnia Mystics",27587,1,8,0,0,0
 27589,Omnia,27588,0,0,20476,0,0
 27590,,27588,0,0,20475,1,2
@@ -19693,6 +19976,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 27651,,27650,0,0,21240,0,0
 27652,"Complete Theramore's Fall at Level 85",0,0,4,0,0,0
 27653,,27652,1,0,22056,0,2
+27654,"Complete Theramore's Fall at Level 85",0,0,4,0,0,0
 27656,,27654,1,0,21886,0,2
 27657,"Arcane Shackles Key looted",22986,1,0,21241,1,0
 27664,,609,1,0,14812,31,0
@@ -20387,6 +20671,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 28481,,28410,42000,0,19732,70,32
 28482,"Obtain 250 unique companion pets",0,0,4,0,0,0
 28483,"Collect 250 unique pets.",28482,250,0,68031,0,1
+28484,"Obtain 300 unique companion pets",0,0,4,0,0,0
 28485,"Collect 300 unique pets.",28484,300,0,68031,0,1
 28486,"Obtain 400 unique companion pets",0,0,4,0,0,0
 28487,"Collect 400 unique pets.",28486,400,0,68031,0,1
@@ -20872,7 +21157,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29068,"Bros. Before Ho Ho Ho's",29067,0,0,6282,1,0
 29069,"The Flame Warden/Keeper",10454,1,8,0,4,64
 29070,"The Flame Warden",29069,0,0,7563,1,0
-29235,"Twilight Iguana",22760,1,0,21749,95,0
 29071,"Attend the Wanderer's Festival",29064,0,0,21694,0,0
 29072,"Not In My House",1411,1,8,0,7,64
 29073,"Not In My House",29072,0,0,3484,1,0
@@ -21036,6 +21320,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29232,"Sand Kitten",22760,1,0,21746,62,0
 29233,"Silithid Hatchling",22760,1,0,21747,70,0
 29234,Stinkbug,22760,1,0,21748,82,0
+29235,"Twilight Iguana",22760,1,0,21749,95,0
 29236,"Diemetradon Hatchling",22760,1,0,21750,20,0
 29237,"Leopard Scorpid",22760,1,0,21751,37,0
 29238,Locust,22760,1,0,21752,38,0
@@ -21381,7 +21666,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29617,,29616,0,0,21914,0,0
 29618,"Statistic - Sliced Peaches",0,0,5,0,0,0
 29619,,29618,0,0,20539,0,2
-29798,"Armored Carp",29792,1,0,21992,5,0
 29620,"Statistic - Perfectly Cooked Instant Noodles",0,0,5,0,0,0
 29621,,29620,0,0,20590,0,2
 29622,"Statistic - Pandaren Banquet",0,0,5,0,0,0
@@ -21460,7 +21744,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29719,"Krasarang Wilds, Zhu's Watch",29706,1,0,21935,10,0
 29720,"Kun-Lai Summit, Binan Village",29706,1,0,21936,11,0
 29721,"Kun-Lai Summit, One Keg",29706,1,0,21937,13,0
-29799,"Huff & Puff",29792,1,0,21993,6,0
 29722,"Kun-Lai Summit, The Grummle Bazaar",29706,1,0,21938,12,0
 29723,"Kun-Lai Summit, Zouchin Village",29706,1,0,21939,15,0
 29724,"The Veiled Stair, Tavern in the Mists",29706,1,0,21940,16,0
@@ -21468,6 +21751,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29726,"Vale of Eternal Blossoms, Mistfall Village",29706,1,0,21942,18,0
 29727,"Valley of the Four Winds, Pang's Stead",29706,1,0,21943,20,0
 29728,"Valley of the Four Winds, Stoneplow",29706,1,0,21945,21,0
+29729,"Visit the Candy Buckets in Pandaria.",0,0,4,0,0,0
 29730,"Dread Wastes, Klaxxi'vess",29729,1,0,21927,0,0
 29731,"Dread Wastes, Soggy's Gamble",29729,1,0,21928,1,0
 29732,"Jade Forest, Dawn's Blossom",29729,1,0,21929,2,0
@@ -21534,6 +21818,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29795,"Jagged Abalone",29792,1,0,21989,2,0
 29796,"Fishing for a Bruising",29792,1,0,21990,3,0
 29797,"Who Knew Fish Liked Eggs?",29792,1,0,21991,4,0
+29798,"Armored Carp",29792,1,0,21992,5,0
+29799,"Huff & Puff",29792,1,0,21993,6,0
 29800,"Like Bombing Fish In A Barrel",29792,1,0,21994,7,0
 29801,"Scavenger Hunt",29792,1,0,21995,8,0
 29802,"Jumping the Shark",29792,1,0,21996,9,0
@@ -21733,6 +22019,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 29998,,29997,0,0,20608,0,2
 29999,"Statistic - Consumed - Shrimp Dumplings",0,0,4,0,0,0
 30000,,29999,0,0,20609,0,2
+30001,"Statistic - Consumed - Perfectly Cooked Instant Noodles",0,0,4,0,0,0
 30002,,30001,0,0,20598,0,2
 30003,"Statistic - Consumed - Rice Pudding",0,0,4,0,0,0
 30004,,30003,0,0,20606,0,2
@@ -22207,6 +22494,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 30571,"Defeat Broodmaster Noshi",30570,0,0,22239,0,0
 30572,"Defeat Rak'gor Bloodrazor",0,0,4,0,0,0
 30573,"Defeat Rak'gor Bloodrazor",30572,0,0,22240,0,0
+30574,"Local Pet Mauler",0,10,8,0,0,0
 30575,Durotar,30574,1,0,21389,0,0
 30576,"Azuremyst Isle",30574,1,0,21546,1,0
 30577,Teldrassil,30574,1,0,21545,2,0
@@ -22274,6 +22562,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 30639,"Dread Wastes",30574,1,0,21591,64,0
 30640,"Townlong Steppes",30574,1,0,21592,65,0
 30641,"Vale of Eternal Blossoms",30574,1,0,21593,66,0
+30642,"World Pet Mauler",0,60,8,0,0,0
 30643,Durotar,30642,1,0,21389,0,0
 30644,"Azuremyst Isle",30642,1,0,21546,1,0
 30645,Teldrassil,30642,1,0,21545,2,0
@@ -22490,7 +22779,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31174,"Blood For Blood",31171,1,0,22443,2,0
 31175,"The Korune",31167,1,0,22448,4,16
 31176,Pride,31167,1,0,22449,5,16
-31262,"Amber-Shaper Un'sok",31261,1,0,20389,0,2
 31177,"Rise of the Blood Elves",31167,1,0,22450,6,16
 31178,"Secrets of the Past",31167,1,0,22451,7,16
 31179,"The Divine Bell",31167,1,0,22452,8,16
@@ -22566,6 +22854,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31259,"Statistic - Amber-Shaper Un'sok kills (25N)",0,0,4,0,0,0
 31260,"Amber-Shaper Un'sok",31259,1,0,20387,0,2
 31261,"Statistic - Heroic Amber-Shaper Un'sok kills (25H)",0,0,4,0,0,0
+31262,"Amber-Shaper Un'sok",31261,1,0,20389,0,2
 31263,"Statistic - Grand Empress Shek'zeer kills (25N)",0,0,5,0,0,0
 31264,"Grand Empress Shek'zeer",31263,1,0,20391,0,2
 31265,"Statistic - Heroic Grand Empress Shek'zeer kills (25H)",0,0,4,0,0,0
@@ -22713,7 +23002,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31408,"Operation: Shieldwall Bonus Reputation",0,0,4,0,0,0
 31409,"Use the item to get 50% bonus Operation: Shieldwall rep on Operation: Shieldwall kill",31408,1,0,22506,0,256
 31410,"Dominance Offensive Bonus Reputation",0,0,4,0,0,0
-31486,"Scenario - Fort (H) - 05: Legwork",0,0,4,0,0,0
 31411,"Use the item to get 50% bonus Dominance Offensive rep on Dominance Offensive kill",31410,1,0,22507,0,256
 31412,"Achievement - Watery Grave (5.1 Vol'jin Scenario))",0,0,4,0,0,0
 31417,"Achievement - You Mean That Wasn't a Void Zone? (5.1 Vol'jin Scenario))",0,0,4,0,0,0
@@ -22782,6 +23070,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31483,"Scenario - Fort (H) - 04: Join Bloodhilt, Boss 01",0,0,4,0,0,0
 31484,"Warlord Bloodhilt located",31483,1,0,22558,0,0
 31485,"Assault Commander slain",31483,1,0,22557,1,0
+31486,"Scenario - Fort (H) - 05: Legwork",0,0,4,0,0,0
 31487,"Shokia's report gathered",31486,1,0,22559,0,0
 31488,"Kiryn's report gathered",31486,1,0,22560,1,0
 31489,"Rivett's report gathered",31486,1,0,22561,2,0
@@ -22819,12 +23108,16 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31532,"Win a brawl with ten stacks of You Stink!",31531,1,0,22555,0,2
 31533,"Hit an angry spectator in the head with an Expired Blackout Brew.",0,0,4,0,0,0
 31534,"Hit an angry spectator in the head with an Expired Blackout Brew.",31533,1,0,22556,0,2
+31535,"Defeat the following rare brawl bosses.",0,0,4,0,0,0
 31536,"Epicus Maximus",31535,1,0,22574,0,16
 31537,Disruptron,31535,1,0,22575,1,16
 31538,"Millhouse Manastorm",31535,1,0,22576,2,16
 31539,Zen'shar,31535,1,0,22577,3,16
+31540,"Scenario - Fort (A) - Wave 01",0,0,4,0,0,0
 31541,,31540,1,0,22562,0,2
+31542,"Scenario - Fort (A) - Wave 02",0,0,4,0,0,0
 31543,,31542,1,0,22563,0,2
+31544,"Scenario - Fort (A) - Wave 03",0,0,4,0,0,0
 31545,,31544,1,0,22564,0,2
 31546,"Become an honorary Klaxxi Paragon by completing the achievements listed below.",0,0,4,0,0,0
 31547,"Amber is the Color of My Energy",31546,0,0,22566,0,0
@@ -23010,11 +23303,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31788,"Shadow, Storm, and Stone",31786,1,0,22718,1,16
 31789,"The Curse and the Silence",31786,1,0,22719,2,16
 31790,"Age of a Hundred Kings",31786,1,0,22720,3,16
+31792,"Complete the battleground achievements listed below.",0,0,4,0,0,0
 31793,"Master of the Battle for Gilneas",31792,0,0,22722,0,0
 31794,"Master of Isle of Conquest",31792,0,0,22723,1,0
 31795,"Master of Twin Peaks",31792,0,0,22724,2,0
 31796,"Master of Silvershard Mines",31792,0,0,22725,3,0
 31797,"Master of Temple of Kotmogu",31792,0,0,22726,4,0
+31798,"Complete the battleground achievements listed below.",0,0,4,0,0,0
 31799,"Master of the Battle for Gilneas",31798,0,0,22722,0,0
 31800,"Master of Isle of Conquest",31798,0,0,22727,1,0
 31801,"Master of Twin Peaks",31798,0,0,22724,2,0
@@ -23044,9 +23339,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 31830,"5.2 Scenario - To the Skies! - Taoshi Joined",0,0,4,0,0,0
 31831,"Joined with Taoshi",31830,0,0,22738,0,0
 31832,"Mine door Unlocked",31703,0,0,22739,1,0
+31833,"Acquire the Heavy Explosives",0,0,4,0,0,0
 31834,"Acquire the Heavy Explosives",31833,1,0,22696,0,0
+31835,"Deliver Explosives",0,0,4,0,0,0
 31836,"Deliver the Explosives to Vereesa",31835,0,0,22700,0,0
+31837,"Kill War-God Al'chukla",0,0,4,0,0,0
 31838,"Kill War-God Al'chukla",31837,0,0,23004,0,0
+31839,"Detonate Explosives",0,0,4,0,0,0
 31840,"Detonate the Heavy Explosives",31839,0,0,22702,0,0
 31841,"Scenario 5.2 - Door Blown, Shiaxu Discovered",0,0,4,0,0,0
 31842,"Cave-in cleared",31841,0,0,22740,0,0
@@ -23825,6 +24124,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 32800,"Gob Squad Defended (Timed)",32799,1,0,23343,0,0
 32802,"Defeat Admiral Hagman",0,0,4,0,0,0
 32803,"Kill Admiral Hagman",32802,0,0,22263,0,2
+32804,"Defeat Admiral Hodgson",0,0,4,0,0,0
 32805,"Kill Admiral Hodgson",32804,0,0,23336,0,2
 32807,"Scenario - Greenstone - Speedy Rescue",0,4,4,0,0,0
 32815,"Complete Scenario: Blood in the Snow",0,0,4,0,0,0
@@ -23975,6 +24275,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33025,"Other People's Property",33020,1,0,23433,4,0
 33030,"Defeat Admiral Hagman (Heroic)",0,0,4,0,0,0
 33031,"Kill Admiral Hagman",33030,0,0,23437,0,2
+33032,"Defeat Admiral Hodgson",0,0,4,0,0,0
 33033,"Kill Admiral Hodgson",33032,0,0,23438,0,2
 33034,"Silvershard Mines",3855,20,0,23440,8,3
 33035,"Temple of Kotmogu",3855,20,0,23441,9,3
@@ -24237,7 +24538,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33367,,33366,0,0,23622,0,0
 33377,,31466,1,0,23250,7,2
 33378,,31454,1,0,23250,7,2
-33582,"Wise Mari",33577,1,0,23619,4,0
 33397,"Challenge Master: Gate of the Setting Sun",0,1,8,0,0,0
 33398,,33397,1,0,23629,0,2
 33399,,33397,1,0,23646,1,2
@@ -24323,6 +24623,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33506,"Heroic: Garrosh Hellscream",0,0,4,0,0,0
 33507,"Garrosh Hellscream",33506,1,0,23680,0,2
 33508,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14",0,1,8,0,0,0
+33509,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14",0,1,8,0,0,0
 33510,"Win 100 Arena (3v3) matches in Season 14",33509,100,0,23681,0,1
 33511,"Win 40 Rated Battleground Matches in Season 14",33509,40,0,23682,1,1
 33512,"Successfully complete any of the Basic (Bronze) trials at the Proving Grounds.",0,1,8,0,0,0
@@ -24341,6 +24642,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33525,"Basic Damage (Silver)",33524,1,0,23686,0,2
 33526,"Basic Tank (Silver)",33524,1,0,23687,1,2
 33527,"Basic Healer (Silver)",33524,1,0,23688,2,2
+33528,"Successfully complete any of the Basic (Silver) trials at the Proving Grounds.",0,1,8,0,0,0
 33529,"Basic Damage (Silver)",33528,1,0,23686,0,2
 33530,"Basic Tank (Silver)",33528,1,0,23687,1,2
 33531,"Basic Healer (Silver)",33528,1,0,23688,2,2
@@ -24393,6 +24695,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33579,Wrathion,33577,1,0,23610,1,0
 33580,"Lorewalker Cho",33577,1,0,23611,2,0
 33581,"Chen Stormstout",33577,1,0,23616,3,0
+33582,"Wise Mari",33577,1,0,23619,4,0
 33583,"Shademaster Kiryn",33577,1,0,23607,5,0
 33584,"Sully ""The Pickle"" McLeary",33577,1,0,23617,6,0
 33585,"Taran Zhu",33577,1,0,23618,7,0
@@ -24673,6 +24976,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33880,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 15",0,1,8,0,0,0
 33881,"Win 100 Arena (3v3) matches in Season 15",33880,100,0,23869,0,1
 33882,"Win 40 Rated Battleground Matches in Season 15",33880,40,0,23870,1,1
+33883,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 15",0,1,8,0,0,0
 33884,"Win 100 Arena (3v3) matches in Season 15",33883,100,0,23869,0,1
 33885,"Win 40 Rated Battleground Matches in Season 15",33883,40,0,23870,1,1
 33886,"(A) End PvP season 13 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
@@ -24707,9 +25011,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 33915,,33914,1,0,15308,0,2
 33916,"(H) End PvP season 15 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
 33917,,33916,1,0,15308,0,2
+33918,"(H) End PvP season 14 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
 33919,,33918,1,0,15308,0,2
 33924,"Learn how to run the noodle stand",0,0,4,0,0,0
 33925,"Learn to run the noodle stand",33924,1,0,23871,0,0
+33926,"Seat and serve as many customers as you can",0,0,4,0,0,0
 33927,"Seat and serve as many customers as you can",33926,0,0,23872,0,0
 33928,"Get a score of at least 30,000",0,0,4,0,0,0
 33929,"Get a score of at least 30,000",33928,30000,0,23873,0,0
@@ -25131,6 +25437,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 34477,"Owner of the Diablo III: Reaper of Souls Collector's Edition Treasure Goblin pet.",0,1,8,0,0,0
 34478,,34477,0,0,24158,0,2
 34479,,34477,0,0,24159,1,2
+34564,"Obtain Legendary Cloak 5.0 (Hidden Tracking)",0,0,4,0,0,0
 34565,"Obtain Legendary Cloak",34564,1,8,0,0,0
 34566,,34565,1,0,24186,0,0
 34567,,34565,1,0,24187,1,0
@@ -25159,6 +25466,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 35970,"Nightmarish Hitching Post",0,0,4,0,0,0
 35971,,35970,1,0,24646,0,0
 35972,,35968,1,0,24647,0,0
+36198,server-only,0,0,4,0,0,2
 36199,,36198,1,0,24748,0,2
 36304,"5.4.8 Login Tracking",0,0,4,0,0,0
 36305,,36304,1,0,24783,0,2
@@ -25166,6 +25474,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 38347,,38346,0,0,6845,0,2
 38348,,38346,0,0,6846,1,2
 38349,,38346,0,0,8838,2,2
+45147,server-only,0,0,5,0,0,2
+45148,server-only,0,0,5,0,0,2
+45149,server-only,0,0,5,0,0,2
+45150,server-only,0,0,5,0,0,2
 45152,,45147,0,0,28824,0,0
 45153,,45147,0,0,28825,1,0
 45154,,45147,0,0,28826,2,0
@@ -25227,28 +25539,46 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 45210,,45150,0,0,28863,3,2
 45211,,45150,0,0,28864,4,2
 45212,,45150,0,0,28864,5,2
+82060,server-only,0,0,4,0,0,2
+82062,server-only,0,0,4,0,0,2
+88343,server-only,0,0,5,0,0,2
 88344,"2v2 Deaths",88343,0,0,4962,0,2
 88345,"3v3 Deaths",88343,0,0,4963,1,2
+88346,server-only,0,0,5,0,0,2
 88362,,88346,0,0,50460,0,0
 91199,"Open the Survival Kit",0,1,8,0,0,4112
 91201,"Equip a Weapon",0,1,8,0,0,4112
 91213,"Learn a Spell/Talent",0,1,8,0,0,4096
+91296,"Open the Survival Kit",0,1,8,0,0,4112
+91298,"Equip a Weapon",0,1,8,0,0,4112
+91302,"Open the Survival Kit",0,1,8,0,0,4112
+91304,"Equip a Weapon",0,1,8,0,0,4112
 91328,"Learn a Talent",0,1,8,0,0,4096
+91356,"Learn a Talent",0,1,8,0,0,4096
 91399,"Achieved Infernal Gladiator title.",0,0,4,0,0,0
 91419,"Train a Spell",0,1,8,0,0,4096
 91447,"Learn a Spell (Horde)",0,1,8,0,0,4096
 91475,"Train a Spell (Horde, Thunder Bluff)",0,1,8,0,0,4096
+91542,server-only,0,0,4,0,0,2
+91544,server-only,0,0,4,0,0,2
 91546,server-only,0,1,5,0,0,2
 91547,"Bazzalan kills (Ragefire Chasm)",91546,1,0,19213,0,2
+91548,server-only,0,1,5,0,0,2
 91549,"Mutanus the Devourer kills (Wailing Caverns)",91548,1,0,18524,0,2
+91550,server-only,0,1,5,0,0,2
 91551,"Bazil Thredd kills (Stormwind Stockade)",91550,1,0,18527,0,2
+91552,server-only,0,0,4,0,0,2
 91553,"Darkmaster Gandling kills (Scholomance)",91552,1,0,19263,0,0
+91554,server-only,0,0,4,0,0,2
+91719,server-only,0,0,5,0,0,2
 91763,"Talent Points Spent",0,1,4,0,0,4096
 91868,"5 Talent Points Allocated",0,1,4,0,0,4096
 91869,,91868,5,0,52217,0,0
 91870,"5 Talent Points Allocated",0,10,4,0,0,4096
 91871,,91870,5,0,52218,0,0
+91872,"5 Talent Points Allocated",0,1,4,0,0,4096
 91873,,91872,5,0,52219,0,0
+91902,server-only,0,0,5,0,0,2
 92175,,91296,1,0,52398,1,0
 92176,,91302,1,0,52399,1,0
 92177,,91199,1,0,52400,1,0
@@ -25278,15 +25608,24 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 121553,"Ancient Cornerstone Grimoire",121541,1,0,4272,10,2
 121554,"Sapphiron Drape",121541,1,0,4285,4,2
 121716,"Complete 100 victories in Eye of the Storm",0,100,5,0,0,0
+121899,,0,0,4,0,0,0
 121900,"15 reputations to Exalted",121899,15,0,982,0,1
 123016,,0,0,5,0,0,0
+123020,,0,0,4,0,0,0
 123021,"Get a reputation to exalted",123020,1,0,982,0,2
+123022,,0,0,4,0,0,0
 123023,"10 reputations to Exalted",123022,10,0,982,0,1
+123257,,0,0,4,0,0,0
 123258,"20 reputations to Exalted",123257,20,0,982,0,1
+123626,,0,0,4,0,0,0
 123628,Balnazzar,123626,1,0,550,0,0
+123802,,0,0,4,0,0,0
 123803,Hearthstone,123802,0,0,5008,0,0
 123804,"Ruby Slippers",123802,0,0,11719,0,0
+123916,,0,0,4,0,0,0
 123917,"40 reputations to Exalted",123916,40,0,982,0,1
+124732,,0,0,4,0,0,0
+124738,,0,0,4,0,0,0
 124739,"Lake Everstill",124738,1,0,1188,0,0
 124740,"Galardell Valley",124738,1,0,1195,0,0
 124741,"Stonewatch Falls",124738,1,0,1194,0,0
@@ -25297,14 +25636,23 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124747,"Lakeridge Highway",124738,1,0,1187,0,0
 124748,"Redridge Canyons",124738,1,0,1189,0,0
 124749,"Render's Valley",124738,1,0,1193,0,0
+124782,,0,1,8,0,0,0
 124783,"Frosty's Collar",124782,1,0,592,1,2
 124784,Frosty,124782,0,0,6156,0,2
+125158,,0,1,8,0,0,0
 125159,"Overcome a 500 resource disadvantage",125158,1,0,3804,0,2
+125167,"Overcome a 500 resource disadvantage",125158,1,0,3804,0,2
+125868,,0,0,4,0,0,0
 125869,Yogg-Saron,125868,1,0,10279,0,2
+125919,,0,0,4,0,0,0
 125920,"25 reputations to Exalted",125919,25,0,982,0,1
+125986,,0,0,4,0,0,0
 125987,"30 reputations to Exalted",125986,30,0,982,0,1
+126119,,0,1,5,0,0,0
 126120,"Archmage Arugal",126119,1,0,3263,0,0
+126156,,0,0,4,0,0,0
 126157,"35 reputations to Exalted",126156,35,0,982,0,1
+126214,,0,1,5,0,0,0
 126215,"Edwin VanCleef",126214,1,0,3262,0,0
 126364,,0,2500,5,0,0,0
 126365,"Emblem of Heroism",126364,2500,0,5311,0,3
@@ -25314,14 +25662,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126369,"Emblem of Frost",126364,2500,0,13184,0,3
 126660,,0,50,5,0,0,0
 126661,"50 Dalaran Cooking Awards",126660,50,0,7262,0,3
+126937,,0,0,4,0,0,0
 126938,"Obtain 15 companion pets",126937,15,0,4788,0,1
 126970,"Capture the flag",0,1,8,0,0,0
+127040,,0,0,4,0,0,0
 127041,"Obtain 25 companion pets",127040,25,0,4788,0,1
+127178,,0,0,4,0,0,0
 127179,"Obtain a companion pet",127178,1,0,4788,0,2
+127284,,0,0,4,0,0,0
 127285,"5 reputations to Exalted",127284,5,0,982,0,1
+127736,,0,0,4,0,0,0
 127737,"Obtain 50 companion pets",127736,50,0,4788,0,1
 127984,"Use your Hearthstone while your orphan is with you.",0,1,8,0,0,0
 127985,,127984,1,0,10391,0,2
+127986,,0,1,8,0,0,0
 127987,Gladiator,127986,1,0,7412,0,2
 127988,"Furious Gladiator",127986,1,0,12999,0,2
 127989,"Relentless Gladiator",127986,1,0,13000,0,2
@@ -25332,6 +25686,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128303,Maexxna,128300,1,0,13238,1,2
 128304,Loatheb,128300,1,0,13239,2,2
 128305,Thaddius,128300,1,0,13240,0,2
+128458,,0,0,4,0,0,0
 128459,"Honored with Bloodsail Buccaneers",128458,9000,0,8818,0,0
 128460,"Exalted with Gadgetzan",128458,42000,0,8821,0,0
 128461,"Exalted with Ratchet",128458,42000,0,8822,0,0
@@ -25339,7 +25694,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128463,"Exalted with Ravenholdt",128458,42000,0,8824,0,0
 128465,"Exalted with Everlook",128458,42000,0,8820,0,0
 128466,"Exalted with Booty Bay",128458,42000,0,8819,0,0
+128495,,0,0,4,0,0,0
 128496,"Dalaran Cooking Awards gained",128495,0,0,7262,0,0
+128609,,0,0,4,0,0,0
 128610,"Arachnophobia (25 player)",128609,0,0,7539,13,0
 128611,"Momma Said Knock You Out (25 player)",128609,0,0,7542,0,0
 128612,"Just Can't Get Enough (25 player)",128609,0,0,7621,1,0
@@ -25359,7 +25716,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128713,"25 Dalaran Cooking Awards",128712,25,0,7262,0,3
 128714,,0,10,5,0,0,0
 128715,"10 Dalaran Cooking Awards",128714,10,0,7262,0,3
+128716,,0,1,8,0,0,0
 128717,"Dalaran Cooking Award",128716,1,0,7262,0,2
+128870,,0,0,4,0,0,0
 128871,"Algalon the Observer",128870,1,0,10570,0,2
 128882,"Complete the Children's Week achievements listed below.",0,0,4,0,0,0
 128883,"Hail To The King, Baby",128882,0,0,6749,3,0
@@ -25367,6 +25726,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128885,"Bad Example",128882,0,0,6744,4,0
 128886,"Aw, Isn't It Cute?",128882,0,0,6746,2,0
 128888,"Home Alone",128882,0,0,6674,1,0
+128915,,0,1,8,0,0,0
 128916,"Furious Gladiator",128915,1,0,12999,0,2
 128917,"Relentless Gladiator",128915,1,0,13000,0,2
 128918,Challenger,128915,1,0,7408,0,2
@@ -25374,12 +25734,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 128920,Duelist,128915,1,0,9720,0,2
 128921,Gladiator,128915,1,0,7412,0,2
 128922,"Deadly Gladiator",128915,1,0,10881,0,2
+128923,,0,1,8,0,0,0
 128924,Duelist,128923,1,0,9720,0,2
 128925,Rival,128923,1,0,9719,0,2
 128926,"Furious Gladiator",128923,1,0,12999,0,2
 128927,"Relentless Gladiator",128923,1,0,13000,0,2
 128928,Gladiator,128923,1,0,7412,0,2
 128929,"Deadly Gladiator",128923,1,0,10881,0,2
+129029,,0,0,4,0,0,0
 129030,Hodir,129029,1,0,10439,0,0
 129031,Mimiron,129029,1,0,10347,0,0
 129032,Kologarn,129029,1,0,10348,0,0
@@ -25569,6 +25931,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129341,"Molasses Firewater",129174,0,0,4698,0,2
 129342,"Caraway Burnwine",129174,0,0,6485,0,2
 129343,Evermurky,129174,0,0,4685,0,2
+129344,"Bitter Plasma",129174,0,0,6961,0,2
 129345,"Netehrgarde Bitter",129174,0,0,4702,0,2
 129346,"Conjured Manna Biscuit",129174,0,0,6532,0,2
 129347,"Junglevine Wine",129174,0,0,4696,0,2
@@ -25589,6 +25952,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129362,"Wild Winter Pilsner",129174,0,0,10978,0,2
 129363,"Tournament Brew",129174,0,0,10618,0,2
 129364,"Autumnal Acorn Ale",129174,0,0,10498,0,2
+129490,,0,0,4,0,0,0
 129491,"Make Quick Werk Of Him",129490,0,0,7530,13,0
 129493,"Denyin' the Scion",129490,0,0,7576,0,0
 129495,"And They Would All Go Down Together",129490,0,0,7602,2,0
@@ -25602,6 +25966,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129505,"Momma Said Knock You Out",129490,0,0,7532,10,0
 129506,"The Twilight Zone",129490,0,0,7537,11,0
 129507,"You Don't Have An Eternity",129490,0,0,7534,12,0
+129715,,0,0,4,0,0,0
 129716,Thorim,129715,1,0,10404,0,0
 129717,Razorscale,129715,1,0,10353,0,0
 129718,"XT-002 Deconstructor",129715,1,0,10354,0,0
@@ -25619,12 +25984,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 129785,"Summon Reindeer Flying Mount Tier 3.0 (Brown)",129784,1,0,3937,2,2
 129786,"Summon Reindeer Flying Mount Tier 2.0 (Brown)",129784,1,0,3938,0,2
 129787,"Summon Reindeer Flying Mount Tier 3.5 (Brown) (PVP Reward)",129784,1,0,3936,1,2
+129993,,0,0,4,0,0,0
 129994,"Algalon the Observer",129993,1,0,10568,0,2
+132020,,0,1,8,0,0,0
 132021,"Deadly Gladiator",132020,1,0,10881,0,2
 132022,"Furious Gladiator",132020,1,0,12999,0,2
 132023,"Relentless Gladiator",132020,1,0,13000,0,2
 132024,Duelist,132020,1,0,9720,0,2
 132025,Gladiator,132020,1,0,7412,0,2
+132124,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
 132125,"Win Isle of Conquest.",132124,1,0,12064,1,2
 132126,"Win Isle of Conquest.",132124,1,0,12065,0,2
 132135,,0,1000,5,0,0,0
@@ -25642,29 +26010,52 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 132330,"Complete the Trial of the Grand Crusader",132327,1,0,12245,1,2
 132691,"Defeat The Black Knight in Trial of The Champion (Alliance)",0,0,4,0,0,0
 132692,"The Black Knight",132691,1,0,13314,0,0
+132728,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
 132729,"Complete the Trial of the Grand Crusader",132728,1,0,12339,2,2
 132730,"Complete the Trial of the Grand Crusader",132728,1,0,12340,0,2
 132731,"Complete the Trial of the Grand Crusader",132728,1,0,12338,1,2
+132931,,0,0,4,0,0,0
 132932,"Obtain 75 companion pets",132931,75,0,4788,0,1
+132941,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
 132942,"Complete the Trial of the Grand Crusader",132941,1,0,12339,1,2
 132943,"Complete the Trial of the Grand Crusader",132941,1,0,12340,0,2
+133028,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
 133029,"Complete the Trial of the Grand Crusader",133028,1,0,12345,1,2
 133196,"Heroic 10 - Dedicated Insanity Win",0,0,4,0,0,0
 133197,"Complete the Trial of the Grand Crusader",133196,1,0,12360,0,2
+133367,"Defeat The Black Knight in Trial of The Champion (Horde)",0,0,4,0,0,0
 133375,"The Black Knight",133367,1,0,12553,0,0
+133376,"Defeat The Black Knight in Trial of The Champion (Alliance)",0,0,4,0,0,0
 133377,"The Black Knight",133376,1,0,12553,0,0
 136185,"<Hidden> Joyous Journeys - Reach Level 70 with buff Joyous Journeys",0,0,4,0,0,2
 136186,,136185,70,0,53848,0,2
+137111,"Equip a Weapon",0,1,8,0,0,4112
+137115,"Train a Spell",0,1,8,0,0,4096
+137143,"5 Talent Points Allocated",0,1,4,0,0,4096
 137144,,137143,5,0,54570,0,0
 137149,Onyxia,121541,1,0,54579,13,2
+137831,"Open the Survival Kit",0,1,8,0,0,4112
 137833,,137831,1,0,54954,1,0
+137834,"Equip a Weapon",0,1,8,0,0,4112
+137838,"Learn a Spell (Horde)",0,1,8,0,0,4096
+137866,"5 Talent Points Allocated",0,10,4,0,0,4096
 137867,,137866,5,0,54943,0,0
+137881,"Open the Survival Kit",0,1,8,0,0,4112
 137883,,137881,1,0,54953,1,0
+137884,"Open the Survival Kit",0,1,8,0,0,4112
 137886,,137884,1,0,54956,1,0
+137887,"Equip a Weapon",0,1,8,0,0,4112
+137891,"Train a Spell (Horde, Thunder Bluff)",0,1,8,0,0,4096
+137919,"5 Talent Points Allocated",0,1,4,0,0,4096
 137920,,137919,5,0,54987,0,0
+138043,"5 Talent Points Allocated",0,1,4,0,0,4096
 138044,,138043,5,0,55073,0,0
+138045,"5 Talent Points Allocated",0,10,4,0,0,4096
 138046,,138045,5,0,55074,0,0
+138047,"5 Talent Points Allocated",0,1,4,0,0,4096
 138048,,138047,5,0,55075,0,0
+138064,"Receive a Glowing Pebble from Pebble the penguin.",0,0,4,0,0,0
+138065,"Glowing Pebble",138064,1,0,55087,0,2
 138066,,132310,1,0,55088,1,2
 138317,"Heirloom Tracking - Bloodied Arcanite Reaper",0,0,4,0,0,2
 138318,,138317,1,0,55212,0,2
@@ -25812,7 +26203,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 143656,,143655,42000,0,8821,0,2
 143657,"[DNT] Bloodsail Honored",0,1,4,0,0,0
 143658,,143657,9000,0,8818,0,2
+146403,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 146404,,146403,80,0,60116,0,2
+146405,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 146406,,146405,80,0,60117,0,2
 146817,,127984,1,0,60238,2,2
 146818,,127984,1,0,60239,1,2
@@ -25894,6 +26287,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 147691,"The Black Knight",147684,1,0,60621,0,0
 147693,"Protocol Beta: Defeat The Black Knight in Trial of The Champion (Horde)",0,0,4,0,0,0
 147696,"The Black Knight",147693,1,0,60621,0,0
+147712,"Defeat all Defense Protocol Beta Heroic Dungeons",0,0,4,0,0,0
 147713,"Defense Protocol Beta: Halls of Stone",147712,0,0,60634,0,0
 147714,"Defense Protocol Beta: Halls of Lightning",147712,0,0,60636,1,0
 147715,"Defense Protocol Beta: The Oculus",147712,0,0,60637,2,0
@@ -25907,15 +26301,28 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 147723,"Defense Protocol Beta: The Nexus",147712,0,0,60645,10,0
 147724,"Defense Protocol Beta: The Violet Hold",147712,0,0,60646,11,0
 147725,"Defense Protocol Beta: Trial of The Champion",147712,0,0,60778,12,0
+150041,"Open the Survival Kit",0,1,8,0,0,4112
 150043,,150041,1,0,62225,1,0
+150044,"Equip a Weapon",0,1,8,0,0,4112
+150119,"Open the Survival Kit",0,1,8,0,0,4112
 150121,,150119,1,0,62284,1,0
+150122,"Equip a Weapon",0,1,8,0,0,4112
+150204,"5 Talent Points Allocated",0,1,4,0,0,4096
 150205,,150204,5,0,62353,0,0
+150206,"5 Talent Points Allocated",0,10,4,0,0,4096
 150207,,150206,5,0,62354,0,0
+150208,"5 Talent Points Allocated",0,10,4,0,0,4096
 150209,,150208,5,0,62355,0,0
+150427,"Open the Survival Kit",0,1,8,0,0,4112
 150429,,150427,1,0,62530,1,0
+150430,"Open the Survival Kit",0,1,8,0,0,4112
 150432,,150430,1,0,62532,1,0
+150433,"Open the Survival Kit",0,1,8,0,0,4112
 150435,,150433,1,0,62534,1,0
+150436,"Equip a Weapon",0,1,8,0,0,4112
+150468,"5 Talent Points Allocated",0,1,4,0,0,4096
 150469,,150468,5,0,62565,0,0
+150470,"5 Talent Points Allocated",0,10,4,0,0,4096
 150471,,150470,5,0,62566,0,0
 151852,"Protocol Gamma: Defeat The Black Knight in Trial of The Champion bosses (Horde)",0,0,4,0,0,0
 151855,"The Black Knight",151852,1,0,63310,0,0
@@ -26010,12 +26417,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 152225,"Heroic: Spine of Deathwing",19802,1,0,63576,12,0
 152226,"Heroic: Madness of Deathwing",19802,1,0,63577,5,0
 153729,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
+153740,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
+153751,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
 155944,"Summon Reindeer Mount Tier 2.0 (Brown)",129784,1,0,66046,3,2
 155945,"Summon Flying Mount (Brown)",129784,1,0,66047,4,2
+162876,"5 Talent Points Allocated",0,1,4,0,0,4096
 162877,,162876,5,0,68000,0,0
+162878,"5 Talent Points Allocated",0,1,4,0,0,4096
 162879,,162878,5,0,68001,0,0
+162880,"5 Talent Points Allocated",0,10,4,0,0,4096
 162881,,162880,5,0,68002,0,0
+162882,"5 Talent Points Allocated",0,10,4,0,0,4096
 162883,,162882,5,0,68003,0,0
+162884,"5 Talent Points Allocated",0,10,4,0,0,4096
 162885,,162884,5,0,68004,0,0
 164586,"Raise 5 reputations to Exalted",0,5,8,0,0,0
 164587,"Hydraxian Waterlords",164586,42000,0,2048,0,2
@@ -27152,6 +27566,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 165729,Wildhammer,165727,42000,0,13671,1,2
 167623,"3.4.3 - LKC - CN - Stress Test - China Only",0,0,4,0,0,0
 167624,,167623,1,0,69609,0,0
+167716,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 167717,,167716,80,0,69652,0,2
 167959,,124782,0,0,69844,2,0
 167960,,20345,0,0,69845,2,0
@@ -27189,29 +27604,48 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 170200,"Heroic: The Vortex Pinnacle",170193,0,0,71211,6,0
 170201,"Heroic: Shadowfang Keep",170193,0,0,71212,7,0
 170202,"Heroic: Grim Batol",170193,0,0,71213,8,0
+206437,server-only,0,0,5,0,0,2
 206438,,206437,0,0,6847,0,0
 206439,,206437,0,0,7849,1,0
 206440,,206437,0,0,50010,2,0
 206441,,206437,0,0,50011,3,0
+206788,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 206789,,206788,1,0,103028,0,2
+206790,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 206791,,206790,1,0,103029,0,2
 207607,"Knows Spell X-51 Nether-Rocket X-TREME",0,0,4,0,0,0
 207608,,207607,1,0,103507,0,0
+207623,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 207624,,207623,85,0,103512,0,2
 207668,"Open the Survival Kit (4.4.2) - Alliance",0,1,8,0,0,4112
 207670,,207668,1,0,103900,1,0
+207671,"Equip a Weapon",0,1,8,0,0,4112
 207675,"Open the Survival Kit (4.4.2) - Death Knight",0,1,8,0,0,4112
 207677,,207675,1,0,103902,1,0
+207678,"Equip a Weapon",0,1,8,0,0,4112
 207682,"Open the Survival Kit (4.4.2) - Horde",0,1,8,0,0,4112
 207684,,207682,1,0,103904,1,0
+207685,"Equip a Weapon",0,1,8,0,0,4112
+207689,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
+207700,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
+207711,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
+207722,"5 Talent Points Allocated",0,1,4,0,0,4096
 207723,,207722,5,0,103577,0,0
+207724,"5 Talent Points Allocated",0,1,4,0,0,4096
 207725,,207724,5,0,103578,0,0
+207726,"5 Talent Points Allocated",0,10,4,0,0,4096
 207727,,207726,5,0,103579,0,0
+207728,"5 Talent Points Allocated",0,10,4,0,0,4096
 207729,,207728,5,0,103580,0,0
+207730,"5 Talent Points Allocated",0,1,4,0,0,4096
 207731,,207730,5,0,103581,0,0
+207732,"5 Talent Points Allocated",0,1,4,0,0,4096
 207733,,207732,5,0,103582,0,0
+207734,"5 Talent Points Allocated",0,10,4,0,0,4096
 207735,,207734,5,0,103583,0,0
+207736,"5 Talent Points Allocated",0,10,4,0,0,4096
 207737,,207736,5,0,103584,0,0
+207738,"5 Talent Points Allocated",0,10,4,0,0,4096
 207739,,207738,5,0,103585,0,0
 209660,"Acquire or Equip Warglaives of Azzinoth in China",0,1,4,0,0,0
 209661,,209660,1,0,104590,0,2
@@ -27219,10 +27653,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 209977,"Eye of the Storm victories",123016,0,0,5897,1,0
 209978,"Complete 100 victories in Eye of the Storm",121716,100,0,5745,0,3
 209979,"Capture the flag",126970,1,0,33092,1,2
+210767,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 210768,,210767,85,0,105446,0,2
 212123,"Pandaren Quest Tracking",0,1,8,0,0,0
 212124,,212123,1,0,106237,0,0
+212301,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 212302,,212301,1,0,106357,0,2
+212303,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 212304,,212303,1,0,106358,0,2
 213869,"Celestial: Temple of the Jade Serpent (Sha of Doubt)",0,0,4,0,0,0
 213870,"Sha of Doubt",213869,1,0,108817,0,2
@@ -27260,6 +27697,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 213952,"Sha of Fear",213951,1,0,107387,0,2
 213953,"Realm First! Ra-den (10 player)",0,0,4,0,0,0
 213954,,213953,1,0,107388,0,2
+214785,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 214786,,214785,80,0,107848,0,2
 215945,"Achieved Prideful Gladiator (3v3) title.",0,0,4,0,0,0
 215946,"Prideful Gladiator (3v3)",215945,1,0,23890,0,2
@@ -27274,13 +27712,21 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 215955,"Tyrannical Gladiator",14311,0,0,23888,9,2
 215956,"Prideful Gladiator",14311,0,0,23890,10,2
 215957,"Greivous Gladiator",14311,0,0,23889,11,2
+215968,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215969,,215968,1,0,108716,0,2
+215970,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215971,,215970,1,0,108719,0,2
+215972,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215973,,215972,1,0,108721,0,2
+215974,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215975,,215974,1,0,108717,0,2
+215976,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215977,,215976,1,0,108718,0,2
+215978,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215979,,215978,1,0,108720,0,2
+215980,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215981,,215980,1,0,106407,0,2
+215982,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
 215983,,215982,1,0,106408,0,2
 217088,"The August Celestials",164586,42000,0,19388,62,2
 217089,Shado-Pan,164586,42000,0,18993,63,2
@@ -27868,6 +28314,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 218747,"Pearlfin Jinyu",218745,42000,0,109789,1,2
 218831,"Test Criteria - DNT",0,0,4,0,0,0
 218832,Test,218831,1,0,109862,0,0
+219936,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 219937,,219936,85,0,107848,0,2
 220614,"[DNT] Player Has CN ICC Event Title 1 - Dream Chaser Deliverable",0,0,4,0,0,0
 220615,,220614,1,0,111016,0,0
@@ -27904,6 +28351,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221388,,221387,1,0,111533,0,2
 221389,"Temple of the Jade Serpent (Platinum Challenge) (Season 2)",0,0,4,0,0,0
 221390,,221389,1,0,111486,0,2
+221391,"Realm First! Challenge Conqueror Platinum (Season 2)",0,0,4,0,0,0
 221392,,221391,1,0,111486,0,2
 221393,"Stormstout Brewery (Platinum Challenge) (Season 2)",0,0,4,0,0,0
 221394,,221393,1,0,111487,0,2
@@ -27911,7 +28359,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221396,,221395,1,0,111488,0,2
 221397,"Shado-Pan Monastery (Platinum Challenge) (Season 2)",0,0,4,0,0,0
 221398,,221397,1,0,111489,0,2
-20233,,0,0,4,0,0,0
 221399,"Gate of the Setting Sun (Platinum Challenge) (Season 2)",0,0,4,0,0,0
 221400,,221399,1,0,111490,0,2
 221401,"Scarlet Halls (Platinum Challenge) (Season 2)",0,0,4,0,0,0
@@ -27940,6 +28387,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221424,,221423,1,0,111502,0,2
 221425,"Siege of Niuzao Temple (Platinum Challenge) (Season 3)",0,0,4,0,0,0
 221426,,221425,1,0,111503,0,2
+221427,"Temple of the Jade Serpent (Platinum Challenge) (Season 3)",0,0,4,0,0,0
 221428,,221427,1,0,111495,0,2
 221429,"Platinum in every Challenge Mode in Season 1.",0,0,4,0,0,0
 221430,"Temple of the Jade Serpent",221429,1,0,111504,0,2
@@ -28013,6 +28461,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221658,"Level 1 and NOT China",17245,1,0,111572,16,2
 222821,"[DNT] Joyous Journeys - Reach Level 90 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 222822,,222821,90,0,110588,0,2
+223390,"New Criteria Tree",0,0,4,0,0,0
 223391,,223390,1,0,112607,0,0
 223840,,30555,1,0,112872,1,2
 223841,,30555,1,0,112873,2,2
@@ -28020,9 +28469,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223843,,223842,1,0,112874,0,2
 223844,,223842,1,0,112875,1,2
 223845,,223842,1,0,112876,2,2
+223879,"New Criteria Tree",0,0,4,0,0,0
 223880,,223879,1,0,112894,0,0
 225398,"New Criteria Tree",0,0,4,0,0,4096
 225399,,225398,1,0,113714,0,0
+228500,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
 228501,,228500,85,0,114561,0,2
 228796,"Account knows pet ""Sha-Warped Beaky""",0,1,4,0,0,0
 228797,,228796,1,0,114747,0,2
@@ -28082,454 +28533,3 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229796,,229795,1,0,115366,0,2
 229797,"Siege of Niuzao Temple S3 (Diamond Challenge)",0,0,4,0,0,2
 229798,,229797,1,0,115367,0,2
-138064,"Receive a Glowing Pebble from Pebble the penguin.",0,0,4,0,0,0
-138065,"Glowing Pebble",138064,1,0,55087,0,2
-12374,"Honor the flames of Kalimdor.",0,0,4,0,0,0
-5438,"Catch a fish in each of the specific nodes listed below.",0,0,4,0,0,0
-3835,"Win Alterac Valley while your team controls both mines.",0,0,4,0,0,0
-2527,,0,0,4,0,0,0
-4712,,0,0,4,0,0,0
-4814,,0,0,4,0,0,0
-4834,,0,0,4,0,0,0
-5233,,0,0,4,0,0,0
-5236,,0,0,4,0,0,0
-6775,,0,0,4,0,0,0
-6778,,0,0,4,0,0,0
-10244,,0,0,4,0,0,0
-10247,,0,0,4,0,0,0
-12350,,0,0,4,0,0,0
-12860,,0,0,4,0,0,0
-13054,,0,0,4,0,0,0
-13057,,0,0,4,0,0,0
-14117,,0,0,4,0,0,0
-14120,,0,0,4,0,0,0
-14123,,0,0,4,0,0,0
-14159,,0,0,4,0,0,0
-14162,,0,0,4,0,0,0
-14165,,0,0,4,0,0,0
-14902,,0,0,4,0,0,0
-15287,,0,0,4,0,0,0
-15290,,0,0,4,0,0,0
-16444,,0,0,4,0,0,0
-16579,,0,0,4,0,0,0
-17464,,0,0,4,0,0,0
-17525,,0,0,4,0,0,0
-17528,,0,0,4,0,0,0
-17531,,0,0,4,0,0,0
-17660,,0,0,4,0,0,0
-17663,,0,0,4,0,0,0
-17970,,0,0,4,0,0,0
-18064,,0,0,4,0,0,0
-18070,,0,0,4,0,0,0
-18143,,0,0,4,0,0,0
-18267,,0,0,4,0,0,0
-18659,,0,0,4,0,0,0
-18662,,0,0,4,0,0,0
-18665,,0,0,4,0,0,0
-18668,,0,0,4,0,0,0
-18671,,0,0,4,0,0,0
-18720,,0,0,4,0,0,0
-18740,,0,0,4,0,0,0
-18743,,0,0,4,0,0,0
-18746,,0,0,4,0,0,0
-18749,,0,0,4,0,0,0
-18752,,0,0,4,0,0,0
-18755,,0,0,4,0,0,0
-18910,,0,0,4,0,0,0
-18913,,0,0,4,0,0,0
-19020,,0,0,4,0,0,0
-19023,,0,0,4,0,0,0
-19026,,0,0,4,0,0,0
-19029,,0,0,4,0,0,0
-19032,,0,0,4,0,0,0
-19035,,0,0,4,0,0,0
-19038,,0,0,4,0,0,0
-19041,,0,0,4,0,0,0
-19044,,0,0,4,0,0,0
-19047,,0,0,4,0,0,0
-19050,,0,0,4,0,0,0
-19219,,0,0,4,0,0,0
-19222,,0,0,4,0,0,0
-19225,,0,0,4,0,0,0
-19228,,0,0,4,0,0,0
-19460,,0,0,4,0,0,0
-19667,,0,0,4,0,0,0
-19679,,0,0,4,0,0,0
-19682,,0,0,4,0,0,0
-19820,,0,0,4,0,0,0
-19910,,0,0,4,0,0,0
-20209,,0,0,4,0,0,0
-20236,,0,0,4,0,0,0
-20376,,0,0,4,0,0,0
-20382,,0,0,4,0,0,0
-20570,,0,0,4,0,0,0
-121899,,0,0,4,0,0,0
-123020,,0,0,4,0,0,0
-123022,,0,0,4,0,0,0
-123257,,0,0,4,0,0,0
-123626,,0,0,4,0,0,0
-123802,,0,0,4,0,0,0
-123916,,0,0,4,0,0,0
-124732,,0,0,4,0,0,0
-124738,,0,0,4,0,0,0
-125868,,0,0,4,0,0,0
-125919,,0,0,4,0,0,0
-125986,,0,0,4,0,0,0
-126156,,0,0,4,0,0,0
-126937,,0,0,4,0,0,0
-127040,,0,0,4,0,0,0
-127178,,0,0,4,0,0,0
-127284,,0,0,4,0,0,0
-127736,,0,0,4,0,0,0
-128458,,0,0,4,0,0,0
-128495,,0,0,4,0,0,0
-128609,,0,0,4,0,0,0
-128870,,0,0,4,0,0,0
-129029,,0,0,4,0,0,0
-129490,,0,0,4,0,0,0
-129715,,0,0,4,0,0,0
-129993,,0,0,4,0,0,0
-132931,,0,0,4,0,0,0
-4372,"Kill 50 enemy players in any of your home cities.",0,50,5,0,0,0
-4965,"Complete the battleground achievements listed below.",0,0,4,0,0,0
-31792,"Complete the battleground achievements listed below.",0,0,4,0,0,0
-31798,"Complete the battleground achievements listed below.",0,0,4,0,0,0
-1214,"Complete the Kalimdor, Eastern Kingdoms and Outland Tricks and Treats achievements.",0,0,4,0,0,0
-1654,"Complete the Warsong Gulch achievements listed below.",0,0,4,0,0,0
-3683,"Visit the Candy Buckets in Outland.",0,0,4,0,0,0
-6264,"Get an honorable, killing blow on seven different races.",0,0,4,0,0,0
-6199,"Complete the Midsummer achievements listed below.",0,0,4,0,0,0
-6966,"Earned the title, ""Sergeant"".",0,0,4,0,0,0
-1830,"Honor the flames of Outland.",0,0,4,0,0,0
-2667,,0,1,8,0,0,0
-2795,,0,1,8,0,0,0
-12872,,0,1,8,0,0,0
-13060,,0,1,8,0,0,0
-14208,,0,1,8,0,0,0
-16672,,0,1,8,0,0,0
-19333,,0,1,8,0,0,0
-19337,,0,1,8,0,0,0
-19341,,0,1,8,0,0,0
-19345,,0,1,8,0,0,0
-19349,,0,1,8,0,0,0
-19353,,0,1,8,0,0,0
-19417,,0,1,8,0,0,0
-19646,,0,1,8,0,0,0
-20345,,0,1,8,0,0,0
-124782,,0,1,8,0,0,0
-125158,,0,1,8,0,0,0
-127986,,0,1,8,0,0,0
-128716,,0,1,8,0,0,0
-128915,,0,1,8,0,0,0
-128923,,0,1,8,0,0,0
-132020,,0,1,8,0,0,0
-4701,"Acquire the Brewfest beers listed below. Don't drink them all at once!",0,0,4,0,0,0
-4752,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
-17982,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
-20773,"Grab the flag and capture it in under 75 seconds.",0,0,4,0,0,0
-14586,"Explore The Barrens, revealing the covered areas of the world map.",0,0,4,0,0,0
-5300,"Complete all Extinguishing achievements.",0,0,4,0,0,0
-14389,"Obtain 100 mounts.",0,0,4,0,0,0
-3385,server-only,0,1,8,0,0,2
-3809,server-only,0,1,8,0,0,2
-6988,"Kill 100 flag carriers in Warsong Gulch.",0,0,4,0,0,0
-4995,"Complete the Hallow's End achievements listed below.",0,0,4,0,0,0
-14935,"Defeat Heroic Lord Jaraxxus.",0,0,4,0,0,0
-8305,"Defeat Heroic Val'kyr Twins.",0,0,4,0,0,0
-6677,"Visit the Candy Buckets in Eastern Kingdoms.",0,0,4,0,0,0
-6308,"Complete 100 battlegrounds at max level.",0,100,5,0,0,0
-4409,"Complete the Arathi Basin achievements listed below.",0,0,4,0,0,0
-7316,"Honor the flames of Eastern Kingdoms.",0,0,4,0,0,0
-19676,server-only,0,0,4,0,0,2
-8077,"Raise all of The Burning Crusade dungeon reputations to exalted.",0,0,4,0,0,0
-6714,"Complete the Eastern Kingdoms quest achievements listed below.",0,0,4,0,0,0
-6894,"Complete the Northrend quest achievements listed below.",0,0,4,0,0,0
-6585,"Visit the Candy Buckets in Kalimdor.",0,0,4,0,0,0
-7754,"Complete the Alterac Valley achievements listed below.",0,0,4,0,0,0
-8923,"Complete the cooking achievements listed below.",0,0,4,0,0,0
-10705,"Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",0,0,4,0,0,0
-7516,"Fight Thorim with Sif involved.",0,0,4,0,0,0
-7178,,0,1,5,0,0,0
-7256,,0,1,5,0,0,0
-7385,,0,1,5,0,0,0
-8298,,0,1,5,0,0,0
-8460,,0,1,5,0,0,0
-8464,,0,1,5,0,0,0
-8488,,0,1,5,0,0,0
-8579,,0,1,5,0,0,0
-10334,,0,1,5,0,0,0
-10419,,0,1,5,0,0,0
-14184,,0,1,5,0,0,0
-14419,,0,1,5,0,0,0
-14713,,0,1,5,0,0,0
-15337,,0,1,5,0,0,0
-15427,,0,1,5,0,0,0
-15434,,0,1,5,0,0,0
-15438,,0,1,5,0,0,0
-15442,,0,1,5,0,0,0
-15564,,0,1,5,0,0,0
-15834,,0,1,5,0,0,0
-15838,,0,1,5,0,0,0
-15842,,0,1,5,0,0,0
-15846,,0,1,5,0,0,0
-15850,,0,1,5,0,0,0
-15854,,0,1,5,0,0,0
-15879,,0,1,5,0,0,0
-16494,,0,1,5,0,0,0
-16809,,0,1,5,0,0,0
-17338,,0,1,5,0,0,0
-17401,,0,1,5,0,0,0
-17405,,0,1,5,0,0,0
-17409,,0,1,5,0,0,0
-17413,,0,1,5,0,0,0
-17509,,0,1,5,0,0,0
-17675,,0,1,5,0,0,0
-18302,,0,1,5,0,0,0
-18847,,0,1,5,0,0,0
-18998,,0,1,5,0,0,0
-19369,,0,1,5,0,0,0
-19404,,0,1,5,0,0,0
-19495,,0,1,5,0,0,0
-19685,,0,1,5,0,0,0
-19690,,0,1,5,0,0,0
-19695,,0,1,5,0,0,0
-19699,,0,1,5,0,0,0
-19755,,0,1,5,0,0,0
-19759,,0,1,5,0,0,0
-19770,,0,1,5,0,0,0
-19775,,0,1,5,0,0,0
-19780,,0,1,5,0,0,0
-19784,,0,1,5,0,0,0
-19789,,0,1,5,0,0,0
-19793,,0,1,5,0,0,0
-19798,,0,1,5,0,0,0
-20436,,0,1,5,0,0,0
-126119,,0,1,5,0,0,0
-126214,,0,1,5,0,0,0
-132124,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
-7796,"Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",0,0,4,0,0,0
-14932,"Defeat Heroic Faction Champions.",0,0,4,0,0,0
-8449,"Complete the Pilgrim's Bounty achievements listed below.",0,0,4,0,0,0
-7697,"Defeat Heroic Beasts.",0,0,4,0,0,0
-10573,"Destroy the following vehicles in Isle of Conquest",0,0,4,0,0,0
-11027,"While wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at each enemy capital's Bountiful Table.",0,0,4,0,0,0
-10579,"Complete the Isle of Conquest achievements listed below.",0,0,4,0,0,0
-8616,"In the Trial of the Grand Crusader, reach a Tribute Chest with 50 attempts remaining and without allowing any raid member to die during any of the boss encounters in 25-player mode.",0,0,4,0,0,0
-8116,"Complete the Noblegarden achievements listed below.",0,0,4,0,0,0
-14246,"Complete the Wintergrasp achievements listed below.",0,0,4,0,0,0
-10735,"Earn exalted status with and the right to represent every Alliance race's faction in the Argent Tournament.",0,0,4,0,0,0
-8542,"Complete each of the Pilgrim's Bounty dailies.",0,0,4,0,0,0
-10314,"Earn exalted status with and the right to represent every Horde race's faction in the Argent Tournament.",0,0,4,0,0,0
-14615,"Complete the 25-player raid achievements listed below.",0,0,4,0,0,0
-8970,"Complete the Strand of the Ancients achievements listed below.",0,0,4,0,0,0
-14641,"Destroy each of the vehicles listed below.",0,0,4,0,0,0
-13786,"Raise 55 reputations to Exalted.",0,55,8,0,0,0
-22527,"Raise 55 reputations to Exalted.",0,55,8,0,0,0
-10732,"Defeat Heroic Anub'arak.",0,0,4,0,0,0
-16401,"Complete the Winter Veil achievements listed below.",0,0,4,0,0,0
-20791,"Use your Gaudy Winter Veil Sweater to carol in enemy capital cities during the Feast of Winter Veil.",0,0,4,0,0,0
-13070,"Complete the world events achievements listed below.",0,0,4,0,0,0
-17098,"Complete the Brewfest achievements listed below.",0,0,4,0,0,0
-12414,"Complete the Love is in the Air achievements listed below.",0,0,4,0,0,0
-11253,"Cook up one of every Pilgrim's Bounty dish.",0,0,4,0,0,0
-15001,"Win a Strand of the Ancients battle without losing any siege vehicles.",0,0,4,0,0,0
-12524,"Find your pet Spring Rabbit another one to love in each of the towns listed below.",0,0,4,0,0,0
-17207,"Complete the 10-player raid achievements listed below.",0,0,4,0,0,0
-14749,"Complete all of the Tol Barad daily quests listed below.",0,0,4,0,0,0
-18473,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
-18476,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
-20177,"Reward the epic warhorse, including retroactive.",0,0,4,0,0,0
-17777,"Win 150 rated battlegrounds.",0,0,4,0,0,0
-20458,"Earn exalted with the dungeon reputations listed below.",0,0,4,0,0,0
-14426,"Pelt the enemy leaders listed below.",0,0,4,0,0,0
-17280,"Complete the Cataclysm quest achievements listed below.",0,0,4,0,0,0
-14258,"Defend the beach without losing any walls.",0,0,4,0,0,0
-18927,"Complete 130 quests in Vashj'ir.",0,130,5,0,0,0
-14510,"Complete the Grizzly Hills PvP daily quests listed below.",0,0,4,0,0,0
-17122,"Complete the classy achievements listed below.",0,0,4,0,0,0
-18106,"Earn a battleground rating of 1700.",0,0,4,0,0,0
-20071,"Earn a battleground rating of 2400.",0,0,4,0,0,0
-19163,"Kill 100 flag carriers in Twin Peaks.",0,0,4,0,0,0
-16847,"In a single Twin Peaks battle, capture and return a total of 9 flags.",0,9,5,0,0,0
-20409,"Visit the Candy Buckets in Cataclysm zones.",0,0,4,0,0,0
-17073,"Complete the slayer achievements listed below.",0,0,4,0,0,0
-18097,"Earn a battleground rating of 2200.",0,0,4,0,0,0
-15870,"Earn a battleground rating of 2100.",0,0,4,0,0,0
-18479,"Win 75 rated battlegrounds.",0,0,4,0,0,0
-20145,"Earn a battleground rating of 1100.",0,0,4,0,0,0
-16822,"Earn a battleground rating of 1500.",0,0,4,0,0,0
-18290,"Win a Twin Peaks battle after being behind by a score of 0 to 2.",0,0,4,0,0,0
-20564,"Win 25 battles for Tol Barad.",0,0,4,0,0,0
-19607,"Earn exalted reputation with the classic battlegrounds listed below.",0,0,4,0,0,0
-17706,"Earn a battleground rating of 1800.",0,0,4,0,0,0
-20239,"Earn a battleground rating of 1600.",0,0,4,0,0,0
-18788,"Win 10 rated battlegrounds.",0,0,4,0,0,0
-18656,"Win 300 rated battlegrounds.",0,0,4,0,0,0
-17795,"Complete the Twilight's Hammer quest chain in Twilight Highlands up to and including Skullcrusher the Mountain.",0,0,4,0,0,0
-17151,"Win a rated battleground.",0,0,4,0,0,0
-17506,"Earn a battleground rating of 1200.",0,0,4,0,0,0
-20339,"Complete the Neptulon quests in Vashj'ir up to and including Defending the Rift.",0,0,4,0,0,0
-17733,"Earn the Battlemaster title on all of the classes below.",0,0,4,0,0,0
-18632,"Earn a battleground rating of 1400.",0,0,4,0,0,0
-19253,"Complete the Twin Peaks achievements listed below.",0,0,4,0,0,0
-20059,"Win 25 rated battlegrounds.",0,0,4,0,0,0
-20433,"Earn a battleground rating of 1300.",0,0,4,0,0,0
-20065,"Earn a battleground rating of 2000.",0,0,4,0,0,0
-20062,"Earn a battleground rating of 1900.",0,0,4,0,0,0
-18866,"Complete the Tol Barad achievements listed below.",0,0,4,0,0,0
-19398,server-only,0,0,4,0,0,2
-19401,server-only,0,0,4,0,0,2
-19408,server-only,0,0,4,0,0,2
-19411,server-only,0,0,4,0,0,2
-19414,server-only,0,0,4,0,0,2
-19492,server-only,0,0,4,0,0,2
-19670,server-only,0,0,4,0,0,2
-19673,server-only,0,0,4,0,0,2
-19752,server-only,0,0,4,0,0,2
-36198,server-only,0,0,4,0,0,2
-82060,server-only,0,0,4,0,0,2
-82062,server-only,0,0,4,0,0,2
-91542,server-only,0,0,4,0,0,2
-91544,server-only,0,0,4,0,0,2
-91552,server-only,0,0,4,0,0,2
-91554,server-only,0,0,4,0,0,2
-20349,"Earn a battleground rating of 2300.",0,0,4,0,0,0
-20766,"Defeat The Black Knight in the Trial of the Champion on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
-20440,"Complete the heroic Northrend dungeon achievements listed below while in a guild group.",0,0,4,0,0,0
-20807,"Visit the Candy Buckets in Northrend.",0,0,4,0,0,0
-20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
-20573,"Launch off Darkmoon Fireworks in every friendly capital city.",0,0,4,0,0,0
-20721,"Honor the flames of Northrend.",0,0,4,0,0,0
-20748,"Honor the flames of zones opened by the cataclysm.",0,0,4,0,0,0
-23699,"Defeat Captain Ook",0,0,4,0,0,0
-21704,"Get an honorable kill on each of the level 85 Pandaren classes listed below.",0,0,4,0,0,0
-23707,"Defeat Borokhula the Destroyer",0,0,4,0,0,0
-28484,"Obtain 300 unique companion pets",0,0,4,0,0,0
-27244,"Hold an Orb of Power in the center of the Temple of Kotmogu for 90 seconds.",0,0,4,0,0,0
-27587,"Quests - Pandaria - Shado-Pan - Complete Shado-Pan dailies set w/o guardians",0,0,4,0,0,0
-23824,"Obtain 600 skill points in Way of the Oven.",0,0,4,0,0,0
-24107,"Discover the following artifacts.",0,0,4,0,0,0
-24112,"Discover the following artifacts.",0,0,4,0,0,0
-24117,"Discover the following artifacts.",0,0,4,0,0,0
-24120,"Discover the following artifacts.",0,0,4,0,0,0
-24176,"Restore 20 Carved Bronze Mirrors.",0,0,4,0,0,0
-27654,"Complete Theramore's Fall at Level 85",0,0,4,0,0,0
-30574,"Local Pet Mauler",0,10,8,0,0,0
-30642,"World Pet Mauler",0,60,8,0,0,0
-29729,"Visit the Candy Buckets in Pandaria.",0,0,4,0,0,0
-30001,"Statistic - Consumed - Perfectly Cooked Instant Noodles",0,0,4,0,0,0
-31535,"Defeat the following rare brawl bosses.",0,0,4,0,0,0
-31540,"Scenario - Fort (A) - Wave 01",0,0,4,0,0,0
-31542,"Scenario - Fort (A) - Wave 02",0,0,4,0,0,0
-31544,"Scenario - Fort (A) - Wave 03",0,0,4,0,0,0
-31833,"Acquire the Heavy Explosives",0,0,4,0,0,0
-31835,"Deliver Explosives",0,0,4,0,0,0
-31839,"Detonate Explosives",0,0,4,0,0,0
-31837,"Kill War-God Al'chukla",0,0,4,0,0,0
-32804,"Defeat Admiral Hodgson",0,0,4,0,0,0
-33032,"Defeat Admiral Hodgson",0,0,4,0,0,0
-33509,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14",0,1,8,0,0,0
-33528,"Successfully complete any of the Basic (Silver) trials at the Proving Grounds.",0,1,8,0,0,0
-33926,"Seat and serve as many customers as you can",0,0,4,0,0,0
-33883,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 15",0,1,8,0,0,0
-33918,"(H) End PvP season 14 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
-34564,"Obtain Legendary Cloak 5.0 (Hidden Tracking)",0,0,4,0,0,0
-45147,server-only,0,0,5,0,0,2
-45148,server-only,0,0,5,0,0,2
-45149,server-only,0,0,5,0,0,2
-45150,server-only,0,0,5,0,0,2
-88343,server-only,0,0,5,0,0,2
-88346,server-only,0,0,5,0,0,2
-91719,server-only,0,0,5,0,0,2
-91902,server-only,0,0,5,0,0,2
-206437,server-only,0,0,5,0,0,2
-91296,"Open the Survival Kit",0,1,8,0,0,4112
-91302,"Open the Survival Kit",0,1,8,0,0,4112
-137831,"Open the Survival Kit",0,1,8,0,0,4112
-137881,"Open the Survival Kit",0,1,8,0,0,4112
-137884,"Open the Survival Kit",0,1,8,0,0,4112
-150041,"Open the Survival Kit",0,1,8,0,0,4112
-150119,"Open the Survival Kit",0,1,8,0,0,4112
-150427,"Open the Survival Kit",0,1,8,0,0,4112
-150430,"Open the Survival Kit",0,1,8,0,0,4112
-150433,"Open the Survival Kit",0,1,8,0,0,4112
-91298,"Equip a Weapon",0,1,8,0,0,4112
-91304,"Equip a Weapon",0,1,8,0,0,4112
-137111,"Equip a Weapon",0,1,8,0,0,4112
-137834,"Equip a Weapon",0,1,8,0,0,4112
-137887,"Equip a Weapon",0,1,8,0,0,4112
-150044,"Equip a Weapon",0,1,8,0,0,4112
-150122,"Equip a Weapon",0,1,8,0,0,4112
-150436,"Equip a Weapon",0,1,8,0,0,4112
-207671,"Equip a Weapon",0,1,8,0,0,4112
-207678,"Equip a Weapon",0,1,8,0,0,4112
-207685,"Equip a Weapon",0,1,8,0,0,4112
-91356,"Learn a Talent",0,1,8,0,0,4096
-137115,"Train a Spell",0,1,8,0,0,4096
-137838,"Learn a Spell (Horde)",0,1,8,0,0,4096
-137891,"Train a Spell (Horde, Thunder Bluff)",0,1,8,0,0,4096
-91548,server-only,0,1,5,0,0,2
-91550,server-only,0,1,5,0,0,2
-91872,"5 Talent Points Allocated",0,1,4,0,0,4096
-137143,"5 Talent Points Allocated",0,1,4,0,0,4096
-137919,"5 Talent Points Allocated",0,1,4,0,0,4096
-138043,"5 Talent Points Allocated",0,1,4,0,0,4096
-138047,"5 Talent Points Allocated",0,1,4,0,0,4096
-150204,"5 Talent Points Allocated",0,1,4,0,0,4096
-150468,"5 Talent Points Allocated",0,1,4,0,0,4096
-162876,"5 Talent Points Allocated",0,1,4,0,0,4096
-162878,"5 Talent Points Allocated",0,1,4,0,0,4096
-207722,"5 Talent Points Allocated",0,1,4,0,0,4096
-207724,"5 Talent Points Allocated",0,1,4,0,0,4096
-207730,"5 Talent Points Allocated",0,1,4,0,0,4096
-207732,"5 Talent Points Allocated",0,1,4,0,0,4096
-137866,"5 Talent Points Allocated",0,10,4,0,0,4096
-138045,"5 Talent Points Allocated",0,10,4,0,0,4096
-150206,"5 Talent Points Allocated",0,10,4,0,0,4096
-150208,"5 Talent Points Allocated",0,10,4,0,0,4096
-150470,"5 Talent Points Allocated",0,10,4,0,0,4096
-162880,"5 Talent Points Allocated",0,10,4,0,0,4096
-162882,"5 Talent Points Allocated",0,10,4,0,0,4096
-162884,"5 Talent Points Allocated",0,10,4,0,0,4096
-207726,"5 Talent Points Allocated",0,10,4,0,0,4096
-207728,"5 Talent Points Allocated",0,10,4,0,0,4096
-207734,"5 Talent Points Allocated",0,10,4,0,0,4096
-207736,"5 Talent Points Allocated",0,10,4,0,0,4096
-207738,"5 Talent Points Allocated",0,10,4,0,0,4096
-125167,"Overcome a 500 resource disadvantage",125158,1,0,3804,0,2
-129344,"Bitter Plasma",129174,0,0,6961,0,2
-133367,"Defeat The Black Knight in Trial of The Champion (Horde)",0,0,4,0,0,0
-132728,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
-132941,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
-133028,"Complete the Trial of the Grand Crusader",0,0,4,0,0,2
-133376,"Defeat The Black Knight in Trial of The Champion (Alliance)",0,0,4,0,0,0
-146403,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-146405,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-167716,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-214785,"[DNT] Joyous Journeys - Reach Level 80 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-223390,"New Criteria Tree",0,0,4,0,0,0
-223879,"New Criteria Tree",0,0,4,0,0,0
-147712,"Defeat all Defense Protocol Beta Heroic Dungeons",0,0,4,0,0,0
-153740,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
-153751,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
-207689,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
-207700,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
-207711,"4.4.0 Level 80 Character Boost -  Learned Spells",0,1,8,0,0,4096
-206788,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-212301,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215974,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215976,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215978,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215982,"Player is Alliance and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-206790,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-212303,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215968,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215970,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215972,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-215980,"Player is Horde and Achieved Hero of the Faction (RBG top .5%)",0,0,4,0,0,0
-207623,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-210767,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-219936,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-228500,"[DNT] Joyous Journeys - Reach Level 85 with buff Joyous Journeys (hidden)",0,0,4,0,0,2
-221391,"Realm First! Challenge Conqueror Platinum (Season 2)",0,0,4,0,0,0
-221427,"Temple of the Jade Serpent (Platinum Challenge) (Season 3)",0,0,4,0,0,0

@@ -1,94 +1,44 @@
 @echo off
 SET BUILD=1.60.1.70374
+@REM Pass "force_overwrite" to refresh files already downloaded for this build.
+set "FORCE_OVERWRITE="
+if /i "%~1"=="force_overwrite" set "FORCE_OVERWRITE=1"
+
+cd /d "%~dp0"
+set "SHARED=%~dp0..\..\..\..\.tools\.wago.update.bat"
 
 @REM Download new file versions
-call :download Achievement
-call :download AreaTable
-@REM call :download ArtifactAppearance
-call :download BattlePetSpecies
-call :download ContentTuning
-call :download Criteria
-call :download CriteriaTree
-@REM call :download GlyphProperties
-call :downloadrenamed Holiday Holidays
+call "%SHARED%" download Achievement
+call "%SHARED%" download AreaTable
+@REM call "%SHARED%" download ArtifactAppearance
+call "%SHARED%" download BattlePetSpecies
+call "%SHARED%" download ContentTuning
+call "%SHARED%" download Criteria
+call "%SHARED%" download CriteriaTree
+@REM call "%SHARED%" download GlyphProperties
+call "%SHARED%" downloadrenamed Holiday Holidays
+@REM call "%SHARED%" download HouseDecor
+call "%SHARED%" download Item
+call "%SHARED%" downloadcleaned ItemBonus
+call "%SHARED%" download ItemEffect
+call "%SHARED%" download ItemModifiedAppearance
+call "%SHARED%" download ItemXItemEffect
+call "%SHARED%" download ItemSearchName
+call "%SHARED%" download ModifierTree
+call "%SHARED%" download SkillLineAbility
+call "%SHARED%" download SpellEffect
+call "%SHARED%" download TaxiNodes
+call "%SHARED%" download TransmogSet
+call "%SHARED%" download TransmogSetItem
+call "%SHARED%" download UiMap
+call "%SHARED%" download UiMapAssignment
+call "%SHARED%" download WorldMapOverlay
+
 call :downloadlocalized HolidayNames
-@REM call :download HouseDecor
-call :download Item
-call :downloadcleaned ItemBonus
-call :download ItemEffect
-call :download ItemModifiedAppearance
-call :download ItemXItemEffect
-call :download ItemSearchName
-call :download ModifierTree
-call :download SkillLineAbility
-call :downloadcleaned SpellEffect
-call :download TaxiNodes
-call :download TransmogSet
-call :download TransmogSetItem
-call :download UiMap
-call :download UiMapAssignment
-call :download WorldMapOverlay
 
-exit /b
-
-:download
-echo Downloading %1...
-if not exist "%1.%BUILD%.csv" (
-	if exist "%1*.csv" (
-		del /Q "%1*.csv"
-	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
-)
 exit /b
 
 :downloadlocalized
-call :downloadbaselocale %1
-call :downloadlocale %1 deDE
-call :downloadlocale %1 esES
-call :downloadlocale %1 esMX
-call :downloadlocale %1 frFR
-call :downloadlocale %1 itIT
-call :downloadlocale %1 koKR
-call :downloadlocale %1 ptBR
-call :downloadlocale %1 ruRU
-call :downloadlocale %1 zhCN
-call :downloadlocale %1 zhTW
-exit /b
-
-:downloadbaselocale
-echo Downloading %1...
-if not exist "%1.%BUILD%.csv" (
-	if exist "%1*.csv" (
-		del /Q "%1*.csv"
-	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
-)
-exit /b
-
-:downloadlocale
-echo Downloading %1 for locale %2...
-if not exist "%1.%2.%BUILD%.csv" (
-	if exist "%1.%2*.csv" (
-		del /Q "%1.%2*.csv"
-	)
-	curl -o "%1.%2.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&locale=%2&useHotfixes"
-)
-exit /b
-
-:downloadrenamed
-echo Downloading %2 as %1...
-if not exist "%1.%BUILD%.csv" (
-	if exist "%1*.csv" (
-		del /Q "%1*.csv"
-	)
-	curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
-)
-exit /b
-
-:downloadcleaned
-call :download %1
-echo Cleaning %1...
-cd "..\..\..\..\.tools\"
-call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
-cd /d "%~dp0"
+call "%SHARED%" download %1
+for %%L in (deDE esES esMX frFR itIT koKR ptBR ruRU zhCN zhTW) do call "%SHARED%" downloadlocale %1 %%L
 exit /b
