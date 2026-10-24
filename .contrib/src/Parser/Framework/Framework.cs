@@ -795,20 +795,17 @@ namespace ATT
         /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
-        public static void InitConfigSettings(string filepath, bool replaceConfig = false)
+        public static void InitConfigSettings(string filepath, bool isMainConfig=false)
         {
-            if (Config == null || replaceConfig)
-            {
-                Log($"Using config: {filepath}");
-                Config = new CustomConfiguration(filepath);
-                Console.Title = $"ATT Parser: {filepath}";
-            }
+            if (isMainConfig) Log($"Using config: {filepath}");
             else
             {
                 Log($"Added config: {filepath}");
-                Config.ApplyFile(filepath);
-                Console.Title += $" + {filepath}";
+                Console.Title += $" + {filepath.Replace("../.db/", "").Replace(".config/", "")}";
             }
+
+            if (Config == null) Config = new CustomConfiguration(filepath);
+            else Config.ApplyFile(filepath);
         }
 
         /// <summary>

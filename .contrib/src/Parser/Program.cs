@@ -250,26 +250,58 @@ namespace ATT
                 Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
 
                 // Parse any arguments passed to Parser
+                string mainConfig = "../.db/standard/.config/retail/retail.config";
+                string baseConfig = null;
                 if (args != null && args.Length > 0)
                 {
                     char[] argSplit = new[] { '=' };
                     foreach (var arg in args)
                     {
                         string[] argPieces = arg.Split(argSplit);
-                        HandleParserArgument(argPieces.SafeIndex(0), argPieces.SafeIndex(1));
+                        var value = argPieces.SafeIndex(1);
+                        switch (argPieces.SafeIndex(0))
+                        {
+                            case "debug":
+                                Framework.DebugMode = true;
+                                Framework.DebugLogging = true;
+                                break;
+                            case "debug-nolog":
+                                Framework.DebugMode = true;
+                                break;
+                            case "auto":
+                                Framework.Automated = true;
+                                break;
+                            case "baseconfig":
+                                if (!string.IsNullOrWhiteSpace(value))
+                                {
+                                    baseConfig = value;
+                                }
+                                else
+                                {
+                                    Framework.LogError("Missing 'baseconfig' parameter value! ex. baseconfig=\"path\"");
+                                }
+                                break;
+                            case "config":
+                                if (!string.IsNullOrWhiteSpace(value))
+                                {
+                                    mainConfig = value;
+                                }
+                                else
+                                {
+                                    Framework.LogError("Missing 'config' parameter value! ex. config=\"path\"");
+                                }
+                                break;
+                        }
                     }
                 }
 
-                if (!Framework.HasConfig())
-                {
-                    // Ensure the Parser uses the default config if nothing is specified.
-                    Framework.InitConfigSettings("../.db/standard/.config/retail/retail.config");
-#if DEBUG
-                    Framework.InitConfigSettings("../.db/shared/.config/debug.config");
-#endif
-                }
-
+                Console.Title = $"ATT Parser: {mainConfig.Replace("../.db/", "").Replace(".config/", "")}";
                 Framework.InitConfigSettings("../.db/shared/.config/root.config");
+                if (!string.IsNullOrWhiteSpace(baseConfig)) Framework.InitConfigSettings(baseConfig);
+                Framework.InitConfigSettings(mainConfig, true);
+#if DEBUG
+                Framework.InitConfigSettings("../.db/shared/.config/debug.config");
+#endif
 
                 Framework.Objects.SINGULAR_PLURAL_FIELDS_LONG = Framework.Config["SINGULAR_PLURAL_FIELDS_LONG"];
                 Framework.Objects.NON_SORTED_FIELDS = Framework.Config["NON_SORTED_FIELDS"];
@@ -775,43 +807,6 @@ namespace ATT
                 {
                     Framework.Objects.MAPID_COORD_SHIFTS.Remove(key);
                 }
-            }
-        }
-
-        private static void HandleParserArgument(string name, string value)
-        {
-            switch (name)
-            {
-                case "debug":
-                    Framework.DebugMode = true;
-                    Framework.DebugLogging = true;
-                    break;
-                case "debug-nolog":
-                    Framework.DebugMode = true;
-                    break;
-                case "auto":
-                    Framework.Automated = true;
-                    break;
-                case "baseconfig":
-                    if (!string.IsNullOrWhiteSpace(value))
-                    {
-                        Framework.InitConfigSettings(value, true);
-                    }
-                    else
-                    {
-                        Framework.LogError("Missing 'baseconfig' parameter value! ex. baseconfig=\"path\"");
-                    }
-                    break;
-                case "config":
-                    if (!string.IsNullOrWhiteSpace(value))
-                    {
-                        Framework.InitConfigSettings(value);
-                    }
-                    else
-                    {
-                        Framework.LogError("Missing 'config' parameter value! ex. config=\"path\"");
-                    }
-                    break;
             }
         }
 
