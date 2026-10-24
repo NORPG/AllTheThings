@@ -1553,8 +1553,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				cost = { { "i", 18249, 1 } },	-- Crescent Key
 				-- #endif
 				groups = {
-					n(ZONE_DROPS, bubbleDown({ timeline = { REMOVED_4_0_3, ADDED_10_1_5 } }, {
+					n(ZONE_DROPS, {
 						i(18250, {	-- Gordok Shackle Key
+							timeline = { REMOVED_4_0_3, ADDED_10_1_5 },
 							-- #if BEFORE 4.0.3
 							description = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 							-- #endif
@@ -1571,7 +1572,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								11448,	-- Gordok Warlock
 							},
 						}),
-					})),
+					}),
 					n(QUESTS, {
 						q(77194, {	-- Free Knot!
 							description = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel without lowering your reputation with the Bloodsail Buccaneers.",
