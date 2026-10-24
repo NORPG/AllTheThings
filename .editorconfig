@@ -258,3 +258,40 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = false
 insert_final_newline = true
+
+# Contributor tools
+[/.contrib/.tools/Lua/*.js]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[/.contrib/.tools/Localization/{*.py,requirements.txt}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[/.contrib/.tools/.wago.update.bat]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[/{.contrib/.tools/README.md,.contrib/.tools/TOOLS_ROADMAP.md}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = false
+insert_final_newline = true

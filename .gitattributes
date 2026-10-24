@@ -151,3 +151,11 @@ tests export-ignore
 
 # DB sync documentation
 /.contrib/db-sync/README.md text eol=lf
+
+# Contributor tools
+/.contrib/.tools/Lua/*.js text eol=lf
+/.contrib/.tools/Localization/*.py text eol=lf
+/.contrib/.tools/Localization/requirements.txt text eol=lf
+/.contrib/.tools/.wago.update.bat text eol=crlf
+/.contrib/.tools/README.md text eol=lf
+/.contrib/.tools/TOOLS_ROADMAP.md text eol=lf
