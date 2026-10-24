@@ -148,3 +148,6 @@ tests export-ignore
 # Windows harvester batch scripts
 /.contrib/Harvesters/*.bat text eol=crlf
 /.contrib/Harvesters/DBs/*.bat text eol=crlf
+
+# DB sync documentation
+/.contrib/db-sync/README.md text eol=lf
