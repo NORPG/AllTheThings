@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local cu,flt,h,i,n,p,prof,q,qo,s=_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-h(-554,{awp=16001,symselector=3,u=3,g={
+h(-554,{symselector=3,u=3,g={
 h(-88,{
 s(162989,16674,{b=1,f=6,loc=42,lvl=58}),
 s(163001,16686,{b=1,f=4,loc=40,lvl=57}),
@@ -27,7 +27,7 @@ flt(9,{
 s(165302,23705,{b=1,f=9})}),
 flt(102,{
 i(23716,{b=1,f=53,spellID=30167})})}}),
-h(-808,{awp=16001,g={
+h(-808,{
 h(-809,{
 h(-45,{
 prof(171,{
@@ -460,7 +460,7 @@ q(91906,_.ResolveQuestData({aqd=
 qo(1,{providers={{"i",248772}}}),
 cu(3402)}})),
 q(93862,{description="Use a Forged Delivery Receipt from an Uncertified Scribe on an empty Waylaid Crate to make a Notarized Shipping Container, then return it to your faction's trade representatives.",repeatable=1,u=1,g={
-qo(1,{providers={{"i",262917}},u=1})}}),
+qo(1,{providers={{"i",262917}}})}}),
 q(98247,{coords={
 [1433]={{9.6,71}}},description="The shipping label appears in your inventory once you seal a waylaid crate for the first time.",lvl=10,qgs={256390},qss={280179},r=2,g={
 cu(3402)}}),
@@ -529,10 +529,10 @@ i(248773,{b=1})}}),
 i(248712,{f=55,lvl=35,spellID=1247456,g={
 i(248773,{b=1})}}),
 i(248713,{f=55,lvl=35,spellID=1247457,g={
-i(248773,{b=1})}})})})}}),
+i(248773,{b=1})}})})})}),
 h(-799,_.ResolveQuestData({aqd=
 {coords={
-[1453]={{49,86.4}}},qgs={211033}},awp=16001,hqd=
+[1453]={{49,86.4}}},qgs={211033}},hqd=
 {coords={
 [1458]={{73.6,33}}},qgs={211022}},g={
 q(81955,{maps={1427},qss={220352},g={

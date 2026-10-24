@@ -3346,65 +3346,37 @@ root(ROOTS.WorldDrops, {
 		i(11737),	-- Libram of Voracity
 	}),
 	filter(MISC, {
-		i(211786, {	-- Scroll: CHAP BALK WELLES
-			description = "'Black Sheep Wall'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211785, {	-- Scroll: CWAL
-			description = "'Claw'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211780, {	-- Scroll: KWYJIBO
-			description = "This might just be a Simpsons quote.",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			description = "'Overwhelming Power'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211854, {	-- Scroll: OMIT KESA
-			description = "'Time Soak'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211855, {	-- Scroll: STHENIC LUNATE
-			description = "'Ancient Hustle'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211853, {	-- Scroll: VOCE WELL
-			description = "'Cow Level'",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(211784, {	-- Scroll: WUBBA WUBBA
-			description = "This might just be a Pee Wee Herman quote.",
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(213545, {	-- PEATCHY ATTAX
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(213546, {	-- Scroll: SHOOBEEDOOP
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(213547, {	-- Scroll: THAW WORDS
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(213544, {	-- Scroll: TOPAZ YORAK
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
-		i(213543, {	-- Scroll: UPDOG
-			classes = { MAGE },
-			timeline = { TIMELINE.ADDED_1_60_1 },
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		groups = sharedData({ classes = { MAGE } }, {
+			i(211786, {	-- Scroll: CHAP BALK WELLES
+				description = "'Black Sheep Wall'",
+			}),
+			i(211785, {	-- Scroll: CWAL
+				description = "'Claw'",
+			}),
+			i(211780, {	-- Scroll: KWYJIBO
+				description = "This might just be a Simpsons quote.",
+			}),
+			i(211787, {	-- Scroll: LOWER PING WHOMEVER
+				description = "'Overwhelming Power'",
+			}),
+			i(211854, {	-- Scroll: OMIT KESA
+				description = "'Time Soak'",
+			}),
+			i(211855, {	-- Scroll: STHENIC LUNATE
+				description = "'Ancient Hustle'",
+			}),
+			i(211853, {	-- Scroll: VOCE WELL
+				description = "'Cow Level'",
+			}),
+			i(211784, {	-- Scroll: WUBBA WUBBA
+				description = "This might just be a Pee Wee Herman quote.",
+			}),
+			i(213545),	-- PEATCHY ATTAX
+			i(213546),	-- Scroll: SHOOBEEDOOP
+			i(213547),	-- Scroll: THAW WORDS
+			i(213544),	-- Scroll: TOPAZ YORAK
+			i(213543),	-- Scroll: UPDOG
 		}),
 	}),
 	category(106, {	-- Tarot Cards

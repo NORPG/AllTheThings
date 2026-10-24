@@ -31,8 +31,8 @@ r(1251744,{awp=16001,learnedAt=185,requireSkill=171,skillID=2937}),
 r(3448,{learnedAt=185,requireSkill=171,skillID=2937}),
 r(3452,{learnedAt=180,requireSkill=171,skillID=2937}),
 r(11451,{learnedAt=220,requireSkill=171,skillID=2937})}),
-flt(56,{awp=16001,g={
-r(1249632,{learnedAt=230,requireSkill=171,skillID=2937})}})}})}),
+flt(56,{
+r(1249632,{awp=16001,learnedAt=230,requireSkill=171,skillID=2937})})}})}),
 prof(165,{
 n(4212,{coords={
 [1457]={{64.6,21.6}}},r=2,g={
@@ -300,7 +300,7 @@ s(157400,3599,{f=4,loc=45}),
 s(156627,2119,{f=4,loc=44}),
 s(156628,2120,{f=4,loc=46}),
 s(156626,2117,{f=4,loc=47})}})})}}),
-m(1454,{icon=255142,isRaid=1,lore="Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",g={
+m(1454,{icon=255142,isRaid=1,lore="Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",zoneTextAreaIDs={1637,2917},g={
 h(-59,{
 n(2704,{coords={
 [1454]={{81.6,19.4}}},r=1,g={
@@ -337,11 +337,11 @@ r(1245246,{awp=16001,learnedAt=10,requireSkill=171,skillID=2937}),
 r(2331,{learnedAt=65,requireSkill=171,skillID=2937}),
 r(2332,{learnedAt=70,requireSkill=171,skillID=2937}),
 r(3170,{learnedAt=60,requireSkill=171,skillID=2937})}),
-flt(50,{awp=16001,g={
-r(1230564,{learnedAt=20,requireSkill=171,skillID=2937})}}),
-flt(56,{awp=16001,g={
-r(1249630,{learnedAt=50,requireSkill=171,skillID=2937}),
-r(1249633,{learnedAt=50,requireSkill=171,skillID=2937})}})}}),
+flt(50,{
+r(1230564,{awp=16001,learnedAt=20,requireSkill=171,skillID=2937})}),
+flt(56,{
+r(1249630,{awp=16001,learnedAt=50,requireSkill=171,skillID=2937}),
+r(1249633,{awp=16001,learnedAt=50,requireSkill=171,skillID=2937})})}}),
 n(3347,{coords={
 [1454]={{55.6,46.6}}},r=1,g={
 r(3101,{lvl=10,rank=2,requireSkill=171}),
@@ -1007,10 +1007,10 @@ h(-48,{(function(t)if _.RaceIndex==2 then	t.minReputation=nil end	return t end)(
 n(4752,{coords={
 [1454]={{69.2,13}}},minReputation={76,42000},r=1,g={
 r(825,{cost=200000,lvl=40})}}))}),
-h(-56,{awp=16001,g={
-o(405149,{coords={
+h(-56,{
+o(405149,{awp=16001,coords={
 [1454]={{38.7,78.4}}},r=1,g={
-i(207972,{b=1})}})}}),
+i(207972,{b=1})}})}),
 h(-58,{
 n(5611,{coords={
 [1454]={{54,67}}},r=1,g={
@@ -1766,10 +1766,10 @@ i(278080,{awp=16001,spellID=1303520}),
 i(281042,{awp=16001,b=1,spellID=1310132}),
 r(7793,{isLimited=1,itemID=6349,learnedAt=130,requireSkill=333,skillID=2940}),
 r(7867,{isLimited=1,itemID=6377,learnedAt=150,requireSkill=333,skillID=2940})}}),
-n(3014,{awp=16001,coords={
+n(3014,{coords={
 [1456]={{49.2,39.6}}},g={
-i(278079,{spellID=1303520}),
-i(281041,{b=1,spellID=1310132})}}),
+i(278079,{awp=16001,spellID=1303520}),
+i(281041,{awp=16001,b=1,spellID=1310132})}}),
 n(8398,{coords={
 [1456]={{53.6,56.8}}},r=1,sym={{"select","itemID",2523,2531,2521,2525,2533,12282,2529}}}),
 n(8364,{coords={
@@ -1803,9 +1803,9 @@ n(2999,{coords={
 n(5189,{coords={
 [1456]={{38,63}}},r=1,sym={{"sub","common_vendor",5188}}})})}}),
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(845,{
-crit(112653,{achID=62355,id=1})})}}),
+crit(112653,{achID=62355,awp=16001,id=1})})}),
 h(-30,{
 exp(415,{
 crit(1329,{achID=845,id=1})}),
@@ -2151,12 +2151,12 @@ n(10642,{coords={
 [1440]={{45.6,71.2},{48.6,69.8},{54.2,69.4}}}}),
 n(10559,{coords={
 [1440]={{9.6,15.6},{11.2,29.4},{13.6,19.6}}}}),
-n(10644,{awp=16001,coords={
+n(10644,{coords={
 [1440]={{18.2,30.2},{22.6,29.6},{23,35.6},{26.6,15},{26.6,18.6},{29.2,16.8}}},g={
-i(284666,{b=1,f=55,lvl=19,spellID=1316847})}}),
-n(10643,{awp=16001,coords={
+i(284666,{awp=16001,b=1,f=55,lvl=19,spellID=1316847})}}),
+n(10643,{coords={
 [1440]={{19.2,44.2},{20.6,45},{21.6,41.8}}},g={
-s(316208,284702,{f=25})}}),
+s(316208,284702,{awp=16001,f=25})}}),
 n(10640,{coords={
 [1440]={{50,60.2},{54.2,62.4},{56.6,62.8}}}}),
 n(10647,{coords={
@@ -2203,9 +2203,9 @@ s(156264,1351,{coords={
 r(13617,{crs={3834,3919},itemID=11151,learnedAt=170,requireSkill=333,skillID=2940}),
 r(1250151,{awp=16001,b=1,crs={3809},itemID=250182,requireSkill=185})})}}),
 m(1447,{icon=236714,lore="A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(852,{
-crit(112654,{achID=62355,id=2})})}}),
+crit(112654,{achID=62355,awp=16001,id=2})})}),
 h(-30,{
 exp(1227,{
 crit(1409,{achID=852,id=1})}),
@@ -2459,9 +2459,9 @@ r(17571,{coords={
 r(19794,{crs={6195},itemID=16045,learnedAt=290,requireSkill=202,skillID=2941}),
 i(10450,{crs={6375,6377,6378,6379,6380,6648}})})}}),
 m(1439,{icon=236739,lore="This rocky area stretches along Kalimdor's north coast. Rains, winds and rocky beaches make the place inhospitable. Old night elf ruins stand crumbling on the cliffs, and murlocs and naga lurk within. The night elf village of Auberdine serves as a friendly trading post.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(844,{
-crit(112656,{achID=62355,id=4})})}}),
+crit(112656,{achID=62355,awp=16001,id=4})})}),
 h(-30,{
 exp(447,{
 crit(1319,{achID=844,id=1})}),
@@ -2782,28 +2782,28 @@ n(2186,{coords={
 [1439]={{39.6,54},{40,78.4},{43.2,86}}}}),
 n(2192,{coords={
 [1439]={{39,86.4}}}}),
-n(7015,{awp=16001,coords={
+n(7015,{coords={
 [1439]={{36.8,72},{37.6,61.6}}},g={
-s(316080,284185,{f=6,loc=44,lvl=13})}}),
-n(2184,{awp=16001,coords={
+s(316080,284185,{awp=16001,f=6,loc=44,lvl=13})}}),
+n(2184,{coords={
 [1439]={{43,61.2}}},g={
-s(316083,284193,{f=27,lvl=14,spellID=1315339})}}),
+s(316083,284193,{awp=16001,f=27,lvl=14,spellID=1315339})}}),
 n(7016,{coords={
 [1439]={{58,18.4},{58.2,23.8},{59.8,15.6},{59.8,23.6},{61.6,23.6},{61.8,17.8}}},g={
 i(6332,{f=52}),
 s(158420,6333,{f=20,lvl=19})}}),
-n(2191,{awp=16001,coords={
+n(2191,{coords={
 [1439]={{47,38.6}}},g={
-s(316074,284173,{f=28,lvl=11})}}),
-n(7017,{awp=16001,coords={
+s(316074,284173,{awp=16001,f=28,lvl=11})}}),
+n(7017,{coords={
 [1439]={{55,35.4}}},g={
-s(316076,284177,{f=23,lvl=13})}}),
-n(2175,{awp=16001,coords={
+s(316076,284177,{awp=16001,f=23,lvl=13})}}),
+n(2175,{coords={
 [1439]={{39.2,35.4},{39.4,39.6},{40.2,41.6},{42.2,38.2}}},g={
-s(316075,284174,{f=20,lvl=10})}}),
-n(2172,{awp=16001,coords={
+s(316075,284174,{awp=16001,f=20,lvl=10})}}),
+n(2172,{coords={
 [1439]={{34.4,89},{35,86},{36.6,90.2},{37,91.4},{38.2,89.4},{38.8,93.8},{40.6,93},{41.2,90.6}}},g={
-p(5172,{b=1,itemID=284176,npcID=274334,spellID=1315267})}})}),
+p(5172,{awp=16001,b=1,itemID=284176,npcID=274334,spellID=1315267})}})}),
 h(-56,{
 o(13359,{coords={
 [1439]={{58.9,21.2}}},description="Can be found scattered around the Ruins of Mathystra. Rarely spawns a Ghost Saber which can be tamed by a Hunter and can also drop a Glowing Cat Figurine.",g={
@@ -2841,9 +2841,9 @@ i(279277,{cost={{"i",279276,20}},f=55,spellID=1306411})}}),
 r(6692,{crs={2337},itemID=5773,learnedAt=145,requireSkill=197,skillID=2948}),
 i(5568,{crs={2156,2157},f=37,lvl=13})})}}),
 m(1443,{icon=236742,lore="Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(848,{
-crit(112657,{achID=62355,id=5})})}}),
+crit(112657,{achID=62355,awp=16001,id=5})})}),
 h(-30,{
 exp(2405,{
 crit(1375,{achID=848,id=1})}),
@@ -2890,16 +2890,16 @@ o(179491,{coords={
 h(-45,{
 q(93044,{lvl=35,minReputation={92,9000},r=1,sourceQuests={93041},u=1,g={
 qo(2,{coords={
-[1443]={{38.7,95.4}}},providers={{"i",255878},{"o",587299}},u=1})}}),
+[1443]={{38.7,95.4}}},providers={{"i",255878},{"o",587299}}})}}),
 q(92743,{awp=16001,coords={
 [1443]={{74.8,68}}},lvl=30,minReputation={93,3000},qgs={5398},sourceQuests={1369},g={
 qo(1,{coords={
 [1418]={{57.1,40.1}}},providers={{"i",254392},{"o",580100}}})}}),
 q(92754,{cost={{"i",13459,3}},lvl=30,minReputation={93,3000},u=1,g={
-r(1251732,{b=1,itemID=250979,learnedAt=190,requireSkill=171,skillID=2937,u=1}),
-r(1251738,{b=1,itemID=250985,learnedAt=195,requireSkill=171,skillID=2937,u=1})}}),
+r(1251732,{b=1,itemID=250979,learnedAt=190,requireSkill=171,skillID=2937}),
+r(1251738,{b=1,itemID=250985,learnedAt=195,requireSkill=171,skillID=2937})}}),
 q(93678,{lvl=30,u=1,g={
-qo(1,{providers={{"i",260518}},u=1})}}),
+qo(1,{providers={{"i",260518}}})}}),
 q(1431,{coords={
 [1454]={{49.8,47.8}}},lvl=30,qgs={5639},r=1}),
 q(1432,{coords={
@@ -2955,7 +2955,7 @@ qo(1,{coords={
 [1443]={{35.6,92}}},crs={253140},providers={{"i",257685}}})}}),
 q(93226,{lvl=30,minReputation={93,0},r=2,u=1,g={
 qo(1,{coords={
-[1443]={{66.2,79.4}}},crs={253139},providers={{"i",257685}},u=1})}}),
+[1443]={{66.2,79.4}}},crs={253139},providers={{"i",257685}}})}}),
 q(94872,{awp=16001,coords={
 [1443]={{56.2,59.4}}},lvl=30,minReputation={93,0},qgs={5412},r=1,g={
 qo(1,{coords={
@@ -3021,10 +3021,10 @@ s(162573,15691,{b=1,f=31}),
 s(162574,15692,{b=1,f=27}),
 s(162577,15695,{b=1,f=8}),
 s(304908,270065,{awp=16001,b=1,f=8})}}),
-q(1371,{awp=16001,coords={
+q(1371,{coords={
 [1443]={{74.8,68}}},cost={{"i",4392,1}},lvl=30,minReputation={93,3000},qgs={5398},sourceQuests={1369},g={
-r(1286792,{b=1,itemID=269901,learnedAt=190,requireSkill=202,skillID=2941}),
-r(1286796,{b=1,itemID=269903,learnedAt=150,requireSkill=202,skillID=2941})}}),
+r(1286792,{awp=16001,b=1,itemID=269901,learnedAt=190,requireSkill=202,skillID=2941}),
+r(1286796,{awp=16001,b=1,itemID=269903,learnedAt=150,requireSkill=202,skillID=2941})}}),
 q(5381,{coords={
 [1443]={{25.8,68.2}}},lvl=32,qgs={11624},r=1,g={
 qo(1,{coords={
@@ -3041,8 +3041,8 @@ s(310074,277515,{b=1,f=20})}}),
 q(5763,{coords={
 [1443]={{25,72.2}}},lvl=28,maps={1434},qgs={11877},qis={14546},r=1}),
 q(92814,{cost={{"i",10008,1}},lvl=30,minReputation={92,3000},u=1,g={
-r(12063,{b=1,itemID=254682,requireSkill=197,u=1}),
-r(1257412,{b=1,itemID=253974,learnedAt=135,requireSkill=197,skillID=2948,u=1})}}),
+r(12063,{b=1,itemID=254682,requireSkill=197}),
+r(1257412,{b=1,itemID=253974,learnedAt=135,requireSkill=197,skillID=2948})}}),
 q(1365,{coords={
 [1443]={{56.2,59.4}}},lvl=30,qgs={5395},r=1,g={
 qo(1,{coords={
@@ -3081,10 +3081,10 @@ s(307706,271801,{b=1,f=22}),
 s(307722,271805,{b=1,f=1}),
 s(307707,271802,{b=1,f=23})}}),
 q(93196,{lvl=35,minReputation={93,9000},sourceQuests={93188},u=1,g={
-qo(1,{providers={{"i",257517}},u=1}),
-s(307708,271803,{b=1,f=28,u=1}),
-s(307721,271804,{b=1,f=23,u=1}),
-s(307705,271800,{b=1,f=29,u=1})}}),
+qo(1,{providers={{"i",257517}}}),
+s(307708,271803,{b=1,f=28}),
+s(307721,271804,{b=1,f=23}),
+s(307705,271800,{b=1,f=29})}}),
 q(1375,{coords={
 [1443]={{74.8,68}}},lvl=30,minReputation={93,3000},qgs={5398},sourceQuests={1371},g={
 qo(1,{coords={
@@ -3095,13 +3095,13 @@ qo(1,{crs={4700,4701,4702,11627},providers={{"i",13892}}}),
 s(162578,15697,{b=1,f=4,loc=47}),
 s(162579,15698,{b=1,f=6,loc=41})}}),
 q(92817,{cost={{"i",5739,1}},lvl=30,minReputation={92,3000},u=1,g={
-r(1255074,{b=1,itemID=252833,learnedAt=205,requireSkill=165,skillID=2945,u=1}),
-r(1255024,{b=1,itemID=252883,requireSkill=165,u=1})}}),
+r(1255074,{b=1,itemID=252833,learnedAt=205,requireSkill=165,skillID=2945}),
+r(1255024,{b=1,itemID=252883,requireSkill=165})}}),
 q(1367,{coords={
 [1443]={{56.2,59.6}}},lvl=30,qgs={5412},r=1}),
 q(92755,{cost={{"i",11135,3}},lvl=30,minReputation={92,3000},r=2,u=1,g={
-r(1248460,{b=1,itemID=249486,learnedAt=165,requireSkill=333,skillID=2940,u=1}),
-r(1248498,{b=1,itemID=249489,learnedAt=225,requireSkill=333,skillID=2940,u=1})}}),
+r(1248460,{b=1,itemID=249486,learnedAt=165,requireSkill=333,skillID=2940}),
+r(1248498,{b=1,itemID=249489,learnedAt=225,requireSkill=333,skillID=2940})}}),
 q(93465,{awp=16001,coords={
 [1443]={{38.8,27.2}}},lvl=30,qgs={11863},r=1,sourceQuests={93464},g={
 qo(1,{coords={
@@ -3168,10 +3168,10 @@ i(3465,{f=37})}}),
 q(1382,{coords={
 [1443]={{66.7,11}}},description="Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",lvl=30,qgs={5396},r=2}),
 q(93045,{lvl=35,minReputation={92,9000},r=1,sourceQuests={93044},u=1,g={
-qo(1,{providers={{"i",256057}},u=1}),
-s(307699,271794,{b=1,f=29,u=1}),
-s(307700,271795,{b=1,f=26,u=1}),
-s(307704,271799,{b=1,f=20,u=1})}}),
+qo(1,{providers={{"i",256057}}}),
+s(307699,271794,{b=1,f=29}),
+s(307700,271795,{b=1,f=26}),
+s(307704,271799,{b=1,f=20})}}),
 q(1435,{coords={
 [1443]={{52.2,53.4}}},lvl=25,qgs={4498},r=1,sourceQuests={1433},g={
 qo(1,{coords={
@@ -3423,9 +3423,9 @@ q(97279,{awp=16001,coords={
 qo(1,{providers={{"i",277653},{"o",673476}}})}}),
 q(4641,{altQuests={787},coords={
 [1411]={{43.2,68.4}}},isBreadcrumb=1,nextQuests={788},qgs={10176},r=1})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(728,{
-crit(112658,{achID=62355,id=6})})}}),
+crit(112658,{achID=62355,awp=16001,id=6})})}),
 h(-30,{
 exp(370,{
 crit(830,{achID=728,id=1})}),
@@ -3713,31 +3713,31 @@ qo(3,{coords={
 [1411]={{67.6,87.8}}},crs={3205},providers={{"i",4866}}}),
 s(157980,4946,{b=1,f=6,loc=47}),
 s(157977,4940,{b=1,f=5,loc=44})}})}),
-h(-46,{awp=16001,g={
+h(-46,{
 n(5824,{coords={
 [1411]={{38.6,53.8},{42.4,38.6},{44.8,50.6}}},g={
-s(316109,284286,{b=1,f=22,lvl=8})}}),
+s(316109,284286,{awp=16001,b=1,f=22,lvl=8})}}),
 n(5823,{coords={
 [1411]={{35.2,48.2},{35.4,53},{36,55.6},{37.8,53.4},{38.8,46.2},{39.2,51}}},g={
-s(316143,284320,{f=5,loc=43,lvl=8})}}),
-n(276194,{coords={
+s(316143,284320,{awp=16001,f=5,loc=43,lvl=8})}}),
+n(276194,{awp=16001,coords={
 [1411]={{51.2,19.8},{51.2,23.4}}},g={
 i(286745,{f=52})}}),
 n(5822,{coords={
 [1411]={{51.6,9.6},{53,7.2}}},g={
-s(316110,284287,{b=1,f=28,lvl=8})}}),
+s(316110,284287,{awp=16001,b=1,f=28,lvl=8})}}),
 n(5826,{coords={
 [1411]={{43.6,40.8},{43.8,50},{44.6,48.4},{47.6,50},{49.6,45}}},g={
-s(316146,284323,{f=4,loc=44,lvl=6})}}),
-n(276198,{coords={
+s(316146,284323,{awp=16001,f=4,loc=44,lvl=6})}}),
+n(276198,{awp=16001,coords={
 [1411]={{60.6,89.6},{63.6,95.6},{69,71.6}}},g={
 s(317485,286746,{f=3})}}),
 n(5808,{coords={
 [1411]={{46.6,79.8},{48.2,78.2},{49.6,80.6}}},g={
-s(316144,284321,{f=21,lvl=6})}}),
+s(316144,284321,{awp=16001,f=21,lvl=6})}}),
 n(5809,{coords={
 [1411]={{59.6,59}}},g={
-s(316145,284322,{f=8,lvl=6})}})}}),
+s(316145,284322,{awp=16001,f=8,lvl=6})}})}),
 h(-48,{(function(t)if _.RaceIndex==8 then	t.minReputation=nil end	return t end)(
 n(7953,{coords={
 [1411]={{55.3,75.5}}},minReputation={530,42000},races={2,5,8},g={
@@ -3773,9 +3773,9 @@ n(15552,{coords={
 [1445]={{77.6,17}}},g={
 i(21103,{b=1}),
 i(21130,{b=1})}})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(850,{
-crit(112659,{achID=62355,id=7})})}}),
+crit(112659,{achID=62355,awp=16001,id=7})})}),
 h(-30,{
 exp(2079,{
 crit(1398,{achID=850,id=1})}),
@@ -4066,10 +4066,10 @@ n(14233,{coords={
 [1445]={{37.8,50.4},{42.6,55.4},{43.8,50.2},{47.6,54.8},{50,57.6}}}}),
 n(14235,{coords={
 [1445]={{51.2,50.8},{52,60.4},{52.2,57.4},{52.6,51.6},{53.6,54.2}}}})}),
-h(-56,{awp=16001,g={
-o(423900,{coords={
+h(-56,{
+o(423900,{awp=16001,coords={
 [1445]={{57.2,20.8}}},g={
-i(215822,{b=1})}})}}),
+i(215822,{b=1})}})}),
 h(-58,{
 n(13476,{coords={
 [1445]={{36.4,30.4}}},r=1,g={
@@ -4141,9 +4141,9 @@ r(16726,{b=1,crs={4364},itemID=12714,learnedAt=300,requireSkill=164,skillID=2938
 r(16664,{b=1,crs={4366},itemID=12706,learnedAt=295,requireSkill=164,skillID=2938}),
 i(20766,{crs={4391,4392,4393}})})}}),
 m(1448,{icon=236763,lore="Once a wooded paradise, Felwood bears a ten-thousand-year-old curse. The trees, land and creatures are twisted and evil, violent and wild. Cursed ancients and furbolg maul any who come close, and satyrs hold depraved court near tainted moonwells. The animals within are mad and brutal and have no fear of humanoids. The undead and demons that survived the Third War fled here as well, and hide in the deep tangles. Felwood is a chaos of battling creatures, and blood soaks the ground. The infamous Shadow Council, a group of orc warlocks loyal to the Burning Legion, hides somewhere within.\n\nAlliance heroes, particularly druids, make forays into the cursed wood in attempts to destroy some of the larger menaces, root out the Shadow Council, and perhaps, some day, restore the land to its former legacy.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(853,{
-crit(112660,{achID=62355,id=8})})}}),
+crit(112660,{achID=62355,awp=16001,id=8})})}),
 h(-30,{
 exp(1765,{
 crit(1445,{achID=853,id=1})}),
@@ -4492,10 +4492,10 @@ n(14345,{coords={
 [1448]={{39,48.4},{42.8,47.6},{43.8,49.6}}}})}),
 prof(393,{
 i(11512,{b=1,crs={7125,7126,8956,8957,8958,8959,8960,8961},description="In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",providers={{"i",11511}}})}),
-h(-56,{awp=16001,g={
-o(463209,{coords={
+h(-56,{
+o(463209,{awp=16001,coords={
 [1448]={{65.2,3.3}}},g={
-i(228134,{b=1})}})}}),
+i(228134,{b=1})}})}),
 h(-58,{
 n(2806,{coords={
 [1448]={{34.8,53.2}}},r=1,g={
@@ -4520,9 +4520,9 @@ r(19071,{crs={7107},itemID=15744,learnedAt=275,requireSkill=165,skillID=2945}),
 r(17571,{coords={
 [1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,learnedAt=295,requireSkill=171,skillID=2937})})}}),
 m(1444,{icon=236764,lore="Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(849,{
-crit(112661,{achID=62355,id=9})})}}),
+crit(112661,{achID=62355,awp=16001,id=9})})}),
 h(-30,{
 exp(1099,{
 crit(1390,{achID=849,id=1})}),
@@ -4915,9 +4915,9 @@ n(5352,{coords={
 n(5350,{coords={
 [1444]={{71.8,63.4},{74,64.6},{74.2,62.2},{76.6,61.4},{76.8,65.4},{78.6,63.8}}}}),
 n(11498,{description="Spawns in the Dire Maul Arena."}),
-n(5356,{awp=16001,coords={
+n(5356,{coords={
 [1444]={{75,36.2},{76.6,39.8},{77.6,37.2},{80,39.2},{81.6,39.4},{84,39.2}}},g={
-s(316309,285043,{f=20})}}),
+s(316309,285043,{awp=16001,f=20})}}),
 n(11497,{description="Spawns in the Dire Maul Arena."})}),
 h(-56,{
 o(141931,{coords={
@@ -4972,9 +4972,9 @@ h(-63,{
 i(21024,{crs={12800,12801,12802,12803}}),
 i(8705,{b=1,description="This item has a chance to drop from any creature in Feralas.",lvl=40})})}}),
 m(1450,{icon=135758,lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(855,{
-crit(112662,{achID=62355,id=10})})}}),
+crit(112662,{achID=62355,awp=16001,id=10})})}),
 h(-30,{
 exp(656),
 exp(493),
@@ -5177,7 +5177,7 @@ s(160250,11308,{f=32,isLimited=1,lvl=44})}})})}}),
 m(2482,{awp=16001,icon=409547,lore="Threats both old and new stalk the slopes of the mountain, eager to claim its power and destroy anyone daring enough to get in their way.",g={
 h(-12,{
 ach(62356,{
-crit(112671,{achID=62355,id=11})})}),
+crit(112671,{achID=62355,awp=16001,id=11})})}),
 h(-30,{
 exp(17145,{
 crit(116907,{achID=62356,id=1})}),
@@ -5299,11 +5299,11 @@ i(274379,{b=1,lvl=60,minReputation={2765,21000},questID=96411,spellID=1293805})}
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",g={
 m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",zoneTextAreaIDs={221},g={
 h(-45,{
-q(752,{awp=16001,coords={
+q(752,{coords={
 [1412]={{44.2,76}}},qgs={2981},r=1,g={
-i(247840,{b=1,f=55,spellID=1245608}),
-i(247841,{b=1,f=55,spellID=1245609}),
-i(247846,{b=1,f=55,spellID=1245610})}}),
+i(247840,{awp=16001,b=1,f=55,spellID=1245608}),
+i(247841,{awp=16001,b=1,f=55,spellID=1245609}),
+i(247846,{awp=16001,b=1,f=55,spellID=1245610})}}),
 q(753,{coords={
 [1412]={{50,81}}},qgs={2991},r=1,sourceQuests={752},g={
 qo(1,{coords={
@@ -5377,9 +5377,9 @@ h(-63,{
 s(156285,1388,{crs={2953},f=28}),
 s(156282,1384,{crs={2952},f=25}),
 s(157984,4951,{crs={3229},f=5,loc=45})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(736,{
-crit(112663,{achID=62355,id=12})})}}),
+crit(112663,{achID=62355,awp=16001,id=12})})}),
 h(-30,{
 exp(404,{
 crit(910,{achID=736,id=1})}),
@@ -5412,8 +5412,8 @@ exp(819,{
 crit(913,{achID=736,id=1})}),
 exp(396,{
 crit(905,{achID=736,id=1})})}),
-h(-31,{awp=16001,g={
-faction(2787)}}),
+h(-31,{
+faction(2787,{awp=16001})}),
 h(-45,{
 q(96294,{awp=16001,coords={
 [1412]={{33.4,22.4}}},lvl=23,providers={{"i",273658}},qgs={259118},r=1,g={
@@ -5678,9 +5678,9 @@ q(99108,{awp=16001,coords={
 qo(1,{coords={
 [1412]={{49,62}}},providers={{"n",10721}}})}})}),
 h(-46,{
-n(5787,{awp=16001,coords={
+n(5787,{coords={
 [1412]={{40.6,15.8}}},g={
-s(316185,284361,{f=6,loc=46,lvl=8})}}),
+s(316185,284361,{awp=16001,f=6,loc=46,lvl=8})}}),
 n(3056,{coords={
 [1412]={{32,26},{32.8,19.2},{34,29.2},{37,42.6},{37.4,17.8},{39.6,13.8},{44.2,41.2},{50.6,15}}},g={
 s(157943,4854,{b=1,f=3,lvl=6,r=1})}}),
@@ -5733,13 +5733,13 @@ r(1301527,{b=1,itemID=276977,learnedAt=185,minReputation={2787,3000},requireSkil
 n(3081,{coords={
 [1412]={{46.2,58.2}}},r=1,g={
 r(6414,{itemID=5484,requireSkill=185})}})}),
-h(-63,{awp=16001,g={
-i(273658,{b=1,coords={
-[1412]={{33.4,7.2},{33.6,6.8}}},crs={264082},lvl=30})}})}}),
+h(-63,{
+i(273658,{awp=16001,b=1,coords={
+[1412]={{33.4,7.2},{33.6,6.8}}},crs={264082},lvl=30})})}}),
 m(2652,{awp=16001,g={
 h(-12,{
 ach(63684,{
-crit(116914,{achID=62355,id=13})})}),
+crit(116914,{achID=62355,awp=16001,id=13})})}),
 h(-30,{
 exp(16677,{
 crit(116908,{achID=63684,id=1})}),
@@ -5756,7 +5756,7 @@ crit(116913,{achID=63684,id=6})})}),
 h(-45,{
 q(93062,{lvl=35,minReputation={92,9000},r=1,u=1,g={
 qo(1,{coords={
-[2652]={{38.6,29.8}}},crs={253446},providers={{"i",258661}},u=1})}}),
+[2652]={{38.6,29.8}}},crs={253446},providers={{"i",258661}}})}}),
 q(92894,{coords={
 [2652]={{35.6,12}}},lvl=35,minReputation={93,9000},qgs={253136},r=2,sourceQuests={92873},g={
 qo(1,{coords={
@@ -5785,11 +5785,11 @@ qo(2,{providers={{"i",255941}}})}}),
 q(93125,{lvl=35,minReputation={92,9000},u=1}),
 q(93072,{lvl=35,minReputation={93,9000},sourceQuests={93066},u=1,g={
 qo(1,{coords={
-[2652]={{37.4,74.6}}},providers={{"n",254283}},u=1}),
+[2652]={{37.4,74.6}}},providers={{"n",254283}}}),
 qo(2,{coords={
-[2652]={{29.6,72.6}}},providers={{"n",254284}},u=1}),
+[2652]={{29.6,72.6}}},providers={{"n",254284}}}),
 qo(3,{coords={
-[2652]={{22.6,26.2}}},providers={{"n",11559}},u=1})}}),
+[2652]={{22.6,26.2}}},providers={{"n",11559}}})}}),
 q(92844,{coords={
 [2652]={{35.6,12}}},lvl=35,minReputation={93,9000},qgs={253136},r=2,sourceQuests={92841},g={
 qo(1,{crs={11561},providers={{"i",254663}}})}}),
@@ -5819,17 +5819,17 @@ qo(1,{coords={
 [2652]={{36,23.7}}},providers={{"n",11561}}})}}),
 q(93188,{lvl=35,minReputation={93,9000},sourceQuests={93072,93129},u=1}),
 q(93058,{lvl=35,minReputation={92,9000},r=1,u=1,g={
-qo(1,{providers={{"n",254825}},u=1})}}),
+qo(1,{providers={{"n",254825}}})}}),
 q(93129,{lvl=35,minReputation={93,9000},sourceQuests={93066},u=1,g={
-qo(1,{providers={{"i",256892}},u=1})}}),
+qo(1,{providers={{"i",256892}}})}}),
 q(93034,{coords={
 [1443]={{36.2,79.2}}},lvl=35,minReputation={92,9000},qgs={5397},sourceQuests={1373}}),
 q(92841,{coords={
 [1443]={{74.8,68}}},lvl=35,minReputation={93,9000},qgs={5398},r=2,sourceQuests={92743}})})}}),
 m(1451,{icon=236829,lore="Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(856,{
-crit(112664,{achID=62355,id=14})})}}),
+crit(112664,{achID=62355,awp=16001,id=14})})}),
 h(-30,{
 exp(3427),
 exp(3425,{
@@ -6450,14 +6450,14 @@ n(15175,{coords={
 [1451]={{48.8,37}}}}),
 n(15179,{coords={
 [1451]={{49.8,36.4}}}}),
-n(15176,{awp=16001,coords={
+n(15176,{coords={
 [1451]={{51.2,38.8}}},g={
-r(1297141,{b=1,itemID=275601,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
-r(1297138,{b=1,itemID=275598,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
-r(1297143,{b=1,itemID=275603,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
-r(1297142,{b=1,itemID=275602,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
-r(1297140,{b=1,itemID=275600,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
-r(1297139,{b=1,itemID=275599,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938})}}),
+r(1297141,{awp=16001,b=1,itemID=275601,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
+r(1297138,{awp=16001,b=1,itemID=275598,learnedAt=290,minReputation={609,3000},requireSkill=164,skillID=2938}),
+r(1297143,{awp=16001,b=1,itemID=275603,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
+r(1297142,{awp=16001,b=1,itemID=275602,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
+r(1297140,{awp=16001,b=1,itemID=275600,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938}),
+r(1297139,{awp=16001,b=1,itemID=275599,learnedAt=295,minReputation={609,9000},requireSkill=164,skillID=2938})}}),
 n(12956,{coords={
 [1451]={{81.8,17.8}}},g={
 r(19048,{b=1,isLimited=1,itemID=15724,learnedAt=250,requireSkill=165,skillID=2945}),
@@ -6470,9 +6470,9 @@ s(164284,20408,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,
 s(164282,20406,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,loc=41,lvl=60}),
 s(164283,20407,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,loc=42,lvl=60})})}}),
 m(1442,{icon=236831,lore="The Stonetalon Mountains are craggy and forbidding. The air is usually hot, though violent rainstorms and severe winds cool the slopes and endanger travelers. The mountains are home to many fierce creatures, including hippogryphs, harpies, drakes, wyverns and kobolds. This region is inhospitable and extreme.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(847,{
-crit(112665,{achID=62355,id=15})})}}),
+crit(112665,{achID=62355,awp=16001,id=15})})}),
 h(-30,{
 exp(2540,{
 crit(1354,{achID=847,id=1})}),
@@ -6748,12 +6748,12 @@ qo(1,{providers={{"i",278201}}})}})}),
 h(-46,{
 n(5915,{coords={
 [1442]={{28.2,12.8}}}}),
-n(5931,{awp=16001,coords={
+n(5931,{coords={
 [1442]={{63.8,51.8},{67.6,45.4},{68,54}}},g={
-s(316190,284400,{f=6,loc=40})}}),
-n(4066,{awp=16001,coords={
+s(316190,284400,{awp=16001,f=6,loc=40})}}),
+n(4066,{coords={
 [1442]={{25.6,12.6}}},g={
-s(316187,284383,{f=3})}}),
+s(316187,284383,{awp=16001,f=3})}}),
 n(4015,{coords={
 [1442]={{44.8,45.6},{45.2,39.2},{48.8,48},{54.8,38}}},description="Can spawn after killing any Pridewing Beasts.",g={
 s(158240,5751,{f=3,lvl=22}),
@@ -6764,19 +6764,19 @@ n(5930,{coords={
 [1442]={{29,73.6},{29.2,67},{36.8,68.8}}}}),
 n(5928,{coords={
 [1442]={{45.8,38.8},{46.8,30.4},{49.6,35.6},{51.4,40.6},{51.6,36.8}}}}),
-n(5932,{awp=16001,coords={
+n(5932,{coords={
 [1442]={{60.4,51.4},{63,54.4},{64.2,57},{64.8,49.2}}},g={
-s(316188,284386,{b=1,f=20,lvl=19})}}),
-n(4030,{awp=16001,coords={
+s(316188,284386,{awp=16001,b=1,f=20,lvl=19})}}),
+n(4030,{coords={
 [1442]={{29.4,72.6},{30.2,68.6},{33,73.6},{33.4,63},{37.4,72.4}}},g={
-s(316186,284382,{f=5,loc=45})}})}),
-h(-56,{awp=16001,g={
-o(674126,{coords={
+s(316186,284382,{awp=16001,f=5,loc=45})}})}),
+h(-56,{
+o(674126,{awp=16001,coords={
 [1442]={{40.7,52.7}}},description="Inside the tent, in a box at the back.",g={
 i(221324,{b=1,spellID=3366})}}),
-o(409711,{coords={
+o(409711,{awp=16001,coords={
 [1442]={{74.4,85.7}}},g={
-i(209851,{b=1})}})}}),
+i(209851,{b=1})}})}),
 h(-58,{
 n(9549,{coords={
 [1442]={{45.2,59.2}}},r=1,g={
@@ -6811,9 +6811,9 @@ r(13617,{crs={4028,4029,4030},itemID=11151,learnedAt=170,requireSkill=333,skillI
 i(6840,{crs={6167}}),
 r(1249958,{awp=16001,b=1,crs={4003},itemID=249880,requireSkill=185})})}}),
 m(1446,{icon=236846,lore="The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(851,{
-crit(112666,{achID=62355,id=16})})}}),
+crit(112666,{achID=62355,awp=16001,id=16})})}),
 h(-30,{
 exp(1939,{
 crit(1416,{achID=851,id=1})}),
@@ -7291,11 +7291,11 @@ s(158159,5405,{b=1,f=3}),
 s(158296,6058,{b=1,f=5,loc=45})}}),
 q(97979,{awp=16001,coords={
 [1438]={{59.2,40.4}}},qgs={3595},races={4},sourceQuests={456}}),
-q(458,{awp=16001,coords={
+q(458,{coords={
 [1438]={{59.8,42.4}}},qgs={2077},r=2,g={
-i(247840,{b=1,f=55,spellID=1245608}),
-i(247841,{b=1,f=55,spellID=1245609}),
-i(247846,{b=1,f=55,spellID=1245610})}}),
+i(247840,{awp=16001,b=1,f=55,spellID=1245608}),
+i(247841,{awp=16001,b=1,f=55,spellID=1245609}),
+i(247846,{awp=16001,b=1,f=55,spellID=1245610})}}),
 q(459,{coords={
 [1438]={{57.8,45}}},qgs={1992},r=2,sourceQuests={458},g={
 qo(1,{crs={1988,1989},providers={{"i",3297}}}),
@@ -7325,9 +7325,9 @@ n(3591,{r=2,sym={{"select","itemID",2122,2123,2124,2125,2126,2127}}}),
 n(3590,{r=2,sym={{"select","itemID",2121,3599,3600,2119,2120,2117}}}),
 n(3589,{r=2,sym={{"select","itemID",2506,2507}}}),
 n(3588,{r=2,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2132,2131}}})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(842,{
-crit(112667,{achID=62355,id=17})})}}),
+crit(112667,{achID=62355,awp=16001,id=17})})}),
 h(-30,{
 exp(736,{
 crit(1300,{achID=842,id=1})}),
@@ -7515,9 +7515,9 @@ qo(1,{providers={{"i",15923},{"n",1996}}}),
 r(883,{requireSkill=50}),
 r(2641,{requireSkill=50}),
 r(1515,{requireSkill=50})}}),
-q(940,{awp=16001,coords={
+q(940,{coords={
 [1438]={{37,34.1},{38.2,34.4}}},lvl=6,providers={{"o",673378}},qgs={3519},qis={5219},r=2,sourceQuests={98398},g={
-s(311845,281250,{b=1,f=3})}}),
+s(311845,281250,{awp=16001,b=1,f=3})}}),
 q(2241,{c={4},coords={
 [1438]={{56.4,60.1}}},lvl=10,qgs={3599},qis={7735},r=2}),
 q(2941,{coords={
@@ -7634,15 +7634,15 @@ n(3535,{coords={
 [1438]={{40.8,39.6},{42.8,25.8},{42.8,38.6},{43,31},{43.6,36.6},{43.8,33.2},{44,39.6},{44.6,27.6},{46,30.4}}},g={
 i(5179,{b=1,description="This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",lvl=5,r=2}),
 s(316073,284167,{awp=16001,f=4,loc=42,lvl=10})}}),
-n(14430,{awp=16001,coords={
+n(14430,{coords={
 [1438]={{51.2,77.8},{53.4,77.2},{54.6,75.8},{54.8,77.4},{58,75.8},{58.8,76.6},{60.6,76.2},{61,74.4}}},g={
-s(316071,284165,{f=5,loc=42,lvl=6})}}),
+s(316071,284165,{awp=16001,f=5,loc=42,lvl=6})}}),
 n(14431,{coords={
 [1438]={{34.8,34.4},{36,37.8},{36.4,42.4},{38,39},{38,44},{38.2,34.8},{39,41.4}}},g={
 s(163620,18612,{f=6,loc=47,lvl=5})}}),
-n(14429,{awp=16001,coords={
+n(14429,{coords={
 [1438]={{40.2,80.6},{41.6,78.6}}},g={
-s(316072,284166,{f=28,lvl=8})}}),
+s(316072,284166,{awp=16001,f=28,lvl=8})}}),
 n(276101,{awp=16001,coords={
 [1438]={{37.6,28.2},{39.9,55}}},g={
 s(317489,286750,{f=27})}}),
@@ -7673,9 +7673,9 @@ i(5206,{crs={3569},f=55,spellID=5665}),
 s(158775,7094,{coords={
 [1438]={{45.4,24.6}}},crs={2030},f=28,lvl=5})})}}),
 m(1413,{icon=236717,lore="The Barrens is a vast, arid savannah. Dust devils swirl across the dry land and canyons cut the earth. Despite its inhospitable nature, numerous trade routes, including the major Gold Road, cross the Barrens. Centaur raiding parties are a constant threat, as are lions and thunder lizards. The orcs and tauren drove the quilboar tribes out of their lands, and the creatures now lair in the Barrens.\n\nIronforge dwarves have discovered a great Titan ruin in this region, and an enormous dig site and settlement has sprung up around it. Called Bael Modan, this fortified city is a common stop for the caravans that trundle across the dusty landscape. The goblin city of Ratchet, full of clanging coins, shining lights and debauchery, sprawls on the Barrens' eastern coast.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(750,{
-crit(112655,{achID=62355,id=3})})}}),
+crit(112655,{achID=62355,awp=16001,id=3})})}),
 h(-30,{
 exp(1700,{
 crit(934,{achID=750,id=1})}),
@@ -8480,12 +8480,12 @@ h(-800,{coords={
 n(5797,{
 s(316402,285347,{awp=16001,b=1,f=32,lvl=22}),
 i(10621,{b=1,f=55,lvl=15})}),
-n(5799,{awp=16001,g={
-s(316403,285348,{b=1,f=1,lvl=21})}}),
-n(5800,{awp=16001,g={
-s(316404,285350,{b=1,f=28,lvl=21})}}),
-n(5798,{awp=16001,g={
-s(316401,285346,{f=25})}})}}),
+n(5799,{
+s(316403,285348,{awp=16001,b=1,f=1,lvl=21})}),
+n(5800,{
+s(316404,285350,{awp=16001,b=1,f=28,lvl=21})}),
+n(5798,{
+s(316401,285346,{awp=16001,f=25})})}}),
 n(5834,{coords={
 [1413]={{44.6,62.2},{44.8,64},{46.6,63}}}}),
 n(3672,{coords={
@@ -8495,28 +8495,28 @@ s(158162,5422,{f=5,loc=46,lvl=15})}}),
 n(5838,{coords={
 [1413]={{53,44.6},{53.6,40},{54.6,46.2},{56.6,43.6},{57.2,41.6}}},g={
 s(158975,7559,{f=1,lvl=14})}}),
-n(5827,{awp=16001,coords={
+n(5827,{coords={
 [1413]={{44.4,75.6},{44.8,79.4},{46,75.8},{46.6,67.4},{46.6,71.6},{47.4,65.6},{47.6,58.8},{48.6,63},{49,60.8},{49.6,58}}},g={
-s(316396,285338,{f=5,loc=46})}}),
+s(316396,285338,{awp=16001,f=5,loc=46})}}),
 n(5851,{coords={
 [1413]={{49.6,83.8}}},r=1}),
 n(5849,{coords={
 [1413]={{47.6,85.6}}},r=1,g={
 s(157907,4785,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",f=4,loc=45})}}),
-n(5865,{awp=16001,coords={
+n(5865,{coords={
 [1413]={{49.6,15.8},{49.8,27.6},{51,20.6},{51.6,26.8}}},g={
-s(317355,286533,{f=5,loc=44,lvl=10})}}),
+s(317355,286533,{awp=16001,f=5,loc=44,lvl=10})}}),
 n(3270,{coords={
 [1413]={{58.6,26.8},{59,24.6}}},g={
 s(157900,4768,{b=1,f=4,loc=44,lvl=12}),
 s(157901,4771,{f=3,lvl=12})}}),
-n(5836,{awp=16001,coords={
+n(5836,{coords={
 [1413]={{56.2,8.6}}},g={
-i(285366,{b=1,f=55}),
-i(285282,{f=36,lvl=13})}}),
-n(5835,{awp=16001,coords={
+i(285366,{awp=16001,b=1,f=55}),
+i(285282,{awp=16001,f=36,lvl=13})}}),
+n(5835,{coords={
 [1413]={{56.6,8.6}}},g={
-s(316405,285351,{f=5,loc=44,lvl=16})}}),
+s(316405,285351,{awp=16001,f=5,loc=44,lvl=16})}}),
 n(5863,{coords={
 [1413]={{41.2,45.6},{42.6,47.2},{43.6,52.2},{43.8,48.4},{45.6,52.4}}},g={
 s(156361,1539,{f=28,lvl=16})}}),
@@ -8524,53 +8524,53 @@ n(3398,{coords={
 [1413]={{46.6,39.6}}},g={
 s(158042,5183,{b=1,f=1,lvl=17}),
 s(158041,5182,{f=26,lvl=17})}}),
-n(5859,{awp=16001,coords={
+n(5859,{coords={
 [1413]={{41.6,78.8},{42,81.6},{43.4,84},{44.8,79.6},{45,84.6}}},g={
-s(316388,285328,{f=22})}}),
+s(316388,285328,{awp=16001,f=22})}}),
 n(5847,{coords={
 [1413]={{47,83.8}}},r=1,g={
 s(156579,2035,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",f=25})}}),
-n(5828,{awp=16001,coords={
+n(5828,{coords={
 [1413]={{62,33.6}}},g={
-i(285331,{b=1,f=51,lvl=20})}}),
+i(285331,{awp=16001,b=1,f=51,lvl=20})}}),
 n(5848,{coords={
 [1413]={{49.4,84.4}}},r=1}),
 n(3470,{coords={
 [1413]={{47.6,19.2}}},g={
 s(158038,5111,{f=3,lvl=12}),
 s(158039,5112,{f=20,lvl=12})}}),
-n(5841,{awp=16001,coords={
+n(5841,{coords={
 [1413]={{53,44.6},{53.4,37.4},{53.8,41.2},{54.6,48},{55.4,45.6},{55.6,39},{56.8,41.8}}},g={
-s(316397,285339,{b=1,f=6,loc=45,lvl=14}),
-i(285282,{f=36,lvl=13})}}),
+s(316397,285339,{awp=16001,b=1,f=6,loc=45,lvl=14}),
+i(285282,{awp=16001,f=36,lvl=13})}}),
 n(3253,{coords={
 [1413]={{42.6,70.6},{44.4,74},{44.6,70},{47.8,70.2}}},g={
 i(5138,{b=1,lvl=10,r=1}),
 s(317356,286534,{awp=16001,f=20,lvl=21})}}),
-n(5830,{awp=16001,coords={
+n(5830,{coords={
 [1413]={{39,16.2},{39.6,12.8},{40.6,17.8}}},g={
-s(316400,285345,{b=1,f=4,loc=47,lvl=16})}}),
-n(3295,{awp=16001,coords={
+s(316400,285345,{awp=16001,b=1,f=4,loc=47,lvl=16})}}),
+n(3295,{coords={
 [1413]={{56.2,9.6},{56.6,7.4}}},g={
-i(286535,{f=52,lvl=16})}}),
-n(5829,{awp=16001,coords={
+i(286535,{awp=16001,f=52,lvl=16})}}),
+n(5829,{coords={
 [1413]={{40.8,23.4},{41.4,27.2},{41.8,20.4}}},g={
-s(317357,286536,{f=5,loc=42,lvl=14})}}),
+s(317357,286536,{awp=16001,f=5,loc=42,lvl=14})}}),
 n(5837,{coords={
 [1413]={{42.2,24.6},{46.6,23}}},g={
 s(156265,1355,{f=3,lvl=12})}}),
-n(5831,{awp=16001,coords={
+n(5831,{coords={
 [1413]={{59.2,32.6},{60.6,30.4},{61.8,33.8}}},g={
-i(285330,{b=1,f=52,lvl=18})}}),
-n(5864,{awp=16001,coords={
+i(285330,{awp=16001,b=1,f=52,lvl=18})}}),
+n(5864,{coords={
 [1413]={{41.4,45.6},{42.2,48},{45.2,49}}},g={
-s(316390,285332,{b=1,f=29,lvl=19})}}),
-n(5842,{awp=16001,coords={
+s(316390,285332,{awp=16001,b=1,f=29,lvl=19})}}),
+n(5842,{coords={
 [1413]={{58.2,7.6},{60.6,10},{61,13.6}}},g={
-s(316389,285329,{b=1,f=3,lvl=16})}}),
-n(5832,{awp=16001,coords={
+s(316389,285329,{awp=16001,b=1,f=3,lvl=16})}}),
+n(5832,{coords={
 [1413]={{46.4,78.6},{47,77.2},{48,80.8}}},g={
-s(317358,286537,{f=23,lvl=21})}}),
+s(317358,286537,{awp=16001,f=23,lvl=21})}}),
 n(3652,{coords={
 [1413]={{52,54}}},description="Inside the pool of water outside the Wailing Caverns dungeon portal.",g={
 s(158164,5425,{f=6,loc=45}),
@@ -9043,9 +9043,9 @@ r(1250156,{awp=16001,b=1,coords={
 i(5165,{crs={3254,3255,3256},spellID=5316}),
 i(5052,{crs={3444},spellID=5161})})}}),
 m(1441,{icon=236848,lore="This canyon desert gets its name from the innumerable sandstone spires that thrust up from the salt flats. Engineers have constructed bridges across the peaks of these towers, allowing travelers to cross the region without having to set foot on the ground below. The Thousand Needles is a dry and hot desert of salt. At its center is a stagnant lake ten times saltier than the ocean.\n\nResourceful goblins have discovered oil in the Scorched Basin, but they, a few scorpions, and the occasional centaur warband are the only signs of life in this parched land.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(846,{
-crit(112668,{achID=62355,id=18})})}}),
+crit(112668,{achID=62355,awp=16001,id=18})})}),
 h(-30,{
 exp(480,{
 crit(1348,{achID=846,id=1})}),
@@ -9297,7 +9297,7 @@ s(311555,280607,{b=1,f=34,spellID=1309442}),
 s(311553,280604,{b=1,f=24,spellID=1309422}),
 s(311554,280605,{b=1,f=34,spellID=1309539})}}),
 q(96136,{c={7},lvl=30,races={96},u=1,g={
-i(5178,{b=1,description="You must keep this in your bags forever.",u=1})}}),
+i(5178,{b=1,description="You must keep this in your bags forever."})}}),
 q(98069,{awp=16001,coords={
 [1441]={{46,51.4}}},lvl=25,qgs={4877},r=1,g={
 qo(1,{providers={{"i",279383}}})}}),
@@ -9314,12 +9314,12 @@ n(5933,{coords={
 [1441]={{17.8,36.8},{20,39.4},{21.2,41.6},{21.4,37.2},{21.6,33.4},{24,43.6},{25.2,36.8},{25.6,41.4},{26,39.6}}}}),
 n(14427,{coords={
 [1441]={{51.8,43.6},{55.6,49.6},{59.6,47.6},{60.6,58.6}}}}),
-n(14426,{awp=16001,coords={
+n(14426,{coords={
 [1441]={{33,27.6},{34.8,31.6},{36.6,31.6}}},g={
-s(316325,285212,{f=23})}}),
-n(5934,{awp=16001,coords={
+s(316325,285212,{awp=16001,f=23})}}),
+n(5934,{coords={
 [1441]={{15.8,41.2},{17.8,40.6},{18,42.6}}},g={
-i(285190,{f=52})}}),
+i(285190,{awp=16001,f=52})}}),
 n(5935,{coords={
 [1441]={{76.4,60.2},{82,58},{84.2,72.8},{86,80.6},{86.6,70.2},{86.6,76.8},{88.6,73.4},{88.6,78.8}}},g={
 s(159193,8223,{f=25})}}),
@@ -9420,9 +9420,9 @@ r(1252367,{awp=16001,b=1,itemID=251470,learnedAt=320,minReputation={576,9000},re
 r(1252366,{awp=16001,b=1,itemID=251469,learnedAt=320,minReputation={576,9000},requireSkill=164,skillID=2938}),
 r(23629,{b=1,itemID=19204,minReputation={576,21000},requireSkill=165})}})})}}),
 m(1449,{icon=236850,lore="Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(854,{
-crit(112669,{achID=62355,id=19})})}}),
+crit(112669,{achID=62355,awp=16001,id=19})})}),
 h(-30,{
 exp(537,{
 crit(1453,{achID=854,id=1})}),
@@ -9651,9 +9651,9 @@ i(12809,{crs={6560}}),
 i(20768,{crs={6557,6559,9477},sym={{"select","itemID",20769}}}),
 r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=310,requireSkill=10660,skillID=2945})})}}),
 m(1452,{icon=236854,lore="Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(857,{
-crit(112670,{achID=62355,id=20})})}}),
+crit(112670,{achID=62355,awp=16001,id=20})})}),
 h(-30,{
 exp(2256,{
 crit(1480,{achID=857,id=1})}),
@@ -9884,10 +9884,10 @@ n(10200,{coords={
 [1452]={{50,8},{50,11.2},{50.4,20.4},{51.8,17.2},{55.6,14}}}})}),
 prof(393,{
 i(15422,{crs={7430,7431,7432,7433,7434}})}),
-h(-56,{awp=16001,g={
-o(463214,{coords={
+h(-56,{
+o(463214,{awp=16001,coords={
 [1452]={{60.7,37.7}}},g={
-i(228136,{b=1})}})}}),
+i(228136,{b=1})}})}),
 h(-58,{
 n(11187,{coords={
 [1452]={{61.2,39}}},g={
@@ -10145,16 +10145,16 @@ q(94817,{altQuests={94821,94822,94823,94825,94826},awp=16001,c={5},coords={
 [1455]={{24.8,9.4}}},lvl=10,qgs={258785},races={7},g={
 r(1277455,{requireSkill=613})}}),
 q(94823,{altQuests={94817,94821,94822,94825,94826},c={5},lvl=10,races={7},u=1,g={
-r(1277455,{requireSkill=613,u=1})}}),
+r(1277455,{requireSkill=613})}}),
 q(94825,{altQuests={94817,94821,94822,94823,94826},c={5},lvl=10,races={7},u=1,g={
-r(1277455,{requireSkill=613,u=1})}}),
+r(1277455,{requireSkill=613})}}),
 q(94826,{altQuests={94817,94821,94822,94823,94825},c={5},lvl=10,races={7},u=1,g={
-r(1277455,{requireSkill=613,u=1})}}),
+r(1277455,{requireSkill=613})}}),
 q(94818,{altQuests={94819,94820},awp=16001,c={5},coords={
 [1455]={{24.8,9.4}}},lvl=20,qgs={258785},races={7},g={
 r(1277462,{requireSkill=613})}}),
 q(94820,{altQuests={94818,94819},c={5},lvl=20,races={7},u=1,g={
-r(1277462,{requireSkill=613,u=1})}}),
+r(1277462,{requireSkill=613})}}),
 q(5675,{altQuests={5672,5673},c={5},coords={
 [1455]={{25,8.2}}},lvl=20,qgs={11406},races={4},g={
 r(2651,{rank=1,requireSkill=613})}}),
@@ -10284,10 +10284,10 @@ r(7386,{requireSkill=257}),
 r(355,{requireSkill=257})}}),
 q(97263,{awp=16001,coords={
 [1455]={{72.6,48.5}}},providers={{"o",660964}},qis={277505},r=2})}),
-h(-56,{awp=16001,g={
-o(386691,{coords={
+h(-56,{
+o(386691,{awp=16001,coords={
 [1455]={{75.7,10.5}}},r=2,g={
-i(203754,{b=1})}})}}),
+i(203754,{b=1})}})}),
 h(-58,{
 n(7978,{coords={
 [1455]={{32.4,21.2}}},description="Walks around The Mystic Ward.",r=2,g={
@@ -10500,11 +10500,11 @@ r(1245246,{awp=16001,learnedAt=10,requireSkill=171,skillID=2937}),
 r(2331,{learnedAt=65,requireSkill=171,skillID=2937}),
 r(2332,{learnedAt=70,requireSkill=171,skillID=2937}),
 r(3170,{learnedAt=60,requireSkill=171,skillID=2937})}),
-flt(50,{awp=16001,g={
-r(1230564,{learnedAt=20,requireSkill=171,skillID=2937})}}),
-flt(56,{awp=16001,g={
-r(1249630,{learnedAt=50,requireSkill=171,skillID=2937}),
-r(1249633,{learnedAt=50,requireSkill=171,skillID=2937})}})}})}),
+flt(50,{
+r(1230564,{awp=16001,learnedAt=20,requireSkill=171,skillID=2937})}),
+flt(56,{
+r(1249630,{awp=16001,learnedAt=50,requireSkill=171,skillID=2937}),
+r(1249633,{awp=16001,learnedAt=50,requireSkill=171,skillID=2937})})}})}),
 prof(164,{
 n(957,{coords={
 [1453]={{64,37.2}}},r=2,g={
@@ -11044,15 +11044,15 @@ q(94773,{altQuests={94775,94776,94777,94778,94779},awp=16001,c={5},coords={
 [1453]={{38.8,26.4}}},lvl=10,qgs={376},races={1},g={
 r(1277370,{requireSkill=56})}}),
 q(94775,{altQuests={94773,94776,94777,94778,94779},c={5},lvl=10,races={1},u=1,g={
-r(1277370,{requireSkill=56,u=1})}}),
+r(1277370,{requireSkill=56})}}),
 q(94776,{altQuests={94773,94775,94777,94778,94779},c={5},lvl=10,races={1},u=1,g={
-r(1277370,{requireSkill=56,u=1})}}),
+r(1277370,{requireSkill=56})}}),
 q(94777,{altQuests={94773,94775,94776,94778,94779},c={5},lvl=10,races={1},u=1,g={
-r(1277370,{requireSkill=56,u=1})}}),
+r(1277370,{requireSkill=56})}}),
 q(94778,{altQuests={94773,94775,94776,94777,94779},c={5},lvl=10,races={1},u=1,g={
-r(1277370,{requireSkill=56,u=1})}}),
+r(1277370,{requireSkill=56})}}),
 q(94779,{altQuests={94773,94775,94776,94777,94778},c={5},lvl=10,races={1},u=1,g={
-r(1277370,{requireSkill=56,u=1})}}),
+r(1277370,{requireSkill=56})}}),
 q(6261,{coords={
 [1453]={{77,61.2}}},lvl=10,qgs={1323},qis={16115},races={1},sourceQuests={6281}}),
 q(78091,{awp=16001,c={2},coords={
@@ -11367,10 +11367,10 @@ i(2723,{f=55,spellID=11007})}}),
 q(397,{c={9},coords={
 [1453]={{40.1,85.3}}},lvl=25,qgs={1435},r=2,sourceQuests={336},g={
 s(157366,3556,{b=1,c={9},f=4,loc=40})}})}),
-h(-46,{awp=16001,g={
+h(-46,{
 n(3581,{coords={
 [1453]={{31.4,64.4},{34.2,60.2},{35.2,42.4},{38.6,47.4},{47.2,61.6},{49.8,22.6},{50,69.6},{53.8,30.6},{62.4,50.2},{62.6,38},{66.6,57},{66.8,32.2}}},g={
-p(5162,{itemID=282047,npcID=273391,spellID=1312880})}})}}),
+p(5162,{awp=16001,itemID=282047,npcID=273391,spellID=1312880})}})}),
 h(-58,{
 n(258568,{awp=16001,coords={
 [1453]={{53.5,81.8}}},r=2,g={
@@ -11413,45 +11413,45 @@ n(1319,{coords={
 s(156831,2445,{f=8,lvl=17}),
 s(163288,17188,{f=8,lvl=14})}}),
 n(12777,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}},g={
-s(308246,272738,{b=1,c={1},cost={{"c",1792,6000},{"i",20560,15}},f=7,loc=40,lvl=55,pvp=1}),
-s(308249,272741,{b=1,c={1},cost={{"c",1792,4250},{"i",20559,10}},f=7,loc=41,lvl=55,pvp=1}),
-s(308453,273325,{b=1,c={1},cost={{"c",1792,4000},{"i",20559,10}},f=7,loc=45,lvl=55,pvp=1}),
-s(308248,272740,{b=1,c={1},cost={{"c",1792,6000},{"i",20558,15}},f=7,loc=46,lvl=55,pvp=1}),
-s(308224,272716,{b=1,c={1},cost={{"c",1792,5000},{"i",274895,10}},f=7,loc=47,lvl=55,pvp=1}),
-s(308336,272828,{b=1,c={1},cost={{"c",1792,3000},{"i",20558,10}},f=7,loc=43,lvl=55,pvp=1}),
-s(308225,272717,{b=1,c={1},cost={{"c",1792,5000},{"i",20558,10}},f=7,loc=44,lvl=55,pvp=1,spellID=22778}),
-s(308247,272739,{b=1,c={1},cost={{"c",1792,6250},{"i",20559,15}},f=7,loc=42,lvl=55,pvp=1}),
-i(275240,{b=1,cost={{"c",1792,750}},lvl=60,pvp=1,spellID=1296349}),
-i(275244,{b=1,cost={{"c",1792,1000}},lvl=60,pvp=1,spellID=1296354}),
-i(275243,{b=1,cost={{"c",1792,1000}},lvl=60,pvp=1,spellID=1296353}),
-i(275239,{b=1,cost={{"c",1792,1500}},lvl=60,pvp=1,spellID=1296348}),
-i(275242,{b=1,cost={{"c",1792,2000}},lvl=60,pvp=1,spellID=1296351}),
-i(275229,{b=1,cost={{"c",1792,1500}},lvl=60,pvp=1,spellID=1296317}),
-i(275241,{b=1,cost={{"c",1792,2000}},lvl=60,pvp=1,spellID=1296350}),
-i(275238,{b=1,cost={{"c",1792,1750}},lvl=60,pvp=1,spellID=1296347})}}),
+s(308246,272738,{b=1,c={1},cost={{"c",1792,6000},{"i",20560,15}},f=7,loc=40,lvl=55}),
+s(308249,272741,{b=1,c={1},cost={{"c",1792,4250},{"i",20559,10}},f=7,loc=41,lvl=55}),
+s(308453,273325,{b=1,c={1},cost={{"c",1792,4000},{"i",20559,10}},f=7,loc=45,lvl=55}),
+s(308248,272740,{b=1,c={1},cost={{"c",1792,6000},{"i",20558,15}},f=7,loc=46,lvl=55}),
+s(308224,272716,{b=1,c={1},cost={{"c",1792,5000},{"i",274895,10}},f=7,loc=47,lvl=55}),
+s(308336,272828,{b=1,c={1},cost={{"c",1792,3000},{"i",20558,10}},f=7,loc=43,lvl=55}),
+s(308225,272717,{b=1,c={1},cost={{"c",1792,5000},{"i",20558,10}},f=7,loc=44,lvl=55,spellID=22778}),
+s(308247,272739,{b=1,c={1},cost={{"c",1792,6250},{"i",20559,15}},f=7,loc=42,lvl=55}),
+i(275240,{b=1,cost={{"c",1792,750}},lvl=60,spellID=1296349}),
+i(275244,{b=1,cost={{"c",1792,1000}},lvl=60,spellID=1296354}),
+i(275243,{b=1,cost={{"c",1792,1000}},lvl=60,spellID=1296353}),
+i(275239,{b=1,cost={{"c",1792,1500}},lvl=60,spellID=1296348}),
+i(275242,{b=1,cost={{"c",1792,2000}},lvl=60,spellID=1296351}),
+i(275229,{b=1,cost={{"c",1792,1500}},lvl=60,spellID=1296317}),
+i(275241,{b=1,cost={{"c",1792,2000}},lvl=60,spellID=1296350}),
+i(275238,{b=1,cost={{"c",1792,1750}},lvl=60,spellID=1296347})}}),
 n(12782,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}},g={
-s(308366,272858,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60,pvp=1}),
-s(308357,272849,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=29,lvl=60,pvp=1}),
-s(308356,272848,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60,pvp=1}),
-s(308358,272850,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=28,lvl=60,pvp=1}),
-s(308348,272840,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=22,lvl=60,pvp=1}),
-s(308359,272851,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=26,lvl=60,pvp=1}),
-s(308354,272846,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=31,lvl=60,pvp=1}),
-s(308367,272859,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=25,lvl=60,pvp=1}),
-s(308364,272856,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=20,lvl=60,pvp=1}),
-s(308347,272839,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=21,lvl=60,pvp=1}),
-s(308365,272857,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=23,lvl=60,pvp=1}),
-s(308201,272693,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=25,lvl=60,pvp=1}),
-s(308355,272847,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=23,lvl=60,pvp=1}),
-s(308351,272843,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=20,lvl=60,pvp=1}),
-s(308352,272844,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=34,lvl=60,pvp=1}),
-s(308353,272845,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=34,lvl=60,pvp=1}),
-s(308349,272841,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=32,lvl=60,pvp=1}),
-s(308350,272842,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=33,lvl=60,pvp=1}),
-s(308346,272838,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=8,lvl=60,pvp=1,spellID=13959}),
-s(310213,278158,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=1,lvl=60,pvp=1}),
-s(310212,278157,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=1,lvl=60,pvp=1}),
-s(310351,278468,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=8,lvl=60,pvp=1})}}),
+s(308366,272858,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60}),
+s(308357,272849,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=29,lvl=60}),
+s(308356,272848,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60}),
+s(308358,272850,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=28,lvl=60}),
+s(308348,272840,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=22,lvl=60}),
+s(308359,272851,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=26,lvl=60}),
+s(308354,272846,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=31,lvl=60}),
+s(308367,272859,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=25,lvl=60}),
+s(308364,272856,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=20,lvl=60}),
+s(308347,272839,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=21,lvl=60}),
+s(308365,272857,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=23,lvl=60}),
+s(308201,272693,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=25,lvl=60}),
+s(308355,272847,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=23,lvl=60}),
+s(308351,272843,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=20,lvl=60}),
+s(308352,272844,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=34,lvl=60}),
+s(308353,272845,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=34,lvl=60}),
+s(308349,272841,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=32,lvl=60}),
+s(308350,272842,{b=1,cost={{"c",1792,8000},{"i",274895,10}},f=33,lvl=60}),
+s(308346,272838,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=8,lvl=60,spellID=13959}),
+s(310213,278158,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=1,lvl=60}),
+s(310212,278157,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=1,lvl=60}),
+s(310351,278468,{b=1,cost={{"c",1792,7000},{"i",274895,10}},f=8,lvl=60})}}),
 n(1291,{coords={
 [1453]={{62.2,67.6}}},r=2,g={
 s(162718,16059,{f=10}),
@@ -11708,10 +11708,10 @@ i(18839,{b=1,f=55,lvl=35,spellID=4042}),
 i(18841,{b=1,f=55,lvl=41,spellID=17530}),
 s(162121,15198,{b=1,f=9}),
 s(308202,272694,{b=1,f=9}),
-i(274445,{b=1,cost={{"c",1792,3500}},f=53,pvp=1,spellID=438273}),
-s(308207,272699,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55,pvp=1}),
-s(308206,272698,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55,pvp=1}),
-i(274969,{b=1,cost={{"c",1792,5000},{"i",274895,10}},f=51,lvl=55,pvp=1}),
+i(274445,{b=1,cost={{"c",1792,3500}},f=53,spellID=438273}),
+s(308207,272699,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55}),
+s(308206,272698,{b=1,cost={{"c",1792,3000},{"i",20559,10}},f=3,lvl=55}),
+i(274969,{b=1,cost={{"c",1792,5000},{"i",274895,10}},f=51,lvl=55}),
 s(308203,272695,{b=1,f=9})}}),
 n(12805,{coords={
 [1453]={{76.8,65.8}}},r=2,g={
@@ -11796,8 +11796,8 @@ r(1251744,{awp=16001,learnedAt=185,requireSkill=171,skillID=2937}),
 r(3448,{learnedAt=185,requireSkill=171,skillID=2937}),
 r(3452,{learnedAt=180,requireSkill=171,skillID=2937}),
 r(11451,{learnedAt=220,requireSkill=171,skillID=2937})}),
-flt(56,{awp=16001,g={
-r(1249632,{learnedAt=230,requireSkill=171,skillID=2937})}})}})}),
+flt(56,{
+r(1249632,{awp=16001,learnedAt=230,requireSkill=171,skillID=2937})})}})}),
 prof(197,{
 n(4576,{coords={
 [1458]={{70.8,29.2}}},r=1,g={
@@ -12058,9 +12058,9 @@ n(4602,{coords={
 s(162605,15808,{f=33,lvl=16}),
 s(162606,15809,{f=33,lvl=29}),
 s(162604,15807,{f=33,lvl=3})}}),
-n(4612,{awp=16001,coords={
+n(4612,{coords={
 [1458]={{56.2,64.6}}},r=1,g={
-i(278265,{f=55,spellID=7737})}}),
+i(278265,{awp=16001,f=55,spellID=7737})}}),
 n(4569,{coords={
 [1458]={{77,50}}},r=1,sym={{"select","itemID",1198,851,922,2024,2207,2209,923,2208,2027}}}),
 n(4561,{coords={
@@ -12186,9 +12186,9 @@ n(4560,{coords={
 n(5754,{coords={
 [1458]={{70,27.2}}},r=1,sym={{"select","itemID",5239,5210,5236,5211,5209,5347,5238,5208}}})})}}),
 m(1416,{icon=236711,lore="Alterac Mountains is the location of the former nation of Alterac and the city-state of Dalaran, and its chief settlements included Alterac City, Dalaran and Strahnbrad. The central mountains have been overrun by ogres, while the organization called the Syndicate controls Strahnbrad and other areas. Dalaran was enclosed within an impregnable magic shell before the city was lifted in the air and moved to Northrend. A high, wooded region, the Alterac Mountains see much rainfall and its skies are constantly overcast. Crushridge ogres and the Syndicate, a wicked group of rogues led by fallen human nobles, clash repeatedly for control of this land.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(760,{
-crit(112642,{achID=62353,id=1})})}}),
+crit(112642,{achID=62353,awp=16001,id=1})})}),
 h(-30,{
 exp(1684,{
 crit(944,{achID=760,id=10})}),
@@ -12395,9 +12395,9 @@ q(99191,{awp=16001,coords={
 [1416]={{11.6,57.9}}},lvl=12,qgs={276170},r=2,g={
 qo(1,{providers={{"i",2592}}})}})}),
 h(-46,{
-n(14222,{awp=16001,coords={
+n(14222,{coords={
 [1416]={{31.2,71},{31.6,86.8},{39.2,92}}},g={
-s(314722,283253,{f=3})}}),
+s(314722,283253,{awp=16001,f=3})}}),
 n(14223,{coords={
 [1416]={{14.2,54.2},{27.6,41},{36.4,16.2}}}}),
 n(14221,{coords={
@@ -12415,13 +12415,13 @@ n(2452,{coords={
 [1416]={{30.6,59.4},{31.6,51.6},{38.6,37.6},{43.8,63.4}}},g={
 s(157088,3011,{f=5,loc=40}),
 s(158419,6331,{f=20})}}),
-n(2258,{awp=16001,coords={
+n(2258,{coords={
 [1416]={{61.8,37.8},{66.6,47.2},{73,46.2},{78.8,47.4},{80.8,34.2}}},g={
-s(314723,283254,{f=1})}})}),
-h(-56,{awp=16001,g={
-o(423896,{coords={
+s(314723,283254,{awp=16001,f=1})}})}),
+h(-56,{
+o(423896,{awp=16001,coords={
 [1416]={{48.4,57.7}}},g={
-i(215815,{b=1})}})}}),
+i(215815,{b=1})}})}),
 h(-58,{
 n(29547,{awp=16001,coords={
 [1416]={{14.4,65.8}}},g={
@@ -12472,9 +12472,9 @@ i(3703,{crs={2440},f=55,spellID=11008}),
 s(158074,5245,{coords={
 [1416]={{27.8,40.6},{30.8,31.6},{33.6,40.6}}},crs={2358},f=27,r=1})})}}),
 m(1417,{icon=236712,lore="The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which house bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Ogres also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(761,{
-crit(112643,{achID=62353,id=2})})}}),
+crit(112643,{achID=62353,awp=16001,id=2})})}),
 h(-30,{
 exp(1858,{
 crit(2044,{achID=761,id=1})}),
@@ -12605,15 +12605,15 @@ s(157800,4543,{b=1,f=5,loc=40}),
 s(157801,4545,{b=1,f=4,loc=43})}}),
 q(92867,{lvl=32,u=1,g={
 qo(1,{coords={
-[1417]={{17.8,68.2}}},providers={{"n",2569}},u=1}),
+[1417]={{17.8,68.2}}},providers={{"n",2569}}}),
 qo(2,{coords={
-[1417]={{25.4,62.2}}},providers={{"n",2590}},u=1}),
+[1417]={{25.4,62.2}}},providers={{"n",2590}}}),
 qo(3,{coords={
-[1417]={{25.4,62.2}}},providers={{"n",2588}},u=1}),
+[1417]={{25.4,62.2}}},providers={{"n",2588}}}),
 qo(4,{coords={
-[1417]={{23.4,66.2}}},providers={{"n",2558}},u=1}),
-s(311525,280505,{f=5,loc=42,u=1}),
-s(310621,278567,{f=4,loc=40,u=1})}}),
+[1417]={{23.4,66.2}}},providers={{"n",2558}}}),
+s(311525,280505,{f=5,loc=42}),
+s(310621,278567,{f=4,loc=40})}}),
 q(701,{coords={
 [1417]={{74.6,36.4}}},lvl=29,qgs={2706},r=1,sourceQuests={675},g={
 qo(1,{crs={2561},providers={{"i",4513}}})}}),
@@ -12841,10 +12841,10 @@ i(5180,{f=51}),
 s(158040,5181,{f=3})}}),
 n(2605,{coords={
 [1417]={{69.2,79.6}}}})}),
-h(-56,{awp=16001,g={
-o(423897,{coords={
+h(-56,{
+o(423897,{awp=16001,coords={
 [1417]={{73.6,65.2}}},g={
-i(215816,{b=1})}})}}),
+i(215816,{b=1})}})}),
 h(-58,{
 n(2816,{coords={
 [1417]={{45.1,46.8}}},r=2,g={
@@ -12904,9 +12904,9 @@ s(157260,3345,{coords={
 [1417]={{19.6,67},{21.8,62.4},{22.8,63.8}}},crs={2591},f=4,loc=40}),
 i(4480,{crs={2572,2573,2574,2762},f=55,lvl=25,spellID=4131})})}}),
 m(1418,{icon=236716,lore="The Badlands is a region in Khaz Modan accessed via the Searing Gorge to the west and Loch Modan to the north.\n\nThe Badlands are a cracked desert of dry earth, scattered boulders, and winding canyons. Dark Iron dwarves clash with ogres and drakes, while Horde orcs man a fortress to keep watch on their renegade brethren in the eastern lands. Ironforge prospectors search this desolate land for Titan artifacts, inspired by the recently unearthed Uldaman — an immense ruin that held the first clues to the dwarves' lofty origins. Stonevault troggs, released after millennia of slumber, slaughtered the explorers and viciously defend their stolen city.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(765,{
-crit(112640,{achID=62353,id=3})})}}),
+crit(112640,{achID=62353,awp=16001,id=3})})}),
 h(-30,{
 exp(345,{
 crit(1016,{achID=765,id=1})}),
@@ -13226,9 +13226,9 @@ n(16033,{coords={
 h(-55,{description="Available if a specific Quest (8996) has been completed.",sourceQuests={8996},u_sqs=1,g={
 i(22057,{b=1,spellID=27203})}})}})})}}),
 m(1419,{icon=236720,lore="The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(766,{
-crit(112646,{achID=62353,id=4})})}}),
+crit(112646,{achID=62353,awp=16001,id=4})})}),
 h(-30,{
 exp(1441,{
 crit(1033,{achID=766,id=1})}),
@@ -13344,10 +13344,10 @@ n(7846,{description="Patrols all over the zone. You may even find him in Stormwi
 h(-47,{
 i(10752,{b=1,description="Reward for turning in Flawless Draenethyst Sphere to Kum'isha the Collector.\n\nContains a random green, blue, or epic world drop item."}),
 i(12122,{b=1,description="Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item."})}),
-h(-56,{awp=16001,g={
-o(441254,{coords={
+h(-56,{
+o(441254,{awp=16001,coords={
 [1419]={{55.4,32.2}}},g={
-i(220353,{b=1})}})}}),
+i(220353,{b=1})}})}),
 h(-58,{
 n(8178,{coords={
 [1419]={{66.8,18.6}}},r=2,g={
@@ -13366,9 +13366,9 @@ i(8391,{crs={5984,5985,8300}}),
 i(18665,{c={5},crs={8716,8717,8718,12396,12397},f=53,lvl=60}),
 i(8396,{crs={5982,8299}})})}}),
 m(1428,{icon=236734,lore="The Burning Steppes hold the only accessible land passage from the Kingdom of Stormwind to Khaz Modan and Lordaeron. The highway is thus well traveled, but still very dangerous. Now virtually abandoned by the Kingdom of Stormwind, the Burning Steppes is controlled by minions of the black dragonflight and agents of the firelord Ragnaros.\n\nThis rugged region is full of craggy foothills, scattered boulders and warring factions. Rivers of lava dot the landscape, as well as charred earth and burning ruins. The sky is a red hue here, due to sporadic eruptions from Blackrock Mountain. Blackrock Spire, an orc stronghold in the Second War, stands proud and defiant among the mountains. Dark Iron dwarves control the fortress's deeps, though rumor has it that Ragnaros the Fire Lord still broods in the shadows. Black dragons under Nefarion hold the spire's upper levels, and the two groups battle constantly for supremacy. The surrounding countryside is home to Blackrock orcs and Fire-Gut ogres, all brutal castoffs from the Second War. The Molten Span, a massive stone edifice in the north, bridges a river of fire and leads to Khaz Modan.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(775,{
-crit(112647,{achID=62353,id=5})})}}),
+crit(112647,{achID=62353,awp=16001,id=5})})}),
 h(-30,{
 exp(255,{
 crit(1144,{achID=775,id=1})}),
@@ -13490,13 +13490,13 @@ n(8978,{coords={
 n(10119,{coords={
 [1428]={{72,43.6},{72,55.6},{73.8,35.6},{77,31.2},{81.8,61},{87.8,59},{90.2,45.6},{91.2,33.4}}},g={
 r(16984,{itemID=12828,learnedAt=290,requireSkill=164,skillID=2938})}})}),
-h(-56,{awp=16001,g={
-o(463206,{coords={
+h(-56,{
+o(463206,{awp=16001,coords={
 [1428]={{26.2,22.4}}},g={
 i(228133,{b=1})}}),
-o(441251,{coords={
+o(441251,{awp=16001,coords={
 [1428]={{29.1,28.9}}},g={
-i(220349,{b=1})}})}}),
+i(220349,{b=1})}})}),
 h(-58,{
 n(1296,{coords={
 [1428]={{72.9,65.8}}},r=2,sym={{"select","itemID",2528,2530,2531,2532,2534,2533,2535,2529}}}),
@@ -13524,9 +13524,9 @@ r(19059,{coords={
 [1428]={{80.4,45.8},{83.6,40}}},crs={7035},description="Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",itemID=15732,learnedAt=265,requireSkill=10658,skillID=2945}),
 r(17552,{crs={7027},itemID=13476,learnedAt=270,requireSkill=171,skillID=2937})})}}),
 m(1430,{icon=236741,lore="Deadwind Pass is a haunted forest and canyon on the edges of the Kingdom of Stormwind in the southern Eastern Kingdoms. Serving as borders between Duskwood and Swamp of Sorrows, evil magic can be felt all through the zone, the trees are all but dead, and very few wildlife and ogres can be found in the zone. Travelers are advised to go through the pass fast, as they might fall to the zone's foreboding magic.\n\nTrivia:\nMedivh, the last Guardian, made Deadwind Pass his final place. The tower of Karazhan to the south served as his bastion until his final days.\n\nThe Karazhan Crypts can be explored by players who kill themselves and traverse the gates as a ghost. The crypt is filled to the brim with disturbing content, the most disturbing being a pool filled with human bodies hanged upside down and roped to chains. This area became known to players as the Upside-Down Sinners.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(777,{
-crit(112648,{achID=62353,id=6})})}}),
+crit(112648,{achID=62353,awp=16001,id=6})})}),
 h(-30,{
 exp(2560,{collectible=false}),
 exp(2697,{
@@ -13583,11 +13583,11 @@ q(94375,{awp=16001,c={7},coords={
 i(5175,{b=1,description="You must keep this in your bags forever."})}}),
 q(233,{coords={
 [1426]={{29.9,71.2}}},qgs={658},qis={2187},r=2,sourceQuests={179}}),
-q(234,{awp=16001,coords={
+q(234,{coords={
 [1426]={{22.6,71.4}}},qgs={714},qis={2188},r=2,sourceQuests={233},g={
-i(247840,{b=1,f=55,spellID=1245608}),
-i(247841,{b=1,f=55,spellID=1245609}),
-i(247846,{b=1,f=55,spellID=1245610})}}),
+i(247840,{awp=16001,b=1,f=55,spellID=1245608}),
+i(247841,{awp=16001,b=1,f=55,spellID=1245609}),
+i(247846,{awp=16001,b=1,f=55,spellID=1245610})}}),
 q(3107,{c={2},coords={
 [1426]={{29.9,71.2}}},qgs={658},qis={9563},races={3},sourceQuests={179}}),
 q(179,{coords={
@@ -13671,9 +13671,9 @@ s(156980,2787,{coords={
 [1426]={{21.8,72.6},{27.6,72.8},{31,76}}},crs={724},f=20}),
 s(156592,2054,{coords={
 [1426]={{35.6,67.8}}},crs={1718},f=21})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(627,{
-crit(112630,{achID=62353,id=7})})}}),
+crit(112630,{achID=62353,awp=16001,id=7})})}),
 h(-30,{
 exp(803,{
 crit(508,{achID=627,id=1})}),
@@ -14093,9 +14093,9 @@ s(156598,2064,{coords={
 s(158248,5767,{coords={
 [1426]={{46.6,40.6},{49,42.6},{49.8,37.2}}},crs={1397},f=4,loc=42,lvl=4})})}}),
 m(1431,{icon=236757,lore="Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(778,{
-crit(112637,{achID=62353,id=8})})}}),
+crit(112637,{achID=62353,awp=16001,id=8})})}),
 h(-30,{
 exp(536,{
 crit(1162,{achID=778,id=1})}),
@@ -14425,10 +14425,10 @@ n(534,{coords={
 [1431]={{63.6,82.4}}},description="Spawns randomly in the south and south-eastern part of the zone.",g={
 s(157789,4476,{f=4,loc=42}),
 s(157790,4477,{f=8})}})}),
-h(-56,{awp=16001,g={
-o(409735,{coords={
+h(-56,{
+o(409735,{awp=16001,coords={
 [1431]={{16.4,28.4}}},g={
-i(209849,{b=1})}})}}),
+i(209849,{b=1})}})}),
 h(-58,{
 n(228,{coords={
 [1431]={{73.2,44.8}}},r=2,sym={{"select","itemID",3027,3026}},g={
@@ -14537,9 +14537,9 @@ s(156170,899,{coords={
 s(156179,920,{coords={
 [1431]={{23.6,71.6},{49.8,77.8}}},crs={215,909},f=23})})}}),
 m(1423,{icon=236760,lore="Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(771,{
-crit(112649,{achID=62353,id=9})})}}),
+crit(112649,{achID=62353,awp=16001,id=9})})}),
 h(-30,{
 exp(2624,{
 crit(1095,{achID=771,id=10})}),
@@ -15185,9 +15185,9 @@ s(156595,2057,{crs={38},f=25}),
 i(247834,{awp=16001,b=1,crs={6}}),
 s(156593,2055,{coords={
 [1429]={{49,29},{50.2,26.6}}},crs={80},f=23})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(776,{
-crit(112652,{achID=62353,id=10})})}}),
+crit(112652,{achID=62353,awp=16001,id=10})})}),
 h(-30,{
 exp(62,{
 crit(1153,{achID=776,id=1})}),
@@ -15270,7 +15270,7 @@ q(99127,{awp=16001,coords={
 qo(1,{coords={
 [1429]={{49.9,66.7}}},providers={{"i",286205},{"o",694772}}})}}),
 q(95771,{lvl=6,u=1,g={
-i(270298,{b=1,spellID=1287768,u=1})}}),
+i(270298,{b=1,spellID=1287768})}}),
 q(91738,{awp=16001,coords={
 [1429]={{24,73}}},cost={{"i",247824,1}},lvl=7,qgs={955},r=2,sourceQuests={91736}}),
 q(91753,{awp=16001,coords={
@@ -15321,7 +15321,7 @@ q(97917,{altQuests={96059,97901,97929,97940,97953,98284,98286},awp=16001,coords=
 [1429]={{44.91,63.34}}},lc={1,"spellID",1230643},lvl=4,qgs={263399},r=2,requireSkill=333,sourceQuests={95998},g={
 r(1230643,{learnedAt=20,requireSkill=333,skillID=2940})}}),
 q(98287,{altQuests={96058,97902,97918,97930,97941,97954,98285},lc={1,"spellID",1230656},lvl=4,r=2,requireSkill=202,sourceQuests={95998},u=1,g={
-r(1230656,{learnedAt=20,requireSkill=202,skillID=2941,u=1})}}),
+r(1230656,{learnedAt=20,requireSkill=202,skillID=2941})}}),
 q(97918,{altQuests={96058,97902,97930,97941,97954,98285,98287},awp=16001,coords={
 [1429]={{44.91,63.34}}},lc={1,"spellID",1230656},lvl=4,qgs={263399},r=2,requireSkill=202,sourceQuests={95998},g={
 r(1230656,{learnedAt=20,requireSkill=202,skillID=2941})}}),
@@ -15537,9 +15537,9 @@ n(472,{coords={
 [1429]={{68,40.6}}},g={
 i(3233,{f=113}),
 s(158233,5744,{f=25,lvl=9})}}),
-n(100,{awp=16001,coords={
+n(100,{coords={
 [1429]={{27.6,88.4}}},g={
-s(313044,281993,{f=5,loc=47,lvl=9})}}),
+s(313044,281993,{awp=16001,f=5,loc=47,lvl=9})}}),
 n(276189,{awp=16001,coords={
 [1429]={{52.4,79.8},{59.8,80.2},{65.6,76.4}}},g={
 s(317487,286748,{f=32})}}),
@@ -15564,10 +15564,10 @@ h(-48,{(function(t)if _.RaceIndex==1 then	t.minReputation=nil end	return t end)(
 n(4732,{coords={
 [1429]={{84.2,65}}},minReputation={72,42000},r=2,g={
 r(824,{cost=200000,lvl=40})}}))}),
-h(-56,{awp=16001,g={
-o(386759,{coords={
+h(-56,{
+o(386759,{awp=16001,coords={
 [1429]={{65.4,70.1}}},g={
-i(203755,{b=1})}})}}),
+i(203755,{b=1})}})}),
 h(-58,{
 n(2046,{coords={
 [1429]={{41.7,65.9}}},r=2,sym={{"select","itemID",1201,2392,2393,2395,2396,2397,2394,17186}}}),
@@ -15638,9 +15638,9 @@ s(156110,781,{coords={
 [1429]={{23.8,91.6},{26.6,89.6},{27.6,95.4},{28,86.8}}},crs={97,478},f=23,lvl=4}),
 i(1972,{b=1,crs={116,474,880,6846,6866,6927},lvl=8})})}}),
 m(1424,{icon=236779,lore="Hillsbrad Foothills is a mid-level zone most suitable for players around level 25. The hills are home to the towns of Southshore and Hillsbrad Fields (Alliance), and Tarren Mill (Horde). Some notable locations, such as Durnholde Keep and Azurelode Mine can also be found here. Since this area lies outside of Thoradin's Wall, it is considered as a crossroads between Alliance and Horde players, which makes combat between the two factions likely.\n\nHillsbrad is relatively safe and stable. Its hills are green and pastoral, its meadows fertile and its soil rich. Humans loyal to the Alliance control Hillsbrad from the town of Southshore, though the Syndicate, murlocs and Forsaken threaten their serenity.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(772,{
-crit(112638,{achID=62353,id=11})})}}),
+crit(112638,{achID=62353,awp=16001,id=11})})}),
 h(-30,{
 exp(288,{
 crit(1112,{achID=772,id=1})}),
@@ -15925,18 +15925,18 @@ n(14280,{coords={
 [1424]={{72.6,29},{75.8,31.6},{85,47.6},{86.6,39.6}}}}),
 n(14279,{coords={
 [1424]={{25.8,54.6},{28.4,63.4},{35.2,60.4},{39.2,51.6}}}}),
-n(14277,{awp=16001,coords={
+n(14277,{coords={
 [1424]={{58.2,70.4},{60.6,75.2},{65.6,77.8},{65.8,80.2},{67.8,87.6}}},g={
-s(313521,282711,{f=4,loc=42})}}),
-n(14278,{awp=16001,coords={
+s(313521,282711,{awp=16001,f=4,loc=42})}}),
+n(14278,{coords={
 [1424]={{61.8,60.6},{63.2,63.4},{66.2,58.8},{66.2,64.8}}},g={
-s(313526,282721,{f=28})}}),
-n(14276,{awp=16001,coords={
+s(313526,282721,{awp=16001,f=28})}}),
+n(14276,{coords={
 [1424]={{23.6,64.4},{26,65.4},{26.2,73},{31.4,72.2}}},g={
-s(313523,282716,{f=6,loc=43})}}),
-n(14275,{awp=16001,coords={
+s(313523,282716,{awp=16001,f=6,loc=43})}}),
+n(14275,{coords={
 [1424]={{65,66.2},{68.6,77.8},{71.2,75.4},{73.6,81}}},r=1,g={
-s(313520,282710,{f=31})}})}),
+s(313520,282710,{awp=16001,f=31})}})}),
 h(-58,{
 n(2393,{coords={
 [1424]={{62.2,19}}},r=1,g={
@@ -16038,9 +16038,9 @@ s(156334,1485,{coords={
 r(3188,{crs={2373},itemID=6211,learnedAt=175,requireSkill=171,skillID=2937}),
 r(1249959,{awp=16001,b=1,crs={2376},itemID=249881,requireSkill=185})})}}),
 m(1432,{icon=236808,lore="Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(779,{
-crit(112632,{achID=62353,id=13})})}}),
+crit(112632,{achID=62353,awp=16001,id=13})})}),
 h(-30,{
 exp(925),
 exp(936,{
@@ -16306,23 +16306,23 @@ n(2476,{coords={
 [1432]={{58.8,28.2},{59.8,31.8},{61.2,40.6},{62.4,45.6}}},g={
 s(158360,6197,{f=5,loc=42,lvl=19}),
 s(157373,3563,{f=4,loc=46,lvl=19})}}),
-n(14268,{awp=16001,coords={
+n(14268,{coords={
 [1432]={{62.8,78.2},{74.8,67.8},{78,74.2}}},g={
-p(5167,{b=1,itemID=282637,npcID=273956,spellID=1314120})}}),
+p(5167,{awp=16001,b=1,itemID=282637,npcID=273956,spellID=1314120})}}),
 n(1399,{coords={
 [1432]={{70,66.2}}},g={
 s(156725,2241,{f=3,lvl=18}),
 s(157379,3571,{f=24,lvl=18})}}),
-n(14266,{awp=16001,coords={
+n(14266,{coords={
 [1432]={{77.8,53.6}}},g={
-s(313501,282636,{f=4,loc=44,lvl=16})}})}),
-h(-56,{awp=16001,g={
-o(408014,{coords={
+s(313501,282636,{awp=16001,f=4,loc=44,lvl=16})}})}),
+h(-56,{
+o(408014,{awp=16001,coords={
 [1432]={{35.5,48.3}}},r=2,g={
 i(208860,{b=1})}}),
-o(409731,{coords={
+o(409731,{awp=16001,coords={
 [1432]={{77.4,14}}},r=2,g={
-i(209850,{b=1})}})}}),
+i(209850,{b=1})}})}),
 h(-58,{
 n(1214,{coords={
 [1432]={{64.8,66}}},r=2,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840}},g={
@@ -16398,9 +16398,9 @@ s(156741,2267,{coords={
 [1432]={{37.4,92.2},{54.6,26.8}}},crs={1197},f=23,lvl=10}),
 s(158036,5109,{crs={1161,1162,1163,1164,1165,1166,1167,1197,1205,1206,1207,1393,1398,1399},f=4,loc=42,lvl=12})})}}),
 m(1433,{icon=236814,lore="The Redridge Mountains are located east of Elwynn Forest, northeast of Duskwood, and south of the Burning Steppes. Although it may be considered contested, Horde characters have no settlements or NPCs and it is thus a place they use mostly for passing through to reach Flame Crest or Stonard.\n\nAn idyllic region of rushing rivers, towering elms and rising elevations, the Redridge Mountains are under Stormwind's protection (though since the second war it is technically independent), and remain one of the last peaceful regions in Azeroth. The people are content and calm, and supply Stormwind with timber, fish, and crops. A force of Blackrock orcs from the Burning Steppes has secured Stonewatch Keep, but so far the orcs keep to themselves.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(780,{
-crit(112636,{achID=62353,id=14})})}}),
+crit(112636,{achID=62353,awp=16001,id=14})})}),
 h(-30,{
 exp(97,{
 crit(1191,{achID=780,id=1})}),
@@ -16428,8 +16428,8 @@ exp(999),
 exp(1002,{
 crit(1186,{achID=780,id=1})}),
 exp(96)}),
-h(-31,{awp=16001,g={
-faction(2586,{r=2})}}),
+h(-31,{
+faction(2586,{awp=16001,r=2})}),
 h(-32,{
 fp(5,{coords={
 [1433]={{25.5,59.4}}},crs={931},r=2})}),
@@ -16633,9 +16633,9 @@ s(157778,4447,{f=3})}}),
 n(14269,{coords={
 [1433]={{28.2,58.2},{46.2,59.6},{50.2,61.4},{63.6,62.6},{71.6,64.6},{73.2,71.2},{75.8,67.4}}},g={
 r(8782,{itemID=7091,learnedAt=145,requireSkill=197,skillID=2948})}}),
-n(14272,{awp=16001,coords={
+n(14272,{coords={
 [1433]={{36.4,66.8},{43.4,30},{49.2,33},{54.6,37.2}}},g={
-s(313036,281925,{f=27,lvl=15})}}),
+s(313036,281925,{awp=16001,f=27,lvl=15})}}),
 n(14270,{coords={
 [1433]={{39,60.8},{42.8,52.8},{46,63.4},{47.6,54.4},{52.6,67.6},{54.6,60}}}})}),
 h(-58,{
@@ -17087,7 +17087,7 @@ i(1080,{coords={
 m(2548,{awp=16001,icon=1032150,lore="A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",g={
 h(-12,{
 ach(62354,{
-crit(112651,{achID=62353,id=15})})}),
+crit(112651,{achID=62353,awp=16001,id=15})})}),
 h(-30,{
 exp(16726,{
 crit(116891,{achID=62354,id=1})}),
@@ -17216,9 +17216,9 @@ r(26085,{itemID=21358,learnedAt=230,requireSkill=197,skillID=2948}),
 r(1257013,{itemID=253665,learnedAt=30,requireSkill=197,skillID=2948}),
 r(1257017,{itemID=253668,learnedAt=75,requireSkill=197,skillID=2948})}})})}}),
 m(1427,{icon=236815,lore="Just as Blackrock orcs and their allies dominate Burning Steppes, so Dark Iron dwarves dominate the Searing Gorge. A large population of Dark Iron dwarves, War Golems, and Elementals resides in this dark, mountainous area.\n\nThe climate is very similar to Burning Steppes, as it was the same catastrophe that blackened both: the summoning of Ragnaros. The Searing Gorge is a part of Khaz Modan. Before being shattered by the summoning it was a mountainous region, part of the Redridge Mountains.\n\nLarge mining operations take place in The Cauldron, a giant excavation site forming a huge rift in the middle of the Searing Gorge. The Slag Pit lies within The Cauldron and is an underground mining site rich with multiple types of ore. The mining work is mainly done by slave labor, which consists for the most part of captured enemies.\n\nEver since the Dark Iron dwarves' capital, Thaurissan, was destroyed by the summoning of Ragnaros, they have searched for a landmass to control for their filthy, industrious works. The Searing Gorge was the obvious choice due to a low military presence, scarce population, few settlements, and high vulnerability. The dwarven garrisons were soon overrun by a massive Dark Iron invasion which forced them to retreat to Loch Modan and seal the passage.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(774,{
-crit(112645,{achID=62353,id=16})})}}),
+crit(112645,{achID=62353,awp=16001,id=16})})}),
 h(-30,{
 exp(1957,{
 crit(1131,{achID=774,id=1})}),
@@ -17406,10 +17406,10 @@ n(8283,{coords={
 [1427]={{41.6,35.6},{41.6,44.8},{41.8,24},{45.6,38.8},{46.6,25.2}}}}),
 n(8278,{coords={
 [1427]={{29.2,60.8},{30,50.8}}}})}),
-h(-56,{awp=16001,g={
-o(441253,{coords={
+h(-56,{
+o(441253,{awp=16001,coords={
 [1427]={{37.8,49.3}}},g={
-i(220352,{b=1})}})}}),
+i(220352,{b=1})}})}),
 h(-58,{
 n(14624,{coords={
 [1427]={{38.8,28.5}}}})}),
@@ -17423,9 +17423,9 @@ r(18408,{coords={
 r(26277,{coords={
 [1427]={{37,42.8},{39,50.8},{41.6,42.2},{43.6,27.6},{63.6,59},{65.4,65.6}}},crs={5844,5846,8637},itemID=21547,learnedAt=265,requireSkill=171,skillID=2937})})}}),
 m(1421,{icon=236830,lore="Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(769,{
-crit(112635,{achID=62353,id=17})})}}),
+crit(112635,{achID=62353,awp=16001,id=17})})}),
 h(-30,{
 exp(233,{
 crit(1063,{achID=769,id=1})}),
@@ -17466,14 +17466,14 @@ fp(10,{coords={
 prof(633,{c={4},g={
 o(103815,{coords={
 [1421]={{63.7,65.2}}},requireSkill=633})}}),
-h(-44,{awp=16001,g={
+h(-44,{
 prof(171,{
 n(1937,{coords={
 [1421]={{42.8,40.8}}},g={
-r(1244646,{learnedAt=135,requireSkill=171,skillID=2937}),
-r(1244647,{learnedAt=175,requireSkill=171,skillID=2937}),
-r(1244645,{learnedAt=85,requireSkill=171,skillID=2937}),
-r(1244648,{learnedAt=230,requireSkill=171,skillID=2937})}})})}}),
+r(1244646,{awp=16001,learnedAt=135,requireSkill=171,skillID=2937}),
+r(1244647,{awp=16001,learnedAt=175,requireSkill=171,skillID=2937}),
+r(1244645,{awp=16001,learnedAt=85,requireSkill=171,skillID=2937}),
+r(1244648,{awp=16001,learnedAt=230,requireSkill=171,skillID=2937})}})})}),
 h(-45,{
 q(99,{coords={
 [1421]={{44.2,39.8}}},lvl=9,qgs={1938},r=1,sourceQuests={424},g={
@@ -17628,7 +17628,7 @@ q(78307,{awp=16001,c={4},coords={
 [1421]={{47.1,71.1}}},providers={{"o",410369}},sourceQuests={78261},g={
 i(277210,{b=1,c={4},f=52})}}),
 q(78699,{c={4},lvl=25,u=1,g={
-s(310145,277246,{b=1,c={4},f=25,u=1})}}),
+s(310145,277246,{b=1,c={4},f=25})}}),
 q(91859,{awp=16001,c={2},coords={
 [1421]={{43.4,41}}},lvl=18,qgs={248840},races={5}}),
 q(91860,{awp=16001,c={2},coords={
@@ -17698,14 +17698,14 @@ n(1920,{coords={
 p(42,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",itemID=8491,npcID=7383,spellID=10675}),
 s(157771,4437,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",f=28}),
 s(157770,4436,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",f=4,loc=45,lvl=18})}}),
-n(12431,{awp=16001,coords={
+n(12431,{coords={
 [1421]={{47.6,17.6},{48,25.8},{51.8,19.6},{60.2,10}}},g={
-s(314736,283361,{f=5,loc=47,lvl=11})}}),
+s(314736,283361,{awp=16001,f=5,loc=47,lvl=11})}}),
 n(12433,{coords={
 [1421]={{35.6,9},{37.2,15.6}}}}),
-n(12432,{awp=16001,coords={
+n(12432,{coords={
 [1421]={{51.6,63.8},{54.6,52},{56.2,62.4}}},g={
-s(314726,283259,{f=5,loc=44,lvl=11})}}),
+s(314726,283259,{awp=16001,f=5,loc=44,lvl=11})}}),
 n(2283,{coords={
 [1421]={{57.6,69.8}}},g={
 s(158614,6628,{f=4,loc=44,lvl=19}),
@@ -17717,13 +17717,13 @@ s(158292,5975,{f=5,loc=45,lvl=19})}}),
 n(1948,{coords={
 [1421]={{66.2,25}}},g={
 s(157776,4445,{f=21,lvl=20})}})}),
-h(-56,{awp=16001,g={
-o(410299,{coords={
+h(-56,{
+o(410299,{awp=16001,coords={
 [1421]={{43.4,41.2}}},r=1,g={
 i(210177,{b=1})}}),
-o(409501,{coords={
+o(409501,{awp=16001,coords={
 [1421]={{63.4,63.1}}},g={
-i(209844,{b=1})}})}}),
+i(209844,{b=1})}})}),
 h(-58,{
 n(3552,{coords={
 [1421]={{44.6,39.2}}},r=1,g={
@@ -17772,9 +17772,9 @@ s(158037,5110,{crs={1867,1888,1889,1912,1913,1914,1915,1920,2120,3577,3578},desc
 i(3164,{crs={1765,1766,1923,12431}}),
 r(6686,{crs={3530,3531},itemID=5771,learnedAt=75,requireSkill=197,skillID=2948})})}}),
 m(1434,{icon=236844,lore="The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(781,{
-crit(112641,{achID=62353,id=18})})}}),
+crit(112641,{achID=62353,awp=16001,id=18})})}),
 h(-30,{
 exp(123,{
 crit(1217,{achID=781,id=1})}),
@@ -17894,7 +17894,7 @@ s(157673,4117,{b=1,f=4,loc=45})}}),
 q(623,{coords={
 [1434]={{27.4,76.8}}},lvl=38,maps={1445},qgs={2494},qis={4028},r=2,sourceQuests={617}}),
 q(95786,{lvl=30,maps={1424},r=2,u=1,g={
-qo(1,{providers={{"i",270340}},u=1})}}),
+qo(1,{providers={{"i",270340}}})}}),
 q(3721,{coords={
 [1434]={{28.2,76.2}}},lvl=30,qgs={7406},sourceQuests={648,836,2767},g={
 p(83,{itemID=10398,npcID=8376,spellID=12243})}}),
@@ -17997,7 +17997,7 @@ s(160124,10698,{b=1,f=28,spellID=12938}),
 s(160122,10696,{b=1,f=25,spellID=12938})}}),
 q(95773,{lvl=30,r=1,u=1,g={
 qo(1,{coords={
-[1434]={{19.8,26}}},crs={262397},providers={{"i",270305}},u=1})}}),
+[1434]={{19.8,26}}},crs={262397},providers={{"i",270305}}})}}),
 q(628,{coords={
 [1434]={{28.2,77.6}}},lvl=31,qgs={2495},sourceQuests={577},g={
 qo(1,{crs={2635},providers={{"i",4105}}}),
@@ -18111,8 +18111,8 @@ q(191,{coords={
 [1434]={{35.6,10.6}}},lvl=28,qgs={718},sourceQuests={190},g={
 qo(1,{providers={{"n",736}}})}}),
 q(95384,{lvl=32,u=1,g={
-qo(1,{crs={780},providers={{"i",213127}},u=1}),
-s(310155,277256,{b=1,f=27,lvl=40,u=1})}}),
+qo(1,{crs={780},providers={{"i",213127}}}),
+s(310155,277256,{b=1,f=27,lvl=40})}}),
 q(330,{coords={
 [1434]={{38,3}}},lvl=30,qgs={469},r=2,sourceQuests={329}}),
 q(194,{coords={
@@ -18131,7 +18131,7 @@ q(195,{coords={
 qo(1,{providers={{"n",686}}})}}),
 q(97420,{lvl=31,r=2,u=1,g={
 qo(1,{coords={
-[1434]={{28.6,8.2}}},crs={1097},providers={{"i",277986}},u=1})}}),
+[1434]={{28.6,8.2}}},crs={1097},providers={{"i",277986}}})}}),
 q(331,{coords={
 [1434]={{37.7,3.4}}},lvl=30,qgs={1422},r=2,sourceQuests={330},g={
 s(157679,4123,{b=1,f=6,loc=41}),
@@ -18144,9 +18144,9 @@ q(607,{coords={
 q(3626,{coords={
 [1434]={{50.6,20.4}}},lvl=45,maps={1435},qgs={7802},sourceQuests={3625}}),
 q(97048,{lvl=30,u=1,g={
-s(309960,277224,{b=1,f=5,loc=45,u=1}),
-s(310131,277232,{b=1,f=6,loc=45,u=1}),
-s(309950,277214,{b=1,f=4,loc=43,u=1})}}),
+s(309960,277224,{b=1,f=5,loc=45}),
+s(310131,277232,{b=1,f=6,loc=45}),
+s(309950,277214,{b=1,f=4,loc=43})}}),
 q(592,{coords={
 [1434]={{32.2,27.8}}},lvl=30,qgs={2519},r=1,sourceQuests={591},g={
 q(593,{coords={
@@ -18352,7 +18352,7 @@ qo(1,{crs={691},providers={{"i",3923}}})}}),
 q(583,{coords={
 [1434]={{35.7,10.5}}},lvl=28,qgs={716}}),
 q(97329,{lvl=30,u=1,g={
-qo(1,{crs={588,595,597,660,671,699},providers={{"i",277957}},u=1})}}),
+qo(1,{crs={588,595,597,660,671,699},providers={{"i",277957}}})}}),
 q(580,{coords={
 [1434]={{27.1,77.5}}},lvl=40,maps={1425},qgs={2491},g={
 qo(1,{coords={
@@ -18587,9 +18587,9 @@ i(1652,{crs={675,14492},f=113}),
 i(1996,{crs={660},f=52,lvl=32}),
 i(8153,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale."})})}}),
 m(1435,{icon=236845,lore="The Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(782,{
-crit(112639,{achID=62353,id=19})})}}),
+crit(112639,{achID=62353,awp=16001,id=19})})}),
 h(-30,{
 exp(76,{
 crit(1232,{achID=782,id=1})}),
@@ -18719,7 +18719,7 @@ q(1444,{coords={
 [1425]={{33.6,75.2}}},lvl=38,qgs={5598},r=1,sourceQuests={1429}}),
 q(93430,{lvl=30,u=1,g={
 qo(1,{coords={
-[1435]={{43,39}}},crs={757},providers={{"i",258530}},u=1})}}),
+[1435]={{43,39}}},crs={757},providers={{"i",258530}}})}}),
 q(1429,{coords={
 [1435]={{64.2,20.8}}},lvl=38,maps={1425},qgs={1443},qis={6193},r=1,sourceQuests={1424}}),
 q(2744,{coords={
@@ -18788,17 +18788,17 @@ n(14447,{coords={
 n(1063,{description="Spawns outside of the entrance to the Sunken Temple."}),
 n(14445,{coords={
 [1435]={{63.2,40.6},{69.8,36},{76.8,39.2},{77.2,65.8},{79.8,48.2},{81,57.8}}}}),
-n(763,{awp=16001,coords={
+n(763,{coords={
 [1435]={{60,20.2},{62.6,21.8},{63.2,25.2},{64.6,15.8}}},g={
-s(313046,282003,{f=26})}}),
+s(313046,282003,{awp=16001,f=26})}}),
 n(1106,{coords={
 [1435]={{62.6,21.6},{63,26.8},{66.4,20.4},{67.4,23.6}}}}),
 n(14448,{coords={
 [1435]={{22.8,46},{26.2,51.6},{30.8,49.6},{32.4,32.4},{35.4,44},{42,33.6}}}})}),
-h(-56,{awp=16001,g={
-o(441247,{coords={
+h(-56,{
+o(441247,{awp=16001,coords={
 [1435]={{70.3,51.7}}},g={
-i(220345,{b=1})}})}}),
+i(220345,{b=1})}})}),
 h(-58,{
 n(989,{coords={
 [1435]={{44.6,56.8}}},r=1,g={
@@ -18829,9 +18829,9 @@ r(1259341,{awp=16001,coords={
 s(158359,6196,{b=1,crs={5477},f=23,lvl=29}),
 p(59,{crs={741},itemID=8498,npcID=7545,spellID=10698})})}}),
 m(1425,{icon=236780,lore="The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(773,{
-crit(112644,{achID=62353,id=12})})}}),
+crit(112644,{achID=62353,awp=16001,id=12})})}),
 h(-30,{
 exp(348,{
 crit(1115,{achID=773,id=1})}),
@@ -19068,10 +19068,10 @@ n(8218,{coords={
 [1425]={{31.4,73},{33.8,73.2},{34,75.6},{34.2,68.4},{35,74}}}}),
 n(8219,{coords={
 [1425]={{24.2,57.4},{32.8,57.6}}}})}),
-h(-56,{awp=16001,g={
-o(441252,{coords={
+h(-56,{
+o(441252,{awp=16001,coords={
 [1425]={{36,72.8}}},g={
-i(220350,{b=1})}})}}),
+i(220350,{b=1})}})}),
 h(-58,{
 n(12958,{coords={
 [1425]={{34.4,38.6}}},g={
@@ -19216,9 +19216,9 @@ s(156965,2754,{coords={
 [1420]={{36.8,68}}},crs={1506},f=26}),
 s(157196,3263,{coords={
 [1420]={{27.6,59.2}}},crs={1505},f=4,loc=46})})}}),
-h(-12,{awp=16001,g={
+h(-12,{
 ach(768,{
-crit(112631,{achID=62353,id=20})})}}),
+crit(112631,{achID=62353,awp=16001,id=20})})}),
 h(-30,{
 exp(157,{
 crit(1039,{achID=768,id=1})}),
@@ -19577,9 +19577,9 @@ s(317482,286742,{f=22}),
 s(317483,286743,{f=27}),
 s(317484,286744,{f=3})}})}),
 h(-46,{
-n(10356,{awp=16001,coords={
+n(10356,{coords={
 [1420]={{40.8,43.2},{42,52.6},{45,54},{50,50.8},{51.4,52.2},{57.6,41.6}}},g={
-s(314751,283462,{f=20,lvl=7})}}),
+s(314751,283462,{awp=16001,f=20,lvl=7})}}),
 n(271080,{awp=16001,coords={
 [1420]={{15.4,55.8},{16.4,56.6},{17,56.4}}},g={
 s(314749,283460,{f=5,loc=45,lvl=7})}}),
@@ -19594,21 +19594,21 @@ n(1936,{coords={
 s(157254,3334,{f=24,lvl=5}),
 s(157721,4261,{f=4,loc=46,lvl=5}),
 i(2091,{f=55,lvl=10,spellID=1090})}}),
-n(10358,{awp=16001,coords={
+n(10358,{coords={
 [1420]={{74.6,59.6},{74.6,63.8},{74.8,60.6},{76.4,57.4},{77.8,63.2}}},g={
-s(314757,283471,{f=4,loc=43,lvl=9})}}),
+s(314757,283471,{awp=16001,f=4,loc=43,lvl=9})}}),
 n(1531,{coords={
 [1420]={{48.6,36.2},{53.6,48.6}}},g={
 s(157243,3322,{f=3,lvl=3})}}),
 n(1910,{coords={
 [1420]={{35.8,43}}},g={
 s(157726,4302,{f=20,lvl=7})}}),
-n(10357,{awp=16001,coords={
+n(10357,{coords={
 [1420]={{43.6,67},{47,65},{50.2,64.4},{52.4,63.8},{55.6,60},{56.2,63.6}}},g={
-s(314759,283473,{f=5,loc=43,lvl=8})}}),
-n(10359,{awp=16001,coords={
+s(314759,283473,{awp=16001,f=5,loc=43,lvl=8})}}),
+n(10359,{coords={
 [1420]={{83,55.8},{85.2,49.4},{88.8,53.6},{89.4,40.2},{90.2,47.6}}},g={
-s(314764,283480,{f=6,loc=42,lvl=10})}}),
+s(314764,283480,{awp=16001,f=6,loc=42,lvl=10})}}),
 n(276089,{awp=16001,coords={
 [1420]={{66,43},{67,41.7}}},g={
 s(317495,286755,{f=25})}}),
@@ -19619,10 +19619,10 @@ h(-48,{(function(t)if _.RaceIndex==5 then	t.minReputation=nil end	return t end)(
 n(4773,{coords={
 [1420]={{60,52.6}}},minReputation={68,42000},races={2,5,8},g={
 r(10906,{cost=200000,lvl=40})}}))}),
-h(-56,{awp=16001,g={
-o(405879,{coords={
+h(-56,{
+o(405879,{awp=16001,coords={
 [1420]={{59.4,52.3}}},r=1,g={
-i(208185,{b=1})}})}}),
+i(208185,{b=1})}})}),
 h(-58,{
 n(2118,{coords={
 [1420]={{61,52.4}}},r=1,g={
@@ -19696,9 +19696,9 @@ s(157248,3327,{coords={
 s(157194,3261,{coords={
 [1420]={{23.8,58.4},{86.2,53.4}}},crs={1555,1688},f=3})})}}),
 m(1422,{icon=236851,lore="The Western Plaguelands are located in northern Lordaeron, wedged between Tirisfal Glades to the west, the Eastern Plaguelands to the east, and the Alterac Mountains to the south. It is filled with a smoky gray mist and the creatures here are blighted and sick, angrily attacking anyone who wanders too close with surprising ferocity. The land is also home to countless undead who infest the ruins of Andorhal, the four cauldron fields, and Sorrow Hill. The Scarlet Crusade has a significant holding in and around Hearthglen to the north, and the Alliance has settled in the small Chillwind Camp to the south.\n\nLike their eastern counterparts, the Western Plaguelands were once fertile and beautiful but are now gray, blighted and noxious. Undead wander the land and haunt the abandoned towns and farmsteads. The largest Scourge city here is Andorhal, beneath which is an underground complex housing the undead's School of Necromancy. The Scarlet Crusade strikes against the Scourge from Hearthglen. The only place of any sanity in the Western Plaguelands is Uther's Tomb, a consecrated monument to the fallen hero Uther Lightbringer.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(770,{
-crit(112650,{achID=62353,id=21})})}}),
+crit(112650,{achID=62353,awp=16001,id=21})})}),
 h(-30,{
 exp(2298,{collectible=false,g={
 crit(1069,{achID=770,id=1})}}),
@@ -20082,9 +20082,9 @@ r(17576,{crs={1812,1813},itemID=13496,learnedAt=305,requireSkill=171,skillID=293
 i(12811,{crs={12128},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands."}),
 i(13356,{b=1,cost={{"i",13370,1}},description="These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory."})})}}),
 m(1436,{icon=236852,lore="Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. This rich land has lain fallow since the Second War, but it is now held by the Defias Brotherhood. Stormwind claims the land as its own, but it has found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still try to keep their land, and some even attempt a tithe to Stormwind every year, but most only grow enough to feed themselves. The Defias Brotherhood controls much of the region, focused in the southern area of Moonbrook.\n\nOnce a rich agricultural center, much of Westfall now lies fallow and forgotten. The Defias Brotherhood, renegade humans who wield secrecy and technology against Stormwind, control much of the area. Bandits and gnolls raid those farms that remain, and Stormwind's resources are stretched too thin to protect the beleaguered populace. Westfall has the mild temperatures of Elwynn, but winds batter it both from the sea and from Duskwood. The bare farmlands add little to break the wind, which can cut through clothing on a blustery day.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(802,{
-crit(112633,{achID=62353,id=22})})}}),
+crit(112633,{achID=62353,awp=16001,id=22})})}),
 h(-30,{
 exp(219,{
 crit(1257,{achID=802,id=1})}),
@@ -20126,14 +20126,14 @@ i(7908,{requireSkill=633})}})}}),
 ah(921,{c={4},type="s",g={
 i(7923,{coords={
 [1436]={{68.6,72.2}}},crs={7051},description="Can also be killed for the key, though hits hard for lower level rogues."})}}),
-h(-44,{awp=16001,g={
+h(-44,{
 prof(171,{
-n(249713,{coords={
+n(249713,{awp=16001,coords={
 [1436]={{41.2,79}}},g={
 r(1244646,{learnedAt=135,requireSkill=171,skillID=2937}),
 r(1244647,{learnedAt=175,requireSkill=171,skillID=2937}),
 r(1244645,{learnedAt=85,requireSkill=171,skillID=2937}),
-r(1244648,{learnedAt=230,requireSkill=171,skillID=2937})}})})}}),
+r(1244648,{learnedAt=230,requireSkill=171,skillID=2937})}})})}),
 h(-45,{
 q(79008,{awp=16001,coords={
 [1413]={{46.4,73.8}},
@@ -20360,13 +20360,13 @@ n(462,{coords={
 [1436]={{35.8,68.4},{45.5,44.6},{45.6,60.2},{51.8,24.6},{64,73.8},{64.4,56}}},g={
 s(158291,5971,{f=3}),
 s(157781,4454,{f=20})}})}),
-h(-56,{awp=16001,g={
-o(408014,{coords={
+h(-56,{
+o(408014,{awp=16001,coords={
 [1436]={{52.6,53.8}}},g={
 i(208860,{b=1})}}),
-o(409562,{coords={
+o(409562,{awp=16001,coords={
 [1436]={{45.4,70.4}}},g={
-i(209845,{b=1})}})}}),
+i(209845,{b=1})}})}),
 h(-58,{
 n(233,{coords={
 [1436]={{56.1,31.3}}},r=2,g={
@@ -20437,9 +20437,9 @@ s(156772,2327,{coords={
 [1436]={{54.6,26},{59.6,18.6}}},crs={480},f=5,loc=43,lvl=5}),
 s(156131,827,{crs={122,449},f=23,lvl=12})})}}),
 m(1437,{icon=236853,lore="The Wetlands is a large, wet zone below Stonewrought Dam and north of Loch Modan, covered with small rivers, lakes, and ponds. Bordered on three sides by mountains, the Wetlands are open to the ocean to the west. Adventurers seeking a route to the Wetlands must either come through sieged Dun Algaz from Loch Modan or cross the damaged Thandol Span from Arathi Highlands. The northern slopes of Wetlands are generally classed within mountains of Khaz Modan.\n\nThe Wetlands is a vast, cold swamp. Mists cloak the ground, and the overcast sky makes the land a uniform gray. Many Ironforge strongholds once stood in this region, but war has reduced them to rubble. Wild creatures, murlocs and renegade orcs now control the land. Menethil Harbor, a city on the west coast, is the Alliance's only presence in this dreary region.",g={
-h(-12,{awp=16001,g={
+h(-12,{
 ach(841,{
-crit(112634,{achID=62353,id=23})})}}),
+crit(112634,{achID=62353,awp=16001,id=23})})}),
 h(-30,{
 exp(1036,{
 crit(1270,{achID=841,id=1})}),
@@ -20507,11 +20507,11 @@ q(98459,{awp=16001,coords={
 q(88757,{coords={
 [1437]={{51.4,9}}},lvl=28,qgs={271322},r=2,sourceQuests={87318},u=1,g={
 qo(1,{coords={
-[1437]={{51.4,8.2}}},providers={{"i",284705},{"o",687845}},u=1}),
+[1437]={{51.4,8.2}}},providers={{"i",284705},{"o",687845}}}),
 qo(2,{coords={
-[1437]={{50.8,8.1}}},providers={{"i",284150},{"o",678590}},u=1}),
+[1437]={{50.8,8.1}}},providers={{"i",284150},{"o",678590}}}),
 qo(3,{coords={
-[1437]={{51.1,8.1}}},providers={{"i",284146},{"o",678585}},u=1})}}),
+[1437]={{51.1,8.1}}},providers={{"i",284146},{"o",678585}}})}}),
 q(98282,{awp=16001,coords={
 [1437]={{11.9,58.8}}},lvl=20,qgs={1480},r=2,g={
 qo(1,{coords={
@@ -20689,7 +20689,7 @@ q(285,{coords={
 [1437]={{13.6,38.2}}},lvl=20,providers={{"o",142151}},r=2,sourceQuests={284}}),
 q(88758,{coords={
 [1437]={{51.4,9}}},lvl=28,qgs={271322},qis={284151},r=2,sourceQuests={88757},u=1,g={
-i(281258,{b=1,f=51,u=1})}}),
+i(281258,{b=1,f=51})}}),
 q(87491,{awp=16001,coords={
 [1437]={{45.7,16.6}}},lvl=27,qgs={271481},r=2}),
 q(98197,{awp=16001,coords={
@@ -20798,9 +20798,9 @@ n(2108,{coords={
 [1437]={{38.6,46.2},{43.2,44.2},{48,47.6}}},g={
 s(158362,6200,{f=6,loc=45}),
 s(157284,3392,{f=5,loc=40})}}),
-n(14425,{awp=16001,coords={
+n(14425,{coords={
 [1437]={{30.6,31.2},{35.4,37.2},{38.4,36.4},{39,30.6}}},g={
-s(313509,282654,{f=1})}}),
+s(313509,282654,{awp=16001,f=1})}}),
 n(1112,{coords={
 [1437]={{46.8,61.4}}},g={
 s(157775,4444,{f=8,spellID=14253}),
@@ -20817,10 +20817,10 @@ s(157785,4463,{f=4,loc=45}),
 s(158361,6198,{f=5,loc=43})}}),
 n(14433,{coords={
 [1437]={{12,70.6},{14.8,67.2}}}})}),
-h(-56,{awp=16001,g={
-o(409717,{coords={
+h(-56,{
+o(409717,{awp=16001,coords={
 [1437]={{33.6,47.9}}},g={
-i(209848,{b=1})}})}}),
+i(209848,{b=1})}})}),
 h(-58,{
 n(265346,{awp=16001,coords={
 [1437]={{52.8,80.2}}},r=2,g={
@@ -21073,7 +21073,7 @@ q(97257,{c={7},coords={
 [2521]={{51.2,86}}},lvl=10,qgs={268592},qis={277329},races={96},sourceQuests={97245},g={
 i(5176,{b=1})}}),
 q(98517,{c={7},lvl=10,races={96},u=1,g={
-qo(1,{providers={{"i",6653}},u=1})}}),
+qo(1,{providers={{"i",6653}}})}}),
 q(97963,{altQuests={96045,97899,97915,97927,97938,97951},coords={
 [2521]={{41.6,44.8}}},lc={1,"spellID",1230564},lvl=4,qgs={263664},requireSkill=171,sourceQuests={96101},g={
 r(1230564,{learnedAt=20,requireSkill=171,skillID=2937})}}),
@@ -21467,9 +21467,9 @@ q(93461,{coords={
 q(92514,{coords={
 [2521]={{45.6,45.4}}},lvl=4,qgs={251523},r=1}),
 q(92454,{qis={251900},u=1,g={
-p(93,{b=1,itemID=13584,npcID=11326,spellID=17708,u=1}),
-p(92,{b=1,itemID=13583,npcID=11325,spellID=17707,u=1}),
-p(94,{b=1,itemID=13582,npcID=11327,spellID=17709,u=1})}}),
+p(93,{b=1,itemID=13584,npcID=11326,spellID=17708}),
+p(92,{b=1,itemID=13583,npcID=11325,spellID=17707}),
+p(94,{b=1,itemID=13582,npcID=11327,spellID=17709})}}),
 q(93089,{coords={
 [2521]={{66.2,76.6}}},lvl=7,qgs={252476},r=2,sourceQuests={94369}}),
 q(93090,{coords={

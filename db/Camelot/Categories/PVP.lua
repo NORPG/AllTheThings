@@ -21,8 +21,8 @@ ach(64022,{r=1}),
 ach(64023,{r=1}),
 ach(64024,{r=1}),
 ach(64025,{r=1})}),
-h(-292,{awp=16001,g={
-m(1459,{icon=236388,lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,g={
+h(-292,{
+m(1459,{awp=16001,icon=236388,lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,g={
 n(13419,{isRaid=1,r=1,g={
 s(163793,19110,{f=25,u=1}),
 s(163789,19105,{f=4,loc=40,u=1}),
@@ -325,7 +325,7 @@ i(17327,{b=1}),
 i(17306,{b=1}),
 i(17326,{b=1}),
 s(163443,18231,{f=10})})}}),
-m(1461,{icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",g={
+m(1461,{awp=16001,icon=236385,lore="Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",g={
 h(-12,{
 ach(62047),
 ach(64027)}),
@@ -664,7 +664,7 @@ i(20071,{b=1,f=53,lvl=58,minReputation={509,3000},spellID=23991}),
 i(21117,{b=1,f=53,lvl=48,minReputation={509,3000},spellID=25746}),
 i(21118,{b=1,f=53,lvl=38,minReputation={509,3000},spellID=25747}),
 i(21119,{b=1,f=53,lvl=28,minReputation={509,3000},spellID=25750})}})})}}),
-m(2524,{icon=441150,g={
+m(2524,{awp=16001,icon=441150,g={
 h(-12,{
 ach(62049,{r=1}),
 ach(64029,{r=2})}),
@@ -743,11 +743,11 @@ q(98901,{coords={
 [1455]={{69.8,90.6}},
 [1457]={{58,34.4}}},cost={{"i",274895,3}},lvl={60,69},qgs={15351},r=2}),
 q(98912,{lvl={50,60},r=1,u=1,g={
-i(285173,{b=1,f=55,u=1})}}),
+i(285173,{b=1,f=55})}}),
 q(98910,{lvl={30,39},r=1,u=1,g={
-i(285171,{b=1,f=55,u=1})}}),
+i(285171,{b=1,f=55})}}),
 q(98911,{lvl={40,49},r=1,u=1,g={
-i(285172,{b=1,f=55,u=1})}}),
+i(285172,{b=1,f=55})}}),
 q(98903,{coords={
 [1413]={{63.4,58.8}}},lvl={30,39},qgs={275273},r=2}),
 q(98904,{coords={
@@ -761,11 +761,11 @@ q(98907,{coords={
 q(98908,{coords={
 [1413]={{65,34.8}}},lvl={50,60},qgs={275276},r=1}),
 q(98915,{lvl={50,60},r=2,u=1,g={
-i(285170,{b=1,f=55,u=1})}}),
+i(285170,{b=1,f=55})}}),
 q(98913,{lvl={30,39},r=2,u=1,g={
-i(285168,{b=1,f=55,u=1})}}),
+i(285168,{b=1,f=55})}}),
 q(98914,{lvl={40,49},r=2,u=1,g={
-i(285169,{b=1,f=55,u=1})}})}),
+i(285169,{b=1,f=55})}})}),
 h(-47,{
 i(274895,{b=1,f=55})}),
 h(-58,{
@@ -879,7 +879,7 @@ s(307776,271956,{b=1,f=6,loc=41,lvl=60,minReputation={2799,42000}}),
 s(307777,271957,{b=1,f=7,loc=41,lvl=60,minReputation={2799,42000}}),
 s(307778,271959,{b=1,f=7,loc=41,lvl=60,minReputation={2799,42000}}),
 s(308374,272957,{b=1,f=6,loc=41,lvl=60,minReputation={2799,42000}})}})})}}),
-m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",g={
+m(1460,{awp=16001,icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",g={
 h(-12,{
 ach(62048),
 ach(64028)}),
@@ -1207,7 +1207,7 @@ i(20439,{b=1,f=52,lvl=18}),
 i(21567,{b=1,f=53,lvl=40,spellID=1317441}),
 i(21568,{b=1,f=53,lvl=20,spellID=1315989}),
 i(21565,{b=1,f=53,lvl=40,spellID=1317443}),
-i(21566,{b=1,f=53,lvl=20,spellID=1315969})}})})}})}}),
+i(21566,{b=1,f=53,lvl=20,spellID=1315969})}})})}})}),
 h(-298,{maps={1459,1460,1461,2524},g={
 pvprank(1),
 pvprank(2),

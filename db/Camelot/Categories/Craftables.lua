@@ -1098,7 +1098,7 @@ s(158396,6256,{description="Can be bought from Fishing Suppliers, as well as som
 i(6530,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,requireSkill=356,spellID=8088}),
 i(6529,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,spellID=8087}),
 s(158431,6365,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57,isLimited=1,learnedAt=10,lvl=5,requireSkill=356}),
-i(273636,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",learnedAt=275,lvl=35,requireSkill=356,spellID=1292332})}),
+i(273636,{awp=16001,description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",learnedAt=275,lvl=35,requireSkill=356,spellID=1292332})}),
 flt(23,{
 s(158428,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=20,maps_disp={1424,1437,1440}})}),
 flt(52,{
@@ -1865,7 +1865,7 @@ i(11370,{maps_disp={232,242,1427,1428},providers={{"o",165658}}}),
 i(2776,{maps_disp={1416,1417,1418,1427,1428,1434,1441,1443,1444,1446,1447,1448},providers={{"o",1734},{"o",73941}}}),
 i(2772,{maps_disp={1416,1417,1418,1434,1441,1443},providers={{"o",1735}}}),
 i(3858,{maps_disp={1418,1427,1428,1444,1446,1447,1448},providers={{"o",2040}}}),
-i(249391,{maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439,2521},providers={{"o",1731}}}),
+i(249391,{awp=16001,maps_disp={1411,1412,1413,1420,1421,1426,1429,1432,1436,1439,2521},providers={{"o",1731}}}),
 i(2775,{description="Silver Veins is a rare spawn in place of Tin Veins and Iron Deposits.",maps_disp={1413,1417,1418,1422,1423,1424,1425,1431,1434,1437,1440,1442,1443,1444},providers={{"o",1733},{"o",73940}}}),
 i(10620,{maps_disp={337,1423,1428,1447,1448,1449,1452},providers={{"o",324},{"o",123848},{"o",175404},{"o",177388},{"o",180215}}}),
 i(2771,{maps_disp={1424,1433,1437,1440,1441,1442},providers={{"o",1732}}}),

@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local cat,faction,h,i,n,o,p,prof,q,qo,r,s,toy=_.CreateCategory,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
-h(-559,{awp=16001,e=13,g={
+h(-559,{e=13,g={
 h(-45,{e=13,g={
 q(171,{coords={
 [1453]={{56.3,54}}},e=13,isYearly=1,lvl=10,maxReputation={469,42000},qgs={14305},qis={18598},r=2,sourceQuests={558,4822},g={
@@ -53,7 +53,7 @@ qo(1,{coords={
 q(915,{e=13,isYearly=1,lvl=10,maps={1454},qgs={14444},qis={18597},r=1,sourceQuests={910,911,1800},g={
 qo(1,{coords={
 [1454]={{52.6,69.6}}},crs={14480},e=13,providers={{"i",7228}}})}})}})}}),
-h(-37,{awp=16001,e=1,maps={1412,1429},g={
+h(-37,{e=1,maps={1412,1429},g={
 h(-31,{e=1,g={
 faction(909,{e=1,icon=_.asset("Event_dmf"),OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo local repPerTierTurnIn=100 local tierOneMaxRep=500 if reputation<tierOneMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 1 Quests",repPerTierTurnIn,tierOneMaxRep)else	local tierTwoMaxRep=1050 if reputation<tierTwoMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 2 Quests",repPerTierTurnIn,tierTwoMaxRep)else	local tierThreeMaxRep=1700 if reputation<tierThreeMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 3 Quests",repPerTierTurnIn,tierThreeMaxRep)else	local tierFourMaxRep=2500 if reputation<tierFourMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 4 Quests",repPerTierTurnIn,tierFourMaxRep)else	local tierFiveMaxRep=5001 if reputation<tierFiveMaxRep then	addRepInfo(tooltipInfo,reputation,"Complete Tier 5 Quests",repPerTierTurnIn,tierFiveMaxRep)end	end	end	end	end	local repPerDeckTurnIn=150 addRepInfo(tooltipInfo,reputation,"Turn in Decks.",repPerDeckTurnIn,42000)end	end})}}),
 h(-45,{e=1,g={
@@ -80,7 +80,7 @@ i(19296,{description="Contains a level 40-55 (usually uncommon quality) item.",e
 q(9249,{awp=20003,coords={
 [1412]={{37.3,37.7}},
 [1429]={{41.6,68.8}}},cost={{"i",19182,40}},e=1,qgs={14828},repeatable=1,u=1,g={
-r(28327,{b=1,e=1,itemID=22729,learnedAt=295,requireSkill=202,skillID=2941,u=1})}}),
+r(28327,{b=1,e=1,itemID=22729,learnedAt=295,requireSkill=202,skillID=2941})}}),
 q(7934,{coords={
 [1412]={{37.3,37.7}},
 [1429]={{41.6,68.8}}},cost={{"i",19182,50}},e=1,qgs={14828},repeatable=1,g={
@@ -294,15 +294,15 @@ i(19228,{cost={{"i",19236,1},{"i",19235,1},{"i",19234,1},{"i",19233,1},{"i",1923
 i(19267,{cost={{"i",19275,1},{"i",19274,1},{"i",19273,1},{"i",19272,1},{"i",19271,1},{"i",19270,1},{"i",19269,1},{"i",19268,1}},e=1,phase=13}),
 i(19277,{cost={{"i",19284,1},{"i",19283,1},{"i",19282,1},{"i",19281,1},{"i",19280,1},{"i",19279,1},{"i",19278,1},{"i",19276,1}},e=1,phase=13}),
 i(19257,{cost={{"i",19265,1},{"i",19264,1},{"i",19263,1},{"i",19262,1},{"i",19261,1},{"i",19260,1},{"i",19259,1},{"i",19258,1}},e=1,phase=13})}})}}),
-h(-574,{awp=16001,e=14,g={
+h(-574,{e=14,g={
 h(-19,{e=14,g={
 s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=4,loc=40,maps={234,250,476}}),
 s(164647,21524,{b=1,crs={9019,9237,10997},e=14,f=4,loc=40,maps={242,250,317}})}}),
 h(-39,{description="These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",e=14,g={
 r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
-r(44950,{b=1,description="Horde Tailors receive this pattern in the mail.",e=14,itemID=34261,learnedAt=250,requireSkill=197,skillID=2948}),
-r(44958,{b=1,description="Alliance Tailors receive this pattern in the mail.",e=14,itemID=34319,learnedAt=250,requireSkill=197,skillID=2948}),
-r(44953,{b=1,e=14,itemID=34262,requireSkill=165,skillID=2945}),
+r(44950,{awp=16001,b=1,description="Horde Tailors receive this pattern in the mail.",e=14,itemID=34261,learnedAt=250,requireSkill=197,skillID=2948}),
+r(44958,{awp=16001,b=1,description="Alliance Tailors receive this pattern in the mail.",e=14,itemID=34319,learnedAt=250,requireSkill=197,skillID=2948}),
+r(44953,{awp=16001,b=1,e=14,itemID=34262,requireSkill=165,skillID=2945}),
 toy(17712,{description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
 q(8744,{coords={
@@ -354,7 +354,7 @@ r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
 q(99145,{e=14,u=1,g={
-i(286210,{b=1,e=14,u=1})}}),
+i(286210,{b=1,e=14})}}),
 q(7022,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
 q(7023,{coords={
@@ -469,7 +469,7 @@ i(21519,{b=1,e=14,spellID=26004})}}),
 h(-63,{e=14,g={
 o(178609,{e=14,g={
 i(17202,{e=14,f=106,spellID=21343})}})}})}}),
-h(-576,{awp=16001,e=16,g={
+h(-576,{e=16,g={
 h(-45,{e=16,g={
 q(1658,{coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,maps={1420,1421},qgs={15199},r=2,g={
@@ -581,7 +581,7 @@ i(9313,{e=17,f=55,spellID=11541}),
 i(9318,{e=17,f=55,spellID=6668}),
 i(9314,{e=17,f=55,spellID=11542}),
 i(9315,{e=17,f=55,spellID=11544})}})}}),
-h(-579,{awp=16001,e=9,g={
+h(-579,{e=9,g={
 h(-19,{e=9,g={
 s(164851,22206,{b=1,crs={8929,10811,10901,11488},e=9,f=1,maps={234,242,317,476},spellID=27571})}}),
 h(-45,{e=9,g={
@@ -725,7 +725,7 @@ i(22299,{cost={{"i",22145,5}},e=9,f=106,maps={1458},r=1}),
 i(22145,{e=9,f=106,maps={1458},providers={{"i",22157},{"i",22163}},r=1}),
 i(22121,{e=9,f=106,maps={1458},providers={{"i",22157},{"i",22163}},r=1}),
 i(22174,{e=9,f=106,maps={1458},providers={{"i",22166},{"i",22172}},r=1})}})}}),
-h(-580,{awp=16001,e=18,g={
+h(-580,{e=18,g={
 h(-39,{e=18,g={
 i(21746,{b=1,e=18,f=55,g={
 i(21744,{b=1,e=18,f=55,spellID=26521}),
@@ -1025,7 +1025,7 @@ q(8676,_.ResolveQuestData({aqd=
 {maxReputation={67,42000}},isYearly=1,maps={219},qgs={15578}}))}})}}),
 h(-47,{e=18,g={
 i(21100,{b=1,e=18})}})}}),
-h(-582,{awp=16001,e=11,g={
+h(-582,{e=11,g={
 h(-45,{e=11,g={
 q(9319,{coords={
 [1420]={{62.1,66.8}},
@@ -1200,7 +1200,7 @@ qo(4,{coords={
 [1427]={{33,73.5}}},e=11}),
 s(165276,23324,{b=1,e=11,f=2,loc=41}),
 i(23247,{e=11,spellID=28806})}})}})}}),
-h(-583,{awp=16001,e=15,g={
+h(-583,{e=15,g={
 o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},type="AsGenericObjectContainer",g={
 o(113768,{e=15,type="AsSubGenericObject"}),
 o(113769,{e=15,type="AsSubGenericObject"}),
@@ -1219,7 +1219,7 @@ i(13755,{description="Can be caught in open sea water in Azshara, Tanaris, The H
 h(-588,{description="The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",e=6,maps={1434},g={
 h(-45,{e=6,g={
 q(8194,{coords={
-[1434]={{27.4,76.9}}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
+[1434]={{27.4,76.9}}},cost={{"i",19807,5}},e=6,qgs={15078},repeatable=1,requireSkill=356}),
 q(8229,{coords={
 [1455]={{28.2,74.4}}},e=6,lvl=35,qgs={15119},r=2,repeatable=1,requireSkill=356,g={
 i(19978,{b=1,e=6,requireSkill=356})}}),
@@ -1227,7 +1227,7 @@ q(8228,{coords={
 [1454]={{52.4,73}}},e=6,lvl=35,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
 i(19978,{b=1,e=6,requireSkill=356})}}),
 q(8193,{coords={
-[1434]={{27.4,76.9}}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
+[1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
 s(164089,19970,{b=1,e=6,f=57,learnedAt=300,requireSkill=356}),
 i(19979,{b=1,e=6,f=53,requireSkill=356,spellID=24347})}}),
 q(8225,{coords={
@@ -1240,11 +1240,11 @@ q(8221,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19805,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(164090,19972,{b=1,e=6,f=4,loc=40,requireSkill=356})}}),
 q(97066,{cost={{"i",19803,1}},e=6,requireSkill=356,u=1,g={
-i(19807,{b=1,e=6,requireSkill=356,u=1})}}),
+i(19807,{b=1,e=6,requireSkill=356})}}),
 q(97067,{cost={{"i",19806,1}},e=6,requireSkill=356,u=1,g={
-i(19807,{b=1,e=6,requireSkill=356,u=1})}}),
+i(19807,{b=1,e=6,requireSkill=356})}}),
 q(97065,{cost={{"i",19805,1}},e=6,requireSkill=356,u=1,g={
-i(19807,{b=1,e=6,requireSkill=356,u=1})}})}}),
+i(19807,{b=1,e=6,requireSkill=356})}})}}),
 prof(356,{e=6,g={
 o(180248,{e=6,g={
 i(19803,{b=1,e=6}),
@@ -1252,15 +1252,15 @@ i(19806,{b=1,e=6}),
 i(19805,{b=1,e=6}),
 s(163999,19808,{e=6,f=23}),
 i(19807,{b=1,e=6})}})}}),
-h(-58,{awp=16001,e=6,g={
-n(15078,{coords={
+h(-58,{e=6,g={
+n(15078,{awp=16001,coords={
 [1434]={{27.4,76.8}}},e=6,g={
 p(5094,{b=1,cost={{"i",274026,1}},e=6,itemID=276275,npcID=267842,spellID=1299341}),
 s(309637,276273,{b=1,cost={{"i",274026,1}},e=6,f=1}),
-i(276278,{b=1,e=6}),
-i(276280,{b=1,e=6}),
+i(276278,{b=1,cost={{"i",19807,1}},e=6}),
+i(276280,{b=1,cost={{"i",19807,10}},e=6}),
 s(309636,276272,{b=1,cost={{"i",274026,1}},e=6,f=2,loc=40}),
-i(274974,{b=1,e=6}),
-i(276279,{b=1,e=6}),
+i(274974,{b=1,cost={{"i",19807,20}},e=6}),
+i(276279,{b=1,cost={{"i",19807,5}},e=6}),
 s(309638,276274,{b=1,cost={{"i",274026,1}},e=6,f=4,loc=47,spellID=1299351})}})}})}})}})
 end)
