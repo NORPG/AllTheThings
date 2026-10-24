@@ -4,68 +4,39 @@ SET BUILD=12.1.5.70575
 set "FORCE_OVERWRITE="
 if /i "%~1"=="force_overwrite" set "FORCE_OVERWRITE=1"
 
+cd /d "%~dp0"
+set "SHARED=%~dp0..\..\..\..\..\.tools\.wago.update.bat"
+
 @REM Download new file versions
-call :download Achievement
-call :download AreaTable
-call :download ArtifactAppearance
-call :download BattlePetSpecies
-call :download ContentTuning
-call :download Criteria
-call :download CriteriaTree
-call :download GlyphProperties
-call :downloadrenamed Holiday Holidays
-call :download HouseDecor
-call :download Item
-call :downloadcleaned ItemBonus
-call :download ItemEffect
-call :download ItemModifiedAppearance
-call :download ItemXItemEffect
-call :download ItemSearchName
-call :download ModifierTree
-call :download SkillLineAbility
-call :downloadcleaned SpellEffect
-call :download TaxiNodes
-call :download TransmogSet
-call :download TransmogSetItem
-call :download UiMap
-call :download UiMapAssignment
-call :download WorldMapOverlay
+call "%SHARED%" download Achievement
+call "%SHARED%" download AreaTable
+call "%SHARED%" download ArtifactAppearance
+call "%SHARED%" download BattlePetSpecies
+call "%SHARED%" download ContentTuning
+call "%SHARED%" download Criteria
+call "%SHARED%" download CriteriaTree
+call "%SHARED%" download GlyphProperties
+call "%SHARED%" downloadrenamed Holiday Holidays
+call "%SHARED%" download HouseDecor
+call "%SHARED%" download Item
+call "%SHARED%" download ItemBonus
+call "%SHARED%" download ItemEffect
+call "%SHARED%" download ItemModifiedAppearance
+call "%SHARED%" download ItemXItemEffect
+call "%SHARED%" download ItemSearchName
+call "%SHARED%" download ModifierTree
+call "%SHARED%" download SkillLineAbility
+call "%SHARED%" download SpellEffect
+call "%SHARED%" download TaxiNodes
+call "%SHARED%" download TransmogSet
+call "%SHARED%" download TransmogSetItem
+call "%SHARED%" download UiMap
+call "%SHARED%" download UiMapAssignment
+call "%SHARED%" download WorldMapOverlay
 
 @REM Run the locale update script from its own folder
 pushd "%~dp0localized"
 call ".update.bat" %BUILD% %~1
 popd
 
-exit /b
-
-:download
-echo Downloading %1...
-if exist "%1.%BUILD%.csv" (
-	if not defined FORCE_OVERWRITE exit /b
-) else (
-	if exist "%1*.csv" (
-		del /Q "%1*.csv"
-	)
-)
-curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%1/csv?build=%BUILD%&useHotfixes"
-exit /b
-
-:downloadrenamed
-echo Downloading %2 as %1...
-if exist "%1.%BUILD%.csv" (
-	if not defined FORCE_OVERWRITE exit /b
-) else (
-	if exist "%1*.csv" (
-		del /Q "%1*.csv"
-	)
-)
-curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
-exit /b
-
-:downloadcleaned
-call :download %1
-echo Cleaning %1...
-cd "..\..\..\..\..\.tools\"
-call "CSVCleaner.exe" "%~dp0\%1.%BUILD%.csv" "%1.regex"
-cd /d "%~dp0"
 exit /b

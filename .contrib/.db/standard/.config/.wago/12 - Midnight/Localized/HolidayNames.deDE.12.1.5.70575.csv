@@ -12,6 +12,7 @@ ID,Name_lang
 16,Schlotternächte
 17,Erntedankfest
 18,Mondfest
+19,Braufest
 21,Piratentag
 22,"Zu den Waffen: Alteractal"
 23,"Zu den Waffen: Arathibecken"
@@ -42,6 +43,7 @@ ID,Name_lang
 236,"Bonusereignis: Schlachtfelder"
 237,"Bonusereignis: Zeitwanderungsdungeons"
 238,"Bonusereignis: Arenageplänkel"
+239,"Bonusereignis: Zeitwanderungsdungeons"
 240,"Bonusereignis: Apexis"
 241,"12. Geburtstag von WoW"
 242,"Geburtstag von WoW"
@@ -143,6 +145,7 @@ ID,Name_lang
 446,"Verstörende Visionen erneut erlebt"
 447,"WoW Remix: Legion"
 448,"Manaschmiede Omega"
+449,"WoW Remix: Mists of Pandaria"
 450,"Winde des mysteriösen Glücks"
 451,"Durchtriebene Duos"
 452,"Fülle des Sammlers"
@@ -157,6 +160,3 @@ ID,Name_lang
 463,"Der Giftige Abgrund"
 464,"Die Gezeitengebundene Grotte"
 465,"Die Entfesslung von Kith'ix"
-19,Braufest
-239,"Bonusereignis: Zeitwanderungsdungeons"
-449,"WoW Remix: Mists of Pandaria"

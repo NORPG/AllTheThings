@@ -100,7 +100,6 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Warmongering Gladiator's Dragonhide Armor",106,1024,43154,276,13,13301,0,1,5,60200,7100,0
 "Warmongering Gladiator's Dreadplate Armor",107,32,43157,280,13,13301,0,1,5,60200,7100,0
 "Warmongering Gladiator's Dreadplate Armor",108,32,43156,276,13,13301,0,1,5,60200,7100,0
-,162,0,0,3,0,0,0,1,0,0,10,0
 "Warmongering Gladiator's Felweave Armor",109,256,43161,280,13,13301,0,1,5,60200,7100,0
 "Warmongering Gladiator's Felweave Armor",110,256,43160,276,13,13301,0,1,5,60200,7100,0
 "Warmongering Gladiator's Ironskin Armor",111,512,43164,280,13,13301,0,1,5,60200,7100,0
@@ -153,6 +152,7 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Fel-Chain Armor",158,4164,43279,2,48,0,0,1,6,70001,100,0
 "Felshroud Armor",159,3592,43280,2,48,0,0,1,6,70001,100,0
 "Fel-Infused Armor",160,400,43281,2,48,0,0,1,6,70001,100,0
+,162,0,0,3,0,0,0,1,0,0,10,0
 ,163,4,0,3,0,0,0,1,0,0,750,0
 ,164,16,0,3,0,0,0,1,0,0,750,0
 ,167,0,42778,3,0,0,0,1,0,0,200,0
@@ -204,7 +204,6 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Grievous Gladiator's Ironskin Armor",213,512,45619,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Leather Armor",214,8,45620,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Plate Armor",215,1,45621,276,15,13301,0,1,4,50200,5220,0
-Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Grievous Gladiator's Ringmail Armor",216,64,45622,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Satin Armor",217,16,45623,276,15,13301,0,1,4,50200,5220,0
 "Grievous Gladiator's Scaled Armor",218,2,45624,276,15,13301,0,1,4,50200,5220,0
@@ -4638,6 +4637,7 @@ Taeshalach,5305,0,92886,323,0,0,0,1,6,70300,7000,0
 "Vengeful Regalia of the Crusader",5364,0,93403,258,357,13965,5362,1,10,110207,10,0
 "Pious Regalia of the Crusader",5365,0,93405,258,357,14120,5362,1,10,110207,10,0
 Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
+Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Wandering Isle",5368,0,0,0,0,13193,0,1,10,110207,10,147474
 "Elaborate Charcoal Mageweave",5369,0,93445,258,359,13966,0,1,11,120000,10,0
 "Elaborate Lavender Mageweave",5370,0,93446,258,359,14015,5369,1,11,120000,10,0
@@ -4920,6 +4920,8 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "White Sunwalker Totem",5664,0,95348,259,0,14120,0,1,11,120005,10,0
 "Arsenal: Drakebreaker's Weapons",5665,0,0,273,0,0,0,1,9,100000,4150,0
 "Arsenal: Hellbloom Weapons",5666,0,0,273,0,0,0,1,9,100200,4150,0
+"Azshara's Darkscale Raiment",5667,0,95545,258,388,13965,0,1,11,120005,10,0
+"Azshara's Deepscale Raiment",5668,0,95546,258,388,14120,5667,1,11,120005,10,0
 "Sire's Ornate Attire",5688,0,95681,258,0,13965,0,1,11,120005,10,0
 "Sunlit Petalweave",5691,0,95831,258,391,14120,0,1,11,120007,10,0
 "Scarlet Petalweave",5692,0,95832,258,391,13965,5691,1,11,120007,10,0
@@ -4930,6 +4932,11 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "Duskwatch Outlaw",5697,0,95920,258,392,14015,5695,1,11,120007,4000,0
 "Badlands Lawbringer",5698,0,95930,258,392,14097,5695,1,11,120007,4000,0
 "Midnight Outlaw",5699,0,95932,258,392,13966,5695,1,11,120007,4000,0
+"Shen'dorei Magister's Garb",5700,0,95977,258,393,13967,0,1,11,120100,1000,0
+"Shen'dorei Peacekeeper's Garb",5701,0,95978,258,393,13968,5700,1,11,120100,1000,0
+"Shen'dorei Skyseer's Garb",5702,0,95979,258,393,14120,5700,1,11,120100,1000,0
+"Al'Aketh Zealot's Garb",5703,0,95980,258,393,14245,5700,1,11,120100,1000,0
+"Varian's Azure Dragon Attire",5705,0,96144,258,0,14130,0,1,11,120007,10,0
 "Slinger's Munitions",5706,0,96298,323,0,0,0,1,11,120007,1640,0
 "Response Team's Plate Armor",5707,35,0,0,395,13966,5617,1,11,120000,3000,0
 "Response Team's Mail Armor",5708,4164,0,0,395,13966,5616,1,11,120000,3000,0
@@ -5136,6 +5143,7 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "Scarlet Witchwick",5911,0,97974,258,410,13965,5908,1,11,120100,10,0
 "Autumnal Witchwick",5912,0,97975,258,410,14097,5908,1,11,120100,10,0
 "Blushing Witchwick",5913,0,97976,258,410,14151,5908,1,11,120100,10,0
+"Veteran Adventurer's Outdoor Wear",5914,0,97984,258,0,13968,0,1,11,120100,10,0
 "Venom-Cursed Arms",5915,0,98066,257,0,13988,0,1,11,120100,4000,0
 "[DNT] 12.1 Mythic VFX Unlock - All Items",5916,0,98217,259,0,0,0,1,11,120100,5710,0
 "Executive Chef's Uniform",5921,0,98449,258,412,14120,0,1,11,120105,10,0
@@ -5146,16 +5154,8 @@ Tushui,5366,0,0,4,0,13967,5368,1,10,110207,10,147474
 "Head Chef's Uniform",5926,0,98454,258,412,13966,5921,1,11,120105,10,0
 "Scout Team Seven Weapons",5927,0,98460,1,0,0,0,1,11,120100,2000,0
 "Scout Team Seven Quiver",5928,0,0,1,0,0,0,1,11,120100,2000,0
+"Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
 "Wood Haunter's Guise of the Wight",5948,0,98727,258,413,14145,0,1,11,120105,4000,0
 "Ice-Walker's Guise of the Wight",5949,0,98728,258,413,13967,5948,1,11,120105,4000,0
 "Embered Guise of the Wight",5950,0,98729,258,413,14097,5948,1,11,120105,4000,0
 "Frost Revenant's Guise of the Wight",5951,0,98730,258,413,14015,5948,1,11,120105,4000,0
-"Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
-"Azshara's Darkscale Raiment",5667,0,95545,258,388,13965,0,1,11,120005,10,0
-"Azshara's Deepscale Raiment",5668,0,95546,258,388,14120,5667,1,11,120005,10,0
-"Varian's Azure Dragon Attire",5705,0,96144,258,0,14130,0,1,11,120007,10,0
-"Veteran Adventurer's Outdoor Wear",5914,0,97984,258,0,13968,0,1,11,120100,10,0
-"Shen'dorei Magister's Garb",5700,0,95977,258,393,13967,0,1,11,120100,1000,0
-"Shen'dorei Peacekeeper's Garb",5701,0,95978,258,393,13968,5700,1,11,120100,1000,0
-"Shen'dorei Skyseer's Garb",5702,0,95979,258,393,14120,5700,1,11,120100,1000,0
-"Al'Aketh Zealot's Garb",5703,0,95980,258,393,14245,5700,1,11,120100,1000,0
