@@ -18,14 +18,14 @@ if "%Dir:~-1%"=="\" set "Dir=%Dir:~0,-1%"
 :Up
 :: Extract folder name and parent
 for %%F in ("%Dir%") do (
-    set "Name=%%~nxF"
-    set "Parent=%%~dpF"
+	set "Name=%%~nxF"
+	set "Parent=%%~dpF"
 )
 
 :: Compare
 if /I "%Name%"=="%TargetName%" (
-    set "MatchedDir=%Dir%"
-    goto :Found
+	set "MatchedDir=%Dir%"
+	goto :Found
 )
 
 :: If we’re at root, stop
@@ -46,119 +46,119 @@ goto :do_links
 
 :do_links
 if defined MatchedDir (
-    call :link_wowfolder "%MatchedDir%"
+	call :link_wowfolder "%MatchedDir%"
 ) else (
-    call :link_wowfolder "C:\Program Files\World of Warcraft"
-    call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
-    call :link_wowfolder "..\World of Warcraft"
-    call :link_wowfolder "..\Blizzard\World of Warcraft"
-    call :link_wowfolder "D:\World of Warcraft"
-    call :link_wowfolder "F:\World of Warcraft"
+	call :link_wowfolder "C:\Program Files\World of Warcraft"
+	call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
+	call :link_wowfolder "..\World of Warcraft"
+	call :link_wowfolder "..\Blizzard\World of Warcraft"
+	call :link_wowfolder "D:\World of Warcraft"
+	call :link_wowfolder "F:\World of Warcraft"
 )
 call :report_taskcomplete
 EXIT /B 0
 
 :link_wowfolder
 if exist "%~1\" (
-    echo "Linking using root WoW folder: %~1"
-    call :link_expansion "%~1\_anniversary_"
-    call :link_expansion "%~1\_classic_"
-    call :link_expansion "%~1\_classic_era_"
-    call :link_expansion "%~1\_classic_beta_"
-    call :link_expansion "%~1\_classic_ptr_"
-    call :link_expansion "%~1\_classic_era_ptr_"
-    call :link_expansion "%~1\_forever_"
-    call :link_expansion "%~1\_retail_"
-    call :link_beta "%~1\_beta_"
-    call :link_ptr "%~1\_ptr_"
-    call :link_ptr "%~1\_xptr_"
+	echo "Linking using root WoW folder: %~1"
+	call :link_expansion "%~1\_anniversary_"
+	call :link_expansion "%~1\_classic_"
+	call :link_expansion "%~1\_classic_era_"
+	call :link_expansion "%~1\_classic_beta_"
+	call :link_expansion "%~1\_classic_ptr_"
+	call :link_expansion "%~1\_classic_era_ptr_"
+	call :link_expansion "%~1\_forever_"
+	call :link_expansion "%~1\_retail_"
+	call :link_beta "%~1\_beta_"
+	call :link_ptr "%~1\_ptr_"
+	call :link_ptr "%~1\_xptr_"
 )
 EXIT /B 0
 
 :link_expansion
 if exist "%~1\" (
-    echo Linking Expansion "%~1\"
-    if exist "%~1\Interface\AddOns\AllTheThings" (
-        rmdir /s /q "%~1\Interface\AddOns\AllTheThings"
-    )
-    if NOT exist "%~1\Interface\AddOns\AllTheThings" (
-        if NOT exist "%~1\Interface" (
-            mkdir "%~1\Interface"
-        )
-        if NOT exist "%~1\Interface\AddOns" (
-            mkdir "%~1\Interface\AddOns"
-        )
-        mklink /J "%~1\Interface\AddOns\AllTheThings" "%cd%"
-    )
+	echo Linking Expansion "%~1\"
+	if exist "%~1\Interface\AddOns\AllTheThings" (
+		rmdir /s /q "%~1\Interface\AddOns\AllTheThings"
+	)
+	if NOT exist "%~1\Interface\AddOns\AllTheThings" (
+		if NOT exist "%~1\Interface" (
+			mkdir "%~1\Interface"
+		)
+		if NOT exist "%~1\Interface\AddOns" (
+			mkdir "%~1\Interface\AddOns"
+		)
+		mklink /J "%~1\Interface\AddOns\AllTheThings" "%cd%"
+	)
 )
 EXIT /B 0
 
 echo Defining :link_beta
 :link_beta
 if exist "%~1\" (
-    echo Linking BETA "%~1\"
-    net session >nul 2>&1
-    if %errorLevel% == 0 (
-        call :link_beta_files "%~1\Interface\AddOns\AllTheThings"
-    )
+	echo Linking BETA "%~1\"
+	net session >nul 2>&1
+	if %errorLevel% == 0 (
+		call :link_beta_files "%~1\Interface\AddOns\AllTheThings"
+	)
 )
 EXIT /B 0
 
 :link_beta_files
 echo Linking BETA Files "%~1\"
 if exist "%~1\" (
-    rmdir /s /q "%~1\"
+	rmdir /s /q "%~1\"
 )
 if NOT exist "%~1\" (
-    mkdir "%~1\"
-    mkdir "%~1\db"
-    mkdir "%~1\db\Standard"
-    mklink /J "%~1\db\Standard\Categories" "%cd%\db\.beta\Categories"
-    mklink "%~1\db\Standard\Database.xml" "%cd%\db\.beta\Database.xml"
-    mklink "%~1\db\Standard\LocalizationDB.lua" "%cd%\db\.beta\LocalizationDB.lua"
-    mklink "%~1\db\Standard\ReferenceDB.lua" "%cd%\db\.beta\ReferenceDB.lua"
-    mklink /J "%~1\assets" "%cd%\assets"
-    mklink /J "%~1\lib" "%cd%\lib"
-    mklink /J "%~1\locales" "%cd%\locales"
-    mklink /J "%~1\src" "%cd%\src"
+	mkdir "%~1\"
+	mkdir "%~1\db"
+	mkdir "%~1\db\Standard"
+	mklink /J "%~1\db\Standard\Categories" "%cd%\db\.beta\Categories"
+	mklink "%~1\db\Standard\Database.xml" "%cd%\db\.beta\Database.xml"
+	mklink "%~1\db\Standard\LocalizationDB.lua" "%cd%\db\.beta\LocalizationDB.lua"
+	mklink "%~1\db\Standard\ReferenceDB.lua" "%cd%\db\.beta\ReferenceDB.lua"
+	mklink /J "%~1\assets" "%cd%\assets"
+	mklink /J "%~1\lib" "%cd%\lib"
+	mklink /J "%~1\locales" "%cd%\locales"
+	mklink /J "%~1\src" "%cd%\src"
 
-    mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
-    mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
-    mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
+	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
+	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
+	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
 )
 EXIT /B 0
 
 :link_ptr
 if exist "%~1\" (
-    echo Linking PTR "%~1\"
-    net session >nul 2>&1
-    if %errorLevel% == 0 (
-        call :link_ptr_files "%~1\Interface\AddOns\AllTheThings"
-    )
+	echo Linking PTR "%~1\"
+	net session >nul 2>&1
+	if %errorLevel% == 0 (
+		call :link_ptr_files "%~1\Interface\AddOns\AllTheThings"
+	)
 )
 EXIT /B 0
 
 :link_ptr_files
 echo Linking PTR Files "%~1\"
 if exist "%~1\" (
-    rmdir /s /q "%~1\"
+	rmdir /s /q "%~1\"
 )
 if NOT exist "%~1\" (
-    mkdir "%~1\"
-    mkdir "%~1\db"
-    mkdir "%~1\db\Standard"
-    mklink /J "%~1\db\Standard\Categories" "%cd%\db\.ptr\Categories"
-    mklink "%~1\db\Standard\Database.xml" "%cd%\db\.ptr\Database.xml"
-    mklink "%~1\db\Standard\LocalizationDB.lua" "%cd%\db\.ptr\LocalizationDB.lua"
-    mklink "%~1\db\Standard\ReferenceDB.lua" "%cd%\db\.ptr\ReferenceDB.lua"
-    mklink /J "%~1\assets" "%cd%\assets"
-    mklink /J "%~1\lib" "%cd%\lib"
-    mklink /J "%~1\locales" "%cd%\locales"
-    mklink /J "%~1\src" "%cd%\src"
+	mkdir "%~1\"
+	mkdir "%~1\db"
+	mkdir "%~1\db\Standard"
+	mklink /J "%~1\db\Standard\Categories" "%cd%\db\.ptr\Categories"
+	mklink "%~1\db\Standard\Database.xml" "%cd%\db\.ptr\Database.xml"
+	mklink "%~1\db\Standard\LocalizationDB.lua" "%cd%\db\.ptr\LocalizationDB.lua"
+	mklink "%~1\db\Standard\ReferenceDB.lua" "%cd%\db\.ptr\ReferenceDB.lua"
+	mklink /J "%~1\assets" "%cd%\assets"
+	mklink /J "%~1\lib" "%cd%\lib"
+	mklink /J "%~1\locales" "%cd%\locales"
+	mklink /J "%~1\src" "%cd%\src"
 
-    mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
-    mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
-    mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
+	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
+	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
+	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
 )
 EXIT /B 0
 

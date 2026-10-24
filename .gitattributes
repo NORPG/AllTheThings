@@ -112,3 +112,22 @@ tests export-ignore
 *.blp binary
 *.ogg binary
 *.wav binary
+
+###############################################################################
+# Root-level files
+###############################################################################
+/.coderabbit.yaml text eol=lf
+/.editorconfig text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/.luarc.json text eol=lf
+/.pkgmeta text eol=lf
+/.pre-commit-config.yaml text eol=lf
+/AGENTS.md text eol=lf
+/AllTheThings.toc text eol=lf
+/LICENSE text eol=lf
+"/Link ATT to WoW.bat" text eol=crlf
+"/Link ATT to WoW.sh" text eol=lf
+/README.md text eol=lf
+/_config.yml text eol=lf
+/setup.cfg text eol=lf
