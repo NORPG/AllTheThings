@@ -28,6 +28,10 @@
 *.text      text eol=crlf
 # xml file
 *.xml       text eol=crlf
+# Runtime XML
+/Bindings.xml text eol=lf
+/src/Settings/Settings.xml text eol=lf
+/src/UI/Windows/Windows.xml text eol=lf
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
