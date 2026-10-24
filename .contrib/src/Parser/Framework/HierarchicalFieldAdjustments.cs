@@ -237,6 +237,11 @@ namespace ATT
                 {
                     _fieldValues.Add(value);
                 }
+                else
+                {
+                    // field value is missing from a group, cannot propagate to the parent
+                    return;
+                }
             }
 
             object min = null;
@@ -290,6 +295,11 @@ namespace ATT
                 if (data.TryGetValue(field, out object value))
                 {
                     _fieldValues.Add(value);
+                }
+                else
+                {
+                    // field value is missing from a group, cannot propagate to the parent
+                    return;
                 }
             }
 
