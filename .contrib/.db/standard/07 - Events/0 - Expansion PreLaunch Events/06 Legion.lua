@@ -6,7 +6,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 	expansion(EXPANSION.LEGION, {
 		lvl = 98,
 		forcetimeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
-		_DEBUG=true,
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(11201, {		-- Defender of Azeroth: Legion Invasions

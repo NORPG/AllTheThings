@@ -2043,7 +2043,12 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 			t.timeline = { "added " .. math.floor(id) ..".".. patchstring }
 		else
 			local deftimeline = EXPANSION_DEFAULT_TIMELINES[id]
-			t.timeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
+			if not deftimeline then
+				print("WARN: No EXPANSION_DEFAULT_TIMELINES found for expansionID:",id)
+				t.timeline = { "added " .. math.floor(id) .. ".0" }
+			else
+				t.timeline = { deftimeline }
+			end
 		end
 	end
 	return t;
