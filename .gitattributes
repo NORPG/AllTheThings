@@ -131,3 +131,6 @@ tests export-ignore
 /README.md text eol=lf
 /_config.yml text eol=lf
 /setup.cfg text eol=lf
+
+# VS Code workspace configuration
+/.vscode/*.json text eol=lf

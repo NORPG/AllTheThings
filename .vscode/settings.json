@@ -1,5 +1,5 @@
 {
-    "Lua.diagnostics.globals": [],
-    "wowAPI.luals.configurationScope": "User",
-    "wowAPI.luals.defineKnownGlobals": false
+	"Lua.diagnostics.globals": [],
+	"wowAPI.luals.configurationScope": "User",
+	"wowAPI.luals.defineKnownGlobals": false
 }
