@@ -2514,7 +2514,11 @@ namespace ATT
 
                 // don't assign a field that's already existing
                 if (data.ContainsKey(inheritedField))
+                {
+                    // track the expected inheriting field anyway for further logic use
+                    data["_inherit_" + inheritedField] = inheritedValue;
                     continue;
+                }
 
                 // use common merge logic
                 // LogDebug($"INFO: Inheriting field {inheritedField}={ToJSON(inheritedValue)}", data);
