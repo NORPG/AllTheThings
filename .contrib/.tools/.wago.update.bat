@@ -19,15 +19,28 @@ echo Downloading %2 as %1...
 call :fetch %1 %2
 exit /b
 
+:downloadlocale
+echo Downloading %1 for locale %2...
+call :fetch %1 %1 %2
+exit /b
+
 :fetch
-if exist "%1.%BUILD%.csv" (
+set "REMOTE=%~2"
+if "%~1"=="AchievementCategory" set "REMOTE=Achievement_Category"
+set "STEM=%~1"
+set "LOCALEARG="
+if not "%~3"=="" (
+	set "STEM=%~1.%~3"
+	set "LOCALEARG=&locale=%~3"
+)
+if exist "%STEM%.%BUILD%.csv" (
 	if not defined FORCE_OVERWRITE exit /b
 ) else (
-	if exist "%1*.csv" del /Q "%1*.csv"
+	if exist "%STEM%*.csv" del /Q "%STEM%*.csv"
 )
-curl -o "%1.%BUILD%.csv" "https://wago.tools/db2/%2/csv?build=%BUILD%&useHotfixes"
+curl -o "%STEM%.%BUILD%.csv" "https://wago.tools/db2/%REMOTE%/csv?build=%BUILD%%LOCALEARG%&useHotfixes"
 set "CSVDIR=%CD%"
 pushd "%~dp0"
-call "CSVCleaner.exe" "%CSVDIR%\%1.%BUILD%.csv" "%1.regex"
+call "CSVCleaner.exe" "%CSVDIR%\%STEM%.%BUILD%.csv" "%~1.regex"
 popd
 exit /b
