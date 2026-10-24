@@ -11340,13 +11340,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete the War Within delves listed below.","Delver of the Depths",,40437,-1,-1,0,15523,0,10,143360,64,1786405,0,163440,0,0,0,0
 "Complete the War Within delve achievements listed below.","Glory of the War Within Delver","Mount: Ivory Goliathus",40438,-1,-1,0,15523,0,25,143360,68,6025441,224415,163437,0,0,0,0
 "Successfully complete a Fungarian delve without being hit by Explosive Spores on Tier 8 or higher.",Sporesweeper,,40445,-1,-1,0,15523,0,10,0,43,5789328,0,164004,0,0,0,0
-"Successfully complete a Kobold delve without exhausting an Enchanted Candle or Air Totem on Tier 8 or higher.","I TAKE Candle!",,40446,-1,-1,0,15531,0,0,2048,60,2061718,0,164005,0,0,0,0
+"Successfully complete a Kobold delve without exhausting an Enchanted Candle or Air Totem on Tier 8 or higher.","I TAKE Candle!",,40446,-1,-1,0,15531,0,0,2048,62,2061718,0,164005,0,0,0,0
 "Complete the War Within delves listed below on Tier 4 or higher with lives remaining.","Delver of the Depths II",,40447,-1,-1,40437,15523,0,10,143360,65,1786405,0,163454,0,0,0,0
 "Complete the War Within delves listed below on Tier 8 or higher with lives remaining.","Delver of the Depths III",,40448,-1,-1,40447,15523,0,25,143360,66,1786405,0,163467,0,0,0,0
 "Complete the War Within delves listed below on Tier 11 with lives remaining.","Delver of the Depths IV",,40449,-1,-1,40448,15523,0,25,131072,67,1786405,0,163480,0,0,0,0
 "Raise a companion to level 20.","Buddy System II",,40450,-1,-1,40455,15522,0,10,131072,9,236563,0,163495,0,0,0,0
 "Raise a companion to level 30.","Buddy System III",,40451,-1,-1,40450,15522,0,10,131072,10,236564,0,163497,0,0,0,0
-"Successfully complete a Kobyss delve without ever losing your breath on Tier 8 or higher.","Just Keep Swimming",,40452,-1,-1,0,15531,0,0,2048,61,136148,0,164006,0,0,0,0
+"Successfully complete a Kobyss delve without ever losing your breath on Tier 8 or higher.","Just Keep Swimming",,40452,-1,-1,0,15531,0,0,2048,63,136148,0,164006,0,0,0,0
 "Successfully complete a Nerubian delve without spawning ambushers from Nerubian Webs or taking damage from Nerubian Eggs on Tier 8 or higher.","Spider Senses",,40453,-1,-1,0,15523,0,10,0,44,135737,0,164009,0,0,0,0
 "Successfully complete an Order of Night delve without being targeted by Artillery fire on Tier 8 or higher.",Daystormer,,40454,-1,-1,0,15523,0,10,0,45,2011125,0,164010,0,0,0,0
 "Raise a companion to level 10.","Buddy System",,40455,-1,-1,0,15522,0,10,131072,8,236562,0,163513,0,0,0,0
@@ -11391,13 +11391,13 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete The Ringing Deeps world quest ""Reaching for Resources"" while leaping to 25 handholds or less.","Hanging Tight",,40507,-1,-1,0,15506,0,5,0,39,236316,0,164007,0,0,0,0
 "Complete a Tier 2 delve.","War Within Delves: Tier 2","Unlock: Tier 3 delves in The War Within",40512,-1,-1,40631,15523,0,10,131072,3,6025441,0,166446,0,0,0,0
 "Complete a Tier 3 delve.","War Within Delves: Tier 3",,40514,-1,-1,40512,15523,0,10,131072,4,6025441,0,164035,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 4 (Season 1)",,40515,-1,-1,0,15531,0,0,133120,36,6025441,0,164037,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in The War Within",40516,-1,-1,40515,15531,0,0,133120,37,6025441,0,164039,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in The War Within",40517,-1,-1,40516,15531,0,0,133120,38,6025441,0,164041,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in The War Within",40518,-1,-1,40517,15531,0,0,133120,39,6025441,0,164043,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in The War Within",40519,-1,-1,40518,15531,0,0,133120,40,6025441,0,164045,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in The War Within",40520,-1,-1,40519,15531,0,0,133120,41,6025441,0,164047,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in The War Within",40521,-1,-1,40520,15531,0,0,133120,42,6025441,0,164049,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 4 (Season 1)",,40515,-1,-1,0,15531,0,0,133120,38,6025441,0,164037,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in The War Within",40516,-1,-1,40515,15531,0,0,133120,39,6025441,0,164039,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in The War Within",40517,-1,-1,40516,15531,0,0,133120,40,6025441,0,164041,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in The War Within",40518,-1,-1,40517,15531,0,0,133120,41,6025441,0,164043,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in The War Within",40519,-1,-1,40518,15531,0,0,133120,42,6025441,0,164045,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in The War Within",40520,-1,-1,40519,15531,0,0,133120,43,6025441,0,164047,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in The War Within",40521,-1,-1,40520,15531,0,0,133120,44,6025441,0,164049,0,0,0,0
 "Obtain all curios that are available for Brann Bronzebeard.","On Brand",,40523,-1,-1,0,15523,0,10,131072,20,973911,0,164139,0,0,0,0
 "Complete 5 Delver's Call quests in the War Within.","Good Deed Delver",,40524,-1,-1,0,15506,0,5,131200,48,237554,0,166268,0,0,0,0
 "Complete each story variant of Fungal Folly.","Fungal Folly Stories",,40525,-1,-1,0,15523,0,5,131072,28,5789324,0,164059,0,0,0,0
@@ -11545,7 +11545,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete one of the achievements or feats of strength listed below:","Web-Wrapped in the Finest Silks","Reward: Luminous Nerubian Catalyst Stone",40723,-1,-1,0,15259,0,10,131072,53,5857267,0,166425,0,0,0,0
 "Discover the hidden treasures across The Ringing Deeps.","Treasures of The Ringing Deeps",,40724,-1,-1,0,15521,0,5,131072,44,1542858,0,166437,0,0,0,0
 "Reach level 80 and complete the Khaz Algar main story campaign on your Warband.","War Within Delves: Endgame","Unlock: Tier 4 delves in The War Within",40725,-1,-1,40514,15523,0,10,131072,5,6025441,0,164017,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 11 (Season 1)","Title: High Explorer",40726,-1,-1,40521,15531,0,0,133120,43,6025441,0,166448,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 1.","War Within Delves: Tier 11 (Season 1)","Title: High Explorer",40726,-1,-1,40521,15531,0,0,133120,45,6025441,0,166448,0,0,0,0
 "Ride the High Hollows Skittershaw for a full lap around the district.","Skittershaw Spin",,40727,-1,-1,0,15506,0,5,0,40,879828,0,166453,0,0,0,0
 "Collect any armor set from The War Within PvP Season 1.","Forged Finery",,40728,-1,-1,0,15259,0,10,131072,93,5771687,0,166455,0,0,0,0
 "Win a game of Light's Gambit on Hard Difficulty.","Light's Gambit Champion",,40729,-1,-1,0,15506,0,10,0,38,135986,0,166458,0,0,0,0
@@ -11870,14 +11870,14 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Aid the Assembly of the Deeps by completing the achievements below.","Rage Aside the Machine",,41187,-1,-1,0,15521,0,20,131072,10,5770812,0,170240,0,0,0,0
 "Aid the Hallowfall Arathi by completing the achievements below.","Crystal Chronicled",,41188,-1,-1,0,15521,0,20,131072,11,5770810,0,170248,0,0,0,0
 "Experience life in Azj-Kahet by completing the achievements below.","Azj the World Turns",,41189,-1,-1,0,15521,0,20,131072,12,5770809,0,170377,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in The War Within",41191,-1,-1,0,15531,0,0,133120,44,6025441,0,170263,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in The War Within",41192,-1,-1,41191,15531,0,0,133120,47,6025441,0,170265,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 7 (Season 2)","Unlock: Tier 7 delves in The War Within",41193,-1,-1,41198,15531,0,0,133120,51,6025441,0,170269,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in The War Within",41194,-1,-1,41193,15531,0,0,133120,53,6025441,0,170271,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in The War Within",41195,-1,-1,41194,15531,0,0,133120,55,6025441,0,170273,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in The War Within",41196,-1,-1,41195,15531,0,0,133120,57,6025441,0,170275,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,59,6025441,0,170277,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in The War Within",41198,-1,-1,41192,15531,0,0,133120,49,6025441,0,170267,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in The War Within",41191,-1,-1,0,15531,0,0,133120,46,6025441,0,170263,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in The War Within",41192,-1,-1,41191,15531,0,0,133120,49,6025441,0,170265,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 7 (Season 2)","Unlock: Tier 7 delves in The War Within",41193,-1,-1,41198,15531,0,0,133120,53,6025441,0,170269,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in The War Within",41194,-1,-1,41193,15531,0,0,133120,55,6025441,0,170271,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in The War Within",41195,-1,-1,41194,15531,0,0,133120,57,6025441,0,170273,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in The War Within",41196,-1,-1,41195,15531,0,0,133120,59,6025441,0,170275,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,61,6025441,0,170277,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in The War Within",41198,-1,-1,41192,15531,0,0,133120,51,6025441,0,170267,0,0,0,0
 "Complete the quest ""Grand, Gutsy Solutions.""","Grand, Gutsy Solutions","Pet: Slim",41200,-1,-1,0,15521,0,0,1245184,115,2027953,222980,170300,0,0,0,0
 "End Xal'atath's schemes (for now) by completing the achievements below.","You Xal Not Pass","Mount Reward: Shadow of Doubt",41201,-1,-1,0,15521,0,40,131072,19,4913234,223313,170302,0,0,0,0
 "Experience Zandalari culture by completing the achievements listed below.","Hot Tropic",,41202,-1,-1,0,15298,0,20,131072,2,2065640,0,170508,0,0,0,0
@@ -12038,7 +12038,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Collect an armor set from the Liberation of Undermine.","Can You Please Spell ""Gobanna?""",,41525,-1,-1,0,15259,0,10,131072,54,6392630,0,206447,0,0,0,0
 "Defeat The Underpin in his lair on Tier ?? before the release of the next season of delves.","Breaking the Bank","Title: The Real Deal",41529,-1,-1,0,15531,0,0,14336,15,6124649,0,206449,0,0,0,0
 "Defeat The Underpin in his lair before the release of the next season of delves.","My New Nemesis","Reward: Golden-Gob Propulsion Rig",41530,-1,-1,0,15531,0,0,14336,9,5393730,0,206451,0,0,0,0
-"Ask Brann to change his hat ten times after recovering it from the Underpin during the War Within Season 2.","The Hataclysm",,41531,-1,-1,0,15531,0,0,133120,35,5221397,0,206454,0,0,0,0
+"Ask Brann to change his hat ten times after recovering it from the Underpin during the War Within Season 2.","The Hataclysm",,41531,-1,-1,0,15531,0,0,133120,37,5221397,0,206454,0,0,0,0
 "Obtain the Delver's Gob-Trotter.","I've Got a Flying Machine?",,41532,-1,-1,0,15523,0,10,131072,23,5917277,0,206461,0,0,0,0
 "Attain a Mythic+ Rating of at least 2000 during The War Within Season Two.","The War Within Keystone Master: Season Two","Mount: Crimson Shreddertank",41533,-1,-1,40950,15272,0,0,133120,138,618859,235549,168581,0,0,0,0
 "Raise a companion to level 70.","Buddy System VII",,41537,-1,-1,40461,15522,0,10,131072,14,236568,0,206696,0,0,0,0
@@ -12154,7 +12154,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Gain new High Scores each week!","Dastardly Duos Weekly High Score",,41706,-1,-1,0,15545,0,50,131072,1,6740278,0,207477,0,0,0,0
 "Those bosses are inhuman. Really! Collect their gears to prove it.","Dastardly Devices",,41707,-1,-1,0,15545,0,10,131072,7,6740278,0,207484,0,0,0,0
 "Make friends with all 5 Grabbable Rats in Undermine.","You're My Friend Now",,41708,-1,-1,0,15521,0,5,131072,9,6351952,0,207587,0,0,0,0
-"Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,31,6025441,0,207593,0,0,0,0
+"Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,33,6025441,0,207593,0,0,0,0
 "Obtain the Faceless Mask of the Nemesis in a Revisited Vision.","Faceless Mask of the Nemesis",,41710,-1,-1,0,15546,0,0,1179648,14,136243,0,207597,0,0,0,0
 "Defeat Sprocketmonger Lockenstock without being struck by Blazing Beam, Rocket Barrage, Mega Magnetize, Jumbo Void Beam, or Void Barrage in Liberation of Undermine on Normal difficulty or higher.","Conveyor Slayer",,41711,2769,-1,0,15526,0,10,0,26,132996,0,207600,0,0,0,0
 "Collect the following cosmetic unlocks for the Delver's Gob-Trotter.","From Trash to Treasure",,41714,-1,-1,41532,15523,0,10,131072,26,132241,0,207651,0,0,0,0
@@ -12293,7 +12293,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Open 250 Bountiful Coffers with Restored Coffer Keys.","Copious Coffers (copy)","Title: The Bountiful & Reward: Silver Coffer Key",41968,-1,-1,0,15522,0,0,3276932,25,4622271,237358,209192,0,0,0,0
 "Open 500 Bountiful Coffers with Restored Coffer Keys.","The Key to Madness (copy)","Reward: Golden Coffer Key",41969,-1,-1,0,15522,0,0,3276932,27,4622270,237355,209194,0,0,0,0
 "Complete the following storylines in K'aresh.","The Knife's Edge","Warband Campsite: The Fate of the Devoured",41970,-1,-1,0,15506,0,10,131072,12,6937965,0,209210,0,0,0,0
-"Complete all objectives in the Revisited Horrific Visions of Stormwind and Orgrimmar in a single visit while not in a party and with all 8 Faceless Masks active.","Through the Looking Glass","Title: The Mad",41971,-1,-1,0,81,0,0,2048,243,3163628,0,209221,0,0,0,0
+"Complete all objectives in the Revisited Horrific Visions of Stormwind and Orgrimmar in a single visit while not in a party and with all 8 Faceless Masks active. Must have been completed prior to Midnight.","Through the Looking Glass","Title: The Mad",41971,-1,-1,0,81,0,0,2048,243,3163628,0,209221,0,0,0,0
 "Attain a Mythic+ Rating of at least 2000 during The War Within Season Three.","The War Within Keystone Master: Season Three","Mount: Azure Void Flyer",41973,-1,-1,42170,15272,0,0,133120,143,618859,248248,209254,0,0,0,0
 ,"Midnight Jewelcrafting 25 (DNT)",,41974,-1,-1,0,15494,0,0,9437188,6,136243,0,209262,0,0,0,0
 ,"Midnight Jewelcrafting 50 (DNT)",,41975,-1,-1,0,15494,0,0,9437188,7,136243,0,209264,0,0,0,0
@@ -12346,7 +12346,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Win 50 Solo Shuffle rounds as a Healer at or above Rival I during The War Within Season 3.","Battle Mender: The War Within Season 3","Reward: Seasonal Character Title",42044,-1,-1,0,15270,0,0,133120,6,236249,0,209626,0,0,0,0
 "Complete the Midnight storyline.",Midnight,,42045,-1,-1,0,15547,0,10,131072,9,7490911,0,209651,0,0,0,0
 "Aid the people of the Broken Isles by completing the achievements below.","Broken Memories",,42114,-1,-1,0,15257,0,40,131072,1,1408999,0,218484,0,0,0,0
-"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,26,6100921,0,209721,0,0,0,0
+"Defeat The Underpin in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: The Underpin (copy)","Reward: Delver's Gob-Trotter Schematic: Gold",42116,-1,-1,0,15531,0,0,1179652,28,6100921,0,209721,0,0,0,0
 "Complete the following max level questlines.","The War of Light and Shadow",,42117,-1,-1,0,15547,0,10,131072,10,135980,0,209723,0,0,0,0
 "Defeat the Plexus Sentinel after saving all mice from atomization in Manaforge Omega on Normal difficuty or higher.","Of Mice and Manaforges",,42118,2810,-1,0,15526,0,10,0,76,5502861,0,209730,0,0,0,0
 ,"Vicious Saddle (42)",,42123,-1,1,41698,15270,0,0,1179648,142,1379171,103533,209733,0,0,0,0
@@ -12393,15 +12393,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Defeat Nexus-Princess Ky'veza in her lair before the release of the next season of delves.","My Stab-Happy Nemesis","Reward: Hal'hadar's Phasebound Visor",42193,-1,-1,0,15531,0,0,14336,10,6218232,0,210434,0,0,0,0
 "Defeat Nexus-Princess Ky'veza in her lair on Tier ?? before the release of the next season of delves.","Pruning the Princess","Title: Contract Killer",42194,-1,-1,0,15531,0,0,14336,16,5779388,0,210437,0,0,0,0
 ,"[HIDDEN] Renown 15 with Manaforge Vandals / Teach Raid Teleport Spell",,42195,-1,-1,0,15526,0,0,1310720,52,136243,0,210452,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 4 (Season 3)","Unlock: Tier 5 delves in The War Within",42196,-1,-1,0,15531,0,0,133120,45,6025441,0,210478,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 5 (Season 3)","Unlock: Tier 6 delves in The War Within",42197,-1,-1,42196,15531,0,0,133120,46,6025441,0,210492,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 6 (Season 3)","Unlock: Tier 7 delves in The War Within",42198,-1,-1,42197,15531,0,0,133120,48,6025441,0,210490,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 7 (Season 3)","Unlock: Tier 7 delves in The War Within",42199,-1,-1,42198,15531,0,0,133120,50,6025441,0,210488,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 8 (Season 3)","Unlock: Tier 9 delves in The War Within",42200,-1,-1,42199,15531,0,0,133120,52,6025441,0,210486,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 9 (Season 3)","Unlock: Tier 10 delves in The War Within",42201,-1,-1,42200,15531,0,0,133120,54,6025441,0,210484,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 10 (Season 3)","Unlock: Tier 11 delves in The War Within",42202,-1,-1,42201,15531,0,0,133120,56,6025441,0,210482,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,58,6025441,0,210480,0,0,0,0
-"Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15531,0,0,133120,62,2000853,246237,210543,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 4 (Season 3)","Unlock: Tier 5 delves in The War Within",42196,-1,-1,0,15531,0,0,133120,47,6025441,0,210478,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 5 (Season 3)","Unlock: Tier 6 delves in The War Within",42197,-1,-1,42196,15531,0,0,133120,48,6025441,0,210492,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 6 (Season 3)","Unlock: Tier 7 delves in The War Within",42198,-1,-1,42197,15531,0,0,133120,50,6025441,0,210490,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 7 (Season 3)","Unlock: Tier 7 delves in The War Within",42199,-1,-1,42198,15531,0,0,133120,52,6025441,0,210488,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 8 (Season 3)","Unlock: Tier 9 delves in The War Within",42200,-1,-1,42199,15531,0,0,133120,54,6025441,0,210486,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 9 (Season 3)","Unlock: Tier 10 delves in The War Within",42201,-1,-1,42200,15531,0,0,133120,56,6025441,0,210484,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 10 (Season 3)","Unlock: Tier 11 delves in The War Within",42202,-1,-1,42201,15531,0,0,133120,58,6025441,0,210482,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,60,6025441,0,210480,0,0,0,0
+"Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15531,0,0,133120,64,2000853,246237,210543,0,0,0,0
 ,"Console Overcharged Purchase 1",,42213,-1,-1,0,15523,0,0,1179648,70,136243,0,0,0,0,0,0
 ,"Console Overcharged Purchase 2",,42214,-1,-1,0,15523,0,0,1179648,71,136243,0,0,0,0,0,0
 ,"Console Overcharged Purchase 3",,42215,-1,-1,0,15523,0,0,1179648,72,136243,0,0,0,0,0,0
@@ -12660,7 +12660,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Obtain 100 skill points in Midnight Engineering.","Engineering at Midnight","Decor Reward: Midnight Engineer's Shop Sign",42798,-1,-1,0,169,1,10,136192,41,4624728,0,212480,0,0,0,0
 "Get killed by Ky'veza in a delve.","Let Her Solo Me",,42799,-1,-1,0,15531,0,0,133120,3,6694635,0,212482,0,0,0,0
 "Collect any armor set from The War Within PvP Season 3.","Astral Attire",,42800,-1,-1,0,15259,0,10,131072,95,6784665,0,212491,0,0,0,0
-"Complete the Delver's Journey before The War Within: Season 3 ends.","The War Within: Journey's End (Season 3)",,42801,-1,-1,0,15531,0,0,133120,32,6025441,0,212703,0,0,0,0
+"Complete the Delver's Journey before The War Within: Season 3 ends.","The War Within: Journey's End (Season 3)",,42801,-1,-1,0,15531,0,0,133120,34,6025441,0,212703,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 26 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 26","Keystones will no longer deplete below level 26 during the War Within Season 3.",42802,-1,-1,0,15272,0,0,2048,183,648754,0,212705,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 27 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 27","Keystones will no longer deplete below level 27 during the War Within Season 3.",42803,-1,-1,0,15272,0,0,2048,184,648754,0,212714,0,0,0,0
 "Complete all Mythic+ dungeons within the time limit at keystone level 28 during The War Within Season Three.","The War Within Season 3: Resilient Keystone 28","Keystones will no longer deplete below level 28 during the War Within Season 3.",42804,-1,-1,0,15272,0,0,2048,185,648754,0,212723,0,0,0,0
@@ -13062,7 +13062,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Bronze gained across Warband",,61338,-1,-1,0,15562,0,0,133121,4,4638724,0,216993,0,0,0,0
 "Discovered the limitations of infinite power. How did you even manage to do that?","Putting the Finite in Infinite",,61339,-1,-1,0,15274,0,0,2048,96,1391675,0,216995,0,0,0,0
 "Raise a companion to level 90.","Buddy System IX",,61342,-1,-1,41723,15522,0,10,131072,16,614740,0,217047,0,0,0,0
-"Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,30,136243,0,0,0,0,0,0
+"Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,32,136243,0,0,0,0,0,0
 "Discover all of the lore objects found within the Legends of the Haranir relic stories.","Chronicler of the Haranir","Reward: Title: ""Chronicler of the Haranir""",61344,-1,-1,0,15553,0,10,131072,21,3717417,0,217517,0,0,0,0
 "Defeat Crown of the Cosmos after slaying a Fleshy Monstrosity and returning all of its meat to The Emptiness in The Voidspire on Normal difficulty or higher.","We Will, In Fact, See It Again",,61346,2912,-1,0,15566,0,10,0,27,801291,0,217552,0,0,0,0
 ,"<Hidden> Base 12.0 Tender [DNT]","[DNT] 500 Tender Rewarded for Base",61347,-1,-1,0,81,0,0,3276804,49,4696085,0,217599,0,0,0,0
@@ -13348,19 +13348,19 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 ,"Midnight delve completed the most",,61791,-1,-1,0,15572,0,0,1,28,136243,0,220691,0,0,0,0
 "Successfully tag opposing players as a Spellbreaker in Decor Duel.","T-A-G that spells ""Gotcha!""",,61792,-1,-1,0,15574,0,10,131072,1,1392559,0,220724,0,0,0,0
 "Successfully tag opposing players as a Nullifier in Decor Duel.","Deployed to the Void",,61793,-1,-1,0,15574,0,10,131072,2,1392559,0,220954,0,0,0,0
-"Complete the Delver's Journey before Midnight: Season 1 ends.","Midnight: Journey's End (Season 1)",,61796,-1,-1,0,15531,0,0,133120,33,6025441,0,220728,0,0,0,0
+"Complete the Delver's Journey before Midnight: Season 1 ends.","Midnight: Journey's End (Season 1)",,61796,-1,-1,0,15531,0,0,133120,35,6025441,0,220728,0,0,0,0
 "Defeat Nullaeus in his lair before the release of the next season of delves.","My Shady Nemesis","Reward: Nullaeus Domaneye",61797,-1,-1,0,15531,0,0,14336,11,7383546,0,220730,0,0,0,0
 "Defeat Nullaeus in his lair on Tier ?? before the release of the next season of delves.","Lighting the Dark","Title: the Ominous",61798,-1,-1,0,15531,0,0,14336,17,5041293,0,220733,0,0,0,0
 "Defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Let Me Solo Him: Nullaeus","Reward: Arcanovoid Construct",61799,-1,-1,0,15531,0,0,14336,22,7452103,0,220735,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 4 (Season 1)","Unlock: Tier 5 delves in Midnight Season 1",61800,-1,-1,0,15531,0,0,133120,63,6025441,0,220737,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in Midnight Season 1",61801,-1,-1,61800,15531,0,0,133120,72,6025441,0,220751,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61802,-1,-1,61801,15531,0,0,133120,73,6025441,0,220739,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,74,6025441,0,220741,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in Midnight Season 1",61804,-1,-1,61803,15531,0,0,133120,75,6025441,0,220743,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in Midnight Season 1",61805,-1,-1,61804,15531,0,0,133120,76,6025441,0,220745,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in Midnight Season 1",61806,-1,-1,61805,15531,0,0,133120,77,6025441,0,220747,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 11 (Season 1)","Title: High Explorer",61807,-1,-1,61806,15531,0,0,133120,78,6025441,0,220749,0,0,0,0
-"Be one of the first 4000 players in your region to defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Fabled Let Me Solo Him: Nullaeus","Title: Fabled Vanquisher of Nullaeus",61808,-1,-1,0,15531,0,0,145408,27,1398085,0,220753,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 4 (Season 1)","Unlock: Tier 5 delves in Midnight Season 1",61800,-1,-1,0,15531,0,0,133120,65,6025441,0,220737,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 5 (Season 1)","Unlock: Tier 6 delves in Midnight Season 1",61801,-1,-1,61800,15531,0,0,133120,74,6025441,0,220751,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 6 (Season 1)","Unlock: Tier 7 delves in Midnight Season 1",61802,-1,-1,61801,15531,0,0,133120,75,6025441,0,220739,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 7 (Season 1)","Unlock: Tier 8 delves in Midnight Season 1",61803,-1,-1,61802,15531,0,0,133120,76,6025441,0,220741,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 8 (Season 1)","Unlock: Tier 9 delves in Midnight Season 1",61804,-1,-1,61803,15531,0,0,133120,77,6025441,0,220743,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 9 (Season 1)","Unlock: Tier 10 delves in Midnight Season 1",61805,-1,-1,61804,15531,0,0,133120,78,6025441,0,220745,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 10 (Season 1)","Unlock: Tier 11 delves in Midnight Season 1",61806,-1,-1,61805,15531,0,0,133120,79,6025441,0,220747,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during Midnight Season 1.","Midnight Delves: Tier 11 (Season 1)","Title: High Explorer",61807,-1,-1,61806,15531,0,0,133120,80,6025441,0,220749,0,0,0,0
+"Be one of the first 4000 players in your region to defeat Nullaeus in his lair on Tier ?? without any other players in your party, before the release of the next season of delves.","Fabled Let Me Solo Him: Nullaeus","Title: Fabled Vanquisher of Nullaeus",61808,-1,-1,0,15531,0,0,145408,29,1398085,0,220753,0,0,0,0
 "Outgrow the use of Adventurer Dawncrests during Midnight Season 1.","Adventurer of the Dawn","Character Unlock: Trade Adventurer for Veteran Dawncrests",61809,-1,-1,0,81,0,0,2048,213,7639518,0,220755,0,0,0,0
 "Complete a Tier 1 delve.","Midnight Delves: Tier 1","Unlock: Tier 2 delves in Midnight",61832,-1,-1,0,15571,0,10,131072,2,6025441,0,220765,0,0,0,0
 "Complete a Tier 2 delve.","Midnight Delves: Tier 2","Unlock: Tier 3 delves in Midnight",61835,-1,-1,61832,15571,0,10,131072,3,6025441,0,220767,0,0,0,0
@@ -13709,7 +13709,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete a Void Strike or Incursion in Zul'Aman.","Void Assault: Zul'Aman",,62499,-1,-1,0,15610,0,5,131072,6,7488399,0,224939,0,0,0,0
 "Complete the neighborhood candy achievements listed below.","Sweet Tooth",,62500,-1,-1,0,158,0,10,131072,32,236546,0,224817,0,0,0,0
 "Collect and deposit 10 ghosts in any neighborhood.","I Ain't Afraid of no Ghost",,62501,-1,-1,0,158,0,10,0,37,236548,0,224830,0,0,0,0
-"Use a power-up 3 times in the tree defense activity.","Master of Merry Mayhem",,62502,-1,-1,0,156,0,10,0,23,132387,0,224832,0,0,0,0
+"Use a power-up 3 times in the tree defense activity.","Master of Merry Mayhem",,62502,-1,-1,0,156,0,10,131072,23,132387,0,224832,0,0,0,0
 "Catch a Mythic creature during an Abyss Anglers dive.","Abyss Anglers: Pressurized Eyeglass","Reward: Unlock Pressurized Eyeglass for purchase from Depthdiver Jeju",62506,-1,-1,0,15553,0,5,131072,112,4631357,0,224921,0,0,0,0
 "Complete 5 Void Strikes in Eversong.","Void Smasher: Eversong",,62507,-1,-1,62498,15610,0,5,196608,3,236762,0,224941,0,0,0,0
 "Complete 25 Void Strikes in Eversong.","Void Eradicator: Eversong",,62508,-1,-1,62507,15610,0,10,196608,4,236762,0,224943,0,0,0,0
@@ -13845,15 +13845,15 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Complete 8 different World Quests in Naigtal.","Showdown Success: Naigtal","Pet Reward: Required to unlock Silento for purchase",62882,-1,-1,0,15610,0,5,196608,22,451162,0,227398,0,0,0,0
 "Defeat 6 rare creatures found in Naigtal.","Showdown Slugger: Naigtal","Transmog Reward: Required to unlock Lightforged Armaments for purchase",62883,-1,-1,0,15610,0,5,196608,24,4554456,0,227399,0,0,0,0
 "Complete 15 World Quests in Val or Naigtal on Heroic World Tier.","Heroic: Worlds Ahead",,62887,-1,-1,0,15610,0,5,196608,38,7658128,0,227463,0,0,0,0
-"Complete a Tier 4 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in Midnight Season 2",62889,-1,-1,0,15531,0,0,133120,64,6025441,0,227445,0,0,0,0
-"Complete a Tier 5 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in Midnight Season 2",62890,-1,-1,62889,15531,0,0,133120,65,6025441,0,227447,0,0,0,0
-"Complete a Tier 6 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in Midnight Season 2",62891,-1,-1,62890,15531,0,0,133120,66,6025441,0,227449,0,0,0,0
-"Complete a Tier 7 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 7 (Season 2)","Unlock: Tier 8 delves in Midnight Season 2",62892,-1,-1,62891,15531,0,0,133120,67,6025441,0,227451,0,0,0,0
-"Complete a Tier 8 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in Midnight Season 2",62893,-1,-1,62892,15531,0,0,133120,68,6025441,0,227453,0,0,0,0
-"Complete a Tier 9 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in Midnight Season 2",62894,-1,-1,62893,15531,0,0,133120,69,6025441,0,227455,0,0,0,0
-"Complete a Tier 10 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in Midnight Season 2",62895,-1,-1,62894,15531,0,0,133120,70,6025441,0,227457,0,0,0,0
+"Complete a Tier 4 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 4 (Season 2)","Unlock: Tier 5 delves in Midnight Season 2",62889,-1,-1,0,15531,0,0,133120,66,6025441,0,227445,0,0,0,0
+"Complete a Tier 5 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 5 (Season 2)","Unlock: Tier 6 delves in Midnight Season 2",62890,-1,-1,62889,15531,0,0,133120,67,6025441,0,227447,0,0,0,0
+"Complete a Tier 6 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in Midnight Season 2",62891,-1,-1,62890,15531,0,0,133120,68,6025441,0,227449,0,0,0,0
+"Complete a Tier 7 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 7 (Season 2)","Unlock: Tier 8 delves in Midnight Season 2",62892,-1,-1,62891,15531,0,0,133120,69,6025441,0,227451,0,0,0,0
+"Complete a Tier 8 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in Midnight Season 2",62893,-1,-1,62892,15531,0,0,133120,70,6025441,0,227453,0,0,0,0
+"Complete a Tier 9 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in Midnight Season 2",62894,-1,-1,62893,15531,0,0,133120,71,6025441,0,227455,0,0,0,0
+"Complete a Tier 10 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in Midnight Season 2",62895,-1,-1,62894,15531,0,0,133120,72,6025441,0,227457,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Power Creep",,62896,-1,-1,0,15610,0,0,1245188,40,841379,0,227515,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 11 (Season 2)","Title: High Explorer",62897,-1,-1,62895,15531,0,0,133120,71,6025441,0,227459,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during Midnight Season 2.","Midnight Delves: Tier 11 (Season 2)","Title: High Explorer",62897,-1,-1,62895,15531,0,0,133120,73,6025441,0,227459,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Cradle of Power",,62898,-1,-1,0,15610,0,0,1245188,41,841380,0,227527,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Absolute Power",,62899,-1,-1,0,15610,0,0,1245188,42,841381,0,227536,0,0,0,0
 "Defeat 6 creatures with the following Affixes in Val or Naigtal.","Power Beyond Measure",,62900,-1,-1,0,15610,0,0,1245188,43,841382,0,227545,0,0,0,0
@@ -13925,7 +13925,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Azta'rec in his lair during Midnight Season 2.","My Venomous Nemesis","Reward: Apophic Patagia",63326,-1,-1,0,15531,0,0,14336,12,7876113,0,229398,0,0,0,0
 "Defeat Azta'rec in his lair on Tier ?? during Midnight Season 2.","Purging the Poison","Title: the Poisonous",63332,-1,-1,0,15531,0,0,14336,18,136070,0,229401,0,0,0,0
 "Defeat Azta'rec in his lair on Tier ?? without any other players in your party during Midnight Season 2.","Let Me Solo Him: Azta'rec","Reward: Apophic Soul Crusher",63333,-1,-1,0,15531,0,0,14336,23,7939993,0,229403,0,0,0,0
-"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, within the first week of Midnight Season 2.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,28,1398085,0,229405,0,0,0,0
+"Defeat Azta'rec in his lair on Tier ?? without any other players in your party, within the first week of Midnight Season 2.","Fabled Let Me Solo Him: Azta'rec","Title: Fabled Vanquisher of Azta'rec",63334,-1,-1,0,15531,0,0,145408,30,1398085,0,229405,0,0,0,0
 "Score a goal with the Kickable Practice Ball in Silvermoon while wearing a Tabard of Participation.",Goal!,"Decor Reward: Prized Orb of Azeroth, Framed Horde Pride and Framed Alliance Pride",63343,-1,-1,0,15268,0,0,132096,120,660531,0,229492,0,0,0,0
 "Defeat 15 rare creatures found in Val or Naigtal on Heroic World Tier.","Heroic Slugger",,63348,-1,-1,0,15610,0,5,131072,39,4554456,0,229606,0,0,0,0
 "Kill 100 enemies while controlling the Ultradon Slayer on the World Quest Until it is Done on Val.","Ultradon Carnage","Pet Reward: Unlock Frosticus Maximus for purchase",63349,-1,-1,0,15610,0,10,131072,31,7388252,0,229776,0,0,0,0
@@ -13957,7 +13957,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Collect the Skyriding Glyph at the Blistering Terrace in the Coiled Isles.","Skyriding Glyphs: Blistering Terrace",,63428,-1,-1,0,15462,0,0,1179648,1882,5926319,0,0,0,0,0,0
 "Collect the Skyriding Glyph at the Gate of the Serpent's Eye in the Coiled Isles.","Skyriding Glyphs: Gate of the Serpent's Eye",,63430,-1,-1,0,15462,0,0,1179648,1883,5926319,0,0,0,0,0,0
 "Collect all of the following types of offerings from Ofi's Cauldron.","Mysterious Mix Master","Decor Reward: Mysterious Voodoo Mask",63432,-1,-1,0,15553,0,5,132096,44,133778,0,230409,0,0,0,0
-"Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,34,6025441,0,230426,0,0,0,0
+"Complete the Delver's Journey before Midnight: Season 2 ends.","Midnight: Journey's End (Season 2)",,63433,-1,-1,0,15531,0,0,133120,36,6025441,0,230426,0,0,0,0
 "Raise delve companion Valeera to level 70.","Buddy System VII: Valeera",,63434,-1,-1,40461,15571,0,10,131072,51,236568,0,230430,0,0,0,0
 "Raise delve companion Valeera to level 80.","Buddy System VIII: Valeera",,63435,-1,-1,41537,15571,0,10,131072,52,236569,0,230428,0,0,0,0
 "Complete each story variant of The Ring of Glory.","The Ring of Glory Stories",,63436,-1,-1,0,15571,0,5,131072,34,6999168,0,230515,0,0,0,0
@@ -14104,7 +14104,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Logged in during WoW's 22nd Anniversary.","WoW's 22nd Anniversary",,63714,-1,-1,0,15274,0,0,2048,81,133783,0,232921,0,0,0,0
 "Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","Let Me Solo Him: Kindo'jan","Reward: Loa-Blessed Wayfarer",63715,-1,-1,0,15531,0,0,14336,24,8269989,0,232931,0,0,0,0
 "Defeat Kindo'jan within his Labyrinth.","The First Hash'ey","Title: Loa-Blessed",63716,-1,-1,0,15531,0,0,14336,13,3601564,0,232998,0,0,0,0
-"Complete the Court of Night on any difficulty.","The Tale of the Court of Night","20 Bound Silver",63790,-1,-1,0,15628,0,5,131072,4,3551336,0,233311,0,0,0,0
+"Complete the Court of Night on any difficulty.","The Tale of the Court of Night","20 Bound Silver",63790,-1,-1,0,15628,0,0,131072,4,3551336,0,233311,0,0,0,0
 "Find and open all Sturdy Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,41,4203076,0,233000,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,235189,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,235187,0,0,0,0
@@ -14115,116 +14115,116 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,40,6025441,0,233092,0,0,0,0
 "Loot 10 Mislaid Treasures within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
 "Loot 50 Mislaid Treasures within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
-"Defeat Mobog in the Tales of the Storyteller on any difficulty.","The Giant of Greenthistle Wood","20 Bound Silver",63729,-1,-1,0,15627,0,5,131072,3,432001,0,233043,0,0,0,0
+"Defeat Mobog in the Tales of the Storyteller on any difficulty.","The Giant of Greenthistle Wood","20 Bound Silver",63729,-1,-1,0,15627,0,0,131072,3,432001,0,233043,0,0,0,0
 ,"Total Kindo'jan's Labyrinth Chambers completed",,63730,-1,-1,0,15533,0,0,1,18,136243,0,233094,0,0,0,0
 ,"Total Kindo'jan Kills",,63731,-1,-1,0,15533,0,0,1,19,136243,0,233096,0,0,0,0
-"Defeat Mobog in the Tales of the Storyteller on Veteran Difficulty","Veteran: The Giant of Greenthistle Wood","20 Bound Silver",63734,-1,-1,0,15627,0,5,131072,16,432001,0,233170,0,0,0,0
-"Defeat Mobog in the Tales of the Storyteller on Heroic Difficulty","Heroic: The Giant of Greenthistle Wood","20 Bound Silver",63735,-1,-1,0,15627,0,5,131072,29,432001,0,233173,0,0,0,0
-"Defeat Mobog in the Tales of the Storyteller on Mythic Difficulty","Mythic: The Giant of Greenthistle Wood","20 Bound Silver",63736,-1,-1,0,15627,0,10,131072,42,432001,0,233175,0,0,0,0
-"Defeat Granny Greenthumb in the Tales of the Storyteller on any difficulty.","The Witch of the Woods","20 Bound Silver",63737,-1,-1,0,15627,0,5,131072,4,2011141,0,233177,0,0,0,0
-"Defeat Granny Greenthumb in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Witch of the Woods","20 Bound Silver",63738,-1,-1,63737,15627,0,5,131072,17,2011141,0,233179,0,0,0,0
-"Defeat Granny Greenthumb in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Witch of the Woods","20 Bound Silver",63741,-1,-1,63738,15627,0,5,131072,30,2011141,0,233181,0,0,0,0
-"Defeat Granny Greenthumb in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Witch of the Woods","20 Bound Silver",63742,-1,-1,63741,15627,0,10,131072,43,2011141,0,233183,0,0,0,0
-"Defeat Ylska Vilefang in the Tales of the Storyteller on any difficulty.","The Witch of the Wilds","20 Bound Silver",63743,-1,-1,0,15627,0,5,131072,5,2101972,0,233185,0,0,0,0
-"Defeat Ylska Vilefang in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Witch of the Wilds","20 Bound Silver",63744,-1,-1,63743,15627,0,5,131072,18,2101972,0,233187,0,0,0,0
-"Defeat Ylska Vilefang in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Witch of the Wilds","20 Bound Silver",63745,-1,-1,63744,15627,0,5,131072,31,2101972,0,233189,0,0,0,0
-"Defeat Ylska Vilefang in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Witch of the Wilds","20 Bound Silver",63746,-1,-1,63745,15627,0,10,131072,44,2101972,0,233191,0,0,0,0
-"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on any difficulty.","The Lord Marshal","20 Bound Silver",63748,-1,-1,0,15627,0,5,131072,1,5899331,0,233225,0,0,0,0
-"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Lord Marshal","20 Bound Silver",63749,-1,-1,63748,15627,0,5,131072,14,5899331,0,233227,0,0,0,0
-"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Lord Marshal","20 Bound Silver",63750,-1,-1,63780,15627,0,10,131072,40,5899331,0,233231,0,0,0,0
-"Defeat Alexandre Dozsenc in the Tales of the Storyteller on any difficulty.","The Vampire Bishop","20 Bound Silver",63754,-1,-1,0,15627,0,5,131072,2,3670321,0,233233,0,0,0,0
-"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Vampire Bishop","20 Bound Silver",63755,-1,-1,63754,15627,0,5,131072,15,3670321,0,233235,0,0,0,0
-"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Vampire Bishop","20 Bound Silver",63758,-1,-1,63755,15627,0,5,131072,27,3670321,0,233237,0,0,0,0
-"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Vampire Bishop","20 Bound Silver",63759,-1,-1,63758,15627,0,10,131072,41,3670321,0,233239,0,0,0,0
-"Defeat Tilywth in the Tales of the Storyteller on any difficulty.","The Fairy Queen","20 Bound Silver",63760,-1,-1,0,15627,0,5,131072,9,3601533,0,233241,0,0,0,0
-"Defeat Tilywth in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Fairy Queen","20 Bound Silver",63761,-1,-1,63760,15627,0,5,131072,21,3601533,0,233243,0,0,0,0
-"Defeat Tilywth in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Fairy Queen","20 Bound Silver",63762,-1,-1,63761,15627,0,5,131072,34,3601533,0,233245,0,0,0,0
-"Defeat Tilywth in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Fairy Queen","20 Bound Silver",63763,-1,-1,63762,15627,0,10,131072,47,3601533,0,233247,0,0,0,0
-"Defeat Maernok in the Tales of the Storyteller on any difficulty.","The Nightmare King","20 Bound Silver",63764,-1,-1,0,15627,0,5,131072,8,2011114,0,233249,0,0,0,0
-"Defeat Maernok in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Nightmare King","20 Bound Silver",63765,-1,-1,63764,15627,0,5,131072,22,2011114,0,233251,0,0,0,0
-"Defeat Maernok in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Nightmare King","20 Bound Silver",63766,-1,-1,63765,15627,0,5,131072,35,2011114,0,233253,0,0,0,0
-"Defeat Maernok in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Nightmare King","20 Bound Silver",63767,-1,-1,63766,15627,0,10,131072,48,2011114,0,233255,0,0,0,0
-"Defeat Zzyg'th in the Tales of the Storyteller on any difficulty.","The Hadal Tyrant","20 Bound Silver",63768,-1,-1,0,15627,0,5,131072,6,1546413,0,233257,0,0,0,0
-"Defeat Zzyg'th in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Hadal Tyrant","20 Bound Silver",63769,-1,-1,63768,15627,0,5,131072,19,1546413,0,233259,0,0,0,0
-"Defeat Zzyg'th in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Hadal Tyrant","20 Bound Silver",63770,-1,-1,63769,15627,0,5,131072,32,1546413,0,233261,0,0,0,0
-"Defeat Zzyg'th in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Hadal Tyrant","20 Bound Silver",63771,-1,-1,63770,15627,0,10,131072,45,1546413,0,233263,0,0,0,0
-"Defeat Chathoa in the Tales of the Storyteller on any difficulty.","The Herald from Beyond","20 Bound Silver",63772,-1,-1,0,15627,0,5,131072,7,3012070,0,233265,0,0,0,0
-"Defeat Chathoa in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Herald from Beyond","20 Bound Silver",63773,-1,-1,63772,15627,0,5,131072,20,3012070,0,233267,0,0,0,0
-"Defeat Chathoa in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Herald from Beyond","20 Bound Silver",63774,-1,-1,63773,15627,0,5,131072,33,3012070,0,233269,0,0,0,0
-"Defeat Chathoa in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Herald from Beyond","20 Bound Silver",63775,-1,-1,63774,15627,0,10,131072,46,3012070,0,233271,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on any difficulty.","The Final Confrontation","20 Bound Silver",63776,-1,-1,0,15627,0,5,131072,10,7815705,0,233273,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Final Confrontation","20 Bound Silver",63777,-1,-1,63776,15627,0,5,131072,23,7815705,0,233275,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Final Confrontation","20 Bound Silver",63778,-1,-1,63777,15627,0,5,131072,36,7815705,0,233277,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Final Confrontation","20 Bound Silver",63779,-1,-1,63778,15627,0,10,131072,49,7815705,0,233279,0,0,0,0
-"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Lord Marshal","20 Bound Silver",63780,-1,-1,63749,15627,0,5,131072,28,5899331,0,233229,0,0,0,0
-"Complete Greenthistle Wood on any difficulty.","The Tale of Greenthistle Wood","20 Bound Silver",63782,-1,-1,0,15628,0,5,131072,2,4067364,0,233281,0,0,0,0
-"Complete the tale of Greenthistle Wood on Veteran difficulty.","Veteran: The Tale of Greenthistle Wood","20 Bound Silver",63783,-1,-1,63782,15628,0,5,131072,7,4067364,0,233285,0,0,0,0
-"Complete the tale of Greenthistle Wood on Heroic difficulty.","Heroic: The Tale of Greenthistle Wood","20 Bound Silver",63784,-1,-1,63783,15628,0,5,131072,12,4067364,0,233289,0,0,0,0
-"Complete the tale of Greenthistle Wood on Mythic difficulty.","Mythic: The Tale of Greenthistle Wood","20 Bound Silver",63785,-1,-1,63784,15628,0,10,131072,17,4067364,0,233293,0,0,0,0
-"Complete Darkhaven on any difficulty.","The Tale of Darkhaven","20 Bound Silver",63786,-1,-1,0,15628,0,5,131072,1,3551339,0,233297,0,0,0,0
-"Complete the tale of Darkhaven on Veteran difficulty.","Veteran: The Tale of Darkhaven","20 Bound Silver",63787,-1,-1,63786,15628,0,5,131072,6,3551339,0,233300,0,0,0,0
-"Complete the tale of Darkhaven on Heroic difficulty.","Heroic: The Tale of Darkhaven","20 Bound Silver",63788,-1,-1,63787,15628,0,5,131072,11,3551339,0,233303,0,0,0,0
-"Complete the tale of Darkhaven on Mythic difficulty.","Mythic: The Tale of Darkhaven","20 Bound Silver",63789,-1,-1,63788,15628,0,10,131072,16,3551339,0,233306,0,0,0,0
-"Complete the tale of the Court of Night on Veteran difficulty.","Veteran: The Tale of the Court of Night","20 Bound Silver",63791,-1,-1,63790,15628,0,5,131072,9,3551336,0,233314,0,0,0,0
-"Complete the tale of the Court of Night on Heroic difficulty.","Heroic: The Tale of the Court of Night","20 Bound Silver",63792,-1,-1,63791,15628,0,5,131072,14,3551336,0,233319,0,0,0,0
-"Complete the tale of the Court of Night on Mythic difficulty.","Mythic: The Tale of the Court of Night","20 Bound Silver",63793,-1,-1,63792,15628,0,10,131072,18,3551336,0,233322,0,0,0,0
-"Complete Greywake's Expedition on any difficulty.","The Tale of Greywake's Expedition","20 Bound Silver",63794,-1,-1,0,15628,0,5,131072,3,2011138,0,233325,0,0,0,0
-"Complete Greywake's Expedition on Veteran difficulty.","Veteran: The Tale of Greywake's Expedition","20 Bound Silver",63795,-1,-1,63794,15628,0,5,131072,8,2011138,0,233328,0,0,0,0
-"Complete the tale of Greywake's Expedition on Heroic difficulty.","Heroic: The Tale of Greywake's Expedition","20 Bound Silver",63796,-1,-1,63795,15628,0,5,131072,13,2011138,0,233331,0,0,0,0
-"Complete the tale of Greywake's Expedition on Mythic difficulty.","Mythic: The Tale of Greywake's Expedition","20 Bound Silver",63797,-1,-1,63796,15628,0,10,131072,19,2011138,0,233334,0,0,0,0
-"Complete all four tales then complete the Final Confrontation on any difficulty.","The Complete Tale","20 Bound Silver",63798,-1,-1,0,15628,0,5,131072,5,7815705,0,233337,0,0,0,0
-"Complete all four tales then complete the Final Confrontation on Veteran difficulty.","Veteran: The Complete Tale","20 Bound Silver",63799,-1,-1,63798,15628,0,5,131072,10,7815705,0,233339,0,0,0,0
-"Complete all four tales then complete the Final Confrontation on Heroic difficulty.","Heroic: The Complete Tale","20 Bound Silver",63800,-1,-1,63799,15628,0,5,131072,15,7815705,0,233341,0,0,0,0
-"Complete all four tales then complete the Final Confrontation on Mythic difficulty.","Mythic: The Complete Tale","20 Bound Silver",63801,-1,-1,63800,15628,0,10,131072,20,7815705,0,233343,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as a Slayer.","The Slayer's Final Confrontation","20 Bound Silver",63802,-1,-1,0,15627,0,5,131072,11,4663970,0,233399,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as a Slayer.","Veteran: The Slayer's Final Confrontation","20 Bound Silver",63803,-1,-1,63802,15627,0,5,131072,24,4663970,0,233401,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as a Slayer.","Heroic: The Slayer's Final Confrontation","20 Bound Silver",63804,-1,-1,63803,15627,0,5,131072,37,4663970,0,233403,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as a Slayer.","Mythic: The Slayer's Final Confrontation","20 Bound Silver",63805,-1,-1,63804,15627,0,5,131072,50,4663970,0,233405,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as a Witch.","The Witch's Final Confrontation","20 Bound Silver",63806,-1,-1,0,15627,0,5,131072,12,2440573,0,233407,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as a Witch.","Veteran: The Witch's Final Confrontation","20 Bound Silver",63807,-1,-1,63806,15627,0,5,131072,25,2440573,0,233409,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as a Witch.","Heroic: The Witch's Final Confrontation","20 Bound Silver",63808,-1,-1,63807,15627,0,5,131072,38,2440573,0,233411,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as a Witch.","Mythic: The Witch's Final Confrontation","20 Bound Silver",63809,-1,-1,63808,15627,0,10,131072,51,2440573,0,233413,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as an Inquisitor.","The Inquisitor's Final Confrontation","20 Bound Silver",63810,-1,-1,0,15627,0,5,131072,13,5681681,0,233415,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as an Inquisitor.","Veteran: The Inquisitor's Final Confrontation","20 Bound Silver",63811,-1,-1,63810,15627,0,5,131072,26,5681681,0,233417,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as an Inquisitor.","Heroic: The Inquisitor's Final Confrontation","20 Bound Silver",63812,-1,-1,63811,15627,0,5,131072,39,5681681,0,233419,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as an Inquisitor.","Mythic: The Inquisitor's Final Confrontation","20 Bound Silver",63813,-1,-1,63812,15627,0,10,131072,52,5681681,0,233421,0,0,0,0
-"Earn 1000 Ducats through the Storyteller's Tales.","Traveler's Coin","20 Bound Silver",63814,-1,-1,0,15625,0,5,131072,1,6255014,0,233434,0,0,0,0
-"Earn 2000 Ducats through the Storyteller's Tales.","Traveler's Purse","20 Bound Silver",63815,-1,-1,63814,15625,0,5,131072,2,5931417,0,233436,0,0,0,0
-"Earn 3000 Ducats through the Storyteller's Tales.","Traveler's Cache","20 Bound Silver",63816,-1,-1,63815,15625,0,5,131072,3,4208810,0,233438,0,0,0,0
-"Earn 4000 Ducats through the Storyteller's Tales.","Traveler's Trove","20 Bound Silver",63817,-1,-1,63816,15625,0,5,131072,4,901746,0,233440,0,0,0,0
-"Earn 5000 Ducats through the Storyteller's Tales.","Traveler's Fortune","20 Bound Silver",63818,-1,-1,63817,15625,0,10,131072,5,4203076,0,233442,0,0,0,0
-"Complete a puzzle in the Tales of the Storyteller.","A Puzzling Tale","20 Bound Silver",63819,-1,-1,0,15625,0,5,131072,11,5948083,0,233444,0,0,0,0
-"Complete every puzzle in the Tales of the Storyteller.","The Tale of the Puzzle Master","20 Bound Silver",63820,-1,-1,0,15625,0,10,131072,16,4094821,0,233445,0,0,0,0
-"Unlock every Slayer improvement at the Scribe.","The Slayer and the Scribe: The Complete Tale","20 Bound Silver",63821,-1,-1,0,15625,0,5,131072,20,7684216,0,233446,0,0,0,0
-"Unlock every Witch improvement at the Scribe.","The Witch and the Scribe: The Complete Tale","20 Bound Silver",63822,-1,-1,0,15625,0,5,131072,21,2101972,0,233447,0,0,0,0
-"Unlock every Inquisitor improvement at the Scribe.","The Inquisitor and the Scribe: The Complete Tale","20 Bound Silver",63823,-1,-1,0,15625,0,5,131072,22,5947993,0,233448,0,0,0,0
-"Fully upgrade your armor at the Outfitter.","The Outfitter's Story","20 Bound Silver",63824,-1,-1,0,15625,0,5,131072,17,7549368,0,233449,0,0,0,0
-"Unlock every formula at the Arcanist.","The Arcanist's Account","20 Bound Silver",63825,-1,-1,0,15625,0,5,131072,18,4624376,0,233450,0,0,0,0
-"Enable every relic at the Antiquarian.","The Antiquarian's Chapter","20 Bound Silver",63826,-1,-1,0,15625,0,5,131072,19,1379240,0,233451,0,0,0,0
+"Defeat Mobog in the Tales of the Storyteller on Veteran Difficulty","Veteran: The Giant of Greenthistle Wood","20 Bound Silver",63734,-1,-1,0,15627,0,0,131072,16,432001,0,233170,0,0,0,0
+"Defeat Mobog in the Tales of the Storyteller on Heroic Difficulty","Heroic: The Giant of Greenthistle Wood","20 Bound Silver",63735,-1,-1,0,15627,0,0,131072,29,432001,0,233173,0,0,0,0
+"Defeat Mobog in the Tales of the Storyteller on Mythic Difficulty","Mythic: The Giant of Greenthistle Wood","20 Bound Silver",63736,-1,-1,0,15627,0,0,131072,42,432001,0,233175,0,0,0,0
+"Defeat Granny Greenthumb in the Tales of the Storyteller on any difficulty.","The Witch of the Woods","20 Bound Silver",63737,-1,-1,0,15627,0,0,131072,4,2011141,0,233177,0,0,0,0
+"Defeat Granny Greenthumb in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Witch of the Woods","20 Bound Silver",63738,-1,-1,63737,15627,0,0,131072,17,2011141,0,233179,0,0,0,0
+"Defeat Granny Greenthumb in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Witch of the Woods","20 Bound Silver",63741,-1,-1,63738,15627,0,0,131072,30,2011141,0,233181,0,0,0,0
+"Defeat Granny Greenthumb in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Witch of the Woods","20 Bound Silver",63742,-1,-1,63741,15627,0,0,131072,43,2011141,0,233183,0,0,0,0
+"Defeat Ylska Vilefang in the Tales of the Storyteller on any difficulty.","The Witch of the Wilds","20 Bound Silver",63743,-1,-1,0,15627,0,0,131072,5,2101972,0,233185,0,0,0,0
+"Defeat Ylska Vilefang in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Witch of the Wilds","20 Bound Silver",63744,-1,-1,63743,15627,0,0,131072,18,2101972,0,233187,0,0,0,0
+"Defeat Ylska Vilefang in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Witch of the Wilds","20 Bound Silver",63745,-1,-1,63744,15627,0,0,131072,31,2101972,0,233189,0,0,0,0
+"Defeat Ylska Vilefang in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Witch of the Wilds","20 Bound Silver",63746,-1,-1,63745,15627,0,0,131072,44,2101972,0,233191,0,0,0,0
+"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on any difficulty.","The Lord Marshal","20 Bound Silver",63748,-1,-1,0,15627,0,0,131072,1,5899331,0,233225,0,0,0,0
+"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Lord Marshal","20 Bound Silver",63749,-1,-1,63748,15627,0,0,131072,14,5899331,0,233227,0,0,0,0
+"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Lord Marshal","20 Bound Silver",63750,-1,-1,63780,15627,0,0,131072,40,5899331,0,233231,0,0,0,0
+"Defeat Alexandre Dozsenc in the Tales of the Storyteller on any difficulty.","The Vampire Bishop","20 Bound Silver",63754,-1,-1,0,15627,0,0,131072,2,3670321,0,233233,0,0,0,0
+"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Vampire Bishop","20 Bound Silver",63755,-1,-1,63754,15627,0,0,131072,15,3670321,0,233235,0,0,0,0
+"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Vampire Bishop","20 Bound Silver",63758,-1,-1,63755,15627,0,0,131072,27,3670321,0,233237,0,0,0,0
+"Defeat Alexandre Dozsenc in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Vampire Bishop","20 Bound Silver",63759,-1,-1,63758,15627,0,0,131072,41,3670321,0,233239,0,0,0,0
+"Defeat Tilywth in the Tales of the Storyteller on any difficulty.","The Fairy Queen","20 Bound Silver",63760,-1,-1,0,15627,0,0,131072,9,3601533,0,233241,0,0,0,0
+"Defeat Tilywth in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Fairy Queen","20 Bound Silver",63761,-1,-1,63760,15627,0,0,131072,21,3601533,0,233243,0,0,0,0
+"Defeat Tilywth in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Fairy Queen","20 Bound Silver",63762,-1,-1,63761,15627,0,0,131072,34,3601533,0,233245,0,0,0,0
+"Defeat Tilywth in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Fairy Queen","20 Bound Silver",63763,-1,-1,63762,15627,0,0,131072,47,3601533,0,233247,0,0,0,0
+"Defeat Maernok in the Tales of the Storyteller on any difficulty.","The Nightmare King","20 Bound Silver",63764,-1,-1,0,15627,0,0,131072,8,2011114,0,233249,0,0,0,0
+"Defeat Maernok in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Nightmare King","20 Bound Silver",63765,-1,-1,63764,15627,0,0,131072,22,2011114,0,233251,0,0,0,0
+"Defeat Maernok in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Nightmare King","20 Bound Silver",63766,-1,-1,63765,15627,0,0,131072,35,2011114,0,233253,0,0,0,0
+"Defeat Maernok in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Nightmare King","20 Bound Silver",63767,-1,-1,63766,15627,0,0,131072,48,2011114,0,233255,0,0,0,0
+"Defeat Zzyg'th in the Tales of the Storyteller on any difficulty.","The Hadal Tyrant","20 Bound Silver",63768,-1,-1,0,15627,0,0,131072,6,1546413,0,233257,0,0,0,0
+"Defeat Zzyg'th in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Hadal Tyrant","20 Bound Silver",63769,-1,-1,63768,15627,0,0,131072,19,1546413,0,233259,0,0,0,0
+"Defeat Zzyg'th in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Hadal Tyrant","20 Bound Silver",63770,-1,-1,63769,15627,0,0,131072,32,1546413,0,233261,0,0,0,0
+"Defeat Zzyg'th in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Hadal Tyrant","20 Bound Silver",63771,-1,-1,63770,15627,0,0,131072,45,1546413,0,233263,0,0,0,0
+"Defeat Chathoa in the Tales of the Storyteller on any difficulty.","The Herald from Beyond","20 Bound Silver",63772,-1,-1,0,15627,0,0,131072,7,3012070,0,233265,0,0,0,0
+"Defeat Chathoa in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Herald from Beyond","20 Bound Silver",63773,-1,-1,63772,15627,0,0,131072,20,3012070,0,233267,0,0,0,0
+"Defeat Chathoa in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Herald from Beyond","20 Bound Silver",63774,-1,-1,63773,15627,0,0,131072,33,3012070,0,233269,0,0,0,0
+"Defeat Chathoa in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Herald from Beyond","20 Bound Silver",63775,-1,-1,63774,15627,0,0,131072,46,3012070,0,233271,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on any difficulty.","The Final Confrontation","20 Bound Silver",63776,-1,-1,0,15627,0,0,131072,10,7815705,0,233273,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Final Confrontation","20 Bound Silver",63777,-1,-1,63776,15627,0,0,131072,23,7815705,0,233275,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Final Confrontation","20 Bound Silver",63778,-1,-1,63777,15627,0,0,131072,36,7815705,0,233277,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Final Confrontation","20 Bound Silver",63779,-1,-1,63778,15627,0,0,131072,49,7815705,0,233279,0,0,0,0
+"Defeat Konrad von Sonnesheim in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Lord Marshal","20 Bound Silver",63780,-1,-1,63749,15627,0,0,131072,28,5899331,0,233229,0,0,0,0
+"Complete Greenthistle Wood on any difficulty.","The Tale of Greenthistle Wood","20 Bound Silver",63782,-1,-1,0,15628,0,0,131072,2,4067364,0,233281,0,0,0,0
+"Complete the tale of Greenthistle Wood on Veteran difficulty.","Veteran: The Tale of Greenthistle Wood","20 Bound Silver",63783,-1,-1,63782,15628,0,0,131072,7,4067364,0,233285,0,0,0,0
+"Complete the tale of Greenthistle Wood on Heroic difficulty.","Heroic: The Tale of Greenthistle Wood","20 Bound Silver",63784,-1,-1,63783,15628,0,0,131072,12,4067364,0,233289,0,0,0,0
+"Complete the tale of Greenthistle Wood on Mythic difficulty.","Mythic: The Tale of Greenthistle Wood","20 Bound Silver",63785,-1,-1,63784,15628,0,0,131072,17,4067364,0,233293,0,0,0,0
+"Complete Darkhaven on any difficulty.","The Tale of Darkhaven","20 Bound Silver",63786,-1,-1,0,15628,0,0,131072,1,3551339,0,233297,0,0,0,0
+"Complete the tale of Darkhaven on Veteran difficulty.","Veteran: The Tale of Darkhaven","20 Bound Silver",63787,-1,-1,63786,15628,0,0,131072,6,3551339,0,233300,0,0,0,0
+"Complete the tale of Darkhaven on Heroic difficulty.","Heroic: The Tale of Darkhaven","20 Bound Silver",63788,-1,-1,63787,15628,0,0,131072,11,3551339,0,233303,0,0,0,0
+"Complete the tale of Darkhaven on Mythic difficulty.","Mythic: The Tale of Darkhaven","20 Bound Silver",63789,-1,-1,63788,15628,0,0,131072,16,3551339,0,233306,0,0,0,0
+"Complete the tale of the Court of Night on Veteran difficulty.","Veteran: The Tale of the Court of Night","20 Bound Silver",63791,-1,-1,63790,15628,0,0,131072,9,3551336,0,233314,0,0,0,0
+"Complete the tale of the Court of Night on Heroic difficulty.","Heroic: The Tale of the Court of Night","20 Bound Silver",63792,-1,-1,63791,15628,0,0,131072,14,3551336,0,233319,0,0,0,0
+"Complete the tale of the Court of Night on Mythic difficulty.","Mythic: The Tale of the Court of Night","20 Bound Silver",63793,-1,-1,63792,15628,0,0,131072,18,3551336,0,233322,0,0,0,0
+"Complete Greywake's Expedition on any difficulty.","The Tale of Greywake's Expedition","20 Bound Silver",63794,-1,-1,0,15628,0,0,131072,3,2011138,0,233325,0,0,0,0
+"Complete Greywake's Expedition on Veteran difficulty.","Veteran: The Tale of Greywake's Expedition","20 Bound Silver",63795,-1,-1,63794,15628,0,0,131072,8,2011138,0,233328,0,0,0,0
+"Complete the tale of Greywake's Expedition on Heroic difficulty.","Heroic: The Tale of Greywake's Expedition","20 Bound Silver",63796,-1,-1,63795,15628,0,0,131072,13,2011138,0,233331,0,0,0,0
+"Complete the tale of Greywake's Expedition on Mythic difficulty.","Mythic: The Tale of Greywake's Expedition","20 Bound Silver",63797,-1,-1,63796,15628,0,0,131072,19,2011138,0,233334,0,0,0,0
+"Complete all four tales then complete the Final Confrontation on any difficulty.","The Complete Tale","20 Bound Silver",63798,-1,-1,0,15628,0,0,131072,5,7815705,0,233337,0,0,0,0
+"Complete all four tales then complete the Final Confrontation on Veteran difficulty.","Veteran: The Complete Tale","20 Bound Silver",63799,-1,-1,63798,15628,0,0,131072,10,7815705,0,233339,0,0,0,0
+"Complete all four tales then complete the Final Confrontation on Heroic difficulty.","Heroic: The Complete Tale","20 Bound Silver",63800,-1,-1,63799,15628,0,0,131072,15,7815705,0,233341,0,0,0,0
+"Complete all four tales then complete the Final Confrontation on Mythic difficulty.","Mythic: The Complete Tale","20 Bound Silver",63801,-1,-1,63800,15628,0,0,131072,20,7815705,0,233343,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as a Slayer.","The Slayer's Final Confrontation","20 Bound Silver",63802,-1,-1,0,15627,0,0,131072,11,4663970,0,233399,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as a Slayer.","Veteran: The Slayer's Final Confrontation","20 Bound Silver",63803,-1,-1,63802,15627,0,0,131072,24,4663970,0,233401,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as a Slayer.","Heroic: The Slayer's Final Confrontation","20 Bound Silver",63804,-1,-1,63803,15627,0,0,131072,37,4663970,0,233403,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as a Slayer.","Mythic: The Slayer's Final Confrontation","Title: Monster Hunter",63805,-1,-1,63804,15627,0,0,131072,50,4663970,0,233405,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as a Witch.","The Witch's Final Confrontation","20 Bound Silver",63806,-1,-1,0,15627,0,0,131072,12,2440573,0,233407,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as a Witch.","Veteran: The Witch's Final Confrontation","20 Bound Silver",63807,-1,-1,63806,15627,0,0,131072,25,2440573,0,233409,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as a Witch.","Heroic: The Witch's Final Confrontation","20 Bound Silver",63808,-1,-1,63807,15627,0,0,131072,38,2440573,0,233411,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as a Witch.","Mythic: The Witch's Final Confrontation","Title: of the Crooked Path",63809,-1,-1,63808,15627,0,0,131072,51,2440573,0,233413,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on any difficulty as an Inquisitor.","The Inquisitor's Final Confrontation","20 Bound Silver",63810,-1,-1,0,15627,0,0,131072,13,5681681,0,233415,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as an Inquisitor.","Veteran: The Inquisitor's Final Confrontation","20 Bound Silver",63811,-1,-1,63810,15627,0,0,131072,26,5681681,0,233417,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as an Inquisitor.","Heroic: The Inquisitor's Final Confrontation","20 Bound Silver",63812,-1,-1,63811,15627,0,0,131072,39,5681681,0,233419,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as an Inquisitor.","Mythic: The Inquisitor's Final Confrontation","Title: of the Sacred Flame",63813,-1,-1,63812,15627,0,0,131072,52,5681681,0,233421,0,0,0,0
+"Earn 1000 Ducats through the Storyteller's Tales.","Traveler's Coin","20 Bound Silver",63814,-1,-1,0,15625,0,0,131072,1,6255014,0,233434,0,0,0,0
+"Earn 2000 Ducats through the Storyteller's Tales.","Traveler's Purse","20 Bound Silver",63815,-1,-1,63814,15625,0,0,131072,2,5931417,0,233436,0,0,0,0
+"Earn 3000 Ducats through the Storyteller's Tales.","Traveler's Cache","20 Bound Silver",63816,-1,-1,63815,15625,0,0,131072,3,4208810,0,233438,0,0,0,0
+"Earn 4000 Ducats through the Storyteller's Tales.","Traveler's Trove","20 Bound Silver",63817,-1,-1,63816,15625,0,0,131072,4,901746,0,233440,0,0,0,0
+"Earn 5000 Ducats through the Storyteller's Tales.","Traveler's Fortune","20 Bound Silver",63818,-1,-1,63817,15625,0,0,131072,5,4203076,0,233442,0,0,0,0
+"Complete a puzzle in the Tales of the Storyteller.","A Puzzling Tale","20 Bound Silver",63819,-1,-1,0,15625,0,0,131072,11,5948083,0,233444,0,0,0,0
+"Complete every puzzle in the Tales of the Storyteller.","The Tale of the Puzzle Master","20 Bound Silver",63820,-1,-1,0,15625,0,0,131072,16,4094821,0,233445,0,0,0,0
+"Unlock every Slayer improvement at the Scribe.","The Slayer and the Scribe","20 Bound Silver",63821,-1,-1,0,15625,0,0,131072,20,7684216,0,233446,0,0,0,0
+"Unlock every Witch improvement at the Scribe.","The Witch and the Scribe","20 Bound Silver",63822,-1,-1,0,15625,0,0,131072,21,2101972,0,233447,0,0,0,0
+"Unlock every Inquisitor improvement at the Scribe.","The Inquisitor and the Scribe","20 Bound Silver",63823,-1,-1,0,15625,0,0,131072,22,5947993,0,233448,0,0,0,0
+"Fully upgrade your armor at the Outfitter.","The Outfitter's Story","20 Bound Silver",63824,-1,-1,0,15625,0,0,131072,17,7549368,0,233449,0,0,0,0
+"Unlock every formula at the Arcanist.","The Arcanist's Account","20 Bound Silver",63825,-1,-1,0,15625,0,0,131072,18,4624376,0,233450,0,0,0,0
+"Enable every relic at the Antiquarian.","The Antiquarian's Chapter","20 Bound Silver",63826,-1,-1,0,15625,0,0,131072,19,1379240,0,233451,0,0,0,0
 "Owner of the Sporebearer Fungal Strider mount, sold in Harandar during Midnight.","Fungal Not Frugal",,63830,-1,-1,0,15269,0,0,133120,73,8262534,0,233492,0,0,0,0
 "Reach rank 20 with Zul'jarra's Forces.","Zul'jarra's Forces Champion",,63838,-1,-1,0,15600,0,10,131072,8,7903180,0,233621,0,0,0,0
 ,"Kith'ix (Raid Finder The Unbinding of Kith'ix)",,63839,3095,-1,0,15542,0,0,1,104,0,0,233666,0,0,0,0
 ,"Kith'ix (Normal The Unbinding of Kith'ix)",,63840,3095,-1,0,15542,0,0,1,105,0,0,233668,0,0,0,0
 ,"Kith'ix (Heroic The Unbinding of Kith'ix)",,63841,3095,-1,0,15542,0,0,1,106,0,0,233670,0,0,0,0
 ,"Kith'ix (Mythic The Unbinding of Kith'ix)",,63842,3095,-1,0,15542,0,0,1,107,0,0,233672,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 4.","The Labyrinth of Kindo'jan: Tier 4","Unlock: Tier 5 delves in Midnight Season 2",63846,-1,-1,0,15531,0,0,1181696,82,6025441,0,233700,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 5.","The Labyrinth of Kindo'jan: Tier 5","Unlock: Tier 6 delves in Midnight Season 2",63847,-1,-1,0,15531,0,0,1181696,83,6025441,0,233702,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 6.","The Labyrinth of Kindo'jan: Tier 6","Unlock: Tier 7 delves in Midnight Season 2",63848,-1,-1,0,15531,0,0,1181696,84,6025441,0,233704,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 7.","The Labyrinth of Kindo'jan: Tier 7","Unlock: Tier 8 delves in Midnight Season 2",63849,-1,-1,0,15531,0,0,1181696,85,6025441,0,233706,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 8.","The Labyrinth of Kindo'jan: Tier 8","Unlock: Tier 9 delves in Midnight Season 2",63850,-1,-1,0,15531,0,0,1181696,86,6025441,0,233708,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 9.","The Labyrinth of Kindo'jan: Tier 9","Unlock: Tier 9 delves in Midnight Season 2",63851,-1,-1,0,15531,0,0,1181696,87,6025441,0,233710,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 10.","The Labyrinth of Kindo'jan: Tier 10","Unlock: Tier 10 delves in Midnight Season 2",63852,-1,-1,0,15531,0,0,1181696,88,6025441,0,233712,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 11.","The Labyrinth of Kindo'jan: Tier 11","Unlock: Tier 11 delves in Midnight Season 2",63853,-1,-1,0,15531,0,0,1181696,89,6025441,0,233714,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 1.","The Labyrinth of Kindo'jan: Tier 1","Unlock: Tier 2 delves in Midnight Season 2",63863,-1,-1,0,15531,0,0,1181696,79,6025441,0,233716,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 2.","The Labyrinth of Kindo'jan: Tier 2","Unlock: Tier 3 delves in Midnight Season 2",63864,-1,-1,0,15531,0,0,1181696,80,6025441,0,233720,0,0,0,0
-"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 3.","The Labyrinth of Kindo'jan: Tier 3","Unlock: Tier 4 delves in Midnight Season 2",63865,-1,-1,0,15531,0,0,1181696,81,6025441,0,233718,0,0,0,0
-"Defeat Kindo'jan in his Labyrinth on Tier 11 without any other players in your party, before the first reset following his introduction.","Fabled Let Me Solo Him: Kindo'jan","Title: Fabled Vanquisher of The First Hash'ey",64039,-1,-1,0,15531,0,0,145408,29,1398085,0,234379,0,0,0,0
-"Defeat Kindo'jan in his Labyrinth without losing any lives on Tier 11 after completing all 9 chambers without any other players in your party during Midnight Season 2.","The Labyrinth of Kindo'jan: One-Champion Army","Title: Lone Raider",64118,-1,-1,0,15531,0,0,145408,25,8393517,0,234551,0,0,0,0
-"Hear the stories of Greenthistle Wood.","The Stories of Greenthistle Wood","20 Bound Silver",64135,-1,-1,0,15625,0,5,131072,7,4632799,0,234574,0,0,0,0
-"Hear the story of Darkhaven.","The Story of Darkhaven","20 Bound Silver",64136,-1,-1,0,15625,0,5,131072,6,3716928,0,234575,0,0,0,0
-"Hear the verses of the Court of Night.","The Verses of the Court of Night","20 Bound Silver",64137,-1,-1,0,15625,0,5,131072,9,3716925,0,234576,0,0,0,0
-"Hear the story of Greywake's Expedition.","The Story of Greywake's Expedition","20 Bound Silver",64138,-1,-1,0,15625,0,5,131072,8,2178484,0,234577,0,0,0,0
-"Hear all the stories of the Storyteller.","The Stories of the Storyteller","20 Bound Silver",64139,-1,-1,0,15625,0,5,131072,10,7815705,0,234578,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 4.","The Labyrinth of Kindo'jan: Tier 4","Unlock: Tier 5 delves in Midnight Season 2",63846,-1,-1,0,15531,0,0,1181696,84,6025441,0,233700,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 5.","The Labyrinth of Kindo'jan: Tier 5","Unlock: Tier 6 delves in Midnight Season 2",63847,-1,-1,0,15531,0,0,1181696,85,6025441,0,233702,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 6.","The Labyrinth of Kindo'jan: Tier 6","Unlock: Tier 7 delves in Midnight Season 2",63848,-1,-1,0,15531,0,0,1181696,86,6025441,0,233704,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 7.","The Labyrinth of Kindo'jan: Tier 7","Unlock: Tier 8 delves in Midnight Season 2",63849,-1,-1,0,15531,0,0,1181696,87,6025441,0,233706,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 8.","The Labyrinth of Kindo'jan: Tier 8","Unlock: Tier 9 delves in Midnight Season 2",63850,-1,-1,0,15531,0,0,1181696,88,6025441,0,233708,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 9.","The Labyrinth of Kindo'jan: Tier 9","Unlock: Tier 9 delves in Midnight Season 2",63851,-1,-1,0,15531,0,0,1181696,89,6025441,0,233710,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 10.","The Labyrinth of Kindo'jan: Tier 10","Unlock: Tier 10 delves in Midnight Season 2",63852,-1,-1,0,15531,0,0,1181696,90,6025441,0,233712,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 11.","The Labyrinth of Kindo'jan: Tier 11","Unlock: Tier 11 delves in Midnight Season 2",63853,-1,-1,0,15531,0,0,1181696,91,6025441,0,233714,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 1.","The Labyrinth of Kindo'jan: Tier 1","Unlock: Tier 2 delves in Midnight Season 2",63863,-1,-1,0,15531,0,0,1181696,81,6025441,0,233716,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 2.","The Labyrinth of Kindo'jan: Tier 2","Unlock: Tier 3 delves in Midnight Season 2",63864,-1,-1,0,15531,0,0,1181696,82,6025441,0,233720,0,0,0,0
+"Complete 3 chambers of Kindo'jan's Labyrinth on Tier 3.","The Labyrinth of Kindo'jan: Tier 3","Unlock: Tier 4 delves in Midnight Season 2",63865,-1,-1,0,15531,0,0,1181696,83,6025441,0,233718,0,0,0,0
+"Defeat Kindo'jan in his Labyrinth on Tier 11 without any other players in your party, before the second reset following his introduction.","Fabled Let Me Solo Him: Kindo'jan","Title: Fabled Vanquisher of The First Hash'ey",64039,-1,-1,0,15531,0,0,145408,31,1398085,0,234379,0,0,0,0
+"Defeat Kindo'jan in his Labyrinth without losing any lives on Tier 11 after completing all 9 chambers without any other players in your party during Midnight Season 2.","The Labyrinth of Kindo'jan: One-Champion Army","Title: Lone Raider",64118,-1,-1,0,15531,0,0,145408,27,8393517,0,234551,0,0,0,0
+"Hear the stories of Greenthistle Wood.","The Stories of Greenthistle Wood","20 Bound Silver",64135,-1,-1,0,15625,0,0,131072,7,4632799,0,234574,0,0,0,0
+"Hear the story of Darkhaven.","The Story of Darkhaven","20 Bound Silver",64136,-1,-1,0,15625,0,0,131072,6,3716928,0,234575,0,0,0,0
+"Hear the verses of the Court of Night.","The Verses of the Court of Night","20 Bound Silver",64137,-1,-1,0,15625,0,0,131072,9,3716925,0,234576,0,0,0,0
+"Hear the story of Greywake's Expedition.","The Story of Greywake's Expedition","20 Bound Silver",64138,-1,-1,0,15625,0,0,131072,8,2178484,0,234577,0,0,0,0
+"Hear all the stories of the Storyteller.","Stories to Share","Title: Listener",64139,-1,-1,0,15625,0,0,131072,10,7815705,0,234578,0,0,0,0
 "Login with an active subscription on 5 different days during the September 2026 Winds of Mysterious Fortune event.","Winds of Particularly Mysterious Fortune","Reward: 500 Trader's Tender",64140,-1,-1,0,15274,0,0,131072,104,6439633,0,59681,0,0,0,0
 "Complete all 3 candy quests from a Duskwood-themed neighborhood.","Duskwood Caramel Crafter",,64160,-1,-1,0,158,0,10,131072,33,1500920,0,234917,0,0,0,0
 "Complete all 3 candy quests from a Felwood-themed neighborhood.","Felwood Fudge Bite Former",,64161,-1,-1,0,158,0,10,131072,34,133211,0,234921,0,0,0,0
@@ -14236,10 +14236,19 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Proud owner of the 2026 Vintage Winter Veil gift, the Throw Bow.","Bow Go",,64174,-1,-1,0,15274,0,0,133120,41,133202,0,235039,0,0,0,0
 "Use the Throw Bow 5 times.","Let's Put A Bow On It",,64175,-1,-1,0,156,0,10,131072,24,8473858,0,235043,0,0,0,0
 "[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.","[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.",,64186,-1,-1,0,15522,0,5,1179648,37,136243,0,235115,0,0,0,0
-"Gain Mastery of Timeways for 5 weeks during the Turbulent Timeways VI event.","Master of the Turbulent Timeways VI","Mount: Markeet of the Infinite",64207,-1,-1,0,15454,0,0,131072,27,1416740,287513,235235,0,0,0,0
-"Complete every puzzle in the Tale of Darkhaven.","The Sanguine Puzzlemaster","20 Bound Silver",64227,-1,-1,0,15625,0,10,131072,12,3853936,0,235864,0,0,0,0
-"Complete every puzzle in the Tale of Greenthistle Woods.","The Hexed Puzzlemaster","20 Bound Silver",64228,-1,-1,0,15625,0,10,131072,13,5224623,0,235866,0,0,0,0
-"Complete every puzzle in the Tale of Greywake's Expedition.","The Eldritch Puzzlemaster","20 Bound Silver",64229,-1,-1,0,15625,0,10,131072,14,6011928,0,235870,0,0,0,0
-"Complete every puzzle in the Tale of the Court of Night.","The Fae Puzzlemaster","20 Bound Silver",64230,-1,-1,0,15625,0,10,131072,15,3536173,0,235872,0,0,0,0
+"Gain Mastery of Timeways for 4 weeks during the Turbulent Timeways VI event.","Master of the Turbulent Timeways VI","Mount: Markeet of the Infinite",64207,-1,-1,0,15454,0,0,131072,27,1416740,287513,235235,0,0,0,0
+"Complete every puzzle in the Tale of Darkhaven.","The Sanguine Puzzlemaster","20 Bound Silver",64227,-1,-1,0,15625,0,0,131072,12,3853936,0,235864,0,0,0,0
+"Complete every puzzle in the Tale of Greenthistle Wood.","The Hexed Puzzlemaster","20 Bound Silver",64228,-1,-1,0,15625,0,0,131072,13,5224623,0,235866,0,0,0,0
+"Complete every puzzle in the Tale of Greywake's Expedition.","The Eldritch Puzzlemaster","20 Bound Silver",64229,-1,-1,0,15625,0,0,131072,14,6011928,0,235870,0,0,0,0
+"Complete every puzzle in the Tale of the Court of Night.","The Fae Puzzlemaster","20 Bound Silver",64230,-1,-1,0,15625,0,0,131072,15,3536173,0,235872,0,0,0,0
 "Complete the quest Seeking Knowledge: The Power of Stories","The Power of Stories",,64290,-1,-1,0,15610,0,0,1179648,54,236855,0,236100,0,0,0,0
 "Complete the quest Seeking Knowledge: Core Logic","Core Logic",,64291,-1,-1,0,15610,0,0,1179648,55,236855,0,236102,0,0,0,0
+"Join in with the neighborhood carolers by successfully ringing your bells.","Bells Will Be Ringing",,64367,-1,-1,0,156,0,10,131072,25,6012000,0,236741,0,0,0,0
+"Return Stolen Festive Presents to the neighborhood tree during the tree defense activitiy.","That's Not For You",,64368,-1,-1,0,156,0,10,131072,27,134140,0,236743,0,0,0,0
+"Punt 100 tree attackers duing the neighborhood tree defense activity.","Sockin' Around the Winter Veil Tree",,64369,-1,-1,0,156,0,10,131072,28,6712972,0,236745,0,0,0,0
+"Get pummeled 10 times by a Rotten Pummeler during the neighborhood tree defense activity.","Season's Beatings",,64370,-1,-1,0,156,0,10,131072,29,574568,0,236747,0,0,0,0
+"Deliver 12 Candy Cane gifts within the housing neighborhoods.","Candy Cane Brigade",,64371,-1,-1,0,156,0,10,131072,26,6127641,0,236749,0,0,0,0
+"Complete the neighborhood tree defense activity.",Tree-fense,,64372,-1,-1,0,156,0,10,131072,30,7539550,0,236751,0,0,0,0
+"[DNT] Potatoad Egg Secret","[DNT] Potatoad Egg Secret",,64373,-1,-1,0,15541,0,0,1179652,40,6100921,251903,236760,0,0,0,0
+"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy)","Reward: Loa-Blessed Wayfarer",64380,-1,-1,0,15531,0,0,1179652,25,8269989,283363,236817,0,0,0,0
+"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)","Reward: Loa-Blessed Wayfarer",64384,-1,-1,0,15531,0,0,1179652,26,8269989,280820,236819,0,0,0,0

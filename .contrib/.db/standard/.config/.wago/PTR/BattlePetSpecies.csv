@@ -2099,7 +2099,6 @@ Cats go to Revendreth.","|cFFFFD200In-Game Shop|r ",2890,171025,333570,3604137,7
 "Tales say that the stewards were created to aid the denizens of Bastion in their eternal duties. They don't seem to mind.","|cFFFFD200Drop: |rBastion|n|cFFFFD200Covenant: |rKyrian",3062,175560,345741,3731723,0,2,0,6,7,0
 "Larion are prideful beasts, and see anyone that enters their territory as a challenge.","|cFFFFD200Drop: |rLarionrider Orstus|n|cFFFFD200Zone: |rBastion",3063,175562,345742,3860694,2,2,0,6,7,0
 "When fully-grown, a larion that has grown up with an aspirant will never leave his or her master's side.","|cFFFFD200Drop:|r Supplies of the Ascended|n",3064,175564,345744,3860696,2,2,0,6,7,0
-,"|cFFFFD200Trading Post|r",5184,276413,1320926,8415179,7,16466,11,6,7,0
 "Young larions are often given to aspirants as an early test of compassion and leadership.","|cFFFFD200Drop:|r Courage|n|cFFFFD200Zone:|r Bastion|n",3065,175563,345743,3860695,2,2,0,6,7,0
 "Lucy was sent to Revendreth, as all cats are, and somehow escaped. When questioned, local dredgers blamed it on her being a cat.","|cFFFFD200Drop:|r Dirty Glinting Object|n",3066,175715,346192,611425,3,2,0,41,7,0
 "Spriggans are tricky foes that live in Ardenweald and torment the Night Fae. This one has decided to play the ultimate trick--joining you.","|cFFFFD200Achievement: |rFamily Exorcist|n|cFFFFD200Category: |rBattle",3067,175756,346236,3536179,0,82,5,6,7,0
@@ -2983,7 +2982,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "The eagles of Zul'Aman are a regal species yet they have suffered without Akil'zon watching over them. Faithbreaker Ger'lok has been especially cruel testing his dark magic on the young eaglets.","|cFFFFD200Ritual Site:|r Broken Throne ",5017,261676,1286610,7210236,2,82,0,6,7,0
 "Separated from his mother when they were captured. Chubs is sad but fierce. He takes pride when he can bite his Twilight Blade handlers hands at feeding time.","|cFFFFD200Ritual Site:|r Broken Throne",5019,261684,1286634,7523130,7,82,0,6,7,0
 "The naga's mix of arcane and void magics have disturbed the mana wyrms around Daggerspine Point making them extremely hostile. The very few manalings remaining in the aftermath of their ritual are showing unique abilities.","|cFFFFD200Drop: |rMana-Gorged Greatwyrm|n|cFFFFD200Ritual Site: |rDaggerspine Point",5020,262066,1287339,1386549,5,2,0,6,7,0
-"This loyal companions bears the holy words of the inquisitor's across lands touched by darkness.","|cFFFFD200Vendor: Talebound|r |n",5169,273981,1314175,5547301,2,2,2,6,7,0
+"This loyal companion bears the holy words of the inquisitor's across lands touched by darkness.","|cFFFFD200Vendor: Talebound|r |n",5169,273981,1314175,5547301,2,2,2,6,7,0
 "The loyal snapdragon are the perfect companion to any naga. They adapt well to their environment especially when the environment likes to adapt them.","|cFFFFD200Ritual Site: |rDaggerspine Point",5021,262089,1287374,2766227,8,82,0,6,7,0
 "Ravaged by the invading naga, many hawkstriders died in the area of Daggerspine Point. It is rare to find any of their young yet alive.","|cFFFFD200Ritual Sites: |rDaggerspine Point",5022,262090,1287376,6703754,4,82,10,6,7,0
 "This curious kitten has been hanging around one too many ritual sites.","|cFFFFD200Ritual Sites: |rRustling Underbrush",5023,262092,1287380,7390433,7,82,0,6,7,0
@@ -3043,9 +3042,10 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Got into a spot of trouble digging through magical garbage in Silvermoon. Luckily, you were there to help him out!","|cFFFFD200Discovery:|r Silvermoon City|n",5164,273775,1313813,8284165,4,82,10,6,7,0
 "A faithful hound to accompany you through the monster-ridden woods.","|cFFFFD200Vendor: Talebound|r ",5168,273980,1314164,5279603,7,82,2,6,7,0
 PH,"|cFFFFD200Vendor: Talebound|r ",5170,274233,1315041,2030683,5,2,2,6,7,0
-,"|cFFFFD200Trading Post|r",5185,276417,1320950,8415180,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5186,276418,1320954,8415181,7,16466,11,6,7,0
-,"|cFFFFD200Trading Post|r",5187,276419,1320959,8415182,7,16466,11,6,7,0
+"Small in nature, plenty of strength.","|cFFFFD200Trading Post|r",5184,276413,1320926,8415179,7,16466,11,6,7,0
+"Once sat alone in a boggy marsh. Now eager to join on your adventures.","|cFFFFD200Trading Post|r",5185,276417,1320950,8415180,7,16466,11,6,7,0
+"Small in nature, mighty in spirit.","|cFFFFD200Trading Post|r",5186,276418,1320954,8415181,7,16466,11,6,7,0
+"It's not clear how Frump got her name, but she loves being an enigma.","|cFFFFD200Trading Post|r",5187,276419,1320959,8415182,7,16466,11,6,7,0
 "So much holiday spirit inside an itty-bitty amount of snow, it only makes sense to share it with the world!","|cFFFFD200World Event:|r Feast of Winter Veil|n",5188,276433,1320982,655957,5,16466,6,6,7,0
 "Pinky just hatched and is ready for adventure. But naptime may take precedence.",|cFFFFD200Promotion|r|n,5080,266912,1297823,7889090,1,16466,9,6,7,0
 ,"|cFFFFD200In-Game Shop|r|n",5067,265748,1295658,7864628,7,16466,9,6,7,0
