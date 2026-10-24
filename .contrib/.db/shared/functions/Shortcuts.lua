@@ -3413,6 +3413,7 @@ assignRootCategoryHeader = function(priority, category, headerID, data)
 	end
 	data = n(headerID, data or {});
 	data.SortPriority = priority;
+	data.timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] };
 	rootCategoryHeaders[category] = data;
 	if data.groups then
 		root(category, data.groups);

@@ -1,6 +1,7 @@
 -----------------------------------------
 -- P R I M A R Y   C A T E G O R I E S --
 -----------------------------------------
+EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] = "added 1.60.0";
 assignRootCategoryHeader( 1, ROOTS.Instances, DUNGEONS_AND_RAIDS);
 assignRootCategoryHeader(10, ROOTS.Zones, OUTDOOR_ZONES, {
 	mapID = 947,	-- Assign the Azeroth mapID. (is this necessary?
