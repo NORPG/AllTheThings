@@ -1,4 +1,4 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 <#
 .SYNOPSIS
 Tests cost merging in an existing x64 Parser.exe, without running a parse.

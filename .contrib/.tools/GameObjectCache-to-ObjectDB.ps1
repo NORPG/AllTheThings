@@ -1,4 +1,4 @@
-param(
+﻿param(
 	[string]$CachePath = ".contrib/debugger exports from players/gameobjectcache.wdb",
 	[string]$OutputPath = ".contrib/.db/shared/objects/Dynamic/GameObjectCache 1.60.1.lua",
 	[string]$Build = "1.60.1.70009",
