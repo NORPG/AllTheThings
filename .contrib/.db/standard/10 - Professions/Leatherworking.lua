@@ -25,32 +25,29 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 	})),
 	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, {
-			timeline = { ADDED_10_0_7 },
-			groups = {
-				ach(17498, {	-- Renowned Leatherworking Specialist
-					altQuests = {
-						5141,	-- Dragonscale Leatherworking [A]
-						5145,	-- Dragonscale Leatherworking [H]
-						5144,	-- Elemental Leatherworking [A]
-						5146,	-- Elemental Leatherworking [H]
-						5143,	-- Tribal Leatherworking [A]
-						5148,	-- Tribal Leatherworking [H]
-					},
-					sourceQuestNumRequired = 1,
-					timeline = { REMOVED_10_0_7 },
-				}),
-				ach(18899, {	-- You Saw Nothing
-					timeline = { ADDED_10_1_7 },
-					groups = {
-						crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
-							provider = { "i", 18258 },	-- Gordok Ogre Suit
-						}),
-						crit(61659, {	-- Gordok Ogre Suit donned
-							provider = { "i", 18258 },	-- Gordok Ogre Suit
-						}),
-					},
-				}),
-			},
+			ach(17498, {	-- Renowned Leatherworking Specialist
+				sourceQuests = {
+					5141,	-- Dragonscale Leatherworking [A]
+					5145,	-- Dragonscale Leatherworking [H]
+					5144,	-- Elemental Leatherworking [A]
+					5146,	-- Elemental Leatherworking [H]
+					5143,	-- Tribal Leatherworking [A]
+					5148,	-- Tribal Leatherworking [H]
+				},
+				sourceQuestNumRequired = 1,
+				timeline = { ADDED_10_0_7, REMOVED_10_0_7 },	-- added in 10.0.7 but technically unobtainable when added since it requires removed quest completion
+			}),
+			ach(18899, {	-- You Saw Nothing
+				timeline = { ADDED_10_1_7 },
+				groups = {
+					crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
+						provider = { "i", 18258 },	-- Gordok Ogre Suit
+					}),
+					crit(61659, {	-- Gordok Ogre Suit donned
+						provider = { "i", 18258 },	-- Gordok Ogre Suit
+					}),
+				},
+			}),
 		}),
 		n(QUESTS, sharedDataSelf({
 			timeline = { REMOVED_4_0_3 },

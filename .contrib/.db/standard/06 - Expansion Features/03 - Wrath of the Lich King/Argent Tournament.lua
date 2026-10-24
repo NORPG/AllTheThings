@@ -4595,9 +4595,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							races = exclude(TAUREN, HORDE_ONLY),
 							-- #endif
 						}))),
-						champ(40, i(44980, {	-- Mulgore Hatchling (PET!)
-							timeline = { ADDED_3_1_0 },
-						})),
+						champ(40, i(44980)),	-- Mulgore Hatchling (PET!)
 						champ(15, i(45013)),	-- Thunder Bluff Banner (TOY!)
 					},
 				}),
