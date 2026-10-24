@@ -309,6 +309,20 @@ namespace ATT.FieldTypes
                 _dirty = false;
         }
 
+        public void Merge(TimelineEntry entry)
+        {
+            if (entry is null) return;
+            _dirty = true;
+            if (_entries is null)
+            {
+                _entries = new[] { entry };
+                return;
+            }
+            _entries = _entries.Union(new[] { entry }).ToArray();
+            if (_entries.Length == 1)
+                _dirty = false;
+        }
+
         public IEnumerator<TimelineEntry> GetEnumerator()
         {
             return Entries.GetEnumerator();

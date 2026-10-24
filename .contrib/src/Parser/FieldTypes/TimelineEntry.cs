@@ -91,6 +91,10 @@ namespace ATT.FieldTypes
             return (x?.LongVersion ?? 0).CompareTo(y?.LongVersion ?? 0);
         }
 
+        public static bool operator <(TimelineEntry x, TimelineEntry y) => x?.LongVersion < y?.LongVersion;
+
+        public static bool operator >(TimelineEntry x, TimelineEntry y) => x?.LongVersion > y?.LongVersion;
+
         public bool Equals(TimelineEntry x, TimelineEntry y)
         {
             return x == y;

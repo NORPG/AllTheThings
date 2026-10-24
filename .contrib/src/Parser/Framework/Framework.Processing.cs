@@ -5019,8 +5019,41 @@ namespace ATT
                 return false;
             }
 
+            // We will also allow merging some portions of the inheriting timeline into this object's timeline if there is no matching change-type for this object
+            // i.e. [ ADDED ] can merge into [ REMOVED ], but not into [ ADDED, REMOVED ]
+            if (data.TryGetValue("_inherit_timeline", out object inheritingTimelineObj) && inheritingTimelineObj is Timeline inheritingTimeline)
+            {
+                TimelineEntry firstEntry = timeline.Entries[0];
+                TimelineEntry lastEntry = timeline.Entries.Last();
+                TimelineEntry firstAdded = timeline.FirstOrDefault(e => e.Change == ChangeType.ADDED);
+                TimelineEntry firstRemoved = timeline.FirstOrDefault(e => e.Change == ChangeType.REMOVED);
+                TimelineEntry inheritedAdded = inheritingTimeline.FirstOrDefault(e => e.Change == ChangeType.ADDED);
+                TimelineEntry inheritedRemoved = inheritingTimeline.FirstOrDefault(e => e.Change == ChangeType.REMOVED);
+
+                // Never inherit timeline entries into a CREATED timeline
+                if (firstEntry.Change != ChangeType.CREATED)
+                {
+                    if (inheritedAdded != null
+                        && (firstAdded == null || (firstEntry.Change == ChangeType.REMOVED && firstEntry > inheritedAdded))
+                        && (firstRemoved == null || firstRemoved > inheritedAdded))
+                    {
+                        timeline.Merge(inheritedAdded);
+                        LogDebug($"INFO: Merged inheriting timeline {ChangeType.ADDED} entry {ToJSON(inheritedAdded)} into timeline", data);
+                    }
+                    if (inheritedRemoved != null
+                        && (firstRemoved == null || (lastEntry.Change == ChangeType.ADDED && lastEntry < inheritedAdded))
+                        && (firstAdded == null || firstAdded < inheritedRemoved))
+                    {
+                        timeline.Merge(inheritedRemoved);
+                        LogDebug($"INFO: Merged inheriting timeline {ChangeType.REMOVED} entry {ToJSON(inheritedRemoved)} into timeline", data);
+                    }
+                }
+            }
+
+            data.Remove("_inherit_timeline");
+
             // Warn if the first entry is a 'removing' change (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
-            if (CurrentParseStage == ParseStage.Validation && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+            if (CurrentParseStage == ParseStage.Validation && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
             {
                 // TODO: eventually data will be surely be cleaned up and we can slowly adjust this warning to apply to ALL timelines situations
                 // first, all timelines > 8.0 should ensure they are not removed only and remove the entrycount check below
