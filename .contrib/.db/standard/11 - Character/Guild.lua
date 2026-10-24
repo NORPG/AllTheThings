@@ -230,7 +230,7 @@ root(ROOTS.Character, n(createHeader({
 		}),
 		-- #if NOT ANYCLASSIC
 		ach(5407, {	-- Realm First! Guild Level 25
-			timeline = { ADDED_4_0_3, REMOVED_4_0_3 },
+			timeline = { REMOVED_4_0_3 },
 		}),
 		-- #endif
 		ach(6628, {	-- Realm First! Working as a Better Team
