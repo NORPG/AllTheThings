@@ -235,11 +235,11 @@ maproot(NAZJATAR, {
 				coord = { 49.2, 62.0, NAZJATAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(169589, { timeline = { CREATED_8_2_0 }}),	-- Azsharan Pearling Kit
-					i(169592, { timeline = { CREATED_8_2_0 }}),	-- Azsharan Pearling Enhancement
-					i(169787, { timeline = { CREATED_8_2_0 }}),	-- Azsharan Azerite Pearling Enhancement
-					i(170277, { timeline = { CREATED_8_2_0 }}),	-- Greater Pearling Reinforcement
-					i(170276, { timeline = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
+					i(169589, { timeline = { CREATED_8_2_0 } }),	-- Azsharan Pearling Kit
+					i(169592, { timeline = { CREATED_8_2_0 } }),	-- Azsharan Pearling Enhancement
+					i(169787, { timeline = { CREATED_8_2_0 } }),	-- Azsharan Azerite Pearling Enhancement
+					i(170277, { timeline = { CREATED_8_2_0 } }),	-- Greater Pearling Reinforcement
+					i(170276, { timeline = { CREATED_8_2_0 } }),	-- Greater Azerite Pearling Reinforcement
 					i(169478, {	-- Benthic Bracers
 						cost = { { "c", 1721, 5 } },	-- 5x Prismatic Manapearl
 					}),
@@ -290,6 +290,54 @@ maproot(NAZJATAR, {
 					}),
 				},
 			}),
+			n(151952, {	-- Flrgrrl
+				coords = {
+					{ 39.8, 53.4, NAZJATAR },
+					{ 47.0, 62.4, NAZJATAR },
+				},
+				groups = {
+					i(167910, {	-- Bag of Who-Knows-What
+						cost = { { "i", 167906, 6 } },	-- 2x Flatulent Fish
+					}),
+					i(169782, {	-- Beckoner's Rosetta Stone
+						cost = {
+							{ "i", 167904, 2 },	-- 2x Smelly Pile of Gloop
+							{ "i", 167902, 9 },	-- 9x Particularly Dense Rock
+						},
+					}),
+					i(167909, {	-- Ghost Food
+						cost = { { "i", 167905, 6 } },	-- 6x Curious Murloc Horn
+					}),
+					i(167911, {	-- Just Regular Butter
+						cost = { { "i", 167915, 4 } },	-- 4x Sweet Sea Vegetable
+					}),
+					i(167912),	-- Unidentified Mass
+				},
+			}),
+			n(151951, {	-- Grrmrlg
+				coords = {
+					{ 37.4, 53.4, NAZJATAR },
+					{ 47.6, 61.6, NAZJATAR },
+				},
+				groups = {
+					i(167905, {	-- Curious Murloc Horn
+						cost = { { "i", 167896, 3 } },	-- 3x Slimy Naga Eyeball
+					}),
+					i(167907, {	-- Extra-Slimy Snail
+						cost = { { "i", 167903, 5 } },	-- 5x Disintegrating Sand Sculpture
+					}),
+					i(167906),	-- Flatulent Fish
+					i(169781, {	-- Overwhelmingly-Alluring Idol
+						cost = {
+							{ "i", 167913, 8 },	-- 8x Healthy Murloc Lunch
+							{ "i", 167909, 4 },	-- 4x Ghost Food
+						},
+					}),
+					i(167908, {	-- Sea Giant Foot Dust
+						cost = { { "i", 167923, 3 } },	-- 3x Clean Murloc Sock
+					}),
+				},
+			}),
 			n(151953, {	-- Hurlgrl
 			-- TODO: Can't use faction-data in non-quest objects...
 			-- allianceQuestData = {
@@ -309,10 +357,25 @@ maproot(NAZJATAR, {
 					{ 47.8, 63.0, NAZJATAR },
 				},
 				groups = {
+					i(169783, {	-- Cultist Pinky Finger
+						cost = {
+							{ "i", 167904, 4 },	-- 4x Smelly Pile of Gloop
+							{ "i", 167909, 7 },	-- 7x Ghost Food
+						},
+					}),
+					i(167916, {	-- Dirty Murloc Sock
+						cost = { { "i", 167912, 6 } },	-- 6x Unidentified Mass
+						groups = { i(167923) },	-- Clean Murloc Sock
+					}),
+					i(167913, {	-- Healthy Murloc Lunch
+						cost = { { "i", 167905, 5 } },	-- 5x Curious Murloc Horn
+					}),
+					i(167914, {	-- Jar of Fish Faces
+						cost = { { "i", 167906, 5 } },	-- 5x Flatulent Fish
+					}),
 					i(167915, {	-- Sweet Sea Vegetable
 						cost = 10000,	-- 1g
 					}),
-					i(169783),	-- Cultist Pinky Finger
 				},
 			}),
 			n(145838, {	-- Marshal Frazer <Gladiator Quartermaster>
@@ -350,6 +413,22 @@ maproot(NAZJATAR, {
 					i(167903, {	-- Disintegrating Sand Sculpture
 						cost = { { "i", 167915, 4 } },	-- Sweet Sea Vegetable
 					}),
+					i(167902, {	-- Particularly Dense Rock
+						cost = {
+							{ "i", 167910, 3 } ,	-- 3x Bag of Who-Knows-What
+							{ "i", 167914, 3 } ,	-- 3x Jar of Fish Faces
+						},
+					}),
+					i(169780, {	-- Pulsating Blood Stone
+						cost = {
+							{ "i", 167908, 8 },	-- 8x Sea Giant Foot Dust
+							{ "i", 167913, 7 },	-- 7x Healthy Murloc Lunch
+						},
+					}),
+					i(167896),	-- Slimy Naga Eyeball
+					i(167904, {	-- Smelly Pile of Gloop
+						cost = { { "i", 167911, 2 } },	-- 2x Just Regular Butter
+					}),
 				},
 			}),
 			n(152084, {	-- Mrrl
@@ -374,16 +453,21 @@ maproot(NAZJATAR, {
 					{ 39.1, 54.4, NAZJATAR },	-- Alliance
 					{ 47.0, 61.5, NAZJATAR },	-- Horde
 				},
-				groups = {	-- not sure it's worth adding 'cost' to these items since the purchasing process is so convoluted.
-					i(169202),	-- Crimson Tidestallion (MOUNT!)
+				groups = {
+					i(169202, {	-- Crimson Tidestallion (MOUNT!)
+						description = "Only appears in stock while the |cFFFFD700Azsh'ari Stormsurger Cape|r is equipped. Only in stock on some days (roughly twice a month). Buying it completes the achievement |cFFFFD700Mrrl's Secret Stash|r.",
+						cost = {
+							{ "i", 169783, 4 },	-- 4x Cultist Pinky Finger
+							{ "i", 169780, 2 },	-- 2x Pulsating Blood Stone
+							{ "i", 170100, 1 },	-- 1x Hungry Herald's Tentacle Taco
+						},
+					}),
 					i(168092, {	-- Curiously Warm Kelp Bundle
 						description = "Contains Mardivas reagents.",
 					}),
 					i(168094, {	-- Faintly Humming Sea Stones
 						description = "Contains Scrying Stones.",	-- Description added so you dont need debug mode to see contained item.
-						groups = {
-							i(167077),	-- Scrying Stone
-						},
+						groups = { i(167077) },	-- Scrying Stone
 					}),
 					i(168093, {	-- Grimy Manapearl Bracelet
 						description = "Contains 3 Prismatic Manapearls.",
@@ -394,8 +478,8 @@ maproot(NAZJATAR, {
 					i(170153, {	-- Ominous Looking Tome
 						description = "Grants 150 reputation with each of your bodyguards.",	-- Description added so you dont need debug mode to see contained items.
 						groups = {
-							i(169945),	-- Naga Deployment Orders(A)
-							i(170085),	-- Naga Deployment Orders(H)
+							i(169945),	-- Naga Deployment Orders (A)
+							i(170085),	-- Naga Deployment Orders (H)
 						},
 					}),
 					i(168097, {	-- Pilfered Armor Crate
@@ -431,19 +515,28 @@ maproot(NAZJATAR, {
 					i(168096, {	-- Waterlogged Toolbox
 						description = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 						groups = {
-							i(166888),	-- Germinating Seed
 							i(167059),	-- Chum
+							i(166888),	-- Germinating Seed
 						},
 					}),
 					i(170162, {	-- Waterlogged Toolbox
 						description = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
 						groups = {
-							i(166888),	-- Germinating Seed
 							i(167012),	-- Brinestone Pickaxe
 							i(167059),	-- Chum
+							i(166888),	-- Germinating Seed
 						},
 					}),
 				}
+			}),
+			n(152593, {	-- Murloco
+				coord = { 46.5, 32.7, NAZJATAR },
+				groups = {
+					i(170100, {	-- Hungry Herald's Tentacle Taco
+						cost = 6660000,	-- 666g
+					}),
+					i(168232),	-- Murloco's "Fish" Tacos
+				},
 			}),
 			n(154140, {	-- Speaker Utia <Waveblade Ankoan Emissary>
 				coord = { 38.0, 55.7, NAZJATAR },

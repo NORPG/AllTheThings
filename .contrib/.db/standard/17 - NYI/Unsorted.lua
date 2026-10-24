@@ -2604,7 +2604,6 @@ root(ROOTS.Unsorted, {
 			i(167746),	-- Mist Blossom
 			i(168021),	-- Nullifier Transport Relay
 			i(168187),	-- Highborne Relic
-			i(168232),	-- Murloco's "Fish" Tacos
 			i(168237),	-- Coral Root Chunk
 			i(168242),	-- Angel Scale Starfish
 			i(168245),	-- Forgotten Memento
@@ -2743,7 +2742,6 @@ root(ROOTS.Unsorted, {
 			i(170044),	-- Pitted Finger-Bone
 			i(170064),	-- Highmountain Totem
 			i(170078),	-- Gleaming Ashmaul Strongbox
-			i(170100),	-- Hungry Herald's Tentacle Taco
 			i(170113),	-- Deeptide Scroll
 			i(170250),	-- Honorbound Weapons Cache
 			i(170251),	-- 7th Legion Weapons Cache
@@ -2778,29 +2776,12 @@ root(ROOTS.Unsorted, {
 			i(167540),	-- Ink Sac
 			i(167554),	-- Juicy Mango
 			i(167869),	-- Basket of Fruit
-			i(167896),	-- Slimy Naga Eyeball
-			i(167902),	-- Particularly Dense Rock
-			i(167904),	-- Smelly Pile of Gloop
-			i(167905),	-- Curious Murloc Horn
-			i(167906),	-- Flatulent Fish
-			i(167907),	-- Extra-Slimy Snail
-			i(167908),	-- Sea Giant Foot Dust
-			i(167909),	-- Ghost Food
-			i(167910),	-- Bag of Who-Knows-What
-			i(167911),	-- Just Regular Butter
-			i(167912),	-- Unidentified Mass
-			i(167913),	-- Healthy Murloc Lunch
-			i(167914),	-- Jar of Fish Faces
-			i(167916),	-- Dirty Murloc Sock
-			i(167923),	-- Clean Murloc Sock
 			i(168013),	-- Roo'li's Remains
 			i(168213),	-- Tensile Driveshaft
 			i(168949),	-- Tensile Driveshaft
 			i(168950),	-- Machined Gear Assembly
 			i(168951),	-- Tempered Plating
 			i(168952),	-- Hardened Spring
-			i(169780),	-- Pulsating Blood Stone
-			i(169781),	-- Overwhelmingly-Alluring Idol
 			i(169782),	-- Beckoner's Rosetta Stone
 			i(170156),	-- Wavebeaten Armor Kit
 			i(169977),	-- Crumbling Bark \\ Touch of the Everlasting Empty Item

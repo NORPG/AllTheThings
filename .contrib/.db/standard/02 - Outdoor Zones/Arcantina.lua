@@ -387,7 +387,7 @@ maproot(ARCANTINA, {
 		n(VENDORS, {
 			n(229333, {	-- Ari
 				coord = { 36.1, 21.6, ARCANTINA },
-				timeline = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0, ADDED_12_1_5 },
 				groups = {
 					i(234526),	-- Archivist's Codex
 					i(267650),	-- Blood Knight Training Manual
@@ -418,7 +418,7 @@ maproot(ARCANTINA, {
 			}),
 			n(259849, {	-- Janky <Candle Merchant>
 				coord = { 19.7, 48.2, ARCANTINA },
-				timeline = { REMOVED_12_1_0 },
+				timeline = { REMOVED_12_1_0, ADDED_12_1_5 },
 				groups = {
 					i(268112),	-- Argunite Beacon
 					i(268111),	-- Arkonite Beacon

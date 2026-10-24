@@ -4276,6 +4276,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(FELWOOD_FUDGE),
 				},
 			}),
+			o(612085, {	-- Pile of Candy
+				coords = {
+					{ 54.0, 33.8, FOUNDERS_POINT },
+					{ 51.8, 54.2, RAZORWIND_SHORES },
+				},
+				groups = {
+					i(DRUSTVAR_CHOC),
+					i(DUSKWOOD_CARAMEL),
+					i(FELWOOD_FUDGE),
+				},
+			}),
 			o(244568, {	-- Spooky Pepe
 				description = "You need a Tier 3 garrison for this.",
 				coords = {
@@ -4291,6 +4302,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			o(644611, {	-- Tricky Treasure
 				coords = {
 					{ 41.0, 61.4, FOUNDERS_POINT },
+					{ 54.6, 32.3, FOUNDERS_POINT },
 				},
 				timeline = { ADDED_12_1_5 },
 			}),

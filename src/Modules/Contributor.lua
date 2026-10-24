@@ -3458,6 +3458,7 @@ MobileDB.GameObject = {
 	[575032] = true,	-- Ironwood Lumber
 	[576113] = true,	-- Ironwood Lumber
 	[576199] = true,	-- Ironwood Lumber
+	[576212] = true,	-- Bee Hive (q:92537)
 	[576282] = true,	-- Ironwood Lumber
 	[576400] = true,	-- Ironwood Lumber
 	[576402] = true,	-- Ironwood Lumber
