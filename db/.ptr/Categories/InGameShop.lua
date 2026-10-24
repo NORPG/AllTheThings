@@ -4,21 +4,21 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,de,en,flt,h,i,mnt,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
 categories.InGameShop=
 h(-213,{SortPriority=85,g={
-h(-12,{u=3,g={
+h(-12,{awp=70305,u=3,g={
 ach(8917,{awp=100100,providers={{"i",109014}},u=3}),
 ach(8916,{awp=100100,providers={{"i",109013}},u=3}),
-ach(12230,{awp=70305,providers={{"i",153540}},r=1,rwp=100100,u=2}),
+ach(12230,{providers={{"i",153540}},r=1,rwp=100100,u=2}),
 ach(10320,{awp=90100,providers={{"i",128425}},rwp=100107,u=2}),
 ach(6849,{awp=80300,providers={{"i",85870}},u=3}),
 ach(6848,{awp=80300,providers={{"i",85871}},u=3}),
 ach(10321,{awp=90100,providers={{"i",128426}},rwp=100107,u=2}),
-ach(12229,{awp=70305,providers={{"i",153539}},r=2,rwp=100100,u=2}),
+ach(12229,{providers={{"i",153539}},r=2,rwp=100100,u=2}),
 ach(12232,{awp=90100,providers={{"i",153541}},rwp=100107,u=2}),
 ach(14283,{awp=100200,providers={{"s",307932}},u=3}),
 ach(17314,{awp=100200,providers={{"s",359843}},u=3}),
 ach(19029,{awp=100107,providers={{"i",208850},{"n",210058}},rwp=100107,u=2}),
 ach(19031,{awp=110105,providers={{"i",208446}},u=3})}}),
-flt(101,{u=3,g={
+flt(101,{awp=30202,u=3,g={
 p(1363,{awp=50402,b=1,itemID=106240,npcID=74402,spellID=149787,u=3}),
 i(248091,{awp=100200,b=1,f=101,spellID=308067,u=3}),
 p(1603,{awp=60002,b=1,itemID=118516,npcID=88807,spellID=177232,u=3}),
@@ -37,7 +37,7 @@ p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
 p(671,{awp=80300,itemID=85871,npcID=63832,spellID=124660,u=3,g={
-crit(34637,{achID=6848,id=3,u=3})}}),
+crit(34637,{achID=6848,id=3,u=2})}}),
 p(3175,{awp=100200,npcID=181535,u=3}),
 p(4855,{awp=110205,itemID=246342,npcID=246662,rwp=110207,spellID=1241760,u=2}),
 p(4969,{awp=120001,description="Part of the charity Roofus Pack.",itemID=262982,npcID=256698,rwp=120005,spellID=1269627,u=2}),
@@ -66,7 +66,7 @@ p(311,{awp=40200,itemID=72068,npcID=53283,pb=1,rwp=50407,spellID=98736,u=2,g={
 crit(23740,{achID=8397,awp=50400,id=12,pb=1})}}),
 p(245,{awp=30302,b=1,description="This item is available only if you purchase the Plush Toy and redeem the code.",itemID=49662,npcID=36908,rwp=80300,spellID=69535,u=2}),
 p(4421,{awp=100205,b=1,itemID=213556,npcID=217530,rwp=100205,spellID=434792,u=2}),
-p(249,{awp=30202,b=1,itemID=49693,npcID=36979,rwp=100002,spellID=69677,u=2}),
+p(249,{b=1,itemID=49693,npcID=36979,rwp=100002,spellID=69677,u=2}),
 p(4267,{awp=100107,b=1,itemID=208850,npcID=210058,rwp=100107,spellID=421516,u=2}),
 p(256,{awp=30303,b=1,itemID=54847,npcID=40703,rwp=80300,spellID=75906,u=2}),
 p(1936,{awp=70100,b=1,itemID=141893,npcID=113527,rwp=100107,spellID=225761,u=2}),
@@ -75,7 +75,7 @@ p(296,{awp=40003,b=1,itemID=68618,npcID=51601,r=2,rwp=80300,spellID=95786,u=2}),
 p(298,{awp=40003,b=1,itemID=68619,npcID=51649,r=1,rwp=80300,spellID=95909,u=2}),
 p(1691,{awp=60202,itemID=128426,npcID=95841,rwp=100107,spellID=190020,u=2,g={
 crit(28787,{achID=10321,awp=90100,id=1,u=2})}}),
-p(248,{awp=30202,b=1,itemID=49665,npcID=36911,rwp=100002,spellID=69541,u=2}),
+p(248,{b=1,itemID=49665,npcID=36911,rwp=100002,spellID=69541,u=2}),
 p(4682,{awp=110005,b=1,itemID=231294,npcID=232502,rwp=110007,spellID=468186,u=2}),
 p(2890,{awp=100105,b=1,itemID=190601,npcID=171025,rwp=100107,spellID=333570,u=2}),
 p(2143,{awp=90100,itemID=153541,npcID=129049,rwp=100107,spellID=255702,u=2,g={
@@ -85,7 +85,7 @@ flt(55,{awp=50400,u=3,g={
 i(103557,{f=55,rwp=60002,spellID=146939,u=2}),
 i(105911,{rwp=60002,spellID=149222,u=2}),
 i(105912,{rwp=60002,spellID=149223,u=2})}}),
-flt(2,{u=3,g={
+flt(2,{awp=50400,u=3,g={
 en(208943,{awp=110000,questID=77952,spellID=421823,tmogSetID=3122,u=3,g={
 s(190158,208939,{f=25,spellID=423956}),
 s(190160,208941,{f=20,spellID=423959}),
@@ -653,9 +653,9 @@ s(194703,212214,{f=2,loc=40}),
 s(194706,212217,{f=2,loc=45}),
 s(194705,212216,{f=2,loc=41}),
 s(194704,212215,{f=2,loc=46})}}),
-s(51433,97213,{awp=50400,f=2,loc=40,rwp=80300,u=2}),
-s(50108,95474,{awp=50400,f=2,loc=40,rwp=80300,u=2}),
-s(50109,95475,{awp=50400,f=2,loc=40,rwp=80300,u=2}),
+s(51433,97213,{f=2,loc=40,rwp=80300,u=2}),
+s(50108,95474,{f=2,loc=40,rwp=80300,u=2}),
+s(50109,95475,{f=2,loc=40,rwp=80300,u=2}),
 s(229447,231290,{awp=110005,f=3,rwp=110007,u=2})}}),
 h(-679,{awp=120001,u=3,g={
 de(14432,{itemID=260727,spellID=1266832,u=3}),
@@ -717,7 +717,7 @@ de(21946,{awp=120005,itemID=272354,spellID=1291007,u=3})),(function(t)if GetCVar
 de(16100,{awp=120005,itemID=264723,spellID=1272519,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 de(21945,{awp=120005,itemID=272353,spellID=1291006,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 de(17750,{awp=120005,itemID=266071,spellID=1277672,u=3}))}}),
-flt(100,{u=3,g={
+flt(100,{awp=30303,u=3,g={
 mnt(417888,{awp=110207,b=1,itemID=258479,lvl=10,u=3}),
 mnt(1282453,{awp=120005,itemID=268474,u=3}),
 mnt(1226983,{awp=110105,b=1,itemID=238994,lvl=10,u=3}),
@@ -781,7 +781,7 @@ mnt(302361,{awp=80205,itemID=207964,lvl=10,r=2,rwp=100100,u=2}),
 mnt(302362,{awp=80205,itemID=207963,lvl=10,r=1,rwp=100100,u=2}),
 mnt(139595,{awp=50200,b=1,itemID=95341,lvl=10,rwp=80300,u=2}),
 mnt(366962,{awp=100205,itemID=190231,lvl=10,rwp=100206,u=2}),
-mnt(75614,{awp=30303,b=1,itemID=54811,lvl=10,rwp=100002,u=2}),
+mnt(75614,{b=1,itemID=54811,lvl=10,rwp=100002,u=2}),
 mnt(466838,{awp=110005,b=1,itemID=230200,lvl=10,rwp=110007,u=2}),
 mnt(466811,{awp=110005,b=1,itemID=230184,lvl=10,rwp=110007,u=2}),
 mnt(466812,{awp=110005,b=1,itemID=230185,lvl=10,rwp=110007,u=2}),
@@ -804,16 +804,16 @@ mnt(107203,{awp=100002,b=1,itemID=76755,lvl=10,rwp=100002,u=2}),
 mnt(163024,{awp=60002,b=1,itemID=112326,lvl=10,rwp=100107,u=2,g={
 toy(112324,{b=1,u=2})}}),
 mnt(98727,{awp=40100,b=1,itemID=69846,lvl=10,rwp=100002,u=2})}}),
-flt(102,{u=3,g={
+flt(102,{awp=80105,u=3,g={
 toy(208704,{awp=110207,b=1,u=3}),
 toy(172179,{awp=100200,b=1,u=3}),
-toy(166778,{awp=80105,b=1,rwp=100100,u=2}),
-toy(166777,{awp=80105,b=1,rwp=100100,u=2}),
+toy(166778,{b=1,rwp=100100,u=2}),
+toy(166777,{b=1,rwp=100100,u=2}),
 toy(210467,{awp=100205,b=1,u=3}),
 toy(284572,{awp=120105,u=3}),
 toy(208883,{awp=110207,b=1,u=3}),
 toy(193588,{awp=100200,b=1,u=3}),
-toy(166779,{awp=80105,b=1,u=3})}}),
+toy(166779,{b=1,u=3})}}),
 i(122284,{awp=60102,b=1,u=3}),
 i(122270,{awp=60102,b=1,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
 i(235378,{awp=40003,b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",spellID=1216746,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(

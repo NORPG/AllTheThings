@@ -48,26 +48,26 @@ p(4437,{awp=100206,description="Obtained through watching select Twitch Streamer
 p(348,{awp=100207,b=1,itemID=79744,npcID=59020,rwp=100207,spellID=112994,u=2}),
 toy(218128,{awp=100206,b=1,description="The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",rwp=100207,u=2}),
 mnt(443660,{awp=100206,b=1,description="Obtained if you set up a 6-Month WoW Subscription.",itemID=219450,lvl=10,rwp=110200,u=2})}}),
-h(-516,{awp=110000,g={
+h(-516,{awp=110002,g={
 h(-518,{awp=110007,rwp=110105,u=2,g={
 mnt(367620,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=190539,lvl=10,u=2}),
 mnt(153489,{b=1,description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=107951,lvl=10,u=2}),
 p(4690,{description="Acquired alongside the purchase of a 150$ Razer Naga V2 Pro mouse, 200$ Razer BlackWidow V4 Pro keyboard or $100 RAZER FIREFLY V2 PRO mousepad as part of the Razer Gaming Peripherals World of Warcraft Collection before 30th April 2025.",itemID=232519,npcID=233481,spellID=470914,u=2})}}),
-h(-517,{awp=110002,u=3,g={
+h(-517,{u=3,g={
 mnt(163025,{b=1,description="Acquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=112327,lvl=10,u=3}),
 p(4595,{b=1,itemID=224576,npcID=225354,spellID=453266,u=3}),
 mnt(453255,{description="Acquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Edition Collection.",itemID=224574,lvl=10,u=3})}}),
-mnt(136505,{awp=110002,itemID=93671,lvl=10,u=2}),
-p(3254,{awp=110002,description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",itemID=190609,npcID=185621,spellID=367800,u=2}),
+mnt(136505,{itemID=93671,lvl=10,u=2}),
+p(3254,{description="Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that will also reward the pet!",itemID=190609,npcID=185621,spellID=367800,u=2}),
 toy(232305,{awp=110005,b=1,description="Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in at least two game series (best of 5)\n\nWinning not required, for more details & requirements check out: Raider.io/tournaments/AWC",rwp=110005,u=2}),
 toy(232301,{awp=110005,b=1,description="Break the Meta: TWW Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 1's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-1/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +5|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on December 10th for US, December 11th for EU & December 12th for KR/TW & lasts for 1 week.",rwp=110005,u=2}),
-p(4616,{awp=110002,b=1,itemID=228765,npcID=229860,rwp=110100,spellID=463148,u=2}),
-s(224731,228761,{awp=110002,f=9,rwp=110100,u=2}),
-s(224733,228763,{awp=110002,f=9,rwp=110100,u=2}),
-s(224732,228762,{awp=110002,f=9,rwp=110100,u=2}),
-s(224734,228764,{awp=110002,f=9,rwp=110007,u=2}),
-mnt(454682,{awp=110002,b=1,description="Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",itemID=225250,lvl=10,rwp=110207,u=2}),
-mnt(463025,{awp=110002,b=1,description="Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",itemID=228751,lvl=10,rwp=110207,u=2}),
+p(4616,{b=1,itemID=228765,npcID=229860,rwp=110100,spellID=463148,u=2}),
+s(224731,228761,{f=9,rwp=110100,u=2}),
+s(224733,228763,{f=9,rwp=110100,u=2}),
+s(224732,228762,{f=9,rwp=110100,u=2}),
+s(224734,228764,{f=9,rwp=110007,u=2}),
+mnt(454682,{b=1,description="Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",itemID=225250,lvl=10,rwp=110207,u=2}),
+mnt(463025,{b=1,description="Obtained if you set up a 12-Month WoW Subscription between Patch 11.0.2 & 11.2.7.",itemID=228751,lvl=10,rwp=110207,u=2}),
 p(665,{awp=110005,b=1,itemID=72153,npcID=54745,spellID=102353,u=2}),
 s(224993,228907,{awp=110005,f=2,loc=45,rwp=110007,u=2}),
 s(224995,228909,{awp=110005,f=9,rwp=110007,u=2}),
@@ -168,9 +168,9 @@ s(18371,38313,{awp=100200,b=1,f=9,rwp=100200,u=2}),
 mnt(134573,{awp=100200,b=1,itemID=92724,lvl=10,rwp=100205,u=2}),
 p(2185,{awp=100205,b=1,itemID=160588,npcID=138741,rwp=100205,spellID=272772,u=2}),
 s(9376,23709,{awp=100205,b=1,f=9,u=2})}}),
-h(-520,{
+h(-520,{awp=11101,g={
 ach(411,{awp=30002,providers={{"i",20371}},u=2}),
-p(107,{awp=11101,itemID=20371,npcID=15186,spellID=24696,u=2,g={
+p(107,{itemID=20371,npcID=15186,spellID=24696,u=2,g={
 crit(34645,{achID=411,awp=30002,id=3,u=2})}}),
 ach(412,{awp=30002,providers={{"i",33079}},u=2}),
 toy(33079,{awp=20103,b=1,u=2}),
@@ -242,29 +242,29 @@ ach(63685,{awp=120100,rwp=120100,u=2,g={
 de(28350,{itemID=281107,spellID=1310204,u=2})}}),
 p(5124,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278231,npcID=269374,rwp=120100,spellID=1304106,u=2}),
 p(5123,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278230,npcID=269373,rwp=120100,spellID=1304105,u=2}),
-p(5127,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278688,npcID=269780,rwp=120100,spellID=1305392,u=2})}),
-h(-521,{u=3,g={
-x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
+p(5127,{awp=120100,description="Available from capsule gachapon machines on the Blizzcon floor.",itemID=278688,npcID=269780,rwp=120100,spellID=1305392,u=2})}}),
+h(-521,{awp=10100,u=3,g={
+x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
-q(8547,{awp=20003,maps={94},qss={20938},races={10},u=3}),
-q(12781,{awp=30002,c={6},lvl=8,maps={23},qss={39713},u=3}),
-q(9278,{awp=20003,c={11},maps={97},qss={22888},r=2,u=3}),
+q(8547,{awp=20003,maps={94},qss={20938},races={10},u=2}),
+q(12781,{awp=30002,c={6},lvl=8,maps={23},qss={39713},u=2}),
+q(9278,{awp=20003,c={11},maps={97},qss={22888},r=2,u=2}),
 q(5841,{maps={27},qss={14647},races={3,7},u=2}),
 q(5805,{maps={37},qss={14646},races={1},u=2}),
 q(5842,{maps={57},qss={14648},races={4},u=2}),
 q(5843,{maps={1},qss={14649},races={2,8},u=2}),
 q(5844,{maps={7},qss={14650},races={6},u=2}),
 q(5847,{maps={18},qss={14651},races={5},u=2})}}),
-h(-47,{description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
-ach(662,{awp=30002,providers={{"i",13584}},u=3}),
-ach(663,{awp=30002,providers={{"i",13583}},u=3}),
-ach(664,{awp=30002,providers={{"i",13582}},u=3}),
-p(93,{awp=11101,itemID=13584,npcID=11326,spellID=17708,u=3,g={
-crit(34630,{achID=662,awp=30002,id=3,u=3})}}),
-p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
-crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
-p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
-crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
+h(-47,{awp=11101,description="Every character you created was able to select between one of the three pets by completing the 'Welcome!' quest for your race.",rwp=40006,sourceQuests={5805,5841,5842,5843,5844,5847,8547,9278,12781},u=2,g={
+ach(662,{awp=30002,providers={{"i",13584}},u=2}),
+ach(663,{awp=30002,providers={{"i",13583}},u=2}),
+ach(664,{awp=30002,providers={{"i",13582}},u=2}),
+p(93,{itemID=13584,npcID=11326,spellID=17708,u=2,g={
+crit(34630,{achID=662,awp=30002,id=3,u=2})}}),
+p(92,{itemID=13583,npcID=11325,spellID=17707,u=2,g={
+crit(34631,{achID=663,awp=30002,id=3,u=2})}}),
+p(94,{itemID=13582,npcID=11327,spellID=17709,u=2,g={
+crit(34632,{achID=664,awp=30002,id=3,u=2})}})}})}}),
 x(2,{awp=20003,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
@@ -298,7 +298,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -336,17 +336,17 @@ h(-522,{awp=80307,description="These rewards were made available to anyone who p
 ach(14283,{providers={{"s",307932}},u=2}),
 mnt(307932,{u=2}),
 h(-45,{u=2,g={
-q(57686,{description="You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",lvl=50,qgs={158635},u=3,g={
-i(172954,{u=3}),
-s(106490,172078,{f=3,u=3}),
-s(106491,172079,{f=2,loc=43,u=3}),
-s(106492,172080,{f=2,loc=44,u=3}),
-s(106487,172075,{f=2,loc=40,u=3}),
-s(106494,172082,{f=2,loc=46,u=3}),
-s(106489,172077,{f=2,loc=42,u=3}),
-s(106488,172076,{f=2,loc=41,u=3}),
-s(106495,172083,{f=2,loc=47,u=3}),
-s(106493,172081,{f=2,loc=45,u=3})}})}})}}),
+q(57686,{description="You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",lvl=50,qgs={158635},u=2,g={
+i(172954,{u=2}),
+s(106490,172078,{f=3,u=2}),
+s(106491,172079,{f=2,loc=43,u=2}),
+s(106492,172080,{f=2,loc=44,u=2}),
+s(106487,172075,{f=2,loc=40,u=2}),
+s(106494,172082,{f=2,loc=46,u=2}),
+s(106489,172077,{f=2,loc=42,u=2}),
+s(106488,172076,{f=2,loc=41,u=2}),
+s(106495,172083,{f=2,loc=47,u=2}),
+s(106493,172081,{f=2,loc=45,u=2})}})}})}}),
 h(-523,{awp=80307,description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
 i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
@@ -358,15 +358,15 @@ ach(17305,{awp=100005,rwp=100200,u=2}),
 mnt(359843,{awp=90205,b=1,itemID=248089,lvl=10,rwp=100107,u=2}),
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{awp=90205,npcID=181535,rwp=100107,u=2})}}),
-h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",u=3,g={
-toy(193588,{awp=90205,b=1,rwp=100107,u=2}),
-en(255827,{awp=90205,rwp=100107,spellID=1259474,tmogSetID=2293,u=2,g={
+h(-523,{awp=90205,description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",u=3,g={
+toy(193588,{b=1,rwp=100107,u=2}),
+en(255827,{rwp=100107,spellID=1259474,tmogSetID=2293,u=2,g={
 s(165611,188257,{f=3}),
 s(165612,188258,{f=3}),
 s(165613,188259,{f=3}),
 s(165610,188256,{f=3}),
 s(165614,188260,{f=3})}}),
-s(180744,193610,{awp=90205,f=2,loc=40,rwp=100107,u=2})}})}}),
+s(180744,193610,{f=2,loc=40,rwp=100107,u=2})}})}}),
 x(11,{awp=110002,u=3,g={
 h(-522,{awp=100107,description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
 ach(19027,{providers={{"s",417888}},u=2}),
@@ -507,10 +507,10 @@ ach(19030,{providers={{"n",209681}},u=2}),
 toy(208704,{b=1,u=2}),
 toy(208883,{b=1,u=2}),
 p(4266,{b=1,itemID=208751,npcID=209681,spellID=420759,u=2}),
-q(82809,{awp=110000,qgs={209681},u=3,g={
-p(4590,{b=1,itemID=224259,npcID=224716,spellID=452222,u=3}),
-p(4589,{b=1,itemID=224261,npcID=224717,spellID=452221,u=3}),
-p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}})}}),
+q(82809,{awp=110000,qgs={209681},u=2,g={
+p(4590,{b=1,itemID=224259,npcID=224716,spellID=452222,u=2}),
+p(4589,{b=1,itemID=224261,npcID=224717,spellID=452221,u=2}),
+p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=2})}})}})}}),
 x(12,{awp=110200,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Midnight Heroic Edition.",u=3,g={
 ach(61401,{providers={{"s",1234305}},u=3}),
@@ -638,8 +638,8 @@ mnt(1309376,{itemID=280599,u=3})}}),
 h(-795,{rwp=120107,u=2,g={
 de(27076,{itemID=280554,spellID=1309251,u=2}),
 de(27077,{itemID=280556,spellID=1309253,u=2})}})}})}}),
-h(-538,{
-h(-539,{awp=70100,maps={47},u=2,g={
+h(-538,{awp=70100,g={
+h(-539,{maps={47},u=2,g={
 h(-63,{u=2,g={
 i(143628,{b=1,spellID=232323,u=2}),
 i(142548,{b=1,spellID=231424,u=2}),
@@ -892,7 +892,7 @@ toy(142542,{b=1,u=2}),
 toy(143543,{b=1,u=2}),
 s(187932,206275,{f=1,u=2}),
 s(187933,206276,{f=24,u=2}),
-s(187750,206005,{f=23,u=2})}})}),
+s(187750,206005,{f=23,u=2})}})}}),
 h(-541,{awp=110002,g={
 s(230544,233053,{awp=110005,f=2,loc=40,rwp=110005,u=2}),
 p(4615,{itemID=228758,npcID=229846,rwp=110002,spellID=463079,u=2}),
@@ -940,7 +940,7 @@ s(194927,212607,{f=2,loc=40,u=2}),
 s(194958,212644,{f=2,loc=45,u=2}),
 s(194707,212336,{f=9,u=2}),
 i(211965,{b=1,spellID=431019,u=2}),
-i(212924,{awp=100205,f=55,u=2,g={
+i(212924,{f=55,u=2,g={
 cq(79392,{itemID=212925,spellID=433302,u=2,g={
 crit(65343,{achID=19724,id=1})}}),
 cq(79390,{itemID=212922,spellID=433299,u=2,g={
@@ -988,11 +988,11 @@ h(-58,{
 n(215385,{coords={
 [2112]={{60.6,59.3}}},rwp=100206,u=2,g={
 i(211965,{b=1,spellID=431019,u=2})}})})}}),
-h(-545,{awp=60002,g={
+h(-545,{awp=60102,g={
 ach(10657,{awp=70003,description="Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone."}),
 h(-47,{
-ach(9926,{awp=60102,sharedDescription="Obtained by playing Heroes of the Storm and reaching level 20.",u=3}),
-p(1639,{awp=60102,b=1,itemID=118518,npcID=91226,sharedDescription="Obtained by playing Heroes of the Storm and reaching level 20.",spellID=181086,u=3}),
+ach(9926,{sharedDescription="Obtained by playing Heroes of the Storm and reaching level 20.",u=3}),
+p(1639,{b=1,itemID=118518,npcID=91226,sharedDescription="Obtained by playing Heroes of the Storm and reaching level 20.",spellID=181086,u=3}),
 ach(11425,{awp=70200,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2}),
 mnt(232405,{awp=70200,b=1,itemID=143631,lvl=10,sharedDescription="Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",u=2})})}}),
 h(-546,{awp=11201,u=2,g={
@@ -1000,8 +1000,8 @@ p(124,{b=1,itemID=22781,npcID=16456,spellID=28505,u=2}),
 p(1073,{itemID=22780,npcID=16445,spellID=28487,u=2}),
 p(757,{b=1,itemID=19055,npcID=14755,spellID=23531,u=2}),
 p(758,{b=1,itemID=19054,npcID=14756,spellID=23530,u=2})}}),
-h(-547,{
-s(7628,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,u=2}),
+h(-547,{awp=11101,g={
+s(7628,19160,{b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,u=2}),
 p(244,{awp=30300,b=1,description="Granted to players that attach an authenticator to their account.",itemID=49646,npcID=36871,spellID=69452,u=3}),
 p(240,{awp=40003,b=1,description="Reward from a Korean-exclusive World Event that mailed you this pet.",itemID=48527,npcID=35468,spellID=67527,u=2,g={
 ach(3896,{u=2})}}),
@@ -1026,8 +1026,8 @@ p(192,{awp=30202,b=1,description="This was awarded to players when they linked t
 ach(9496,{awp=60002,u=2,g={
 crit(25887,{achID=9496,providers={{"i",116788}},u=2}),
 crit(27433,{achID=9496,id=2,providers={{"i",116788}},u=2})}}),
-mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=10,u=2})}),
-h(-548,{
+mnt(171845,{awp=60002,b=1,description="Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",itemID=116788,lvl=10,u=2})}}),
+h(-548,{awp=20300,g={
 ach(1436,{awp=30002,providers={{"i",37719}},u=2}),
 mnt(49322,{awp=20403,b=1,itemID=37719,lvl=10,u=2}),
 ach(4832,{awp=40001,providers={{"i",54860}},u=2}),
@@ -1041,8 +1041,8 @@ mnt(171847,{awp=60002,b=1,itemID=118515,lvl=10,u=2}),
 ach(3636,{awp=40003,description="Chinese & Taiwan Only",u=2}),
 p(231,{awp=40003,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=46894,npcID=34930,spellID=66520,u=2}),
 p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=49664,npcID=36910,spellID=69539,u=2}),
-p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,npcID=25146,spellID=45174,u=2}),
-p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,npcID=25147,spellID=45175,u=2}),
+p(170,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,npcID=25146,spellID=45174,u=2}),
+p(171,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,npcID=25147,spellID=45175,u=2}),
 en(173300,{awp=80205,b=1,description="Available to any player who has unlocked the Recruit a Friend rewards before the refresh during patch 10.0.7.",rwp=100007,spellID=311272,tmogSetID=1902,u=2,g={
 s(105944,171324,{f=2,loc=40}),
 s(105949,171329,{f=2,loc=45}),
@@ -1069,7 +1069,7 @@ ach(17426,{awp=100007,u=3}),
 s(185420,204081,{awp=100007,b=1,f=34,u=3}),
 s(185421,204082,{awp=100007,b=1,f=3,u=3}),
 s(185424,204086,{awp=100007,b=1,f=2,loc=40,u=3}),
-mnt(400733,{awp=100007,itemID=204091,lvl=10,u=3})}),
+mnt(400733,{awp=100007,itemID=204091,lvl=10,u=3})}}),
 h(-549,{awp=40300,rwp=50300,u=2,g={
 cl(6,{u=2,g={
 s(37452,72994,{b=1,c={6},f=25,lvl=30,u=2}),
@@ -1183,43 +1183,43 @@ i(73103,{b=1,c={8},f=52,lvl=30,u=2}),
 i(73102,{b=1,c={8},f=52,lvl=30,u=2}),
 i(73104,{b=1,c={8},f=53,lvl=30,spellID=102779,u=2}),
 i(73101,{b=1,c={8},f=53,lvl=30,spellID=102745,u=2})}}),
-cl(10,{awp=50004,g={
-s(45912,88648,{b=1,c={10},f=28,lvl=30}),
-s(45901,88622,{b=1,c={10},f=28,lvl=30}),
-s(45913,88649,{b=1,c={10},f=25,lvl=30}),
-s(45905,88626,{b=1,c={10},f=5,loc=40,lvl=30}),
-s(45896,88617,{b=1,c={10},f=5,loc=40,lvl=30}),
-s(45907,88628,{b=1,c={10},f=5,loc=41,lvl=30}),
-s(45898,88619,{b=1,c={10},f=5,loc=41,lvl=30}),
-i(88635,{b=1,c={10},f=51,lvl=30}),
-i(88643,{b=1,c={10},f=51,lvl=30}),
-i(88667,{b=1,c={10},f=51,lvl=30}),
-s(45911,88633,{b=1,c={10},f=3,lvl=30}),
-s(45910,88632,{b=1,c={10},f=3,lvl=30}),
-s(45893,88614,{b=1,c={10},f=5,loc=42,lvl=30}),
-s(45902,88623,{b=1,c={10},f=5,loc=42,lvl=30}),
-s(45900,88621,{b=1,c={10},f=5,loc=43,lvl=30}),
-s(45909,88630,{b=1,c={10},f=5,loc=43,lvl=30}),
-s(45895,88616,{b=1,c={10},f=5,loc=44,lvl=30}),
-s(45904,88625,{b=1,c={10},f=5,loc=44,lvl=30}),
-s(45908,88629,{b=1,c={10},f=5,loc=45,lvl=30}),
-s(45899,88620,{b=1,c={10},f=5,loc=45,lvl=30}),
-s(45897,88618,{b=1,c={10},f=5,loc=46,lvl=30}),
-s(45906,88627,{b=1,c={10},f=5,loc=46,lvl=30}),
-s(45894,88615,{b=1,c={10},f=5,loc=47,lvl=30}),
-s(45903,88624,{b=1,c={10},f=5,loc=47,lvl=30}),
-i(88640,{b=1,c={10},f=52,lvl=30}),
-i(88637,{b=1,c={10},f=52,lvl=30}),
-i(88646,{b=1,c={10},f=52,lvl=30}),
-i(88641,{b=1,c={10},f=52,lvl=30}),
-i(88638,{b=1,c={10},f=52,lvl=30}),
-i(88645,{b=1,c={10},f=52,lvl=30}),
-i(88636,{b=1,c={10},f=53,lvl=30,spellID=102778}),
-i(88634,{b=1,c={10},f=53,lvl=30,spellID=102776}),
-i(88642,{b=1,c={10},f=53,lvl=30,spellID=102743}),
-i(88647,{b=1,c={10},f=53,lvl=30,spellID=102780}),
-i(88639,{b=1,c={10},f=53,lvl=30,spellID=102776}),
-i(88644,{b=1,c={10},f=53,lvl=30,spellID=102777})}}),
+cl(10,{awp=50004,u=2,g={
+s(45912,88648,{b=1,c={10},f=28,lvl=30,u=2}),
+s(45901,88622,{b=1,c={10},f=28,lvl=30,u=2}),
+s(45913,88649,{b=1,c={10},f=25,lvl=30,u=2}),
+s(45905,88626,{b=1,c={10},f=5,loc=40,lvl=30,u=2}),
+s(45896,88617,{b=1,c={10},f=5,loc=40,lvl=30,u=2}),
+s(45907,88628,{b=1,c={10},f=5,loc=41,lvl=30,u=2}),
+s(45898,88619,{b=1,c={10},f=5,loc=41,lvl=30,u=2}),
+i(88635,{b=1,c={10},f=51,lvl=30,u=2}),
+i(88643,{b=1,c={10},f=51,lvl=30,u=2}),
+i(88667,{b=1,c={10},f=51,lvl=30,u=2}),
+s(45911,88633,{b=1,c={10},f=3,lvl=30,u=2}),
+s(45910,88632,{b=1,c={10},f=3,lvl=30,u=2}),
+s(45893,88614,{b=1,c={10},f=5,loc=42,lvl=30,u=2}),
+s(45902,88623,{b=1,c={10},f=5,loc=42,lvl=30,u=2}),
+s(45900,88621,{b=1,c={10},f=5,loc=43,lvl=30,u=2}),
+s(45909,88630,{b=1,c={10},f=5,loc=43,lvl=30,u=2}),
+s(45895,88616,{b=1,c={10},f=5,loc=44,lvl=30,u=2}),
+s(45904,88625,{b=1,c={10},f=5,loc=44,lvl=30,u=2}),
+s(45908,88629,{b=1,c={10},f=5,loc=45,lvl=30,u=2}),
+s(45899,88620,{b=1,c={10},f=5,loc=45,lvl=30,u=2}),
+s(45897,88618,{b=1,c={10},f=5,loc=46,lvl=30,u=2}),
+s(45906,88627,{b=1,c={10},f=5,loc=46,lvl=30,u=2}),
+s(45894,88615,{b=1,c={10},f=5,loc=47,lvl=30,u=2}),
+s(45903,88624,{b=1,c={10},f=5,loc=47,lvl=30,u=2}),
+i(88640,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88637,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88646,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88641,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88638,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88645,{b=1,c={10},f=52,lvl=30,u=2}),
+i(88636,{b=1,c={10},f=53,lvl=30,spellID=102778,u=2}),
+i(88634,{b=1,c={10},f=53,lvl=30,spellID=102776,u=2}),
+i(88642,{b=1,c={10},f=53,lvl=30,spellID=102743,u=2}),
+i(88647,{b=1,c={10},f=53,lvl=30,spellID=102780,u=2}),
+i(88639,{b=1,c={10},f=53,lvl=30,spellID=102776,u=2}),
+i(88644,{b=1,c={10},f=53,lvl=30,spellID=102777,u=2})}}),
 cl(2,{u=2,g={
 s(37445,72983,{b=1,c={2},f=8,lvl=30,u=2}),
 s(37451,72993,{b=1,c={2},f=26,lvl=30,u=2}),
@@ -1684,11 +1684,11 @@ o(405584,{coords={
 [2025]={{49.2,58.3}}},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={
 [2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-780,{
-ach(40910,{awp=110000,description="Rewarded for aiding in the stress testing of the realms in China.",rwp=110005,u=2}),
-mnt(366962,{awp=110000,itemID=190231,lvl=10,u=2}),
-p(4286,{awp=110000,b=1,itemID=210409,npcID=211942,spellID=425472,u=2}),
-mnt(464443,{awp=110000,b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2}),
+h(-780,{awp=110000,g={
+ach(40910,{description="Rewarded for aiding in the stress testing of the realms in China.",rwp=110005,u=2}),
+mnt(366962,{itemID=190231,lvl=10,u=2}),
+p(4286,{b=1,itemID=210409,npcID=211942,spellID=425472,u=2}),
+mnt(464443,{b=1,description="Rewarded for returning to World of Warcraft in 2024. China Only.",itemID=229128,lvl=10,u=2}),
 mnt(1216542,{awp=110007,b=1,description="Rewarded from the Treasure Workshop.",itemID=235344,lvl=10,rwp=110100,u=2}),
 i(235378,{awp=110007,b=1,rwp=110100,spellID=1216746,u=2,g={
 mnt(459784,{itemID=227362,lvl=10,u=2}),
@@ -1951,5 +1951,5 @@ s(307930,272327,{f=2,loc=47}),
 s(307932,272329,{f=2,loc=44}),
 s(307935,272332,{f=3}),
 s(316222,284862,{f=2,loc=41})}}),
-toy(274967,{u=2})}})}))}})
+toy(274967,{u=2})}})}}))}})
 end)

@@ -3,14 +3,14 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Sourceless={
-h(-88,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(4,{awp=40003,g={
+h(-88,{awp=40003,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(4,{
 x(4.0003,{
 s(26120,53363,{b=1,f=4,loc=45}),
 s(26122,53365,{b=1,f=4,loc=44}),
 s(26133,53376,{b=1,f=5,loc=44}),
 s(28411,57529,{b=1,f=4,loc=47}),
-s(28415,57533,{b=1,f=6,loc=43})})}}),
+s(28415,57533,{b=1,f=6,loc=43})})}),
 x(6,{awp=60003,g={
 x(6.02,{awp=60200,g={
 s(72358,127103,{b=1,c={1},f=7,loc=41,lvl=40,r=1})}})}}),
@@ -176,17 +176,17 @@ s(97121,161227,{f=7,loc=40}),
 s(97125,161231,{f=7,loc=41}),
 s(97129,161235,{f=7,loc=42}),
 s(97145,161254,{b=1,f=7,loc=46,r=1})})})}})}}),
-flt(50,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{awp=100002,g={
+flt(50,{awp=100002,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{
 x(10.0107,{awp=100107,g={
-i(208878,{b=1,f=55})}})}}),
+i(208878,{b=1,f=55})}})}),
 x(11,{awp=110002,g={
 x(11.0002,{
 i(228580,{b=1,spellID=456550})})}})}}),
-h(-41,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(10,{awp=100002,g={
+h(-41,{awp=100002,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(10,{
 x(10.02,{awp=100200,g={
-mm(207775,{b=1,questID=77146})}})}}),
+mm(207775,{b=1,questID=77146})}})}),
 x(11,{awp=110002,g={
 x(11.0000001,{awp=110000,g={
 mm(223510,{b=1,qis={235692},questID=82177})}})}})}}),
@@ -194,11 +194,11 @@ h(-33,{awp=90002,g={
 x(9,{
 x(9.0001,{awp=90001,g={
 follower(1208)}})})}}),
-h(-101,{sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
-x(6,{awp=60003,g={
+h(-101,{awp=60003,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
+x(6,{
 x(6.0002,{awp=60002,g={
 s(66481,118186,{b=1,f=27,r=1}),
-s(58166,107644,{b=1,f=8,lvl=35})}})}}),
+s(58166,107644,{b=1,f=8,lvl=35})}})}),
 x(8,{awp=80001,g={
 x(8.0001,{
 s(90969,153414,{b=1,f=8,lvl=35,r=2}),
@@ -253,14 +253,14 @@ s(91902,154972,{b=1,f=29,r=1}),
 s(103153,166887,{b=1,f=28}),
 s(94546,158568,{b=1,f=28}),
 s(94551,158580,{b=1,f=35})})}})}}),
-h(-45,{
-x(4,{awp=40003,g={
+h(-45,{awp=40003,g={
+x(4,{
 h(-237,{
 q(26459),
 q(28468),
 q(29572),
 q(29683),
-q(29810)})}}),
+q(29810)})}),
 x(5,{awp=50004,g={
 x(5.0004,{
 q(30549)}),
@@ -436,5 +436,5 @@ x(11.0207,{awp=110207,g={
 q(84833)}})}}),
 x(12,{awp=120001,g={
 x(12.0000001,{awp=120000,g={
-q(94747)}})}})})}
+q(94747)}})}})}})}
 end)

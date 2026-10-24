@@ -8961,7 +8961,7 @@ s(181877,199024,{f=21,lvl=60}),
 s(181897,199047,{f=34,lvl=60}),
 s(181890,199040,{f=23,lvl=60})}})}}),
 x(11,{awp=110002,g={
-h(-88,{awp=110000,g={
+h(-88,{
 flt(4,{
 s(220459,224589,{f=4,loc=45,lvl=70}),
 s(220460,224590,{f=4,loc=40,lvl=70}),
@@ -9033,7 +9033,7 @@ s(220489,224622,{f=7,loc=45,lvl=70})}),
 flt(3,{
 s(220491,224624,{f=3,lvl=70})}),
 flt(52,{
-i(224592,{f=52,lvl=70})})}}),
+i(224592,{f=52,lvl=70})})}),
 h(-101,{
 s(220494,224627,{f=31,lvl=70}),
 s(220495,224628,{f=26,lvl=70}),
@@ -9093,7 +9093,7 @@ r(445399,{b=1,itemID=223121,requireSkill=333,skillID=2874}),
 r(444068,{itemID=223100,requireSkill=165,skillID=2880}),
 r(450245,{itemID=223043,requireSkill=164,skillID=2872})})}}),
 x(12,{awp=120001,g={
-h(-88,{awp=120000,g={
+h(-88,{
 flt(3,{
 s(304103,266224,{f=3,lvl=78}),
 s(304101,266221,{f=3,lvl=78}),
@@ -9176,7 +9176,7 @@ i(258908,{f=52,lvl=80}),
 i(258910,{f=52,lvl=80}),
 i(258909,{f=52,lvl=80})}),
 flt(51,{
-i(258911,{f=51,lvl=80})})}}),
+i(258911,{f=51,lvl=80})})}),
 h(-101,{
 s(301779,258960,{f=1,lvl=80}),
 s(301778,258959,{f=26,lvl=80}),
@@ -9309,10 +9309,10 @@ i(88165,{awp=50004,g={
 s(45574,88150,{f=25,lvl=35}),
 s(45573,88149,{f=20,lvl=35})}}),
 i(16883)}}),
-ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
-x(1,{awp=10100,g={
+ah(921,{awp=10100,description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
+x(1,{
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}}),
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}),
 x(3,{awp=30003,g={
 i(37674,{coords={
 [115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),
