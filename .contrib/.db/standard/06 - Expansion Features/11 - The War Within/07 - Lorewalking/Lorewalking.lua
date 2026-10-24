@@ -73,6 +73,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = { i(281626) },	-- Tale of the First Warchief (DECOR!)
 				}),
+				ach(63710, {	-- Lorewalking: Titans
+					timeline = { ADDED_12_1_7 },
+					groups = { i(283475) },	-- A Brief History of the Titans (DECOR!)
+				}),
 				ach(63604, {	-- Lorewalking: Tyr
 					timeline = { ADDED_12_1_7 },
 					groups = { i(283463) },	-- Origin of the Silver Hand (DECOR!)
@@ -382,10 +386,71 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 					},
 				}),
+				header(HEADERS.Achievement, 63710, {	-- Lorewalking: Titans
+					timeline = { ADDED_12_1_7 },
+					groups = {
+						q(95461, {	-- Lorewalking: Mysteries of the Earthen
+							provider = { "n", 230246 },	-- Li Li Stormstout
+							coords = {
+								{ 49.5, 31.6, DORNOGAL },
+								{ 54.5, 57.2, ORGRIMMAR },
+								{ 64.2, 16.1, STORMWIND_CITY },
+								{ 58.7, 70.8, MAP.MIDNIGHT.SILVERMOON_CITY },
+							},
+							isRepeatable = true,
+						}),
+						q(95462, {	-- Lorewalking: Secrets of Ulduar
+							sourceQuest = 95461,	-- Lorewalking: Mysteries of the Earthen
+							provider = { "n", 261254 },	-- Li Li Stormstout
+							maps = { HALLS_OF_STONE },
+							isRepeatable = true,
+						}),
+						q(95466, {	-- Algalon
+							sourceQuest = 95461,	-- Lorewalking: Mysteries of the Earthen
+							provider = { "n", 33235 },	-- Brann Bronzebeard
+							maps = { 148 },	-- The Archivum, Ulduar
+							isRepeatable = true,
+						}),
+						q(95567, {	-- Lorewalking: The Pantheon
+							sourceQuests = {
+								95462,	-- Lorewalking: Secrets of Ulduar
+								95466,	-- Algalon
+							},
+							provider = { "n", 261254 },	-- Li Li Stormstout
+							coord = { 48.4, 62.3, NORTHREND_DALARAN },
+							maps = {
+								2593,	-- Frachtorn
+								2592,	-- Seat of the Pantheon
+							},
+							isRepeatable = true,
+						}),
+						q(95463, {	-- The War Unending
+							sourceQuest = 95462,	-- Lorewalking: Secrets of Ulduar
+							provider = { "n", 261816 },	-- Olviron the Sentinel
+							coord = { 35.3, 17.0, 2593 },	-- Frachtorn
+							isRepeatable = true,
+						}),
+						q(95464, {	-- The Fate Inevitable
+							sourceQuest = 95462,	-- Lorewalking: Secrets of Ulduar
+							provider = { "n", 261856 },	-- Aggramar
+							coord = { 54.7, 54.8, 2592 },	-- Seat of the Pantheon
+							isRepeatable = true,
+						}),
+						q(95465, {	-- Lorewalking: The Revival
+							sourceQuests = {
+								95567,	-- Lorewalking: The Pantheon
+								95463,	-- The War Unending
+								95464,	-- The Fate Inevitable
+							},
+							provider = { "n", 261254 },	-- Li Li Stormstout
+							coord = { 60.9, 79.4, KROKUUN },
+							isRepeatable = true,
+						}),
+					},
+				}),
 				header(HEADERS.Achievement, 63604, {	-- Lorewalking: Tyr
 					timeline = { ADDED_12_1_7 },
 					groups = {
-						i(282709),	-- Lorewalker's Notes: Keeper Tyr
 						q(95441, {	-- Lorewalking: The Silver Scale
 							provider = { "n", 230246 },	-- Li Li Stormstout
 							coords = {
@@ -397,20 +462,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							isRepeatable = true,
 						}),
 						q(95442, {	-- Lorewalking: The Silver Hand
+							sourceQuest = 95441,	-- Lorewalking: The Silver Scale
 							provider = { "n", 261308 },	-- Li Li Stormstout
 							coord = { 55.3, 43.8, VALDRAKKEN },
 							isRepeatable = true,
 						}),
 						q(95443, {	-- Lorewalking: Tyr's Fall
+							sourceQuest = 95442,	-- Lorewalking: The Silver Hand
 							provider = { "n", 261308 },	-- Li Li Stormstout
 							coord = { 13.8, 56.5, TIRISFAL_GLADES },
 							isRepeatable = true,
 						}),
 						q(95444, {	-- Lorewalking: Locating Tyr's Memories
+							sourceQuest = 95443,	-- Lorewalking: Tyr's Fall
 							provider = { "n", 261308 },	-- Li Li Stormstout
 							coord = { 60.4, 58.8, THALDRASZUS },
 							isRepeatable = true,
+							groups = { i(282709) },	-- Lorewalker's Notes: Keeper Tyr
 						}),
+						-- TODO: Incomplete
 					},
 				}),
 				header(HEADERS.Quest, 93929, {	-- The War Within Recap
