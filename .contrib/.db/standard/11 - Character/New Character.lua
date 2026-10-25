@@ -2,6 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(NEW_CHARACTER, {
+	header(HEADERS.Race, BLOODELF, {timeline = { ADDED_2_0_3 }}),
 	header(HEADERS.Race, BLOODELF, {
 		cl(HUNTER, {
 			i(20900, { timeline = { ADDED_2_0_3, REMOVED_9_1_5 } }),	-- Warder's Boots
@@ -63,6 +64,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(20904, { timeline = { ADDED_4_0_1, REMOVED_9_1_5 } }),	-- Recruit's Tunic
 		}),
 	}),
+	header(HEADERS.Race, DARKIRON, {timeline = { ADDED_8_0_1 }}),
 	header(HEADERS.Race, DARKIRON, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
@@ -148,6 +150,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(232268),	-- Creche-Guard's Vambraces
 		}),
 	}),
+	header(HEADERS.Race, DRAENEI, {timeline = { ADDED_2_0_3 }}),
 	header(HEADERS.Race, DRAENEI, {
 		cl(HUNTER, {
 			i(23348, { timeline = { ADDED_2_0_3, REMOVED_9_1_5 } }),	-- Scout's Boots
@@ -208,6 +211,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(52538, { timeline = { ADDED_4_0_3, REMOVED_9_1_5 } }),	-- Primal Robe
 		}),
 	}),
+	header(HEADERS.Race, EARTHEN_HORDE, {timeline = { ADDED_11_0_2 }}),
 	header(HEADERS.Race, EARTHEN_HORDE, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
@@ -385,6 +389,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(266271),	-- Wildbloom Haranir Warblade
 		}),
 	}),
+	header(HEADERS.Race, LIGHTFORGED, {timeline = { ADDED_7_3_5 }}),
 	header(HEADERS.Race, LIGHTFORGED, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
@@ -503,6 +508,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(49578),	-- Gilnean Recruit's Tunic
 		}),
 	}),
+	header(HEADERS.Race, ZANDALARI, {timeline = { ADDED_8_0_1 }}),
 	header(HEADERS.Race, ZANDALARI, {
 		cl(PALADIN, {
 			filter(MOUNTS, {
