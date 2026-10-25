@@ -108,8 +108,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 	i(180058, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III
 	i(180059, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past IV
 	i(180060, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past V
-	n(DECOR, timelineSelf({ timeline = { ADDED_11_2_7 } }, {
-		-- #if AFTER 12.0.0
+	n(DECOR, timelineSelf({ timeline = { ADDED_12_0_0 } }, {
 		o_repeated({	-- Shadowmoon Lumber
 			maps = {
 				FROSTFIRE_RIDGE,
@@ -136,7 +135,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(251766),	-- Shadowmoon Lumber
 			},
 		}),
-		-- #endif
 	})),
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
