@@ -198,7 +198,7 @@ EXPERT_ARTISAN_ENGINEERING
 	{}
 -- #endif
 );
-TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(30350, {	-- Engineering (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -331,7 +331,7 @@ TBC_GOBLIN_ENGINEERING
 	{}
 -- #endif
 );
-WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51306, {	-- Engineering (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -474,7 +474,7 @@ WRATH_GOBLIN_ENGINEERING
 	{}
 -- #endif
 );
-CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(82774, {	-- Engineering (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -586,7 +586,7 @@ CATA_ENGINEERING
 {}
 -- #endif
 );
-MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110403, {	-- Engineering (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -845,7 +845,7 @@ COMMON_DRAENOR_ENGINEERING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData
 		cost = {{ "i", SECRET_OF_DRAENOR_ENGINEERING, 1 }},
 	}),
 }));
-LEGION_ENGINEERING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_ENGINEERING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263319),	-- Dalaran Auto-Hammer
 		r(1263338),	-- Failed Failure Detection Pylon
@@ -941,7 +941,7 @@ NAZJATAR_ENGINEERING = applyclassicphase(BFA_PHASE_THREE, sharedData({ timeline 
 		r(294787),	-- Notorious Combatant's Stormsteel Destroyer [Rank 1]
 	}),
 }));
-SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(310542),	-- Shadowlands Engineering
 	n(ARMOR, {
 		r(310507),	-- Articulated Ectoplasmic Specs
@@ -977,7 +977,7 @@ SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED
 		r(310536),	-- Precision Lifeforce Inverter
 	}),
 }));
-DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366254),	-- Dragon Isles Engineering
 	n(ARMOR, {
 		r(382391),	-- Battle-Ready Binoculars
@@ -1023,7 +1023,7 @@ DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED
 		r(382387),	-- P.E.W. x2
 	}),
 }));
-TWW_ENGINEERING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_ENGINEERING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423335),	-- Khaz Algar Engineering
 	r(425139),	-- Recraft Equipment
 	r(447311),	-- Pilfer Through Parts
@@ -1045,7 +1045,7 @@ TWW_ENGINEERING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(447379),	-- 4UT0-41M3R
 	}),
 });
-MID_ENGINEERING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_ENGINEERING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471007),	-- Midnight Engineering
 	r(1265670),	-- Artisan Engineer's Moxie
 	r(1265678),	-- Concentration

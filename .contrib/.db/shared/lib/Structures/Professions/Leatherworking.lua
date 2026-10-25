@@ -205,7 +205,7 @@ EXPERT_ARTISAN_LEATHERWORKING
 	{}
 -- #endif
 );
-TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(32549, {	-- Leatherworking (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -313,7 +313,7 @@ TBC_TRIBAL
 	{}
 -- #endif
 );
-WRATH_LEATHERWORKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_LEATHERWORKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51302, {	-- Leatherworking (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -572,7 +572,7 @@ COMMON_WRATH_LEATHERWORKING_RECIPES = applyclassicphase(WRATH_PHASE_ONE, sharedD
 		cost = {{ "i", ARCTIC_FUR, 2 }},
 	}),
 }));
-CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(81199, {	-- Leatherworking (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -816,7 +816,7 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = applyclassicphase(CATA_PHASE_ONE, shar
 	-- #endif
 	heavysavageleather(10, i(52980)),	-- Pristine Hide
 }));
-MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110423, {	-- Leatherworking (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -1085,14 +1085,14 @@ COMMON_DRAENOR_LEATHERWORKING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedD
 		cost = {{ "i", SECRET_OF_DRAENOR_LEATHERWORKING, 1 }},
 	}),
 }));
-LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_LEATHERWORKING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1262273),	-- Highmountain Tanner's Frame
 		r(1260762),	-- Tauren Leather Fence
 		r(1260765),	-- Tauren Fencepost
 	})),
 }));
-LEGION_LEATHERWORKING_ADDED_TO_CLASSIC = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
+LEGION_LEATHERWORKING_ADDED_TO_CLASSIC = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3 } },FILTERFUNC_recipeID, {
 	n(ARMOR, {
 		r(226115),	-- Blue Chain Leggings
 		r(226119),	-- Chain Belt
@@ -1461,7 +1461,7 @@ TWW_LEATHERWORKING = sharedData({ timeline = { ADDED_11_0_2 } }, {
 		r(444077),	-- Writhing Hide
 	}),
 });
-MID_LEATHERWORKING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_LEATHERWORKING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471012),	-- Midnight Leatherworking
 	r(1265672),	-- Artisan Leatherworker's Moxie
 	r(1265681),	-- Concentration

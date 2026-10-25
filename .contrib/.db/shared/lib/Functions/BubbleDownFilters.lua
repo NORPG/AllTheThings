@@ -7,6 +7,9 @@ function FILTERFUNC_itemID(t) return t.itemID and true; end
 -- Only match groups with questID
 function FILTERFUNC_questID(t) return t.questID and true; end
 
+-- Only match groups with recipeID
+function FILTERFUNC_recipeID(t) return t.recipeID and true; end
+
 -- Only match groups with criteriaID
 function FILTERFUNC_criteriaID(t) return t.criteriaID and true; end
 

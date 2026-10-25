@@ -211,7 +211,7 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
-TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(29844, {	-- Blacksmithing (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -299,7 +299,7 @@ TBC_WEAPONSMITHING = applyclassicphase(TBC_PHASE_ONE, sharedData({ timeline = { 
 	r(36131),	-- Windforged Rapier
 	-- #endif
 }));
-WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51300, {	-- Blacksmithing (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -442,7 +442,7 @@ WRATH_WEAPONSMITHING = applyclassicphase(WRATH_PHASE_ONE, sharedData({ timeline 
 	r(55185),	-- Saronite Mindcrusher
 	-- #endif
 }));
-CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_BLACKSMITHING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(76666, {	-- Blacksmithing (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -795,7 +795,7 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, share
 	}),
 	-- #endif
 }));
-MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110396, {	-- Blacksmithing (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -1026,14 +1026,14 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		timeline = { ADDED_10_0_5 },
 	}),
 }));
-LEGION_BLACKSMITHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_BLACKSMITHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260693),	-- Suramar Fence
 		r(1260695),	-- Suramar Fencepost
 		r(1260698),	-- Tauren Soup Pot
 	})),
 }));
-BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_8_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(330174, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330175, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
 	r(330176, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
@@ -1120,7 +1120,7 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { A
 		r(304322, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Spellblade [Rank 1]
 	}),
 }));
-NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDownFiltered({ timeline = { ADDED_8_2_0 } },FILTERFUNC_recipeID, {
 	n(ARMOR, {
 		r(294763),	-- Notorious Combatant's Plate Armguards [Rank 1]
 		r(294748),	-- Notorious Combatant's Plate Boots [Rank 1]
@@ -1142,7 +1142,7 @@ NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timelin
 		r(294772),	-- Notorious Combatant's Spellblade [Rank 1]
 	}),
 }));
-SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(309827),	-- Shadowlands Blacksmithing
 	n(ARMOR, {
 		r(307670),	-- Ceremonious Armguards
@@ -1213,7 +1213,7 @@ SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADD
 		r(307682),	-- Ceremonious Warglaive
 	}),
 }));
-DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(365677),	-- Dragon Isles Blacksmithing
 	n(ARMOR, {
 		r(367611),	-- Explorer's Expert Clasp
@@ -1259,7 +1259,7 @@ DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADD
 		r(367599),	-- Draconium Sword
 	}),
 }));
-TWW_BLACKSMITHING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_BLACKSMITHING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423332),	-- Khaz Algar Blacksmithing
 	n(ARMOR, {
 		r(450266),	-- Dredger's Developed Gauntlets
@@ -1310,7 +1310,7 @@ TWW_BLACKSMITHING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(450253),	-- Ironclaw Sword
 	}),
 });
-MID_BLACKSMITHING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_BLACKSMITHING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471004),	-- Midnight Blacksmithing
 	r(1265668),	-- Artisan Blacksmith's Moxie
 	r(1265676),	-- Concentration

@@ -233,7 +233,7 @@ ARTISAN_TAILORING
 	{}
 -- #endif
 );
-TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(26790, {	-- Tailoring (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -274,7 +274,7 @@ TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED
 		r(26745),	-- Bolt of Netherweave
 	}),
 }));
-WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51309, {	-- Tailoring (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -422,7 +422,7 @@ ETERNIUM_THREAD = applyclassicphase(WRATH_PHASE_ONE, {
 		timeline = { ADDED_3_0_3 },
 	})
 })
-CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(75156, {	-- Tailoring (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -664,7 +664,7 @@ COMMON_CATACLYSM_TAILORING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDat
 	}),
 	-- #endif
 }));
-MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_TAILORING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110426, {	-- Tailoring (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -840,7 +840,7 @@ COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({
 		timeline = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
 }));
-LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263858),	-- Beloved Raptor Plushie
 		r(1260774),	-- Circular Shal'dorei Rug
@@ -848,7 +848,7 @@ LEGION_TAILORING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = {
 		r(1260769),	-- Shal'dorei Open-Air Tent
 	})),
 }));
-BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_8_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(330257, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
 	r(330258, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
 	r(330259, {timeline = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
@@ -920,7 +920,7 @@ BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED
 		r(267201),	-- Tidespray Linen Bandage
 	}),
 }));
-NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDownFiltered({ timeline = { ADDED_8_2_0 } },FILTERFUNC_recipeID, {
 	n(ARMOR, {
 		r(299034),	-- Gilded Seaweave Breeches
 		r(299031),	-- Gilded Seaweave Gloves
@@ -1048,7 +1048,7 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ timeline = { ADDED_1
 		r(376555),	-- Wildercloth Bolt
 	}),
 }));
-TWW_TAILORING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_TAILORING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423343),	-- Khaz Algar Tailoring
 	r(446926),	-- Unraveling
 	r(425143),	-- Recraft Equipment
@@ -1091,7 +1091,7 @@ TWW_TAILORING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(446929),	-- Weavercloth Bolt
 	}),
 });
-MID_TAILORING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_TAILORING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471015),	-- Midnight Tailoring
 	r(1265674),	-- Artisan Tailor's Moxie
 	r(1265682),	-- Concentration

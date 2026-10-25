@@ -2,7 +2,7 @@
 -- INSCRIPTION --
 -----------------
 local SCROLLS = 107;
-CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_2 } }, {
+CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_2 } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261572),	-- Brill Coffin
 		r(1261549),	-- Brill Coffin Lid
@@ -21,7 +21,7 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline =
 		r(1268989),	-- Yellow Dye Pigment
 	})),
 }));
-TBC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_2 } }, {
+TBC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_2 } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1263810),	-- Aldor Bookcase
 		r(1263813),	-- Crystal Signpost
@@ -30,7 +30,7 @@ TBC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { A
 		r(1263814),	-- Talon King's Totem
 	})),
 }));
-WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_2 } }, {
+WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_2 } },FILTERFUNC_recipeID, {
 	r(51005, {	-- Milling
 		-- #if NOT ANYCLASSIC
 		-- TODO: Check Retail ATT if this can be marked collectible, works fine in Classic.
@@ -240,7 +240,7 @@ WRATH_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = {
 		-- #endif
 	}),
 }));
-CATA_INSCRIPTION = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_INSCRIPTION = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1269534),	-- Gilnean Map
 		r(1269540),	-- Gilnean Postbox
@@ -262,7 +262,7 @@ CLASSIC_INSCRIPTION,
 -- #endif
 {}
 );
-MOP_INSCRIPTION = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_INSCRIPTION = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1261237),	-- Hanging Paper Lanterns
 		r(1261241),	-- Lorewalker's Bookcase
@@ -275,7 +275,7 @@ MOP_INSCRIPTION = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = 
 COMMON_DRAENOR_INSCRIPTION_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 }));
 --]]
-LEGION_INSCRIPTION = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_INSCRIPTION = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260711),	-- Covered Square Suramar Table
 		r(1263344),	-- Dalaran Display Shelves
@@ -459,7 +459,7 @@ DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ timeline = { ADDED
 		r(383544),	-- Pioneer's Writhebark Stave
 	}),
 }));
-TWW_INSCRIPTION = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_INSCRIPTION = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423338),	-- Khaz Algar Inscription
 	r(444181),	-- Khaz Algar Milling
 	r(425140),	-- Recraft Equipment
@@ -497,7 +497,7 @@ TWW_INSCRIPTION = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(444196),	-- Inquisitor's Torch
 	}),
 });
-MID_INSCRIPTION = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_INSCRIPTION = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471010),	-- Midnight Inscription
 	r(1269575),	-- Midnight Milling
 	r(1265673),	-- Artisan Scribe's Moxie

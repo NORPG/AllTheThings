@@ -68,7 +68,7 @@ CLASSIC_MINING = {
 	r(3304),	-- Smelt Tin
 	r(10098),	-- Smelt Truesilver
 };
-TBC_MINING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_MINING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(29354, {	-- Mining (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -89,7 +89,7 @@ TBC_MINING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_
 	r(29686),	-- Smelt Hardened Adamantite
 	r(29361),	-- Smelt Khorium
 }));
-WRATH_MINING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_MINING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(50310, {	-- Mining (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -107,7 +107,7 @@ WRATH_MINING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDE
 	r(55211),	-- Smelt Titanium
 	r(55208),	-- Smelt Titansteel
 }));
-CATA_MINING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_MINING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(74517, {	-- Mining (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -129,7 +129,7 @@ CATA_MINING
 {}
 -- #endif
 );
-MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(102161, {	-- Mining (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -157,7 +157,7 @@ DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, {
 		applyclassicphase(BFA_PHASE_ONE, r(265847, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Mining (Draenor)
 	},
 }));
-BFA_MINING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+BFA_MINING = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_8_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(2656),	-- Mining Journal \ Smelting
 	r(253333),	-- Monelite Deposit [Rank 1]
 	r(253342),	-- Monelite Seam [Rank 1]
@@ -165,15 +165,15 @@ BFA_MINING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_
 	r(253336),	-- Storm Silver Deposit [Rank 1]
 	r(253345),	-- Storm Silver Seam [Rank 1]
 }));
-NAZJATAR_MINING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+NAZJATAR_MINING = applyclassicphase(BFA_PHASE_THREE, bubbleDownFiltered({ timeline = { ADDED_8_2_0 } },FILTERFUNC_recipeID, {
 	r(296149),	-- Osmenite Deposit [Rank 1]
 	r(296145),	-- Osmenite Seam [Rank 1]
 }));
-SL_MINING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_MINING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(309835),	-- Mining (Shadowlands)
 	r(2656),	-- Mining Journal \ Smelting
 }));
-DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366260),	-- Mining (Dragon Isles)
 	r(2656),	-- Mining Journal \ Smelting
 	r(396169),	-- Elementally-Charged Stone
@@ -181,13 +181,13 @@ DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0
 	r(396162),	-- Khaz'gorite
 	r(384692),	-- Serevite Deposit
 }));
-TWW_MINING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_MINING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423341),	-- Khaz Algar Mining
 	r(2656),	-- Mining Journal \ Smelting
 	r_withQuest(439705, 80350),	-- Bismuth
 	r(453381),	-- Erosion Polished Slate
 });
-MID_MINING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_MINING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471013),	-- Midnight Mining
 	r(2656),	-- Mining Journal \ Smelting
 	r(1265815),	-- Artisan Miner's Moxie

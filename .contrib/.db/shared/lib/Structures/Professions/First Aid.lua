@@ -1,7 +1,7 @@
 ---------------
 -- FIRST AID --
 ---------------
-APPRENTICE_JOURNEYMAN_EXPERT_FIRST_AID = bubbleDown({ timeline = { REMOVED_8_0_1 } }, {
+APPRENTICE_JOURNEYMAN_EXPERT_FIRST_AID = bubbleDownFiltered({ timeline = { REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(3273, {	-- First Aid (Apprentice)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -43,7 +43,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_FIRST_AID = bubbleDown({ timeline = { REMOVED_8_0_1
 	r(7928),	-- Silk Bandage
 	r(3277),	-- Wool Bandage
 });
-ARTISAN_FIRST_AID = bubbleDown({ timeline = { REMOVED_8_0_1 } }, {
+ARTISAN_FIRST_AID = bubbleDownFiltered({ timeline = { REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(10846, {	-- First Aid (Artisan)
 		timeline = { ADDED_3_1_0, REMOVED_8_0_1 },
 		-- #if NOT ANYCLASSIC

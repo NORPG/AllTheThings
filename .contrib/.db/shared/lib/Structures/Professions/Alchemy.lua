@@ -133,7 +133,7 @@ EXPERT_ARTISAN_ALCHEMY
 	{}
 -- #endif
 );
-TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID,{
 	r(28596, {	-- ALchemy (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -166,7 +166,7 @@ TBC_ALCHEMY = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2
 			r(38070),	-- Mercurial Stone
 		}),
 	}));
-WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51304, {	-- Alchemy (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -224,7 +224,7 @@ WRATH_ALCHEMY = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADD
 		r(60405),	-- Mighty Alchemist Stone
 	}),
 }));
-CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_ALCHEMY = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(80731, {	-- Alchemy (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -295,7 +295,7 @@ CATA_ALCHEMY
 {}
 -- #endif
 );
-MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_ALCHEMY = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(105206, {	-- Alchemy (Zen Master)
 		timeline = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -397,13 +397,13 @@ COMMON_DRAENOR_ALCHEMY_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({ t
 		timeline = { ADDED_11_2_7 },
 	}),
 }));
-LEGION_ALCHEMY = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_ALCHEMY = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1262154),	-- Arcan'dor Cutting Fountain
 		r(1262152),	-- Starry Scrying Pool
 	})),
 }));
-BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_8_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	filter(CONSUMABLES, {
 		r(279159),	-- Battle Potion of Agility [Rank 1]
 		r(279160),	-- Battle Potion of Agility [Rank 2]
@@ -479,7 +479,7 @@ BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8
 		r(286921, {timeline = {ADDED_8_1_0}}),	-- Tidal Alchemist Stone
 	}),
 }));
-NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDownFiltered({ timeline = { ADDED_8_2_0 } },FILTERFUNC_recipeID, {
 	filter(CONSUMABLES, {
 		r(301310),	-- Abyssal Healing Potion [Rank 1]
 		r(301311),	-- Abyssal Healing Potion [Rank 2]
@@ -516,7 +516,7 @@ NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { 
 		r(298995),	-- Abyssal Alchemist Stone
 	}),
 }));
-SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(309822),	-- Shadowlands Alchemy
 	filter(CONSUMABLES, {
 		r(359870, {timeline = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
@@ -568,7 +568,7 @@ SL_ALCHEMY = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0
 		r(307200),	-- Spiritual Alchemy Stone
 	}),
 }));
-DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366261),	-- Dragon Isles Alchemy
 	r(370746),	-- Basic Phial Experimentation
 	r(370743),	-- Basic Potion Experimentation
@@ -591,7 +591,7 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_
 		r(370711),	-- Transmute: Awakened Air
 	}),
 }));
-TWW_ALCHEMY = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_ALCHEMY = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423321),	-- Khaz Algar Alchemy
 	r(425137),	-- Recraft Equipment
 	r(427174),	-- Wild Experimentation
@@ -608,7 +608,7 @@ TWW_ALCHEMY = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(462122),	-- Petal Powder
 	}),
 });
-MID_ALCHEMY = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_ALCHEMY = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471003),	-- Midnight Alchemy
 	r(1265667),	-- Artisan Alchemist's Moxie
 	r(1265675),	-- Concentration

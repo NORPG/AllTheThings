@@ -3,7 +3,7 @@
 -------------------
 local CATA_JC_TOKEN = 361;
 local SECRET_OF_DRAENOR_JEWELCRAFTING = 118723;
-CLASSIC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+CLASSIC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(25229, {	-- Jewelcrafting (Apprentice)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -117,7 +117,7 @@ CLASSIC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline =
 		r(25612, {timeline = {ADDED_4_0_3}}),	-- Heavy Iron Knuckles
 	}),
 }));
-TBC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(28897, {	-- Jewelcrafting (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -227,7 +227,7 @@ TBC_JEWELCRAFTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { A
 		r(38068),	-- Mercurial Adamantite
 	}),
 }));
-WRATH_JEWELCRAFTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_JEWELCRAFTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51311, {	-- Jewelcrafting (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -467,7 +467,7 @@ WRATH_JEWELCRAFTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline =
 		r(56201),	-- Figurine - Twilight Serpent
 	}),
 }));
-TIFFANY_JEWELCRAFTING_RECIPES = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+TIFFANY_JEWELCRAFTING_RECIPES = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	-- #if BEFORE CATA
 	daljewelcraftingtoken(2, i(42298)),	-- Design: Bold Dragon's Eye
 	daljewelcraftingtoken(3, i(41576)),	-- Design: Bold Scarlet Ruby
@@ -763,7 +763,7 @@ TIMOTHY_JEWELCRAFTING_RECIPES = applyclassicphase(WRATH_PHASE_THREE, sharedData(
 	daljewelcraftingtoken(4, i(46952)),	-- Design: Willful Ametrine
 	-- #endif
 }));
-CATA_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_4_0_3 } }, {
+CATA_JEWELCRAFTING = bubbleDownFiltered({ timeline = { ADDED_4_0_3 } },FILTERFUNC_recipeID, {
 	r(73318, {	-- Jewelcrafting (Illustrious Grand Master)
 		timeline = { ADDED_4_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -1192,7 +1192,7 @@ CATA_JEWELCRAFTING
 {}
 -- #endif
 );
-MOP_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_JEWELCRAFTING = bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110420, {	-- Jewelcrafting (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -1436,7 +1436,7 @@ COMMON_DRAENOR_JEWELCRAFTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 		cost = {{"i", SECRET_OF_DRAENOR_JEWELCRAFTING, 1}},
 	}),
 }));
-LEGION_JEWELCRAFTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_JEWELCRAFTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	applyclassicphase(DF_PHASE_ONE, r(382975, {timeline = {ADDED_10_0_2}})),	-- Legion Prospecting
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1313526, { timeline = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp
@@ -1520,7 +1520,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ timelin
 		r(294793),	-- Notorious Combatant's Intuitive Staff
 	}),
 }));
-SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(311967),	-- Shadowlands Jewelcrafting
 	r(325248),	-- Shadowlands Prospecting
 	r(311953),	-- Mass Prospect Elethium
@@ -1576,7 +1576,7 @@ SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADD
 		r(311909),	-- Versatile Solenium Necklace
 	}),
 }));
-DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366250),	-- Dragon Isles Jewelcrafting
 	r(374627),	-- Dragon Isles Prospecting
 	r(395696),	-- Dragon Isles Crushing
@@ -1619,7 +1619,7 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADD
 		r(374475),	-- Shimmering Clasp
 	}),
 }));
-TWW_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_JEWELCRAFTING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423339),	-- Khaz Algar Jewelcrafting
 	r(434018),	-- Algari Prospecting
 	r(434019),	-- Recraft Equipment
@@ -1658,7 +1658,7 @@ TWW_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(435326),	-- Marbled Stone
 	}),
 });
-MID_JEWELCRAFTING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_JEWELCRAFTING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471011),	-- Midnight Jewelcrafting
 	r(1231127),	-- Midnight Prospecting
 	r(471045),	-- Recraft Equipment

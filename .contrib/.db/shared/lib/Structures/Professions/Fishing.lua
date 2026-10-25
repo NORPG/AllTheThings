@@ -41,7 +41,7 @@ CLASSIC_FISHING = {
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 };
-TBC_FISHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_FISHING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(33095, {	-- Fishing (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -55,7 +55,7 @@ TBC_FISHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-WRATH_FISHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_FISHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51294, {	-- Fishing (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -69,7 +69,7 @@ WRATH_FISHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADD
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-CATA_FISHING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_FISHING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(88868, {	-- Fishing (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -88,7 +88,7 @@ CATA_FISHING
 {}
 -- #endif
 );
-MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110410, {	-- Fishing (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -116,7 +116,7 @@ DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, {
 		r(7738),	-- Fishing Poles
 	},
 }));
-LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
+LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3 } },FILTERFUNC_recipeID, {
 	r(227511, {	-- Fishing (Legion Master)
 		timeline = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 		collectible = false,
@@ -125,12 +125,12 @@ LEGION_FISHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { A
 	applyclassicphase(BFA_PHASE_ONE, r(271990, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-SL_FISHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_FISHING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(310675),	-- Shadowlands Fishing
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 }));
-DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366253),	-- Dragon Isles Fishing
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
@@ -145,7 +145,7 @@ DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_
 	r(393062),	-- Temporal Dragonhead School
 	r(393059),	-- Thousandbite Pirahna Swarm
 }));
-TWW_FISHING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_FISHING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423336),	-- Khaz Algar Fishing
 	r(471368, {timeline = {ADDED_11_1_0}}),	-- Blair's "Gold" Fish Exchange
 	r(271990),	-- Fishing Journal
@@ -155,7 +155,7 @@ TWW_FISHING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(471365, {timeline = {ADDED_11_1_0}}),	-- Undermine
 	r(456150),	-- What is an Algari Weaverline?
 });
-MID_FISHING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_FISHING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471008),	-- Midnight Fishing
 	r(1225322),	-- Eversong Woods
 	r(1225340),	-- Midnight Anglin'

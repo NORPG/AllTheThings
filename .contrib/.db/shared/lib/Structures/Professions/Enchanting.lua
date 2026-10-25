@@ -184,7 +184,7 @@ VANILLA_ENCHANTING_COMMON_RECIPES = {
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 };
-TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_2_0_5 } }, {
+TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_2_0_5 } },FILTERFUNC_recipeID, {
 	r(28029, {	-- Enchanting (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -232,7 +232,7 @@ TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDE
 		r(27944),	-- Tough Shield / Lesser Dodge[CATA+]
 	}),
 }));
-WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51313, {	-- Enchanting (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -301,7 +301,7 @@ WRATH_ENCHANTING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { 
 		r(62959, {timeline = {ADDED_3_1_0}}),	-- Spellpower
 	}),
 }));
-CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3 } }, {
+CATA_ENCHANTING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3 } },FILTERFUNC_recipeID, {
 	r(74258, {	-- Enchanting (Illustrious)
 		timeline = { ADDED_4_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -413,7 +413,7 @@ COMMON_CATACLYSM_ENCHANTING_RECIPES = applyclassicphase(CATA_PHASE_ONE, sharedDa
 		timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 	}),
 }));
-MOP_ENCHANTING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_ENCHANTING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(110400, {	-- Enchanting (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -611,7 +611,7 @@ COMMON_DRAENOR_ENCHANTING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData(
 		timeline = { ADDED_7_0_3 },
 	}),
 }));
-LEGION_ENCHANTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3_LAUNCH } }, {
+LEGION_ENCHANTING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1313525, { timeline = { ADDED_12_1_5 } }),	-- Shimmering Lightforged Canister
 		r(1262238),	-- Nightspire Fountain
@@ -815,7 +815,7 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ timeline = { ADDED_
 		r(389546),	-- Wafting Writ
 	}),
 }));
-TWW_ENCHANTING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_ENCHANTING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423334),	-- Khaz Algar Enchanting
 	r(455970, {collectible = false}),	-- Disenchant
 	r(425138),	-- Recraft Equipment
@@ -857,7 +857,7 @@ TWW_ENCHANTING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 		r(445317),	-- Stormrider's Fury
 	}),
 });
-MID_ENCHANTING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_ENCHANTING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471006),	-- Midnight Enchanting
 	r(1280952, {collectible = false}),	-- Disenchant
 	r(1265669),	-- Artisan Enchanter's Moxie
@@ -907,7 +907,7 @@ MID_ENCHANTING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
 		r(1236080),	-- Enchant Weapon - Worldsoul Aegis
 	}),
 });
-MID_JENNARA_ENCHANTING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_JENNARA_ENCHANTING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(1236461),	-- Gleeful Glamour - Blood Elf
 	r(1236463),	-- Gleeful Glamour - Dark Iron Dwarf
 	r(1236465),	-- Gleeful Glamour - Draenei

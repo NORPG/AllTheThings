@@ -62,7 +62,7 @@ CLASSIC_COOKING = {
 	r(3399, {timeline = {ADDED_4_0_3}}),	-- Tasty Lion Steak
 	r(93741, {timeline = {ADDED_4_0_3}}),	-- Venison Jerky
 };
-TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_1_0 } }, {
+TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_1_0 } },FILTERFUNC_recipeID, {
 	r(33359, {	-- Cooking (Master)
 		timeline = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -78,7 +78,7 @@ TBC_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED
 	r(42305, {timeline = {ADDED_4_0_1}}),	-- Hot Buttered Trout
 	r(42296, {timeline = {ADDED_4_0_1}}),	-- Stewed Trout
 }));
-WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3 } }, {
+WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3 } },FILTERFUNC_recipeID, {
 	r(51296, {	-- Cooking (Grand Master)
 		timeline = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -107,7 +107,7 @@ WRATH_COOKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADD
 	r(45564),	-- Smoked Salmon
 	r(45551),	-- Worm Delight
 }));
-CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH } }, {
+CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	r(88053, {	-- Cooking (Illustrious)
 		timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -175,7 +175,7 @@ CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
 	chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
 	chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 }));
-MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 } }, {
+MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 } },FILTERFUNC_recipeID, {
 	r(104381, {	-- Cooking (Zen Master)
 		timeline = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -266,7 +266,7 @@ DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, {
 		r(161001),	-- Saberfish Broth
 	},
 }));
-BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH } }, {
+BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_8_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260337),	-- Boralus-Style Lobster Platter
@@ -302,7 +302,7 @@ BFA_COOKING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ timeline = { ADDED_8
 	r(288027, {timeline = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 1]
 	r(288028, {timeline = {ADDED_8_1_0}}),	-- Wild Berry Bread [Rank 2]
 }));
-NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { ADDED_8_2_0 } }, {
+NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDownFiltered({ timeline = { ADDED_8_2_0 } },FILTERFUNC_recipeID, {
 	r(297084),	-- Abyssal-Fried Rissole [Rank 1]
 	r(297085),	-- Abyssal-Fried Rissole [Rank 2]
 	r(297081),	-- Baked Port Tato [Rank 1]
@@ -315,7 +315,7 @@ NAZJATAR_COOKING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ timeline = { 
 	r(297078),	-- Mech-Dowel's "Big Mech" [Rank 1]
 	r(297079),	-- Mech-Dowel's "Big Mech" [Rank 2]
 }));
-SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0_2_LAUNCH } }, {
+SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_9_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(309830),	-- Shadowlands Cooking
 	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
@@ -338,7 +338,7 @@ SL_COOKING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ timeline = { ADDED_9_0
 	r(308425),	-- Sweet Silvergill Sausages
 	r(308405),	-- Tenebrous Crown Roast Aspic
 }));
-DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_0_2_LAUNCH } }, {
+DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366256),	-- Dragon Isles Cooking
 	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
@@ -360,7 +360,7 @@ DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ timeline = { ADDED_10_
 	r(381365),	-- Twice-Baked Potato
 	r(381381),	-- Zesty Water
 }));
-TWW_COOKING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
+TWW_COOKING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recipeID, {
 	r(423333),	-- Khaz Algar Cooking
 	r(818),	-- Cooking Fire
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
@@ -403,7 +403,7 @@ TWW_COOKING = bubbleDown({ timeline = { ADDED_11_0_2 } }, {
 	r(445084),	-- Unseasoned Field Steak
 	r(445094),	-- Zesty Nibblers
 });
-MID_COOKING = bubbleDown({ timeline = { ADDED_12_0_1_LAUNCH } }, {
+MID_COOKING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471005),	-- Midnight Cooking
 	r(818),	-- Cooking Fire
 	r(1295534, {timeline = { ADDED_12_1_0 }}),	-- Amani Cornucopia
