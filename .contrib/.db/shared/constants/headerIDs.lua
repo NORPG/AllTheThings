@@ -682,6 +682,11 @@ HeaderAssignments = {
 	["Treasures"] = -56,
 	["Treasures of Azeroth"] = -691,
 	["Trial of Style"] = -38,
+	["Tricks and Treats of Eastern Kingdoms"] = -815,
+	["Tricks and Treats of Kalimdor"] = -816,
+	["Tricks and Treats of Northrend"] = -813,
+	["Tricks and Treats of Outland"] = -814,
+	["Tricks and Treats of the Cataclysm"] = -812,
 	["Trinket"] = -99,
 	["Tutorials"] = -704,
 	["Twilight Assist"] = -659,
@@ -791,4 +796,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -812
+NextHeaderID = -817

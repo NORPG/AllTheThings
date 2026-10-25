@@ -2032,6 +2032,11 @@ localize(L.HEADER_NAMES, {
 	[-797] = "World of Warcraft: Forever",
 	[-798] = select(2,GetAchievementInfo(63714)),
 	[-800] = "Alliance Outrunners",
+	[-812] = "Tricks and Treats of the Cataclysm",
+	[-813] = "Tricks and Treats of Northrend",
+	[-814] = "Tricks and Treats of Outland",
+	[-815] = "Tricks and Treats of Eastern Kingdoms",
+	[-816] = "Tricks and Treats of Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2815,6 +2820,11 @@ localize(L.HEADER_ICONS, {
 	[-797] = 1120721,
 	[-798] = 133783,
 	[-800] = 236449,
+	[-812] = 133981,
+	[-813] = 133982,
+	[-814] = 133985,
+	[-815] = 133983,
+	[-816] = 236546,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -27761,6 +27771,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Verweilende Schatten",
 	[-759] = "Konfrontationen",
 	[-770] = "Fluchwellen",
+	[-812] = "Süßes oder Saures von Cataclysm",
+	[-813] = "Süßes oder Saures in Nordend",
+	[-814] = "Süßes oder Saures in der Scherbenwelt",
+	[-815] = "Süßes oder Saures in den Östlichen Königreichen",
+	[-816] = "Süßes oder Saures in Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -36518,6 +36533,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Ombres Persistantes",
 	[-759] = "Épreuve de force",
 	[-770] = "Vagues de Malédiction",
+	[-812] = "Bonbons et blagues du Cataclysme",
+	[-813] = "Bonbons et blagues du Norfendre",
+	[-814] = "Bonbons et blagues d'Outreterre",
+	[-815] = "Bonbons et blagues des royaumes de l'Est",
+	[-816] = "Bonbons et blagues de Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -44957,6 +44977,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Ombre Persistenti",
 	[-759] = "Scontro Decisivo",
 	[-770] = "Scariche di Maledizione",
+	[-812] = "Dolcetti o scherzetti del Cataclisma",
+	[-813] = "Dolcetti o scherzetti di Nordania",
+	[-814] = "Dolcetti o scherzetti delle Terre Esterne",
+	[-815] = "Dolcetti o scherzetti dei Regni Orientali",
+	[-816] = "Dolcetti o scherzetti di Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -52810,6 +52835,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Sombras Duradouras",
 	[-759] = "Confronto Final",
 	[-770] = "Surtos Malditos",
+	[-812] = "Gostosuras e Travessuras do Cataclismo",
+	[-813] = "Gostosuras e Travessuras de Nortúndria",
+	[-814] = "Gostosuras e Travessuras de Terralém",
+	[-815] = "Gostosuras e Travessuras dos Reinos do Leste",
+	[-816] = "Gostosuras e Travessuras de Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -61768,6 +61798,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "Последние тени",
 	[-759] = "Решающая схватка",
 	[-770] = "Проклятых Натисков",
+	[-812] = "'Конфета или жизнь' после Катаклизма",
+	[-813] = "'Конфета или жизнь' в Нордсколе",
+	[-814] = "'Конфета или жизнь' в Запределье",
+	[-815] = "'Конфета или жизнь' в Восточных королевствах",
+	[-816] = "'Конфета или жизнь' в Калимдоре",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -70267,6 +70302,11 @@ localize(L.HEADER_NAMES, {
 	[-758] = "남겨진 그림자",
 	[-759] = "최후의 대결",
 	[-770] = "저주받은 쇄도",
+	[-812] = "대격변의 할로윈",
+	[-813] = "노스렌드의 할로윈",
+	[-814] = "아웃랜드의 할로윈",
+	[-815] = "동부 왕국의 할로윈",
+	[-816] = "칼림도어의 할로윈",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -78944,6 +78984,11 @@ localize(L.HEADER_NAMES, {
 	[-760] = "Aventura del Año Nuevo Lunar",
 	[-767] = "Tesoro Escondido de las Tierras Azures",
 	[-770] = "Oleadas Malditas",
+	[-812] = "Truco o trato en Cataclysm",
+	[-813] = "Truco o trato en Rasganorte",
+	[-814] = "Truco o trato en Terrallende",
+	[-815] = "Truco o trato en los Reinos del Este",
+	[-816] = "Truco o trato en Kalimdor",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -91145,6 +91190,11 @@ localize(L.HEADER_NAMES, {
 	[-795] = "魔兽無限收藏",
 	[-797] = "魔兽世界：无限",
 	[-800] = "联盟斥候",
+	[-812] = "灾变后的糖果",
+	[-813] = "诺森德的糖果",
+	[-814] = "外域的糖果",
+	[-815] = "东部王国的糖果",
+	[-816] = "卡利姆多的糖果",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -99783,6 +99833,11 @@ localize(L.HEADER_NAMES, {
 	[-790] = "亞基入侵",
 	[-795] = "魔獸永恆收藏",
 	[-797] = "魔獸世界：永恆",
+	[-812] = "浩劫與重生之不給糖就搗蛋",
+	[-813] = "北裂境之不給糖就搗蛋",
+	[-814] = "外域之不給糖就搗蛋",
+	[-815] = "東部王國之不給糖就搗蛋",
+	[-816] = "卡林多之不給糖就搗蛋",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",
