@@ -2,12 +2,12 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(PRIEST, bubbleDownSelf({ classes = { PRIEST } }, {
 			maps = { NETHERLIGHT_TEMPLE },
 			groups = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+				n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_11_2_7 } }, {
 					ach(42294, {	-- Hidden Potential of the High Priest
 						i(250790),	-- Replica Altar of Light and Shadow (DECOR!)
 					}),
@@ -952,7 +952,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 			},
 		})),
 	}),
-})));
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {

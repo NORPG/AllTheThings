@@ -727,6 +727,8 @@ applyDataSelf = function(data, t)
 	applyData(data, t);
 	return t
 end
+-- Simpler way to applyDataSelf in a more readable wording
+with = applyDataSelf
 -- Applies a function against the group and all sub-groups
 --- Recursively applies a function to a group and all of its nested groups.
 --- Invokes the function after visiting children, including on array containers.
@@ -860,6 +862,8 @@ sharedDataSelf = function(data, t)
 	end
 	return t
 end
+-- Simpler way to sharedDataSelf in a more readable wording
+withShared = sharedDataSelf
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 --- Recursively applies missing fields from `data` to all nested groups.
 --- Recursively propagates shared metadata to descendant parser objects.

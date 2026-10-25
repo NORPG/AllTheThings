@@ -220,7 +220,7 @@ local THE_HINTERLANDS_ACTIVATED = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 			maps = {
@@ -247,7 +247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 						479,	-- Elfin Rabbit (PET!)
 					}},
 				})),
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+				n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_11_2_7 } }, {
 					ach(42289, {	-- Hidden Potential of the Archdruid
 						i(250134),	-- Seed of Ages Cutting (DECOR!)
 					}),
@@ -1446,7 +1446,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 			},
 		})),
 	}),
-})));
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {

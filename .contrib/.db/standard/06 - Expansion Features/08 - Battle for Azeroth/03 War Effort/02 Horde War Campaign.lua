@@ -917,7 +917,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 					}),
 				}),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_1_0 } }, {
+				n(QUESTS, withShared({ timeline = { ADDED_8_1_0 } }, {
 					q(54097, {	-- The Dark Lady Calls
 						sourceQuests = { 54165 },	-- The Return of Derek Proudmoore
 						provider = { "n", 146013 },	-- Dark Ranger Alina
@@ -1007,7 +1007,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						races = HORDE_ONLY,
 					}),
 				})),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_1_5 } }, {
+				n(QUESTS, withShared({ timeline = { ADDED_8_1_5 } }, {
 					header(HEADERS.AchCriteria, 13466.01, {	-- The Day is Won
 						q(53850, {	-- Our War Continues
 							sourceQuests = { 53003 },	-- A Cycle of Hatred
@@ -1569,7 +1569,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						races = HORDE_ONLY,
 					}),
 				})),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_2_0 } }, {
+				n(QUESTS, withShared({ timeline = { ADDED_8_2_0 } }, {
 					q(55778, {	-- Visions of Danger
 						sourceQuests = { 55051 },	-- A Display of Power
 						provider = { "n", 151848 },	-- Lor'themar Theron
@@ -1616,7 +1616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						races = HORDE_ONLY,
 					}),
 				})),
-				n(QUESTS, bubbleDownSelf({ timeline = { ADDED_8_2_5 } }, {
+				n(QUESTS, withShared({ timeline = { ADDED_8_2_5 } }, {
 					q(56496, {	-- The Eve of Battle
 						sourceQuests = {
 							55779,	-- Stay of Execution

@@ -2,12 +2,12 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline = { ADDED_7_0_3 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
 		cl(DEMONHUNTER, bubbleDownSelf({ classes = { DEMONHUNTER } }, {
 			maps = { MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER, MARDUM_THE_SHATTERED_ABYSS_LOWER_COMMAND_CENTER },
 			groups = {
-				n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {
+				n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_11_2_7 } }, {
 					ach(42288, {	-- Hidden Potential of the Slayer
 						i(249457),	-- Replica Cursed Forge of the Nathrezim (DECOR!)
 					}),
@@ -1156,7 +1156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ timeline 
 			},
 		})),
 	}),
-})));
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {

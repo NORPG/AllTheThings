@@ -336,13 +336,3 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 		},
 	}),
 })));
-
---[[
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
-	header(HEADERS.Faction, FACTION_THE_LOREWALKERS, {
-		n(QUESTS, {
-
-		}),
-	}),
-})));
-]]--
