@@ -4,9 +4,9 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local flt,h,i,mnt,p,q,s,toy,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Promotions=
 h(-736,{SortPriority=90,g={
-h(-520,{
-p(107,{awp=11101,b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
-toy(33079,{awp=20103,b=1,q=3,u=2})}),
+h(-520,{awp=11101,g={
+p(107,{b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
+toy(33079,{awp=20103,b=1,q=3,u=2})}}),
 x(2,{awp=20003,u=3,g={
 q(63768,{altQuests={63767},coords={
 [1434]={{28.2,75.8}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
@@ -21,8 +21,8 @@ q(96254,{altQuests={96253},awp=20505,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
 i(273162,{u=2,g={
 mnt(1291813,{description="Earned by completing the introductory questline for Midnight in retail servers",itemID=273150,lvl=70,u=2})}})}})}}),
-h(-521,{u=3,g={
-x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
+h(-521,{awp=10100,u=3,g={
+x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{awp=11505,rwp=40006,u=3,g={
 q(91888,{coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=3,g={
@@ -33,9 +33,9 @@ q(63865,{awp=20501,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30400,u=3,g={
 p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=3}))}}),
-h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=20505,u=2,g={
+h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
 q(63450,{coords={
-[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
 toy(184871,{u=2}),
 toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{itemID=184865,lvl=30,u=2})}})}}),
@@ -53,16 +53,16 @@ p(124,{b=1,itemID=22781,petTypeID=8,q=1,spellID=28505,u=2}),
 p(1073,{b=1,itemID=22780,petTypeID=1,q=3,spellID=28487,u=2}),
 p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
 p(758,{b=1,itemID=19054,petTypeID=2,q=1,spellID=23530,u=2})}}),
-h(-547,{
-s(129974,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
+h(-547,{awp=11101,g={
+s(129974,19160,{b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
 p(155,{awp=20100,b=1,description="Reward from the 2007 Korean Worldwide Invitational (Korea Only)",itemID=32498,petTypeID=5,q=3,spellID=40405,u=2}),
 p(1168,{awp=20100,b=1,description="Reward from a Korean Promotional Event (Korea Only)",itemID=20651,petTypeID=1,q=3,spellID=25018,u=2}),
 p(121,{awp=20003,b=1,description="Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",itemID=22114,petTypeID=1,q=3,spellID=27241,u=2}),
-p(189,{awp=20402,b=1,description="Reward from the 2008 Worldwide Invitational in Paris.",itemID=39656,petTypeID=1,q=3,spellID=53082,u=2})}),
-h(-548,{
+p(189,{awp=20402,b=1,description="Reward from the 2008 Worldwide Invitational in Paris.",itemID=39656,petTypeID=1,q=3,spellID=53082,u=2})}}),
+h(-548,{awp=20300,g={
 mnt(49322,{awp=20403,b=1,itemID=37719,lvl=60,q=4,u=2}),
-p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
-p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}),
+p(170,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
+p(171,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}}),
 h(-551,{awp=20001,u=2,g={
 flt(101,{u=2,g={
 p(156,{b=1,itemID=32588,petTypeID=8,q=3,spellID=40549,u=2}),

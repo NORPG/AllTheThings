@@ -5,7 +5,7 @@ local ach,ah,artifact,cat,cl,cq,crit,cu,de,en,faction,flt,h,heir,i,mnt,n,o,p,pn,
 categories.Professions=
 h(-44,{SortPriority=25,g={
 prof(794,{awp=40003,g={
-x(7,{requireSkill=794,g={
+x(7,{awp=70003,requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(10602,{requireSkill=794,sym={{"partial_achievement",10603}},g={
 cl(1,{requireSkill=794,g={
@@ -56,7 +56,7 @@ artifact(276,{b=1,c={11},isOffHand=1,itemID=128822,requireSkill=794,sourceID=973
 cl(12,{requireSkill=794,g={
 artifact(32,{b=1,c={12},collectible=false,isOffHand=1,itemID=127830,requireSkill=794,sourceID=72817}),
 artifact(561,{b=1,c={12},isOffHand=1,itemID=128831,requireSkill=794,sourceID=77221})}}),
-crit(32162,{achID=10747,awp=70003,id=4,rwp=80001,u=2})}}),
+crit(32162,{achID=10747,id=4,rwp=80001,u=2})}}),
 ach(10600,{requireSkill=794}),
 ach(10604,{requireSkill=794}),
 ach(10603,{requireSkill=794}),
@@ -383,7 +383,7 @@ i(87540,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(385,{requireSkill=794})}}),
 i(87541,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(399,{requireSkill=794})}})}})}}),
-x(5,{requireSkill=794,g={
+x(5,{awp=50004,requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(6837,{requireSkill=794}),
 ach(8223,{awp=50200,providers={{"i",95376}},requireSkill=794}),
@@ -602,7 +602,7 @@ i(117387,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(677,{requireSkill=794})}}),
 i(117386,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(676,{requireSkill=794})}})}})}}),
-x(6,{requireSkill=794,g={
+x(6,{awp=60003,requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(9409,{requireSkill=794}),
 ach(9414,{requireSkill=794,g={
@@ -862,7 +862,7 @@ i(142114,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(821,{requireSkill=794})}}),
 i(142115,{b=1,cost={{"i",87399,1}},requireSkill=794,g={
 cu(828,{requireSkill=794})}})}})}}),
-x(8,{requireSkill=794,g={
+x(8,{awp=80001,requireSkill=794,g={
 h(-12,{requireSkill=794,g={
 ach(12760,{r=2,requireSkill=794}),
 ach(12761,{r=1,requireSkill=794}),
@@ -946,8 +946,8 @@ i(87399,{b=1,requireSkill=794}),
 i(154989),
 crit(40836,{achID=12762,id=8,r=2,requireSkill=794}),
 crit(40836,{achID=12764,id=8,r=1,requireSkill=794})}})}})}})}})}}),
-h(-12,{
-x(1,{awp=10100,g={
+h(-12,{awp=10100,g={
+x(1,{
 ach(18720,{awp=100107,g={
 crit(40050,{achID=18720,id=1,learnedAt=300,requireSkill=171}),
 crit(40051,{achID=18720,id=2,learnedAt=300,requireSkill=164}),
@@ -968,7 +968,7 @@ ach(17412,{awp=100007,rwp=100007,u=2}),
 ach(17410,{awp=100007,rwp=100007,u=2}),
 ach(18898,{awp=100107,g={
 crit(61656,{achID=18898,maps={287},providers={{"i",15138},{"n",11583}}}),
-crit(61657,{achID=18898,maps={286},providers={{"i",15138},{"n",41376}}})}})}}),
+crit(61657,{achID=18898,maps={286},providers={{"i",15138},{"n",41376}}})}})}),
 x(2,{awp=20003,g={
 ach(733,{awp=30002}),
 ach(18721,{awp=100107,g={
@@ -1376,14 +1376,14 @@ crit(105195,{achID=61440,id=8,learnedAt=100,requireSkill=165}),
 crit(103732,{achID=61440,id=9,learnedAt=100,requireSkill=186}),
 crit(103872,{achID=61440,id=10,learnedAt=100,requireSkill=393}),
 crit(103369,{achID=61440,id=11,learnedAt=100,requireSkill=197})}),
-ach(61441)}})}),
+ach(61441)}})}}),
 h(-489,{awp=100002,g={
 h(-12,{
 ach(16791,{
 title(485)}),
 ach(16799,{
 title(486)})}),
-h(-490,{
+h(-490,{awp=110002,g={
 x(11,{
 i(225670),
 i(227713,{b=1}),
@@ -1422,7 +1422,7 @@ i(228739,{b=1,requireSkill=197,spellID=462917,g={
 cu(2795)}}),
 i(225671),
 i(225672)}),
-x(12,{
+x(12,{awp=120001,g={
 i(246447,{spellID=1269450}),
 i(246450,{b=1}),
 i(246585,{b=1}),
@@ -1466,8 +1466,8 @@ i(246449,{spellID=1269452}),
 i(247719,{b=1,spellID=1269427,g={
 i(247724,{b=1})}}),
 i(247725,{b=1,spellID=1269426,g={
-i(247726,{b=1})}})})})}}),
-prof(171,{
+i(247726,{b=1})}})}})}})}}),
+prof(171,{awp=10100,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18733,{requireSkill=171}),
 ach(18732,{requireSkill=171}),
@@ -1515,11 +1515,11 @@ ach(18737,{requireSkill=171}),
 ach(18736,{requireSkill=171}),
 ach(18735,{requireSkill=171}),
 ach(18734,{requireSkill=171})}}),
-x(1,{awp=10100,requireSkill=171,g={
+x(1,{requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18723,{requireSkill=171,sourceQuests={29067,29481,29482},sqreq=1})}}),
-h(-45,{requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
-q(29481,{awp=40300,coords={
+h(-45,{awp=40300,requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
+q(29481,{coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1527,7 +1527,7 @@ q(29481,{awp=40300,coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28677,{collectible=false,requireSkill=171})}}),
-q(29067,{awp=40300,coords={
+q(29067,{coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1535,7 +1535,7 @@ q(29067,{awp=40300,coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28675,{collectible=false,requireSkill=171})}}),
-q(29482,{awp=40300,coords={
+q(29482,{coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1665,10 +1665,10 @@ r(247688,{b=1,itemID=151703,lvl=10,requireSkill=171,skillID=2479})}})}}),
 x(8,{awp=80001,requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18770,{providers={{"i",156631}},requireSkill=171})}}),
-h(-45,{requireSkill=171,g={
-q(54463,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=171,g={
+q(54463,{coords={
 [1161]={{74.2,6.6}}},lvl=10,qgs={132228},r=2,requireSkill=171,rwp=90001,u=2}),
-q(54464,{awp=80100,coords={
+q(54464,{coords={
 [1165]={{42.2,38}}},lvl=10,qgs={122703},r=1,requireSkill=171,rwp=90001,u=2}),
 q(50121,{awp=80105,coords={
 [1161]={{74.2,6.5}}},description="This quest chain requires 150 in Kul Tiran Alchemy.",lvl=50,qgs={132228},r=2,requireSkill=171,g={
@@ -2045,8 +2045,8 @@ cu(3150,{requireSkill=171})}}),
 q(93529,{isWeekly=1,qss={259189},requireSkill=171,g={
 cu(3150,{requireSkill=171})}}),
 q(93528,{isWeekly=1,qss={259188},requireSkill=171,g={
-cu(3150,{requireSkill=171})}})}})}})}),
-prof(164,{
+cu(3150,{requireSkill=171})}})}})}})}}),
+prof(164,{awp=10100,g={
 h(-12,{awp=100107,requireSkill=164,g={
 ach(18862,{providers={{"s",419572}},requireSkill=164}),
 ach(18864,{providers={{"s",419572}},requireSkill=164}),
@@ -2064,7 +2064,7 @@ crit(61552,{achID=18851,id=8,providers={{"s",122633}}}),
 crit(61553,{achID=18851,id=9,providers={{"s",269064}}}),
 crit(61554,{achID=18851,id=10,providers={{"s",307721}}}),
 crit(61555,{achID=18851,id=11,providers={{"i",194507}}})}})}}),
-x(1,{awp=10100,requireSkill=164,g={
+x(1,{requireSkill=164,g={
 h(-12,{awp=100007,requireSkill=164,g={
 ach(18765,{awp=100107,providers={{"s",21161}},requireSkill=164}),
 ach(17497,{requireSkill=164,rwp=100007,sourceQuests={5283,5301},sqreq=1,u=2}),
@@ -2319,10 +2319,10 @@ i(151871,{requireSkill=164})}})}}),
 x(8,{awp=80001,requireSkill=164,g={
 h(-12,{awp=100107,requireSkill=164,g={
 ach(18771,{providers={{"i",152839}},requireSkill=164})}}),
-h(-45,{requireSkill=164,g={
-q(54465,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=164,g={
+q(54465,{coords={
 [1161]={{73.6,8.6}}},lvl=10,qgs={133536},r=2,requireSkill=164,rwp=90001,u=2}),
-q(54466,{awp=80100,coords={
+q(54466,{coords={
 [1165]={{43.6,38.3}}},lvl=10,qgs={127112},r=1,requireSkill=164,rwp=90001,u=2}),
 q(50123,{awp=80105,coords={
 [1161]={{73.6,8.6}}},description="Requires 150 Kul Tiran Blacksmithing.",lvl=50,qgs={133536},r=2,requireSkill=164,g={
@@ -2725,27 +2725,27 @@ cu(3151,{requireSkill=164})}}),
 q(93531,{isWeekly=1,qss={259191},requireSkill=164,g={
 cu(3151,{requireSkill=164})}}),
 q(93530,{isWeekly=1,qss={259190},requireSkill=164,g={
-cu(3151,{requireSkill=164})}})}})}})}),
-prof(185,{
-h(-12,{requireSkill=185,g={
-ach(1563,{awp=30002,requireSkill=185,g={
+cu(3151,{requireSkill=164})}})}})}})}}),
+prof(185,{awp=10100,g={
+h(-12,{awp=30002,requireSkill=185,g={
+ach(1563,{requireSkill=185,g={
 title(52,{requireSkill=185})}}),
 ach(18817,{awp=100107,rank=450,requireSkill=185}),
 ach(18816,{awp=100107,rank=300,requireSkill=185}),
 ach(7328,{awp=50004,rank=240,requireSkill=185}),
 ach(5471,{awp=40003,rank=200,requireSkill=185}),
-ach(1799,{awp=30002,rank=160,requireSkill=185}),
-ach(1798,{awp=30002,rank=100,requireSkill=185,g={
+ach(1799,{rank=160,requireSkill=185}),
+ach(1798,{rank=100,requireSkill=185,g={
 crit(6756,{achID=1563,id=9})}}),
-ach(1797,{awp=30002,rank=75,requireSkill=185}),
-ach(1796,{awp=30002,rank=50,requireSkill=185}),
-ach(1795,{awp=30002,rank=25,requireSkill=185}),
-ach(1998,{awp=30002,cost={{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
-ach(1999,{awp=30002,cost={{"c",402,10}},rank=10,requireSkill=185}),
-ach(2000,{awp=30002,cost={{"c",402,25}},rank=25,requireSkill=185}),
-ach(2001,{awp=30002,cost={{"c",402,50}},rank=50,requireSkill=185}),
-ach(2002,{awp=30002,cost={{"c",402,100}},rank=100,requireSkill=185})}}),
-x(1,{awp=10100,requireSkill=185,g={
+ach(1797,{rank=75,requireSkill=185}),
+ach(1796,{rank=50,requireSkill=185}),
+ach(1795,{rank=25,requireSkill=185}),
+ach(1998,{cost={{"c",402,1}},providers={{"i",57142},{"i",57757}},rank=1,requireSkill=185}),
+ach(1999,{cost={{"c",402,10}},rank=10,requireSkill=185}),
+ach(2000,{cost={{"c",402,25}},rank=25,requireSkill=185}),
+ach(2001,{cost={{"c",402,50}},rank=50,requireSkill=185}),
+ach(2002,{cost={{"c",402,100}},rank=100,requireSkill=185})}}),
+x(1,{requireSkill=185,g={
 ach(123,{awp=30002,requireSkill=185}),
 ach(122,{awp=30002,requireSkill=185}),
 ach(121,{awp=30002,requireSkill=185})}}),
@@ -3238,10 +3238,10 @@ crit(40803,{achID=12746,id=11,providers={{"i",162297}},r=1}),
 crit(40804,{achID=12746,id=12,providers={{"s",259427}},r=1}),
 crit(40805,{achID=12746,id=12,providers={{"s",259428}},r=1}),
 crit(40806,{achID=12746,id=12,providers={{"i",162291}},r=1})}})}}),
-h(-45,{requireSkill=185,g={
-q(54469,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=185,g={
+q(54469,{coords={
 [1161]={{71.2,10.8}}},lvl=10,qgs={136052},r=2,requireSkill=185,rwp=90001,u=2}),
-q(54470,{awp=80100,coords={
+q(54470,{coords={
 [1164]={{28.5,50}}},lvl=10,qgs={141549},r=1,requireSkill=185,rwp=90001,u=2})}})}}),
 x(9,{awp=90002,requireSkill=185,g={
 ach(14332,{requireSkill=185})}}),
@@ -3263,8 +3263,8 @@ ach(19414,{requireSkill=185})}})}}),
 x(12,{awp=120001,requireSkill=185,g={
 h(-12,{requireSkill=185,g={
 ach(42795,{requireSkill=185,g={
-de(15404,{itemID=263999,requireSkill=185,sourceAchievements={42795},spellID=1271030})}})}})}})}),
-prof(333,{
+de(15404,{itemID=263999,requireSkill=185,sourceAchievements={42795},spellID=1271030})}})}})}})}}),
+prof(333,{awp=60003,g={
 h(-12,{awp=100107,requireSkill=333,g={
 ach(18766,{requireSkill=333}),
 ach(18767,{requireSkill=333}),
@@ -3293,7 +3293,7 @@ crit(61137,{achID=18789,cost={{"i",12810,20}},id=2,providers={{"s",17181}},requi
 crit(61138,{achID=18789,cost={{"i",172437,20}},id=3,providers={{"s",309636}},requireSkill=333}),
 crit(61139,{achID=18789,cost={{"i",172438,20}},id=4,providers={{"s",309637}},requireSkill=333}),
 crit(61140,{achID=18789,cost={{"i",172439,20}},id=5,providers={{"s",309638}},requireSkill=333})}})}}),
-x(6,{awp=60003,requireSkill=333,g={
+x(6,{requireSkill=333,g={
 q(36308,{altQuests={36255},description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={115281},r=2,requireSkill=333}),
 q(36255,{altQuests={36308},description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={115008},r=1,requireSkill=333})}}),
 x(7,{awp=70003,requireSkill=333,g={
@@ -3389,10 +3389,10 @@ r(217649,{learnedAt=70,requireSkill=333,skillID=2491})}})}}),
 x(8,{awp=80001,requireSkill=333,g={
 h(-12,{awp=100107,requireSkill=333,g={
 ach(18775,{providers={{"s",287494}},requireSkill=333})}}),
-h(-45,{requireSkill=333,g={
-q(54473,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=333,g={
+q(54473,{coords={
 [1161]={{74.1,11.4}}},lvl=10,qgs={136041},r=2,requireSkill=333,rwp=90001,u=2}),
-q(54474,{awp=80100,coords={
+q(54474,{coords={
 [1165]={{47,35.8}}},lvl=10,qgs={122702},r=1,requireSkill=333,rwp=90001,u=2}),
 q(54005,{awp=80105,coords={
 [1161]={{74.2,11.3}}},description="This quest chain requires 150 in Kul Tiran Enchanting.",lvl=50,qgs={136041},r=2,requireSkill=333}),
@@ -3813,8 +3813,8 @@ cu(3152,{requireSkill=333})}}),
 q(95052,{description="Rewarded when disenchanting items.",isWeekly=1,qss={267654},requireSkill=333,g={
 cu(3152,{requireSkill=333})}}),
 q(95053,{description="Rewarded when disenchanting items.",isWeekly=1,qss={267655},requireSkill=333,g={
-cu(3152,{requireSkill=333})}})}})}})}),
-prof(202,{
+cu(3152,{requireSkill=333})}})}})}})}}),
+prof(202,{awp=10100,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18901,{requireSkill=202,g={
 en(209062,{b=1,questID=78030,requireSkill=202,spellID=422554,tmogSetID=3123,g={
@@ -3883,7 +3883,7 @@ crit(61590,{achID=18855,id=9,providers={{"i",168807}},requireSkill=202}),
 crit(61591,{achID=18855,id=10,providers={{"i",168808}},requireSkill=202}),
 crit(61592,{achID=18855,id=11,providers={{"i",172924}},requireSkill=202}),
 crit(61593,{achID=18855,id=12,providers={{"i",198156}},requireSkill=202})}})}}),
-x(1,{awp=10100,requireSkill=202,g={
+x(1,{requireSkill=202,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18730,{requireSkill=202,sourceQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29475,29477},sqreq=1})}}),
 h(-45,{awp=40300,requireSkill=202,g={
@@ -4084,10 +4084,10 @@ i(151926,{requireSkill=202,spellID=250734})}})}})}}),
 x(8,{awp=80001,requireSkill=202,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18776,{providers={{"i",164740}},requireSkill=202})}}),
-h(-45,{requireSkill=202,g={
-q(54475,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=202,g={
+q(54475,{coords={
 [1161]={{77.4,14.2}}},lvl=10,qgs={136059},r=2,requireSkill=202,rwp=90001,u=2}),
-q(54476,{awp=80100,coords={
+q(54476,{coords={
 [1165]={{45.1,40.6}}},lvl=10,qgs={131840},r=1,requireSkill=202,rwp=90001,u=2}),
 q(55028,{awp=80105,coords={
 [1161]={{77.4,14.2}}},description="Requires 150 Kul Tiran Engineering.",lvl=50,qgs={136059},r=2,requireSkill=202,g={
@@ -4495,7 +4495,7 @@ cu(3153,{requireSkill=202})}}),
 q(93534,{isWeekly=1,qss={259194},requireSkill=202,g={
 cu(3153,{requireSkill=202})}}),
 q(93535,{isWeekly=1,qss={259195},requireSkill=202,g={
-cu(3153,{requireSkill=202})}})}})}})}),
+cu(3153,{requireSkill=202})}})}})}})}}),
 prof(129,{awp=10001,rwp=80001,u=2,g={
 x(1,{awp=30002,requireSkill=129,u=2,g={
 ach(131,{requireSkill=129,u=2}),
@@ -4532,20 +4532,20 @@ crit(34885,{achID=11139,description="Southern Stormheim.",id=14,itemID=139530,ma
 crit(34886,{achID=11139,crs={88099,88101,108146},description="Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",id=15,itemID=139521,maps={76},providers={{"s",232783}},requireSkill=129,u=2}),
 crit(34887,{achID=11139,crs={105625,105753,113162},description="Fal'dorei Tunnels.",id=16,itemID=139533,maps={680},providers={{"s",232785}},requireSkill=129,u=2})}}),
 ach(11138,{requireSkill=129,sym={{"partial_achievement",11139}},u=2})}})}}),
-prof(356,{
-h(-12,{requireSkill=356,g={
+prof(356,{awp=10100,g={
+h(-12,{awp=30002,requireSkill=356,g={
 ach(1516,{awp=30003,requireSkill=356,g={
 title(51,{requireSkill=356})}}),
-ach(1556,{awp=30002,rank=25,requireSkill=356}),
-ach(1557,{awp=30002,rank=50,requireSkill=356}),
-ach(1558,{awp=30002,rank=100,requireSkill=356}),
-ach(1559,{awp=30002,rank=250,requireSkill=356}),
-ach(1560,{awp=30002,rank=500,requireSkill=356}),
-ach(1561,{awp=30002,rank=1000,requireSkill=356,g={
+ach(1556,{rank=25,requireSkill=356}),
+ach(1557,{rank=50,requireSkill=356}),
+ach(1558,{rank=100,requireSkill=356}),
+ach(1559,{rank=250,requireSkill=356}),
+ach(1560,{rank=500,requireSkill=356}),
+ach(1561,{rank=1000,requireSkill=356,g={
 crit(5762,{achID=1516,awp=30003,id=14})}}),
-ach(1243,{awp=30002,providers={{"s",43308}},requireSkill=356,g={
+ach(1243,{providers={{"s",43308}},requireSkill=356,g={
 crit(5673,{achID=1516,awp=30003,id=13})}}),
-ach(878,{awp=30002,requireSkill=356,g={
+ach(878,{requireSkill=356,g={
 crit(1842,{achID=878,id=8,providers={{"i",13880}}}),
 crit(1844,{achID=878,id=11,providers={{"i",19808}}}),
 crit(1846,{achID=878,id=9,providers={{"i",44703}}}),
@@ -4632,12 +4632,12 @@ crit(15939,{achID=5479,id=11,providers={{"i",53070}}}),
 crit(15940,{achID=5479,id=19,providers={{"i",53069}}}),
 crit(15914,{achID=5479,id=7,providers={{"i",12238}}}),
 crit(15928,{achID=5479,id=25,providers={{"i",6362}}})}}),
-ach(153,{awp=30002,requireSkill=356,g={
+ach(153,{requireSkill=356,g={
 crit(5663,{achID=1516,awp=30003,id=3})}}),
-ach(1257,{awp=30002,requireSkill=356,g={
+ach(1257,{requireSkill=356,g={
 crit(5664,{achID=1516,awp=30003,id=4})}}),
 ach(3218,{awp=30003,providers={{"i",46109}},requireSkill=356})}}),
-x(1,{awp=10100,requireSkill=356,g={
+x(1,{requireSkill=356,g={
 ach(126,{awp=30002,requireSkill=356}),
 ach(127,{awp=30002,requireSkill=356}),
 ach(128,{awp=30002,requireSkill=356}),
@@ -4679,8 +4679,8 @@ crit(21968,{achID=7611,id=12,providers={{"i",74861}}}),
 crit(21983,{achID=7611,id=2,providers={{"i",86542}}}),
 crit(21984,{achID=7611,id=8,providers={{"i",86545}}}),
 crit(21985,{achID=7611,id=11,providers={{"i",86544}}})}})}}),
-h(-45,{requireSkill=356,g={
-i(97981,{awp=50300,b=1,lvl=40,requireSkill=356,rwp=70003,u=2})}})}}),
+h(-45,{awp=50300,requireSkill=356,g={
+i(97981,{b=1,lvl=40,requireSkill=356,rwp=70003,u=2})}})}}),
 x(6,{awp=60003,requireSkill=356,g={
 h(-12,{requireSkill=356,g={
 ach(9503,{requireSkill=356}),
@@ -4913,9 +4913,9 @@ r(1235486,{b=1,itemID=244817,requireSkill=356,skillID=2911}),
 r(1226157,{b=1,itemID=244816,requireSkill=356,skillID=2911}),
 r(1226161,{b=1,itemID=244815,requireSkill=356,skillID=2911})}}),
 h(-56,{requireSkill=356,g={
-o(540505,{description="Has a chance to spawn nearby while fishing.",maps={2537},requireSkill=356})}})}})}),
-prof(182,{
-h(-26,{awp=30002,requireSkill=182,rwp=60002,u=2,g={
+o(540505,{description="Has a chance to spawn nearby while fishing.",maps={2537},requireSkill=356})}})}})}}),
+prof(182,{awp=30002,g={
+h(-26,{requireSkill=182,rwp=60002,u=2,g={
 r(81708,{awp=40003,rank=1,requireSkill=182,u=2}),
 r(55428,{rank=2,requireSkill=182,u=2}),
 r(55480,{rank=3,requireSkill=182,u=2}),
@@ -5389,7 +5389,7 @@ cu(3154,{requireSkill=182})}}),
 q(81429,{isWeekly=1,qss={238465},requireSkill=182,g={
 cu(3154,{requireSkill=182})}}),
 q(81430,{isWeekly=1,qss={238466},requireSkill=182,g={
-cu(3154,{requireSkill=182})}})}})}})}),
+cu(3154,{requireSkill=182})}})}})}})}}),
 prof(773,{awp=30002,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18858,{r=1,requireSkill=773,g={
@@ -5422,7 +5422,7 @@ crit(60913,{achID=18738,id=7,providers={{"i",63246}},requireSkill=773}),
 crit(60914,{achID=18738,id=8,providers={{"i",63246}},requireSkill=773}),
 crit(60917,{achID=18738,id=9,providers={{"i",62239}},requireSkill=773}),
 crit(60918,{achID=18738,id=10,providers={{"i",62239}},requireSkill=773})}})}}),
-x(3,{requireSkill=773,g={
+x(3,{awp=30003,requireSkill=773,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18725,{requireSkill=773,g={
 toy(208421,{b=1,requireSkill=773}),
@@ -5534,7 +5534,7 @@ r(61117,{learnedAt=20,requireSkill=773,skillID=2512}),
 r(61118,{learnedAt=20,requireSkill=773,skillID=2512}),
 r(61119,{learnedAt=20,requireSkill=773,skillID=2512}),
 r(61120,{learnedAt=20,requireSkill=773,skillID=2512})}})}})}}),
-x(4,{requireSkill=773,g={
+x(4,{awp=40003,requireSkill=773,g={
 flt(200,{requireSkill=773,g={
 r(86008,{collectible=false,requireSkill=773}),
 cat(105,{requireSkill=773}),
@@ -5571,7 +5571,7 @@ r(86653,{awp=50004,learnedAt=75,requireSkill=773,skillID=2511})}}),
 cat(791,{requireSkill=773,g={
 r(89244,{learnedAt=75,r=2,requireSkill=773,skillID=2511}),
 r(86654,{learnedAt=75,r=1,requireSkill=773,skillID=2511})}})}})}}),
-x(5,{requireSkill=773,g={
+x(5,{awp=50004,requireSkill=773,g={
 flt(200,{requireSkill=773,g={
 cat(779,{requireSkill=773,g={
 r(111645,{learnedAt=10,requireSkill=773,skillID=2510}),
@@ -5609,7 +5609,7 @@ r(126988,{learnedAt=75,requireSkill=773,skillID=2510}),
 r(126989,{learnedAt=75,requireSkill=773,skillID=2510}),
 r(127009,{learnedAt=75,requireSkill=773,skillID=2510}),
 r(127007,{learnedAt=75,requireSkill=773,skillID=2510})}})}})}}),
-x(6,{requireSkill=773,g={
+x(6,{awp=60003,requireSkill=773,g={
 flt(200,{requireSkill=773,g={
 cat(403,{requireSkill=773,g={
 r(176513,{requireSkill=773,u=5})}}),
@@ -5617,8 +5617,8 @@ cat(414,{requireSkill=773,g={
 r(178240,{learnedAt=700,requireSkill=773,skillID=2509,u=5})}}),
 cat(420,{requireSkill=773,g={
 r(178550,{requireSkill=773,skillID=2509,u=5})}})}})}}),
-x(7,{requireSkill=773,g={
-h(-45,{awp=70003,requireSkill=773,g={
+x(7,{awp=70003,requireSkill=773,g={
+h(-45,{requireSkill=773,g={
 q(39847,{coords={
 [627]={{41.6,37.2}}},lvl=10,qgs={92195},requireSkill=773,g={
 i(129047,{requireSkill=773,spellID=192924,g={
@@ -5731,13 +5731,13 @@ q(40064,{description="There is a chance of getting this quest when milling Foxfl
 r(209660,{requireSkill=773,skillID=2508})}}),
 q(43929,{awp=70100,description="Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",lvl=45,qgs={90417},requireSkill=773,g={
 r(192907,{b=1,itemID=137783,lvl=10,requireSkill=773,skillID=2508})}})}})}}),
-x(8,{requireSkill=773,g={
+x(8,{awp=80001,requireSkill=773,g={
 h(-12,{awp=100107,requireSkill=773,g={
 ach(18772,{providers={{"i",153670}},requireSkill=773})}}),
-h(-45,{requireSkill=773,g={
-q(54477,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=773,g={
+q(54477,{coords={
 [1161]={{73.4,6.3}}},lvl=10,qgs={130399},r=2,requireSkill=773,rwp=90001,u=2}),
-q(54478,{awp=80100,coords={
+q(54478,{coords={
 [1165]={{42.3,39.7}}},lvl=10,qgs={130901},r=1,requireSkill=773,rwp=90001,u=2}),
 q(40537,{awp=80105,coords={
 [1161]={{73.4,6.3}}},description="This quest chain requires 150 skill in Kul Tiran Inscription.",lvl=50,qgs={130399},r=2,requireSkill=773}),
@@ -5777,9 +5777,9 @@ q(49881,{awp=80105,coords={
 q(49882,{awp=80105,coords={
 [862]={{32.6,86}}},lvl=10,qgs={131397},requireSkill=773,sourceQuests={49881},g={
 r(256301,{learnedAt=150,requireSkill=773,skillID=2507})}})}}),
-h(-55,{requireSkill=773,g={
-r(309443,{awp=80205,description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,requireSkill=773,skillID=2507})}})}}),
-x(10,{requireSkill=773,g={
+h(-55,{awp=80205,requireSkill=773,g={
+r(309443,{description="A Mage scribe with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",itemID=172450,requireSkill=773,skillID=2507})}})}}),
+x(10,{awp=100002,requireSkill=773,g={
 h(-746,{requireSkill=773,g={
 pn(43531,{cost={{"c",2028,1}},requireSkill=773}),
 pn(43535,{cost={{"c",2028,1}},requireSkill=773}),
@@ -5951,7 +5951,7 @@ cu(2028,{requireSkill=773})}}),
 q(70519,{coords={
 [2025]={{44,81.8}}},crs={193969,193973},description="Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",isWeekly=1,qss={198972},requireSkill=773,g={
 cu(2028,{requireSkill=773})}})}})}}),
-x(11,{requireSkill=773,g={
+x(11,{awp=110002,requireSkill=773,g={
 h(-746,{requireSkill=773,g={
 pn(101557,{cost={{"c",2790,1}},requireSkill=773}),
 pn(101881,{cost={{"c",2790,1}},requireSkill=773}),
@@ -6031,7 +6031,7 @@ q(83264,{isWeekly=1,qss={225226},requireSkill=773,g={
 cu(2790,{requireSkill=773})}}),
 q(83262,{isWeekly=1,qss={225227},requireSkill=773,g={
 cu(2790,{requireSkill=773})}})}})}}),
-x(12,{requireSkill=773,g={
+x(12,{awp=120001,requireSkill=773,g={
 h(-12,{requireSkill=773,g={
 ach(42796,{requireSkill=773,g={
 de(15409,{itemID=264004,requireSkill=773,sourceAchievements={42796},spellID=1271035}),
@@ -6139,7 +6139,7 @@ q(93536,{isWeekly=1,qss={259196},requireSkill=773,g={
 cu(3155,{requireSkill=773})}}),
 q(93537,{isWeekly=1,qss={259197},requireSkill=773,g={
 cu(3155,{requireSkill=773})}})}})}})}}),
-prof(755,{
+prof(755,{awp=40003,g={
 h(-12,{awp=100107,requireSkill=755,g={
 ach(18880,{providers={{"s",419576}},requireSkill=755}),
 ach(18889,{providers={{"s",419576}},requireSkill=755}),
@@ -6173,7 +6173,7 @@ crit(61849,{achID=18909,id=23,providers={{"s",56203}}}),
 crit(61850,{achID=18909,id=24,providers={{"s",59759}}})}}),
 ach(18893,{providers={{"s",420816}},requireSkill=755}),
 ach(18727,{providers={{"s",419569}},requireSkill=755})}}),
-x(4,{awp=40003,requireSkill=755,g={
+x(4,{requireSkill=755,g={
 h(-45,{requireSkill=755,g={
 q(28778,{lvl=10,qss={65895},requireSkill=755,g={
 i(52351,{b=1,f=53,lvl=30,requireSkill=755,spellID=73522}),
@@ -6345,10 +6345,10 @@ i(151932,{b=1,requireSkill=755})}})}}),
 x(8,{awp=80001,requireSkill=755,g={
 h(-12,{awp=100107,requireSkill=755,g={
 ach(18773,{providers={{"i",153716}},requireSkill=755})}}),
-h(-45,{requireSkill=755,g={
-q(54479,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=755,g={
+q(54479,{coords={
 [1161]={{75.2,9.9}}},lvl=10,qgs={130368},r=2,requireSkill=755,rwp=90001,u=2}),
-q(54480,{awp=80100,coords={
+q(54480,{coords={
 [1165]={{47.1,37.9}}},lvl=10,qgs={122695},r=1,requireSkill=755,rwp=90001,u=2}),
 q(49570,{awp=80105,coords={
 [1161]={{75,10.2}}},description="This quest chain requires 150 in Kul Tiran Jewelcrafting.",lvl=50,providers={{"o",278570}},r=2,requireSkill=755}),
@@ -6786,8 +6786,8 @@ cu(3156,{requireSkill=755})}}),
 q(93539,{isWeekly=1,qss={259199},requireSkill=755,g={
 cu(3156,{requireSkill=755})}}),
 q(93538,{isWeekly=1,qss={259198},requireSkill=755,g={
-cu(3156,{requireSkill=755})}})}})}})}),
-prof(165,{
+cu(3156,{requireSkill=755})}})}})}})}}),
+prof(165,{awp=10100,g={
 h(-12,{awp=100107,requireSkill=165,g={
 ach(18884,{providers={{"s",419577}},requireSkill=165}),
 ach(18883,{providers={{"s",419577}},requireSkill=165}),
@@ -6818,9 +6818,9 @@ crit(61673,{achID=18900,id=12,providers={{"s",309173}}}),
 crit(61675,{achID=18900,id=13,providers={{"s",409555}}}),
 crit(61676,{achID=18900,id=13,providers={{"s",409557}}}),
 crit(61674,{achID=18900,id=13,providers={{"s",375168}}})}})}}),
-x(1,{awp=10100,requireSkill=165,g={
+x(1,{requireSkill=165,g={
 h(-12,{awp=100007,requireSkill=165,g={
-ach(17498,{altQuests={5141,5143,5144,5145,5146,5148},requireSkill=165,rwp=100007,sqreq=1,u=2}),
+ach(17498,{requireSkill=165,rwp=100007,sourceQuests={5141,5143,5144,5145,5146,5148},sqreq=1,u=2}),
 ach(18899,{awp=100107,requireSkill=165,g={
 crit(61658,{achID=18899,id=1,providers={{"i",18258}},requireSkill=165}),
 crit(61659,{achID=18899,id=2,providers={{"i",18258}},requireSkill=165})}})}}),
@@ -6845,9 +6845,9 @@ crit(61632,{achID=18894,id=2,providers={{"i",25729}}}),
 crit(61633,{achID=18894,id=3,providers={{"i",25731}}}),
 crit(61634,{achID=18894,id=4,providers={{"i",25730}}})}})}})}}),
 x(6,{awp=60003,requireSkill=165,g={
-h(-45,{requireSkill=165,g={
-q(36176,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"n",75043}},qss={114877},r=2,requireSkill=165}),
-q(36505,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={116173},r=1,requireSkill=165})}})}}),
+h(-45,{awp=60002,requireSkill=165,g={
+q(36176,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"n",75043}},qss={114877},r=2,requireSkill=165}),
+q(36505,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={116173},r=1,requireSkill=165})}})}}),
 x(7,{awp=70003,requireSkill=165,g={
 h(-45,{requireSkill=165,g={
 q(39958,{coords={
@@ -7116,10 +7116,10 @@ i(151879,{requireSkill=165})}})}})}}),
 x(8,{awp=80001,requireSkill=165,g={
 h(-12,{awp=100107,requireSkill=165,g={
 ach(18777,{providers={{"i",164978}},requireSkill=165})}}),
-h(-45,{requireSkill=165,g={
-q(54481,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=165,g={
+q(54481,{coords={
 [1161]={{75.5,12.6}}},lvl=10,qgs={136063},r=2,requireSkill=165,rwp=90001,u=2}),
-q(54482,{awp=80100,coords={
+q(54482,{coords={
 [1165]={{44.1,34.6}}},lvl=10,qgs={122698},r=1,requireSkill=165,rwp=90001,u=2}),
 q(55227,{awp=80105,coords={
 [1161]={{75.5,12.6}}},description="Requires 150 Kul Tiran Leatherworking.",lvl=50,qgs={136063},r=2,requireSkill=165}),
@@ -7540,23 +7540,23 @@ cu(3157,{requireSkill=165})}}),
 q(93540,{isWeekly=1,qss={259200},requireSkill=165,g={
 cu(3157,{requireSkill=165})}}),
 q(93541,{isWeekly=1,qss={259201},requireSkill=165,g={
-cu(3157,{requireSkill=165})}})}})}})}),
+cu(3157,{requireSkill=165})}})}})}})}}),
 prof(633,{awp=10100,c={4},description="Lockpicking now skills up as you level, you no longer need to practice. Hovering over your Pick Lock ability will show the current level of box you can open.",DontEnforceSkillRequirements=1,g={
 r(1804,{c={4},requireSkill=921}),
 r(921,{c={4},requireSkill=921})}}),
-prof(186,{
-h(-26,{requireSkill=186,g={
-r(53120,{awp=30002,rank=1,requireSkill=186,rwp=60002,u=2}),
-r(53121,{awp=30002,rank=2,requireSkill=186,rwp=60002,u=2}),
-r(53122,{awp=30002,rank=3,requireSkill=186,rwp=60002,u=2}),
-r(53123,{awp=30002,rank=4,requireSkill=186,rwp=60002,u=2}),
-r(53124,{awp=30002,rank=5,requireSkill=186,rwp=60002,u=2}),
+prof(186,{awp=10100,g={
+h(-26,{awp=30002,requireSkill=186,g={
+r(53120,{rank=1,requireSkill=186,rwp=60002,u=2}),
+r(53121,{rank=2,requireSkill=186,rwp=60002,u=2}),
+r(53122,{rank=3,requireSkill=186,rwp=60002,u=2}),
+r(53123,{rank=4,requireSkill=186,rwp=60002,u=2}),
+r(53124,{rank=5,requireSkill=186,rwp=60002,u=2}),
 r(53040,{awp=30003,rank=6,requireSkill=186,rwp=60002,u=2}),
 r(74496,{awp=40003,rank=7,requireSkill=186,rwp=60002,u=2}),
 r(102163,{awp=50004,rank=8,requireSkill=186,rwp=60002,u=2})}}),
-x(1,{awp=10100,requireSkill=186,g={
-h(-12,{requireSkill=186,g={
-ach(18841,{awp=100107,providers={{"s",22967}},requireSkill=186})}})}}),
+x(1,{requireSkill=186,g={
+h(-12,{awp=100107,requireSkill=186,g={
+ach(18841,{providers={{"s",22967}},requireSkill=186})}})}}),
 x(7,{awp=70003,requireSkill=186,g={
 h(-12,{awp=100107,requireSkill=186,g={
 ach(18839,{requireSkill=186,g={
@@ -8006,9 +8006,9 @@ cu(3158,{requireSkill=186})}}),
 q(88677,{isWeekly=1,qss={237496},requireSkill=186,g={
 cu(3158,{requireSkill=186})}}),
 q(88678,{isWeekly=1,qss={237506},requireSkill=186,g={
-cu(3158,{requireSkill=186})}})}})}})}),
-prof(393,{
-x(7,{awp=70003,requireSkill=393,g={
+cu(3158,{requireSkill=186})}})}})}})}}),
+prof(393,{awp=70003,g={
+x(7,{requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18834,{requireSkill=393,g={
 crit(61487,{achID=18834,id=3,providers={{"i",139895}},requireSkill=393}),
@@ -8467,8 +8467,8 @@ cu(3159,{requireSkill=393})}}),
 q(88530,{isWeekly=1,qss={238625},requireSkill=393,g={
 cu(3159,{requireSkill=393})}}),
 q(88529,{isWeekly=1,qss={238626},requireSkill=393,g={
-cu(3159,{requireSkill=393})}})}})}})}),
-prof(197,{
+cu(3159,{requireSkill=393})}})}})}})}}),
+prof(197,{awp=20003,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18888,{providers={{"s",419578}},requireSkill=197}),
 ach(18887,{providers={{"s",419578}},requireSkill=197}),
@@ -8506,7 +8506,7 @@ crit(61742,{achID=18903,id=28,providers={{"i",42178}}}),
 crit(61743,{achID=18903,id=29,providers={{"s",56000}}}),
 crit(61734,{achID=18903,id=30,providers={{"i",10321}}}),
 crit(61744,{achID=18903,id=31,providers={{"i",10323}}})}})}}),
-x(2,{awp=20003,requireSkill=197,g={
+x(2,{requireSkill=197,g={
 h(-12,{awp=100007,requireSkill=197,g={
 ach(17499,{requireSkill=197,rwp=100007,sourceQuests={10831,10832,10833},sqreq=1,u=2})}}),
 h(-45,{awp=20005,requireSkill=197,rwp=40003,u=2,g={
@@ -8535,9 +8535,9 @@ crit(61335,{achID=18815,id=3,providers={{"s",75144}},requireSkill=197}),
 crit(61336,{achID=18815,id=4,providers={{"s",75145}},requireSkill=197}),
 crit(61337,{achID=18815,id=5,providers={{"s",75146}},requireSkill=197})}})}})}}),
 x(6,{awp=60003,requireSkill=197,g={
-h(-45,{requireSkill=197,g={
-q(36236,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={114972},r=2,requireSkill=197}),
-q(36301,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={114973},r=1,requireSkill=197})}})}}),
+h(-45,{awp=60002,requireSkill=197,g={
+q(36236,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={114972},r=2,requireSkill=197}),
+q(36301,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={114973},r=1,requireSkill=197})}})}}),
 x(7,{awp=70003,requireSkill=197,g={
 q(38944,{coords={
 [627]={{35.2,34.2}}},cost={{"i",124437,10}},lvl=10,qgs={93542},requireSkill=197,g={
@@ -8729,10 +8729,10 @@ x(8,{awp=80001,requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18774,{providers={{"s",292946}},requireSkill=197}),
 ach(18896,{providers={{"i",154705},{"i",154706},{"i",154707}},requireSkill=197})}}),
-h(-45,{requireSkill=197,g={
-q(54483,{awp=80100,coords={
+h(-45,{awp=80100,requireSkill=197,g={
+q(54483,{coords={
 [1161]={{76.8,11.2}}},lvl=10,qgs={136071},r=2,requireSkill=197,rwp=90001,u=2}),
-q(54484,{awp=80100,coords={
+q(54484,{coords={
 [1165]={{44.5,33.9}}},lvl=10,qgs={122700},r=1,requireSkill=197,rwp=90001,u=2}),
 q(53805,{awp=80105,coords={
 [1161]={{76.6,11.8}}},lvl=50,qgs={145022},r=2,requireSkill=197}),
@@ -9137,5 +9137,5 @@ cu(3160,{requireSkill=197})}}),
 q(93543,{isWeekly=1,qss={259203},requireSkill=197,g={
 cu(3160,{requireSkill=197})}}),
 q(93542,{isWeekly=1,qss={259202},requireSkill=197,g={
-cu(3160,{requireSkill=197})}})}})}})})}})
+cu(3160,{requireSkill=197})}})}})}})}})}})
 end)

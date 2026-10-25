@@ -7350,10 +7350,10 @@ i(88165,{awp=50004,q=1,g={
 s(272814,88150,{f=25,lvl=90,q=4}),
 s(272813,88149,{f=20,lvl=90,q=4})}}),
 i(16883,{q=1})}}),
-ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
-x(1,{awp=10100,g={
+ah(921,{awp=10100,description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
+x(1,{
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}}),
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",q=1})}),
 x(3,{awp=30003,g={
 i(37674,{coords={
 [115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),

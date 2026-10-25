@@ -4,14 +4,14 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,crit,faction,flt,h,i,mnt,n,o,p,prof,q,qo,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
-h(-557,{e=7,maps={1411,1426},g={
+h(-557,{awp=20202,e=7,maps={1411,1426},g={
 h(-12,{e=7,g={
-ach(3496,{awp=20202,e=7,providers={{"i",33977},{"i",37828}}}),
+ach(3496,{e=7,providers={{"i",33977},{"i",37828}}}),
 ach(1293,{awp=20403,e=7,providers={{"i",33016},{"i",33017},{"i",33018},{"i",33019},{"i",33020},{"i",33021}},rwp=30200}),
-ach(1936,{awp=20202,e=7,providers={{"i",32233}}}),
-ach(303,{awp=20202,e=7,providers={{"i",33976},{"i",33977},{"i",37750},{"i",37816},{"i",37828},{"i",39476},{"i",39477}}}),
-ach(1292,{awp=20202,e=7,providers={{"i",32912},{"i",32915},{"i",32917},{"i",32918},{"i",32919},{"i",32920}},rwp=20403,u=2})}}),
-n(23872,{awp=20202,e=7,isDaily=1,lvl=65,maps={242},questID=12062,sourceQuests={12318},g={
+ach(1936,{e=7,providers={{"i",32233}}}),
+ach(303,{e=7,providers={{"i",33976},{"i",33977},{"i",37750},{"i",37816},{"i",37828},{"i",39476},{"i",39477}}}),
+ach(1292,{e=7,providers={{"i",32912},{"i",32915},{"i",32917},{"i",32918},{"i",32919},{"i",32920}},rwp=20403,u=2})}}),
+n(23872,{e=7,isDaily=1,lvl=65,maps={242},questID=12062,sourceQuests={12318},g={
 mnt(49379,{b=1,e=7,itemID=37828,lvl=60,q=4}),
 mnt(43900,{b=1,e=7,itemID=33977,lvl=60,q=4}),
 toy(37863,{b=1,e=7,q=3}),
@@ -25,77 +25,77 @@ i(281739,{awp=20506,e=7,f=53,lvl=70,rwp=30002}),
 i(38280,{b=1,e=7,lvl=65,q=1,r=2}),
 i(38281,{b=1,e=7,lvl=65,q=1,r=1})}}),
 h(-45,{e=7,g={
-q(11293,{altQuests={11294},awp=20202,coords={
+q(11293,{altQuests={11294},coords={
 [1426]={{49,39.8}}},e=7,isDaily=1,maps={1455},qgs={23627},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11407,{altQuests={11408},awp=20202,coords={
+q(11407,{altQuests={11408},coords={
 [1411]={{44.4,17.9}}},e=7,isDaily=1,maps={1454},qgs={24498},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11294,{altQuests={11293},awp=20202,coords={
+q(11294,{altQuests={11293},coords={
 [1426]={{49.5,38.7}}},e=7,isDaily=1,maps={1455},qgs={23628},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11408,{altQuests={11407},awp=20202,coords={
+q(11408,{altQuests={11407},coords={
 [1411]={{44.4,17.9}}},e=7,isDaily=1,maps={1454},qgs={24499},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11441,{altQuests={11442},awp=20202,e=7,isYearly=1,maps={1453,1455,1457,1947},qgs={18927,19148,19171,19172,19173,20102},r=2,g={
+q(11441,{altQuests={11442},e=7,isYearly=1,maps={1453,1455,1457,1947},qgs={18927,19148,19171,19172,19173,20102},r=2,g={
 i(33030,{e=7,f=55,q=1}),
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(33031,{e=7,f=55,lvl=25,q=1})}}),
-q(11446,{altQuests={11447},awp=20202,e=7,isYearly=1,maps={120,125,210,1411,1413,1446,1452,1454,1456,1458,1941,1953,1954,1955},qgs={19169,19175,19176,19177,19178,20102},r=1,g={
+q(11446,{altQuests={11447},e=7,isYearly=1,maps={120,125,210,1411,1413,1446,1452,1454,1456,1458,1941,1953,1954,1955},qgs={19169,19175,19176,19177,19178,20102},r=1,g={
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}}),
-q(11400,{awp=20202,e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=30002}),
-q(11419,{awp=20202,e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=30002}),
-q(12278,{altQuests={12420},awp=20202,description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1426},qss={37571},r=2,repeatable=1}),
-q(12306,{altQuests={12421},awp=20202,description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1411},qss={37599},r=1,repeatable=1}),
+q(11400,{e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=30002}),
+q(11419,{e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=30002}),
+q(12278,{altQuests={12420},description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1426},qss={37571},r=2,repeatable=1}),
+q(12306,{altQuests={12421},description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1411},qss={37599},r=1,repeatable=1}),
 q(11117,{awp=30002,coords={
 [1426]={{48,39.5}}},e=7,isYearly=1,qgs={23486},r=2,u=1,g={
 qo(1,{cost={{"i",32907,1}},crs={23487},e=7,providers={{"i",32906}},u=1})}}),
 q(11431,{awp=30002,coords={
 [1411]={{45,17.4}}},e=7,isYearly=1,qgs={24657},r=1,u=1,g={
 qo(1,{cost={{"i",32907,1}},crs={23487},e=7,providers={{"i",32906}},u=1})}}),
-q(12022,{awp=20202,coords={
+q(12022,{coords={
 [1426]={{47.5,39.8}}},e=7,isYearly=1,qgs={27215},r=2,sourceQuests={11441,11442},g={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12191,{awp=20202,coords={
+q(12191,{coords={
 [1411]={{45.3,17.3}}},e=7,isYearly=1,qgs={27216},r=1,sourceQuests={11446,11447},g={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11321,{awp=20202,coords={
+q(11321,{coords={
 [1426]={{46.4,40.3}}},description="This quest was only available during the 2007 Brewfest.",e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,q=3,u=2})}}),
-q(11413,{awp=20202,coords={
+q(11413,{coords={
 [1411]={{46.3,14.8}}},description="This quest was only available during the 2007 Brewfest.",e=7,providers={{"i",33955}},qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,q=3,u=2})}}),
-q(12491,{awp=20202,e=7,isYearly=1,lvl=65,qss={38280},r=2,g={
+q(12491,{e=7,isYearly=1,lvl=65,qss={38280},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12492,{awp=20202,e=7,isYearly=1,lvl=65,qss={38281},r=1,g={
+q(12492,{e=7,isYearly=1,lvl=65,qss={38281},r=1,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(12062,{awp=20403,e=7,isDaily=1,lvl=65,maps={242},qgs={26719},rwp=30303,sourceQuests={12318}}),
-q(11318,{awp=20202,coords={
+q(11318,{coords={
 [1426]={{46.6,40.3}}},e=7,isYearly=1,qgs={23558},qis={33306},r=2,sourceQuests={11441,11442},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}})}}),
-q(11409,{awp=20202,coords={
+q(11409,{coords={
 [1411]={{46.3,14.8}}},e=7,isYearly=1,qgs={24497},qis={33306},r=1,sourceQuests={11446,11447},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
@@ -109,33 +109,33 @@ s(143353,33016,{b=1,e=7,f=2,q=3})}}),
 q(12194,{awp=20403,coords={
 [1411]={{46.3,14.8}}},e=7,providers={{"i",33955}},qgs={24510},r=1,rwp=30200,sourceQuests={11409},g={
 s(143353,33016,{b=1,e=7,f=2,q=3})}}),
-q(11454,{awp=20202,coords={
+q(11454,{coords={
 [1411]={{44.3,17.5}},
 [1426]={{48.1,39.1}}},e=7,lvl=48,maps={242},providers={{"o",186881}},rwp=20403,u=2}),
-q(11486,{awp=20202,e=7,lvl=48,maps={242},qgs={23872},r=2,rwp=20403,sourceQuests={11454},u=2,g={
+q(11486,{e=7,lvl=48,maps={242},qgs={23872},r=2,rwp=20403,sourceQuests={11454},u=2,g={
 s(144120,34140,{b=1,e=7,f=1,q=3,u=2})}}),
-q(11487,{awp=20202,e=7,lvl=48,maps={242},qgs={23872},r=1,rwp=20403,sourceQuests={11454},u=2,g={
+q(11487,{e=7,lvl=48,maps={242},qgs={23872},r=1,rwp=20403,sourceQuests={11454},u=2,g={
 s(144120,34140,{b=1,e=7,f=1,q=3,u=2})}}),
-q(11122,{awp=20202,coords={
+q(11122,{coords={
 [1426]={{46.6,40.3}}},e=7,isYearly=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11318},g={
 qo(1,{crs={24364,24468},e=7,providers={{"i",33797}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11412,{awp=20202,coords={
+q(11412,{coords={
 [1411]={{46.3,14.8}}},e=7,isYearly=1,qgs={24497},qis={33306,33797},r=1,sourceQuests={11409},g={
 qo(1,{crs={24510,24527},e=7,providers={{"i",33797}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12020,{awp=20202,coords={
+q(12020,{coords={
 [1426]={{47.5,39.8}}},e=7,isDaily=1,providers={{"o",189989}},r=2,rwp=80200,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12192,{awp=20202,coords={
+q(12192,{coords={
 [1411]={{40.7,17.4}}},e=7,isDaily=1,providers={{"o",189990}},r=1,rwp=80200,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11442,{altQuests={11441},awp=20202,coords={
+q(11442,{altQuests={11441},coords={
 [1426]={{48,39.8}}},e=7,isYearly=1,qgs={24710},r=2,g={
 i(33030,{e=7,f=55,q=1}),
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(33031,{e=7,f=55,lvl=25,q=1})}}),
-q(11447,{altQuests={11446},awp=20202,coords={
+q(11447,{altQuests={11446},coords={
 [1411]={{45.6,17.2}}},e=7,isYearly=1,qgs={24711},r=1,g={
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
@@ -153,7 +153,7 @@ s(143357,33020,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,providers={{"o",186186}},q=3}),
 s(143358,33021,{b=1,coords={
 [1411]={{43.6,17.6}}},e=7,f=2,providers={{"o",186187}},q=3})}})),(function(t)if _.WOWAPI.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if _.WOWAPI.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
-s(143256,32912,{awp=20202,b=1,e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",q=3,rwp=20403,u=2,g={
+s(143256,32912,{b=1,e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",q=3,rwp=20403,u=2,g={
 s(143259,32915,{b=1,coords={
 [1426]={{48.8,39.8}}},e=7,f=2,providers={{"o",186183}},q=3,u=2}),
 s(143261,32917,{b=1,coords={
@@ -165,7 +165,7 @@ s(143263,32919,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,providers={{"o",186186}},q=3,u=2}),
 s(143264,32920,{b=1,coords={
 [1411]={{43.6,17.6}}},e=7,f=2,providers={{"o",186187}},q=3,u=2})}}))}}),
-h(-58,{awp=20202,e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829 local item=_.SearchForField("itemID",itemID)[1] local icon="|T"..item.icon..":0|t" local link=item.link or RETRIEVING_DATA tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="One-Time Quests:"})local coren=_.IsQuestFlaggedCompleted(12491)tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)})local chucked=_.IsQuestFlaggedCompleted(12022)tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)})local back=_.IsQuestFlaggedCompleted(11122)tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)})tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Daily Quests:"})local barked=_.IsQuestFlaggedCompleted(11293)tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)})local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020)tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)})tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"})tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."})local today=date("*t")local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0})local ends=time({day=4,month=10,year=today.year,hour=0,min=0,sec=0})local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})if now>=start and now<=ends then	local secondsPerDay=86400 local totalDays=math.floor(difftime(ends,start)/ secondsPerDay)local m=60 +(25 * totalDays)tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Currently",right=_.WOWAPI.GetItemCount(itemID,true).."x "..icon.." "..link})tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link})local remaining=math.floor(difftime(ends,now)/ secondsPerDay)if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link})else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link})end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."})end	end,g={
+h(-58,{e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829 local item=_.SearchForField("itemID",itemID)[1] local icon="|T"..item.icon..":0|t" local link=item.link or RETRIEVING_DATA tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="One-Time Quests:"})local coren=_.IsQuestFlaggedCompleted(12491)tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)})local chucked=_.IsQuestFlaggedCompleted(12022)tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)})local back=_.IsQuestFlaggedCompleted(11122)tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)})tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Daily Quests:"})local barked=_.IsQuestFlaggedCompleted(11293)tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)})local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020)tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)})tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"})tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."})local today=date("*t")local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0})local ends=time({day=4,month=10,year=today.year,hour=0,min=0,sec=0})local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})if now>=start and now<=ends then	local secondsPerDay=86400 local totalDays=math.floor(difftime(ends,start)/ secondsPerDay)local m=60 +(25 * totalDays)tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Currently",right=_.WOWAPI.GetItemCount(itemID,true).."x "..icon.." "..link})tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link})local remaining=math.floor(difftime(ends,now)/ secondsPerDay)if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link})else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link})end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."})end	end,g={
 n(23604,{coords={
 [1411]={{43.9,17.9}}},e=7,r=1,g={
 i(34065,{e=7,f=55,lvl=5,q=1})}}),
@@ -727,16 +727,16 @@ r(44958,{awp=20300,b=1,description="Alliance Tailors receive this pattern in the
 r(44953,{awp=20300,b=1,e=14,itemID=34262,learnedAt=285,q=2,requireSkill=165}),
 r(45022,{awp=20300,b=1,e=14,itemID=34413,learnedAt=325,q=1,requireSkill=185}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
-h(-45,{e=14,g={
-q(8744,{awp=10200,coords={
+h(-45,{awp=10200,e=14,g={
+q(8744,{coords={
 [1454]={{49.5,78.5}},
 [1455]={{33.5,66.5}}},e=14,isYearly=1,providers={{"o",180743}},qis={21191},g={
 i(21254,{b=1,e=14,f=55,q=1})}}),
-q(8803,{awp=10200,coords={
+q(8803,{coords={
 [1454]={{49.6,77.7}},
 [1455]={{33.6,66.1}}},e=14,isYearly=1,lvl=10,providers={{"o",180793}},qis={21363},g={
 i(21328,{b=1,e=14,q=1})}}),
-q(8768,{awp=10200,coords={
+q(8768,{coords={
 [1454]={{49.6,78.2}},
 [1455]={{33.6,66.3}}},e=14,isYearly=1,lvl=20,providers={{"o",180747}},qis={21310},g={
 p(119,{awp=10804,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
@@ -758,7 +758,7 @@ r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202}),
 i(21325,{b=1,e=14,f=55,q=2}),
 i(21213,{e=14,f=106,lvl=30,q=2})}}),
-q(7045,{awp=10200,coords={
+q(7045,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,qgs={13433},r=2,sourceQuests={7043},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -767,7 +767,7 @@ r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 r(21913,{e=14,itemID=17706,learnedAt=190,q=2,requireSkill=164}),
 r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202})}})}}),
-q(6984,{awp=10200,coords={
+q(6984,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,qgs={13418},r=1,sourceQuests={6983},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -782,15 +782,15 @@ crit(6250,{achID=1705,e=14,id=1})}}),
 q(13203,{awp=20403,description="Gift from 2008.",e=14,lvl=10,maps={1454,1455},providers={{"o",187236}},qis={43504},rwp=30300,g={
 toy(37710,{awp=30002,b=1,e=14,q=2,u=1}),
 crit(8739,{achID=1706,e=14,id=1,u=1})}}),
-q(7022,{awp=10200,coords={
+q(7022,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
-q(7023,{awp=10200,coords={
+q(7023,{coords={
 [1947]={{55.6,49}}},e=14,isYearly=1,lvl=10,qgs={13435,23010},r=2}),
-q(6961,{awp=10200,coords={
+q(6961,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=10,qgs={13418},r=1}),
-q(7021,{awp=10200,coords={
+q(7021,{coords={
 [1456]={{43.8,58.6}}},e=14,isYearly=1,lvl=10,qgs={13431},r=1}),
-q(7024,{awp=10200,coords={
+q(7024,{coords={
 [1458]={{68,39}}},e=14,isYearly=1,lvl=10,qgs={13429},r=1}),
 q(8762,{awp=10804,coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13433},r=2,rwp=40300,g={
@@ -816,13 +816,13 @@ q(8860,{awp=10804,description="This quest is only available on December 31. Ques
 qo(1,{e=14,providers={{"i",21545}}})}}),
 q(8861,{awp=10804,description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1,g={
 qo(1,{e=14,providers={{"i",21545}}})}}),
-q(7042,{awp=10200,coords={
+q(7042,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13433},r=2,rwp=40003}),
-q(6963,{awp=10200,coords={
+q(6963,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13418},r=1,rwp=40003}),
-q(7063,{awp=10200,coords={
+q(7063,{coords={
 [1455]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,qgs={2916},qis={17735},r=2,sourceQuests={7062}}),
-q(7061,{awp=10200,coords={
+q(7061,{coords={
 [1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,qgs={13417},qis={17735},r=1,sourceQuests={6964}}),
 q(8763,{awp=10804,coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,rwp=40300,sourceQuests={8762},g={
@@ -830,13 +830,13 @@ i(21213,{e=14,f=106,lvl=30,q=2,requireSkill=185})}}),
 q(8799,{awp=10804,coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
 i(21213,{e=14,f=106,lvl=30,q=2,requireSkill=185})}}),
-q(7062,{awp=10200,coords={
+q(7062,{coords={
 [1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
-q(6964,{awp=10200,coords={
+q(6964,{coords={
 [1454]={{51,71.1}}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
 i(17735,{e=14,q=1})}}),
-q(7025,{awp=10200,coords={
+q(7025,{coords={
 [1455]={{33.2,65.8}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -849,7 +849,7 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(6962,{awp=10200,coords={
+q(6962,{coords={
 [1454]={{49.9,78.4}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13445},r=1,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -862,12 +862,12 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(8827,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
-q(8828,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
-q(7043,{awp=10200,coords={
+q(8827,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
+q(8828,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
+q(7043,{coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1455},qgs={13636},r=2,sourceQuests={7042},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}}),
-q(6983,{awp=10200,coords={
+q(6983,{coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1454},qgs={13636},r=1,sourceQuests={6963},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}})}}),
 h(-58,{e=14,g={
@@ -903,14 +903,14 @@ r(44958,{b=1,e=14,itemID=34319,learnedAt=250,q=2,requireSkill=197})}}),
 n(13433,{awp=20300,coords={
 [1455]={{33.4,67}}},e=14,g={
 r(44958,{b=1,e=14,itemID=34319,learnedAt=250,q=2,requireSkill=197})}})}}),
-n(15760,{crs={15780,15781,15782,15783,15784,15785,15786,15787,15788,15789,15790,15791,15792,15793,15794,15795,22998,22999,23000,23001,23005,23006},description="Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",e=14,g={
+n(15760,{awp=10200,crs={15780,15781,15782,15783,15784,15785,15786,15787,15788,15789,15790,15791,15792,15793,15794,15795,22998,22999,23000,23001,23005,23006},description="Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",e=14,g={
 i(21212,{awp=10804,b=1,e=14,f=55,lvl=30,q=1}),
 i(34191,{awp=20300,e=14,f=106,q=1}),
-i(21519,{awp=10200,b=1,e=14,q=1})}}),
+i(21519,{b=1,e=14,q=1})}}),
 h(-63,{e=14,g={
 o(178609,{e=14,g={
 i(17202,{e=14,f=106,q=1})}})}})}}),
-h(-576,{e=16,g={
+h(-576,{awp=10800,e=16,g={
 h(-12,{awp=20202,e=16,g={
 ach(292,{e=16,providers={{"i",33154},{"i",33292}},g={
 crit(5783,{achID=292,e=16,id=1,providers={{"i",33154}}}),
@@ -1210,7 +1210,7 @@ qo(1,{e=16,providers={{"i",32971}}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(11242,{awp=20202,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=2,rwp=40001}),
 q(11403,{awp=20202,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=1,rwp=40001}),
-q(8311,{awp=10800,coords={
+q(8311,{coords={
 [1453]={{47.6,35.4}}},e=16,isYearly=1,lvl=10,maxReputation={469,42000},qgs={15310},r=2,g={
 q(8356,{coords={
 [1453]={{52.6,65.6}}},e=16,qgs={6740},r=2,repeatable=1,g={
@@ -1225,7 +1225,7 @@ q(8357,{coords={
 [1457]={{67.2,15.8}}},e=16,qgs={6735},r=2,repeatable=1,g={
 qo(4,{e=16,providers={{"i",20496}},questID=8311})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8312,{awp=10800,coords={
+q(8312,{coords={
 [1454]={{71.2,22.8}}},e=16,isYearly=1,lvl=10,maxReputation={67,42000},qgs={15309},r=1,g={
 q(8359,{coords={
 [1454]={{54.2,68.4}}},e=16,qgs={6929},r=1,repeatable=1,g={
@@ -1241,10 +1241,10 @@ q(8360,{coords={
 qo(4,{e=16,providers={{"i",20497}},questID=8312})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(11357,{awp=20202,e=16,isBreadcrumb=1,maps={1413,1434,1446,1452,1454,1456,1458,1941,1953,1955},nextQuests={11361,11449,11450},qgs={19169,19175,19176,19177,19178,20102},r=1}),
-q(8322,{awp=10800,coords={
+q(8322,{coords={
 [1420]={{55.6,69.9}},
 [1424]={{51.4,59}}},cost={{"i",20605,1}},e=16,isYearly=1,lvl=30,qgs={15197},r=1,rwp=40003}),
-q(8409,{awp=10800,coords={
+q(8409,{coords={
 [1424]={{51.4,59}}},e=16,isYearly=1,lvl=30,providers={{"o",180570}},r=1,rwp=40003,sourceQuests={8322},g={
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(1657,{coords={
@@ -1284,7 +1284,7 @@ q(11220,{awp=20202,coords={
 [1411]={{52.6,41.2}},
 [1420]={{60.9,53}},
 [1941]={{47.3,46.5}}},e=16,lvl=65,qgs={23973},r=1,rwp=40001}),
-q(8373,{awp=10800,coords={
+q(8373,{coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,qgs={15199},r=2,rwp=40003,g={
 qo(1,{e=16,providers={{"i",20604}}}),
 i(20557,{b=1,e=16,f=55,q=1})}})}}),
@@ -1330,7 +1330,7 @@ s(131062,20567,{b=1,e=16,f=2,loc=40,q=1}),
 s(131063,20568,{b=1,e=16,f=2,loc=40,q=1}),
 s(131069,20574,{b=1,e=16,f=2,loc=40,q=1}),
 s(131068,20573,{b=1,e=16,f=2,loc=40,q=1})}}),
-h(-56,{awp=10800,e=16,g={
+h(-56,{e=16,g={
 o(180523,{e=16,g={
 i(20516,{b=1,e=16,f=55,q=1})}})}}),
 h(-63,{e=16,g={
@@ -1818,7 +1818,7 @@ h(-582,{e=11,g={
 n(25740,{awp=20400,description="Ahune is a frost elemental in Neptulon's service. The Twilight's Hammer planned to have him battle Ragnaros to start an elemental war on Azeroth.",e=11,isDaily=1,maps={265},providers={{"o",188192}},questID=11691,g={
 i(35723,{b=1,description="This item can be looted and completed once per character.",e=11,lvl=65,q=1}),
 r(46578,{awp=20402,b=1,e=11,itemID=35498,learnedAt=350,phase=19,q=3,requireSkill=333}),
-p(172,{awp=40200,b=1,e=11,itemID=34955,petTypeID=7,q=3,rwp=30303,spellID=45890}),
+p(172,{b=1,e=11,itemID=34955,petTypeID=7,q=3,rwp=30303,spellID=45890}),
 i(278827,{awp=20505,e=11,f=51,lvl=70,phase=17,rwp=30303}),
 i(278838,{awp=20505,e=11,f=51,lvl=70,phase=17,rwp=30303}),
 i(278833,{awp=20505,e=11,f=51,lvl=70,phase=17,rwp=30303}),

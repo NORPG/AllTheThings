@@ -3153,6 +3153,7 @@ local ObjectNames = {
 	[185497] = "Bogblossom",
 	[185519] = "Mana-Tombs Stasis Chamber",
 	[185522] = "Shaffar's Stasis Chamber",
+	[185541] = "Raven Stone Fragment",
 	[185549] = "Monstrous Kaliri Egg",
 	[185557] = "Ancient Gem Vein",
 	[185562] = "Vim'gol's Vile Grimoire",
@@ -4656,6 +4657,7 @@ local ObjectModels = {
 	[185233] = 196982,
 	[185302] = 189528,
 	[185497] = 193396,
+	[185541] = 202595,
 	[185549] = 200974,
 	[185557] = 219422,
 	[185562] = 200900,
@@ -5264,20 +5266,17 @@ local achievements = {
 	[418] = {
 		name = "Merciless Gladiator",
 		description = "Achieved Merciless Gladiator title.",
-		category = 81,
-		criteria = {5597},
+		category = 15452,
 	},
 	[419] = {
 		name = "Vengeful Gladiator",
 		description = "Achieved Vengeful Gladiator title.",
-		category = 81,
-		criteria = {5599},
+		category = 15452,
 	},
 	[420] = {
 		name = "Brutal Gladiator",
 		description = "Achieved Brutal Gladiator title.",
-		category = 81,
-		criteria = {5600},
+		category = 15452,
 	},
 	[424] = {
 		name = "Why? Because It's Red",
@@ -7013,7 +7012,7 @@ local achievements = {
 		name = "Dual Talent Specialization",
 		description = "Visit your class trainer when you are at least level 40 and activate your Dual Talent Specialization.",
 		icon = 236544,
-		category = 92,
+		category = 81,
 		criteria = {-172,9619},
 	},
 	[3356] = {
@@ -7043,104 +7042,110 @@ local achievements = {
 	[15018] = {
 		name = "Infernal Gladiator",
 		description = "Achieved Infernal Gladiator title.",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15019] = {
 		name = "Gladiator: Season 1",
 		description = "End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 1).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15020] = {
 		name = "Duelist: Season 1",
 		description = "End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 1).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15021] = {
 		name = "Rival: Season 1",
 		description = "End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 1).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15022] = {
 		name = "Challenger: Season 1",
 		description = "End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 1).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15199] = {
 		name = "Gladiator: Season 2",
 		description = "End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 2).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15200] = {
 		name = "Gladiator: Season 4",
 		description = "End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 4).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15201] = {
 		name = "Duelist: Season 4",
 		description = "End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 4).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15202] = {
 		name = "Rival: Season 4",
 		description = "End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 4).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15203] = {
 		name = "Challenger: Season 4",
 		description = "End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 4).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15204] = {
 		name = "Gladiator: Season 3",
 		description = "End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 3).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15205] = {
 		name = "Duelist: Season 3",
 		description = "End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 3).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15206] = {
 		name = "Rival: Season 3",
 		description = "End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 3).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15207] = {
 		name = "Challenger: Season 3",
 		description = "End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 3).",
-		icon = 136243,
-		category = 81,
+		icon = 136219,
+		category = 15452,
 	},
 	[15208] = {
 		name = "Duelist: Season 2",
 		description = "End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 2).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15209] = {
 		name = "Rival: Season 2",
 		description = "End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 2).",
-		icon = 136243,
-		category = 81,
+		icon = 132249,
+		category = 15452,
 	},
 	[15210] = {
 		name = "Challenger: Season 2",
 		description = "End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 2).",
+		icon = 136219,
+		category = 15452,
+	},
+	[15329] = {
+		name = "Has Died",
 		icon = 136243,
-		category = 81,
+		category = 15452,
+		criteria = {52885},
 	},
 	[15330] = {
 		name = "Survivor of the Firelord (Season of Mastery)",
@@ -7279,6 +7284,10 @@ local achievementCategories = {
 	[14865] = {
 		name = "The Burning Crusade",
 		parent = 201,
+	},
+	[15452] = {
+		name = "BCC",
+		parent = -1,
 	},
 } L.ACHIEVEMENT_CATEGORY_DATA = achievementCategories
 local achievementCriterias = {
@@ -14884,21 +14893,6 @@ local achievementCriterias = {
 		type = 7,
 		asset = 162,
 	},
-	[5597] = {
-		name = "Merciless Gladiator",
-		amount = 1,
-		type = 74,
-	},
-	[5599] = {
-		name = "Vengeful Gladiator",
-		amount = 1,
-		type = 74,
-	},
-	[5600] = {
-		name = "Brutal Gladiator",
-		amount = 1,
-		type = 74,
-	},
 	[5783] = {
 		name = "Sinister Squashling",
 		type = 34,
@@ -16136,6 +16130,11 @@ local achievementCriterias = {
 		amount = 42000,
 		type = 46,
 		asset = 809,
+	},
+	[52885] = {
+		name = nil,
+		amount = 1,
+		type = 17,
 	},
 	[54579] = {
 		name = "Onyxia",
@@ -19592,6 +19591,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "Classic",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -20982,9 +20982,6 @@ for key,value in pairs({
 	[5336] = "Ehrfürchtig in der Ehrenfeste",
 	[5337] = "Ehrfürchtig bei den Kurenai",
 	[5589] = "Unbewaffnet",
-	[5597] = "Erbarmungsloser Gladiator",
-	[5599] = "Rachsüchtiger Gladiator",
-	[5600] = "Brutaler Gladiator",
 	[5783] = "Gruselkürbis",
 	[5815] = "Himmelsdonnerrennen",
 	[5900] = "Alteracgebirge",
@@ -23363,6 +23360,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "Classique",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -24788,9 +24786,6 @@ for key,value in pairs({
 	[5336] = "Exalté auprès du bastion de l’Honneur",
 	[5337] = "Exalté auprès des Kurenaï",
 	[5589] = "Mains nues",
-	[5597] = "Gladiateur impitoyable",
-	[5599] = "Gladiateur vengeur",
-	[5600] = "Gladiateur brutal",
 	[5783] = "Sprotchelin sinistre",
 	[5815] = "Course de Fracasse-ciel",
 	[5900] = "Montagnes d’Alterac",
@@ -25831,6 +25826,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "Classic",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -27693,6 +27689,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "Clássico",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -29108,9 +29105,6 @@ for key,value in pairs({
 	[5336] = "Exaltado pela Fortaleza da Honra",
 	[5337] = "Exaltado pelos Kurenai",
 	[5589] = "Combate desarmado",
-	[5597] = "Gladiador Impiedoso",
-	[5599] = "Gladiador Vingativo",
-	[5600] = "Gladiador Brutal",
 	[5783] = "Aboborito Sinistro",
 	[5815] = "Corrida dos Rasga-céu",
 	[5900] = "Montanhas de Alterac",
@@ -31139,6 +31133,7 @@ localize(ObjectNames, {
 	[185497] = "Топлянник",
 	[185519] = "стазисную камеру Гробниц маны",
 	[185522] = "Палата стазиса Шаффара",
+	[185541] = "Фрагмент Вороньего камня",
 	[185549] = "Яйцо чудовищной калири",
 	[185557] = "Древняя самоцветная жила",
 	[185562] = "Гримуар Вимгола Зловещего",
@@ -31875,6 +31870,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "World of Warcraft",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -33377,9 +33373,6 @@ for key,value in pairs({
 	[5336] = "Превознесение в Оплоте Чести",
 	[5337] = "Превознесение у Куренай",
 	[5589] = "Рукопашный бой",
-	[5597] = "Безжалостный гладиатор",
-	[5599] = "Мстительный гладиатор",
-	[5600] = "Жестокий гладиатор",
 	[5783] = "Зловещая тыковка",
 	[5815] = "Гонка Небокрушителя",
 	[5900] = "Альтеракские горы",
@@ -35414,6 +35407,7 @@ for key,value in pairs({
 	[14862] = "불타는 성전",
 	[14864] = "오리지널",
 	[14865] = "불타는 성전",
+	[15452] = "불타는 성전 클래식",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -36916,9 +36910,6 @@ for key,value in pairs({
 	[5336] = "명예의 요새 확고한 동맹",
 	[5337] = "쿠레나이 확고한 동맹",
 	[5589] = "맨손 전투",
-	[5597] = "무자비한 검투사",
-	[5599] = "복수심에 불타는 검투사",
-	[5600] = "야만적인 검투사",
 	[5783] = "사악한 작은 호박",
 	[5815] = "스카이쉐터 도전",
 	[5900] = "알터랙 산맥",
@@ -39929,6 +39920,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "World of Warcraft",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -41333,9 +41325,6 @@ for key,value in pairs({
 	[5336] = "Exaltado con el Bastión del Honor",
 	[5337] = "Exaltado con los Kurenai",
 	[5589] = "Sin armas",
-	[5597] = "Gladiador despiadado",
-	[5599] = "Gladiador vengativo",
-	[5600] = "Gladiador brutal",
 	[5783] = "Calabacino siniestro",
 	[5815] = "Carrera de Devastador del Cielo",
 	[5900] = "Montañas de Alterac",
@@ -41964,6 +41953,7 @@ for key,value in pairs({
 	[14862] = "The Burning Crusade",
 	[14864] = "World of Warcraft",
 	[14865] = "The Burning Crusade",
+	[15452] = "BCC",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -43369,9 +43359,6 @@ for key,value in pairs({
 	[5336] = "Exaltado con el Bastión del Honor",
 	[5337] = "Exaltado con los Kurenai",
 	[5589] = "Sin armas",
-	[5597] = "Gladiador despiadado",
-	[5599] = "Gladiador vengativo",
-	[5600] = "Gladiador brutal",
 	[5783] = "Calabacino siniestro",
 	[5815] = "Carrera de Devastador del Cielo",
 	[5900] = "Montañas de Alterac",
@@ -46579,6 +46566,7 @@ for key,value in pairs({
 	[14862] = "燃烧的远征",
 	[14864] = "经典旧世",
 	[14865] = "燃烧的远征",
+	[15452] = "燃烧的远征",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -48081,9 +48069,6 @@ for key,value in pairs({
 	[5336] = "荣耀堡崇拜",
 	[5337] = "库雷尼崇拜",
 	[5589] = "徒手战斗",
-	[5597] = "残酷角斗士",
-	[5599] = "复仇角斗士",
-	[5600] = "野蛮角斗士",
 	[5783] = "邪恶的南瓜娃娃",
 	[5815] = "破碎天空竞赛",
 	[5900] = "奥特兰克山脉",
@@ -50496,6 +50481,7 @@ for key,value in pairs({
 	[14862] = "燃燒的遠征",
 	[14864] = "艾澤拉斯",
 	[14865] = "燃燒的遠征",
+	[15452] = "燃燒的遠征經典版",
 })
 do achievementCategories[key].name = value; end
 for key,value in pairs({
@@ -51998,9 +51984,6 @@ for key,value in pairs({
 	[5336] = "榮譽堡崇拜",
 	[5337] = "卡爾奈崇拜",
 	[5589] = "徒手戰鬥",
-	[5597] = "殘忍鬥士",
-	[5599] = "仇恨鬥士",
-	[5600] = "野蠻鬥士",
 	[5783] = "邪惡小南瓜",
 	[5815] = "碎天者競賽",
 	[5900] = "奧特蘭克山脈",

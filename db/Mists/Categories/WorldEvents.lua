@@ -4,14 +4,13 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,faction,flt,h,heir,i,mnt,n,p,q,qo,r,s,settings,title,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateHeirloom,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
-h(-103,{
-x(2,{awp=20003,g={
+h(-103,{awp=20003,g={
+x(2,{
 h(-482,{lvl=55,maps={17},phase=1701,rwp=20505,u=2,g={
 q(10259,{coords={
 [17]={{58.25,55.05}}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
-s(139134,28788,{b=1,f=9,q=2,u=2})}})}})}}),
-x(3,{awp=30003}),
+s(139134,28788,{b=1,f=9,q=2,u=2})}})}})}),
 x(4,{awp=40003,g={
 h(-474,{awp=30300,maps={84,85,87,88},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,phase=3304,rwp=40003,u=2,g={
 h(-12,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,u=2,g={
@@ -277,8 +276,8 @@ ach(7468,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.Cur
 h(-49,{OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,u=2,g={
 toy(89205,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1,u=2}),
 i(90041,{b=1,description="This was a reward for completing the Theramore's Fall scenario during the Mists of Pandaria pre-patch.",OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,u=2,g={
-toy(89999,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2}),
-toy(90000,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1}),
+toy(89999,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2,u=2}),
+toy(90000,{b=1,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=1,u=2}),
 s(273967,90017,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
 s(273968,90018,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
 s(273969,90019,{b=1,f=4,loc=40,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
@@ -299,7 +298,7 @@ s(273983,90033,{b=1,f=20,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtain
 s(273984,90034,{b=1,f=28,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
 s(273985,90035,{b=1,f=25,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2}),
 s(273986,90036,{b=1,f=8,lvl=85,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=4,u=2})}}),
-s(273452,89196,{b=1,f=9,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2,u=2})}})}})}})}),
+s(273452,89196,{b=1,f=9,OnUpdate=function(t)if	 not settings:GetUnobtainableFilter(54)or	_.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then	t.u=nil t.description="This will probably get removed from game sometime during MOP Classic. Try to finish this content ASAP!" else	t.u=2 end	end,q=3,r=2,u=2})}})}})}})}}),
 h(-656,{awp=50100,lvl=90,maps={499,500,503},phase=51,rwp=60002,g={
 h(-12,{
 ach(7944,{providers={{"s",136314}}}),
@@ -369,13 +368,13 @@ i(97983,{awp=50300,b=1,lvl=90,phase=53,q=1})})}),
 h(-31,{
 faction(1419,{r=2}),
 faction(1374,{r=1})}),
-h(-45,{
-q(32836,{awp=50300,phase=53,qss={97978},g={
+h(-45,{awp=50300,g={
+q(32836,{phase=53,qss={97978},g={
 crit(23371,{achID=8339,id=1,r=2,rwp=70003}),
 crit(23371,{achID=8342,id=1,r=1,rwp=70003})}}),
 q(32837,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32836},g={
 qo(1,{providers={{"n",70689}},rwp=70003}),
@@ -383,12 +382,12 @@ s(279115,98079,{b=1,f=10,q=3,rwp=70003}),
 i(98099,{b=1,q=1,rwp=70003}),
 crit(23383,{achID=8340,id=1,r=2}),
 crit(23383,{achID=8343,id=1,r=1})}})),
-q(32838,{awp=50300,phase=53,qss={97979},g={
+q(32838,{phase=53,qss={97979},g={
 crit(23380,{achID=8339,id=10,r=2,rwp=70003}),
 crit(23380,{achID=8342,id=10,r=1,rwp=70003})}}),
 q(32839,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32838},g={
 qo(1,{providers={{"n",70748}},rwp=70003}),
@@ -396,12 +395,12 @@ s(279116,98080,{b=1,f=10,q=3,rwp=70003}),
 i(98102,{b=1,q=1,rwp=70003}),
 crit(23384,{achID=8340,id=9,r=2}),
 crit(23384,{achID=8343,id=9,r=1})}})),
-q(32840,{awp=50300,phase=53,qss={97980},g={
+q(32840,{phase=53,qss={97980},g={
 crit(23373,{achID=8339,id=3,r=2,rwp=70003}),
 crit(23373,{achID=8342,id=3,r=1,rwp=70003})}}),
 q(32841,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32840},g={
 qo(1,{providers={{"n",70677}},rwp=70003}),
@@ -409,12 +408,12 @@ s(279117,98081,{b=1,f=10,q=3,rwp=70003}),
 i(98099,{b=1,q=1,rwp=70003}),
 crit(23385,{achID=8340,id=3,r=2}),
 crit(23385,{achID=8343,id=3,r=1})}})),
-q(32842,{awp=50300,phase=53,qss={97981},g={
+q(32842,{phase=53,qss={97981},g={
 crit(23374,{achID=8339,id=4,r=2,rwp=70003}),
 crit(23374,{achID=8342,id=4,r=1,rwp=70003})}}),
 q(32843,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32842},g={
 qo(1,{providers={{"n",71085}},rwp=70003}),
@@ -422,12 +421,12 @@ s(279119,98083,{b=1,f=10,q=3,rwp=70003}),
 i(98100,{b=1,q=1,rwp=70003}),
 crit(23386,{achID=8340,id=4,r=2}),
 crit(23386,{achID=8343,id=4,r=1})}})),
-q(32844,{awp=50300,phase=53,qss={97982},g={
+q(32844,{phase=53,qss={97982},g={
 crit(23375,{achID=8339,id=5,r=2,rwp=70003}),
 crit(23375,{achID=8342,id=5,r=1,rwp=70003})}}),
 q(32845,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32844},g={
 qo(1,{providers={{"n",70737}},rwp=70003}),
@@ -435,12 +434,12 @@ s(279120,98084,{b=1,f=10,q=3,rwp=70003}),
 i(98100,{b=1,q=1,rwp=70003}),
 crit(23387,{achID=8340,id=5,r=2}),
 crit(23387,{achID=8343,id=5,r=1})}})),
-q(32846,{awp=50300,phase=53,qss={97983},g={
+q(32846,{phase=53,qss={97983},g={
 crit(23376,{achID=8339,id=6,r=2,rwp=70003}),
 crit(23376,{achID=8342,id=6,r=1,rwp=70003})}}),
 q(32847,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32846},g={
 qo(1,{providers={{"n",71081}},rwp=70003}),
@@ -448,12 +447,12 @@ s(279121,98085,{b=1,f=10,q=3,rwp=70003}),
 i(98101,{b=1,q=1,rwp=70003}),
 crit(23388,{achID=8340,id=6,r=2}),
 crit(23388,{achID=8343,id=6,r=1})}})),
-q(32848,{awp=50300,phase=53,qss={97984},g={
+q(32848,{phase=53,qss={97984},g={
 crit(23377,{achID=8339,id=7,r=2,rwp=70003}),
 crit(23377,{achID=8342,id=7,r=1,rwp=70003})}}),
 q(32849,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32848},g={
 qo(1,{providers={{"n",70647},{"n",70648}},rwp=70003}),
@@ -461,12 +460,12 @@ s(279122,98086,{b=1,f=10,q=3,rwp=70003}),
 i(98100,{b=1,q=1,rwp=70003}),
 crit(23389,{achID=8340,id=7,r=2}),
 crit(23389,{achID=8343,id=7,r=1})}})),
-q(32850,{awp=50300,phase=53,qss={97985},g={
+q(32850,{phase=53,qss={97985},g={
 crit(23378,{achID=8339,id=8,r=2,rwp=70003}),
 crit(23378,{achID=8342,id=8,r=1,rwp=70003})}}),
 q(32851,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32850},g={
 qo(1,{providers={{"n",70740}},rwp=70003}),
@@ -474,12 +473,12 @@ s(279124,98091,{b=1,f=10,q=3,rwp=70003}),
 i(98101,{b=1,q=1,rwp=70003}),
 crit(23390,{achID=8340,id=8,r=2}),
 crit(23390,{achID=8343,id=8,r=1})}})),
-q(32852,{awp=50300,phase=53,qss={97986},g={
+q(32852,{phase=53,qss={97986},g={
 crit(23382,{achID=8339,id=11,r=2,rwp=70003}),
 crit(23382,{achID=8342,id=11,r=1,rwp=70003})}}),
 q(32853,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32852},g={
 qo(1,{providers={{"n",70616}},rwp=70003}),
@@ -487,12 +486,12 @@ s(279125,98092,{b=1,f=10,q=3,rwp=70003}),
 i(98103,{b=1,q=1,rwp=70003}),
 crit(23391,{achID=8340,id=11,r=2}),
 crit(23391,{achID=8343,id=11,r=1})}})),
-q(32854,{awp=50300,phase=53,qss={97987},g={
+q(32854,{phase=53,qss={97987},g={
 crit(23381,{achID=8339,id=12,r=2,rwp=70003}),
 crit(23381,{achID=8342,id=12,r=1,rwp=70003})}}),
 q(32855,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32854},g={
 qo(1,{providers={{"n",70794}},rwp=70003}),
@@ -500,12 +499,12 @@ s(279126,98093,{b=1,f=10,q=3,rwp=70003}),
 i(98103,{b=1,q=1,rwp=70003}),
 crit(23392,{achID=8340,id=12,r=2}),
 crit(23392,{achID=8343,id=12,r=1})}})),
-q(32856,{awp=50300,phase=53,qss={97988},g={
+q(32856,{phase=53,qss={97988},g={
 crit(23379,{achID=8339,id=9,r=2,rwp=70003}),
 crit(23379,{achID=8342,id=9,r=1,rwp=70003})}}),
 q(32857,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32856},g={
 qo(1,{providers={{"n",70749}},rwp=70003}),
@@ -513,19 +512,19 @@ s(279123,98087,{b=1,f=10,q=3,rwp=70003}),
 i(98102,{b=1,q=1,rwp=70003}),
 crit(23393,{achID=8340,id=10,r=2}),
 crit(23393,{achID=8343,id=10,r=1})}})),
-q(32858,{awp=50300,phase=53,qss={97990},g={
+q(32858,{phase=53,qss={97990},g={
 crit(23372,{achID=8339,id=2,r=2,rwp=70003}),
 crit(23372,{achID=8342,id=2,r=1,rwp=70003})}}),
 q(32859,_.ResolveQuestData({aqd=
 {coords={
-[500]={{52.3,25.2}}},qgs={70752},rwp=70003},awp=50300,hqd=
+[500]={{52.3,25.2}}},qgs={70752},rwp=70003},hqd=
 {coords={
 [503]={{60.4,77.5}}},qgs={70751},rwp=70003},phase=53,sourceQuests={32858},g={
 qo(1,{providers={{"n",70666}},rwp=70003}),
 s(279118,98082,{b=1,f=10,q=3,rwp=70003}),
 i(98099,{b=1,q=1,rwp=70003}),
 crit(23394,{achID=8340,id=2,r=2}),
-crit(23394,{achID=8343,id=2,r=1})}}))}),
+crit(23394,{achID=8343,id=2,r=1})}}))}}),
 h(-47,{
 i(92718,{b=1,description="Awarded for winning a Brawl.",f=55,q=1}),
 i(92719,{b=1,description="Awarded for winning a Random Brawl.",f=55,q=1})}),
@@ -615,9 +614,9 @@ n(70719,{awp=50300,coords={
 n(68364,{coords={
 [503]={{50.8,29.4}}},r=1,g={
 flt(100,{
-mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4,rwp=70105})}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4})}),
 flt(101,{
-p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,rwp=90002,spellID=135156})}),
+p(1142,{awp=50300,b=1,description="Available after reaching Rank 4.",itemID=93025,npcID=68601,q=1,spellID=135156})}),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=276259}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=275683}),
 s(279121,98085,{awp=50300,b=1,f=10,phase=53,q=3}),
@@ -637,7 +636,7 @@ s(279278,98543,{awp=50300,b=1,f=10,phase=53,q=4})}}),
 n(68363,{coords={
 [500]={{54.3,25.2}}},r=2,g={
 flt(100,{
-mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4,rwp=70105})}),
+mnt(142641,{awp=50300,b=1,description="Available after reaching Rank 10.",itemID=98405,lvl=85,phase=53,q=4})}),
 flt(101),
 heir(93858,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=276259}),
 heir(92948,{awp=50200,b=2,description="Available after reaching Rank 8.",f=34,q=7,sourceID=275683}),

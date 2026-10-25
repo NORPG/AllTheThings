@@ -490,37 +490,37 @@ i(18849,{b=1,c={4},f=53,q=3}),
 i(18845,{b=1,c={7},f=53,q=3}),
 i(18852,{b=1,c={9},f=53,q=3}),
 i(18834,{b=1,c={1},f=53,q=3})}}),
-h(-45,{
-q(8371,{awp=10800,coords={
+h(-45,{awp=10800,g={
+q(8371,{coords={
 [1416]={{39.4,82.2}},
 [1417]={{45.6,45.8}},
 [1440]={{61.8,83.8}},
 [1453]={{79.4,18}},
 [1455]={{69.8,90}},
 [1457]={{57.8,34.6}}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,qgs={15351},r=2,rwp=30303}),
-q(8385,{awp=10800,coords={
+q(8385,{coords={
 [1416]={{39.4,82.2}},
 [1417]={{45.6,45.8}},
 [1440]={{61.8,83.8}},
 [1453]={{79.4,18}},
 [1455]={{69.8,90}},
 [1457]={{57.8,34.6}}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,qgs={15351},r=2,repeatable=1,rwp=30303,sourceQuests={8371}}),
-q(8367,{awp=10800,coords={
+q(8367,{coords={
 [1413]={{46.7,8.4}},
 [1416]={{62.6,59.1}},
 [1417]={{73.5,29.7}},
 [1454]={{79.8,30.4}},
 [1456]={{56,76.7}},
 [1458]={{60.7,87.7}}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,qgs={15350},r=1,rwp=30303}),
-q(8388,{awp=10800,coords={
+q(8388,{coords={
 [1413]={{46.7,8.4}},
 [1416]={{62.6,59.1}},
 [1417]={{73.5,29.7}},
 [1454]={{79.8,30.4}},
 [1456]={{56,76.7}},
-[1458]={{60.7,87.7}}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,qgs={15350},r=1,repeatable=1,rwp=30303,sourceQuests={8367}})})}}),
-h(-292,{pvp=1,g={
-m(1459,{awp=10500,lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,g={
+[1458]={{60.7,87.7}}},cost={{"i",20558,3},{"i",20559,3},{"i",20560,3}},lvl=51,qgs={15350},r=1,repeatable=1,rwp=30303,sourceQuests={8367}})}})}}),
+h(-292,{awp=10500,pvp=1,g={
+m(1459,{lore="Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",lvl=51,g={
 n(13419,{isRaid=1,r=1,g={
 s(163793,19110,{b=1,f=25,lvl=58,q=3,rwp=10600,u=2}),
 s(163789,19105,{b=1,f=4,loc=40,lvl=58,q=3,rwp=10600,u=2}),
@@ -561,11 +561,11 @@ q(7081,{awp=11101,coords={
 q(7223,{coords={
 [1459]={{43.5,15.5}}},cost={{"i",17422,20}},qgs={13257},r=2}),
 q(6846,{qgs={13446},r=2,rwp=11000,u=2}),
-q(7282,{awp=80105,coords={
+q(7282,{coords={
 [1459]={{50.9,30.8}}},qgs={13320},r=2,rwp=20300,g={
 qo(1,{coords={
 [1459]={{50.4,65.5}}},providers={{"n",13154}}})}}),
-q(7281,{awp=80105,coords={
+q(7281,{coords={
 [1459]={{50.4,65.5}}},qgs={13154},r=1,rwp=20300,g={
 qo(1,{coords={
 [1459]={{50.4,65.5}}},providers={{"n",13320}}})}}),
@@ -610,9 +610,9 @@ q(7001,{coords={
 qo(1,{crs={10981},providers={{"i",17626}}})}}),
 q(7224,{coords={
 [1459]={{49.5,82.7}}},cost={{"i",17422,20}},qgs={13176},r=1}),
-q(7301,{awp=90001,coords={
+q(7301,{coords={
 [1459]={{49,14.6}}},qgs={13319},r=2,rwp=20300}),
-q(7302,{awp=90001,coords={
+q(7302,{coords={
 [1459]={{49.5,88.2}}},qgs={13153},r=1,rwp=20300}),
 q(7361,{qgs={14185},r=1,rwp=11000,u=2}),
 q(7364,{qgs={14188},r=2,rwp=11000,u=2}),
@@ -1186,7 +1186,7 @@ i(20071,{b=1,f=53,lvl=58,minReputation={509,3000},q=3}),
 i(21117,{b=1,f=53,lvl=48,minReputation={509,3000},q=3}),
 i(21118,{b=1,f=53,lvl=38,minReputation={509,3000},q=3}),
 i(21119,{b=1,f=53,lvl=28,minReputation={509,3000},q=3})}})})}}),
-m(1460,{awp=10500,icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},g={
+m(1460,{icon=236350,lore="Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",maps={859,1339},g={
 h(-12,{pvp=1,g={
 ach(713,{maps={1440},minReputation={890,42000},phase=1608,r=2,g={
 crit(1901,{achID=907,id=1,r=2})}}),

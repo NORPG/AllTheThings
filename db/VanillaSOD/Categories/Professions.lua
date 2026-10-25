@@ -12,10 +12,10 @@ ach(731),
 ach(116)})}}),
 prof(171,{awp=10100,g={
 x(1,{requireSkill=171,g={
-h(-45,{phase=1612,requireSkill=171,g={
-q(90560,{awp=11507,r=1,requireSkill=171,g={
+h(-45,{awp=11507,phase=1612,requireSkill=171,g={
+q(90560,{r=1,requireSkill=171,g={
 r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}}),
-q(90567,{awp=11507,r=2,requireSkill=171,g={
+q(90567,{r=2,requireSkill=171,g={
 r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}})}})}})}}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
 r(24493,{lvl=20,rank=1}),
@@ -250,7 +250,7 @@ x(1,{requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=300,requireSkill=10656,rwp=11503,u=2}),
-r(19089,{awp=100107,learnedAt=295,requireSkill=10656,rwp=40003}),
+r(19089,{learnedAt=295,requireSkill=10656}),
 r(461659,{awp=11503,learnedAt=320,phase=1608,requireSkill=10656})}}),
 cat(253,{requireSkill=165,g={
 r(19085,{learnedAt=290,requireSkill=10656,rwp=11503,u=2}),
@@ -284,7 +284,7 @@ r(461663,{learnedAt=320,phase=1608,requireSkill=10658}),
 r(19090,{awp=11101,learnedAt=295,requireSkill=10658}),
 r(19101,{learnedAt=300,requireSkill=10658,rwp=11503,u=2})}}),
 cat(253,{requireSkill=165,g={
-r(19095,{awp=100107,learnedAt=300,requireSkill=10658,rwp=40003}),
+r(19095,{learnedAt=300,requireSkill=10658}),
 r(461661,{awp=11503,learnedAt=305,phase=1608,requireSkill=10658}),
 r(19079,{awp=11101,learnedAt=285,requireSkill=10658}),
 r(19076,{learnedAt=285,requireSkill=10658,rwp=11503,u=2})}}),
@@ -294,7 +294,7 @@ r(26279,{awp=11101,learnedAt=300,requireSkill=10658})}}),
 cat(256,{requireSkill=165,g={
 r(23710,{learnedAt=300,phase=1609,requireSkill=10658})}}),
 cat(257,{requireSkill=165,g={
-r(19078,{awp=100107,learnedAt=285,requireSkill=10658,rwp=40003}),
+r(19078,{learnedAt=285,requireSkill=10658}),
 r(461665,{awp=11503,learnedAt=290,phase=1608,requireSkill=10658}),
 r(19067,{learnedAt=275,requireSkill=10658}),
 r(19059,{learnedAt=270,requireSkill=10658,rwp=11503,u=2})}}),
@@ -309,19 +309,19 @@ r(19062,{learnedAt=270,requireSkill=10660})}}),
 cat(253,{requireSkill=165,g={
 r(19081,{learnedAt=290,requireSkill=10660}),
 r(10647,{learnedAt=250,requireSkill=10660}),
-r(19104,{awp=100107,learnedAt=300,requireSkill=10660,rwp=40003}),
-r(19086,{awp=100107,learnedAt=290,requireSkill=10660,rwp=40003}),
+r(19104,{learnedAt=300,requireSkill=10660}),
+r(19086,{learnedAt=290,requireSkill=10660}),
 r(19068,{learnedAt=275,requireSkill=10660})}}),
 cat(255,{requireSkill=165,g={
 r(19053,{learnedAt=265,requireSkill=10660}),
 r(19084,{learnedAt=290,requireSkill=10660}),
-r(19087,{awp=100107,learnedAt=295,requireSkill=10660,rwp=40003})}}),
+r(19087,{learnedAt=295,requireSkill=10660})}}),
 cat(256,{requireSkill=165,g={
 r(23709,{learnedAt=300,phase=1609,requireSkill=10660})}}),
 cat(257,{requireSkill=165,g={
 r(19073,{learnedAt=280,requireSkill=10660}),
 r(19097,{learnedAt=300,requireSkill=10660}),
-r(19074,{awp=100107,learnedAt=285,requireSkill=10660,rwp=40003}),
+r(19074,{learnedAt=285,requireSkill=10660}),
 r(19080,{learnedAt=285,requireSkill=10660})}}),
 cat(258,{requireSkill=165,g={
 r(19063,{learnedAt=275,requireSkill=10660}),
@@ -376,11 +376,11 @@ r(13229,{lvl=48}),
 r(13230,{lvl=56})})}}),
 prof(393),
 prof(197,{awp=10100,g={
-x(1,{phase=1612,requireSkill=197,g={
+x(1,{requireSkill=197,g={
 q(90116,{awp=11507,coords={
-[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,g={
+[1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
 r(1227723,{b=1,itemID=239149,learnedAt=260,q=3,requireSkill=197})}}),
 q(90120,{awp=11507,coords={
-[1423]={{94.6,83.6}}},qgs={240631},requireSkill=197,g={
+[1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
 r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197})}})}})}})}})
 end)

@@ -8021,7 +8021,7 @@ i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
-h(-679,{awp=110207,g={
+h(-679,{awp=120000,g={
 o(628951,{maps={525,534,535,539,542,543,550,622,624},type="AsGenericObjectContainer",g={
 o(628951,{type="AsSubGenericObject"}),
 o(628952,{type="AsSubGenericObject"}),

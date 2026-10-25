@@ -4,15 +4,15 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,crit,flt,h,i,mnt,p,q,s,settings,toy,x=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.Settings,_.CreateToy,_.CreateExpansion;
 categories.Promotions=
 h(-736,{SortPriority=90,g={
-h(-520,{
+h(-520,{awp=11101,g={
 ach(411,{awp=30002,providers={{"i",20371}},u=2}),
-p(107,{awp=11101,b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
+p(107,{b=1,itemID=20371,petTypeID=1,q=3,spellID=24696,u=2}),
 ach(412,{awp=30002,providers={{"i",33079}},u=2}),
 toy(33079,{awp=20103,b=1,q=3,u=2}),
 ach(415,{awp=30002,providers={{"i",43599}},u=2}),
 mnt(58983,{awp=30002,b=1,itemID=43599,lvl=20,q=3,u=2}),
 ach(3536,{awp=30200,providers={{"i",46802}},u=2}),
-p(228,{awp=30200,b=1,itemID=46802,petTypeID=1,q=3,spellID=66030,u=2})}),
+p(228,{awp=30200,b=1,itemID=46802,petTypeID=1,q=3,spellID=66030,u=2})}}),
 x(2,{awp=20003,u=3,g={
 q(63768,{altQuests={63767},coords={
 [1434]={{28.2,75.8}}},crs={5111,6735,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
@@ -45,20 +45,20 @@ x(1,{awp=10100,description="These rewards were made available to anyone who purc
 h(-45,{awp=11505,rwp=40006,u=3,g={
 q(91888,{coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a 2024 employee 30th anniversary collector's edition.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30002,u=2,g={
-ach(662,{awp=30002,u=3}),
-ach(663,{awp=30002,u=3}),
-ach(664,{awp=30002,u=3}),
-p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=3}),
-p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
-p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=3})}})}})}}),
+ach(662,{awp=30002,u=2}),
+ach(663,{awp=30002,u=2}),
+ach(664,{awp=30002,u=2}),
+p(93,{awp=11101,b=1,itemID=13584,petTypeID=6,q=3,spellID=17708,u=2}),
+p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=2}),
+p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=2})}})}})}}),
 q(63865,{awp=20501,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30400,u=2,g={
 p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=2}),
 ach(665,{awp=30002,rwp=30002,u=2}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=2}))}}),
-h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=20505,u=2,g={
+h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
 q(63450,{coords={
-[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},u=2,g={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
 toy(184871,{u=2}),
 toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{itemID=184865,lvl=20,u=2})}})}}),
@@ -72,15 +72,15 @@ x(3,{awp=30003,description="These rewards were made available to anyone who purc
 ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2,g={
 crit(69846,{achID=683,id=3,providers={{"n",28883}},u=2})}}),
 p(188,{awp=20403,b=1,itemID=39286,petTypeID=4,q=3,rwp=30305,spellID=52615,u=2})}}),
-h(-525,{awp=30400,rwp=40001,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,u=3,g={
+h(-525,{awp=30400,u=3,g={
+h(-522,{description="These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",questID=70449,rwp=40001,u=3,g={
 ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=3}),
 p(4234,{itemID=198665,petTypeID=9,spellID=384796,u=3}),
 toy(198647,{u=3})}}),
-h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,u=3,g={
+h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
 mnt(372677,{itemID=192455,lvl=20,u=3})}})}}),
-h(-526,{awp=30400,rwp=40402,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=3,g={
+h(-526,{awp=30400,u=3,g={
+h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",rwp=40402,u=3,g={
 p(4274,{itemID=209945,petTypeID=2,spellID=423868,u=3}),
 mnt(423869,{u=3})}})}}),
 h(-534,{description="These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",u=1,g={
@@ -103,14 +103,14 @@ p(121,{awp=20003,b=1,description="Offered as a fan website gift around Christmas
 ach(414,{awp=30002,providers={{"i",39656}},u=2}),
 p(189,{awp=20402,b=1,description="Reward from the 2008 Worldwide Invitational in Paris.",itemID=39656,petTypeID=1,q=3,spellID=53082,u=2}),
 p(192,{awp=30202,b=1,description="This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",itemID=41133,petTypeID=9,q=3,spellID=55068,u=2})}),
-h(-548,{
+h(-548,{awp=20300,g={
 ach(1436,{awp=30002,providers={{"i",37719}},u=2}),
 mnt(49322,{awp=20403,b=1,itemID=37719,lvl=40,q=4,u=2}),
 mnt(75973,{awp=30303,b=1,itemID=54860,lvl=60,q=4,u=2}),
 p(231,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=46894,petTypeID=6,q=3,spellID=66520,u=1}),
 p(247,{awp=40003,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=49664,petTypeID=6,q=3,spellID=69539,u=1}),
-p(170,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
-p(171,{awp=20300,b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}),
+p(170,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34518,petTypeID=5,q=3,spellID=45174,u=2}),
+p(171,{b=1,description="Originally only available to the Chinese & Taiwan only, they have been added to the Recruit-A-Friend Program in 5.4.1.",itemID=34519,petTypeID=5,q=3,spellID=45175,u=2})}}),
 h(-550,{awp=20403,rwp=30002,u=2,g={
 ach(1637,{providers={{"i",37297}},u=2}),
 p(179,{b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,petTypeID=2,q=3,spellID=48406,u=2}),

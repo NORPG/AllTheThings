@@ -439,8 +439,8 @@ qo(1,{providers={{"i",21987}}}),
 qo(2,{providers={{"i",21988}}}),
 qo(3,{providers={{"i",21989}}}),
 qo(4,{providers={{"i",22014}}})}})})}}),
-h(-61,{isRaid=1,lvl=60,g={
-n(6109,{awp=10300,coords={
+h(-61,{awp=10300,isRaid=1,lvl=60,g={
+n(6109,{coords={
 [1447]={{53.3,80.4}}},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=40003,g={
 i(18704,{c={3},lvl=60,q=4}),
 s(129944,19130,{b=1,f=27,lvl=60,q=4}),
@@ -502,7 +502,7 @@ s(131130,20635,{b=1,f=4,loc=42,lvl=60,q=4}),
 s(131133,20638,{b=1,f=6,loc=46,lvl=60,q=4}),
 s(131134,20639,{b=1,f=7,loc=46,lvl=60,q=4}),
 i(20636,{b=1,f=53,lvl=60,q=4})}})}}),
-n(12397,{awp=10300,coords={
+n(12397,{coords={
 [1419]={{36.6,75.8}}},crs={18338},isRaid=1,lvl=60,modelScale=6,phase=12,rwp=20001,u=2,g={
 i(18665,{c={5},f=53,lvl=60,q=4,u=2}),
 s(128765,17113,{b=1,f=28,lvl=60,q=4,u=2}),
@@ -544,13 +544,13 @@ h(-31,{
 faction(749,{coords={
 [1447]={{79.2,73.6}}},icon=135861,qgs={13278}})}),
 h(-45,{
-q(7486,{awp=10001,coords={
+q(7486,{coords={
 [1447]={{79.2,73.6}}},lvl=55,providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},g={
 i(18399,{b=1,f=52,q=3}),
 i(18398,{b=1,f=52,q=3})}}),
-q(6823,{awp=10001,coords={
+q(6823,{coords={
 [1447]={{79.2,73.6}}},lvl=55,minReputation={749,9000},qgs={13278},rwp=30008,sourceQuests={6822}}),
-q(7633,{awp=10001,c={3},coords={
+q(7633,{c={3},coords={
 [1448]={{47,24.48}}},lvl=60,qgs={14524},rwp=40003,sourceQuests={7632}}),
 q(7487,{coords={
 [33]={{54.2,83.3}}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},rwp=10300,u=2,g={
@@ -558,36 +558,36 @@ qo(1,{providers={{"i",18412},{"o",179553}},u=2})}}),
 q(7848,{awp=10300,coords={
 [35]={{54.2,83.3}}},description="Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",lvl=55,maps={242},qgs={14387},g={
 qo(1,{providers={{"i",18412},{"o",179553}}})}}),
-q(6821,{awp=10001,coords={
+q(6821,{coords={
 [1447]={{79.2,73.6}}},lvl=55,maps={250,251,252,253,254,255},qgs={13278},rwp=30008,sourceQuests={6804,6805},g={
 qo(1,{providers={{"i",17322}}})}}),
-q(6824,{awp=10001,coords={
+q(6824,{coords={
 [1447]={{79.2,73.6}}},lvl=55,qgs={13278},rwp=30008,sourceQuests={6823},g={
 qo(1,{providers={{"i",17332}}}),
 qo(2,{providers={{"i",17329}}}),
 qo(3,{providers={{"i",17331}}}),
 qo(4,{providers={{"i",17330}}}),
 ach(2496)}}),
-q(6804,{awp=10001,coords={
+q(6804,{coords={
 [1447]={{79.2,73.6}}},lvl=55,maps={1423},qgs={13278},rwp=30008,g={
 qo(1,{cost={{"i",17310,1}},crs={8519,8520,8521,8522},providers={{"i",17309}}})}}),
-q(6805,{awp=10001,coords={
+q(6805,{coords={
 [1447]={{79.2,73.6}}},lvl=55,maps={1451},qgs={13278},rwp=40003,g={
 qo(1,{providers={{"n",11744}}}),
 qo(2,{providers={{"n",11746}}})}}),
-q(7632,{awp=10001,c={3},coords={
+q(7632,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18703,1}},description="To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",lvl=60,qgs={14524},rwp=40003}),
-q(6822,{awp=10001,coords={
+q(6822,{coords={
 [1447]={{79.2,73.6}}},lvl=55,qgs={13278},rwp=30008,sourceQuests={6821},g={
 qo(1,{providers={{"n",11658}}}),
 qo(2,{providers={{"n",11668}}}),
 qo(3,{providers={{"n",11673}}}),
 qo(4,{providers={{"n",12101}}})}})}),
 h(-47,{
-i(17333,{awp=10001,b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824}}),
-i(22754,{awp=10001,b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},phase=13,q=1,rwp=30008,sourceQuests={6824}})}),
+i(17333,{b=1,description="Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",minReputation={749,9000},q=1,rwp=30008,sourceQuests={6824}}),
+i(22754,{b=1,description="Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",minReputation={749,21000},phase=13,q=1,rwp=30008,sourceQuests={6824}})}),
 h(-63,{
-i(20951,{awp=10001,description="For this to drop, you must be on the Scrying Goggles? No Problem! quest.",phase=15,q=1,rwp=40003}),
+i(20951,{description="For this to drop, you must be on the Scrying Goggles? No Problem! quest.",phase=15,q=1,rwp=40003}),
 i(17010,{q=3}),
 i(17011,{q=3}),
 s(128485,16802,{c={8},f=4,loc=45,lvl=60,q=4}),
@@ -640,7 +640,7 @@ s(128520,16837,{b=1,c={7},f=6,loc=47,lvl=60,q=4}),
 s(128542,16859,{b=1,c={2},f=7,loc=47,lvl=60,q=4}),
 i(18879,{b=1,f=52,lvl=60,q=4}),
 i(19147,{b=1,f=52,lvl=60,q=4}),
-r(19801,{awp=10001,b=1,c={3},itemID=16665,lvl=60,q=2,rwp=30008})}}),
+r(19801,{b=1,c={3},itemID=16665,lvl=60,q=2,rwp=30008})}}),
 e(1520,{npcID=11982,g={
 s(128747,17073,{b=1,f=24,lvl=60,q=4}),
 s(129726,18822,{b=1,f=26,lvl=60,q=4}),
@@ -792,8 +792,8 @@ s(129958,19144,{b=1,f=6,loc=47,lvl=60,q=4}),
 i(18821,{b=1,f=52,lvl=60,q=4}),
 i(18820,{b=1,f=53,lvl=60,q=4})}}),
 e(1527,{npcID=12018,providers={{"o",179703}},g={
-i(18703,{awp=10001,b=1,c={3},lvl=60,q=4,rwp=40003}),
-i(18646,{awp=10001,b=1,c={5},description="Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",f=53,lvl=60,q=4,rwp=40003}),
+i(18703,{b=1,c={3},lvl=60,q=4,rwp=40003}),
+i(18646,{b=1,c={5},description="Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",f=53,lvl=60,q=4,rwp=40003}),
 s(129707,18803,{b=1,f=24,lvl=60,q=4}),
 s(129709,18805,{b=1,f=20,lvl=60,q=4}),
 s(129953,19139,{b=1,f=5,loc=41,lvl=60,q=4}),
@@ -835,26 +835,26 @@ i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,phase=15,q=4,rwp=40003})}})}}),
 inst(760,{coords={
 [1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
-h(-45,{
-q(7635,{awp=10001,c={3},coords={
+h(-45,{awp=10001,g={
+q(7635,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,sourceQuests={7633},g={
 i(18724,{b=1,c={3},lvl=60,q=4})}}),
-q(7634,{awp=10001,c={3},coords={
+q(7634,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18704,1}},lvl=60,maps={1452},qgs={14526},rwp=40003,sourceQuests={7633},g={
 i(18714,{b=1,c={3},f=113,lvl=60,q=4})}}),
-q(7496,{awp=10001,coords={
+q(7496,{coords={
 [1453]={{67.2,85.1}}},lvl=60,qgs={1748},r=2,rwp=100000,sourceQuests={7495},g={
 i(18403,{b=1,f=52,q=4}),
 i(18404,{b=1,f=51,q=4}),
 i(18406,{b=1,f=53,q=4})}}),
-q(7491,{awp=10001,coords={
+q(7491,{coords={
 [1454]={{32,37.8}}},lvl=60,qgs={4949},r=1,rwp=100000,sourceQuests={7490},g={
 i(18403,{b=1,f=52,q=4}),
 i(18404,{b=1,f=51,q=4}),
 i(18406,{b=1,f=53,q=4})}}),
-q(7507,{c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},qss={18401},rwp=30300,g={
+q(7507,{awp=10100,c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},qss={18401},rwp=30300,g={
 i(18513,{b=1,q=4})}}),
-q(7636,{awp=10001,c={3},coords={
+q(7636,{c={3},coords={
 [1448]={{47,24.48}}},description="You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",lvl=60,maps={1428,1449,1451,1452},qgs={14524},qis={18708},rwp=40003,sourceQuests={7633},g={
 qo(1,{coords={
 [1449]={{34.5,41.1}}},crs={14527,14533},description="There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Un'goro Crater.",providers={{"i",18952}}}),
@@ -867,20 +867,20 @@ qo(4,{coords={
 i(18707,{b=1,cost={{"i",18724,1}},lvl=60,q=4,g={
 s(129617,18713,{b=1,c={3},f=32,lvl=60,q=4})}}),
 s(129619,18715,{b=1,c={3},description="Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",f=28,lvl=60,q=4,sourceQuests={7634,7635,7636}})}}),
-q(7508,{c={1,2},crs={14368},lvl=60,maps={234},qss={18513},rwp=30300,sourceQuests={7507}}),
-q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},g={
+q(7508,{awp=10100,c={1,2},crs={14368},lvl=60,maps={234},qss={18513},rwp=30300,sourceQuests={7507}}),
+q(7509,{awp=10100,c={1,2},lvl=60,maps={234},qgs={14368},rwp=30300,sourceQuests={7508},g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}}}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},q=1}),
 i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",q=4}),
 s(129296,18348,{b=1,c={1,2},f=25,lvl=60,q=4})}}),
-q(7497,{coords={
+q(7497,{awp=10100,coords={
 [1453]={{67,85}}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496},g={
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
-q(7493,{coords={
+q(7493,{awp=10100,coords={
 [1454]={{52.2,75.8}}},learnedAt=300,lvl=60,qgs={14392},r=1,requireSkill=165,sourceQuests={7491},g={
 r(19093,{awp=10001,itemID=15769,learnedAt=300,q=3,requireSkill=165,rwp=100000})}}),
-q(7495,{awp=10001,lvl=60,maps={1453},qss={18423},r=2,rwp=100000}),
-q(7490,{awp=10001,lvl=60,maps={1454},qss={18422},r=1,rwp=100000})}),
+q(7495,{lvl=60,maps={1453},qss={18423},r=2,rwp=100000}),
+q(7490,{lvl=60,maps={1454},qss={18422},r=1,rwp=100000})}}),
 prof(393,{
 i(15410,{q=3})}),
 n(10184,{
@@ -921,10 +921,10 @@ q(7784,{coords={
 i(19383,{b=1,f=51,lvl=60,q=4}),
 s(130147,19366,{b=1,f=1,lvl=60,q=4}),
 i(19384,{b=1,f=52,lvl=60,q=4})}})}),
-h(-56,{
-o(180667,{awp=10900,coords={
+h(-56,{awp=10900,g={
+o(180667,{coords={
 [287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",phase=15,rwp=40003,g={
-i(21109,{b=1,q=4})}})}),
+i(21109,{b=1,q=4})}})}}),
 h(-63,{
 i(18562,{crs={13996,14401},q=4}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=60,q=4}),
@@ -2250,9 +2250,9 @@ q(9269,{c={11},maps={317},qgs={15192},qis={22737},sourceQuests={9251},g={
 s(133031,22632,{b=1,f=28,lvl=60,q=5}),
 crit(747,{achID=425,id=1})}}),
 q(9250,{c={5,8,9,11},cost={{"i",22726,40}},description="Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",lvl=60,qss={22727}})}}),
-h(-12,{
-ach(15637,{awp=11403,phase=1604,rwp=11500,u=2}),
-i(191481,{awp=11403,description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",phase=1604,rwp=11500,u=2})}),
+h(-12,{awp=11403,g={
+ach(15637,{phase=1604,rwp=11500,u=2}),
+i(191481,{description="This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this as well)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",phase=1604,rwp=11500,u=2})}}),
 h(-45,{
 cl(1,{
 q(9037,{coords={
@@ -2643,30 +2643,30 @@ r(28223,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
 r(28221,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
 r(28220,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
 r(28219,{learnedAt=300,minReputation={529,42000},requireSkill=165})}}),
-n(16061,{
+n(16061,{awp=11100,g={
 s(133413,23014,{b=1,f=25,lvl=60,q=4}),
 s(133408,23009,{b=1,f=27,lvl=60,q=4}),
 s(133416,23017,{b=1,f=3,lvl=60,q=4}),
 s(133618,23219,{b=1,f=7,loc=45,lvl=60,q=4}),
 i(23018,{b=1,f=52,lvl=60,q=4}),
-i(23004,{b=1,f=54,lvl=60,q=4})}),
-n(16060,{
+i(23004,{b=1,f=54,lvl=60,q=4})}}),
+n(16060,{awp=11100,g={
 s(133431,23032,{b=1,f=4,loc=40,lvl=60,q=4}),
 s(133419,23020,{b=1,f=5,loc=40,lvl=60,q=4}),
 i(23023,{b=1,f=51,lvl=60,q=4}),
 s(133420,23021,{b=1,f=4,loc=43,lvl=60,q=4}),
-s(133472,23073,{b=1,f=5,loc=47,lvl=60,q=4})}),
+s(133472,23073,{b=1,f=5,loc=47,lvl=60,q=4})}}),
 h(-350,{modelScale=2,providers={{"o",181366}},qgs={16062,16063,16064,16065},g={
-i(22349,{b=1,c={1,4},lvl=60,q=4}),
-i(22351,{b=1,c={5,8,9},lvl=60,q=4}),
-i(22350,{b=1,c={2,3,7,11},lvl=60,q=4}),
+i(22349,{awp=11100,b=1,c={1,4},lvl=60,q=4}),
+i(22351,{awp=11100,b=1,c={5,8,9},lvl=60,q=4}),
+i(22350,{awp=11100,b=1,c={2,3,7,11},lvl=60,q=4}),
 s(125567,13262,{b=1,collectible=false,f=26,lore="This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",lvl=60,q=5,u=1}),
-s(133090,22691,{b=1,f=26,lvl=60,q=4}),
-s(133208,22809,{b=1,f=24,lvl=60,q=4}),
-s(133210,22811,{b=1,f=32,lvl=60,q=4}),
-s(133470,23071,{b=1,f=5,loc=46,lvl=60,q=4}),
-i(23025,{b=1,f=52,lvl=60,q=4}),
-i(23027,{b=1,f=53,lvl=60,q=4})}})}}),
+s(133090,22691,{awp=11100,b=1,f=26,lvl=60,q=4}),
+s(133208,22809,{awp=11100,b=1,f=24,lvl=60,q=4}),
+s(133210,22811,{awp=11100,b=1,f=32,lvl=60,q=4}),
+s(133470,23071,{awp=11100,b=1,f=5,loc=46,lvl=60,q=4}),
+i(23025,{awp=11100,b=1,f=52,lvl=60,q=4}),
+i(23027,{awp=11100,b=1,f=53,lvl=60,q=4})}})}}),
 h(-79,{icon=136118,g={
 n(16028,{modelScale=2,g={
 s(133214,22815,{b=1,f=22,lvl=60,q=4}),
@@ -3277,10 +3277,10 @@ s(132674,22275,{b=1,f=5,loc=47,lvl=52,q=3}),
 i(22400,{b=1,f=54,lvl=52,phase=15,q=3,rwp=50004}),
 i(22395,{b=1,f=54,lvl=52,phase=15,q=3,rwp=50004})}}),
 n(8929,{description="In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",sourceQuests={4003,4362},g={
-s(124963,12557,{awp=80100,b=1,f=7,loc=41,lvl=54,q=3,rwp=40003}),
-s(124960,12554,{awp=70302,b=1,f=4,loc=44,lvl=54,q=3,rwp=40003}),
-s(124962,12556,{awp=70302,b=1,f=4,loc=47,lvl=54,q=3,rwp=40003}),
-s(124959,12553,{awp=70302,b=1,f=5,loc=47,lvl=54,q=3,rwp=40003})}}),
+s(124963,12557,{b=1,f=7,loc=41,lvl=54,q=3,rwp=40003}),
+s(124960,12554,{b=1,f=4,loc=44,lvl=54,q=3,rwp=40003}),
+s(124962,12556,{b=1,f=4,loc=47,lvl=54,q=3,rwp=40003}),
+s(124959,12553,{b=1,f=5,loc=47,lvl=54,q=3,rwp=40003})}}),
 e(387,{npcID=9019,g={
 ach(642),
 s(124560,11931,{b=1,f=22,lvl=54,q=3}),
@@ -3532,7 +3532,7 @@ r(17574,{crs={9262,9264},itemID=13494,learnedAt=290,q=2,requireSkill=171}),
 i(21982,{crs={9196,9197,9198,9199,9200,9201,9216,9217,9218,10584},phase=15,q=1,rwp=40003}),
 i(12219,{q=1,rwp=40003})}),
 n(9257,{description="DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",g={
-i(9214,{awp=100107,b=1,c={9},f=200,lvl=50,q=2,rwp=40001}),
+i(9214,{b=1,c={9},f=200,lvl=50,q=2,rwp=40001}),
 n(10263,{description="This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",g={
 s(125508,13181,{b=1,f=4,loc=44,lvl=52,q=3}),
 s(125509,13182,{b=1,f=25,lvl=52,q=3})}})}}),
@@ -3943,7 +3943,7 @@ crit(545,{achID=644,id=1})}})}}),
 h(-356,{coords={
 [1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,g={
 h(-63,{
-i(18250,{awp=100105,b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003})}),
+i(18250,{b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003})}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",g={
 s(129407,18462,{b=1,f=34,lvl=55,q=2}),
 s(129408,18463,{b=1,f=25,lvl=55,q=2}),
@@ -4555,7 +4555,7 @@ s(117624,1976,{f=24,lvl=24,q=3}),
 s(118041,2549,{f=28,lvl=22,q=3}),
 s(117454,1727,{f=25,lvl=23,q=3}),
 s(116990,776,{f=20,lvl=26,q=3}),
-s(118870,3569,{awp=100107,crs={4517},f=4,loc=42,lvl=21,q=2,rwp=60002}),
+s(118870,3569,{crs={4517},f=4,loc=42,lvl=21,q=2,rwp=60002}),
 s(117625,1978,{f=5,loc=44,lvl=22,q=3})}),
 n(6168,{description="Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",rwp=60002,g={
 i(6841,{f=55,q=1,rwp=40003})}}),
@@ -4590,7 +4590,7 @@ s(121491,6694,{b=1,f=8,lvl=27,q=3}),
 i(6693,{b=1,f=52,lvl=27,q=3})}})}}),
 inst(316,{coords={
 [1420]={{82.6,32.4}}},lore="The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",lvl=25,mapID=435,maps={302,303,304,305,436,805},savedInstanceID=189,zoneTextAreaID=796,g={
-h(-361,{awp=100107,rwp=50004,g={
+h(-361,{rwp=50004,g={
 h(-45,{
 q(1051,{lvl=25,maps={1416,1424},qgs={3981},r=1,rwp=40003,g={
 qo(1,{coords={
@@ -4617,7 +4617,7 @@ s(122086,7682,{b=1,f=20,lvl=29,q=3})}),
 n(4543,{
 s(122089,7685,{b=1,f=1,lvl=33,q=3}),
 s(122088,7684,{b=1,f=4,loc=41,lvl=30,q=3})})}}),
-h(-362,{awp=100107,lvl=28,rwp=50004,g={
+h(-362,{lvl=28,rwp=50004,g={
 h(-45,{
 q(1049,{coords={
 [1456]={{34.6,47.2}}},lvl=28,qgs={3978},races={2,6,8,10},rwp=40003,g={
@@ -4647,7 +4647,7 @@ s(122101,7711,{b=1,f=4,loc=42,lvl=33,q=3}),
 i(34227,{awp=20300,b=1,f=52,lvl=29,q=4}),
 o(103821,{rwp=40003,g={
 i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",q=2})}})})}}),
-h(-363,{awp=100107,cost={{"i",7146,1}},lvl=35,rwp=50004,g={
+h(-363,{cost={{"i",7146,1}},lvl=35,rwp=50004,g={
 n(3975,{
 s(122107,7717,{b=1,f=22,lvl=37,q=3}),
 s(122109,7719,{b=1,f=6,loc=40,lvl=37,q=3}),
@@ -4655,7 +4655,7 @@ s(122108,7718,{b=1,f=6,loc=41,lvl=37,q=3}),
 s(123649,10330,{b=1,f=6,loc=46,lvl=38,q=3})}),
 n(6575,{
 s(133591,23192,{b=1,f=9,q=2})})}}),
-h(-364,{awp=100107,cost={{"i",7146,1}},lvl=37,rwp=50004,g={
+h(-364,{cost={{"i",7146,1}},lvl=37,rwp=50004,g={
 n(4542,{
 s(130231,19507,{b=1,f=4,loc=41,lvl=36,q=2}),
 s(130232,19508,{b=1,f=5,loc=43,lvl=36,q=2}),
@@ -4666,9 +4666,9 @@ s(122114,7724,{b=1,f=6,loc=44,lvl=39,q=3}),
 s(122113,7723,{b=1,f=24,lvl=39,q=3}),
 s(123649,10330,{b=1,f=6,loc=46,lvl=38,q=3})}),
 n(3977,{
-s(122111,7721,{awp=110002,b=1,f=23,lvl=39,q=3}),
-i(7722,{awp=110002,b=1,f=51,lvl=39,q=3}),
-s(122110,7720,{awp=110002,b=1,f=4,loc=40,lvl=39,q=3})})}}),
+s(122111,7721,{b=1,f=23,lvl=39,q=3}),
+i(7722,{b=1,f=51,lvl=39,q=3}),
+s(122110,7720,{b=1,f=4,loc=40,lvl=39,q=3})})}}),
 h(-45,{
 q(1113,{coords={
 [1458]={{48.82,69.28}}},lvl=30,qgs={2055},r=1,rwp=40003,sourceQuests={1109},g={
@@ -4853,8 +4853,8 @@ s(126129,14002,{b=1,f=8,q=3}),
 s(126126,13984,{b=1,f=20,q=3}),
 s(126124,13982,{b=1,f=26,q=3}),
 s(126128,13986,{b=1,f=4,loc=40,q=3})}})}}),
-h(-56,{awp=10300,rwp=50004,g={
-i(12736,{awp=11101,b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
+h(-56,{awp=11101,rwp=50004,g={
+i(12736,{b=1,description="Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",providers={{"o",175965}},q=1})}}),
 h(-63,{awp=10300,rwp=50004,g={
 i(20520,{q=2}),
 r(20035,{crs={10469},itemID=16255,learnedAt=300,q=2,requireSkill=333}),
@@ -4865,7 +4865,7 @@ i(22526,{phase=16,q=1}),
 i(12843,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=2,rwp=40003}),
 i(12841,{awp=11101,b=1,description="Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
 i(12840,{awp=11101,b=1,description="Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",q=1,rwp=40003}),
-i(13920,{awp=100105,b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
+i(13920,{b=1,crs={10678},description="This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",lvl=55,q=1,rwp=40003}),
 i(12753,{awp=11101,b=1,q=2,rwp=40003}),
 s(129606,18702,{f=7,loc=45,lvl=55,q=3}),
 s(128380,16671,{crs={10478},f=6,loc=43,lvl=52,q=3,rwp=40003}),
@@ -5380,7 +5380,7 @@ s(128437,16728,{b=1,f=7,loc=46,lvl=56,q=3}),
 s(128396,16687,{b=1,f=4,loc=46,lvl=56,q=3}),
 s(128418,16709,{b=1,f=5,loc=46,lvl=56,q=3}),
 s(128428,16719,{b=1,f=5,loc=46,lvl=56,q=3}),
-crit(3270,{achID=646,awp=10100,id=1})}})}})}}),
+crit(3270,{achID=646,id=1})}})}})}}),
 inst(63,{coords={
 [1436]={{42.2,82.6}}},lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,maps={55,292},savedInstanceID=36,zoneTextAreaID=1581,g={
 h(-45,{
@@ -5415,8 +5415,8 @@ s(122058,7606,{b=1,f=6,loc=44,q=2})}})}),
 h(-46,{
 n(596,{coords={
 [1436]={{44,78.3}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
-s(119177,3902,{awp=100107,f=28,lvl=13,q=2,rwp=40003}),
-s(120873,5967,{awp=100107,f=4,loc=45,lvl=13,q=2,rwp=40003})}}),
+s(119177,3902,{f=28,lvl=13,q=2,rwp=40003}),
+s(120873,5967,{f=4,loc=45,lvl=13,q=2,rwp=40003})}}),
 n(626,{coords={
 [1436]={{42.2,82.6}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
 i(1875,{q=1}),
@@ -5425,8 +5425,8 @@ s(117769,2166,{f=6,loc=46,lvl=15,q=2}),
 s(117771,2168,{f=4,loc=47,lvl=16,q=2})}}),
 n(599,{coords={
 [1436]={{42.2,79.9}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
-s(118432,3019,{awp=100107,f=4,loc=42,lvl=13,q=2,rwp=40003}),
-s(119804,4660,{awp=100107,f=4,loc=47,lvl=13,q=2,rwp=40003})}})}),
+s(118432,3019,{f=4,loc=42,lvl=13,q=2,rwp=40003}),
+s(119804,4660,{f=4,loc=47,lvl=13,q=2,rwp=40003})}})}),
 h(-63,{
 s(123695,10402,{crs={4416},f=5,loc=47,lvl=13,q=2,rwp=40003}),
 s(123694,10401,{crs={634,4417},f=5,loc=44,lvl=13,q=2}),
@@ -5434,11 +5434,11 @@ s(123693,10400,{crs={634,4417},f=5,loc=46,lvl=13,q=2}),
 s(117608,1951,{crs={657,1732},f=25,lvl=14,q=2}),
 s(117613,1959,{crs={623},f=22,lvl=12,q=2}),
 s(117590,1927,{crs={594},f=21,lvl=10,q=2,rwp=40003}),
-s(117591,1928,{awp=100107,crs={1726},f=28,lvl=11,q=2,rwp=40003}),
-s(117588,1925,{awp=100107,crs={1725},f=25,lvl=11,q=2,rwp=40003}),
-s(117604,1943,{awp=100107,crs={3947},f=6,loc=46,lvl=14,q=2,rwp=40003}),
-s(117598,1936,{awp=100107,crs={622},f=20,lvl=13,q=2,rwp=40003}),
-s(117605,1944,{awp=100107,crs={1731},f=5,loc=44,lvl=13,q=2,rwp=40003}),
+s(117591,1928,{crs={1726},f=28,lvl=11,q=2,rwp=40003}),
+s(117588,1925,{crs={1725},f=25,lvl=11,q=2,rwp=40003}),
+s(117604,1943,{crs={3947},f=6,loc=46,lvl=14,q=2,rwp=40003}),
+s(117598,1936,{crs={622},f=20,lvl=13,q=2,rwp=40003}),
+s(117605,1944,{crs={1731},f=5,loc=44,lvl=13,q=2,rwp=40003}),
 i(1894,{crs={623,624,625},q=1}),
 p(50,{crs={657},itemID=8492,petTypeID=3,q=1,spellID=10683}),
 s(117612,1958,{crs={625},f=23,lvl=12,q=2}),
@@ -5449,7 +5449,7 @@ s(119816,4676,{crs={624},f=6,loc=44,lvl=12,q=2}),
 s(117593,1930,{crs={598},f=3,lvl=13,q=2}),
 s(117596,1934,{crs={636},f=5,loc=46,lvl=15,q=2,rwp=40003}),
 s(117589,1926,{crs={824},f=23,lvl=10,q=2}),
-s(117606,1945,{awp=100107,crs={641},f=5,loc=44,lvl=13,q=2,rwp=40003}),
+s(117606,1945,{crs={641},f=5,loc=44,lvl=13,q=2,rwp=40003}),
 r(6703,{crs={657},itemID=5787,learnedAt=95,q=1,requireSkill=165})}),
 n(3586,{description="This is a Rare Creature and, as such, is not always present.",rwp=40003,g={
 s(120473,5443,{b=1,f=8,lvl=15,q=3}),
@@ -5722,14 +5722,14 @@ h(-44,{
 prof(333,{
 n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first."})})}),
 h(-45,{
-q(2964,{awp=20300,coords={
+q(2964,{coords={
 [1455]={{77.2,11.8}}},lvl=45,qgs={2916},r=2,rwp=40003,sourceQuests={2977},g={
-s(144374,34418,{b=1,f=27,q=3}),
-i(34419,{b=1,f=36,q=3})}}),
-q(2968,{awp=20300,coords={
+s(144374,34418,{awp=20300,b=1,f=27,q=3}),
+i(34419,{awp=20300,b=1,f=36,q=3})}}),
+q(2968,{coords={
 [1456]={{34.4,46.9}}},lvl=45,qgs={3978},r=1,rwp=40003,sourceQuests={2967},g={
-s(144377,34421,{b=1,f=6,loc=47,q=3}),
-s(144378,34422,{b=1,f=7,loc=47,q=3})}}),
+s(144377,34421,{awp=20300,b=1,f=6,loc=47,q=3}),
+s(144378,34422,{awp=20300,b=1,f=7,loc=47,q=3})}}),
 q(2200,{coords={
 [1455]={{36.4,3.6}}},lvl=37,qgs={6826},r=2,rwp=40003,sourceQuests={2199},g={
 i(7667,{q=1})}}),
@@ -5828,7 +5828,7 @@ s(122866,9423,{f=24,lvl=40,q=3}),
 s(122835,9391,{crs={4844,4845,4846},f=24,lvl=32,q=3}),
 s(122871,9428,{crs={4844,4845,4846},f=5,loc=43,lvl=30,q=3})}),
 h(-46,{
-n(7057,{awp=100107,description="This guy spawns outside of the instance in the cave leading to the instance.",rwp=40003,g={
+n(7057,{description="This guy spawns outside of the instance in the cave leading to the instance.",rwp=40003,g={
 s(122823,9378,{f=21,lvl=33,q=3}),
 s(122820,9375,{f=5,loc=40,lvl=33,q=3}),
 s(122826,9382,{f=5,loc=47,lvl=33,q=2})}})}),
@@ -5950,8 +5950,7 @@ r(7954,{itemID=6475,learnedAt=105,q=1,requireSkill=165})}})}),
 h(-63,{
 i(6443,{description="Drops from Deviate creatures in the Wailing Caverns.",q=1}),
 n(3840,{
-s(123706,10413,{f=5,loc=44,lvl=14,q=3}),
-i(208015)})}),
+s(123706,10413,{f=5,loc=44,lvl=14,q=3})})}),
 prof(393,{
 i(6470,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",q=1}),
 i(6471,{description="Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",q=1})}),
@@ -6565,9 +6564,9 @@ i(23438,{q=3}),
 i(23437,{q=3})}})}})}}),
 inst(748,{coords={
 [1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,phase=18,savedInstanceID=548,sourceQuests={10901},zoneTextAreaID=3607,g={
-h(-45,{
-q(10944,{awp=20100,coords={
-[332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708}})}),
+h(-45,{awp=20100,g={
+q(10944,{coords={
+[332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708}})}}),
 h(-63,{
 i(24368,{q=1}),
 r(36315,{b=1,itemID=30280,learnedAt=375,q=4,requireSkill=197}),
@@ -6792,8 +6791,8 @@ h(-12,{
 ach(959,{maps={75},minReputation={990,42000}})}),
 h(-31,{
 faction(990,{maps={75}})}),
-ah(2575,{type="s",g={
-o(185557,{awp=20100,learnedAt=375,maps={329},requireSkill=186,g={
+ah(2575,{awp=20100,type="s",g={
+o(185557,{learnedAt=375,maps={329},requireSkill=186,g={
 i(23440,{q=3,requireSkill=186}),
 i(23436,{q=3,requireSkill=186}),
 i(23441,{q=3,requireSkill=186}),
@@ -8769,7 +8768,7 @@ i(30436,{crs={19218},q=1}),
 i(30437,{crs={19710},q=1}),
 r(26783,{b=1,crs={19168},itemID=21906,learnedAt=360,q=2,requireSkill=197}),
 r(28571,{b=1,crs={19168,19221},itemID=22920,learnedAt=360,q=2,requireSkill=171})}),
-o(184465,{awp=50004,cost={{"i",30438,1}},isBounty=1,modelScale=1.6,rwp=40003,g={
+o(184465,{cost={{"i",30438,1}},isBounty=1,modelScale=1.6,rwp=40003,g={
 s(138598,28252,{b=1,f=4,loc=42,lvl=70,q=3}),
 s(138597,28251,{b=1,f=5,loc=47,lvl=70,q=3}),
 s(138595,28249,{b=1,f=3,lvl=70,q=3}),

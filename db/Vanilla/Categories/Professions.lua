@@ -231,7 +231,7 @@ x(1,{requireSkill=165,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=300,requireSkill=10656}),
-r(19089,{awp=100107,learnedAt=295,requireSkill=10656,rwp=40003})}}),
+r(19089,{learnedAt=295,requireSkill=10656})}}),
 cat(253,{requireSkill=165,g={
 r(19085,{learnedAt=290,requireSkill=10656}),
 r(19077,{learnedAt=285,requireSkill=10656}),
@@ -249,8 +249,8 @@ r(24654,{learnedAt=300,requireSkill=10656}),
 r(19060,{learnedAt=270,requireSkill=10656})}}),
 cat(258,{requireSkill=165,g={
 r(20855,{learnedAt=300,requireSkill=10656})}}),
-cat(259,{awp=100105,requireSkill=165,g={
-r(22926,{learnedAt=300,phase=1101,requireSkill=10656,rwp=40003})}})}}),
+cat(259,{requireSkill=165,g={
+r(22926,{learnedAt=300,phase=1101,requireSkill=10656})}})}}),
 prof(10658,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5144,5146},g={
 cat(251,{requireSkill=165,g={
 r(10632,{learnedAt=250,requireSkill=10658}),
@@ -260,7 +260,7 @@ r(19061,{learnedAt=270,requireSkill=10658}),
 r(19090,{awp=11101,learnedAt=295,requireSkill=10658}),
 r(19101,{learnedAt=300,requireSkill=10658})}}),
 cat(253,{requireSkill=165,g={
-r(19095,{awp=100107,learnedAt=300,requireSkill=10658,rwp=40003}),
+r(19095,{learnedAt=300,requireSkill=10658}),
 r(19079,{awp=11101,learnedAt=285,requireSkill=10658}),
 r(19076,{learnedAt=285,requireSkill=10658})}}),
 cat(255,{requireSkill=165,g={
@@ -269,11 +269,11 @@ r(26279,{awp=11101,learnedAt=300,requireSkill=10658})}}),
 cat(256,{requireSkill=165,g={
 r(23710,{learnedAt=300,phase=13,requireSkill=10658})}}),
 cat(257,{requireSkill=165,g={
-r(19078,{awp=100107,learnedAt=285,requireSkill=10658,rwp=40003}),
+r(19078,{learnedAt=285,requireSkill=10658}),
 r(19067,{learnedAt=275,requireSkill=10658}),
-r(19059,{awp=100107,learnedAt=270,requireSkill=10658,rwp=40003})}}),
-cat(259,{awp=100105,requireSkill=165,g={
-r(22928,{learnedAt=300,phase=1101,requireSkill=10658,rwp=40003})}})}}),
+r(19059,{learnedAt=270,requireSkill=10658})}}),
+cat(259,{requireSkill=165,g={
+r(22928,{learnedAt=300,phase=1101,requireSkill=10658})}})}}),
 prof(10660,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5143,5148},g={
 cat(251,{requireSkill=165,g={
 r(10621,{learnedAt=225,requireSkill=10660})}}),
@@ -282,19 +282,19 @@ r(19062,{learnedAt=270,requireSkill=10660})}}),
 cat(253,{requireSkill=165,g={
 r(19081,{learnedAt=290,requireSkill=10660}),
 r(10647,{learnedAt=250,requireSkill=10660}),
-r(19104,{awp=100107,learnedAt=300,requireSkill=10660,rwp=40003}),
-r(19086,{awp=100107,learnedAt=290,requireSkill=10660,rwp=40003}),
+r(19104,{learnedAt=300,requireSkill=10660}),
+r(19086,{learnedAt=290,requireSkill=10660}),
 r(19068,{learnedAt=275,requireSkill=10660})}}),
 cat(255,{requireSkill=165,g={
 r(19053,{learnedAt=265,requireSkill=10660}),
 r(19084,{learnedAt=290,requireSkill=10660}),
-r(19087,{awp=100107,learnedAt=295,requireSkill=10660,rwp=40003})}}),
+r(19087,{learnedAt=295,requireSkill=10660})}}),
 cat(256,{requireSkill=165,g={
 r(23709,{learnedAt=300,phase=13,requireSkill=10660})}}),
 cat(257,{requireSkill=165,g={
 r(19073,{learnedAt=280,requireSkill=10660}),
 r(19097,{learnedAt=300,requireSkill=10660}),
-r(19074,{awp=100107,learnedAt=285,requireSkill=10660,rwp=40003}),
+r(19074,{learnedAt=285,requireSkill=10660}),
 r(19080,{learnedAt=285,requireSkill=10660})}}),
 cat(258,{requireSkill=165,g={
 r(19063,{learnedAt=275,requireSkill=10660}),

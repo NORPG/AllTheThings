@@ -8961,7 +8961,7 @@ s(181877,199024,{f=21,lvl=60}),
 s(181897,199047,{f=34,lvl=60}),
 s(181890,199040,{f=23,lvl=60})}})}}),
 x(11,{awp=110002,g={
-h(-88,{awp=110000,g={
+h(-88,{
 flt(4,{
 s(220459,224589,{f=4,loc=45,lvl=70}),
 s(220460,224590,{f=4,loc=40,lvl=70}),
@@ -9033,7 +9033,7 @@ s(220489,224622,{f=7,loc=45,lvl=70})}),
 flt(3,{
 s(220491,224624,{f=3,lvl=70})}),
 flt(52,{
-i(224592,{f=52,lvl=70})})}}),
+i(224592,{f=52,lvl=70})})}),
 h(-101,{
 s(220494,224627,{f=31,lvl=70}),
 s(220495,224628,{f=26,lvl=70}),
@@ -9093,7 +9093,7 @@ r(445399,{b=1,itemID=223121,requireSkill=333,skillID=2874}),
 r(444068,{itemID=223100,requireSkill=165,skillID=2880}),
 r(450245,{itemID=223043,requireSkill=164,skillID=2872})})}}),
 x(12,{awp=120001,g={
-h(-88,{awp=120000,g={
+h(-88,{
 flt(3,{
 s(304103,266224,{f=3,lvl=78}),
 s(304101,266221,{f=3,lvl=78}),
@@ -9176,7 +9176,7 @@ i(258908,{f=52,lvl=80}),
 i(258910,{f=52,lvl=80}),
 i(258909,{f=52,lvl=80})}),
 flt(51,{
-i(258911,{f=51,lvl=80})})}}),
+i(258911,{f=51,lvl=80})})}),
 h(-101,{
 s(301779,258960,{f=1,lvl=80}),
 s(301778,258959,{f=26,lvl=80}),
@@ -9256,10 +9256,6 @@ i(245857,{b=1,spellID=1253221}),
 i(245831,{b=1,spellID=1253219}),
 i(245848,{b=1,spellID=1253222}),
 i(245839,{b=1,spellID=1253220})})}}),
-h(-215,{awp=100005,sharedDescription="This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this.",g={
-h(-88,{
-flt(3),
-flt(50)})}}),
 ah(1810,{description="These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",type="s",g={
 i(169475,{awp=80200,lvl=50,sym={{"select","itemID",170118,170116,170201,170114,170120,170115,170119,170117,170112,169400,169435,169402,169425,169404,169399,169403,169401,169398,169416,169431,169418,169413,169420,169415,169419,169417,169414,169408,169434,169410,169405,169412,169407,169411,169409,169406,169424,169433,169427,169421,169429,169423,169428,169426,169422}}}),
 i(16882,{awp=11101,sym={{"select","itemID",11968,4999,11984,11994,12054,6375,5002,11969,6454,12006,7360,5972,2601,7092,7364,7363,4350,6390,3611,6044,3608,5578,10424,2882,12007,3396,12008,11967}},g={
@@ -9309,10 +9305,10 @@ i(88165,{awp=50004,g={
 s(45574,88150,{f=25,lvl=35}),
 s(45573,88149,{f=20,lvl=35})}}),
 i(16883)}}),
-ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
-x(1,{awp=10100,g={
+ah(921,{awp=10100,description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
+x(1,{
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}}),
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}),
 x(3,{awp=30003,g={
 i(37674,{coords={
 [115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),

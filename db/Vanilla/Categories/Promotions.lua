@@ -20,10 +20,10 @@ p(124,{b=1,itemID=22781,petTypeID=8,q=1,spellID=28505,u=2}),
 p(1073,{b=1,itemID=22780,petTypeID=1,q=1,spellID=28487,u=2}),
 p(757,{b=1,itemID=19055,petTypeID=2,q=1,spellID=23531,u=2}),
 p(758,{b=1,itemID=19054,petTypeID=2,q=1,spellID=23530,u=2})}}),
-h(-547,{
-s(163830,19160,{awp=11101,b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
+h(-547,{awp=11101,g={
+s(163830,19160,{b=1,description="This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",f=9,q=1,u=2}),
 p(1168,{awp=20100,b=1,description="Reward from a Korean Promotional Event (Korea Only)",itemID=20651,petTypeID=1,q=1,spellID=25018,u=1}),
-p(121,{awp=20003,b=1,description="Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",itemID=22114,petTypeID=1,q=1,spellID=27241,u=1})}),
+p(121,{awp=20003,b=1,description="Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",itemID=22114,petTypeID=1,q=1,spellID=27241,u=1})}}),
 h(-551,{awp=20001,u=1,g={
 flt(101,{u=1,g={
 p(130,{b=1,itemID=23713,petTypeID=3,q=1,spellID=30156,u=1})}}),

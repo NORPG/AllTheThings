@@ -9,13 +9,13 @@ ach(2144,{phase=30,r=2,sym={{"meta_achievement",913,1693,2798,1793,1038,1683,165
 mnt(60024,{b=1,itemID=44177,lvl=70,q=4})}}),
 ach(2145,{phase=30,r=1,rwp=40003,sym={{"meta_achievement",913,1693,2798,1793,1039,1683,1656,1691}},g={
 mnt(60024,{b=1,itemID=44177,lvl=70,q=4})}})}}),
-h(-557,{e=7,maps={1411,1426},g={
+h(-557,{awp=20202,e=7,maps={1411,1426},g={
 h(-12,{e=7,g={
 ach(1684,{awp=30002,e=7,r=2,rwp=50004,sym={{"meta_achievement",1186,1185,2796,295,303,1936}},g={
 title(101,{e=7})}}),
 ach(1683,{awp=30002,e=7,r=1,sym={{"meta_achievement",1186,1185,2796,295,303,1936}},g={
 title(101,{e=7})}}),
-ach(3496,{awp=20202,e=7,providers={{"i",33977},{"i",37828}}}),
+ach(3496,{e=7,providers={{"i",33977},{"i",37828}}}),
 ach(1293,{awp=20403,e=7,providers={{"i",33016},{"i",33017},{"i",33018},{"i",33019},{"i",33020},{"i",33021}},rwp=30200,u=2}),
 ach(2796,{awp=30002,e=7,providers={{"i",37736},{"i",37737}},g={
 crit(9859,{achID=2796,e=7,id=1,questID=12420,u=1}),
@@ -34,10 +34,10 @@ crit(3517,{achID=1183,e=7,id=1,providers={{"i",37492}}}),
 crit(3516,{achID=1183,e=7,id=1,providers={{"i",37494}}}),
 crit(3515,{achID=1183,e=7,id=1,providers={{"i",37488}}})}}),
 ach(293,{awp=30002,e=7,maps={125},providers={{"i",33862},{"i",33863},{"i",33864},{"i",33868},{"i",33966},{"i",33967},{"i",33968},{"i",33969}}}),
-ach(1936,{awp=20202,e=7,providers={{"i",32233}}}),
+ach(1936,{e=7,providers={{"i",32233}}}),
 ach(1260,{awp=30002,e=7,maps={1955}}),
 ach(4782,{awp=30002,e=7,providers={{"i",37892},{"i",37893},{"i",37894},{"i",37895},{"i",37896},{"i",37897}},rwp=40001}),
-ach(303,{awp=20202,e=7,providers={{"i",33976},{"i",33977},{"i",37750},{"i",37816},{"i",37828},{"i",39476},{"i",39477}}}),
+ach(303,{e=7,providers={{"i",33976},{"i",33977},{"i",37750},{"i",37816},{"i",37828},{"i",39476},{"i",39477}}}),
 ach(1184,{awp=30002,e=7,r=2,g={
 crit(8885,{achID=1184,e=7,id=1,providers={{"i",33030}},r=2}),
 crit(8884,{achID=1184,e=7,id=1,providers={{"i",33029}},r=2}),
@@ -67,8 +67,8 @@ crit(3546,{achID=1185,e=7,id=1,providers={{"i",33025}}}),
 crit(3547,{achID=1185,e=7,id=1,providers={{"i",34064}}}),
 crit(7987,{achID=1185,e=7,id=1,providers={{"i",33043}}}),
 crit(3549,{achID=1185,e=7,id=1,providers={{"i",33026}}})}}),
-ach(1292,{awp=20202,e=7,providers={{"i",32912},{"i",32915},{"i",32917},{"i",32918},{"i",32919},{"i",32920}},rwp=20403,u=2})}}),
-n(23872,{awp=20202,description="You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",e=7,isDaily=1,lvl=75,maps={242,243},g={
+ach(1292,{e=7,providers={{"i",32912},{"i",32915},{"i",32917},{"i",32918},{"i",32919},{"i",32920}},rwp=20403,u=2})}}),
+n(23872,{description="You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",e=7,isDaily=1,lvl=75,maps={242,243},g={
 ach(295,{awp=30002,e=7}),
 i(54535,{awp=30002,b=1,e=7,q=3,rwp=60002,g={
 mnt(49379,{awp=20202,b=1,e=7,itemID=37828,lvl=40,q=4}),
@@ -98,47 +98,47 @@ s(145411,37892,{b=1,e=7,f=2,q=3})}}),
 q(13931,{awp=30002,coords={
 [1411]={{46.3,14.8}}},e=7,providers={{"i",33955}},qgs={24497},r=1,rwp=40001,sourceQuests={11409},g={
 s(145411,37892,{b=1,e=7,f=2,q=3})}}),
-q(11293,{altQuests={11294},awp=20202,coords={
+q(11293,{altQuests={11294},coords={
 [1426]={{49,39.8}}},e=7,isDaily=1,maps={1455},qgs={23627},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11407,{altQuests={11408},awp=20202,coords={
+q(11407,{altQuests={11408},coords={
 [1411]={{44.4,17.9}}},e=7,isDaily=1,maps={1454},qgs={24498},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11294,{altQuests={11293},awp=20202,coords={
+q(11294,{altQuests={11293},coords={
 [1426]={{49.5,38.7}}},e=7,isDaily=1,maps={1455},qgs={23628},qis={33306},r=2,rwp=110200,sourceQuests={11318},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11408,{altQuests={11407},awp=20202,coords={
+q(11408,{altQuests={11407},coords={
 [1411]={{44.4,17.9}}},e=7,isDaily=1,maps={1454},qgs={24499},qis={33306},r=1,rwp=110200,sourceQuests={11409},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}}),
 qo(4,{e=7,providers={{"i",33306}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11441,{altQuests={11442},awp=20202,e=7,isYearly=1,maps={1453,1455,1457,1947},qgs={18927,19148,19171,19172,19173,20102},r=2,g={
+q(11441,{altQuests={11442},e=7,isYearly=1,maps={1453,1455,1457,1947},qgs={18927,19148,19171,19172,19173,20102},r=2,g={
 i(33030,{e=7,f=55,q=1}),
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(33031,{e=7,f=55,lvl=25,q=1})}}),
-q(11446,{altQuests={11447},awp=20202,e=7,isYearly=1,maps={120,125,210,1411,1413,1446,1452,1454,1456,1458,1941,1953,1954,1955},qgs={19169,19175,19176,19177,19178,20102},r=1,g={
+q(11446,{altQuests={11447},e=7,isYearly=1,maps={120,125,210,1411,1413,1446,1452,1454,1456,1458,1941,1953,1954,1955},qgs={19169,19175,19176,19177,19178,20102},r=1,g={
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}}),
-q(11400,{awp=20202,e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=20403,u=2}),
-q(11419,{awp=20202,e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=20403,u=2}),
-q(12278,{altQuests={12420},awp=20202,e=7,maps={1426},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37736},r=2,repeatable=1,g={
+q(11400,{e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=20403,u=2}),
+q(11419,{e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=20403,u=2}),
+q(12278,{altQuests={12420},e=7,maps={1426},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37736},r=2,repeatable=1,g={
 crit(9860,{achID=2796,awp=30002,e=7,id=1})}}),
-q(12306,{altQuests={12421},awp=20202,e=7,maps={1411},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37737},r=1,repeatable=1,g={
+q(12306,{altQuests={12421},e=7,maps={1411},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37737},r=1,repeatable=1,g={
 crit(9862,{achID=2796,awp=30002,e=7,id=1})}}),
 q(11117,{awp=30002,coords={
 [1426]={{48,39.5}}},e=7,isYearly=1,qgs={23486},r=2,g={
@@ -150,31 +150,31 @@ q(11431,{awp=30002,coords={
 qo(1,{cost={{"i",46735,1},{"i",32907,1}},crs={23487},e=7,providers={{"i",32906}}}),
 s(176327,46735,{awp=30200,b=1,e=7,f=2,loc=40,q=1}),
 p(153,{b=1,e=7,itemID=32233,petTypeID=5,q=3,spellID=39709})}}),
-q(12022,{awp=20202,coords={
+q(12022,{coords={
 [1426]={{47.5,39.8}}},e=7,isYearly=1,qgs={27215},r=2,sourceQuests={11441,11442},g={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12191,{awp=20202,coords={
+q(12191,{coords={
 [1411]={{45.3,17.3}}},e=7,isYearly=1,qgs={27216},r=1,sourceQuests={11446,11447},g={
 qo(1,{crs={24108},e=7,providers={{"i",33096}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11321,{awp=20202,coords={
+q(11321,{coords={
 [1426]={{46.4,40.3}}},e=7,providers={{"i",33955}},qgs={24468},r=2,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,q=3,u=2})}}),
-q(11413,{awp=20202,coords={
+q(11413,{coords={
 [1411]={{46.3,14.8}}},e=7,providers={{"i",33955}},qgs={24497},r=1,rwp=20403,u=2,g={
 s(143256,32912,{b=1,e=7,f=2,q=3,u=2})}}),
-q(12491,{awp=20202,e=7,isYearly=1,lvl=75,qss={38280},r=2,g={
+q(12491,{e=7,isYearly=1,lvl=75,qss={38280},r=2,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12492,{awp=20202,e=7,isYearly=1,lvl=75,qss={38281},r=1,g={
+q(12492,{e=7,isYearly=1,lvl=75,qss={38281},r=1,g={
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
 q(12062,{awp=20403,e=7,isDaily=1,lvl=65,maps={242},qgs={26719},rwp=30303,sourceQuests={12318},u=2}),
-q(11318,{awp=20202,coords={
+q(11318,{coords={
 [1426]={{46.6,40.3}}},e=7,isYearly=1,qgs={23558},qis={33306},r=2,sourceQuests={11441,11442},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
 qo(3,{e=7,providers={{"i",33306}}})}}),
-q(11409,{awp=20202,coords={
+q(11409,{coords={
 [1411]={{46.3,14.8}}},e=7,isYearly=1,qgs={24497},qis={33306},r=1,sourceQuests={11446,11447},g={
 qo(1,{e=7,providers={{"i",33306}}}),
 qo(2,{e=7,providers={{"i",33306}}}),
@@ -202,35 +202,35 @@ s(143353,33016,{b=1,e=7,f=2,q=3,u=2})}}),
 q(12194,{awp=20403,coords={
 [1411]={{46.3,14.8}}},e=7,providers={{"i",33955}},qgs={24510},r=1,rwp=30200,sourceQuests={11409},u=2,g={
 s(143353,33016,{b=1,e=7,f=2,q=3,u=2})}}),
-q(11454,{awp=20202,coords={
+q(11454,{coords={
 [1411]={{44.3,17.5}},
 [1426]={{48.1,39.1}}},e=7,lvl=48,maps={242},providers={{"o",186881}},rwp=20403,u=2}),
-q(11486,{awp=20202,e=7,lvl=48,maps={242},qgs={23872},r=2,rwp=20403,sourceQuests={11454},u=2,g={
+q(11486,{e=7,lvl=48,maps={242},qgs={23872},r=2,rwp=20403,sourceQuests={11454},u=2,g={
 s(144120,34140,{b=1,e=7,f=1,q=3,u=2})}}),
-q(11487,{awp=20202,e=7,lvl=48,maps={242},qgs={23872},r=1,rwp=20403,sourceQuests={11454},u=2,g={
+q(11487,{e=7,lvl=48,maps={242},qgs={23872},r=1,rwp=20403,sourceQuests={11454},u=2,g={
 s(144120,34140,{b=1,e=7,f=1,q=3,u=2})}}),
-q(11122,{awp=20202,coords={
+q(11122,{coords={
 [1426]={{46.6,40.3}}},e=7,isYearly=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11318},g={
 qo(1,{crs={24364,24468},e=7,providers={{"i",33797}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11412,{awp=20202,coords={
+q(11412,{coords={
 [1411]={{46.3,14.8}}},e=7,isYearly=1,qgs={24497},qis={33306,33797},r=1,sourceQuests={11409},g={
 qo(1,{crs={24510,24527},e=7,providers={{"i",33797}}}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12020,{awp=20202,coords={
+q(12020,{coords={
 [1426]={{47.5,39.8}}},e=7,isDaily=1,providers={{"o",189989}},r=2,rwp=80200,g={
 ach(1186,{awp=30002,e=7}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(12192,{awp=20202,coords={
+q(12192,{coords={
 [1411]={{40.7,17.4}}},e=7,isDaily=1,providers={{"o",189990}},r=1,rwp=80200,g={
 ach(1186,{awp=30002,e=7}),
 i(37829,{awp=20403,b=1,e=7,f=55,q=2})}}),
-q(11442,{altQuests={11441},awp=20202,coords={
+q(11442,{altQuests={11441},coords={
 [1426]={{48,39.8}}},e=7,isYearly=1,qgs={24710},r=2,g={
 i(33030,{e=7,f=55,q=1}),
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(33031,{e=7,f=55,lvl=25,q=1})}}),
-q(11447,{altQuests={11446},awp=20202,coords={
+q(11447,{altQuests={11446},coords={
 [1411]={{45.6,17.2}}},e=7,isYearly=1,qgs={24711},r=1,g={
 i(33034,{e=7,f=55,lvl=55,q=1}),
 i(34020,{e=7,f=55,lvl=25,q=1}),
@@ -260,7 +260,7 @@ s(145415,37896,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,providers={{"o",186186}},q=3}),
 s(145414,37895,{b=1,coords={
 [1411]={{43.6,17.6}}},e=7,f=2,providers={{"o",186187}},q=3})}})),(function(t)if _.WOWAPI.GetItemCount(t.itemID,true)<1 then	local any if t.g then	for i,o in ipairs(t.g)do	if _.WOWAPI.GetItemCount(o.itemID,true)>0 then	any=true break end	end	end	if not any then return t end	end	t.u=nil t.rwp=20403 if t.g then	for i,o in ipairs(t.g)do	o.u=nil o.rwp=20403 end	end	return t end)(
-s(143256,32912,{awp=20202,b=1,e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",q=3,rwp=20403,u=2,g={
+s(143256,32912,{b=1,e=7,f=2,lore="This stein was the reward from the 2007 Brewfest.",q=3,rwp=20403,u=2,g={
 s(143259,32915,{b=1,coords={
 [1426]={{48.8,39.8}}},e=7,f=2,providers={{"o",186183}},q=3,u=2}),
 s(143261,32917,{b=1,coords={
@@ -272,7 +272,7 @@ s(143263,32919,{b=1,coords={
 [1411]={{44.4,17.6}}},e=7,f=2,providers={{"o",186186}},q=3,u=2}),
 s(143264,32920,{b=1,coords={
 [1411]={{43.6,17.6}}},e=7,f=2,providers={{"o",186187}},q=3,u=2})}}))}}),
-h(-58,{awp=20202,e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829 local item=_.SearchForField("itemID",itemID)[1] local icon="|T"..item.icon..":0|t" local link=item.link or RETRIEVING_DATA tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="One-Time Quests:"})local coren=_.IsQuestFlaggedCompleted(12491)tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)})local pink=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 11120 or 11118)tinsert(tooltipInfo,{left=" "..icon.." 40 for Pink Elekks On Parade",right=_.GetCompletionIcon(pink)})local chucked=_.IsQuestFlaggedCompleted(12022)tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)})local back=_.IsQuestFlaggedCompleted(11122)tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)})tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Daily Quests:"})local barked=_.IsQuestFlaggedCompleted(11293)tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)})local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020)tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)})tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"})tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."})local today=date("*t")local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0})local ends=time({day=6,month=10,year=today.year,hour=0,min=0,sec=0})local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})if now>=start and now<=ends then	local secondsPerDay=86400 local totalDays=math.floor(difftime(ends,start)/ secondsPerDay)local m=60 +(25 * totalDays)tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Currently",right=_.WOWAPI.GetItemCount(itemID,true).."x "..icon.." "..link})tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link})local remaining=math.floor(difftime(ends,now)/ secondsPerDay)if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link})else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link})end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."})end	end,g={
+h(-58,{e=7,OnTooltip=function(t,tooltipInfo)local itemID=37829 local item=_.SearchForField("itemID",itemID)[1] local icon="|T"..item.icon..":0|t" local link=item.link or RETRIEVING_DATA tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="One-Time Quests:"})local coren=_.IsQuestFlaggedCompleted(12491)tinsert(tooltipInfo,{left=" "..icon.." 40 for Direbrew's Dire Brew",right=_.GetCompletionIcon(coren)})local pink=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 11120 or 11118)tinsert(tooltipInfo,{left=" "..icon.." 40 for Pink Elekks On Parade",right=_.GetCompletionIcon(pink)})local chucked=_.IsQuestFlaggedCompleted(12022)tinsert(tooltipInfo,{left=" "..icon.." 10 for Chug and Chuck",right=_.GetCompletionIcon(chucked)})local back=_.IsQuestFlaggedCompleted(11122)tinsert(tooltipInfo,{left=" "..icon.." 10 for There And Back Again",right=_.GetCompletionIcon(back)})tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Daily Quests:"})local barked=_.IsQuestFlaggedCompleted(11293)tinsert(tooltipInfo,{left=" "..icon.." 15 for Brewfest Barking",right=_.GetCollectionIcon(barked)})local invasion=_.IsQuestFlaggedCompleted(_.FactionID==Enum.FlightPathFaction.Horde and 12192 or 12020)tinsert(tooltipInfo,{left=" "..icon.." 10 for Dark Iron Invasion",right=_.GetCollectionIcon(invasion)})tinsert(tooltipInfo,{left=" "..icon.." 0-22 for Ram Racing Dialog** (every 18 hours)"})tinsert(tooltipInfo,{left="** Log out in a rested location and it will be reset after 8 hours."})local today=date("*t")local start=time({day=20,month=9,year=today.year,hour=0,min=0,sec=0})local ends=time({day=6,month=10,year=today.year,hour=0,min=0,sec=0})local now=time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})if now>=start and now<=ends then	local secondsPerDay=86400 local totalDays=math.floor(difftime(ends,start)/ secondsPerDay)local m=60 +(25 * totalDays)tinsert(tooltipInfo,{left=" "})tinsert(tooltipInfo,{left="Currently",right=_.WOWAPI.GetItemCount(itemID,true).."x "..icon.." "..link})tinsert(tooltipInfo,{left="Total Possible*",right=m.." - "..(m +(22 * totalDays)).."x "..icon.." "..link})local remaining=math.floor(difftime(ends,now)/ secondsPerDay)if remaining<=1 then	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount + 22).."x "..icon.." "..link})else	local baseAmount=(not barked and 15 or 0)+(not invasion and 10 or 0)+(25 * remaining)tinsert(tooltipInfo,{left="Total Remaining*",right=baseAmount.." - "..(baseAmount +(22 * remaining)).."x "..icon.." "..link})end	tinsert(tooltipInfo,{left="* Based on if you didn't miss a single day and only whole days count."})end	end,g={
 n(23604,{coords={
 [1411]={{43.9,17.9}}},e=7,r=1,g={
 i(34065,{e=7,f=55,lvl=5,q=1})}}),
@@ -1111,18 +1111,18 @@ r(44958,{awp=20300,b=1,description="Alliance Tailors receive this pattern in the
 r(44953,{awp=20300,b=1,e=14,itemID=34262,learnedAt=285,q=2,requireSkill=165}),
 r(45022,{awp=20300,b=1,e=14,itemID=34413,learnedAt=325,q=1,requireSkill=185}),
 toy(17712,{b=1,description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,q=1,sourceQuests={6984,7045}})}}),
-h(-45,{e=14,g={
-q(8744,{awp=10200,coords={
+h(-45,{awp=10200,e=14,g={
+q(8744,{coords={
 [1454]={{49.5,78.5}},
 [1455]={{33.5,66.5}}},e=14,isYearly=1,providers={{"o",180743}},qis={21191},g={
 i(21254,{b=1,e=14,f=55,q=1}),
 crit(6251,{achID=1689,awp=30002,e=14,id=1})}}),
-q(8803,{awp=10200,coords={
+q(8803,{coords={
 [1454]={{49.6,77.7}},
 [1455]={{33.6,66.1}}},e=14,isYearly=1,lvl=10,providers={{"o",180793}},qis={21363},g={
 i(21328,{b=1,e=14,q=1}),
 crit(6254,{achID=1689,awp=30002,e=14,id=1})}}),
-q(8768,{awp=10200,coords={
+q(8768,{coords={
 [1454]={{49.6,78.2}},
 [1455]={{33.6,66.3}}},e=14,isYearly=1,lvl=20,providers={{"o",180747}},qis={21310},g={
 p(119,{awp=10804,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
@@ -1148,7 +1148,7 @@ r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202}),
 i(21325,{b=1,e=14,f=55,q=2}),
 i(21213,{e=14,f=106,lvl=20,q=2}),
 crit(6256,{achID=1689,awp=30002,e=14,id=1})}}),
-q(7045,{awp=10200,coords={
+q(7045,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,qgs={13433},r=2,sourceQuests={7043},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -1158,7 +1158,7 @@ r(21913,{e=14,itemID=17706,learnedAt=190,q=2,requireSkill=164}),
 r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202})}}),
 crit(6223,{achID=279,awp=30002,e=14,id=1})}}),
-q(6984,{awp=10200,coords={
+q(6984,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,qgs={13418},r=1,sourceQuests={6983},g={
 i(17726,{b=1,e=14,q=1,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
@@ -1169,25 +1169,25 @@ r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202})}}),
 crit(6224,{achID=279,awp=30002,e=14,id=1})}}),
 q(11528,{awp=20300,description="Gift from 2007.",e=14,lvl=10,maps={1454,1455},providers={{"o",187236}},qis={34426},rwp=30002,u=2,g={
-p(191,{b=1,e=14,itemID=34425,petTypeID=10,q=3,spellID=54187}),
-crit(6250,{achID=1689,awp=30002,e=14,id=1}),
-crit(6250,{achID=1705,e=14,id=1})}}),
+p(191,{b=1,e=14,itemID=34425,petTypeID=10,q=3,spellID=54187,u=2}),
+crit(6250,{achID=1689,awp=30002,e=14,id=1,u=2}),
+crit(6250,{achID=1705,e=14,id=1,u=2})}}),
 q(13203,{awp=20403,description="Gift from 2008.",e=14,lvl=10,maps={1454,1455},providers={{"o",187236}},qis={43504},rwp=30300,u=2,g={
 toy(37710,{awp=30002,b=1,e=14,q=2}),
-crit(8739,{achID=1689,awp=30002,e=14,id=1}),
+crit(8739,{achID=1689,awp=30002,e=14,id=1,u=2}),
 crit(8739,{achID=1706,e=14,id=1,u=2})}}),
 q(13966,{awp=30300,description="Gift from 2009.",e=14,lvl=10,maps={1454,1455},providers={{"o",187236}},qis={46740},rwp=40003,g={
 i(46725,{b=1,e=14,f=55,q=2}),
 crit(13256,{achID=1689,e=14,id=1})}}),
-q(7022,{awp=10200,coords={
+q(7022,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=10,qgs={13433},r=2}),
-q(7023,{awp=10200,coords={
+q(7023,{coords={
 [1453]={{62.8,70.2}}},e=14,isYearly=1,lvl=10,qgs={13435,23010},r=2}),
-q(6961,{awp=10200,coords={
+q(6961,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=10,qgs={13418},r=1}),
-q(7021,{awp=10200,coords={
+q(7021,{coords={
 [1456]={{43.8,58.6}}},e=14,isYearly=1,lvl=10,qgs={13431},r=1}),
-q(7024,{awp=10200,coords={
+q(7024,{coords={
 [1458]={{68,39}}},e=14,isYearly=1,lvl=10,qgs={13429},r=1}),
 q(8762,{awp=10804,coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=40,maps={1427,1446},qgs={13433},r=2,rwp=40300,g={
@@ -1215,13 +1215,13 @@ q(8860,{awp=10804,description="This quest is only available on December 31. Ques
 qo(1,{e=14,providers={{"i",21545}}})}}),
 q(8861,{awp=10804,description="This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",e=14,isYearly=1,maps={125,1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1,g={
 qo(1,{e=14,providers={{"i",21545}}})}}),
-q(7042,{awp=10200,coords={
+q(7042,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13433},r=2,rwp=40003}),
-q(6963,{awp=10200,coords={
+q(6963,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13418},r=1,rwp=40003}),
-q(7063,{awp=10200,coords={
+q(7063,{coords={
 [1455]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,qgs={2916},qis={17735},r=2,sourceQuests={7062}}),
-q(7061,{awp=10200,coords={
+q(7061,{coords={
 [1454]={{38.6,36.2}}},e=14,isYearly=1,lvl=10,qgs={13417},qis={17735},r=1,sourceQuests={6964}}),
 q(8763,{awp=10804,coords={
 [1455]={{33.4,67}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13433},r=2,requireSkill=185,rwp=40300,sourceQuests={8762},g={
@@ -1229,13 +1229,13 @@ i(21213,{e=14,f=106,lvl=20,q=2,requireSkill=185})}}),
 q(8799,{awp=10804,coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
 i(21213,{e=14,f=106,lvl=20,q=2,requireSkill=185})}}),
-q(7062,{awp=10200,coords={
+q(7062,{coords={
 [1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
 i(17735,{e=14,q=1})}}),
-q(6964,{awp=10200,coords={
+q(6964,{coords={
 [1454]={{51,71.1}}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
 i(17735,{e=14,q=1})}}),
-q(7025,{awp=10200,coords={
+q(7025,{coords={
 [1455]={{33.2,65.8}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -1248,7 +1248,7 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(6962,{awp=10200,coords={
+q(6962,{coords={
 [1454]={{49.9,78.4}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13445},r=1,g={
 i(17727,{b=1,e=14,q=1,g={
 i(2996,{e=14,q=1}),
@@ -1261,12 +1261,12 @@ i(17344,{e=14,f=55,q=1,rwp=60202}),
 i(17407,{e=14,f=55,lvl=25,q=1}),
 i(21215,{b=1,e=14,f=55,lvl=40,q=1}),
 i(17406,{e=14,f=55,lvl=5,q=1})}})}}),
-q(8827,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={125,1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
-q(8828,{awp=10200,description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={125,1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
-q(7043,{awp=10200,coords={
+q(8827,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={125,1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=2}),
+q(8828,{description="This quest becomes available after the 25th.",e=14,isYearly=1,maps={125,1411,1420,1426,1434,1437,1446,1453,1454},qgs={15732},r=1}),
+q(7043,{coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1455},qgs={13636},r=2,sourceQuests={7042},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}}),
-q(6983,{awp=10200,coords={
+q(6983,{coords={
 [1416]={{35.4,72.6}}},e=14,isYearly=1,lvl=30,maps={1454},qgs={13636},r=1,sourceQuests={6963},g={
 qo(1,{crs={13602},e=14,providers={{"i",17662}}})}})}}),
 h(-58,{e=14,g={
@@ -1302,20 +1302,20 @@ r(44958,{b=1,e=14,itemID=34319,learnedAt=250,q=2,requireSkill=197})}}),
 n(13433,{awp=20300,coords={
 [1455]={{33.4,67}}},e=14,g={
 r(44958,{b=1,e=14,itemID=34319,learnedAt=250,q=2,requireSkill=197})}})}}),
-n(15760,{crs={15780,15781,15782,15783,15784,15785,15786,15787,15788,15789,15790,15791,15792,15793,15794,15795,22998,22999,23000,23001,23005,23006},description="Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",e=14,g={
+n(15760,{awp=10200,crs={15780,15781,15782,15783,15784,15785,15786,15787,15788,15789,15790,15791,15792,15793,15794,15795,22998,22999,23000,23001,23005,23006},description="Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",e=14,g={
 i(21212,{awp=10804,b=1,e=14,f=55,lvl=20,q=1}),
 i(34191,{awp=20300,e=14,f=106,q=1}),
-i(21519,{awp=10200,b=1,e=14,q=1})}}),
+i(21519,{b=1,e=14,q=1})}}),
 h(-63,{e=14,g={
 o(178609,{e=14,g={
 i(17202,{e=14,f=106,q=1})}})}})}}),
-h(-576,{e=16,g={
-h(-12,{awp=30002,e=16,g={
-ach(1656,{e=16,r=2,sym={{"meta_achievement",972,288,255,289,981,1040,1261,291,283,292,970}},g={
+h(-576,{awp=10800,e=16,g={
+h(-12,{e=16,g={
+ach(1656,{awp=30002,e=16,r=2,sym={{"meta_achievement",972,288,255,289,981,1040,1261,291,283,292,970}},g={
 title(92,{e=16})}}),
-ach(1657,{e=16,r=1,rwp=50004,sym={{"meta_achievement",972,288,255,289,981,1041,1261,291,283,292,971}},g={
+ach(1657,{awp=30002,e=16,r=1,rwp=50004,sym={{"meta_achievement",972,288,255,289,981,1041,1261,291,283,292,971}},g={
 title(92,{e=16})}}),
-ach(284,{e=16,g={
+ach(284,{awp=30002,e=16,g={
 crit(2260,{achID=284,e=16,id=1,providers={{"i",34000}}}),
 crit(2270,{achID=284,e=16,id=1,providers={{"i",34002}}}),
 crit(2261,{achID=284,e=16,id=1,providers={{"i",34001}}}),
@@ -1336,7 +1336,7 @@ crit(2268,{achID=284,e=16,id=1,providers={{"i",20567}}}),
 crit(2278,{achID=284,e=16,id=1,providers={{"i",20568}}}),
 crit(2269,{achID=284,e=16,id=1,providers={{"i",20574}}}),
 crit(2279,{achID=284,e=16,id=1,providers={{"i",20573}}})}}),
-ach(291,{e=16,g={
+ach(291,{awp=30002,e=16,g={
 crit(5774,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={10}}),
 crit(5775,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={11}}),
 crit(5776,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={3}}),
@@ -1347,17 +1347,17 @@ crit(5779,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={2}}),
 crit(5780,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={6}}),
 crit(5781,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={8}}),
 crit(5782,{achID=291,e=16,id=1,providers={{"i",34068}},races_disp={5}})}}),
-ach(1261,{e=16,providers={{"i",37583}}}),
-ach(288,{cost={{"i",33226,3}},description="Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",e=16,g={
+ach(1261,{awp=30002,e=16,providers={{"i",37583}}}),
+ach(288,{awp=30002,cost={{"i",33226,3}},description="Eat 2-10 Tricky Treats quickly to trigger the debuff. Results may vary.",e=16,g={
 crit(2070,{achID=288,e=16,id=1,providers={{"s",42966}}})}}),
-ach(1040,{e=16,r=2}),
-ach(1041,{e=16,r=1}),
+ach(1040,{awp=30002,e=16,r=2}),
+ach(1041,{awp=30002,e=16,r=1}),
 ach(292,{e=16,g={
 crit(5783,{achID=292,e=16,id=1,providers={{"i",33154}}}),
 crit(12908,{achID=292,e=16,id=1,providers={{"i",33292}}})}}),
-ach(981,{e=16,providers={{"i",37604}}}),
-ach(979,{e=16,providers={{"i",20391},{"i",20392},{"i",20561},{"i",20562},{"i",20563},{"i",20564},{"i",20565},{"i",20566},{"i",20567},{"i",20568},{"i",20569},{"i",20570},{"i",20571},{"i",20572},{"i",20573},{"i",20574},{"i",34000},{"i",34001},{"i",34002},{"i",34003}}}),
-ach(283,{e=16,g={
+ach(981,{awp=30002,e=16,providers={{"i",37604}}}),
+ach(979,{awp=30002,e=16,providers={{"i",20391},{"i",20392},{"i",20561},{"i",20562},{"i",20563},{"i",20564},{"i",20565},{"i",20566},{"i",20567},{"i",20568},{"i",20569},{"i",20570},{"i",20571},{"i",20572},{"i",20573},{"i",20574},{"i",34000},{"i",34001},{"i",34002},{"i",34003}}}),
+ach(283,{awp=30002,e=16,g={
 crit(3209,{achID=283,e=16,id=1,providers={{"i",20410}}}),
 crit(3210,{achID=283,e=16,id=1,providers={{"i",20409}}}),
 crit(3211,{achID=283,e=16,id=1,providers={{"i",20399}}}),
@@ -1365,16 +1365,16 @@ crit(3212,{achID=283,e=16,id=1,providers={{"i",20398}}}),
 crit(3213,{achID=283,e=16,id=1,providers={{"i",20397}}}),
 crit(3214,{achID=283,e=16,id=1,providers={{"i",20411}}}),
 crit(3215,{achID=283,e=16,id=1,providers={{"i",20414}}})}}),
-ach(289,{e=16,maps={1411,1420,1426,1429,1941,1943}}),
-ach(972,{e=16,providers={{"i",37586}}}),
-ach(971,{e=16,r=1,sym={{"meta_achievement",967,965,968}}}),
-ach(970,{e=16,r=2,rwp=50004,sym={{"meta_achievement",966,963,969}}}),
-ach(966,{e=16,r=2}),
-ach(967,{e=16,r=1}),
-ach(963,{e=16,r=2}),
-ach(965,{e=16,r=1}),
-ach(969,{e=16,r=2}),
-ach(968,{e=16,r=1})}}),
+ach(289,{awp=30002,e=16,maps={1411,1420,1426,1429,1941,1943}}),
+ach(972,{awp=30002,e=16,providers={{"i",37586}}}),
+ach(971,{awp=30002,e=16,r=1,sym={{"meta_achievement",967,965,968}}}),
+ach(970,{awp=30002,e=16,r=2,rwp=50004,sym={{"meta_achievement",966,963,969}}}),
+ach(966,{awp=30002,e=16,r=2}),
+ach(967,{awp=30002,e=16,r=1}),
+ach(963,{awp=30002,e=16,r=2}),
+ach(965,{awp=30002,e=16,r=1}),
+ach(969,{awp=30002,e=16,r=2}),
+ach(968,{awp=30002,e=16,r=1})}}),
 n(23682,{awp=20202,description="You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",e=16,lvl=25,maps={435,436},g={
 ach(255,{awp=30002,e=16,rwp=100107}),
 i(54516,{awp=30300,b=1,e=16,q=3,rwp=60002,g={
@@ -1885,7 +1885,7 @@ qo(1,{e=16,providers={{"i",32971}}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(11242,{awp=20202,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=2,rwp=40001}),
 q(11403,{awp=20202,e=16,lvl=60,maps={435},providers={{"i",33277}},qgs={23904},r=1,rwp=40001}),
-q(8311,{awp=10800,coords={
+q(8311,{coords={
 [1453]={{56.6,51.8}}},e=16,isYearly=1,lvl=10,maxReputation={469,42000},qgs={15310},r=2,g={
 q(8356,{coords={
 [1453]={{60.4,75.3}}},e=16,qgs={6740},r=2,repeatable=1,g={
@@ -1900,7 +1900,7 @@ q(8357,{coords={
 [1457]={{67.2,15.8}}},e=16,qgs={6735},r=2,repeatable=1,g={
 qo(4,{e=16,providers={{"i",20496}},questID=8311})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
-q(8312,{awp=10800,coords={
+q(8312,{coords={
 [1454]={{71.2,22.8}}},e=16,isYearly=1,lvl=10,maxReputation={67,42000},qgs={15309},r=1,g={
 q(8359,{coords={
 [1454]={{54.2,68.4}}},e=16,qgs={6929},r=1,repeatable=1,g={
@@ -1916,10 +1916,10 @@ q(8360,{coords={
 qo(4,{e=16,providers={{"i",20497}},questID=8312})}}),
 i(20557,{b=1,e=16,f=55,q=1})}}),
 q(11357,{awp=20202,e=16,isBreadcrumb=1,maps={120,125,1413,1434,1446,1452,1454,1456,1458,1941,1953,1955},nextQuests={11361,11449,11450},qgs={19169,19175,19176,19177,19178,20102},r=1}),
-q(8322,{awp=10800,coords={
+q(8322,{coords={
 [1420]={{55.6,69.9}},
 [1424]={{51.4,59}}},cost={{"i",20605,1}},e=16,isYearly=1,lvl=30,qgs={15197},r=1,rwp=40003}),
-q(8409,{awp=10800,coords={
+q(8409,{coords={
 [1424]={{51.4,59}}},e=16,isYearly=1,lvl=30,providers={{"o",180570}},r=1,rwp=40003,sourceQuests={8322},g={
 i(20557,{b=1,e=16,f=55,q=1}),
 crit(3218,{achID=1041,awp=30002,e=16,id=1,r=1})}}),
@@ -1963,7 +1963,7 @@ q(11220,{awp=20202,coords={
 [1411]={{52.6,41.2}},
 [1420]={{60.9,53}},
 [1941]={{47.3,46.5}}},e=16,lvl=75,qgs={23973},r=1,rwp=40001}),
-q(8373,{awp=10800,coords={
+q(8373,{coords={
 [1424]={{50,57.2}}},e=16,isYearly=1,lvl=25,qgs={15199},r=2,rwp=40003,g={
 qo(1,{e=16,providers={{"i",20604}}}),
 i(20557,{b=1,e=16,f=55,q=1}),
@@ -2014,7 +2014,7 @@ s(131062,20567,{b=1,e=16,f=2,loc=40,q=1}),
 s(131063,20568,{b=1,e=16,f=2,loc=40,q=1}),
 s(131069,20574,{b=1,e=16,f=2,loc=40,q=1}),
 s(131068,20573,{b=1,e=16,f=2,loc=40,q=1})}}),
-h(-56,{awp=10800,e=16,g={
+h(-56,{e=16,g={
 o(180523,{e=16,g={
 i(20516,{b=1,e=16,f=55,q=1})}})}}),
 h(-63,{e=16,g={
@@ -2111,7 +2111,7 @@ crit(8706,{achID=1702,e=9,id=1,providers={{"i",22237}}}),
 crit(8708,{achID=1702,e=9,id=1,providers={{"i",22239}}}),
 crit(8707,{achID=1702,e=9,id=1,providers={{"i",22238}}})}}),
 ach(1696,{cost={{"i",34258,10}},e=9})}}),
-h(-16,{e=9,g={
+h(-16,{awp=30003,e=9,g={
 n(36296,{awp=30300,e=9,isDaily=1,maps={310,311,312,313,314,315,316},questID=14488,g={
 ach(4624,{awp=30002,e=9}),
 o(202947,{e=9,g={
@@ -2132,7 +2132,7 @@ i(51805,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001}),
 i(51806,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001}),
 i(51807,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001}),
 i(51804,{awp=30002,b=1,e=9,f=51,lvl=80,q=4,rwp=40001})}}),
-x(3,{awp=30003,g={
+x(3,{
 inst(277,{maps={140},savedInstanceID=599,g={
 d(2,{
 n(27975,{
@@ -2140,7 +2140,7 @@ s(175404,44731,{b=1,e=9,f=1,q=2})})})}}),
 inst(285,{maps={133,134,135},savedInstanceID=574,g={
 d(1,{
 n(23953,{
-s(132605,22206,{b=1,e=9,f=1,q=2})})})}})}})}}),
+s(132605,22206,{b=1,e=9,f=1,q=2})})})}})})}}),
 h(-45,{e=9,g={
 q(9029,{coords={
 [1416]={{89.3,75.1}}},e=9,isYearly=1,providers={{"o",181073}},rwp=30300,sourceQuests={8984,9028},u=2,g={
@@ -2407,8 +2407,8 @@ h(-22,{e=9,sharedDescription="Can be purchased from innkeepers.",g={
 i(21833,{awp=80100,e=9,f=106,q=1,rwp=30302,u=2}),
 i(21829,{awp=80100,e=9,f=106,q=1,rwp=30302,u=2}),
 i(21815,{b=1,e=9,f=55,q=1,rwp=30302,u=2})}}),
-h(-58,{e=9,g={
-n(37674,{awp=30302,coords={
+h(-58,{awp=30302,e=9,g={
+n(37674,{coords={
 [1453]={{62.6,75.4}},
 [1454]={{52.8,77.6}},
 [1455]={{33.8,66.6}},
@@ -2455,9 +2455,9 @@ i(34258,{awp=20300,cost={{"i",49927,5}},e=9,f=55,q=1}),
 i(50163,{cost={{"i",49927,5}},e=9,f=55,q=1}),
 i(22200,{cost={{"i",49927,5}},e=9,f=101,q=1}),
 i(49927,{awp=30300,b=1,cost={{"i",49916,1}},e=9,q=1})}})}}),
-h(-63,{e=9,g={
-i(49655,{awp=30302,b=1,description="With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",e=9,providers={{"i",49661}},q=1,rwp=100205}),
-i(49916,{awp=30302,cost={{"i",49655,10}},e=9,f=2,loc=43,q=1,rwp=100205})}})}}),
+h(-63,{awp=30302,e=9,g={
+i(49655,{b=1,description="With a Lovely Charm Collector's Kit in your inventory, go out and kill mobs near your character's level.",e=9,providers={{"i",49661}},q=1,rwp=100205}),
+i(49916,{cost={{"i",49655,10}},e=9,f=2,loc=43,q=1,rwp=100205})}})}}),
 h(-580,{e=18,g={
 h(-12,{awp=30002,e=18,g={
 ach(913,{e=18,sym={{"meta_achievement",912,911,910,914,915,1396,609,626,1281,1552,937}},g={
@@ -3413,9 +3413,9 @@ crit(3138,{achID=1028,awp=30002,e=11,id=1,r=2})}}),
 q(11784,{coords={
 [1425]={{76.4,74.5}}},e=11,isYearly=1,providers={{"o",187972}},r=2,g={
 crit(3140,{achID=1028,awp=30002,e=11,id=1,r=2})}}),
-q(11785,{awp=30002,coords={
+q(11785,{coords={
 [1441]={{42.5,52.9}}},e=11,isYearly=1,providers={{"o",187973}},r=2,rwp=40001,g={
-crit(3152,{achID=1029,e=11,id=1,r=2})}}),
+crit(3152,{achID=1029,awp=30002,e=11,id=1,r=2})}}),
 q(11786,{coords={
 [1420]={{57,51.9}}},e=11,isYearly=1,providers={{"o",187974}},r=2,g={
 crit(3141,{achID=1028,awp=30002,e=11,id=1,r=2})}}),
@@ -3480,9 +3480,9 @@ q(13489,{awp=30002,coords={
 q(11818,{coords={
 [1944]={{62,58}}},e=11,isYearly=1,qgs={25900},g={
 crit(3090,{achID=1024,awp=30002,e=11,id=1,r=2})}}),
-q(11819,{awp=30002,coords={
+q(11819,{coords={
 [1424]={{50.4,47.6}}},e=11,isYearly=1,qgs={25901},rwp=40001,g={
-crit(3069,{achID=1022,e=11,id=1,r=2})}}),
+crit(3069,{achID=1022,awp=30002,e=11,id=1,r=2})}}),
 q(13488,{awp=30002,coords={
 [117]={{58,16}}},e=11,isYearly=1,qgs={32804}}),
 q(11820,{coords={
@@ -3593,9 +3593,9 @@ q(13445,{awp=30002,coords={
 q(11747,{coords={
 [1944]={{61.9,58.5}}},e=11,isYearly=1,providers={{"o",187930}},r=1,g={
 crit(3187,{achID=1033,awp=30002,e=11,id=1,r=1})}}),
-q(11748,{awp=30002,coords={
+q(11748,{coords={
 [1424]={{50.4,47.1}}},e=11,isYearly=1,providers={{"o",187931}},r=1,rwp=40001,g={
-crit(3167,{achID=1031,e=11,id=1,r=1})}}),
+crit(3167,{achID=1031,awp=30002,e=11,id=1,r=1})}}),
 q(13444,{awp=30002,coords={
 [117]={{57.7,15.7}}},e=11,isYearly=1,providers={{"o",194038}},r=1}),
 q(11749,{coords={
@@ -3744,9 +3744,9 @@ crit(3108,{achID=1025,awp=30002,e=11,id=1,r=1})}}),
 q(11860,{coords={
 [1425]={{76.6,75}}},e=11,isYearly=1,qgs={25944},g={
 crit(3110,{achID=1025,awp=30002,e=11,id=1,r=1})}}),
-q(11861,{awp=30002,coords={
+q(11861,{coords={
 [1441]={{42.3,52.9}}},e=11,isYearly=1,qgs={25945},rwp=40001,g={
-crit(3122,{achID=1026,e=11,id=1,r=1})}}),
+crit(3122,{achID=1026,awp=30002,e=11,id=1,r=1})}}),
 q(11862,{coords={
 [1420]={{57.2,51.8}}},e=11,isYearly=1,qgs={25946},g={
 crit(3111,{achID=1025,awp=30002,e=11,id=1,r=1})}}),
@@ -3795,7 +3795,7 @@ i(23326,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(23211,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(23246,{b=1,cost={{"i",23247,5}},e=11,f=55,q=1}),
 i(34684,{b=1,cost={{"i",23247,2}},e=11,f=106,q=1})}})}})}}),
-h(-583,{e=15,g={
+h(-583,{awp=30002,e=15,g={
 i(45072,{awp=30100,b=1,description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438,1941,1943},providers={{"o",113768},{"o",113769},{"o",113770},{"o",113771}},q=1,g={
 i(44791,{b=1,e=15,f=55,q=1}),
 i(44806,{e=15,f=55,q=1}),
@@ -3807,7 +3807,7 @@ s(175427,44800,{b=1,e=15,f=2,loc=42,q=1}),
 s(129853,19028,{awp=10300,e=15,f=2,loc=42,q=1,rwp=70205}),
 s(121597,6835,{awp=10300,e=15,f=4,loc=46,q=1,rwp=70205}),
 s(121595,6833,{awp=10300,e=15,f=10,q=1})}}),
-h(-12,{awp=30002,e=15,g={
+h(-12,{e=15,g={
 ach(2797,{e=15,r=2,rwp=50004,sym={{"meta_achievement",2676,2418,2436,2576,2416,2419,2421,2422}},g={
 title(122,{e=15})}}),
 ach(2798,{e=15,r=1,sym={{"meta_achievement",2676,2418,2436,2576,2416,2497,2420,2422}},g={
@@ -3911,43 +3911,43 @@ s(175472,45073,{b=1,cost={{"i",44791,50}},e=15,f=2,q=1}),
 cs(61721,{b=1,c={8},cost={{"i",44791,100}},e=15,itemID=44793,lvl=60,q=3}),
 p(200,{b=1,cost={{"i",44791,100}},e=15,itemID=44794,petTypeID=5,q=3,spellID=61725})}})}})}}),
 h(-584,{awp=30100,e=101,g={
-h(-12,{e=101,g={
-ach(3478,{awp=30202,e=101,r=2,sym={{"meta_achievement",3579,3576,3556,3580,3596,3558,3582,3578,3559}},g={
+h(-12,{awp=30202,e=101,g={
+ach(3478,{e=101,r=2,sym={{"meta_achievement",3579,3576,3556,3580,3596,3558,3582,3578,3559}},g={
 title(133,{e=101}),
 p(201,{b=1,e=101,itemID=44810,petTypeID=3,q=3,spellID=61773})}}),
-ach(3656,{awp=30202,e=101,r=1,rwp=50004,sym={{"meta_achievement",3579,3577,3557,3581,3597,3558,3582,3578,3559}},g={
+ach(3656,{e=101,r=1,rwp=50004,sym={{"meta_achievement",3579,3577,3557,3581,3597,3558,3582,3578,3559}},g={
 title(133,{e=101}),
 p(201,{b=1,e=101,itemID=44810,petTypeID=3,q=3,spellID=61773})}}),
-ach(3579,{awp=30202,e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954}}),
-ach(3576,{awp=30202,e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2,g={
+ach(3579,{e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954}}),
+ach(3576,{e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2,g={
 crit(11118,{achID=3576,e=101,id=1,providers={{"i",44858}},r=2}),
 crit(11120,{achID=3576,e=101,id=1,providers={{"i",44862}},r=2}),
 crit(11121,{achID=3576,e=101,id=1,providers={{"i",44861}},r=2}),
 crit(11119,{achID=3576,e=101,id=1,providers={{"i",44859}},r=2}),
 crit(11122,{achID=3576,e=101,id=1,providers={{"i",44860}},r=2})}}),
-ach(3577,{awp=30202,e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1,g={
+ach(3577,{e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1,g={
 crit(11123,{achID=3577,e=101,id=1,providers={{"i",46806}},r=1}),
 crit(11124,{achID=3577,e=101,id=1,providers={{"i",46805}},r=1}),
 crit(11125,{achID=3577,e=101,id=1,providers={{"i",46804}},r=1}),
 crit(11126,{achID=3577,e=101,id=1,providers={{"i",46807}},r=1}),
 crit(11127,{achID=3577,e=101,id=1,providers={{"i",46803}},r=1})}}),
-ach(3556,{awp=30202,e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2,g={
+ach(3556,{e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2,g={
 crit(11079,{achID=3556,e=101,id=1,r=2})}}),
-ach(3557,{awp=30202,e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1}),
-ach(3580,{awp=30202,cost={{"i",46824,1},{"i",44785,1},{"i",46800,1}},e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=2}),
-ach(3581,{awp=30202,cost={{"i",46824,1},{"i",44785,1},{"i",46800,1}},e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=1,g={
+ach(3557,{e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1}),
+ach(3580,{cost={{"i",46824,1},{"i",44785,1},{"i",46800,1}},e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=2}),
+ach(3581,{cost={{"i",46824,1},{"i",44785,1},{"i",46800,1}},e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=1,g={
 crit(11140,{achID=3581,e=101,id=1,r=1})}}),
-ach(3596,{awp=30202,e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2}),
-ach(3597,{awp=30202,e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1}),
-ach(3558,{awp=30202,e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},g={
+ach(3596,{e=101,maps={1426,1429,1438,1453,1455,1457,1943,1947},r=2}),
+ach(3597,{e=101,maps={1411,1412,1420,1454,1456,1458,1941,1954},r=1}),
+ach(3558,{e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},g={
 crit(11086,{achID=3558,e=101,id=1,providers={{"s",66376}}}),
 crit(11088,{achID=3558,e=101,id=1,providers={{"s",66374}}}),
 crit(11089,{achID=3558,e=101,id=1,providers={{"s",66373}}}),
 crit(11090,{achID=3558,e=101,id=1,providers={{"s",66375}}}),
 crit(11167,{achID=3558,e=101,id=1,providers={{"s",66372}}})}}),
-ach(3582,{awp=30202,cost={{"i",46824,1},{"i",44785,1},{"i",46800,1},{"i",46723,1}},crs={18473},e=101,maps={258},providers={{"n",18473}}}),
-ach(3578,{awp=30202,crs={32820},e=101,maps={1420,1429},providers={{"s",62021}}}),
-ach(3559,{awp=30202,e=101,providers={{"i",44812}},g={
+ach(3582,{cost={{"i",46824,1},{"i",44785,1},{"i",46800,1},{"i",46723,1}},crs={18473},e=101,maps={258},providers={{"n",18473}}}),
+ach(3578,{crs={32820},e=101,maps={1420,1429},providers={{"s",62021}}}),
+ach(3559,{e=101,providers={{"i",44812}},g={
 crit(11158,{achID=3559,c_disp={4},e=101,id=1,races_disp={1}}),
 crit(11159,{achID=3559,c_disp={4},e=101,id=1,races_disp={4}}),
 crit(11160,{achID=3559,c_disp={4},e=101,id=1,races_disp={2}}),
@@ -4028,30 +4028,30 @@ q(14059,{coords={
 [1420]={{61.3,67}},
 [1458]={{64,9.6}}},cost={{"i",44840,20}},e=101,isDaily=1,qgs={34712},r=1,g={
 crit(11207,{achID=3597,awp=30202,e=101,id=1,r=1})}})}}),
-h(-47,{description="The following are rewards from completing the dailies. Turn on 'Show incomplete Things' to show them.",e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},sourceQuests={14048,14051,14053,14054,14055,14058,14059,14060,14061,14062},g={
-s(176325,46723,{awp=30202,b=1,e=101,f=2,loc=40,q=1}),
-s(176331,46800,{awp=30202,b=1,e=101,f=2,loc=42,q=1}),
-s(175419,44785,{awp=30202,b=1,e=101,f=2,loc=42,q=1}),
-s(176334,46824,{awp=30202,b=1,e=101,f=2,loc=42,q=1}),
-s(175422,44788,{awp=30202,b=1,e=101,f=2,loc=47,q=1})}}),
+h(-47,{awp=30202,description="The following are rewards from completing the dailies. Turn on 'Show incomplete Things' to show them.",e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},sourceQuests={14048,14051,14053,14054,14055,14058,14059,14060,14061,14062},g={
+s(176325,46723,{b=1,e=101,f=2,loc=40,q=1}),
+s(176331,46800,{b=1,e=101,f=2,loc=42,q=1}),
+s(175419,44785,{b=1,e=101,f=2,loc=42,q=1}),
+s(176334,46824,{b=1,e=101,f=2,loc=42,q=1}),
+s(175422,44788,{b=1,e=101,f=2,loc=47,q=1})}}),
 h(-58,{e=101,g={
-h(-22,{crs={34645,34681,34682,34683,34684,34685,34783,34787,35337,35338,35340,35341,35342,35343},description="These items can be found on any of the holiday vendors.",e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},g={
-i(44835,{awp=30202,e=101,q=1}),
-i(46888,{awp=30202,cost={{"i",44838,1},{"i",44837,1},{"i",44836,1},{"i",44840,1},{"i",44839,1}},e=101,q=1,g={
+h(-22,{awp=30202,crs={34645,34681,34682,34683,34684,34685,34783,34787,35337,35338,35340,35341,35342,35343},description="These items can be found on any of the holiday vendors.",e=101,maps={1411,1412,1420,1426,1429,1438,1453,1454,1455,1456,1457,1458,1941,1943,1947,1954},g={
+i(44835,{e=101,q=1}),
+i(46888,{cost={{"i",44838,1},{"i",44837,1},{"i",44836,1},{"i",44840,1},{"i",44839,1}},e=101,q=1,g={
 i(46887,{e=101,f=55,q=1,requireSkill=185})}}),
-i(46809,{awp=30202,b=1,e=101,f=200,q=2,r=2,requireSkill=185,g={
+i(46809,{b=1,e=101,f=200,q=2,r=2,requireSkill=185,g={
 r(62051,{b=1,e=101,itemID=44859,learnedAt=220,q=1,requireSkill=185}),
 r(62049,{b=1,e=101,itemID=44858,learnedAt=160,q=1,requireSkill=185}),
 r(62044,{b=1,e=101,itemID=44862,learnedAt=100,q=1,requireSkill=185}),
 r(62045,{b=1,e=101,itemID=44861,learnedAt=280,q=1,requireSkill=185}),
 r(62050,{b=1,e=101,itemID=44860,q=1,requireSkill=185})}}),
-i(46810,{awp=30202,b=1,e=101,f=200,q=2,r=1,requireSkill=185,g={
+i(46810,{b=1,e=101,f=200,q=2,r=1,requireSkill=185,g={
 r(66034,{b=1,e=101,itemID=46806,learnedAt=220,q=1,requireSkill=185}),
 r(66035,{b=1,e=101,itemID=46805,learnedAt=160,q=1,requireSkill=185}),
 r(66036,{b=1,e=101,itemID=46804,learnedAt=100,q=1,requireSkill=185}),
 r(66037,{b=1,e=101,itemID=46807,learnedAt=280,q=1,requireSkill=185}),
 r(66038,{b=1,e=101,itemID=46803,q=1,requireSkill=185})}}),
-i(44853,{awp=30202,e=101,q=1})}}),
+i(44853,{e=101,q=1})}}),
 n(34685,{coords={
 [1411]={{46.6,13.8}}},crs={35342},e=101,r=1,g={
 i(46793,{e=101,f=55,q=1})}}),

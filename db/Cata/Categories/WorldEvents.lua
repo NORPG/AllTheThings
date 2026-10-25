@@ -4,14 +4,13 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,h,i,mnt,n,p,q,qo,r,s,title,toy,x=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
-h(-103,{
-x(2,{awp=20003,g={
+h(-103,{awp=20003,g={
+x(2,{
 h(-482,{lvl=55,maps={1419},phase=1701,rwp=20505,u=2,g={
 q(10259,{coords={
 [1419]={{58.25,55.05}}},lvl=55,qgs={19942},u=2,g={
 ach(2079,{providers={{"i",28788}},u=2}),
-s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}}),
-x(3,{awp=30003}),
+s(139134,28788,{b=1,f=9,q=1,u=2})}})}})}),
 x(4,{awp=40003,g={
 h(-474,{awp=30300,maps={1453,1454,1455,1456},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,phase=3304,rwp=40003,u=2,g={
 h(-12,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,u=2,g={
@@ -268,7 +267,7 @@ q(25445,{coords={
 [1411]={{57.4,72.7}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40391},r=1,sourceQuests={25495},u=2,g={
 qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",39647},{"n",40182},{"n",40189}},r=1,u=2}),
 ach(4790,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,r=1,u=2}),
-s(179936,54617,{b=1,f=3,lvl=75,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,q=1,r=1,u=2})}})}})}})}),
+s(179936,54617,{b=1,f=3,lvl=75,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,q=1,r=1,u=2})}})}})}})}}),
 h(-723,{awp=10400,lvl=60,phase=12,rwp=40003,u=2,g={
 n(14464,{coords={
 [1447]={{72.6,20},{77,24.2},{77.2,16.6},{80,24.2},{82.6,21}}},description="This is only available during an Elemental Invasion.",u=2,g={
