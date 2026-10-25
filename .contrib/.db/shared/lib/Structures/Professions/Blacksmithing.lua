@@ -1028,6 +1028,7 @@ COMMON_DRAENOR_BLACKSMITHING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedDa
 }));
 LEGION_BLACKSMITHING = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3_LAUNCH } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+		r(1313521, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge
 		r(1260693),	-- Suramar Fence
 		r(1260695),	-- Suramar Fencepost
 		r(1260698),	-- Tauren Soup Pot
@@ -1070,7 +1071,6 @@ BFA_BLACKSMITHING = applyclassicphase(BFA_PHASE_ONE, bubbleDownFiltered({ timeli
 	}),
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1260691),	-- Brennadam Grinder
-		r(1313521, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge
 		r(1315468, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge
 		r(1260692),	-- Stormsong Stove
 	})),

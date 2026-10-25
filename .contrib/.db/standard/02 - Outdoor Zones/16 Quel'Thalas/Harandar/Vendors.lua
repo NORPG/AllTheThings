@@ -164,6 +164,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		m(MAP.MIDNIGHT.HARANDAR, {
 			n(VENDORS, {
 				q(98644, { timeline = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
+				q(98645, { timeline = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
 				q(98646, { timeline = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
 				q(98647, { timeline = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors
 				q(98657, { timeline = { ADDED_12_1_5 } }),	-- Swapping Fungal Strider Vendors

@@ -2950,6 +2950,8 @@ i(279145);	-- Vial of Venom
 ------------------
 i(263517);	-- Ancient Text
 i(284576);	-- Cracked Mask
+i(279143);	-- Elongated Viscera
+i(279142);	-- Intact Spine Segment
 i(263519);	-- Snake Oil
 i(284577);	-- Stinging Nettle
 i(284578);	-- Untainted Wicker

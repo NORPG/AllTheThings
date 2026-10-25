@@ -67,6 +67,10 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			n(193955, {	-- Lillistrasza
 				coord = { 59.8, 70.4, THE_WAKING_SHORES },
 				groups = {
+					i(284249, {	-- Duck-Eye Glass Bead
+						sourceQuest = 70058,	-- Friend on the Mend,
+						timeline = { ADDED_12_1_5 }
+					}),
 					i(284250, {	-- Pattern: Lillistrasza's Lucky Duck Plushie (RECIPE!)
 						sourceQuest = 70058,	-- Friend on the Mend,
 						cost = { { "c", DRAGON_SUPPLIES, 400 } },

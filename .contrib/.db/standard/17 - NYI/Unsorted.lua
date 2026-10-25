@@ -133,7 +133,6 @@ root(ROOTS.Unsorted, {
 			i(284235),	-- Baker's Morganite Tray
 			i(284236),	-- Baker's Amethyst Tray
 			i(284237),	-- Baker's Citrine Tray
-			i(284249),	-- Duck-Eye Glass Bead
 			i(284258),	-- Tailwind Conduit
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
@@ -361,8 +360,6 @@ root(ROOTS.Unsorted, {
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
 			i(279137),	-- [ph] SpiceWitch Shoulders 02 - Green
 			i(279139),	-- [ph] SpiceWitch Shoulders 02 - Hallow
-			i(279142),	-- Intact Spine Segment
-			i(279143),	-- Elongated Viscera
 			i(279147),	-- Unrecognizable bone
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
