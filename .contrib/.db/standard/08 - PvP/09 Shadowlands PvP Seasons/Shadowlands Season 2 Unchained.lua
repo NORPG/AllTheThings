@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_UNCHAINED, {
 		timeline = { ADDED_9_1_0, REMOVED_9_2_0, ADDED_10_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 				ach(14968),	-- Combatant I: Shadowlands Season 2
 				ach(15232, {	-- Combatant II: Shadowlands Season 2
 					timeline = { ADDED_9_1_5, REMOVED_9_2_0 },

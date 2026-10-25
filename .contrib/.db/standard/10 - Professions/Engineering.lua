@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINEERING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18901, {	-- Chromatic Calibration: Holo-Gogs (automated)
 			iensemble(209062),	-- Ensemble: Chromatically Calibrated Holo-Gogs
 		}),
@@ -69,7 +69,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				timeline = { ADDED_10_1_7 },
 			}),
 		}),
-		n(QUESTS, bubbleDownSelf({ timeline = { ADDED_4_3_0 }, }, {
+		n(QUESTS, timelineSelf({ timeline = { ADDED_4_3_0 }, }, {
 			q(29477, {	-- Gnomish Engineering
 				altQuests = {
 					3526,	-- Goblin Engineering
@@ -654,7 +654,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18856),	-- Just an Ordinary Gas Cloud
 			ach(18857, {	-- That's No Ordinary Gas Cloud!
 				crit(61599),	-- 2 Air Souls Captured

@@ -9,13 +9,11 @@ root(ROOTS.PVP, {
 	-- for a total of 22 sources or a total of around
 	-- 10000 Items.
 	pvp(expansion(EXPANSION.WOD, {
-		n(SEASON_PRIMAL, bubbleDownSelf({
-			timeline = { ADDED_6_0_3_LAUNCH },
-		}, {
+		n(SEASON_PRIMAL, withShared({timeline = { ADDED_6_0_3_LAUNCH }}, {
 			un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(111598)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_0_3, REMOVED_6_2_0 }, }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_6_2_0 }, }, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					races = ALLIANCE_ONLY,
@@ -1646,13 +1644,11 @@ root(ROOTS.PVP, {
 				}),
 			}),
 		})),
-		n(SEASON_WILD, bubbleDownSelf({
-			timeline = { ADDED_6_2_0 },
-		}, {
+		n(SEASON_WILD, withShared({timeline = { ADDED_6_2_0 }}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_2_0, REMOVED_6_2_2 }, }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_6_2_2 }, }, {
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					races = ALLIANCE_ONLY,
@@ -3453,13 +3449,11 @@ root(ROOTS.PVP, {
 				}),
 			}),
 		})),
-		n(SEASON_WARMONGERING, bubbleDownSelf({
-			timeline = { ADDED_6_2_2 },
-		}, {
+		n(SEASON_WARMONGERING, withShared({timeline = { ADDED_6_2_2 }}, {
 			un(REMOVED_FROM_GAME, i(120356)),	-- Bronze Strongbox
 			un(REMOVED_FROM_GAME, i(120355)),	-- Silver Strongbox
 			un(REMOVED_FROM_GAME, i(120354)),	-- Gold Strongbox
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_6_2_2, REMOVED_7_0_3 }, }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_7_0_3 }, }, {
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					races = ALLIANCE_ONLY,
@@ -5294,8 +5288,8 @@ root(ROOTS.PVP, {
 	})),
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
--- 	n(PVP, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
+-- 	n(PVP, withShared({timeline = { ADDED_7_2_0 }},{
 -- 		-- PvP Ensembles
 -- 		q(42975),	-- Wild Combatant's Chain Armor (Hunter - Alliance)
 -- 		q(42992),	-- Wild Combatant's Chain Armor (Hunter - Horde)
@@ -5443,5 +5437,5 @@ root(ROOTS.PVP, {
 -- 		q(43234),	-- Arsenal: Wild Combatant's Weapons (Horde)
 -- 		q(43226),	-- Arsenal: Wild Gladiator's Weapons (Alliance)
 -- 		q(43227),	-- Arsenal: Wild Gladiator's Weapons (Horde)
--- 	}),
--- })));
+-- 	})),
+-- }))

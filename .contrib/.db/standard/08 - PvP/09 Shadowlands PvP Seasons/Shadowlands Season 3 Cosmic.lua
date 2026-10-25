@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_COSMIC, {
 		timeline = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 				ach(15347, {	-- Cosmic Combatant [A]
 					races = ALLIANCE_ONLY,
 					collectible = false,

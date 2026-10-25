@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local EMBROIDERED_DEEP_SEA_SATIN = 158378;
 root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18888),	-- Quite the Quilt IV
 		ach(18887),	-- Quite the Quilt III
 		ach(18886),	-- Quite the Quilt II
@@ -633,7 +633,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 		}),
 	})),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18774),	-- Synchronous Thread (automated)
 			ach(18896, {	-- United as Three
 				providers = {

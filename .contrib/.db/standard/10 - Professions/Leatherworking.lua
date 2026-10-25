@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEATHERWORKING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
 		ach(18883),	-- A Test of Scale III
 		ach(18882),	-- A Test of Scale II
@@ -154,7 +154,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 		})),
 	}),
 	expansion(EXPANSION.TBC, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18894),	-- Free Stylin' (automated)
 		})),
 	}),

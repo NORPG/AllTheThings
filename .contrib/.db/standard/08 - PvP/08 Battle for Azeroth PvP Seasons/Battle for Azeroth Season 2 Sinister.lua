@@ -7,7 +7,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_SINISTER, {
 		timeline = { ADDED_8_1_0, REMOVED_8_2_0, ADDED_9_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 } }, {
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13205),	-- Rival: Battle for Azeroth Season 2
@@ -61,7 +61,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -85,7 +85,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(165216),	-- Sinister Aspirant's Cape [A]
 						i(165215),	-- Sinister Aspirant's Drape [A]
@@ -147,7 +147,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165204),	-- Sinister Aspirant's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -171,7 +171,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(165212),	-- Sinister Aspirant's Cape [H]
 						i(165211),	-- Sinister Aspirant's Drape [H]
@@ -250,7 +250,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -274,7 +274,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(165051),	-- Sinister Gladiator's Cape [A]
 						i(165050),	-- Sinister Gladiator's Drape [A]
@@ -392,7 +392,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165039),	-- Sinister Gladiator's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -416,7 +416,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(165047),	-- Sinister Gladiator's Cape [H]
 						i(165046),	-- Sinister Gladiator's Drape [H]

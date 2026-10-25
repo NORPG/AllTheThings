@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLACKSMITHING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18862),	-- Anvil Mastery I
 		ach(18864),	-- Anvil Mastery II
 		ach(18865),	-- Anvil Mastery III
@@ -162,7 +162,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 		})),
 	}),
 	expansion(EXPANSION.MOP, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18852),	-- Weaponsmithing, Reborn (automated)
 		})),
 	}),

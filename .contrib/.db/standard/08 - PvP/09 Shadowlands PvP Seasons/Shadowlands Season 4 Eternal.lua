@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_ETERNAL, {
 		timeline = { ADDED_9_2_5, REMOVED_10_0_0, ADDED_10_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 				ach(15599, {	-- Eternal Combatant [A]
 					races = ALLIANCE_ONLY,
 					collectible = false,

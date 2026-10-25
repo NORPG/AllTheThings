@@ -65,9 +65,10 @@ local PLUNDERSTORE = createHeader({
 });
 
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, {
 	n(PLUNDERSTORM, {
 		maps = { 2257 },	-- Arathi Highlands
+		timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(20509),	-- Plunderking
@@ -247,8 +248,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = 
 			},
 		})),
 	}),
-})));
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } }, {
+}))
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDownFiltered({ timeline = { ADDED_11_0_7, REMOVED_11_1_0 } },FILTERFUNC_NoheaderID,{
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20508),	-- Plunder Wonder (Win)
@@ -517,15 +518,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ timeline = 
 	}),
 })));
 -- #else
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ timeline = { ADDED_3_4_3, REMOVED_4_0_1 } }, {
-	n(PLUNDERSTORM, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, {
+	n(PLUNDERSTORM, with({timeline = { ADDED_3_4_3, REMOVED_4_0_1 }},{
 		pet(4532, {		-- Pinchy the Plunderer (PET!)
 			spellID = 446916,	-- Pinchy the Plunderer
 			petTypeID = 9,	-- Aquatic?
 		}),
 		mount(446902),	-- Polly Roger (MOUNT!)
-	}),
-}))));
+	})),
+})))
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {

@@ -1427,7 +1427,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		-----------------
 		-- 2024 Update --
 		-----------------
-		n(QUESTS, bubbleDown({ timeline = { ADDED_10_2_5 }, isYearly = true, }, {
+		n(QUESTS, timelineSelf({ timeline = { ADDED_10_2_5 }, isYearly = true, }, {
 			q(78329, {	-- Love is in the Air (A)
 				qgs = {
 					215197,	-- Gabbo Blinkwink

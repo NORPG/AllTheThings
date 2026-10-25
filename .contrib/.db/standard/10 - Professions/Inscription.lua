@@ -3800,7 +3800,7 @@ r = oldR;
 root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bubbleDownSelf({ requireSkill = INSCRIPTION }, {
 	timeline = { ADDED_3_0_2 },
 	groups = {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18858, {	-- Forge and Befuddle
 				races = HORDE_ONLY,
 			}),

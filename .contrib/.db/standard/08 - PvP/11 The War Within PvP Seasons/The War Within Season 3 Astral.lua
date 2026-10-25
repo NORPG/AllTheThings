@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 	n(SEASON_ASTRAL, {
 		timeline = { ADDED_11_2_0_SEASONSTART },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH } }, {
 				ach(41048, {	-- Astral Weapons of Conquest
 					i(232616, {	-- Astral Gladiator's Coin Pouch
 						i(232600, {	-- Astral Gladiator's Weapon Token

@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 	n(SEASON_CRIMSON, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 			ach(15943, {	-- Crimson Combatant [A]
 				races = ALLIANCE_ONLY,
 				collectible = false,
@@ -705,7 +705,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				}),
 			},
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, bonusID = 7532 }, {
+		n(PVP_ELITE, timelineSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, bonusID = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(201911),	-- Crimson Gladiator's Cloak
@@ -1027,7 +1027,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+		n(PVP_ELITE, timelineSelf({ timeline = { ADDED_11_0_5 } }, {
 			n(199720, {	-- Glamora
 				coord = { 45.9, 38.7, VALDRAKKEN },
 				groups = sharedData({

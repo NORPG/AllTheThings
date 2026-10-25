@@ -63,7 +63,7 @@ ALLIANCE_ONLY = {
 								-- #if AFTER TWW
 								EARTHEN_ALLIANCE,
 									-- #if AFTER MID
-									HARANIR_ALLIANCE
+									HARANIR_ALLIANCE,
 									-- #endiF
 								-- #endif
 							-- #endif
@@ -101,7 +101,7 @@ HORDE_ONLY = {
 								-- #if AFTER TWW
 								EARTHEN_HORDE,
 									-- #if AFTER MID
-									HARANIR_HORDE
+									HARANIR_HORDE,
 									-- #endif
 								-- #endif
 							-- #endif

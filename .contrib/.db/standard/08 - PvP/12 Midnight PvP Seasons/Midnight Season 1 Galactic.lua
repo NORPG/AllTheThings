@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 	n(SEASON_GALACTIC, {
 		timeline = { ADDED_12_0_1_SEASONSTART },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }, {
 				ach(61443, {	-- Galactic Weapons of Conquest
 					i(255671),	-- Galactic Gladiator's Weapon Token
 				}),

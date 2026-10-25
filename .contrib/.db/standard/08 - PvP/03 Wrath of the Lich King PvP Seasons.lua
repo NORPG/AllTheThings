@@ -2131,8 +2131,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 	})),
 }))));
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
--- 	n(PVP, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
+-- 	n(PVP, withShared({timeline = { ADDED_7_2_0 }},{
 -- 		-- PvP Ensembles
 -- 		q(46555),	-- Savage Gladiator's Chain Armor (Hunter)
 -- 		q(46556),	-- Savage Gladiator's Dragonhide Armor (Druid)
@@ -2202,5 +2202,5 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 -- 		q(46598),	-- Hateful Gladiator's Arsenal
 -- 		q(46609),	-- Furious Gladiator's Arsenal
 -- 		q(46620),	-- Relentless Gladiator's Arsenal
--- 	}),
--- })));
+-- 	})),
+-- }))

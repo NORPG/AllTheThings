@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 	n(SEASON_FORGED, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 			ach(40396, {	-- Forged Combatant [A]
 				races = ALLIANCE_ONLY,
 				collectible = false,

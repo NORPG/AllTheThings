@@ -7782,7 +7782,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 		},
 	}),
-	prof(POISONS, bubbleDownSelf({ timeline = { REMOVED_3_0_2 }, classes = { ROGUE }}, {
+	prof(POISONS, timelineSelf({ timeline = { REMOVED_3_0_2 }, classes = { ROGUE }}, {
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_THREE, i(217347, {	-- Atrophic Poison
 			timeline = { ADDED_1_15_2 },

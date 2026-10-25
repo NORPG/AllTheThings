@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_NOTORIOUS, {
 		timeline = { ADDED_8_2_0, REMOVED_8_3_0, ADDED_9_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 } }, {
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13641),	-- Rival: Battle for Azeroth Season 3
@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -84,7 +84,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(167536),	-- Notorious Aspirant's Cape [A]
 						i(167535),	-- Notorious Aspirant's Drape [A]
@@ -149,7 +149,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(170080),	-- Notorious Aspirant's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -173,7 +173,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(167532),	-- Notorious Aspirant's Cape [H]
 						i(167531),	-- Notorious Aspirant's Drape [H]
@@ -255,7 +255,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -279,7 +279,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(167373),	-- Notorious Gladiator's Cape [A]
 						i(167372),	-- Notorious Gladiator's Drape [A]
@@ -414,7 +414,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(169710),	-- Notorious Gladiator's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -438,7 +438,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(167369),	-- Notorious Gladiator's Cape [H]
 						i(167368),	-- Notorious Gladiator's Drape [H]

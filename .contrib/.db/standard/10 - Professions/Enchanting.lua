@@ -2,7 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANTING }, {
-	n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18766),	-- Disenchantment I
 		ach(18767),	-- Disenchantment II
 		ach(18768),	-- Disenchantment III
@@ -344,7 +344,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18775),	-- Iwen's Enchanting Rod
 		})),
 		n(QUESTS, {
@@ -452,7 +452,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 		}),
 	}),
 	expansion(EXPANSION.DF, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18764),	-- Break Upon Your Body
 			ach(18763, {
 				crit(61079, {	-- Scepter of Spectacle: Fire

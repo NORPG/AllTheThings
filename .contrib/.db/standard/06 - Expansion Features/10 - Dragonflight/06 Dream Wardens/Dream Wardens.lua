@@ -21,8 +21,8 @@ local DREAM_INFUSION = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { ADDED_10_2_0 } }, {
-	header(HEADERS.Faction, FACTION_DREAM_WARDENS, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
+	header(HEADERS.Faction, FACTION_DREAM_WARDENS, with({timeline = { ADDED_10_2_0 }},{
 		faction(FACTION_DREAM_WARDENS, {
 			icon = 5244643,
 		}),
@@ -506,8 +506,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ timeline = { 
 				}),
 			}),
 		}),
-	}),
-})));
+	})),
+}))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	m(DRAGON_ISLES, {

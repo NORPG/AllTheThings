@@ -2,7 +2,7 @@
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
 
-root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ timeline = { ADDED_11_1_5 } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, {
 	-- #if BEFORE MID
 	maps = {
 		DRAGON_ISLES,
@@ -28,6 +28,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 		THE_RINGING_DEEPS,
 	},
 	-- #endif
+	timeline = { ADDED_11_1_5 },
 	groups = {
 		ach(64140, { timeline = { ADDED_12_1_0, "removed 12.1.0.69933" } }),	-- Winds of Particularly Mysterious Fortune
 		i(235054, {	-- Pristine Mysterious Satchel
@@ -171,7 +172,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 			sym = {{"select","itemID",235054},{"pop"}},	-- Pristine Mysterious Satchel
 		}),
 	},
-}))));
+})))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, {

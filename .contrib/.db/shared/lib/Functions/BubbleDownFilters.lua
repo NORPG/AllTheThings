@@ -22,5 +22,5 @@ function FILTERFUNC_questIDORencounterID(t) return t.questID or t.encounterID an
 -- Only match groups without an explicit timeline
 function FILTERFUNC_NoTimeline(t) return not t.timeline and true; end
 
--- Only match groups without a headerID
-function FILTERFUNC_NoheaderID(t) return not t.headerID and true; end
+-- Only match groups without a headerID/f
+function FILTERFUNC_NoheaderID(t) return not t.headerID and not t.f and true; end

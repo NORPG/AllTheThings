@@ -674,7 +674,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				-- #endif
 			},
-			applyclassicphase(WOD_PHASE_ONE, bubbleDown({ timeline = { ADDED_6_0_2 } }, {	-- WoD+ Rewards (Scalable)
+			applyclassicphase(WOD_PHASE_ONE, timelineSelf({ timeline = { ADDED_6_0_2 } }, {	-- WoD+ Rewards (Scalable)
 				i(117372),	-- Cloak of the Frigid Winds
 				i(117374),	-- Icebound Cloak
 				i(117375),	-- Shroud of Winter's Chill

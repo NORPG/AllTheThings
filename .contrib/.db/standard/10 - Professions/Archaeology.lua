@@ -239,7 +239,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					}),
 				}),
 			}),
-			n(VENDORS, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+			n(VENDORS, timelineSelf({ timeline = { ADDED_5_0_4 } }, {
 				crs = {
 					64922,	-- Brann Bronzebeard <Archaeology Trainer>
 					-- #if AFTER WOD
@@ -763,7 +763,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					}),
 				}),
 			}),
-			n(VENDORS, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+			n(VENDORS, timelineSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 				crs = {
 					87365,	-- Grakis <Archaeology Fragments>
 					88253,	-- Srikka <Archaeology Fragments>
@@ -1299,7 +1299,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					}),
 				}),
 			}),
-			n(VENDORS, bubbleDownSelf({ timeline = { ADDED_7_1_0 } }, {
+			n(VENDORS, timelineSelf({ timeline = { ADDED_7_1_0 } }, {
 				crs = {
 					93538,	-- Dariness the Learned <Archaeology Trainer>
 					-- #if AFTER BFA

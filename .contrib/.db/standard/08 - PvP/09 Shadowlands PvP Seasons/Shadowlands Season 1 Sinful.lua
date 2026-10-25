@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	n(SEASON_SINFUL, {
 		timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 				ach(14685),	-- Combatant: Shadowlands Season 1
 				ach(14686),	-- Challenger: Shadowlands Season 1
 				ach(14687),	-- Rival: Shadowlands Season 1

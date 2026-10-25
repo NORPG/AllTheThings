@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_CORRUPTED, {
 		timeline = { ADDED_8_3_0, REMOVED_9_0_1, ADDED_9_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 } }, {
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13963),	-- Rival: Battle for Azeroth Season 4
@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 						coord = { 75.0, 67.4, STORMWIND_CITY },
 						groups = {
@@ -153,7 +153,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172854),	-- Corrupted Aspirant's Shawl [A]
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(172857),	-- Corrupted Aspirant's Cape [A]
 						i(172856),	-- Corrupted Aspirant's Drape [A]
@@ -222,7 +222,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172886),	-- Corrupted Aspirant's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(175050, {	-- Aneka Melae
 						coord = { 37.5, 71.4, ORGRIMMAR },
 						groups = {
@@ -315,7 +315,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172850),	-- Corrupted Aspirant's Shawl [H]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(172853),	-- Corrupted Aspirant's Cape [H]
 						i(172852),	-- Corrupted Aspirant's Drape [H]
@@ -402,7 +402,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			}),
 			n(PVP_GLADIATOR, {symselector=SymSelector.BFA_PVP_SEASON_CORRUPTED_GLADIATOR}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -426,7 +426,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
 					filter(CLOTH, {
 						i(172641),	-- Corrupted Gladiator's Silk Amice [A]
 						i(172647),	-- Corrupted Gladiator's Silk Bracers [A]
@@ -545,7 +545,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172752),	-- Corrupted Gladiator's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -569,7 +569,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
 					filter(CLOTH, {
 						i(172592),	-- Corrupted Gladiator's Silk Amice [H]
 						i(172593),	-- Corrupted Gladiator's Silk Bracers [H]

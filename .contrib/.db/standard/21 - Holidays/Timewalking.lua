@@ -272,7 +272,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				}),
 			},
 		}),
-		n(QUESTS, bubbleDownSelf({ timeline = { ADDED_11_2_7, REMOVED_12_0_0 } }, {
+		n(QUESTS, timelineSelf({ timeline = { ADDED_11_2_7, REMOVED_12_0_0 } }, {
 			q(92857, {	-- Ta'readon's Mount Voucher
 				provider = { "i", 254694 },	-- Ta'readon's Mount Voucher
 				sym = {{"select","itemID",
@@ -1834,7 +1834,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				}),
 			},
 		}),
-		inst_tw(255, bubbleDownSelf({ timeline = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Black Morass
+		inst_tw(255, timelineSelf({ timeline = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Black Morass
 			e(552, {	-- Chrono Lord Deja
 				creatureID = 17879,
 				groups = {

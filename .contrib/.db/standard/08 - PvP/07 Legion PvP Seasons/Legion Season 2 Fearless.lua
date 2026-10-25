@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FEARLESS, {
 		timeline = { ADDED_7_1_0, REMOVED_7_2_0, ADDED_7_2_0 },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
 				ach(11004, {	-- Fearless Combatant [A]
 					races = ALLIANCE_ONLY,
 					groups = {

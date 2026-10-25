@@ -889,7 +889,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 			}),
 		}),
 	}),
-	n(VENDORS, bubbleDownSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
+	n(VENDORS, timelineSelf({ timeline = { ADDED_6_0_3_LAUNCH } }, {
 		--[[
 		crs = {
 			85418,	-- Lio the Lioness <Battle Pet Master>

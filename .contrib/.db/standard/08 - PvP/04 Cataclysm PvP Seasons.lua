@@ -3060,8 +3060,8 @@ root(ROOTS.PVP, {
 	}))),
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
--- 	n(PVP, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
+-- 	n(PVP, withShared({timeline = { ADDED_7_2_0 }},{
 -- 		-- PvP Ensembles
 -- 		q(46512),	-- Bloodthirsty Gladiator's Chain Armor (Hunter)
 -- 		q(46513),	-- Bloodthirsty Gladiator's Dragonhide Armor (Druid)
@@ -3108,5 +3108,5 @@ root(ROOTS.PVP, {
 -- 		q(46532),	-- Cataclysmic Gladiator's Arsenal
 -- 		q(46543),	-- Vicious Gladiator's Arsenal
 -- 		q(46554),	-- Ruthless Gladiator's Arsenal
--- 	}),
--- })));
+-- 	})),
+-- }))

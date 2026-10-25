@@ -41,7 +41,7 @@ end]];
 
 root(ROOTS.PVP, {
 	run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.MOP, {
-		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ timeline = { ADDED_5_0_4 } }, {
+		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_ONE, withShared({ timeline = { ADDED_5_0_4 } }, {
 			n(ACHIEVEMENTS, {
 				ach(11717, {timeline = {ADDED_7_2_0}}),	-- Why Male(volent) Models? (PvP Season 12)
 			}),
@@ -866,7 +866,7 @@ root(ROOTS.PVP, {
 				}),
 			})),
 		}))),
-		n(SEASON_TYRANNICAL, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDownSelf({ timeline = { ADDED_5_2_0 } }, {
+		n(SEASON_TYRANNICAL, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, withShared({ timeline = { ADDED_5_2_0 } }, {
 			n(ACHIEVEMENTS, {
 				ach(11718, {timeline = {ADDED_7_2_0}}),	-- Dressed to Oppress (PvP Season 13)
 			}),
@@ -1900,11 +1900,11 @@ root(ROOTS.PVP, {
 			})),
 		}))),
 		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
-		n(SEASON_GRIEVOUS, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ timeline = { ADDED_5_4_0 } }, {
+		n(SEASON_GRIEVOUS, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, withShared({ timeline = { ADDED_5_4_0 } }, {
 			n(ACHIEVEMENTS, {
 				ach(11719, {timeline = {ADDED_7_2_0}}),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
 			}),
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_5_4_7 }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
 					elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
@@ -3022,7 +3022,7 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDown({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
+			n(PVP_ELITE, withShared({ timeline = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 				-- Original Sources are:
 				-- n00000 Unknown in Valley of the Four Winds (Alliance)
 				-- n00000 Unknown in Area Kun-Lai Summit (Horde)
@@ -3211,11 +3211,11 @@ root(ROOTS.PVP, {
 			})),
 		}))),
 		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
-		n(SEASON_PRIDEFUL, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ timeline = { ADDED_5_4_7 } }, {
+		n(SEASON_PRIDEFUL, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, withShared({ timeline = { ADDED_5_4_7 } }, {
 			n(ACHIEVEMENTS, {
 				ach(11720, {timeline = {ADDED_7_2_0}}),	-- Wear It With Pride (PvP Season 15)
 			}),
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_6_0_2 }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
 					elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
@@ -4307,7 +4307,7 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDown({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
+			n(PVP_ELITE, withShared({ timeline = { ADDED_5_4_7, REMOVED_6_0_2 } }, {
 				-- Original Sources are:
 				-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
 				-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)
@@ -4498,8 +4498,8 @@ root(ROOTS.PVP, {
 	}))),
 });
 
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_7_2_0 } }, {
--- 	n(PVP, {
+-- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
+-- 	n(PVP, withShared({timeline = { ADDED_7_2_0 }},{
 -- 		-- PvP Ensembles
 -- 		q(45583),	-- Dreadful Gladiator's Chain Armor (Hunter)
 -- 		q(45584),	-- Dreadful Gladiator's Dragonhide Armor (Druid)
@@ -4598,5 +4598,5 @@ root(ROOTS.PVP, {
 -- 		q(46009),	-- Prideful Gladiator's Weapons (Horde)
 -- 		q(46019),	-- Grievous Gladiator's Arsenal (Alliance)
 -- 		q(46018),	-- Grievous Gladiator's Weapons (Horde)
--- 	}),
--- })));
+-- 	})),
+-- }))

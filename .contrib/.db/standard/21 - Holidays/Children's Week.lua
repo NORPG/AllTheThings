@@ -1993,7 +1993,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 		}),
 	}),
-	n(QUESTS, bubbleDown({ timeline = { ADDED_11_1_5 } }, {
+	n(QUESTS, timelineSelf({ timeline = { ADDED_11_1_5 } }, {
 		{	-- What About the Children?
 			allianceQuestData = q(81609),	-- What About the Children? [A]
 			hordeQuestData = q(81610),	-- What About the Children? [H]
@@ -2122,7 +2122,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 	}),
 	-- #endif
-	n(VENDORS, bubbleDown({ timeline = { ADDED_11_1_5 } }, {
+	n(VENDORS, timelineSelf({ timeline = { ADDED_11_1_5 } }, {
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
 			coord = { 58.0, 56.8, STORMWIND_CITY },
 			groups = sharedData({ cost = { { "i", 241215, 1 } } }, WELL_LOVED_FIGURINE_VENDOR_GROUP),	-- 1x Well-loved Figurine

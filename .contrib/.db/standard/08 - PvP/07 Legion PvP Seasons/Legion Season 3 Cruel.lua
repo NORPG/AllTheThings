@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_CRUEL, {
 		timeline = { ADDED_7_2_0, REMOVED_7_2_5, ADDED_7_3_0 },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 } }, {
 				ach(11008, {	-- Cruel Combatant [A]
 					races = ALLIANCE_ONLY,
 					groups = {
@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			})),
 			n(PVP_COMBATANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
 						groups = sharedData({
@@ -109,7 +109,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(145026),	-- Cruel Combatant's Dreadcloak [A]
@@ -266,7 +266,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(145238),	-- Cruel Combatant's Insignia of Victory [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -311,7 +311,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(145027),	-- Cruel Combatant's Dreadcloak [H]
@@ -507,7 +507,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
 						groups = sharedData({
@@ -552,7 +552,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(144534),	-- Cruel Gladiator's Dreadcloak [A]
@@ -709,7 +709,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144746),	-- Cruel Gladiator's Insignia of Victory [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -754,7 +754,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(144535),	-- Cruel Gladiator's Dreadcloak [H]
@@ -913,7 +913,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				})),
 			}),
 			n(PVP_ELITE, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -934,7 +934,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -984,7 +984,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(144780),	-- Cruel Gladiator's Dreadcloak [A]
@@ -1141,7 +1141,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144992),	-- Cruel Gladiator's Insignia of Victory [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -1162,7 +1162,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
 						groups = sharedData({
@@ -1212,7 +1212,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							i(144781),	-- Cruel Gladiator's Dreadcloak [H]

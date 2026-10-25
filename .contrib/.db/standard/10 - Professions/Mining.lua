@@ -23,7 +23,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		}),
 	}),
 	expansion(EXPANSION.LEGION, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18839),	-- Broken Isles Mining Techniques (automated)
 		})),
 		header(HEADERS.Spell, 247850, {	-- Empyrium Deposit [Rank 3]

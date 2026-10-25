@@ -3,7 +3,7 @@
 -----------------------------------------------------
 -- #if AFTER TBC
 root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWELCRAFTING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 		ach(18880),	-- Generations of Gemstones I
 		ach(18889),	-- Generations of Gemstones II
 		ach(18890),	-- Generations of Gemstones III
@@ -728,7 +728,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 			pn(28728),	-- Setting
 			pn(28722),	-- Stone
 		})),
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
 			-- #if BEFORE 10.2.0
 				crit(61906, {	-- Jeweled Ruby Whelpling

@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 	n(SEASON_DREAD, {
 		timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0, ADDED_9_0_2_LAUNCH },
 		groups = {
-			n(ACHIEVEMENTS, bubbleDown({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
+			n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(12960),	-- Rival: Battle for Azeroth Season 1
@@ -61,7 +61,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -85,7 +85,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(163724),	-- Dread Aspirant's Cape [A]
 						i(163721),	-- Dread Aspirant's Cloak [A]
@@ -152,7 +152,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(162881),	-- Dread Aspirant's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -176,7 +176,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(162968),	-- Dread Aspirant's Cape [H]
 						i(162864),	-- Dread Aspirant's Cloak [H]
@@ -262,7 +262,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
 						groups = sharedData({
@@ -286,7 +286,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = ALLIANCE_ONLY }, {
 					filter(BACK_F, {
 						i(163732),	-- Dread Gladiator's Cape [A]
 						i(163731),	-- Dread Gladiator's Drape [A]
@@ -385,7 +385,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(161694),	-- Dread Gladiator's Warglaive [A]
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
 						groups = sharedData({
@@ -409,7 +409,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						}),
 					}),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, races = HORDE_ONLY }, {
 					filter(BACK_F, {
 						i(161907),	-- Dread Gladiator's Cape [H]
 						i(161906),	-- Dread Gladiator's Drape [H]

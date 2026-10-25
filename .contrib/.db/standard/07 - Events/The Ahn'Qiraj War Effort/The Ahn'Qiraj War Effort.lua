@@ -30,11 +30,12 @@ local THE_AHNQIRAJ_WAR_EFFORT = createHeader({
 });
 
 root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
-	applyclassicphase(PHASE_FIVE_WAR_EFFORT, bubbleDown({ timeline = { REMOVED_2_0_1 } }, {
+	applyclassicphase(PHASE_FIVE_WAR_EFFORT, {
 		maps = {
 			ORGRIMMAR,
 			IRONFORGE,
 		},
+		timeline = { REMOVED_2_0_1 },
 		groups = {
 			n(FACTION_HEADER_ALLIANCE, {
 				races = ALLIANCE_ONLY,
@@ -1449,5 +1450,5 @@ root(ROOTS.WorldEvents, n(THE_AHNQIRAJ_WAR_EFFORT,
 				}),
 			}),
 		},
-	}))
+	})
 ));

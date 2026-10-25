@@ -600,7 +600,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 	}),
 	-- #endif
 	-- #if ANYCLASSIC
-	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ timeline = { ADDED_2_5_1, REMOVED_2_5_5_PHASE_2 } }, {
+	n(TBC_CLASSIC_DELUXE_EDITION, timelineSelf({ timeline = { ADDED_2_5_1, REMOVED_2_5_5_PHASE_2 } }, {
 		description = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		groups = {
 			q(63450, {	-- A Deluxe Delivery (Landro Longshot)
@@ -637,7 +637,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	})),
 	-- #else
-	n(TBC_CLASSIC_DELUXE_EDITION, bubbleDownSelf({ timeline = { ADDED_9_1_0, REMOVED_9_2_7, ADDED_11_2_7, REMOVED_12_0_7  } }, {
+	n(TBC_CLASSIC_DELUXE_EDITION, timelineSelf({ timeline = { ADDED_9_1_0, REMOVED_9_2_7, ADDED_11_2_7, REMOVED_12_0_7  } }, {
 		description = "These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",
 		groups = {
 			-- #if AFTER 11.2.5
@@ -702,7 +702,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	}),
 	-- #else
-	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, bubbleDownSelf({ timeline = { ADDED_11_2_5 } }, {
+	n(TBC_CLASSIC_ANNIVERSARY_OUTLAND_UPGRADE, timelineSelf({ timeline = { ADDED_11_2_5 } }, {
 		description = "These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",
 		groups = {
 			i(253573),	-- Cobalt Phase-Hunter (MOUNT!)
@@ -713,7 +713,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	})),
 	-- #endif
-	expansion(EXPANSION.WRATH, bubbleDownSelf({ timeline = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
+	expansion(EXPANSION.WRATH, timelineSelf({ timeline = { ADDED_2_4_3, REMOVED_3_3_5 } }, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		groups = {
 			ach(683),	-- Collector's Edition: Frost Wyrm Whelp
@@ -721,7 +721,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ timeline = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, timelineSelf({ timeline = { ADDED_3_4_0, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 			questID = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
@@ -762,7 +762,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		}),
 	})),
 	-- #else
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, timelineSelf({ timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			groups = {
@@ -771,7 +771,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.CATA, bubbleDownSelf({ timeline = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
+	expansion(EXPANSION.CATA, timelineSelf({ timeline = { ADDED_4_0_1, REMOVED_4_3_2 } }, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",
 		groups = {
 			ach(5377),	-- Collector's Edition: Lil' Deathwing
@@ -779,7 +779,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ timeline = { ADDED_3_4_0, REMOVED_4_4_2 } }, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, timelineSelf({ timeline = { ADDED_3_4_0, REMOVED_4_4_2 } }, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			groups = {
@@ -841,7 +841,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		}),
 	})),
 	-- #else
-	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_11_2_0 } }, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, timelineSelf({ timeline = { ADDED_10_2_0, REMOVED_11_2_0 } }, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			groups = {
@@ -851,7 +851,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.MOP, bubbleDownSelf({ timeline = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
+	expansion(EXPANSION.MOP, timelineSelf({ timeline = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of Mists of Pandaria.\n\nThe rewards can be purchased from the in-game shop.",
 		groups = {
 			ach(6849),	-- Collector's Edition: Imperial Quilen
@@ -861,7 +861,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ timeline = { ADDED_4_4_2, REMOVED_6_0_2 } }, {
+	n(MOP_CLASSIC_HEROIC_PACK, timelineSelf({ timeline = { ADDED_4_4_2, REMOVED_6_0_2 } }, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
 			groups = {
@@ -874,7 +874,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 		}),
 	})),
 	-- #else
-	n(MOP_CLASSIC_HEROIC_PACK, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {
+	n(MOP_CLASSIC_HEROIC_PACK, timelineSelf({ timeline = { ADDED_11_0_7 } }, {
 		n(HEROIC_EDITION, {
 			description = "These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",
 			groups = {
@@ -913,7 +913,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
 	})),
-	expansion(EXPANSION.LEGION, bubbleDownSelf({ timeline = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
+	expansion(EXPANSION.LEGION, timelineSelf({ timeline = { ADDED_6_2_2, REMOVED_7_3_5 } }, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",
 		groups = {
 			ach(10320),	-- Collector's Edition: Illidari Felstalker
@@ -922,7 +922,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			i(128426),	-- Nibbles (PET!)
 		},
 	})),
-	expansion(EXPANSION.BFA, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
+	expansion(EXPANSION.BFA, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_3_7 } }, {
 		description = "These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",
 		groups = {
 			h(ach(12230)),	-- Collector's Edition: Gilded Ravasaur
