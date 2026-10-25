@@ -87342,6 +87342,7 @@ n(92183,{coords={
 [627]={{45,29.6}}},g={
 r(239415,{awp=70200,learnedAt=100,requireSkill=164,skillID=2454}),
 h(-679,{awp=110207,g={
+r(1313521,{awp=120105,learnedAt=90,requireSkill=164,skillID=2454}),
 r(1260693,{learnedAt=85,requireSkill=164,skillID=2454}),
 r(1260695,{learnedAt=85,requireSkill=164,skillID=2454}),
 r(1260698,{learnedAt=85,requireSkill=164,skillID=2454})}})}})}),
@@ -101158,7 +101159,6 @@ r(304312,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437}),
 r(304315,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437})}),
 h(-679,{awp=110207,g={
 r(1260691,{learnedAt=160,requireSkill=164,skillID=2437}),
-r(1313521,{awp=120105,learnedAt=90,requireSkill=164,skillID=2454}),
 r(1315468,{awp=120105,learnedAt=160,requireSkill=164,skillID=2437}),
 r(1260692,{learnedAt=160,requireSkill=164,skillID=2437})}}),
 flt(50,{
@@ -109307,7 +109307,6 @@ r(304312,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437}),
 r(304315,{awp=80300,learnedAt=165,requireSkill=164,skillID=2437})}),
 h(-679,{awp=110207,g={
 r(1260691,{learnedAt=160,requireSkill=164,skillID=2437}),
-r(1313521,{awp=120105,learnedAt=90,requireSkill=164,skillID=2454}),
 r(1315468,{awp=120105,learnedAt=160,requireSkill=164,skillID=2437}),
 r(1260692,{learnedAt=160,requireSkill=164,skillID=2437})}}),
 flt(50,{
@@ -143052,6 +143051,7 @@ n(191025,{coords={
 de(2529,{awp=110207,cost={{"c",2003,500}},itemID=246863,spellID=1244135})}}),
 n(193955,{coords={
 [2022]={{59.8,70.4}}},g={
+i(284249,{awp=120105,sourceQuests={70058}}),
 r(1315691,{awp=120105,cost={{"c",2003,400}},itemID=284250,requireSkill=197,skillID=2831,sourceQuests={70058}})}}),
 n(187399,{coords={
 [2022]={{47.7,83.2}}},g={
