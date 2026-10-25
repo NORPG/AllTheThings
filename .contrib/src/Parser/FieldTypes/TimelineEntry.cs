@@ -14,6 +14,14 @@ namespace ATT.FieldTypes
             ChangeType.REMOVED,
         };
 
+        private static readonly Dictionary<string, int> _changePriority = new Dictionary<string, int>
+        {
+            { ChangeType.CREATED, 0 },
+            { ChangeType.ADDED  , 1 },
+            { ChangeType.REMOVED, 2 },
+            { ChangeType.DELETED, 3 },
+        };
+
         public string Change { get; set; }
 
         public string RawPatch { get; set; }
@@ -80,20 +88,26 @@ namespace ATT.FieldTypes
             return this == other;
         }
 
-        public int CompareTo(TimelineEntry other)
-        {
-            if (other == null) return -1;
-            return LongVersion.CompareTo(other.LongVersion);
-        }
+        public int CompareTo(TimelineEntry other) => Compare(this, other);
 
         public int Compare(TimelineEntry x, TimelineEntry y)
         {
-            return (x?.LongVersion ?? 0).CompareTo(y?.LongVersion ?? 0);
+            if (x is null && y is null) return 0;
+            if (x is null) return -1;
+            if (y is null) return 1;
+
+            var compare = x.LongVersion.CompareTo(y.LongVersion);
+            if (compare != 0) return compare;
+            return _changePriority[x.Change].CompareTo(_changePriority[y.Change]);
         }
 
-        public static bool operator <(TimelineEntry x, TimelineEntry y) => x?.LongVersion < y?.LongVersion;
+        public static bool operator <(TimelineEntry x, TimelineEntry y) => x.CompareTo(y) < 0;
 
-        public static bool operator >(TimelineEntry x, TimelineEntry y) => x?.LongVersion > y?.LongVersion;
+        public static bool operator >(TimelineEntry x, TimelineEntry y) => x.CompareTo(y) > 0;
+
+        public static bool operator <=(TimelineEntry x, TimelineEntry y) => x.CompareTo(y) <= 0;
+
+        public static bool operator >=(TimelineEntry x, TimelineEntry y) => x.CompareTo(y) >= 0;
 
         public bool Equals(TimelineEntry x, TimelineEntry y)
         {

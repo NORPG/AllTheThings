@@ -5038,15 +5038,15 @@ namespace ATT
                 if (firstEntry.Change != ChangeType.CREATED)
                 {
                     if (inheritedAdded != null
-                        && (firstAdded == null || (firstEntry.Change == ChangeType.REMOVED && firstEntry > inheritedAdded))
-                        && (firstRemoved == null || firstRemoved > inheritedAdded))
+                        && (firstAdded == null || (firstEntry.Change == ChangeType.REMOVED && firstEntry >= inheritedAdded))
+                        && (firstRemoved == null || firstRemoved >= inheritedAdded))
                     {
                         timeline.Merge(inheritedAdded);
                         LogDebug($"INFO: Merged inheriting timeline {ChangeType.ADDED} entry {ToJSON(inheritedAdded)} into timeline", data);
                     }
                     if (inheritedRemoved != null
-                        && (firstRemoved == null || (lastEntry.Change == ChangeType.ADDED && lastEntry < inheritedAdded))
-                        && (firstAdded == null || firstAdded < inheritedRemoved))
+                        && (firstRemoved == null || (lastEntry.Change == ChangeType.ADDED && lastEntry <= inheritedAdded))
+                        && (firstAdded == null || firstAdded <= inheritedRemoved))
                     {
                         timeline.Merge(inheritedRemoved);
                         LogDebug($"INFO: Merged inheriting timeline {ChangeType.REMOVED} entry {ToJSON(inheritedRemoved)} into timeline", data);

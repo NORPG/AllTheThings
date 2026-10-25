@@ -43,7 +43,7 @@ namespace ATT.FieldTypes
                     return _entries;
                 }
 
-                _entries = _entries.Distinct().OrderBy(e => e.LongVersion).ToArray();
+                _entries = _entries.Distinct().OrderBy(e => e).ToArray();
                 _dirty = false;
                 return _entries;
             }
