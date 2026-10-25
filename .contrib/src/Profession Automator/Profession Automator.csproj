@@ -36,10 +36,12 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KeraLua">
+    <Reference Include="KeraLua, Version=1.2.13.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Parser\lib\KeraLua.dll</HintPath>
     </Reference>
-    <Reference Include="NLua">
+    <Reference Include="NLua, Version=1.4.1.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Parser\lib\NLua.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -52,6 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="..\Parser\lib\lua54.dll">
+      <Link>lua54.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
