@@ -685,7 +685,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, timelineSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, bonusID = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, bonusID = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
@@ -1007,7 +1007,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					},
 				}),
 			})),
-			n(PVP_ELITE, timelineSelf({ timeline = { ADDED_11_0_5 } }, {
+			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
 				n(199720, {	-- Glamora
 					coord = { 45.9, 38.7, VALDRAKKEN },
 					groups = sharedData({

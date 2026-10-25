@@ -272,9 +272,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 				}),
 			},
 		}),
-		n(QUESTS, timelineSelf({ timeline = { ADDED_11_2_7, REMOVED_12_0_0 } }, {
+		n(QUESTS, {
 			q(92857, {	-- Ta'readon's Mount Voucher
 				provider = { "i", 254694 },	-- Ta'readon's Mount Voucher
+				timeline = { ADDED_11_2_7, REMOVED_12_0_0 },
 				sym = {{"select","itemID",
 					-- You can choose 1 mount from this quest and buy the rest from the vendor
 					257511,	-- Bronze Wilderling Harness (MOUNT!)
@@ -283,7 +284,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 					257516,	-- Bronze Gravewing Harness (MOUNT!)
 				}},
 			}),
-		})),
+		}),
 		n(REWARDS, {
 			TimelyGoodieBag({	-- Timely Goodie Bag
 				-- TODO: probably nice to organize by armor/type & weapon since the drops are likely loot-spec-based
@@ -1834,7 +1835,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				}),
 			},
 		}),
-		inst_tw(255, timelineSelf({ timeline = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Black Morass
+		inst_tw(255, with({ timeline = { ADDED_6_2_2, REMOVED_9_1_5 }},{	-- The Black Morass
 			e(552, {	-- Chrono Lord Deja
 				creatureID = 17879,
 				groups = {

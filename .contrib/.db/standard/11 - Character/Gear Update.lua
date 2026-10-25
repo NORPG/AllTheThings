@@ -9,7 +9,7 @@ local GEAR_UPDATE = createHeader({
 	},
 });
 
-root(ROOTS.Character, n(GEAR_UPDATE, timelineSelf({ timeline = { ADDED_10_1_5, REMOVED_11_2_7 } }, {
+root(ROOTS.Character, n(GEAR_UPDATE, with({ timeline = { ADDED_10_1_5, REMOVED_11_2_7 } }, {
 	description = "These items are obtained by Characters with a level range of 10-60 who have not logged in for more than 60 days. This feature will appear on the login screen if the character is eligible.",
 	groups = {
 		cl(DEATHKNIGHT, {

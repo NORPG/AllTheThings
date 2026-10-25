@@ -4,7 +4,7 @@
 root(ROOTS.Character, n(HERITAGE, {
 	timeline = { ADDED_7_3_5 },
 	groups = {
-		race(BLOODELF, timelineSelf({ timeline = { ADDED_8_1_0 }, races = { BLOODELF } }, {
+		race(BLOODELF, bubbleDown({ timeline = { ADDED_8_1_0 }, races = { BLOODELF } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -262,7 +262,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		}));
-		race(DWARF, timelineSelf({ timeline = { ADDED_8_1_0 }, races = { DWARF } }, {
+		race(DWARF, bubbleDown({ timeline = { ADDED_8_1_0 }, races = { DWARF } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -400,7 +400,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(GNOME, timelineSelf({ timeline = { ADDED_8_2_0 }, races = { GNOME } }, {
+		race(GNOME, bubbleDown({ timeline = { ADDED_8_2_0 }, races = { GNOME } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -485,7 +485,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			}),
 		})),
-		race(GOBLIN, timelineSelf({ timeline = { ADDED_8_3_0 }, races = { GOBLIN } }, {
+		race(GOBLIN, bubbleDown({ timeline = { ADDED_8_3_0 }, races = { GOBLIN } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -1005,7 +1005,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(ORC, timelineSelf({ timeline = { ADDED_10_0_7 }, races = { ORC } }, {
+		race(ORC, bubbleDown({ timeline = { ADDED_10_0_7 }, races = { ORC } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -1387,7 +1387,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			},
 
 		})),
-		race(TAUREN, timelineSelf({ timeline = { ADDED_8_2_0 }, races = { TAUREN } }, {
+		race(TAUREN, bubbleDown({ timeline = { ADDED_8_2_0 }, races = { TAUREN } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0
@@ -1763,7 +1763,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				}),
 			},
 		})),
-		race(WORGEN, timelineSelf({ timeline = { ADDED_8_3_0 }, races = { WORGEN } }, {
+		race(WORGEN, bubbleDown({ timeline = { ADDED_8_3_0 }, races = { WORGEN } }, {
 			description = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
 			groups = bubbleDown({
 				-- #if BEFORE 10.1.0

@@ -65,7 +65,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(150002),	-- Demonic Combatant's Dreadcloak [A]
@@ -222,7 +222,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(150214),	-- Demonic Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(150003),	-- Demonic Combatant's Dreadcloak [H]
@@ -379,7 +379,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(150215),	-- Demonic Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(150331),	-- Alliance of Convenience
 					i(150363),	-- Battering Tempest
@@ -415,7 +415,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148894),	-- Demonic Gladiator's Dreadcloak [A]
@@ -572,7 +572,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149106),	-- Demonic Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148895),	-- Demonic Gladiator's Dreadcloak [H]
@@ -729,7 +729,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149107),	-- Demonic Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(154090),	-- Alliance of Convenience
 					i(154109),	-- Battering Tempest
@@ -765,7 +765,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_5 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					coord = { 29.6, 74.8, LEGION_DALARAN },
 					groups = sharedData({
@@ -782,7 +782,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149140),	-- Demonic Gladiator's Dreadcloak [A]
@@ -939,7 +939,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149352),	-- Demonic Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_5 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_5 }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					coord = { 57.0, 27.8, LEGION_DALARAN },
 					groups = sharedData({
@@ -956,7 +956,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 }, races = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149141),	-- Demonic Gladiator's Dreadcloak [H]
@@ -1113,7 +1113,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149353),	-- Demonic Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, timelineSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(155733),	-- Alliance of Convenience
 					i(155752),	-- Battering Tempest
