@@ -86,7 +86,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					},
 				}),
 			})),
-			n(REWARDS, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6_SEASON_FOUR } }, {
+			n(REWARDS, timelineSelf({ timeline = { REMOVED_10_2_6_SEASON_FOUR } }, {
 				i(200073, {	-- Valdrakken Treasures
 					sym = {
 						{"select", "itemID",

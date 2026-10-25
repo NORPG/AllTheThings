@@ -75,7 +75,7 @@ ARTISAN_FIRST_AID
 	{}
 -- #endif
 );
-TBC_FIRST_AID = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_1_0, REMOVED_8_0_1 } }, {
+TBC_FIRST_AID = applyclassicphase(TBC_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_1_0, REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(27028, {	-- First Aid (Master)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -87,7 +87,7 @@ TBC_FIRST_AID = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ timeline = { ADDED
 	r(27033, {timeline = {ADDED_3_1_0, REMOVED_8_0_1}}),	-- Heavy Netherweave Bandage
 	r(27032, {timeline = {ADDED_3_1_0, REMOVED_8_0_1}}),	-- Netherweave Bandage
 }));
-WRATH_FIRST_AID = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { ADDED_3_0_3, REMOVED_8_0_1 } }, {
+WRATH_FIRST_AID = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_3, REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(45542, {	-- First Aid (Grand Master)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -98,7 +98,7 @@ WRATH_FIRST_AID = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ timeline = { A
 	}),
 	r(45545),	-- Frostweave Bandage
 }));
-CATA_FIRST_AID = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } }, {
+CATA_FIRST_AID = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(74559, {	-- First Aid (Illustrious)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -117,7 +117,7 @@ CATA_FIRST_AID
 {}
 -- #endif
 );
-MOP_FIRST_AID = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4, REMOVED_8_0_1 } }, {
+MOP_FIRST_AID = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4, REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(110406, {	-- First Aid (Zen Master)
 		-- #if NOT ANYCLASSIC
 		collectible = false,
@@ -149,7 +149,7 @@ DRAENOR_FIRST_AID = applyclassicphase(WOD_PHASE_ONE, i(111364, {
 		r(172540),	-- Healing Tonic
 	},
 }));
-LEGION_FIRST_AID = applyclassicphase(LEGION_PHASE_ONE, bubbleDown({ timeline = { ADDED_7_0_3, REMOVED_8_0_1 } }, {
+LEGION_FIRST_AID = applyclassicphase(LEGION_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_7_0_3, REMOVED_8_0_1 } },FILTERFUNC_recipeID, {
 	r(195113, {	-- First Aid (Legion Master)
 		-- #if NOT ANYCLASSIC
 		collectible = false,

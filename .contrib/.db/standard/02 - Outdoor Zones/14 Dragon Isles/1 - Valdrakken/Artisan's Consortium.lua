@@ -15,13 +15,13 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					coord = { 35.4, 59.1, VALDRAKKEN },
 					groups = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
 						{		-- Neutral --
-							i(204339, bubbleDown({ timeline = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Satchel of Coalescing Chaos
+							i(204339, timelineSelf({ timeline = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Satchel of Coalescing Chaos
 								cost = { { "i", 190454, 80 } },	-- 80x Depleted Primal Chaos
 								groups = {
 									i(190454),	-- Depleted Primal Chaos
 								},
 							})),
-							i(199108, bubbleDown({ timeline = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Bag of Discount Goods
+							i(199108, timelineSelf({ timeline = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Bag of Discount Goods
 								groups = {
 									i(33012),	-- Terokkar Lilac
 								},

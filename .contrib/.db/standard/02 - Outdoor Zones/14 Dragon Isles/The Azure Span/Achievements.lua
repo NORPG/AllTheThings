@@ -116,16 +116,3 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 		}),
 	},
 });
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH } }, {
--- 	m(DRAGON_ISLES, {
--- 		m(THE_AZURE_SPAN, {
--- 			n(ACHIEVEMENTS, {
--- 				q(72136, name(HEADERS.AchCriteria, 16638.03)),	-- Ley Line in the Span achievement - Rustpine Den - 66.2, 51.3, THE_AZURE_SPAN
--- 				q(72138, name(HEADERS.AchCriteria, 16638.01)),	-- Ley Line in the Span achievement - Azure Archives - 43.8, 61.9, THE_AZURE_SPAN
--- 				q(72139, name(HEADERS.AchCriteria, 16638.02)),	-- Ley Line in the Span achievement - Ancient Outlook - 26.3, 36.4, THE_AZURE_SPAN
--- 				q(72140, name(HEADERS.AchCriteria, 16638.05)),	-- Ley Line in the Span achievement - Slyvern Plunge - 65.4, 28.4, THE_AZURE_SPAN
--- 				q(72141, name(HEADERS.AchCriteria, 16638.04)),	-- Ley Line in the Span achievement - Ruins of Karnthar - 66.8, 59.6, THE_AZURE_SPAN
--- 			}),
--- 		}),
--- 	}),
--- })));

@@ -5278,7 +5278,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 }));
 
 root(ROOTS.NeverImplemented, {
-	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ timeline = { REMOVED_2_0_1 } }, {
+	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, timelineSelf({ timeline = { REMOVED_2_0_1 } }, {
 		i(211445),	-- Barbaric Recurve
 		i(211443),	-- Blade of Rage
 		i(211444),	-- Summoner's Cloak

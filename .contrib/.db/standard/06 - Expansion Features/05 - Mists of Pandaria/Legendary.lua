@@ -20,12 +20,13 @@ local LEGENDARY_THE_BLACK_PRINCE = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 	n(LEGENDARY_THE_BLACK_PRINCE, {
 		isRaid = true,
 		maps = { THE_VEILED_STAIR },
+		timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
 		groups = appendGroups(
-			applyclassicphase(MOP_PHASE_ONE, bubbleDown({timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+			applyclassicphase(MOP_PHASE_ONE, {
 				------ Chapter 1 ------
 				q(31488, {	-- Stranger in a Strange Land
 					providers = {
@@ -132,8 +133,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					coord = { 54.6, 72.6, THE_VEILED_STAIR },
 					isBreadcrumb = true,
 				}),
-			})),
-			applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({timeline = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			}),
+			applyclassicphase(MOP_PHASE_LANDFALL, timelineSelf({timeline = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
 				------ Chapter 2 ------
 				q(32373, {	-- The Measure of a Leader (A)
 					sourceQuests = {
@@ -279,7 +280,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					isBreadcrumb = true,
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, bubbleDown({ timeline = { ADDED_5_2_0, REMOVED_6_0_2 } }, {
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, timelineSelf({ timeline = { ADDED_5_2_0, REMOVED_6_0_2 } }, {
 				------ Chapter 3 ------
 				q(32590, {	-- Meet Me Upstairs
 					sourceQuests = {
@@ -368,7 +369,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					isBreadcrumb = true,
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_ESCALATION, bubbleDown({ timeline = { ADDED_5_3_0, REMOVED_6_0_2 } }, {
+			applyclassicphase(MOP_PHASE_ESCALATION, timelineSelf({ timeline = { ADDED_5_3_0, REMOVED_6_0_2 } }, {
 				------ Chapter 4 ------
 				q(32805, {	-- Celestial Blessings
 					sourceQuests = {
@@ -406,7 +407,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					-- #endif
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDown({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, timelineSelf({ timeline = { ADDED_5_4_0, REMOVED_6_0_2 } }, {
 				------ Chapter 5 ------
 				-- #if NOT ANYCLASSIC
 				q(33087, {	-- Meet Me Back at the Inn
@@ -462,12 +463,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 					},
 				}),
 			})),
-			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDown({
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownFiltered({
 				timeline = { ADDED_5_4_0 },
 				-- #if AFTER WOD
 				u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
 				-- #endif
-			}, {
+			},FILTERFUNC_itemID,{
 				i(102248, {		-- Fen-Yu, Fury of Xuen
 					cost = {
 						{ "i", 98148, 1 },	-- Tigerfang Wrap
@@ -507,4 +508,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ timeline = {
 			})),
 		{}),
 	}),
-})));
+}))

@@ -205,35 +205,35 @@ MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timelin
 	r(125121),	-- Wildfowl Ginseng Soup
 	r(124224),	-- Yak Cheese Curds
 }));
-WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31479 } }, {
+WAY_OF_THE_BREW = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31479 } },FILTERFUNC_recipeID, {
 	r(125602),	-- Banquet of the Brew
 	r(124052),	-- Ginseng Tea
 	r(125603),	-- Great Banquet of the Brew
 	r(124053),	-- Jade Witch Brew
 	r(124054),	-- Mad Brewer's Breakfast
 }));
-WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31311 } }, {
+WAY_OF_THE_GRILL = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31311 } },FILTERFUNC_recipeID, {
 	r(125141),	-- Banquet of the Grill
 	r(104300),	-- Black Pepper Ribs and Shrimp
 	r(104298),	-- Charbroiled Tiger Steak
 	r(104299),	-- Eternal Blossom Fish
 	r(125142),	-- Great Banquet of the Grill
 }));
-WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31478 } }, {
+WAY_OF_THE_OVEN = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31478 } },FILTERFUNC_recipeID, {
 	r(125600),	-- Banquet of the Oven
 	r(104312),	-- Chun Tian Spring Rolls
 	r(125601),	-- Great Banquet of the Oven
 	r(104311),	-- Twin Fish Platter
 	r(104310),	-- Wildfowl Roast
 }));
-WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31472 } }, {
+WAY_OF_THE_POT = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31472 } },FILTERFUNC_recipeID, {
 	r(125596),	-- Banquet of the Pot
 	r(104305),	-- Braised Turtle
 	r(125597),	-- Great Banquet of the Pot
 	r(104306),	-- Mogu Fish Stew
 	r(104307),	-- Shrimp Dumplings
 }));
-WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31475 } }, {
+WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31475 } },FILTERFUNC_recipeID, {
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 		r(1266563),	-- Mushan Dumpling Stack
 	})),
@@ -243,7 +243,7 @@ WAY_OF_THE_STEAMER = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline
 	r(104309),	-- Steamed Crab Surprise
 	r(104304),	-- Swirling Mist Soup
 }));
-WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31470 } }, {
+WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownFiltered({ timeline = { ADDED_5_0_4 }, sourceQuests = { 31470 } },FILTERFUNC_recipeID, {
 	r(125594),	-- Banquet of the Wok
 	r(125595),	-- Great Banquet of the Wok
 	r(104301),	-- Sauteed Carrots

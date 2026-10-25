@@ -126,7 +126,7 @@ local mapped = function(t)
 end
 root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11_0_2 } }, {
 	n(DELVES_TWW_S1, {	-- Includes Zekvir's Lair
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_11_1_0_SEASONSTART } }, {
 			ach(40446, {	-- I TAKE Candle!
 				maps = KOBOLD_DELVES_TWW,
 			}),
@@ -187,8 +187,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			},
 		}),
 	}),
-	n(DELVES_TWW_S2, applyDataSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {	-- Includes Demolition Dome
-		n(ACHIEVEMENTS, bubbleDownSelf({ timeline = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 } }, {
+	n(DELVES_TWW_S2, timelineSelf({ timeline = { ADDED_11_1_0_SEASONSTART } }, {	-- Includes Demolition Dome
+		n(ACHIEVEMENTS, timelineSelf({ timeline = { REMOVED_11_2_0 } }, {
 			ach(41709),	-- Journey's End (Season 2)
 			ach(41531, {	-- The Hataclysm
 				description = "After you've defeated the Underpin once (specifically on '?' difficulty; '??' won't unlock this achievement), Ask Brann to change his hat 10 times at his spot in Dornogal.",
@@ -3150,7 +3150,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						cost = { { "c", UNDERCOIN, 2500 } },
 					}),
 				}),
-				n(ARMOR, bubbleDownSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
+				n(ARMOR, timelineSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
 					filter(BACK_F, {
 						i(211005, {	-- Cave Topographer's Drape
 							cost = { { "c", UNDERCOIN, 500 } },
@@ -3344,7 +3344,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 					}),
 					-- #endif
 				})),
-				n(WEAPONS, bubbleDownSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
+				n(WEAPONS, timelineSelf({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {
 					-- #if BEFORE 12.0.1
 					iensemble(246915, {	-- Arsenal: Ethereal Weaponry
 						timeline = { ADDED_12_0_0 },

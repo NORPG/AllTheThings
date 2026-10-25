@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ timeline = { ADDED_5_1_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, {
 	n(KRASARANG_WILDS_CAMPAIGN, {
 		aqd = {
 			icon = 464076,
@@ -11,6 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			icon = 464078,
 		},
 		maps = { KRASARANG_WILDS },
+		timeline = { ADDED_5_1_0 },
 		groups = {
 			n(ACHIEVEMENTS, {
 				h(ach(8206)),	-- Dominance Offensive
@@ -1373,7 +1374,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 			}),
 		},
 	}),
-}))));
+})))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, {
 	m(KRASARANG_WILDS, {

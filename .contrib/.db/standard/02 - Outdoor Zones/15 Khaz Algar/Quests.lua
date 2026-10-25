@@ -532,7 +532,7 @@ maproot(KHAZ_ALGAR, {
 				}),
 			}),
 		}),
-		header(HEADERS.Achievement, 41052, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {	-- Lingering Shadows
+		header(HEADERS.Achievement, 41052, timelineSelf({ timeline = { ADDED_11_0_7 } }, {	-- Lingering Shadows
 			q(82690, {	-- Lingering Shadows
 				provider = { "n", 227758 },	-- Alleria Windrunner
 				coord = { 42.3, 26.8, DORNOGAL },
@@ -622,7 +622,7 @@ maproot(KHAZ_ALGAR, {
 				coord = { 42.2, 27.3, DORNOGAL },
 			}),
 		})),
-		header(HEADERS.Achievement, 40791, bubbleDownSelf({ timeline = { ADDED_11_0_7 } }, {	-- Fate of the Kirin Tor
+		header(HEADERS.Achievement, 40791, timelineSelf({ timeline = { ADDED_11_0_7 } }, {	-- Fate of the Kirin Tor
 			header(HEADERS.AchCriteria, 40791.01, {	-- Arcane Desolation
 				q(84223, {	-- Survivor's Guilt
 					sourceQuests = {
@@ -780,7 +780,7 @@ maproot(KHAZ_ALGAR, {
 				--
 			}),
 		})),
-		header(HEADERS.Achievement, 42299, bubbleDownSelf({ timeline = { ADDED_11_2_7 } }, {	-- Visions of a Shadowed Sun
+		header(HEADERS.Achievement, 42299, timelineSelf({ timeline = { ADDED_11_2_7 } }, {	-- Visions of a Shadowed Sun
 			header(HEADERS.AchCriteria, 42299.01, {	-- Radiant Visions
 				q(92405, {	-- Meet Arator
 					qg = 250839,	-- Silver Hand Squire

@@ -6,10 +6,10 @@
 
 -- DO NOT REMOVE OR I WILL FIND YOU! -Darkal
 
+--[[
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldDrops, bubbleDown({ timeline = { ADDED_10_0_5 }, sharedDescription = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
+root(ROOTS.WorldDrops, bubbleDown({ sharedDescription = "This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this." }, {
 	-- I AM HIDING THIS FOR NOW -Darkal
-	--[[
 	n(QUALITY_POOR, {
 		n(WEAPONS, {
 			filter(THROWN, {	-- TODO
@@ -66,7 +66,6 @@ root(ROOTS.WorldDrops, bubbleDown({ timeline = { ADDED_10_0_5 }, sharedDescripti
 			})
 		}),
 	}),
-	--]]
 	n(QUALITY_COMMON, {
 		n(ARMOR, {
 			filter(CLOAKS, {
@@ -79,3 +78,5 @@ root(ROOTS.WorldDrops, bubbleDown({ timeline = { ADDED_10_0_5 }, sharedDescripti
 	}),
 }));
 -- #endif
+
+--]]

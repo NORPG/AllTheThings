@@ -39,15 +39,3 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 		}),
 	}),
 });
---[[
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	m(MAP.MIDNIGHT.QUELTHALAS, {
-		m(MAP.MIDNIGHT.THE_COILED_ISLE, bubbleDownSelf({ timeline = { ADDED_12_1_0 } }, {
-			m(MAP.MIDNIGHT.VAULTS_OF_ATALUTEK, {
-				n(RARES, {
-				}),
-			}),
-		})),
-	}),
-}));
---]]

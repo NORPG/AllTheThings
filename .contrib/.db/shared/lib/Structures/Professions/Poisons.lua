@@ -1,7 +1,7 @@
 -------------
 -- POISONS --
 -------------
-CLASSIC_POISONS = bubbleDown({ timeline = { REMOVED_3_0_2 }, classes = { ROGUE } }, {
+CLASSIC_POISONS = bubbleDownFiltered({ timeline = { REMOVED_3_0_2 }, classes = { ROGUE } },FILTERFUNC_recipeID, {
 	-- #if SEASON_OF_DISCOVERY
 	applyclassicphase(SOD_PHASE_THREE, r(439503)),	-- Atrophic Poison
 	-- #endif
@@ -29,7 +29,7 @@ CLASSIC_POISONS = bubbleDown({ timeline = { REMOVED_3_0_2 }, classes = { ROGUE }
 	r(13229),	-- Wound Poison III
 	r(13230),	-- Wound Poison IV
 });
-TBC_POISONS = bubbleDown({ timeline = { ADDED_2_0_5, REMOVED_3_0_2 }, classes = { ROGUE } }, {
+TBC_POISONS = bubbleDownFiltered({ timeline = { ADDED_2_0_5, REMOVED_3_0_2 }, classes = { ROGUE } },FILTERFUNC_recipeID, {
 	r(26786),	-- Anesthetic Poison
 	r(25347),	-- Deadly Poison V
 	r(26969),	-- Deadly Poison VI
