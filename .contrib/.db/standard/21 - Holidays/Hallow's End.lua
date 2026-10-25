@@ -4281,6 +4281,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ 54.0, 33.8, FOUNDERS_POINT },
 					{ 51.8, 54.2, RAZORWIND_SHORES },
 				},
+				timeline = { ADDED_12_1_5 },
 				groups = {
 					i(DRUSTVAR_CHOC),
 					i(DUSKWOOD_CARAMEL),
