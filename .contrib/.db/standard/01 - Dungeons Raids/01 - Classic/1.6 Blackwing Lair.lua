@@ -67,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #endif
 			n(QUESTS,
 			-- #if SEASON_OF_DISCOVERY
-			bubbleDown({ timeline = { REMOVED_1_15_4 } },
+			sharedData({ timeline = { REMOVED_1_15_4 } },
 			-- #endif
 			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)

@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			}),
 			n(QUESTS,
 			-- #if SEASON_OF_DISCOVERY
-			bubbleDown({ timeline = { REMOVED_1_15_4 } },
+			sharedData({ timeline = { REMOVED_1_15_4 } },
 			-- #endif
 			{
 				cl(DRUID, bubbleDown({ classes = { DRUID }, lvl = 58 }, {
