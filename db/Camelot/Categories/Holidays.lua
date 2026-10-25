@@ -1198,7 +1198,7 @@ qo(3,{coords={
 [1425]={{62.2,53.5}}},e=11}),
 qo(4,{coords={
 [1427]={{33,73.5}}},e=11}),
-s(165276,23324,{b=1,e=11,f=2,loc=41}),
+s(165276,23324,{b=1,e=11,f=4,loc=41}),
 i(23247,{e=11,spellID=28806})}})}})}}),
 h(-583,{e=15,g={
 o(113768,{description="These eggs can be found spread out in all of the starting zones.",e=15,maps={1411,1412,1420,1426,1429,1438},type="AsGenericObjectContainer",g={

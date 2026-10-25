@@ -1983,7 +1983,7 @@ inst(231,{coords={
 [1426]={{18.4,38.6}}},icon=136336,lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,zoneTextAreaID=133,g={
 h(-63,{
 s(159404,9510,{crs={6228,6235,7079,7800},f=6,loc=47}),
-i(5108,{crs={6212},f=5,loc=42,lvl=27}),
+s(318001,5108,{crs={6212},f=5,loc=42,lvl=27}),
 s(159399,9490,{crs={6206,6207,6212,6220,6222,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=26}),
 i(9308),
 i(9326,{b=1,crs={6212},lvl=28}),
@@ -2115,7 +2115,7 @@ s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
 s(159369,9450,{f=5,loc=47}),
 i(274068,{awp=16001,f=51})}}),
 n(6228,{description="This is a Rare Creature and, as such, is not always present.",g={
-i(5108,{f=5,loc=42,lvl=27}),
+s(318001,5108,{f=5,loc=42,lvl=27}),
 s(159374,9456,{f=31}),
 s(159375,9457,{f=23}),
 s(159373,9455,{f=5,loc=43})}}),
@@ -3120,7 +3120,7 @@ s(158416,6323,{f=23,spellID=1292142}),
 i(6321,{f=52,spellID=1292121}),
 s(308573,273637,{awp=16001,b=1,f=25,lvl=21})}}),
 e(98,{npcID=4278,g={
-r(1262996,{awp=16001,itemID=273105,requireSkill=129,skillID=2942}),
+r(1262996,{awp=16001,itemID=273105,learnedAt=140,requireSkill=129,skillID=2942}),
 s(157158,3191,{f=22}),
 s(158414,6320,{f=8}),
 s(158426,6341,{f=1}),
@@ -3131,7 +3131,7 @@ s(158621,6642,{b=1,f=6,loc=42,lvl=22})}}),
 n(4279,{
 s(158412,6318,{f=28}),
 s(158413,6319,{f=5,loc=45,spellID=1292149}),
-s(308574,273645,{awp=16001,b=1,f=2,loc=40,lvl=21,spellID=1292268})}),
+s(308574,273645,{awp=16001,b=1,f=4,loc=40,lvl=21,spellID=1292268})}),
 n(4274,{
 s(157191,3230,{f=5,loc=43}),
 s(158425,6340,{f=3}),

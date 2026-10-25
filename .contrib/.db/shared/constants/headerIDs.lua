@@ -64,6 +64,7 @@ HeaderAssignments = {
 	["Base Appearance"] = -133,
 	["Battlefield: Barrens"] = -416,
 	["Battlegrounds"] = -292,
+	["Beta Event"] = -811,
 	["Black Market Auction House"] = -554,
 	["Blackrock Eruption"] = -627,
 	["BlizzCon"] = -520,
@@ -790,4 +791,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -811
+NextHeaderID = -812
