@@ -247,7 +247,7 @@ class Factions(Thing):
         else:
             name = "Name_lang" if "Name_lang" in row else "Name_lang[0]"
             id = "ID"
-        
+
         return f"{row[id]}{DELIMITER}{row[name]}"
 
     @staticmethod

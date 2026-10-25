@@ -273,13 +273,13 @@ def build_profession_dict(flavor: str) -> dict[str, list[str]]:
     else:
         create_dict_from_raw = create_dict_from_raw_retail
         exclusion_list = extract_nth_column(Path("Exclusion", "SkillLines.txt"), 0)
-        profession_dict["Runeforging"] = ["776", "960"]    
+        profession_dict["Runeforging"] = ["776", "960"]
     raw_profession_dict: dict[str, list[str]] = create_dict_from_raw("SkillLines.txt", 1)
     for exclusion in exclusion_list:
         raw_profession_dict.pop(exclusion.strip(), "")
     for key, value in raw_profession_dict.items():
         profession_dict[value[0]] = [key]
-    
+
     profession_dict["Other"] = get_other_skilllines(flavor)
     return profession_dict
 
@@ -369,14 +369,14 @@ def sort_raw_file_recipes(flavor: str) -> None:
         recipe_path = Path("Raw - Forever", "Recipes.txt")
         raw_path_dict: dict[str, Path] = {
             profession: Path("Raw - Forever", "Professions", f"{profession}.txt")
-            for profession in profession_dict   
-      }
+            for profession in profession_dict
+        }
     else:
         recipe_path = Path("Raw", "Recipes.txt")
         raw_path_dict: dict[str, Path] = {
             profession: Path("Raw", "Professions", f"{profession}.txt")
             for profession in profession_dict
-    }
+        }
     with open(recipe_path) as raw_file:
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
@@ -493,7 +493,7 @@ def create_missing_file_recipes(flavor: str) -> None:
         else:
             excluded_ids = extract_nth_column(Path("Exclusion", "Professions", f"{profession}.txt"), 0)
             missing_path = Path(STANDARD_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", "Professions", f"{profession}.txt")
-        
+
         db_ids = get_itemdb_difference(profession, flavor)
 
         write_missing_file(profession, patch_data, Recipes, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, profession)
@@ -525,7 +525,7 @@ def create_missing_file(thing: type[Thing], flavor: str) -> None:
                 if info:
                     db_ids.append(info.strip())
 
-    
+
     write_missing_file(thing.__name__, patch_data, thing, raw_ids, existing_ids, excluded_ids, db_ids, missing_path, thing.db_path.name if thing.db_path else "Database")
 
 
@@ -555,7 +555,7 @@ def post_process_recipes(flavor: str) -> None:
         for profession in profession_dict
         }
     spell_dict: dict[str, list[str]] = create_dict_from_raw("SpellNames.txt", 1)
-    
+
     for profession in profession_dict:
         print(profession)
         if not missing_path_dict[profession].exists():

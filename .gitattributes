@@ -159,3 +159,9 @@ tests export-ignore
 /.contrib/.tools/.wago.update.bat text eol=crlf
 /.contrib/.tools/README.md text eol=lf
 /.contrib/.tools/TOOLS_ROADMAP.md text eol=lf
+
+# Harvester source files
+"/.contrib/Harvesters/Database Harvester/*.py" text eol=lf
+"/.contrib/Harvesters/Exploration Mapping/*.py" text eol=lf
+"/.contrib/Harvesters/WoWHead Harvester/*.js" text eol=lf
+/.contrib/Harvesters/OpenItems.html text eol=lf
