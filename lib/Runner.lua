@@ -8,8 +8,8 @@ local _, app = ...;
 
 -- Global locals
 --- @type function,function,function,function,function,function,function,function,function,function,function,
-local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec =
-	  math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
+local math_max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer_After,GetTimePreciseSec
+	= math.max, tonumber, unpack, coroutine, type, select, tremove, pcall,xpcall, C_Timer.After,GetTimePreciseSec
 --- @type function,function,function,function,
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;

@@ -343,8 +343,8 @@ do
 	-- WoW API Cache
 	if app.GameBuildVersion >= 40000 and app.GameBuildVersion <= 70000 then
 		local GlyphDB = app.GlyphDB or {};
-		local GetGlyphInfo, GetNumGlyphs =
-			  GetGlyphInfo, GetNumGlyphs;
+		local GetGlyphInfo, GetNumGlyphs
+			= GetGlyphInfo, GetNumGlyphs;
 		app.AddEventHandler("OnRefreshCollections", function()
 			local saved, char, none = {}, {}, {}
 			for index=1,GetNumGlyphs(),1 do

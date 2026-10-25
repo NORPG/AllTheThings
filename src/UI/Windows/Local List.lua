@@ -4,8 +4,8 @@ local L = app.L;
 local contains = app.contains;
 
 -- Global locals
-local ipairs, setmetatable =
-	  ipairs, setmetatable;
+local ipairs, setmetatable
+	= ipairs, setmetatable;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Local variables

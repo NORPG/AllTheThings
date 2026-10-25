@@ -4,10 +4,10 @@ local L = app.L;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
-local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort =
-	  ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, table.sort;
-local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed =
-	  BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
+local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort
+	= ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, table.sort;
+local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed
+	= BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
 
 -- Suppress the user-visible time played chat print when we request it programmatically.
 -- Inspired by Broker_PlayedTime addon

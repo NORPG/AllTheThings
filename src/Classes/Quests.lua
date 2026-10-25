@@ -18,8 +18,8 @@ local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 ---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local GetQuestLogRewardInfo =
-	  GetQuestLogRewardInfo;
+local GetQuestLogRewardInfo
+	= GetQuestLogRewardInfo;
 
 -- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
@@ -2704,8 +2704,8 @@ local SuperSpammyWorldQuestDrops = {
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 QuestHarvester.AllTheThingsIgnored = true;
 
-local GetNumQuestLogRewards,HaveQuestRewardData =
-	  GetNumQuestLogRewards,HaveQuestRewardData;
+local GetNumQuestLogRewards, HaveQuestRewardData
+	= GetNumQuestLogRewards, HaveQuestRewardData;
 local function TryPopulateQuestRewards(questObject)
 	-- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded
 	if not questObject then return end

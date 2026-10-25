@@ -4,10 +4,10 @@ local L = app.L;
 local contains = app.contains
 
 -- Global locals
-local ipairs, next, pairs, select, tonumber, tinsert =
-	  ipairs, next, pairs, select, tonumber, tinsert;
-local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements =
-	  GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements;
+local ipairs, next, pairs, select, tonumber, tinsert
+	= ipairs, next, pairs, select, tonumber, tinsert;
+local GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements
+	= GetAchievementCriteriaInfo, GetAchievementNumCriteria, GetAchievementInfo, GetCategoryInfo, GetCategoryList, GetGuildCategoryList, GetCategoryNumAchievements;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;

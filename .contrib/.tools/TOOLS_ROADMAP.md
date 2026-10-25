@@ -43,6 +43,7 @@ net10.0
 
 The intended progression is:
 
+<!-- editorconfig-checker-disable -->
 ```text
 Legacy .NET Framework / existing projects
                 ↓
@@ -52,6 +53,7 @@ Legacy .NET Framework / existing projects
             .NET 10
       Next-Generation Baseline
 ```
+<!-- editorconfig-checker-enable -->
 
 The migration to .NET 8 and the transition to .NET 10 are intentionally treated as separate changes.
 
@@ -415,6 +417,7 @@ They are simply outside the supported desktop platform matrix and are not requir
 
 The first modernization milestone is:
 
+<!-- editorconfig-checker-disable -->
 ```text
 Unified Source Layout
         +
@@ -424,6 +427,7 @@ Cross-Platform Build
         +
 RID-Aware Publishing
 ```
+<!-- editorconfig-checker-enable -->
 
 This milestone must be reached by:
 

@@ -342,6 +342,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
           RELEASE_TAG: db-artifacts
+        # editorconfig-checker-disable
         run: |
           set -euo pipefail
           if ! gh release view "$RELEASE_TAG" --repo "$REPOSITORY" >/dev/null 2>&1; then
@@ -470,3 +471,4 @@ jobs:
           done < "$cleanup_plan"
 
           gh release upload "$RELEASE_TAG" "$index_path" --repo "$REPOSITORY" --clobber
+        # editorconfig-checker-enable

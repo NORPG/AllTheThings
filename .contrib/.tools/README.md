@@ -46,15 +46,18 @@ node .contrib/.tools/Lua/normalize.js ".contrib/Parser/DATAS/00 - DB/ObjectDB.lu
 
 Input:
 
+<!-- editorconfig-checker-disable -->
 ```lua
 text = {
 	en = "Example",
 	fr = "Exemple",
 }
 ```
+<!-- editorconfig-checker-enable -->
 
 Output:
 
+<!-- editorconfig-checker-disable -->
 ```lua
 text = {
 	en = "Example",
@@ -70,14 +73,17 @@ text = {
 	-- TODO: tw = "",
 }
 ```
+<!-- editorconfig-checker-enable -->
 
 An English-only table remains compact:
 
+<!-- editorconfig-checker-disable -->
 ```lua
 text = {
 	en = "English only",
 }
 ```
+<!-- editorconfig-checker-enable -->
 
 ### Safety and limitations
 

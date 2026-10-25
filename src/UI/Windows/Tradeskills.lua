@@ -4,11 +4,11 @@ local L = app.L;
 if app.IsRetail then return; end
 
 -- Global locals
-local ipairs, pairs, tinsert =
-	  ipairs, pairs, tinsert;
+local ipairs, pairs, tinsert
+	= ipairs, pairs, tinsert;
 local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
-	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked =
-	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
+	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked
+	= C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	GetNumCrafts, GetSkillLineInfo, GetTradeSkillLine, InCombatLockdown, IsTradeSkillLinked;
 --- Shared game tooltip extended with ATT icon, model, and reference display helpers.
 ---@class ATTGameTooltip: GameTooltip

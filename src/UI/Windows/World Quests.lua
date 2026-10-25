@@ -27,8 +27,8 @@ app:CreateWindow("WorldQuests", {
 		local C_QuestLine_GetAvailableQuestLines = C_QuestLine.GetAvailableQuestLines;
 		local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
 		local C_QuestLog_GetBountiesForMapID = C_QuestLog.GetBountiesForMapID;
-		local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo =
-			  GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
+		local GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo
+			= GetNumRandomDungeons, GetLFGDungeonInfo, GetLFGRandomDungeonInfo, GetLFGDungeonRewards, GetLFGDungeonRewardInfo;
 
 		-- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
 		---@return table?

@@ -3,8 +3,8 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local ipairs, tinsert =
-	  ipairs, tinsert;
+local ipairs, tinsert
+	= ipairs, tinsert;
 
 -- Implementation
 app:CreateWindow("Pet Battles", {

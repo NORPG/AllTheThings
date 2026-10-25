@@ -5,8 +5,8 @@ local OneTimeFixFunctions = {}
 if app.IsRetail and app.GameBuildVersion > 70000 then
 
 --- @type function,function,function
-local select, ipairs, pairs =
-	  select, ipairs, pairs;
+local select, ipairs, pairs
+	= select, ipairs, pairs;
 local ATTAccountWideData
 
 local function CacheAccountWideMiscQuests()
