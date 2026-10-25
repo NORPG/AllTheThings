@@ -292,6 +292,19 @@ InstanceHelper.LFRQueueNPC = {	-- Queue NPC
 
 local TIMELINE_LFR = { ADDED_10_1_0, REMOVED_11_0_2, ADDED_12_0_5 }
 
+-- Revival Catalyst Console (placed once per difficulty, with that difficulty's tier items as its groups)
+-- The upgrade track must sit on the Catalyst object itself: the runtime lookup selects by catalystID, finds the node carrying the matching trackID, then pops its Class headers.
+local RevivalCatalyst = function(upgradeTrackID, groups)
+	return o(382621, {	-- Revival Catalyst Console
+		description = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+		coord = { 60.6, 53.8, THALDRASZUS },
+		modelScale = 4,
+		catalystID = 6,	-- ItemBonus.Value_0 DF:S2
+		upgradeTrackID = upgradeTrackID,
+		groups = groups,
+	})
+end
+
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		coord = { 48.6, 10.2, ZARALEK_CAVERN },
@@ -703,27 +716,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			}),
 			-- #endif
 			-- #endif
-			o(382621, {	-- Revival Catalyst Console
-				description = "The Revival Catalyst is a system that lets you convert non-set items from the Aberrus Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				coord = { 60.6, 53.8, THALDRASZUS },
-				modelScale = 4,
-				catalystID = 6,	-- ItemBonus.Value_0 DF:S2
-				groups = {
-					Difficulty(DIFFICULTY.RAID.LFR, {
-						upgradeTrackID=UPGRADETRACKS.VETERAN,
-						timeline = TIMELINE_LFR}).AddGroups(ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
-					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
-					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
-					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
-					),
-				},
-			}),
 			CommonBossDrops({
 				i(204857),	-- Ancient Elementium Fragment
 				i(204464),	-- Shadowflame Essence
@@ -781,6 +773,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
+				),
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
 						timeline = { REMOVED_10_2_0 },
@@ -873,6 +868,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
+				),
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						provider = { "n", 201574 },	-- Wrathion
@@ -918,6 +916,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
+				),
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						provider = { "n", 201574 },	-- Wrathion
@@ -949,6 +950,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
+				),
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						provider = { "n", 201574 },	-- Wrathion

@@ -326,6 +326,19 @@ InstanceHelper.ExtraLoots = {
 
 local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2, ADDED_12_0_5 }
 
+-- Revival Catalyst Console (placed once per difficulty, with that difficulty's tier items as its groups)
+-- The upgrade track must sit on the Catalyst object itself: the runtime lookup selects by catalystID, finds the node carrying the matching trackID, then pops its Class headers.
+local RevivalCatalyst = function(upgradeTrackID, groups)
+	return o(382621, {	-- Revival Catalyst Console
+		description = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+		coord = { 60.6, 53.8, THALDRASZUS },
+		modelScale = 4,
+		catalystID = 3,	-- ItemBonus.Value_0 DF:S1
+		upgradeTrackID = upgradeTrackID,
+		groups = groups,
+	})
+end
+
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
 		coord = { 73.0, 55.7, THALDRASZUS },
@@ -552,31 +565,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(16356),	-- Vault of the Incarnates Guild Run
 				ach(16357),	-- Heroic: Vault of the Incarnates Guild Run
 			}),
-			o(382621, {	-- Revival Catalyst Console
-				description = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
-				coord = { 60.6, 53.8, THALDRASZUS },
-				modelScale = 4,
-				catalystID = 3,	-- ItemBonus.Value_0 DF:S1
-				groups = {
-					Difficulty(DIFFICULTY.RAID.LFR, {
-						upgradeTrackID=UPGRADETRACKS.VETERAN,
-						timeline = TIMELINE_LFR}).AddGroups(
-						bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
-						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
-					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
-					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
-						bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
-						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
-					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
-						bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
-						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
-					),
-				},
-			}),
 			CommonBossDrops(sharedData({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(205962, {	-- Echoing Storm Flightstone
 					timeline = { ADDED_10_1_0 },
@@ -632,6 +620,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.VETERAN,
+					bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
+				),
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -675,6 +667,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						provider = { "n", 193460 },	-- Kalecgos
@@ -712,6 +707,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.HERO,
+					bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
+				),
 				CommonBossDrops({
 					ig(200686),	-- Primal Focus
 				}),
@@ -734,6 +733,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(RASZAGETH),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				RevivalCatalyst(UPGRADETRACKS.MYTH,
+					bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
+				),
 				CommonBossDrops({
 					ig(190455),	-- Concentrated Primal Focus
 				}),
