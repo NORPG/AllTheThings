@@ -64,10 +64,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					groups = {
 						-- Moved to NYI, it seems Blizzard will never fix this
 						--[[
-						i(223639, bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
+						i(223639, {	-- Unburied Aspirant's Cloak Rack
 							cost = { { "i", MOH, 1 } },
 							description = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
 							questID = 82343,
+							timeline = { ADDED_10_2_7 },
 							groups = {
 								i(185128),	-- Unchained Aspirant's Cloak
 								i(185205),	-- Unchained Aspirant's Drape
@@ -76,7 +77,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 								i(192355),	-- Eternal Aspirant's Drape
 								i(192390),	-- Eternal Aspirant's Cape
 							},
-						})),
+						}),
 						--]]
 					},
 				}),
@@ -236,9 +237,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					groups = {
 						-- Moved to NYI, it seems Blizzard will never fix this
 						--[[
-						i(223640, bubbleDownSelf({ timeline = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						i(223640, {	-- Unburied Gladiator's Cloak Rack
 							cost = { { "i", MOH, 1 } },
 							description = "|Cffff0000This ensemble may or may not work. Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
+							timeline = { ADDED_10_2_7 },
 							groups = {
 								-- Gladiator
 								i(175888, { ItemAppearanceModifierID = 0 }),	-- Sinful Gladiator's Cloak
@@ -255,7 +257,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 								i(192211, { bonusID = 7532 }),	-- Eternal Gladiator's Shawl
 								i(192212, { bonusID = 7532 }),	-- Eternal Gladiator's Greatcloak
 							},
-						})),
+						}),
 						]]--
 					},
 				}),

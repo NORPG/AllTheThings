@@ -8,7 +8,7 @@ root(ROOTS.Character, n(createHeader({
 	text = {
 		en = [[~GUILD]],
 	},
-}), timelineSelf({ timeline = { ADDED_4_0_3 }, }, {
+}), withShared({ timeline = { ADDED_4_0_3 }, }, {
 	n(ACHIEVEMENTS, {
 		-- * Mean needing more information A/H and crits. // Braghe
 		-- GENERAL --
