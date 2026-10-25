@@ -272,6 +272,19 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 };
 
+-- The Catalyst (placed once per difficulty, with that difficulty's tier items as its groups)
+-- The upgrade track must sit on the Catalyst object itself: the runtime lookup selects by catalystID, finds the node carrying the matching trackID, then pops its Class headers.
+local TheCatalyst = function(upgradeTrackID, groups)
+	return o(456208, {	-- The Catalyst
+		description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+		coord = { 50.0, 54.2, DORNOGAL },
+		modelScale = 4,
+		catalystID = 8,	-- ItemBonus.Value_0 TWW:S1
+		upgradeTrackID = upgradeTrackID,
+		groups = groups,
+	})
+end
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1273, {	-- Nerub'ar Palace
 		coord = { 35.6, 71.6, AZJ_KAHET },
@@ -453,26 +466,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					},
 				}),
 			}),
-			o(456208, {	-- The Catalyst
-				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				coord = { 50.0, 54.2, DORNOGAL },
-				modelScale = 4,
-				catalystID = 8,	-- ItemBonus.Value_0 TWW:S1
-				groups = {
-					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.LFR)
-					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.NORMAL)
-					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.HEROIC)
-					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.MYTHIC)
-					),
-				},
-			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({
 					currency(3093),	-- Nerub-ar Finery
@@ -505,6 +498,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.LFR)
+				),
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -567,6 +563,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 				CommonBossDrops({
 					currency(CARVED_HARBINGER_CREST, {
 						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
@@ -616,6 +615,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 				CommonBossDrops({
 					currency(RUNED_HARBINGER_CREST, {
 						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
@@ -648,6 +650,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				TheCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 				CommonBossDrops({
 					currency(GILDED_HARBINGER_CREST, {
 						timeline = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },

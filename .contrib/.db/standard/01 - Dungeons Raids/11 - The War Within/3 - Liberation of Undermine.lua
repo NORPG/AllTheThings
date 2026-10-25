@@ -273,6 +273,19 @@ InstanceHelper.UpgradeMapping = {
 	-- #ENDIF
 };
 
+-- The Catalyst (placed once per difficulty, with that difficulty's tier items as its groups)
+-- The upgrade track must sit on the Catalyst object itself: the runtime lookup selects by catalystID, finds the node carrying the matching trackID, then pops its Class headers.
+local TheCatalyst = function(upgradeTrackID, groups)
+	return o(456208, {	-- The Catalyst
+		description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+		coord = { 50.0, 54.2, DORNOGAL },
+		modelScale = 4,
+		catalystID = 10,	-- ItemBonus.Value_0 TWW:S2
+		upgradeTrackID = upgradeTrackID,
+		groups = groups,
+	})
+end
+
 root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1296, {	-- Liberation of Undermine
 		coord = { 42.0, 50.2, UNDERMINE },
@@ -630,26 +643,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					}),
 				}),
 			}),
-			o(456208, {	-- The Catalyst
-				description = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
-				coord = { 50.0, 54.2, DORNOGAL },
-				modelScale = 4,
-				catalystID = 10,	-- ItemBonus.Value_0 TWW:S2
-				groups = {
-					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
-					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
-					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
-					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
-					),
-				},
-			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(VEXIE, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
@@ -682,6 +675,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
+				),
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -773,6 +769,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 				CommonBossDrops({
 					currency(CARVED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
@@ -818,6 +817,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
+				TheCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 				CommonBossDrops({
 					currency(RUNED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
@@ -847,6 +849,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
+				TheCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 				CommonBossDrops({
 					currency(GILDED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
