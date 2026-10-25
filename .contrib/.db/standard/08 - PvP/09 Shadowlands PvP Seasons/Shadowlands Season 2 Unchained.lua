@@ -232,7 +232,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(PVP_GLADIATOR, {
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					coord = { 35.0, 57.6, ORIBOS },
-					groups = bubbleDown({ timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
+					groups = sharedData({ timeline = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 						iensemble(201876, {	-- Arsenal: Unchained Gladiator's Weapons
 							cost = { { "i", MOH, 80 } },
 							timeline = { ADDED_10_0_2_LAUNCH },

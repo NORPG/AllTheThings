@@ -1427,7 +1427,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		-----------------
 		-- 2024 Update --
 		-----------------
-		n(QUESTS, bubbleDown({ timeline = { ADDED_10_2_5 }, isYearly = true, }, {
+		n(QUESTS, sharedData({ timeline = { ADDED_10_2_5 }, isYearly = true, }, {
 			q(78329, {	-- Love is in the Air (A)
 				qgs = {
 					215197,	-- Gabbo Blinkwink
@@ -1592,8 +1592,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				groups = { i(LOVE_TOKEN) },
 			}),
 		})),
-		n(QUESTS, bubbleDown({ isDaily = true, },
-		sharedData({ groups = { i(LOVE_TOKEN) }, },sharedData({ timeline = { ADDED_10_2_5 } }, {
+		n(QUESTS, sharedData({ timeline = { ADDED_10_2_5 }, isDaily = true, groups = { i(LOVE_TOKEN) }, },{
 			q(78594, {	-- Getaway to Scenic Feralas! (A)
 				qg = 212677,	-- Gabbo Blinkwink
 				coord = { 34.3, 51.6, ELWYNN_FOREST },
@@ -1891,7 +1890,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				coord = { 41.9, 16.2, DUROTAR },
 				races = HORDE_ONLY,
 			}),
-		})))),
+		})),
 		n(REWARDS, {
 			-- #if BEFORE 3.3.2.11403
 			providers = {

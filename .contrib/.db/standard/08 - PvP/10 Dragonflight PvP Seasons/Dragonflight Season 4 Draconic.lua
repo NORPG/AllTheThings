@@ -595,12 +595,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 								conquest(900, i(216301)),	-- Draconic Gladiator's Sword
 								conquest(900, i(216286)),	-- Draconic Gladiator's Warglaive
 							}),
-
 						},
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, bonusID = 7532 }, {
+			n(PVP_ELITE, bubbleDownFiltered({bonusID = 7532, timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } },FILTERFUNC_itemID,{
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(216232),	-- Draconic Gladiator's Cloak
@@ -907,12 +906,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					i(216282),	-- Draconic Gladiator's Medallion
 					i(216283),	-- Draconic Gladiator's Sigil of Adaptation
 				}),
+			})),
+			n(PVP_ELITE, {
 				n(199720, {	-- Glamora
 					coord = { 45.9, 38.7, VALDRAKKEN },
-					groups = {
+					timeline = { ADDED_11_0_5 },
+					groups = sharedData({
+						u = ELITE_PVP_REQUIREMENT,
+					}, {
 						honor(100, i(216667, {	-- Draconic Gladiator's Tabard
 							sourceAchievements = { 19509 },	-- Elite: Dragonflight Season 4
-							bonusID = 0,
 						})),
 						moh(5, i(217353)),	-- Draconic Gladiator's Axe
 						moh(10, i(217360)),	-- Draconic Gladiator's Axestaff
@@ -933,9 +936,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 						moh(10, i(217358)),	-- Draconic Gladiator's Staff
 						moh(5, i(217370)),	-- Draconic Gladiator's Sword
 						moh(5, i(217356)),	-- Draconic Gladiator's Warglaive
-					},
+					}),
 				}),
-			})),
+			}),
 			filter(RECIPES, {
 				-- #if AFTER TWW
 				n(221421, {	-- Eraneth <Draconic Combatant Recipes>

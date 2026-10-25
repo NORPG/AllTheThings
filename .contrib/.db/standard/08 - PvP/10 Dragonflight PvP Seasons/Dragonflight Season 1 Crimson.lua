@@ -705,7 +705,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				}),
 			},
 		}),
-		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, bonusID = 7532 }, {
+		n(PVP_ELITE, bubbleDownFiltered({bonusID = 7532, timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } },FILTERFUNC_itemID,{
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(201911),	-- Crimson Gladiator's Cloak
@@ -1027,9 +1027,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+		n(PVP_ELITE, {
 			n(199720, {	-- Glamora
 				coord = { 45.9, 38.7, VALDRAKKEN },
+				timeline = { ADDED_11_0_5 },
 				groups = sharedData({
 					cost = { { "i", MOH, 12 } },
 					u = ELITE_PVP_REQUIREMENT,
@@ -1078,7 +1079,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					}),
 				}),
 			}),
-		})),
+		}),
 		filter(RECIPES, {
 			-- #if AFTER 10.1.0
 			n(196661, {	-- Korganar Smolderforge

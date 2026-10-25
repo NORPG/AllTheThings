@@ -484,7 +484,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 			}),
 		})),
 		--]]
-		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ timeline = { ADDED_10_1_7 } }, {	-- Eastern Kingdom Cup
+		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, withShared({ timeline = { ADDED_10_1_7 } }, {	-- Eastern Kingdom Cup
 			n(ACHIEVEMENTS, {
 				ach(18566, {	-- Eastern Kingdoms: Bronze
 				-- Meta Achievement
@@ -1219,7 +1219,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ timeline = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
+		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, withShared({ timeline = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
 			n(ACHIEVEMENTS, {
 				ach(17712, {	-- Kalimdor: Bronze
 					-- Meta Achievement
@@ -1926,7 +1926,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					},
 				}),
 			}),
-			n(QUESTS, bubbleDown({ timeline = { CREATED_10_2_5 }, }, {	-- Timeline me when the time is right
+			n(QUESTS, sharedData({ timeline = { CREATED_10_2_5 }, }, {	-- Timeline me when the time is right
 				dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
 					provider = { "n", 204092 },	-- Bronze Timekeeper
 					coord = { 39.6, 84.2, SILITHUS },
@@ -2256,7 +2256,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ timeline = { ADDED_10_2_5 } }, {						-- Outland Cup
+		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, withShared({ timeline = { ADDED_10_2_5 } }, {						-- Outland Cup
 			n(ACHIEVEMENTS, {
 				ach(19092, {	-- Outland: Bronze
 					-- Meta Achievement
@@ -2861,8 +2861,9 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 			}),
 			n(VENDORS, {
-				n(206744, bubbleDown({ timeline = { ADDED_10_2_5 } }, {	-- Maztha <Riders of Azeroth>
+				n(206744, {	-- Maztha <Riders of Azeroth>
 					coord = { 27.2, 47.2, VALDRAKKEN },
+					timeline = { ADDED_10_2_5 },
 					groups = {
 						-- Manuscripts
 						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (MM!)
@@ -2930,10 +2931,10 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 							timeline = { ADDED_12_0_1 },
 						}),
 					},
-				})),
+				}),
 			}),
 		}))),
-		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ timeline = { ADDED_10_2_6 } }, {					-- Northrend Cup
+		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, withShared({ timeline = { ADDED_10_2_6 } }, {					-- Northrend Cup
 			n(ACHIEVEMENTS, {
 				ach(19674, {	-- Northrend: Bronze
 					-- Meta Achievement
@@ -3494,8 +3495,9 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 			}),
 			n(VENDORS, {
-				n(206744, bubbleDown({ timeline = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
+				n(206744, {	-- Maztha <Riders of Azeroth>
 					coord = { 27.2, 47.2, VALDRAKKEN },
+					timeline = { ADDED_10_2_6 },
 					groups = {
 						-- Toy (repeated from Outland Cup)
 						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
@@ -3594,7 +3596,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 					},
-				})),
+				}),
 			}),
 		}))),
 		n(ACHIEVEMENTS, {

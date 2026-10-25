@@ -685,7 +685,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					}),
 				},
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, bonusID = 7532 }, {
+			n(PVP_ELITE, bubbleDownFiltered({bonusID = 7532, timeline = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } },FILTERFUNC_itemID,{
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
@@ -1007,9 +1007,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 					},
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ timeline = { ADDED_11_0_5 } }, {
+			n(PVP_ELITE, {
 				n(199720, {	-- Glamora
 					coord = { 45.9, 38.7, VALDRAKKEN },
+					timeline = { ADDED_11_0_5 },
 					groups = sharedData({
 						cost = { { "i", MOH, 12 } },
 						u = ELITE_PVP_REQUIREMENT,
@@ -1058,7 +1059,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 						}),
 					}),
 				}),
-			})),
+			}),
 			filter(RECIPES, {
 				-- #if AFTER 10.2.6.54358
 				n(214682, {	-- Mittzi Threadweave <Verdant Combatant Recipes>
