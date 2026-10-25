@@ -4635,7 +4635,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			timeline = { ADDED_12_1_5, REMOVED_12_1_7 },
 		}, {	-- One-Time Content
 			ach(63714),	-- WoW's 22nd Anniversary
-		})),
+		}),
+		{	-- Recurring Content
+			-- TBD
+		}),
 	}),
 })));
 --[[
