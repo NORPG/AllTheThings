@@ -338,6 +338,20 @@ local SymRaid = function(ClassID, ModID)
 	return SymLink
 end
 
+-- Creation Catalyst Console (placed once per difficulty, with that difficulty's tier items as its groups)
+-- The upgrade track must sit on the Catalyst object itself: the runtime lookup selects by catalystID, finds the node carrying the matching trackID, then pops its Class headers.
+local CreationCatalyst = function(upgradeTrackID, groups)
+	return o(375368, {	-- Creation Catalyst Console
+		description = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+		coord = { 47.4, 88.6, ZERETH_MORTIS },
+		sourceQuests = { 64842 },	-- Flora Frenzy
+		modelScale = 4,
+		catalystID = 2,	-- ItemBonus.Value_0 SL:S4
+		upgradeTrackID = upgradeTrackID,
+		groups = groups,
+	})
+end
+
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
@@ -696,30 +710,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 			}),
-			o(375368, {	-- Creation Catalyst Console
-				description = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & non-set Items from the Sepulcher of the First Ones Raid into your class' Transmog Set Items.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
-				coord = { 47.4, 88.6, ZERETH_MORTIS },
-				sourceQuests = { 64842 },	-- Flora Frenzy
-				modelScale = 4,
-				catalystID = 2,	-- ItemBonus.Value_0 SL:S4
-				groups = {
-					Difficulty(DIFFICULTY.RAID.LFR, {upgradeTrackID=UPGRADETRACKS.VETERAN}).AddGroups(
-						sharedData({
-							cost = { { "i", 190189, 2070 } },	-- 2070 Sandworn Relic, Full set cost from Vendor
-						},
-						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
-					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {upgradeTrackID=UPGRADETRACKS.CHAMPION}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
-					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {upgradeTrackID=UPGRADETRACKS.HERO}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
-					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {upgradeTrackID=UPGRADETRACKS.MYTH}).AddGroups(
-						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
-					),
-				},
-			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
@@ -896,6 +886,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }}).AddGroups({
+				CreationCatalyst(UPGRADETRACKS.VETERAN,
+					sharedData({
+						cost = { { "i", 190189, 2070 } },	-- 2070 Sandworn Relic, Full set cost from Vendor
+					},
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
+				),
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					Boss(VIGILANT_GUARDIAN),
@@ -959,6 +955,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190967,	-- Mourne Fragment (QI!)
 					}),
 				}),
+				CreationCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -1009,6 +1008,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190966,	-- Mourne Fragment (QI!)
 					}),
 				}),
+				CreationCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -1032,6 +1034,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190959,	-- Mourne Fragment (QI!)
 					}),
 				}),
+				CreationCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN, {
 					ach(15479),	-- Mythic: Vigilant Guardian
