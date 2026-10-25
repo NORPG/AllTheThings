@@ -18,12 +18,12 @@ local TITANFORGED_PROMOTIONS = createHeader({
 		cn = "泰坦重铸促销",
 	--	tw = "《至暗之夜》季節性促銷",
 	},
-	description = {
+	--description = {
 	--	en = "These promotions happened during the time Midnight was the most recent expansion.\n\nThey are listed in the order of their first appearance.",
 	--	es = "Estas promociones tuvieron lugar durante el tiempo en que Midnight era la expansión más reciente.\n\nSe enumeran en el orden en que aparecieron por primera vez.",
 	--	mx = "Estas promociones sucedieron durante el tiempo en que Midnight era la expansión más reciente.\n\nSe listan en el orden en que aparecieron por primera vez.",
 	--	cn = "这些促销活动均发生在《至暗之夜》作为最新资料片的时期。以下按活动首次出现的时间顺序列出",
-	},
+	--},
 });
 local CN_PROMOTIONS_CLASSIC = createHeader({
 	readable = "CN Promotions (Classic)",
