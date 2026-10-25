@@ -8,36 +8,46 @@ Some examples
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ timeline = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ARDENWEALD, {
+		timeline = { ADDED_TEMP },
+		groups = {
+		},
 	}),
-})));
+}))
 
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ timeline = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1201, {	-- Algeth'ar Academy
+		timeline = { ADDED_TEMP },
+		groups = {
+		},
 	}),
-})));
+}))
 
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ timeline = { ADDED_9_2_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ALLIED_RACES, {
+		timeline = { ADDED_TEMP },
+		groups = {
+		},
 	}),
-})));
+}))
 
-There could of course be an exception to this, and you could put the bubbleDownSelf on the next header like this.
+There could of course be an exception to this, and you could put the timeline on the next header like this.
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
-	header(HEADERS.Achievement, SEASON_COSMIC, bubbleDownSelf({
-		timeline = { ADDED_9_2_0, REMOVED_9_2_5, ADDED_10_0_2_LAUNCH },
-	},{
-	})),
+	header(HEADERS.Achievement, SEASON_COSMIC, {
+		timeline = { ADDED_TEMP },
+		groups = {
+		},
+	}),
 }));
 
 
