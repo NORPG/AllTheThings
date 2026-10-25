@@ -5,10 +5,7 @@
 local PRIMEVAL_ESSENCE = 199211;
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.DF, {
-		forcetimeline = { ADDED_10_0_2, REMOVED_10_0_2_LAUNCH },
-	}),
-	expansion(EXPANSION.DF, {
+	expansionHeader(EXPANSION.DF, { ADDED_10_0_2, REMOVED_10_0_2_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			ach(16431, {	-- Against the Elements
 				crit(55367, {

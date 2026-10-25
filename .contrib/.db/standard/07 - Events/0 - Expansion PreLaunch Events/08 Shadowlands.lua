@@ -3,10 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.SL, {
-		forcetimeline = { ADDED_9_0_1, REMOVED_9_0_2_LAUNCH },
-	}),
-	expansion(EXPANSION.SL, {
+	expansionHeader(EXPANSION.SL, { ADDED_9_0_1, REMOVED_9_0_2_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			ach(14750, {	-- Death Rising
 				sourceQuests = { 60871, 60869 },	-- With Hope in Hand (A, H)

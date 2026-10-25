@@ -5,10 +5,7 @@
 local RESIDUAL_MEMORIES = 3089;
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.TWW, {
-		forcetimeline = { ADDED_11_0_0, REMOVED_TWW_LAUNCH },
-	}),
-	expansion(EXPANSION.TWW, {
+	expansionHeader(EXPANSION.TWW, { ADDED_11_0_0, REMOVED_TWW_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
 		}),

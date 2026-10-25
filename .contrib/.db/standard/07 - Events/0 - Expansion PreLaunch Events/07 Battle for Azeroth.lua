@@ -3,11 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.BFA,{
-		forcetimeline = { ADDED_8_0_1, REMOVED_8_0_1_LAUNCH },
-		lvl = 110,
-	}),
-	expansion(EXPANSION.BFA, {
+	expansionHeader(EXPANSION.BFA, { ADDED_8_0_1, REMOVED_8_0_1_LAUNCH }, {
 		n(QUESTS, {
 			-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign. Excluding Undercity, Stormwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 			maps = {

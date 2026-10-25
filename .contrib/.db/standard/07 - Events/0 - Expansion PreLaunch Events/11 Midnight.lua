@@ -5,10 +5,7 @@
 local TWILIGHTS_BLADE_INSIGNIA = 3319;
 
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.MID, {
-		forcetimeline = { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH },
-	}),
-	expansion(EXPANSION.MID, {
+	expansionHeader(EXPANSION.MID, { ADDED_12_0_0, REMOVED_12_0_1_LAUNCH }, {
 		n(ACHIEVEMENTS, {
 			maps = { TWILIGHT_HIGHLANDS },
 			groups = {

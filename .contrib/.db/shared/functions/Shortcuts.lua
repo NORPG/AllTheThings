@@ -2061,6 +2061,9 @@ end
 ---@overload fun(id: ExpansionID, t?: ATTObject|ATTObjectArray): ATTObject
 expansionHeader = function(id, timeline, t)
 	t = expansion(id, t)
+	if timeline == IGNORED_VALUE then
+		return t
+	end
 	if not timeline or not isarray(timeline) then
 		print("WARN: Use of 'expansionHeader' without a valid 'timeline': "..tostring(timeline))
 		return t
