@@ -202,4 +202,4 @@ end
 app:CreateDynamicProfessionCategory("Leatherworking", { "attlw" }, 165, { 10656, 10658, 10660 });
 app:CreateDynamicProfessionCategory("Mining", { "attmining" }, 186);
 app:CreateDynamicProfessionCategory("Skinning", { "attskinning" }, 393);
-app:CreateDynamicProfessionCategory("Tailoring", { "atttailoring" }, 197, { 26798, 26801, 26797 });
+app:CreateDynamicProfessionCategory("Tailoring", { "atttailoring" }, 197, app.GameBuildVersion > 20000 and { 26798, 26801, 26797 } or nil);
