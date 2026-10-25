@@ -68,6 +68,7 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 			exploration(103),	-- Ruins of Zul'Mamwe
 			visit_exploration(301,{coord={43.8,57.4,NORTHERN_STRANGLETHORN}}),	-- The Savage Coast
 			visit_exploration(106,{coord={60.0,18.3,NORTHERN_STRANGLETHORN}}),	-- The Stockpile
+			exploration(5318,{coord={44.7,68.6,NORTHERN_STRANGLETHORN}}),	-- The Sundering
 			exploration(104),	-- The Vile Reef
 			exploration(126),	-- Tkashi Ruins
 			exploration(1740),	-- Venture Co. Base Camp

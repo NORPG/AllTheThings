@@ -69,7 +69,6 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 			exploration(311),	-- Ruins of Aboraz
 			exploration(477),	-- Ruins of Jubuwal
 			visit_exploration(1578,{coord={38.6,56.9,THE_CAPE_OF_STRANGLETHORN}}),	-- Southern Savage Coast
-			exploration(5318),	-- The Sundering
 			exploration(43),	-- Wild Shore
 		}),
 		n(FACTIONS, {
