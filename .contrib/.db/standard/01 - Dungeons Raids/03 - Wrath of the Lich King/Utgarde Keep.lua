@@ -2,6 +2,26 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local KELESETH = 638;
+local SKARVALD_AND_DALRONN = 639;
+local INGVAR = 640;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[KELESETH] = { 23953 },	-- Prince Keleseth
+	[SKARVALD_AND_DALRONN] = {
+		24200,	-- Skarvald the Constructor
+		24201,	-- Dalronn the Controller
+	},
+	[INGVAR] = { 23954 },	-- Ingvar the Plunderer
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(285, {	-- Utgarde Keep
 		mapID = UTGARDE_KEEP,
@@ -12,82 +32,97 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(477, {	-- Utgarde Keep
+					-- #if AFTER 7.3.5
 					crit(5377, {	-- Prince Keleseth
-						_encounter = { 638, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { KELESETH, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5378, {	-- Skarvald the Constructor
-						_encounter = { 639, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5379, {	-- Dalronn the Controller
-						_encounter = { 639, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(5380, {	-- Ingvar the Plunderer
+						_encounter = { INGVAR, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					-- #else
+					crit(5377, {	-- Prince Keleseth
+						_encounter = { KELESETH, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5378, {	-- Skarvald the Constructor
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5379, {	-- Dalronn the Controller
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5621, {	-- Ingvar the Plunderer
-						_encounter = { 640, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { INGVAR, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5380, {	-- Ingvar the Plunderer
-						_encounter = { 640, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { INGVAR, DIFFICULTY.DUNGEON.NORMAL },
 					}),
+					-- #endif
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17213, {	-- Defense Protocol Alpha: Utgarde Keep
 					crit(57666, {	-- Prince Keleseth
-						_encounter = { 638, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { KELESETH, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57665, {	-- Skarvald the Constructor
-						_encounter = { 639, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57667, {	-- Dalronn the Controller
-						_encounter = { 639, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57668, {	-- Ingvar the Plunderer
-						_encounter = { 640, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { INGVAR, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18590, {	-- Defense Protocol Beta: Utgarde Keep
 					crit(60571, {	-- Prince Keleseth
-						_encounter = { 638, DEFENSE_PROTOCOL_BETA },
+						_encounter = { KELESETH, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60570, {	-- Skarvald the Constructor
-						_encounter = { 639, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60572, {	-- Dalronn the Controller
-						_encounter = { 639, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60573, {	-- Ingvar the Plunderer
-						_encounter = { 640, DEFENSE_PROTOCOL_BETA },
+						_encounter = { INGVAR, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19427, {	-- Defense Protocol Gamma: Utgarde Keep
 					crit(63319, {	-- Prince Keleseth
-						_encounter = { 638, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { KELESETH, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63318, {	-- Skarvald the Constructor
-						_encounter = { 639, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63321, {	-- Dalronn the Controller
-						_encounter = { 639, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SKARVALD_AND_DALRONN, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63320, {	-- Ingvar the Plunderer
-						_encounter = { 640, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { INGVAR, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(489, {	-- Heroic: Utgarde Keep
 					crit(3701, {	-- Prince Keleseth
-						_encounter = { 638, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { KELESETH, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3702, {	-- Skarvald the Constructor
-						_encounter = { 639, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(3703, {	-- Dalronn the Controller
-						_encounter = { 639, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SKARVALD_AND_DALRONN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5608, {	-- Ingvar the Plunderer
-						_encounter = { 640, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { INGVAR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -242,196 +277,144 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(37290),	-- Dragon Prow Amulet
+					i(37196),	-- Runecaster's Mantle
+					i(35580),	-- Skein Woven Mantle
+					i(37197),	-- Tattered Castle Drape
+					i(35579),	-- Vrykul Shackles
+				}),
+				BossOnly(KELESETH, {
+					i(37180),	-- Battlemap Hide Helm
+					i(35571),	-- Dragon Stabler's Gauntlets
+					i(37179),	-- Infantry Assault Blade
+					i(35570),	-- Keleseth's Blade of Evocation
+					i(35572),	-- Reinforced Velvet Helm
+					i(37178),	-- Strategist's Belt
+					i(37177),	-- Wand of the San'layn
+				}),
+				BossOnly(SKARVALD_AND_DALRONN, {
+					i(35573),	-- Arm Blade of Augelmir
+					i(37183),	-- Bindings of the Tunneler
+					i(35574),	-- Chestplate of the Northern Lights
+					i(157555, { timeline = { ADDED_7_3_5 } }),	-- Constructor's Worklight
+					i(37181),	-- Dagger of Betrayal
+					i(37184),	-- Dalronn's Jerkin
+					i(37182),	-- Helmet of the Constructor
+					i(35575),	-- Skarvald's Dragonskin Habergeon
+				}),
+				BossOnly(INGVAR, {
+					i(37192),	-- Annhylde's Ring
+					i(37189),	-- Breeches of the Caller
+					i(37191),	-- Drake-Mounted Crossbow
+					i(37190),	-- Enraged Feral Staff
+					i(35577),	-- Holistic Patchwork Breeches
+					i(35576),	-- Ingvar's Monolithic Cleaver
+					i(35578),	-- Overlaid Chain Spaulders
+					i(37188),	-- Plunderer's Helmet
+					i(37194),	-- Sharp-Barbed Leather Belt
+					i(37193),	-- Staggering Legplates
+					i(37186),	-- Unsmashable Heavy Band
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				CommonBossDrops({
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KELESETH, {
+					ach(1919),	-- On The Rocks
+				}),
+				BossOnly(SKARVALD_AND_DALRONN),
+				BossOnly(INGVAR, {
+					i(43662, { timeline = { REMOVED_4_0_1 } }),	-- Axe of the Plunderer (QI!)
+					--
+					ach(5095, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Utgarde Keep Guild Run
+					i(41793),	-- Design: Fierce Monarch Topaz (RECIPE!)
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(35580),	-- Skein Woven Mantle
 					i(35579),	-- Vrykul Shackles
 				}),
-				e(638, {	-- Prince Keleseth <The San'layn>
-					creatureID = 23953,	-- Prince Keleseth <The San'layn>
-					groups = {
-						-- #if AFTER 7.3.5
-						i(37179),	-- Infantry Assault Blade (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35570),	-- Keleseth's Blade of Evocation
-						-- #if AFTER 7.3.5
-						i(37177),	-- Wand of the San'layn (7.3.5 - Used to be only Heroic Mode)
-						i(37180),	-- Battlemap Hide Helm (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35572),	-- Reinforced Velvet Helm
-						i(35571),	-- Dragon Stabler's Gauntlets
-						-- #if AFTER 7.3.5
-						i(37178),	-- Strategist's Belt (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(KELESETH, {
+					i(35571),	-- Dragon Stabler's Gauntlets
+					i(35570),	-- Keleseth's Blade of Evocation
+					i(35572),	-- Reinforced Velvet Helm
 				}),
-				e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-					crs = {
-						24200,	-- Skarvald the Constructor
-						24201,	-- Dalronn the Controller
-					},
-					groups = {
-						i(35573),	-- Arm Blade of Augelmir
-						-- #if AFTER 7.3.5
-						i(37181),	-- Dagger of Betrayal (7.3.5 - Used to be only Heroic Mode)
-						i(157555, {	-- Constructor's Worklight
-							timeline = { ADDED_7_3_5 },
-						}),
-						i(37182),	-- Helmet of the Constructor (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35574),	-- Chestplate of the Northern Lights
-						-- #if AFTER 7.3.5
-						i(37184),	-- Dalronn's Jerkin (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35575),	-- Skarvald's Dragonskin Habergeon
-						-- #if AFTER 7.3.5
-						i(37183),	-- Bindings of the Tunneler (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(SKARVALD_AND_DALRONN, {
+					i(35573),	-- Arm Blade of Augelmir
+					i(35574),	-- Chestplate of the Northern Lights
+					i(35575),	-- Skarvald's Dragonskin Habergeon
 				}),
-				e(640, {	-- Ingvar the Plunderer
-					creatureID = 23954,	-- Ingvar the Plunderer
-					groups = {
-						-- #if AFTER 7.3.5
-						i(37190),	-- Enraged Feral Staff (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35576),	-- Ingvar's Monolithic Cleaver
-						-- #if AFTER 7.3.5
-						i(37191),	-- Drake-Mounted Crossbow (7.3.5 - Used to be only Heroic Mode)
-						i(37188),	-- Plunderer's Helmet (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35578),	-- Overlaid Chain Spaulders
-						-- #if AFTER 7.3.5
-						i(37194),	-- Sharp-Barbed Leather Belt (7.3.5 - Used to be only Heroic Mode)
-						i(37189),	-- Breeches of the Caller (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(35577),	-- Holistic Patchwork Breeches
-						-- #if AFTER 7.3.5
-						i(37193),	-- Staggering Legplates (7.3.5 - Used to be only Heroic Mode)
-						i(37192),	-- Annhylde's Ring (7.3.5 - Used to be only Heroic Mode)
-						i(37186),	-- Unsmashable Heavy Band (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(INGVAR, {
+					i(35577),	-- Holistic Patchwork Breeches
+					i(35576),	-- Ingvar's Monolithic Cleaver
+					i(35578),	-- Overlaid Chain Spaulders
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				lvl = lvlsquish(80, 80, 30),
-				groups = {
-					n(ZONE_DROPS, {
-						i(37290),	-- Dragon Prow Amulet
-						i(37196),	-- Runecaster's Mantle
-						i(37197),	-- Tattered Castle Drape
-					}),
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							timeline = { REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(638, {	-- Prince Keleseth <The San'layn>
-						creatureID = 23953,	-- Prince Keleseth <The San'layn>
-						groups = {
-							ach(1919),	-- On The Rocks
-							i(37179),	-- Infantry Assault Blade
-							-- #if AFTER 7.3.5
-							i(35570),	-- Keleseth's Blade of Evocation (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37177),	-- Wand of the San'layn
-							i(37180),	-- Battlemap Hide Helm
-							-- #if AFTER 7.3.5
-							i(35572),	-- Reinforced Velvet Helm (7.3.5 - Used to be only Normal Mode)
-							i(35571),	-- Dragon Stabler's Gauntlets (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37178),	-- Strategist's Belt
-						},
-					}),
-					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-						crs = {
-							24200,	-- Skarvald the Constructor
-							24201,	-- Dalronn the Controller
-						},
-						groups = {
-							-- #if AFTER 7.3.5
-							i(35573),	-- Arm Blade of Augelmir (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37181),	-- Dagger of Betrayal
-							i(157555, {	-- Constructor's Worklight
-								timeline = { ADDED_7_3_5 },
-							}),
-							i(37182),	-- Helmet of the Constructor
-							-- #if AFTER 7.3.5
-							i(35574),	-- Chestplate of the Northern Lights (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37184),	-- Dalronn's Jerkin
-							-- #if AFTER 7.3.5
-							i(35575),	-- Skarvald's Dragonskin Habergeon (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37183),	-- Bindings of the Tunneler
-						},
-					}),
-					e(640, {	-- Ingvar the Plunderer
-						creatureID = 23954,	-- Ingvar the Plunderer
-						groups = {
-							ach(5095, {	-- Heroic: Utgarde Keep Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(41793),	-- Design: Fierce Monarch Topaz (RECIPE!)
-							i(37190),	-- Enraged Feral Staff
-							-- #if AFTER 7.3.5
-							i(35576),	-- Ingvar's Monolithic Cleaver (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37191),	-- Drake-Mounted Crossbow
-							i(37188),	-- Plunderer's Helmet
-							-- #if AFTER 7.3.5
-							i(35578),	-- Overlaid Chain Spaulders (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37194),	-- Sharp-Barbed Leather Belt
-							i(37189),	-- Breeches of the Caller
-							-- #if AFTER 7.3.5
-							i(35577),	-- Holistic Patchwork Breeches (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37193),	-- Staggering Legplates
-							i(37192),	-- Annhylde's Ring
-							i(37186),	-- Unsmashable Heavy Band
-							-- #if BEFORE 4.0.1
-							i(43662),	-- Axe of the Plunderer
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37290),	-- Dragon Prow Amulet
+					i(37196),	-- Runecaster's Mantle
+					i(37197),	-- Tattered Castle Drape
+				}),
+				CommonBossDrops({
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(KELESETH, {
+					ach(1919),	-- On The Rocks
+					i(37180),	-- Battlemap Hide Helm
+					i(37179),	-- Infantry Assault Blade
+					i(37178),	-- Strategist's Belt
+					i(37177),	-- Wand of the San'layn
+				}),
+				BossOnly(SKARVALD_AND_DALRONN, {
+					i(37183),	-- Bindings of the Tunneler
+					i(37181),	-- Dagger of Betrayal
+					i(37184),	-- Dalronn's Jerkin
+					i(37182),	-- Helmet of the Constructor
+				}),
+				BossOnly(INGVAR, {
+					i(43662, { timeline = { REMOVED_4_0_1 } }),	-- Axe of the Plunderer (QI!)
+					--
+					ach(5095, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Utgarde Keep Guild Run
+					i(37192),	-- Annhylde's Ring
+					i(37189),	-- Breeches of the Caller
+					i(41793),	-- Design: Fierce Monarch Topaz (RECIPE!)
+					i(37191),	-- Drake-Mounted Crossbow
+					i(37190),	-- Enraged Feral Staff
+					i(37188),	-- Plunderer's Helmet
+					i(37194),	-- Sharp-Barbed Leather Belt
+					i(37193),	-- Staggering Legplates
+					i(37186),	-- Unsmashable Heavy Band
+				}),
 			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(392430, 412770, 424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(638, {	-- Prince Keleseth <The San'layn>
-						creatureID = 23953,	-- Prince Keleseth <The San'layn>
-						groups = {
-							i(39345),	-- Girdle of the Ascended Phantom
-							i(39379),	-- Spectral Rider's Girdle
-							i(39392),	-- Veiled Amulet of Life
-						},
+					BossOnly(KELESETH, {
+						i(39345),	-- Girdle of the Ascended Phantom
+						i(39379),	-- Spectral Rider's Girdle
+						i(39392),	-- Veiled Amulet of Life
 					}),
-					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-						crs = {
-							24200,	-- Skarvald the Constructor
-							24201,	-- Dalronn the Controller
-						},
-						groups = {
-							i(39309),	-- Leggings of the Instructor
-							i(39344),	-- Slayer of the Lifeless
-							i(39369),	-- Sabatons of Deathlike Gloom
-						},
+					BossOnly(SKARVALD_AND_DALRONN, {
+						i(39309),	-- Leggings of the Instructor
+						i(39369),	-- Sabatons of Deathlike Gloom
+						i(39344),	-- Slayer of the Lifeless
 					}),
-					e(640, {	-- Ingvar the Plunderer
-						creatureID = 23954,	-- Ingvar the Plunderer
-						groups = {
-							i(40519),	-- Footsteps of Malygos
-							i(40474),	-- Surge Needle Ring
-							i(39424),	-- The Soulblade
-						},
+					BossOnly(INGVAR, {
+						i(40519),	-- Footsteps of Malygos
+						i(40474),	-- Surge Needle Ring
+						i(39424),	-- The Soulblade
 					}),
 				},
 			})),
@@ -439,30 +422,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412770, 424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(638, {	-- Prince Keleseth <The San'layn>
-						creatureID = 23953,	-- Prince Keleseth <The San'layn>
-						groups = {
-							i(45333),	-- Belt of the Iron Servant
-							i(45378),	-- Boots of the Petrified Forest
-						},
+					BossOnly(KELESETH, {
+						i(45333),	-- Belt of the Iron Servant
+						i(45378),	-- Boots of the Petrified Forest
 					}),
-					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-						crs = {
-							24200,	-- Skarvald the Constructor
-							24201,	-- Dalronn the Controller
-						},
-						groups = {
-							i(45322),	-- Cloak of the Iron Council
-							i(45329),	-- Circlet of True Sight
-						},
+					BossOnly(SKARVALD_AND_DALRONN, {
+						i(45329),	-- Circlet of True Sight
+						i(45322),	-- Cloak of the Iron Council
 					}),
-					e(640, {	-- Ingvar the Plunderer
-						creatureID = 23954,	-- Ingvar the Plunderer
-						groups = {
-							i(45330),	-- Greaves of Iron Intensity
-							i(45418),	-- Lady Maye's Sapphire Ring
-							i(45324),	-- Leggings of Swift Reflexes
-						},
+					BossOnly(INGVAR, {
+						i(45330),	-- Greaves of Iron Intensity
+						i(45418),	-- Lady Maye's Sapphire Ring
+						i(45324),	-- Leggings of Swift Reflexes
 					}),
 				},
 			})),
@@ -470,27 +441,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(638, {	-- Prince Keleseth <The San'layn>
-						creatureID = 23953,	-- Prince Keleseth <The San'layn>
-						groups = {
-
-						},
-					}),
-					e(639, {	-- Skarvald the Constructor and Dalronn the Controller
-						crs = {
-							24200,	-- Skarvald the Constructor
-							24201,	-- Dalronn the Controller
-						},
-						groups = {
-
-						},
-					}),
-					e(640, {	-- Ingvar the Plunderer
-						creatureID = 23954,	-- Ingvar the Plunderer
-						groups = {
-
-						},
-					}),
+					BossOnly(KELESETH),
+					BossOnly(SKARVALD_AND_DALRONN),
+					BossOnly(INGVAR),
 				},
 			})),
 			-- #endif
