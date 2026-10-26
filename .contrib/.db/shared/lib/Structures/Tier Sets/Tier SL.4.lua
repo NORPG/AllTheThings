@@ -32,9 +32,9 @@ SEPULCHER_OF_FIRST_ONES_TIER = {
 		-- i(188851),	-- Shoulderpads of the Fixed Stars
 		i(188871),	-- Wrap of the Fixed Stars
 	};
-	EVOKER = {
-		-- Not yet!
-	};
+	-- EVOKER = {
+	-- 	-- Not yet!
+	-- };
 	HUNTER = {
 		i(188872),	-- Godstalker's Camouflage
 		i(188857),	-- Godstalker's Fauld
