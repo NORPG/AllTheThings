@@ -2,6 +2,28 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local SVALA = 641;
+local GORTOK = 642;
+local SKADI = 643;
+local YMIRON = 644;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[SVALA] = {
+		26668,	-- Svala Sorrowgrave
+		29281,	-- Svala Sorrowgrave useless form
+	},
+	[GORTOK] = { 26687 },	-- Gortok Palehoof
+	[SKADI] = { 26693 },	-- Skadi the Ruthless
+	[YMIRON] = { 26861 },	-- King Ymiron
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(286, {	-- Utgarde Pinnacle
 		mapID = UTGARDE_PINNACLE,
@@ -12,82 +34,97 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(488, {	-- Utgarde Pinnacle
+					-- #if AFTER 7.3.5
 					crit(5463, {	-- Skadi the Ruthless
-						_encounter = { 643, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SKADI, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5465, {	-- Svala Sorrowgrave
-						_encounter = { 641, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { SVALA, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5466, {	-- Gortok Palehoof
-						_encounter = { 642, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { GORTOK, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(5464, {	-- King Ymiron
+						_encounter = { YMIRON, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					-- #else
+					crit(5463, {	-- Skadi the Ruthless
+						_encounter = { SKADI, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5465, {	-- Svala Sorrowgrave
+						_encounter = { SVALA, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5466, {	-- Gortok Palehoof
+						_encounter = { GORTOK, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5631, {	-- King Ymiron
-						_encounter = { 644, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { YMIRON, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5464, {	-- King Ymiron
-						_encounter = { 644, DIFFICULTY.DUNGEON.NORMAL },
+						_encounter = { YMIRON, DIFFICULTY.DUNGEON.NORMAL },
 					}),
+					-- #endif
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17301, {	-- Defense Protocol Alpha: Utgarde Pinnacle
 					crit(57767, {	-- Svala Sorrowgrave
-						_encounter = { 641, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SVALA, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57769, {	-- Gortok Palehoof
-						_encounter = { 642, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { GORTOK, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57768, {	-- Skadi the Ruthless
-						_encounter = { 643, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { SKADI, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57766, {	-- King Ymiron
-						_encounter = { 644, DEFENSE_PROTOCOL_ALPHA },
+						_encounter = { YMIRON, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18600, {	-- Defense Protocol Beta: Utgarde Pinnacle
 					crit(60610, {	-- Svala Sorrowgrave
-						_encounter = { 641, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SVALA, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60612, {	-- Gortok Palehoof
-						_encounter = { 642, DEFENSE_PROTOCOL_BETA },
+						_encounter = { GORTOK, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60611, {	-- Skadi the Ruthless
-						_encounter = { 643, DEFENSE_PROTOCOL_BETA },
+						_encounter = { SKADI, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60609, {	-- King Ymiron
-						_encounter = { 644, DEFENSE_PROTOCOL_BETA },
+						_encounter = { YMIRON, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19437, {	-- Defense Protocol Gamma: Utgarde Pinnacle
 					crit(63367, {	-- Svala Sorrowgrave
-						_encounter = { 641, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SVALA, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63371, {	-- Gortok Palehoof
-						_encounter = { 642, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { GORTOK, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63369, {	-- Skadi the Ruthless
-						_encounter = { 643, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { SKADI, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63366, {	-- King Ymiron
-						_encounter = { 644, DEFENSE_PROTOCOL_GAMMA },
+						_encounter = { YMIRON, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(499, {	-- Heroic: Utgarde Pinnacle
 					crit(6864, {	-- Svala Sorrowgrave
-						_encounter = { 641, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SVALA, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6865, {	-- Gortok Palehoof
-						_encounter = { 642, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { GORTOK, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6863, {	-- Skadi the Ruthless
-						_encounter = { 643, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { SKADI, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5618, {	-- King Ymiron
-						_encounter = { 644, DIFFICULTY.DUNGEON.HEROIC },
+						_encounter = { YMIRON, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -147,269 +184,211 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					lvl = lvlsquish(78, 78, 20),
 				}),
 			}),
-			n(ZONE_DROPS, {
-				-- #if AFTER 7.3.5
-				i(37590),	-- Bands of Fading Light
-				i(37068),	-- Berserker's Sabatons
-				i(37069),	-- Dragonflayer Seer's Bindings
-				i(37070),	-- Tundra Wolf Boots
-				i(37587),	-- Ymirjar Physician's Robe
-				-- #endif
-				i(37372, {	-- Harpoon
-					description = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
-					cr = 26692,	-- Ymirjar Harpooner
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(37590),	-- Bands of Fading Light
+					i(37068),	-- Berserker's Sabatons
+					i(37069),	-- Dragonflayer Seer's Bindings
+					i(37372, {	-- Harpoon
+						description = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
+						cr = 26692,	-- Ymirjar Harpooner
+					}),
+					i(37070),	-- Tundra Wolf Boots
+					i(37587),	-- Ymirjar Physician's Robe
+				}),
+				BossOnly(SVALA, {
+					i(37038),	-- Brazier Igniter
+					i(37370),	-- Cuffs of the Trussed Hall
+					i(37367),	-- Echoing Stompers
+					i(37037),	-- Ritualistic Athame
+					i(37368),	-- Silent Spectator Shoulderpads
+					i(37369),	-- Sorrowgrave's Breeches
+					i(37040),	-- Svala's Bloodied Shackles
+					i(37043),	-- Tear-Linked Gauntlets
+				}),
+				BossOnly(GORTOK, {
+					i(37376),	-- Ferocious Pauldrons of the Rhino
+					i(37373),	-- Massive Spaulders of the Jormungar
+					i(37374),	-- Ravenous Leggings of the Furbolg
+					i(37052),	-- Reanimated Armor
+					i(37371),	-- Ring of the Frenzied Wolvar
+					i(37051),	-- Seal of Valgarde
+					i(37048),	-- Shroud of Resurrection
+					i(37050),	-- Trophy Gatherer
+				}),
+				BossOnly(SKADI, {
+					i(37053),	-- Amulet of Deflected Blows
+					i(37389),	-- Crenelation Leggings
+					i(37057),	-- Dark Rider's Tunic
+					i(37056),	-- Harpooner's Striders
+					i(37377),	-- Netherbreath Spellblade
+					i(37055),	-- Silken Amice of the Ymirjar
+					i(37379),	-- Skadi's Iron Belt
+					i(157560, { timeline = { ADDED_7_3_5 } }),	-- Skadi's Scaled Boots
+					i(37384),	-- Staff of Wayward Principles
+				}),
+				BossOnly(YMIRON, {
+					i(37066),	-- Ancient Royal Legguards
+					i(37067),	-- Ceremonial Pyre Mantle
+					i(37062),	-- Crown of the Forgotten Kings
+					i(41797),	-- Design: Austere Earthsiege Diamond (RECIPE!)
+					i(37409),	-- Gilt-Edged Leather Gauntlets
+					i(37408),	-- Girdle of Bane
+					i(37397),	-- Gold Amulet of Kings
+					i(37060),	-- Jeweled Coronation Sword
+					i(37398),	-- Mantle of Discarded Ways
+					i(37390),	-- Meteorite Whetstone
+					i(37395),	-- Ornamented Plate Regalia
+					i(37401),	-- Red Sword of Courage
+					i(37058),	-- Signet of Ranulf
+					i(37407),	-- Sovereign's Belt
+					i(37061),	-- Tor's Crest
+					i(37064),	-- Vestige of Haldor
+					i(37065),	-- Ymiron's Blade
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				-- #if BEFORE 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37410, { timeline = { REMOVED_5_0_4 } }),	-- Tracker's Balanced Knives
+				}),
+				CommonBossDrops({
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(SVALA, {
+					ach(2043),	-- The Incredible Hulk
+				}),
+				BossOnly(GORTOK),
+				BossOnly(SKADI, {
+					ach(1873),	-- Lodi Dodi We Loves the Skadi
+					ach(2156),	-- My Girl Loves to Skadi All the Time
+					i(44151),	-- Blue Proto-Drake (MOUNT!)
+				}),
+				BossOnly(YMIRON, {
+					i(43669, { timeline = { REMOVED_4_0_1 } }),	-- Locket of the Deceased Queen (QI!)
+					--
+					ach(5105, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Utgarde Pinnacle Guild Run
+					ach(2157),	-- King's Bane
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(37372, {	-- Harpoon
+						description = "Gather 3 of these harpoons and then bring him down in one go by clicking each of the launchers.",
+						cr = 26692,	-- Ymirjar Harpooner
+					}),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(37068),	-- Berserker's Sabatons
 					i(37069),	-- Dragonflayer Seer's Bindings
 					i(37070),	-- Tundra Wolf Boots
 				}),
-				-- #endif
-				e(641, {	-- Svala Sorrowgrave
-					crs = {
-						26668,	-- Svala Sorrowgrave
-						29281,	-- Svala Sorrowgrave useless form
-					},
-					groups = {
-						i(37037),	-- Ritualistic Athame
-						i(37038),	-- Brazier Igniter
-						-- #if AFTER 7.3.5
-						i(37368),	-- Silent Spectator Shoulderpads (7.3.5 - Used to be only Heroic Mode)
-						i(37370),	-- Cuffs of the Trussed Hall (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37040),	-- Svala's Bloodied Shackles
-						i(37043),	-- Tear-Linked Gauntlets
-						-- #if AFTER 7.3.5
-						i(37369),	-- Sorrowgrave's Breeches (7.3.5 - Used to be only Heroic Mode)
-						i(37367),	-- Echoing Stompers (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(SVALA, {
+					i(37038),	-- Brazier Igniter
+					i(37037),	-- Ritualistic Athame
+					i(37040),	-- Svala's Bloodied Shackles
+					i(37043),	-- Tear-Linked Gauntlets
 				}),
-				e(642, {	-- Gortok Palehoof
-					creatureID = 26687,	-- Gortok Palehoof
-					groups = {
-						i(37050),	-- Trophy Gatherer
-						i(37051),	-- Seal of Valgarde
-						-- #if AFTER 7.3.5
-						i(37376),	-- Ferocious Pauldrons of the Rhino (7.3.5 - Used to be only Heroic Mode)
-						i(37373),	-- Massive Spaulders of the Jormungar (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37048),	-- Shroud of Resurrection
-						i(37052),	-- Reanimated Armor
-						-- #if AFTER 7.3.5
-						i(37374),	-- Ravenous Leggings of the Furbolg (7.3.5 - Used to be only Heroic Mode)
-						i(37371),	-- Ring of the Frenzied Wolvar (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(GORTOK, {
+					i(37052),	-- Reanimated Armor
+					i(37051),	-- Seal of Valgarde
+					i(37048),	-- Shroud of Resurrection
+					i(37050),	-- Trophy Gatherer
 				}),
-				e(643, {	-- Skadi the Ruthless
-					creatureID = 26693,	-- Skadi the Ruthless
-					groups = {
-						-- #if AFTER 7.3.5
-						i(37384),	-- Staff of Wayward Principles (7.3.5 - Used to be only Heroic Mode)
-						i(37377),	-- Netherbreath Spellblade (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37053),	-- Amulet of Deflected Blows
-						i(37055),	-- Silken Amice of the Ymirjar
-						i(37057),	-- Dark Rider's Tunic
-						-- #if AFTER 7.3.5
-						i(37379),	-- Skadi's Iron Belt (7.3.5 - Used to be only Heroic Mode)
-						i(37389),	-- Crenelation Leggings (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37056),	-- Harpooner's Striders
-						i(157560, {	-- Skadi's Scaled Boots
-							timeline = { ADDED_7_3_5 },
-						}),
-					},
+				BossOnly(SKADI, {
+					i(37053),	-- Amulet of Deflected Blows
+					i(37057),	-- Dark Rider's Tunic
+					i(37056),	-- Harpooner's Striders
+					i(37055),	-- Silken Amice of the Ymirjar
 				}),
-				e(644, {	-- King Ymiron
-					creatureID = 26861,	-- King Ymiron
-					groups = {
-						i(41797),	-- Design: Austere Earthsiege Diamond (RECIPE!)
-						i(37060),	-- Jeweled Coronation Sword
-						-- #if AFTER 7.3.5
-						i(37401),	-- Red Sword of Courage (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37065),	-- Ymiron's Blade
-						i(37061),	-- Tor's Crest
-						i(37062),	-- Crown of the Forgotten Kings
-						-- #if AFTER 7.3.5
-						i(37397),	-- Gold Amulet of Kings (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37067),	-- Ceremonial Pyre Mantle
-						-- #if AFTER 7.3.5
-						i(37398),	-- Mantle of Discarded Ways (7.3.5 - Used to be only Heroic Mode)
-						i(37395),	-- Ornamented Plate Regalia (7.3.5 - Used to be only Heroic Mode)
-						i(37409),	-- Gilt-Edged Leather Gauntlets (7.3.5 - Used to be only Heroic Mode)
-						i(37408),	-- Girdle of Bane (7.3.5 - Used to be only Heroic Mode)
-						i(37407),	-- Sovereign's Belt (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37066),	-- Ancient Royal Legguards
-						i(37058),	-- Signet of Ranulf
-						-- #if AFTER 7.3.5
-						i(37390),	-- Meteorite Whetstone (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(37064),	-- Vestige of Haldor
-					},
+				BossOnly(YMIRON, {
+					i(37066),	-- Ancient Royal Legguards
+					i(37067),	-- Ceremonial Pyre Mantle
+					i(37062),	-- Crown of the Forgotten Kings
+					i(37060),	-- Jeweled Coronation Sword
+					i(37058),	-- Signet of Ranulf
+					i(37061),	-- Tor's Crest
+					i(37064),	-- Vestige of Haldor
+					i(37065),	-- Ymiron's Blade
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				lvl = lvlsquish(80, 80, 30),
-				groups = {
-					-- #if BEFORE 7.3.5
-					n(ZONE_DROPS, {
-						i(37590),	-- Bands of Fading Light
-						i(37410, {	-- Tracker's Balanced Knives
-							timeline = { REMOVED_5_0_4 },
-						}),
-						i(37587),	-- Ymirjar Physician's Robe
-					}),
-					-- #endif
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							timeline = { REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(641, {	-- Svala Sorrowgrave
-						creatureID = 26668,	-- Svala Sorrowgrave
-						groups = {
-							ach(2043),	-- The Incredible Hulk
-							-- #if AFTER 7.3.5
-							i(37037),	-- Ritualistic Athame (7.3.5 - Used to be only Normal Mode)
-							i(37038),	-- Brazier Igniter (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37368),	-- Silent Spectator Shoulderpads
-							i(37370),	-- Cuffs of the Trussed Hall
-							-- #if AFTER 7.3.5
-							i(37040),	-- Svala's Bloodied Shackles (7.3.5 - Used to be only Normal Mode)
-							i(37043),	-- Tear-Linked Gauntlets (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37369),	-- Sorrowgrave's Breeches
-							i(37367),	-- Echoing Stompers
-						},
-					}),
-					e(642, {	-- Gortok Palehoof
-						creatureID = 26687,	-- Gortok Palehoof
-						groups = {
-							-- #if AFTER 7.3.5
-							i(37050),	-- Trophy Gatherer (7.3.5 - Used to be only Normal Mode)
-							i(37051),	-- Seal of Valgarde (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37376),	-- Ferocious Pauldrons of the Rhino
-							i(37373),	-- Massive Spaulders of the Jormungar
-							-- #if AFTER 7.3.5
-							i(37048),	-- Shroud of Resurrection (7.3.5 - Used to be only Normal Mode)
-							i(37052),	-- Reanimated Armor (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37374),	-- Ravenous Leggings of the Furbolg
-							i(37371),	-- Ring of the Frenzied Wolvar
-						},
-					}),
-					e(643, {	-- Skadi the Ruthless
-						creatureID = 26693,	-- Skadi the Ruthless
-						groups = {
-							ach(1873),	-- Lodi Dodi We Loves the Skadi
-							ach(2156),	-- My Girl Loves to Skadi All the Time
-							i(44151),	-- Blue Proto-Drake (MOUNT!)
-							i(37384),	-- Staff of Wayward Principles
-							i(37377),	-- Netherbreath Spellblade
-							-- #if AFTER 7.3.5
-							i(37053),	-- Amulet of Deflected Blows (7.3.5 - Used to be only Normal Mode)
-							i(37055),	-- Silken Amice of the Ymirjar (7.3.5 - Used to be only Normal Mode)
-							i(37057),	-- Dark Rider's Tunic (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37379),	-- Skadi's Iron Belt
-							i(37389),	-- Crenelation Leggings
-							-- #if AFTER 7.3.5
-							i(37056),	-- Harpooner's Striders (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(157560, {	-- Skadi's Scaled Boots
-								timeline = { ADDED_7_3_5 },
-							}),
-						},
-					}),
-					e(644, {	-- King Ymiron
-						creatureID = 26861,	-- King Ymiron
-						groups = {
-							ach(5105, {	-- Heroic: Utgarde Pinnacle Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							ach(2157),	-- King's Bane
-							i(41797),	-- Design: Austere Earthsiege Diamond (RECIPE!) (7.3.5 - Used to be only Normal Mode)
-							-- #if AFTER 7.3.5
-							i(37060),	-- Jeweled Coronation Sword (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37401),	-- Red Sword of Courage
-							-- #if AFTER 7.3.5
-							i(37065),	-- Ymiron's Blade (7.3.5 - Used to be only Normal Mode)
-							i(37061),	-- Tor's Crest (7.3.5 - Used to be only Normal Mode)
-							i(37062),	-- Crown of the Forgotten Kings (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37397),	-- Gold Amulet of Kings
-							-- #if AFTER 7.3.5
-							i(37067),	-- Ceremonial Pyre Mantle (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37398),	-- Mantle of Discarded Ways
-							i(37395),	-- Ornamented Plate Regalia
-							i(37409),	-- Gilt-Edged Leather Gauntlets
-							i(37408),	-- Girdle of Bane
-							i(37407),	-- Sovereign's Belt
-							-- #if AFTER 7.3.5
-							i(37066),	-- Ancient Royal Legguards (7.3.5 - Used to be only Normal Mode)
-							i(37058),	-- Signet of Ranulf (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37390),	-- Meteorite Whetstone
-							-- #if AFTER 7.3.5
-							i(37064),	-- Vestige of Haldor (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							-- #if BEFORE 4.0.1
-							i(43669),	-- Locket of the Deceased Queen
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37590),	-- Bands of Fading Light
+					i(37410, { timeline = { REMOVED_5_0_4 } }),	-- Tracker's Balanced Knives
+					i(37587),	-- Ymirjar Physician's Robe
+				}),
+				CommonBossDrops({
+					currency(101, { timeline = { REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(SVALA, {
+					ach(2043),	-- The Incredible Hulk
+					i(37370),	-- Cuffs of the Trussed Hall
+					i(37367),	-- Echoing Stompers
+					i(37368),	-- Silent Spectator Shoulderpads
+					i(37369),	-- Sorrowgrave's Breeches
+				}),
+				BossOnly(GORTOK, {
+					i(37376),	-- Ferocious Pauldrons of the Rhino
+					i(37373),	-- Massive Spaulders of the Jormungar
+					i(37374),	-- Ravenous Leggings of the Furbolg
+					i(37371),	-- Ring of the Frenzied Wolvar
+				}),
+				BossOnly(SKADI, {
+					ach(1873),	-- Lodi Dodi We Loves the Skadi
+					ach(2156),	-- My Girl Loves to Skadi All the Time
+					i(44151),	-- Blue Proto-Drake (MOUNT!)
+					i(37389),	-- Crenelation Leggings
+					i(37377),	-- Netherbreath Spellblade
+					i(37379),	-- Skadi's Iron Belt
+					i(37384),	-- Staff of Wayward Principles
+				}),
+				BossOnly(YMIRON, {
+					i(43669, { timeline = { REMOVED_4_0_1 } }),	-- Locket of the Deceased Queen (QI!)
+					--
+					ach(5105, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Utgarde Pinnacle Guild Run
+					ach(2157),	-- King's Bane
+					i(41797),	-- Design: Austere Earthsiege Diamond (RECIPE!)
+					i(37409),	-- Gilt-Edged Leather Gauntlets
+					i(37408),	-- Girdle of Bane
+					i(37397),	-- Gold Amulet of Kings
+					i(37398),	-- Mantle of Discarded Ways
+					i(37390),	-- Meteorite Whetstone
+					i(37395),	-- Ornamented Plate Regalia
+					i(37401),	-- Red Sword of Courage
+					i(37407),	-- Sovereign's Belt
+				}),
 			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(392430, 412770, 424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(641, {	-- Svala Sorrowgrave
-						creatureID = 26668,	-- Svala Sorrowgrave
-						groups = {
-							i(39296),	-- Accursed Bow of the Elite
-							i(39308),	-- Girdle of Lenience
-							i(39299),	-- Rapid Attack Gloves
-						},
+					BossOnly(SVALA, {
+						i(39296),	-- Accursed Bow of the Elite
+						i(39308),	-- Girdle of Lenience
+						i(39299),	-- Rapid Attack Gloves
 					}),
-					e(642, {	-- Gortok Palehoof
-						creatureID = 26687,	-- Gortok Palehoof
-						groups = {
-							i(39284),	-- Miasma Mantle
-							i(39298),	-- Waistguard of the Tutor
-							i(39295),	-- Cowl of Sheet Lightning
-						},
+					BossOnly(GORTOK, {
+						i(39295),	-- Cowl of Sheet Lightning
+						i(39284),	-- Miasma Mantle
+						i(39298),	-- Waistguard of the Tutor
 					}),
-					e(643, {	-- Skadi the Ruthless
-						creatureID = 26693,	-- Skadi the Ruthless
-						groups = {
-							i(39294),	-- Arc-Scorched Helmet
-							i(39297),	-- Cloak of Darkening
-							i(39472),	-- Chain of Latent Energies
-						},
+					BossOnly(SKADI, {
+						i(39294),	-- Arc-Scorched Helmet
+						i(39472),	-- Chain of Latent Energies
+						i(39297),	-- Cloak of Darkening
 					}),
-					e(644, {	-- King Ymiron
-						creatureID = 26861,	-- King Ymiron
-						groups = {
-							i(39421),	-- Gem of Imprisoned Vassals
-							i(39423),	-- Hammer of the Astral Plane
-							i(39194),	-- Rusted-Link Spiked Gauntlets
-						},
+					BossOnly(YMIRON, {
+						i(39421),	-- Gem of Imprisoned Vassals
+						i(39423),	-- Hammer of the Astral Plane
+						i(39194),	-- Rusted-Link Spiked Gauntlets
 					}),
 				},
 			})),
@@ -417,34 +396,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(412770, 424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(641, {	-- Svala Sorrowgrave
-						creatureID = 26668,	-- Svala Sorrowgrave
-						groups = {
-							i(45331),	-- Rune-Etched Nightblade
-							i(45423),	-- Runetouch Wristwraps
-						},
+					BossOnly(SVALA, {
+						i(45331),	-- Rune-Etched Nightblade
+						i(45423),	-- Runetouch Wristwraps
 					}),
-					e(642, {	-- Gortok Palehoof
-						creatureID = 26687,	-- Gortok Palehoof
-						groups = {
-							i(45332),	-- Stormtip
-							i(45708),	-- Archaedas' Lost Legplates
-						},
+					BossOnly(GORTOK, {
+						i(45708),	-- Archaedas' Lost Legplates
+						i(45332),	-- Stormtip
 					}),
-					e(643, {	-- Skadi the Ruthless
-						creatureID = 26693,	-- Skadi the Ruthless
-						groups = {
-							i(45864),	-- Cover of the Keepers
-							i(45712),	-- Chestplate of Titanic Fury
-						},
+					BossOnly(SKADI, {
+						i(45712),	-- Chestplate of Titanic Fury
+						i(45864),	-- Cover of the Keepers
 					}),
-					e(644, {	-- King Ymiron
-						creatureID = 26861,	-- King Ymiron
-						groups = {
-							i(45711),	-- Ironaya's Discarded Mantle
-							i(45866),	-- Elemental Focus Stone
-							i(45709),	-- Nimble Climber's Belt
-						},
+					BossOnly(YMIRON, {
+						i(45866),	-- Elemental Focus Stone
+						i(45711),	-- Ironaya's Discarded Mantle
+						i(45709),	-- Nimble Climber's Belt
 					}),
 				},
 			})),
@@ -452,30 +419,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				OnInit = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424194),
 				lvl = lvlsquish(80, 80, 30),
 				groups = {
-					e(641, {	-- Svala Sorrowgrave
-						creatureID = 26668,	-- Svala Sorrowgrave
-						groups = {
-
-						},
-					}),
-					e(642, {	-- Gortok Palehoof
-						creatureID = 26687,	-- Gortok Palehoof
-						groups = {
-
-						},
-					}),
-					e(643, {	-- Skadi the Ruthless
-						creatureID = 26693,	-- Skadi the Ruthless
-						groups = {
-
-						},
-					}),
-					e(644, {	-- King Ymiron
-						creatureID = 26861,	-- King Ymiron
-						groups = {
-
-						},
-					}),
+					BossOnly(SVALA),
+					BossOnly(GORTOK),
+					BossOnly(SKADI),
+					BossOnly(YMIRON),
 				},
 			})),
 			-- #endif
