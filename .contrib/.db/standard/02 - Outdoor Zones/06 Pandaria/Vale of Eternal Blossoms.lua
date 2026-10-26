@@ -1508,12 +1508,14 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 					timeline = { ADDED_11_2_7 },
 					cost = { { "g", 20000000 } },	-- 2,000g
 				}, {
+					i(283475, { timeline = { ADDED_12_1_7 } }),	-- A Brief History of the Titans (DECOR!)
+					i(283463, { timeline = { ADDED_12_1_7 } }),	-- Origin of the Silver Hand (DECOR!)
 					i(257354),	-- Scroll of K'aresh's Fall (DECOR!)
+					i(281626, { timeline = { ADDED_12_1_7 } }),	-- Tale of the First Warchief (DECOR!)
 					i(257351),	-- Tale of the Penultimate Lich King (DECOR!)
-					i(271971, {	-- Tome of Kings (DECOR!)
-						timeline = { ADDED_12_0_7 },
-					}),
+					i(271971, { timeline = { ADDED_12_0_7 } }),	-- Tome of Kings (DECOR!)
 					i(245332),	-- Tome of Silvermoon Intrigue (DECOR!)
+					i(283453, { timeline = { ADDED_12_1_7 } }),	-- Tome of the Sea (DECOR!)
 					i(257355),	-- Tome of the Survivor (DECOR!)
 				}),
 			}),

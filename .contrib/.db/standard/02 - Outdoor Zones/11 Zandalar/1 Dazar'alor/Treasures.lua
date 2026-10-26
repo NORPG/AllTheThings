@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-maproot(ZANDALAR, DAZARALOR, {
+maproot(ZANDALAR, THE_GREAT_SEAL, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		n(TREASURES, {

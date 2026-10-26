@@ -632,10 +632,9 @@ root(ROOTS.Housing, {
 			i(277149),	-- Crude Pet Cage (DECOR!)
 			i(277163),	-- Loyal Companion's Plinth (DECOR!)
 			i(276246, {	-- Mechanically Indistinguishable Pepe (DECOR!)
-				-- There should be a Pepe, sitting atop one of the Bulletin Board pillars. You interact with it and then go to the vendors to buy a Mechanical version.
+				description = "You can buy this decor after you have interracted with Pepe that is sitting on the Bulletin Board.",
 				cost = { { "c", 3363, 10 } },	-- 10x Community Coupons
-				-- Exo Note: This "hack" allows tracking of the Pepe Decor and adds it as an additional source
-				groups = { i(276230) },	-- Pepe (DECOR!)
+				decorID = 25546,	-- This item is not linked in Wago data to the proper decorID
 			}),
 			i(277138),	-- Silvermoon Dragonhawk Incubator (DECOR!)
 			i(277142),	-- Westfall Pet Cage (DECOR!)

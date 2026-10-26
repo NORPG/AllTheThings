@@ -2838,6 +2838,7 @@ MobileDB.GameObject = {
 	[406355] = true,	-- Dreamseed Cache
 	[406356] = true,	-- Dreamseed Cache
 	[406371] = true,	-- Dream Seed Dirt Pile
+	[406385] = true,	-- Dreaming Growth
 	[406804] = true,	-- Armory Door
 	[406805] = true,	-- Cathedral Door
 	[406895] = true,	-- Violet Forget-Me-Not (q:77312)
