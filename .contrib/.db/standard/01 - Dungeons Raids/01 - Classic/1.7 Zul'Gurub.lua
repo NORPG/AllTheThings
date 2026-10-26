@@ -1666,7 +1666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 							q(8073, {	-- Paragons of Power: The Madcap's Tunic [Revered]
 								qg = 14905,	-- Falthir the Sightless
 								coord = { 14.1, 13.7, STRANGLETHORN_VALE },
-								minReputation = { FACTION_ZANDALAR_TRIBE, REVERED },	.
+								minReputation = { FACTION_ZANDALAR_TRIBE, REVERED },
 								cost = { { "i", 19724, 1 } },	-- Primal Hakkari Aegis
 								groups = { i(231337) },	-- Zandalar Madcap's Tunic
 							}),
