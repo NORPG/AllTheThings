@@ -348,6 +348,25 @@ local TRICKS_KALIMDOR = createHeader({
 		tw = "卡林多之不給糖就搗蛋",
 	},
 });
+local AchievementSwaps = {
+-- #if AFTER 3.2.0
+	[TRICKS_KALIMDOR] = 963,	-- Tricks and Treats of Kalimdor (A)
+	[TRICKS_EASTERN_KINGDOMS] = 966,	-- Tricks and Treats of Eastern Kingdoms (A)
+	[TRICKS_OUTLAND] = 969,	-- Tricks and Treats of Outlands (A)
+	-- #if AFTER 4.2.2
+	[TRICKS_NORTHREND] = 5836,	-- Tricks and Treats of Northrend (A)
+	[TRICKS_CATACLYSM] = 5837,	-- Tricks and Treats of Cataclysm (A)
+	-- #endif
+-- #endif
+}
+
+local function VariableAchHeader(id, t)
+	local achID = AchievementSwaps[id]
+	if achID then
+		return header(HEADERS.Achievement, achID, t)
+	end
+	return n(id, t)
+end
 
 root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	timeline = { ADDED_1_8_0 },
@@ -1665,7 +1684,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						coord = { 19.8, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				})),
-				n(TRICKS_CATACLYSM, timelineSelf({ timeline = { ADDED_4_1_0 } }, {	-- Tricks and Treats of the Cataclysm
+				VariableAchHeader(TRICKS_CATACLYSM, timelineSelf({ timeline = { ADDED_4_1_0 } }, {	-- Tricks and Treats of the Cataclysm
 					candybucket(29020, {	-- Candy Bucket - Deepholm, Temple of Earth, Alliance
 						provider = { "o", 208183 },	-- Candy Bucket, Deepholm
 						coord = { 47.4, 51.7, DEEPHOLM },
@@ -1770,7 +1789,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						races = ALLIANCE_ONLY,
 					}),
 				})),
-				n(TRICKS_NORTHREND, timelineSelf({ timeline = { ADDED_3_0_2 } }, {	-- Tricks and Treats of Northrend
+				VariableAchHeader(TRICKS_NORTHREND, timelineSelf({ timeline = { ADDED_3_0_2 } }, {	-- Tricks and Treats of Northrend
 					candybucket(13501, {	-- Candy Bucket - Borean Tundra, Bor'gorok Outpost, Horde
 						provider = { "o", 194084 },	-- Candy Bucket, Borean Tundra
 						coord = { 49.7, 10.0, BOREAN_TUNDRA },
@@ -1936,7 +1955,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						coord = { 59.3, 57.2, ZULDRAK },
 					}),
 				})),
-				n(TRICKS_OUTLAND, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Outland
+				VariableAchHeader(TRICKS_OUTLAND, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Outland
 					candybucket(12406, {	-- Candy Bucket - Blade's Edge Mountains, Evergrove, Neutral
 						provider = { "o", 190112 },	-- Candy Bucket, Blade's Edge Mountains
 						coord = { 62.9, 38.3, BLADES_EDGE_MOUNTAINS },
@@ -2059,7 +2078,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						races = HORDE_ONLY,
 					}),
 				})),
-				n(TRICKS_EASTERN_KINGDOMS, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Eastern Kingdoms
+				VariableAchHeader(TRICKS_EASTERN_KINGDOMS, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Eastern Kingdoms
 					candybucket(12380, {	-- Candy Bucket - Arathi Highlands, Hammerfall, Horde
 						provider = { "o", 190082 },	-- Candy Bucket, Arathi Highlands
 						coord = { 69.0, 33.4, ARATHI_HIGHLANDS },
@@ -2357,7 +2376,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						races = ALLIANCE_ONLY,
 					}),
 				})),
-				n(TRICKS_KALIMDOR, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Kalimdor
+				VariableAchHeader(TRICKS_KALIMDOR, timelineSelf({ timeline = { ADDED_2_2_2 } }, {	-- Tricks and Treats of Kalimdor
 					candybucket(12345, {	-- Candy Bucket - Ashenvale, Astranaar, Alliance
 						provider = { "o", 190035 },	-- Candy Bucket, Ashenvale
 						coord = { 37.0, 49.3, ASHENVALE },
