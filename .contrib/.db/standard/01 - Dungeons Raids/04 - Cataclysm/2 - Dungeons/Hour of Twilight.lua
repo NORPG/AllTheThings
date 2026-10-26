@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local ARCURION = 322;
+local BENEDICTUS = 341;
+local ASIRA = 342;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[ARCURION] = { 54590 },	-- Arcurion
+	[BENEDICTUS] = { 54938 },	-- Archbishop Benedictus
+	[ASIRA] = { 54968 },	-- Asira Dawnslayer
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(186, {	-- Hour of Twilight
 		mapID = 399,
@@ -76,53 +93,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			})),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(322, {	-- Arcurion
-					crs = { 54590 },	-- Arcurion
-					groups = {
-						i(72853),	-- Arcurion Legguards
-						i(72851),	-- Chillbane Belt
-						i(76150),	-- Evergreen Wristbands
-						i(72854),	-- Iceward Cloak
-						i(72850),	-- Surestride Boots
-						i(72849),	-- Wayfinder Boots
-					},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				BossOnly(ARCURION, {
+					i(72853),	-- Arcurion Legguards
+					i(72851),	-- Chillbane Belt
+					i(76150),	-- Evergreen Wristbands
+					i(72854),	-- Iceward Cloak
+					i(72850),	-- Surestride Boots
+					i(72849),	-- Wayfinder Boots
 				}),
-				e(342, {	-- Asira Dawnslayer
-					crs = { 54968 },	-- Asira Dawnslayer
-					groups = {
-						i(157616, {	-- Chestguard of Futility
-							timeline = { ADDED_7_3_5 },
-						}),
-						i(76151),	-- Cloak of Subtle Light
-						i(72855),	-- Corrupted Carapace
-						i(72859),	-- Dawnslayer Helm
-						i(72857),	-- Leggings of Blinding Speed
-						i(72860),	-- Mandible of the Old Ones
-						i(72856),	-- Pauldrons of Midnight Whispers
-					},
+				BossOnly(ASIRA, {
+					i(157616, { timeline = { ADDED_7_3_5 } }),	-- Chestguard of Futility
+					i(76151),	-- Cloak of Subtle Light
+					i(72855),	-- Corrupted Carapace
+					i(72859),	-- Dawnslayer Helm
+					i(72857),	-- Leggings of Blinding Speed
+					i(72860),	-- Mandible of the Old Ones
+					i(72856),	-- Pauldrons of Midnight Whispers
 				}),
-				e(341, {	-- Archbishop Benedictus
-					crs = { 54938 },	-- Archbishop Benedictus
-					groups = {
-						ach(6132, {	-- Eclipse
-							description = "You need to get Benedictus down to 60% to trigger stage two and surrounding Twilight Sparks.",
-						}),
-						ach(6119),	-- Heroic: Hour of Twilight
-						ach(6122),	-- Heroic: Hour of Twilight Guild Run
-						i(72870),	-- Betrayer's Pauldrons
-						i(72867),	-- Clattering Claw
-						i(72868),	-- Desecrated Shoulderguards
-						i(72869),	-- Dragonsmaw Blaster
-						i(72862),	-- Fanged Tentacle
-						i(72865),	-- Mantle of False Virtue
-						i(72861),	-- Pauldrons of the Dragonblight
-						i(72864),	-- Pauldrons of Conviction
-						i(72901),	-- Rosary of Light
-						i(72863),	-- Stalk of Corruption
-						i(72866),	-- Treachery's Bite
-						i(72900),	-- Veil of Lies
-					},
+				BossOnly(BENEDICTUS, {
+					ach(6132, {	-- Eclipse
+						description = "You need to get Benedictus down to 60% to trigger stage two and surrounding Twilight Sparks.",
+					}),
+					ach(6119),	-- Heroic: Hour of Twilight
+					ach(6122),	-- Heroic: Hour of Twilight Guild Run
+					i(72870),	-- Betrayer's Pauldrons
+					i(72867),	-- Clattering Claw
+					i(72868),	-- Desecrated Shoulderguards
+					i(72869),	-- Dragonsmaw Blaster
+					i(72862),	-- Fanged Tentacle
+					i(72865),	-- Mantle of False Virtue
+					i(72864),	-- Pauldrons of Conviction
+					i(72861),	-- Pauldrons of the Dragonblight
+					i(72901),	-- Rosary of Light
+					i(72863),	-- Stalk of Corruption
+					i(72866),	-- Treachery's Bite
+					i(72900),	-- Veil of Lies
 				}),
 			}),
 		},
