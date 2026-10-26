@@ -789,7 +789,6 @@ maproot(KALIMDOR, {
 							},
 							qg = 130216,	-- Magni Bronzebeard
 							coord = { 42.2, 44.2, SILITHUS },
-							timeline = { ADDED_8_0_1 },
 							groups = {
 								i(159671),	-- Silithus Portal Stone (QI!)
 								i(158075),	-- Heart of Azeroth

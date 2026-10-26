@@ -165,7 +165,6 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				groups = {
 					q(31973, {	-- Bordin Steadyfist
 						sourceAchievement = 7525,	-- Taming Cataclysm
-						timeline = { ADDED_5_0_4 },
 						isDaily = true,
 					}),
 				},

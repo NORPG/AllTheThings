@@ -1500,7 +1500,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					sourceQuest = 29200,	-- Leyara
 					qg = 52845,	-- Malfurion Stormrage
 					coord = { 27.0, 62.7, MOUNT_HYJAL },
-					timeline = { ADDED_4_2_0 },
 				}),
 				q(29196, {	-- To the Sanctuary!
 					sourceQuest = 29195,	-- A Ritual of Flame

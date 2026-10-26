@@ -210,7 +210,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				groups = {
 					q(31854, {	-- Analynn
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -3713,9 +3712,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_6_1_0 },
 				modelScale = 0.2,
 				groups = {
-					i(122226, {	-- Music Roll: Magic
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122226),	-- Music Roll: Magic
 				},
 			}),
 			n(10644, {	-- Mist Howler

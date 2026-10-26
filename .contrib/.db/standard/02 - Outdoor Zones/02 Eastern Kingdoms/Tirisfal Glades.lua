@@ -962,7 +962,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				groups = {
 					o(421151, {	-- Carved Eye
 						coord = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
-						timeline = { ADDED_10_2_5 },
 						groups = {
 							i(212984),	-- Grimoire of the Zealous Observer (CI!)
 						},
@@ -2569,9 +2568,7 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				coord = { 17.6, 67.6, TIRISFAL_GLADES },
 				timeline = { ADDED_6_1_0 },
 				groups = {
-					i(122234, {	-- Music Roll: Faerie Dragon
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122234),	-- Music Roll: Faerie Dragon
 				},
 			}),
 			n(1936, {	-- Farmer Solliden
@@ -2701,12 +2698,8 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				coord = { 56.1, 42.4, TIRISFAL_GLADES },
 				timeline = { ADDED_10_1_7 },
 				groups = {
-					i(4439, {	-- Bruiser Club
-						timeline = { ADDED_10_1_7 },
-					}),
-					i(5975, {	-- Ruffian Belt
-						timeline = { ADDED_10_1_7 },
-					}),
+					i(4439),	-- Bruiser Club
+					i(5975),	-- Ruffian Belt
 				},
 			}),
 			n(50763, {	-- Shadowstalker

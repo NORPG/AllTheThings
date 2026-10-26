@@ -129,7 +129,6 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 				groups = {
 					q(31852, {	-- Steven Lisbane
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),

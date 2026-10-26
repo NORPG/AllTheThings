@@ -113,7 +113,6 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 				groups = {
 					q(31851, {	-- Bill Buckler
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),

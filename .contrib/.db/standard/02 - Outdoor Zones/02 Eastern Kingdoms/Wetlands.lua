@@ -1841,9 +1841,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 				},
 				timeline = { ADDED_3_3_0 },
 				groups = {
-					i(48124, {	-- Razormaw Hatchling (PET!)
-						timeline = { ADDED_3_3_0 },
-					}),
+					i(48124),	-- Razormaw Hatchling (PET!)
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -1961,7 +1959,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
 						isLimited = true,
 					}),
 					i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)

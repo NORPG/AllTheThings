@@ -1021,7 +1021,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(209608, {	-- Delwynna <Monster Hunter>
 				coord = { 64.0, 22.0, DARNASSUS },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { NIGHTELF },
 				groups = {
@@ -1038,7 +1037,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(208619, {	-- Dorac Graves <Tactical Surgeon>
 				coord = { 48.0, 70.6, UNDERCITY },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { UNDEAD },
 				groups = {
@@ -1055,7 +1053,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(208652, {	-- Junni Steelpass <Monster Hunter>
 				coord = { 46.6, 53.6, DUN_MOROGH },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { DWARF, GNOME },
 				groups = {
@@ -1072,7 +1069,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(207637, {	-- Vateya Timberhoof <Monster Hunter>
 				coord = { 46.4, 61.8, MULGORE },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { TAUREN },
 				groups = {
@@ -1089,7 +1085,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(207957, {	-- Vahi Bonesplitter <Monster Hunter>
 				coord = { 53.0, 43.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { ORC, TROLL },
 				groups = {
@@ -1106,7 +1101,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			}),
 			n(203226, {	-- Viktoria Woods <Monster Hunter>
 				coord = { 69.8, 50.0, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
 				classes = { WARRIOR },
 				races = { HUMAN },
 				groups = {
@@ -3476,7 +3470,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			q(83936, {	-- A Lesson in Violence
 				qg = 227673,	-- <Player>'s Squire (Rank 1)
 				sourceQuest = 84416,	-- Inspiration Rank One HQT
-				timeline = { ADDED_1_15_3 },
 				classes = { PALADIN },
 				lvl = 50,
 				groups = {
@@ -3503,7 +3496,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			q(84008, {	-- A Lesson in Grace
 				qg = 227464,	-- <Player>'s Squire (Rank 2)
 				sourceQuest = 84417,	-- Inspiration Rank Two HQT
-				timeline = { ADDED_1_15_3 },
 				classes = { PALADIN },
 				lvl = 50,
 				groups = {
@@ -3513,7 +3505,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			q(84017, {	-- A Time to Kill
 				qg = 227674,	-- <Player>'s Squire (Rank 3)
 				sourceQuest = 84008,	-- A Lesson in Grace
-				timeline = { ADDED_1_15_3 },
 				maps = { EASTERN_PLAGUELANDS },
 				classes = { PALADIN },
 				lvl = 50,
@@ -3528,7 +3519,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 				qg = 227674,	-- <Player>'s Squire (Rank 3)
 				sourceQuest = 84017,	-- A Time to Kill
 				coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
 				classes = { PALADIN },
 				lvl = 50,
 				groups = {
@@ -3546,7 +3536,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 				qg = 227674,	-- <Player>'s Squire (Rank 3)
 				sourceQuest = 84125,	-- Close Enough To Touch
 				coord = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
 				classes = { PALADIN },
 				lvl = 50,
 				groups = {

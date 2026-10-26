@@ -301,9 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						-- Available
 						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
-						i(87545, {	-- Inelava, Spirit of Inebriation [Confirmed by Discord Member on May 4th, 2020 (a screenshot was provided)]
-							timeline = { ADDED_5_0_4 },
-						}),
+						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Discord Member on May 4th, 2020 (a screenshot was provided)]
 						i(144085, {	-- Gao's Keg Tapper
 							timeline = { ADDED_7_1_5 },
 						}),

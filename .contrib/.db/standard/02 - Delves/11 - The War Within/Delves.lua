@@ -237,7 +237,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						{ "n", 234168 },	-- The Underpin ?
 						{ "n", 236626 },	-- The Underpin ??
 					},
-					timeline={ ADDED_11_1_0_SEASONSTART },
 					isWeekly = true,
 				}),
 				n(236626, {	-- The Underpin <A Pretty Big Deal>
@@ -2626,7 +2625,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						},
 						groups = {
 							title(641, {	-- <Name> Bronzebeard
-								timeline = { ADDED_11_2_0_SEASONSTART },
 								collectible = false,
 							}),
 						},

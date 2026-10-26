@@ -2473,12 +2473,8 @@ maproot(KALIMDOR, AZSHARA, {
 				coord = { 45.2, 90.8, AZSHARA },
 				timeline = { REMOVED_4_0_3 },
 				groups = {
-					i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(15729, {	-- Pattern: Chimeric Gloves (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(15751),	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
+					i(15729),	-- Pattern: Chimeric Gloves (RECIPE!)
 				},
 			}),
 			n(14301, {	-- Brinna Valanaar <Bowyer>

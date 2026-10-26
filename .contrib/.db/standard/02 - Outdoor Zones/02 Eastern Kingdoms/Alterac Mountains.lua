@@ -889,7 +889,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 				timeline = { REMOVED_4_0_3 },
 				groups = {
 					i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
 						isLimited = true,
 					}),
 				},

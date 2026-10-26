@@ -531,45 +531,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 					}),
 					n(WEAPONS, {
-						i(188660, {	-- Unchained Gladiator's Barrier
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
+						i(188660),	-- Unchained Gladiator's Barrier
 						i(185200),	-- Unchained Gladiator's Ceremonial Sword
 						i(185203),	-- Unchained Gladiator's Chalice
 						i(185317),	-- Unchained Gladiator's Dory
-						i(188663, {	-- Unchained Gladiator's Focus Staff
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
-						i(188661, {	-- Unchained Gladiator's Gavel
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
+						i(188663),	-- Unchained Gladiator's Focus Staff
+						i(188661),	-- Unchained Gladiator's Gavel
 						i(185199),	-- Unchained Gladiator's Gladius
 						i(185301),	-- Unchained Gladiator's Greataxe
-						i(188662, {	-- Unchained Gladiator's Greatstaff
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
-						i(188668, {	-- Unchained Gladiator's Greatsword
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
+						i(188662),	-- Unchained Gladiator's Greatstaff
+						i(188668),	-- Unchained Gladiator's Greatsword
 						i(185126),	-- Unchained Gladiator's Guard
 						i(185314),	-- Unchained Gladiator's Hacker
 						i(185202),	-- Unchained Gladiator's Knife
 						i(185201, {	-- Unchained Gladiator's Lightbow
 							modID = 44,	-- this item does not use modID 14
 						}),
-						i(188664, {	-- Unchained Gladiator's Mageblade
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
-						i(188666, {	-- Unchained Gladiator's Rifle
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
-						i(188667, {	-- Unchained Gladiator's Ripper
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
+						i(188664),	-- Unchained Gladiator's Mageblade
+						i(188666),	-- Unchained Gladiator's Rifle
+						i(188667),	-- Unchained Gladiator's Ripper
 						i(185316),	-- Unchained Gladiator's Ritual Dagger
-						i(188665, {	-- Unchained Gladiator's Slicer
-							timeline = { ADDED_9_1_0, REMOVED_9_2_0 },
-						}),
+						i(188665),	-- Unchained Gladiator's Slicer
 						i(185125),	-- Unchained Gladiator's Splitter
 						i(185300, {	-- Unchained Gladiator's Vesper
 							modID = 40,	-- this item does not use modID 14

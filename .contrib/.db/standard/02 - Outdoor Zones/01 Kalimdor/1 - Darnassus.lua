@@ -1085,9 +1085,7 @@ maproot(KALIMDOR, DARNASSUS, {
 				coord = { 43.0, 75.8, DARNASSUS },
 				timeline = { ADDED_6_1_0 },
 				groups = {
-					i(122239, {	-- Music Roll: Shalandis Isle
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122239),	-- Music Roll: Shalandis Isle
 				},
 			}),
 		}),
@@ -1171,12 +1169,8 @@ maproot(KALIMDOR, DARNASSUS, {
 				timeline = { ADDED_4_3_0 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(73838, {	-- Mountain Horse (MOUNT!)
-						timeline = { ADDED_4_3_0 },
-					}),
-					i(73839, {	-- Swift Mountain Horse (MOUNT!)
-						timeline = { ADDED_4_3_0 },
-					}),
+					i(73838),	-- Mountain Horse (MOUNT!)
+					i(73839),	-- Swift Mountain Horse (MOUNT!)
 				},
 			}),
 			n(4240, {	-- Caynrus
@@ -1671,19 +1665,15 @@ maproot(KALIMDOR, DARNASSUS, {
 					}),
 					i(64887, {	-- Cape of Darnassus
 						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64888, {	-- Mantle of Darnassus
 						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64886, {	-- Shroud of Darnassus
 						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(67526, {	-- Darnassian Satchel
 						minReputation = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
-						timeline = { ADDED_4_0_3 },
 					}),
 				},
 			}),

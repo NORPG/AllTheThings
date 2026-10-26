@@ -112,7 +112,6 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 				groups = {
 					q(31906, {	-- Kela Grimtotem
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -2758,12 +2757,10 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 				groups = {
 					-- #if BEFORE 4.0.3
 					i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
 						isLimited = true,
 					}),
 					-- #endif
 					i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
 						isLimited = true,
 					}),
 				},

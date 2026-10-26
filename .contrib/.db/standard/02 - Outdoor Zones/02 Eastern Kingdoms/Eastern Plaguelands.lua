@@ -1570,7 +1570,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				groups = {
 					q(31911, {	-- Deiza Plaguehorn
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -5561,9 +5560,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				description = "Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",
 				timeline = { ADDED_4_0_3 },
 				groups = {
-					i(66076, {	-- Mr. Grubbs (PET!)
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(66076),	-- Mr. Grubbs (PET!)
 				},
 			}),
 			-- #if BEFORE 4.0.3

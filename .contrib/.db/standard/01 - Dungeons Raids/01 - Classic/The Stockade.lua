@@ -217,34 +217,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				description = "This is a rare that was not always present.",
 				timeline = { REMOVED_4_0_1 },
 				groups = {
-					i(2942, {	-- Iron Knuckles
-						timeline = { REMOVED_4_0_1 },
-					}),
-					i(3228, {	-- Jimmied Handcuffs
-						timeline = { REMOVED_4_0_1 },
-					}),
-					i(2941, {	-- Prison Shank
-						timeline = { REMOVED_4_0_1 },
-					}),
+					i(2942),	-- Iron Knuckles
+					i(3228),	-- Jimmied Handcuffs
+					i(2941),	-- Prison Shank
 				},
 			}),
 			n(1666, {	-- Kam Deepfury
 				timeline = { REMOVED_4_0_1 },
 				groups = {
-					i(3640, {	-- Head of Deepfury
-						timeline = { REMOVED_4_0_1 },
-					}),
-					i(2280, {	-- Kam's Walking Stick
-						timeline = { REMOVED_4_0_1 },
-					}),
+					i(3640),	-- Head of Deepfury
+					i(2280),	-- Kam's Walking Stick
 				},
 			}),
 			n(1663, {	-- Dextren Ward
 				timeline = { REMOVED_4_0_1 },
 				groups = {
-					i(3628, {	-- Hand of Dextren Ward
-						timeline = { REMOVED_4_0_1 },
-					}),
+					i(3628),	-- Hand of Dextren Ward
 				},
 			}),
 			n(1717, {	-- Hamhock
@@ -253,9 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(1696, {	-- Targorr the Dread
 				timeline = { REMOVED_4_0_1 },
 				groups = {
-					i(3630, {	-- Head of Targorr
-						timeline = { REMOVED_4_0_1 },
-					}),
+					i(3630),	-- Head of Targorr
 				},
 			}),
 			n(1716, {	-- Bazil Thredd
@@ -268,27 +254,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					-- #endif
-					i(2926, {	-- Head of Bazil Thredd
-						timeline = { REMOVED_4_0_1 },
-					}),
+					i(2926),	-- Head of Bazil Thredd
 				},
 			}),
 			e(466, {	-- Randolph Moloch
 				creatureID = 46383,
 				timeline = { ADDED_4_0_1 },
 				groups = {
-					i(63346, {	-- Wicked Dagger
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(63345, {	-- Noble's Robe
-						timeline = { ADDED_4_0_1 },
-					}),
+					i(63346),	-- Wicked Dagger
+					i(63345),	-- Noble's Robe
 					i(151077, {	-- Cast Iron Waistplate
 						timeline = { ADDED_7_3_0 },
 					}),
-					i(63344, {	-- Standard Issue Prisoner Shoes
-						timeline = { ADDED_4_0_1 },
-					}),
+					i(63344),	-- Standard Issue Prisoner Shoes
 					i(132570, {	-- Stolen Guard's Chain Boots
 						timeline = { ADDED_7_0_3 },
 					}),

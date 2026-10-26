@@ -1324,7 +1324,6 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				sourceQuests = { 65305 },	-- The Way Forwards
 				provider = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				coord = { 35.0, 64.8, ZERETH_MORTIS },
-				timeline = { ADDED_9_2_0},
 				groups = {
 					i(191139, {	-- Tribute of the Enlightened Elders
 						sym = {

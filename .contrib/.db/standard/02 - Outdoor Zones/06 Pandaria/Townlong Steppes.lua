@@ -175,7 +175,6 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 				groups = {
 					q(31991, {	-- Grand Master Zusshi
 						sourceAchievement = 6606,	-- Taming Pandaria
-						timeline = { ADDED_5_0_4 },
 						isDaily = true,
 						groups = {
 							i(89125),	-- Sack of Pet Supplies

@@ -30,7 +30,6 @@ root(ROOTS.Zones, {
 								62474,	-- Mechanical Battler of Outland
 								62475,	-- Undead Battler of Outland
 							}},
-							timeline = { ADDED_12_1_0 },
 							groups = { i(270191) },	-- Lil'Kruul's Hilt (PET!)
 						})),
 						petbattle(ach(62466)),	-- Aquatic Battler of Outland

@@ -16,18 +16,10 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 			ach(9906),	-- Alt-ernative Lifestyle (5)
 			ach(9911),	-- Where's the Mailbox? (1)
 		}),
-		container(122338, {	-- Ancient Heirloom Armor Casing
-			timeline = { ADDED_6_1_0 },
-		}),
-		container(122339, {	-- Ancient Heirloom Scabbard
-			timeline = { ADDED_6_1_0 },
-		}),
-		container(122340, {	-- Timeworn Heirloom Armor Casing
-			timeline = { ADDED_6_1_0 },
-		}),
-		container(122341, {	-- Timeworn Heirloom Scabbard
-			timeline = { ADDED_6_1_0 },
-		}),
+		container(122338),	-- Ancient Heirloom Armor Casing
+		container(122339),	-- Ancient Heirloom Scabbard
+		container(122340),	-- Timeworn Heirloom Armor Casing
+		container(122341),	-- Timeworn Heirloom Scabbard
 		container(151614, {	-- Weathered Heirloom Armor Casing
 			timeline = { ADDED_7_2_5 },
 		}),

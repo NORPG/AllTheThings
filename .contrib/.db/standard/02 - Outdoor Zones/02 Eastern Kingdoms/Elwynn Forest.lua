@@ -1930,9 +1930,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 						coord = { 31.6, 16.7, NORTHSHIRE_VALLEY },
 						timeline = { ADDED_4_0_3 },
 						groups = {
-							i(56147, {	-- Fatcandle Bag
-								timeline = { ADDED_4_0_3 },
-							}),
+							i(56147),	-- Fatcandle Bag
 							i(2055, {	-- Small Wooden Hammer
 								timeline = { ADDED_10_1_7 },
 							}),
@@ -2118,7 +2116,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				groups = {
 					q(31693, {	-- Julia Stevens
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),

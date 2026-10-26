@@ -813,9 +813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				groups = {
 					i(9277),	-- Techbot's Memory Core
 					-- #if BEFORE 10.1.7
-					i(9444, {	-- Techbot CPU Shell
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(9444),	-- Techbot CPU Shell
 					-- #endif
 				},
 			}),

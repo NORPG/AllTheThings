@@ -586,15 +586,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 					groups = {
-						i(9378, {	-- Shovelphlange's Mining Axe
-							timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(9375, {	-- Expert Goldminer's Helmet
-							timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(9382, {	-- Tromping Miner's Boots
-							timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(9378),	-- Shovelphlange's Mining Axe
+						i(9375),	-- Expert Goldminer's Helmet
+						i(9382),	-- Tromping Miner's Boots
 					},
 				}),
 			}),

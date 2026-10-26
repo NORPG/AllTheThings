@@ -129,9 +129,7 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				timeline = { ADDED_7_0_3 },
 				classes = { PALADIN },
 				groups = {
-					i(139623, {	-- Timolain's Phylactery
-						timeline = { ADDED_7_0_3 },
-					}),
+					i(139623),	-- Timolain's Phylactery
 				},
 			}),
 			i(139624, {	-- Shard of Darkness

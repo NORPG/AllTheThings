@@ -41,9 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				ach(20589, {	-- Tempered Hero: The War Within Season 1
 					timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 					groups = {
-						title(548, {	-- <Name> the Tempered Hero
-							timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
-						}),
+						title(548),	-- <Name> the Tempered Hero
 					},
 				}),
 				ach(20586, {	-- Keystone Hero: Ara-Kara, City of Echoes
@@ -205,9 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				ach(42174, {	-- Unbound Hero: The War Within Season Three
 					timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					groups = {
-						title(637, {	-- <Name> the Unbound Hero
-							timeline = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
-						}),
+						title(637),	-- <Name> the Unbound Hero
 					},
 				}),
 				ach(20586, {	-- Keystone Hero: Ara-Kara, City of Echoes

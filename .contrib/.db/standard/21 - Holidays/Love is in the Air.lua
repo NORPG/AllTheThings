@@ -403,7 +403,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					groups = {
 						q(78912, {
 							name = "When donating to the Gala (daily)",
-							timeline = { ADDED_10_2_5 },
 							collectible = false,
 							isDaily = true,
 						}),
@@ -432,9 +431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					provider = { "i", 116648 },	-- Manufactured Love Prism
 					timeline = { ADDED_6_0_2 },
 					groups = {
-						i(116651, {	-- True Love Prism (TOY!)
-							timeline = { ADDED_6_0_2 },
-						}),
+						i(116651),	-- True Love Prism (TOY!)
 					},
 				}),
 				ach(9393, {	-- Beacon of Love (25)

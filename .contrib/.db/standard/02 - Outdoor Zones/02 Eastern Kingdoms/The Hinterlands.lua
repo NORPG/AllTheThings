@@ -156,7 +156,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 				groups = {
 					q(31910, {	-- David Kosse
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -2049,7 +2048,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 				classes = { PALADIN },
 				groups = {
 					i(220165, {	-- Rune of Wrath
-						timeline = { ADDED_1_15_1 },
 						classes = { PALADIN },
 						groups = {
 							recipe(429249),	-- Engrave Helm - Wrath

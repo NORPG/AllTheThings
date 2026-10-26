@@ -118,7 +118,6 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				groups = {
 					q(31913, {	-- Everessa
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),

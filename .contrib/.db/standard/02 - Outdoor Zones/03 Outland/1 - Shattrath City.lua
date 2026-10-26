@@ -617,19 +617,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					requireSkill = COOKING,
 					groups = {
 						crit(5702, {	-- Revenge is Tasty
-							timeline = { ADDED_3_0_2 },
 							_quests = { 11377 },
 						}),
 						crit(5703, {	-- Super Hot Stew
-							timeline = { ADDED_3_0_2 },
 							_quests = { 11379 },
 						}),
 						crit(5704, {	-- Manalicious
-							timeline = { ADDED_3_0_2 },
 							_quests = { 11380 },
 						}),
 						crit(5705, {	-- Soup for the Soul
-							timeline = { ADDED_3_0_2 },
 							_quests = { 11381 },
 						}),
 					},
@@ -690,7 +686,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						q(31925, {	-- Morulu The Elder
 							sourceAchievement = 6604,	-- Taming Outland
-							timeline = { ADDED_5_0_4 },
 							isDaily = true,
 						}),
 					},

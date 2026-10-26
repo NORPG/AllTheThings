@@ -918,20 +918,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			-- Danny Donkey: Glyph of Angels got readded in 7.2.5 with new ID as a WotLK craft.
 			-- #if ANYCLASSIC
 			-- Danny Donkey: Glyph of Burning Anger became a Cata craft on retail at an unknown point after MoP
-			i(80588, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Burning Anger
+			i(80588),					-- Glyph of Burning Anger
 			-- Danny Donkey: Glyph of Evaporation became a vanilla craft on retail at an unknown point after MoP
 			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(104105, {timeline={ ADDED_5_4_0 }})),	-- Glyph of Evaporation
 			-- #endif
 			i(42964, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Garrote
 			-- #if ANYCLASSIC
 			-- Danny Donkey: This glyph became a WotLK craft on retail at an unknown point after MoP
-			i(87883, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Honor
+			i(87883),					-- Glyph of Honor
 			-- #endif
 			i(42744, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Ice Block
 			-- #if ANYCLASSIC
 			-- Danny Donkey: These glyphs became Cata crafts on retail at an unknown point after MoP
-			i(87392, {timeline={ ADDED_5_0_4 }}),					-- Glyph of Shadowy Friends
-			i(79538, {timeline={ ADDED_5_0_4 }}),					-- Glyph of the Heavens
+			i(87392),					-- Glyph of Shadowy Friends
+			i(79538),					-- Glyph of the Heavens
 			-- #endif
 			i(43350, {timeline={ ADDED_3_0_2}}),					-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
 			i(43359, {timeline={ ADDED_3_0_2, REMOVED_7_0_3 }}),	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]

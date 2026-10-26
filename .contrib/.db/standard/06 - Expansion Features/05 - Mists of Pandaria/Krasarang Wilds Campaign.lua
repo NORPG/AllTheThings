@@ -690,7 +690,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							{ 50.4, 48.4, 502 },	-- Dalaran (Scenario)
 							{ 50.5, 48.3, 501 },	-- Dalaran (Scenario)
 						},
-						timeline = { ADDED_5_1_0 },
 						isBreadcrumb = true,
 					}),
 					q(32406, {	-- A Tactical Assault

@@ -2433,12 +2433,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					isDaily = true,
 					timeline = { ADDED_2_1_0, REMOVED_4_1_0 },
 					groups = {
-						i(32941, {	-- Corruptor's Signet
-							timeline = { ADDED_2_1_0, REMOVED_4_1_0 },
-						}),
-						i(32942, {	-- Ring of the Overseer
-							timeline = { ADDED_2_1_0, REMOVED_4_1_0 },
-						}),
+						i(32941),	-- Corruptor's Signet
+						i(32942),	-- Ring of the Overseer
 					},
 				})),
 				n(18693, {	-- Speaker Mar'grom

@@ -42,9 +42,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 		groups = {
 			-- #if AFTER 4.0.1
 			n(ACHIEVEMENTS, {
-				ach(4887, {	-- Tripping the Rifts
-					timeline = { ADDED_3_3_0, REMOVED_4_0_3 },
-				}),
+				ach(4887),	-- Tripping the Rifts
 			}),
 			n(QUESTS, {
 				-- Phase One Quests

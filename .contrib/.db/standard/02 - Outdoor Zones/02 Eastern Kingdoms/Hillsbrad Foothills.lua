@@ -3405,9 +3405,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			n(2684, {	-- Rizz Loosebolt <Engineering Supplies> (Alterac Mountains)
 				timeline = { REMOVED_4_0_3 },
 				groups = {
-					i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(13308),	-- Schematic: Ice Deflector (RECIPE!)
 				},
 			}),
 			-- #endif

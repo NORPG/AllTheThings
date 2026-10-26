@@ -246,12 +246,10 @@ maproot(PANDARIA, {
 			petbattles({
 				n(66730, {	-- Hyuna of the Shrines <Grand Master Pet Tamer>
 					coord = { 48.0, 54.0, THE_JADE_FOREST },
-					timeline = { ADDED_5_0_4 },
 					petBattleLvl = 25,
 					groups = {
 						q(31953, {	-- Grand Master Hyuna
 							sourceAchievement = 6606,	-- Taming Pandaria
-							timeline = { ADDED_5_0_4 },
 							isDaily = true,
 							groups = {
 								i(89125),	-- Sack of Pet Supplies
@@ -687,7 +685,6 @@ maproot(PANDARIA, {
 					},
 					qg = 54870,	-- General Nazgrim
 					coord = { 48.6, 70.8, ORGRIMMAR },
-					timeline = { ADDED_5_0_4 },
 					maps = { DUROTAR },
 					races = HORDE_ONLY,
 					groups = {
@@ -2825,12 +2822,10 @@ maproot(PANDARIA, {
 				}),
 				warchiefscommand(q(29611, {	-- The Art of War (Nobody)
 					description = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
-					timeline = { ADDED_5_0_4 },
 					races = HORDE_ONLY,
 				})),
 				warchiefscommand(q(29612, {	-- The Art of War (Veteran)
 					description = "Players who have completed Vashj'ir will receive this version of The Art of War.",
-					timeline = { ADDED_5_0_4 },
 					races = HORDE_ONLY,
 				})),
 				q(29933, {	-- The Bees' Knees
@@ -3030,7 +3025,6 @@ maproot(PANDARIA, {
 				q(29547, {	-- The King's Command
 					qg = 1750,	-- Grand Admiral Jes-Tereth
 					coord = { 85.6, 32.8, STORMWIND_CITY },
-					timeline = { ADDED_5_0_4 },
 					races = ALLIANCE_ONLY,
 					isBreadcrumb = true,
 				}),

@@ -3003,9 +3003,7 @@ maproot(KALIMDOR, DARKSHORE, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
-					i(46325, {	-- Withers (PET!)
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(46325),	-- Withers (PET!)
 				},
 			}),
 			n(43436, {	-- Ceriale Duskwhisper <Clothier>

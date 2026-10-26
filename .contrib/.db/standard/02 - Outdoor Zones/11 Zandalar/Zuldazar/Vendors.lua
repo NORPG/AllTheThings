@@ -196,9 +196,7 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 				coord = { 76.4, 49.0, ZULDAZAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(9144, {	-- Wildvine Potion
-						timeline = { ADDED_8_0_1 },
-					}),
+					i(9144),	-- Wildvine Potion
 				},
 			}),
 			n(161590, {	-- Jinxy Blastwheel <Profession Liason>

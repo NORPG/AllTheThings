@@ -104,18 +104,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						timeline = { REMOVED_5_0_4 },
 					}),
 					-- #endif
-					i(42511, {	-- Savage Gladiator's Baton of Light
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(42448, {	-- Savage Gladiator's Touch of Defeat
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(42517, {	-- Savage Gladiator's Piercing Touch
-						timeline = { ADDED_3_0_2 },
-					}),
-					i(42214, {	-- Savage Gladiator's Waraxe
-						timeline = { ADDED_3_0_2 },
-					}),
+					i(42511),	-- Savage Gladiator's Baton of Light
+					i(42448),	-- Savage Gladiator's Touch of Defeat
+					i(42517),	-- Savage Gladiator's Piercing Touch
+					i(42214),	-- Savage Gladiator's Waraxe
 					-- Other Savage Gladiator weapons have never been implemented
 					i(42557, {	-- Savage Gladiator's Barrier
 						timeline = { CREATED_3_0_2, ADDED_7_2_0 },

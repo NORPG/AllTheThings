@@ -885,10 +885,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						}),
 						ach(17547, {	-- The Lick King
 							provider = { "i", 211271 },	-- Arfus (PET)
-							timeline = { ADDED_10_1_7 },
 						}),
 						i(211271, {	-- Arfus (PET)
-							timeline = { ADDED_10_1_7 },
 							-- #if AFTER 11.2.5
 							description = "While the first attempt each day has a greatly increased drop chance, this item can be farmed using multiple characters.",
 							-- #endif
@@ -974,10 +972,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						}),
 						i(117356, { timeline = { ADDED_6_0_2 } }),	-- The Horseman's Sinister Slicer
 						i(117355, { timeline = { ADDED_6_0_2 } }),	-- The Horseman's Horrific Hood
-						i(208485, { timeline = { ADDED_10_1_7 } }),	-- The Scarlet Key
+						i(208485),	-- The Scarlet Key
 						i(208680, {	-- Windborne Velocidrake: Hallow's End Armor (MM!)
 							description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.",
-							timeline = { ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1089,9 +1086,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				ach(980, {	-- The Horseman's Reins
 					provider = { "i", 37012 },	-- The Horseman's Reins
 					filterID = MOUNTS,
-					timeline = { ADDED_2_2_2 },
 				}),
-				i(37012, { timeline = { ADDED_2_2_2 } }),	-- Headless Horseman's Mount (MOUNT!)
+				i(37012),	-- Headless Horseman's Mount (MOUNT!)
 				-- #endif
 				-- Legion+
 				i(143901, { timeline = { ADDED_7_0_3 } }),	-- Band of the Petrified Pumpkin
@@ -1155,8 +1151,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				i(34074, { timeline = { REMOVED_3_0_2 } }),	-- Witches Band
 				-- #endif
 				-- #if BEFORE WRATH
-				i(33154, { timeline = { ADDED_2_2_2 } }),	-- Sinister Squashling (PET!)
-				i(33292, { timeline = { ADDED_2_2_2 } }),	-- Hallowed Helm
+				i(33154),	-- Sinister Squashling (PET!)
+				i(33292),	-- Hallowed Helm
 				i(37011, {	-- Magic Broom (MOUNT!)
 					collectible = false,
 					timeline = { ADDED_2_4_3 },
@@ -1171,7 +1167,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 				-- #endif
 				i(TRICKY_TREAT, { timeline = { ADDED_2_4_3 } }),
-				i(34068, { timeline = { ADDED_2_2_2 } }),	-- Weighted Jack-o'-Lantern
+				i(34068),	-- Weighted Jack-o'-Lantern
 			},
 		}),
 		petbattle(filter(BATTLE_PETS, {
@@ -1501,7 +1497,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					candybucket(54709, {	-- Candy Bucket - Zuldazar, Dazar'alor, Horde
 						provider = { "o", 316754 },	-- Candy Bucket, The Great Seal
 						coord = { 49.6, 82.3, THE_GREAT_SEAL },
-						timeline = { ADDED_8_0_1 },
 						maps = {
 							HALL_OF_CHRONICLERS,
 							DAZARALOR,
@@ -3286,7 +3281,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_8_0 },
 				isYearly = true,
 				lvl = lvlsquish(10, 10, 1),
 				groups = {
@@ -3370,7 +3364,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_8_0 },
 				isYearly = true,
 				lvl = lvlsquish(10, 10, 1),
 				groups = {
@@ -4185,7 +4178,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			groups = {
 				n(96323, {	-- Arachnis
 					description = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",
-					timeline = { ADDED_6_2_2 },
 					questID = 39617,
 					isDaily = true,
 					coords = {
@@ -4282,7 +4274,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}))),
 		n(TREASURES, {
 			o(180523, {	-- Apple Bob
-				timeline = { ADDED_1_8_0 },
 				groups = { i(20516) },	-- Bobbing Apple
 			}),
 			o(691654, {	-- Ghost Gear

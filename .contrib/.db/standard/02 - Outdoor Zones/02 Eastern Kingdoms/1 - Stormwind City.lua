@@ -5221,9 +5221,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(104324, {	-- Foot Ball (TOY!)
 						timeline = { ADDED_5_4_0 },
 					}),
-					applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
-						timeline = { ADDED_4_1_0 },
-					})),
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69895)),	-- Green Balloon Toy (TOY!)
 					i(48601, {	-- Red Rider Air Rifle Ammo
 						timeline = { ADDED_4_0_3 },
 					}),
@@ -5245,9 +5243,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 						timeline = { ADDED_3_1_0 },
 					}),
-					applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
-						timeline = { ADDED_4_1_0 },
-					})),
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69896)),	-- Yellow Balloon Toy (TOY!)
 					i(44481),	-- Grindgear Toy Gorilla
 					i(44601),	-- Heavy Copper Racer
 					i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
@@ -5291,30 +5287,14 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				timeline = { ADDED_4_0_1 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(67396, {	-- "Carriage - Christina" Precious Metal Bag
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67389, {	-- "Carriage - Exclusive" Enchanting Evening Purse
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67392, {	-- "Carriage - Exclusive" Gem Studded Clutch
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67393, {	-- "Carriage - Going Green" Herb Tote Bag
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67390, {	-- "Carriage - Maddy" High Tech Bag
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67395, {	-- "Carriage - Meeya" Leather Bag
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67394, {	-- "Carriage - Xandera" Student's Satchel
-						timeline = { ADDED_4_0_1 },
-					}),
-					i(67387, {	-- "Carriage" Signature Bag
-						timeline = { ADDED_4_0_1 },
-					}),
+					i(67396),	-- "Carriage - Christina" Precious Metal Bag
+					i(67389),	-- "Carriage - Exclusive" Enchanting Evening Purse
+					i(67392),	-- "Carriage - Exclusive" Gem Studded Clutch
+					i(67393),	-- "Carriage - Going Green" Herb Tote Bag
+					i(67390),	-- "Carriage - Maddy" High Tech Bag
+					i(67395),	-- "Carriage - Meeya" Leather Bag
+					i(67394),	-- "Carriage - Xandera" Student's Satchel
+					i(67387),	-- "Carriage" Signature Bag
 				},
 			}),
 			n(1314, {	-- Duncan Cullen <Light Armor Merchant>
@@ -6583,7 +6563,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				-- #endif
 				groups = {
 					i(38579, {	-- Venomous Tome
-						timeline = { ADDED_3_0_2 },
 						isLimited = true,
 					}),
 				},
@@ -6718,99 +6697,75 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(87795, {	-- Black Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87796, {	-- Blue Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91009, {	-- Blue Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87797, {	-- Brown Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91005, {	-- Brown Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87802, {	-- Great Black Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91011, {	-- Great Black Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87803, {	-- Great Blue Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91013, {	-- Great Blue Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87804, {	-- Great Brown Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91014, {	-- Great Brown Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87801, {	-- Great Green Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91012, {	-- Great Green Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87805, {	-- Great Purple Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91015, {	-- Great Purple Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(82811, {	-- Great Red Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91010, {	-- Great Red Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(82765, {	-- Green Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91004, {	-- Green Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87799, {	-- Purple Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91006, {	-- Purple Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					i(87800, {	-- Red Dragon Turtle (MOUNT!) (NON-P)
-						timeline = { ADDED_5_0_4 },
 						races = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 					}),
 					i(91007, {	-- Red Dragon Turtle (MOUNT!) (PANDA)
-						timeline = { ADDED_5_0_4 },
 						races = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 				},
@@ -7182,7 +7137,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				groups = {
 					i(226500),	-- Chipped Drakefire Amulet
 					i(228222, {	-- Handbook of Valor of Azeroth
-						timeline = { ADDED_1_15_3 },
 						spellID = 461475,	-- Valor of Azeroth
 						f = RECIPES,
 					}),

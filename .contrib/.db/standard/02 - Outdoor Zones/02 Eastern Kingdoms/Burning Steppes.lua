@@ -110,7 +110,6 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 				groups = {
 					q(31914, {	-- Durin Darkhammer
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -2134,9 +2133,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 				coord = { 46.9, 44.6, BURNING_STEPPES },
 				timeline = { ADDED_7_1_5 },
 				groups = {
-					i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
-						timeline = { ADDED_7_1_5 },
-					}),
+					i(142346),	-- Plans: Bleakwood Hew (RECIPE!)
 					i(256331, {	-- Shadowforge Lamppost (DECOR!)
 						timeline = { ADDED_11_2_7 },
 					}),

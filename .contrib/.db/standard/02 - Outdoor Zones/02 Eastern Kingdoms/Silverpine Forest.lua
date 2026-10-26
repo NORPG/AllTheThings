@@ -1647,12 +1647,8 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				coord = { 67.6, 24.4, SILVERPINE_FOREST },
 				timeline = { REMOVED_4_0_3 },
 				groups = {
-					i(4439, {	-- Bruiser Club
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(5975, {	-- Ruffian Belt
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(4439),	-- Bruiser Club
+					i(5975),	-- Ruffian Belt
 				},
 			}),
 			-- #endif

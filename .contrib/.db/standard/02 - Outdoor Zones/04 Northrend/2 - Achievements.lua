@@ -21,7 +21,6 @@ maproot(NORTHREND, {
 						60953,	-- Mechanical Battler of Northrend
 						60954,	-- Undead Battler of Northrend
 					}},
-					timeline = { ADDED_12_0_0 },
 					groups = { i(222967) },	-- Webbers (PET!)
 				})),
 				petbattle(ach(60942)),	-- Aquatic Battler of Northrend

@@ -442,32 +442,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						timeline = { ADDED_4_0_3, REMOVED_5_0_4 },
 					}),
 					-- #endif
-					i(14540, {	-- Taragaman the Hungerer's Heart
-						timeline = { REMOVED_5_0_4 },
-					}),
-					i(14145, {	-- Cursed Felblade
-						timeline = { REMOVED_5_0_4 },
-					}),
-					i(14149, {	-- Subterranean Cape
-						timeline = { REMOVED_5_0_4 },
-					}),
-					i(14148, {	-- Crystalline Cuffs
-						timeline = { REMOVED_5_0_4 },
-					}),
+					i(14540),	-- Taragaman the Hungerer's Heart
+					i(14145),	-- Cursed Felblade
+					i(14149),	-- Subterranean Cape
+					i(14148),	-- Crystalline Cuffs
 				},
 			}),
 			n(11518, {	-- Jergosh the Invoker
 				timeline = { REMOVED_5_0_4 },
 				groups = {
-					i(14151, {	-- Chanting Blade
-						timeline = { REMOVED_5_0_4 },
-					}),
-					i(14150, {	-- Robe of Evocation
-						timeline = { REMOVED_5_0_4 },
-					}),
-					i(14147, {	-- Cavedweller Bracers
-						timeline = { REMOVED_5_0_4 },
-					}),
+					i(14151),	-- Chanting Blade
+					i(14150),	-- Robe of Evocation
+					i(14147),	-- Cavedweller Bracers
 				},
 			}),
 			n(11519, {	-- Bazzalan
@@ -482,18 +468,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				creatureID = 61408,
 				timeline = { ADDED_5_0_4 },
 				groups = {
-					i(82880, {	-- Fang of Adarogg
-						timeline = { ADDED_5_0_4 },
-					}),
-					i(82879, {	-- Collarspike Bracers
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82880),	-- Fang of Adarogg
+					i(82879),	-- Collarspike Bracers
 					i(151422, {	-- Bonecoal Waistguard
 						timeline = { ADDED_7_3_0 },
 					}),
-					i(82772, {	-- Snarlmouth Leggings
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82772),	-- Snarlmouth Leggings
 					i(151421, {	-- Scorched Blazehound Boots
 						timeline = { ADDED_7_3_0 },
 					}),
@@ -503,36 +483,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				creatureID = 61412,
 				timeline = { ADDED_5_0_4 },
 				groups = {
-					i(82882, {	-- Dark Ritual Cape
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82882),	-- Dark Ritual Cape
 					i(132551, {	-- Dark Shaman's Jerkin
 						timeline = { ADDED_7_0_3 },
 					}),
-					i(82877, {	-- Grasp of the Broken Totem
-						timeline = { ADDED_5_0_4 },
-					}),
-					i(82881, {	-- Cuffs of Black Elements
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82877),	-- Grasp of the Broken Totem
+					i(82881),	-- Cuffs of Black Elements
 				},
 			}),
 			e(696, {	-- Slagmaw
 				creatureID = 61463,
 				timeline = { ADDED_5_0_4 },
 				groups = {
-					i(82878, {	-- Fireworm Robes
-						timeline = { ADDED_5_0_4 },
-					}),
-					i(82885, {	-- Flameseared Carapace
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82878),	-- Fireworm Robes
+					i(82885),	-- Flameseared Carapace
 					i(132552, {	-- Chitonous Bindings
 						timeline = { ADDED_7_0_3 },
 					}),
-					i(82884, {	-- Chitonous Bracers
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82884),	-- Chitonous Bracers
 				},
 			}),
 			e(697, {	-- Lava Guard Gordoth
@@ -540,24 +508,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				timeline = { ADDED_5_0_4 },
 				groups = {
 					ach(629),	-- Ragefire Chasm
-					ach(5038, {	-- Ragefire Chasm Guild Run
-						timeline = { ADDED_5_0_4 },
-					}),
-					i(82888, {	-- Heartboiler Staff
-						timeline = { ADDED_5_0_4 },
-					}),
-					i(82883, {	-- Bloodcursed Felblade
-						timeline = { ADDED_5_0_4 },
-					}),
+					ach(5038),	-- Ragefire Chasm Guild Run
+					i(82888),	-- Heartboiler Staff
+					i(82883),	-- Bloodcursed Felblade
 					i(151425, {	-- Gordoth's Crushers
 						timeline = { ADDED_7_3_0 },
 					}),
 					i(151424, {	-- Belt of Boundless Fury
 						timeline = { ADDED_7_3_0 },
 					}),
-					i(82886, {	-- Gorewalker Treads
-						timeline = { ADDED_5_0_4 },
-					}),
+					i(82886),	-- Gorewalker Treads
 				},
 			}),
 		},

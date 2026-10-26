@@ -2161,19 +2161,15 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(64915, {	-- Cape of Silvermoon
 							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							timeline = { ADDED_4_0_3 },
 						}),
 						i(64916, {	-- Mantle of Silvermoon
 							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							timeline = { ADDED_4_0_3 },
 						}),
 						i(64914, {	-- Shroud of Silvermoon
 							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							timeline = { ADDED_4_0_3 },
 						}),
 						i(67535, {	-- Silvermoon Satchel
 							minReputation = { FACTION_SILVERMOON_CITY, REVERED },	-- Silvermoon City, Revered.
-							timeline = { ADDED_4_0_3 },
 						}),
 					},
 				}),

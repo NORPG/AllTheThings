@@ -304,7 +304,6 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					q(77679, {	-- To Soridormi's Aid
 						provider = { "n", 197574 },	-- Mairadormi
 						coord = { 72.5, 47.4, VALDRAKKEN },
-						timeline = { ADDED_10_1_5 },
 						lockCriteria = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
 						isBreadcrumb = true,
 						DisablePartySync = true,	-- TODO: confirm with character who has 77680 incomplete

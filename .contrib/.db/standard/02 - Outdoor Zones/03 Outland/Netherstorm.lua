@@ -2131,9 +2131,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(29364),	-- Brown Rabbit (PET!)
 						i(8490),	-- Siamese Cat (PET!)
 						i(10392),	-- Crimson Snake (PET!)
-						i(29363, {	-- Mana Wyrmling (PET!)
-							timeline = { ADDED_2_0_3},
-						}),
+						i(29363),	-- Mana Wyrmling (PET!)
 						i(8495),	-- Senegal (PET!)
 						i(29902),	-- Red Moth (PET!)
 						i(10393),	-- Undercity Cockroach (PET!)

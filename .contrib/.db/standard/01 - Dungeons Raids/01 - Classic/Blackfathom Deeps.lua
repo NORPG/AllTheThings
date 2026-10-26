@@ -503,16 +503,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				timeline = { REMOVED_6_0_2 },
 				races = HORDE_ONLY,
 				groups = {
-					i(16762, {	-- Fathom Core
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(16762),	-- Fathom Core
 					n(12876, {	-- Baron Aquanis
 						description = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
-						timeline = { REMOVED_6_0_2 },
 						groups = {
-							i(16782, {	-- Strange Water Globe
-								timeline = { REMOVED_6_0_2 },
-							}),
+							i(16782),	-- Strange Water Globe
 						},
 					}),
 				},
@@ -608,15 +603,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				creatureID = 74505,
 				timeline = { ADDED_6_0_2 },
 				groups = {
-					i(120164, {	-- Thruk's Heavy Duty Fishing Pole
-						timeline = { ADDED_6_0_2 },
-					}),
-					i(120165, {	-- Thruk's Fillet Knife
-						timeline = { ADDED_6_0_2 },
-					}),
-					i(120163, {	-- Thruk's Fishing Rod
-						timeline = { ADDED_6_0_2 },
-					}),
+					i(120164),	-- Thruk's Heavy Duty Fishing Pole
+					i(120165),	-- Thruk's Fillet Knife
+					i(120163),	-- Thruk's Fishing Rod
 					i(151437, {	-- Hook Charm Necklace
 						timeline = { ADDED_7_3_0 },
 					}),
@@ -641,12 +630,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				creatureID = 74988,
 				timeline = { ADDED_6_0_2 },
 				groups = {
-					i(120167, {	-- Bloody Twilight Cloak
-						timeline = { ADDED_6_0_2 },
-					}),
-					i(120166, {	-- Gorestained Garb
-						timeline = { ADDED_6_0_2 },
-					}),
+					i(120167),	-- Bloody Twilight Cloak
+					i(120166),	-- Gorestained Garb
 				},
 			}),
 			e(437, {	-- Twilight Lord Bathiel
@@ -671,9 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				timeline = { ADDED_6_0_2 },
 				groups = {
 					ach(632),	-- Blackfathom Deeps
-					ach(5041, {	-- Blackfathom Deeps Guild Run
-						timeline = { ADDED_6_0_2 },
-					}),
+					ach(5041),	-- Blackfathom Deeps Guild Run
 					i(6909),	-- Strike of the Hydra
 					i(6911),	-- Moss Cinch
 					i(132553, {	-- Algae-Twined Waistcord

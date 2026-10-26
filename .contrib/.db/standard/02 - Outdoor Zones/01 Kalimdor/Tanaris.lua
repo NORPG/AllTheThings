@@ -3587,15 +3587,10 @@ maproot(KALIMDOR, TANARIS, {
 				timeline = { ADDED_4_0_3 },
 				groups = {
 					i(37915, {	-- Pattern: Dress Shoes (RECIPE!)
-						timeline = { ADDED_4_0_3 },
 						isLimited = true,
 					}),
-					i(38327, {	-- Pattern: Haliscan Jacket (RECIPE!)
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(38328, {	-- Pattern: Haliscan Pantaloons (RECIPE!)
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(38327),	-- Pattern: Haliscan Jacket (RECIPE!)
+					i(38328),	-- Pattern: Haliscan Pantaloons (RECIPE!)
 				},
 			}),
 			-- #if AFTER TBC

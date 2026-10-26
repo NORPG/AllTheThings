@@ -384,43 +384,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 									15223,	-- Feeling It
 									15217,	-- Maniac on the Dance Floor
 								}},
-								timeline = { ADDED_9_2_0 },
 								groups = {
-									i(187689, {	-- Dance Dance Darkmoon (TOY!)
-										timeline = { ADDED_9_2_0 },
-									}),
+									i(187689),	-- Dance Dance Darkmoon (TOY!)
 								},
 							}),
-							ach(15215, {	-- Can't Stop the Feeling
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15213, {	-- Don't Stop Dancing
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15212, {	-- First Dance
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15223, {	-- Feeling It
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15216, {	-- Make You Sweat
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15217, {	-- Maniac on the Dance Floor
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15222, {	-- You Got the Beat
-								timeline = { ADDED_9_2_0 },
-							}),
-							ach(15214, {	-- What a Feeling
-								timeline = { ADDED_9_2_0 },
-							}),
+							ach(15215),	-- Can't Stop the Feeling
+							ach(15213),	-- Don't Stop Dancing
+							ach(15212),	-- First Dance
+							ach(15223),	-- Feeling It
+							ach(15216),	-- Make You Sweat
+							ach(15217),	-- Maniac on the Dance Floor
+							ach(15222),	-- You Got the Beat
+							ach(15214),	-- What a Feeling
 						}),
 						q(64783, {	-- Dance Dance Darkmoon
 							qg = 181097,	-- Simon Sezdans <Dance Master>
 							coord = { 51.2, 74.0, DARKMOON_ISLAND },
 							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
-							timeline = { ADDED_9_2_0 },
 							isDaily = true,
 							groups = {
 								DARKMOON_GAME_PRIZE,
@@ -435,25 +415,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					groups = {
 						n(ACHIEVEMENTS, {
 							ach(9252, {	-- Brood of Alysrazor
-								timeline = { ADDED_6_0_2 },
-								groups = {
-									i(116115, {	-- Blazing Wings (TOY!)
-										timeline = { ADDED_6_0_2 },
-									}),
-								},
+								i(116115),	-- Blazing Wings (TOY!)
 							}),
-							ach(9250, {	-- Flying High
-								timeline = { ADDED_6_0_2 },
-							}),
-							ach(9251, {	-- Ringmaster
-								timeline = { ADDED_6_0_2 },
-							}),
+							ach(9250),	-- Flying High
+							ach(9251),	-- Ringmaster
 						}),
 						q(36481, {	-- Firebird's Challenge
 							qg = 85546,	-- Ziggie Sparks
 							coord = { 48.3, 71.3, DARKMOON_ISLAND },
 							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
-							timeline = { ADDED_6_0_2 },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -471,15 +441,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					timeline = { ADDED_4_3_0 },
 					groups = {
 						n(ACHIEVEMENTS, {
-							ach(6022, {	-- Quick Shot
-								timeline = { ADDED_4_3_0 },
-							}),
+							ach(6022),	-- Quick Shot
 						}),
 						q(29438, {	-- He Shoots, He Scores!
 							qg = 14841,	-- Rinling
 							coord = { 49.6, 60.8, DARKMOON_ISLAND },
 							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
-							timeline = { ADDED_4_3_0 },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -501,9 +468,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							ach(9983, {	-- That's Whack!
 								timeline = { ADDED_6_2_0 },
 								groups = {
-									i(123862, {	-- Hogs (PET!)
-										timeline = { ADDED_6_2_0 },
-									}),
+									i(123862),	-- Hogs (PET!)
 								},
 							}),
 						}),
@@ -512,7 +477,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 							qg = 54601,	-- Mola <Whack-a-Gnoll>
 							coord = { 53.2, 54.3, DARKMOON_ISLAND },
 							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
-							timeline = { ADDED_4_3_0 },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -680,9 +644,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				i(127141, {	-- Bloated Thresher
 					timeline = { ADDED_6_2_0 },
 					groups = {
-						i(124669, {	-- Darkmoon Daggermaw
-							timeline = { ADDED_6_2_0 },
-						}),
+						i(124669),	-- Darkmoon Daggermaw
 					},
 				}),
 				i(124669, {	-- Darkmoon Daggermaw
@@ -3459,9 +3421,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 48.2, 71.9, DARKMOON_ISLAND },
 				timeline = { ADDED_4_3_0 },
 				groups = {
-					darkmoonprizeticket(10, i(74142, {	-- Darkmoon Firework
-						timeline = { ADDED_4_3_0 },
-					})),
+					darkmoonprizeticket(10, i(74142)),	-- Darkmoon Firework
 					darkmoonprizeticket(150, i(138202, {	-- Sparklepony XL (TOY!)
 						timeline = { ADDED_7_0_3 },
 					})),
@@ -3471,18 +3431,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 49.3, 78.4, DARKMOON_ISLAND },
 				timeline = { ADDED_4_3_0 },
 				groups = {
-					darkmoonprizeticket(90, i(73762, {	-- Darkmoon Balloon (PET!)
-						timeline = { ADDED_4_3_0 },
-					})),
-					i(75040, {	-- Flimsy Darkmoon Balloon
-						timeline = { ADDED_4_3_0 },
-					}),
-					i(75041, {	-- Flimsy Green Balloon
-						timeline = { ADDED_4_3_0 },
-					}),
-					i(75042, {	-- Flimsy Yellow Balloon (TOY!)
-						timeline = { ADDED_4_3_0 },
-					}),
+					darkmoonprizeticket(90, i(73762)),	-- Darkmoon Balloon (PET!)
+					i(75040),	-- Flimsy Darkmoon Balloon
+					i(75041),	-- Flimsy Green Balloon
+					i(75042),	-- Flimsy Yellow Balloon (TOY!)
 					darkmoonprizeticket(90, i(164969, {	-- Horse Balloon (PET!)
 						timeline = { ADDED_8_1_5 },
 					})),
@@ -3498,30 +3450,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 51.4, 75.0, DARKMOON_ISLAND },
 				timeline = { ADDED_6_0_2 },
 				groups = {
-					darkmoonprizeticket(90, i(116139, {	-- Haunting Memento (TOY!)
-						timeline = { ADDED_6_0_2 },
-					})),
-					darkmoonprizeticket(130, i(116138, {	-- Last Deck of Nemelex Xobeh
-						timeline = { ADDED_6_0_2 },
-					})),
+					darkmoonprizeticket(90, i(116139)),	-- Haunting Memento (TOY!)
+					darkmoonprizeticket(130, i(116138)),	-- Last Deck of Nemelex Xobeh
 					darkmoonprizeticket(90, i(122238, {	-- Music Roll: Darkmoon Carousel
 						timeline = { ADDED_6_1_0 },
 					})),
-					darkmoonprizeticket(55, i(116134, {	-- Noble's Fancy Boots
-						timeline = { ADDED_6_0_2 },
-					})),
-					darkmoonprizeticket(75, i(116052, {	-- Nobleman's Coat
-						timeline = { ADDED_6_0_2 },
-					})),
-					darkmoonprizeticket(75, i(116133, {	-- Nobleman's Pantaloons
-						timeline = { ADDED_6_0_2 },
-					})),
-					darkmoonprizeticket(75, i(116137, {	-- Noblewoman's Finery
-						timeline = { ADDED_6_0_2 },
-					})),
-					darkmoonprizeticket(75, i(116136, {	-- Noblewoman's Skirt
-						timeline = { ADDED_6_0_2 },
-					})),
+					darkmoonprizeticket(55, i(116134)),	-- Noble's Fancy Boots
+					darkmoonprizeticket(75, i(116052)),	-- Nobleman's Coat
+					darkmoonprizeticket(75, i(116133)),	-- Nobleman's Pantaloons
+					darkmoonprizeticket(75, i(116137)),	-- Noblewoman's Finery
+					darkmoonprizeticket(75, i(116136)),	-- Noblewoman's Skirt
 				},
 			}),
 			n(56335, {	-- Daenrand Dawncrest <Heirloom Prizes>
@@ -4001,7 +3939,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(75034, {	-- Forsaken Foie Gras
 						lore = "This may be made of undead.",
-						timeline = { ADDED_4_3_0 },
 					}),
 					i(75030, {	-- Gnomeregan Gnuggets
 						lore = "This may be made of gnomes.",
@@ -4009,7 +3946,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(75033, {	-- Green Ham & Eggs
 						lore = "This may be made of orcs. Hope the eggs are really gull ones...",
-						timeline = { ADDED_4_3_0 },
 					}),
 					i(124640, {	-- Inky Black Potion
 						description = "This item enables Dark Mode and helps make the racing circles easier to see.",

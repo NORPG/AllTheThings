@@ -286,7 +286,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						q(31922, {	-- Nicki Tinytech
 							sourceAchievement = 6604,	-- Taming Outland
-							timeline = { ADDED_5_0_4 },
 							isDaily = true,
 						}),
 					},

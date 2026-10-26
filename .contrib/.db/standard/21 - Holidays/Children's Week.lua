@@ -2080,12 +2080,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			races = HORDE_ONLY,
 			groups = {
-				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					timeline = { ADDED_4_1_0 },
-				})),
-				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					timeline = { ADDED_4_1_0 },
-				})),
+				applyevent(EVENTS.CHILDRENS_WEEK, i(69895)),	-- Green Balloon (TOY!)
+				applyevent(EVENTS.CHILDRENS_WEEK, i(69896)),	-- Yellow Balloon (TOY!)
 			},
 		}),
 		n(52358, {	-- Craggle Wobbletop <Toys and Novelties>
@@ -2112,12 +2108,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			timeline = { ADDED_4_1_0 },
 			races = ALLIANCE_ONLY,
 			groups = {
-				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					timeline = { ADDED_4_1_0 },
-				})),
-				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					timeline = { ADDED_4_1_0 },
-				})),
+				applyevent(EVENTS.CHILDRENS_WEEK, i(69895)),	-- Green Balloon (TOY!)
+				applyevent(EVENTS.CHILDRENS_WEEK, i(69896)),	-- Yellow Balloon (TOY!)
 			},
 		}),
 	}),

@@ -21,7 +21,6 @@ maproot(EASTERN_KINGDOMS, {
 						61037,	-- Mechanical Battler of Eastern Kingdoms
 						61028,	-- Undead Battler of Eastern Kingdoms
 					}},
-					timeline = { ADDED_12_0_0 },
 					groups = { i(205017) },	-- Byrn (PET!)
 				})),
 				petbattle(ach(61029)),	-- Aquatic Battler of Eastern Kingdoms

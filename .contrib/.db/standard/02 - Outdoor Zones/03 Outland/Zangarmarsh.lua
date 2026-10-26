@@ -221,7 +221,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						q(31923, {	-- Ras'an
 							sourceAchievement = 6604,	-- Taming Outland
-							timeline = { ADDED_5_0_4 },
 							isDaily = true,
 						}),
 					},

@@ -4245,9 +4245,7 @@ maproot(KALIMDOR, THE_BARRENS, {
 				},
 				timeline = { ADDED_3_2_0 },
 				groups = {
-					i(48118, {	-- Leaping Hatchling (PET!)
-						timeline = { ADDED_3_2_0 },
-					}),
+					i(48118),	-- Leaping Hatchling (PET!)
 				},
 			}),
 			n(5832, {	-- Thunderstomp

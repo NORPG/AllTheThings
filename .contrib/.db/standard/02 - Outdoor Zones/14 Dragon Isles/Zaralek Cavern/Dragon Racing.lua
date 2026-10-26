@@ -476,17 +476,14 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 			}),
 			n(WORLD_QUESTS, {
 				i(205226, {	-- Cavern Racer's Purse
-					timeline = { ADDED_10_1_0 },
-					groups = {
-						i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (MM!)
-						i(196997),	-- Cliffside Wylderdrake: Split Horns (MM!)
-						i(197104),	-- Highland Drake: Tapered Chin (MM!)
-						i(202280),	-- Renewed Proto-Drake: Pronged Tail (MM!)
-						i(203361),	-- Winding Slitherdrake: Finned Tip Tail (MM!)
-						i(203348),	-- Winding Slitherdrake: Pointed Nose (MM!)
-						i(203317),	-- Winding Slitherdrake: Small Finned Crest (MM!)
-						i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (MM!)
-					},
+					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (MM!)
+					i(196997),	-- Cliffside Wylderdrake: Split Horns (MM!)
+					i(197104),	-- Highland Drake: Tapered Chin (MM!)
+					i(202280),	-- Renewed Proto-Drake: Pronged Tail (MM!)
+					i(203361),	-- Winding Slitherdrake: Finned Tip Tail (MM!)
+					i(203348),	-- Winding Slitherdrake: Pointed Nose (MM!)
+					i(203317),	-- Winding Slitherdrake: Small Finned Crest (MM!)
+					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (MM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({
@@ -503,27 +500,21 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				------ Zaralek Cavern ------
 				q(75121, {	-- Dragonrider Racing - Brimstone Scramble
 					coord = { 54.3, 24.0, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 				q(75120, {	-- Dragonrider Racing - Caldera Cruise
 					coord = { 39.0, 49.8, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 				q(75119, {	-- Dragonrider Racing - Crystal Circuit
 					coord = { 38.8, 60.6, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 				q(75123, {	-- Dragonrider Racing - Loamm Roamm
 					coord = { 58.1, 57.6, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 				q(75122, {	-- Dragonrider Racing - Shimmering Slalom
 					coord = { 58.6, 45.0, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 				q(75124, {	-- Dragonrider Racing - Sulfur Sprint
 					coord = { 51.3, 46.6, ZARALEK_CAVERN },
-					timeline = { ADDED_10_1_0 },
 				}),
 			})),
 		})),

@@ -2488,9 +2488,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				timeline = { ADDED_8_1_5 },
 				races = HORDE_ONLY,
 				groups = {
-					i(166805, {	-- Blood-Soaked Invitation (QS!)
-						timeline = { ADDED_8_1_5 },
-					}),
+					i(166805),	-- Blood-Soaked Invitation (QS!)
 				},
 			}),
 			n(5611, {	-- Barkeep Morag
@@ -2547,9 +2545,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(104324, {	-- Foot Ball (TOY!)
 						timeline = { ADDED_5_4_0 },
 					}),
-					applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
-						timeline = { ADDED_4_1_0 },
-					})),
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69895)),	-- Green Balloon Toy (TOY!)
 					i(48601, {	-- Red Rider Air Rifle Ammo
 						timeline = { ADDED_4_0_3 },
 					}),
@@ -2571,9 +2567,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 						timeline = { ADDED_3_1_0 },
 					}),
-					applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
-						timeline = { ADDED_4_1_0 },
-					})),
+					applyevent(EVENTS.CHILDRENS_WEEK, i(69896)),	-- Yellow Balloon Toy (TOY!)
 					i(44481),	-- Grindgear Toy Gorilla
 					i(44601),	-- Heavy Copper Racer
 					i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
@@ -2714,19 +2708,15 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					}),
 					i(64912, {	-- Darkspear Cape
 						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64911, {	-- Darkspear Mantle
 						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64913, {	-- Darkspear Shroud
 						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(67536, {	-- Darkspear Satchel
 						minReputation = { FACTION_DARKSPEAR_TROLLS, REVERED },	-- Darkspear Trolls, Revered.
-						timeline = { ADDED_4_0_3 },
 					}),
 				},
 			}),
@@ -2793,7 +2783,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				groups = {
 					i(226500),	-- Chipped Drakefire Amulet
 					i(228222, {	-- Handbook of Valor of Azeroth
-						timeline = { ADDED_1_15_3 },
 						spellID = 461475,	-- Valor of Azeroth
 						f = RECIPES,
 					}),
@@ -2847,24 +2836,18 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
-					i(64884, {	-- Bilgewater Cartel Tabard
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(64884),	-- Bilgewater Cartel Tabard
 					i(64906, {	-- Bilgewater Cape
 						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64905, {	-- Bilgewater Shroud
 						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64907, {	-- Bilgewater Mantle
 						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(67525, {	-- Bilgewater Satchel
 						minReputation = { FACTION_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel, Revered.
-						timeline = { ADDED_4_0_3 },
 					}),
 				},
 			}),

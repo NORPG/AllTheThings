@@ -1045,7 +1045,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						},
 						qg = 36799,	-- Recruiter Burns
 						coord = { 27.4, 24.2, STORMWIND_CITY },
-						timeline = { ADDED_4_0_3 },
 						races = ALLIANCE_ONLY,
 						-- #if AFTER 9.0.3
 						groups = {
@@ -1062,7 +1061,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						},
 						qg = 41621,	-- Commander Thorak
 						coord = { 55.9, 12.3, DUROTAR },
-						timeline = { ADDED_4_0_3 },
 						races = HORDE_ONLY,
 					}),
 					q(25602, {	-- Can't Start a Fire Without a Spark
@@ -1267,7 +1265,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						races = HORDE_ONLY,
 					}),
 					heroscall(q(27724, {	-- Hero's Call: Vashj'ir!
-						timeline = { ADDED_4_0_3 },
 						isBreadcrumb = true,
 						lvl = 80,
 					})),
@@ -1562,7 +1559,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						sourceQuest = 28826,	-- The Eye of the Storm
 						qg = 45226,	-- Naraat the Earthspeaker
 						coord = { 74.4, 18.8, STORMWIND_CITY },
-						timeline = { ADDED_4_0_3 },
 						races = ALLIANCE_ONLY,
 						isBreadcrumb = true,
 					}),
@@ -1570,7 +1566,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						sourceQuest = 28805,	-- The Eye of the Storm
 						qg = 45244,	-- Farseer Krogar
 						coord = { 50.4, 38.2, ORGRIMMAR },
-						timeline = { ADDED_4_0_3 },
 						maps = { DUROTAR },
 						races = HORDE_ONLY,
 						isBreadcrumb = true,
@@ -1618,7 +1613,6 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						coord = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 					}),
 					warchiefscommand(q(27718, {	-- Warchief's Command: Vashj'ir!
-						timeline = { ADDED_4_0_3 },
 						maps = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
 						isBreadcrumb = true,
 						-- #if BEFORE 7.3.5

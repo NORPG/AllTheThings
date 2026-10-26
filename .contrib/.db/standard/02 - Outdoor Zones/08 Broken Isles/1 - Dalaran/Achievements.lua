@@ -7,9 +7,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 		ach(10585, {	-- Fel-Smelter
 			timeline = { ADDED_7_0_3, REMOVED_9_1_0 },
 			groups = {
-				crit(29873, {	-- Firing Up the Forge
-					timeline = { ADDED_7_0_3, REMOVED_9_1_0 },
-				}),
+				crit(29873),	-- Firing Up the Forge
 			},
 		}),
 		ach(10586, {	-- Mass Obliteration

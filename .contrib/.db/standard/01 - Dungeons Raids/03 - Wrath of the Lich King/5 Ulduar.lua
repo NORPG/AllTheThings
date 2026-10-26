@@ -88,19 +88,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					timeline = { ADDED_7_3_5 },
 					groups = {
 						crit(39267, {	-- Flame Leviathan
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33113 },
 						}),
 						crit(39268, {	-- Razorscale
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33186 },
 						}),
 						crit(39270, {	-- Ignis the Furnace Master
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33118 },
 						}),
 						crit(39269, {	-- XT-002 Deconstructor
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33293 },
 						}),
 					},
@@ -109,15 +105,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					timeline = { ADDED_7_3_5 },
 					groups = {
 						crit(39285, {	-- Assembly of Iron
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 32867 },
 						}),
 						crit(39287, {	-- Kologarn
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 32930 },
 						}),
 						crit(39286, {	-- Auriaya
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33515 },
 						}),
 					},
@@ -126,19 +119,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					timeline = { ADDED_7_3_5 },
 					groups = {
 						crit(39289, {	-- Hodir
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 32845 },
 						}),
 						crit(39291, {	-- Thorim
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 32865 },
 						}),
 						crit(39292, {	-- Freya
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 32906 },
 						}),
 						crit(39293, {	-- Mimiron
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33350 },
 						}),
 					},
@@ -147,11 +136,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					timeline = { ADDED_7_3_5 },
 					groups = {
 						crit(39294, {	-- General Vezax
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33271 },
 						}),
 						crit(39295, {	-- Yogg-Saron
-							timeline = { ADDED_7_3_5 },
 							_npcs = { 33288 },
 						}),
 					},
@@ -441,7 +428,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							qg = 33957,	-- Prospector Loren
 							qg = 33957,	-- Prospector Loren
 							qi = 45791,	-- Sigils of the Watchers
-							timeline = { REMOVED_7_3_5 },
 							groups = {
 								i(45796, {	-- Celestial Planetarium Key
 									timeline = { REMOVED_4_2_0 },
@@ -470,7 +456,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						q(13606, {	-- Freya's Sigil
 							sourceQuest = 13607,	-- The Celestial Planetarium
 							qg = 33957,	-- Prospector Loren
-							timeline = { REMOVED_7_3_5 },
 							groups = {
 								objective(1, {	-- 0/1 Freya's Sigil
 									provider = { "i", 45788 },	-- Freya's Sigil
@@ -481,7 +466,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						q(13609, {	-- Hodir's Sigil
 							sourceQuest = 13607,	-- The Celestial Planetarium
 							qg = 33957,	-- Prospector Loren
-							timeline = { REMOVED_7_3_5 },
 							groups = {
 								objective(1, {	-- 0/1 Hodir's Sigil
 									provider = { "i", 45786 },	-- Hodir's Sigil
@@ -492,7 +476,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						q(13611, {	-- Mimiron's Sigil
 							sourceQuest = 13607,	-- The Celestial Planetarium
 							qg = 33957,	-- Prospector Loren
-							timeline = { REMOVED_7_3_5 },
 							groups = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
 									provider = { "i", 45787 },	-- Mimiron's Sigil
@@ -503,12 +486,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						q(13607, {	-- The Celestial Planetarium
 							sourceQuest = 13604,	-- Archivum Data Disc
 							qg = 33957,	-- Prospector Loren
-							timeline = { REMOVED_7_3_5 },
 						}),
 						q(13610, {	-- Thorim's Sigil
 							sourceQuest = 13607,	-- The Celestial Planetarium
 							qg = 33957,	-- Prospector Loren
-							timeline = { REMOVED_7_3_5 },
 							groups = {
 								objective(1, {	-- 0/1 Thorim's Sigil
 									provider = { "i", 45784 },	-- Thorim's Sigil
@@ -1107,17 +1088,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3259, {	-- Realm First! Celestial Defender
 							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 							groups = {
-								title(125, {	-- <Name> the Celestial Defender
-									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(125),	-- <Name> the Celestial Defender
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 							groups = {
-								title(124, {	-- <Name>, Death's Demise
-									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(124),	-- <Name>, Death's Demise
 							},
 						}),
 					}),
@@ -1237,17 +1214,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3259, {	-- Realm First! Celestial Defender
 							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 							groups = {
-								title(125, {	-- <Name> the Celestial Defender
-									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(125),	-- <Name> the Celestial Defender
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
 							groups = {
-								title(124, {	-- <Name>, Death's Demise
-									timeline = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(124),	-- <Name>, Death's Demise
 							},
 						}),
 					}),

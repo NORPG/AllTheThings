@@ -37,7 +37,6 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 			}),
 			n(205227, {	-- Tarasek Fighter
 				description = "Not technically a rare but behaves like one in regards to certain drops. May require killing any active 'Sundered Flame Cleaver' NPCs to trigger a spawn after 10 minutes.",
-				timeline = { ADDED_10_1_0 },
 				coords = {
 					{ 45.4, 56.2, ZARALEK_CAVERN },
 					{ 46.6, 54.4, ZARALEK_CAVERN },

@@ -994,7 +994,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
 			description = "Contains Chunk of Companion Experience tokens.",
-			timeline = { ADDED_12_0_1_LAUNCH },
 			groups = {
 				-- Let's figure out if there will be some pre-seasonal IDs for experience / different per season stuff
 				-- Alpha items (NYI?)

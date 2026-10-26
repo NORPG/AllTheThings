@@ -202,7 +202,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				groups = {
 					q(31905, {	-- Grazzle the Great
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),

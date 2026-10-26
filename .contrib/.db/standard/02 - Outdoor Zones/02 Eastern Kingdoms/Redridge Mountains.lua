@@ -123,7 +123,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				groups = {
 					q(31781, {	-- Lindsay
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -1666,7 +1665,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				timeline = { REMOVED_2_0_1 },
 				groups = {
 					i(211488, {	-- Rune of the Avenger
-						timeline = { REMOVED_2_0_1 },
 						classes = { PALADIN },
 						groups = {
 							recipe(410008),	-- Engrave Pants - Avenger's Shield
@@ -1711,7 +1709,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				timeline = { REMOVED_2_0_1 },
 				groups = {
 					i(211477, {	-- Rune of Incinerate
-						timeline = { REMOVED_2_0_1 },
 						classes = { WARLOCK },
 						groups = {
 							recipe(416015),	-- Engrave Pants - Incinerate

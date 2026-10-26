@@ -21,7 +21,6 @@ maproot(KALIMDOR, {
 						61049,	-- Mechanical Battler of Kalimdor
 						61050,	-- Undead Battler of Kalimdor
 					}},
-					timeline = { ADDED_12_0_0 },
 					groups = { i(258737) },	-- Moon Darter (PET!)
 				})),
 				petbattle(ach(61041)),	-- Aquatic Battler of Kalimdor

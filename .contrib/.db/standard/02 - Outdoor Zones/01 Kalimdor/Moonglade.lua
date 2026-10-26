@@ -58,7 +58,6 @@ maproot(KALIMDOR, MOONGLADE, {
 				groups = {
 					q(31908, {	-- Elena Flutterfly
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),

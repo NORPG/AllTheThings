@@ -126,7 +126,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(21, {	-- Blood Guard <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -192,7 +191,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(23, {	-- Centurion <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -202,7 +200,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(24, {	-- Champion <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -226,7 +223,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(11, {	-- Commander <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -236,7 +232,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(2, {	-- Corporal <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -363,7 +358,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(13, {	-- Field Marshal <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -373,7 +367,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(19, {	-- First Sergeant <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -413,7 +406,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		races = ALLIANCE_ONLY,
 		groups = {
 			i(44223, {	-- Black War Bear (A) (MOUNT!)
-				timeline = { ADDED_3_0_2 },
 				races = ALLIANCE_ONLY,
 			}),
 		},
@@ -437,7 +429,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		races = HORDE_ONLY,
 		groups = {
 			i(44224, {	-- Black War Bear (H) (MOUNT!)
-				timeline = { ADDED_3_0_2 },
 				races = HORDE_ONLY,
 			}),
 		},
@@ -458,7 +449,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(26, {	-- General <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -473,7 +463,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(14, {	-- Grand Marshal <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -493,7 +482,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(16, {	-- Grunt <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -524,7 +512,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(28, {	-- High Warlord <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -583,7 +570,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(6, {	-- Knight <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -593,7 +579,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(8, {	-- Knight-Captain <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -603,7 +588,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(9, {	-- Knight-Champion <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -613,7 +597,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(7, {	-- Knight-Lieutenant <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -635,7 +618,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(22, {	-- Legionnaire <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -650,7 +632,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(10, {	-- Lieutenant Commander <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -660,7 +641,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(25, {	-- Lieutenant General <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -675,7 +655,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(12, {	-- Marshal <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -689,7 +668,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(4, {	-- Master Sergeant <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -723,7 +701,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups= {
 			title(326, {	-- <Name>, Patron of War
 				description = "Connect Twitch and Battle.net accounts and watch tournament streams",
-				timeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 			}),
 		},
 	}),
@@ -770,7 +747,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(1, {	-- Private <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -780,7 +756,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(15, {	-- Scout <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -790,7 +765,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(18, {	-- Senior Sergeant <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -800,7 +774,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(3, {	-- Sergeant <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -810,7 +783,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(17, {	-- Sergeant <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -820,7 +792,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(5, {	-- Sergeant Major <Name>
 				races = ALLIANCE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -828,9 +799,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(14191, {	-- Servant of N'Zoth
 		timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
 		groups = {
-			title(414, {	-- <Name>, Servant of N'Zoth
-				timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
-			}),
+			title(414),	-- <Name>, Servant of N'Zoth
 		},
 	}),
 	ach(40220, {	-- Setting Records
@@ -846,7 +815,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(20, {	-- Stone Guard <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -937,9 +905,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(8392, {		-- Tournament Glory 2013
 		timeline = { ADDED_5_3_0, REMOVED_5_4_0 },
 		groups = {
-			title(128, {		-- Vanquisher
-				timeline = { ADDED_5_3_0, REMOVED_5_4_0 },
-			}),
+			title(128),	-- Vanquisher
 		},
 	}),
 	ach(8391, {		-- Tournament Participation 2013
@@ -963,7 +929,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		groups = {
 			title(27, {	-- Warlord <Name>
 				races = HORDE_ONLY,
-				timeline = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),

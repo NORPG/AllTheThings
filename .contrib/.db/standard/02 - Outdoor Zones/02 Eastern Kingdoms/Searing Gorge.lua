@@ -317,7 +317,6 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				groups = {
 					q(31912, {	-- Kortas Darkhammer
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -1813,9 +1812,7 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				timeline = { ADDED_7_1_5 },
 				cost = { { "i", 142359, 1 } },	-- Lava Oil
 				groups = {
-					i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-						timeline = { ADDED_7_1_5 },
-					}),
+					i(142358),	-- Plans: Blazing Rapier (RECIPE!)
 				},
 			}),
 		}),

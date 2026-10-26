@@ -248,12 +248,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					coord = { 45.9, 35.7, THE_BARRENS },
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6475, {	-- Pattern: Deviate Scale Gloves (RECIPE!)
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
 					},
 				}),
 			}),

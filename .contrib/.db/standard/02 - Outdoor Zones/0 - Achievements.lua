@@ -330,7 +330,6 @@ root(ROOTS.Zones, {
 						62487,	-- Mechanical Battler of Cataclysm
 						62488,	-- Undead Battler of Cataclysm
 					}},
-					timeline = { ADDED_12_1_0 },
 					groups = { i(270211) },	-- Furiostraza's Filter (PET!)
 				})),
 				petbattle(ach(62476)),	-- Aquatic Battler of Cataclysm

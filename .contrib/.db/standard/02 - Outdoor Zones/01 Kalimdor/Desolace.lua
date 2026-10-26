@@ -206,7 +206,6 @@ maproot(KALIMDOR, DESOLACE, {
 				groups = {
 					q(31872, {	-- Merda Stronghoof
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -2602,7 +2601,6 @@ maproot(KALIMDOR, DESOLACE, {
 						isLimited = true,
 					}),
 					i(12227, {	-- Recipe: Lean Wolf Steak (RECIPE!)
-						timeline = { REMOVED_5_0_4 },
 						isLimited = true,
 					}),
 					i(12233, {	-- Recipe: Mystery Stew (RECIPE!)
@@ -2642,7 +2640,6 @@ maproot(KALIMDOR, DESOLACE, {
 						isLimited = true,
 					}),
 					i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-						timeline = { REMOVED_5_0_4 },
 						isLimited = true,
 					}),
 					i(12228, {	-- Recipe: Roast Raptor (RECIPE!)

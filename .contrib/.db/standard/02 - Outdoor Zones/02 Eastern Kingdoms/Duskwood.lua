@@ -97,7 +97,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				groups = {
 					q(31850, {	-- Eric Davidson
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -1883,12 +1882,8 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				},
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 				groups = {
-					i(4465, {	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-					}),
-					i(4464, {	-- Trouncing Boots
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-					}),
+					i(4465),	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
+					i(4464),	-- Trouncing Boots
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -1940,9 +1935,7 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				coord = { 23.7, 36.3, DUSKWOOD },
 				timeline = { ADDED_6_1_0 },
 				groups = {
-					i(122223, {	-- Music Roll: Ghost
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122223),	-- Music Roll: Ghost
 				},
 			}),
 			n(503, {	-- Lord Malathrom
@@ -1963,12 +1956,8 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				},
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 				groups = {
-					i(4462, {	-- Cloak of Rot
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-					}),
-					i(1187, {	-- Spiked Collar
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-					}),
+					i(4462),	-- Cloak of Rot
+					i(1187),	-- Spiked Collar
 				},
 			}),
 			n(521, {	-- Lupos

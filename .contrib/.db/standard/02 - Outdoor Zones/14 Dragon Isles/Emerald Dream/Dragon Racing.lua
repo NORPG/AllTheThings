@@ -506,17 +506,14 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 			}),
 			n(WORLD_QUESTS, {
 				i(210549, {	-- Dream Racer's Purse
-					timeline = { ADDED_10_2_0 },
-					groups = {
-						i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (MM!)
-						i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (MM!)
-						i(207758),	-- Grotto Netherwing Drake: Spiked Back (MM!)
-						i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (MM!)
-						i(203343),	-- Winding Slitherdrake: Hairy Jaw (MM!) (discord report from user dumbomb in #error)
-						i(203333),	-- Winding Slitherdrake: Short Horns (MM!) (discord report from user shinshiva in #general)
-						i(203360),	-- Winding Slitherdrake: Large Finned Tail (MM!) (discord report from user nohh in #error)
-						i(203337),	-- Winding Slitherdrake: Thorn Horns (MM!)
-					},
+					i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (MM!)
+					i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (MM!)
+					i(207758),	-- Grotto Netherwing Drake: Spiked Back (MM!)
+					i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (MM!)
+					i(203343),	-- Winding Slitherdrake: Hairy Jaw (MM!) (discord report from user dumbomb in #error)
+					i(203333),	-- Winding Slitherdrake: Short Horns (MM!) (discord report from user shinshiva in #general)
+					i(203360),	-- Winding Slitherdrake: Large Finned Tail (MM!) (discord report from user nohh in #error)
+					i(203337),	-- Winding Slitherdrake: Thorn Horns (MM!)
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({

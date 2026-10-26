@@ -1956,9 +1956,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(3914, {	-- Rethilgore <The Cell Keeper>
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(5254, {	-- Rugged Spaulders
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5254),	-- Rugged Spaulders
 					},
 				}),
 				e(96, {	-- Baron Ashbury
@@ -1977,15 +1975,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(3886, {	-- Razorclaw the Butcher
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(1292, {	-- Butcher's Cleaver
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6633, {	-- Butcher's Slicer
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6226, {	-- Bloody Apron
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(1292),	-- Butcher's Cleaver
+						i(6633),	-- Butcher's Slicer
+						i(6226),	-- Bloody Apron
 					},
 				}),
 				e(97, {	-- Baron Silverlaine
@@ -2082,32 +2074,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(4279, {	-- Odo the Blindwatcher
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(6318, {	-- Odo's Ley Staff
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6319, {	-- Girdle of the Blindwatcher
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6318),	-- Odo's Ley Staff
+						i(6319),	-- Girdle of the Blindwatcher
 					},
 				}),
 				e(99, {	-- Lord Walden
 					creatureID = 46963,
 					timeline = { ADDED_4_0_3 },
 					groups = {
-						i(60876, {	-- Walden's Elixirs
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(60881, {	-- Walden's Talisman
-							timeline = { ADDED_4_0_3 },
-						}),
-						i(1292, {	-- Butcher's Cleaver
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(60876),	-- Walden's Elixirs
+						i(60881),	-- Walden's Talisman
+						i(1292),	-- Butcher's Cleaver
 						i(6341),	-- Eerie Stable Lantern
 						i(6642),	-- Phantom Armor
-						i(3230, {	-- Black Wolf Bracers
-							timeline = { ADDED_4_0_3 },
-						}),
+						i(3230),	-- Black Wolf Bracers
 						i(132566, {	-- Dark Lupine Wraps
 							timeline = { ADDED_7_0_3 },
 						}),
@@ -2121,20 +2101,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(4274, {	-- Fenrus the Devourer
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(3230, {	-- Black Wolf Bracers
-							timeline = { REMOVED_4_0_3 },
-						}),
-						i(6340, {	-- Fenrus' Hide
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(3230),	-- Black Wolf Bracers
+						i(6340),	-- Fenrus' Hide
 					},
 				}),
 				n(4627, {	-- Arugal's Voidwalker
 					timeline = { REMOVED_4_0_3 },
 					groups = {
-						i(5943, {	-- Rift Bracers
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(5943),	-- Rift Bracers
 					},
 				}),
 				n(3927, {	-- Wolf Master Nandos
@@ -2159,9 +2133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6220),	-- Meteor Shard
 						i(6324),	-- Robes of Arugal
 						-- #endif
-						i(6392, {	-- Belt of Arugal
-							timeline = { REMOVED_4_0_3 },
-						}),
+						i(6392),	-- Belt of Arugal
 					},
 				}),
 				e(100, {	-- Lord Godfrey
@@ -2169,9 +2141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					timeline = { ADDED_4_0_3 },
 					groups = {
 						ach(631),	-- Shadowfang Keep
-						ach(5040, {	-- Shadowfang Keep Guild Run
-							timeline = { ADDED_4_0_3 },
-						}),
+						ach(5040),	-- Shadowfang Keep Guild Run
 						i(60877),	-- Godfrey's Crystal Scope
 						i(60882),	-- Tenebrous Orb
 						i(6641),	-- Haunting Blade

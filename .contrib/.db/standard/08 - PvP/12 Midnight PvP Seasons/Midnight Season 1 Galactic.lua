@@ -75,7 +75,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 					title(653),	-- Galactic Legend <Name>
 				}),
 				-- Fashion
-				ach(61586, { timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 } }),	-- Galactic Gala
+				ach(61586, { timeline = { REMOVED_12_1_0 } }),	-- Galactic Gala
 			})),
 			filter(MOUNTS, {
 				timeline = { REMOVED_12_1_0 },

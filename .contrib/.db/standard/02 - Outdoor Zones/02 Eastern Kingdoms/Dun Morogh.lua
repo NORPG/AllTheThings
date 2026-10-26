@@ -4270,9 +4270,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 				},
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 				groups = {
-					i(2899, {	-- Wengido Collar
-						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-					}),
+					i(2899),	-- Wengido Collar
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY

@@ -117,7 +117,6 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				groups = {
 					q(31780, {	-- Old MacDonald
 						sourceAchievement = 6603,	-- Taming Eastern Kingdoms
-						timeline = { ADDED_5_0_4 },
 						races = ALLIANCE_ONLY,
 						isDaily = true,
 					}),
@@ -187,9 +186,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 					coord = { 46.3, 59.0, WESTFALL },
 					timeline = { ADDED_4_1_0 },
 					groups = {
-						i(68797, {	-- Stendel's Wedding Band
-							timeline = { ADDED_4_1_0 },
-						}),
+						i(68797),	-- Stendel's Wedding Band
 					},
 				}),
 			}),

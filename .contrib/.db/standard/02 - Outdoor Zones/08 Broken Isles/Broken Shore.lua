@@ -641,7 +641,6 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 				q(46268, {	-- A Found Memento
 					provider = { "o", 268478 },	-- Battered Trinket
 					coord = { 53.5, 80.5, BROKEN_SHORE },
-					timeline = { ADDED_7_2_0 },
 					races = ALLIANCE_ONLY,
 					groups = { i(146408) },	-- Battered Trinket (QI!)
 				}),
@@ -649,7 +648,6 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					sourceQuests = { 47202 },	-- A Personal Message
 					provider = { "n", 121224 },	-- Anduin Wrynn
 					coord = { 41.4, 59.4, BROKEN_SHORE },
-					timeline = { ADDED_7_2_0 },
 					races = ALLIANCE_ONLY,
 				}),
 				q(46832, {	-- Aalgen Point
@@ -994,7 +992,6 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					sourceQuests = { 47097 },	-- A Walk to Remember
 					provider = { "n", 121226 },	-- Anduin Wrynn
 					coord = { 52.5, 48.4, BROKEN_SHORE },
-					timeline = { ADDED_7_2_0 },
 					races = ALLIANCE_ONLY,
 				}),
 				q(47139, {	-- Mark of the Sentinax
@@ -1098,7 +1095,6 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					sourceQuests = { 46268 },	-- A Found Memento
 					provider = { "n", 120281 },	-- Captain Shwayder
 					coord = { 41.6, 59.6, BROKEN_SHORE },
-					timeline = { ADDED_7_2_0 },
 					races = ALLIANCE_ONLY,
 				}),
 				q(46250, {	-- Take Out the Head...
@@ -1136,7 +1132,6 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					sourceQuests = { 47112 },	-- Lost Souls
 					provider = { "n", 121237 },	-- Anduin Wrynn
 					coord = { 58.2, 26.6, BROKEN_SHORE },
-					timeline = { ADDED_7_2_0 },
 					races = ALLIANCE_ONLY,
 				}),
 				q(46772, {	-- The Mage Tower
@@ -1415,9 +1410,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					description = "/kiss her during the Where There is a Whip... WQ.",
 					coord = { 49.0, 55.8, BROKEN_SHORE },
 					groups = {
-						i(147120, {	-- Technique: Grimoire of the Shadow Succubus (RECIPE!)
-							timeline = { ADDED_7_2_0 },
-						}),
+						i(147120),	-- Technique: Grimoire of the Shadow Succubus (RECIPE!)
 					},
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>

@@ -285,13 +285,11 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 			q(30987, {	-- Joining the Alliance
 				qg = 60566,	-- Aysa Cloudsinger
 				coord = { 74.2, 92.4, STORMWIND_CITY },
-				timeline = { ADDED_5_0_4 },
 				races = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 			}),
 			q(31012, {	-- Joining the Horde
 				qg = 60570,	-- Ji Firepaw
 				coord = { 45.6, 12.6, DUROTAR },
-				timeline = { ADDED_5_0_4 },
 				races = { PANDAREN_NEUTRAL },
 			}),
 			q(29418, {	-- Kindling the Fire
@@ -883,7 +881,6 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				sourceQuest = 31012,	-- Joining the Horde
 				qg = 39605,	-- Garrosh Hellscream
 				coord = { 48.2, 70.6, ORGRIMMAR },
-				timeline = { ADDED_5_0_4 },
 				races = { PANDAREN_NEUTRAL },
 			}),
 			q(29661, {	-- The Lesson of Dry Fur

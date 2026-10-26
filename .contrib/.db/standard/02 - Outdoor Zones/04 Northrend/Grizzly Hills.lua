@@ -2146,9 +2146,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						description = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",
 						timeline = { ADDED_6_1_0 },
 						groups = {
-							i(122236, {	-- Music Roll: Totems of the Grizzlemaw
-								timeline = { ADDED_6_1_0 },
-							}),
+							i(122236),	-- Music Roll: Totems of the Grizzlemaw
 						},
 					}),
 					n(26229, {	-- Tiernan Anvilheart

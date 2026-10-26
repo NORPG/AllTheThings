@@ -126,7 +126,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					groups = {
 						q(31934, {	-- Gutretch
 							sourceAchievement = 6605,	-- Taming Northrend
-							timeline = { ADDED_5_0_4 },
 							isDaily = true,
 						}),
 					},

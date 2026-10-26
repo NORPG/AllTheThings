@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(101426),	-- Micronax (PET!)
 					},
 				}),
-				ach(11760, {timeline = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
+				ach(11760),	-- Retro Trend (Tomb of Sargeras)
 				ach(42031, {	-- Tomb of Sargeras (automated)
 					timeline = { ADDED_11_1_7 },
 				}),

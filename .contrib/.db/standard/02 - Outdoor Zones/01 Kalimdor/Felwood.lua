@@ -143,7 +143,6 @@ maproot(KALIMDOR, FELWOOD, {
 				groups = {
 					q(31907, {	-- Zoltan
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -1438,7 +1437,6 @@ maproot(KALIMDOR, FELWOOD, {
 					{
 						itemID = 11445,	-- Flute of the Ancients
 						description = "You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",
-						timeline = { REMOVED_4_0_3 },
 					},
 				},
 			}),
@@ -2829,7 +2827,6 @@ maproot(KALIMDOR, FELWOOD, {
 				classes = { WARLOCK },
 				groups = {
 					i(18687, {	-- Xorothian Stardust
-						timeline = { REMOVED_4_0_3 },
 						cost = 1500000,	-- 150g
 					}),
 				},

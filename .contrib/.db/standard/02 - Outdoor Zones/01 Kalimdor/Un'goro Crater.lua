@@ -1998,9 +1998,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				},
 				timeline = { ADDED_3_2_0 },
 				groups = {
-					i(48122, {	-- Ravasaur Hatchling (PET!)
-						timeline = { ADDED_3_2_0 },
-					}),
+					i(48122),	-- Ravasaur Hatchling (PET!)
 				},
 			}),
 			n(6585, {	-- Uhk'loc

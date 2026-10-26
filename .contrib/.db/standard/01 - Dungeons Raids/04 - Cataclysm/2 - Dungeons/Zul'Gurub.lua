@@ -77,7 +77,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							}),
 							ach(17366, {	-- Relics of a Fallen Empire
 								sourceQuest = 74576,	-- Restored Hakkari Bijou
-								timeline = { ADDED_10_0_7 },
 							}),
 						}),
 						header(HEADERS.Item, 203757, {	-- Brazier of Madness
@@ -672,9 +671,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 						qg = 52877,	-- Lashtail Hatchling
 						groups = {
-							i(69251, {	-- Lashtail Hatchling (PET!)
-								timeline = { ADDED_4_1_0 },
-							}),
+							i(69251),	-- Lashtail Hatchling (PET!)
 						},
 					}),
 					q(29154, {	-- Booty Bay's Interests

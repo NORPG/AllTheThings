@@ -1468,9 +1468,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
-					i(68611, {	-- Red Shirt
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(68611),	-- Red Shirt
 				},
 			}),
 		}),
@@ -2001,18 +1999,10 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 						}),
 					}),
 					n(HEIRLOOMS, {
-						gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(750, i(122339, {	-- Ancient Heirloom Scabbard
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
-							timeline = { ADDED_6_1_0 },
-						})),
+						gold(500, i(122338)),	-- Ancient Heirloom Armor Casing
+						gold(750, i(122339)),	-- Ancient Heirloom Scabbard
+						gold(1000, i(122340)),	-- Timeworn Heirloom Armor Casing
+						gold(1500, i(122341)),	-- Timeworn Heirloom Scabbard
 						gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
 							timeline = { ADDED_7_2_5 },
 						})),
@@ -2163,19 +2153,15 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 					}),
 					i(64896, {	-- Cape of Gnomeregan
 						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64895, {	-- Mantle of Gnomeregan
 						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(64897, {	-- Shroud of Gnomeregan
 						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(67530, {	-- Gnomeregan Satchel
 						minReputation = { FACTION_GNOMEREGAN, REVERED },	-- Gnomeregan Exiles, Revered.
-						timeline = { ADDED_4_0_3 },
 					}),
 				},
 			}),

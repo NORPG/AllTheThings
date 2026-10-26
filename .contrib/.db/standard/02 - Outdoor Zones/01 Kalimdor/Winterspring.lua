@@ -244,7 +244,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 				groups = {
 					q(31909, {	-- Grand Master Trixxy
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						isDaily = true,
 						groups = {
 							i(89125),	-- Sack of Pet Supplies
@@ -2205,9 +2204,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				coord = { 68.0, 73.9, WINTERSPRING },
 				timeline = { ADDED_6_1_0 },
 				groups = {
-					i(122224, {	-- Music Roll: Mountains
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122224),	-- Music Roll: Mountains
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -2289,9 +2286,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				coord = { 59.8, 51.6, WINTERSPRING },
 				timeline = { ADDED_4_1_0 },
 				groups = {
-					i(69239, {	-- Winterspring Cub (PET!)
-						timeline = { ADDED_4_1_0 },
-					}),
+					i(69239),	-- Winterspring Cub (PET!)
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY

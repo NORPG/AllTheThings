@@ -3494,7 +3494,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29036, {	-- Honor the Flame — Deepholm
 					qg = 51698,	-- Deepholm Flame Guardian
 					coord = { 49.4, 51.4, DEEPHOLM },
-					timeline = { ADDED_4_0_1 },
 				}),
 				honortheflame(32497, {	-- Honor the Flame — Dread Wastes
 					qg = 69522,	-- Dread Wastes Flame Guardian
@@ -3514,7 +3513,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29030, {	-- Honor the Flame — Hyjal
 					qg = 51682,	-- Hyjal Flame Guardian
 					coord = { 62.8, 22.6, MOUNT_HYJAL },
-					timeline = { ADDED_4_0_1 },
 				}),
 				honortheflame(32498, {	-- Honor the Flame — Jade Forest
 					qg = 69529,	-- Jade Forest Flame Guardian
@@ -3594,7 +3592,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29031, {	-- Honor the Flame — Vashj'ir
 					qg = 51697,	-- Vashj'ir Flame Guardian
 					coord = { 49.4, 42.0, VASHJIR_SHIMMERING_EXPANSE },
-					timeline = { ADDED_4_0_1 },
 				}),
 				honortheflame(75650, {	-- Honor the Flame — Zaralek Cavern
 					qg = 204417,	-- Zaralek Cavern Flame Guardian

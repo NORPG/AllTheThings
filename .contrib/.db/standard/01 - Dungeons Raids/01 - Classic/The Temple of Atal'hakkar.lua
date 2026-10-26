@@ -533,12 +533,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(5708, {	-- Spawn of Hakkar
 				timeline = { REMOVED_4_0_3 },
 				groups = {
-					i(10801, {	-- Slitherscale Boots
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10802, {	-- Wingveil Cloak
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(10801),	-- Slitherscale Boots
+					i(10802),	-- Wingveil Cloak
 				},
 			}),
 			o(148832, {	-- Atal'ai Statue
@@ -552,7 +548,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 148838 },	-- Idol of Hakkar
 						},
 						coord = { 52.6, 45.8, TANARIS },
-						timeline = { REMOVED_4_0_3 },
 						lvl = 46,
 						groups = {
 							i(10773, {	-- Hakkari Urn
@@ -564,20 +559,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(8580, {	-- Atal'alarion
 						description = "Summoned by activating the Atal'ai Statues in the proper order.",
-						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(22444, {	-- Putrid Vine
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(10799, {	-- Headspike
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(10800, {	-- Darkwater Bracers
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(10798, {	-- Atal'alarion Tusk Ring
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(22444),	-- Putrid Vine
+							i(10799),	-- Headspike
+							i(10800),	-- Darkwater Bracers
+							i(10798),	-- Atal'alarion Tusk Ring
 						},
 					}),
 				},
@@ -593,24 +579,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 				timeline = { REMOVED_4_0_3 },
 				groups = {
-					i(10783, {	-- Atal'ai Spaulders
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10787, {	-- Atal'ai Gloves
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10784, {	-- Atal'ai Breastplate
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10788, {	-- Atal'ai Girdle
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10785, {	-- Atal'ai Leggings
-						timeline = { REMOVED_4_0_3 },
-					}),
-					i(10786, {	-- Atal'ai Boots
-						timeline = { REMOVED_4_0_3 },
-					}),
+					i(10783),	-- Atal'ai Spaulders
+					i(10787),	-- Atal'ai Gloves
+					i(10784),	-- Atal'ai Breastplate
+					i(10788),	-- Atal'ai Girdle
+					i(10785),	-- Atal'ai Leggings
+					i(10786),	-- Atal'ai Boots
 				},
 			}),
 			e(457, {	-- Avatar of Hakkar

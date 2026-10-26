@@ -1756,7 +1756,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 				isWeekly= true,
 				groups = {
 					title(647, {	-- Ba'<Name>
-						timeline = { ADDED_11_2_0 },
 						collectible = false,
 					}),
 				},
@@ -1767,7 +1766,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 				isWeekly= true,
 				groups = {
 					title(649, {	-- Om'<Name>
-						timeline = { ADDED_11_2_0 },
 						collectible = false,
 					}),
 				},
@@ -1778,7 +1776,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 				isWeekly= true,
 				groups = {
 					title(648, {	-- Zo'<Name>
-						timeline = { ADDED_11_2_0 },
 						collectible = false,
 					}),
 				},

@@ -74,7 +74,6 @@ maproot(KALIMDOR, SILITHUS, {
 					groups = {
 						o(421152, {	-- Carved Eye
 							coord = { 43.0, 9.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
-							timeline = { ADDED_10_2_5 },
 							groups = {
 								i(212995),	-- Grimoire of the Whispering Observer (CI!)
 							},
@@ -918,7 +917,6 @@ maproot(KALIMDOR, SILITHUS, {
 					applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
 						qg = 15612,	-- Krug Skullsplit
 						coord = { 52.2, 68.4, SILITHUS },
-						timeline = { REMOVED_4_0_3 },
 						races = HORDE_ONLY,
 						repeatable = true,
 						lvl = 54,
@@ -2124,60 +2122,36 @@ maproot(KALIMDOR, SILITHUS, {
 						cost = { { "i", 20420, 1 } },	-- Crest of Beckoning: Water
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20654, {	-- Amethyst War Staff
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20652, {	-- Abyssal Cloth Slippers
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20653, {	-- Abyssal Plate Gauntlets
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20654),	-- Amethyst War Staff
+							i(20652),	-- Abyssal Cloth Slippers
+							i(20653),	-- Abyssal Plate Gauntlets
 						},
 					}),
 					n(15209, {	-- Crimson Templar <Abyssal Council>
 						cost = { { "i", 20416, 1 } },	-- Crest of Beckoning: Fire
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20657, {	-- Crystal Tipped Stiletto
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20655, {	-- Abyssal Cloth Handwraps
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20656, {	-- Abyssal Mail Sabatons
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20657),	-- Crystal Tipped Stiletto
+							i(20655),	-- Abyssal Cloth Handwraps
+							i(20656),	-- Abyssal Mail Sabatons
 						},
 					}),
 					n(15307, {	-- Earthen Templar <Abyssal Council>
 						cost = { { "i", 20419, 1 } },	-- Crest of Beckoning: Stone
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20663, {	-- Deep Strike Bow
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20661, {	-- Abyssal Leather Gloves
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20662, {	-- Abyssal Plate Greaves
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20663),	-- Deep Strike Bow
+							i(20661),	-- Abyssal Leather Gloves
+							i(20662),	-- Abyssal Plate Greaves
 						},
 					}),
 					n(15212, {	-- Hoary Templar <Abyssal Council>
 						cost = { { "i", 20418, 1 } },	-- Crest of Beckoning: Thunder
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20660, {	-- Stonecutting Glaive
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20658, {	-- Abyssal Leather Boots
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20659, {	-- Abyssal Mail Handguards
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20660),	-- Stonecutting Glaive
+							i(20658),	-- Abyssal Leather Boots
+							i(20659),	-- Abyssal Mail Handguards
 						},
 					}),
 				},
@@ -2220,63 +2194,37 @@ maproot(KALIMDOR, SILITHUS, {
 						cost = { { "i", 20432, 1 } },	-- Signet of Beckoning: Fire
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989, {	-- Cinder of Cynders
-								timeline = { REMOVED_4_0_3 },
-							})),
-							i(20666, {	-- Hardened Steel Warhammer
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20664, {	-- Abyssal Cloth Sash
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20665, {	-- Abyssal Leather Leggings
-								timeline = { REMOVED_4_0_3 },
-							}),
+							applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989)),	-- Cinder of Cynders
+							i(20666),	-- Hardened Steel Warhammer
+							i(20664),	-- Abyssal Cloth Sash
+							i(20665),	-- Abyssal Leather Leggings
 						},
 					}),
 					n(15207, {	-- The Duke of Fathoms <Abyssal Council>
 						cost = { { "i", 20436, 1 } },	-- Signet of Beckoning: Water
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20669, {	-- Darkstone Claymore
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20667, {	-- Abyssal Leather Belt
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20668, {	-- Abyssal Mail Legguards
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20669),	-- Darkstone Claymore
+							i(20667),	-- Abyssal Leather Belt
+							i(20668),	-- Abyssal Mail Legguards
 						},
 					}),
 					n(15208, {	-- The Duke of Shards <Abyssal Council>
 						cost = { { "i", 20435, 1 } },	-- Signet of Beckoning: Stone
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20672, {	-- Sparkling Crystal Wand
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20670, {	-- Abyssal Mail Clutch
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20671, {	-- Abyssal Plate Legplates
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20672),	-- Sparkling Crystal Wand
+							i(20670),	-- Abyssal Mail Clutch
+							i(20671),	-- Abyssal Plate Legplates
 						},
 					}),
 					n(15220, {	-- The Duke of Zephyrs <Abyssal Council>
 						cost = { { "i", 20433, 1 } },	-- Signet of Beckoning: Thunder
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20675, {	-- Soulrender
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20674, {	-- Abyssal Cloth Pants
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20673, {	-- Abyssal Plate Girdle
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20675),	-- Soulrender
+							i(20674),	-- Abyssal Cloth Pants
+							i(20673),	-- Abyssal Plate Girdle
 						},
 					}),
 				},
@@ -2320,60 +2268,36 @@ maproot(KALIMDOR, SILITHUS, {
 						cost = { { "i", 20449, 1 } },	-- Scepter of Beckoning: Stone
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20688, {	-- Earthen Guard
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20686, {	-- Abyssal Cloth Amice
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20687, {	-- Abyssal Plate Vambraces
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20688),	-- Earthen Guard
+							i(20686),	-- Abyssal Cloth Amice
+							i(20687),	-- Abyssal Plate Vambraces
 						},
 					}),
 					n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
 						cost = { { "i", 20448, 1 } },	-- Scepter of Beckoning: Thunder
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20691, {	-- Windshear Cape
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20690, {	-- Abyssal Cloth Wristbands
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20689, {	-- Abyssal Leather Shoulders
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20691),	-- Windshear Cape
+							i(20690),	-- Abyssal Cloth Wristbands
+							i(20689),	-- Abyssal Leather Shoulders
 						},
 					}),
 					n(15305, {	-- Lord Skwol <Abyssal High Council>
 						cost = { { "i", 20450, 1 } },	-- Scepter of Beckoning: Water
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20685, {	-- Wavefront Necklace
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20684, {	-- Abyssal Mail Armguards
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20683, {	-- Abyssal Plate Epaulets
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20685),	-- Wavefront Necklace
+							i(20684),	-- Abyssal Mail Armguards
+							i(20683),	-- Abyssal Plate Epaulets
 						},
 					}),
 					n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 						cost = { { "i", 20447, 1 } },	-- Scepter of Beckoning: Fire
 						timeline = { REMOVED_4_0_3 },
 						groups = {
-							i(20682, {	-- Elemental Focus Band
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20681, {	-- Abyssal Leather Bracers
-								timeline = { REMOVED_4_0_3 },
-							}),
-							i(20680, {	-- Abyssal Mail Pauldrons
-								timeline = { REMOVED_4_0_3 },
-							}),
+							i(20682),	-- Elemental Focus Band
+							i(20681),	-- Abyssal Leather Bracers
+							i(20680),	-- Abyssal Mail Pauldrons
 						},
 					}),
 				},

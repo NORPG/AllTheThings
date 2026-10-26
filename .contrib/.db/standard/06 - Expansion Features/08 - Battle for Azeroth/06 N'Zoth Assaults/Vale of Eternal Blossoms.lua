@@ -649,7 +649,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(57728, {	-- Assault: The Endless Swarm
-				timeline = { ADDED_8_3_0 },
 				isWorldQuest = true,
 				isWeekly = true,
 				groups = {

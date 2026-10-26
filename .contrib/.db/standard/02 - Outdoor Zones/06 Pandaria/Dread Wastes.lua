@@ -225,7 +225,6 @@ maproot(PANDARIA, DREAD_WASTES, {
 				groups = {
 					q(31957, {	-- Grand Master Shu
 						sourceAchievement = 6606,	-- Taming Pandaria
-						timeline = { ADDED_5_0_4 },
 						isDaily = true,
 						groups = {
 							i(89125),	-- Sack of Pet Supplies

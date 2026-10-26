@@ -30,7 +30,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(228250),	-- Plans: Stronger-hold Gauntlets
 			}),
 			n(6109, {	-- Azuregos
-				timeline = { REMOVED_1_15_3 },
 				modelScale = 6.0,
 				groups = {
 					i(19130, {	-- Cold Snap

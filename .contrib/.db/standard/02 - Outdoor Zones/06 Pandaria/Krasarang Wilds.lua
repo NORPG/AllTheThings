@@ -146,7 +146,6 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				groups = {
 					q(31954, {	-- Grand Master Mo'ruk
 						sourceAchievement = 6606,	-- Taming Pandaria
-						timeline = { ADDED_5_0_4 },
 						isDaily = true,
 						groups = {
 							i(89125),	-- Sack of Pet Supplies

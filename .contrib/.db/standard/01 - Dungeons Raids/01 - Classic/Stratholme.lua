@@ -1391,7 +1391,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #if BEFORE 3.0.2
 								description = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
 								-- #endif
-								timeline = { REMOVED_3_0_2 },
 								collectible = false,
 							}),
 						},

@@ -21,11 +21,8 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 	maps = { 11 },	-- Wailing Caverns (Outside instance)
 	groups = {
 		n(ACHIEVEMENTS, {
-			ach(750, {	-- Explore Northern Barrens
-				timeline = { ADDED_4_0_3 },
-			}),
+			ach(750),	-- Explore Northern Barrens
 			ach(4933, {	-- Northern Barrens Quests
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				-- #if AFTER 7.3.5
 				_doautomation = true,
@@ -94,7 +91,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			fp(458, {	-- Nozzlepot's Outpost, Northern Barrens
 				cr = 40558,	-- Gazrix <Flight Master>
 				coord = { 62.4, 17.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			fp(80, {	-- Ratchet, Northern Barrens
@@ -121,7 +117,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			fp(354, {	-- The Mor'Shan Ramparts, Ashenvale
 				cr = 34927,	-- Gort Goreflight <Flight Master>
 				coord = { 42.0, 15.8, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 		}),
@@ -154,7 +149,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				groups = {
 					q(31819, {	-- Dagra the Fierce
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -262,13 +256,11 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 870,	-- The Forgotten Pools
 				qg = 3448,	-- Tonga Runetotem
 				coord = { 49.5, 58.6, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(13992, {	-- A Little Diversion
 				qg = 34613,	-- Ta'jari
 				coord = { 37.5, 45.8, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Kolkar Centaur Killed
@@ -284,7 +276,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14046,	-- The Baron's Demands
 				qg = 3467,	-- Baron Longshore
 				coord = { 69.9, 85.1, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Tattooed Pirate Head
@@ -330,7 +321,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14038,	-- Love it or Limpet
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Ammo Dumps Destroyed
@@ -344,7 +334,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13969,	-- Grol'dom's Missing Kodo
 				qg = 34547,	-- Grol'dom Kodo
 				coord = { 58.0, 49.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Stolen Grain
@@ -423,7 +412,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13961,	-- Drag it Out of Them
 				qg = 34513,	-- Togrik
 				coord = { 56.5, 40.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Razormane Prisoner Interrogated
@@ -764,12 +752,8 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 							9456,	-- Warlord Krom'zar
 						},
 					}),
-					i(59584, {	-- Foolhardy Bracers
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59583, {	-- Marauding Belt
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59584),	-- Foolhardy Bracers
+					i(59583),	-- Marauding Belt
 					i(131221, {	-- Marauding Cord
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -887,7 +871,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(14034, {	-- Club Foote
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(29086, {	-- Competition Schmompetition
@@ -1023,15 +1006,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 					}),
 					-- #endif
-					i(59539, {	-- Mankrik's Old Wedding Garments
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59540, {	-- Quilboar Skin Gloves
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59541, {	-- Mankrik's Boar Slicer
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59539),	-- Mankrik's Old Wedding Garments
+					i(59540),	-- Quilboar Skin Gloves
+					i(59541),	-- Mankrik's Boar Slicer
 					i(131227, {	-- Quilboar Linked Gauntlets
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -1060,22 +1037,15 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						provider = { "i", 11227 },	-- Piece of Krom'zar's Banner
 						cr = 9456,	-- Warlord Krom'zar
 					}),
-					i(59591, {	-- Shield of the Barrens
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59592, {	-- Suppressor's Wand
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59593, {	-- Deathgate Shield
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59591),	-- Shield of the Barrens
+					i(59592),	-- Suppressor's Wand
+					i(59593),	-- Deathgate Shield
 				},
 			}),
 			q(13975, {	-- Crossroads Caravan Delivery
 				sourceQuest = 13949,	-- Crossroads Caravan Pickup
 				qg = 34578,	-- Rocco Whipshank
 				coord = { 54.6, 41.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(13949, {	-- Crossroads Caravan Pickup
@@ -1085,7 +1055,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				qg = 34258,	-- Halga Bloodeye
 				coord = { 67.3, 38.7, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(59536),	-- Bloodeye Belt
@@ -1119,7 +1088,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				qg = 3429,	-- Thork
 				coord = { 48.7, 59.5, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -1157,7 +1125,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(26878, {	-- Disciples of Naralex
 				qg = 3448,	-- Tonga Runetotem
 				coord = { 49.5, 58.6, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			-- #if BEFORE CATA
@@ -1173,7 +1140,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13961, {	-- Drag it Out of Them
 				qg = 34513,	-- Togrik
 				coord = { 56.5, 40.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(881, {	-- Echeyakee
@@ -1234,7 +1200,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13615, {	-- Empty Quivers
 				qg = 33284,	-- Truun
 				coord = { 42.2, 15.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Serviceable Arrow
@@ -1248,13 +1213,11 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(14045, {	-- Find Baron Longshore
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(13618, {	-- Find Gorat!
 				qg = 8582,	-- Kadrak
 				coord = { 42.7, 14.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(26701, {	-- Flight to Brackenwall
@@ -1262,7 +1225,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 26696,	-- The Call of Kalimdor
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 35,
@@ -1272,7 +1234,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 26596,	-- The Call of Kalimdor
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 35,
@@ -1280,7 +1241,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(14072, {	-- Flushing Out Verog
 				qg = 34638,	-- Shoe
 				coord = { 55.1, 78.3, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/4 Centaur Intelligence
@@ -1388,7 +1348,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14049,	-- A Most Unusual Map
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Gazlowe's Treasure Chest
@@ -1409,7 +1368,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14052,	-- Take it up With Tony
 				qg = 34749,	-- Tony Two-Tusk
 				coord = { 77.2, 91.3, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Glomp's Booty
@@ -1499,7 +1457,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13620,	-- To Dinah, at Once!
 				qg = 33263,	-- Dinah Halfmoon
 				coord = { 42.4, 15.7, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Captain Elendilad slain
@@ -1516,7 +1473,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13621,	-- Gorat's Vengeance
 				qg = 33284,	-- Truun
 				coord = { 42.2, 15.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Brutusk mounted
@@ -1528,14 +1484,12 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13963,	-- By Hook or By Crook
 				qg = 5907,	-- Kranal Fiss
 				coord = { 56.4, 40.3, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(14057, {	-- Guns. We Need Guns.
 				sourceQuest = 14056,	-- Glomp is Sitting On It
 				qg = 34749,	-- Tony Two-Tusk
 				coord = { 77.2, 91.3, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Heavy Dwarven Rifle
@@ -1642,15 +1596,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 						cr = 3396,	-- Hezrul Bloodmark
 					}),
-					i(59585, {	-- Lushwater Cloak
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59586, {	-- Gloves of Unfocused Rage
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59587, {	-- Fractured Belt
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59585),	-- Lushwater Cloak
+					i(59586),	-- Gloves of Unfocused Rage
+					i(59587),	-- Fractured Belt
 					i(131220, {	-- Hands of Unfocused Rage
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -1766,7 +1714,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 848,	-- Fungal Spores
 				qg = 3390,	-- Apothecary Helbrim
 				coord = { 48.6, 58.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(59545),	-- Fuzzy Gloves
@@ -1896,19 +1843,14 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 							3256,	-- Sunscale Scytheclaw
 						},
 					}),
-					i(59549, {	-- Sunscale Cloak
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59550, {	-- Darkthorn Piercer
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59549),	-- Sunscale Cloak
+					i(59550),	-- Darkthorn Piercer
 				},
 			}),
 			q(14066, {	-- Investigate the Wreckage
 				sourceQuest = 13991,	-- The Purloined Payroll
 				qg = 3464,	-- Gazrog
 				coord = { 66.8, 72.7, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(873, {	-- Isha Awak
@@ -1960,15 +1902,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 					}),
 					-- #endif
-					i(59580, {	-- Sharp Poker
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59581, {	-- Smart Shoes
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59582, {	-- Shrewd Crossbow
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59580),	-- Sharp Poker
+					i(59581),	-- Smart Shoes
+					i(59582),	-- Shrewd Crossbow
 					i(131223, {	-- Smart Sandals
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -1997,7 +1933,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13995, {	-- King of Centaur Mountain
 				qg = 34634,	-- Gorgal Angerscar
 				coord = { 55.1, 78.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Kurak slain
@@ -2076,15 +2011,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 						cr = 3394,	-- Barak Kodobane
 					}),
-					i(59551, {	-- Tangled Thread Gloves
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59552, {	-- Belt of the Forgotten Pool
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59553, {	-- Highstrider Boots
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59551),	-- Tangled Thread Gloves
+					i(59552),	-- Belt of the Forgotten Pool
+					i(59553),	-- Highstrider Boots
 					i(131218, {	-- Cord of the Forgotten Pool
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -2103,7 +2032,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14034,	-- Club Foote
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 The Bellipotent Mined
@@ -2300,7 +2228,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				qg = 8582,	-- Kadrak
 				coord = { 42.7, 14.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Ashenvale Skirmishers Slain
@@ -2334,7 +2261,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14057,	-- Guns. We Need Guns.
 				qg = 34749,	-- Tony Two-Tusk
 				coord = { 77.2, 91.3, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Maiden's Dagger Captured
@@ -2492,7 +2418,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				altQuests = { 28494 },	-- Warchief's Command: Northern Barrens!
 				qg = 35068,	-- Gotura Fourwinds
 				coord = { 47.6, 71.3, ORGRIMMAR },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -2500,7 +2425,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14050,	-- Gazlowe's Fortune
 				qg = 3391,	-- Gazlowe
 				coord = { 68.4, 69.0, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Board the Riverboat to Nozzlepot
@@ -2512,7 +2436,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14004,	-- Return to Samophlanger
 				qg = 3442,	-- Sputtervalve
 				coord = { 62.2, 17.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(59547),	-- Out-of-Date Manual
@@ -2545,7 +2468,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13613, {	-- Rescue the Fallen
 				qg = 33263,	-- Dinah Halfmoon
 				coord = { 42.4, 15.7, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Wounded Mor'shan Defenders Rescued
@@ -2564,7 +2486,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 29027,	-- Nugget Slugs
 				qg = 9316,	-- Wenikee Boltbucket
 				coord = { 44.3, 24.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			-- #if BEFORE CATA
@@ -2775,7 +2696,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 29024,	-- Samophlange
 				qg = 3442,	-- Sputtervalve
 				coord = { 62.3, 17.5, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(2996, {	-- Seeking Strahad (Orgrimmar)
@@ -2840,15 +2760,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 						cr = 3452,	-- Serena Bloodfeather
 					}),
-					i(59588, {	-- Cutthroat Band
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59589, {	-- Bloodfeather Ring
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59590, {	-- Darsok's Ring
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59588),	-- Cutthroat Band
+					i(59589),	-- Bloodfeather Ring
+					i(59590),	-- Darsok's Ring
 					i(5321, {	-- Elegant Shortsword
 						timeline = { REMOVED_4_0_3 },
 					}),
@@ -3148,7 +3062,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(14052, {	-- Take it up with Tony
 				qg = 3453,	-- Wharfmaster Dizzywig
 				coord = { 69.5, 72.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(1719, {	-- The Affray
@@ -3169,7 +3082,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 14045,	-- Find Baron Longshore
 				qg = 3467,	-- Baron Longshore
 				coord = { 69.9, 85.1, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Deal Struck with Baron Longshore
@@ -3266,15 +3178,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				-- #endif
 				lvl = lvlsquish(13, 13, 5),
 				groups = {
-					i(59577, {	-- Sputtervalve Gun
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59578, {	-- Bracers of Angry Mutterings
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59579, {	-- Nozzlepot Leggings
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59577),	-- Sputtervalve Gun
+					i(59578),	-- Bracers of Angry Mutterings
+					i(59579),	-- Nozzlepot Leggings
 					i(131222, {	-- Nozzlepot Legwraps
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -3330,15 +3236,9 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						cr = 3438,	-- Kreenig Snarlsnout
 					}),
 					-- #endif
-					i(59542, {	-- Thornweaver Leggings
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59543, {	-- Pigman Belt
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59544, {	-- Kargal's Breastplate
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59542),	-- Thornweaver Leggings
+					i(59543),	-- Pigman Belt
+					i(59544),	-- Kargal's Breastplate
 					i(131224, {	-- Pigman Waistband
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -3368,7 +3268,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13973, {	-- The Grol'dom Militia
 				qg = 34560,	-- Una Wolfclaw
 				coord = { 54.0, 41.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Razormane Pillager slain
@@ -3411,7 +3310,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13970,	-- Animal Services
 				qg = 34547,	-- Grol'dom Kodo
 				coord = { 58.0, 49.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(59531),	-- Far Watch Musket
@@ -3422,7 +3320,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 905,	-- Into the Raptor's Den
 				qg = 3338,	-- Sergra Darkthorn
 				coord = { 50.0, 59.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -3507,7 +3404,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 869,	-- To Track a Thief
 				qg = 3464,	-- Gazrog
 				coord = { 66.8, 72.6, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Sunscale Ravager slain
@@ -3534,7 +3430,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13963,	-- By Hook or by Crook
 				qg = 34513,	-- Togrik
 				coord = { 56.5, 40.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Tortusk slain
@@ -3591,7 +3486,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 			q(13878, {	-- Through Fire and Flames
 				qg = 34284,	-- Dorak
 				coord = { 66.6, 45.4, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/3 Wolves Freed
@@ -3622,7 +3516,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13619,	-- Final Report
 				qg = 8582,	-- Kadrak
 				coord = { 42.6, 14.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(28876, {	-- To the Mor'Shan Ramparts!
@@ -3635,7 +3528,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13653,	-- Crisis at Splintertree
 				qg = 8582,	-- Kadrak
 				coord = { 42.6, 14.9, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(60644),	-- Gorka's Band
@@ -3819,12 +3711,8 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						},
 						cr = 3395,	-- Verog the Dervish
 					}),
-					i(59566, {	-- Robe of Shame
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(59567, {	-- Murderous Bracers
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(59566),	-- Robe of Shame
+					i(59567),	-- Murderous Bracers
 					i(131219, {	-- Murderous Cuffs
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -3871,18 +3759,10 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 						cr = 3467,	-- Baron Longshore <Southsea Freebooters>
 					}),
 					-- #endif
-					i(49560, {	-- Proof of Death
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(49543, {	-- Seaworthy Leggings
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(49548, {	-- Gazlowe's Gloves
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(49446, {	-- Retainer Vest
-						timeline = { ADDED_4_0_3 },
-					}),
+					i(49560),	-- Proof of Death
+					i(49543),	-- Seaworthy Leggings
+					i(49548),	-- Gazlowe's Gloves
+					i(49446),	-- Retainer Vest
 					i(131225, {	-- Gazlowe's Grips
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -3897,7 +3777,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				-- #endif
 				qg = 34828,	-- Kala'ma
 				coord = { 62.0, 63.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Wittle Waptor
@@ -3915,7 +3794,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 			}),
 			warchiefscommand(q(28493, {	-- Warchief's Command: Ashenvale!
-				timeline = { ADDED_4_0_3 },
 				maps = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 				isBreadcrumb = true,
 				-- #if BEFORE 7.3.5
@@ -3925,7 +3803,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				-- #endif
 			})),
 			warchiefscommand(q(28494, {	-- Warchief's Command: Northern Barrens!
-				timeline = { ADDED_4_0_3 },
 				maps = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 				isBreadcrumb = true,
 				-- #if BEFORE 7.3.5
@@ -3976,7 +3853,6 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				sourceQuest = 13998,	-- In Fungus we Trust
 				qg = 3390,	-- Apothecary Helbrim
 				coord = { 48.6, 58.2, NORTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 		}),
@@ -4241,9 +4117,7 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				},
 				timeline = { ADDED_3_2_0 },
 				groups = {
-					i(48118, {	-- Leaping Hatchling (PET!)
-						timeline = { ADDED_3_2_0 },
-					}),
+					i(48118),	-- Leaping Hatchling (PET!)
 				},
 			}),
 		}),

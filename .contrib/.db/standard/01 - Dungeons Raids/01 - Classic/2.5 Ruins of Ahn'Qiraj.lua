@@ -1500,12 +1500,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						groups = {
 							applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 								minReputation = { FACTION_CENARION_CIRCLE, REVERED },
-								timeline = { ADDED_1_15_5 },
 								isLimited = true,
 							})),
 							applyclassicphase(SOD_PHASE_SIX, i(234461, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
 								minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
-								timeline = { ADDED_1_15_5 },
 								isLimited = true,
 							})),
 						},
@@ -1580,9 +1578,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(22220, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
 								timeline = { REMOVED_1_15_5 },
 							}),
-							applyclassicphase(SOD_PHASE_SIX, i(234085, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
-								timeline = { ADDED_1_15_5 },
-							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234085)),	-- Plans: Black Grasp of the Destroyer (RECIPE!)
 						},
 					}),
 					e(1542, {	-- Ossirian the Unscarred

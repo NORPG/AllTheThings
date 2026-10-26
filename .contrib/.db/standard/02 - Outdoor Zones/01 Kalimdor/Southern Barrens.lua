@@ -9,11 +9,8 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 	timeline = { ADDED_4_0_3 },
 	groups = {
 		n(ACHIEVEMENTS, {
-			ach(4996, {	-- Explore Southern Barrens
-				timeline = { ADDED_4_0_3 },
-			}),
+			ach(4996),	-- Explore Southern Barrens
 			ach(4937, {	-- Southern Barrens Quests (A)
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 7.3.5
 				_doautomation = true,
@@ -45,7 +42,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				-- #endif
 			}),
 			ach(4981, {	-- Southern Barrens Quests (H)
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				-- #if AFTER 7.3.5
 				_doautomation = true,
@@ -120,25 +116,21 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			fp(391, {	-- Desolation Hold, Southern Barrens
 				cr = 39330,	-- Crador <Flight Master>
 				coord = { 41.2, 70.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			fp(389, {	-- Fort Triumph, Southern Barrens
 				cr = 39211,	-- Steve Stevenson <Flight Master>
 				coord = { 49.2, 67.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			fp(387, {	-- Honor's Stand, Southern Barrens
 				cr = 39210,	-- John Johnson <Flight Master>
 				coord = { 38.9, 10.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			fp(390, {	-- Hunter's Hill, Southern Barrens
 				cr = 39340,	-- Unega <Flight Master>
 				coord = { 39.6, 20.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			fp(388, {	-- Northwatch Hold, Southern Barrens
@@ -164,7 +156,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				groups = {
 					q(31904, {	-- Cassandra Kaboom
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -205,7 +196,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25174,	-- Twinbraid Needs to Know
 				qg = 39118,	-- General Twinbraid
 				coord = { 43.5, 78.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Frazzlecraz Explosives Armed
@@ -217,7 +207,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24539,	-- When Plants Attack
 				qg = 37515,	-- Lane Tallgrass
 				coord = { 44.3, 33.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Unusual Flower Bud
@@ -232,7 +221,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25022, {	-- A Failure to Communicate
 				qg = 38871,	-- Corporal Teegan
 				coord = { 56.1, 42.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Ambassador Gaines Rescued
@@ -244,14 +232,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24529,	-- Bad to Worse
 				qg = 37516,	-- Tawane
 				coord = { 44.5, 33.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
 			q(25084, {	-- A Growing Threat
 				qg = 37835,	-- Dorn Redearth
 				coord = { 45.0, 85.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/13 Razormane Quilboar Slain
@@ -267,7 +253,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25045, {	-- A Line in the Dirt (A)
 				qg = 38323,	-- General Hawthorne
 				coord = { 49.9, 49.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(53301),	-- Taurajo Leggings
@@ -282,7 +267,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24543,	-- A Family Divided
 				qg = 3418,	-- Kirge Sternhorn
 				coord = { 41.6, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(53254),	-- Sternhorn's Shield
@@ -297,7 +281,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24632,	-- Tauren Vengeance
 				qg = 3341,	-- Gann Stonespire
 				coord = { 49.2, 82.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Bael'dun Dwarves Slain
@@ -312,7 +295,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24570, {	-- Adder Subtraction
 				qg = 38314,	-- Muyoh
 				coord = { 50.3, 40.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/5 Enervated Adder
 						provider = { "i", 49875 },	-- Enervated Adder
@@ -344,7 +326,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24941,	-- Langridge Shot
 				qg = 38804,	-- Tolliver Houndstooth
 				coord = { 66.9, 46.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Wounded Defenders Bandaged
@@ -356,7 +337,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24529, {	-- Bad to Worse
 				qg = 11857,	-- Makaba Flathoof
 				coord = { 44.1, 33.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Taurajo Refugee Released from Cage
@@ -376,7 +356,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25120,	-- Marley's Final Flight
 				qg = 39218,	-- Bael'dun Survivor
 				coord = { 49.4, 86.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Bael'dun Survivor Rescued
@@ -394,7 +373,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25079,	-- Powder Play
 				qg = 39084,	-- Mizzy Pistonhammer
 				coord = { 49.5, 67.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Humming Electrogizard
@@ -451,7 +429,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24565, {	-- Biological Intervention
 				qg = 37570,	-- Naralex
 				coord = { 50.4, 40.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/5 Deviate Terrortooth slain
 						provider = { "n", 37090 },	-- Deviate Terrortooth
@@ -464,7 +441,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24606, {	-- Blood of the Barrens
 				provider = { "i", 49932 },	-- Carved Boar Idol
 				coord = { 42.2, 83.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				crs = {
 					37560,	-- Razormane Pathfinder
 					37661,	-- Razormane Seer
@@ -493,7 +469,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24863, {	-- Breaking the Siege
 				qg = 38378,	-- Commander Walpole
 				coord = { 29.9, 9.00, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Stonetalon Supplies
@@ -507,7 +482,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24591, {	-- Changing of the Gar'dul
 				sourceQuest = 24577,	-- Desolation Hold Inspection
 				coord = { 41.6, 69.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Go to the Top of the Tower
@@ -530,7 +504,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24591,	-- Changing of the Gar'dul
 				qg = 37837,	-- Warlord Bloodhilt
 				coord = { 41.6, 69.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Triumph Vanguard slain
@@ -541,7 +514,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25081, {	-- Claim the Battlescar
 				qg = 39083,	-- Commander Roberts
 				coord = { 49.1, 66.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Desolation Raider slain
@@ -563,7 +535,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38323,	-- General Hawthorne
 				coord = { 49.9, 49.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Taurajo Looters Arrested
@@ -579,7 +550,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 37135,	-- Nura Pathfinder
 				coord = { 31.4, 13.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/3 High Road Scout slain
@@ -590,7 +560,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24604, {	-- Concern for Mankrik
 				qg = 37812,	-- Mahka
 				coord = { 45.1, 85.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -619,7 +588,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24572,	-- Taking Back Taurajo
 				qg = 37679,	-- Warlord Bloodhilt
 				coord = { 41.4, 46.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Gar'dul Notified
@@ -662,7 +630,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25104, {	-- Digsite Status
 				qg = 39118,	-- General Twinbraid
 				coord = { 43.5, 78.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(25044, {	-- Diplomacy By Another Means
@@ -670,7 +637,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 38986,	-- Ambassador Gaines
 				qi = 49782,	-- Horn of Challenge (QI!) not prov
 				coord = { 50.0, 49.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Sabersnout slain
@@ -698,7 +664,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24604,	-- Concern for Mankrik
 				qg = 37847,	-- Mankrik
 				coord = { 44.5, 88.0, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/13 Razormane Quilboar Slain
@@ -715,7 +680,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24684,	-- A Weezil in the Henhouse
 				qg = 38140,	-- Weezil Slipshadow
 				coord = { 50.7, 86.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Bael'Dun Fortress Schematics
@@ -730,7 +694,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24606,	-- Blood of the Barrens
 				qg = 37812,	-- Mahka
 				coord = { 45.1, 85.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/3 Polished Boar Skull
 						providers = {
@@ -760,7 +723,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24513, {	-- Eye for an Eye
 				qg = 37136,	-- Oltarg
 				coord = { 37.1, 13.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/2 Captain Peake's Eyeballs
@@ -772,7 +734,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25284, {	-- Feeding the Fear
 				qg = 37153,	-- Holgom
 				coord = { 37.6, 16.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Tower Warden slain
@@ -784,7 +745,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25104,	-- Digsite Status
 				qg = 39155,	-- Marley Twinbraid
 				coord = { 47.2, 88.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Feegly the Exiled slain
@@ -801,7 +761,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25043, {	-- Fields of Blood
 				qg = 38323,	-- General Hawthorne
 				coord = { 49.9, 49.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Desolation Grunt slain
@@ -812,7 +771,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25008, {	-- Filthy Animals
 				qg = 38873,	-- Goucho
 				coord = { 56.1, 42.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Hecklefang Scavenger slain
@@ -829,14 +787,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25082,	-- Working the Bugs Out
 				qg = 39085,	-- Logan Talonstrike
 				coord = { 49.2, 67.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24667, {	-- Firestone Point (H)
 				sourceQuest = 24654,	-- Silithissues
 				qg = 37910,	-- Crawgol
 				coord = { 41.6, 69.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(50162),	-- Crawgol's Silithid Field Guide (QI!)
@@ -845,7 +801,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24631, {	-- Flightmare
 				qg = 37909,	-- Tomusa
 				coord = { 41.0, 70.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Wildhammer Mercenary slain
@@ -868,7 +823,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38380,	-- Janice Mattingly
 				coord = { 35.0, 9.50, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Kona Thunderwalk slain
@@ -905,7 +859,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25104,	-- Digsite Status
 				qg = 39155,	-- Marley Twinbraid
 				coord = { 47.2, 88.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Excavation Raider slain
@@ -930,7 +883,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25120,	-- Marley's Final Flight
 				qg = 39188,	-- Marley Twinbraid
 				coord = { 49.2, 86.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Mug of Ol' Barkerstout
@@ -949,7 +901,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24619,	-- Parts-is-Parts
 				qg = 37908,	-- Calder Gray
 				coord = { 42.6, 70.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Enormous Kodo Heart
@@ -981,7 +932,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				-- #if NOT ANYCLASSIC
 				description = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
 				-- #endif
-				timeline = { ADDED_4_0_3 },
 				maps = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 				isBreadcrumb = true,
 				-- #if BEFORE 7.3.5
@@ -991,7 +941,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				-- #endif
 			})),
 			heroscall(q(28551, {	-- Hero's Call: Southern Barrens!
-				timeline = { ADDED_4_0_3 },
 				maps = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 				isBreadcrumb = true,
 				-- #if BEFORE 7.3.5
@@ -1004,14 +953,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24504,	-- Clear the High Road
 				qg = 37137,	-- Tunawa Stillwind
 				coord = { 37.4, 16.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(24573, {	-- Honoring the Dead
 				sourceQuest = 24572,	-- Taking Back Taurajo
 				qg = 37717,	-- Winnoa Pineforest
 				coord = { 41.5, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Krulmoo Eulogized
@@ -1036,7 +983,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24591,	-- Changing of the Gar'dul
 				qg = 37837,	-- Warlord Bloodhilt
 				coord = { 41.6, 69.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 SI:7 Briefings
@@ -1077,7 +1023,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24525, {	-- Keeping the Dogs at Bay
 				qg = 11857,	-- Makaba Flathoof
 				coord = { 44.1, 33.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Hecklefang Scavenger slain
@@ -1089,7 +1034,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25174,	-- Twinbraid Needs to Know
 				qg = 39118,	-- General Twinbraid
 				coord = { 43.5, 78.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Frazzlecraz Miner slain
@@ -1108,7 +1052,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24941, {	-- Langridge Shot
 				qg = 38620,	-- Thomas Paxton
 				coord = { 67.0, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/15 Langridge Shot
@@ -1128,7 +1071,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24571, {	-- Lashvine Seeds
 				qg = 38314,	-- Muyoh
 				coord = { 50.3, 40.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/4 Writhing Seed
 						provider = { "i", 49876 },	-- Writhing Seed
@@ -1141,7 +1083,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 38620,	-- Thomas Paxton
 				qi = 52017,	-- Paxton's Torch
 				coord = { 67.0, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/3 Rageroar Catapults Burned
@@ -1155,7 +1096,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25041, {	-- Lion's Pride (A)
 				qg = 39003,	-- Sam Trawley
 				coord = { 49.8, 50.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Barrens Lion Slain
@@ -1169,7 +1109,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24552, {	-- Lion's Pride (H)
 				qg = 3387,	-- Jorn Skyseer
 				coord = { 41.5, 47.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Barrens Lions Slain
@@ -1194,7 +1133,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24653,	-- Echoes of Agamaggan
 				qg = 37812,	-- Mahka
 				coord = { 45.1, 85.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(874, {	-- Mahren Skyseer
@@ -1209,7 +1147,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25036,	-- Teegan's Troubles
 				qg = 38871,	-- Corporal Teegan
 				coord = { 56.1, 42.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Bristleback Quilboar Slain
@@ -1230,7 +1167,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25084,	-- A Growing Threat
 				qg = 37835,	-- Dorn Redearth
 				coord = { 45.0, 85.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Mangletooth slain
@@ -1246,7 +1182,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24603,	-- Don't Stop Bereavin'
 				qg = 37847,	-- Mankrik
 				coord = { 44.5, 88.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Mangletooth slain
@@ -1262,7 +1197,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25041,	-- Lion's Pride (A)
 				qg = 39003,	-- Sam Trawley
 				coord = { 49.8, 50.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/4 Fresh Stormsnout Steak
@@ -1285,7 +1219,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 39155,	-- Marley Twinbraid
 				coord = { 47.2, 88.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Fly with Marley Twinbraid
@@ -1297,13 +1230,11 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25057,	-- Clap 'em In Irons
 				qg = 38323,	-- General Hawthorne
 				coord = { 49.9, 49.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24551, {	-- Meet the New Boss
 				qg = 3433,	-- Tatternack Steelforge
 				coord = { 41.8, 46.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Theramore Merit Badge
@@ -1316,7 +1247,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24747,	-- Sabotage!
 				qg = 39697,	-- Nato Raintree
 				coord = { 49.2, 82.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = { i(52714) },	-- Dwarven Slug (QI!)
@@ -1324,7 +1254,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25102, {	-- No Bull
 				qg = 39154,	-- Hurlston Stonesthrow
 				coord = { 43.5, 78.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/4 Landquaker Kodo slain
@@ -1352,7 +1281,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24619, {	-- Parts-is-Parts
 				qg = 37908,	-- Calder Gray
 				coord = { 42.6, 70.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/15 Severed Extremity
@@ -1367,7 +1295,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25075, {	-- Pick-a-Part
 				qg = 39084,	-- Mizzy Pistonhammer
 				coord = { 49.5, 67.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Siege Engine Scrap
@@ -1383,7 +1310,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25075,	-- Pick-a-Part
 				qg = 39084,	-- Mizzy Pistonhammer
 				coord = { 49.5, 67.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Keg of Blast-O Powder
@@ -1395,7 +1321,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24517, {	-- Put the Fear in Them
 				qg = 37154,	-- Kilrok Gorehammer
 				coord = { 39.6, 19.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Honor's Stand Officer slain
@@ -1409,7 +1334,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24514, {	-- Raptor Scraps
 				qg = 37138,	-- Onatay
 				coord = { 39.4, 20.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Terrortooth Hide
@@ -1441,7 +1365,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25182,	-- Kill 'em All!
 				qg = 39118,	-- General Twinbraid
 				coord = { 43.5, 78.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 			}),
@@ -1449,7 +1372,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24921,	-- Report to Aubrey
 				qg = 38619,	-- Admiral Aubrey
 				coord = { 69.3, 49.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/6 Rageroar Sea Dog slain
@@ -1464,7 +1386,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38623,	-- Dockmaster Lewis
 				coord = { 71.1, 49.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -1473,14 +1394,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 39083,	-- Commander Roberts
 				qi = 52324,	-- Frontline Report
 				coord = { 49.1, 66.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24943, {	-- Re-Take the Courtyard
 				sourceQuest = 24941,	-- Langridge Shot
 				qg = 38620,	-- Thomas Paxton
 				coord = { 67.0, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Rageroar Grunt slain
@@ -1559,7 +1478,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24862, {	-- Running the Gauntlet
 				qg = 38378,	-- Commander Walpole
 				coord = { 29.9, 9.00, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Hunter Hill Scout slain
@@ -1571,7 +1489,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24938,	-- The Guns of Northwatch
 				qg = 3454,	-- Cannoneer Smythe
 				coord = { 68.6, 44.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Rageroar Rowboat Destroyed
@@ -1592,7 +1509,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24685,	-- Dwarf Fortress
 				qg = 38140,	-- Weezil Slipshadow
 				coord = { 50.7, 86.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					i(53255),	-- Stonespire Shoulders
@@ -1606,7 +1522,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25002, {	-- Scavenged
 				qg = 38878,	-- Mangled Body
 				coord = { 61.8, 42.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Northwatch Supply Crate
@@ -1624,7 +1539,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 37679,	-- Warlord Bloodhilt
 				coord = { 41.4, 46.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/4 Siege Engine Destroyed
@@ -1644,14 +1558,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24515, {	-- Signals in the Sky
 				qg = 37138,	-- Onatay
 				coord = { 39.4, 20.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(24956, {	-- Silencing Rageroar
 				sourceQuest = 24944,	-- Back in the Fight
 				qg = 38804,	-- Tolliver Houndstooth
 				coord = { 66.9, 46.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/4 Rageroar Lieutenant slain
@@ -1669,7 +1581,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 37910,	-- Crawgol
 				qi = 50128,	-- Bucket of Burning Pitch (QI!) not prov
 				coord = { 41.6, 69.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Silithid Swarmer slain
@@ -1681,7 +1592,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24620,	-- Hearts-is-Hearts
 				qg = 37908,	-- Calder Gray
 				coord = { 42.6, 70.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Fresh Brain
@@ -1703,7 +1613,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38314,	-- Muyoh
 				coord = { 50.3, 40.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/6 Results Observed
 						provider = { "i", 49882 },	-- Soothing Seeds
@@ -1719,7 +1628,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 11857,	-- Makaba Flathoof
 				qi = 49782,	-- Horn of Challenge (QI!) not prov
 				coord = { 44.2, 33.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Sabersnout slain
@@ -1747,7 +1655,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24518,	-- The Low Road
 				qg = 37154,	-- Kilrok Gorehammer
 				coord = { 39.6, 19.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Henry Zykes slain
@@ -1763,14 +1670,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(25191, {	-- Survey the Destruction
 				qg = 38383,	-- Nibb Spindlegear
 				coord = { 39.1, 11.4, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24572, {	-- Taking Back Taurajo
 				sourceQuest = 24569,	-- Siegebreaker
 				qg = 37679,	-- Warlord Bloodhilt
 				coord = { 41.4, 46.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Taurajo Looter slain
@@ -1782,14 +1687,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24631,	-- Flightmare
 				qg = 37909,	-- Tomusa
 				coord = { 41.1, 70.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
 			q(25000, {	-- Teegan's People
 				qg = 38621,	-- Jeffrey Long
 				coord = { 64.8, 46.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/8 Terrortooth Hide
@@ -1808,7 +1711,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38620,	-- Thomas Paxton
 				coord = { 67.0, 46.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -1817,7 +1719,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25191,	-- Survey the Destruction
 				qg = 39322,	-- Horton Gimbleheart
 				coord = { 68.6, 49.0, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lockCriteria = { 1, "questID", 24934 },	-- Repel Boarders!
 				isBreadcrumb = true,
@@ -1826,14 +1727,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25151,	-- He Needs Ale!
 				qg = 39188,	-- Marley Twinbraid
 				coord = { 49.2, 86.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24637, {	-- The Butcher of Taurajo
 				sourceQuest = 24634,	-- Intelligence Warfare
 				qg = 37837,	-- Warlord Bloodhilt
 				coord = { 41.6, 69.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 General Hawthorne slain
@@ -1851,7 +1750,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25183,	-- ...And Bury the Rest
 				provider = { "o", 202598 },	-- Big Nasty Plunger
 				coord = { 40.4, 77.8, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(53305),	-- Twinbraid Shoulders
@@ -1865,7 +1763,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24824, {	-- The Disturbed Earth
 				qg = 37834,	-- Tauna Skychaser
 				coord = { 45.1, 85.3, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/4 Disturbed Earth Fragment
 						provider = { "i", 50385 },	-- Disturbed Earth Fragment
@@ -1877,7 +1774,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24934,	-- Repel Boarders!
 				qg = 38619,	-- Admiral Aubrey
 				coord = { 69.3, 49.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(897, {	-- The Harvester
@@ -1888,7 +1784,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			}),
 			q(24518, {	-- The Low Road
 				provider = { "i", 49776 },	-- Roadway Plans
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				crs = { 37216 },	-- Honor's Stand Officer
 			}),
@@ -1896,7 +1791,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24574,	-- To Harvest Chaos
 				qg = 37570,	-- Naralex
 				coord = { 50.4, 40.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					i(53161),	-- Wailing Ring
 					i(53160),	-- Vest of the Nightmare Rift
@@ -1925,7 +1819,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38986,	-- Ambassador Gaines
 				coord = { 50.0, 49.5, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/3 Taurajo Intelligence
@@ -1956,7 +1849,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 24565,	-- Biological Intervention
 				qg = 37570,	-- Naralex
 				coord = { 50.4, 40.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/5 Outgrowth slain
 						provider = { "n", 37092 },	-- Outgrowth
@@ -1971,7 +1863,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25027,	-- You Flicked a Fine Vine to Leaf Me
 				qg = 38871,	-- Corporal Teegan
 				coord = { 56.1, 42.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(878, {	-- Tribes at War
@@ -1999,7 +1890,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				},
 				qg = 38876,	-- Hannah Bridgewater
 				coord = { 56.2, 42.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Unusual Flower Bud
@@ -2015,11 +1905,9 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25163,	-- Who Did This?
 				qg = 38152,	-- Weezil Slipshadow
 				coord = { 50.3, 87.1, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			warchiefscommand(q(28549, {	-- Warchief's Command: Southern Barrens!
-				timeline = { ADDED_4_0_3 },
 				maps = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 				isBreadcrumb = true,
 				-- #if BEFORE 7.3.5
@@ -2031,7 +1919,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24512, {	-- Warriors' Redemption
 				qg = 37153,	-- Holgom
 				coord = { 37.6, 16.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Stonetalon Prisoner Armed
@@ -2080,7 +1967,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 			q(24539, {	-- When Plants Attack
 				qg = 37515,	-- Lane Tallgrass
 				coord = { 44.4, 33.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/5 Taurajo Refugees Rescued from Overgrowth
@@ -2092,14 +1978,12 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				sourceQuest = 25120,	-- Marley's Final Flight
 				qg = 39220,	-- Wounded Bael'dun Officer
 				coord = { 49.6, 87.2, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
 			q(24807, {	-- Winnoa Pineforest
 				sourceQuest = 24601,	-- The Nightmare Scar
 				qg = 37570,	-- Naralex
 				coord = { 48.1, 38.6, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
 			q(5044, {	-- Wisdom of Agamaggan
@@ -2116,7 +2000,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 39085,	-- Logan Talonstrike
 				qi = 50128,	-- Bucket of Burning Pitch (QI!) not prov
 				coord = { 49.2, 67.9, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Silithid Swarmer slain
@@ -2132,7 +2015,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				qg = 38871,	-- Corporal Teegan
 				qi = 52073,	-- Bramblestaff
 				coord = { 56.1, 42.7, SOUTHERN_BARRENS },
-				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Three-Tooth Dealt With

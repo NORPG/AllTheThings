@@ -2723,30 +2723,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				i(128665, {	-- Ball of Tangled Lights (CI!)
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 				}),
 				i(128668, {	-- Festive Outfits
 					description = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 					questID = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
 					repeatable = true,
 				}),
 				i(128666, {	-- Imported Trees (CI!)
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 				}),
 				i(128667, {	-- Little Helpers (CI!)
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 				}),
 				i(128669, {	-- Old Box of Decorations (CI!)
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 				}),
 				i(128670, {	-- Savage Gift
 					cost = { { "i", 128659, 5 } },	-- 5x Merry Supplies
-					timeline = { ADDED_6_2_2 },
 					groups = {
 						-- #if BEFORE 7.3.2
 						i(128312, {	-- Elixir of the Rapid Mind
@@ -2759,9 +2753,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						i(128315, {	-- Medallion of the Legion
 							timeline = { ADDED_6_2_0 },
 						}),
-						i(128671, {	-- Minion of Grumpus (MOUNT!)
-							timeline = { ADDED_6_2_2 },
-						}),
+						i(128671),	-- Minion of Grumpus (MOUNT!)
 					},
 				}),
 			},
@@ -2892,17 +2884,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.6, 27.6, FROSTFIRE_RIDGE },
 			},
 			groups = {
-				i(128770, {	-- Grumpling (PET!)
-					timeline = { ADDED_6_2_2 },
-				}),
+				i(128770),	-- Grumpling (PET!)
 				i(35557),	-- Huge Snowball
-				i(128632, {	-- Savage Snowball
-					timeline = { ADDED_6_2_2 },
-				}),
+				i(128632),	-- Savage Snowball
 				i(17202),	-- Snowball
-				i(128648, {	-- Yellow Snowball
-					timeline = { ADDED_6_2_2 },
-				}),
+				i(128648),	-- Yellow Snowball
 			},
 		}),
 	}),

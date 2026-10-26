@@ -214,11 +214,9 @@ maproot(KALIMDOR, CAVERNS_OF_TIME, {
 				timeline = { ADDED_8_2_0 },
 				groups = {
 					i(170739, {	-- Sunswarmed Sand
-						timeline = { ADDED_8_2_0 },
 						cost = { { "c", TIMEWARPED_BADGE, 10 } },
 					}),
 					i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
-						timeline = { ADDED_8_2_0 },
 						cost = { { "c", TIMEWARPED_BADGE, 1000 } },
 					}),
 				},

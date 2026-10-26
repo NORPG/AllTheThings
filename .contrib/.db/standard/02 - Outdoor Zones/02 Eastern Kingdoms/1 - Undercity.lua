@@ -1426,9 +1426,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				modelScale = 1.3,
 				icon = 1041430,
 				groups = {
-					i(122233, {	-- Music Roll: Lament of the Highborne
-						timeline = { ADDED_6_1_0 },
-					}),
+					i(122233),	-- Music Roll: Lament of the Highborne
 				},
 			}),
 		}),
@@ -1631,18 +1629,10 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 						}),
 					}),
 					n(HEIRLOOMS, {
-						gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(750, i(122339, {	-- Ancient Heirloom Scabbard
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
-							timeline = { ADDED_6_1_0 },
-						})),
-						gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
-							timeline = { ADDED_6_1_0 },
-						})),
+						gold(500, i(122338)),	-- Ancient Heirloom Armor Casing
+						gold(750, i(122339)),	-- Ancient Heirloom Scabbard
+						gold(1000, i(122340)),	-- Timeworn Heirloom Armor Casing
+						gold(1500, i(122341)),	-- Timeworn Heirloom Scabbard
 						gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
 							timeline = { ADDED_7_2_5 },
 						})),

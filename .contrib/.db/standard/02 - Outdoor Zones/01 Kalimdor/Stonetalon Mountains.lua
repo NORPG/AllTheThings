@@ -190,7 +190,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				groups = {
 					q(31862, {	-- Zonya the Sadist
 						sourceAchievement = 6602,	-- Taming Kalimdor
-						timeline = { ADDED_5_0_4 },
 						races = HORDE_ONLY,
 						isDaily = true,
 					}),
@@ -2754,7 +2753,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				groups = {
 					i(57505, {	-- Krom'gar Champion's Armored Pauldrons
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131887, {	-- Krom'gar Champion's Chain Shoulderguard
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
@@ -2762,15 +2760,12 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57502, {	-- Krom'gar Champion's Hide Shoulderguard
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57503, {	-- Krom'gar Champion's Leather Shoulderguard
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57501, {	-- Krom'gar Champion's Linen Shoulderpads
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131886, {	-- Krom'gar Champion's Mesh Shoulderguard
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
@@ -2778,11 +2773,9 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57504, {	-- Krom'gar Champion's Plate Pauldrons
 						sourceQuest = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57517, {	-- Krom'gar General's Armored Helm
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131889, {	-- Krom'gar General's Chain Mask
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
@@ -2790,15 +2783,12 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57514, {	-- Krom'gar General's Hide Mask
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57515, {	-- Krom'gar General's Leather Mask
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57513, {	-- Krom'gar General's Linen Cowl
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131888, {	-- Krom'gar General's Mesh Mask
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
@@ -2806,11 +2796,9 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57516, {	-- Krom'gar General's Plate Helm
 						sourceQuest = 26101,	-- Might Makes Right [Krom'gar General]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57488, {	-- Krom'gar Legionnaire's Armored Bracers
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131885, {	-- Krom'gar Legionnaire's Chain Bracers
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
@@ -2818,15 +2806,12 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57485, {	-- Krom'gar Legionnaire's Hide Wraps
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57486, {	-- Krom'gar Legionnaire's Leather Bracers
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57484, {	-- Krom'gar Legionnaire's Linen Bracers
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131884, {	-- Krom'gar Legionnaire's Mesh Wraps
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
@@ -2834,11 +2819,9 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57487, {	-- Krom'gar Legionnaire's Plate Bracers
 						sourceQuest = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57476, {	-- Krom'gar Sergeant's Armored Greaves
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131883, {	-- Krom'gar Sergeant's Chain Boots
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
@@ -2846,15 +2829,12 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57473, {	-- Krom'gar Sergeant's Hide Boots
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57474, {	-- Krom'gar Sergeant's Leather Boots
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(57472, {	-- Krom'gar Sergeant's Linen Footwraps
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-						timeline = { ADDED_4_0_3 },
 					}),
 					i(131882, {	-- Krom'gar Sergeant's Mesh Boots
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
@@ -2862,7 +2842,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 					i(57475, {	-- Krom'gar Sergeant's Plate Greaves
 						sourceQuest = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-						timeline = { ADDED_4_0_3 },
 					}),
 				},
 			}),

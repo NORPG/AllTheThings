@@ -187,87 +187,52 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							n(RARES, {
 								n(6488, {	-- Fallen Champion
-									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									groups = {
-										i(7690, {	-- Ebon Vise
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										-- #if SEASON_OF_DISCOVERY
-										applyclassicphase(SOD_PHASE_TWO, i(217294)),	-- Embalmed Shroud
-										i(7691, {	-- Embalmed Shroud
-											timeline = { REMOVED_1_15_1 },
-										}),
-										-- #else
-										i(7691, {	-- Embalmed Shroud
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										-- #endif
-										i(7689, {	-- Morbid Dawn
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-									},
+									i(7690),	-- Ebon Vise
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217294)),	-- Embalmed Shroud
+									i(7691, {	-- Embalmed Shroud
+										timeline = { REMOVED_1_15_1 },
+									}),
+									-- #else
+									i(7691, {	-- Embalmed Shroud
+										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+									}),
+									-- #endif
+									i(7689),	-- Morbid Dawn
 								}),
 								n(6490, {	-- Azshir the Sleepless
-									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									groups = {
-										i(7709, {	-- Blighted Leggings
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										-- #if SEASON_OF_DISCOVERY
-										applyclassicphase(SOD_PHASE_TWO, i(217296)),	-- Ghostshard Talisman
-										applyclassicphase(SOD_PHASE_TWO, i(217295)),	-- Necrotic Wand
-										i(7731, {	-- Ghostshard Talisman
-											timeline = { REMOVED_1_15_1 },
-										}),
-										i(7708, {	-- Necrotic Wand
-											timeline = { REMOVED_1_15_1 },
-										}),
-										-- #else
-										i(7731, {	-- Ghostshard Talisman
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										i(7708, {	-- Necrotic Wand
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										-- #endif
-									},
+									i(7709),	-- Blighted Leggings
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217296)),	-- Ghostshard Talisman
+									applyclassicphase(SOD_PHASE_TWO, i(217295)),	-- Necrotic Wand
+									i(7731, {	-- Ghostshard Talisman
+										timeline = { REMOVED_1_15_1 },
+									}),
+									i(7708, {	-- Necrotic Wand
+										timeline = { REMOVED_1_15_1 },
+									}),
+									-- #else
+									i(7731, {	-- Ghostshard Talisman
+										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+									}),
+									i(7708, {	-- Necrotic Wand
+										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+									}),
+									-- #endif
 								}),
 								n(6489, {	-- Ironspine
-									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									groups = {
-										i(7687, {	-- Ironspine's Fist
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										i(7688, {	-- Ironspine's Ribcage
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-										i(7686, {	-- Ironspine's Eye
-											timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-										}),
-									},
+									i(7687),	-- Ironspine's Fist
+									i(7688),	-- Ironspine's Ribcage
+									i(7686),	-- Ironspine's Eye
 								}),
 							}),
 							n(3983, {	-- Interrogator Vishas
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7683, {	-- Bloody Brass Knuckles
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7682, {	-- Torturing Poker
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(7683),	-- Bloody Brass Knuckles
+								i(7682),	-- Torturing Poker
 							}),
 							n(4543, {	-- Bloodmage Thalnos
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7685, {	-- Orb of the Forgotten Seer
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7684, {	-- Bloodmage Mantle
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(7685),	-- Orb of the Forgotten Seer
+								i(7684),	-- Bloodmage Mantle
 							}),
 						},
 					}),
@@ -411,70 +376,58 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 							}),
 							n(3974, {	-- Houndmaster Loksey
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7710, {	-- Loksey's Training Stick
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7756, {	-- Dog Training Gloves
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(3456, {	-- Dog Whistle
-										timeline = { REMOVED_5_0_4 },
-									}),
-								},
+								i(7710),	-- Loksey's Training Stick
+								i(7756),	-- Dog Training Gloves
+								i(3456, {	-- Dog Whistle
+									timeline = { REMOVED_5_0_4 },
+								}),
 							}),
 							n(6487, {	-- Arcanist Doan
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7714, {	-- Hypnotic Blade
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_TWO, i(217299)),	-- Illusionary Rod
-									applyclassicphase(SOD_PHASE_TWO, i(217298)),	-- Mantle of Doan
-									applyclassicphase(SOD_PHASE_TWO, i(217297)),	-- Robe of Doan
-									i(7713, {	-- Illusionary Rod
-										timeline = { REMOVED_1_15_1 },
-									}),
-									i(7712, {	-- Mantle of Doan
-										timeline = { REMOVED_1_15_1 },
-									}),
-									i(7711, {	-- Robe of Doan
-										timeline = { REMOVED_1_15_1 },
-									}),
-									-- #else
-									i(7713, {	-- Illusionary Rod
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7712, {	-- Mantle of Doan
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7711, {	-- Robe of Doan
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
+								i(7714),	-- Hypnotic Blade
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217299)),	-- Illusionary Rod
+								applyclassicphase(SOD_PHASE_TWO, i(217298)),	-- Mantle of Doan
+								applyclassicphase(SOD_PHASE_TWO, i(217297)),	-- Robe of Doan
+								i(7713, {	-- Illusionary Rod
+									timeline = { REMOVED_1_15_1 },
+								}),
+								i(7712, {	-- Mantle of Doan
+									timeline = { REMOVED_1_15_1 },
+								}),
+								i(7711, {	-- Robe of Doan
+									timeline = { REMOVED_1_15_1 },
+								}),
+								-- #else
+								i(7713, {	-- Illusionary Rod
+									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+								}),
+								i(7712, {	-- Mantle of Doan
+									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+								}),
+								i(7711, {	-- Robe of Doan
+									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+								}),
+								-- #endif
+								i(34227, {	-- Deadman's Hand
+									timeline = { ADDED_2_3_0, REMOVED_5_0_4, ADDED_10_1_7 },
+								}),
+								o(103821, {	-- Doan's Strongbox
+									groups = {
+										i(7146, {	-- The Scarlet Key
+											description = "Found in the chest after killing Arcanist Doan.",
+											timeline = { REMOVED_4_0_3 },
+										}),
+										i(208485, {	-- The Scarlet Key
+											description = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
+											timeline = { ADDED_10_1_7 },
+										}),
+									},
+									timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
+									-- #if AFTER 10.1.7
+									questID = 77213,
+									isWeekly = true,
 									-- #endif
-									i(34227, {	-- Deadman's Hand
-										timeline = { ADDED_2_3_0, REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									o(103821, {	-- Doan's Strongbox
-										groups = {
-											i(7146, {	-- The Scarlet Key
-												description = "Found in the chest after killing Arcanist Doan.",
-												timeline = { REMOVED_4_0_3 },
-											}),
-											i(208485, {	-- The Scarlet Key
-												description = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
-												timeline = { ADDED_10_1_7 },
-											}),
-										},
-										timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
-										-- #if AFTER 10.1.7
-										questID = 77213,
-										isWeekly = true,
-										-- #endif
-									}),
-								},
+								}),
 							}),
 						},
 					}),
@@ -559,29 +512,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							-- #endif
 							n(3975, {	-- Herod
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7717, {	-- Ravager
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7719, {	-- Raging Berserker's Helm
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7718, {	-- Herod's Shoulder
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(10330, {	-- Scarlet Leggings
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(7717),	-- Ravager
+								i(7719),	-- Raging Berserker's Helm
+								i(7718),	-- Herod's Shoulder
+								i(10330),	-- Scarlet Leggings
 							}),
 							n(6575, {	-- Scarlet Trainee
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(23192, {	-- Tabard of the Scarlet Crusade
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(23192),	-- Tabard of the Scarlet Crusade
 							}),
 						},
 					}),
@@ -659,42 +596,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							-- #endif
 							n(4542, {	-- High Inquisitor Fairbanks
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(19507, {	-- Inquisitor's Shawl
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(19508, {	-- Branded Leather Bracers
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(19509, {	-- Dusty Mail Boots
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(19507),	-- Inquisitor's Shawl
+								i(19508),	-- Branded Leather Bracers
+								i(19509),	-- Dusty Mail Boots
 							}),
 							n(3976, {	-- Scarlet Commander Mograine
-								timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-								groups = {
-									i(7726, {	-- Aegis of the Scarlet Commander
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									i(7724, {	-- Gauntlets of Divinity
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									-- #if SEASON_OF_DISCOVERY
-									applyclassicphase(SOD_PHASE_TWO, i(217302)),	-- Mograine's Might
-									i(7723, {	-- Mograine's Might
-										timeline = { REMOVED_1_15_1 },
-									}),
-									-- #else
-									i(7723, {	-- Mograine's Might
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-									-- #endif
-									i(10330, {	-- Scarlet Leggings
-										timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
-									}),
-								},
+								i(7726),	-- Aegis of the Scarlet Commander
+								i(7724),	-- Gauntlets of Divinity
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217302)),	-- Mograine's Might
+								i(7723, {	-- Mograine's Might
+									timeline = { REMOVED_1_15_1 },
+								}),
+								-- #else
+								i(7723, {	-- Mograine's Might
+									timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
+								}),
+								-- #endif
+								i(10330),	-- Scarlet Leggings
 							}),
 							n(3977, {	-- High Inquisitor Whitemane
 								-- NOTE: The boss herself was not removed, only redesigned with a new loot table.
@@ -735,9 +654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					timeline = { ADDED_5_0_4 },
 					groups = {
 						ach(637),	-- Scarlet Monastery
-						ach(5046, {	-- Scarlet Monastery Guild Run
-							timeline = { ADDED_5_0_4 },
-						}),
+						ach(5046),	-- Scarlet Monastery Guild Run
 					},
 				}),
 			}),
@@ -1032,7 +949,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(QUESTS, {
 						q(31515, {	-- Blades of the Anointed
 							qg = 64838,	-- Hooded Crusader
-							timeline = { ADDED_5_0_4 },
 							lvl = lvlsquish(90, 90, 35),
 							groups = {
 								objective(1, {	-- 0/1 Blade of the Anointed
@@ -1043,7 +959,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(31516, {	-- Unto Dust Thou Shalt Return
 							sourceQuest = 31515,	-- Blades of the Anointed
 							qg = 64855,	-- Blade of the Anointed
-							timeline = { ADDED_5_0_4 },
 							lvl = lvlsquish(90, 90, 35),
 							groups = {
 								objective(1, {	-- 0/1 Blades of the Anointed thrust into Whitemane's corpse
@@ -1064,7 +979,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(688, {	-- Thalnos the Soulrender
 						creatureID = 59789,	-- Thalnos the Soulrender
-						timeline = { ADDED_5_0_4 },
 						groups = {
 							ach(6946),	-- Empowered Spiritualist
 							i(144001, {	-- Forgotten Bloodmage Mantle
@@ -1101,7 +1015,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					e(671, {	-- Brother Korloff
 						creatureID = 59223,	-- Brother Korloff
-						timeline = { ADDED_5_0_4 },
 						groups = {
 							ach(6928),	-- Burning Man
 							i(144186, {	-- Firestorm Greatstaff
@@ -1141,7 +1054,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							3977,	-- High Inquisitor Whitemane
 							60040,	-- Commander Durand
 						},
-						timeline = { ADDED_5_0_4 },
 						groups = {
 							ach(6929, {	-- And Stay Dead!
 								provider = { "n", 58605 },	-- Scarlet Judicator

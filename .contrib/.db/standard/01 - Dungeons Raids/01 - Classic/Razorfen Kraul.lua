@@ -333,13 +333,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
 				timeline = { REMOVED_6_0_2 },
 				groups = {
-					i(2816, {	-- Death Speaker Scepter
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(2816),	-- Death Speaker Scepter
 					i(6685),	-- Death Speaker Mantle
-					i(6682, {	-- Death Speaker Robes
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(6682),	-- Death Speaker Robes
 				},
 			}),
 			e(896, {	-- Hunter Bonetusk
@@ -372,9 +368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(4438, {	-- Razorfen Spearhide
 				timeline = { REMOVED_6_0_2 },
 				groups = {
-					i(6679, {	-- Armor Piercer
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(6679),	-- Armor Piercer
 				},
 			}),
 			n(4420, {	-- Overlord Ramtusk

@@ -373,7 +373,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
 				},
-				timeline = { ADDED_11_0_5 },
 				lockCriteria = { 1, "lvl", 80 },
 				isWeekly = true,
 				groups = { i(232877) },	-- Timely Goodie Bag
@@ -384,7 +383,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
 				},
-				timeline = { ADDED_11_0_5 },
 				isWeekly = true,
 				lvl = 80,
 				groups = { i(232877) },	-- Timely Goodie Bag
@@ -1243,7 +1241,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					filter(BATTLE_PETS, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
 						i(231365, {	-- Karazhan Syphoner (PET!)
 							cost = {{"c", TIMEWARPED_BADGE, 2200}},
-							timeline = { ADDED_11_0_5 },
 						}),
 					})),
 					filter(COSMETIC, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
@@ -2698,7 +2695,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					filter(BATTLE_PETS, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {
 						i(231356, {	-- Specter (PET!)
 							cost = {{"c", TIMEWARPED_BADGE, 2200}},
-							timeline = { ADDED_11_0_5 },
 						}),
 					})),
 					filter(COSMETIC, sharedDataSelf({ timeline = { ADDED_11_0_5 } }, {

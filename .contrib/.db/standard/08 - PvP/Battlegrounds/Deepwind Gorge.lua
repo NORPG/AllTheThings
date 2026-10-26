@@ -77,7 +77,6 @@ battleground(519, {	-- Deepwind Gorge
 				description = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
 				-- #endif
 				maps = { 935 },	-- Deepwind Dunk
-				timeline = { ADDED_5_3_0 },
 			}),
 			ach(8355, {		-- Weighed Down
 				timeline = { REMOVED_8_3_0 },

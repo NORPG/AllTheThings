@@ -496,9 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				timeline = { ADDED_6_0_2 },
 				groups = {
 					ach(636),	-- Razorfen Downs
-					ach(5045, {	-- Razorfen Downs Guild Run
-						timeline = { ADDED_6_0_2 },
-					}),
+					ach(5045),	-- Razorfen Downs Guild Run
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute
 					i(10764),	-- Deathchill Armor
