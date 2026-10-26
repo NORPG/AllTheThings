@@ -26,21 +26,14 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
-    </Reference>
-    <Reference Include="KeraLua, Version=1.2.13.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\KeraLua.dll</HintPath>
-    </Reference>
-    <Reference Include="NLua, Version=1.4.1.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\NLua.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Csv" Version="[2.0.93]" />
+    <PackageReference Include="KeraLua" Version="[1.2.13]" />
+    <PackageReference Include="NLua" Version="[1.5.8]" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectedStatus.cs" />
@@ -140,11 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="lib\lua54.dll">
-      <Link>lua54.dll</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="packages.config" />
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

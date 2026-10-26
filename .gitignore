@@ -45,3 +45,5 @@ __pycache__
 SavedVariables.lua
 .contrib/.tools/ATT-ERROR-FILE.txt
 .contrib/.tools/**/*debug.txt
+.contrib/src/Profession Automator/bin/liblua54.so
+.contrib/src/Profession Automator/bin/liblua54.dylib
