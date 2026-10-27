@@ -58,7 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="[5.2.3]" ExcludeAssets="runtime" />
     <PackageReference Include="Newtonsoft.Json" Version="[13.0.1]" ExcludeAssets="all" />
   </ItemGroup>
   <ItemGroup>
