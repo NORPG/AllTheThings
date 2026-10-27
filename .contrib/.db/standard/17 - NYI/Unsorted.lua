@@ -12,7 +12,6 @@ root(ROOTS.Unsorted, {
 			i(275732),	-- A Rat-Sized Portion of Onion
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
-			i(275756),	-- Living Heartsbane Cauldron
 			i(279396),	-- Timelost Saddle
 			i(281169),	-- Executive Chef's Jacket
 			i(281170),	-- Executive Chef's Hat

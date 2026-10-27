@@ -1014,6 +1014,9 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 		i(242795, {	-- Lana'Thel's Crimson Cascade (MOUNT!)
 			timeline = { ADDED_11_2_5, "removed 11.2.7.65299" },	-- Removed January 12, 2026
 		}),
+		i(275756, {	-- Living Heartsbane Cauldron (MOUNT!)
+			timeline = { ADDED_12_1_5 },
+		}),
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			timeline = { ADDED_9_0_2 },
 		}),

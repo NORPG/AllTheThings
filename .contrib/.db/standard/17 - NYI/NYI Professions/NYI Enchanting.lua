@@ -90,9 +90,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.MID, {
 				-- 12.0.0
 				expansion(EXPANSION.MID, patch(0,0,1), {
-					i(268032),	-- Conjured Illusory Adornment - Blooming Light
-					i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
-					i(268034),	-- Conjured Illusory Adornment - Voidtouched
 					i(243434),	-- Enchant Shoulders - Nature's Embrace
 					i(243442),	-- Enchant Shoulders - Voidtouched
 					i(243448),	-- Illusory Adornment - Blooming Light

@@ -584,14 +584,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDE
 		n(DECOR, {
 			i(262459),	-- Animated Sin'dorei Hammer (DECOR!)
 			i(262458),	-- Animated Sin'dorei Pick (DECOR!)
-			i(279335, {timeline = { ADDED_12_1_0 }}),	-- Enchanted Voidwell Fish (DECOR!)
-			i(268038),	-- Endless Codex of Blooming Light (DECOR!)
-			i(268039),	-- Endless Codex of Nature's Grace (DECOR!)
-			i(268041),	-- Endless Codex of the Voidtouched (DECOR!)
+			i(279335, { timeline = { ADDED_12_1_0 } }),	-- Enchanted Voidwell Fish (DECOR!)
+			i(268038, {	-- Endless Codex of Blooming Light (DECOR!)
+				i(268032),	-- Conjured Illusory Adornment - Blooming Light
+			}),
+			i(268039, {	-- Endless Codex of Nature's Grace (DECOR!)
+				i(268033),	-- Conjured Illusory Adornment - Nature's Embrace
+			}),
+			i(268041, {	-- Endless Codex of the Voidtouched (DECOR!)
+				i(268034),	-- Conjured Illusory Adornment - Voidtouched
+			}),
 			i(262450),	-- Ensorcelled Broom (DECOR!)
 			i(262455),	-- Font of Gleaming Water (DECOR!)
-			i(279362, {timeline = { ADDED_12_1_0 }}),	-- Furious Tiki Mask (DECOR!)
-			i(279332, {timeline = { ADDED_12_1_0 }}),	-- Keen Hex Mask (DECOR!)
+			i(279362, { timeline = { ADDED_12_1_0 } }),	-- Furious Tiki Mask (DECOR!)
+			i(279332, { timeline = { ADDED_12_1_0 } }),	-- Keen Hex Mask (DECOR!)
 			i(262468),	-- Ren'dorei Postal Repository (DECOR!)
 			i(262590),	-- Rootflame Campfire (DECOR!)
 			i(246693),	-- Self-Pouring Thalassian Sunwine (DECOR!)
