@@ -1,6 +1,23 @@
---------------------------------------------------------------
+-----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
+------ Encounter Constants ------
+local PEROTHARN = 290;
+local AZSHARA = 291;
+local MANNOROTH = 292;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[PEROTHARN] = { 55085 },	-- Peroth'arn
+	[AZSHARA] = { 54853 },	-- Queen Azshara
+	[MANNOROTH] = { 54969 },	-- Mannoroth
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(185, {	-- Well of Eternity
@@ -93,49 +110,40 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, sharedData({ modID = 0, }, {
-				e(290, {	-- Peroth'arn
-					crs = { 55085 },	-- Peroth'arn
-					groups = {
-						ach(6127),	-- Lazy Eye
-						i(72827),	-- Gavel of Peroth'arn
-						i(72832),	-- Girdle of the Queen's Champion
-						i(72831),	-- Horned Band
-						i(72829),	-- Orb of the First Satyrs
-						i(72830),	-- Peroth'arn's Belt
-						i(72828),	-- Trickster's Edge
-					},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups(sharedData({ modID = 0, }, {
+				BossOnly(PEROTHARN, {
+					ach(6127),	-- Lazy Eye
+					i(72827),	-- Gavel of Peroth'arn
+					i(72832),	-- Girdle of the Queen's Champion
+					i(72831),	-- Horned Band
+					i(72829),	-- Orb of the First Satyrs
+					i(72830),	-- Peroth'arn's Belt
+					i(72828),	-- Trickster's Edge
 				}),
-				e(291, {	-- Queen Azshara
-					crs = { 54853 },	-- Queen Azshara
-					groups = {
-						i(72834),	-- Breastplate of the Queen's Guard
-						i(72838),	-- Cloak of the Royal Protector
-						i(72835),	-- Puppeteer's Pantaloons
-						i(72837),	-- Queen's Boon
-						i(72833),	-- Scepter of Azshara
-						i(72836),	-- Slippers of Wizardry
-					},
+				BossOnly(AZSHARA, {
+					i(72834),	-- Breastplate of the Queen's Guard
+					i(72838),	-- Cloak of the Royal Protector
+					i(72835),	-- Puppeteer's Pantaloons
+					i(72837),	-- Queen's Boon
+					i(72833),	-- Scepter of Azshara
+					i(72836),	-- Slippers of Wizardry
 				}),
-				e(292, {	-- Mannoroth
-					crs = { 54969 },	-- Mannoroth
-					groups = {
-						ach(6070),	-- That's Not Canon!
-						ach(6118),	-- Heroic: Well of Eternity
-						ach(6121),	-- Heroic: Well of Eternity Guild Run
-						i(72842),	-- Annihilan Helm
-						i(72839),	-- Cowl of Highborne Sorcerers
-						i(72841),	-- Demonsbane Chestguard
-						i(72898),	-- Foul Gift of the Demon Lord
-						i(72843),	-- Helm of Power
-						i(72847),	-- Helm of Thorns
-						i(72848),	-- Leggings of the Legion
-						i(72845),	-- Mannoroth's Signet
-						i(72844),	-- Pit Lord's Destroyer
-						i(72840),	-- Spaulders of Eternity
-						i(72846),	-- Thornwood Staff
-						i(72899),	-- Varo'then's Brooch
-					},
+				BossOnly(MANNOROTH, {
+					ach(6070),	-- That's Not Canon!
+					ach(6118),	-- Heroic: Well of Eternity
+					ach(6121),	-- Heroic: Well of Eternity Guild Run
+					i(72842),	-- Annihilan Helm
+					i(72839),	-- Cowl of Highborne Sorcerers
+					i(72841),	-- Demonsbane Chestguard
+					i(72898),	-- Foul Gift of the Demon Lord
+					i(72843),	-- Helm of Power
+					i(72847),	-- Helm of Thorns
+					i(72848),	-- Leggings of the Legion
+					i(72845),	-- Mannoroth's Signet
+					i(72844),	-- Pit Lord's Destroyer
+					i(72840),	-- Spaulders of Eternity
+					i(72846),	-- Thornwood Staff
+					i(72899),	-- Varo'then's Brooch
 				}),
 			})),
 			n(55500, {	-- Illidan Stormrage
