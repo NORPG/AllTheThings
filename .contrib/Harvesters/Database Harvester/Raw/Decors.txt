@@ -4114,3 +4114,177 @@
 30255@@@Ritual Embaari Arch
 12.1.5.70448
 26890@@@Zhevraskin Rug
+12.1.7.70424
+2254@@@Elegant Tied-Right Curtain
+14969@@@[DNT] 12PH_Leg_11WE_WildElves_Special_Mural05.M2
+15254@@@Quillgrave Craftsman's Workmill
+15294@@@Quillgrave Talebound Shadowtome
+15295@@@Quillgrave Arcanist's Alembic
+15296@@@Quillgrave Scribe's Gemstation
+17297@@@Pristine Winter Veil Pine Tree
+17298@@@Sparsely Decorated Winter Veil Pine Tree
+17299@@@Star-Touched Winter Veil Pine Tree
+18792@@@[DNT] 12PH_Leg_7NB_Nightborn_Fountain03.M2
+18898@@@[DNT] 12PH_Leg_7NB_Nightborn_Bookshelf01_filled.M2
+18959@@@[DNT] 12PH_Leg_7NB_Nightborn_Fountain02.M2
+19011@@@[DNT] 12PH_Leg_7SR_SteppingStone_B01.M2 - duplicate do not use
+20171@@@Boulder Springs Chaise
+20878@@@Zuldazar Palm Sprout
+20879@@@Mature Zuldazar Palm
+20880@@@Growing Zuldazar Palm
+20937@@@Quillgrave Storyteller's Lectern
+21103@@@Quillgrave Outfitter's Loom
+25272@@@Ancient Uldaman Tome
+25360@@@Dreamgrove Statue of Ferocity
+25361@@@Dreamgrove Statue of Regrowth
+25402@@@Dreamgrove Statue of Balance
+26200@@@Broken Uldaman Statue
+26872@@@Ominous Ritual Wall Scroll
+27218@@@Shadowmoon Clan Dark Star Rune
+27219@@@Arcanist's Research Board
+27607@@@Suramar Arclight Planter
+27611@@@Zuldazar Crestbloom
+27615@@@Windyfin Screaming Totem
+27616@@@Illuminated Undermine Shield Sign
+27682@@@Zen Fountain of Pandaria
+27685@@@Explorer's League Supply Crates
+27822@@@Wardens' Pool of Judgment
+27823@@@Dalaran Grand Chandelier
+27825@@@Stormsong Kraken Sconce
+28105@@@Classical Treasure Chest
+28112@@@Gathering Goblins Game Spread
+28113@@@Gathering Goblins Game Deck
+28114@@@Goblins & Grummles Four-Sided Die
+28115@@@Goblins & Grummles Dice Set
+28316@@@Azure Mage Hunter's Rune Circle
+28339@@@Origin of the Silver Hand
+28340@@@Tale of the First Warchief
+28342@@@Shadowmoon Clan Felfire Rune
+28449@@@Ayada's Candillusions
+28451@@@Dreamgrove Statue of Tenacity
+28452@@@Premium Parcel, Postage Paid
+28453@@@Suramar Banquet Platter
+28455@@@Zuldazar Groundbloom Assortment
+28459@@@Palm of Pa'ku
+28460@@@Flowering Zuldazar Palm
+28461@@@Zuldazar Banner Ivy
+28462@@@Zuldazar Bursting Blossom
+28496@@@Tome of the Sea
+28500@@@Zuldazar Thorncrown Tree
+28501@@@Zuldazar Pitcher Plant
+28502@@@Spiraling Zuldazar Rootvine
+28503@@@Zuldazar Trapper Plant
+28504@@@Zuldazar Ambush Vine
+28505@@@Grasping Zuldazar Rootvine
+28506@@@Loa-Blessed Fan Palm
+28507@@@Zanchuli Wall Moss
+28580@@@Explorer's League Globe
+28581@@@Explorer's League Canteen
+28582@@@A Brief History of the Titans
+28583@@@Explorer's League Inspection Lens
+28584@@@Explorer's League Coiled Rope
+28585@@@Onyx Experimenter's Mortar and Pestle
+28586@@@Empty Cartel Supply Bin
+28628@@@Twilight Citadel Lamppost
+28630@@@Ayada's Enchanted Worktable
+28631@@@Levitating Suramar Candlelight Lantern
+29278@@@Counterspiral Wooden Stairs
+30791@@@Winter's Frost Small Icicle
+30792@@@Winter's Frost Large Icicle
+30793@@@Winter's Frost Icicle Chunk
+30794@@@Cozy Cabin Stocking
+30896@@@Winter's Frost Hot Tub
+30929@@@Improvised Theater Curtains
+30930@@@Light Theater Curtains
+30931@@@Striped Theater Curtains
+30932@@@Admiralty Theater Curtains
+31105@@@Cozy Cabin String Lights
+31106@@@Cozy Cabin Stein
+31353@@@Red and Gold Bow
+31434@@@Strand of Winter Veil Lights
+31435@@@Regal Theater Curtains
+31436@@@Student's Theater Curtains
+31437@@@Tattered Theater Curtains
+31438@@@Ruined Theater Curtains
+31439@@@Glorious Theater Curtains
+31441@@@Winter's Frost Throne
+31442@@@Winter's Frost Snowman
+31443@@@Cozy Cabin Fireplace
+31444@@@Cozy Cabin Pet Bed
+31511@@@Traditional Theater Curtains
+31512@@@Winter's Frost Snowy Tree
+31514@@@Elegant Tied-Left Curtain
+31570@@@Long Strand of Winter Veil Lights
+31571@@@Cozy Cabin Curtain
+31572@@@Cozy Cabin Sofa
+31573@@@Cozy Cabin Bed
+31574@@@The Ornament of Midnight
+31577@@@Cozy Cabin Day Window
+31578@@@Cozy Cabin Night Window
+31580@@@Winter Veil Mistletoe
+31581@@@White Present with Red Bow
+31582@@@Red and Green Stitched Stocking
+31583@@@Small Candy Cane
+31618@@@Green Winter Veil Present with Red Bow
+31619@@@Red Winter Veil Present with Green Bow
+31620@@@Red Present with Gold Bow
+31621@@@Red Winter Veil Present with White Bow
+31622@@@Green Present with Red Bow
+31623@@@Cany Cane Rope Pole
+31624@@@Green and White Striped Stocking
+31625@@@Ornate Winter Sled
+31626@@@Winter Veil Wreath
+31627@@@Cany Cane Rope Line
+31651@@@Cozy Cabin White String Lights
+31652@@@Cozy Cabin Blue String Lights
+31685@@@Karazhan Library Stacks
+31686@@@Tuskarr Carved Anvil
+31687@@@Scarlet Cathedral Altar
+31688@@@Scarlet Crusade Banner
+31689@@@Argent Crusade Field Tent
+31690@@@Scarlet Crusade Cannon
+31691@@@Scarlet Crusader's Shield
+31692@@@Argent Crusade Command Tent
+31693@@@Ramkahen Pyramid Fountain
+31694@@@Anub'ari Jackal Statue
+31695@@@Rajh'ari Falcon Statue
+31696@@@Ammun'ari Ram Statue
+31697@@@Pearlfin Fisher's Font
+31698@@@Jinyu Lotus Fountain
+31699@@@Jinyu Mail Post
+31700@@@Eternal Palace Serving Platter
+31701@@@Kyrian Aspirant's Training Dummy
+31702@@@Decorative Blue Dragon Egg
+31703@@@Decorative Red Dragon Egg
+31704@@@Decorative Green Dragon Egg
+31705@@@Decorative Black Dragon Egg
+31706@@@Decorative Bronze Dragon Egg
+31707@@@Valdrakken Dragon Egg Cradle
+31708@@@Azsh'ari Treasure Chest
+31709@@@Coralvine Nazjatari Lamppost
+31710@@@Maldraxxian Necrolord Arch
+31711@@@Runed Night Fae Font
+31712@@@ Anima-Infused Venthyr Lampost
+31713@@@Valdrakken Walkway Arch
+31714@@@Gardens of Unity Glass Arch
+31715@@@Romulo and Julianne Backdrop
+31716@@@Red Riding Hood Backdrop
+31717@@@Dorothee's Journey Backdrop
+31718@@@Replica Stone Elder
+31719@@@Pearlfin Bubble Lampvine
+31720@@@Eternal Palace Library Pillar
+31739@@@Heartsbane Hex Catcher
+31824@@@Black and Gold Present with Purple Bow
+31825@@@Black and Gold Present
+31826@@@Purple and Gold Bow
+31936@@@Heartsbane Runestone Ring
+31937@@@Heartsbane Hex Etchings
+31938@@@Heartsbane Hex Markings
+31939@@@Sealight Sconce
+31940@@@Tidesage's Right Copper Mascaron
+31941@@@Tidesage's Left Copper Mascaron
+31942@@@Heartsbane Wicker Effigy
+31943@@@Drust-Carved Rune Pillar
+31944@@@Drust-Carved Rune Marker
+31945@@@Heartsbane Hex Scar
+32033@@@Heartsbane Waxlight

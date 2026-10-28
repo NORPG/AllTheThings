@@ -2667,3 +2667,21 @@
 12.1.5.70448
 1305612@@@Giant Grrloc
 1314189@@@Ashen Dreadglider
+12.1.7.70424
+448849@@@The Watcher in the Waves
+1217340@@@Lost Mare of the Maddening Faire
+1218014@@@Night Court Courier
+1226531@@@Enchanted Woodland Wanderer
+1235820@@@Faith-Cursed Courser
+1293485@@@[PH] Dino Size Test
+1296315@@@Shadowbound Storybook
+1313280@@@Stone-Carved Crusher
+1313284@@@Autumn Dream Jumper
+1313363@@@Shadowpaw Wood Watcher
+1320798@@@[PH] Stegodon - Black
+1320801@@@[PH] Stegodon - Blue
+1320802@@@[PH] Stegodon - Green
+1320803@@@[PH] Stegodon - Purple
+1321944@@@Winterrrgl's Pine-Powered Candy Cane Contraption
+1323203@@@Markeet of the Infinite
+1325226@@@Reanimated Skeletal Raptor
