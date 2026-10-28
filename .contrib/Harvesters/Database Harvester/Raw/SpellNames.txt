@@ -481365,3 +481365,18 @@
 1320857@@@[DNT] Play Conversation
 1320859@@@Kill Credit (DNT)
 1320865@@@[DNT] Check Auras for Kill Credit
+12.1.5.69952
+1320968@@@Kill Credit (DNT)
+1320988@@@Kill Credit (DNT)
+1320989@@@Play Timeline Scene (DNT)
+1321129@@@[DNT] Area Clear
+1321496@@@Tier 2
+1321497@@@Tier 2
+1321603@@@AI Cast AoE
+1321736@@@[DNT] Remove Soulcatcher
+1321835@@@[DNT] Spawn
+1321836@@@[DNT] Spawn
+1321837@@@[DNT] Shoot
+1321838@@@[DNT] Impact
+1321839@@@[DNT] Shoot
+1321840@@@[DNT] Shoot
