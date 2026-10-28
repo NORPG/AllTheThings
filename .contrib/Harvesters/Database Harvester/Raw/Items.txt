@@ -339148,3 +339148,15 @@
 285958@@@Frost Revenant's Bell-Crook
 285959@@@Embered Bell-Crook
 286019@@@Nebulous Voidcache: Kith'ix
+12.1.5.69848
+272248@@@Galerider's Footguards
+284576@@@Cracked Mask
+284577@@@Stinging Nettle
+284578@@@Untainted Wicker
+285875@@@Kindo'jan's Reward
+285942@@@Spirited Grimtide Manse
+286211@@@Echoing Hive Fragment
+286212@@@Aqir Wing Membrane
+286213@@@Cracked Hive Signet
+286558@@@Delve-O-Bot 7001: The Labyrinth of Kindo'jan Software Update Chip
+286643@@@Kinduru's Spiriting Quill

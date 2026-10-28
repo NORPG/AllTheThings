@@ -2957,3 +2957,6 @@
 3318@@@Labyrinth, Entrance to Nalorakk's Den
 3319@@@Labyrinth, Nalorakk's Den
 3329@@@Labyrinth, Entrance to The Catacombs
+12.1.5.69848
+3318@@@Labyrinth, Entrance to Nalorakk's Rest
+3319@@@Labyrinth, Nalorakk's Rest

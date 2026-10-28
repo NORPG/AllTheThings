@@ -1054,3 +1054,6 @@
 799@@@Maze Runner %s
 801@@@%s, Fabled Vanquisher of Kindo'jan
 802@@@Lone Raider %s
+12.1.5.69848
+801@@@%s, Fabled Vanquisher of The First Hash'ey
+803@@@%s of the Labyrinth

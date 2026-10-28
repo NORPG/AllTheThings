@@ -10967,3 +10967,7 @@
 17197@@@The Speaker's Chamber
 17778@@@Kith'ix' Prison
 17798@@@The Tomb of Ula'tek
+12.1.5.69848
+16913@@@The Labyrinth of Kindo'jan
+17032@@@Nalorakk's Rest
+17778@@@Kith'ix's Prison

@@ -481220,3 +481220,148 @@
 1319068@@@[DNT] Teleport
 1319080@@@Akil'zon's Talons
 1319081@@@Akil'zon's Talons
+12.1.5.69848
+404443@@@Bombardment
+1259836@@@[DNT] Pinata Timer
+1263586@@@Pull Hard
+1263606@@@Apply Reel in Button
+1284583@@@Rending Claws
+1285598@@@Taste for Blood
+1288098@@@Whack a Mole Pop Up
+1290220@@@[DNT] Jump-Charge-Pull
+1292269@@@Picking up the Axe of Shadra'kor
+1292337@@@Picking up the Staff of the Eagle's Vigil
+1295669@@@Sic 'Em!
+1296949@@@Bombardment
+1296951@@@Bombardment
+1299254@@@Abundance - Return Missile
+1300064@@@Gambit in de Shadows
+1300067@@@Gambit in de Shadows
+1301376@@@Amani Aegis
+1301380@@@Amani Aegis
+1301394@@@Amani Aegis
+1302155@@@Hash'ey Away
+1302861@@@Loa Lockout: Akil'zon
+1302862@@@Loa Lockout: Jan'alai
+1304638@@@Gambit in de Shadows
+1304837@@@Gambit in de Shadows
+1304891@@@Hash'ey Submerge
+1306868@@@Void-Infested
+1308538@@@Expelled Curse
+1308549@@@Expelled Curse
+1308566@@@Expelled Curse
+1312481@@@Seismic Detonation
+1313027@@@Seismic Detonation
+1313484@@@Seismic Detonation
+1315704@@@Summon Zah'ran
+1315949@@@Decree of Shadra
+1316401@@@Decree of Shadra
+1316411@@@Decree of Shadra
+1316419@@@Decree of Shadra
+1318472@@@Explosive Restabilization
+1318473@@@Explosive Restabilization
+1318594@@@Collect Spirited Grimtide Manse
+1318775@@@Treasure Room
+1318862@@@[DNT] Conversation: Undead Defeated
+1319100@@@Avenging Wrath
+1319119@@@Housing District
+1319120@@@Housing District
+1319121@@@[DNT] Leaving Neighborhood - Alliance
+1319122@@@[DNT] Leaving Neighborhood - Horde
+1319139@@@mc Labyrinth ScenarioCleanUp
+1319141@@@mc Labyrinth ScenarioCleanUp
+1319192@@@Droning Vortex
+1319198@@@[DNT]Wind Wall Visual
+1319270@@@Toxic Gunk
+1319274@@@[DNT] Jump
+1319275@@@[DNT] Teleport
+1319284@@@Vantus Rune: Kith'ix
+1319285@@@Claws of the Empire
+1319286@@@Vantus Rune: Kith'ix
+1319287@@@Claws of the Empire
+1319301@@@[DNT] Ghost Tank Interact
+1319488@@@Opening
+1319510@@@Ethereal Control Zone 01 Visual [DNT]
+1319528@@@Shrink
+1319529@@@Shrink
+1319546@@@[DNT] Negation
+1319581@@@Restored Coffer Key Dummy
+1319683@@@Hotfix/General Purpose - Zone Aura: Data Cleanup [DNT]
+1319738@@@[DNT] 12.1.5 Labyrinth - Door - Final Boss Room - Kindo'jan Unlock
+1319741@@@Labyrinth Soul Fragments
+1319752@@@[DNT] Mass Death Touch
+1319772@@@Labyrinth Treasure Room
+1319790@@@Labyrinth Treasure Room
+1319824@@@Knockback
+1319832@@@[DNT] summon candy
+1319880@@@Labyrinth Treasure Room
+1319902@@@Archaic Amani Key
+1319915@@@Guard
+1319916@@@Guard
+1319919@@@Archaic Amani Key
+1319978@@@<REUSE>
+1320010@@@Negation
+1320089@@@Labyrinth Treasure Room
+1320111@@@DNT Countdown Timer
+1320228@@@[DNT] Falling
+1320233@@@[DNT] Story Mode
+1320361@@@Interrupting Strike
+1320397@@@Summon Treasure
+1320406@@@[DNT] Conversation: Wrong Door
+1320414@@@[DNT] Credit: Soul Jar Scenario Complete
+1320415@@@[DNT] Credit: Soul Jar Boss Scenario Complete
+1320423@@@[DNT] Conversation: Disrupt Vilebranch
+1320424@@@[DNT] Conversation: Soul Jars
+1320427@@@[DNT] Conversation: Soul Jars Complete
+1320435@@@[DNT] Conversation: Wrong Door
+1320442@@@[DNT] Ping: Transition to Spawn
+1320506@@@[DNT] Ping: Den'zara Warning
+1320507@@@[DNT] Conversation: Examine Effigy
+1320510@@@[DNT] Shadow Barrier
+1320515@@@[DNT] Move Target
+1320516@@@[DNT] Move Target
+1320517@@@[DNT] Move Target
+1320518@@@[DNT] Move Target
+1320519@@@[DNT] Move Target
+1320520@@@[DNT] Move Target
+1320521@@@[DNT] Move Target
+1320522@@@[DNT] Move Target
+1320524@@@[DNT] Move Target
+1320525@@@[DNT] Move Target
+1320553@@@Wraithwalk
+1320566@@@Wraith Teleport
+1320584@@@Cleansing Flame
+1320592@@@Flag Tracking
+1320593@@@Preparing Copter
+1320599@@@Labyrinth Treasure Room
+1320600@@@Labyrinth Treasure Room
+1320601@@@Labyrinth Treasure Room
+1320602@@@Bloodthirsty
+1320647@@@AI Cast AoE
+1320703@@@Backhand
+1320729@@@Singularity Voucher
+1320740@@@Drilling Charge [DNT]
+1320744@@@Amani Tribe Voucher
+1320745@@@Hara'ti Voucher
+1320747@@@Silvermoon Court Voucher
+1320749@@@Zul'jarra's Forces Voucher
+1320759@@@Drilling Charge
+1320767@@@[DNT] Prelit Visual
+1320787@@@Unfriendly Skies
+1320809@@@[DNT] Update Interactions
+1320817@@@[DNT] Override Name
+1320818@@@[DNT] Override Name
+1320819@@@[DNT] Override Name
+1320820@@@[DNT] Override Name
+1320821@@@[DNT] Override Name
+1320822@@@[DNT] Override Name
+1320823@@@[DNT] Override Name
+1320830@@@[DNT] 12.1.5 Labyrinth - Door - Final Boss Room - Area Trigger - Party Memebr - Error
+1320835@@@Claw Flurry
+1320837@@@Claw Flurry
+1320841@@@Ghostly Spawn In [DNT]
+1320845@@@Whirling Spirit
+1320854@@@Kinduru's Spiriting Quill
+1320857@@@[DNT] Play Conversation
+1320859@@@Kill Credit (DNT)
+1320865@@@[DNT] Check Auras for Kill Credit

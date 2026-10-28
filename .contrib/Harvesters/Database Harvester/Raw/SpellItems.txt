@@ -13228,3 +13228,8 @@
 8697@@@Venomcoil
 8702@@@R0CKY
 8705@@@[DNT] 12.1 Delves - Corrosive - ZGS TEST
+12.1.5.69848
+8727@@@|cnIQ4:Ancient Hash'ey Battle Art: Falco Strikes|r
+8728@@@|cnIQ4:Ancient Hash'ey Battle Art: Ursine's Ironhide|r
+8729@@@|cnIQ4:Ancient Hash'ey Battle Art: Heat Wave|r
+8730@@@|cnIQ4:Ancient Hash'ey Battle Art: Eye of the Lynx|r
