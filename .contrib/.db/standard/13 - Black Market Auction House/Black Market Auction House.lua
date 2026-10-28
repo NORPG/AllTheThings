@@ -144,296 +144,168 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 			i(105742),	-- Kor'kron Dark Shaman Treads
 		}),
 		-- #endif
-		i(211259, {	-- Regal Gryphon Rider's Headgear
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(142000, {	-- Rhinestone Sunglasses
-			timeline = { ADDED_8_2_5 },	-- https://warcraft.wiki.gg/wiki/Rhinestone_Sunglasses
-		}),
+		i(211259, { timeline = { ADDED_11_0_5 } }),	-- Regal Gryphon Rider's Headgear
+		i(142000, { timeline = { ADDED_8_2_5 } }),	-- Rhinestone Sunglasses
 		i(112935, {	-- Tusks of Mannoroth
 			ItemAppearanceModifierID = 1,
-			timeline = { ADDED_8_2_5 },	-- https://www.icy-veins.com/forums/topic/45843-new-black-market-auction-house-items-available-in-patch-825/
+			timeline = { ADDED_8_2_5 },
 		}),
 		i(141006, {	-- The First Satyr's Spaulders
 			ItemAppearanceModifierID = 1,
-			timeline = { ADDED_8_2_5 },	-- https://www.icy-veins.com/forums/topic/45843-new-black-market-auction-house-items-available-in-patch-825/
+			timeline = { ADDED_8_2_5 },
 		}),
-		i(211295, {	-- Wrathful Crusader's Helm
-			timeline = { ADDED_11_0_5 },
-		}),
+		i(211295, { timeline = { ADDED_11_0_5 } }),	-- Wrathful Crusader's Helm
 	}),
 	-- #if AFTER 9.1.0
 	filter(BAGS, {
-		i(183634, {	-- Papa's Mint Condition Bag (9.1)
-			timeline = { ADDED_9_1_0 },	-- https://www.wowhead.com/item=183634/papas-mint-condition-bag#comments
-		}),
+		i(183634, { timeline = { ADDED_9_1_0 } }),	-- Papa's Mint Condition Bag (9.1)
 	}),
 	-- #endif
 	filter(BATTLE_PETS, {
 		i(44984),	-- Ammen Vale Lashling (PET!)
 		i(34535),	-- Azure Whelpling (PET!)
 		i(32588),	-- Bananas (PET!)
-		i(104158, {	-- Blackfuse Bombling (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(29960),	-- Firefly (PET!)
 		i(8491),	-- Black Tabby Cat (PET!)
+		i(104158, { timeline = { ADDED_6_0_2 } }),	-- Blackfuse Bombling (PET!)
 		i(8485),	-- Bombay Cat (PET!)
-		i(8490),	-- Siamese Cat (PET!)
-		i(97960, {	-- Viscous Horror (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
 		i(10822),	-- Dark Whelpling (PET!)
 		i(48112),	-- Darting Hatchling (PET!)
 		i(48114),	-- Deviate Hatchling (PET!)
 		i(20769),	-- Disgusting Oozeling (PET!)
 		i(34493),	-- Dragon Kite (PET!)
-		i(104162, {	-- Droplet of Y'Shaarj (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(104162, { timeline = { ADDED_6_0_2 } }),	-- Droplet of Y'Shaarj (PET!)
 		i(44970),	-- Dun Morogh Cub (PET!)
 		i(44973),	-- Durotar Scorpion (PET!)
 		i(44974),	-- Elwynn Lamb (PET!)
 		i(8498),	-- Emerald Whelpling (PET!)
 		i(44982),	-- Enchanted Broom (PET!)
+		i(29960),	-- Firefly (PET!)
 		i(43698),	-- Giant Sewer Rat (PET!)
-		i(104163, {	-- Gooey Sha-ling (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(104163, { timeline = { ADDED_6_0_2 } }),	-- Gooey Sha-ling (PET!)
+		i(8492),	-- Green Wing Macaw (PET!)
 		i(48116),	-- Gundrak Hatchling (PET!)
 		i(23713),	-- Hippogryph Hatchling (PET!)
-		i(94835, {	-- Ji-Kun Hatchling (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(104165, {	-- Kovok (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(8494),	-- Hyacinth Macaw (PET!)
+		i(94835, { timeline = { ADDED_6_0_2 } }),	-- Ji-Kun Hatchling (PET!)
+		i(104165, { timeline = { ADDED_6_0_2 } }),	-- Kovok (PET!)
 		i(48118),	-- Leaping Hatchling (PET!)
-		i(172016, {	-- Lil' Nefarian (PET!)
-			timeline = { ADDED_9_0_1 },
-		}),
-		i(94125, {	-- Living Sandling (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(172016, { timeline = { ADDED_9_0_1 } }),	-- Lil' Nefarian (PET!)
+		i(97959, { timeline = { ADDED_6_0_2 } }),	-- Living Fluid (PET!)
+		i(94125, { timeline = { ADDED_6_0_2 } }),	-- Living Sandling (PET!)
 		i(45002),	-- Mechanopeep (PET!)
 		i(44980),	-- Mulgore Hatchling (PET!)
 		i(48120),	-- Obsidian Hatchling (PET!)
-		i(8492),	-- Green Wing Macaw (PET!)
-		i(8494),	-- Hyacinth Macaw (PET!)
 		i(35504),	-- Phoenix Hatchling (PET!)
 		i(44721),	-- Proto-Drake Whelp (PET!)
-		i(183621, {	-- Putrid Geist (PET!)
-			timeline = { ADDED_9_0_1 },
-		}),
-		i(94574, {	-- Pygmy Direhorn (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(97959, {	-- Living Fluid (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(183621, { timeline = { ADDED_9_0_1 } }),	-- Putrid Geist (PET!)
+		i(94574, { timeline = { ADDED_6_0_2 } }),	-- Pygmy Direhorn (PET!)
 		i(48124),	-- Razormaw Hatchling (PET!)
 		i(48126),	-- Razzashi Hatchling (PET!)
 		i(34492),	-- Rocket Chicken (PET!)
 		i(45606),	-- Sen'jin Fetish (PET!)
+		i(8490),	-- Siamese Cat (PET!)
+		i(97960, { timeline = { ADDED_6_0_2 } }),	-- Viscous Horror (PET!)
 		i(69992, {	-- Shimmering Wyrmling (PET!)
 			description = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
 		}),
-		i(94152, {	-- Son of Animus (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(8499),	-- Crimson Whelping (PET!)
 		i(38050),	-- Ethereal Soul-Trader (PET!)
+		i(94152, { timeline = { ADDED_6_0_2 } }),	-- Son of Animus (PET!)
 		i(49343),	-- Spectral Tiger Cub (PET!)
 		i(44965),	-- Teldrassil Sproutling (PET!)
-		i(85513, {	-- Thundering Serpent Hatchling (PET!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(8499),	-- Crimson Whelping (PET!)
+		i(85513, { timeline = { ADDED_6_0_2 } }),	-- Thundering Serpent Hatchling (PET!)
 		i(69991),	-- Tiny Sporebat (PET!)
 		i(44971),	-- Tirisfal Batling (PET!)
 		i(49287),	-- Tuskarr Kite (PET!)
 	}),
 	-- #if AFTER 6.0.2
 	filter(CONSUMABLES, {
-		i(128312, {	-- Elixir of the Rapid Mind
-			timeline = { ADDED_7_0_3, DELETED_9_0_1 },
-		}),
-		TempForceMisc(i(110672, {	-- Grimoire of the Four Winds
-			timeline = { ADDED_6_0_2, REMOVED_7_3_5 },
-		})),
+		i(128312, { timeline = { ADDED_7_0_3, DELETED_9_0_1 } }),	-- Elixir of the Rapid Mind
+		TempForceMisc(i(110672, { timeline = { ADDED_6_0_2, REMOVED_7_3_5 } })),	-- Grimoire of the Four Winds
 	}),
 	-- #endif
 	-- #if AFTER 6.2.5
 	filter(ILLUSIONS, {
-		i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(118572, {	-- Illusion: Flame of Ragnaros (ILLUSION!)
-			timeline = { ADDED_6_2_0 },	-- https://www.wowhead.com/item=118572/illusion-flames-of-ragnaros#comments
-		}),
-		i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(138838, { timeline = { ADDED_8_2_5 } }),	-- Illusion: Deathfrost (ILLUSION!)
+		i(118572, { timeline = { ADDED_6_2_0 } }),	-- Illusion: Flame of Ragnaros (ILLUSION!)
+		i(128649, { timeline = { ADDED_8_2_5 } }),	-- Illusion: Winter's Grasp (ILLUSION!)
 	}),
 	-- #endif
 	filter(MOUNTS, {
-		i(143643, {	-- Abyss Worm (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(168830, {	-- Aerial Unit R-21/X
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(94230, {	-- Amber Primordial Direhorn (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(68823, {	-- Armored Razzashi Raptor (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(143643, { timeline = { ADDED_8_2_5 } }),	-- Abyss Worm (MOUNT!)
+		i(168830, { timeline = { ADDED_10_1_5 } }),	-- Aerial Unit R-21/X
+		i(94230, { timeline = { ADDED_8_2_5 } }),	-- Amber Primordial Direhorn (MOUNT!)
+		i(68823, { timeline = { ADDED_8_2_5 } }),	-- Armored Razzashi Raptor (MOUNT!)
 		i(32458),	-- Ashes of Al'ar (MOUNT!)
-		i(87777, {	-- Astral Cloud Serpent (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
+		i(87777, { timeline = { ADDED_6_0_2 } }),	-- Astral Cloud Serpent (MOUNT!)
 		i(43952),	-- Azure Drake (MOUNT!)
 		i(77067),	-- Blazing Drake (MOUNT!)
 		i(43953),	-- Blue Drake (MOUNT!)
 		i(44151),	-- Blue Proto-Drake (MOUNT!)
-		i(95059, {	-- Clutch of Ji-Kun (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(94228, {	-- Cobalt Primordial Direhorn (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(115484, {	-- Core Hound (MOUNT!)
-			timeline = { ADDED_6_2_0 },
-		}),
+		i(95059, { timeline = { ADDED_6_0_2 } }),	-- Clutch of Ji-Kun (MOUNT!)
+		i(94228, { timeline = { ADDED_8_2_5 } }),	-- Cobalt Primordial Direhorn (MOUNT!)
+		i(115484, { timeline = { ADDED_6_2_0 } }),	-- Core Hound (MOUNT!)
 		i(63040),	-- Drake of the North Wind (MOUNT!)
 		i(63041),	-- Drake of the South Wind (MOUNT!)
-		i(78919, {	-- Experiment 12-B (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(137574, {	-- Felblaze Infernal (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(123890, {	-- Felsteel Annihilator (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(78919, { timeline = { ADDED_8_2_5 } }),	-- Experiment 12-B (MOUNT!)
+		i(137574, { timeline = { ADDED_8_2_5 } }),	-- Felblaze Infernal (MOUNT!)
+		i(123890, { timeline = { ADDED_8_2_5 } }),	-- Felsteel Annihilator (MOUNT!)
 		i(30480),	-- Fiery Warhorse (MOUNT!)
 		i(71665),	-- Flametalon of Alysrazor (MOUNT!)
-		i(211084, {	-- Golden Regal Scarab (MOUNT!)
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(166705, {	-- Glacial Tidestorm
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(166518, {	-- GMOD
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(43959, {	-- Grand Black War Mammoth (A) (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(44083, {	-- Grand Black War Mammoth (H) (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(166705, { timeline = { ADDED_10_1_5 } }),	-- Glacial Tidestorm
+		i(166518, { timeline = { ADDED_10_1_5 } }),	-- GMOD
+		i(211084, { timeline = { ADDED_11_0_5 } }),	-- Golden Regal Scarab (MOUNT!)
+		i(43959, { timeline = { ADDED_8_2_5 } }),	-- Grand Black War Mammoth (A) (MOUNT!)
+		i(44083, { timeline = { ADDED_8_2_5 } }),	-- Grand Black War Mammoth (H) (MOUNT!)
 		i(44707),	-- Green Proto-Drake (MOUNT!)
-		i(87771, {	-- Heavenly Onyx Cloud Serpent (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(94231, {	-- Jade Primordial Direhorn (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(87771, { timeline = { ADDED_6_0_2 } }),	-- Heavenly Onyx Cloud Serpent (MOUNT!)
 		i(50818),	-- Invincible (MOUNT!)
-		i(116660, {	-- Ironhoof Destroyer (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(104253, {	-- Kor'kron Juggernaut (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(143764, {	-- Leywoven Flying Carpet (MOUNT!)
-			timeline = { ADDED_9_1_0 },
-		}),
-		i(77069, {	-- Life-Binder's Handmaiden (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(168826, {	-- Mechagon Peacekeeper
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
-			timeline = { ADDED_9_0_1 },
-		}),
+		i(116660, { timeline = { ADDED_8_2_5 } }),	-- Ironhoof Destroyer (MOUNT!)
+		i(94231, { timeline = { ADDED_8_2_5 } }),	-- Jade Primordial Direhorn (MOUNT!)
+		i(104253, { timeline = { ADDED_6_0_2 } }),	-- Kor'kron Juggernaut (MOUNT!)
+		i(143764, { timeline = { ADDED_9_1_0 } }),	-- Leywoven Flying Carpet (MOUNT!)
+		i(77069, { timeline = { ADDED_8_2_5 } }),	-- Life-Binder's Handmaiden (MOUNT!)
+		i(168826, { timeline = { ADDED_10_1_5 } }),	-- Mechagon Peacekeeper
+		i(163042, { timeline = { ADDED_9_0_1 } }),	-- Mighty Caravan Brutosaur (MOUNT!)
 		i(45693),	-- Mimiron's Head (MOUNT!)
-		i(159921, {	-- Mummified Raptor Skull
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(174872, {	-- Ny'alotha Allseer
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(172012, {	-- Obsidian Worldbreaker (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
+		i(159921, { timeline = { ADDED_10_1_5 } }),	-- Mummified Raptor Skull
+		i(174872, { timeline = { ADDED_10_1_5 } }),	-- Ny'alotha Allseer
+		i(172012, { timeline = { ADDED_8_2_5 } }),	-- Obsidian Worldbreaker (MOUNT!)
 		i(49636),	-- Onyxian Drake (MOUNT!)
 		i(44175),	-- Plagued Proto-Drake (MOUNT!)
 		i(69224),	-- Pureblood Fire Hawk (MOUNT!)
-		i(94229, {	-- Slate Primordial Direhorn (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(159842, {	-- Sharkbait
-			timeline = { ADDED_10_1_5 },
-		}),
 		i(32768),	-- Raven Lord (MOUNT!)
 		i(23720),	-- Riding Turtle (MOUNT!)
 		i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 		i(45802),	-- Rusted Proto-Drake (MOUNT!)
-		i(152789, {	-- Shackled Ur'zul (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(116771, {	-- Solar Spirehawk (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(89783, {	-- Son of Galleon (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(93666, {	-- Spawn of Horridon (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
-		i(19872, {	-- Swift Razzashi Raptor (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(68824),	-- Swift Zulian Panther (MOUNT!)
+		i(152789, { timeline = { ADDED_8_2_5 } }),	-- Shackled Ur'zul (MOUNT!)
+		i(159842, { timeline = { ADDED_10_1_5 } }),	-- Sharkbait
+		i(94229, { timeline = { ADDED_8_2_5 } }),	-- Slate Primordial Direhorn (MOUNT!)
+		i(116771, { timeline = { ADDED_8_2_5 } }),	-- Solar Spirehawk (MOUNT!)
+		i(89783, { timeline = { ADDED_8_2_5 } }),	-- Son of Galleon (MOUNT!)
+		i(93666, { timeline = { ADDED_8_2_5 } }),	-- Spawn of Horridon (MOUNT!)
+		i(19872, { timeline = { ADDED_6_0_2 } }),	-- Swift Razzashi Raptor (MOUNT!)
 		i(35513),	-- Swift White Hawkstrider (MOUNT!)
-		i(19902, {	-- Swift Zulian Tiger (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(95057, {	-- Thundering Cobalt Cloud Serpent (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(104269, {	-- Thundering Onyx Cloud Serpent (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(90655, {	-- Thundering Ruby Cloud Serpent (MOUNT!)
-			timeline = { ADDED_6_0_2 },
-		}),
-		i(160829, {	-- Underrot Crawg Harness
-			timeline = { ADDED_10_1_5 },
-		}),
-		i(147805, {	-- Valarjar Stormwing (MOUNT!)
-			timeline = { ADDED_9_0_1 },
-		}),
+		i(68824),	-- Swift Zulian Panther (MOUNT!)
+		i(19902, { timeline = { ADDED_6_0_2 } }),	-- Swift Zulian Tiger (MOUNT!)
+		i(95057, { timeline = { ADDED_6_0_2 } }),	-- Thundering Cobalt Cloud Serpent (MOUNT!)
+		i(104269, { timeline = { ADDED_6_0_2 } }),	-- Thundering Onyx Cloud Serpent (MOUNT!)
+		i(90655, { timeline = { ADDED_6_0_2 } }),	-- Thundering Ruby Cloud Serpent (MOUNT!)
+		i(160829, { timeline = { ADDED_10_1_5 } }),	-- Underrot Crawg Harness
+		i(147805, { timeline = { ADDED_9_0_1 } }),	-- Valarjar Stormwing (MOUNT!)
+		i(152790, { timeline = { ADDED_8_2_5 } }),	-- Vile Fiend (MOUNT!)
 		i(63043),	-- Vitreous Stone Drake (MOUNT!)
-		i(152790, {	-- Vile Fiend (MOUNT!)
-			timeline = { ADDED_8_2_5 },
-		}),
 		i(43962),	-- White Polar Bear (MOUNT!)
 		i(54068),	-- Wooly White Rhino (MOUNT!)
 		i(49286),	-- X-51 Nether-Rocket X-TREME (MOUNT!)
 	}),
 	filter(QUEST_ITEMS, {
-		i(50379),	-- Battered Hilt (Alliance)
-		i(50380),	-- Battered Hilt (Horde)
+		a(i(50379)),	-- Battered Hilt (A)
+		h(i(50380)),	-- Battered Hilt (H)
 		i(110678, {	-- Darkmoon Ticket Fanny Pack
 			description = "Contains 250-500 Darkmoon Faire Tickets",
 			timeline = { ADDED_6_0_2 },
-			groups = {
-				currency(515),	-- Darkmoon Prize Ticket [Cataclysm Version]
-			},
+			groups = { currency(515) },	-- Darkmoon Prize Ticket [Cataclysm Version]
 		}),
 	}),
 	filter(RECIPES, {
@@ -473,9 +345,7 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 		i(38311),	-- Tabard of the Void
 	}),
 	n(TIER_THREE_SETS, {
-		ach(11744, {	-- Drop Dead, Gorgeous
-			timeline = { ADDED_7_2_0 },
-		}),
+		ach(11744, { timeline = { ADDED_7_2_0 } }),	-- Drop Dead, Gorgeous
 		gs(355, {	-- Vestments of Faith
 			i(22514),	-- Circlet of Faith
 			i(22515),	-- Shoulderpads of Faith
@@ -580,28 +450,14 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 	}),
 	n(WEAPONS, {
 		i(39769),	-- Arcanite Ripper
-		iensemble(211300, {	-- Arsenal: Whispering Temple Blades
-			timeline = { ADDED_11_0_5 },
-		}),
+		iensemble(211300, { timeline = { ADDED_11_0_5 } }),	-- Arsenal: Whispering Temple Blades
 		i(90176),	-- Flintlocke's Blasthammer
-		i(211097, {	-- Gilded Crown Splitter
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(211099, {	-- Gilded Scarab Bulwark
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(211096, {	-- Gold-Plated Witchhunter's Carbine
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(211294, {	-- Marauder King's Body Carver
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(211145, {	-- Royal Witch Doctor's Trophies
-			timeline = { ADDED_11_0_5 },
-		}),
-		i(211159, {	-- Royal Witch Doctor's Guard
-			timeline = { ADDED_11_0_5 },
-		}),
+		i(211097, { timeline = { ADDED_11_0_5 } }),	-- Gilded Crown Splitter
+		i(211099, { timeline = { ADDED_11_0_5 } }),	-- Gilded Scarab Bulwark
+		i(211096, { timeline = { ADDED_11_0_5 } }),	-- Gold-Plated Witchhunter's Carbine
+		i(211294, { timeline = { ADDED_11_0_5 } }),	-- Marauder King's Body Carver
+		i(211159, { timeline = { ADDED_11_0_5 } }),	-- Royal Witch Doctor's Guard
+		i(211145, { timeline = { ADDED_11_0_5 } }),	-- Royal Witch Doctor's Trophies
 		i(44924),	-- Sun-Lute of the Phoenix King
 	}),
 	applyclassicphase(MOP_PHASE_LANDFALL, i(93194, {	-- Blood-Soaked Invitation (A)
@@ -690,65 +546,33 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 		},
 	},{
 		-- #if BEFORE WOD
-		n(62943, {	-- Madam Goya [Veiled Stair]
-			coord = { 63.8, 75.8, THE_VEILED_STAIR },
-		}),
+		n(62943, { coord = { 63.8, 75.8, THE_VEILED_STAIR } }),	-- Madam Goya [Veiled Stair]
 		-- #elseif BEFORE LEGION
-		n(83867, {	-- Madam Goya [Nagrand]
-			coord = { 53.8, 15.0, DRAENOR_NAGRAND },
-		}),
+		n(83867, { coord = { 53.8, 15.0, DRAENOR_NAGRAND } }),	-- Madam Goya [Nagrand]
 		-- #elseif BEFORE BFA
-		n(103791, {	-- Madam Gosu [Rogue Class Hall]
-			coord = { 57.91, 46.28, 626 },
-		}),
-		n(100986, {	-- Madam Goya [Underbelly]
-			coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
-		}),
+		n(103791, { coord = { 57.91, 46.28, 626 } }),	-- Madam Gosu [Rogue Class Hall]
+		n(100986, { coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY } }),	-- Madam Goya [Underbelly]
 		-- #elseif BEFORE SL
-		n(142062, {	-- Madam Gosu [Boralus - Alliance]
-			coord = { 56.71, 46.32, BORALUS },
-		}),
-		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
-			coord = { 63.54, 62.68, ZULDAZAR },
-		}),
+		n(142062, { coord = { 56.71, 46.32, BORALUS } }),	-- Madam Gosu [Boralus - Alliance]
+		n(135709, { coord = { 63.54, 62.68, ZULDAZAR } }),	-- Madam Goya [Dazar'alor - Horde]
 		-- #elseif BEFORE DF
-		n(160081, {	-- Ta'xera <Matron of the Market>
-			coord = { 52.40, 83.80, REVENDRETH },
-		}),
+		n(160081, { coord = { 52.40, 83.80, REVENDRETH } }),	-- Ta'xera <Matron of the Market>
 		-- #elseif BEFORE TWW
-		n(189676, {	-- Madam Goya [Valdrakken]
-			coord = { 20.2, 49.1, VALDRAKKEN },
-		}),
+		n(189676, { coord = { 20.2, 49.1, VALDRAKKEN } }),	-- Madam Goya [Valdrakken]
 		-- #elseif BEFORE MID
-		n(219055, {	-- Madam Goya [Dornogal]
-			coord = { 64.8, 52.7, DORNOGAL },
-		}),
-		n(100986, {	-- Madam Goya [Underbelly]
-			coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
-		}),
+		n(219055, { coord = { 64.8, 52.7, DORNOGAL } }),	-- Madam Goya [Dornogal]
+		n(100986, { coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY } }),	-- Madam Goya [Underbelly]
 		-- #elseif BEFORE TLT
-		n(243247, {	-- Madam Goya [Silvermoon City]
-			coord = { 51.84, 48.53, MAP.MIDNIGHT.SILVERMOON_CITY },
-		}),
-		n(219055, {	-- Madam Goya [Dornogal]
-			coord = { 64.8, 52.7, DORNOGAL },
-		}),
-		n(189676, {	-- Madam Goya [Valdrakken]
-			coord = { 20.2, 49.1, VALDRAKKEN },
-		}),
-		n(100986, {	-- Madam Goya [Underbelly]
-			coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
-		}),
+		n(243247, { coord = { 51.84, 48.53, MAP.MIDNIGHT.SILVERMOON_CITY } }),	-- Madam Goya [Silvermoon City]
+		n(219055, { coord = { 64.8, 52.7, DORNOGAL } }),	-- Madam Goya [Dornogal]
+		n(189676, { coord = { 20.2, 49.1, VALDRAKKEN } }),	-- Madam Goya [Valdrakken]
+		n(100986, { coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY } }),	-- Madam Goya [Underbelly]
 		-- #endif
 		-- #if AFTER WOD
 		n(94829, {	-- Zhang Yeoh [Garrison]
 			skipFill = 1,	-- items are not actually available in the Garrison, but we can leave the NPC for tooltips
-			aqd = {
-				coord = { 37.2, 35.8, LUNARFALL },
-			},
-			hqd = {
-				coord = { 44.96, 50.07, FROSTWALL },
-			},
+			aqd = { coord = { 37.2, 35.8, LUNARFALL } },
+			hqd = { coord = { 44.96, 50.07, FROSTWALL } },
 		}),
 		-- #endif
 	})),

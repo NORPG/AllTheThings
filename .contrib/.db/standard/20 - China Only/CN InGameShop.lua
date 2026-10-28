@@ -8,9 +8,7 @@
 -- #if AFTER 2.0.1
 root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 	filter(BATTLE_PETS, {	-- AVAILABLE --
-		cnONLY(i(233190, {	-- Wanderer Liu/Xiao Liu
-			timeline = { ADDED_11_0_7 },
-		})),
+		cnONLY(i(233190, { timeline = { ADDED_11_0_7 } })),	-- Wanderer Liu/Xiao Liu
 	}),
 	filter(BATTLE_PETS, bubbleDown({ u = REMOVED_FROM_GAME }, {	-- REMOVED --
 	})),
@@ -36,9 +34,7 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 		},
 	}),
 	filter(MOUNTS, {	-- AVAILABLE --
-		cnONLY(i(272920, {	-- Spring Panda (MOUNT!)
-			timeline = { ADDED_12_0_7 },
-		})),
+		cnONLY(i(272920, { timeline = { ADDED_12_0_7 } })),	-- Spring Panda (MOUNT!)
 	}),
 	filter(MOUNTS, bubbleDown({ u = REMOVED_FROM_GAME }, {	-- REMOVED --
 	})),
