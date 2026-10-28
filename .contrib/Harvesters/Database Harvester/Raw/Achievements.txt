@@ -18478,3 +18478,7 @@
 64169@@@Mythic: Kith'ix Guild Run
 12.1.5.70077
 64186@@@[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.
+12.1.5.70529
+64373@@@[DNT] Potatoad Egg Secret
+64380@@@[DNT] Let Me Solo Him: Kindo'jan (copy)
+64384@@@[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)

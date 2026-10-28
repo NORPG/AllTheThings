@@ -481453,3 +481453,9 @@
 1310202@@@Kill Credit (DNT)
 1310965@@@Collect Zhevraskin Rug
 1314189@@@Ashen Dreadglider
+12.1.5.70529
+1327151@@@[DNT] Murder in a Row
+1327390@@@Spiritual Fire Conduit
+1327392@@@Spiritual Fire Conduit
+1327393@@@Spiritual Fire Conduit
+1327394@@@Spiritual Fire Conduit
