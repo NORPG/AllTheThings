@@ -2537,7 +2537,7 @@ s(158649,6694,{f=8}),
 i(6693,{f=52,spellID=1293199}),
 crit(18528,{achID=62032,awp=16001,id=9})}})}}),
 inst(2999,{awp=16001,coords={
-[1420]={{50,50}}},icon=_.asset("ruinsoflordaeron"),lvl=15,zoneTextAreaID=16611,g={
+[1420]={{50,50}}},icon=_.asset("ruinsoflordaeron"),lore="The Forsaken are working to reclaim the shattered remains of Lordaeron, where treasured keepsakes and memories still lie among ruins haunted by the Scourge. With reports of a necromancer gathering power, adventurers are called to help secure the city and face the danger taking root within its walls.",lvl=15,zoneTextAreaID=16611,g={
 h(-45,{
 q(92401,{coords={
 [1421]={{44.4,43}}},lvl=15,qgs={250686},r=1,g={
@@ -3148,7 +3148,7 @@ s(158372,6220,{f=20}),
 s(158417,6324,{f=4,loc=42}),
 s(158446,6392,{f=4,loc=45}),
 crit(3263,{achID=62031,awp=16001,id=5})})}}),
-inst(236,{lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},zoneTextAreaID=2017,g={
+inst(236,{icon=136359,lore="Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge	-- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",lvl=48,mapID=317,maps={318},zoneTextAreaID=2017,g={
 h(-45,{
 q(5263,{coords={
 [1423]={{81.4,59.8}}},lvl=55,qgs={11039},sourceQuests={5262},g={
@@ -3340,7 +3340,7 @@ s(160948,13358,{f=5,loc=41}),
 s(160953,13369,{f=4,loc=47}),
 s(163040,16725,{b=1,f=7,loc=47,lvl=54})}}),
 n(16102,{cost={{"i",22051,1}},crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",providers={{"i",22057},{"o",181083}},g={
-qo(2,{providers={{"i",21984}},questID=8968}),
+qo(1,{providers={{"i",21984}},questID=8968}),
 qo(2,{providers={{"i",22046}},questID=8991}),
 s(164905,22329,{f=1}),
 i(22327,{f=51}),
@@ -3418,6 +3418,15 @@ i(13515,{f=53,spellID=1299443})}}),
 e(456,{npcID=10440,g={
 i(13251),
 mnt(17481,{b=1,itemID=13335,lvl=60}),
+s(162993,16678,{b=1,f=6,loc=46,lvl=56}),
+s(163009,16694,{b=1,f=4,loc=46,lvl=56}),
+s(163014,16699,{b=1,f=4,loc=46,lvl=56}),
+s(162983,16668,{b=1,f=6,loc=46,lvl=56}),
+s(163047,16732,{b=1,f=7,loc=46,lvl=56}),
+s(163043,16728,{b=1,f=7,loc=46,lvl=56}),
+s(163002,16687,{b=1,f=4,loc=46,lvl=56}),
+s(163024,16709,{b=1,f=5,loc=46,lvl=56}),
+s(163034,16719,{b=1,f=5,loc=46,lvl=56}),
 s(160994,13505,{f=26,spellID=17625}),
 s(160952,13368,{f=20}),
 s(164931,22408,{f=27}),
@@ -3431,15 +3440,6 @@ s(164932,22409,{f=5,loc=42}),
 s(160943,13344,{f=6,loc=44}),
 s(164933,22410,{f=6,loc=44}),
 i(13345,{f=52}),
-s(162993,16678,{b=1,f=6,loc=46,lvl=56}),
-s(163009,16694,{b=1,f=4,loc=46,lvl=56}),
-s(163014,16699,{b=1,f=4,loc=46,lvl=56}),
-s(162983,16668,{b=1,f=6,loc=46,lvl=56}),
-s(163047,16732,{b=1,f=7,loc=46,lvl=56}),
-s(163043,16728,{b=1,f=7,loc=46,lvl=56}),
-s(163002,16687,{b=1,f=4,loc=46,lvl=56}),
-s(163024,16709,{b=1,f=5,loc=46,lvl=56}),
-s(163034,16719,{b=1,f=5,loc=46,lvl=56}),
 crit(18471,{achID=62033,awp=16001,id=13})}})}})}}),
 inst(63,{coords={
 [1436]={{42.2,82.6}}},icon=136332,lore="Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",lvl=10,mapID=291,zoneTextAreaID=1581,g={
@@ -3652,7 +3652,7 @@ s(308617,273829,{awp=16001,f=33}),
 s(308613,273824,{awp=16001,f=5,loc=44,spellID=1292581}),
 s(308614,273825,{awp=16001,f=3})})}}),
 inst(237,{coords={
-[1435]={{69.2,54.8}}},lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,zoneTextAreaIDs={1417,1477},g={
+[1435]={{69.2,54.8}}},icon=136360,lore="Over a thousand years ago, the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, attempted to bring back an ancient blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire buckled in upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows. There they erected a great temple to Hakkar - where they could prepare for his arrival into the physical world. The great dragon Aspect, Ysera, learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's drowned ruins are guarded by the green dragons who prevent anyone from getting in or out. However, it is believed that some of the fanatical Atal'ai may have survived Ysera's wrath - and recommitted themselves to the dark service of Hakkar.",lvl=45,mapID=220,zoneTextAreaIDs={1417,1477},g={
 h(-45,{
 q(9053,{c={11},coords={
 [1449]={{71.6,76}}},lvl=50,qgs={9619},sourceQuests={9051},g={
@@ -3786,7 +3786,7 @@ i(22444),
 s(160179,10799,{f=29}),
 s(160180,10800,{f=5,loc=43}),
 s(160178,10798,{f=7,loc=45})}})}}),
-h(-367,{providers={{"n",5712},{"n",5713},{"n",5714},{"n",5715},{"n",5716},{"n",5717}},g={
+h(-367,{crs={5712,5713,5714,5715,5716,5717},g={
 s(160170,10783,{f=5,loc=41}),
 s(160174,10787,{f=4,loc=44}),
 s(160171,10784,{f=6,loc=42}),
@@ -3832,7 +3832,7 @@ i(10829,{f=51}),
 crit(18533,{achID=62033,awp=16001,id=6})}})}}),
 inst(239,{coords={
 [16]={{36.6,29.4}},
-[1418]={{64,44}}},lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,zoneTextAreaID=1337,g={
+[1418]={{64,44}}},icon=136363,lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,zoneTextAreaID=1337,g={
 h(-44,{
 prof(333,{
 n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first.",g={
@@ -4131,7 +4131,7 @@ s(158613,6627,{b=1,f=6,loc=42,lvl=18}),
 i(6463,{b=1,f=52,lvl=19}),
 crit(18524,{achID=62031,awp=16001,id=3})}})}}),
 inst(241,{coords={
-[1446]={{39,19}}},lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,zoneTextAreaID=978,g={
+[1446]={{39,19}}},icon=136368,lore="Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls. Reports have also suggested that a band of mercenaries fleeing Gadgetzan wandered into the city and became trapped. Their fate remains unknown. But perhaps most disturbing of all are the hushed whispers of an ancient creature sleeping within a sacred pool at the city's heart - a mighty demigod who will wreak untold destruction upon any adventurer foolish enough to awaken him.",lvl=39,mapID=219,zoneTextAreaID=978,g={
 h(-45,{
 q(2768,{coords={
 [1446]={{52.5,28.5}}},lvl=40,qgs={7407},g={
@@ -4142,7 +4142,7 @@ q(2770,{coords={
 [1441]={{78,77}}},lvl=40,qgs={4453},sourceQuests={2769},g={
 qo(1,{providers={{"i",8707}}}),
 i(11122,{b=1,description="Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",f=53,spellID=13587}),
-s(159458,9653,{b=1,f=4,loc=40,rwp=10903,u=2})}}),
+s(159458,9653,{b=1,f=4,loc=40})}}),
 q(2991,{coords={
 [1419]={{67,19.4}}},lvl=40,qgs={8022},r=2,sourceQuests={2990},g={
 qo(1,{providers={{"i",9471}}})}}),
@@ -4212,6 +4212,13 @@ s(163425,18082,{f=28,spellID=1294255}),
 s(163426,18083,{f=4,loc=44})}}),
 n(10081,{description="This is a Rare Creature and, as such, is not always present.",g={
 s(160537,12471,{f=1})}}),
+e(482,{npcID=7795,g={
+i(9234),
+i(10661)}}),
+e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
+i(8707),
+s(159379,9467,{f=20,spellID=1294477}),
+s(159380,9469,{f=6,loc=42})}}),
 n(7796,{description="He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",g={
 i(9471,{r=2})}}),
 e(487,{npcID=7275,g={
@@ -4229,12 +4236,5 @@ s(159387,9478,{f=21}),
 s(159386,9477,{f=28}),
 s(159388,9479,{f=5,loc=40}),
 s(159385,9476,{f=7,loc=41}),
-crit(3265,{achID=62033,awp=16001,id=3})}}),
-n(7795,{
-i(9234),
-i(10661)}),
-e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
-i(8707),
-s(159379,9467,{f=20,spellID=1294477}),
-s(159380,9469,{f=6,loc=42})}})}})}})
+crit(3265,{achID=62033,awp=16001,id=3})}})}})}})
 end)

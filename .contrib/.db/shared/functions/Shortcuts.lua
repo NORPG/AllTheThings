@@ -3379,6 +3379,9 @@ end
 battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
 	root(ROOTS.PVP, n(BATTLEGROUNDS, { m(mapID, g) }));
 end
+instanceroot = function(instID, g)
+	root(ROOTS.Instances, inst(instID, g));
+end
 ---@param ... UiMapID|ATTObject|ATTObjectArray UI map IDs from outermost to innermost, followed by the object or child array to nest.
 maproot = function(...)									-- Create a MAP ROOT in the Zones header.
 	-- Example: maproot(KALIMDOR, ELWYNN_FOREST, { });
