@@ -479051,6 +479051,26 @@
 1320161@@@Cosmetic Egg Finder
 1320167@@@Generic Spell
 1320168@@@Generic Spell
+12.1.0.69875
+1282233@@@Collect Windwell
+1282234@@@Collect Windshaper's Chimes
+1282235@@@Collect Shen'dorei Standard
+1282236@@@Collect Zephras Drapery
+1283496@@@Collect Handmade Shen'dorei Pillow
+1289402@@@Ensemble: Shen'dorei Magister's Garb
+1289407@@@Ensemble: Shen'dorei Peacekeeper's Garb
+1289417@@@Ensemble: Shen'dorei Skyseer's Garb
+1289419@@@Ensemble: Al'Aketh Zealot's Garb
+1306128@@@Ensemble: Veteran Adventurer's Outdoor Wear
+1309109@@@Cerulean Prideclaw
+1309110@@@[PH] Purple Cat Mount
+1309112@@@[PH] Brown Cat Mount
+1309114@@@[PH] White Blue Cat Mount
+1309196@@@Shen'dorei Windwell
+1309251@@@Collect Boardcraft Forsaken Figurine
+1309253@@@Collect Boardcraft Human Figurine
+1313400@@@[DNT] Shen'dorei Windwell
+1321028@@@[DNT] Umbral Champion
 12.1.5.69594
 29276@@@Crystallized Mana Residue
 182865@@@Crystallized Fel Essence

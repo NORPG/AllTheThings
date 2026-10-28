@@ -3847,6 +3847,14 @@
 27973@@@Old Moonbrook Nighttime Window
 12.1.0.69814
 28350@@@BlizzCon Doormat
+12.1.0.69875
+19688@@@Windwell
+19689@@@Windshaper's Chimes
+19690@@@Shen'dorei Standard
+19691@@@Zephras Drapery
+20166@@@Handmade Shen'dorei Pillow
+27076@@@Boardcraft Forsaken Figurine
+27077@@@Boardcraft Human Figurine
 12.1.5.69594
 1429@@@Broken Amani Ritual Urn
 1431@@@Cracked Amani Funerary Urn

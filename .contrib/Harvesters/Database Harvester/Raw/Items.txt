@@ -338524,6 +338524,73 @@
 285062@@@Medal of Conquest
 12.1.0.69814
 281107@@@BlizzCon Doormat
+12.1.0.69875
+268337@@@Windwell
+268338@@@Windshaper's Chimes
+268339@@@Shen'dorei Standard
+268340@@@Zephras Drapery
+268722@@@Handmade Shen'dorei Pillow
+270272@@@Lordaeron Forever
+271722@@@Shen'dorei Magister's Belt
+271723@@@Shen'dorei Magister's Boots
+271724@@@Shen'dorei Magister's Cloak
+271725@@@Shen'dorei Magister's Robe
+271726@@@Shen'dorei Magister's Gloves
+271727@@@Shen'dorei Magister's Helm
+271728@@@Shen'dorei Magister's Leggings
+271729@@@Shen'dorei Magister's Vest
+271730@@@Shen'dorei Magister's Pauldrons
+271731@@@Ensemble: Shen'dorei Magister's Garb
+271733@@@Shen'dorei Peacekeeper's Belt
+271734@@@Shen'dorei Peacekeeper's Boots
+271735@@@Shen'dorei Peacekeeper's Cloak
+271736@@@Shen'dorei Peacekeeper's Robe
+271737@@@Shen'dorei Peacekeeper's Gloves
+271738@@@Shen'dorei Peacekeeper's Helm
+271739@@@Shen'dorei Peacekeeper's Leggings
+271742@@@Shen'dorei Peacekeeper's Vest
+271743@@@Shen'dorei Peacekeeper's Pauldrons
+271744@@@Ensemble: Shen'dorei Peacekeeper's Garb
+271746@@@Shen'dorei Skyseer's Belt
+271747@@@Shen'dorei Skyseer's Boots
+271748@@@Shen'dorei Skyseer's Cloak
+271749@@@Shen'dorei Skyseer's Robe
+271750@@@Shen'dorei Skyseer's Gloves
+271751@@@Shen'dorei Skyseer's Helm
+271752@@@Shen'dorei Skyseer's Leggings
+271753@@@Shen'dorei Skyseer's Vest
+271754@@@Shen'dorei Skyseer's Pauldrons
+271755@@@Ensemble: Shen'dorei Skyseer's Garb
+271756@@@Al'Aketh Zealot's Belt
+271757@@@Al'Aketh Zealot's Boots
+271758@@@Al'Aketh Zealot's Cloak
+271759@@@Al'Aketh Zealot's Robe
+271760@@@Al'Aketh Zealot's Gloves
+271761@@@Al'Aketh Zealot's Helm
+271762@@@Al'Aketh Zealot's Leggings
+271763@@@Al'Aketh Zealot's Vest
+271764@@@Al'Aketh Zealot's Pauldrons
+271765@@@Ensemble: Al'Aketh Zealot's Garb
+279173@@@Veteran Adventurer's Chestpiece
+279174@@@Veteran Adventurer's Belt
+279175@@@Veteran Adventurer's Legguards
+279176@@@Veteran Adventurer's Boots
+279177@@@Veteran Adventurer's Bracer
+279178@@@Veteran Adventurer's Gloves
+279179@@@Veteran Adventurer's Cloak
+279180@@@Veteran Adventurer's Hood
+279181@@@Veteran Adventurer's Shoulderpads
+279182@@@Ensemble: Veteran Adventurer's Outdoor Wear
+280519@@@Cerulean Prideclaw
+280520@@@[PH] Purple Cat Mount
+280521@@@[PH] Brown Cat Mount
+280522@@@[PH] White Blue Cat Mount
+280541@@@Shen'dorei Windwell
+280545@@@Shen'dorei Tabard
+280554@@@Boardcraft Forsaken Figurine
+280556@@@Boardcraft Human Figurine
+280599@@@Veteran Adventurer's Loyal Companion
+280623@@@Veteran Adventurer's Rucksack
 12.1.5.69594
 5675@@@Crystallized Scales
 19960@@@Crystallized Honey

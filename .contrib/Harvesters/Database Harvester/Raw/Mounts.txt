@@ -2648,6 +2648,11 @@
 12.1.0.69299
 142515@@@Hearthkeeper's Wandering Caravan
 1293028@@@Tuskarr Hermit Crab
+12.1.0.69875
+1309109@@@Cerulean Prideclaw
+1309110@@@[PH] Purple Cat Mount
+1309112@@@[PH] Brown Cat Mount
+1309114@@@[PH] White Blue Cat Mount
 12.1.5.69594
 1250285@@@Whaletested Crest-Horn
 1251689@@@Aubergine Warturkey
