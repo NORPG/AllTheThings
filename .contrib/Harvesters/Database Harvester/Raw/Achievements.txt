@@ -18476,3 +18476,125 @@
 64167@@@Kith'ix Guild Run
 64168@@@Heroic: Kith'ix Guild Run
 64169@@@Mythic: Kith'ix Guild Run
+12.1.5.70077
+64186@@@[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.
+12.1.5.70529
+64373@@@[DNT] Potatoad Egg Secret
+64380@@@[DNT] Let Me Solo Him: Kindo'jan (copy)
+64384@@@[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)
+12.1.7.70424
+63604@@@Lorewalking: Tyr
+63691@@@Lorewalking: Thrall
+63710@@@Lorewalking: Titans
+63712@@@Lorewalking: Jaina
+63713@@@The Coreway Advance
+63729@@@The Giant of Greenthistle Wood
+63734@@@Veteran: The Giant of Greenthistle Wood
+63735@@@Heroic: The Giant of Greenthistle Wood
+63736@@@Mythic: The Giant of Greenthistle Wood
+63737@@@The Witch of the Woods
+63738@@@Veteran: The Witch of the Woods
+63741@@@Heroic: The Witch of the Woods
+63742@@@Mythic: The Witch of the Woods
+63743@@@The Witch of the Wilds
+63744@@@Veteran: The Witch of the Wilds
+63745@@@Heroic: The Witch of the Wilds
+63746@@@Mythic: The Witch of the Wilds
+63748@@@The Lord Marshal
+63749@@@Veteran: The Lord Marshal
+63750@@@Mythic: The Lord Marshal
+63754@@@The Vampire Bishop
+63755@@@Veteran: The Vampire Bishop
+63758@@@Heroic: The Vampire Bishop
+63759@@@Mythic: The Vampire Bishop
+63760@@@The Fairy Queen
+63761@@@Veteran: The Fairy Queen
+63762@@@Heroic: The Fairy Queen
+63763@@@Mythic: The Fairy Queen
+63764@@@The Nightmare King
+63765@@@Veteran: The Nightmare King
+63766@@@Heroic: The Nightmare King
+63767@@@Mythic: The Nightmare King
+63768@@@The Hadal Tyrant
+63769@@@Veteran: The Hadal Tyrant
+63770@@@Heroic: The Hadal Tyrant
+63771@@@Mythic: The Hadal Tyrant
+63772@@@The Herald from Beyond
+63773@@@Veteran: The Herald from Beyond
+63774@@@Heroic: The Herald from Beyond
+63775@@@Mythic: The Herald from Beyond
+63776@@@The Final Confrontation
+63777@@@Veteran: The Final Confrontation
+63778@@@Heroic: The Final Confrontation
+63779@@@Mythic: The Final Confrontation
+63780@@@Heroic: The Lord Marshal
+63782@@@The Tale of Greenthistle Wood
+63783@@@Veteran: The Tale of Greenthistle Wood
+63784@@@Heroic: The Tale of Greenthistle Wood
+63785@@@Mythic: The Tale of Greenthistle Wood
+63786@@@The Tale of Darkhaven
+63787@@@Veteran: The Tale of Darkhaven
+63788@@@Heroic: The Tale of Darkhaven
+63789@@@Mythic: The Tale of Darkhaven
+63790@@@The Tale of the Court of Night
+63791@@@Veteran: The Tale of the Court of Night
+63792@@@Heroic: The Tale of the Court of Night
+63793@@@Mythic: The Tale of the Court of Night
+63794@@@The Tale of Greywake's Expedition
+63795@@@Veteran: The Tale of Greywake's Expedition
+63796@@@Heroic: The Tale of Greywake's Expedition
+63797@@@Mythic: The Tale of Greywake's Expedition
+63798@@@The Complete Tale
+63799@@@Veteran: The Complete Tale
+63800@@@Heroic: The Complete Tale
+63801@@@Mythic: The Complete Tale
+63802@@@The Slayer's Final Confrontation
+63803@@@Veteran: The Slayer's Final Confrontation
+63804@@@Heroic: The Slayer's Final Confrontation
+63805@@@Mythic: The Slayer's Final Confrontation
+63806@@@The Witch's Final Confrontation
+63807@@@Veteran: The Witch's Final Confrontation
+63808@@@Heroic: The Witch's Final Confrontation
+63809@@@Mythic: The Witch's Final Confrontation
+63810@@@The Inquisitor's Final Confrontation
+63811@@@Veteran: The Inquisitor's Final Confrontation
+63812@@@Heroic: The Inquisitor's Final Confrontation
+63813@@@Mythic: The Inquisitor's Final Confrontation
+63814@@@Traveler's Coin
+63815@@@Traveler's Purse
+63816@@@Traveler's Cache
+63817@@@Traveler's Trove
+63818@@@Traveler's Fortune
+63819@@@A Puzzling Tale
+63820@@@The Tale of the Puzzle Master
+63821@@@The Slayer and the Scribe: The Complete Tale
+63822@@@The Witch and the Scribe: The Complete Tale
+63823@@@The Inquisitor and the Scribe: The Complete Tale
+63824@@@The Outfitter's Story
+63825@@@The Arcanist's Account
+63826@@@The Antiquarian's Chapter
+64135@@@The Stories of Greenthistle Wood
+64136@@@The Story of Darkhaven
+64137@@@The Verses of the Court of Night
+64138@@@The Story of Greywake's Expedition
+64139@@@The Stories of the Storyteller
+64174@@@Bow Go
+64175@@@Let's Put A Bow On It
+64207@@@Master of the Turbulent Timeways VI
+64227@@@The Sanguine Puzzlemaster
+64228@@@The Hexed Puzzlemaster
+64229@@@The Eldritch Puzzlemaster
+64230@@@The Fae Puzzlemaster
+64290@@@The Power of Stories
+64291@@@Core Logic
+12.1.7.70493
+63821@@@The Slayer and the Scribe
+63822@@@The Witch and the Scribe
+63823@@@The Inquisitor and the Scribe
+64139@@@Stories to Share
+64367@@@Bells Will Be Ringing
+64368@@@That's Not For You
+64369@@@Sockin' Around the Winter Veil Tree
+64370@@@Season's Beatings
+64371@@@Candy Cane Brigade
+64372@@@Tree-fense

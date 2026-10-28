@@ -1558,3 +1558,30 @@
 3544@@@Aqir Research Enclave
 3592@@@12.1.5 Labyrinth - Personal Tracker - S2 Weekly Turn-In (Hidden)
 3606@@@Soul
+12.1.7.70424
+3275@@@Reuse 12
+3276@@@Reuse 14
+3320@@@Outfitter Supplies
+3321@@@Reuse 04
+3322@@@Reuse 03
+3323@@@Reuse 02
+3324@@@Reuse 01
+3325@@@Ducats
+3326@@@Experience
+3327@@@Tales of Valor
+3328@@@Reuse 18
+3329@@@Reuse 17
+3330@@@Reuse 16
+3331@@@Reuse 15
+3332@@@Alkahest
+3333@@@Reuse 05
+3334@@@Reuse 06
+3335@@@Reuse 07
+3336@@@Reuse 08
+3337@@@Reuse 09
+3338@@@Reuse 10
+3339@@@Reuse 11
+3340@@@Reuse 13
+3361@@@Bound Silver
+3362@@@Lost Relic
+3593@@@Lives

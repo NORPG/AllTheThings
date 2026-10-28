@@ -1057,3 +1057,8 @@
 12.1.5.69848
 801@@@%s, Fabled Vanquisher of The First Hash'ey
 803@@@%s of the Labyrinth
+12.1.7.70493
+811@@@%s of the Crooked Path
+812@@@Monster Hunter %s
+813@@@Listener %s
+814@@@%s of the Sacred Flame

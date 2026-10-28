@@ -10971,3 +10971,43 @@
 16913@@@The Labyrinth of Kindo'jan
 17032@@@Nalorakk's Rest
 17778@@@Kith'ix's Prison
+12.1.7.70424
+14721@@@Mysterious Cave
+14731@@@Mysterious Cave
+14732@@@Mysterious Cave
+14733@@@Mysterious Cave
+14734@@@Mysterious Cave
+14735@@@Mysterious Cave
+14736@@@Mysterious Cave
+14737@@@Mysterious Cave
+14738@@@Mysterious Cave
+14739@@@Mysterious Cave
+16309@@@zzCastle Nathria
+16381@@@Ravenswood Manor
+16387@@@Grove of the Night Court
+16391@@@Greenthistle Wood
+16392@@@zzBriarweald
+16402@@@Darkhaven
+16403@@@zzCrimson Cathedral
+16404@@@zzGM3 Sanguine Depths
+16405@@@zzGM3 Castle Nathria
+16406@@@zzVerdant Hollow
+16407@@@zzTeocan Ruins
+16408@@@zzGM3 Darkheart Thicket
+16409@@@Greywake's Expedition
+16410@@@zzGM3 Tiragarde
+16411@@@zzGM3 Shrine of the Storm
+16412@@@zzGM3 Crucible of Storms
+16413@@@zzGM3 Ny'alotha
+16414@@@zzGM3 Eternal Palace
+16540@@@zzQuillgrave
+16862@@@Quillgrave
+16872@@@Elwynn Forest
+16911@@@Uldaman
+16917@@@The Great Sea
+16918@@@Hyjal Summit
+16927@@@Theramore Isle
+16936@@@Frachtorn
+16938@@@Ruins of Theramore
+16942@@@Seat of the Pantheon
+17024@@@Hall of the Keepers
