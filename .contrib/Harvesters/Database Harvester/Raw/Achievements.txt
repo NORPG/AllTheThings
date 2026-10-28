@@ -18476,3 +18476,5 @@
 64167@@@Kith'ix Guild Run
 64168@@@Heroic: Kith'ix Guild Run
 64169@@@Mythic: Kith'ix Guild Run
+12.1.5.70077
+64186@@@[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.

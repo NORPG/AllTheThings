@@ -481380,3 +481380,29 @@
 1321838@@@[DNT] Impact
 1321839@@@[DNT] Shoot
 1321840@@@[DNT] Shoot
+12.1.5.70077
+1295681@@@Fire Burst
+1296400@@@Burning Flurry
+1321882@@@Error
+1321892@@@Error
+1321951@@@Stampeding Charge
+1321956@@@Stampeding Charge
+1321962@@@Stampeding Charge
+1321975@@@[DNT] Cancel Aura - Agitated Crystal
+1321982@@@[DNT]
+1322117@@@[DNT] Exit Labyrinth
+1322161@@@[DNT] 12.1.5 Labyrinth - Door - Area Trigger - Dummy - ZGS
+1322282@@@Player Detection
+1322323@@@[DNT] Head Mason's Tablet
+1322419@@@Cleansed Agony
+1322545@@@Undercity
+1322546@@@Undercity
+1322550@@@Scar of Kathra'natir
+1322575@@@[DNT] Boss's Intimidation
+1322576@@@[DNT] Boss's Intimidation
+1322662@@@Summon Treasure
+1322663@@@Summon Treasure
+1322664@@@Summon Treasure
+1322665@@@Summon Treasure
+1322666@@@Summon Treasure
+1323054@@@On Fire!
