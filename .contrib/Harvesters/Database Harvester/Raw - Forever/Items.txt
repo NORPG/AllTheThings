@@ -19272,3 +19272,7 @@
 286140@@@Monster - Shield, Paladin
 287416@@@Truskis' Cheesecake Slice
 287505@@@Tender Strider Meat
+1.60.1.70245
+285352@@@Tabard of Eternal Exploration
+285353@@@Eternal Explorer's Backpack
+285354@@@Azurky

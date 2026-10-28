@@ -31913,3 +31913,5 @@
 1323418@@@Revelation
 1323419@@@Revelation
 1323420@@@Totemic Recall
+1.60.1.70245
+1318286@@@Summon Azurky
