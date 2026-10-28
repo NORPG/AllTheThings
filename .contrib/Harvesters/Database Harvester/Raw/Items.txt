@@ -54086,6 +54086,13 @@
 252194@@@Fishmonger May
 3.80.2.69496
 277328@@@Delta
+3.80.2.70177
+151234@@@Shadow
+280404@@@Lordaeron Forever Tabard
+280448@@@Shen'dorei Tabard
+280544@@@Cerulean Prideclaw
+280611@@@Veteran Adventurer's Loyal Companion
+280740@@@Shen'dorei Windwell
 4.4.0.53627
 80@@@Soft Fur-Lined Shoes
 732@@@Ripe Okra
@@ -238293,7 +238300,6 @@
 149999@@@Dominant Combatant's Plate Girdle
 150000@@@Dominant Combatant's Plate Wristplates
 150001@@@Dominant Combatant's Plate Wristplates
-151234@@@Shadow
 151617@@@Orgrimmar Interceptor
 151618@@@Stormwind Skychaser
 151978@@@Smoldering Titanguard

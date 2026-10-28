@@ -269,6 +269,8 @@
 251819@@@Fishmonger May
 3.80.2.69496
 268678@@@Delta
+3.80.2.70177
+123650@@@Shadow
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -10091,7 +10093,6 @@
 121532@@@Nath'raxxan Doomherald
 126765@@@Nath'raxxan Soulweaver
 7.3.2.25079
-123650@@@Shadow
 126444@@@Felguard
 126498@@@Felguard Destroyer
 126501@@@Lightforged Centurion

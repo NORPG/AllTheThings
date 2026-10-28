@@ -69158,6 +69158,21 @@
 1316345@@@Might of the Frozen Wastes
 1316371@@@Sanctuary Clear
 1316372@@@Sanctuary
+3.80.2.70177
+184506@@@Pet Sit/Sleep/Dance/Use/Special
+184513@@@Pet Dance
+184514@@@Pet Use
+184515@@@Pet Special
+246105@@@Shadow
+1309208@@@Cerulean Prideclaw
+1309405@@@Veteran Adventurer's Loyal Companion
+1309618@@@Shen'dorei Windwell
+1313787@@@[DNT] Windwell
+1320276@@@Volcano
+1320277@@@Volcano
+1320278@@@Volcano
+1320279@@@Volcano
+1320280@@@Volcano
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
@@ -154741,12 +154756,8 @@
 184502@@@Living Felslate
 184504@@@Infernal Brimstone
 184505@@@Infernal Brimstone
-184506@@@Pet Sit/Sleep/Dance/Use/Special
 184509@@@Soul Orb - Despawn
 184512@@@I am an Iron Horde Transport
-184513@@@Pet Dance
-184514@@@Pet Use
-184515@@@Pet Special
 184516@@@Create - Area Trigger (Soul Orb)
 184517@@@Cooldown: Creature Special 1 (3s)
 184518@@@Summon Maiev
@@ -207920,7 +207931,6 @@
 246101@@@Reverse Ride ARTILLERY SPECIAL
 246102@@@Ride Artillery
 246104@@@Brawler's Purse - Ro-Shambo
-246105@@@Shadow
 246106@@@Brawler's Purse - Blingtron 3000
 246107@@@Felslate Anchor - Cancel Aura
 246108@@@Brawler's Purse - Mingus Diggs

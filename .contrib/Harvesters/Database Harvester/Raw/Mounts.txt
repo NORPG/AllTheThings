@@ -380,6 +380,9 @@
 1301737@@@Sunflash Driftmoth
 3.80.2.68943
 435115@@@Guardian Quilen
+3.80.2.70177
+1309208@@@Cerulean Prideclaw
+1309405@@@Veteran Adventurer's Loyal Companion
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
