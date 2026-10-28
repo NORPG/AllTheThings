@@ -99719,6 +99719,8 @@
 244231@@@Ensemble: Stillwater Fisher Attire
 244352@@@Cloak of the Veiled Paws
 281928@@@Visage of the Damned
+5.5.4.70449
+285349@@@Cerulean Drake
 7.3.0.24473
 25@@@ Shortsword
 35@@@ Staff
