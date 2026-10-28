@@ -2685,3 +2685,8 @@
 1321944@@@Winterrrgl's Pine-Powered Candy Cane Contraption
 1323203@@@Markeet of the Infinite
 1325226@@@Reanimated Skeletal Raptor
+12.1.7.70493
+1320798@@@Attuned Ancient Stegodon
+1320801@@@Crackling Ancient Stegodon
+1320802@@@Rumbling Jungle Stegodon
+1320803@@@Thundering Primal Stegodon

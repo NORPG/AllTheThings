@@ -485108,3 +485108,159 @@
 1326246@@@[DNT] Woods Witch - Arena FX
 1326254@@@[DNT] Woods Witch - Arena FX
 1326255@@@[DNT] Woods Witch - Spotlight - Disable Aura
+12.1.7.70493
+1223012@@@Aerial Dive
+1223013@@@Aerial Dive
+1223027@@@Wicked Assault
+1223029@@@Wicked Assault
+1223169@@@Wicked Assault
+1223617@@@Slash
+1223919@@@Stomp
+1243303@@@[DNT] Collect
+1249280@@@Trail of Cinders
+1249281@@@Parting Gambit
+1249282@@@Infernal Surgeon
+1249284@@@Silver Bullet
+1249370@@@Salt and Sulfur
+1249826@@@Neighborhood Gift Giver
+1256277@@@Recovered Stolen Present
+1260486@@@Stretch Elastic!
+1272280@@@Recovered Stolen Present
+1290289@@@Collect Watchman's Iron Torch
+1310840@@@Wood-Cursed Hearthstone
+1320798@@@Attuned Ancient Stegodon
+1320801@@@Crackling Ancient Stegodon
+1320802@@@Rumbling Jungle Stegodon
+1320803@@@Thundering Primal Stegodon
+1320926@@@Bump
+1320932@@@Night's Reckoning
+1320950@@@Lump
+1320954@@@Grump
+1320959@@@Frump
+1324174@@@Collect Anima-Infused Venthyr Lamppost
+1324804@@@Collect Red Gift Bow
+1324817@@@Collect Large White Winter Veil Gift
+1324823@@@Collect Stitched Winter Veil Stocking
+1324831@@@Collect Small Green Winter Veil Gift
+1324833@@@Collect Large Red Winter Veil Gift
+1324835@@@Collect Gilded Red Wrapped Gift
+1324839@@@Collect Small Red Winter Veil Gift
+1324843@@@Collect Small Green Wrapped Gift
+1324866@@@Collect Candy Cane Rope Pole
+1324872@@@Collect Candy Cane Rope Line
+1324874@@@Collect Striped Winter Veil Stocking
+1324885@@@Collect Gilded Black Wrapped Gift
+1324893@@@Collect Gilded Black Gift Box
+1324901@@@Collect Purple Gift Bow
+1326321@@@Collect Festive Red Candle
+1326334@@@Stomp
+1326352@@@[DNT] Sound Cast - Annoyed
+1326353@@@[DNT] Sound Cast - Giggle
+1326489@@@[DNT] Nightmare Despawn
+1326491@@@[DNT] Nightmare Despawn
+1326496@@@[DNT] Dream Spawn
+1326500@@@[DNT] Wilds Witch - Fake Boss Disappear
+1326511@@@Parting Gambit
+1326512@@@Parting Gambit
+1326518@@@[DNT]A Slightly Damp Gift
+1326525@@@Aerial Dive
+1326529@@@Parting Gambit
+1326531@@@Aerial Dive
+1326537@@@[DNT] Flag Quest
+1326542@@@[DNT] Wisp Aura
+1326558@@@[DNT] Cosmetic Crow Circle
+1326580@@@[DNT] Sound Cast - Confused
+1326582@@@[DNT] Impact Visual
+1326592@@@[DNT] Ducats
+1326599@@@Cyclone
+1326602@@@Cyclone
+1326630@@@Ensemble: Red-and-Greench Sweatsuit
+1326631@@@[DNT] Wilds Witch - Spawn
+1326683@@@Trail of Cinders
+1326688@@@Trail of Cinders
+1326721@@@Trail of Cinders
+1326743@@@Infernal Surgeon
+1326755@@@Shrapnel Round
+1326759@@@[DNT] Recovered Stolen Present - Canceled
+1326829@@@Collect Storyteller's Cursed Looking Glass
+1326834@@@Collect Storyteller's Looking Glass
+1326838@@@Collect Eldritch Looking Glass
+1326842@@@Collect Sanguine Looking Glass
+1326844@@@Collect Hexed Looking Glass
+1326846@@@Collect Fae Looking Glass
+1326848@@@Cancel Convo [DNT]
+1326855@@@[DNT] Wilds Witch - Crow Circle
+1326859@@@Shrapnel Round
+1326861@@@Shrapnel Round
+1326871@@@[DNT] Bird Direction
+1326872@@@[DNT] Bird Direction
+1326873@@@[DNT] Rifle Visual
+1326874@@@[DNT] Bird Direction
+1326877@@@[DNT] Launch Quest
+1326878@@@[DNT] Bird Direction
+1326880@@@[DNT] Cancel Auras
+1326881@@@[DNT] Spotlight
+1326882@@@[DNT] Spotlight
+1326883@@@[DNT] Spotlight
+1326884@@@[DNT] Bird Direction
+1326885@@@[DNT] Bird Direction
+1326886@@@[DNT] Bird Direction
+1326893@@@Shrapnel Round
+1326902@@@Arcanist's Potion
+1326913@@@[DNT] Wilds Witch - Spawn
+1326920@@@[DNT] Wilds Witch - Spawn
+1326922@@@Arcanist's Potion
+1326925@@@Shrapnel Round
+1326932@@@[DNT] Open Chest
+1326935@@@[DNT] Channel Ducats
+1326936@@@[DNT] Ducat Missile
+1326937@@@[DNT] Channel Silver
+1326938@@@[DNT] Silver Missile
+1326939@@@Silver Bullet
+1326940@@@[DNT] Supply Missile
+1326941@@@[DNT] Supply Object
+1326942@@@Silver Bullet
+1326943@@@[DNT] Tale Object
+1326944@@@[DNT] Tale Missile
+1326945@@@[DNT] Relic Object
+1326946@@@[DNT] Relic Missile
+1326948@@@[DNT] Player Create
+1326949@@@[DNT] Player Create
+1326950@@@[DNT] Player Create
+1326951@@@Shrapnel Round
+1326953@@@Sawed Off
+1326956@@@Collect Greatfeather Pepe
+1326966@@@Explosive Shot
+1326968@@@Explosive Shot
+1326969@@@Explosive Shot
+1326970@@@Explosive Shot
+1326971@@@Explosive Shot
+1326973@@@Explosive Shot
+1327005@@@[DNT] Outfitter Supplies
+1327008@@@Salt and Sulfur
+1327024@@@Spider Mines
+1327110@@@Cyclone
+1327112@@@Cyclone
+1327113@@@Cyclone
+1327117@@@Cyclonic Vortex
+1327150@@@[DNT] Scribe Currency
+1327152@@@[DNT] Antiquarian Currency
+1327156@@@Hexed Tiny Tome
+1327160@@@Hear Another Tale
+1327176@@@Hear Another Tale
+1327183@@@Teleport
+1327188@@@Teleport
+1327189@@@Hear Another Tale
+1327191@@@Teleport
+1327192@@@Hear Another Tale
+1327194@@@Teleport
+1327195@@@Hear Another Tale
+1327196@@@Teleport
+1327197@@@Hear Another Tale
+1327198@@@Teleport
+1327201@@@Return to Quillgrave
+1327214@@@[DNT] Tale Missile
+1327215@@@[DNT] Supply Missile
+1327218@@@[DNT] Relic Missile
+1327239@@@Surge of Storied Wisdom
+1327293@@@[DNT] Hide Object

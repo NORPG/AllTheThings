@@ -4288,3 +4288,28 @@
 31944@@@Drust-Carved Rune Marker
 31945@@@Heartsbane Hex Scar
 32033@@@Heartsbane Waxlight
+12.1.7.70493
+21878@@@Watchman's Iron Torch
+31353@@@Red Gift Bow
+31581@@@Large White Winter Veil Gift
+31582@@@Stitched Winter Veil Stocking
+31584@@@Festive Red Candle
+31617@@@Greatfeather Pepe
+31618@@@Small Green Winter Veil Gift
+31619@@@Large Red Winter Veil Gift
+31620@@@Gilded Red Wrapped Gift
+31621@@@Small Red Winter Veil Gift
+31622@@@Small Green Wrapped Gift
+31623@@@Candy Cane Rope Pole
+31624@@@Striped Winter Veil Stocking
+31627@@@Candy Cane Rope Line
+31712@@@Anima-Infused Venthyr Lamppost
+31824@@@Gilded Black Wrapped Gift
+31825@@@Gilded Black Gift Box
+31826@@@Purple Gift Bow
+32489@@@Storyteller's Cursed Looking Glass
+32490@@@Storyteller's Looking Glass
+32491@@@Eldritch Looking Glass
+32492@@@Sanguine Looking Glass
+32493@@@Hexed Looking Glass
+32494@@@Fae Looking Glass

@@ -18587,3 +18587,14 @@
 64230@@@The Fae Puzzlemaster
 64290@@@The Power of Stories
 64291@@@Core Logic
+12.1.7.70493
+63821@@@The Slayer and the Scribe
+63822@@@The Witch and the Scribe
+63823@@@The Inquisitor and the Scribe
+64139@@@Stories to Share
+64367@@@Bells Will Be Ringing
+64368@@@That's Not For You
+64369@@@Sockin' Around the Winter Veil Tree
+64370@@@Season's Beatings
+64371@@@Candy Cane Brigade
+64372@@@Tree-fense

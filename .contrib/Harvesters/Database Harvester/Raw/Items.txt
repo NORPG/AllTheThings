@@ -340121,3 +340121,109 @@
 288441@@@Record of Great Deeds
 288442@@@Satchel of Unread Stories
 288471@@@Barrier Potion
+12.1.7.70493
+242351@@@Faith-Cursed Gavel
+242355@@@Faith-Cursed Rune Glaives
+242379@@@Faith-Cursed Longshot
+242384@@@Faith-Cursed Quiver
+242389@@@Faith-Cursed Wand
+242630@@@Faith-Cursed Stone Blade
+242634@@@Faith-Cursed Graveblade
+247887@@@A tiny shoe
+267273@@@Voidlight Marl
+268446@@@Ambermill Traveler's Bowler
+268447@@@Ambermill Traveler's Coat
+268448@@@Ambermill Traveler's Belt
+268449@@@Ambermill Traveler's Pants
+268450@@@Ambermill Traveler's Boots
+268451@@@Ambermill Traveler's Bracer
+268452@@@Ensemble: Ambermill Traveler's Attire
+268491@@@Ambermill Defender's Bonecracker
+268495@@@Ambermill Defender's Claws
+268511@@@Ambermill Defender's Boltshot
+268744@@@Ambermill Traveler's Leggings
+272134@@@Watchman's Iron Torch
+278769@@@Aqir Research Enclave Reputation
+279073@@@Blood-Drenched Sword
+279599@@@Man-at-arms' Sword
+279600@@@Man-at-arms' Shield
+280800@@@Champion Mistcrest
+282330@@@Ensemble: Outfitter's Autumn Attire
+282374@@@Abandoned Soldier's Warmaul
+286563@@@Aqir Research Token
+286632@@@Attuned Ancient Stegodon
+286633@@@Crackling Ancient Stegodon
+286634@@@Rumbling Jungle Stegodon
+286635@@@Thundering Primal Stegodon
+286652@@@Bump
+286653@@@Lump
+286654@@@Grump
+286655@@@Frump
+287098@@@Witch-Scribe's Haunted Scroll
+287747@@@Anima-Infused Venthyr Lamppost
+287981@@@Heartsbane Waxlight
+287983@@@Heartsbane Hex Catcher
+287995@@@Red Gift Bow
+288003@@@Large White Winter Veil Gift
+288005@@@Stitched Winter Veil Stocking
+288010@@@Small Green Winter Veil Gift
+288012@@@Large Red Winter Veil Gift
+288014@@@Gilded Red Wrapped Gift
+288017@@@Small Red Winter Veil Gift
+288019@@@Small Green Wrapped Gift
+288042@@@Candy Cane Rope Pole
+288044@@@Candy Cane Rope Line
+288046@@@Striped Winter Veil Stocking
+288055@@@Gilded Black Wrapped Gift
+288057@@@Gilded Black Gift Box
+288059@@@Purple Gift Bow
+288157@@@Windcarved Primal Blade
+288158@@@Massive Primal Blade
+288159@@@Junglestalker's Primal Blade
+288160@@@Bonestalker's Bonesaw
+288172@@@Windcarved Skull Basher
+288173@@@Junglestalker's Skull Crusher
+288176@@@Bonestalker's Bone Crusher
+288179@@@Rattling Snake Skull Scepter
+288180@@@Ancient Bone Wall
+288182@@@Ancient Predator's Sacrificial Blade
+288212@@@Ancient Bone Sledge
+288499@@@Festive Red Candle
+288629@@@Ensemble: Red-and-Greench Sweatsuit
+288733@@@Storyteller's Cursed Looking Glass
+288740@@@Storyteller's Looking Glass
+288745@@@Eldritch Looking Glass
+288747@@@Sanguine Looking Glass
+288749@@@Hexed Looking Glass
+288751@@@Fae Looking Glass
+288769@@@Greatfeather Pepe
+288899@@@Hexed Tiny Tome
+288957@@@Bottle of Darkhaven Wisdom
+288959@@@Nebulous Voidcache
+288960@@@Nebulous Voidcache
+288961@@@Nebulous Voidcache
+288962@@@Venomstone Cache
+288963@@@Venomstone Cache
+288964@@@Venomstone Cache
+288965@@@Venomstone Cache
+288966@@@Prism of Voidlight Marl
+288968@@@Overflowing Prism of Voidlight Marl
+288969@@@Overflowing Prism of Voidlight Marl
+288970@@@Bottle of Greenthistle Wisdom
+288971@@@Bottle of Greywake's Wisdom
+288972@@@Bottle of Court of Night Wisdom
+288973@@@Packed Alchemy Crate
+288974@@@Outfitter's Crate
+288975@@@Pouch of Myth Mistcrests
+288976@@@Pouch of Myth Mistcrests
+288977@@@Pouch of Hero Mistcrests
+288978@@@Pouch of Hero Mistcrests
+288979@@@Pouch of Champion Mistcrests
+288980@@@Heroic Cache of Venom-Cursed Items
+288981@@@Heroic Cache of Venom-Cursed Items
+288982@@@Mythic Cache of Venom-Cursed Items
+288983@@@Mythic Cache of Venom-Cursed Items
+288984@@@Champion Cache of Venom-Cursed Items
+288985@@@Heroic Cache of Venom-Cursed Items
+288986@@@Heroic Cache of Venom-Cursed Items
+288987@@@Heroic Cache of Venom-Cursed Items
