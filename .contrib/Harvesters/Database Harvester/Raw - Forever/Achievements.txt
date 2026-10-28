@@ -446,3 +446,10 @@
 1.60.1.70291
 64222@@@Times camped
 64283@@@Played in the WoW: Forever Beta
+1.60.1.70425
+41010@@@Rune Learned - Shared Acquisition - Leylines (50)
+64348@@@Arathi Basin bases assaulted
+64349@@@Arathi Basin bases defended
+64350@@@Darkspear Islands bases assaulted
+64351@@@Darkspear Islands bases defended
+64352@@@Darkspear Islands flags captured

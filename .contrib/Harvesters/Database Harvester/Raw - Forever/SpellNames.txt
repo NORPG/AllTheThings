@@ -32053,3 +32053,115 @@
 1324940@@@Sanctuary
 1324981@@@Disenchanter
 1324985@@@[DNT] Spawn Event
+1.60.1.70425
+1038@@@Salvation
+1912@@@Salvation
+2167@@@Gray Leather Boots
+11078@@@Improved Fire Blast
+16086@@@Trial by Fire
+16166@@@Elemental Mastery
+20574@@@Savage
+20597@@@Ruthless
+25895@@@Mass Salvation
+88163@@@Attack
+1244625@@@Siphon Leyline
+1246989@@@Planting Seed
+1250776@@@Potion of Predatory Senses
+1250889@@@Potion of Predatory Senses
+1250900@@@Potion of Predatory Senses
+1254981@@@Supple Scorpid Shoulders
+1254990@@@Charged Scorpid Shoulders
+1255004@@@Mender's Mail Shoulders
+1255005@@@Skirmisher's Mail Shoulders
+1255006@@@Skycaller's Mail Shoulders
+1255007@@@Stalker's Mail Shoulders
+1255023@@@Wicked Leather Shoulders
+1255026@@@Blue Suede Shoulders
+1255055@@@Mender's Leather Shoulders
+1255056@@@Skycaller's Leather Shoulders
+1255057@@@Warden's Leather Shoulders
+1255058@@@Skulker's Leather Shoulders
+1255059@@@Prowler's Leather Shoulders
+1259705@@@Read Leyline
+1259719@@@Earth Fury
+1261770@@@Leyline KC
+1271952@@@Leyline Convergence
+1279523@@@Remove Protection
+1293800@@@Barkskin Purification Tonic
+1316709@@@Death Mark
+1325081@@@Orc Mask
+1325180@@@Sift Soil
+1325228@@@The Green Tower
+1325229@@@Gloves of Holy Might
+1325256@@@Mana Tide Totem
+1325257@@@Mana Tide
+1325299@@@[DNT] Boosted Rest
+1325499@@@Revoke
+1325508@@@Perfected Form
+1325509@@@Improving Form
+1325535@@@Improving Form
+1325543@@@Fungal Swarm
+1325556@@@Fungal Bloom
+1325571@@@Disease Cloud
+1325573@@@Disease Cloud
+1325714@@@Portal Effect: Stormwind
+1325717@@@Portal Effect: Orgrimmar
+1325739@@@Cooldown Reduction
+1325753@@@Call Guard
+1325754@@@Call Guard
+1325755@@@Banished
+1325756@@@Death Mark
+1325757@@@Death Mark
+1325758@@@Death Mark
+1325762@@@Being Watched
+1325764@@@Dismissal
+1325799@@@L70 ETC Lightning Cloud
+1325800@@@L70 ETC Earthquake
+1325801@@@L70 ETC Rain of Fire
+1325828@@@Tim's Test Stealth
+1325859@@@Kill Credit
+1325876@@@Hateful Strike
+1325877@@@Hateful Strike Primer
+1325893@@@Call Gnolls
+1325968@@@Bloodlust
+1325971@@@Samuro Spawn
+1325975@@@Meathook
+1325984@@@Ground Slam
+1325994@@@[DNT] Teleport to Hall of Thanes
+1325995@@@[DNT] Teleport to Ruins of Lordaeron
+1325996@@@[DNT] Teleport to Excavation Site
+1325997@@@[DNT] Teleport to City of Dalaran
+1326019@@@Holy Smite
+1326042@@@Drain Soul
+1326044@@@DNT
+1326047@@@Lava Burst
+1326053@@@Frost Blast
+1326054@@@Frost Blast
+1326055@@@Frost Blast
+1326056@@@Blackthorne's Ward
+1326057@@@Healthstone
+1326064@@@Vigilant
+1326079@@@Arcane Wrath
+1326080@@@Arcane Wrath
+1326081@@@Arcane Wrath
+1326082@@@Arcane Wrath
+1326083@@@Missile Barrage
+1326084@@@Reckoning
+1326099@@@Summon Arcane Elemental
+1326114@@@Sleep
+1326140@@@Ritual of Summoning
+1326144@@@Pool of Fire
+1326146@@@Pool of Fire
+1326154@@@Balnazzar Transform
+1326159@@@Dark Inspiration
+1326168@@@Dark Inspiration
+1326175@@@Stealth
+1326189@@@Blink
+1326203@@@Untrackable
+1326235@@@AI Cast
+1326363@@@Dummy
+1326368@@@Shadow Channel
+1326475@@@Flash Bundle
+1326522@@@Shadow Channel
+1326548@@@Chains of Hogger
+1326550@@@Chains of Hogger

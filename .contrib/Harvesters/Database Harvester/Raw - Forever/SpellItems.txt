@@ -2215,3 +2215,6 @@
 8719@@@Defense +$k1 and Stamina +$k2
 8720@@@+2% Crit
 8721@@@Recovery
+1.60.1.70425
+847@@@All Stats +1
+8734@@@Intellect +$k1
