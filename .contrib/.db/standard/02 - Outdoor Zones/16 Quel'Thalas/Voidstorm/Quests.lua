@@ -1506,7 +1506,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.VOIDSTORM, {
 		q(93810, {	-- Masters' Perch
 			--sourceQuests = { 86565 },	-- No Prayer for the Wicked
 			provider = { "n", 254765 },	-- Perodius
-			coord = { 51.4, 67.6, MAP.MIDNIGHT.VOIDSTORM },
+			coord = { 51.3, 67.7, MAP.MIDNIGHT.VOIDSTORM },
 		}),
 		--Slayer's Rise
 		q(91197, {	-- Collecting Remains
