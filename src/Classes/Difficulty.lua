@@ -3,8 +3,8 @@ local _,app = ...;
 local L, GetRelativeValue = app.L, app.GetRelativeValue;
 
 -- Global locals
-local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN
-	= date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN;
+local date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN,rawget
+	= date, pairs, select, GetDifficultyInfo, IsInInstance, GetInstanceInfo, UNKNOWN,rawget
 
 local function GetRelativeDifficulty(group, checkDifficultyID)
 	if not group then return end
@@ -116,6 +116,13 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	end,
 	["trackable"] = function(t)
 		local validDifficulty = not not app.GetRelativeValue(t, "instanceID")
+		if validDifficulty then
+			local total = t.total
+			-- completed difficulties ignore
+			if not total or total >= t.progress then
+				validDifficulty = nil
+			end
+		end
 		t.trackable = validDifficulty
 		return validDifficulty
 	end,
@@ -201,45 +208,46 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	end,
 	["sourceText"] = function(t)
 		local difficulties = t.difficulties;
-		if difficulties then
-			local dict,count = {},0;
-			for i,difficultyID in ipairs(difficulties) do
-				if not blacklistedDifficulties[difficultyID] then
-					dict[difficultyID] = 1;
-					count = count + 1;
-				end
+		if not difficulties then return end
+		local dict,count = {},0;
+		local difficultyID
+		for i=1,#difficulties do
+			difficultyID = difficulties[i]
+			if not blacklistedDifficulties[difficultyID] then
+				dict[difficultyID] = 1;
+				count = count + 1;
 			end
-			local title = GetDifficultyName(difficulties[1]);
-			if count > 0 then
-				for i=2,#difficulties do
-					local difficultyID = difficulties[i];
-					if not blacklistedDifficulties[difficultyID] then
-						title = title.." / "..GetDifficultyName(difficultyID);
-					end
-				end
-			else
-				-- Blacklisting didn't simplify it.
-				for i=2,#difficulties do
-					title = title.." / "..GetDifficultyName(difficulties[i]);
-				end
-			end
-			return title;
 		end
+		local title = GetDifficultyName(difficulties[1]);
+		if count > 0 then
+			for i=2,#difficulties do
+				local difficultyID = difficulties[i];
+				if not blacklistedDifficulties[difficultyID] then
+					title = title.." / "..GetDifficultyName(difficultyID);
+				end
+			end
+		else
+			-- Blacklisting didn't simplify it.
+			for i=2,#difficulties do
+				title = title.." / "..GetDifficultyName(difficulties[i]);
+			end
+		end
+		return title;
 	end,
 }, (function(t) return t.difficulties; end));
 
 -- External Functionality
 local function SummarizeLockout(tooltipInfo, lockout, leftText, color)
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = leftText,
 		right = date("%c", lockout.reset),
 		color = color,
-	});
+	}
 	for encounterIter,encounter in pairs(lockout.encounters) do
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = " " .. encounter.name,
 			right = app.GetCompletionIcon(encounter.isKilled),
-		});
+		}
 	end
 end
 app.AddEventHandler("OnLoad", function()
@@ -248,10 +256,10 @@ app.AddEventHandler("OnLoad", function()
 		text = L.LOCKOUTS,
 		Process = function(t, reference, tooltipInfo)
 			if reference.instanceID then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.LOCKOUT,
 					right = L[reference.isLockoutShared and "SHARED" or "SPLIT"],
-				});
+				}
 			end
 			local locks = reference.locks;
 			if locks then
