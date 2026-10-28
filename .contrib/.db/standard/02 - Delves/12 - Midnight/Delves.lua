@@ -572,10 +572,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 		}),
 		filter(MISC, {
 			-- Blessings
-			i(264669),	-- Blessing of Potency
+			i(264669, {	-- Blessing of Potency
+				providers = {
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+				},
+			}),
 			i(264670),	-- Blessing of Zeal
 			i(260913),	-- Crimson Blessing
-			i(260924),	-- Sentinel's Blessing
+			i(260924, {	-- Sentinel's Blessing
+				providers = {
+					{ "o", 584515 },	-- Bountiful Heavy Trunk
+				},
+			}),
 			i(262389),	-- Veiled Blessing
 			--
 			i(254250),	-- Bountiful Coffer
@@ -793,6 +801,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				VerifyLoot = {"armor","weapon","miscellaneous"},
 				groups = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
+					i(262390),	-- Sporbie (PET!)
 					i(265366),	-- Twilight Executioner (COSMETIC!)
 				},
 			}),
