@@ -54105,6 +54105,18 @@
 287187@@@Val'anyr, Hammer of Ancient Kings
 287188@@@Val'anyr, Hammer of Ancient Kings
 287189@@@Val'anyr, Hammer of Ancient Kings
+3.80.2.70372
+283351@@@Rexxar's Fabled Chestguard
+283352@@@Rexxar's Fabled Cloak
+283353@@@Rexxar's Fabled Boots
+283354@@@Rexxar's Fabled Gloves
+283355@@@Rexxar's Fabled Cowl
+283356@@@Rexxar's Fabled Leggings
+283357@@@Rexxar's Fabled Spiked Shoulders
+283358@@@Rexxar's Fabled Padded Shoulders
+283359@@@Rexxar's Fabled Belt
+283360@@@Ensemble: Rexxar's Fabled Attire
+284572@@@Rexxar's Companion Transformation
 4.4.0.53627
 80@@@Soft Fur-Lined Shoes
 732@@@Ripe Okra

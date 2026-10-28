@@ -69230,6 +69230,11 @@
 1322609@@@Vengeance of Ancient Kings
 1322610@@@Vengeance of Ancient Kings
 1322934@@@Vengeance of Ancient Kings
+3.80.2.70372
+1314712@@@Ensemble: Rexxar's Fabled Attire
+1316093@@@Rexxar's Companion Transformation
+1316155@@@Guise of Misha
+1316156@@@Guise of Huffer
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
