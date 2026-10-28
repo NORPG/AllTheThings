@@ -481406,3 +481406,8 @@
 1322665@@@Summon Treasure
 1322666@@@Summon Treasure
 1323054@@@On Fire!
+12.1.5.70340
+1323653@@@[DNT] Clear Fatigue
+1323829@@@Murder in a Row
+1324613@@@12.1.5 Labyrinth - Chamber 2a - Scenario B - Drop Soul Jars - TSH
+1325175@@@[DNT] Cancel Tracker
