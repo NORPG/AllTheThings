@@ -2664,3 +2664,6 @@
 1314168@@@Hot Motocross Bunmover 4400
 1314169@@@Hot Motocross Bunmover 4600
 1314715@@@Loa-Blessed Wayfarer
+12.1.5.70448
+1305612@@@Giant Grrloc
+1314189@@@Ashen Dreadglider

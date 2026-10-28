@@ -339164,3 +339164,9 @@
 281235@@@Voidweaver's Leggings
 281236@@@Chestwrap of Palpable Terror
 287078@@@Ancient Amani Tablet
+12.1.5.70448
+274934@@@Blade of the Blood Knight Matriarch
+274937@@@Shield of the Blood Knight Matriarch
+278743@@@Giant Grrloc
+281372@@@Zhevraskin Rug
+282657@@@Ashen Dreadglider

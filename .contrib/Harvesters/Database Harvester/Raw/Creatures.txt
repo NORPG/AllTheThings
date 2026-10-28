@@ -24708,3 +24708,30 @@
 12.1.5.69848
 275672@@@Lady Liadrin
 276385@@@Zul'jarra
+12.1.5.70448
+262755@@@Lor'themar Theron
+262758@@@Zul'jarra
+262877@@@Orweyna
+262975@@@Blood Knight
+262995@@@Kith'ix
+264008@@@Tak'lejo
+264036@@@Salandria
+264054@@@Alonsus Faol
+264117@@@Vun'zarah
+264165@@@Prophet Velen
+264167@@@Magister Umbric
+264179@@@Silvermoon Resident
+264312@@@Silvermoon Guard
+264992@@@Lor'themar Theron
+264998@@@Lor'themar Theron
+268560@@@Orweyna
+271134@@@Arator
+271152@@@Inn Waitstaff
+271159@@@Orweyna
+271160@@@Zul'jarra
+271162@@@Torundo the Grizzled
+271164@@@Vun'zarah
+271166@@@Tak'lejo
+271217@@@Halduron Brightwing
+271220@@@First Arcanist Thalyssra
+271221@@@Magister Umbric

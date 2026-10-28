@@ -481413,3 +481413,43 @@
 1325175@@@[DNT] Cancel Tracker
 12.1.5.70391
 1325706@@@[DNT] Unnerving Fixation
+12.1.5.70448
+1288339@@@Kill Credit (DNT)
+1288831@@@Kill Credit (DNT)
+1291625@@@Kill Credit (DNT)
+1291626@@@Kill Credit (DNT)
+1291627@@@Kill Credit (DNT)
+1291628@@@Kill Credit (DNT)
+1293453@@@Kill Credit (DNT)
+1293594@@@[DNT] Conversation Start Spell
+1293625@@@Kill Credit (DNT)
+1293666@@@[DNT] Conversation Start Spell
+1293667@@@[DNT] Conversation Start Spell
+1293668@@@[DNT] Conversation Start Spell
+1293669@@@[DNT] Conversation Start Spell
+1301251@@@Kill Credit (DNT)
+1301262@@@Kill Credit (DNT)
+1301305@@@Kill Credit (DNT)
+1301309@@@12.1.5 Kithix - Campaign - Epilogue - Lor'themar Zul'jarra Convo (AS)
+1301321@@@Kill Credit (DNT)
+1301409@@@Kill Credit (DNT)
+1301419@@@Kill Credit (DNT)
+1301542@@@Kill Credit (DNT)
+1301545@@@Kill Credit (DNT)
+1301569@@@Kill Credit (DNT)
+1302021@@@Kill Credit (DNT)
+1302050@@@Kill Credit (DNT)
+1302164@@@Kill Credit (DNT)
+1302168@@@Kill Credit (DNT)
+1302240@@@Kill Credit (DNT)
+1302254@@@Worldsoul Commune
+1302263@@@Worldsoul Flash
+1302513@@@12.1.5 Kithix - Campaign - Epilogue - What the World Sees - Turn In (AS)
+1305612@@@Giant Grrloc
+1308558@@@Play Scene
+1308570@@@Cancel Conversations & Update Phase Shift [DNT]
+1308934@@@Kill Credit (DNT)
+1309753@@@Kill Credit (DNT)
+1310202@@@Kill Credit (DNT)
+1310965@@@Collect Zhevraskin Rug
+1314189@@@Ashen Dreadglider
