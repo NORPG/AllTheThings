@@ -793,6 +793,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			-- 12.1
 			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
 			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
+			q(98504, { timeline = { ADDED_12_1_0 } }),	-- Completed together with 98548 (2nd per week renown) on turn-in of Prey: Kadani the Claw (Nightmare), weekly assumed
 		})),
 		-- One-Time
 		n(QUESTS, {
