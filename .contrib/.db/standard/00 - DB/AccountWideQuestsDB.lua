@@ -3011,6 +3011,8 @@ local AccountWideQuestsDB = {
 	98836,	-- ...Is Sometimes the Way Back
 	98848,	-- Delver's Cosmetic Surprise Bag
 	99222,	-- Bonus Reputation: Zul'jarra's Forces [Delve Completion]
+	99246,	-- First Weekly Warband Aqir Token
+	99251,	-- Second Weekly Warband Aqir Token
 	99306,	-- The Labyrinth of Kindo'jan
 	99312,	-- On the Trail of Kindo'jan
 

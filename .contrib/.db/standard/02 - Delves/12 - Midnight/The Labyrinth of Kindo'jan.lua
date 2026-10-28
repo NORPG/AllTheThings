@@ -15,11 +15,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(64039, {	-- Fabled Let Me Solo Him: Kindo'jan
-				timeline = { "removed 12.1.5.99999" },
-				groups = {
-					-- TODO: Timeline out correctly, 1 Week after 12.1.5 Launch
-						title(801),	-- <Name>, Fabled Vanquisher of Kindo'jan
-				},
+				timeline = { "removed 12.1.5.70575" },
+				groups = { title(801) },	-- <Name>, Fabled Vanquisher of Kindo'jan
 				}),
 				ach(63720, {	-- Happy Hexmask Collector
 					description = "Each run randomly selects three out of five special rooms as spawn points for Hexmasks and one for the special 'Locked Room'. The final room will be empty.",
@@ -218,6 +215,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				q(98963, {	-- Halazzi's Lair
 					sourceQuest = 98951,	-- Akil'zon's Roost
+					qg = 264886,	-- Wah'du <Servant of de Loa>
+					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					groups = { i(285065) },	-- Mythical Soul Fragment
+				}),
+				q(98962, {	-- The Cave Towers
+					sourceQuest = 98963,	-- Halazzi's Lair
 					qg = 264886,	-- Wah'du <Servant of de Loa>
 					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					groups = { i(285065) },	-- Mythical Soul Fragment

@@ -298,8 +298,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	}),
 }));
 
---[[root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
-		q(),	--
-	}),
-}));--]]
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	timeline = { ADDED_12_1_5 },
+	groups = {
+		header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
+			q(97456, { isWeekly = true } ),	-- Obtained Aqir Research Satchel
+			q(99246, { isWeekly = true } ),	-- First Weekly Warband Aqir Token
+			q(99251, { isWeekly = true } ),	-- Second Weekly Warband Aqir Token
+			q(96495),	-- Related to Aqir Invasion Assaults
+			q(97316),	-- Related to Aqir Invasion Assaults
+		}),
+	},
+}));
