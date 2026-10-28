@@ -481459,3 +481459,7 @@
 1327392@@@Spiritual Fire Conduit
 1327393@@@Spiritual Fire Conduit
 1327394@@@Spiritual Fire Conduit
+12.1.5.70575
+1327647@@@[DNT] Phase Exclusion
+1327707@@@Carrying a Jan'alai Tear
+1327777@@@Gale Force
