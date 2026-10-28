@@ -99,3 +99,5 @@
 3274@@@Powderfuse Port, Riverglades
 3275@@@Powderfuse Port, Riverglades
 3276@@@Farholde Keep, Riverglades
+1.60.1.70630
+3361@@@Quest Path 12018: 1.60.1 - Zephras Isle - Spires Wind Bridge

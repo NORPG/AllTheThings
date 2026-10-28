@@ -32188,3 +32188,13 @@
 1323998@@@Ensemble: Gilded Blademaster's Armor
 1325145@@@Adventurer's Tent
 1325147@@@Adventurer's Tent
+1.60.1.70630
+1326608@@@Wind Bridge
+1326850@@@(DNT) Add Threat
+1326891@@@Frigid Power
+1326896@@@Victory
+1326990@@@Mind Blast
+1327009@@@(DNT) Immol'thar Encounter Record Aura
+1327341@@@Dreamfall
+1327368@@@Fixate
+1327369@@@Fixate
