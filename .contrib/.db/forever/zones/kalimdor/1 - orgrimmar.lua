@@ -484,7 +484,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 40,
 				groups = {
-					recipe(9957),	 -- Orcish War Leggings
+					recipe(9957),	-- Orcish War Leggings
 				},
 			}),
 			q(2757, {	-- Booty Bay or Bust!

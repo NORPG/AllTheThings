@@ -308,17 +308,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				description = "You need to have a key to the instance in order to access this mode.",
 				aqd = {
 					cost = {
-						{ "i", 30622, 1 },    -- Flamewrought Key [A]
+						{ "i", 30622, 1 },	-- Flamewrought Key [A]
 						-- #if CLASSIC_ANNIVERSARY
-						{ "i", 265830, 1 },    -- Communal Flamewrought Key [A]
+						{ "i", 265830, 1 },	-- Communal Flamewrought Key [A]
 						-- #endif
 					},
 				},
 				hqd = {
 					cost = {
-						{ "i", 30637, 1 },    -- Flamewrought Key [H]
+						{ "i", 30637, 1 },	-- Flamewrought Key [H]
 						-- #if CLASSIC_ANNIVERSARY
-						{ "i", 265826, 1 },    -- Communal Flamewrought Key [H]
+						{ "i", 265826, 1 },	-- Communal Flamewrought Key [H]
 						-- #endif
 					},
 				},

@@ -470,8 +470,8 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Defend Shakes O'Breen
 						providers = {
-							{ "n", 2610 },    -- Shakes O'Breen <Blackwater Raiders>
-							{ "n", 2775 },    -- Daggerspine Marauder
+							{ "n", 2610 },	-- Shakes O'Breen <Blackwater Raiders>
+							{ "n", 2775 },	-- Daggerspine Marauder
 						},
 					}),
 					i(4550),	-- Coldwater Ring
@@ -486,8 +486,8 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Defend Shakes O'Breen
 						providers = {
-							{ "n", 2610 },    -- Shakes O'Breen <Blackwater Raiders>
-							{ "n", 2775 },    -- Daggerspine Marauder
+							{ "n", 2610 },	-- Shakes O'Breen <Blackwater Raiders>
+							{ "n", 2775 },	-- Daggerspine Marauder
 						},
 					}),
 					i(59212),	-- O'Breen's Dress Robes

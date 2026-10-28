@@ -1099,7 +1099,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				maps = { AZSHARA },
 				lvl = 45,
 				groups = {
-					objective(1, {	-- 0/1 	Conversation with Loramus
+					objective(1, {	-- 0/1	Conversation with Loramus
 						provider = { "n", 7783 },	-- Loramus Thalipedes
 					}),
 				},

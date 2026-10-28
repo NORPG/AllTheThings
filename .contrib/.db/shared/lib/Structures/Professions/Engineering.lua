@@ -709,7 +709,7 @@ ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
         -- #endif
         )
     -- #else
-	    {}
+		{}
     -- #endif
     )
 -- #else

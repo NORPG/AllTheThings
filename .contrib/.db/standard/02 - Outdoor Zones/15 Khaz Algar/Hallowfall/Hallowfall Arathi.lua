@@ -620,7 +620,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(223935),	-- Cabbage Harvester's Pantaloons
 								i(223928),	-- Crop Cutter's Gauntlets
 								i(221238),	-- Pillar of Constructs
-								hqt_bonusRenown_weekly(84052, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Crazed Cabbage Smacker
+								hqt_bonusRenown_weekly(84052, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Crazed Cabbage Smacker
 							},
 						}),
 						n(214757, {	-- Croakit
@@ -631,7 +631,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							groups = {
 								i(221247),	-- Cavernous Critter Shooter
 								i(223938),	-- Marsh Hopper's Spaulders
-								hqt_bonusRenown_weekly(84054, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Croakit
+								hqt_bonusRenown_weekly(84054, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Croakit
 							},
 						}),
 						n(206184, {	-- Deathpetal
@@ -641,7 +641,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(221253),	-- Cultivator's Plant Puncher
 								i(223005),	-- String of Fungal Fruits
 								i(223927),	-- Vinewrapped Leather Tunic
-								hqt_bonusRenown_weekly(84053, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Deathpetal
+								hqt_bonusRenown_weekly(84053, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Deathpetal
 							},
 						}),
 						n(221179, {	-- Duskshadow
@@ -651,7 +651,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(223919),	-- Abducted Lawman's Gavel (dupe)
 								i(223936),	-- Shadow Bog Trousers
 								i(223918),	-- Specter Stalker's Shotgun
-								hqt_bonusRenown_weekly(84056, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Duskshadow
+								hqt_bonusRenown_weekly(84056, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Duskshadow
 							},
 						}),
 						n(207780, {	-- Finclaw Bloodtide
@@ -661,7 +661,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							groups = {
 								i(223925),	-- Blood Hungerer's Chestplate
 								i(221234),	-- Tidal Pendant
-								hqt_bonusRenown_weekly(84059, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Finclaw Bloodtide
+								hqt_bonusRenown_weekly(84059, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Finclaw Bloodtide
 							},
 						}),
 						n(206203, {	-- Moth'ethk
@@ -670,7 +670,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							groups = {
 								i(223924),	-- Chitin-Inscribed Vest
 								i(221240),	-- Nerubian Stagshell Gouger
-								hqt_bonusRenown_weekly(84051, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Moth'ethk
+								hqt_bonusRenown_weekly(84051, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Moth'ethk
 							},
 						}),
 						n(220771, {	-- Murkspike
@@ -678,7 +678,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							questID = 82565,
 							groups = {
 								i(223934),	-- Makrura's Foreboding Legplates
-								hqt_bonusRenown_weekly(84060, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Murkspike
+								hqt_bonusRenown_weekly(84060, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Murkspike
 							},
 						}),
 						n(206977, {	-- Parasidious
@@ -696,7 +696,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							groups = {
 								i(221250),	-- Creeping Lasher Machete
 								i(223940),	-- Deranged Fungarian's Epaulets
-								hqt_bonusRenown_weekly(84057, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Parasidious
+								hqt_bonusRenown_weekly(84057, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Parasidious
 							},
 						}),
 						n(207826, {	-- Ravageant
@@ -705,7 +705,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							groups = {
 								i(221240),	-- Nerubian Stagshell Gouger
 								i(223932),	-- Scarab's Carapace Cap
-								hqt_bonusRenown_weekly(84058, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Ravageant
+								hqt_bonusRenown_weekly(84058, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Ravageant
 							},
 						}),
 						n(207803, {	-- Toadstomper
@@ -715,7 +715,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(223921),	-- Ever-Oozing Signet
 								i(223920),	-- Slime Deflecting Stopper
 								i(223933),	-- Slime Goliath's Cap
-								hqt_bonusRenown_weekly(84055, FACTION_HALLOWFALL_ARATHI),    -- Bonus Rep: Toadstomper
+								hqt_bonusRenown_weekly(84055, FACTION_HALLOWFALL_ARATHI),	-- Bonus Rep: Toadstomper
 							},
 						}),
 					})),

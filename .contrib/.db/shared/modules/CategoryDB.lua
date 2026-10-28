@@ -66,7 +66,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 			ko = "축제 요리",
 			pt = "Culinária de Feriado",
 			ru = "Праздничная готовка",
-			 cn = "节日烹饪",
+			cn = "节日烹饪",
 			tw = "節慶烹飪",
 		},
 	},

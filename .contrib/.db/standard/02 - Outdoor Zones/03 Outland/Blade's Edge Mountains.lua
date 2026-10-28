@@ -1768,7 +1768,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					classes = { DRUID },
 					lvl = 70,
 					groups = {
-						objective(1, {	-- 0/1 	Learn about the Book of the Raven
+						objective(1, {	-- 0/1	Learn about the Book of the Raven
 							providers = {
 								{ "n", 22932 },	-- Sai'kkal the Elder
 								{ "i", 32244 },	-- Seer's Stone (PQI!)

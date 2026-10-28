@@ -40,7 +40,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				groups = {
 					i(276172),	-- Headdress of Mutagenesis
 					i(276166),	-- Twin-Headed Twinblade
-					hqt_bonusRenown(96966, FACTION_ZULJARRAS_FORCES),    -- Bonus Rep: Looming Mutagenitor
+					hqt_bonusRenown(96966, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Looming Mutagenitor
 				},
 			}),
 			n(255087, {	-- Malformed Leviathan
@@ -49,7 +49,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				groups = {
 					i(276174),	-- Leviathan's Oozing Scalemail
 					i(276169),	-- Malformed Barrier
-					hqt_bonusRenown(96970, FACTION_ZULJARRAS_FORCES),    -- Bonus Rep: Malformed Leviathan
+					hqt_bonusRenown(96970, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Malformed Leviathan
 				},
 			}),
 			n(258254, {	-- Ss'akrithos <The Boundless Ophidian>
@@ -59,7 +59,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				groups = {
 					i(276168),	-- Fang of Ss'akrithos
 					i(276171),	-- Ophidian Circle
-					hqt_bonusRenown(96968, FACTION_ZULJARRAS_FORCES),    -- Bonus Rep: Ss'akrithos
+					hqt_bonusRenown(96968, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Ss'akrithos
 				},
 			}),
 			n(257863, {	-- Vassti, the Exalted Broodmother
@@ -68,7 +68,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				groups = {
 					i(276175),	-- Broodmother's Embrace
 					i(276173),	-- Clutchguard Sandals
-					hqt_bonusRenown(96967, FACTION_ZULJARRAS_FORCES),    -- Bonus Rep: Vassti, the Exalted Broodmother
+					hqt_bonusRenown(96967, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Vassti, the Exalted Broodmother
 				},
 			}),
 			n(255927, {	-- Venom Lancer Ori'kassi
@@ -77,7 +77,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				groups = {
 					i(276167),	-- Ori'kassi's Lance
 					i(276178),	-- Venom Lancer's Gauntlets
-					hqt_bonusRenown(96969, FACTION_ZULJARRAS_FORCES),    -- Bonus Rep: Venom Lancer Ori'kassi
+					hqt_bonusRenown(96969, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Venom Lancer Ori'kassi
 				},
 			}),
 			n(EVENT_COMPLETION, {

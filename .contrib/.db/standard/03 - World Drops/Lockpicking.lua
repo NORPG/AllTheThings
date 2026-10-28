@@ -314,7 +314,7 @@ root(ROOTS.WorldDrops, {
 					7989,	-- Plans: Mithril Spurs (RECIPE!)
 					12683,	-- Plans: Thorium Belt (RECIPE!)
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
-					3395 	-- Recipe: Limited Invulnerability Potion (RECIPE!)
+					3395	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 				}},
 			}),
 			i(190954, {	-- Serevite Lockbox

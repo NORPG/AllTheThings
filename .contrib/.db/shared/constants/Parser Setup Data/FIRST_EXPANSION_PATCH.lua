@@ -7,7 +7,7 @@ FIRST_EXPANSION_PATCH = {
 
 	-- Key-Value Pair   -- Classic Release Version
 	UNKNOWN = { 0, 0, 0, 0 },        -- Unknown, invalid data.
-	CLASSIC = { 1, 0, 0, 22248 },    -- NOTE: Values for WoW-Classic
+	CLASSIC = { 1, 0, 0, 22248 },	-- NOTE: Values for WoW-Classic
 	SEASON_OF_DISCOVERY = { 1, 15, 0, 22248 },
 	FOREVER = { 1, 60, 0, 22248 },
 	TBC = { 2, 0, 1, 22248 },        -- NOTE: Values for TBC-Classic

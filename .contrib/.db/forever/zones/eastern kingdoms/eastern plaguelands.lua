@@ -532,9 +532,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				coord = { 36.4, 90.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
 				groups = {
-					i(15855), 	-- Ring of Protection
-					i(15856), 	-- Archlight Talisman
-					i(15857), 	-- Magebane Scion
+					i(15855),	-- Ring of Protection
+					i(15856),	-- Archlight Talisman
+					i(15857),	-- Magebane Scion
 				},
 			}),
 			q(5509, {	-- Invader's Scourgestones
@@ -1083,7 +1083,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ 88.4, 86.6, MAP.EASTERN_PLAGUELANDS },
 				},
 			}),
-			n(10826, { 	-- Lord Darkscythe
+			n(10826, {	-- Lord Darkscythe
 				coords = {
 					{ 26.0, 33.4, MAP.EASTERN_PLAGUELANDS },
 					{ 35.0, 24.8, MAP.EASTERN_PLAGUELANDS },
@@ -1103,7 +1103,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ 20.2, 31.6, MAP.EASTERN_PLAGUELANDS },
 				},
 			}),
-			n(10822, { 	-- Warlord Thresh'jin
+			n(10822, {	-- Warlord Thresh'jin
 				coords = {
 					{ 65.6, 21.8, MAP.EASTERN_PLAGUELANDS },
 					{ 68.8, 20.8, MAP.EASTERN_PLAGUELANDS },
