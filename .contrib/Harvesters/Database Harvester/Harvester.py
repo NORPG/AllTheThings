@@ -119,9 +119,9 @@ def create_patch_dict_from_raw(thing: type[Thing], flavor: str) -> dict[str, lis
     keys: list[str] = thing.id_schema()
     current_patch: str = "1.0.0.00000"
     if flavor == "Forever":
-        raw_patch = Path("Raw", f"{thing.__name__}.txt")
-    else:
         raw_patch = Path("Raw - Forever", f"{thing.__name__}.txt")
+    else:
+        raw_patch = Path("Raw", f"{thing.__name__}.txt")
 
     with open(raw_patch, "r", encoding="utf-8-sig") as file:
         for line in file:
@@ -143,9 +143,9 @@ def create_patch_dict_from_raw_recipes(profession: str, flavor: str) -> dict[str
     keys: list[str] = Recipes.id_schema()
     current_patch: str = "1.0.0.00000"
     if flavor == "Forever":
-        raw_patch = Path("Raw", "Professions", f"{profession}.txt")
-    else:
         raw_patch = Path("Raw - Forever", "Professions", f"{profession}.txt")
+    else:
+        raw_patch = Path("Raw", "Professions", f"{profession}.txt")
 
     with open(raw_patch, "r", encoding="utf-8-sig") as file:
         for line in file:
@@ -516,7 +516,7 @@ def create_missing_file(thing: type[Thing], flavor: str) -> None:
         excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
         missing_path = Path(STANDARD_FOLDER, "00 - Missing DB", f"{FLAVOR_FOLDERS[flavor]}", f"Missing{thing.__name__}.txt")
     db_ids: list[str] | None = None
-
+    
     if thing.db_path:
         db_ids = []
         with open(thing.db_path, "r", encoding="utf-8") as db_file:
@@ -797,14 +797,14 @@ def create_missing_files(flavor: str) -> None:
 
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
-# add_latest_data("1.60.1.69876")
+# add_latest_data("")
 """Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
-"""Step 3a: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
-# sort_raw_file_recipes("Forever")
+"""Step 3a: Run sort_raw_file_recipes(flavor: str) Choose between Retail or Forever (you have to uncomment it) this will sort raw recipes into respective profession."""
+# sort_raw_file_recipes("")
 """Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
 
 """How to generate Missing Files"""
 """Step 1: Delete questDB.json in DATAS/00 - Item DB folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
-"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it)"""
-create_missing_files("Forever")
+"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it) Choosen between Classic, SoM, SoD, Forever, TBC, WotLK, Cata, MoP, Retail"""
+# create_missing_files("Classic")
