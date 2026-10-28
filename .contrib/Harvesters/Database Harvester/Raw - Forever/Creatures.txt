@@ -181,3 +181,8 @@
 276331@@@Spawn of Grubthor
 1.60.1.70245
 275487@@@Azurky
+1.60.1.70450
+71488@@@Blossoming Ancient
+230834@@@Gill'el
+230859@@@Snowfang
+266912@@@Pinky

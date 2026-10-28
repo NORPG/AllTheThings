@@ -32165,3 +32165,26 @@
 1326522@@@Shadow Channel
 1326548@@@Chains of Hogger
 1326550@@@Chains of Hogger
+1.60.1.70450
+142880@@@Blossoming Ancient
+142899@@@Blossoming Ancient Visual Chooser
+142903@@@Blossoming Ancient Passive
+142904@@@Blossoming Ancient Passive Effect
+308853@@@Battle Pet Periodic
+464808@@@Gill'el
+464847@@@Summon
+1236676@@@Ensemble: Stillwater Fisher Attire
+1297823@@@Pinky
+1321200@@@Verdant Sea Turtle
+1321221@@@Crimson Rooster
+1321233@@@Spectral Wolf Pack
+1322724@@@Spectral Wolf Pack
+1323449@@@Spectral Wolf Pack
+1323476@@@Spirit of the Spectral Wolf Pack
+1323493@@@[DNT] Summon Spectral Wolf
+1323877@@@Spectral Wolf Pack
+1323902@@@Spirit of the Spectral Wolf Pack
+1323903@@@Spirit of the Spectral Wolf Pack
+1323998@@@Ensemble: Gilded Blademaster's Armor
+1325145@@@Adventurer's Tent
+1325147@@@Adventurer's Tent
