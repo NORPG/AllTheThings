@@ -479071,6 +479071,9 @@
 1309253@@@Collect Boardcraft Human Figurine
 1313400@@@[DNT] Shen'dorei Windwell
 1321028@@@[DNT] Umbral Champion
+12.1.0.69933
+1321389@@@Teleport to Zuldazar
+1321643@@@Ping
 12.1.5.69594
 29276@@@Crystallized Mana Residue
 182865@@@Crystallized Fel Essence
