@@ -69173,6 +69173,63 @@
 1320278@@@Volcano
 1320279@@@Volcano
 1320280@@@Volcano
+3.80.2.70315
+1282505@@@Sit
+1282514@@@[DND] Throne - Enter - Summon Clone
+1282515@@@[DND] Clone Player
+1282524@@@cancel invis
+1282528@@@Ride Vehicle
+1287795@@@<DNT> Slow Fall
+1287800@@@<DNT> Remove Clone
+1287804@@@<DNT> Cancel Invis
+1287816@@@[DND] Invis Clone
+1288473@@@Genuflect
+1294446@@@Ice Hole
+1294465@@@[DNT] Ice Fishing Ride Vehicle
+1295126@@@Tuskarr Ice Fishing Tent
+1295716@@@Varian's Dragon Spirit
+1295724@@@Summon
+1302955@@@Visage of the Damned
+1302956@@@Visage of the Damned
+1302957@@@Visage of the Damned
+1302958@@@Birth
+1302959@@@Visage of the Damned
+1302960@@@Val'kyr Strike
+1309841@@@Tuskarr Hermit Crab
+1309853@@@Teleport to Dalaran
+1309855@@@Teleport to Dalaran
+1309864@@@Teleport to Dalaran
+1309897@@@Ice Hole
+1309899@@@Ice Hole Fishing
+1315244@@@Mount Speed Mod: Epic Ground/Swimming Mount
+1315245@@@Mount Speed Mod: Standard Ground/Swimming Mount
+1321417@@@Restricted Flight Area
+1321418@@@Might of Ulduar
+1321419@@@Might of Ulduar
+1321420@@@Tenacity
+1321421@@@Tenacity
+1321422@@@Tenacity
+1321423@@@Tenacity
+1321424@@@Tenacity
+1321425@@@Restricted Flight Aura [DNT]
+1321428@@@Sanctuary
+1321429@@@Sanctuary
+1321430@@@Sanctuary Clear
+1321431@@@Ulduar
+1321432@@@Ulduar
+1321433@@@Portal to Ulduar
+1321434@@@Portal to Storm Peaks
+1321435@@@Spatial Severence
+1322597@@@Upgrade Core
+1322598@@@Upgrade Core
+1322599@@@Upgrade Core
+1322600@@@Upgrade Core
+1322601@@@Upgrade Core
+1322607@@@Val'anyr Hammer of Ancient Kings - Equip Effect
+1322608@@@Vengeance of Ancient Kings
+1322609@@@Vengeance of Ancient Kings
+1322610@@@Vengeance of Ancient Kings
+1322934@@@Vengeance of Ancient Kings
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward
@@ -478757,20 +478814,9 @@
 1313804@@@Drain Barrier
 12.1.0.69189
 1276710@@@Alluring Bubble
-1282505@@@Sit
-1282514@@@[DND] Throne - Enter - Summon Clone
-1282515@@@[DND] Clone Player
-1282524@@@cancel invis
-1282528@@@Ride Vehicle
-1287795@@@<DNT> Slow Fall
-1287800@@@<DNT> Remove Clone
-1287804@@@<DNT> Cancel Invis
-1287816@@@[DND] Invis Clone
 1288326@@@Stone Telekinesis
 1288331@@@Stone Telekinesis
-1288473@@@Genuflect
 1290952@@@Ensemble: Varian's Azure Dragon Attire
-1295724@@@Summon
 1313909@@@[DNT] Dread Bolt
 1313945@@@Caustic Waves
 1313965@@@Warden's Protection
@@ -478889,10 +478935,7 @@
 1293028@@@Tuskarr Hermit Crab
 1293382@@@In the House
 1294420@@@Ice Hole
-1294446@@@Ice Hole
 1294463@@@Ice Hole Fishing
-1294465@@@[DNT] Ice Fishing Ride Vehicle
-1295126@@@Tuskarr Ice Fishing Tent
 1295329@@@Tidesworn Augment Rune
 1295330@@@Conjure Tidesworn Augment Rune
 1295341@@@[DND] Conjure Tidesworn Augment Rune

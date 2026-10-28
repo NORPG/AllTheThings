@@ -271,6 +271,8 @@
 268678@@@Delta
 3.80.2.70177
 123650@@@Shadow
+3.80.2.70315
+272644@@@Clone
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
@@ -2093,7 +2095,6 @@
 5.5.4.67279
 267231@@@Kor'kron Iron Star
 5.5.4.69032
-272644@@@Clone
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet

@@ -383,6 +383,8 @@
 3.80.2.70177
 1309208@@@Cerulean Prideclaw
 1309405@@@Veteran Adventurer's Loyal Companion
+3.80.2.70315
+1309841@@@Tuskarr Hermit Crab
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -582,7 +584,6 @@
 1302506@@@Frostwyrm
 1302947@@@Darkshade Drake
 5.5.4.69032
-1309841@@@Tuskarr Hermit Crab
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild

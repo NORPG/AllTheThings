@@ -54093,6 +54093,18 @@
 280544@@@Cerulean Prideclaw
 280611@@@Veteran Adventurer's Loyal Companion
 280740@@@Shen'dorei Windwell
+3.80.2.70315
+274037@@@Tuskarr Hermit Crab
+274730@@@Tuskarr Ice Fishing Tent
+274967@@@Varian's Dragon Throne
+277948@@@Visage of the Damned
+281681@@@Varian's Dragon Spirit
+287184@@@Val'anyr, Hammer of Ancient Kings
+287185@@@Val'anyr, Hammer of Ancient Kings
+287186@@@Val'anyr, Hammer of Ancient Kings
+287187@@@Val'anyr, Hammer of Ancient Kings
+287188@@@Val'anyr, Hammer of Ancient Kings
+287189@@@Val'anyr, Hammer of Ancient Kings
 4.4.0.53627
 80@@@Soft Fur-Lined Shoes
 732@@@Ripe Okra
@@ -99660,10 +99672,6 @@
 280388@@@Frostscythe of Lord Ahune
 280389@@@Frostscythe of Lord Ahune
 5.5.4.69032
-274037@@@Tuskarr Hermit Crab
-274730@@@Tuskarr Ice Fishing Tent
-274967@@@Varian's Dragon Throne
-281681@@@Varian's Dragon Spirit
 282030@@@Thousand-Year Pickled Egg
 282031@@@Thousand-Year Pickled Egg
 282032@@@Mithril Wristwatch
