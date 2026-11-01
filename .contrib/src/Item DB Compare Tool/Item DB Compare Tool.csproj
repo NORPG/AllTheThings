@@ -8,6 +8,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <PreferNativeArm64 Condition="'$(Platform)' == 'AnyCPU'">true</PreferNativeArm64>
     <OutputPath>..\..\Harvesters\DBs\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

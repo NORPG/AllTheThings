@@ -29,6 +29,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
     <OutputPath>..\..\.tools\AnyCPU\</OutputPath>
+    <PreferNativeArm64>true</PreferNativeArm64>
     <DefineConstants>$(DefineConstants);PARSER_ANYCPU</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
