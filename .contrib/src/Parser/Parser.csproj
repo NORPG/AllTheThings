@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Platform>x64</Platform>
-    <Platforms>x64;x86</Platforms>
+    <Platforms>x64;x86;ARM64</Platforms>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -13,6 +13,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <OutputPath>..\..\.tools\x86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <OutputPath>..\..\.tools\ARM64\</OutputPath>
+    <RuntimeIdentifier>win-arm64</RuntimeIdentifier>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
@@ -29,6 +34,6 @@
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser supports only the x64 and x86 platforms." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64'" Text="Parser supports only the x64, x86, and ARM64 platforms." />
   </Target>
 </Project>

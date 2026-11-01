@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configurations>Debug;Release;Test</Configurations>
     <OutputType>Exe</OutputType>
-    <Platforms>AnyCPU;x86;x64</Platforms>
+    <Platforms>AnyCPU;x86;x64;ARM64</Platforms>
     <RootNamespace>ATT</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -38,6 +38,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
     <OutputPath>bin\x64\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>..\..\Harvesters\ARM64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|ARM64'">
+    <OutputPath>bin\ARM64\Test\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
