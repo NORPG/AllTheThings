@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <Platforms>x64;x86;ARM64</Platforms>
+    <Platforms>x64;x86;ARM64;AnyCPU</Platforms>
     <TargetFramework>net8.0</TargetFramework>
     <BaseOutputPath>..\..\.tools\</BaseOutputPath>
     <PublishAot>False</PublishAot>
@@ -24,6 +24,11 @@
     <PlatformTarget>ARM64</PlatformTarget>
     <RuntimeIdentifier>win-arm64</RuntimeIdentifier>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Platform)'=='AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseAppHost>false</UseAppHost>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -49,7 +54,12 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)|$(TargetFramework)'=='Release|AnyCPU|net8.0'">
+    <OutputPath>..\..\.tools\AnyCPU\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
   <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64'" Text="CSVCleaner supports only the x64, x86, and ARM64 platforms." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="CSVCleaner supports only the x64, x86, ARM64, and AnyCPU platforms." />
   </Target>
 </Project>
