@@ -16,7 +16,8 @@ function Get-Pe([string]$Path) {
         try {
             $headers = $reader.PEHeaders
             $flags = if ($null -eq $headers.CorHeader) { $null } else { [int]$headers.CorHeader.Flags }
-            return @{ machine = $headers.CoffHeader.Machine.ToString(); corFlags = $flags; sha256 = (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant() }
+            $characteristics = [int]$headers.CoffHeader.Characteristics
+            return @{ machine = $headers.CoffHeader.Machine.ToString(); corFlags = $flags; characteristics = $characteristics; largeAddressAware = (($characteristics -band 0x20) -ne 0); sha256 = (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant() }
         } finally { $reader.Dispose() }
     } finally { $stream.Dispose() }
 }
@@ -53,6 +54,7 @@ try {
     if ($result.host.os -ne $HostArchitecture -or $result.host.process -ne $HostArchitecture -or $result.host.msbuild -ne $HostArchitecture) { throw 'Native host architecture checks did not pass' }
     $platforms = if ($HostArchitecture -eq 'X64') { @('x64', 'x86', 'AnyCPU') } else { @('ARM64', 'AnyCPU') }
     $release = @{}
+    $laaErrors = @()
     foreach ($platform in $platforms) {
         foreach ($config in 'Debug', 'Release') {
             $label = "parser-$platform-$config"
@@ -71,6 +73,11 @@ try {
                 if (-not (Test-Path -LiteralPath (Join-Path $out $name) -PathType Leaf)) { throw "$label missing $name" }
             }
             $result.builds += @{ label = $label; files = $files }
+            if ($platform -eq 'x86' -or $platform -eq 'x64') {
+                foreach ($name in 'Parser.exe', 'CSVCleaner.exe') {
+                    if (-not $files[$name].largeAddressAware) { $laaErrors += "$label $name lacks LARGE_ADDRESS_AWARE" }
+                }
+            }
             if ($config -eq 'Release') { $release["Parser-$platform"] = $out }
         }
         foreach ($config in 'Debug', 'Release', 'Test') {
@@ -81,13 +88,20 @@ try {
                 $files[$name] = Assert-Managed (Join-Path $out $name) $platform
             }
             $result.builds += @{ label = $label; files = $files }
+            if ($platform -eq 'x86' -or $platform -eq 'x64') {
+                foreach ($name in 'Blizzard API Harvester.exe', 'Classic Item Detector.exe', 'Item DB Compare Tool.exe') {
+                    if (-not $files[$name].largeAddressAware) { $laaErrors += "$label $name lacks LARGE_ADDRESS_AWARE" }
+                }
+            }
             if ($config -eq 'Release') { $release["Harvester-$platform"] = $out }
         }
     }
+    $result['largeAddressAwareErrors'] = $laaErrors
     . (Join-Path $env:GITHUB_WORKSPACE '.github/scripts/Test-PlatformFixtures.ps1')
     foreach ($platform in $platforms) {
         $result.fixtures += Invoke-ToolFixtures -ParserRelease $release["Parser-$platform"] -HarvesterRelease $release["Harvester-$platform"] -Arch $platform -HostArchitecture $HostArchitecture -DotnetHost $env:VERIFIED_DOTNET_HOST -Evidence $evidence
     }
+    if ($laaErrors.Count) { throw ($laaErrors -join '; ') }
     $result.passed = $true
 } catch {
     $result.error = $_.Exception.ToString()
