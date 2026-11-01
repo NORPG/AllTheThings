@@ -38,4 +38,7 @@
     <Target Name="MarkX86LargeAddressAware" AfterTargets="CoreCompile" Condition="'$(TargetFramework)' == 'net48' and '$(Platform)' == 'x86' and '$(PlatformTarget)' == 'x86' and '$(OutputType)' == 'Exe' and '$(DesignTimeBuild)' != 'true'">
         <MarkPeLargeAddressAware ImagePath="$(IntermediateOutputPath)$(TargetFileName)" />
     </Target>
+    <Target Name="MarkX86AppHostLargeAddressAware" AfterTargets="_CreateAppHost" Condition="'$(TargetFramework)' == 'net8.0' and '$(Platform)' == 'x86' and '$(PlatformTarget)' == 'x86' and '$(OutputType)' == 'Exe' and '$(UseAppHost)' == 'true' and '$(DesignTimeBuild)' != 'true' and Exists('$(AppHostIntermediatePath)')">
+        <MarkPeLargeAddressAware ImagePath="$(AppHostIntermediatePath)" />
+    </Target>
 </Project>
