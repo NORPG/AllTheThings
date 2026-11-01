@@ -96,8 +96,33 @@ try {
             if ($config -eq 'Release') { $release["Harvester-$platform"] = $out }
         }
     }
-    $result['largeAddressAwareErrors'] = $laaErrors
     . (Join-Path $env:GITHUB_WORKSPACE '.github/scripts/Test-PlatformFixtures.ps1')
+    if ($HostArchitecture -eq 'X64') {
+        $source = Join-Path $work 'publish-x86/src'
+        $published = Join-Path $work 'publish-x86/output'
+        $fixture = Join-Path $work 'publish-x86/fixture'
+        New-Item -ItemType Directory -Path $source, $published, $fixture -Force | Out-Null
+        & robocopy (Join-Path $env:GITHUB_WORKSPACE '.contrib/src') $source /E /R:1 /W:1 /NFL /NDL /NJH /NJS /NP | Out-Null
+        if ($LASTEXITCODE -gt 7) { throw "Publish source copy failed: $LASTEXITCODE" }
+        $publishDir = $published.Replace('\','/') + '/'
+        $arguments = @((Join-Path $source 'CSVCleaner/CSVCleaner.csproj'), '-restore', '-t:Publish', '-p:Configuration=Release', '-p:Platform=x86', "-p:PublishDir=$publishDir", '-nologo')
+        & msbuild @arguments *> (Join-Path $evidence 'csv-x86-publish.build.log')
+        if ($LASTEXITCODE -ne 0) { throw "CSVCleaner x86 publish failed: $LASTEXITCODE" }
+        $exe = Join-Path $published 'CSVCleaner.exe'
+        $result['x86Publish'] = [ordered]@{ exe = (Assert-Native $exe 'x86'); requiredFiles = @(); fixture = $null }
+        foreach ($name in 'CSVCleaner.dll', 'CSVCleaner.deps.json', 'CSVCleaner.runtimeconfig.json') {
+            $path = Join-Path $published $name
+            if (-not (Test-Path -LiteralPath $path -PathType Leaf) -or (Get-Item -LiteralPath $path).Length -eq 0) { throw "CSVCleaner x86 publish missing or empty $name" }
+            $result.x86Publish.requiredFiles += $name
+        }
+        if (-not $result.x86Publish.exe.largeAddressAware) { $laaErrors += 'CSVCleaner x86 publish lacks LARGE_ADDRESS_AWARE' }
+        $csv = Join-Path $fixture 'input.csv'
+        [IO.File]::WriteAllText($csv, "ID,Name`r`n2,second`r`n1,first`r`n")
+        $run = Invoke-FixtureProcess -Executable $exe -WorkingDirectory $fixture -Arguments @($csv) -LogPath (Join-Path $evidence 'csv-x86-publish.fixture.log') -ExpectedMachine 0x014c -ExpectedNativeMachine 0x8664
+        if ([IO.File]::ReadAllText($csv) -cne "ID,Name`r`n1,first`r`n2,second`r`n") { throw 'CSVCleaner x86 publish fixture output differs' }
+        $result.x86Publish.fixture = $run.Architecture
+    }
+    $result['largeAddressAwareErrors'] = $laaErrors
     foreach ($platform in $platforms) {
         $result.fixtures += Invoke-ToolFixtures -ParserRelease $release["Parser-$platform"] -HarvesterRelease $release["Harvester-$platform"] -Arch $platform -HostArchitecture $HostArchitecture -DotnetHost $env:VERIFIED_DOTNET_HOST -Evidence $evidence
     }

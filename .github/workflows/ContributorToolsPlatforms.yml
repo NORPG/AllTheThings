@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-dotnet@v5
         if: matrix.host.arch == 'X64'
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '10.0.x'
       - name: Verify native host and MSBuild
         shell: pwsh
         env:
@@ -46,9 +46,9 @@ jobs:
           $installer = Join-Path $env:RUNNER_TEMP 'dotnet-install.ps1'
           Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile $installer
           $runtime = Join-Path $env:RUNNER_TEMP 'dotnet-x86'
-          & $installer -Channel 8.0 -Runtime dotnet -Architecture x86 -InstallDir $runtime -NoPath
+          & $installer -Channel 10.0 -Runtime dotnet -Architecture x86 -InstallDir $runtime -NoPath
           $installed = & (Join-Path $runtime 'dotnet.exe') --list-runtimes
-          if ($LASTEXITCODE -ne 0 -or -not ($installed -match '^Microsoft.NETCore.App 8\.')) { throw 'x86 .NET 8 runtime not available' }
+          if ($LASTEXITCODE -ne 0 -or -not ($installed -match '^Microsoft.NETCore.App 10\.')) { throw 'x86 .NET 10 runtime not available' }
           "DOTNET_ROOT_X86=$runtime" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
       - name: Build and exercise contributor tools
         shell: pwsh
@@ -94,7 +94,7 @@ jobs:
       - uses: actions/setup-dotnet@v5
         if: matrix.host.arch == 'X64'
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: '10.0.x'
       - name: Verify native host and MSBuild
         shell: pwsh
         env:

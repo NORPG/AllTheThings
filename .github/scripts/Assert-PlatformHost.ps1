@@ -16,7 +16,7 @@ try {
 $expectedMachine = if ($HostArchitecture -eq 'X64') { 0x8664 } else { 0xaa64 }
 if ($machine -ne $expectedMachine) { throw "dotnet host is not native $HostArchitecture`: $dotnetHost" }
 $runtimes = & $dotnetHost --list-runtimes
-if ($LASTEXITCODE -ne 0 -or -not ($runtimes -match '^Microsoft.NETCore.App 8\.')) { throw "Native .NET 8 runtime not found: $dotnetHost" }
+if ($LASTEXITCODE -ne 0 -or -not ($runtimes -match '^Microsoft.NETCore.App 10\.')) { throw "Native .NET 10 runtime not found: $dotnetHost" }
 $probe = Join-Path $env:RUNNER_TEMP 'platform-msbuild-probe.proj'
 @'
 <Project>
