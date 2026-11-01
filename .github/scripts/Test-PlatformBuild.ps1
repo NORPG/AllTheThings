@@ -86,7 +86,7 @@ try {
     }
     . (Join-Path $env:GITHUB_WORKSPACE '.github/scripts/Test-PlatformFixtures.ps1')
     foreach ($platform in $platforms) {
-        $result.fixtures += Invoke-ToolFixtures -ParserRelease $release["Parser-$platform"] -HarvesterRelease $release["Harvester-$platform"] -Arch $platform -DotnetHost $env:VERIFIED_DOTNET_HOST -Evidence $evidence
+        $result.fixtures += Invoke-ToolFixtures -ParserRelease $release["Parser-$platform"] -HarvesterRelease $release["Harvester-$platform"] -Arch $platform -HostArchitecture $HostArchitecture -DotnetHost $env:VERIFIED_DOTNET_HOST -Evidence $evidence
     }
     $result.passed = $true
 } catch {
