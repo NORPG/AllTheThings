@@ -1,0 +1,86 @@
+name: Contributor tools x86 validation
+
+on:
+  push:
+    branches: ['codex/src-x86-build-ci']
+    tags-ignore: ['**']
+    paths:
+      - '.contrib/src/**'
+      - '.github/workflows/ContributorToolsX86.yml'
+      - '.github/scripts/*X86*.ps1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v3
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+      - name: Install x86 .NET runtime
+        shell: pwsh
+        run: |
+          $installer = Join-Path $env:RUNNER_TEMP 'dotnet-install.ps1'
+          Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile $installer
+          $runtime = Join-Path $env:RUNNER_TEMP 'dotnet-x86'
+          & $installer -Channel 10.0 -Runtime dotnet -Architecture x86 -InstallDir $runtime -NoPath
+          $installed = & (Join-Path $runtime 'dotnet.exe') --list-runtimes
+          if ($LASTEXITCODE -ne 0 -or -not ($installed -match '^Microsoft.NETCore.App 10\.')) { throw 'x86 .NET 10 runtime not available' }
+          "DOTNET_ROOT_X86=$runtime" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+      - name: Build and exercise contributor tools
+        shell: pwsh
+        run: .github/scripts/Test-X86Build.ps1
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: x86-build-evidence-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/x86-build-evidence/*.json
+            ${{ runner.temp }}/x86-build-evidence/*.log
+          if-no-files-found: warn
+          retention-days: 7
+
+  compare-parser:
+    runs-on: windows-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { flavor: Retail, output: Standard, config: '' }
+          - { flavor: ClassicEra, output: Vanilla, config: '../.db/standard/.config/classic/01 - Classic Era.config' }
+          - { flavor: SoD, output: VanillaSOD, config: '../.db/standard/.config/classic/01 - Classic SOD.config' }
+          - { flavor: TBC, output: TBC, config: '../.db/standard/.config/classic/02 - TBC.config' }
+          - { flavor: Wrath, output: Wrath, config: '../.db/standard/.config/classic/03 - Wrath.config' }
+          - { flavor: Cata, output: Cata, config: '../.db/standard/.config/classic/04 - Cataclysm.config' }
+          - { flavor: Mists, output: Mists, config: '../.db/standard/.config/classic/05 - Mists of Pandaria.config' }
+          - { flavor: Forever, output: Camelot, config: '../.db/forever/.config/forever.config' }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v3
+      - name: Compare x86 and x64 Parser exports
+        shell: pwsh
+        env:
+          PARSER_FLAVOR: ${{ matrix.flavor }}
+          PARSER_OUTPUT: ${{ matrix.output }}
+          PARSER_CONFIG: ${{ matrix.config }}
+        run: .github/scripts/Compare-X86Parser.ps1 -Flavor $env:PARSER_FLAVOR -OutputName $env:PARSER_OUTPUT -Config $env:PARSER_CONFIG
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: x86-parser-${{ matrix.flavor }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/x86-parser-evidence-${{ matrix.flavor }}/*.json
+            ${{ runner.temp }}/x86-parser-evidence-${{ matrix.flavor }}/*.log
+          if-no-files-found: warn
+          retention-days: 7
