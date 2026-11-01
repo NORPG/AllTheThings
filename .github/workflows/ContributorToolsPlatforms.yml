@@ -1,0 +1,120 @@
+name: Contributor tools platform validation
+
+on:
+  push:
+    branches: ['codex/src-platform-build-ci']
+    tags-ignore: ['**']
+    paths:
+      - '.contrib/src/**'
+      - '.github/workflows/ContributorToolsPlatforms.yml'
+      - '.github/scripts/*Platform*.ps1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ${{ matrix.host.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        host:
+          - { runner: windows-latest, arch: X64, msbuild: x64 }
+          - { runner: windows-11-arm, arch: Arm64, msbuild: arm64 }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v3
+        with:
+          msbuild-architecture: ${{ matrix.host.msbuild }}
+      - uses: actions/setup-dotnet@v5
+        if: matrix.host.arch == 'X64'
+        with:
+          dotnet-version: '8.0.x'
+      - name: Verify native host and MSBuild
+        shell: pwsh
+        env:
+          HOST_ARCH: ${{ matrix.host.arch }}
+        run: .github/scripts/Assert-PlatformHost.ps1 -HostArchitecture $env:HOST_ARCH
+      - name: Install x86 .NET runtime
+        if: matrix.host.arch == 'X64'
+        shell: pwsh
+        run: |
+          $installer = Join-Path $env:RUNNER_TEMP 'dotnet-install.ps1'
+          Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile $installer
+          $runtime = Join-Path $env:RUNNER_TEMP 'dotnet-x86'
+          & $installer -Channel 8.0 -Runtime dotnet -Architecture x86 -InstallDir $runtime -NoPath
+          $installed = & (Join-Path $runtime 'dotnet.exe') --list-runtimes
+          if ($LASTEXITCODE -ne 0 -or -not ($installed -match '^Microsoft.NETCore.App 8\.')) { throw 'x86 .NET 8 runtime not available' }
+          "DOTNET_ROOT_X86=$runtime" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+      - name: Build and exercise contributor tools
+        shell: pwsh
+        env:
+          HOST_ARCH: ${{ matrix.host.arch }}
+        run: .github/scripts/Test-PlatformBuild.ps1 -HostArchitecture $env:HOST_ARCH
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: platform-build-${{ matrix.host.arch }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/platform-build-evidence-${{ matrix.host.arch }}/*.json
+            ${{ runner.temp }}/platform-build-evidence-${{ matrix.host.arch }}/*.log
+            ${{ runner.temp }}/platform-msbuild-probe-${{ matrix.host.arch }}.log
+          if-no-files-found: warn
+          retention-days: 7
+
+  compare-parser:
+    runs-on: ${{ matrix.host.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        host:
+          - { runner: windows-latest, arch: X64, msbuild: x64 }
+          - { runner: windows-11-arm, arch: Arm64, msbuild: arm64 }
+        flavor:
+          - { name: Retail, output: Standard, config: '' }
+          - { name: ClassicEra, output: Vanilla, config: '../.db/standard/.config/classic/01 - Classic Era.config' }
+          - { name: SoD, output: VanillaSOD, config: '../.db/standard/.config/classic/01 - Classic SOD.config' }
+          - { name: TBC, output: TBC, config: '../.db/standard/.config/classic/02 - TBC.config' }
+          - { name: Wrath, output: Wrath, config: '../.db/standard/.config/classic/03 - Wrath.config' }
+          - { name: Cata, output: Cata, config: '../.db/standard/.config/classic/04 - Cataclysm.config' }
+          - { name: Mists, output: Mists, config: '../.db/standard/.config/classic/05 - Mists of Pandaria.config' }
+          - { name: Forever, output: Camelot, config: '../.db/forever/.config/forever.config' }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v3
+        with:
+          msbuild-architecture: ${{ matrix.host.msbuild }}
+      - uses: actions/setup-dotnet@v5
+        if: matrix.host.arch == 'X64'
+        with:
+          dotnet-version: '8.0.x'
+      - name: Verify native host and MSBuild
+        shell: pwsh
+        env:
+          HOST_ARCH: ${{ matrix.host.arch }}
+        run: .github/scripts/Assert-PlatformHost.ps1 -HostArchitecture $env:HOST_ARCH
+      - name: Compare Parser exports
+        shell: pwsh
+        env:
+          HOST_ARCH: ${{ matrix.host.arch }}
+          PARSER_FLAVOR: ${{ matrix.flavor.name }}
+          PARSER_OUTPUT: ${{ matrix.flavor.output }}
+          PARSER_CONFIG: ${{ matrix.flavor.config }}
+        run: .github/scripts/Compare-PlatformParser.ps1 -HostArchitecture $env:HOST_ARCH -Flavor $env:PARSER_FLAVOR -OutputName $env:PARSER_OUTPUT -Config $env:PARSER_CONFIG
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: platform-parser-${{ matrix.host.arch }}-${{ matrix.flavor.name }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/platform-parser-evidence-${{ matrix.host.arch }}-${{ matrix.flavor.name }}/*.json
+            ${{ runner.temp }}/platform-parser-evidence-${{ matrix.host.arch }}-${{ matrix.flavor.name }}/*.log
+            ${{ runner.temp }}/platform-msbuild-probe-${{ matrix.host.arch }}.log
+          if-no-files-found: warn
+          retention-days: 7
