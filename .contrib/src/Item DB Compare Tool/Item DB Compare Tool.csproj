@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <Platforms>AnyCPU;x86</Platforms>
     <RootNamespace>ATT</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -9,12 +10,16 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <OutputPath>..\..\Harvesters\DBs\</OutputPath>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <DebugType>full</DebugType>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <DebugType>pdbonly</DebugType>
     <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Harvesters\DBs\x86\</OutputPath>
   </PropertyGroup>
 </Project>
