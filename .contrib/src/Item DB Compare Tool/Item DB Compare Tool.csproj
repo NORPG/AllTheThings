@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x86;x64</Platforms>
+    <Platforms>x86;x64;ARM64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -24,5 +24,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <OutputPath>..\..\Harvesters\DBs\x64\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <OutputPath>..\..\Harvesters\DBs\ARM64\</OutputPath>
   </PropertyGroup>
 </Project>

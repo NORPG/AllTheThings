@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configurations>Debug;Release;Test</Configurations>
-    <Platforms>x86;x64</Platforms>
+    <Platforms>x86;x64;ARM64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -32,11 +32,17 @@
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <OutputPath>..\..\Harvesters\x64\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <OutputPath>..\..\Harvesters\ARM64\</OutputPath>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x86'">
     <OutputPath>bin\x86\Test\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
     <OutputPath>bin\x64\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|ARM64'">
+    <OutputPath>bin\ARM64\Test\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />

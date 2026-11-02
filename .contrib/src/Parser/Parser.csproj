@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x86;x64</Platforms>
+    <Platforms>x86;x64;ARM64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -22,6 +22,11 @@
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <OutputPath>..\..\.tools\x86\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <RuntimeIdentifier>win-arm64</RuntimeIdentifier>
+    <OutputPath>..\..\.tools\ARM64\</OutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
     <PackageReference Include="Csv" Version="[2.0.245]" />
@@ -29,6 +34,6 @@
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86'" Text="Parser supports only the x64 and x86 platforms." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64'" Text="Parser supports only the x64, x86, and ARM64 platforms." />
   </Target>
 </Project>
