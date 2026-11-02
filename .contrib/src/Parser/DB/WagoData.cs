@@ -158,7 +158,7 @@ namespace ATT.DB
             Framework.LogDebug($"Wago.LoadFromCSV: {path}");
 
             // Parse the filename for the database type and locale, if specified.
-            var filename = path.Substring(path.LastIndexOf('\\') + 1);
+            var filename = Path.GetFileName(path);
             var segments = filename.Split('.', '-', '_'); // Example: Item_enUS.1.15.7.60277
 
             // The Type is always listed first, followed by the locale (Default: enUS)
