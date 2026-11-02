@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configurations>Debug;Release;Test</Configurations>
-    <Platforms>x86;x64;ARM64</Platforms>
+    <Platforms>x86;x64;ARM64;AnyCPU</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -9,6 +9,7 @@
     <RootNamespace>ATT</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DebugType>full</DebugType>
+    <PreferNativeArm64 Condition="'$(Platform)' == 'AnyCPU'">true</PreferNativeArm64>
     <OutputPath>..\..\Harvesters\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>

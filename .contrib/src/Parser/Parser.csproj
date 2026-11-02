@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x86;x64;ARM64</Platforms>
+    <Platforms>x86;x64;ARM64;AnyCPU</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -27,13 +27,23 @@
     <OutputPath>..\..\.tools\ARM64\</OutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <PreferNativeArm64>true</PreferNativeArm64>
+    <OutputPath>..\..\.tools\AnyCPU\</OutputPath>
+    <DefineConstants>$(DefineConstants);PARSER_ANYCPU</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
     <PackageReference Include="Csv" Version="[2.0.245]" />
-    <PackageReference Include="KeraLua" Version="[1.4.11]" />
+    <PackageReference Include="KeraLua" Version="[1.4.11]" GeneratePathProperty="true" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
+  <ItemGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <None Include="$(PkgKeraLua)\runtimes\win-x86\native\lua54.dll" Link="x86\lua54.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(PkgKeraLua)\runtimes\win-x64\native\lua54.dll" Link="x64\lua54.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(PkgKeraLua)\runtimes\win-arm64\native\lua54.dll" Link="ARM64\lua54.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64'" Text="Parser supports only the x64, x86, and ARM64 platforms." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'x86' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="Parser supports only the x64, x86, ARM64, and AnyCPU platforms." />
   </Target>
 </Project>

@@ -24,7 +24,17 @@ namespace ATT
         }
         private static int ErrorCode => Errored ? -1 : 0;
 
+#if PARSER_ANYCPU
+        private static readonly NLua.Lua lua = CreateLua();
+
+        private static NLua.Lua CreateLua()
+        {
+            NativeLua.Preload();
+            return new NLua.Lua();
+        }
+#else
         private static readonly NLua.Lua lua = new NLua.Lua();
+#endif
 
         private static int PreProcessorNestLevel = 0;
 
