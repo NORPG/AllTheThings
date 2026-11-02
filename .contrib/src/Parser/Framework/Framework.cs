@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -792,6 +793,14 @@ namespace ATT
             return Config != null;
         }
 
+        private static string _consoleTitle;
+
+        public static void SetConsoleTitle(string title)
+        {
+            _consoleTitle = title;
+            Console.Title = title;
+        }
+
         /// <summary>
         /// Allows the optional Parser Config file to overwrite some built-in values for non-compile required manipulation of the Parser
         /// </summary>
@@ -801,7 +810,16 @@ namespace ATT
             else
             {
                 Log($"Added config: {filepath}");
-                Console.Title += $" + {filepath.Replace("../.db/", "").Replace(".config/", "")}";
+                string suffix = $" + {filepath.Replace("../.db/", "").Replace(".config/", "")}";
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    Console.Title += suffix;
+                }
+                else
+                {
+                    _consoleTitle += suffix;
+                    Console.Title = _consoleTitle;
+                }
             }
 
             if (Config == null) Config = new CustomConfiguration(filepath);

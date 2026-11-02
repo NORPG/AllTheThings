@@ -295,7 +295,7 @@ namespace ATT
                     }
                 }
 
-                Console.Title = $"ATT Parser: {mainConfig.Replace("../.db/", "").Replace(".config/", "")}";
+                Framework.SetConsoleTitle($"ATT Parser: {mainConfig.Replace("../.db/", "").Replace(".config/", "")}");
                 Framework.InitConfigSettings("../.db/shared/.config/root.config");
                 if (!string.IsNullOrWhiteSpace(baseConfig)) Framework.InitConfigSettings(baseConfig);
                 Framework.InitConfigSettings(mainConfig, true);
