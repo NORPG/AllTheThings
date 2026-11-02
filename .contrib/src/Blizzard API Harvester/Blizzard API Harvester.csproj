@@ -29,8 +29,14 @@
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <OutputPath>..\..\Harvesters\x86\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x64'">
+    <OutputPath>..\..\Harvesters\x64\</OutputPath>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x86'">
     <OutputPath>bin\x86\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
+    <OutputPath>bin\x64\Test\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />

@@ -22,6 +22,9 @@
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <OutputPath>bin\x86\$(Configuration)\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x64'">
+    <OutputPath>bin\x64\$(Configuration)\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
   </ItemGroup>
