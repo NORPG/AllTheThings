@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configurations>Debug;Release;Test</Configurations>
-    <Platforms>x64</Platforms>
+    <Platforms>x86;x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net481</TargetFramework>
@@ -13,18 +13,24 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <DefineConstants>TRACE</DefineConstants>
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
+  <PropertyGroup Condition="'$(Configuration)' == 'Test'">
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugSymbols>true</DebugSymbols>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x86'">
+    <OutputPath>..\..\Harvesters\x86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x86'">
+    <OutputPath>bin\x86\Test\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />

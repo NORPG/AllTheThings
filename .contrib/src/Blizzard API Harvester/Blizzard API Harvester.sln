@@ -14,6 +14,9 @@ Global
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
 		Test|x64 = Test|x64
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Test|x86 = Test|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x64.ActiveCfg = Debug|x64
@@ -34,6 +37,24 @@ Global
 		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x64.Build.0 = Release|x64
 		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x64.ActiveCfg = Release|x64
 		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x64.Build.0 = Release|x64
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x86.ActiveCfg = Debug|x86
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Debug|x86.Build.0 = Debug|x86
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x86.ActiveCfg = Release|x86
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Release|x86.Build.0 = Release|x86
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Test|x86.ActiveCfg = Test|x86
+		{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}.Test|x86.Build.0 = Test|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x86.ActiveCfg = Debug|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Debug|x86.Build.0 = Debug|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x86.ActiveCfg = Release|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Release|x86.Build.0 = Release|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Test|x86.ActiveCfg = Release|x86
+		{2C2E84BA-9ED1-4FDB-8F5F-C19CBF0D1A18}.Test|x86.Build.0 = Release|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x86.ActiveCfg = Debug|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Debug|x86.Build.0 = Debug|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x86.ActiveCfg = Release|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Release|x86.Build.0 = Release|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x86.ActiveCfg = Release|x86
+		{EC726264-8DB9-4DA1-811E-240E9D65AF6C}.Test|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
