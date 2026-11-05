@@ -2,15 +2,15 @@
 
 ## Requirements
 
-- Install the .NET 8 SDK. Running the results on another Mac also requires the .NET 8 runtime.
-- Select `MacArm64` for Apple Silicon or `MacX64` for an Intel Mac. These platforms target .NET 8; the Parser .NET Framework 4.8 target remains Windows only.
+- Install the .NET 8 and .NET 10 SDKs. Running the results on another Mac requires both runtimes.
+- Select `MacArm64` for Apple Silicon or `MacX64` for an Intel Mac. Parser targets .NET 8 and CSVCleaner targets .NET 10 on macOS; the Parser .NET Framework 4.8 target remains Windows only.
 - Run build commands from the repository root.
 
 ## Build
 
 ```sh
-dotnet build .contrib/src/Parser/Parser.sln -f net8.0 -c Debug -p:Platform=MacArm64
-dotnet build .contrib/src/Parser/Parser.sln -f net8.0 -c Release -p:Platform=MacArm64
+dotnet build .contrib/src/Parser/Parser.sln -c Debug -p:Platform=MacArm64
+dotnet build .contrib/src/Parser/Parser.sln -c Release -p:Platform=MacArm64
 ```
 
 The solution builds both applications. For an Intel Mac, replace `MacArm64` with `MacX64`. Output is isolated by architecture and configuration:
@@ -18,7 +18,7 @@ The solution builds both applications. For an Intel Mac, replace `MacArm64` with
 | Project | MacArm64 output | MacX64 output |
 | --- | --- | --- |
 | Parser | `.contrib/.builds/Parser/net8.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/Parser/net8.0/osx-x64/<Debug or Release>/` |
-| CSVCleaner | `.contrib/.builds/CSVCleaner/net8.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/CSVCleaner/net8.0/osx-x64/<Debug or Release>/` |
+| CSVCleaner | `.contrib/.builds/CSVCleaner/net10.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/CSVCleaner/net10.0/osx-x64/<Debug or Release>/` |
 
 Keep each application's DLL, `.deps.json`, `.runtimeconfig.json`, and dependency files together when copying its output. Parser also needs the matching `liblua54.dylib`.
 
@@ -42,7 +42,7 @@ CSVCleaner updates the CSV file passed as its first argument. A second argument 
 ```sh
 sample_csv=$(mktemp)
 printf 'ID,Name\n2,Second\n1,First\n' > "$sample_csv"
-dotnet .contrib/.builds/CSVCleaner/net8.0/osx-arm64/Release/CSVCleaner.dll "$sample_csv"
+dotnet .contrib/.builds/CSVCleaner/net10.0/osx-arm64/Release/CSVCleaner.dll "$sample_csv"
 cat "$sample_csv"
 rm "$sample_csv"
 ```
