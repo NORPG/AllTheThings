@@ -7,8 +7,8 @@
             "order": 1,
             "name": {
                 "en": "Phase 1",
-                "tw": "\u7b2c 1 \u968e\u6bb5",
-                "cn": "\u7b2c 1 \u9636\u6bb5"
+                "tw": "第 1 階段",
+                "cn": "第 1 阶段"
             },
             "phaseID": 30
         },
@@ -16,8 +16,8 @@
             "order": 2,
             "name": {
                 "en": "Phase 2",
-                "tw": "\u7b2c 2 \u968e\u6bb5",
-                "cn": "\u7b2c 2 \u9636\u6bb5"
+                "tw": "第 2 階段",
+                "cn": "第 2 阶段"
             },
             "phaseID": 31
         },
@@ -25,8 +25,8 @@
             "order": 3,
             "name": {
                 "en": "Phase 3",
-                "tw": "\u7b2c 3 \u968e\u6bb5",
-                "cn": "\u7b2c 3 \u9636\u6bb5"
+                "tw": "第 3 階段",
+                "cn": "第 3 阶段"
             },
             "phaseID": 32
         },
@@ -34,8 +34,8 @@
             "order": 4,
             "name": {
                 "en": "Phase 4",
-                "tw": "\u7b2c 4 \u968e\u6bb5",
-                "cn": "\u7b2c 4 \u9636\u6bb5"
+                "tw": "第 4 階段",
+                "cn": "第 4 阶段"
             },
             "phaseID": 33
         },
@@ -44,8 +44,8 @@
             "status": "unknown",
             "name": {
                 "en": "Unknown progression",
-                "tw": "\u9032\u5ea6\u672a\u77e5",
-                "cn": "\u8fdb\u5ea6\u672a\u77e5"
+                "tw": "進度未知",
+                "cn": "进度未知"
             }
         }
     },
