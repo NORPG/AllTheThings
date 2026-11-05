@@ -4,6 +4,7 @@
     <Platforms>x64;x86;MacArm64;MacX64</Platforms>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net48;net8.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(Platform)' == 'MacArm64' or '$(Platform)' == 'MacX64'">net8.0</TargetFrameworks>
     <StartupObject>ATT.Program</StartupObject>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
