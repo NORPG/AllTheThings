@@ -1,0 +1,220 @@
+name: Parser ARM64 rebase validation
+
+on:
+  push:
+    branches:
+      - codex/parser-arm64-rebase-validation-*
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-smoke:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: x64-debug, runner: windows-latest, platform: x64, solution_platform: x64, configuration: Debug }
+          - { name: x64-release, runner: windows-latest, platform: x64, solution_platform: x64, configuration: Release }
+          - { name: x86-debug, runner: windows-latest, platform: x86, solution_platform: x86, configuration: Debug }
+          - { name: x86-release, runner: windows-latest, platform: x86, solution_platform: x86, configuration: Release }
+          - { name: arm64-debug, runner: windows-11-arm, platform: ARM64, solution_platform: ARM64, configuration: Debug }
+          - { name: arm64-release, runner: windows-11-arm, platform: ARM64, solution_platform: ARM64, configuration: Release }
+          - { name: anycpu-x64-debug, runner: windows-latest, platform: AnyCPU, solution_platform: 'Any CPU', configuration: Debug }
+          - { name: anycpu-x64-release, runner: windows-latest, platform: AnyCPU, solution_platform: 'Any CPU', configuration: Release }
+          - { name: anycpu-arm64-debug, runner: windows-11-arm, platform: AnyCPU, solution_platform: 'Any CPU', configuration: Debug }
+          - { name: anycpu-arm64-release, runner: windows-11-arm, platform: AnyCPU, solution_platform: 'Any CPU', configuration: Release }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - name: Install x86 .NET SDK and runtime
+        if: matrix.platform == 'x86'
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+          architecture: x86
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Build Parser solution
+        shell: bash
+        env:
+          SOLUTION_PLATFORM: ${{ matrix.solution_platform }}
+          CONFIGURATION: ${{ matrix.configuration }}
+        run: dotnet build .contrib/src/Parser/Parser.sln -c "$CONFIGURATION" -p:Platform="$SOLUTION_PLATFORM" --verbosity minimal
+      - name: Check native Lua and smoke applications
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+          CONFIGURATION: ${{ matrix.configuration }}
+          DOTNET_PROCESSOR_COUNT: '4'
+        run: |
+          python - <<'PYTHON'
+          import csv
+          import json
+          import os
+          from pathlib import Path
+          import struct
+          import subprocess
+          import tempfile
+
+          root = Path(os.environ['GITHUB_WORKSPACE'])
+          platform = os.environ['PLATFORM']
+          configuration = os.environ['CONFIGURATION']
+          def target(project):
+              result = subprocess.check_output([
+                  'dotnet', 'msbuild', str(root / f'.contrib/src/{project}/{project}.csproj'),
+                  '-getProperty:TargetPath',
+                  f'-p:Platform={platform}', f'-p:Configuration={configuration}',
+              ], text=True)
+              return Path(result.strip())
+          def machine(path):
+              data = path.read_bytes()
+              pe = struct.unpack_from('<I', data, 0x3c)[0]
+              assert data[pe:pe+4] == b'PE\0\0', f'Invalid PE image: {path}'
+              return struct.unpack_from('<H', data, pe + 4)[0]
+
+          parser = target('Parser')
+          assert parser.is_file(), f'Missing Parser: {parser}'
+          output = parser.parent
+          expected = {'x86': 0x014c, 'x64': 0x8664, 'ARM64': 0xaa64}
+          if platform == 'AnyCPU':
+              assert not (output / 'lua54.dll').exists(), 'AnyCPU output contains a root Lua DLL'
+              for arch, code in expected.items():
+                  native = output / arch / 'lua54.dll'
+                  assert native.is_file(), f'Missing {arch} Lua DLL: {native}'
+                  assert machine(native) == code, f'Incorrect {arch} Lua architecture: {native}'
+          else:
+              native = output / 'lua54.dll'
+              assert native.is_file(), f'Missing native Lua DLL: {native}'
+              assert machine(native) == expected[platform], f'Incorrect native Lua architecture: {native}'
+
+          cleaner = target('CSVCleaner')
+          assert cleaner.is_file(), f'Missing CSVCleaner: {cleaner}'
+          if platform == 'AnyCPU':
+              cleaner_command = ['dotnet', str(cleaner)]
+              assert not cleaner.with_suffix('.exe').exists(), 'AnyCPU CSVCleaner unexpectedly has an apphost'
+          else:
+              apphost = cleaner.with_suffix('.exe')
+              assert apphost.is_file(), f'Missing CSVCleaner apphost: {apphost}'
+              cleaner_command = [str(apphost)]
+          with tempfile.TemporaryDirectory() as directory:
+              csv_file = Path(directory) / 'sample.csv'
+              csv_file.write_text('ID,Name\n2,Two\n1,One\n', encoding='utf-8')
+              result = subprocess.run([*cleaner_command, str(csv_file)],
+                                      input='', capture_output=True, text=True, timeout=30)
+              assert result.returncode == 0, result.stdout + result.stderr
+              with csv_file.open(newline='', encoding='utf-8') as stream:
+                  assert list(csv.reader(stream)) == [['ID', 'Name'], ['1', 'One'], ['2', 'Two']]
+
+          tools = root / '.contrib/.tools'
+          marker = tools / 'ATT-ERROR-FILE.txt'
+          marker.unlink(missing_ok=True)
+          result = subprocess.run([
+              str(parser), 'auto',
+              'baseconfig=../.db/standard/.config/retail/retail.config',
+          ], cwd=tools, stdin=subprocess.DEVNULL, capture_output=True,
+             text=True, timeout=900, env=os.environ.copy())
+          content = result.stdout + result.stderr
+          print(content[-5000:])
+          assert result.returncode == 0, f'Parser exited {result.returncode}'
+          assert 'FinalLogging...' in content, 'Parser did not reach FinalLogging'
+          assert not marker.exists(), 'Parser produced ATT-ERROR-FILE.txt'
+          print(f'{platform} {configuration}: native Lua, CSVCleaner, and Parser passed')
+          PYTHON
+
+  parser-eight-versions:
+    name: Parse eight versions on ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 135
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: x64, runner: windows-latest, platform: x64, solution_platform: x64 }
+          - { name: arm64, runner: windows-11-arm, platform: ARM64, solution_platform: ARM64 }
+          - { name: anycpu-arm64, runner: windows-11-arm, platform: AnyCPU, solution_platform: 'Any CPU' }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Build Parser Release
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        run: dotnet build .contrib/src/Parser/Parser.csproj -f net48 -c Release -p:Platform="$PLATFORM" --verbosity minimal
+      - name: Run eight Parser versions
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+          DOTNET_PROCESSOR_COUNT: '4'
+        run: |
+          python - <<'PYTHON'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+
+          root = Path(os.environ['GITHUB_WORKSPACE'])
+          platform = os.environ['PLATFORM']
+          result = subprocess.check_output([
+              'dotnet', 'msbuild', str(root / '.contrib/src/Parser/Parser.csproj'),
+              '-getProperty:TargetPath', '-p:TargetFramework=net48',
+              f'-p:Platform={platform}', '-p:Configuration=Release',
+          ], text=True)
+          app = Path(result.strip())
+          assert app.is_file(), f'Missing Parser executable: {app}'
+          tools = root / '.contrib/.tools'
+          logs = Path(os.environ['RUNNER_TEMP']) / 'parser-arm64-validation'
+          logs.mkdir(parents=True, exist_ok=True)
+          marker = tools / 'ATT-ERROR-FILE.txt'
+          base = 'baseconfig=../.db/standard/.config/retail/retail.config'
+          versions = [
+              ('Retail', None),
+              ('ClassicEra', '../.db/standard/.config/classic/01 - Classic Era.config'),
+              ('ClassicSoD', '../.db/standard/.config/classic/01 - Classic SOD.config'),
+              ('TBC', '../.db/standard/.config/classic/02 - TBC.config'),
+              ('WOTLK', '../.db/standard/.config/classic/03 - Wrath.config'),
+              ('CATA', '../.db/standard/.config/classic/04 - Cataclysm.config'),
+              ('MOP', '../.db/standard/.config/classic/05 - Mists of Pandaria.config'),
+              ('FOREVER', '../.db/forever/.config/forever.config'),
+          ]
+          for name, config in versions:
+              marker.unlink(missing_ok=True)
+              command = [str(app), 'auto', base]
+              if config:
+                  command.append('config=' + config)
+              log = logs / (name + '.log')
+              print(f'Running {name}: {app}', flush=True)
+              with log.open('w', encoding='utf-8') as stream:
+                  try:
+                      completed = subprocess.run(command, cwd=tools, stdin=subprocess.DEVNULL,
+                                                 stdout=stream, stderr=subprocess.STDOUT,
+                                                 timeout=900, env=os.environ.copy())
+                  except Exception:
+                      print(log.read_text(encoding='utf-8', errors='replace')[-5000:])
+                      raise
+              content = log.read_text(encoding='utf-8', errors='replace')
+              print(content[-2000:], flush=True)
+              assert completed.returncode == 0, f'{name} exited {completed.returncode}; see {log}'
+              assert 'FinalLogging...' in content, f'{name} did not reach FinalLogging; see {log}'
+              assert not marker.exists(), f'{name} produced ATT-ERROR-FILE.txt; see {log}'
+              print(f'{name}: exited successfully and reached FinalLogging', flush=True)
+          PYTHON
+      - name: Upload Parser logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: parser-arm64-logs-${{ matrix.name }}
+          path: ${{ runner.temp }}/parser-arm64-validation/*.log
+          if-no-files-found: ignore
+          retention-days: 7
