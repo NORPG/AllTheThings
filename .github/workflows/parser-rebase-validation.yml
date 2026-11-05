@@ -1,0 +1,254 @@
+name: Parser rebase validation
+
+on:
+  push:
+    branches:
+      - codex/parser-rebase-validation-*
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-smoke:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: win-net48-x64-debug, runner: windows-latest, framework: net48, platform: x64, configuration: Debug }
+          - { name: win-net48-x64-release, runner: windows-latest, framework: net48, platform: x64, configuration: Release }
+          - { name: win-net48-x86-debug, runner: windows-latest, framework: net48, platform: x86, configuration: Debug }
+          - { name: win-net48-x86-release, runner: windows-latest, framework: net48, platform: x86, configuration: Release }
+          - { name: win-net8-x64-debug, runner: windows-latest, framework: net8.0, platform: x64, configuration: Debug }
+          - { name: win-net8-x64-release, runner: windows-latest, framework: net8.0, platform: x64, configuration: Release }
+          - { name: win-net8-x86-debug, runner: windows-latest, framework: net8.0, platform: x86, configuration: Debug }
+          - { name: win-net8-x86-release, runner: windows-latest, framework: net8.0, platform: x86, configuration: Release }
+          - { name: mac-arm64-debug, runner: macos-15, framework: net8.0, platform: MacArm64, configuration: Debug }
+          - { name: mac-arm64-release, runner: macos-15, framework: net8.0, platform: MacArm64, configuration: Release }
+          - { name: mac-x64-debug, runner: macos-15-intel, framework: net8.0, platform: MacX64, configuration: Debug }
+          - { name: mac-x64-release, runner: macos-15-intel, framework: net8.0, platform: MacX64, configuration: Release }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - name: Install x86 .NET runtime and SDK
+        if: matrix.platform == 'x86'
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+          architecture: x86
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Build Parser and CSVCleaner
+        shell: bash
+        env:
+          FRAMEWORK: ${{ matrix.framework }}
+          PLATFORM: ${{ matrix.platform }}
+          CONFIGURATION: ${{ matrix.configuration }}
+        run: |
+          dotnet build .contrib/src/Parser/Parser.csproj -f "$FRAMEWORK" -c "$CONFIGURATION" -p:Platform="$PLATFORM" --verbosity minimal
+          dotnet build .contrib/src/CSVCleaner/CSVCleaner.csproj -f net10.0 -c "$CONFIGURATION" -p:Platform="$PLATFORM" --verbosity minimal
+      - name: Smoke test CSVCleaner
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+          CONFIGURATION: ${{ matrix.configuration }}
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import tempfile
+
+          root = Path(os.environ['GITHUB_WORKSPACE'])
+          project = root / '.contrib/src/CSVCleaner/CSVCleaner.csproj'
+          result = subprocess.check_output([
+              'dotnet', 'msbuild', str(project),
+              '-getProperty:TargetPath,TargetDir',
+              '-p:TargetFramework=net10.0',
+              f"-p:Platform={os.environ['PLATFORM']}",
+              f"-p:Configuration={os.environ['CONFIGURATION']}",
+          ], text=True)
+          target = Path(json.loads(result)['Properties']['TargetPath'])
+          app = target.with_suffix('.exe' if os.name == 'nt' else '')
+          assert app.is_file(), f'Missing CSVCleaner apphost: {app}'
+
+          with tempfile.TemporaryDirectory() as directory:
+              csv_file = Path(directory) / 'input.csv'
+              regex_file = Path(directory) / 'allowed.regex'
+              source = 'ID,Name\n2,"Two\npart"\n1,One\n3,Three\n'
+              def records():
+                  with csv_file.open(newline='', encoding='utf-8') as stream:
+                      return [[field.replace('\r\n', '\n') for field in row] for row in csv.reader(stream)]
+              def run(*args):
+                  return subprocess.run([str(app), *map(str, args)],
+                                        capture_output=True, text=True,
+                                        input='', timeout=15)
+
+              csv_file.write_text(source, encoding='utf-8')
+              result = run(csv_file)
+              assert result.returncode == 0, result.stdout + result.stderr
+              assert records() == [['ID', 'Name'], ['1', 'One'], ['2', 'Two\npart'], ['3', 'Three']]
+
+              csv_file.write_text(source, encoding='utf-8')
+              regex_file.write_text('^1,\n^3,\n', encoding='utf-8')
+              result = run(csv_file, regex_file)
+              assert result.returncode == 0, result.stdout + result.stderr
+              assert records() == [['ID', 'Name'], ['1', 'One'], ['3', 'Three']]
+
+              result = run()
+              output = (result.stdout + result.stderr).casefold()
+              assert result.returncode != 0, 'No-argument run unexpectedly succeeded'
+              assert 'unhandled exception' not in output and 'invalidoperationexception' not in output, output
+          print(f'CSVCleaner smoke checks passed: {app}')
+          PY
+      - name: Parse Retail with x86 Parser
+        if: matrix.platform == 'x86'
+        shell: bash
+        env:
+          FRAMEWORK: ${{ matrix.framework }}
+          PLATFORM: ${{ matrix.platform }}
+          CONFIGURATION: ${{ matrix.configuration }}
+          DOTNET_PROCESSOR_COUNT: '4'
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+
+          root = Path(os.environ['GITHUB_WORKSPACE'])
+          project = root / '.contrib/src/Parser/Parser.csproj'
+          result = subprocess.check_output([
+              'dotnet', 'msbuild', str(project),
+              '-getProperty:TargetPath,TargetDir',
+              f"-p:TargetFramework={os.environ['FRAMEWORK']}",
+              f"-p:Platform={os.environ['PLATFORM']}",
+              f"-p:Configuration={os.environ['CONFIGURATION']}",
+          ], text=True)
+          target = Path(json.loads(result)['Properties']['TargetPath'])
+          app = target if target.suffix.lower() == '.exe' else target.with_suffix('.exe')
+          assert app.is_file(), f'Missing x86 Parser executable: {app}'
+          tools = root / '.contrib/.tools'
+          marker = tools / 'ATT-ERROR-FILE.txt'
+          marker.unlink(missing_ok=True)
+          result = subprocess.run([
+              str(app), 'auto',
+              'baseconfig=../.db/standard/.config/retail/retail.config',
+          ], cwd=tools, capture_output=True, text=True, timeout=600,
+             env=os.environ.copy())
+          output = result.stdout + result.stderr
+          print(output[-5000:])
+          assert result.returncode == 0, f'x86 Parser exited {result.returncode}'
+          assert 'FinalLogging...' in output, 'x86 Parser did not reach FinalLogging'
+          assert not marker.exists(), 'x86 Parser produced ATT-ERROR-FILE.txt'
+          PY
+
+  parser-eight-versions:
+    name: Parse eight versions on ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: win-net48-x64, runner: windows-latest, framework: net48, platform: x64 }
+          - { name: win-net8-x64, runner: windows-latest, framework: net8.0, platform: x64 }
+          - { name: mac-arm64, runner: macos-15, framework: net8.0, platform: MacArm64 }
+          - { name: mac-x64, runner: macos-15-intel, framework: net8.0, platform: MacX64 }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Build Parser Release
+        shell: bash
+        env:
+          FRAMEWORK: ${{ matrix.framework }}
+          PLATFORM: ${{ matrix.platform }}
+        run: dotnet build .contrib/src/Parser/Parser.csproj -f "$FRAMEWORK" -c Release -p:Platform="$PLATFORM" --verbosity minimal
+      - name: Run eight Parser versions
+        shell: bash
+        env:
+          FRAMEWORK: ${{ matrix.framework }}
+          PLATFORM: ${{ matrix.platform }}
+          DOTNET_PROCESSOR_COUNT: '4'
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+
+          root = Path(os.environ['GITHUB_WORKSPACE'])
+          project = root / '.contrib/src/Parser/Parser.csproj'
+          result = subprocess.check_output([
+              'dotnet', 'msbuild', str(project),
+              '-getProperty:TargetPath,TargetDir',
+              f"-p:TargetFramework={os.environ['FRAMEWORK']}",
+              f"-p:Platform={os.environ['PLATFORM']}",
+              '-p:Configuration=Release',
+          ], text=True)
+          target = Path(json.loads(result)['Properties']['TargetPath'])
+          app = target if target.suffix.lower() == '.exe' else target.with_suffix('.exe' if os.name == 'nt' else '')
+          assert app.is_file(), f'Missing Parser executable: {app}'
+          tools = root / '.contrib/.tools'
+          logs = Path(os.environ['RUNNER_TEMP']) / 'parser-validation'
+          logs.mkdir(parents=True, exist_ok=True)
+          marker = tools / 'ATT-ERROR-FILE.txt'
+          base = 'baseconfig=../.db/standard/.config/retail/retail.config'
+          versions = [
+              ('Retail', None),
+              ('ClassicEra', '../.db/standard/.config/classic/01 - Classic Era.config'),
+              ('ClassicSoD', '../.db/standard/.config/classic/01 - Classic SOD.config'),
+              ('TBC', '../.db/standard/.config/classic/02 - TBC.config'),
+              ('WOTLK', '../.db/standard/.config/classic/03 - Wrath.config'),
+              ('CATA', '../.db/standard/.config/classic/04 - Cataclysm.config'),
+              ('MOP', '../.db/standard/.config/classic/05 - Mists of Pandaria.config'),
+              ('FOREVER', '../.db/forever/.config/forever.config'),
+          ]
+          for name, config in versions:
+              marker.unlink(missing_ok=True)
+              cmd = [str(app), 'auto', base]
+              if config:
+                  cmd.append('config=' + config)
+              log = logs / (name + '.log')
+              print(f'Running {name}: {app}', flush=True)
+              with log.open('w', encoding='utf-8') as stream:
+                  try:
+                      completed = subprocess.run(cmd, cwd=tools, stdout=stream,
+                                                 stderr=subprocess.STDOUT, timeout=600,
+                                                 env=os.environ.copy())
+                  except Exception:
+                      print(log.read_text(encoding='utf-8', errors='replace')[-5000:])
+                      raise
+              content = log.read_text(encoding='utf-8', errors='replace')
+              print(content[-2000:], flush=True)
+              assert completed.returncode == 0, f'{name} exited {completed.returncode}; see {log}'
+              assert 'FinalLogging...' in content, f'{name} did not reach FinalLogging; see {log}'
+              assert not marker.exists(), f'{name} produced ATT-ERROR-FILE.txt; see {log}'
+              print(f'{name}: exited successfully and reached FinalLogging', flush=True)
+          PY
+      - name: Upload Parser logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: parser-logs-${{ matrix.name }}
+          path: ${{ runner.temp }}/parser-validation/*.log
+          if-no-files-found: ignore
+          retention-days: 7
