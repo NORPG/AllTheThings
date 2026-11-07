@@ -3,7 +3,7 @@
     <Platforms>x64;x86</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>x64</PlatformTarget>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworks>net48;net8.0</TargetFrameworks>
     <OutputType>Exe</OutputType>
     <StartupObject>ATT.Program</StartupObject>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -33,6 +33,13 @@
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <OutputPath>..\..\.builds\Parser\net8.0\$(Platform)\$(Configuration)\</OutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'x64'">win-x64</RuntimeIdentifier>
+    <RuntimeIdentifier Condition="'$(Platform)' == 'x86'">win-x86</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
