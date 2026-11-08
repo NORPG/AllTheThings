@@ -28,10 +28,12 @@ Parser reads its configuration and database relative to the working directory. R
 
 ```sh
 cd .contrib/.tools
-dotnet ../.builds/Parser/net8.0/osx-arm64/Release/Parser.dll auto baseconfig=../.db/standard/.config/retail/retail.config
+DOTNET_PROCESSOR_COUNT=4 dotnet ../.builds/Parser/net8.0/osx-arm64/Release/Parser.dll auto baseconfig=../.db/standard/.config/retail/retail.config
 ```
 
 For an Intel Mac, replace `osx-arm64` with `osx-x64`. For a Debug build, replace `Release` with `Debug`.
+
+Parser's data merge can depend on the processor count visible to .NET. Set `DOTNET_PROCESSOR_COUNT=4` for repeatable comparisons across runs that use the same data and configuration. Check exported data when comparing different platforms or builds.
 
 ## Build CSVCleaner
 
