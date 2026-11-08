@@ -4,8 +4,8 @@ using System.Text.RegularExpressions;
 
 if (args.Length == 0)
 {
-    Trace.WriteLine("[0] => CSV File to Clean | [1] (optional) => File containing Regex line(s) for allowed CSV lines");
-    Console.ReadKey();
+    Console.Error.WriteLine("[0] => CSV File to Clean | [1] (optional) => File containing Regex line(s) for allowed CSV lines");
+    if (!Console.IsInputRedirected) Console.ReadKey();
     return -1;
 }
 
