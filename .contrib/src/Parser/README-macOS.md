@@ -1,9 +1,9 @@
-# Build and run Parser on macOS
+# Build and run Parser and CSVCleaner on macOS
 
 ## Requirements
 
-- Install the .NET 8 SDK. Running Parser on another Mac requires the .NET 8 runtime.
-- Select `MacArm64` for Apple Silicon or `MacX64` for an Intel Mac. Parser targets .NET 8 on macOS; its .NET Framework 4.8 target remains Windows only.
+- Install the .NET 8 and .NET 10 SDKs. Running the results on another Mac requires both runtimes.
+- Select `MacArm64` for Apple Silicon or `MacX64` for an Intel Mac. Parser targets .NET 8 and CSVCleaner targets .NET 10 on macOS; the Parser .NET Framework 4.8 target remains Windows only.
 - Run build commands from the repository root.
 
 ## Build Parser
@@ -29,6 +29,36 @@ Parser reads its configuration and database relative to the working directory. R
 ```sh
 cd .contrib/.tools
 dotnet ../.builds/Parser/net8.0/osx-arm64/Release/Parser.dll auto baseconfig=../.db/standard/.config/retail/retail.config
+```
+
+For an Intel Mac, replace `osx-arm64` with `osx-x64`. For a Debug build, replace `Release` with `Debug`.
+
+## Build CSVCleaner
+
+```sh
+dotnet build .contrib/src/CSVCleaner/CSVCleaner.csproj -c Debug -p:Platform=MacArm64
+dotnet build .contrib/src/CSVCleaner/CSVCleaner.csproj -c Release -p:Platform=MacArm64
+```
+
+For an Intel Mac, replace `MacArm64` with `MacX64`. CSVCleaner output is isolated by architecture and configuration:
+
+| Platform | Output directory |
+| --- | --- |
+| MacArm64 | `.contrib/.builds/CSVCleaner/net10.0/osx-arm64/<Debug or Release>/` |
+| MacX64 | `.contrib/.builds/CSVCleaner/net10.0/osx-x64/<Debug or Release>/` |
+
+Keep `CSVCleaner.dll`, its `.deps.json` and `.runtimeconfig.json` files, and dependencies together when copying the output.
+
+## Run CSVCleaner
+
+CSVCleaner updates the CSV file passed as its first argument. A second argument can name a file of regular expressions for filtering records; omit it to sort all records by the `ID` column. The example uses a temporary CSV so no repository data is changed:
+
+```sh
+sample_csv=$(mktemp)
+printf 'ID,Name\n2,Second\n1,First\n' > "$sample_csv"
+dotnet .contrib/.builds/CSVCleaner/net10.0/osx-arm64/Release/CSVCleaner.dll "$sample_csv"
+cat "$sample_csv"
+rm "$sample_csv"
 ```
 
 For an Intel Mac, replace `osx-arm64` with `osx-x64`. For a Debug build, replace `Release` with `Debug`.
