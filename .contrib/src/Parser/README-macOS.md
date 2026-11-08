@@ -6,21 +6,21 @@
 - Select `MacArm64` for Apple Silicon or `MacX64` for an Intel Mac. Parser targets .NET 8 and CSVCleaner targets .NET 10 on macOS; the Parser .NET Framework 4.8 target remains Windows only.
 - Run build commands from the repository root.
 
-## Build Parser
+## Build
 
 ```sh
-dotnet build .contrib/src/Parser/Parser.csproj -f net8.0 -c Debug -p:Platform=MacArm64
-dotnet build .contrib/src/Parser/Parser.csproj -f net8.0 -c Release -p:Platform=MacArm64
+dotnet build .contrib/src/Parser/Parser.sln -c Debug -p:Platform=MacArm64
+dotnet build .contrib/src/Parser/Parser.sln -c Release -p:Platform=MacArm64
 ```
 
-For an Intel Mac, replace `MacArm64` with `MacX64`. Output is isolated by architecture and configuration:
+The solution builds both applications. For an Intel Mac, replace `MacArm64` with `MacX64`. Output is isolated by architecture and configuration:
 
-| Platform | Output directory |
-| --- | --- |
-| MacArm64 | `.contrib/.builds/Parser/net8.0/osx-arm64/<Debug or Release>/` |
-| MacX64 | `.contrib/.builds/Parser/net8.0/osx-x64/<Debug or Release>/` |
+| Project | MacArm64 output | MacX64 output |
+| --- | --- | --- |
+| Parser | `.contrib/.builds/Parser/net8.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/Parser/net8.0/osx-x64/<Debug or Release>/` |
+| CSVCleaner | `.contrib/.builds/CSVCleaner/net10.0/osx-arm64/<Debug or Release>/` | `.contrib/.builds/CSVCleaner/net10.0/osx-x64/<Debug or Release>/` |
 
-Keep `Parser.dll`, its `.deps.json` and `.runtimeconfig.json` files, dependencies, and the matching `liblua54.dylib` together when copying the output.
+Keep each application's DLL, `.deps.json`, `.runtimeconfig.json`, and dependency files together when copying its output. Parser also needs the matching `liblua54.dylib`.
 
 ## Run Parser for Retail
 
@@ -34,22 +34,6 @@ DOTNET_PROCESSOR_COUNT=4 dotnet ../.builds/Parser/net8.0/osx-arm64/Release/Parse
 For an Intel Mac, replace `osx-arm64` with `osx-x64`. For a Debug build, replace `Release` with `Debug`.
 
 Parser's data merge can depend on the processor count visible to .NET. Set `DOTNET_PROCESSOR_COUNT=4` for repeatable comparisons across runs that use the same data and configuration. Check exported data when comparing different platforms or builds.
-
-## Build CSVCleaner
-
-```sh
-dotnet build .contrib/src/CSVCleaner/CSVCleaner.csproj -c Debug -p:Platform=MacArm64
-dotnet build .contrib/src/CSVCleaner/CSVCleaner.csproj -c Release -p:Platform=MacArm64
-```
-
-For an Intel Mac, replace `MacArm64` with `MacX64`. CSVCleaner output is isolated by architecture and configuration:
-
-| Platform | Output directory |
-| --- | --- |
-| MacArm64 | `.contrib/.builds/CSVCleaner/net10.0/osx-arm64/<Debug or Release>/` |
-| MacX64 | `.contrib/.builds/CSVCleaner/net10.0/osx-x64/<Debug or Release>/` |
-
-Keep `CSVCleaner.dll`, its `.deps.json` and `.runtimeconfig.json` files, and dependencies together when copying the output.
 
 ## Run CSVCleaner
 
