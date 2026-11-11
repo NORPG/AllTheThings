@@ -38,13 +38,13 @@ namespace ATT
         #endregion
         #region Functionality
         /// <summary>
-        /// Export the data in this Container to a Comma-Separated Volume. (CSV)
+        /// Export the data in this Container to a CSV (comma-separated values) file.
         /// This is traditionally used within Microsoft Excel.
         /// </summary>
         /// <param name="filename">The full file name to write to.</param>
         public void ExportToCSV(string filename)
         {
-            // Utilize a String Builder to compress the data into a Comma-Separated Volume.
+            // Utilize a String Builder to compress the data into CSV format.
             var builder = new StringBuilder();
 
             // First grab all of the keys in the dictionary. We need them to be in order.

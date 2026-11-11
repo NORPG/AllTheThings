@@ -2433,7 +2433,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 			-- #endif
 			q(25646, {	-- Windshear Mine Cleanup
 				sourceQuest = 25640,	-- Bombs Away: Windshear Mine
-				qg = 40973,	-- Sentinal Heliana
+				qg = 40973,	-- Sentinel Heliana
 				coord = { 72.5, 61.5, STONETALON_MOUNTAINS },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

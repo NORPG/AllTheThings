@@ -134685,11 +134685,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[241605] = {
-		readable = "Crystalized Essence of the Elements",
+		readable = "Crystallized Essence of the Elements",
 		icon = 132783,
 		model = 190803,
 		text = {
-			en = "Crystalized Essence of the Elements",
+			en = "Crystallized Essence of the Elements",
 			es = "Esencia de los elementos cristalizada",
 			mx = "Esencia de los elementos cristalizada",
 			de = "Kristallisierte Essenz der Elemente",

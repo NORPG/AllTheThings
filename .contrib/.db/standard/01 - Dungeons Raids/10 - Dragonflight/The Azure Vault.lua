@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					groups = {
 						ach(16272),	-- The Azure Vault
 						i(193644),	-- Breastplate of Irreparable Madness
-						i(193645),	-- Crystalized Bulwark
+						i(193645),	-- Crystallized Bulwark
 						i(193641),	-- Headwrap of the Abandoned
 						i(193642),	-- Mantle of Yearned Freedom
 						i(193646),	-- Refraction's Edge

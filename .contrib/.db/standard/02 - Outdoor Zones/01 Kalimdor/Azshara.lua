@@ -1241,7 +1241,7 @@ maproot(KALIMDOR, AZSHARA, {
 				},
 			}),
 			q(14258, {	-- Mortar the Point
-				qg = 35817,	-- Bombardier Captian Smooks
+				qg = 35817,	-- Bombardier Captain Smooks
 				coord = { 52.2, 74.2, AZSHARA },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,

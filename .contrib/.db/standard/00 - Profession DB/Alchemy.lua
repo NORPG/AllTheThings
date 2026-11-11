@@ -1083,7 +1083,7 @@ i(0, 370672);		-- Potion Cauldron of Ultimate Power [Shares item 201740]
 --- PHIAL ---
 i(0, 370472);		-- Aerated Phial of Deftness
 i(0, 370476);		-- Charged Phial of Alacrity
-i(0, 370483);		-- Crystaline Phial of Perception
+i(0, 370483);		-- Crystalline Phial of Perception
 i(0, 370457);		-- Iced Phial of Corrupting Rage
 i(0, 370460);		-- Phial of Charged Isolation
 i(0, 370504);		-- Phial of Elemental Chaos
@@ -1134,7 +1134,7 @@ i(191599, 0);		-- Basic Potion Experimentation
 i(191443, 0);		-- Bottled Putrescence
 i(191591, 0);		-- Brood Salt
 i(191439, 0);		-- Charged Phial of Alacrity
-i(191441, 0);		-- Crystaline Phial of Perception
+i(191441, 0);		-- Crystalline Phial of Perception
 i(191448, 0);		-- Delicate Suspension of Spores
 i(191452, 0);		-- Elemental Potion of Power
 i(191450, 0);		-- Elemental Potion of Ultimate Power

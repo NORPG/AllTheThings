@@ -117,7 +117,7 @@ maproot(DRAGON_ISLES, {
 				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
 					coord = { 37.6, 49.0, THALDRASZUS }
 				}),
-				q(70431, {	-- Dragonrider Racing - Flowing Forst Flight
+				q(70431, {	-- Dragonrider Racing - Flowing Forest Flight
 					coord = { 57.8, 75.0, THALDRASZUS }
 				}),
 				q(70435, {	-- Dragonrider Racing - Garden Gallivant

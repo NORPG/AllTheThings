@@ -1745,7 +1745,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 					88742,	-- Sunspeaker's Flared Gloves
 					88743,	-- Ogo's Elder Gloves
 					88744,	-- Fingers of the Loneliest Monk
-					88745,	-- Sentinal Commander's Gauntlets
+					88745,	-- Sentinel Commander's Gauntlets
 					88746,	-- Gloves of the Overwhelming Swrm
 					88747,	-- Streetfighter's Iron Knuckles
 					88748,	-- Ravenmane's Gloves

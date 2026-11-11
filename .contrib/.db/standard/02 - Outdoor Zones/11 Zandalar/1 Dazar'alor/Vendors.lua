@@ -490,7 +490,7 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					i(163495, {	-- Greatwing Macaw (PET!)
 						cost = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
-					i(163496, {	-- Mechanical Prarie Dog (PET!)
+					i(163496, {	-- Mechanical Prairie Dog (PET!)
 						cost = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),
 					i(163494, {	-- Bilefang Skitterer (PET!)

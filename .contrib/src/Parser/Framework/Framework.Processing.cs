@@ -4800,7 +4800,7 @@ namespace ATT
             {
                 LogError($"'criteriaID' {criteriaID} missing 'achID' under final Parent: [{ToJSON(parentData)}]", data);
             }
-            // Criteria nested under another Thing can never supercede that Thing's awp
+            // Criteria nested under another Thing can never supersede that Thing's awp
             if (parentData.TryGetValue("awp", out long parentAWP) && data.TryGetValue("awp", out long awp) && awp < parentAWP)
             {
                 LogDebug($"INFO: Removed Criteria AWP:{awp} which is before Parent AWP:{parentAWP}", data);

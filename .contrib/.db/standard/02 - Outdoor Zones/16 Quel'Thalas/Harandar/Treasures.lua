@@ -678,7 +678,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 			o(614483, {	-- Peculiar Cauldron
 				coord = { 40.6, 28.0, MAP.MIDNIGHT.HARANDAR },
 				questID = 93587,
-				cost = { { "i", 260531, 150 } },	-- 150x Crystalized Resin Fragment
+				cost = { { "i", 260531, 150 } },	-- 150x Crystallized Resin Fragment
 				groups = { i(252017) },	-- Ruddy Sporeglider (MOUNT!)
 			}),
 			o(573095, {	-- Reliquary's Lost Paintbrush
@@ -716,7 +716,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 				{ 44.2, 44.0, MAP.MIDNIGHT.HARANDAR },
 				{ 46.2, 47.8, MAP.MIDNIGHT.HARANDAR },
 			},
-			groups = { i(260531) },	-- Crystalized Resin Fragment
+			groups = { i(260531) },	-- Crystallized Resin Fragment
 		}),
 		--o(613829, {	-- A Frayed Scroll
 		--	coord = { 47.6, 47.3, MAP.MIDNIGHT.HARANDAR },

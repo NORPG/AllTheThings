@@ -15,7 +15,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
 				coord = { 61.7, 72.3, ORIBOS },
 				groups = {
-					i(186684, {	-- Memories of Brigther Times
+					i(186684, {	-- Memories of Brighter Times
 						collectible = false,
 						timeline = { ADDED_9_1_0 },
 					}),

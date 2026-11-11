@@ -99,7 +99,7 @@ i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
 i(169943);	-- Little Princess Cap
 i(138883);	-- Meryl's Conjured Refreshment
-i(169944);	-- Miniscule Fez
+i(169944);	-- Minuscule Fez
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)

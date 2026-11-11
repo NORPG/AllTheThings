@@ -97,7 +97,7 @@ namespace ATT
         */
 
         /// <summary>
-        /// Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
+        /// Export the data in this Collection to a set of CSV (comma-separated values) files.
         /// This is traditionally used within Microsoft Excel.
         /// </summary>
         /// <param name="directory">The directory to write to.</param>

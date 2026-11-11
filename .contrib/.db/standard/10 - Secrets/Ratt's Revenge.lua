@@ -72,8 +72,8 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 					provider = { "i", 208092 },	-- Torch of Pyrreth
 					coords = {
 						{ 55.0, 40.2, NORTHERN_BARRENS },
-						{ 74.2, 37.5, DRAENOR_NAGRAND },	-- Before (35170) Consumed by Vengence is completed
-						{ 49.2, 48.0, DRAENOR_NAGRAND },	-- After (35170) Consumed by Vengence is completed
+						{ 74.2, 37.5, DRAENOR_NAGRAND },	-- Before (35170) Consumed by Vengeance is completed
+						{ 49.2, 48.0, DRAENOR_NAGRAND },	-- After (35170) Consumed by Vengeance is completed
 						{ 27.3, 61.3, MALDRAXXUS },
 					},
 					crs = {

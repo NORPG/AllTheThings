@@ -36,7 +36,7 @@ local EncounterToLoot = {
 		i(110009),	-- Leaf of the Ancient Protectors
 	},
 	[XERITAC] = {
-		i(119173),	-- Dessicated Husk Shield
+		i(119173),	-- Desiccated Husk Shield
 		i(110019),	-- Xeri'tac's Unhatched Egg Sac
 	},
 	[ARCHMAGE] = {

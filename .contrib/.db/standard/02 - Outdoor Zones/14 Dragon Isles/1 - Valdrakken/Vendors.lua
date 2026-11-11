@@ -200,7 +200,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 					}),
 				},
 			}),
-			n(216231, {	-- Iszinormi <Dream Distribtuion>
+			n(216231, {	-- Iszinormi <Dream Distributor>
 				coord = { 73.7, 47.4, VALDRAKKEN },
 				timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				groups = sharedData({

@@ -4666,7 +4666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					races = ALLIANCE_ONLY,
 					groups = {
 						champP3(50, i(46817)),	-- Silver Covenant Tabard
-						champP3(150, i(46813)),	-- Silver Convenant Hippogryph (MOUNT!)
+						champP3(150, i(46813)),	-- Silver Covenant Hippogryph (MOUNT!)
 						champP3(100, i(46815)),	-- Quel'dorei Steed (MOUNT!)
 						champP3(40, i(46820)),	-- Shimmering Wyrmling (PET!)
 					},

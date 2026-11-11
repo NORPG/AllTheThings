@@ -222,7 +222,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 						sourceQuests = { 49403 },	-- Rodrigo's Revenge
 						cost = { { "i", POLISHED_PET_CHARM, 50 } },
 					}),
-					i(163496, {	-- Mechanical Prarie Dog (PET!)
+					i(163496, {	-- Mechanical Prairie Dog (PET!)
 						sourceQuests = { 51426 },	-- Inspection Gadget
 						cost = { { "i", POLISHED_PET_CHARM, 75 } },
 					}),

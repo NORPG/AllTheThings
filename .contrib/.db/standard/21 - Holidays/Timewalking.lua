@@ -5128,7 +5128,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				sym = {{"select", "modItemID",
 					modItemId(144018,1),	-- Fallout-Filtering Hood
 					modItemId(144102,1),	-- Pendant of Precise Timing
-					modItemId(144100,1),	-- Saboteur's Stablizing Bracers
+					modItemId(144100,1),	-- Saboteur's Stabilizing Bracers
 					modItemId(144134,1),	-- Grenadier's Belt
 					modItemId(144135,1),	-- Pulled Grenade Pin
 				}},
@@ -8615,7 +8615,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					197127,	-- Highland Drake: Grand Thorn Horns (MM!)
 					197140,	-- Highland Drake: Small Spotted Pattern (MM!)
 					193644,	-- Breastplate of Irreparable Madness
-					193645,	-- Crystalized Bulwark
+					193645,	-- Crystallized Bulwark
 					193641,	-- Headwrap of the Abandoned
 					193642,	-- Mantle of Yearned Freedom
 					193646,	-- Refraction's Edge

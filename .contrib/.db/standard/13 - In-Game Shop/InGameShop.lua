@@ -840,7 +840,7 @@ root(ROOTS.InGameShop, bubbleDown({ u = REAL_MONEY }, {
 		i(166775, { timeline = { ADDED_8_1_0 } }),	-- Vulpine Familiar (MOUNT!)
 		mount(359317, { timeline = { ADDED_9_1_5 } }),	-- Wen Lo, the River's Edge (MOUNT!)
 		i(277261, { timeline = { ADDED_12_1_0 } }),	-- Whoofle Bramblewing (MOUNT!)
-		i(206167, { timeline = { ADDED_10_1_0 } }),	-- Wonderous Wavewhisker (MOUNT!)
+		i(206167, { timeline = { ADDED_10_1_0 } }),	-- Wondrous Wavewhisker (MOUNT!)
 		i(268833, { timeline = { ADDED_12_1_0 } }),	-- Zothwing Darkseeker (MOUNT!)
 		i(268834, { timeline = { ADDED_12_1_0 } }),	-- Zothwing Deepseeker (MOUNT!)
 	}),

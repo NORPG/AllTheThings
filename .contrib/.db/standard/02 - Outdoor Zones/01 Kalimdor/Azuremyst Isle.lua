@@ -1666,7 +1666,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				description = "This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",
+				description = "This item seems to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",
 				-- #endif
 				maps = {
 					AZUREMYST_ISLE,

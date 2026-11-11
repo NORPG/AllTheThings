@@ -615,7 +615,7 @@ local function PartialSyncCharacterData(data, key)
 		end
 	end
 end
--- Used for data which has Rank-based collection where a higher rank supercedes/implies collection of any lower ranks
+-- Used for data which has Rank-based collection where a higher rank supersedes/implies collection of any lower ranks
 local function RankSyncCharacterData(data, key)
 	local characterData
 	wipe(data);

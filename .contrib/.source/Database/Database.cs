@@ -101,7 +101,7 @@ namespace ATT
         #endregion
         #region Static Functionality
         /// <summary>
-        /// Export the database to a set of Comma-Separated Volume (CSV) files.
+        /// Export the database to a set of CSV (comma-separated values) files.
         /// </summary>
         /// <param name="directory">The directory to write to.</param>
         public static void ExportToCSV(string directory)

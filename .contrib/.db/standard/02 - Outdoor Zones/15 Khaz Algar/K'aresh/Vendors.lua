@@ -116,7 +116,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 					timeline = { ADDED_11_2_7 },
 					cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 				}),
-				i(247686),	-- Crystalized Nightshade (JUNK!)
+				i(247686),	-- Crystallized Nightshade (JUNK!)
 				i(247688),	-- K'arroc Feather Quill (JUNK!)
 				i(247687),	-- Overly-Preserved K'areshi Preserves (JUNK!)
 				i(247685),	-- Slightly Used Containment Device (JUNK!)

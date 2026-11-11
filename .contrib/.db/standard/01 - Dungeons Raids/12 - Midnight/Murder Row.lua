@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(251140),	-- Vilefiend's Guise
 				}),
 				filter(MISC, {
-					currency(3250, {	-- Faceted Crystaline Fel
+					currency(3250, {	-- Faceted Crystalline Fel
 						description = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
 					}),
 				}),
@@ -107,33 +107,33 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 							cost = 9999999,	-- 999g 99s 99c
 						}),
 						i(237764, {	-- Exquisite Painting
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 					n(236076, {	-- Darlia <Poison Supplies>
 						i(237765, {	-- Hearthstop Blade
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 					n(236078, {	-- Feranin <Exotic Goods>
 						i(260311),	-- Empty Felwyrm Core
 						i(237766, {	-- Felwyrm Egg
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 					n(236080, {	-- Sleyin <Weapon Merchant>
 						i(235644, {	-- Concealed Pistol
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 					n(236872, {	-- Vanaris <Gem Vendor>
 						i(237763, {	-- Felstone
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 					n(236079, {	-- Vinemaster Suntouched <Wine & Spirits Vendor>
 						i(236332, {	-- Suntouched Special Reserve
-							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
+							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystalline Fel
 						}),
 					}),
 				}),

@@ -184,7 +184,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					coord = { 24.5, 60.9, THE_WAKING_SHORES },
 					isWeekly = true,
 					groups = {
-						i(194971),	-- Crystalized Draconium (QI!)
+						i(194971),	-- Crystallized Draconium (QI!)
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
 				}),

@@ -1559,7 +1559,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 				coord = { 62.6, 20.6, TANAAN_JUNGLE },
 				groups = { i(127401) },	-- Tormented Skull
 			}),
-			o(241605, {	-- Crystalized Essence of Elements
+			o(241605, {	-- Crystallized Essence of the Elements
 				questID = 38705,
 				coord = { 47.9, 70.4, TANAAN_JUNGLE },
 				groups = { i(127329) },	-- Element-Infused Knuckles

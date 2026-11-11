@@ -1288,7 +1288,7 @@ root(ROOTS.PVP, {
 					i(67474),	-- Vicious Gladiator's Cleaver
 					i(67453),	-- Vicious Gladiator's Decapitator
 					i(67479),	-- Vicious Gladiator's Endgame
-					i(67449),	-- Vicious Gladiator's Engery Staff
+					i(67449),	-- Vicious Gladiator's Energy Staff
 					i(67459),	-- Vicious Gladiator's Fleshslicer
 					i(67454),	-- Vicious Gladiator's Gavel
 					i(67447),	-- Vicious Gladiator's Greatsword
@@ -2904,7 +2904,7 @@ root(ROOTS.PVP, {
 					i(73441),	-- Cataclysmic Gladiator's Cleaver
 					i(73444),	-- Cataclysmic Gladiator's Decapitator
 					i(73436),	-- Cataclysmic Gladiator's Endgame
-					i(73424),	-- Cataclysmic Gladiator's Engery Staff
+					i(73424),	-- Cataclysmic Gladiator's Energy Staff
 					i(73420),	-- Cataclysmic Gladiator's Fleshslicer
 					i(73426),	-- Cataclysmic Gladiator's Gavel
 					i(73442),	-- Cataclysmic Gladiator's Greatsword

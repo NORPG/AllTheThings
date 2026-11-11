@@ -210,7 +210,7 @@ local EncounterToLoot = {
 		i(151954),	-- Blood-Drenched Bindings
 		i(151960),	-- Carafe of Searing Light
 		i(151942),	-- Cord of Surging Hysteria
-		i(152015),	-- Greaves of Mercurial Alliegance
+		i(152015),	-- Greaves of Mercurial Allegiance
 		i(152092),	-- Nathrezim Incisor
 		i(151997),	-- Nathrezim Shade-Walkers
 		i(152060),	-- Neuroshock Electrode

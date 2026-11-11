@@ -492,7 +492,7 @@ maproot(NAZJATAR, {
 					i(170101, {	-- Pilfered Armor Crate
 						description = "Contains a piece of Benthic gear.",
 					}),
-					i(168091, {	-- Severly Rusted Lockbox
+					i(168091, {	-- Severely Rusted Lockbox
 						description = "Contains a Barnacled Lockbox.",	-- Description added so you dont need debug mode to see contained items.
 						sym = { { "select", "itemID",
 							169475,	-- Barnacled Lockbox
@@ -636,7 +636,7 @@ maproot(NAZJATAR, {
 				races = HORDE_ONLY,
 				groups = {
 					i(168309),	-- Armwrap of Ocean Magic
-					i(168308),	-- Most Magnificient Small Shell of Shimmering
+					i(168308),	-- Most Magnificent Small Shell of Shimmering
 					i(168307),	-- Necklace of Most Beautiful Shells
 					i(168320),	-- Shiniest Roundiest Pearl of Goodness
 				},

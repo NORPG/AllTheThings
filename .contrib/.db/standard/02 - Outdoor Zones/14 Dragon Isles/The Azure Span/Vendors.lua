@@ -23,7 +23,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					i(198104, {	-- Recipe: Blubbery Muffin (RECIPE!)
 						cost = {
 							{ "i", 197772, 1 },	-- 1x Churnbelly Tea
-							{ "i", 197760, 20 },	-- 20x Mackeral Snackeral
+							{ "i", 197760, 20 },	-- 20x Mackerel Snackerel
 						},
 					}),
 				},

@@ -838,7 +838,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 			groups = {
 				i(140040),	-- Comet Dust
 				i(143749),	-- Corrupted Nightborne Matrix
-				i(140078),	-- Crystalized Leypetal
+				i(140078),	-- Crystallized Leypetal
 				i(140076),	-- Felborne Energist's Gem
 				i(140071),	-- first Page of the Book of Shadows
 				i(140077),	-- Goldleaf Arcwine Phial

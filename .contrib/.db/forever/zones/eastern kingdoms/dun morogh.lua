@@ -1933,7 +1933,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 63.2, 50.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(280797, {	-- Artic Rabbit (PET!)
+					i(280797, {	-- Arctic Hare (PET!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(280801, {	-- Brown Rabbit (PET!)

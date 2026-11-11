@@ -457,7 +457,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
-					i(124150),	-- Dessicated Soulrender Slippers
+					i(124150),	-- Desiccated Soulrender Slippers
 					i(124277),	-- Flayed Demonskin Belt
 					i(124350),	-- Girdle of Demonic Wrath
 					i(124252),	-- Jungle Assassin's Footpads
@@ -966,7 +966,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
-					i(124150),	-- Dessicated Soulrender Slippers
+					i(124150),	-- Desiccated Soulrender Slippers
 					i(124277),	-- Flayed Demonskin Belt
 					i(124350),	-- Girdle of Demonic Wrath
 					i(124252),	-- Jungle Assassin's Footpads
@@ -1460,7 +1460,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
-					i(124150),	-- Dessicated Soulrender Slippers
+					i(124150),	-- Desiccated Soulrender Slippers
 					i(124277),	-- Flayed Demonskin Belt
 					i(124350),	-- Girdle of Demonic Wrath
 					i(124252),	-- Jungle Assassin's Footpads

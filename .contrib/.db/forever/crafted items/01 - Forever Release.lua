@@ -65,7 +65,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250936),	-- Superior Spellblasting Potion
 			i(250942),	-- Superior Frenzy Potion
 			i(246948),	-- Distilled Firewater
-			i(250955),	-- Potion of Beast Culling
+			i(250955),	-- Potion of Beast Slaying
 			i(250954),	-- Potion of Elemental Siphoning
 		}),
 		filter(MISC, {

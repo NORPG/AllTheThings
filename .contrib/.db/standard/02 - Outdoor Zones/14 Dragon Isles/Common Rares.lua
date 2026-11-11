@@ -506,7 +506,7 @@ maproot(DRAGON_ISLES, {
 					i(200292, {	-- Cragforge Pauldrons
 						crs = RARE_GROUP_FIVE,
 					}),
-					i(200446, {	-- Crystalized Sigil
+					i(200446, {	-- Crystallized Sigil
 						crs = RARE_GROUP_SUNDER,
 					}),
 					i(200313, {	-- Earthen Protoscale Drape

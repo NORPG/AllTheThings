@@ -261,7 +261,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(191443),	-- Recipe: Bottled Putrescence (RECIPE!)
 					i(191591),	-- Recipe: Brood Salt (RECIPE!)
 					i(191439),	-- Recipe: Charged Phial of Alacrity (RECIPE!)
-					i(191441),	-- Recipe: Crystaline Phial of Perception (RECIPE!)
+					i(191441),	-- Recipe: Crystalline Phial of Perception (RECIPE!)
 					i(191448),	-- Recipe: Delicate Suspension of Spores (RECIPE!)
 					i(191452),	-- Recipe: Elemental Potion of Power (RECIPE!)
 					i(191450),	-- Recipe: Elemental Potion of Ultimate Power (RECIPE!)

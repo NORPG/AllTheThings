@@ -1823,7 +1823,7 @@ maproot(DRAENOR, TALADOR, {
 				races = HORDE_ONLY,
 			}),
 			q(34094, {	-- Vol. X Pages ?
-				sourceQuest = 34091,	-- Decomissioned Mission
+				sourceQuest = 34091,	-- Decommissioned Mission
 				provider = { "n", 75874 },	-- Thaelin Darkanvil
 				coord = { 63.0, 26.1, TALADOR },
 				races = ALLIANCE_ONLY,

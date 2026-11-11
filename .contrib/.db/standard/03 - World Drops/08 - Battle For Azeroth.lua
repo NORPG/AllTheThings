@@ -27,7 +27,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, {
 			i(154776),	-- Cracked Hide Vest
 			i(154775),	-- Cracked Hide Shoulders
 			i(154777),	-- Cracked Hide Wristguards
-			i(163945),	-- Mystra's Magnificient Mitts
+			i(163945),	-- Mystrah's Magnificent Mitts
 			i(163943),	-- Neleimour's Patterned Leggings
 			i(163942),	-- Slippers of the Unruly Fairies
 			i(163944),	-- Waatah's Double-Knotted Cord

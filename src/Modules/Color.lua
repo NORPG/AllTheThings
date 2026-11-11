@@ -247,7 +247,7 @@ app.TryColorizeName = function(group, name)
 				-- this group requires a horde-only race, and not any alliance race
 				return Colorize(name, app.Colors.Horde);
 			elseif arace and not hrace then
-				-- this group requires a alliance-only race, and not any horde race
+				-- this group requires an alliance-only race, and not any horde race
 				return Colorize(name, app.Colors.Alliance);
 			end
 		-- specific raceID
@@ -258,7 +258,7 @@ app.TryColorizeName = function(group, name)
 				-- this group requires a horde-only race, and not any alliance race
 				return Colorize(name, app.Colors.Horde);
 			elseif arace and not hrace then
-				-- this group requires a alliance-only race, and not any horde race
+				-- this group requires an alliance-only race, and not any horde race
 				return Colorize(name, app.Colors.Alliance);
 			end
 		-- un-acquirable color
