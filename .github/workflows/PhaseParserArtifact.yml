@@ -1,0 +1,62 @@
+# Temporary build-only workflow; keep this helper out of the feature branch.
+name: Phase Parser artifact
+
+on:
+  push:
+    branches: ['codex/phase-parser-artifact-20261114']
+    paths:
+      - '.github/workflows/PhaseParserArtifact.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  windows-parser:
+    runs-on: windows-2025
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: b18a2f208188af83602994775312f7e12d30e15e
+          persist-credentials: false
+
+      - name: Confirm the pinned build source
+        run: |
+          $sourceCommit = (git rev-parse HEAD).Trim()
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          if ($sourceCommit -ne 'b18a2f208188af83602994775312f7e12d30e15e') {
+            throw "Unexpected build source: $sourceCommit"
+          }
+
+      - name: Build the Release x64 Parser
+        run: |
+          dotnet build .contrib/src/Parser/Parser.csproj -c Release -p:Platform=x64 "-p:OutputPath=$env:RUNNER_TEMP/phase-parser"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+
+      - name: Package the Parser and build provenance
+        run: |
+          $sourceCommit = (git rev-parse HEAD).Trim()
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $bundle = Join-Path $env:RUNNER_TEMP 'phase-parser-artifact'
+          New-Item -ItemType Directory -Path $bundle | Out-Null
+          Copy-Item "$env:RUNNER_TEMP/phase-parser/Parser.exe" $bundle
+          [ordered]@{
+            '$comment' = 'Built by Windows CI from sourceCommit; workflowCommit identifies the build-only workflow. Further verification is deferred.'
+            sourceCommit = $sourceCommit
+            workflowCommit = $env:GITHUB_SHA
+            run = "$env:GITHUB_SERVER_URL/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID"
+            platform = 'Windows x64 / net481 / Release'
+            parserSHA256 = (Get-FileHash "$bundle/Parser.exe" -Algorithm SHA256).Hash.ToLowerInvariant()
+          } | ConvertTo-Json | Set-Content "$bundle/build.json" -Encoding utf8
+          Get-Content "$bundle/build.json"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: phase-parser-windows
+          path: |
+            ${{ runner.temp }}/phase-parser-artifact/Parser.exe
+            ${{ runner.temp }}/phase-parser-artifact/build.json
+          if-no-files-found: error
