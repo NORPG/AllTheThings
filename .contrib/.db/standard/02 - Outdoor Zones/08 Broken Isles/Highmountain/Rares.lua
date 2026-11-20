@@ -48,7 +48,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 			},
 			groups = {
 				o(245479, {	-- Battered Chest
-					questID = 40612,
+					questID = 40612,	-- (5)
 					groups = {
 						i(131781),	-- Plate Hiking Boots
 					},
