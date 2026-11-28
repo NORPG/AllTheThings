@@ -1,0 +1,43 @@
+name: JSON backend comparison
+
+on:
+  push:
+    branches:
+      - codex/json-backend-comparison-1795
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    name: Compare three JSON backends on Windows
+    runs-on: windows-latest
+    timeout-minutes: 30
+    env:
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Build and measure the three backends
+        shell: pwsh
+        run: |
+          $scratch = Join-Path $env:RUNNER_TEMP 'json-backend-measurements'
+          $results = Join-Path $env:RUNNER_TEMP 'json-backend-results'
+          python .github/scripts/json-backend-benchmark/run.py --scratch $scratch --results $results
+
+      - name: Upload raw samples and size inventory
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: json-backend-comparison
+          path: ${{ runner.temp }}/json-backend-results
